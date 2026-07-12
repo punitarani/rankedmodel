@@ -434,9 +434,13 @@ export async function seed(root: string, target: '--local' | '--remote'): Promis
   const sqlPath = join(tmpDir, 'rankedmodel-seed.sql')
   writeFileSync(sqlPath, sql)
 
+  const envFlag =
+    target === '--remote' && process.env.RANKEDMODEL_ENV
+      ? ['--env', process.env.RANKEDMODEL_ENV]
+      : []
   const res = spawnSync(
     'bunx',
-    ['wrangler', 'd1', 'execute', 'DB', target, `--file=${sqlPath}`, '-y'],
+    ['wrangler', 'd1', 'execute', 'DB', target, `--file=${sqlPath}`, '-y', ...envFlag],
     { cwd: webDir, stdio: 'inherit' },
   )
   if (res.status !== 0) throw new Error(`wrangler d1 execute failed (exit ${res.status})`)

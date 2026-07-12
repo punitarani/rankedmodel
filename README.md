@@ -1,40 +1,74 @@
 # RankedModel
 
-> The definitive hub for LLM rankings, benchmarks, evaluations, model comparisons, and hardware fit.
+> The definitive hub for LLM rankings, benchmarks, evaluations, model comparisons — and
+> the only one that also answers *“can my hardware run it, at which quant, how fast?”*
 
-**Status:** in active initial development — building against [ARCHITECTURE.md](ARCHITECTURE.md) and the design handoff in [docs/design-handoff/](docs/design-handoff/), reconciled in [docs/DECISIONS.md](docs/DECISIONS.md).
+RankedModel collapses the four-tab workflow — **rank it, verify it, size it, run it** —
+into one provenance-honest, deep-linkable tool: 55 curated models across 19 orgs, 10
+benchmarks with published normalization bounds, version lineage, API pricing,
+quantizations, and a graded hardware-fit engine. Positioning in
+[COMPETITIVE_ANALYSIS.md](COMPETITIVE_ANALYSIS.md); system design in
+[ARCHITECTURE.md](ARCHITECTURE.md) (§13 reconciles it with the committed design
+handoff); every locked decision and contract in [docs/DECISIONS.md](docs/DECISIONS.md).
 
-RankedModel collapses the four-tab workflow — *rank it, verify it, size it, run it* — into one provenance-honest, deep-linkable tool: frontier and open models, benchmark results with per-source provenance, version lineage, API pricing, quantizations, and a per-user hardware-fit engine ("what can my GPU run, at which quant, how fast — or should I just pay for the API?"). See [COMPETITIVE_ANALYSIS.md](COMPETITIVE_ANALYSIS.md) for positioning.
+## Screens
 
-## Stack
+`/` dashboard (overview · releases · benchmarks tabs) — `/rankings` (+`/{category}`)
+dense sortable table — `/models` faceted explorer with runs-on-my-GPU —
+`/models/{slug}` detail with benchmark provenance, family lineage and the
+Run-it-locally card — `/compare?m=a,b,c` specs/benchmarks/radar with saved comparisons —
+`/hardware` graded fit verdicts by profile or by model — `/benchmarks/{slug}`
+leaderboards with provenance badges and distributions — org/family hubs —
+`/methodology` — full SEO surface (sitemap, JSON-LD, canonical).
 
-TanStack Start (React 19, SSR) on Cloudflare Workers · D1 (Drizzle) + KV catalog snapshots · Tailwind v4 + shadcn/ui on Base UI · custom SVG charts · Zod v4 · Biome · Vitest + Playwright.
+**URL is the state everywhere** — every filter, sort, tab and comparison is a shareable
+link. Dark (default) + light themes from the design-token palette.
 
-## Prerequisites
+## Architecture in one paragraph
 
-- **Bun ≥ 1.3** (package manager + script runner)
-- **Node ≥ 24** (hosts vite / wrangler / vitest — never run wrangler tooling under the Bun runtime)
-
-No Cloudflare account is needed for local development: D1/KV run locally via miniflare with state in `apps/web/.wrangler/state`, shared between the dev server and the `wrangler --local` CLI.
+One Cloudflare Worker serves static assets + TanStack Start SSR + two typed server
+functions. D1 (Drizzle) is the source of truth; each publish writes an **immutable,
+versioned catalog snapshot** to KV that ships to the client once and powers all
+list/filter/rank interactions through pure shared selectors. Scores are computed at
+publish time (`validate → derive → seed → snapshot → version bump`); the version bump
+*is* cache invalidation. The index formula, hardware-fit thresholds and snapshot schema
+are golden-tested contracts (`packages/shared`).
 
 ## Development
+
+Prereqs: **Bun ≥ 1.3** and **Node ≥ 24** (wrangler/vite/vitest run under Node — never
+under the Bun runtime). No Cloudflare account needed: D1/KV run locally via miniflare,
+shared between the dev server and the wrangler CLI.
 
 ```sh
 bun install
 bun run publish-data:local   # validate → derive → seed local D1 → snapshot to local KV
-bun run dev                  # app on http://localhost:3000
-bun run ci                   # typecheck + lint + tests + build (exactly what CI runs)
+bun run dev                  # http://localhost:3000
 ```
 
-*(Commands land incrementally with the milestones; this README is finalized at ship readiness.)*
+| Command | What it does |
+|---|---|
+| `bun run ci` | typecheck → lint → unit tests → build → perf budgets (exactly what CI runs) |
+| `bun run e2e` | publish local data, then Playwright against the **built** preview in workerd |
+| `bun run validate-data` | Zod + cross-file integrity gates over `data/` |
+| `bun run derive` | recompute `data/derived/scores.json` (committed, reviewable) |
+| `bun run publish-data:local` | full local publish pipeline (idempotent) |
+| `bun run deploy:staging` / `:production` | credential-gated real deploys — see [docs/DEPLOY.md](docs/DEPLOY.md) |
 
 ## Repository layout
 
 ```
-apps/web/          TanStack Start app (routes, components, server functions)
-packages/shared/   Zod schemas, scoring engine, hardware-fit engine, formatters
-packages/db/       Drizzle schema + migrations
-data/              curated dataset (the repo is the CMS)
-scripts/           validate / derive / seed / snapshot / publish pipeline
-docs/              design handoff, decisions, deploy runbook
+apps/web/          TanStack Start app (routes, screens, server fns, e2e specs)
+packages/shared/   Zod schemas · scoring engine · hardware-fit engine · selectors · formatters
+packages/db/       Drizzle schema + migrations (applied via wrangler)
+data/              curated dataset — the repo is the CMS (see CONTRIBUTING.md)
+scripts/           validate / derive / seed / snapshot / publish / budgets / deploy
+docs/              design handoff · DECISIONS.md · DEPLOY.md
 ```
+
+## Data & contributions
+
+The dataset is curated, versioned and validated in git — numbers are point-in-time
+approximations with per-result provenance, disclosed on `/methodology`. To add a model
+or benchmark (or fix a score), see [CONTRIBUTING.md](CONTRIBUTING.md): CI enforces the
+gates, and the derived-scores diff in your PR shows exactly how rankings move.

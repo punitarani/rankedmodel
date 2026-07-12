@@ -24,7 +24,10 @@
     "seed:local": "bun scripts/src/seed.ts --local",
     "publish-data:local": "bun scripts/src/publish-data.ts --local",
     "e2e": "bun run publish-data:local && bun run --filter '@rankedmodel/web' test:e2e",
-    "budgets": "bun scripts/src/check-budgets.ts"
+    "budgets": "bun scripts/src/check-budgets.ts",
+    "deploy:staging": "bun scripts/src/deploy.ts staging",
+    "deploy:production": "bun scripts/src/deploy.ts production",
+    "publish-data:remote": "bun scripts/src/publish-data.ts --remote"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.0",

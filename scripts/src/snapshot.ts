@@ -24,7 +24,12 @@ const SNAPSHOT_GZIP_BUDGET = 1.5 * 1024 * 1024
 const WEB_DIR = resolve(import.meta.dirname, '..', '..', 'apps', 'web')
 
 function wrangler(args: string[], opts: { json?: boolean } = {}): string {
-  const res = spawnSync('bunx', ['wrangler', ...args], {
+  // remote publishes against a named env (deploy.ts sets RANKEDMODEL_ENV)
+  const envFlag =
+    args.includes('--remote') && process.env.RANKEDMODEL_ENV
+      ? ['--env', process.env.RANKEDMODEL_ENV]
+      : []
+  const res = spawnSync('bunx', ['wrangler', ...args, ...envFlag], {
     cwd: WEB_DIR,
     encoding: 'utf8',
     stdio: ['ignore', 'pipe', opts.json ? 'ignore' : 'inherit'],
