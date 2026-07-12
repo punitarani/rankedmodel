@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+.tanstack/
+*.tsbuildinfo
+
+# cloudflare local state
+.wrangler/
+.dev.vars*
+
+# env
+.env
+.env.*
+
+# test artifacts
+test-results/
+playwright-report/
+coverage/
+
+# design handoff archive (extracted copy lives in docs/design-handoff/)
+*.zip
+
+# local session tooling
+.remember/
+
+# os
+.DS_Store

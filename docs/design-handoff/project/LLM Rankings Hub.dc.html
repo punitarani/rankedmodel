@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="data/llm-data.js"></script>
+  <style>
+    :root{
+      --bg:#0b0b0d; --panel:#101013; --panel2:#17171b; --card:#121216;
+      --border:#222229; --border2:#2e2e37;
+      --text:#ececf1; --mut:#9a9aa5; --dim:#60606b;
+      --acc:#7aa7ff; --accdim:rgba(122,167,255,.13);
+      --open:#4cc38a; --opendim:rgba(76,195,138,.13);
+      --closed:#b491f5; --closeddim:rgba(180,145,245,.14);
+      --bar:#26262e; --hover:#1a1a20;
+    }
+    body.light{
+      --bg:#f6f6f7; --panel:#ffffff; --panel2:#f0f0f2; --card:#ffffff;
+      --border:#e4e4e8; --border2:#d2d2d9;
+      --text:#191920; --mut:#5f5f6b; --dim:#9c9ca4;
+      --acc:#3565c8; --accdim:rgba(53,101,200,.09);
+      --open:#178a56; --opendim:rgba(23,138,86,.1);
+      --closed:#7a50d6; --closeddim:rgba(122,80,214,.1);
+      --bar:#e9e9ee; --hover:#f2f2f5;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:var(--acc);text-decoration:none}
+    a:hover{color:var(--acc);text-decoration:underline}
+    input,select,button{font-family:inherit;color:inherit}
+    select{background:var(--panel2);border:1px solid var(--border);border-radius:6px;padding:5px 8px;font-size:12px;outline:none}
+    select:focus{border-color:var(--acc)}
+    input[type="text"]{outline:none}
+    ::selection{background:var(--accdim)}
+    ::-webkit-scrollbar{width:10px;height:10px}
+    ::-webkit-scrollbar-thumb{background:var(--border2);border-radius:5px}
+    ::-webkit-scrollbar-track{background:transparent}
+    @keyframes fadeup{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  </style>
+</helmet>
+
+<div style="display:flex;min-height:100vh;background:var(--bg)">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside style="width:210px;flex:none;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;border-right:1px solid var(--border);background:var(--panel)">
+    <a href="#/dashboard" style="display:flex;align-items:center;gap:9px;padding:16px 16px 14px;text-decoration:none;color:var(--text)">
+      <span style="width:22px;height:22px;border-radius:6px;background:var(--acc);display:flex;align-items:center;justify-content:center;font-family:'Geist Mono',monospace;font-size:11px;font-weight:600;color:#0b0b0d">λ</span>
+      <span style="font-weight:600;font-size:14px;letter-spacing:-.01em">Modelboard</span>
+    </a>
+    <div style="padding:2px 8px;display:flex;flex-direction:column;gap:1px">
+      <sc-for list="{{ navItems }}" as="it" hint-placeholder-count="5">
+        <a href="{{ it.href }}" style="display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:6px;font-size:13px;text-decoration:none;color:{{ it.color }};background:{{ it.bg }};font-weight:{{ it.weight }}" style-hover="background:var(--hover);text-decoration:none">
+          <span style="font-family:'Geist Mono',monospace;font-size:11px;width:14px;color:{{ it.iconColor }}">{{ it.icon }}</span>
+          {{ it.label }}
+        </a>
+      </sc-for>
+    </div>
+    <div style="margin-top:auto;padding:14px 16px;border-top:1px solid var(--border)">
+      <div style="font-family:'Geist Mono',monospace;font-size:10px;color:var(--dim);line-height:1.6">{{ modelCount }} models · {{ orgCount }} orgs<br>snapshot · {{ asOf }}</div>
+      <div style="font-size:10px;color:var(--dim);margin-top:6px;line-height:1.5">Curated prototype dataset — numbers are approximations, not live feeds.</div>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main style="flex:1;min-width:0;display:flex;flex-direction:column">
+
+    <!-- topbar -->
+    <div style="position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:14px;padding:10px 24px;border-bottom:1px solid var(--border);background:var(--bg)">
+      <div style="font-size:13px;font-weight:600;letter-spacing:-.01em;white-space:nowrap">{{ pageTitle }}</div>
+      <div style="position:relative;flex:1;max-width:420px;margin-left:auto">
+        <input type="text" value="{{ q }}" onInput="{{ setQ }}" placeholder="Search models, orgs…  ( / )" style="width:100%;background:var(--panel2);border:1px solid var(--border);border-radius:7px;padding:6px 11px;font-size:12.5px;color:var(--text)" />
+        <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;top:34px;left:0;right:0;background:var(--panel);border:1px solid var(--border2);border-radius:8px;box-shadow:0 12px 32px rgba(0,0,0,.45);overflow:hidden;animation:fadeup .12s ease">
+            <sc-for list="{{ results }}" as="r" hint-placeholder-count="3">
+              <div onClick="{{ r.go }}" style="display:flex;align-items:baseline;gap:8px;padding:8px 12px;cursor:pointer;border-bottom:1px solid var(--border)" style-hover="background:var(--hover)">
+                <span style="font-size:12.5px;font-weight:600">{{ r.name }}</span>
+                <span style="font-size:11px;color:var(--mut)">{{ r.org }}</span>
+                <span style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:10.5px;color:{{ r.tagColor }}">{{ r.tag }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+      </div>
+      <button onClick="{{ toggleTheme }}" style="background:var(--panel2);border:1px solid var(--border);border-radius:7px;padding:6px 11px;font-size:11.5px;color:var(--mut);cursor:pointer;white-space:nowrap" style-hover="color:var(--text);border-color:var(--border2)">{{ themeLabel }}</button>
+    </div>
+
+    <!-- ================= DASHBOARD ================= -->
+    <sc-if value="{{ isDash }}" hint-placeholder-val="{{ true }}">
+      <div data-screen-label="Dashboard" style="padding:20px 24px 40px;animation:fadeup .18s ease">
+
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+          <div>
+            <div style="font-size:18px;font-weight:600;letter-spacing:-.02em">The state of language models</div>
+            <div style="font-size:12px;color:var(--mut);margin-top:2px">Rankings, releases and benchmark movement · updated {{ asOf }}</div>
+          </div>
+          <div style="margin-left:auto;display:flex;gap:2px;background:var(--panel2);border:1px solid var(--border);border-radius:7px;padding:2px">
+            <sc-for list="{{ dashTabs }}" as="t" hint-placeholder-count="3">
+              <button onClick="{{ t.on }}" style="border:none;border-radius:5px;padding:5px 12px;font-size:11.5px;cursor:pointer;background:{{ t.bg }};color:{{ t.color }};font-weight:{{ t.weight }}">{{ t.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+
+        <!-- stat strip (all variants) -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:18px">
+          <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:9px;padding:12px 14px">
+              <div style="font-family:'Geist Mono',monospace;font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em">{{ s.label }}</div>
+              <div style="font-size:20px;font-weight:600;margin-top:3px;letter-spacing:-.02em">{{ s.value }}</div>
+              <div style="font-size:11px;color:{{ s.subColor }};margin-top:1px">{{ s.sub }}</div>
+            </div>
+          </sc-for>
+        </div>
+
+        <!-- ===== variant: OVERVIEW ===== -->
+        <sc-if value="{{ dashOverview }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:minmax(0,1.9fr) minmax(280px,1fr);gap:14px;align-items:start">
+            <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+
+              <!-- scatter -->
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px">
+                <div style="display:flex;align-items:baseline;gap:10px">
+                  <div style="font-size:13px;font-weight:600">Quality vs. price</div>
+                  <div style="font-size:11px;color:var(--mut)">Arena Elo against output price, log scale</div>
+                  <div style="margin-left:auto;display:flex;gap:12px;font-size:11px;color:var(--mut)">
+                    <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;border-radius:50%;background:var(--open)"></span>Open weights</span>
+                    <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;border-radius:50%;background:var(--closed)"></span>Closed</span>
+                  </div>
+                </div>
+                <svg viewBox="0 0 720 320" style="width:100%;height:auto;margin-top:8px;display:block">
+                  <sc-for list="{{ scatterYTicks }}" as="t" hint-placeholder-count="4">
+                    <g><line x1="46" x2="712" y1="{{ t.y }}" y2="{{ t.y }}" stroke="var(--border)" stroke-width="1"></line>
+                    <text x="40" y="{{ t.ty }}" text-anchor="end" font-size="10" fill="var(--dim)" font-family="Geist Mono,monospace">{{ t.label }}</text></g>
+                  </sc-for>
+                  <sc-for list="{{ scatterXTicks }}" as="t" hint-placeholder-count="4">
+                    <text x="{{ t.x }}" y="314" text-anchor="middle" font-size="10" fill="var(--dim)" font-family="Geist Mono,monospace">{{ t.label }}</text>
+                  </sc-for>
+                  <sc-for list="{{ scatterPts }}" as="p" hint-placeholder-count="10">
+                    <circle cx="{{ p.cx }}" cy="{{ p.cy }}" r="5" fill="{{ p.fill }}" fill-opacity="0.75" stroke="var(--bg)" stroke-width="1" style="cursor:pointer" onClick="{{ p.go }}"><title>{{ p.tip }}</title></circle>
+                  </sc-for>
+                  <sc-for list="{{ scatterLabels }}" as="p" hint-placeholder-count="4">
+                    <text x="{{ p.x }}" y="{{ p.y }}" font-size="10" fill="var(--mut)" font-family="Geist,sans-serif">{{ p.name }}</text>
+                  </sc-for>
+                </svg>
+              </div>
+
+              <!-- latest releases -->
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden">
+                <div style="display:flex;align-items:baseline;padding:13px 16px 10px">
+                  <div style="font-size:13px;font-weight:600">Latest releases</div>
+                  <a href="#/models" style="margin-left:auto;font-size:11.5px">Model explorer →</a>
+                </div>
+                <sc-for list="{{ latest }}" as="m" hint-placeholder-count="6">
+                  <div onClick="{{ m.go }}" style="display:grid;grid-template-columns:92px minmax(0,1.5fr) 1fr 90px 70px;gap:10px;align-items:center;padding:8px 16px;border-top:1px solid var(--border);cursor:pointer;font-size:12.5px" style-hover="background:var(--hover)">
+                    <span style="font-family:'Geist Mono',monospace;font-size:11px;color:var(--dim)">{{ m.date }}</span>
+                    <span style="font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ m.name }}</span>
+                    <span style="color:var(--mut);font-size:12px">{{ m.org }}</span>
+                    <span style="font-family:'Geist Mono',monospace;font-size:10.5px;color:{{ m.tagColor }}">{{ m.tag }}</span>
+                    <span style="font-family:'Geist Mono',monospace;font-size:11.5px;text-align:right;color:var(--text)">{{ m.index }}</span>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+
+            <!-- right rail -->
+            <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px">
+                <div style="display:flex;align-items:baseline">
+                  <div style="font-size:13px;font-weight:600">Arena leaderboard</div>
+                  <a href="#/rankings" style="margin-left:auto;font-size:11.5px">All rankings →</a>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:7px;margin-top:11px">
+                  <sc-for list="{{ topArena }}" as="m" hint-placeholder-count="8">
+                    <div onClick="{{ m.go }}" style="cursor:pointer">
+                      <div style="display:flex;align-items:baseline;gap:7px;font-size:12px">
+                        <span style="font-family:'Geist Mono',monospace;font-size:10px;color:var(--dim);width:14px">{{ m.rank }}</span>
+                        <span style="font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ m.name }}</span>
+                        <span style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:11px;color:var(--mut)">{{ m.elo }}</span>
+                      </div>
+                      <div style="height:4px;border-radius:2px;background:var(--bar);margin-top:4px;margin-left:21px;overflow:hidden">
+                        <div style="height:100%;border-radius:2px;background:{{ m.barColor }};width:{{ m.pct }}%"></div>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px">
+                <div style="font-size:13px;font-weight:600">Biggest movers</div>
+                <div style="font-size:11px;color:var(--mut);margin-top:1px">Index gain over previous family release</div>
+                <div style="display:flex;flex-direction:column;gap:9px;margin-top:11px">
+                  <sc-for list="{{ movers }}" as="m" hint-placeholder-count="4">
+                    <div onClick="{{ m.go }}" style="display:flex;align-items:baseline;gap:8px;font-size:12px;cursor:pointer">
+                      <span style="font-weight:600">{{ m.name }}</span>
+                      <span style="color:var(--dim);font-size:11px">vs {{ m.prev }}</span>
+                      <span style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:11px;color:var(--open)">+{{ m.delta }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px">
+                <div style="font-size:13px;font-weight:600">Quick compare</div>
+                <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+                  <select value="{{ qcA }}" onChange="{{ setQcA }}" style="width:100%">
+                    <sc-for list="{{ modelOptions }}" as="o" hint-placeholder-count="3"><option value="{{ o.id }}">{{ o.label }}</option></sc-for>
+                  </select>
+                  <select value="{{ qcB }}" onChange="{{ setQcB }}" style="width:100%">
+                    <sc-for list="{{ modelOptions }}" as="o" hint-placeholder-count="3"><option value="{{ o.id }}">{{ o.label }}</option></sc-for>
+                  </select>
+                  <button onClick="{{ goQuickCompare }}" style="background:var(--acc);color:var(--bg);border:none;border-radius:6px;padding:7px;font-size:12px;font-weight:600;cursor:pointer">Compare →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- ===== variant: RELEASES feed ===== -->
+        <sc-if value="{{ dashFeed }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:minmax(0,2fr) minmax(280px,1fr);gap:14px;align-items:start">
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:6px 0">
+              <sc-for list="{{ feed }}" as="g" hint-placeholder-count="4">
+                <div>
+                  <div style="font-family:'Geist Mono',monospace;font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;padding:14px 18px 6px">{{ g.month }}</div>
+                  <sc-for list="{{ g.items }}" as="m" hint-placeholder-count="2">
+                    <div onClick="{{ m.go }}" style="display:flex;align-items:center;gap:12px;padding:9px 18px;cursor:pointer;border-left:2px solid transparent" style-hover="background:var(--hover)">
+                      <span style="width:7px;height:7px;flex:none;border-radius:50%;background:{{ m.dotColor }}"></span>
+                      <div style="min-width:0">
+                        <div style="font-size:13px;font-weight:600">{{ m.name }} <span style="font-weight:400;color:var(--mut);font-size:12px">· {{ m.org }}</span></div>
+                        <div style="font-size:11.5px;color:var(--mut);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ m.note }}</div>
+                      </div>
+                      <div style="margin-left:auto;text-align:right;flex:none">
+                        <div style="font-family:'Geist Mono',monospace;font-size:11.5px">{{ m.index }}</div>
+                        <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim)">INDEX</div>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+              </sc-for>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px">
+                <div style="font-size:13px;font-weight:600">Release cadence</div>
+                <div style="font-size:11px;color:var(--mut);margin-top:1px">Tracked releases per quarter</div>
+                <div style="display:flex;align-items:flex-end;gap:5px;height:90px;margin-top:14px">
+                  <sc-for list="{{ quarters }}" as="qt" hint-placeholder-count="8">
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px">
+                      <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--mut)">{{ qt.n }}</div>
+                      <div style="width:100%;border-radius:3px 3px 0 0;background:{{ qt.color }};height:{{ qt.h }}px"></div>
+                      <div style="font-family:'Geist Mono',monospace;font-size:8.5px;color:var(--dim);white-space:nowrap">{{ qt.label }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px">
+                <div style="font-size:13px;font-weight:600">Open vs closed frontier</div>
+                <div style="font-size:11px;color:var(--mut);margin-top:1px">Best Arena Elo by camp</div>
+                <div style="display:flex;flex-direction:column;gap:10px;margin-top:12px">
+                  <sc-for list="{{ frontierGap }}" as="f" hint-placeholder-count="2">
+                    <div>
+                      <div style="display:flex;font-size:12px;align-items:baseline"><span style="font-weight:600">{{ f.label }}</span><span style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:11px;color:var(--mut)">{{ f.name }} · {{ f.elo }}</span></div>
+                      <div style="height:5px;border-radius:3px;background:var(--bar);margin-top:5px;overflow:hidden"><div style="height:100%;background:{{ f.color }};width:{{ f.pct }}%"></div></div>
+                    </div>
+                  </sc-for>
+                  <div style="font-size:11.5px;color:var(--mut);line-height:1.5">{{ gapNote }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- ===== variant: BENCHMARKS grid ===== -->
+        <sc-if value="{{ dashBench }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px">
+            <sc-for list="{{ benchCards }}" as="b" hint-placeholder-count="6">
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:13px 15px">
+                <div style="display:flex;align-items:baseline;gap:8px">
+                  <div style="font-size:13px;font-weight:600">{{ b.name }}</div>
+                  <div style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em">{{ b.cat }}</div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:6px;margin-top:10px">
+                  <sc-for list="{{ b.top }}" as="m" hint-placeholder-count="5">
+                    <div onClick="{{ m.go }}" style="cursor:pointer">
+                      <div style="display:flex;font-size:11.5px;align-items:baseline;gap:6px">
+                        <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ m.name }}</span>
+                        <span style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:10.5px;color:var(--mut)">{{ m.v }}</span>
+                      </div>
+                      <div style="height:3px;border-radius:2px;background:var(--bar);margin-top:3px;overflow:hidden"><div style="height:100%;background:{{ m.color }};width:{{ m.pct }}%"></div></div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+      </div>
+    </sc-if>
+
+    <!-- ================= RANKINGS ================= -->
+    <sc-if value="{{ isRank }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Rankings" style="padding:20px 24px 40px;animation:fadeup .18s ease">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px">
+          <div>
+            <div style="font-size:18px;font-weight:600;letter-spacing:-.02em">Global rankings</div>
+            <div style="font-size:12px;color:var(--mut);margin-top:2px">{{ rankCount }} models · sorted by {{ rankSortLabel }} · click any column to re-sort</div>
+          </div>
+          <div style="margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <input type="text" value="{{ rankQ }}" onInput="{{ setRankQ }}" placeholder="Filter…" style="background:var(--panel2);border:1px solid var(--border);border-radius:6px;padding:5px 9px;font-size:12px;color:var(--text);width:140px" />
+            <select value="{{ rankOrg }}" onChange="{{ setRankOrg }}">
+              <sc-for list="{{ orgOptions }}" as="o" hint-placeholder-count="3"><option value="{{ o.id }}">{{ o.label }}</option></sc-for>
+            </select>
+            <div style="display:flex;gap:2px;background:var(--panel2);border:1px solid var(--border);border-radius:7px;padding:2px">
+              <sc-for list="{{ rankOpenTabs }}" as="t" hint-placeholder-count="3">
+                <button onClick="{{ t.on }}" style="border:none;border-radius:5px;padding:4px 10px;font-size:11.5px;cursor:pointer;background:{{ t.bg }};color:{{ t.color }};font-weight:{{ t.weight }}">{{ t.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;overflow-x:auto">
+          <div style="min-width:1020px">
+            <div style="display:grid;grid-template-columns:34px minmax(190px,1.6fr) 74px 62px 84px repeat(7,72px);gap:8px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--border2);position:sticky;top:0">
+              <span style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim)">#</span>
+              <button onClick="{{ sorters.name }}" style="all:unset;cursor:pointer;font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em">Model</button>
+              <button onClick="{{ sorters.params }}" style="all:unset;cursor:pointer;font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;text-align:right">Params</button>
+              <button onClick="{{ sorters.ctx }}" style="all:unset;cursor:pointer;font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;text-align:right">Ctx</button>
+              <button onClick="{{ sorters.index }}" style="all:unset;cursor:pointer;font-family:'Geist Mono',monospace;font-size:9.5px;color:{{ idxHeadColor }};text-transform:uppercase;letter-spacing:.05em;text-align:right">Index {{ idxArrow }}</button>
+              <sc-for list="{{ rankCols }}" as="c" hint-placeholder-count="7">
+                <button onClick="{{ c.on }}" style="all:unset;cursor:pointer;font-family:'Geist Mono',monospace;font-size:9.5px;color:{{ c.color }};text-transform:uppercase;letter-spacing:.05em;text-align:right;white-space:nowrap">{{ c.label }} {{ c.arrow }}</button>
+              </sc-for>
+            </div>
+            <sc-for list="{{ rankRows }}" as="r" hint-placeholder-count="12">
+              <div onClick="{{ r.go }}" style="display:grid;grid-template-columns:34px minmax(190px,1.6fr) 74px 62px 84px repeat(7,72px);gap:8px;align-items:center;padding:7px 14px;border-bottom:1px solid var(--border);cursor:pointer;font-size:12.5px" style-hover="background:var(--hover)">
+                <span style="font-family:'Geist Mono',monospace;font-size:11px;color:var(--dim)">{{ r.rank }}</span>
+                <span style="display:flex;align-items:baseline;gap:7px;min-width:0">
+                  <span style="font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.name }}</span>
+                  <span style="font-size:11px;color:var(--mut);flex:none">{{ r.org }}</span>
+                  <span style="font-family:'Geist Mono',monospace;font-size:9px;flex:none;padding:1px 5px;border-radius:4px;color:{{ r.tagColor }};background:{{ r.tagBg }}">{{ r.tag }}</span>
+                </span>
+                <span style="font-family:'Geist Mono',monospace;font-size:11px;color:var(--mut);text-align:right">{{ r.params }}</span>
+                <span style="font-family:'Geist Mono',monospace;font-size:11px;color:var(--mut);text-align:right">{{ r.ctx }}</span>
+                <span style="text-align:right">
+                  <span style="font-family:'Geist Mono',monospace;font-size:11.5px;font-weight:600">{{ r.index }}</span>
+                  <span style="display:block;height:3px;border-radius:2px;background:var(--bar);margin-top:3px;overflow:hidden"><span style="display:block;height:100%;background:var(--acc);width:{{ r.indexPct }}%"></span></span>
+                </span>
+                <sc-for list="{{ r.bcells }}" as="c" hint-placeholder-count="7">
+                  <span style="text-align:right">
+                    <span style="font-family:'Geist Mono',monospace;font-size:11px;color:{{ c.color }}">{{ c.v }}</span>
+                    <span style="display:block;height:3px;border-radius:2px;background:var(--bar);margin-top:3px;overflow:hidden"><span style="display:block;height:100%;background:{{ c.barColor }};width:{{ c.pct }}%"></span></span>
+                  </span>
+                </sc-for>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--dim);margin-top:10px">Index = normalized mean across all available benchmarks (0–100). Missing scores are excluded, not penalized.</div>
+      </div>
+    </sc-if>
+
+    <!-- ================= EXPLORER ================= -->
+    <sc-if value="{{ isExplore }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Model Explorer" style="display:flex;align-items:flex-start;gap:0;animation:fadeup .18s ease">
+        <!-- filter rail -->
+        <div style="width:228px;flex:none;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;border-right:1px solid var(--border);padding:18px 16px 30px;display:flex;flex-direction:column;gap:16px">
+          <input type="text" value="{{ exQ }}" onInput="{{ setExQ }}" placeholder="Filter models…" style="background:var(--panel2);border:1px solid var(--border);border-radius:6px;padding:6px 9px;font-size:12px;color:var(--text)" />
+          <div>
+            <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px">Weights</div>
+            <div style="display:flex;gap:2px;background:var(--panel2);border:1px solid var(--border);border-radius:7px;padding:2px">
+              <sc-for list="{{ exOpenTabs }}" as="t" hint-placeholder-count="3">
+                <button onClick="{{ t.on }}" style="flex:1;border:none;border-radius:5px;padding:4px 0;font-size:11px;cursor:pointer;background:{{ t.bg }};color:{{ t.color }};font-weight:{{ t.weight }}">{{ t.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+          <div>
+            <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px">Organization</div>
+            <select value="{{ exOrg }}" onChange="{{ setExOrg }}" style="width:100%">
+              <sc-for list="{{ orgOptions }}" as="o" hint-placeholder-count="3"><option value="{{ o.id }}">{{ o.label }}</option></sc-for>
+            </select>
+          </div>
+          <div>
+            <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px">Total parameters</div>
+            <select value="{{ exSize }}" onChange="{{ setExSize }}" style="width:100%">
+              <option value="any">Any size</option>
+              <option value="s">&lt; 15B — laptop class</option>
+              <option value="m">15–70B — single GPU</option>
+              <option value="l">70–300B — workstation</option>
+              <option value="xl">&gt; 300B — cluster</option>
+              <option value="undisclosed">Undisclosed (closed)</option>
+            </select>
+          </div>
+          <div>
+            <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px">Runs on my hardware</div>
+            <select value="{{ exGpu }}" onChange="{{ setExGpu }}" style="width:100%">
+              <option value="none">Any hardware / API</option>
+              <sc-for list="{{ gpuOptions }}" as="g" hint-placeholder-count="3"><option value="{{ g.id }}">{{ g.label }}</option></sc-for>
+            </select>
+            <div style="font-size:10.5px;color:var(--dim);margin-top:5px;line-height:1.45">Filters open models whose Q4 quant fits in VRAM/unified memory.</div>
+          </div>
+          <div>
+            <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px">Capabilities</div>
+            <div style="display:flex;flex-wrap:wrap;gap:5px">
+              <sc-for list="{{ capChipsFilter }}" as="c" hint-placeholder-count="5">
+                <button onClick="{{ c.on }}" style="border:1px solid {{ c.border }};background:{{ c.bg }};color:{{ c.color }};border-radius:20px;padding:3px 10px;font-size:11px;cursor:pointer">{{ c.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+          <button onClick="{{ exReset }}" style="all:unset;cursor:pointer;font-size:11.5px;color:var(--mut);text-decoration:underline">Reset filters</button>
+        </div>
+
+        <!-- results -->
+        <div style="flex:1;min-width:0;padding:18px 24px 40px">
+          <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:13px">
+            <div style="font-size:14px;font-weight:600">{{ exCount }} models</div>
+            <div style="margin-left:auto;display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--mut)">Sort
+              <select value="{{ exSort }}" onChange="{{ setExSort }}">
+                <option value="index">Index score</option>
+                <option value="date">Newest first</option>
+                <option value="params">Largest first</option>
+                <option value="cheap">Cheapest API</option>
+              </select>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:11px">
+            <sc-for list="{{ exCards }}" as="m" hint-placeholder-count="9">
+              <div onClick="{{ m.go }}" style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:13px 15px;cursor:pointer;display:flex;flex-direction:column;gap:8px" style-hover="border-color:var(--border2);background:var(--hover)">
+                <div style="display:flex;align-items:baseline;gap:8px">
+                  <div style="font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ m.name }}</div>
+                  <span style="margin-left:auto;flex:none;font-family:'Geist Mono',monospace;font-size:9px;padding:1px 6px;border-radius:4px;color:{{ m.tagColor }};background:{{ m.tagBg }}">{{ m.tag }}</span>
+                </div>
+                <div style="font-size:11.5px;color:var(--mut)">{{ m.org }} · {{ m.date }}</div>
+                <div style="display:flex;gap:12px;font-family:'Geist Mono',monospace;font-size:10.5px;color:var(--mut)">
+                  <span>{{ m.params }}</span><span>{{ m.ctx }} ctx</span><span>{{ m.price }}</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;margin-top:2px">
+                  <div style="flex:1;height:4px;border-radius:2px;background:var(--bar);overflow:hidden"><div style="height:100%;background:var(--acc);width:{{ m.indexPct }}%"></div></div>
+                  <span style="font-family:'Geist Mono',monospace;font-size:11px;font-weight:600">{{ m.index }}</span>
+                </div>
+                <div style="display:flex;flex-wrap:wrap;gap:4px">
+                  <sc-for list="{{ m.chips }}" as="c" hint-placeholder-count="3">
+                    <span style="font-size:10px;color:var(--mut);border:1px solid var(--border);border-radius:4px;padding:1px 6px">{{ c }}</span>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ================= MODEL DETAIL ================= -->
+    <sc-if value="{{ isModel }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Model detail" style="padding:20px 24px 48px;max-width:1060px;animation:fadeup .18s ease">
+        <sc-if value="{{ mFound }}" hint-placeholder-val="{{ true }}">
+          <a href="#/models" style="font-size:11.5px;color:var(--mut)">← Model explorer</a>
+          <div style="display:flex;align-items:flex-start;gap:14px;margin-top:10px;flex-wrap:wrap">
+            <div style="min-width:0">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+                <h1 style="margin:0;font-size:24px;font-weight:600;letter-spacing:-.02em">{{ mName }}</h1>
+                <span style="font-family:'Geist Mono',monospace;font-size:10px;padding:2px 8px;border-radius:5px;color:{{ mTagColor }};background:{{ mTagBg }}">{{ mTag }}</span>
+              </div>
+              <div style="font-size:13px;color:var(--mut);margin-top:4px">{{ mOrg }} · {{ mFamily }} family · released {{ mDate }}</div>
+              <div style="font-size:12.5px;color:var(--text);margin-top:8px;max-width:620px;line-height:1.55">{{ mNote }}</div>
+              <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:10px">
+                <sc-for list="{{ mCaps }}" as="c" hint-placeholder-count="4">
+                  <span style="font-size:10.5px;color:{{ c.color }};border:1px solid {{ c.border }};background:{{ c.bg }};border-radius:20px;padding:2px 9px">{{ c.label }}</span>
+                </sc-for>
+              </div>
+            </div>
+            <div style="margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex:none">
+              <div style="text-align:right">
+                <div style="font-family:'Geist Mono',monospace;font-size:26px;font-weight:600;letter-spacing:-.02em">{{ mIndex }}</div>
+                <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em">Index · rank {{ mIndexRank }}</div>
+              </div>
+              <button onClick="{{ mCompare }}" style="background:var(--acc);color:var(--bg);border:none;border-radius:6px;padding:7px 14px;font-size:12px;font-weight:600;cursor:pointer">Compare this model</button>
+            </div>
+          </div>
+
+          <!-- meta grid -->
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-top:20px">
+            <sc-for list="{{ mMeta }}" as="f" hint-placeholder-count="8">
+              <div style="background:var(--card);padding:11px 13px">
+                <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em">{{ f.label }}</div>
+                <div style="font-size:13px;font-weight:500;margin-top:3px">{{ f.value }}</div>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:14px;align-items:start;margin-top:14px">
+            <!-- benchmarks -->
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px">
+              <div style="font-size:13px;font-weight:600">Benchmark results</div>
+              <div style="font-size:11px;color:var(--mut);margin-top:1px">Bar shows position within the tracked field; marker = field best</div>
+              <div style="display:flex;flex-direction:column;gap:12px;margin-top:14px">
+                <sc-for list="{{ mBench }}" as="b" hint-placeholder-count="8">
+                  <div>
+                    <div style="display:flex;align-items:baseline;gap:8px;font-size:12px">
+                      <span style="font-weight:600">{{ b.name }}</span>
+                      <span style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase">{{ b.cat }}</span>
+                      <span style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:11.5px;font-weight:600">{{ b.v }}</span>
+                      <span style="font-family:'Geist Mono',monospace;font-size:10px;color:var(--dim)">#{{ b.rank }}</span>
+                    </div>
+                    <div style="position:relative;height:5px;border-radius:3px;background:var(--bar);margin-top:5px;overflow:visible">
+                      <div style="height:100%;border-radius:3px;background:{{ b.color }};width:{{ b.pct }}%"></div>
+                      <div title="Field best: {{ b.bestName }} ({{ b.bestV }})" style="position:absolute;top:-2.5px;width:2px;height:10px;background:var(--dim);border-radius:1px;left:{{ b.bestPct }}%"></div>
+                    </div>
+                    <div style="font-size:10.5px;color:var(--dim);margin-top:3px">best: {{ b.bestName }} · {{ b.bestV }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+              <!-- hardware -->
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px">
+                <div style="font-size:13px;font-weight:600">Run it locally</div>
+                <sc-if value="{{ mIsLocal }}" hint-placeholder-val="{{ true }}">
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:11px">
+                    <div><div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase">VRAM @ Q4</div><div style="font-size:14px;font-weight:600;margin-top:2px">{{ mVramQ4 }}</div></div>
+                    <div><div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase">VRAM @ FP16</div><div style="font-size:14px;font-weight:600;margin-top:2px">{{ mVramFp16 }}</div></div>
+                  </div>
+                  <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;margin-top:12px">Fits on (Q4)</div>
+                  <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px">
+                    <sc-for list="{{ mFits }}" as="g" hint-placeholder-count="4">
+                      <span style="font-size:10.5px;color:{{ g.color }};border:1px solid var(--border);border-radius:4px;padding:2px 7px">{{ g.name }}</span>
+                    </sc-for>
+                  </div>
+                  <div style="font-size:11px;color:var(--mut);margin-top:10px;line-height:1.5">{{ mSpeed }}</div>
+                  <div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase;margin-top:10px">Quantizations</div>
+                  <div style="font-size:11.5px;color:var(--text);margin-top:4px;font-family:'Geist Mono',monospace">{{ mQuants }}</div>
+                </sc-if>
+                <sc-if value="{{ mIsApiOnly }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size:12px;color:var(--mut);margin-top:8px;line-height:1.55">Closed weights — available via API only. No local deployment.</div>
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:11px">
+                    <div><div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase">Input / M tok</div><div style="font-size:14px;font-weight:600;margin-top:2px">{{ mPriceIn }}</div></div>
+                    <div><div style="font-family:'Geist Mono',monospace;font-size:9.5px;color:var(--dim);text-transform:uppercase">Output / M tok</div><div style="font-size:14px;font-weight:600;margin-top:2px">{{ mPriceOut }}</div></div>
+                  </div>
+                </sc-if>
+              </div>
+
+              <!-- family -->
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px">
+                <div style="font-size:13px;font-weight:600">{{ mFamily }} family</div>
+                <div style="font-size:11px;color:var(--mut);margin-top:1px">Index progression across releases</div>
+                <svg viewBox="0 0 280 64" style="width:100%;height:auto;margin-top:10px;display:block">
+                  <polyline points="{{ famPoints }}" fill="none" stroke="var(--acc)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></polyline>
+                  <sc-for list="{{ famDots }}" as="d" hint-placeholder-count="3">
+                    <circle cx="{{ d.x }}" cy="{{ d.y }}" r="{{ d.r }}" fill="{{ d.fill }}" stroke="var(--card)" stroke-width="1.5"><title>{{ d.tip }}</title></circle>
+                  </sc-for>
+                </svg>
+                <div style="display:flex;flex-direction:column;gap:2px;margin-top:8px">
+                  <sc-for list="{{ famList }}" as="f" hint-placeholder-count="3">
+                    <div onClick="{{ f.go }}" style="display:flex;align-items:baseline;gap:8px;font-size:12px;padding:5px 8px;border-radius:6px;cursor:pointer;background:{{ f.bg }}" style-hover="background:var(--hover)">
+                      <span style="font-weight:{{ f.weight }}">{{ f.name }}</span>
+                      <span style="font-family:'Geist Mono',monospace;font-size:10px;color:var(--dim)">{{ f.date }}</span>
+                      <span style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:11px;color:var(--mut)">{{ f.index }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+
+              <!-- links -->
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px">
+                <div style="font-size:13px;font-weight:600;margin-bottom:9px">Resources</div>
+                <div style="display:flex;flex-direction:column;gap:6px;font-size:12.5px">
+                  <sc-for list="{{ mLinks }}" as="l" hint-placeholder-count="2">
+                    <a href="{{ l.href }}" target="_blank" rel="noopener" style="display:flex;gap:8px;align-items:baseline"><span style="font-family:'Geist Mono',monospace;font-size:10px;color:var(--dim);width:44px;flex:none">{{ l.kind }}</span>{{ l.label }}</a>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ mMissing }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:60px 0;text-align:center;color:var(--mut);font-size:13px">Model not found. <a href="#/models">Back to explorer</a></div>
+        </sc-if>
+      </div>
+    </sc-if>
+
+    <!-- ================= COMPARE ================= -->
+    <sc-if value="{{ isCompare }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Compare" style="padding:20px 24px 48px;max-width:1100px;animation:fadeup .18s ease">
+        <div style="font-size:18px;font-weight:600;letter-spacing:-.02em">Compare models</div>
+        <div style="font-size:12px;color:var(--mut);margin-top:2px">Side by side across specs, benchmarks and capability profile. Best value per row is highlighted.</div>
+
+        <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+          <sc-for list="{{ cmpSelects }}" as="s" hint-placeholder-count="3">
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <span style="font-family:'Geist Mono',monospace;font-size:9.5px;color:{{ s.color }};text-transform:uppercase;letter-spacing:.06em">{{ s.label }}</span>
+              <select value="{{ s.value }}" onChange="{{ s.on }}" style="min-width:210px">
+                <option value="">— none —</option>
+                <sc-for list="{{ modelOptions }}" as="o" hint-placeholder-count="3"><option value="{{ o.id }}">{{ o.label }}</option></sc-for>
+              </select>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,1fr);gap:14px;align-items:start;margin-top:18px">
+          <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+            <!-- specs -->
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden">
+              <div style="font-size:13px;font-weight:600;padding:13px 16px 9px">Specifications</div>
+              <sc-for list="{{ cmpSpecRows }}" as="r" hint-placeholder-count="10">
+                <div style="display:grid;grid-template-columns:150px repeat(3,minmax(0,1fr));gap:8px;padding:7px 16px;border-top:1px solid var(--border);font-size:12px;align-items:baseline">
+                  <span style="color:var(--mut);font-size:11.5px">{{ r.label }}</span>
+                  <sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="3">
+                    <span title="{{ c.v }}" style="font-family:'Geist Mono',monospace;font-size:11.5px;color:{{ c.color }};font-weight:{{ c.weight }};min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ c.v }}</span>
+                  </sc-for>
+                </div>
+              </sc-for>
+            </div>
+            <!-- benchmarks -->
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden">
+              <div style="font-size:13px;font-weight:600;padding:13px 16px 9px">Benchmarks</div>
+              <sc-for list="{{ cmpBenchRows }}" as="r" hint-placeholder-count="9">
+                <div style="display:grid;grid-template-columns:150px repeat(3,minmax(0,1fr));gap:8px;padding:8px 16px;border-top:1px solid var(--border);font-size:12px;align-items:center">
+                  <span style="color:var(--mut);font-size:11.5px">{{ r.label }}</span>
+                  <sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="3">
+                    <span style="min-width:0">
+                      <span style="display:block;font-family:'Geist Mono',monospace;font-size:11.5px;color:{{ c.color }};font-weight:{{ c.weight }};overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ c.v }}</span>
+                      <span style="display:block;height:3px;border-radius:2px;background:var(--bar);margin-top:3px;overflow:hidden;max-width:110px"><span style="display:block;height:100%;background:{{ c.barColor }};width:{{ c.pct }}%"></span></span>
+                    </span>
+                  </sc-for>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <!-- radar -->
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;position:sticky;top:63px">
+            <div style="font-size:13px;font-weight:600">Capability profile</div>
+            <div style="font-size:11px;color:var(--mut);margin-top:1px">Normalized against the tracked field</div>
+            <svg viewBox="0 0 280 260" style="width:100%;height:auto;margin-top:6px;display:block">
+              <sc-for list="{{ radarRings }}" as="r" hint-placeholder-count="4">
+                <polygon points="{{ r }}" fill="none" stroke="var(--border)" stroke-width="1"></polygon>
+              </sc-for>
+              <sc-for list="{{ radarAxes }}" as="a" hint-placeholder-count="6">
+                <g><line x1="140" y1="126" x2="{{ a.x2 }}" y2="{{ a.y2 }}" stroke="var(--border)" stroke-width="1"></line>
+                <text x="{{ a.lx }}" y="{{ a.ly }}" text-anchor="{{ a.anchor }}" font-size="9.5" fill="var(--dim)" font-family="Geist Mono,monospace">{{ a.label }}</text></g>
+              </sc-for>
+              <sc-for list="{{ radarPolys }}" as="p" hint-placeholder-count="2">
+                <polygon points="{{ p.pts }}" fill="{{ p.fill }}" fill-opacity="0.14" stroke="{{ p.stroke }}" stroke-width="1.8" stroke-linejoin="round"></polygon>
+              </sc-for>
+            </svg>
+            <div style="display:flex;flex-direction:column;gap:5px;margin-top:8px">
+              <sc-for list="{{ radarLegend }}" as="l" hint-placeholder-count="2">
+                <div style="display:flex;align-items:baseline;gap:7px;font-size:12px">
+                  <span style="width:9px;height:9px;border-radius:3px;background:{{ l.color }};align-self:center"></span>
+                  <span style="font-weight:600">{{ l.name }}</span>
+                  <span style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:11px;color:var(--mut)">{{ l.index }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: null,
+  &quot;dashboardLayout&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;overview&quot;, &quot;feed&quot;, &quot;bench&quot;], &quot;default&quot;: &quot;overview&quot;, &quot;tsType&quot;: &quot;'overview'|'feed'|'bench'&quot;, &quot;section&quot;: &quot;Layout&quot; },
+  &quot;defaultTheme&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;dark&quot;, &quot;light&quot;], &quot;default&quot;: &quot;dark&quot;, &quot;tsType&quot;: &quot;'dark'|'light'&quot;, &quot;section&quot;: &quot;Layout&quot; }
+}">
+class Component extends DCLogic {
+  state = {
+    hash: (typeof location !== 'undefined' && location.hash) || '#/dashboard',
+    theme: null, dashV: null,
+    q: '',
+    rankSort: 'index', rankDir: -1, rankOpen: 'all', rankOrg: 'all', rankQ: '',
+    exQ: '', exOpen: 'all', exOrg: 'all', exSize: 'any', exGpu: 'none', exSort: 'index',
+    exCaps: { reason: 0, vision: 0, fc: 0, agent: 0, tools: 0 },
+    qcA: 'claude-opus-4-8', qcB: 'deepseek-v4-5',
+    cmp: ['claude-opus-4-8', 'deepseek-v4-5', ''],
+    dataReady: !!(typeof window !== 'undefined' && window.LLMDATA)
+  };
+
+  componentDidMount() {
+    this._onHash = () => this.setState({ hash: location.hash || '#/dashboard' });
+    window.addEventListener('hashchange', this._onHash);
+    this._onKey = (e) => {
+      if (e.key === '/' && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) {
+        e.preventDefault();
+        const el = document.querySelector('input[placeholder^="Search"]');
+        if (el) el.focus();
+      }
+    };
+    window.addEventListener('keydown', this._onKey);
+    const saved = localStorage.getItem('llmhub.theme');
+    if (saved) this.setState({ theme: saved });
+    this._pollData();
+    this._applyTheme(saved || this.props.defaultTheme || 'dark');
+  }
+  componentWillUnmount() {
+    window.removeEventListener('hashchange', this._onHash);
+    window.removeEventListener('keydown', this._onKey);
+  }
+  _pollData() {
+    if (window.LLMDATA) { if (!this.state.dataReady) this.setState({ dataReady: true }); return; }
+    setTimeout(() => this._pollData(), 60);
+  }
+  _applyTheme(t) { document.body.classList.toggle('light', t === 'light'); }
+  get theme() { return this.state.theme || this.props.defaultTheme || 'dark'; }
+  get data() { return window.LLMDATA || { MODELS: [], BENCHMARKS: [], GPUS: [], ASOF: '' }; }
+
+  // ---------- helpers ----------
+  bmeta(id) { return this.data.BENCHMARKS.find(b => b.id === id); }
+  norm(id, v) {
+    if (v == null) return null;
+    const b = this.bmeta(id); if (!b) return null;
+    return Math.max(0, Math.min(1, (v - b.min) / (b.max - b.min)));
+  }
+  index(m) {
+    let s = 0, n = 0;
+    for (const b of this.data.BENCHMARKS) {
+      const nv = this.norm(b.id, m.bench[b.id]);
+      if (nv != null) { s += nv; n++; }
+    }
+    return n ? Math.round((s / n) * 1000) / 10 : 0;
+  }
+  fmtParams(m) { return m.params == null ? '—' : (m.active ? m.params + 'B·' + m.active + 'Ba' : m.params + 'B'); }
+  fmtCtx(m) { return m.ctx >= 1000 ? (m.ctx / 1000) + 'M' : m.ctx + 'K'; }
+  fmtDate(d, long) {
+    const [y, mo] = d.split('-');
+    const names = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return names[+mo - 1] + (long ? ' ' + (+d.split('-')[2]) + ', ' : ' ') + y;
+  }
+  fmtPrice(m) { return m.price ? '$' + m.price.i + '/$' + m.price.o : (m.open ? 'weights' : '—'); }
+  go(id) { return () => { location.hash = '#/model/' + id; window.scrollTo(0, 0); }; }
+  tagOf(m) { return m.open ? { tag: 'OPEN', tagColor: 'var(--open)', tagBg: 'var(--opendim)' } : { tag: 'CLOSED', tagColor: 'var(--closed)', tagBg: 'var(--closeddim)' }; }
+
+  // radar axes: label + value fn
+  radarVal(m, axis) {
+    const nz = (id) => this.norm(id, m.bench[id]);
+    const avg = (a) => { const v = a.filter(x => x != null); return v.length ? v.reduce((x, y) => x + y) / v.length : 0; };
+    switch (axis) {
+      case 'KNOW': return avg([nz('mmlu')]);
+      case 'REASON': return avg([nz('gpqa'), nz('hle')]);
+      case 'CODE': return avg([nz('swe'), nz('lcb')]);
+      case 'MATH': return avg([nz('aime'), nz('math')]);
+      case 'AGENT': return avg([nz('tau')]);
+      case 'PREF': return avg([nz('arena')]);
+    }
+    return 0;
+  }
+
+  renderVals() {
+    const D = this.data;
+    const models = D.MODELS;
+    const withIndex = models.map(m => ({ m, index: this.index(m) }));
+    const idxSorted = [...withIndex].sort((a, b) => b.index - a.index);
+    const idxRank = (id) => idxSorted.findIndex(x => x.m.id === id) + 1;
+    const S = this.state;
+    const setS = (o) => this.setState(o);
+
+    // ---------- route ----------
+    const segs = S.hash.replace(/^#\/?/, '').split('/');
+    const page = segs[0] || 'dashboard';
+    const modelId = page === 'model' ? segs[1] : null;
+    const titles = { dashboard: 'Dashboard', rankings: 'Global Rankings', models: 'Model Explorer', model: 'Model', compare: 'Compare' };
+
+    // ---------- nav ----------
+    const navDef = [
+      { label: 'Dashboard', href: '#/dashboard', icon: '◧', key: 'dashboard' },
+      { label: 'Rankings', href: '#/rankings', icon: '↕', key: 'rankings' },
+      { label: 'Model Explorer', href: '#/models', icon: '▤', key: 'models' },
+      { label: 'Compare', href: '#/compare', icon: '⇄', key: 'compare' }
+    ];
+    const navItems = navDef.map(n => {
+      const active = page === n.key || (n.key === 'models' && page === 'model');
+      return { ...n, color: active ? 'var(--text)' : 'var(--mut)', bg: active ? 'var(--panel2)' : 'transparent', weight: active ? 600 : 400, iconColor: active ? 'var(--acc)' : 'var(--dim)' };
+    });
+
+    // ---------- search ----------
+    const ql = S.q.trim().toLowerCase();
+    const results = !ql ? [] : models
+      .filter(m => (m.name + ' ' + m.org + ' ' + m.family).toLowerCase().includes(ql))
+      .slice(0, 8)
+      .map(m => ({ name: m.name, org: m.org, ...this.tagOf(m), go: () => { this.setState({ q: '' }); this.go(m.id)(); } }));
+
+    // ---------- dashboard ----------
+    const dashV = S.dashV || this.props.dashboardLayout || 'overview';
+    const dashTabs = [['overview', 'Overview'], ['feed', 'Releases'], ['bench', 'Benchmarks']].map(([k, label]) => ({
+      label, on: () => setS({ dashV: k }),
+      bg: dashV === k ? 'var(--bg)' : 'transparent', color: dashV === k ? 'var(--text)' : 'var(--mut)', weight: dashV === k ? 600 : 400
+    }));
+
+    const now = new Date('2026-07-11');
+    const recent = models.filter(m => (now - new Date(m.date)) / 864e5 < 90).length;
+    const openBest = idxSorted.find(x => x.m.open);
+    const closedBest = idxSorted.find(x => !x.m.open);
+    const stats = [
+      { label: 'Models tracked', value: String(models.length), sub: new Set(models.map(m => m.org)).size + ' organizations', subColor: 'var(--mut)' },
+      { label: 'Open weights', value: String(models.filter(m => m.open).length), sub: Math.round(models.filter(m => m.open).length / (models.length || 1) * 100) + '% of catalog', subColor: 'var(--open)' },
+      { label: 'Releases · 90 days', value: String(recent), sub: 'accelerating cadence', subColor: 'var(--mut)' },
+      { label: 'Open–closed gap', value: closedBest && openBest ? (closedBest.m.bench.arena - openBest.m.bench.arena) + ' Elo' : '—', sub: openBest ? openBest.m.name + ' leads open' : '', subColor: 'var(--mut)' }
+    ];
+
+    const latest = [...models].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8).map(m => ({
+      name: m.name, org: m.org, date: this.fmtDate(m.date), index: this.index(m).toFixed(1), ...this.tagOf(m), go: this.go(m.id)
+    }));
+
+    const arenaSorted = [...models].filter(m => m.bench.arena).sort((a, b) => b.bench.arena - a.bench.arena);
+    const topArena = arenaSorted.slice(0, 8).map((m, i) => ({
+      rank: i + 1, name: m.name, elo: m.bench.arena, go: this.go(m.id),
+      pct: Math.round((m.bench.arena - 1250) / (1520 - 1250) * 100),
+      barColor: m.open ? 'var(--open)' : 'var(--closed)'
+    }));
+
+    // movers: latest release vs previous in same family
+    const famGroups = {};
+    models.forEach(m => { (famGroups[m.family] = famGroups[m.family] || []).push(m); });
+    const movers = Object.values(famGroups)
+      .filter(g => g.length >= 2)
+      .map(g => {
+        const s = [...g].sort((a, b) => a.date.localeCompare(b.date));
+        const last = s[s.length - 1], prev = s[s.length - 2];
+        return { name: last.name, prev: prev.name, delta: (this.index(last) - this.index(prev)).toFixed(1), d: this.index(last) - this.index(prev), go: this.go(last.id) };
+      })
+      .filter(x => x.d > 0).sort((a, b) => b.d - a.d).slice(0, 5);
+
+    // scatter: x=output price log, y=arena
+    const px = (p) => 46 + (Math.log10(p) - Math.log10(0.06)) / (Math.log10(200) - Math.log10(0.06)) * (712 - 46);
+    const py = (elo) => 296 - (elo - 1140) / (1520 - 1140) * (296 - 12);
+    const scatterModels = models.filter(m => m.price && m.bench.arena);
+    const scatterPts = scatterModels.map(m => ({
+      cx: px(m.price.o).toFixed(1), cy: py(m.bench.arena).toFixed(1),
+      fill: m.open ? 'var(--open)' : 'var(--closed)',
+      tip: m.name + ' — ' + m.bench.arena + ' Elo · $' + m.price.o + '/M out', go: this.go(m.id)
+    }));
+    const labelIds = ['claude-opus-4-8', 'gpt-5-5-pro', 'deepseek-v3-2', 'deepseek-v4-5', 'llama-3-1-8b', 'gemini-3-1-pro', 'kimi-k2-5'];
+    const scatterLabels = scatterModels.filter(m => labelIds.includes(m.id)).map(m => ({
+      x: (px(m.price.o) + 8).toFixed(1), y: (py(m.bench.arena) + 3).toFixed(1), name: m.name
+    }));
+    const scatterYTicks = [1200, 1300, 1400, 1500].map(v => ({ y: py(v).toFixed(1), ty: (py(v) + 3).toFixed(1), label: String(v) }));
+    const scatterXTicks = [0.1, 1, 10, 100].map(v => ({ x: px(v).toFixed(1), label: '$' + v }));
+
+    // feed variant
+    const monthName = (d) => this.fmtDate(d);
+    const feedGroups = [];
+    [...models].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 22).forEach(m => {
+      const key = monthName(m.date);
+      let g = feedGroups.find(x => x.month === key);
+      if (!g) { g = { month: key, items: [] }; feedGroups.push(g); }
+      g.items.push({ name: m.name, org: m.org, note: m.note, index: this.index(m).toFixed(1), dotColor: m.open ? 'var(--open)' : 'var(--closed)', go: this.go(m.id) });
+    });
+
+    const qKey = (d) => { const [y, mo] = d.split('-'); return y + ' Q' + (Math.floor((+mo - 1) / 3) + 1); };
+    const qCounts = {};
+    models.forEach(m => { qCounts[qKey(m.date)] = (qCounts[qKey(m.date)] || 0) + 1; });
+    const qKeys = Object.keys(qCounts).sort();
+    const qMax = Math.max(1, ...Object.values(qCounts));
+    const quarters = qKeys.map((k, i) => ({
+      label: k.replace('20', "'"), n: qCounts[k], h: Math.max(4, Math.round(qCounts[k] / qMax * 62)),
+      color: i === qKeys.length - 1 ? 'var(--acc)' : 'var(--border2)'
+    }));
+
+    const frontierGap = [closedBest, openBest].filter(Boolean).map((x, i) => ({
+      label: i === 0 ? 'Closed frontier' : 'Open frontier', name: x.m.name, elo: x.m.bench.arena,
+      pct: Math.round((x.m.bench.arena - 1250) / (1520 - 1250) * 100), color: i === 0 ? 'var(--closed)' : 'var(--open)'
+    }));
+    const gapNote = closedBest && openBest
+      ? 'The open frontier trails by ' + (closedBest.m.bench.arena - openBest.m.bench.arena) + ' Elo — roughly a ' + Math.round(100 / (1 + Math.pow(10, -(closedBest.m.bench.arena - openBest.m.bench.arena) / 400))) + '% head-to-head win rate. Effectively equivalent for many tasks.'
+      : '';
+
+    const benchCards = D.BENCHMARKS.map(b => {
+      const top = models.filter(m => m.bench[b.id] != null).sort((x, y) => y.bench[b.id] - x.bench[b.id]).slice(0, 5)
+        .map(m => ({
+          name: m.name, v: b.id === 'arena' ? m.bench[b.id] : m.bench[b.id].toFixed(1) + '%',
+          pct: Math.round(this.norm(b.id, m.bench[b.id]) * 100), color: m.open ? 'var(--open)' : 'var(--closed)', go: this.go(m.id)
+        }));
+      return { name: b.name, cat: b.cat, top };
+    });
+
+    // ---------- rankings ----------
+    const colDefs = [
+      { id: 'arena', label: 'Arena' }, { id: 'gpqa', label: 'GPQA' }, { id: 'hle', label: 'HLE' },
+      { id: 'swe', label: 'SWE' }, { id: 'lcb', label: 'LCB' }, { id: 'aime', label: 'AIME' }, { id: 'mmlu', label: 'MMLU' }
+    ];
+    const toggleSort = (id) => setS(S.rankSort === id ? { rankDir: -S.rankDir } : { rankSort: id, rankDir: -1 });
+    const sorters = { name: () => toggleSort('name'), params: () => toggleSort('params'), ctx: () => toggleSort('ctx'), index: () => toggleSort('index') };
+    const arrow = (id) => S.rankSort === id ? (S.rankDir < 0 ? '↓' : '↑') : '';
+    const rankCols = colDefs.map(c => ({
+      label: c.label, arrow: arrow(c.id), on: () => toggleSort(c.id),
+      color: S.rankSort === c.id ? 'var(--acc)' : 'var(--dim)'
+    }));
+
+    const rql = S.rankQ.trim().toLowerCase();
+    let rankFiltered = withIndex.filter(({ m }) =>
+      (S.rankOpen === 'all' || (S.rankOpen === 'open') === !!m.open) &&
+      (S.rankOrg === 'all' || m.org === S.rankOrg) &&
+      (!rql || (m.name + ' ' + m.org).toLowerCase().includes(rql))
+    );
+    const sortVal = ({ m, index }) => {
+      switch (S.rankSort) {
+        case 'name': return m.name.toLowerCase();
+        case 'params': return m.params == null ? -1 : m.params;
+        case 'ctx': return m.ctx;
+        case 'index': return index;
+        default: return m.bench[S.rankSort] == null ? -1e9 : m.bench[S.rankSort];
+      }
+    };
+    rankFiltered.sort((a, b) => {
+      const va = sortVal(a), vb = sortVal(b);
+      const c = typeof va === 'string' ? va.localeCompare(vb) : va - vb;
+      return c * (typeof va === 'string' ? -S.rankDir : S.rankDir);
+    });
+    const rankRows = rankFiltered.map(({ m, index }, i) => ({
+      rank: i + 1, name: m.name, org: m.org, ...this.tagOf(m),
+      params: this.fmtParams(m), ctx: this.fmtCtx(m),
+      index: index.toFixed(1), indexPct: Math.round(index),
+      go: this.go(m.id),
+      bcells: colDefs.map(c => {
+        const v = m.bench[c.id];
+        const n = this.norm(c.id, v);
+        return {
+          v: v == null ? '—' : (c.id === 'arena' ? String(v) : v.toFixed(1)),
+          pct: n == null ? 0 : Math.round(n * 100),
+          color: v == null ? 'var(--dim)' : 'var(--text)',
+          barColor: n != null && n > 0.92 ? 'var(--acc)' : 'var(--border2)'
+        };
+      })
+    }));
+    const seg = (cur, key, opts) => opts.map(([k, label]) => ({
+      label, on: () => setS({ [key]: k }),
+      bg: cur === k ? 'var(--bg)' : 'transparent', color: cur === k ? 'var(--text)' : 'var(--mut)', weight: cur === k ? 600 : 400
+    }));
+    const orgs = [...new Set(models.map(m => m.org))].sort();
+    const orgOptions = [{ id: 'all', label: 'All orgs' }, ...orgs.map(o => ({ id: o, label: o }))];
+    const sortLabels = { index: 'Index', name: 'name', params: 'parameters', ctx: 'context', arena: 'Arena Elo', gpqa: 'GPQA', hle: 'HLE', swe: 'SWE-bench', lcb: 'LiveCodeBench', aime: 'AIME', mmlu: 'MMLU' };
+
+    // ---------- explorer ----------
+    const exql = S.exQ.trim().toLowerCase();
+    const gpu = D.GPUS.find(g => g.id === S.exGpu);
+    const sizeOk = (m) => {
+      if (S.exSize === 'any') return true;
+      if (S.exSize === 'undisclosed') return m.params == null;
+      if (m.params == null) return false;
+      if (S.exSize === 's') return m.params < 15;
+      if (S.exSize === 'm') return m.params >= 15 && m.params < 70;
+      if (S.exSize === 'l') return m.params >= 70 && m.params < 300;
+      return m.params >= 300;
+    };
+    const capKeys = [['reason', 'Reasoning'], ['vision', 'Vision'], ['fc', 'Function calling'], ['tools', 'Tool use'], ['agent', 'Agentic']];
+    let exList = withIndex.filter(({ m }) =>
+      (!exql || (m.name + ' ' + m.org + ' ' + m.family).toLowerCase().includes(exql)) &&
+      (S.exOpen === 'all' || (S.exOpen === 'open') === !!m.open) &&
+      (S.exOrg === 'all' || m.org === S.exOrg) &&
+      sizeOk(m) &&
+      (!gpu || (m.open && m.vramQ4 != null && m.vramQ4 * 1.08 <= gpu.vram)) &&
+      capKeys.every(([k]) => !S.exCaps[k] || m.caps[k])
+    );
+    exList.sort((a, b) => {
+      switch (S.exSort) {
+        case 'date': return b.m.date.localeCompare(a.m.date);
+        case 'params': return (b.m.params || 1e6) - (a.m.params || 1e6);
+        case 'cheap': return ((a.m.price ? a.m.price.o : 1e9)) - ((b.m.price ? b.m.price.o : 1e9));
+        default: return b.index - a.index;
+      }
+    });
+    const exCards = exList.map(({ m, index }) => ({
+      name: m.name, org: m.org, date: this.fmtDate(m.date), ...this.tagOf(m),
+      params: this.fmtParams(m), ctx: this.fmtCtx(m), price: this.fmtPrice(m),
+      index: index.toFixed(1), indexPct: Math.round(index), go: this.go(m.id),
+      chips: capKeys.filter(([k]) => m.caps[k]).map(([, l]) => l).slice(0, 4)
+    }));
+    const capChipsFilter = capKeys.map(([k, label]) => ({
+      label, on: () => setS({ exCaps: { ...S.exCaps, [k]: S.exCaps[k] ? 0 : 1 } }),
+      bg: S.exCaps[k] ? 'var(--accdim)' : 'transparent', color: S.exCaps[k] ? 'var(--acc)' : 'var(--mut)',
+      border: S.exCaps[k] ? 'var(--acc)' : 'var(--border)'
+    }));
+    const gpuOptions = D.GPUS.map(g => ({ id: g.id, label: g.name }));
+
+    // ---------- model detail ----------
+    let mv = {};
+    const m = modelId ? models.find(x => x.id === modelId) : null;
+    if (page === 'model') {
+      if (!m) { mv = { mFound: false, mMissing: true }; }
+      else {
+        const idx = this.index(m);
+        const capLabels = [['reason', 'Reasoning'], ['code', 'Coding'], ['vision', 'Vision'], ['fc', 'Function calling'], ['tools', 'Tool use'], ['agent', 'Agentic']];
+        const mBench = D.BENCHMARKS.filter(b => m.bench[b.id] != null).map(b => {
+          const field = models.filter(x => x.bench[b.id] != null).sort((x, y) => y.bench[b.id] - x.bench[b.id]);
+          const best = field[0];
+          const rank = field.findIndex(x => x.id === m.id) + 1;
+          const n = this.norm(b.id, m.bench[b.id]);
+          const fmtv = (v) => b.id === 'arena' ? String(v) : v.toFixed(1) + '%';
+          return {
+            name: b.name, cat: b.cat, v: fmtv(m.bench[b.id]), rank,
+            pct: Math.round(n * 100), bestPct: Math.round(this.norm(b.id, best.bench[b.id]) * 100),
+            bestName: best.id === m.id ? 'this model' : best.name, bestV: fmtv(best.bench[b.id]),
+            color: rank === 1 ? 'var(--acc)' : (m.open ? 'var(--open)' : 'var(--closed)')
+          };
+        });
+        const fam = models.filter(x => x.family === m.family).sort((a, b) => a.date.localeCompare(b.date));
+        const fx = (i) => fam.length === 1 ? 140 : 12 + i / (fam.length - 1) * 256;
+        const famIdx = fam.map(f => this.index(f));
+        const fmin = Math.min(...famIdx), fmax = Math.max(...famIdx);
+        const fy = (v) => fmax === fmin ? 32 : 54 - (v - fmin) / (fmax - fmin) * 44;
+        const famPoints = fam.map((f, i) => fx(i).toFixed(1) + ',' + fy(famIdx[i]).toFixed(1)).join(' ');
+        const famDots = fam.map((f, i) => ({
+          x: fx(i).toFixed(1), y: fy(famIdx[i]).toFixed(1), r: f.id === m.id ? 4 : 2.5,
+          fill: f.id === m.id ? 'var(--acc)' : 'var(--mut)', tip: f.name + ' · ' + famIdx[i].toFixed(1)
+        }));
+        const famList = fam.map(f => ({
+          name: f.name, date: this.fmtDate(f.date), index: this.index(f).toFixed(1),
+          weight: f.id === m.id ? 600 : 400, bg: f.id === m.id ? 'var(--panel2)' : 'transparent', go: this.go(f.id)
+        }));
+        const fits = m.vramQ4 == null ? [] : D.GPUS.filter(g => g.vram >= m.vramQ4 * 1.08).map(g => ({ name: g.name, color: 'var(--open)' }));
+        const links = [];
+        if (m.hf) links.push({ kind: 'HF', label: m.hf, href: 'https://huggingface.co/' + m.hf });
+        if (m.gh) links.push({ kind: 'GH', label: m.gh, href: 'https://github.com/' + m.gh });
+        if (m.docs) links.push({ kind: 'DOCS', label: m.docs, href: 'https://' + m.docs });
+        if (m.api) links.push({ kind: 'API', label: 'Available via ' + m.org + ' API', href: 'https://' + (m.docs || '') });
+        mv = {
+          mFound: true, mMissing: false,
+          mName: m.name, mOrg: m.org, mFamily: m.family, mDate: this.fmtDate(m.date, true), mNote: m.note,
+          mTag: this.tagOf(m).tag, mTagColor: this.tagOf(m).tagColor, mTagBg: this.tagOf(m).tagBg,
+          mIndex: idx.toFixed(1), mIndexRank: '#' + idxRank(m.id),
+          mCompare: () => { this.setState({ cmp: [m.id, S.cmp[0] === m.id ? S.cmp[1] : S.cmp[0], ''] }); location.hash = '#/compare'; },
+          mCaps: capLabels.map(([k, label]) => ({
+            label: (m.caps[k] ? '✓ ' : '✕ ') + label,
+            color: m.caps[k] ? 'var(--open)' : 'var(--dim)', border: m.caps[k] ? 'var(--open)' : 'var(--border)',
+            bg: m.caps[k] ? 'var(--opendim)' : 'transparent'
+          })),
+          mMeta: [
+            { label: 'Parameters', value: m.params == null ? 'Undisclosed' : m.params + 'B' },
+            { label: 'Active params', value: m.active ? m.active + 'B (MoE)' : (m.params ? m.params + 'B (dense)' : '—') },
+            { label: 'Context', value: this.fmtCtx(m) + ' tokens' },
+            { label: 'Architecture', value: m.arch },
+            { label: 'License', value: m.license },
+            { label: 'Languages', value: m.langs ? m.langs + '+' : '—' },
+            { label: 'API price (in/out)', value: m.price ? '$' + m.price.i + ' / $' + m.price.o : 'No hosted API' },
+            { label: 'Modalities', value: m.modal.join(' · ') }
+          ],
+          mBench, famPoints, famDots, famList,
+          mIsLocal: !!m.open, mIsApiOnly: !m.open,
+          mVramQ4: m.vramQ4 != null ? m.vramQ4 + ' GB' : '—',
+          mVramFp16: m.vramFp16 != null ? m.vramFp16 + ' GB' : '—',
+          mFits: fits.length ? fits : [{ name: 'Multi-node cluster required', color: 'var(--warn, var(--mut))' }],
+          mSpeed: m.tps4090 ? '~' + m.tps4090 + ' tok/s on RTX 4090 (Q4, llama.cpp)' : (m.tpsNote || 'Throughput data unavailable.'),
+          mQuants: m.quants && m.quants.length ? m.quants.join(' · ') : '—',
+          mPriceIn: m.price ? '$' + m.price.i : '—', mPriceOut: m.price ? '$' + m.price.o : '—',
+          mLinks: links
+        };
+      }
+    }
+
+    // ---------- compare ----------
+    const cmpColors = ['var(--acc)', 'var(--open)', 'var(--closed)'];
+    const cmpModels = S.cmp.map(id => models.find(x => x.id === id) || null);
+    const activeCmp = cmpModels.map((x, i) => ({ x, i })).filter(o => o.x);
+    const cmpSelects = ['Model A', 'Model B', 'Model C'].map((label, i) => ({
+      label, value: S.cmp[i], color: cmpColors[i],
+      on: (e) => { const c = [...S.cmp]; c[i] = e.target.value; setS({ cmp: c }); }
+    }));
+    const modelOptions = [...models].sort((a, b) => a.name.localeCompare(b.name)).map(x => ({ id: x.id, label: x.name + ' — ' + x.org }));
+    const cell = (v, best, i) => ({
+      v: v == null || v === '' ? '—' : String(v),
+      color: best ? cmpColors[i] : 'var(--text)', weight: best ? 600 : 400
+    });
+    const specDefs = [
+      { label: 'Organization', get: (x) => x.org },
+      { label: 'Released', get: (x) => this.fmtDate(x.date) },
+      { label: 'Weights', get: (x) => x.open ? 'Open' : 'Closed' },
+      { label: 'Parameters', get: (x) => x.params == null ? 'undisclosed' : x.params + 'B', num: (x) => x.params, kind: 'max' },
+      { label: 'Active params', get: (x) => x.active ? x.active + 'B' : '—' },
+      { label: 'Context', get: (x) => this.fmtCtx(x), num: (x) => x.ctx, kind: 'max' },
+      { label: 'Architecture', get: (x) => x.arch },
+      { label: 'License', get: (x) => x.license },
+      { label: 'Price in /M', get: (x) => x.price ? '$' + x.price.i : '—', num: (x) => x.price ? x.price.i : null, kind: 'min' },
+      { label: 'Price out /M', get: (x) => x.price ? '$' + x.price.o : '—', num: (x) => x.price ? x.price.o : null, kind: 'min' },
+      { label: 'VRAM @ Q4', get: (x) => x.vramQ4 != null ? x.vramQ4 + ' GB' : '—', num: (x) => x.vramQ4, kind: 'min' },
+      { label: 'Index score', get: (x) => this.index(x).toFixed(1), num: (x) => this.index(x), kind: 'max' }
+    ];
+    const cmpSpecRows = specDefs.map(d => {
+      let bestI = -1;
+      if (d.kind) {
+        let bestV = null;
+        activeCmp.forEach(({ x, i }) => {
+          const n = d.num(x);
+          if (n == null) return;
+          if (bestV == null || (d.kind === 'max' ? n > bestV : n < bestV)) { bestV = n; bestI = i; }
+        });
+      }
+      return { label: d.label, cells: cmpModels.map((x, i) => x ? cell(d.get(x), i === bestI && activeCmp.length > 1, i) : { v: '', color: 'var(--dim)', weight: 400 }) };
+    });
+    const cmpBenchRows = D.BENCHMARKS.map(b => {
+      let bestI = -1, bestV = null;
+      activeCmp.forEach(({ x, i }) => {
+        const v = x.bench[b.id];
+        if (v == null) return;
+        if (bestV == null || v > bestV) { bestV = v; bestI = i; }
+      });
+      return {
+        label: b.name,
+        cells: cmpModels.map((x, i) => {
+          if (!x) return { v: '', pct: 0, color: 'var(--dim)', weight: 400, barColor: 'transparent' };
+          const v = x.bench[b.id];
+          const n = this.norm(b.id, v);
+          return {
+            v: v == null ? '—' : (b.id === 'arena' ? String(v) : v.toFixed(1)),
+            pct: n == null ? 0 : Math.round(n * 100),
+            color: i === bestI && activeCmp.length > 1 ? cmpColors[i] : 'var(--text)',
+            weight: i === bestI ? 600 : 400,
+            barColor: cmpColors[i]
+          };
+        })
+      };
+    });
+    // radar geometry
+    const AXES = [['PREF', 'Preference'], ['KNOW', 'Knowledge'], ['REASON', 'Reasoning'], ['CODE', 'Coding'], ['MATH', 'Math'], ['AGENT', 'Agents']];
+    const C = { x: 140, y: 126, r: 92 };
+    const pt = (i, v) => {
+      const ang = -Math.PI / 2 + i * Math.PI / 3;
+      return (C.x + Math.cos(ang) * C.r * v).toFixed(1) + ',' + (C.y + Math.sin(ang) * C.r * v).toFixed(1);
+    };
+    const radarRings = [0.25, 0.5, 0.75, 1].map(rv => AXES.map((_, i) => pt(i, rv)).join(' '));
+    const radarAxes = AXES.map(([, label], i) => {
+      const ang = -Math.PI / 2 + i * Math.PI / 3;
+      const lx = C.x + Math.cos(ang) * (C.r + 14), ly = C.y + Math.sin(ang) * (C.r + 14);
+      return {
+        x2: (C.x + Math.cos(ang) * C.r).toFixed(1), y2: (C.y + Math.sin(ang) * C.r).toFixed(1),
+        lx: lx.toFixed(1), ly: (ly + 3).toFixed(1), label,
+        anchor: Math.abs(Math.cos(ang)) < 0.3 ? 'middle' : (Math.cos(ang) > 0 ? 'start' : 'end')
+      };
+    });
+    const radarPolys = activeCmp.map(({ x, i }) => ({
+      pts: AXES.map(([k], ai) => pt(ai, Math.max(0.03, this.radarVal(x, k)))).join(' '),
+      fill: cmpColors[i], stroke: cmpColors[i]
+    }));
+    const radarLegend = activeCmp.map(({ x, i }) => ({ name: x.name, color: cmpColors[i], index: this.index(x).toFixed(1) }));
+
+    return {
+      // shell
+      navItems, pageTitle: titles[page] || 'Dashboard',
+      modelCount: models.length, orgCount: new Set(models.map(x => x.org)).size, asOf: D.ASOF,
+      q: S.q, setQ: (e) => setS({ q: e.target.value }), hasResults: results.length > 0, results,
+      themeLabel: this.theme === 'dark' ? '◐ Light' : '◑ Dark',
+      toggleTheme: () => {
+        const t = this.theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('llmhub.theme', t);
+        this._applyTheme(t); this.setState({ theme: t });
+      },
+      // routes
+      isDash: page === 'dashboard' || page === '', isRank: page === 'rankings',
+      isExplore: page === 'models', isModel: page === 'model', isCompare: page === 'compare',
+      // dashboard
+      dashTabs, dashOverview: dashV === 'overview', dashFeed: dashV === 'feed', dashBench: dashV === 'bench',
+      stats, latest, topArena, movers,
+      scatterPts, scatterLabels, scatterYTicks, scatterXTicks,
+      feed: feedGroups, quarters, frontierGap, gapNote, benchCards,
+      qcA: S.qcA, qcB: S.qcB,
+      setQcA: (e) => setS({ qcA: e.target.value }), setQcB: (e) => setS({ qcB: e.target.value }),
+      goQuickCompare: () => { setS({ cmp: [S.qcA, S.qcB, ''] }); location.hash = '#/compare'; },
+      // rankings
+      rankRows, rankCols, sorters, rankCount: rankRows.length,
+      rankSortLabel: sortLabels[S.rankSort] || S.rankSort,
+      idxHeadColor: S.rankSort === 'index' ? 'var(--acc)' : 'var(--dim)', idxArrow: arrow('index'),
+      rankQ: S.rankQ, setRankQ: (e) => setS({ rankQ: e.target.value }),
+      rankOrg: S.rankOrg, setRankOrg: (e) => setS({ rankOrg: e.target.value }),
+      rankOpenTabs: seg(S.rankOpen, 'rankOpen', [['all', 'All'], ['open', 'Open'], ['closed', 'Closed']]),
+      orgOptions,
+      // explorer
+      exQ: S.exQ, setExQ: (e) => setS({ exQ: e.target.value }),
+      exOpenTabs: seg(S.exOpen, 'exOpen', [['all', 'All'], ['open', 'Open'], ['closed', 'Closed']]),
+      exOrg: S.exOrg, setExOrg: (e) => setS({ exOrg: e.target.value }),
+      exSize: S.exSize, setExSize: (e) => setS({ exSize: e.target.value }),
+      exGpu: S.exGpu, setExGpu: (e) => setS({ exGpu: e.target.value }),
+      exSort: S.exSort, setExSort: (e) => setS({ exSort: e.target.value }),
+      gpuOptions, capChipsFilter, exCards, exCount: exCards.length,
+      exReset: () => setS({ exQ: '', exOpen: 'all', exOrg: 'all', exSize: 'any', exGpu: 'none', exCaps: { reason: 0, vision: 0, fc: 0, agent: 0, tools: 0 } }),
+      // model detail
+      ...mv,
+      // compare
+      cmpSelects, modelOptions, cmpSpecRows, cmpBenchRows,
+      radarRings, radarAxes, radarPolys, radarLegend
+    };
+  }
+}
+
+</script>
+</body>
+</html>
