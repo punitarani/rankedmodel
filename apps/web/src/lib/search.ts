@@ -94,3 +94,21 @@ export const EXPLORER_SEARCH_DEFAULTS = {
 } as const
 
 export type ExplorerSearch = z.infer<typeof explorerSearchSchema>
+
+export const hardwareSearchSchema = z.object({
+  mode: z.enum(['gpu', 'model']).default('gpu').catch('gpu'),
+  gpu: z.string().max(40).default('rtx4090').catch('rtx4090'),
+  vram: z.number().positive().max(2048).default(24).catch(24),
+  show: z.enum(['all', 'fits']).default('all').catch('all'),
+  model: z.string().max(60).default('llama-3-3-70b').catch('llama-3-3-70b'),
+})
+
+export const HARDWARE_SEARCH_DEFAULTS = {
+  mode: 'gpu',
+  gpu: 'rtx4090',
+  vram: 24,
+  show: 'all',
+  model: 'llama-3-3-70b',
+} as const
+
+export type HardwareSearch = z.infer<typeof hardwareSearchSchema>
