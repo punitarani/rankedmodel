@@ -34,7 +34,6 @@
     "@tanstack/react-table": "^8.21.3",
     "@tanstack/react-virtual": "^3.14.5",
     "@tanstack/router-plugin": "^1.132.0",
-    "@tanstack/zod-adapter": "^1.167.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.45.2",
