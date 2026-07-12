@@ -83,7 +83,12 @@ async function main() {
     }
     if (o.type !== 'result') continue
     agents++
-    for (const m of o.result?.models ?? []) if (m?.name && m?.org) raw.push(m)
+    for (const m of o.result?.models ?? []) {
+      if (!m?.name || !m?.org) continue
+      // Scope: GPT-3 (June 2020) onward.
+      if (/^\d{4}/.test(m.releaseDate) && m.releaseDate.slice(0, 4) < '2020') continue
+      raw.push(m)
+    }
   }
 
   const byKey = new Map<string, Entry>()
