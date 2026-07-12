@@ -17,6 +17,7 @@
     "typecheck": "bun run --filter '*' typecheck",
     "test": "bun run --filter '*' test",
     "validate-data": "bun scripts/src/validate.ts",
+    "generate-dataset": "bun scripts/src/generate-dataset.ts corpus data",
     "ci": "bun run typecheck && bun run lint && bun run test && bun run build && bun run budgets",
     "dev": "bun run --filter '@rankedmodel/web' dev",
     "build": "bun run --filter '@rankedmodel/web' build",

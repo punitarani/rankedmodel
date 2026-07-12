@@ -1,0 +1,14 @@
+[
+  { "slug": "rtx3060", "name": "RTX 3060 12GB", "kind": "consumer", "vramGb": 12 },
+  { "slug": "rtx4070", "name": "RTX 4070 Ti 16GB", "kind": "consumer", "vramGb": 16 },
+  { "slug": "rtx3090", "name": "RTX 3090 24GB", "kind": "consumer", "vramGb": 24 },
+  { "slug": "rtx4090", "name": "RTX 4090 24GB", "kind": "consumer", "vramGb": 24 },
+  { "slug": "rtx5090", "name": "RTX 5090 32GB", "kind": "consumer", "vramGb": 32 },
+  { "slug": "m4pro", "name": "M4 Pro 48GB", "kind": "mac", "vramGb": 36 },
+  { "slug": "m3max", "name": "M3 Max 128GB", "kind": "mac", "vramGb": 96 },
+  { "slug": "m3ultra", "name": "M3 Ultra 512GB", "kind": "mac", "vramGb": 384 },
+  { "slug": "a100", "name": "A100 80GB", "kind": "datacenter", "vramGb": 80 },
+  { "slug": "h100", "name": "H100 80GB", "kind": "datacenter", "vramGb": 80 },
+  { "slug": "h200", "name": "H200 141GB", "kind": "datacenter", "vramGb": 141 },
+  { "slug": "b200", "name": "B200 192GB", "kind": "datacenter", "vramGb": 192 }
+]
