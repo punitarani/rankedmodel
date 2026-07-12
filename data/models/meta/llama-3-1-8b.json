@@ -1,0 +1,50 @@
+{
+  "slug": "llama-3-1-8b",
+  "name": "Llama 3.1 8B",
+  "orgSlug": "meta",
+  "familySlug": "llama-3",
+  "releaseDate": "2024-07-23",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3.1 Community",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.05,
+    "output": 0.08
+  },
+  "links": {
+    "hf": "meta-llama/Llama-3.1-8B-Instruct",
+    "gh": "meta-llama/llama-models",
+    "docs": "llama.com"
+  },
+  "note": "The default small model of the Llama 3 era.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ",
+    "GPTQ",
+    "EXL2"
+  ],
+  "vramQ4Gb": 4.9,
+  "vramFp16Gb": 16,
+  "tps4090": 128,
+  "tpsNote": null
+}

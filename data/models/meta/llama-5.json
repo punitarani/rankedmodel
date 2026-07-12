@@ -1,0 +1,49 @@
+{
+  "slug": "llama-5",
+  "name": "Llama 5",
+  "orgSlug": "meta",
+  "familySlug": "llama-5",
+  "releaseDate": "2026-07-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 5 Community",
+  "paramsB": 288,
+  "activeParamsB": 19,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 30,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.25,
+    "output": 0.9
+  },
+  "links": {
+    "hf": "meta-llama/Llama-5",
+    "gh": "meta-llama/llama-models",
+    "docs": "llama.com"
+  },
+  "note": "Meta's comeback release; reasoning-first MoE, one week old.",
+  "quants": [
+    "FP8",
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 165,
+  "vramFp16Gb": 580,
+  "tps4090": null,
+  "tpsNote": "~19 t/s on M3 Max 128GB offload / 2×RTX 5090"
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "mmmu",
+  "name": "MMMU",
+  "category": "vision",
+  "unit": "%",
+  "description": "College-level multimodal understanding across 30 disciplines.",
+  "normMin": 20,
+  "normMax": 100,
+  "higherIsBetter": true
+}

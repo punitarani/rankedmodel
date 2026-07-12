@@ -1,0 +1,49 @@
+{
+  "slug": "glm-4-7",
+  "name": "GLM-4.7",
+  "orgSlug": "zhipu-ai",
+  "familySlug": "glm",
+  "releaseDate": "2025-12-10",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 355,
+  "activeParamsB": 32,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 26,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.4,
+    "output": 1.5
+  },
+  "links": {
+    "hf": "zai-org/GLM-4.7",
+    "gh": "zai-org/GLM-4",
+    "docs": "docs.z.ai"
+  },
+  "note": "The most well-rounded open model of early 2026.",
+  "quants": [
+    "FP8",
+    "GGUF Q4",
+    "AWQ",
+    "GGUF Q8"
+  ],
+  "vramQ4Gb": 200,
+  "vramFp16Gb": 710,
+  "tps4090": null,
+  "tpsNote": "~30 t/s on M3 Ultra (Q4)"
+}

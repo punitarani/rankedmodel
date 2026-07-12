@@ -1,0 +1,43 @@
+{
+  "slug": "grok-4",
+  "name": "Grok 4",
+  "orgSlug": "xai",
+  "familySlug": "grok",
+  "releaseDate": "2025-07-09",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE (undisclosed)",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 30,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "docs.x.ai"
+  },
+  "note": "Heavy mode debuted multi-agent test-time compute.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

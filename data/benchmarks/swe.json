@@ -1,0 +1,10 @@
+{
+  "slug": "swe",
+  "name": "SWE-bench Verified",
+  "category": "coding",
+  "unit": "%",
+  "description": "Resolving real GitHub issues in real repositories, verified subset.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

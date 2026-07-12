@@ -1,0 +1,48 @@
+{
+  "slug": "deepseek-r1",
+  "name": "DeepSeek R1",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-r1",
+  "releaseDate": "2025-01-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 671,
+  "activeParamsB": 37,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 20,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.55,
+    "output": 2.19
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-R1",
+    "gh": "deepseek-ai/DeepSeek-R1",
+    "docs": "api-docs.deepseek.com"
+  },
+  "note": "The open reasoning breakthrough that started 2025's price war.",
+  "quants": [
+    "FP8",
+    "GGUF Q4",
+    "1.58-bit dynamic"
+  ],
+  "vramQ4Gb": 380,
+  "vramFp16Gb": 1340,
+  "tps4090": null,
+  "tpsNote": "~18 t/s on M3 Ultra (Q4)"
+}

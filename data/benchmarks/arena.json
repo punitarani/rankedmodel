@@ -1,0 +1,10 @@
+{
+  "slug": "arena",
+  "name": "Arena Elo",
+  "category": "human-preference",
+  "unit": "Elo",
+  "description": "Blind pairwise human votes (arena.ai). The gold standard for conversational preference.",
+  "normMin": 1150,
+  "normMax": 1520,
+  "higherIsBetter": true
+}

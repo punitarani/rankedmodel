@@ -1,0 +1,45 @@
+{
+  "slug": "gpt-oss-20b",
+  "name": "GPT-OSS-20B",
+  "orgSlug": "openai",
+  "familySlug": "gpt-oss",
+  "releaseDate": "2025-08-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 21,
+  "activeParamsB": 3.6,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 14,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openai/gpt-oss-20b",
+    "gh": "openai/gpt-oss",
+    "docs": "openai.com/open-models"
+  },
+  "note": "Runs on a single 16GB consumer GPU at MXFP4.",
+  "quants": [
+    "MXFP4",
+    "GGUF Q4",
+    "GGUF Q8"
+  ],
+  "vramQ4Gb": 13,
+  "vramFp16Gb": 44,
+  "tps4090": 118,
+  "tpsNote": null
+}

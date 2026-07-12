@@ -1,0 +1,50 @@
+{
+  "slug": "qwen3-32b",
+  "name": "Qwen3 32B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen3",
+  "releaseDate": "2025-04-29",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 32.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 119,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.1,
+    "output": 0.3
+  },
+  "links": {
+    "hf": "Qwen/Qwen3-32B",
+    "gh": "QwenLM/Qwen3",
+    "docs": "qwen.readthedocs.io"
+  },
+  "note": "The strongest dense 32B of its generation.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ",
+    "GPTQ",
+    "EXL2"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 66,
+  "tps4090": 36,
+  "tpsNote": null
+}

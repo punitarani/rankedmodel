@@ -1,0 +1,48 @@
+{
+  "slug": "gpt-oss-120b",
+  "name": "GPT-OSS-120B",
+  "orgSlug": "openai",
+  "familySlug": "gpt-oss",
+  "releaseDate": "2025-08-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 117,
+  "activeParamsB": 5.1,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 14,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.15,
+    "output": 0.6
+  },
+  "links": {
+    "hf": "openai/gpt-oss-120b",
+    "gh": "openai/gpt-oss",
+    "docs": "openai.com/open-models"
+  },
+  "note": "OpenAI's first open-weights release since GPT-2; MXFP4-native.",
+  "quants": [
+    "MXFP4",
+    "GGUF Q4",
+    "GGUF Q8"
+  ],
+  "vramQ4Gb": 66,
+  "vramFp16Gb": 240,
+  "tps4090": null,
+  "tpsNote": "~45 t/s on 2×RTX 5090 (MXFP4)"
+}

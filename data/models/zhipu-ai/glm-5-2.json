@@ -1,0 +1,49 @@
+{
+  "slug": "glm-5-2",
+  "name": "GLM-5.2",
+  "orgSlug": "zhipu-ai",
+  "familySlug": "glm",
+  "releaseDate": "2026-06-24",
+  "status": "released",
+  "predecessor": "glm-5",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 744,
+  "activeParamsB": 40,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 26,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.6,
+    "output": 2.2
+  },
+  "links": {
+    "hf": "zai-org/GLM-5.2",
+    "gh": "zai-org/GLM-5",
+    "docs": "docs.z.ai"
+  },
+  "note": "Open-weights GPQA leader; SWE-bench within 4pts of Opus.",
+  "quants": [
+    "FP8",
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 420,
+  "vramFp16Gb": 1490,
+  "tps4090": null,
+  "tpsNote": "Multi-node; ~24 t/s on 8×H200"
+}

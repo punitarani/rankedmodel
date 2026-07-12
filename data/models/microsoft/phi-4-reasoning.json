@@ -1,0 +1,45 @@
+{
+  "slug": "phi-4-reasoning",
+  "name": "Phi-4 Reasoning Plus",
+  "orgSlug": "microsoft",
+  "familySlug": "phi",
+  "releaseDate": "2025-04-30",
+  "status": "released",
+  "predecessor": "phi-4",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 14,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "microsoft/Phi-4-reasoning-plus",
+    "gh": "microsoft/PhiCookBook",
+    "docs": "azure.microsoft.com"
+  },
+  "note": "RL-tuned Phi-4; punches far above 14B on math and reasoning.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ"
+  ],
+  "vramQ4Gb": 9.1,
+  "vramFp16Gb": 28,
+  "tps4090": 62,
+  "tpsNote": null
+}

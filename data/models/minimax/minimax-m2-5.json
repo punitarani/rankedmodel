@@ -1,0 +1,47 @@
+{
+  "slug": "minimax-m2-5",
+  "name": "MiniMax M2.5",
+  "orgSlug": "minimax",
+  "familySlug": "minimax-m",
+  "releaseDate": "2026-03-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 460,
+  "activeParamsB": 26,
+  "archClass": "hybrid",
+  "archDisplay": "MoE (hybrid attention)",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 20,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.3,
+    "output": 1.1
+  },
+  "links": {
+    "hf": "MiniMaxAI/MiniMax-M2.5",
+    "gh": "MiniMax-AI/MiniMax-M2",
+    "docs": "platform.minimax.io"
+  },
+  "note": "Lightning-attention hybrid; 1M context in open weights.",
+  "quants": [
+    "FP8",
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 260,
+  "vramFp16Gb": 920,
+  "tps4090": null,
+  "tpsNote": "~28 t/s on M3 Ultra (Q4)"
+}

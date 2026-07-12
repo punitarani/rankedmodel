@@ -1,0 +1,49 @@
+{
+  "slug": "qwen3-8b",
+  "name": "Qwen3 8B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen3",
+  "releaseDate": "2025-04-29",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 8.2,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 119,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.035,
+    "output": 0.14
+  },
+  "links": {
+    "hf": "Qwen/Qwen3-8B",
+    "gh": "QwenLM/Qwen3",
+    "docs": "qwen.readthedocs.io"
+  },
+  "note": "Thinking-mode small model; laptop-friendly.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 5.2,
+  "vramFp16Gb": 16.4,
+  "tps4090": 121,
+  "tpsNote": null
+}

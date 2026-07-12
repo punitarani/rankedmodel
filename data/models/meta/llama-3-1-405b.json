@@ -1,0 +1,48 @@
+{
+  "slug": "llama-3-1-405b",
+  "name": "Llama 3.1 405B",
+  "orgSlug": "meta",
+  "familySlug": "llama-3",
+  "releaseDate": "2024-07-23",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3.1 Community",
+  "paramsB": 405,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1,
+    "output": 3
+  },
+  "links": {
+    "hf": "meta-llama/Llama-3.1-405B-Instruct",
+    "gh": "meta-llama/llama-models",
+    "docs": "llama.com"
+  },
+  "note": "The largest open dense model ever released.",
+  "quants": [
+    "FP8",
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 243,
+  "vramFp16Gb": 810,
+  "tps4090": null,
+  "tpsNote": "Needs 8×A100/H100 node"
+}

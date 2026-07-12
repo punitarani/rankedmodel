@@ -1,0 +1,10 @@
+{
+  "slug": "gpqa",
+  "name": "GPQA Diamond",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Graduate-level science questions that resist memorization.",
+  "normMin": 20,
+  "normMax": 100,
+  "higherIsBetter": true
+}

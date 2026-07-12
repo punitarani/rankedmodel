@@ -1,0 +1,49 @@
+{
+  "slug": "deepseek-v4-1",
+  "name": "DeepSeek V4.1 Pro",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-v4",
+  "releaseDate": "2026-05-28",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 890,
+  "activeParamsB": 42,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 30,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.4,
+    "output": 1.2
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-V4.1",
+    "gh": "deepseek-ai/DeepSeek-V4",
+    "docs": "api-docs.deepseek.com"
+  },
+  "note": "Best open-weights model by Arena Elo; within ~55 Elo of closed #1.",
+  "quants": [
+    "FP8",
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 500,
+  "vramFp16Gb": 1780,
+  "tps4090": null,
+  "tpsNote": "Multi-node; ~20 t/s on 8×H200"
+}

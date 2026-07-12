@@ -1,0 +1,43 @@
+{
+  "slug": "claude-opus-4-8",
+  "name": "Claude Opus 4.8",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-4",
+  "releaseDate": "2026-06-03",
+  "status": "released",
+  "predecessor": "claude-opus-4-7",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE (undisclosed)",
+  "ctxK": 500,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 40,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 15,
+    "output": 75
+  },
+  "links": {
+    "docs": "docs.anthropic.com"
+  },
+  "note": "Current overall Arena #1; strongest agentic tool-use reliability.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

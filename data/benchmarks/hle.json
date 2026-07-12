@@ -1,0 +1,10 @@
+{
+  "slug": "hle",
+  "name": "Humanity's Last Exam",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "2,500 expert-written frontier questions across 100+ subjects.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

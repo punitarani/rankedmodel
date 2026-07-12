@@ -1,0 +1,49 @@
+{
+  "slug": "llama-4-scout",
+  "name": "Llama 4 Scout",
+  "orgSlug": "meta",
+  "familySlug": "llama-4",
+  "releaseDate": "2025-04-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 4 Community",
+  "paramsB": 109,
+  "activeParamsB": 17,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 10000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 12,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.11,
+    "output": 0.34
+  },
+  "links": {
+    "hf": "meta-llama/Llama-4-Scout-17B-16E",
+    "gh": "meta-llama/llama-models",
+    "docs": "llama.com"
+  },
+  "note": "10M-token advertised context; fastest hosted throughput of its class.",
+  "quants": [
+    "FP8",
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 62,
+  "vramFp16Gb": 220,
+  "tps4090": null,
+  "tpsNote": "~35 t/s on 2×RTX 5090 (Q4)"
+}

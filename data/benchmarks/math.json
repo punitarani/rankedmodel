@@ -1,0 +1,10 @@
+{
+  "slug": "math",
+  "name": "MATH-500",
+  "category": "math",
+  "unit": "%",
+  "description": "500 competition math problems across difficulty levels.",
+  "normMin": 20,
+  "normMax": 100,
+  "higherIsBetter": true
+}

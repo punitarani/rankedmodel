@@ -1,0 +1,49 @@
+{
+  "slug": "qwq-32b",
+  "name": "QwQ-32B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2-5",
+  "releaseDate": "2025-03-06",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 32.5,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 131,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 29,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.15,
+    "output": 0.4
+  },
+  "links": {
+    "hf": "Qwen/QwQ-32B",
+    "gh": "QwenLM/Qwen2.5",
+    "docs": "qwen.readthedocs.io"
+  },
+  "note": "R1-class reasoning from a single 24GB GPU.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ",
+    "EXL2"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 65,
+  "tps4090": 34,
+  "tpsNote": null
+}

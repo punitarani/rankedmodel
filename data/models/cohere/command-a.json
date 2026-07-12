@@ -1,0 +1,48 @@
+{
+  "slug": "command-a",
+  "name": "Command A",
+  "orgSlug": "cohere",
+  "familySlug": "command",
+  "releaseDate": "2025-03-13",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC-BY-NC",
+  "paramsB": 111,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 23,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2.5,
+    "output": 10
+  },
+  "links": {
+    "hf": "CohereLabs/c4ai-command-a-03-2025",
+    "gh": "cohere-ai/cohere-toolkit",
+    "docs": "docs.cohere.com"
+  },
+  "note": "Enterprise RAG and tool-use focus; 23 business languages.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ"
+  ],
+  "vramQ4Gb": 65,
+  "vramFp16Gb": 222,
+  "tps4090": null,
+  "tpsNote": "~32 t/s on 2×A100"
+}

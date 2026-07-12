@@ -1,0 +1,10 @@
+{
+  "slug": "tau",
+  "name": "TAU-bench",
+  "category": "agents",
+  "unit": "%",
+  "description": "Tool-agent-user interactions in realistic airline/retail domains.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

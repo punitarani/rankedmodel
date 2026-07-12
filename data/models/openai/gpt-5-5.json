@@ -1,0 +1,44 @@
+{
+  "slug": "gpt-5-5",
+  "name": "GPT-5.5",
+  "orgSlug": "openai",
+  "familySlug": "gpt-5",
+  "releaseDate": "2026-04-02",
+  "status": "released",
+  "predecessor": "gpt-5",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE (undisclosed)",
+  "ctxK": 400,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": 60,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2.5,
+    "output": 20
+  },
+  "links": {
+    "docs": "platform.openai.com"
+  },
+  "note": "Mainline GPT-5.5 with adaptive routing between fast and thinking modes.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "magistral-medium",
+  "name": "Magistral Medium 1.2",
+  "orgSlug": "mistral-ai",
+  "familySlug": "magistral",
+  "releaseDate": "2025-09-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense (undisclosed)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 24,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2,
+    "output": 5
+  },
+  "links": {
+    "docs": "docs.mistral.ai"
+  },
+  "note": "Mistral's reasoning line with transparent chain-of-thought.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

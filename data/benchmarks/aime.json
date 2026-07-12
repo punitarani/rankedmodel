@@ -1,0 +1,10 @@
+{
+  "slug": "aime",
+  "name": "AIME 2025",
+  "category": "math",
+  "unit": "%",
+  "description": "American Invitational Mathematics Examination, pass@1.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

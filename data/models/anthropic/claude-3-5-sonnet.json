@@ -1,0 +1,43 @@
+{
+  "slug": "claude-3-5-sonnet",
+  "name": "Claude 3.5 Sonnet",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-3",
+  "releaseDate": "2024-06-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense (undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 30,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "docs.anthropic.com"
+  },
+  "note": "Defined the coding-assistant era of 2024.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "step-3-5-flash",
+  "name": "Step-3.5-Flash",
+  "orgSlug": "stepfun",
+  "familySlug": "step",
+  "releaseDate": "2026-02-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 196,
+  "activeParamsB": 11,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 15,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.12,
+    "output": 0.5
+  },
+  "links": {
+    "hf": "stepfun-ai/Step-3.5-Flash",
+    "gh": "stepfun-ai/Step3",
+    "docs": "platform.stepfun.com"
+  },
+  "note": "Throughput champion: 703 tok/s hosted.",
+  "quants": [
+    "FP8",
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 112,
+  "vramFp16Gb": 400,
+  "tps4090": null,
+  "tpsNote": "703 t/s hosted — fastest API throughput tracked"
+}

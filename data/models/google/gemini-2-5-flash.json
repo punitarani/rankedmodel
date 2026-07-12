@@ -1,0 +1,44 @@
+{
+  "slug": "gemini-2-5-flash",
+  "name": "Gemini 2.5 Flash",
+  "orgSlug": "google",
+  "familySlug": "gemini-2",
+  "releaseDate": "2025-05-20",
+  "status": "released",
+  "predecessor": "gemini-2-5-pro",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE (undisclosed)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": 100,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.3,
+    "output": 2.5
+  },
+  "links": {
+    "docs": "ai.google.dev"
+  },
+  "note": "High-throughput tier with controllable thinking budget.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

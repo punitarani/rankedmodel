@@ -1,0 +1,44 @@
+{
+  "slug": "gpt-5",
+  "name": "GPT-5",
+  "orgSlug": "openai",
+  "familySlug": "gpt-5",
+  "releaseDate": "2025-08-07",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE (undisclosed)",
+  "ctxK": 400,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": 57,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.25,
+    "output": 10
+  },
+  "links": {
+    "docs": "platform.openai.com"
+  },
+  "note": "Unified successor to GPT-4o and the o-series.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

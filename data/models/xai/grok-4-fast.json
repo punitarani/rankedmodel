@@ -1,0 +1,43 @@
+{
+  "slug": "grok-4-fast",
+  "name": "Grok 4 Fast",
+  "orgSlug": "xai",
+  "familySlug": "grok",
+  "releaseDate": "2025-09-20",
+  "status": "released",
+  "predecessor": "grok-4",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE (undisclosed)",
+  "ctxK": 2000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 30,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.2,
+    "output": 0.5
+  },
+  "links": {
+    "docs": "docs.x.ai"
+  },
+  "note": "Largest practical context window at 2M tokens; budget tier.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

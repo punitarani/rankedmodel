@@ -1,0 +1,43 @@
+{
+  "slug": "o3",
+  "name": "o3",
+  "orgSlug": "openai",
+  "familySlug": "o-series",
+  "releaseDate": "2025-04-16",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense (undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 40,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2,
+    "output": 8
+  },
+  "links": {
+    "docs": "platform.openai.com"
+  },
+  "note": "First o-series model with full tool use during reasoning.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

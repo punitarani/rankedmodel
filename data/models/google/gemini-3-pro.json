@@ -1,0 +1,45 @@
+{
+  "slug": "gemini-3-pro",
+  "name": "Gemini 3 Pro",
+  "orgSlug": "google",
+  "familySlug": "gemini-3",
+  "releaseDate": "2025-11-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE (undisclosed)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": 100,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2,
+    "output": 12
+  },
+  "links": {
+    "docs": "ai.google.dev"
+  },
+  "note": "Generational leap over 2.5; native 1M context.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

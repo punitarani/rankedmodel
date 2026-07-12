@@ -1,0 +1,50 @@
+{
+  "slug": "llama-3-3-70b",
+  "name": "Llama 3.3 70B",
+  "orgSlug": "meta",
+  "familySlug": "llama-3",
+  "releaseDate": "2024-12-06",
+  "status": "released",
+  "predecessor": "llama-3-1-8b",
+  "openness": "open-weights",
+  "license": "Llama 3.3 Community",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.2,
+    "output": 0.6
+  },
+  "links": {
+    "hf": "meta-llama/Llama-3.3-70B-Instruct",
+    "gh": "meta-llama/llama-models",
+    "docs": "llama.com"
+  },
+  "note": "405B-class quality in a dense 70B; enduring local favorite.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ",
+    "GPTQ",
+    "EXL2"
+  ],
+  "vramQ4Gb": 42,
+  "vramFp16Gb": 140,
+  "tps4090": 19,
+  "tpsNote": null
+}

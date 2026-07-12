@@ -1,0 +1,44 @@
+{
+  "slug": "gpt-4o",
+  "name": "GPT-4o",
+  "orgSlug": "openai",
+  "familySlug": "gpt-4",
+  "releaseDate": "2024-05-13",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense (undisclosed)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": 50,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2.5,
+    "output": 10
+  },
+  "links": {
+    "docs": "platform.openai.com"
+  },
+  "note": "The omni-modal workhorse of 2024-25; still widely deployed.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

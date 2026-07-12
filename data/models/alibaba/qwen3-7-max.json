@@ -1,0 +1,43 @@
+{
+  "slug": "qwen3-7-max",
+  "name": "Qwen3.7 Max",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen3",
+  "releaseDate": "2026-04-21",
+  "status": "released",
+  "predecessor": "qwen3-8b",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE (undisclosed)",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 119,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.25,
+    "output": 5
+  },
+  "links": {
+    "docs": "qwen.ai"
+  },
+  "note": "Cheapest model in the GPQA top 10.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

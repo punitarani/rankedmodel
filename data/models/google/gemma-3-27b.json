@@ -1,0 +1,50 @@
+{
+  "slug": "gemma-3-27b",
+  "name": "Gemma 3 27B",
+  "orgSlug": "google",
+  "familySlug": "gemma",
+  "releaseDate": "2025-03-12",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Gemma",
+  "paramsB": 27,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 140,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.1,
+    "output": 0.2
+  },
+  "links": {
+    "hf": "google/gemma-3-27b-it",
+    "gh": "google-deepmind/gemma",
+    "docs": "ai.google.dev/gemma"
+  },
+  "note": "Best-in-class single-GPU vision-language model of early 2025.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 18,
+  "vramFp16Gb": 54,
+  "tps4090": 42,
+  "tpsNote": null
+}

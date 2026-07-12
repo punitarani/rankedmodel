@@ -1,0 +1,10 @@
+{
+  "slug": "mmlu",
+  "name": "MMLU",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "57-subject multiple-choice knowledge. Largely saturated at the frontier.",
+  "normMin": 40,
+  "normMax": 100,
+  "higherIsBetter": true
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "claude-haiku-4-5",
+  "name": "Claude Haiku 4.5",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-4",
+  "releaseDate": "2025-10-15",
+  "status": "released",
+  "predecessor": "claude-sonnet-4",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense (undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 40,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1,
+    "output": 5
+  },
+  "links": {
+    "docs": "docs.anthropic.com"
+  },
+  "note": "Near-Sonnet coding at Haiku latency and price.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "glm-5",
+  "name": "GLM-5",
+  "orgSlug": "zhipu-ai",
+  "familySlug": "glm",
+  "releaseDate": "2026-01-28",
+  "status": "released",
+  "predecessor": "glm-4-7",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 620,
+  "activeParamsB": 34,
+  "archClass": "moe",
+  "archDisplay": "MoE",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 26,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.5,
+    "output": 1.8
+  },
+  "links": {
+    "hf": "zai-org/GLM-5",
+    "gh": "zai-org/GLM-5",
+    "docs": "docs.z.ai"
+  },
+  "note": "Held top open-weights Arena rating through spring 2026.",
+  "quants": [
+    "FP8",
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 350,
+  "vramFp16Gb": 1240,
+  "tps4090": null,
+  "tpsNote": "~26 t/s on M3 Ultra (Q4)"
+}
