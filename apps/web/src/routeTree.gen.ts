@@ -17,7 +17,9 @@ import { Route as RankingsIndexRouteImport } from './routes/rankings.index'
 import { Route as ModelsIndexRouteImport } from './routes/models.index'
 import { Route as BenchmarksIndexRouteImport } from './routes/benchmarks.index'
 import { Route as RankingsCategoryRouteImport } from './routes/rankings.$category'
+import { Route as OrganizationsSlugRouteImport } from './routes/organizations.$slug'
 import { Route as ModelsSlugRouteImport } from './routes/models.$slug'
+import { Route as FamiliesSlugRouteImport } from './routes/families.$slug'
 import { Route as DebugChartsRouteImport } from './routes/debug.charts'
 import { Route as DebugCatalogRouteImport } from './routes/debug.catalog'
 import { Route as ApiCatalogVChar123versionChar125DotjsonRouteImport } from './routes/api/catalog.v{$version}[.]json'
@@ -62,9 +64,19 @@ const RankingsCategoryRoute = RankingsCategoryRouteImport.update({
   path: '/rankings/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OrganizationsSlugRoute = OrganizationsSlugRouteImport.update({
+  id: '/organizations/$slug',
+  path: '/organizations/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ModelsSlugRoute = ModelsSlugRouteImport.update({
   id: '/models/$slug',
   path: '/models/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FamiliesSlugRoute = FamiliesSlugRouteImport.update({
+  id: '/families/$slug',
+  path: '/families/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DebugChartsRoute = DebugChartsRouteImport.update({
@@ -91,7 +103,9 @@ export interface FileRoutesByFullPath {
   '/methodology': typeof MethodologyRoute
   '/debug/catalog': typeof DebugCatalogRoute
   '/debug/charts': typeof DebugChartsRoute
+  '/families/$slug': typeof FamiliesSlugRoute
   '/models/$slug': typeof ModelsSlugRoute
+  '/organizations/$slug': typeof OrganizationsSlugRoute
   '/rankings/$category': typeof RankingsCategoryRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/models/': typeof ModelsIndexRoute
@@ -105,7 +119,9 @@ export interface FileRoutesByTo {
   '/methodology': typeof MethodologyRoute
   '/debug/catalog': typeof DebugCatalogRoute
   '/debug/charts': typeof DebugChartsRoute
+  '/families/$slug': typeof FamiliesSlugRoute
   '/models/$slug': typeof ModelsSlugRoute
+  '/organizations/$slug': typeof OrganizationsSlugRoute
   '/rankings/$category': typeof RankingsCategoryRoute
   '/benchmarks': typeof BenchmarksIndexRoute
   '/models': typeof ModelsIndexRoute
@@ -120,7 +136,9 @@ export interface FileRoutesById {
   '/methodology': typeof MethodologyRoute
   '/debug/catalog': typeof DebugCatalogRoute
   '/debug/charts': typeof DebugChartsRoute
+  '/families/$slug': typeof FamiliesSlugRoute
   '/models/$slug': typeof ModelsSlugRoute
+  '/organizations/$slug': typeof OrganizationsSlugRoute
   '/rankings/$category': typeof RankingsCategoryRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/models/': typeof ModelsIndexRoute
@@ -136,7 +154,9 @@ export interface FileRouteTypes {
     | '/methodology'
     | '/debug/catalog'
     | '/debug/charts'
+    | '/families/$slug'
     | '/models/$slug'
+    | '/organizations/$slug'
     | '/rankings/$category'
     | '/benchmarks/'
     | '/models/'
@@ -150,7 +170,9 @@ export interface FileRouteTypes {
     | '/methodology'
     | '/debug/catalog'
     | '/debug/charts'
+    | '/families/$slug'
     | '/models/$slug'
+    | '/organizations/$slug'
     | '/rankings/$category'
     | '/benchmarks'
     | '/models'
@@ -164,7 +186,9 @@ export interface FileRouteTypes {
     | '/methodology'
     | '/debug/catalog'
     | '/debug/charts'
+    | '/families/$slug'
     | '/models/$slug'
+    | '/organizations/$slug'
     | '/rankings/$category'
     | '/benchmarks/'
     | '/models/'
@@ -179,7 +203,9 @@ export interface RootRouteChildren {
   MethodologyRoute: typeof MethodologyRoute
   DebugCatalogRoute: typeof DebugCatalogRoute
   DebugChartsRoute: typeof DebugChartsRoute
+  FamiliesSlugRoute: typeof FamiliesSlugRoute
   ModelsSlugRoute: typeof ModelsSlugRoute
+  OrganizationsSlugRoute: typeof OrganizationsSlugRoute
   RankingsCategoryRoute: typeof RankingsCategoryRoute
   BenchmarksIndexRoute: typeof BenchmarksIndexRoute
   ModelsIndexRoute: typeof ModelsIndexRoute
@@ -245,11 +271,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RankingsCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/organizations/$slug': {
+      id: '/organizations/$slug'
+      path: '/organizations/$slug'
+      fullPath: '/organizations/$slug'
+      preLoaderRoute: typeof OrganizationsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/models/$slug': {
       id: '/models/$slug'
       path: '/models/$slug'
       fullPath: '/models/$slug'
       preLoaderRoute: typeof ModelsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/families/$slug': {
+      id: '/families/$slug'
+      path: '/families/$slug'
+      fullPath: '/families/$slug'
+      preLoaderRoute: typeof FamiliesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/debug/charts': {
@@ -283,7 +323,9 @@ const rootRouteChildren: RootRouteChildren = {
   MethodologyRoute: MethodologyRoute,
   DebugCatalogRoute: DebugCatalogRoute,
   DebugChartsRoute: DebugChartsRoute,
+  FamiliesSlugRoute: FamiliesSlugRoute,
   ModelsSlugRoute: ModelsSlugRoute,
+  OrganizationsSlugRoute: OrganizationsSlugRoute,
   RankingsCategoryRoute: RankingsCategoryRoute,
   BenchmarksIndexRoute: BenchmarksIndexRoute,
   ModelsIndexRoute: ModelsIndexRoute,
