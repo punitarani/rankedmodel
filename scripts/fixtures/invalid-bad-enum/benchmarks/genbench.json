@@ -1,0 +1,9 @@
+{
+  "slug": "genbench",
+  "name": "GenBench",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Fixture.",
+  "normMin": 40,
+  "normMax": 100
+}

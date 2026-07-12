@@ -1,0 +1,40 @@
+{
+  "slug": "strato-1",
+  "name": "Strato-1",
+  "orgSlug": "acme-ai",
+  "familySlug": "strato",
+  "releaseDate": "2025-06-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE (undisclosed)",
+  "ctxK": 200,
+  "modalities": ["text", "vision"],
+  "langCount": 40,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1,
+    "output": 4
+  },
+  "links": {
+    "docs": "acme.ai"
+  },
+  "note": "Fixture model.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null
+}

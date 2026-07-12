@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "rtx4090",
+    "name": "RTX 4090 24GB",
+    "kind": "consumer",
+    "vramGb": 24
+  },
+  {
+    "slug": "m3max",
+    "name": "M3 Max 128GB",
+    "kind": "mac",
+    "vramGb": 96
+  }
+]

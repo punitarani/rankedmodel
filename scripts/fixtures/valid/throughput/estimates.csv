@@ -1,0 +1,2 @@
+model_slug,quant_method,hardware_slug,framework,tokens_per_sec,context_tested,source,source_url
+breeze-7b,GGUF Q4,rtx4090,llama.cpp,140,8192,,

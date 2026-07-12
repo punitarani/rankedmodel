@@ -1,0 +1,37 @@
+{
+  "slug": "breeze-7b",
+  "name": "Breeze-7B",
+  "orgSlug": "open-collective",
+  "familySlug": "breeze",
+  "releaseDate": "2025-09-15",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense",
+  "ctxK": 128,
+  "modalities": ["text"],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "open/breeze-7b"
+  },
+  "note": "Fixture model.",
+  "quants": ["GGUF Q4", "GGUF Q8"],
+  "vramQ4Gb": 4.2,
+  "vramFp16Gb": 14,
+  "tps4090": 140,
+  "tpsNote": null
+}

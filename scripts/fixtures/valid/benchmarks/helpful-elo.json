@@ -1,0 +1,9 @@
+{
+  "slug": "helpful-elo",
+  "name": "Helpful Elo",
+  "category": "human-preference",
+  "unit": "Elo",
+  "description": "Fixture preference benchmark.",
+  "normMin": 1000,
+  "normMax": 1400
+}

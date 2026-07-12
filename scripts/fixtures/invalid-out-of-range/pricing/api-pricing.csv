@@ -1,0 +1,2 @@
+model_slug,provider,input_per_mtok,output_per_mtok,effective_date
+strato-2,acme-ai,2,8,2026-03-01
