@@ -20,6 +20,21 @@ test.describe('dashboard overview', () => {
     await expect(movers).toContainText('+39.6')
   })
 
+  test('scatter tooltip appears on hover and on keyboard focus', async ({ page }) => {
+    await gotoHydrated(page, '/')
+    const point = page.locator('a[aria-label^="Claude Opus 4.8 —"]')
+    await point.hover()
+    const tip = page.getByTestId('chart-tip')
+    await expect(tip).toBeVisible()
+    await expect(tip).toContainText('Claude Opus 4.8')
+    await expect(tip).toContainText('Elo')
+    await page.mouse.move(0, 0)
+    await expect(tip).toHaveCount(0)
+    // keyboard parity: the same details on focus (dataviz interaction rule)
+    await point.focus()
+    await expect(page.getByTestId('chart-tip')).toContainText('Claude Opus 4.8')
+  })
+
   test('arena rail is ordered and quick compare navigates', async ({ page }) => {
     await gotoHydrated(page, '/')
     const rail = page.getByTestId('arena-rail')

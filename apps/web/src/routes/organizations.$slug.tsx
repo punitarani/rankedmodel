@@ -1,6 +1,7 @@
 import { fmtCtx, fmtDate, fmtParams } from '@rankedmodel/shared'
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
+import { BackLink } from '#/components/back-link'
 import { CadenceBars } from '#/components/charts/cadence-bars'
 import { InlineBar } from '#/components/charts/inline-bar'
 import { ModelTag } from '#/components/model-tag'
@@ -42,9 +43,7 @@ function OrgRoute() {
 
   return (
     <div className="max-w-[900px] animate-fadeup px-6 py-5 pb-12">
-      <Link to="/models" className="text-[11.5px] text-mut hover:text-text">
-        ← Model explorer
-      </Link>
+      <BackLink to="/models" fallbackLabel="Model explorer" />
       <h1 className="mt-2.5 text-2xl font-semibold tracking-[-0.02em]">{first.org}</h1>
       <div className="mt-1 text-[13px] text-mut" data-testid="org-meta">
         {models.length} tracked models · {families.length} families:{' '}

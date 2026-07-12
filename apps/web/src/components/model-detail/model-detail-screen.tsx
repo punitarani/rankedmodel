@@ -9,6 +9,7 @@ import {
   type SnapshotModel,
 } from '@rankedmodel/shared'
 import { Link, useNavigate } from '@tanstack/react-router'
+import { BackLink } from '#/components/back-link'
 import { normPct } from '#/components/charts/scales'
 import { Sparkline } from '#/components/charts/sparkline'
 import { ModelTag } from '#/components/model-tag'
@@ -117,9 +118,7 @@ export function ModelDetailScreen({
 
   return (
     <div className="max-w-[1060px] animate-fadeup px-6 py-5 pb-12">
-      <Link to="/models" className="text-[11.5px] text-mut hover:text-text">
-        ← Model explorer
-      </Link>
+      <BackLink to="/models" fallbackLabel="Model explorer" />
 
       {/* header */}
       <div className="mt-2.5 flex flex-wrap items-start gap-3.5">
@@ -209,7 +208,13 @@ export function ModelDetailScreen({
             {benchRows.map((b) => (
               <div key={b.slug} data-testid={`bench-${b.slug}`}>
                 <div className="flex items-baseline gap-2 text-xs">
-                  <span className="font-semibold">{b.name}</span>
+                  <Link
+                    to="/benchmarks/$slug"
+                    params={{ slug: b.slug }}
+                    className="font-semibold text-text hover:text-acc"
+                  >
+                    {b.name}
+                  </Link>
                   <span className="font-mono text-[9.5px] uppercase text-dim">{b.cat}</span>
                   <span className="ml-auto font-mono text-[11.5px] font-semibold">{b.value}</span>
                   <span className="font-mono text-[10px] text-dim">#{b.rank}</span>

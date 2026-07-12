@@ -1,6 +1,7 @@
 import { fmtDate, fmtParams } from '@rankedmodel/shared'
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
+import { BackLink } from '#/components/back-link'
 import { InlineBar } from '#/components/charts/inline-bar'
 import { Sparkline } from '#/components/charts/sparkline'
 import { ModelTag } from '#/components/model-tag'
@@ -34,13 +35,11 @@ function FamilyRoute() {
 
   return (
     <div className="max-w-[820px] animate-fadeup px-6 py-5 pb-12">
-      <Link
+      <BackLink
         to="/organizations/$slug"
         params={{ slug: first.orgSlug }}
-        className="text-[11.5px] text-mut hover:text-text"
-      >
-        ← {first.org}
-      </Link>
+        fallbackLabel={first.org}
+      />
       <h1 className="mt-2.5 text-2xl font-semibold tracking-[-0.02em]">{first.family} family</h1>
       <div className="mt-1 text-[13px] text-mut">
         {members.length} releases · index progression and succession lineage (D9)

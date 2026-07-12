@@ -24,8 +24,26 @@ test.describe('benchmarks', () => {
     await gotoHydrated(page, '/benchmarks/gpqa')
     await expect(page.getByTestId('histogram').locator('div')).toHaveCount(10)
     // open models with disclosed params carry the scatter
-    const points = page.getByTestId('params-scatter').locator('circle')
-    await expect(points).toHaveCount(35)
+    await expect(page.getByTestId('params-point')).toHaveCount(35)
+  })
+
+  test('params-scatter points carry tooltips and link to the model', async ({ page }) => {
+    await gotoHydrated(page, '/benchmarks/gpqa')
+    await page.getByTestId('params-scatter').scrollIntoViewIfNeeded()
+    // .last() sits at the bottom of the chart, clear of the sticky topbar
+    const point = page.getByTestId('params-point').last()
+    await point.hover()
+    const tip = page.getByTestId('chart-tip')
+    await expect(tip).toBeVisible()
+    await point.click()
+    await expect(page).toHaveURL(/\/models\/[a-z0-9-]+$/)
+  })
+
+  test('histogram bins reveal their count on hover', async ({ page }) => {
+    await gotoHydrated(page, '/benchmarks/gpqa')
+    // hover the tallest region of the distribution — every bin carries a tooltip
+    await page.getByTestId('histogram').locator('div').nth(5).hover()
+    await expect(page.getByTestId('chart-tip')).toContainText(/model/)
   })
 
   test('unknown benchmark 404s', async ({ page }) => {
