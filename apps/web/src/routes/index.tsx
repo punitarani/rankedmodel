@@ -1,26 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { createServerFn } from '@tanstack/react-start'
-
-const getServerInfo = createServerFn().handler(() => ({
-  renderedAt: new Date().toISOString(),
-  runtime: typeof navigator !== 'undefined' ? navigator.userAgent : 'unknown',
-}))
+import { Placeholder } from '#/components/shell/placeholder'
 
 export const Route = createFileRoute('/')({
-  loader: () => getServerInfo(),
-  component: Home,
+  head: () => ({ meta: [{ title: 'RankedModel — LLM rankings, benchmarks & hardware fit' }] }),
+  component: () => (
+    <Placeholder
+      title="The state of language models"
+      note="Rankings, releases and benchmark movement — dashboard lands after the core screens."
+    />
+  ),
 })
-
-function Home() {
-  const info = Route.useLoaderData()
-  return (
-    <main className="p-8 font-mono text-sm">
-      <h1 data-ssr="true" className="text-xl font-semibold">
-        RankedModel
-      </h1>
-      <p className="mt-2">
-        SSR ok — rendered {info.renderedAt} · runtime: {info.runtime}
-      </p>
-    </main>
-  )
-}
