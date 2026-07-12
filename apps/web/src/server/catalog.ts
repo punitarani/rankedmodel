@@ -4,6 +4,7 @@ import {
   type CatalogSnapshot,
   catalogKey,
   catalogSnapshotSchema,
+  HEADLINE_SOURCE_PRECEDENCE,
   pickHeadlineScore,
   type ResultSource,
 } from '@rankedmodel/shared'
@@ -70,6 +71,21 @@ async function rebuildFromD1(version: number): Promise<CatalogSnapshot> {
     }
     return out
   }
+  const benchSourcesFor = (modelId: number): Record<string, ResultSource> => {
+    const out: Record<string, ResultSource> = {}
+    for (const b of benches) {
+      const rows = rowsByModelBench.get(`${modelId}|${b.id}`)
+      if (!rows || rows.length === 0) continue
+      const sorted = [...rows].sort(
+        (a, z) =>
+          HEADLINE_SOURCE_PRECEDENCE.indexOf(a.source) -
+          HEADLINE_SOURCE_PRECEDENCE.indexOf(z.source),
+      )
+      const head = sorted[0]
+      if (head) out[b.slug] = head.source
+    }
+    return out
+  }
 
   const snapshot: CatalogSnapshot = {
     version,
@@ -121,6 +137,7 @@ async function rebuildFromD1(version: number): Promise<CatalogSnapshot> {
           caps: m.capabilities,
           apiAvailable: m.apiAvailable,
           bench: benchMapFor(m.id),
+          benchSources: benchSourcesFor(m.id),
           price: null, // filled from pricing below
           vramQ4: m.vramQ4Gb,
           vramFp16: m.vramFp16Gb,

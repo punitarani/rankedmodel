@@ -113,3 +113,29 @@ export function normPct(value: number | null | undefined, min: number, max: numb
   if (value == null) return 0
   return Math.round(Math.max(0, Math.min(1, (value - min) / (max - min))) * 100)
 }
+
+/** Histogram bins over the curated bounds (benchmark detail distribution). */
+export function histogramBins(
+  values: number[],
+  min: number,
+  max: number,
+  binCount = 10,
+): { x0: number; x1: number; count: number }[] {
+  const span = (max - min) / binCount
+  const bins = Array.from({ length: binCount }, (_, i) => ({
+    x0: min + i * span,
+    x1: min + (i + 1) * span,
+    count: 0,
+  }))
+  for (const v of values) {
+    const i = Math.min(binCount - 1, Math.max(0, Math.floor((v - min) / span)))
+    const bin = bins[i]
+    if (bin) bin.count += 1
+  }
+  return bins
+}
+
+/** Position on a log axis, 0–1 (score-vs-params scatter). */
+export function logPos(value: number, min: number, max: number): number {
+  return (Math.log10(value) - Math.log10(min)) / (Math.log10(max) - Math.log10(min))
+}

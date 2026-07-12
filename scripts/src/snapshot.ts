@@ -2,7 +2,13 @@ import { spawnSync } from 'node:child_process'
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { gzipSync } from 'node:zlib'
-import { type CatalogSnapshot, catalogKey, catalogSnapshotSchema } from '@rankedmodel/shared'
+import {
+  type CatalogSnapshot,
+  catalogKey,
+  catalogSnapshotSchema,
+  HEADLINE_SOURCE_PRECEDENCE,
+  type ResultSource,
+} from '@rankedmodel/shared'
 import { deriveScores } from './derive'
 import { loadDataset } from './lib/load'
 
@@ -39,13 +45,29 @@ export async function buildSnapshot(root: string, version: number): Promise<Cata
   const orgBySlug = new Map(ds.organizations.map((o) => [o.slug, o]))
   const familyBySlug = new Map(ds.families.map((f) => [f.slug, f]))
 
-  // headline scores per model (same precedence as derive, which already applied it)
+  // headline scores + their provenance per model (same precedence as derive)
   const bench = new Map<string, Record<string, number | null>>()
+  const benchSources = new Map<string, Record<string, ResultSource>>()
   for (const [benchSlug, rows] of ds.results) {
+    const byModel = new Map<string, { score: number; source: ResultSource }[]>()
     for (const r of rows) {
-      const map = bench.get(r.modelSlug) ?? {}
-      if (map[benchSlug] == null) map[benchSlug] = r.score
-      bench.set(r.modelSlug, map)
+      if (!byModel.has(r.modelSlug)) byModel.set(r.modelSlug, [])
+      byModel.get(r.modelSlug)?.push({ score: r.score, source: r.source })
+    }
+    for (const [modelSlug, modelRows] of byModel) {
+      const sorted = [...modelRows].sort(
+        (a, z) =>
+          HEADLINE_SOURCE_PRECEDENCE.indexOf(a.source) -
+          HEADLINE_SOURCE_PRECEDENCE.indexOf(z.source),
+      )
+      const head = sorted[0]
+      if (!head) continue
+      const scores = bench.get(modelSlug) ?? {}
+      scores[benchSlug] = head.score
+      bench.set(modelSlug, scores)
+      const sources = benchSources.get(modelSlug) ?? {}
+      sources[benchSlug] = head.source
+      benchSources.set(modelSlug, sources)
     }
   }
 
@@ -96,6 +118,7 @@ export async function buildSnapshot(root: string, version: number): Promise<Cata
           caps: m.capabilities,
           apiAvailable: m.apiAvailable,
           bench: bench.get(m.slug) ?? {},
+          benchSources: benchSources.get(m.slug) ?? {},
           price: m.price,
           vramQ4: m.vramQ4Gb,
           vramFp16: m.vramFp16Gb,

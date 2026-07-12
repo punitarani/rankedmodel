@@ -50,6 +50,7 @@ const kvSnapshot: CatalogSnapshot = {
       },
       apiAvailable: true,
       bench: { genbench: 88.1 },
+      benchSources: { genbench: 'curated' },
       price: { input: 2, output: 8 },
       vramQ4: null,
       vramFp16: null,

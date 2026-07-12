@@ -62,7 +62,7 @@ Three-way contract: the publish pipeline writes it, `getCatalog` parses it, the 
   gpus: [{ slug, name, kind, vramGb }],
   models: [{ slug, name, org, orgSlug, family, familySlug, date, open, status,
              params, active, ctxK, arch, license, langs, modalities[], caps{6},
-             bench: Record<benchSlug, number|null>, price: {i,o}|null,
+             bench: Record<benchSlug, number|null>, benchSources: Record<benchSlug, source> (D8), price: {i,o}|null,
              vramQ4, vramFp16, quants[], tps4090, tpsNote,
              links{hf?,gh?,docs?,api?}, note,
              index, rank, categoryIdx: Record<category, number|null> }] }

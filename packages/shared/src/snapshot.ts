@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { BENCHMARK_CATEGORIES, GPU_KINDS, MODEL_STATUS, OPENNESS } from './enums'
+import { BENCHMARK_CATEGORIES, GPU_KINDS, MODEL_STATUS, OPENNESS, RESULT_SOURCES } from './enums'
 import { isoDateSchema, slugSchema } from './schema/common'
 import { capabilitiesSchema, modelLinksSchema, priceSchema } from './schema/model'
 
@@ -53,6 +53,8 @@ export const snapshotModelSchema = z.object({
   apiAvailable: z.boolean(),
   /** benchSlug → headline raw score (null = not evaluated). */
   bench: z.record(z.string(), z.number().nullable()),
+  /** benchSlug → provenance of the headline score (D8). */
+  benchSources: z.record(z.string(), z.enum(RESULT_SOURCES)).default({}),
   price: priceSchema.nullable(),
   vramQ4: z.number().nullable(),
   vramFp16: z.number().nullable(),

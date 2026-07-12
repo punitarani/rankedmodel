@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest'
 import {
   arenaPct,
   cadenceHeight,
+  histogramBins,
+  logPos,
   normPct,
   radarAxisMeta,
   radarPolygonPoints,
@@ -78,5 +80,21 @@ describe('bars', () => {
     expect(normPct(70, 40, 100)).toBe(50)
     expect(normPct(10, 40, 100)).toBe(0)
     expect(normPct(null, 40, 100)).toBe(0)
+  })
+})
+
+describe('histogram + logPos', () => {
+  it('bins values over curated bounds with edge clamping', () => {
+    const bins = histogramBins([40, 55, 56, 99.9, 100], 40, 100, 6)
+    expect(bins).toHaveLength(6)
+    expect(bins[0]?.count).toBe(1) // 40
+    expect(bins[1]?.count).toBe(2) // 55, 56 (50–60)
+    expect(bins[5]?.count).toBe(2) // 99.9 + clamped 100
+    expect(bins.reduce((n, b) => n + b.count, 0)).toBe(5)
+  })
+  it('logPos maps decades evenly', () => {
+    expect(logPos(1, 1, 100)).toBe(0)
+    expect(logPos(10, 1, 100)).toBeCloseTo(0.5, 10)
+    expect(logPos(100, 1, 100)).toBeCloseTo(1, 10)
   })
 })
