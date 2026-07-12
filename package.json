@@ -20,7 +20,8 @@
     "ci": "bun run typecheck && bun run lint && bun run test && bun run build",
     "dev": "bun run --filter '@rankedmodel/web' dev",
     "build": "bun run --filter '@rankedmodel/web' build",
-    "derive": "bun scripts/src/derive.ts"
+    "derive": "bun scripts/src/derive.ts",
+    "seed:local": "bun scripts/src/seed.ts --local"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.0",
