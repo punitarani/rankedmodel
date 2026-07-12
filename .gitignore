@@ -30,3 +30,6 @@ COMPETITIVE_ANALYSIS.md
 
 # os
 .DS_Store
+
+# user-local Claude Code state (launch.json is shared dev config and is tracked)
+.claude/settings.local.json

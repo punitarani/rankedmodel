@@ -7,6 +7,8 @@ import { defineConfig } from 'vite'
 
 const config = defineConfig({
   resolve: { tsconfigPaths: true },
+  // PORT lets tooling assign a free port; local default stays 3000
+  server: { port: Number(process.env.PORT) || 3000 },
   plugins: [
     devtools(),
     cloudflare({ viteEnvironment: { name: 'ssr' } }),
