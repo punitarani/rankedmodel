@@ -1,6 +1,7 @@
 import { useLocation } from '@tanstack/react-router'
 import { useSyncExternalStore } from 'react'
 import { getTheme, toggleTheme } from '#/lib/theme'
+import { TopbarSearch } from './topbar-search'
 
 const TITLES: [prefix: string, title: string][] = [
   ['/rankings', 'Global Rankings'],
@@ -30,7 +31,7 @@ const subscribeTheme = (cb: () => void) => {
   }
 }
 
-export function Topbar({ search }: { search?: React.ReactNode }) {
+export function Topbar() {
   const { pathname } = useLocation()
   const theme = useSyncExternalStore(subscribeTheme, getTheme, () => 'dark' as const)
 
@@ -42,16 +43,7 @@ export function Topbar({ search }: { search?: React.ReactNode }) {
       >
         {pageTitle(pathname)}
       </div>
-      <div className="relative ml-auto max-w-[420px] flex-1">
-        {search ?? (
-          <input
-            type="text"
-            placeholder="Search models, orgs…  ( / )"
-            className="w-full rounded-[7px] border border-border bg-panel2 px-[11px] py-1.5 text-[12.5px] text-text outline-none focus:border-acc"
-            readOnly
-          />
-        )}
-      </div>
+      <TopbarSearch />
       <button
         type="button"
         onClick={() => {

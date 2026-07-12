@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TimelineRouteImport } from './routes/timeline'
+import { Route as SearchRouteImport } from './routes/search'
 import { Route as SavedRouteImport } from './routes/saved'
 import { Route as MethodologyRouteImport } from './routes/methodology'
 import { Route as HardwareRouteImport } from './routes/hardware'
@@ -30,6 +31,11 @@ import { Route as ApiCatalogVChar123versionChar125DotjsonRouteImport } from './r
 const TimelineRoute = TimelineRouteImport.update({
   id: '/timeline',
   path: '/timeline',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SearchRoute = SearchRouteImport.update({
+  id: '/search',
+  path: '/search',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SavedRoute = SavedRouteImport.update({
@@ -120,6 +126,7 @@ export interface FileRoutesByFullPath {
   '/hardware': typeof HardwareRoute
   '/methodology': typeof MethodologyRoute
   '/saved': typeof SavedRoute
+  '/search': typeof SearchRoute
   '/timeline': typeof TimelineRoute
   '/benchmarks/$slug': typeof BenchmarksSlugRoute
   '/debug/catalog': typeof DebugCatalogRoute
@@ -139,6 +146,7 @@ export interface FileRoutesByTo {
   '/hardware': typeof HardwareRoute
   '/methodology': typeof MethodologyRoute
   '/saved': typeof SavedRoute
+  '/search': typeof SearchRoute
   '/timeline': typeof TimelineRoute
   '/benchmarks/$slug': typeof BenchmarksSlugRoute
   '/debug/catalog': typeof DebugCatalogRoute
@@ -159,6 +167,7 @@ export interface FileRoutesById {
   '/hardware': typeof HardwareRoute
   '/methodology': typeof MethodologyRoute
   '/saved': typeof SavedRoute
+  '/search': typeof SearchRoute
   '/timeline': typeof TimelineRoute
   '/benchmarks/$slug': typeof BenchmarksSlugRoute
   '/debug/catalog': typeof DebugCatalogRoute
@@ -180,6 +189,7 @@ export interface FileRouteTypes {
     | '/hardware'
     | '/methodology'
     | '/saved'
+    | '/search'
     | '/timeline'
     | '/benchmarks/$slug'
     | '/debug/catalog'
@@ -199,6 +209,7 @@ export interface FileRouteTypes {
     | '/hardware'
     | '/methodology'
     | '/saved'
+    | '/search'
     | '/timeline'
     | '/benchmarks/$slug'
     | '/debug/catalog'
@@ -218,6 +229,7 @@ export interface FileRouteTypes {
     | '/hardware'
     | '/methodology'
     | '/saved'
+    | '/search'
     | '/timeline'
     | '/benchmarks/$slug'
     | '/debug/catalog'
@@ -238,6 +250,7 @@ export interface RootRouteChildren {
   HardwareRoute: typeof HardwareRoute
   MethodologyRoute: typeof MethodologyRoute
   SavedRoute: typeof SavedRoute
+  SearchRoute: typeof SearchRoute
   TimelineRoute: typeof TimelineRoute
   BenchmarksSlugRoute: typeof BenchmarksSlugRoute
   DebugCatalogRoute: typeof DebugCatalogRoute
@@ -259,6 +272,13 @@ declare module '@tanstack/react-router' {
       path: '/timeline'
       fullPath: '/timeline'
       preLoaderRoute: typeof TimelineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/search': {
+      id: '/search'
+      path: '/search'
+      fullPath: '/search'
+      preLoaderRoute: typeof SearchRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/saved': {
@@ -382,6 +402,7 @@ const rootRouteChildren: RootRouteChildren = {
   HardwareRoute: HardwareRoute,
   MethodologyRoute: MethodologyRoute,
   SavedRoute: SavedRoute,
+  SearchRoute: SearchRoute,
   TimelineRoute: TimelineRoute,
   BenchmarksSlugRoute: BenchmarksSlugRoute,
   DebugCatalogRoute: DebugCatalogRoute,
