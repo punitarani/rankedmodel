@@ -1,0 +1,53 @@
+{
+  "name": "GLM-5.2 (High)",
+  "org": "Zhipu AI / Z.ai (Tsinghua)",
+  "family": "GLM-5",
+  "releaseDate": "2026-06-13",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 744,
+  "activeParamsB": 40,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 744B total / 40B active, DSA + 'IndexShare' sparse-attention indexer reuse (2.9x fewer per-token FLOPs at 1M context), 1M-token context; selectable High/Max reasoning-effort modes",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.4,
+    "output": 4.4
+  },
+  "links": {
+    "hf": "zai-org/GLM-5.2",
+    "docs": "https://docs.z.ai/guides/llm/glm-5.2"
+  },
+  "note": "Default reasoning-effort tier: 'High' mode balances strong performance against latency/token cost for everyday coding, per Z.ai's own guidance. Same weights as the Max tier, selected via the reasoning_effort API parameter.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "High",
+  "isDefaultConfig": true,
+  "isBestConfig": false,
+  "specSources": {
+    "paramsB/activeParamsB": "https://github.com/zai-org/GLM-5",
+    "releaseDate": "https://www.eigent.ai/blog/glm-5-2",
+    "ctxK": "https://huggingface.co/zai-org/GLM-5.2",
+    "license": "https://huggingface.co/zai-org/GLM-5.2",
+    "effort tiers (High/Max)": "https://www.eigent.ai/blog/glm-5-2"
+  },
+  "results": [],
+  "verificationNotes": "GLM-5.2 confirmed real and released via Hugging Face model card + blog (zai-org/GLM-5.2, huggingface.co/blog/zai-org/glm-52-blog), zai-org/GLM-5 GitHub repo, official docs.z.ai/guides/llm/glm-5.2 (1M context, 128K max output, benchmark claims), and heavy independent coverage (VentureBeat, MarkTechPost, Pandaily, DataCamp, Together AI, Eigent.ai) of the June 2026 launch. Release date has conflicting reports: eigent.ai and Pandaily say June 13, 2026; docs.z.ai's own release-notes timeline and llm-stats.com say June 16/17 -- used June 13 as the more specific, earliest-cited date, but this is a genuine multi-day uncertainty. This entry represents the 'High' reasoning-effort tier. Z.ai's own MarkTechPost-covered launch explicitly did NOT publish a full official per-tier benchmark breakdown ('No Benchmarks at Launch' per that outlet's headline); the self-reported numbers that later appeared on the HF blog and in docs.z.ai are believed to represent the top (Max) configuration, so they are attached to the GLM-5.2 (Max) sibling entry rather than this one, and this entry's results are left empty to avoid fabricating a High-tier number that was never actually published. Sources also disagree on which tier is the true API default: eigent.ai's blog explicitly states 'High is the default mode ... Max raises the reasoning budget' (used here), but one WebSearch synthesis of another source claimed the opposite ('Max is the default and High is opt-in') and docs.z.ai's own code example shows reasoning_effort='max' in a sample call. Flagged as uncertain -- see 'uncertain' field."
+}

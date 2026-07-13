@@ -1,0 +1,99 @@
+{
+  "name": "Claude Opus 4.8",
+  "org": "Anthropic",
+  "family": "Claude 4",
+  "releaseDate": "2026-05-28",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, architecture undisclosed; adaptive thinking controlled by a runtime effort parameter (low/medium/high/xhigh/max)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 5,
+    "output": 25
+  },
+  "links": {
+    "docs": "https://platform.claude.com/docs/en/about-claude/models/overview"
+  },
+  "note": "Model id claude-opus-4-8. Introduced 'dynamic workflows' in Claude Code and a 'fast mode' (2.5x speed) priced at $10/$50 per MTok, three times cheaper than prior fast-mode pricing. Regular (non-fast) pricing unchanged from Opus 4.7 at $5/$25. Best-in-class computer-use/browser-agent model at launch (84% on Online-Mind2Web, self-reported).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "release date, pricing, fast mode": "https://www.anthropic.com/news/claude-opus-4-8",
+    "model id, context window, max output": "https://platform.claude.com/docs/en/about-claude/models/overview"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 88.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained",
+      "notes": "SWE-bench Verified, attributed to Anthropic's system card Table 8.1.A."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 69.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 93.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained",
+      "notes": "GPQA Diamond; roughly flat vs Opus 4.7 (94.2%), within saturation noise."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 49.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained",
+      "notes": "Humanity's Last Exam, no-tools. With-tools scored 57.9% (not separately filed)."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 74.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained",
+      "notes": "Terminal-Bench 2.1, Terminus-2 harness."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 83.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained",
+      "notes": "PROPOSED NEW SLUG: 'osworld-verified' has no existing match in the valid slug list. Pass@1 on the OSWorld-Verified computer-use benchmark."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1890,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained",
+      "notes": "PROPOSED NEW SLUG distinct from base 'gdpval': GDPval-AA v2 is Anthropic's harder/updated economically-valuable-work eval, scored on a 0-2000 scale, not the same test as the original GDPval and should not be filed under the base slug."
+    }
+  ],
+  "verificationNotes": "Release date, model id, and pricing confirmed directly from Anthropic's own announcement and platform docs (fetched). Benchmark table numbers below are relayed via a third-party writeup that explicitly cites 'Claude Opus 4.8 System Card, Table 8.1.A'."
+}

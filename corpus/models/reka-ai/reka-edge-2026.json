@@ -1,0 +1,68 @@
+{
+  "name": "Reka Edge (2026)",
+  "org": "Reka AI",
+  "family": "Reka",
+  "releaseDate": "2026-03-11",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Reka Edge Community License (free for orgs with <$1M annual revenue; commercial license required above that)",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "657M ConvNeXt V2 vision encoder + 6.4B dense transformer LM backbone trained from scratch (custom Yasa2ForConditionalGeneration architecture)",
+  "ctxK": 16,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.1,
+    "output": 0.1
+  },
+  "links": {
+    "hf": "RekaAI/reka-edge-2603",
+    "docs": "https://reka.ai/news/reka-edge-frontier-level-edge-intelligence-for-physical-ai"
+  },
+  "note": "New generation of Reka Edge (distinct from the original Feb 2024 7B Reka Edge already in the corpus), positioned for physical AI / robotics / edge cameras; 3x fewer input tokens per image and up to 65% higher throughput than comparable 8B VLMs, with 4-bit quantization cutting memory from 13GB to ~5GB while keeping >98% of full-precision benchmark performance.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB": "https://reka.ai/news/reka-edge-frontier-level-edge-intelligence-for-physical-ai",
+    "releaseDate": "https://reka.ai/news/reka-edge-frontier-level-edge-intelligence-for-physical-ai",
+    "ctxK": "https://huggingface.co/RekaAI/reka-edge-2603",
+    "priceInput": "https://docs.reka.ai/pricing"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 88.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/RekaAI/reka-edge-2603"
+    },
+    {
+      "benchmarkSlug": "refcoco",
+      "score": 93.13,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/RekaAI/reka-edge-2603",
+      "notes": "best of reported RefCOCO variants (range 93.13-86.70)"
+    }
+  ],
+  "verificationNotes": "Confirmed via Reka's own news post (reka.ai/news/reka-edge-frontier-level-edge-intelligence-for-physical-ai, dated 2026-03-11), the RekaAI/reka-edge-2603 Hugging Face model card, and docs.reka.ai/pricing (official pricing page, $0.10/$0.10 per 1M tokens, matching the pre-existing 2024 Reka Edge record's price — third-party aggregator pages quoting $0.20/$0.80 were not used since they conflicted with Reka's own docs). This is a distinct, newer model from the 'reka-edge-7b.json' (2024-02-12) entry already in the corpus, per its own HF repo id and its own tech-blog announcement."
+}

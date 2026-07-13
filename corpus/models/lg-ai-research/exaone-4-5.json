@@ -1,0 +1,57 @@
+{
+  "name": "EXAONE 4.5",
+  "org": "LG AI Research",
+  "family": "EXAONE",
+  "releaseDate": "2026-04-09",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "EXAONE AI Model License (research/academic/educational use)",
+  "paramsB": 33,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Vision-Language Model with proprietary vision encoder + hybrid-attention LLM backbone and multi-token prediction",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 6,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "LGAI-EXAONE/EXAONE-4.5-33B",
+    "docs": "https://github.com/LG-AI-EXAONE/EXAONE-4.5"
+  },
+  "note": "LG's first open-weight VLM, a fraction of the size of its 'K-EXAONE' sibling while matching its text performance; successor to EXAONE 4.0 32B already in corpus (dated 2025-07-15). Released for research/academic/educational use, not full commercial API.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "params/license/languages": "https://www.prnewswire.com/news-releases/lg-reveals-next-gen-multimodal-ai-exaone-4-5-302736993.html",
+    "hfId": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B",
+    "ctxK": "https://arxiv.org/abs/2604.08644"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 81.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/lg-reveals-next-gen-multimodal-ai-exaone-4-5-302736993.html",
+      "notes": "LiveCodeBench v6, vendor-reported vs Gemma 4 (80.0)"
+    }
+  ],
+  "verificationNotes": "Context window (256K, precisely 262,144 tokens) sourced from the EXAONE 4.5 Technical Report, not the press release."
+}

@@ -1,0 +1,107 @@
+{
+  "name": "DeepSeek-V4-Flash (Think High)",
+  "org": "DeepSeek",
+  "family": "DeepSeek-V4",
+  "releaseDate": "2026-04-24",
+  "status": "preview",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 284,
+  "activeParamsB": 13,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (284B total / 13B active), hybrid Compressed Sparse Attention + Heavily Compressed Attention",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.14,
+    "output": 0.28
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-V4-Flash",
+    "docs": "https://api-docs.deepseek.com/news/news260424/"
+  },
+  "note": "Smaller, cheaper sibling MoE released alongside V4-Pro on the same day; fast default mode. (middle reasoning-effort tier, called 'Think High' on the official HF model-card benchmark table).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Think High",
+  "isDefaultConfig": false,
+  "isBestConfig": false,
+  "specSources": {
+    "paramsB": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+    "releaseDate": "https://api-docs.deepseek.com/news/news260424/"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 86.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "notes": "Think High mode, per HF model card"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 87.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "notes": "GPQA Diamond, Think High mode"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 88.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "notes": "Think High mode"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 78.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "notes": "SWE-bench Verified, Think High mode"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 52.3,
+      "source": "self-reported",
+      "sourceUrl": "https://macaron.im/blog/deepseek-v4-benchmarks",
+      "notes": "Think High mode"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 2816,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "notes": "Codeforces rating, Think High mode"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 29.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "notes": "Think High mode"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 69.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "notes": "Think High mode"
+    }
+  ],
+  "verificationNotes": "Confirmed via official DeepSeek api-docs news post and the deepseek-ai/DeepSeek-V4-Flash HF model card (284B total/13B active, MIT, 1M context, same three-tier benchmark table format as V4-Pro)."
+}

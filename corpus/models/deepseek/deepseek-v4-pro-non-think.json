@@ -1,0 +1,88 @@
+{
+  "name": "DeepSeek-V4-Pro (Non-Think)",
+  "org": "DeepSeek",
+  "family": "DeepSeek-V4",
+  "releaseDate": "2026-04-24",
+  "status": "preview",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 1600,
+  "activeParamsB": 49,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (1.6T total / 49B active), hybrid Compressed Sparse Attention + Heavily Compressed Attention, Manifold-Constrained Hyper-Connections, Muon optimizer",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.435,
+    "output": 0.87
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-V4-Pro",
+    "docs": "https://api-docs.deepseek.com/news/news260424/"
+  },
+  "note": "Fast/low-latency mode of the DeepSeek-V4-Pro preview checkpoint, the default reasoning tier a user gets without selecting anything. (fast/low-latency mode; the default tier a user gets without selecting anything).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Non-Think",
+  "isDefaultConfig": true,
+  "isBestConfig": false,
+  "specSources": {
+    "paramsB": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+    "releaseDate": "https://api-docs.deepseek.com/news/news260424/",
+    "ctxK": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+    "openness": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 82.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "notes": "Non-Think mode"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 72.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "notes": "GPQA Diamond, Non-Think mode"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 56.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "notes": "Non-Think mode"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 7.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "notes": "Non-Think mode"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 73.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "notes": "SWE-bench Verified, Non-Think mode"
+    }
+  ],
+  "verificationNotes": "Confirmed real via DeepSeek's own official API-docs news post (api-docs.deepseek.com/news/news260424/, dated 2026-04-24) announcing the V4-Pro/V4-Flash preview, and via the deepseek-ai/DeepSeek-V4-Pro Hugging Face model card, which gives 1.6T total/49B active params, MIT license, 1M-token context, and a benchmark table covering three reasoning tiers (Non-Think/Think High/Think Max). Numerous SEO/content-farm sites (codersera, sitepoint, morphllm, etc.) published speculative-sounding 'release timeline' articles with suspiciously precise but unverifiable claims (e.g. percentile rankings, an 'Intelligence Index' score) — those were NOT used; all numbers here come from the official HF model card table."
+}

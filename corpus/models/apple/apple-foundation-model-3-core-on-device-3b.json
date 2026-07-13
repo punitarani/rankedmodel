@@ -1,0 +1,47 @@
+{
+  "name": "Apple Foundation Model 3 Core (on-device, ~3B)",
+  "org": "Apple",
+  "family": "Apple Foundation Models",
+  "releaseDate": "2026-06-08",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 3,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense on-device transformer, third generation of Apple's on-device model line",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models"
+  },
+  "note": "Third-generation on-device model announced at WWDC26 (2026-06-08), a quality step up from the 2025 on-device model; gains image-input understanding via the Foundation Models framework's new multimodal update.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": false,
+  "specSources": {
+    "paramsB": "https://9to5mac.com/2026/06/11/apples-new-foundation-models-explained-on-device-ai-cloud-ai-and-everything-in-between/",
+    "releaseDate": "https://www.macrumors.com/2026/06/09/apple-outlines-major-ai-and-developer-tool-updates/"
+  },
+  "results": [],
+  "verificationNotes": "Confirmed via Apple's own machinelearning.apple.com research post, 9to5Mac's WWDC26 explainer, and MacRumors' June 9, 2026 coverage of the Platforms State of the Union. ctxK=32 is CARRIED FORWARD from the prior-generation on-device model (Apple did not publish a new context-window figure for this generation in the sources found) — flagged as an estimate, not a confirmed new number. No standard-benchmark (MMLU/GPQA-style) numeric scores were published for this generation — Apple reported only internal human-preference win-rates (e.g. 45.6% vs 23.3% preferred over the 2025 model on text tasks), which are not on the fixed benchmark-slug list, so no 'results' rows are included rather than mis-mapping them. This is a genuine gap: the corpus's Apple folder only has the original ~3B on-device model from June 2024."
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Qwen3.7-Plus",
+  "org": "Alibaba",
+  "family": "Qwen3.7",
+  "releaseDate": "2026-06-02",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE, exact expert configuration undisclosed; multimodal agent variant built on the Qwen3.7-Max backbone",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.4,
+    "output": 1.6
+  },
+  "links": {
+    "docs": "www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "note": "Cheaper, multimodal (vision + video input) sibling of Qwen3.7-Max released ~2 weeks later on the Bailian/Model Studio platform; adds GUI grounding and screen/mobile agent capability (ScreenSpot Pro, AndroidWorld) on top of the Max agent backbone. Text output only (no image/video generation). Preceded by a preview from ~May 14, 2026.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate/pricing/modalities/ctxK": "https://www.digitalapplied.com/blog/qwen-3-7-plus-alibaba-multimodal-agent-model-2026-release",
+    "results (gpqa, swe-bench-pro)": "https://www.digitalapplied.com/blog/qwen-3-7-plus-alibaba-multimodal-agent-model-2026-release",
+    "results (terminal-bench-2)": "https://www.buildfastwithai.com/blogs/qwen-3-7-plus-multimodal-agent-review-2026",
+    "priceInput/priceOutput (official rate card)": "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 90.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.digitalapplied.com/blog/qwen-3-7-plus-alibaba-multimodal-agent-model-2026-release",
+      "notes": "GPQA Diamond"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 57.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.digitalapplied.com/blog/qwen-3-7-plus-alibaba-multimodal-agent-model-2026-release",
+      "notes": "SWE-Bench Pro (reported as approx. 57.6)"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 70.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.buildfastwithai.com/blogs/qwen-3-7-plus-multimodal-agent-review-2026",
+      "notes": "Terminal Bench 2.0-Terminus, outperforming DeepSeek-V4-Pro Max (67.9) and Gemini-3.1 Pro (63.5) per vendor comparison"
+    }
+  ],
+  "verificationNotes": "Confirmed real via multiple independent sources (MarkTechPost, VentureBeat headline citing the exact $0.4/$1.6 pricing, digitalapplied, buildfastwithai) and the official Alibaba Cloud Model Studio pricing page, which lists 'Qwen3.7-Plus' with the identical $0.40/$1.60 (0-256K tier) and a second $1.20/$4.80 tier for 256K-1M tokens -- confirming both the model's existence and its exact base pricing. GA date has minor variance (June 1-3, 2026 across sources); used June 2, 2026 (MarkTechPost publish date, closest to consensus). Pricing figure used is the base (0-256K) tier; a higher tier applies above 256K input tokens per the official pricing page. Architecture undisclosed across all sources, consistent with Qwen3.7-Max. Benchmark scores (GPQA Diamond 90.3, SWE-bench Pro ~57.6) directly confirmed via digitalapplied fetch; Terminal-Bench 70.3 corroborated by both the original VentureBeat-summarized search result and a direct buildfastwithai fetch. GUI/mobile-agent scores (ScreenSpot Pro 79.0, AndroidWorld 81.0, MRCR-v2 91.7) have no matching benchmark slug in the valid list and were omitted rather than misfiled under an existing slug."
+}

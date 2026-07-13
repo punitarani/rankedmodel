@@ -1,0 +1,96 @@
+{
+  "name": "GLM-5.1",
+  "org": "Zhipu AI / Z.ai (Tsinghua)",
+  "family": "GLM-5",
+  "releaseDate": "2026-04-07",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 744,
+  "activeParamsB": 40,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 744B total / 40B active, DeepSeek Sparse Attention (DSA), 200K context, tuned for autonomous long-horizon agent runs (up to 8 hours single-run)",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.4,
+    "output": 4.4
+  },
+  "links": {
+    "hf": "zai-org/GLM-5.1",
+    "docs": "https://docs.z.ai/guides/llm/glm-5.1"
+  },
+  "note": "Point release focused on extreme long-horizon agentic engineering; Z.ai's own SWE-bench Pro claim (58.4) briefly topped the public leaderboard, edging out GPT-5.4 and Claude Opus 4.6 on that benchmark at launch.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB/activeParamsB": "https://huggingface.co/zai-org/GLM-5.1",
+    "releaseDate": "https://www.buildfastwithai.com/blogs/glm-5-1-open-source-review-2026",
+    "ctxK": "https://docs.z.ai/guides/llm/glm-5.1",
+    "license": "https://huggingface.co/zai-org/GLM-5.1",
+    "priceInput/priceOutput": "https://docs.z.ai/guides/overview/pricing"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 58.4,
+      "source": "self-reported",
+      "sourceUrl": "https://docs.z.ai/guides/llm/glm-5.1",
+      "notes": "SWE-bench Pro; Z.ai claimed this briefly topped the global leaderboard ahead of GPT-5.4 (57.7) and Claude Opus 4.6 (57.3) at launch"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 63.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5.1",
+      "notes": "Terminal-Bench 2.0 (Terminus-2 harness)"
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 68.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5.1",
+      "notes": "CyberGym"
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 68,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5.1",
+      "notes": "BrowseComp"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 95.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5.1",
+      "notes": "AIME 2026"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 86.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5.1",
+      "notes": "GPQA-Diamond"
+    }
+  ],
+  "verificationNotes": "Confirmed real via Hugging Face model card (zai-org/GLM-5.1, MIT license), official docs.z.ai/guides/llm/glm-5.1 (200K context, 128K max output, SWE-bench Pro 58.4 claim), zai-org/GLM-5 GitHub repo (which lists GLM-5.1 alongside GLM-5/5.2 at 744B/40B), and independent coverage (BuildFastWithAI, DeepInfra blog, DeepLearning.AI's The Batch, Wikipedia GLM(AI) article) all dating the release to April 7, 2026 and describing its signature 'runs autonomously for up to 8 hours, re-evaluating its own plan hundreds of times' capability. The Hugging Face page's auto-surfaced 'release date' metadata (derived from the shared arXiv paper 2602.15763) incorrectly implied a February date -- overridden in favor of the April 7, 2026 date that is explicitly and consistently reported by multiple independent outlets describing the actual product launch. Params: HF card says '754 billion total' while GitHub repo says 744B -- used 744B (matches GLM-5 and GLM-5.2 in the same repo table) and flagged the 10B discrepancy as likely rounding/estimation noise between sources. Benchmark scores (SWE-bench Pro, Terminal-Bench 2.0, CyberGym, BrowseComp, AIME 2026, GPQA-Diamond) taken directly from the Hugging Face model card's self-reported table. Omitted NL2Repo (42.7), HMMT Nov 2025 (94.0), HMMT Feb 2026 (82.6), IMOAnswerBench (83.8), Tool-Decathlon (40.7), and MCP-Atlas (71.8) for lack of a matching corpus benchmark slug."
+}

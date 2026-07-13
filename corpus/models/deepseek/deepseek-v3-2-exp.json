@@ -1,0 +1,121 @@
+{
+  "name": "DeepSeek-V3.2-Exp",
+  "org": "DeepSeek",
+  "family": "DeepSeek-V3",
+  "releaseDate": "2025-09-29",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 685,
+  "activeParamsB": 37,
+  "archClass": "moe",
+  "archDisplay": "685B-parameter MoE (37B active) transformer built on V3.1-Terminus, introducing DeepSeek Sparse Attention (DSA) — a lightning indexer + fine-grained token-selector for long-context efficiency",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.28,
+    "output": 0.42
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-V3.2-Exp",
+    "docs": "https://api-docs.deepseek.com/news/news250929/"
+  },
+  "note": "Experimental release that debuted DeepSeek Sparse Attention (DSA), cutting single-token inference FLOPs/KV-cache substantially for long-context use while holding benchmark performance roughly on par with V3.1-Terminus. API prices cut 50%+ at launch: input cache-hit $0.028/M, cache-miss $0.28/M, output $0.42/M (vs. $0.07/$0.56/$1.68 under V3.1-Terminus). Superseded by DeepSeek-V4-Flash as the alias target for deepseek-chat/deepseek-reasoner starting Dec 2025, and by the V4 series generally in 2026.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB/activeParamsB/context/DSA architecture": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp",
+    "release date, pricing, framing": "https://api-docs.deepseek.com/news/news250929/",
+    "pricing before/after detail": "https://techcrunch.com/2025/09/29/deepseek-releases-sparse-attention-model-that-cuts-api-costs-in-half/",
+    "exact cache-hit/cache-miss/output pricing figures": "https://venturebeat.com/ai/deepseeks-new-v3-2-exp-model-cuts-api-pricing-in-half-to-less-than-3-cents",
+    "context window corroboration (128k)": "https://artificialanalysis.ai/models/deepseek-v3-2-0925",
+    "full benchmark table vs V3.1-Terminus": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp",
+      "notes": "DeepSeek's own README benchmark table"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 79.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp",
+      "notes": "GPQA-Diamond, per README table"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 19.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp",
+      "notes": "Humanity's Last Exam"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 74.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 89.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp",
+      "notes": "AIME 2025"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 2121,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp",
+      "notes": "Codeforces rating"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 74.5,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp"
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 40.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 67.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp",
+      "notes": "SWE-bench Verified"
+    },
+    {
+      "benchmarkSlug": "terminal-bench",
+      "score": 37.7,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp"
+    }
+  ],
+  "verificationNotes": "Confirmed real and released (not rumored) via DeepSeek's own API docs news post, official X/Twitter announcement, HuggingFace model card, and independent press (TechCrunch, VentureBeat). Benchmark table sourced from the model's own GitHub README (self-reported by DeepSeek); Artificial Analysis corroborates context window and pricing but had not completed independent intelligence-index evaluation at time of writing (\"Independent evaluation forthcoming\", index value flagged as estimated ~21). Active-param figure (37B) is consistent with DeepSeek's standard V3-line MoE routing (not explicitly restated in the same sentence as 685B total in every source, but corroborated across multiple independent write-ups)."
+}

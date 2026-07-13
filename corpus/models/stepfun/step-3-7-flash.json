@@ -1,0 +1,59 @@
+{
+  "name": "Step 3.7 Flash",
+  "org": "StepFun",
+  "family": "Step",
+  "releaseDate": "2026-05-29",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 198,
+  "activeParamsB": 11,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts with 1.8B vision encoder + 196B language backbone, 198B total / 11B active",
+  "ctxK": 262,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.2,
+    "output": 1.15
+  },
+  "links": {
+    "hf": "stepfun-ai/Step-3.7-Flash",
+    "docs": "https://github.com/stepfun-ai/Step-3.7-Flash"
+  },
+  "note": "Newest StepFun release (successor to Step 3.5 Flash), adding native multimodal (image/GUI/document) support that the text-only Step 3.5 Flash lacked. Not previously in corpus (corpus's newest StepFun entry is Step-3 from 2025-07-31). No shipped 'Step 4' flagship found -- only reported as in training.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "params/license/ctx/pricing": "https://artificialanalysis.ai/models/step-3-7-flash",
+    "hfId": "https://huggingface.co/stepfun-ai/Step-3.7-Flash"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 30,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/step-3-7-flash",
+      "notes": "Note: this is the Artificial Analysis composite Intelligence Index (30), not a GPQA-specific figure -- no single-benchmark independent score could be verified for this exact model."
+    }
+  ],
+  "verificationNotes": "Artificial Analysis independently scored the Intelligence Index at 30 (#34/94); no independently-verified GPQA/LiveCodeBench numbers located for this specific model (only for the prior Step 3.5 Flash), so composite index is the only result reported."
+}

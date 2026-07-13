@@ -1,0 +1,99 @@
+{
+  "name": "Trinity-Large-Thinking",
+  "org": "Arcee AI",
+  "family": "Trinity",
+  "releaseDate": "2026-04-01",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "OpenMDW-1.1",
+  "paramsB": 398,
+  "activeParamsB": 13,
+  "archClass": "moe",
+  "archDisplay": "Sparse MoE, 256 experts (4 active + 1 shared, ~1.56% sparsity), sigmoid routing, SMEBU load balancing, interleaved local/global gated attention, depth-scaled sandwich norm",
+  "ctxK": 512,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.25,
+    "output": 0.8
+  },
+  "links": {
+    "hf": "arcee-ai/Trinity-Large-Thinking",
+    "docs": "https://arxiv.org/abs/2602.17004"
+  },
+  "note": "398B-total/13B-active reasoning MoE pretrained from scratch on 17T tokens by Arcee AI, a small US startup (widely reported as building it 'from scratch to best Meta's Llama') — one of the largest open-weight models produced by an independent US lab. Sibling Trinity Mini (26B/3B active) and Trinity Nano (6B/1B active) were released alongside it but were not independently characterized here. BFCLv4 (70.1) and Tau2-Airline (88.0) scores were reported on the model card but omitted from results below because they don't cleanly match any existing benchmark slug (bfcl-v3 is a different/easier benchmark version, and no tau2-airline slug exists) — flagging bfcl-v4 as a plausible new slug to add rather than misfiling it under bfcl-v3.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Thinking",
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB/activeParamsB/architecture/training tokens": "https://arxiv.org/abs/2602.17004",
+    "benchmark scores/context length/license": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking",
+    "pricing": "https://docs.arcee.ai/get-started/pricing"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 76.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking",
+      "notes": "GPQA-Diamond"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 96.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking",
+      "notes": "AIME 2025"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 83.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 63.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking",
+      "notes": "SWE-bench Verified"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 52.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking"
+    },
+    {
+      "benchmarkSlug": "pinchbench",
+      "score": 91.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking",
+      "notes": "Agentic benchmark; #2 overall behind Anthropic Opus-4.6 (93.3) per press coverage"
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 94.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking",
+      "notes": "Tau2-Telecom split"
+    }
+  ],
+  "verificationNotes": "Architecture/training details from the Arcee Trinity Large technical report (arXiv:2602.17004); benchmark table and license from the official Hugging Face model card; pricing from Arcee's own docs site."
+}

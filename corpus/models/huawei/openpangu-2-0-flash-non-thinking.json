@@ -1,0 +1,82 @@
+{
+  "name": "openPangu-2.0-Flash (Non-Thinking)",
+  "org": "Huawei",
+  "family": "openPangu",
+  "releaseDate": "2026-06-12",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "OpenPangu Model License Agreement v2.0",
+  "paramsB": 92,
+  "activeParamsB": 6,
+  "archClass": "moe",
+  "archDisplay": "MoE with MLA + DSA/SWA hybrid attention (1:2 ratio), 4-stream mHC residual, multi-token prediction heads; trained on Huawei Ascend NPUs (no NVIDIA hardware)",
+  "ctxK": 512,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openpangu/openPangu-2.0-Flash",
+    "docs": "https://huggingface.co/openpangu/openPangu-2.0-Flash"
+  },
+  "note": "Default (no-extended-reasoning) inference mode of the same openPangu-2.0-Flash weights; this is the mode a user gets without opting into Thinking mode.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Non-Thinking",
+  "isDefaultConfig": true,
+  "isBestConfig": false,
+  "specSources": {
+    "paramsB/activeParamsB/ctxK/architecture": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 89.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "Prompt-level strict accuracy, Non-Thinking mode"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 54.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "Non-Thinking mode"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 86.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "AIME 2026, Avg@16, Non-Thinking mode"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 50.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "LiveCodeBench V6, Avg@3, Non-Thinking mode"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 57.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "SWE-bench Verified, Avg@3, Non-Thinking mode"
+    }
+  ],
+  "verificationNotes": "Same official HF model card as the Thinking sibling; Non-Thinking column of the same benchmark table."
+}

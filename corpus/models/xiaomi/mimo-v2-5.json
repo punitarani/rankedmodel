@@ -1,0 +1,91 @@
+{
+  "name": "MiMo-V2.5",
+  "org": "Xiaomi",
+  "family": "MiMo",
+  "releaseDate": "2026-04-22",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 310,
+  "activeParamsB": 15,
+  "archClass": "moe",
+  "archDisplay": "Sparse MoE (256 routed experts, 8/token), hybrid Sliding-Window+Global attention 5:1, native 729M-param ViT + 261M-param audio encoder, 3x MTP modules",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.14,
+    "output": 0.28
+  },
+  "links": {
+    "hf": "XiaomiMiMo/MiMo-V2.5",
+    "docs": "https://mimo.xiaomi.com/mimo-v2-5/"
+  },
+  "note": "Xiaomi's native omnimodal flagship-tier model (text/image/video/audio), 310B total / 15B active MoE, 1M context, fully open-sourced under MIT. Consolidates the prior separate MiMo-V2-Pro (reasoning) and MiMo-V2-Omni (multimodal) lines into one architecture built on the MiMo-V2-Flash backbone.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB/activeParamsB/archClass/ctxK/modalities/license": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+    "releaseDate": "https://en.wikipedia.org/wiki/Xiaomi_MiMo",
+    "priceInput/priceOutput": "https://mimo.mi.com/docs/en-US/news/v2.5-news",
+    "results": "https://mimo.xiaomi.com/mimo-v2-5/"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 56.1,
+      "source": "self-reported",
+      "sourceUrl": "https://mimo.xiaomi.com/mimo-v2-5/",
+      "notes": "SWE-Bench Pro ('Real-World Bug Fixing'); read directly from the embedded benchmark-chart JS data (codingData array) on Xiaomi's official MiMo-V2.5 product page."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 65.8,
+      "source": "self-reported",
+      "sourceUrl": "https://mimo.xiaomi.com/mimo-v2-5/",
+      "notes": "Terminal-Bench 2.0 ('Terminal Task Completion'); from the same embedded chart data."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 77.9,
+      "source": "self-reported",
+      "sourceUrl": "https://mimo.xiaomi.com/mimo-v2-5/",
+      "notes": "MMMU-Pro ('Image Understanding & Reasoning'); from the embedded multimodalData chart array."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 87.7,
+      "source": "self-reported",
+      "sourceUrl": "https://mimo.xiaomi.com/mimo-v2-5/",
+      "notes": "Video-MME ('General Video QA'); from the embedded multimodalData chart array."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 81,
+      "source": "self-reported",
+      "sourceUrl": "https://mimo.xiaomi.com/mimo-v2-5/",
+      "notes": "CharXiv 'RQ' (reasoning-question) subset, chart-understanding benchmark; from the embedded multimodalData chart array."
+    }
+  ],
+  "verificationNotes": "Params/architecture/context/modalities/license confirmed directly against the raw HuggingFace README (XiaomiMiMo/MiMo-V2.5), which also gives an internal 'component table' cross-checked against the Pro repo's identical table (both agree: 310B/15B, 48-layer, 5:1 SWA:GA, 3x MTP). Release date corroborated by Wikipedia's Xiaomi MiMo lineage entry, MarkTechPost (published 2026-04-22), and Xiaomi's own blog (one secondary source, GSMArena, says 2026-04-28, and the Pro-specific Xiaomi page separately says 2026-04-27; treated as the same announcement week, with 2026-04-22 taken as authoritative per Wikipedia + the MarkTechPost publish date + this task's brief). IMPORTANT CAVEAT: the benchmark table embedded in the HuggingFace READMEs (GSM8K 83.3, MMLU 86.3, etc.) is explicitly labeled 'Base Model Evaluation' and reports the pretrained -Base checkpoint, not the released chat/agentic model — so those numbers were NOT used for 'results' below. Instead, results were pulled from the live JS-driven benchmark charts embedded in Xiaomi's own product page (https://mimo.xiaomi.com/mimo-v2-5/), fetched and parsed directly from raw HTML/JS (not summarized), which report the actual shipped model against Claude Opus 4.6, Gemini 3.1 Pro, GPT-5.4, Kimi K2.6, DeepSeek-V4-Flash."
+}

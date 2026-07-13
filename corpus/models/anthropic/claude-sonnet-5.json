@@ -1,0 +1,100 @@
+{
+  "name": "Claude Sonnet 5",
+  "org": "Anthropic",
+  "family": "Claude 5",
+  "releaseDate": "2026-06-30",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, architecture undisclosed; adaptive thinking on by default, controlled by a runtime effort parameter (low/medium/high/xhigh/max)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5"
+  },
+  "note": "Model id claude-sonnet-5. Drop-in upgrade for Sonnet 4.6: adaptive thinking on by default, manual extended-thinking removed (400 error), new tokenizer (~30% more tokens for same text vs Sonnet 4.6), non-default sampling params rejected. Introductory pricing $2/$10 per MTok through 2026-08-31, standard pricing $3/$15 thereafter (used here). On Terminal-Bench 2.1 and GDPval-AA v2 it narrowly beats Opus 4.8 despite Sonnet-tier pricing. NO SEPARATE '(High)' PRODUCT: Anthropic's docs state explicitly that setting effort to 'high' 'produces exactly the same behavior as omitting the effort parameter entirely,' and high is the documented default — there is no distinct marketed 'Sonnet 5 (High)' SKU to add as a sibling entry.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "model id, context window, max output, pricing, effort defaults": "https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5",
+    "release date, positioning": "https://www.anthropic.com/news/claude-sonnet-5"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 96.2,
+      "source": "self-reported",
+      "sourceUrl": "https://o-mega.ai/articles/claude-sonnet-5-benchmarks-and-cost-breakdown",
+      "notes": "GPQA Diamond, third-party recap of Anthropic's reported figure."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 85.2,
+      "source": "self-reported",
+      "sourceUrl": "https://o-mega.ai/articles/claude-sonnet-5-benchmarks-and-cost-breakdown",
+      "notes": "SWE-bench Verified."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 63.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained",
+      "notes": "5 points ahead of Sonnet 4.6 (58.1%), 6 points behind Opus 4.8 (69.2%)."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 80.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained",
+      "notes": "Terminal-Bench 2.1, Terminus-2 harness; exceeds Opus 4.8 (74.6%)."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 81.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained",
+      "notes": "See proposed-slug note on the Opus 4.8 entry."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1618,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained",
+      "notes": "See proposed-slug note on the Opus 4.8 entry. Narrowly ahead of Opus 4.8 (1,615)."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 57.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained",
+      "notes": "Humanity's Last Exam, with-tools configuration."
+    }
+  ],
+  "verificationNotes": "Model id, pricing, context window, and behavior changes confirmed directly from Anthropic's own Claude Platform docs (fetched in full). Benchmark numbers below come from a mix of a system-card-citing blog and an independent aggregator; flagged per-item."
+}

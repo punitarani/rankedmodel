@@ -1,0 +1,66 @@
+{
+  "name": "GPT-5 Pro",
+  "org": "OpenAI",
+  "family": "GPT-5",
+  "releaseDate": "2025-08-07",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary (OpenAI API Terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Unified reasoning system behind GPT-5's auto-router; dense transformer, exact size undisclosed; top extended-reasoning tier defaulting to maximum reasoning effort",
+  "ctxK": 400,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 15,
+    "output": 120
+  },
+  "links": {
+    "docs": "https://developers.openai.com/api/docs/models/gpt-5-pro"
+  },
+  "note": "Top extended-reasoning tier of the GPT-5 family, launched same-day as GPT-5 for $200/mo ChatGPT Pro subscribers (Aug 7, 2025); API access (Responses API only) followed on Oct 6, 2025 at $15/$120 per M tokens, 400K context / 272K max output.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate": "https://techcrunch.com/2025/08/07/openais-gpt-5-is-here/",
+    "ctxK/priceInput/priceOutput": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+    "openness": "https://developers.openai.com/api/docs/models/gpt-5-pro"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 88.4,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5/",
+      "notes": "GPQA Diamond, no tools, extended reasoning -- new SOTA at launch (distinct from base GPT-5's 85.7 no-tools figure already in the corpus)"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 100,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5/",
+      "notes": "AIME 2025 with Python tools (without-tools figure reported elsewhere as 99.6%); distinct from base GPT-5's 94.6 no-tools figure already in the corpus"
+    }
+  ],
+  "verificationNotes": "Existence and same-day (Aug 7, 2025) ChatGPT Pro availability confirmed via CNBC and TechCrunch's GPT-5 launch coverage ('$200-per-month Pro subscribers received unlimited access to GPT-5, as well as a souped-up version called GPT-5 Pro'). Context window (400K, 272K max output), pricing ($15/$120 per M), Responses-API-only availability, and text+image-in/text-out modalities confirmed by direct fetch of developers.openai.com/api/docs/models/gpt-5-pro. GPQA-Diamond 88.4% (no tools) and AIME-2025 100% (with Python tools) confirmed via targeted searches quoting OpenAI's own openai.com/index/introducing-gpt-5/ announcement page verbatim (direct fetch of that URL 403s, consistent with the pattern already noted in the corpus's existing gpt-5.json entry). Did not include SWE-bench/Aider-polyglot 'Pro' numbers surfaced by a Vellum aggregator page, since that page's Pro pricing ($1.25/$10) and release date (Dec 3, 2025) contradicted every other source and its 'Pro' SWE-bench/Aider figures were numerically identical to base GPT-5's — strong signal of a mislabeled/conflated table, so those two rows were dropped per the 'omit rather than guess' instruction."
+}

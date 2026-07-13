@@ -1,0 +1,58 @@
+{
+  "name": "Muse Spark 1.1 (xhigh)",
+  "org": "Meta",
+  "family": "Muse Spark",
+  "releaseDate": "2026-07-09",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Proprietary multimodal reasoning model (undisclosed architecture), Meta Superintelligence Labs' first model family, update to April 2026 Muse Spark",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.25,
+    "output": 4.25
+  },
+  "links": {
+    "docs": "https://ai.meta.com/"
+  },
+  "note": "First flagship from Meta Superintelligence Labs (led by Alexandr Wang), replacing the open Llama line with a proprietary model; base Muse Spark launched 2026-04-08, this is the 1.1 update from 2026-07-09, evaluated here at the 'xhigh' reasoning-effort tier. Meta has said it hopes to open-source future versions but this release is closed/API-only.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "xhigh",
+  "isDefaultConfig": false,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate": "https://www.techtimes.com/articles/320182/20260711/meta-muse-spark-11-earns-71-independent-coding-benchmark-one-third-rival-cost.htm",
+    "pricing/ctx/modalities": "https://artificialanalysis.ai/models/muse-spark-1-1"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "hle",
+      "score": 45,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/articles/muse-spark-1-1-everything-you-need-to-know",
+      "notes": "Humanity's Last Exam, Artificial Analysis independent evaluation of Muse Spark 1.1"
+    }
+  ],
+  "verificationNotes": "Base Muse Spark's own April 2026 release announcement (via Meta AI blog, relayed by buildfastwithai.com) reports Intelligence Index v4.0 52, HealthBench Hard 42.8, HLE 50.2%, Terminal-Bench 2.0 59.0, ARC-AGI-2 42.5 -- these are self-reported. Artificial Analysis independently measured Muse Spark 1.1 (xhigh) at Intelligence Index 51, a +8pt gain over the original that AA attributes mostly to Coding (+12) and HLE (+5, to 45%)."
+}

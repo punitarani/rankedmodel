@@ -1,0 +1,66 @@
+{
+  "name": "Grok 4.3 (High)",
+  "org": "SpaceXAI",
+  "family": "Grok 4.3",
+  "releaseDate": "2026-04-30",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (size undisclosed); high reasoning-effort configuration of the same served weights as Grok 4.3",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.25,
+    "output": 2.5
+  },
+  "links": {
+    "docs": "https://docs.x.ai"
+  },
+  "note": "High reasoning-effort tier of Grok 4.3, same underlying weights as the default/low-effort configuration, opted into via the API's reasoning_effort parameter. This is the configuration Artificial Analysis benchmarks by default for Grok 4.3.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "high",
+  "isDefaultConfig": false,
+  "isBestConfig": true,
+  "specSources": {
+    "results.gpqa": "https://theairankings.com/xai/grok-4-3/",
+    "results.tau2-bench-telecom": "https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 90.1,
+      "source": "independent",
+      "sourceUrl": "https://theairankings.com/xai/grok-4-3/",
+      "notes": "GPQA Diamond, as measured/reported by Artificial Analysis; high reasoning-effort configuration. Evaluated at launch, 2026-04-30."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 97.7,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing",
+      "notes": "tau2-Bench Telecom, as measured by Artificial Analysis at launch, 2026-04-30 (also cited as 98% by other outlets)."
+    }
+  ],
+  "verificationNotes": "GPQA Diamond 90.1% corroborated across 3 independent write-ups summarizing Artificial Analysis's Grok 4.3 model page (TheAIRankings, Requesty, FelloAI). tau2-bench-telecom ~97.7-98% corroborated by both Artificial Analysis's own launch article and TheAIRankings. I deliberately dropped several numbers I could not corroborate: a composite 'AA Intelligence Index' figure that came back inconsistently across fetches (53.2, 53, 38, and 37.6 in different sources/pages — likely different sub-metrics or fetch-summarizer noise) is omitted since it has no matching benchmark slug in the valid enum anyway; a Humanity's Last Exam score of 35.0% appeared in only one source (TheAIRankings) and a follow-up targeted search could not corroborate it (only found Grok 4 / Grok 4 Heavy HLE numbers), so it is omitted per the 'omit rather than guess' rule."
+}

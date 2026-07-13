@@ -1,0 +1,48 @@
+{
+  "name": "Granite 4.1 8B Instruct",
+  "org": "IBM",
+  "family": "Granite 4.1",
+  "releaseDate": "2026-04-29",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer",
+  "ctxK": 512,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "ibm-granite/granite-4.1-8b",
+    "docs": "https://www.ibm.com/granite/docs/models/granite4-1"
+  },
+  "note": "Successor to the Granite 4.0-H-Small MoE already in the corpus (dated 2025-10-02); IBM says the new 8B dense model matches or beats that prior 32B MoE flagship at 4x fewer parameters. Released alongside 3B and 30B siblings plus updated speech/vision/embedding/Guardian models.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": false,
+  "specSources": {
+    "params/license/ctx/training": "https://research.ibm.com/blog/granite-4-1-ai-foundation-models",
+    "hfId": "https://huggingface.co/ibm-granite/granite-4.1-8b"
+  },
+  "results": [],
+  "verificationNotes": "IBM's own materials describe the 8B as matching/beating Granite 4.0-H-Small qualitatively and 'competitive' on instruction-following/tool-calling vs Gemma/Qwen, without a specific numeric benchmark table in the sources checked; no results entry included to avoid guessing a number."
+}

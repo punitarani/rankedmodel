@@ -1,0 +1,103 @@
+{
+  "name": "GLM-4.6",
+  "org": "Zhipu AI / Z.ai (Tsinghua)",
+  "family": "GLM-4.6",
+  "releaseDate": "2025-09-30",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 357,
+  "activeParamsB": 32,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 357B total / 32B active, 200K context (up from 128K in GLM-4.5), hybrid thinking/non-thinking response modes",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.6,
+    "output": 2.2
+  },
+  "links": {
+    "hf": "zai-org/GLM-4.6",
+    "docs": "https://docs.z.ai/guides/llm/glm-4.6"
+  },
+  "note": "Flagship coding/agentic update to GLM-4.5; expanded context to 200K, ~15% more token-efficient, near-parity with Claude Sonnet 4 on real-world coding (CC-Bench).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB/activeParamsB": "https://huggingface.co/zai-org/GLM-4.6",
+    "releaseDate": "https://www.cometapi.com/what-is-glm-4-6/",
+    "ctxK": "https://docs.z.ai/guides/llm/glm-4.6",
+    "license": "https://huggingface.co/zai-org/GLM-4.6",
+    "priceInput/priceOutput": "https://docs.z.ai/guides/overview/pricing"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "aime",
+      "score": 93.9,
+      "source": "self-reported",
+      "sourceUrl": "https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison",
+      "notes": "AIME 2025, standard (non-tool) mode; Z.ai's own launch figure, relayed via Communeify/cirra.ai"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 81,
+      "source": "self-reported",
+      "sourceUrl": "https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison",
+      "notes": "GPQA Diamond"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 82.8,
+      "source": "self-reported",
+      "sourceUrl": "https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison",
+      "notes": "LiveCodeBench v6; corroborated separately by CometAPI's write-up of the same launch figure"
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 45.1,
+      "source": "self-reported",
+      "sourceUrl": "https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison",
+      "notes": "BrowseComp"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 68,
+      "source": "self-reported",
+      "sourceUrl": "https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison",
+      "notes": "SWE-bench Verified"
+    },
+    {
+      "benchmarkSlug": "terminal-bench",
+      "score": 40.5,
+      "source": "self-reported",
+      "sourceUrl": "https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison",
+      "notes": "Terminal-Bench; exact harness version (2.0 vs original) not specified in source"
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 75.9,
+      "source": "self-reported",
+      "sourceUrl": "https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison",
+      "notes": "tau2-Bench agentic tool-use benchmark, labeled 'T2-Bench' in source"
+    }
+  ],
+  "verificationNotes": "Confirmed real, released model (not a rumor) via Z.ai's own blog (z.ai/blog/glm-4.6, referenced but JS-rendered so not directly fetchable), Hugging Face model card (zai-org/GLM-4.6, MIT license, 357B/32B active, BF16/F32), and official docs.z.ai/guides/llm/glm-4.6 (200K context, 128K max output). Release date 2025-09-30 corroborated by CometAPI, docs.z.ai release-notes page, and multiple independent outlets (IntuitionLabs, CodeGPT). Params: HF card and llm-stats.com both say 357B total/32B active; some secondary blogs round to '355B' -- treated as the same figure, minor rounding noise. License: HF card and llm-stats.com say MIT; two lower-quality secondary blogs (codegpt.co, intuitionlabs.ai) incorrectly say Apache 2.0 -- MIT from the primary HF card is authoritative. Benchmark numbers (AIME-25 93.9, GPQA 81.0, LiveCodeBench v6 82.8, BrowseComp 45.1, SWE-bench Verified 68.0, Terminal-Bench 40.5, tau2-Bench 75.9) come from a table on cirra.ai attributed to a Communeify.com relay of Z.ai's own launch announcement; the AIME-25 93.9 and LiveCodeBench-v6 82.8 figures were independently corroborated by a separate WebSearch synthesis and by CometAPI's 82.8 LiveCodeBench figure, giving reasonable confidence these are the vendor's real self-reported numbers even though I could not load the z.ai blog page directly (client-rendered SPA returned empty content to WebFetch). Treated as self-reported since ultimately vendor-originated. Did not include CC-Bench win-rate (48.6% vs Claude Sonnet 4), HumanEval 84.2, or MBPP 80.7 -- CC-Bench is a proprietary Zhipu win-rate metric with no standard slug, and the source article itself flags HumanEval/MBPP as 'from a Chinese technical blog without independent validation.' Terminal-Bench version (2.0 vs unversioned) is ambiguous in the source; mapped to base 'terminal-bench' slug rather than 'terminal-bench-2' to avoid over-claiming the harness version."
+}

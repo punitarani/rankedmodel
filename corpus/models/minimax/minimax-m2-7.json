@@ -1,0 +1,68 @@
+{
+  "name": "MiniMax M2.7",
+  "org": "MiniMax",
+  "family": "MiniMax M2.7",
+  "releaseDate": "2026-03-18",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "MiniMax Model Community License (non-commercial use restrictions; commercial use requires separate agreement) — verify exact license text at https://huggingface.co/MiniMaxAI/MiniMax-M2.7/blob/main/LICENSE",
+  "paramsB": 230,
+  "activeParamsB": 10,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts, 256 local experts (8 active/token), 62 layers, RoPE + QK-RMSNorm attention; 230B total / 10B active params (~4.3% activation)",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.3,
+    "output": 1.2
+  },
+  "links": {
+    "hf": "MiniMaxAI/MiniMax-M2.7",
+    "docs": "https://platform.minimax.io/docs/release-notes/models"
+  },
+  "note": "Agentic coding/reasoning model billed by MiniMax as its first model to autonomously drive a meaningful share of its own RL research/development workflow (\"self-evolution\"). Open weights on Hugging Face; also served via a 2x-priced 'M2.7-highspeed' deployment tier (same weights, faster serving) which is not modeled as a separate entry here.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate": "https://www.minimax.io/news/minimax-m27-en",
+    "paramsB/activeParamsB/archClass/ctxK": "https://developer.nvidia.com/blog/minimax-m2-7-advances-scalable-agentic-workflows-on-nvidia-platforms-for-complex-ai-applications/",
+    "priceInput/priceOutput": "https://platform.minimax.io/docs/guides/pricing-paygo",
+    "openness/license": "https://artificialanalysis.ai/models/minimax-m2-7",
+    "hfId": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 56.22,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimax.io/news/minimax-m27-en",
+      "notes": "Reported by MiniMax as 'SWE-Pro' score in the official M2.7 launch post."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 57,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimax.io/news/minimax-m27-en",
+      "notes": "Reported by MiniMax as 'Terminal Bench 2' score in the official M2.7 launch post."
+    }
+  ],
+  "verificationNotes": "Confirmed released (not just announced) via official minimax.io news post, MiniMax API docs, NVIDIA developer blog, Hugging Face model page, and Artificial Analysis independent tracker — all agree on a March 18, 2026 launch. Param counts (230B total/10B active) corroborated by both NVIDIA's technical blog and the official model page; the HF repo metadata itself lists a slightly different '229B' which is very likely a rounding artifact of the same figure. Context window cited as 200K by NVIDIA and ~205K tokens by Artificial Analysis (likely 204,800 rounded two different ways) — used 200 as the vendor-stated round figure."
+}

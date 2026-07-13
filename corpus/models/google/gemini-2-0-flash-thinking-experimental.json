@@ -1,0 +1,70 @@
+{
+  "name": "Gemini 2.0 Flash Thinking (Experimental)",
+  "org": "Google",
+  "family": "Gemini 2.0",
+  "releaseDate": "2025-01-21",
+  "status": "deprecated",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (params undisclosed); Flash variant fine-tuned to emit visible chain-of-thought before its final answer",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "https://ai.google.dev/gemini-api/docs/models"
+  },
+  "note": "Google's first broadly-available reasoning model (Google DeepMind's answer to OpenAI o1); free experimental Flash variant that shows its thinking process, later superseded by the Gemini 2.5/3.x thinking line.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate": "https://www.marktechpost.com/2025/01/21/google-ai-releases-gemini-2-0-flash-thinking-model-gemini-2-0-flash-thinking-exp-01-21-scoring-73-3-on-aime-math-and-74-2-on-gpqa-diamond-science-benchmarks/",
+    "ctxK": "https://www.testingcatalog.com/gemini-2-0-flash-thinking-exp-01-21-debuts-with-1m-context-and-code-execution/",
+    "openness": "https://ai.google.dev/gemini-api/docs/models"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "aime",
+      "score": 73.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.marktechpost.com/2025/01/21/google-ai-releases-gemini-2-0-flash-thinking-model-gemini-2-0-flash-thinking-exp-01-21-scoring-73-3-on-aime-math-and-74-2-on-gpqa-diamond-science-benchmarks/",
+      "notes": "AIME 2024; number originates from Google DeepMind CEO Demis Hassabis's own announcement, relayed here by press coverage -- counted as self-reported (vendor's own figure)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 74.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.marktechpost.com/2025/01/21/google-ai-releases-gemini-2-0-flash-thinking-model-gemini-2-0-flash-thinking-exp-01-21-scoring-73-3-on-aime-math-and-74-2-on-gpqa-diamond-science-benchmarks/",
+      "notes": "GPQA Diamond; same Google DeepMind self-reported figure."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 75.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.datacamp.com/blog/gemini-2-0-flash-experimental",
+      "notes": "MMMU, multimodal reasoning; same Google DeepMind self-reported figure, corroborated by DataCamp's writeup of the Jan 21 update."
+    }
+  ],
+  "verificationNotes": "Confirmed real. Google DeepMind first shipped Gemini 2.0 Flash Thinking Experimental on 2024-12-19 (32K context, model id gemini-2.0-flash-thinking-exp-1219; blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/, 9to5google, SiliconANGLE, Simon Willison all corroborate). This entry targets the materially upgraded 2025-01-21 snapshot (gemini-2.0-flash-thinking-exp-01-21) specifically named in the task, which is the version Google DeepMind CEO Demis Hassabis announced with AIME 73.3%, GPQA Diamond 74.2%, MMMU 75.4% (his own X/Twitter post, corroborated verbatim by MarkTechPost and TestingCatalog); that same update expanded context from 32K to 1M tokens and added native code execution. Confirmed via independent sources (LMSpecs, Postman API docs, forum.cursor.com) that this snapshot explicitly does NOT support function calling or JSON-schema constrained output -- capabilities set accordingly (functionCalling=false). Vision/multimodal input confirmed via the MMMU score; audio/video input/output not confirmed for this specific thinking snapshot (unlike base Gemini 2.0 Flash) so left out of modalities. Pricing: free during the experimental phase, no stable public price -- left null. Status set to deprecated, matching how the corpus already treats the base Gemini 2.0 Flash (same family, long since superseded by 2.5/3.x reasoning models and past Google's typical experimental-model lifecycle as of July 2026)."
+}

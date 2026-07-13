@@ -1,0 +1,110 @@
+{
+  "name": "GLM-5",
+  "org": "Zhipu AI / Z.ai (Tsinghua)",
+  "family": "GLM-5",
+  "releaseDate": "2026-02-11",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 744,
+  "activeParamsB": 40,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 744B total / 40B active, DeepSeek Sparse Attention (DSA), 200K context, trained on a 100k-GPU Huawei Ascend 910B cluster (no Nvidia/AMD/Intel silicon)",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1,
+    "output": 3.2
+  },
+  "links": {
+    "hf": "zai-org/GLM-5",
+    "docs": "https://docs.z.ai/guides/llm/glm-5"
+  },
+  "note": "Major-version flagship succeeding GLM-4.6; first Z.ai model released after Zhipu's Jan 2026 Hong Kong IPO; widely reported as trained entirely on domestic Huawei chips, no Nvidia used.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB/activeParamsB": "https://github.com/zai-org/GLM-5",
+    "releaseDate": "https://letsdatascience.com/blog/china-trained-frontier-ai-model-glm-5-without-nvidia",
+    "ctxK": "https://docs.z.ai/guides/llm/glm-5",
+    "license": "https://huggingface.co/zai-org/GLM-5",
+    "priceInput/priceOutput": "https://docs.z.ai/guides/overview/pricing"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 77.8,
+      "source": "self-reported",
+      "sourceUrl": "https://docs.z.ai/guides/llm/glm-5",
+      "notes": "SWE-bench Verified; Z.ai's own claimed 'leading open-model score' at launch"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 56.2,
+      "source": "self-reported",
+      "sourceUrl": "https://docs.z.ai/guides/llm/glm-5",
+      "notes": "Terminal-Bench 2.0 (Terminus-2 harness); alt config reaches 60.7 per HF model card"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 30.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5",
+      "notes": "Humanity's Last Exam, no-tools; with-tools variant reaches 50.4"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 92.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5",
+      "notes": "AIME 2026 I"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 86,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5",
+      "notes": "GPQA-Diamond"
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 43.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5",
+      "notes": "CyberGym"
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 62,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5",
+      "notes": "BrowseComp, no context-management; with context-management reaches 75.9"
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 89.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5",
+      "notes": "tau2-Bench, labeled 'T2-Bench' on HF model card"
+    }
+  ],
+  "verificationNotes": "This is a genuine, released model, not a rumor -- confirmed via zai-org/GLM-5 GitHub repo, Hugging Face model card, official docs.z.ai/guides/llm/glm-5, arXiv technical report 2602.15763 ('GLM-5: from Vibe Coding to Agentic Engineering'), and extensive independent tech press (Let's Data Science, Pandaily-style outlets, Wikipedia's GLM(AI) article) all covering the Feb 2026 launch and its 'trained entirely on Huawei Ascend chips, zero Nvidia' angle, tied to Zhipu's Jan 8 2026 HKEX IPO. Release date: most sources say Feb 11, 2026; docs.z.ai's own release-notes timeline says Feb 12 -- one-day discrepancy, used the more commonly-cited Feb 11. Params: GitHub repo table and multiple press pieces agree on 744B total / 40B active; a couple of secondary blogs round to '745B/44B' -- treated as noise around the same figure, GitHub repo (self-published) used as primary. Benchmark scores for SWE-bench Verified (77.8) and Terminal-Bench 2.0 (56.2) confirmed directly on the official docs.z.ai/guides/llm/glm-5 page. HLE, AIME, GPQA-Diamond, CyberGym, BrowseComp, and tau2-Bench scores confirmed directly on the official Hugging Face model card (zai-org/GLM-5), which lists a full self-reported benchmark table. Omitted SWE-bench Multilingual (73.3), BrowseComp-Zh (72.7), MCP-Atlas (67.8), Tool-Decathlon (38.0), and Vending Bench 2 ($4,432 balance) because they either lack a matching corpus slug or would require misfiling a distinct benchmark variant under an existing base slug."
+}

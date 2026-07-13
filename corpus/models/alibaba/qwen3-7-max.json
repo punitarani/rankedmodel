@@ -1,0 +1,73 @@
+{
+  "name": "Qwen3.7-Max",
+  "org": "Alibaba",
+  "family": "Qwen3.7",
+  "releaseDate": "2026-05-20",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE, exact expert configuration undisclosed; positioned as an agent-first reasoning model",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2.5,
+    "output": 7.5
+  },
+  "links": {
+    "docs": "www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "note": "Agent-first flagship with 1M-token context (up from 256K on the prior generation); Alibaba reports 1,000+ consecutive tool calls and a 35-hour autonomous kernel-optimization run in internal testing (not independently verified). Not open-weight; no HF checkpoints as of this research.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate": "https://www.digitalapplied.com/blog/qwen-3-7-max-alibaba-flagship-ai-model-2026",
+    "ctxK/openness": "https://www.yottalabs.ai/post/qwen-3-7-max-release-date-features-open-source-status-and-how-to-access-2026",
+    "results (gpqa, swe-bench-pro, terminal-bench-2)": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+    "priceInput/priceOutput": "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 92.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "notes": "GPQA Diamond"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 60.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "notes": "SWE-Pro"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 69.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "notes": "Terminal Bench 2.0-Terminus"
+    }
+  ],
+  "verificationNotes": "Confirmed real via multiple independent secondary sources (MarkTechPost, VentureBeat-cited coverage, Yotta Labs, digitalapplied, Alibaba Cloud's own community blog 'Qwen3.7: The Agent Frontier') plus a working OpenRouter listing (qwen/qwen3.7-max) and official Alibaba Cloud Model Studio pricing-page entry -- this is a real, currently-available model, not a rumor. Announcement date has minor variance across sources (May 19-21, 2026); used May 20 (Alibaba Cloud Summit date, matching the majority of sources) as releaseDate. Context length also varies by source: most (OpenRouter, Yotta Labs, digitalapplied) state 1M tokens; one direct fetch of the Alibaba Cloud blog surfaced a '256K' figure that appears to be a benchmark-footnote qualifier rather than the max context -- flagged as uncertain. Pricing is the list-price tier ($2.50/$7.50 per M, Intl) confirmed via Alibaba's own pricing page; a time-limited 50% launch promo ($1.25/$3.75) is also in effect per OpenRouter/Yotta Labs but list price was used per convention. Architecture (param count, MoE expert split) is undisclosed across all sources -- flagged null per corpus convention for undisclosed flagship models (matches existing Qwen3-Max entry's treatment). Benchmark scores (GPQA 92.4, SWE-bench Pro 60.6, Terminal-Bench 2.0-Terminus 69.7) were corroborated by two independent direct fetches (Alibaba Cloud's own blog + Yotta Labs); other cited figures (SWE-bench Verified 80.4, HMMT, IMOAnswerBench, Apex, MRCR-v2, MCP-Mark) could not be independently confirmed via a direct-render fetch of a primary source and were omitted rather than guessed."
+}

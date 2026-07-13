@@ -1,0 +1,83 @@
+{
+  "name": "Command A+",
+  "org": "Cohere",
+  "family": "Command A",
+  "releaseDate": "2026-05-20",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 218,
+  "activeParamsB": 25,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts (218B total / 25B active), hybrid attention, native citation grounding, runs on 1x B200 or 2x H100 (W4A4)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 48,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "CohereLabs/command-a-plus-05-2026-bf16",
+    "docs": "https://cohere.com/blog/command-a-plus"
+  },
+  "note": "Successor to the CC-BY-NC-licensed Command A (Mar 2025), now released fully open-weight under Apache 2.0. First Command model with native image input, expanded from 23 to 48 languages, and large agentic/enterprise gains (tau2-bench-telecom 37%->85%, Terminal-Bench-Hard agentic coding 3%->25%).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB": "https://www.marktechpost.com/2026/05/21/cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-that-runs-on-as-few-as-two-h100-gpus/",
+    "releaseDate": "https://cohere.com/blog/command-a-plus",
+    "openness": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4",
+    "langCount": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://cohere.com/blog/command-a-plus",
+      "notes": "up from 37% for Command A Reasoning"
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 75.1,
+      "source": "self-reported",
+      "sourceUrl": "https://cohere.com/blog/command-a-plus"
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 63,
+      "source": "self-reported",
+      "sourceUrl": "https://cohere.com/blog/command-a-plus"
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 80.6,
+      "source": "self-reported",
+      "sourceUrl": "https://cohere.com/blog/command-a-plus"
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 52.7,
+      "source": "self-reported",
+      "sourceUrl": "https://cohere.com/blog/command-a-plus",
+      "notes": "reasoning subset"
+    }
+  ],
+  "verificationNotes": "Confirmed via Cohere's own blog post (cohere.com/blog/command-a-plus), independent coverage on MarkTechPost (2026-05-21), and the CohereLabs Hugging Face org (bf16/fp8/w4a4 repos for 'command-a-plus-05-2026'), which confirms Apache 2.0 license, 218B/25B MoE, 128K input / 64K output context, and 48 languages. This is a genuine gap: the existing corpus's Cohere folder stops at 'Command A' (2025-03-13, CC-BY-NC); Command A+ is a distinct, newer, more permissively licensed release."
+}

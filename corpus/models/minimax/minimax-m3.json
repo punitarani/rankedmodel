@@ -1,0 +1,83 @@
+{
+  "name": "MiniMax M3",
+  "org": "MiniMax",
+  "family": "MiniMax M3",
+  "releaseDate": "2026-06-01",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "MiniMax Model Community License (non-commercial restrictions apply; HF license field shows 'minimax-community') — verify exact license text at https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE",
+  "paramsB": 428,
+  "activeParamsB": 23,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts with MiniMax Sparse Attention (MSA) for 1M-token context, native multimodal (mixed-modality pretraining from step one); 428B total / 23B active params",
+  "ctxK": 1024,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.3,
+    "output": 1.2
+  },
+  "links": {
+    "hf": "MiniMaxAI/MiniMax-M3",
+    "docs": "https://platform.minimax.io/docs/release-notes/models"
+  },
+  "note": "Successor to M2 introducing MiniMax Sparse Attention (MSA), giving a native 1M-token multimodal (text/image/video input) context window with reported 9x faster prefill / 15x faster decode vs M2 at 1M context. Open-weight release on Hugging Face alongside hosted API access. Official pricing page lists a base rate of $0.60/$2.40 per million input/output tokens with a standing 50% promotional discount to the effective $0.30/$1.20 used here for inputs ≤512K tokens; price doubles beyond 512K tokens and a 1.5x 'priority' service tier also exists (not modeled as a separate entry).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate/paramsB/activeParamsB/ctxK/modalities": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+    "archClass/archDisplay": "https://www.marktechpost.com/2026/06/01/minimax-releases-minimax-m3-with-msa-architecture-supporting-1m-token-context-native-multimodality-and-agentic-coding/",
+    "priceInput/priceOutput": "https://platform.minimax.io/docs/guides/pricing-paygo",
+    "openness/license": "https://artificialanalysis.ai/models/minimax-m3"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 80.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "notes": "Reported on the official model card as 'SWE-bench Verified'; mapped to the base swe-bench slug since no separate 'verified' slug exists."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 59,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "notes": "Also corroborated by independent press coverage citing the same 59.0% SWE-bench Pro figure vs GPT-5.5/Gemini 3.1 Pro."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 78.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "notes": "Reported on the official model card as 'MMMU Pro'."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 85.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "notes": "Reported on the official model card as 'Video-MME v2'; mapped to the base videomme slug — flagging that this may be a newer/harder variant of the benchmark rather than the original Video-MME, so treat as approximate."
+    }
+  ],
+  "verificationNotes": "Confirmed released via official Hugging Face model repo (MiniMaxAI/MiniMax-M3, actively downloaded), MiniMax's own API docs, Artificial Analysis, and independent press (MarkTechPost, VentureBeat, TechTimes) covering the June 1, 2026 launch and the accompanying MSA architecture arXiv paper (2606.13392, June 11, 2026). Param counts (428B/23B) independently corroborated by Artificial Analysis and multiple press writeups; one press summary confused this with an unrelated 109B experimental MSA-paper model — the 428B/23B figures are the ones consistently tied to the actual MiniMax-M3 checkpoint."
+}

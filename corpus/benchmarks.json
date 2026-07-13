@@ -275,8 +275,8 @@
     "category": "coding",
     "unit": "Elo",
     "description": "Competitive-programming rating estimated from Codeforces-style problems.",
-    "normMin": 800,
-    "normMax": 2860,
+    "normMin": 400,
+    "normMax": 3300,
     "higherIsBetter": true
   },
   {
@@ -446,7 +446,7 @@
     "unit": "%",
     "description": "2,500 expert-written frontier questions across 100+ subjects.",
     "normMin": 0,
-    "normMax": 48,
+    "normMax": 65,
     "higherIsBetter": true
   },
   {
@@ -836,7 +836,7 @@
     "unit": "%",
     "description": "Elementary science QA requiring open-book fact combination.",
     "normMin": 40,
-    "normMax": 44,
+    "normMax": 50,
     "higherIsBetter": true
   },
   {
@@ -1006,7 +1006,7 @@
     "unit": "%",
     "description": "Resolving real GitHub issues in real repositories, verified subset.",
     "normMin": 0,
-    "normMax": 86,
+    "normMax": 97,
     "higherIsBetter": true
   },
   {
@@ -1016,7 +1016,7 @@
     "unit": "%",
     "description": "Harder, held-out variant of SWE-bench Verified.",
     "normMin": 0,
-    "normMax": 41,
+    "normMax": 85,
     "higherIsBetter": true
   },
   {
@@ -1056,7 +1056,7 @@
     "unit": "%",
     "description": "Second-generation Terminal-Bench, harder task suite.",
     "normMin": 0,
-    "normMax": 69,
+    "normMax": 89,
     "higherIsBetter": true
   },
   {
@@ -1126,7 +1126,7 @@
     "unit": "%",
     "description": "Broad video understanding across short/medium/long clips.",
     "normMin": 30,
-    "normMax": 82,
+    "normMax": 90,
     "higherIsBetter": true
   },
   {
@@ -1167,6 +1167,66 @@
     "description": "Cross-lingual Winograd-schema commonsense resolution.",
     "normMin": 50,
     "normMax": 71,
+    "higherIsBetter": true
+  },
+  {
+    "slug": "tau2-bench-telecom",
+    "name": "τ²-Bench Telecom",
+    "category": "agents",
+    "unit": "%",
+    "description": "τ²-Bench telecom domain — dual-control tool-agent-user tasks in a simulated telecom support setting; a harder successor to tau-bench, distinct scale.",
+    "normMin": 30,
+    "normMax": 99,
+    "higherIsBetter": true
+  },
+  {
+    "slug": "mbpp-plus",
+    "name": "MBPP+",
+    "category": "coding",
+    "unit": "%",
+    "description": "EvalPlus-augmented MBPP with extra test cases (stricter than base MBPP).",
+    "normMin": 10,
+    "normMax": 90,
+    "higherIsBetter": true
+  },
+  {
+    "slug": "humaneval-plus",
+    "name": "HumanEval+",
+    "category": "coding",
+    "unit": "%",
+    "description": "EvalPlus-augmented HumanEval with extra test cases (stricter than base HumanEval).",
+    "normMin": 10,
+    "normMax": 100,
+    "higherIsBetter": true
+  },
+  {
+    "slug": "osworld-verified",
+    "name": "OSWorld-Verified",
+    "category": "agents",
+    "unit": "%",
+    "description": "Verified/cleaned subset of OSWorld — real desktop-GUI computer-use tasks scored pass@1.",
+    "normMin": 0,
+    "normMax": 90,
+    "higherIsBetter": true
+  },
+  {
+    "slug": "osworld",
+    "name": "OSWorld",
+    "category": "agents",
+    "unit": "%",
+    "description": "Original OSWorld computer-use benchmark (screenshot-only agent configuration) — distinct from the later OSWorld-Verified subset.",
+    "normMin": 0,
+    "normMax": 40,
+    "higherIsBetter": true
+  },
+  {
+    "slug": "gdpval-aa",
+    "name": "GDPval-AA",
+    "category": "agents",
+    "unit": "pts",
+    "description": "Updated/harder economically-valuable-work evaluation (0-2000 scale) — distinct from the original GDPval benchmark.",
+    "normMin": 0,
+    "normMax": 2000,
     "higherIsBetter": true
   }
 ]

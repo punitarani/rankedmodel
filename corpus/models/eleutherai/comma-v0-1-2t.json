@@ -1,0 +1,105 @@
+{
+  "name": "Comma v0.1-2T",
+  "org": "EleutherAI",
+  "family": "Comma",
+  "releaseDate": "2025-06-06",
+  "status": "released",
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer, Llama 3 architecture, 7B, trained with 4096-token sequences",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "common-pile/comma-v0.1-2t",
+    "docs": "https://blog.eleuther.ai/common-pile/"
+  },
+  "note": "7B model trained for 2T tokens (1.93T main phase + 75.5B cool-down) entirely on the openly-licensed/public-domain 'Common Pile v0.1' dataset (8TB), demonstrating that legally clean training data can rival models trained on unlicensed web text; a 1T-token sibling checkpoint (comma-v0.1-1t) was released alongside it.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB": "https://huggingface.co/common-pile/comma-v0.1-2t",
+    "releaseDate": "https://techcrunch.com/2025/06/06/eleutherai-releases-massive-ai-training-dataset-of-licensed-and-open-domain-text/",
+    "openness": "https://huggingface.co/common-pile/comma-v0.1-2t",
+    "ctxK": "https://arxiv.org/abs/2506.05209"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 49.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/common-pile/comma-v0.1-2t",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 45.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/common-pile/comma-v0.1-2t"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 71.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/common-pile/comma-v0.1-2t"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 64.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/common-pile/comma-v0.1-2t"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 46.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/common-pile/comma-v0.1-2t"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 72.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/common-pile/comma-v0.1-2t"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 52.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/common-pile/comma-v0.1-2t"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 44.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/common-pile/comma-v0.1-2t"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 41.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/common-pile/comma-v0.1-2t"
+    }
+  ],
+  "verificationNotes": "Confirmed via TechCrunch's June 6, 2025 report, EleutherAI's own blog post (blog.eleuther.ai/common-pile), and the common-pile/comma-v0.1-2t Hugging Face model card, which gives the full benchmark table used below. Training used length-4096 sequences per the Common Pile arXiv paper (2506.05209) — used as ctxK rather than an unverified secondary claim of a 128K window, which looked inconsistent with a from-scratch 7B trained on only 2T tokens with no stated long-context extension stage. This fills the task's explicit instruction to check EleutherAI for missed releases; the corpus's eleutherai folder currently only has GPT-J/GPT-NeoX/GPT-Neo/Pythia (2021-2023), so this 2025 release is a genuine gap."
+}

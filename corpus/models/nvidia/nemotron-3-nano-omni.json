@@ -1,0 +1,60 @@
+{
+  "name": "Nemotron 3 Nano Omni",
+  "org": "NVIDIA",
+  "family": "Nemotron 3",
+  "releaseDate": "2026-04-29",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "NVIDIA Open Model License",
+  "paramsB": 30,
+  "activeParamsB": 3,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Mamba-2/Transformer MoE, omni-modal (23 Mamba-2 layers + 23 MoE layers of 128 experts + 6 GQA layers), 30B total / 3B active",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.075,
+    "output": 0.3
+  },
+  "links": {
+    "hf": "nvidia/Nemotron-3-Nano-Omni-30B-A3B",
+    "docs": "https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model/"
+  },
+  "note": "First truly omni-modal Nemotron 3 model (text/vision/audio/video natively unified, not vision-language with audio bolted on); smallest member of the family alongside Nemotron 3 Super and Ultra (already in corpus).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "reasoning",
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "params/ctx/pricing/modalities": "https://artificialanalysis.ai/models/nemotron-3-nano-omni-30b-a3b"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 15,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/nemotron-3-nano-omni-30b-a3b",
+      "notes": "Note: this is actually the Artificial Analysis composite Intelligence Index score (15), not a GPQA-specific score -- included here only because no single-benchmark independent number could be verified; treat with caution."
+    }
+  ],
+  "verificationNotes": "Artificial Analysis Intelligence Index score of 15 (#29/130 in class) is an independent re-run; no independently-verified scores found for the individual named benchmarks (MMlongbench-Doc, OCRBenchV2, WorldSense, DailyOmni, VoiceBench) that NVIDIA's own materials claim leadership on, so only the composite index is reported."
+}

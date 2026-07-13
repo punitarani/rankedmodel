@@ -1,81 +1,419 @@
 [
-  { "name": "Allen Institute for AI (Ai2)", "type": "lab", "country": "US", "url": "https://allenai.org" },
-  { "name": "BigCode", "type": "lab" },
-  { "name": "BigScience", "type": "lab" },
-  { "name": "EleutherAI", "type": "lab", "url": "https://www.eleuther.ai" },
-  { "name": "LMSYS (UC Berkeley/CMU/Stanford/UCSD)", "type": "lab" },
-  { "name": "OpenGVLab (Shanghai AI Lab)", "type": "lab", "country": "CN" },
-  { "name": "Shanghai AI Laboratory", "type": "lab", "country": "CN" },
-  { "name": "Stanford (CRFM / Tatsu Lab)", "type": "lab", "country": "US" },
-  { "name": "UC Berkeley & Microsoft Research", "type": "lab" },
-  { "name": "UC Berkeley (BAIR)", "type": "lab", "country": "US" },
-  { "name": "UC Berkeley (Berkeley NEST) / Nexusflow", "type": "lab", "country": "US" },
-  { "name": "University of Washington (Dettmers et al.)", "type": "lab", "country": "US" },
-  { "name": "OpenLM Research (Berkeley)", "type": "lab", "country": "US" },
-  { "name": "OpenGPT-X", "type": "lab", "country": "DE" },
-  { "name": "Microsoft & Peking University", "type": "lab" },
-  { "name": "Nous Research", "type": "community" },
-  { "name": "Jon Durbin (independent)", "type": "community" },
-  { "name": "Cognitive Computations (Eric Hartford)", "type": "community" },
-  { "name": "Cohere Labs", "type": "lab", "country": "CA" },
-  { "name": "OpenAI", "type": "lab", "country": "US", "url": "https://openai.com" },
-  { "name": "Anthropic", "type": "lab", "country": "US", "url": "https://www.anthropic.com" },
-  { "name": "Google", "type": "lab", "country": "US", "url": "https://ai.google" },
-  { "name": "Meta", "type": "lab", "country": "US", "url": "https://ai.meta.com" },
-  { "name": "xAI", "type": "lab", "country": "US", "url": "https://x.ai" },
-  { "name": "DeepSeek", "type": "lab", "country": "CN", "url": "https://www.deepseek.com" },
-  { "name": "Mistral AI", "type": "lab", "country": "FR", "url": "https://mistral.ai" },
-  { "name": "01.AI", "type": "company", "country": "CN" },
-  { "name": "Zhipu AI", "type": "company", "country": "CN" },
-  { "name": "Zhipu AI / THUDM (Tsinghua)", "type": "lab", "country": "CN" },
-  { "name": "Zhipu AI / Z.ai (Tsinghua)", "type": "lab", "country": "CN" },
-  { "name": "Alibaba", "type": "company", "country": "CN" },
-  { "name": "Baidu", "type": "company", "country": "CN" },
-  { "name": "ByteDance", "type": "company", "country": "CN" },
-  { "name": "Tencent", "type": "company", "country": "CN" },
-  { "name": "Moonshot AI", "type": "company", "country": "CN" },
-  { "name": "MiniMax", "type": "company", "country": "CN" },
-  { "name": "StepFun", "type": "company", "country": "CN" },
-  { "name": "Baichuan Intelligence", "type": "company", "country": "CN" },
-  { "name": "Kunlun Tech", "type": "company", "country": "CN" },
-  { "name": "iFlytek", "type": "company", "country": "CN" },
-  { "name": "InternLM (Shanghai AI Lab)", "type": "lab", "country": "CN" },
-  { "name": "01.AI", "type": "company", "country": "CN" },
-  { "name": "OpenBMB", "type": "lab", "country": "CN" },
-  { "name": "TII", "type": "lab", "country": "AE", "url": "https://www.tii.ae" },
-  { "name": "Inception (G42)", "type": "company", "country": "AE" },
-  { "name": "Sarvam AI", "type": "company", "country": "IN" },
-  { "name": "Ola Krutrim", "type": "company", "country": "IN" },
-  { "name": "NAVER", "type": "company", "country": "KR" },
-  { "name": "LG AI Research", "type": "lab", "country": "KR" },
-  { "name": "Upstage", "type": "company", "country": "KR" },
-  { "name": "ELYZA", "type": "company", "country": "JP" },
-  { "name": "rinna", "type": "company", "country": "JP" },
-  { "name": "SB Intuitions", "type": "company", "country": "JP" },
-  { "name": "Preferred Networks", "type": "company", "country": "JP" },
-  { "name": "Sber (Sberbank)", "type": "company", "country": "RU" },
-  { "name": "Yandex", "type": "company", "country": "RU" },
-  { "name": "Aleph Alpha", "type": "company", "country": "DE" },
-  { "name": "Silo AI (LumiOpen)", "type": "company", "country": "FI" },
-  { "name": "Cohere", "type": "company", "country": "CA", "url": "https://cohere.com" },
-  { "name": "Microsoft", "type": "company", "country": "US" },
-  { "name": "NVIDIA", "type": "company", "country": "US" },
-  { "name": "Amazon", "type": "company", "country": "US" },
-  { "name": "Apple", "type": "company", "country": "US" },
-  { "name": "IBM", "type": "company", "country": "US" },
-  { "name": "Salesforce", "type": "company", "country": "US" },
-  { "name": "Snowflake", "type": "company", "country": "US" },
-  { "name": "Databricks", "type": "company", "country": "US" },
-  { "name": "MosaicML", "type": "company", "country": "US" },
-  { "name": "Together", "type": "company", "country": "US" },
-  { "name": "Hugging Face", "type": "company", "country": "US" },
-  { "name": "Stability AI", "type": "company", "country": "US" },
-  { "name": "Stability AI (CarperAI)", "type": "lab", "country": "US" },
-  { "name": "Inflection AI", "type": "company", "country": "US" },
-  { "name": "Perplexity AI", "type": "company", "country": "US" },
-  { "name": "Writer", "type": "company", "country": "US" },
-  { "name": "Reka AI", "type": "company", "country": "US" },
-  { "name": "Deci AI", "type": "company", "country": "IL" },
-  { "name": "Cerebras", "type": "company", "country": "US" },
-  { "name": "AI21 Labs", "type": "company", "country": "IL" }
+  {
+    "name": "Allen Institute for AI (Ai2)",
+    "type": "lab",
+    "country": "US",
+    "url": "https://allenai.org"
+  },
+  {
+    "name": "BigCode",
+    "type": "lab"
+  },
+  {
+    "name": "BigScience",
+    "type": "lab"
+  },
+  {
+    "name": "EleutherAI",
+    "type": "lab",
+    "url": "https://www.eleuther.ai"
+  },
+  {
+    "name": "LMSYS (UC Berkeley/CMU/Stanford/UCSD)",
+    "type": "lab"
+  },
+  {
+    "name": "OpenGVLab (Shanghai AI Lab)",
+    "type": "lab",
+    "country": "CN"
+  },
+  {
+    "name": "Shanghai AI Laboratory",
+    "type": "lab",
+    "country": "CN"
+  },
+  {
+    "name": "Stanford (CRFM / Tatsu Lab)",
+    "type": "lab",
+    "country": "US"
+  },
+  {
+    "name": "UC Berkeley & Microsoft Research",
+    "type": "lab"
+  },
+  {
+    "name": "UC Berkeley (BAIR)",
+    "type": "lab",
+    "country": "US"
+  },
+  {
+    "name": "UC Berkeley (Berkeley NEST) / Nexusflow",
+    "type": "lab",
+    "country": "US"
+  },
+  {
+    "name": "University of Washington (Dettmers et al.)",
+    "type": "lab",
+    "country": "US"
+  },
+  {
+    "name": "OpenLM Research (Berkeley)",
+    "type": "lab",
+    "country": "US"
+  },
+  {
+    "name": "OpenGPT-X",
+    "type": "lab",
+    "country": "DE"
+  },
+  {
+    "name": "Microsoft & Peking University",
+    "type": "lab"
+  },
+  {
+    "name": "Nous Research",
+    "type": "community"
+  },
+  {
+    "name": "Jon Durbin (independent)",
+    "type": "community"
+  },
+  {
+    "name": "Cognitive Computations (Eric Hartford)",
+    "type": "community"
+  },
+  {
+    "name": "Cohere Labs",
+    "type": "lab",
+    "country": "CA"
+  },
+  {
+    "name": "OpenAI",
+    "type": "lab",
+    "country": "US",
+    "url": "https://openai.com"
+  },
+  {
+    "name": "Anthropic",
+    "type": "lab",
+    "country": "US",
+    "url": "https://www.anthropic.com"
+  },
+  {
+    "name": "Google",
+    "type": "lab",
+    "country": "US",
+    "url": "https://ai.google"
+  },
+  {
+    "name": "Meta",
+    "type": "lab",
+    "country": "US",
+    "url": "https://ai.meta.com"
+  },
+  {
+    "name": "SpaceXAI",
+    "type": "lab",
+    "country": "US",
+    "url": "https://x.ai",
+    "description": "Formerly xAI; folded into SpaceX and rebranded SpaceXAI in mid-2026."
+  },
+  {
+    "name": "DeepSeek",
+    "type": "lab",
+    "country": "CN",
+    "url": "https://www.deepseek.com"
+  },
+  {
+    "name": "Mistral AI",
+    "type": "lab",
+    "country": "FR",
+    "url": "https://mistral.ai"
+  },
+  {
+    "name": "01.AI",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "Zhipu AI",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "Zhipu AI / THUDM (Tsinghua)",
+    "type": "lab",
+    "country": "CN"
+  },
+  {
+    "name": "Zhipu AI / Z.ai (Tsinghua)",
+    "type": "lab",
+    "country": "CN"
+  },
+  {
+    "name": "Alibaba",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "Baidu",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "ByteDance",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "Tencent",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "Moonshot AI",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "MiniMax",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "StepFun",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "Baichuan Intelligence",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "Kunlun Tech",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "iFlytek",
+    "type": "company",
+    "country": "CN"
+  },
+  {
+    "name": "InternLM (Shanghai AI Lab)",
+    "type": "lab",
+    "country": "CN"
+  },
+  {
+    "name": "OpenBMB",
+    "type": "lab",
+    "country": "CN"
+  },
+  {
+    "name": "TII",
+    "type": "lab",
+    "country": "AE",
+    "url": "https://www.tii.ae"
+  },
+  {
+    "name": "Inception (G42)",
+    "type": "company",
+    "country": "AE"
+  },
+  {
+    "name": "Sarvam AI",
+    "type": "company",
+    "country": "IN"
+  },
+  {
+    "name": "Ola Krutrim",
+    "type": "company",
+    "country": "IN"
+  },
+  {
+    "name": "NAVER",
+    "type": "company",
+    "country": "KR"
+  },
+  {
+    "name": "LG AI Research",
+    "type": "lab",
+    "country": "KR"
+  },
+  {
+    "name": "Upstage",
+    "type": "company",
+    "country": "KR"
+  },
+  {
+    "name": "ELYZA",
+    "type": "company",
+    "country": "JP"
+  },
+  {
+    "name": "rinna",
+    "type": "company",
+    "country": "JP"
+  },
+  {
+    "name": "SB Intuitions",
+    "type": "company",
+    "country": "JP"
+  },
+  {
+    "name": "Preferred Networks",
+    "type": "company",
+    "country": "JP"
+  },
+  {
+    "name": "Sber (Sberbank)",
+    "type": "company",
+    "country": "RU"
+  },
+  {
+    "name": "Yandex",
+    "type": "company",
+    "country": "RU"
+  },
+  {
+    "name": "Aleph Alpha",
+    "type": "company",
+    "country": "DE"
+  },
+  {
+    "name": "Silo AI (LumiOpen)",
+    "type": "company",
+    "country": "FI"
+  },
+  {
+    "name": "Cohere",
+    "type": "company",
+    "country": "CA",
+    "url": "https://cohere.com"
+  },
+  {
+    "name": "Microsoft",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "NVIDIA",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Amazon",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Apple",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "IBM",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Salesforce",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Snowflake",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Databricks",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "MosaicML",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Together",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Hugging Face",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Stability AI",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Stability AI (CarperAI)",
+    "type": "lab",
+    "country": "US"
+  },
+  {
+    "name": "Inflection AI",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Perplexity AI",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Writer",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Reka AI",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "Deci AI",
+    "type": "company",
+    "country": "IL"
+  },
+  {
+    "name": "Cerebras",
+    "type": "company",
+    "country": "US"
+  },
+  {
+    "name": "AI21 Labs",
+    "type": "company",
+    "country": "IL"
+  },
+  {
+    "name": "Xiaomi",
+    "type": "company",
+    "country": "CN",
+    "url": "https://www.mi.com"
+  },
+  {
+    "name": "Arcee AI",
+    "type": "company",
+    "country": "US",
+    "url": "https://www.arcee.ai"
+  },
+  {
+    "name": "Huawei",
+    "type": "company",
+    "country": "CN",
+    "url": "https://www.huawei.com"
+  },
+  {
+    "name": "Prime Intellect",
+    "type": "company",
+    "country": "US",
+    "url": "https://www.primeintellect.ai"
+  }
 ]

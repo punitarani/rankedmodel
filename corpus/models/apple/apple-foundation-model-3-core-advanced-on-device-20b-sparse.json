@@ -1,0 +1,48 @@
+{
+  "name": "Apple Foundation Model 3 Core Advanced (on-device, 20B sparse)",
+  "org": "Apple",
+  "family": "Apple Foundation Models",
+  "releaseDate": "2026-06-08",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 20,
+  "activeParamsB": 4,
+  "archClass": "moe",
+  "archDisplay": "Sparse on-device model (20B total, 1-4B active per request) using Apple's 'Instruction-Following Pruning' with shared + input-routed experts stored in flash and loaded into DRAM on demand",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models"
+  },
+  "note": "Apple's most capable on-device model as of mid-2026, the headline of the WWDC26 third-generation Foundation Models family; natively multimodal (image understanding, expressive voices, higher-accuracy dictation).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": false,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB": "https://memeburn.com/apples-foundation-models-now-run-a-20b-ai-model-on-iphone-in-2026/",
+    "activeParamsB": "https://9to5mac.com/2026/06/11/apples-new-foundation-models-explained-on-device-ai-cloud-ai-and-everything-in-between/",
+    "releaseDate": "https://www.macrumors.com/2026/06/09/apple-outlines-major-ai-and-developer-tool-updates/"
+  },
+  "results": [],
+  "verificationNotes": "Confirmed via Apple's own ML research blog post plus independent coverage (9to5Mac, Memeburn, MacRumors, AppleInsider) of the June 8, 2026 WWDC26 keynote/Platforms State of the Union. ctxK=32 carried forward from the prior generation as an estimate (no new figure published in sources found). As with the sibling Core model, only internal human-preference win-rates were published (e.g. >61% preferred on image understanding vs the prior generation) rather than fixed-benchmark scores, so 'results' is left empty rather than guessing a mapping."
+}

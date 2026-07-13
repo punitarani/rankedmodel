@@ -1,0 +1,59 @@
+{
+  "name": "OpenAI o1-pro",
+  "org": "OpenAI",
+  "family": "o1",
+  "releaseDate": "2024-12-05",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer reasoning model, extended test-time compute (exact size undisclosed); ChatGPT Pro-exclusive configuration of o1, not a separate architecture",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 150,
+    "output": 600
+  },
+  "links": {
+    "docs": "https://developers.openai.com/api/docs/models/o1-pro"
+  },
+  "note": "Higher-compute configuration of o1, launched alongside the full o1 model and the $200/mo ChatGPT Pro tier on Dec 5, 2024; added to the API on March 25, 2025 at $150/$600 per M tokens (10x o1's output price). Later superseded by o3-pro (already in corpus).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate": "https://siliconangle.com/2024/12/05/openai-debuts-chatgpt-pro-plan-reasoning-optimized-o1-pro-mode-llm/",
+    "ctxK/priceInput/priceOutput": "https://developers.openai.com/api/docs/models/o1-pro",
+    "openness": "https://developers.openai.com/api/docs/models/o1-pro"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "aime",
+      "score": 86,
+      "source": "self-reported",
+      "sourceUrl": "https://chatforest.com/reviews/openai-o1-o1-pro-reasoning-model-review/",
+      "notes": "AIME 2024, approximate ('~86%'); uplift from base o1's 74.4% (already in corpus as 74.3 on AIME 2024) driven by increased inference-time compute, not a different model"
+    }
+  ],
+  "verificationNotes": "Existence and Dec 5, 2024 ChatGPT Pro launch confirmed by SiliconANGLE, VentureBeat, and TheAlgorithmicBridge coverage of the ChatGPT Pro announcement (all independently reporting the same date and $200/mo tier). Context window (200K), max output (100K), pricing ($150/$600 per M), and text+image-in/text-out modalities confirmed by direct fetch of developers.openai.com/api/docs/models/o1-pro. API-only availability from March 25, 2025 confirmed by chatforest.com's o1/o1-pro comparison review. AIME 2024 uplift (~74% for o1 -> ~86% for o1-pro) cross-confirmed by two independent secondary sources (chatforest.com review and a separate WebSearch-surfaced synthesis); could not find an official OpenAI-published GPQA or Codeforces number specifically isolated for o1-pro (only qualitative claims of 'improved' performance and a low-confidence unconfirmed '+3%' GPQA claim), so those rows were omitted per the 'omit rather than guess' instruction."
+}

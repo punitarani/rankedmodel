@@ -1,0 +1,65 @@
+{
+  "name": "Claude Fable 5",
+  "org": "Anthropic",
+  "family": "Claude 5",
+  "releaseDate": "2026-06-09",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, architecture undisclosed; always-on adaptive thinking, effort-parameter controlled",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 10,
+    "output": 50
+  },
+  "links": {
+    "docs": "https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5"
+  },
+  "note": "Model id claude-fable-5. This is the correct current name of the family the task flagged as 'a newer Claude model family' — it is Anthropic's first widely-released 'Mythos-class' model (a tier above Opus), positioned above Opus 4.8. It shares identical underlying weights with the invitation-only Claude Mythos 5 (claude-mythos-5, Project Glasswing only) but adds safety classifiers that can refuse requests; Mythos 5 does not have those classifiers. Notably, access to Fable 5 was briefly restricted/pulled and then restored in July 2026 following a jailbreak-linked export-control issue (see anthropic.com/news/redeploying-fable-5) — this does not change its specs. NO SEPARATE '(High)' PRODUCT: like Sonnet 5, 'high' is the documented default effort level and is not a distinct marketed SKU; not added as a sibling entry. Claude Mythos 5 itself was NOT added as a separate corpus entry given its restricted, non-public availability and the difficulty independently sourcing benchmark numbers specific to it (as opposed to Fable 5).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "model id, pricing, context window, availability, relationship to Mythos 5": "https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5",
+    "release date, positioning": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 80.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-fable-5-and-mythos-5-benchmarks-explained",
+      "notes": "Ahead of Opus 4.8 (69.2%) and GPT-5.5 (58.6%)."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 95,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/benchmarks/swebench",
+      "notes": "SWE-bench Verified, Vals AI independent leaderboard re-run, updated 2026-07-09. Leads the leaderboard."
+    }
+  ],
+  "verificationNotes": "Model id, pricing, context window, and Fable-vs-Mythos relationship confirmed directly from Anthropic's own Claude Platform docs (fetched in full). The July 2026 access-restoration event was corroborated by an independent news report (TheHackerNews) as well as Anthropic's own 'Redeploying Claude Fable 5' post referenced in the docs page."
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Mistral Large 3",
+  "org": "Mistral AI",
+  "family": "Mistral Large",
+  "releaseDate": "2025-12-02",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 675,
+  "activeParamsB": 41,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts, 675B total / 41B active parameters",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.5,
+    "output": 1.5
+  },
+  "links": {
+    "hf": "mistralai/Mistral-Large-3-675B-Instruct-2512",
+    "docs": "https://docs.mistral.ai/"
+  },
+  "note": "Mistral's Dec 2025 flagship, not previously in corpus (corpus's newest Mistral entries were Magistral/Small 3.2 from June 2025). Apache 2.0, trained on 3000 H200s per vendor.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "params/license/ctx/pricing": "https://artificialanalysis.ai/models/mistral-large-3",
+    "hfId": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 73.11,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3",
+      "notes": "LayerLens/Atlas independent evaluation, as reported by Artificial Analysis"
+    }
+  ],
+  "verificationNotes": "Non-reasoning model; Artificial Analysis independently scored it 16 on their Intelligence Index (below-average vs. peers), which is why it's a plausible gap for a corpus otherwise tracking frontier models."
+}

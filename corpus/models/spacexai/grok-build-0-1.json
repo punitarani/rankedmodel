@@ -1,0 +1,51 @@
+{
+  "name": "Grok Build 0.1",
+  "org": "SpaceXAI",
+  "family": "Grok Build",
+  "releaseDate": "2026-05-20",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Architecture undisclosed; a dedicated, fast agentic-coding model (100+ tok/s) purpose-built to power the Grok Build CLI, distinct from the general-purpose Grok line",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1,
+    "output": 2
+  },
+  "links": {
+    "docs": "https://docs.x.ai/developers/models/grok-build-0.1"
+  },
+  "note": "Confirmed real and distinct: xAI's (SpaceXAI's) first model purpose-built for agentic coding, powering the Grok Build CLI/terminal agent. Opened to developers via the API in public beta on ~May 29, 2026, a bit after the underlying model went live (~May 20, 2026). 256K context, text+image input, always-on reasoning, function calling, structured outputs, native MCP ('bring your own MCP') support. Not to be confused with 'Grok Build' the product/CLI/agent name, which Grok 4.5 now also powers as of July 2026 — Grok Build 0.1 was the original dedicated coding model before Grok 4.5 became the CLI's default.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "ctxK": "https://docs.x.ai/developers/models/grok-build-0.1",
+    "priceInput/priceOutput": "https://docs.x.ai/developers/models/grok-build-0.1",
+    "releaseDate": "https://devops.com/xai-opens-grok-build-0-1-to-developers-via-api/"
+  },
+  "results": [],
+  "verificationNotes": "Existence confirmed via SpaceXAI's own docs page (docs.x.ai/developers/models/grok-build-0.1) and multiple independent write-ups (DevOps.com, Kilo Code blog, OpenRouter, Vercel AI Gateway, Kingy.ai) all describing the same model with matching specs: 256K context, $1/$2 per Mtok pricing, text+image input. Release-date sources disagree in the details — different write-ups cite May 14, May 20, May 27, and May 29, 2026 for various milestones (underlying model live vs. subscriber CLI rollout vs. public API beta); I used May 20, 2026 as the best-supported date for the model itself going live, per Kilo Code's blog and a cross-source search, but flagged this as approximate. IMPORTANT: I could NOT find a credible, corroborated benchmark score for this model. One set of aggregator sites (Pickurai, Superconductor, BenchLM) mentioned a ~70.8% SWE-Bench Verified figure, but two independent direct-fetch sources (DevOps.com and Kingy.ai) explicitly state the model 'enters without published benchmarks' and its profile 'does not include independent SWE benchmark results or repository-level testing.' Given this direct contradiction, I omitted all benchmark results for this model rather than report an unconfirmed number."
+}

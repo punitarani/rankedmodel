@@ -1,0 +1,129 @@
+{
+  "name": "Qwen3-235B-A22B-Thinking-2507",
+  "org": "Alibaba",
+  "family": "Qwen3",
+  "releaseDate": "2025-07-25",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 235,
+  "activeParamsB": 22,
+  "archClass": "moe",
+  "archDisplay": "MoE, 128 experts / 8 active",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 119,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.23,
+    "output": 2.3
+  },
+  "links": {
+    "hf": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "docs": "qwen.readthedocs.io"
+  },
+  "note": "Paired always-on reasoning ('Thinking-only') sibling of Qwen3-235B-A22B-Instruct-2507, released 4 days later. Enforces <think> mode, extends max output to 81,920 tokens, native 262,144-token context. Same 235B/22B-active MoE backbone as the Instruct-2507 release already in corpus, but a distinct fine-tune (not a shared-weights effort tier), so tracked as its own standalone entry.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB/activeParamsB/archDisplay/ctxK/license/openness": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "releaseDate": "https://simonwillison.net/2025/Jul/25/qwen3-235b-a22b-thinking-2507/",
+    "priceInput/priceOutput": "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 84.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "MMLU-Pro"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 93.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "MMLU-Redux"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 81.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "GPQA"
+    },
+    {
+      "benchmarkSlug": "super-gpqa",
+      "score": 64.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "SuperGPQA"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 92.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "AIME25"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 18.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "HLE"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 74.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "LiveCodeBench v6 (25.02-25.05)"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 87.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "IFEval"
+    },
+    {
+      "benchmarkSlug": "arena-hard-v2",
+      "score": 79.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "Arena-Hard v2"
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 71.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "BFCL-v3"
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 45.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "notes": "TAU2-Telecom"
+    }
+  ],
+  "verificationNotes": "Confirmed real and released via direct fetch of the HF model card and independently via Simon Willison's July 25, 2025 blog post and OpenRouter listing. Full benchmark table transcribed verbatim from the HF model card (MMLU-Pro 84.4, MMLU-Redux 93.8, GPQA 81.1, SuperGPQA 64.9, AIME25 92.3, HLE 18.2, LiveCodeBench v6 74.1, IFEval 87.8, Arena-Hard v2 79.7, BFCL-v3 71.9, TAU2-Telecom 45.6, among others). Pricing ($0.23/$2.30 per M tokens, Intl/Singapore tier) confirmed exactly via Alibaba Cloud Model Studio's official pricing page, which lists the model by its exact HF name. langCount (119) carried over from the Qwen3 Technical Report figure already used for the sibling Instruct-2507 entry in corpus, since both are the same base model family/training corpus."
+}

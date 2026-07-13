@@ -1,0 +1,114 @@
+{
+  "name": "GPT-5.4",
+  "org": "OpenAI",
+  "family": "GPT-5.4",
+  "releaseDate": "2026-03-05",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary (OpenAI API Terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture (presumed dense transformer, reasoning-tuned); first general-purpose OpenAI model with native computer-use; ships in Thinking/Pro/mini/nano tiers",
+  "ctxK": 1050,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2.5,
+    "output": 15
+  },
+  "links": {},
+  "note": "Flagship/'Thinking' tier of the GPT-5.4 family, confirmed real via TechCrunch and The Decoder launch coverage. GPT-5.4 Pro ($30/$180 per M, ARC-AGI-2 83.3%, GDPval 82%) and cheaper GPT-5.4 mini/nano also shipped the same month but are out of scope for this pass (not requested).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate": "https://techcrunch.com/2026/03/05/openai-launches-gpt-5-4-with-pro-and-thinking-versions/",
+    "ctxK": "https://layerlens.ai/blog/gpt-5-4-benchmark-review",
+    "priceInput/priceOutput": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+    "openness": "https://en.wikipedia.org/wiki/GPT-5.4"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gdpval",
+      "score": 83,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "notes": "GDPval, GPT-5.4 standard/Thinking (Pro variant scores 82.0)"
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier1-3",
+      "score": 47.6,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "notes": "FrontierMath Tier 1-3 (Pro variant scores 50.0)"
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier4",
+      "score": 27.1,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "notes": "FrontierMath Tier 4 (Pro variant scores 38.0)"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 92.8,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "notes": "GPQA Diamond (Pro variant scores 94.4)"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 39.8,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "notes": "Humanity's Last Exam, no tools (with-tools variant scores 52.1; Pro no-tools scores 42.7)"
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 93.7,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "notes": "ARC-AGI-1 (Pro variant scores 94.5)"
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 73.3,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "notes": "ARC-AGI-2; Pro variant scores 83.3 (cross-confirmed by deeplearning.ai's The Batch, which reported GPT-5.2 Pro at 54.2% vs GPT-5.4 Pro at 83.3%)"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 57.7,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "notes": "SWE-Bench Pro (harder variant of SWE-bench; not the base 'swe-bench' slug)"
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 82.7,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "notes": "BrowseComp (Pro variant scores 89.3)"
+    }
+  ],
+  "verificationNotes": "Existence and March 5, 2026 launch date confirmed via TechCrunch ('OpenAI launches GPT-5.4 with Pro and Thinking versions') and Wikipedia. Pricing ($2.50/$15 per M) and 1M-token context (922K in / 128K out) cross-confirmed by The Decoder and LayerLens independently. Nine benchmark scores below (GDPval, FrontierMath T1-3/T4, GPQA Diamond, HLE, ARC-AGI-1/2, SWE-Bench Pro, BrowseComp) taken from The Decoder's launch-day writeup, which itself relays OpenAI's own announced figures (treated as self-reported per instructions). Could NOT confirm a separately-branded, separately-benchmarked 'GPT-5.4 (High)' tier distinct from the flagship numbers below or from the 'xhigh' config tracked by Artificial Analysis (AA composite Intelligence Index score 51 at launch, later cited as 57 in a follow-up AA post reflecting an index-methodology revision) — so no High-tier sibling was added; see 'uncertain'."
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Jamba2 Mini",
+  "org": "AI21 Labs",
+  "family": "Jamba",
+  "releaseDate": "2026-01-08",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 52,
+  "activeParamsB": 12,
+  "archClass": "hybrid",
+  "archDisplay": "SSM-Transformer hybrid (Mamba + Transformer) Mixture-of-Experts, 52B total / 12B active",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "ai21labs/AI21-Jamba2-Mini",
+    "docs": "https://www.ai21.com/blog/introducing-jamba2/"
+  },
+  "note": "Newest Jamba generation (successor to Jamba 1.5 Large/Mini already in corpus, dated 2024-08-22), built for enterprise RAG/grounding reliability. Released alongside a 3B dense sibling.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "params/license/ctx": "https://www.ai21.com/blog/introducing-jamba2/",
+    "hfId": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini"
+  },
+  "results": [],
+  "verificationNotes": "AI21's own announcement only describes 'category leader' qualitative rankings on IFBench/IFEval/Collie/FACTS without exact numeric scores, and a human-eval win vs Ministral 3 14B without a percentage; no results entry included to avoid guessing a number."
+}

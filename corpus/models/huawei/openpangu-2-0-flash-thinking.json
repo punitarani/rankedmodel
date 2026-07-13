@@ -1,0 +1,97 @@
+{
+  "name": "openPangu-2.0-Flash (Thinking)",
+  "org": "Huawei",
+  "family": "openPangu",
+  "releaseDate": "2026-06-12",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "OpenPangu Model License Agreement v2.0",
+  "paramsB": 92,
+  "activeParamsB": 6,
+  "archClass": "moe",
+  "archDisplay": "MoE with MLA + DSA/SWA hybrid attention (1:2 ratio), 4-stream mHC residual, multi-token prediction heads; trained on Huawei Ascend NPUs (no NVIDIA hardware)",
+  "ctxK": 512,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openpangu/openPangu-2.0-Flash",
+    "docs": "https://huggingface.co/openpangu/openPangu-2.0-Flash"
+  },
+  "note": "Announced at HDC 2026 (June 12, 2026); Huawei's first frontier-scale open-weight release, trained entirely on Ascend 910B NPUs with zero NVIDIA involvement. A larger 505B-total/18B-active 'Pro' sibling in the same openPangu 2.0 family was also announced but its benchmark card could not be independently confirmed via a fetchable source this pass (see uncertain). Scores here are the model's 'Thinking' inference-mode numbers; a 'Non-Thinking' mode is reported separately as a sibling entry per the effort-tier convention.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Thinking",
+  "isDefaultConfig": false,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB/activeParamsB/ctxK/architecture": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+    "releaseDate/event": "https://www.huaweicentral.com/huawei-locked-hdc-2026-event-for-june-12/"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 95.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "Prompt-level strict accuracy, Thinking mode"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 79.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "Prompt-level strict, Thinking mode"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 93.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "AIME 2026, Avg@16, Thinking mode"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 83.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "GPQA-Diamond, Avg@4, Thinking mode"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 85.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "LiveCodeBench V6, Avg@3, Thinking mode"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 63.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "SWE-bench Verified, Avg@3, Thinking mode"
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 57,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "Thinking mode only; no Non-Thinking score reported"
+    }
+  ],
+  "verificationNotes": "Specs and benchmark table pulled directly from the official Hugging Face model card (openpangu/openPangu-2.0-Flash README_EN.md). Release date/venue cross-checked against independent HDC 2026 coverage."
+}

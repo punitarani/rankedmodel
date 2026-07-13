@@ -1,0 +1,71 @@
+{
+  "name": "Claude 3.5 Sonnet (New)",
+  "org": "Anthropic",
+  "family": "Claude 3.5",
+  "releaseDate": "2024-10-22",
+  "status": "deprecated",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, architecture undisclosed",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "https://www.anthropic.com/news/3-5-models-and-computer-use"
+  },
+  "note": "Model id claude-3-5-sonnet-20241022, the corpus-confirmed gap: an upgraded revision of Claude 3.5 Sonnet released Oct 22 2024 (same price/speed as the June 2024 original) that introduced computer use (GUI automation: screenshots, cursor moves, clicks, typing) in public beta — the first frontier model to do so. Distinct from the June 2024 claude-3-5-sonnet-20240620 already in the corpus. Given the current corpus date frame (July 2026) this snapshot is now superseded/deprecated in Anthropic's lineup, though it was 'released' (not merely announced) at the time.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "release date, pricing note, benchmark scores, computer use": "https://www.anthropic.com/news/3-5-models-and-computer-use"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 49,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+      "notes": "SWE-bench Verified, up from 33.4% on the June 2024 original."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 69.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+      "notes": "TAU-bench retail domain, up from 62.6%. (kept per corpus convention of filing the retail split under this slug; airline-domain 46% from the same source omitted to avoid a duplicate-key collision)"
+    },
+    {
+      "benchmarkSlug": "osworld",
+      "score": 14.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+      "notes": "PROPOSED NEW SLUG 'osworld' (screenshot-only computer-use configuration; distinct from the newer 'osworld-verified' proposed elsewhere in this batch). Extended-steps configuration scored 22.0%."
+    }
+  ],
+  "verificationNotes": "Fetched Anthropic's own original announcement page directly; all figures below are taken from that primary source."
+}

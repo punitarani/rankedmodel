@@ -1,0 +1,47 @@
+{
+  "name": "Nemotron 3 Super",
+  "org": "NVIDIA",
+  "family": "Nemotron 3",
+  "releaseDate": "2026-03-11",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "NVIDIA Open Model License",
+  "paramsB": 120,
+  "activeParamsB": 12,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Mamba-Transformer MoE with LatentMoE and multi-token prediction, 120B total / 12B active",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "docs": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/"
+  },
+  "note": "Mid-size member of the Nemotron 3 family, released between Nano Omni (April) and the Ultra 550B already in the corpus (dated 2026-06-04). Fills the size gap between Nemotron-H 56B and Nemotron 3 Ultra 550B.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "params/ctx/architecture": "https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/",
+    "hfId": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+  },
+  "results": [],
+  "verificationNotes": "NVIDIA's own blog gives qualitative throughput/accuracy claims (5x throughput, 2x accuracy vs prior Nemotron Super, #1 on DeepResearch Bench via AI-Q agent) rather than a specific standard-benchmark table; could not locate an independently-verified numeric score from Artificial Analysis or similar for this specific model, so no results entry is included to avoid guessing."
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Grok 4.3",
+  "org": "SpaceXAI",
+  "family": "Grok 4.3",
+  "releaseDate": "2026-04-30",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (size undisclosed); always-on reasoning with configurable effort (none/low/medium/high, default low)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.25,
+    "output": 2.5
+  },
+  "links": {
+    "docs": "https://docs.x.ai"
+  },
+  "note": "Default/low reasoning-effort configuration of xAI's (now SpaceXAI's) April 2026 flagship. 1M-token context, native video input, always-on reasoning defaulting to the cheapest 'low' effort tier. Predecessor to Grok 4.5; xAI did not publish a full first-party benchmark table alongside launch.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": false,
+  "specSources": {
+    "releaseDate": "https://venturebeat.com/technology/xai-launches-grok-4-3-at-an-aggressively-low-price-and-a-new-fast-powerful-voice-cloning-suite",
+    "ctxK": "https://www.requesty.ai/models/xai/grok-4-3",
+    "priceInput/priceOutput": "https://www.requesty.ai/models/xai/grok-4-3",
+    "effortLabel/reasoning tiers": "https://openrouter.ai/x-ai/grok-4.3"
+  },
+  "results": [],
+  "verificationNotes": "Release date April 30, 2026 (API GA; app rollout ~April 17) corroborated by VentureBeat, TheAIRankings, and Requesty. Pricing $1.25/$2.50 per Mtok (with $0.20 cached-input rate) corroborated by 3 independent sources (VentureBeat, TheAIRankings, Requesty). 1M context window corroborated by TheAIRankings and Requesty. Reasoning effort tiers (none/low/medium/high, default low) corroborated by OpenRouter model page. No independent benchmark results are attached to this (default/low-effort) entry — the scores I found (GPQA 90.1, tau2-bench-telecom 97.7) all come from Artificial Analysis's model page, which is titled '(high)', so I attributed those to the Grok 4.3 (High) sibling entry instead rather than guess they apply to the default tier."
+}

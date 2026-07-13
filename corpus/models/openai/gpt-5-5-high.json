@@ -1,0 +1,51 @@
+{
+  "name": "GPT-5.5 (High)",
+  "org": "OpenAI",
+  "family": "GPT-5.5",
+  "releaseDate": "2026-04-23",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary (OpenAI API Terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture (presumed dense transformer, reasoning-tuned); codename \"Spud\"; 'high' reasoning-effort configuration",
+  "ctxK": 1050,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 5,
+    "output": 30
+  },
+  "links": {
+    "docs": "https://developers.openai.com/api/docs/models/gpt-5.5"
+  },
+  "note": "Reasoning-effort sibling of the already-catalogued base 'GPT-5.5' entry. Same weights, same pricing/context as the default/xhigh siblings; distinguished only by the reasoning.effort=high API parameter (also selectable in the ChatGPT model picker's effort selector). Same-family, same-release-date, same-paramsB per the effort-tier convention.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "High",
+  "isDefaultConfig": true,
+  "isBestConfig": false,
+  "specSources": {
+    "releaseDate": "https://artificialanalysis.ai/models/gpt-5-5-high",
+    "priceInput/priceOutput": "https://artificialanalysis.ai/models/gpt-5-5-high",
+    "ctxK": "https://artificialanalysis.ai/models/gpt-5-5-high"
+  },
+  "results": [],
+  "verificationNotes": "OpenAI's own reasoning-models guide and OpenAI Help Center confirm GPT-5.5 exposes none/low/medium/high/xhigh reasoning-effort levels, with Plus-tier ChatGPT users able to select 'High' directly in the model picker. Artificial Analysis independently benchmarks this exact configuration as a distinct model page ('GPT-5.5 (high)') with its own composite score (53, rank #12/188), separate from both the base/medium config already in the corpus and the 'xhigh' page below (55, rank #7/188) — confirming these are genuinely differentiated, independently-measured configurations rather than a single number relabeled three ways. Could not find high-tier-specific per-benchmark (GPQA/AIME/etc.) scores published separately from the flagship figures already recorded under the base 'GPT-5.5' entry, which appear (per exact-match FrontierMath figures) to actually represent the xhigh configuration — flagging this for the ingesting pipeline; recommend also flipping the existing 'GPT-5.5' entry's isBestConfig to false now that a genuine xhigh sibling is being added."
+}

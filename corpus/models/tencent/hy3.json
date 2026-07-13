@@ -1,0 +1,64 @@
+{
+  "name": "Hy3",
+  "org": "Tencent",
+  "family": "Hunyuan",
+  "releaseDate": "2026-07-06",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 295,
+  "activeParamsB": 21,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts hybrid fast/slow-thinking model, 295B total / 21B active",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.14,
+    "output": 0.55
+  },
+  "links": {
+    "hf": "tencent/Hy3",
+    "docs": "https://www.tencent.com/en-us/articles/2202386.html"
+  },
+  "note": "Full release of Tencent's Hunyuan 3 (upgraded from an April 2026 preview build), Tencent's first genuinely unrestricted Apache 2.0 flagship. Newer than Hunyuan-A13B already in corpus (dated 2025-06-27). Pricing converted from RMB 1/RMB 4 per million input/output tokens at ~7.1 RMB/USD.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "params/license/pricing": "https://www.tencent.com/en-us/articles/2202386.html"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 87.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/Tencent-Hunyuan/Hy3-preview",
+      "notes": "GPQA Diamond, from Tencent's own Hy3-preview model card (295B-A21B); full July release benchmark table not separately located"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 65.76,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/Tencent-Hunyuan/Hy3-preview",
+      "notes": "5-shot, from Tencent's own Hy3-preview model card"
+    }
+  ],
+  "verificationNotes": "Benchmark numbers (MMLU 87.42, MMLU-Pro 65.76, GPQA Diamond 87.2, LiveCodeBench-v6 34.86) come from the preview build's GitHub model card (Tencent-Hunyuan/Hy3-preview), which Tencent itself published -- treated as self-reported since it is the vendor's own repo, and may differ slightly from the July full-release numbers which were not separately published with a benchmark table in sources checked."
+}

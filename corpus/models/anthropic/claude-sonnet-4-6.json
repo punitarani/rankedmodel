@@ -1,0 +1,93 @@
+{
+  "name": "Claude Sonnet 4.6",
+  "org": "Anthropic",
+  "family": "Claude 4",
+  "releaseDate": "2026-02-17",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, architecture undisclosed",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "https://platform.claude.com/docs/en/about-claude/models/overview"
+  },
+  "note": "CONFIRMED REAL — this is not a mix-up. Model id claude-sonnet-4-6. Direct predecessor to Claude Sonnet 5, sitting between Sonnet 4.5 and Sonnet 5 in the lineage; the corpus is missing it even though it already has both Opus 4.6 (2026-02-05) and Sonnet 5 (2026-06-30). Introduced 1M-token context (beta) and adaptive thinking for the Sonnet line.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "release date, pricing, context window": "https://www.anthropic.com/news/claude-sonnet-4-6",
+    "model id": "https://platform.claude.com/docs/en/about-claude/models/overview"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 79.6,
+      "source": "self-reported",
+      "sourceUrl": "https://venturebeat.com/technology/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost",
+      "notes": "SWE-bench Verified, near-matching Opus 4.6's 80.8%."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 72.5,
+      "source": "self-reported",
+      "sourceUrl": "https://venturebeat.com/technology/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost",
+      "notes": "Essentially tied with Opus 4.6's 72.7% at launch. See proposed-slug note on the Opus 4.8 entry."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 66.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "notes": "Max-effort configuration; scored 60.4% at high effort (120k thinking budget)."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 58.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained",
+      "notes": "From the later Sonnet 5 launch comparison table, re-measured alongside Sonnet 5 and Opus 4.8."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 67,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained",
+      "notes": "Terminal-Bench 2.1, Terminus-2 harness; a separate press report gave 59.1% for what it called 'Terminal-Bench 2.0' at launch, which may reflect a different bench version or harness."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 74.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www.digitalapplied.com/blog/claude-sonnet-4-6-benchmarks-pricing-guide",
+      "notes": "Third-party recap of an Anthropic-reported figure; could not directly confirm the exact number against the primary system card text, so treat with reduced confidence."
+    }
+  ],
+  "verificationNotes": "Release date confirmed via Anthropic's own announcement (fetched directly; page states February 17, 2026, though one press recap gave February 15 — treated the primary source as authoritative). SWE-bench/OSWorld figures below are from direct launch-day press coverage citing Anthropic's numbers; GPQA figure is from a third-party recap with lower confidence."
+}

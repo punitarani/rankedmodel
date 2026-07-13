@@ -1,0 +1,76 @@
+{
+  "name": "INTELLECT-3",
+  "org": "Prime Intellect",
+  "family": "INTELLECT",
+  "releaseDate": "2025-11-26",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 106,
+  "activeParamsB": 12,
+  "archClass": "moe",
+  "archDisplay": "MoE, post-trained via SFT + large-scale asynchronous RL on top of Zhipu's open GLM-4.5-Air-Base",
+  "ctxK": 98,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "PrimeIntellect/INTELLECT-3",
+    "docs": "https://www.primeintellect.ai/blog/intellect-3"
+  },
+  "note": "Prime Intellect (decentralized/open RL training startup) post-trained this 106B/12B-active MoE on top of the openly-licensed GLM-4.5-Air-Base checkpoint, then open-sourced not just the weights but the full RL stack (PRIME-RL framework, verifiers library, 500+ agentic RL environments) under permissive licenses. Served via Prime Intellect's own chat.primeintellect.ai and Inference API; hosted pricing not publicly confirmed.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB/activeParamsB/architecture/base model": "https://arxiv.org/pdf/2512.16144",
+    "ctxK (98K training context)": "https://www.primeintellect.ai/blog/intellect-3"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "aime",
+      "score": 90.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2512.16144",
+      "notes": "AIME 2024"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 88,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2512.16144",
+      "notes": "AIME 2025"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 69.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.primeintellect.ai/blog/intellect-3",
+      "notes": "LiveCodeBench v6"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 76.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www.primeintellect.ai/blog/intellect-3",
+      "notes": "GPQA Diamond"
+    }
+  ],
+  "verificationNotes": "Cross-checked the INTELLECT-3 technical report (arXiv:2512.16144) against Prime Intellect's own blog post and the Hugging Face repo (PrimeIntellect/INTELLECT-3); benchmark numbers are vendor-reported in both the paper and blog."
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Seed 2.1 Pro",
+  "org": "ByteDance",
+  "family": "Doubao Seed",
+  "releaseDate": "2026-06-24",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Proprietary deep-thinking agent model, architecture undisclosed",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.85,
+    "output": 4.15
+  },
+  "links": {
+    "docs": "https://seed.bytedance.com/en/seed2_1"
+  },
+  "note": "ByteDance's newest flagship (successor to Seed 2.0 Pro from Feb 2026), positioned by ByteDance as competitive with Claude Opus 4.6 at far lower cost; not in corpus (corpus's newest ByteDance entry is Doubao-Seed-1.6 from 2025-06-11). Pricing converted from RMB (6/30 per million input/output) at ~7.1 RMB/USD.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate/pricing": "https://datanorth.ai/news/bytedance-releases-seed-2-1-pro-and-seed-2-1-turbo",
+    "ctxK": "https://zenmux.ai/bytedance/doubao-seed-2.1-pro"
+  },
+  "results": [],
+  "verificationNotes": "ByteDance's own blog and secondary coverage only make qualitative 'leads OSWorld/MobileWorld/MMMU-Pro/Terminal Bench 2.1/SWE-Pro/SciCode' claims without exact numbers, except for a non-standard 'Code Arena frontend' design-benchmark score of 1539 (#8, tied with Claude Opus 4.6) -- Code Arena/Design Arena is not one of the pre-approved benchmark slugs, so it is proposed here as a new slug rather than filed under an existing one."
+}

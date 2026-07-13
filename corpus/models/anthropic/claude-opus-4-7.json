@@ -1,0 +1,106 @@
+{
+  "name": "Claude Opus 4.7",
+  "org": "Anthropic",
+  "family": "Claude 4",
+  "releaseDate": "2026-04-16",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, architecture undisclosed; adaptive thinking controlled by a runtime effort parameter (low/medium/high/xhigh/max)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 5,
+    "output": 25
+  },
+  "links": {
+    "docs": "https://platform.claude.com/docs/en/about-claude/models/overview"
+  },
+  "note": "Predecessor to Opus 4.8, released 41 days earlier. Model id claude-opus-4-7. Introduced the xhigh effort tier and 3.75-megapixel high-resolution vision. No separate '(Thinking)' SKU exists: manual extended-thinking budgets were removed on this model in favor of always-on adaptive thinking whose depth is set by the runtime effort parameter (low/medium/high/xhigh/max), not a distinct marketed product.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "release date, pricing, availability": "https://www.anthropic.com/news/claude-opus-4-7",
+    "model id, context window, max output, effort parameter": "https://platform.claude.com/docs/en/about-claude/models/overview"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 87.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained",
+      "notes": "SWE-bench Verified; figure attributed to Anthropic's Claude Opus 4.7 System Card. An independent re-run on the Vals AI leaderboard (https://www.vals.ai/models/anthropic_claude-opus-4-7) measured a lower 82.0% with its own harness."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 64.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained",
+      "notes": "Up from 53.4% on Opus 4.6 per the same source."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 94.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained",
+      "notes": "GPQA Diamond; roughly saturated tier alongside GPT-5.4 Pro (94.4%) and Gemini 3.1 Pro (94.3%)."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 46.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained",
+      "notes": "Humanity's Last Exam, no-tools configuration. With-tools configuration scored 54.7% (not separately filed)."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 82.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained",
+      "notes": "No-tools configuration; with-tools scored 91.0%."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 91.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained",
+      "notes": "Multilingual MMLU."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 79.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 69.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained",
+      "notes": "Terminal-Bench 2.0, Terminus-2 harness."
+    }
+  ],
+  "verificationNotes": "Release date and pricing confirmed directly from Anthropic's own announcement (fetched). Architecture (paramsB, archClass) is never disclosed by Anthropic for any Claude model; 'dense' is a placeholder consistent with how prior Anthropic entries in this corpus are recorded, not a confirmed fact."
+}
