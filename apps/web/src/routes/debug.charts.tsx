@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { CadenceBars } from '#/components/charts/cadence-bars'
 import { InlineBar } from '#/components/charts/inline-bar'
 import { Radar } from '#/components/charts/radar'
+import { INDEX_Y_WINDOW } from '#/components/charts/scales'
 import { QualityPriceScatter } from '#/components/charts/scatter'
 import { Sparkline } from '#/components/charts/sparkline'
 
@@ -27,14 +28,14 @@ function ChartsGallery() {
               slug: 'a',
               name: 'Frontier A',
               outputPrice: 75,
-              elo: 1510,
+              index: 92,
               open: false,
               labeled: true,
             },
-            { slug: 'b', name: 'Open B', outputPrice: 1.3, elo: 1483, open: true, labeled: true },
-            { slug: 'c', name: 'Small C', outputPrice: 0.08, elo: 1176, open: true },
+            { slug: 'b', name: 'Open B', outputPrice: 1.3, index: 84, open: true, labeled: true },
+            { slug: 'c', name: 'Small C', outputPrice: 0.08, index: 46, open: true },
           ]}
-          eloWindow={{ yMinElo: 1150, yMaxElo: 1520, yTicks: [1200, 1300, 1400, 1500] }}
+          yWindow={INDEX_Y_WINDOW}
         />
       </Card>
       <Card title="Capability radar">

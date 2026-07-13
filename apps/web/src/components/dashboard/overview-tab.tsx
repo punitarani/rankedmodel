@@ -1,31 +1,34 @@
 import { type CatalogSnapshot, fmtDate } from '@rankedmodel/shared'
 import { Link, useNavigate } from '@tanstack/react-router'
 import { useState } from 'react'
-import { arenaPct, eloWindow } from '#/components/charts/scales'
+import { INDEX_Y_WINDOW } from '#/components/charts/scales'
 import { QualityPriceScatter } from '#/components/charts/scatter'
 import { ModelTag } from '#/components/model-tag'
 import { SearchSelect } from '#/components/search-select'
-import { arenaTop, dashboardMovers, latestReleases, scatterLabeled } from './dashboard-data'
+import {
+  dashboardMovers,
+  latestReleases,
+  leaderboardTop,
+  rankedByRank,
+  scatterLabeled,
+  scatterModels,
+} from './dashboard-data'
 
 export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
   const navigate = useNavigate()
-  const sortedByIndex = [...catalog.models].sort((a, b) => b.index - a.index)
-  const defaultOpen = sortedByIndex.find((m) => m.open)
-  const [qcA, setQcA] = useState(sortedByIndex[0]?.slug ?? '')
-  const [qcB, setQcB] = useState(defaultOpen?.slug ?? sortedByIndex[1]?.slug ?? '')
-  const arenaBounds = catalog.benchmarks.find((b) => b.slug === 'arena')
-  const window = eloWindow(arenaBounds?.normMin ?? 1000, arenaBounds?.normMax ?? 1500)
+  const ranked = rankedByRank(catalog)
+  const defaultOpen = ranked.find((m) => m.open)
+  const [qcA, setQcA] = useState(ranked[0]?.slug ?? '')
+  const [qcB, setQcB] = useState(defaultOpen?.slug ?? ranked[1]?.slug ?? '')
   const labeledSlugs = scatterLabeled(catalog)
-  const scatterPoints = catalog.models
-    .filter((m) => m.price && m.bench.arena != null)
-    .map((m) => ({
-      slug: m.slug,
-      name: m.name,
-      outputPrice: (m.price as { output: number }).output,
-      elo: m.bench.arena as number,
-      open: m.open,
-      labeled: labeledSlugs.has(m.slug),
-    }))
+  const scatterPoints = scatterModels(catalog).map((m) => ({
+    slug: m.slug,
+    name: m.name,
+    outputPrice: (m.price as { output: number }).output,
+    index: m.index,
+    open: m.open,
+    labeled: labeledSlugs.has(m.slug),
+  }))
   const qcOptions = [...catalog.models]
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((o) => ({ value: o.slug, label: `${o.name} — ${o.org}` }))
@@ -37,7 +40,9 @@ export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
         <div className="rounded-[10px] border border-border bg-card p-4">
           <div className="flex flex-wrap items-baseline gap-2.5">
             <div className="text-[13px] font-semibold">Quality vs. price</div>
-            <div className="text-[11px] text-mut">Arena Elo against output price, log scale</div>
+            <div className="text-[11px] text-mut">
+              Overall index against output price, log scale
+            </div>
             <div className="ml-auto flex gap-3 text-[11px] text-mut">
               <span className="flex items-center gap-[5px]">
                 <span className="size-2 rounded-full bg-open" />
@@ -51,7 +56,7 @@ export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
           </div>
           <QualityPriceScatter
             points={scatterPoints}
-            eloWindow={window}
+            yWindow={INDEX_Y_WINDOW}
             onSelect={(slug) => navigate({ to: '/models/$slug', params: { slug } })}
           />
         </div>
@@ -88,13 +93,13 @@ export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
       <div className="flex min-w-0 flex-col gap-3.5">
         <div className="rounded-[10px] border border-border bg-card px-4 py-3.5">
           <div className="flex items-baseline">
-            <div className="text-[13px] font-semibold">Arena leaderboard</div>
+            <div className="text-[13px] font-semibold">Top ranked</div>
             <Link to="/rankings" className="ml-auto text-[11.5px]">
               All rankings →
             </Link>
           </div>
           <div className="mt-[11px] flex flex-col gap-[7px]" data-testid="arena-rail">
-            {arenaTop(catalog).map((m, i) => (
+            {leaderboardTop(catalog).map((m, i) => (
               <Link
                 key={m.slug}
                 to="/models/$slug"
@@ -106,13 +111,15 @@ export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
                   <span className="overflow-hidden text-ellipsis whitespace-nowrap font-semibold">
                     {m.name}
                   </span>
-                  <span className="ml-auto font-mono text-[11px] text-mut">{m.bench.arena}</span>
+                  <span className="ml-auto font-mono text-[11px] text-mut">
+                    {m.index.toFixed(1)}
+                  </span>
                 </div>
                 <div className="mt-1 ml-[21px] h-1 overflow-hidden rounded-sm bg-bar">
                   <div
                     className="h-full rounded-sm"
                     style={{
-                      width: `${arenaPct(m.bench.arena as number, window.yMinElo, window.yMaxElo)}%`,
+                      width: `${Math.round(m.index)}%`,
                       background: m.open ? 'var(--open)' : 'var(--closed)',
                     }}
                   />

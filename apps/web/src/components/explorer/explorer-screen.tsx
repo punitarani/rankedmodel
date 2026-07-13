@@ -14,7 +14,7 @@ import {
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { Link } from '@tanstack/react-router'
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { InlineBar } from '#/components/charts/inline-bar'
 import { FilterSelect } from '#/components/filter-select'
 import { ModelTag } from '#/components/model-tag'
@@ -26,19 +26,21 @@ import { CAP_CODES, type ExplorerSearch } from '#/lib/search'
 /** Estimated card height (px), incl. row gap — every card shares the same visual structure. */
 const CARD_HEIGHT = 148
 
+/** Card min-width (px) and grid gap (px) — must match the CSS `minmax(270px,1fr)` + `gap-[11px]`
+ *  below, so the virtualized lane count matches the SSR auto-fill grid exactly (no reflow on mount). */
+const CARD_MIN_WIDTH = 270
+const GRID_GAP = 11
+
 /**
- * Lane count for the virtualized grid, approximating the CSS `auto-fill, minmax(270px,1fr)`
- * behavior at common viewport widths. Virtualizing a responsive auto-fill grid needs a
- * DETERMINISTIC lane count (a virtual "row" = one grid row of N cards), so this trades
- * perfect fluid responsiveness for a small fixed set of breakpoints.
+ * Lane count for the virtualized grid, computed to exactly match the CSS
+ * `repeat(auto-fill, minmax(270px,1fr))` column count: `floor((content + gap) / (card + gap))`.
+ * Virtualizing a responsive auto-fill grid needs a DETERMINISTIC lane count (a virtual "row"
+ * = one grid row of N cards); deriving it from the same formula the browser uses means the
+ * post-mount grid never reflows to a different column count than the SSR/first paint.
  */
 function laneCountFor(width: number): number {
   const contentWidth = width - 228 - 48 // minus filter rail + page padding
-  if (contentWidth < 560) return 1
-  if (contentWidth < 850) return 2
-  if (contentWidth < 1140) return 3
-  if (contentWidth < 1430) return 4
-  return 5
+  return Math.max(1, Math.floor((contentWidth + GRID_GAP) / (CARD_MIN_WIDTH + GRID_GAP)))
 }
 
 /** The 5 filter chips exactly as the design's rail lists them. */
@@ -67,20 +69,38 @@ export function ExplorerScreen({
   navigateSearch: (patch: Partial<ExplorerSearch>) => void
 }) {
   const { data } = useSuspenseQuery(catalogQueryOptions)
-  const orgs = selectOrgs(data.models)
+  const orgs = useMemo(() => selectOrgs(data.models), [data.models])
   const activeCaps = search.caps
     .split(',')
     .filter((c): c is keyof typeof CAP_CODES => c in CAP_CODES)
-  const query: ExplorerQuery = {
-    q: search.q,
-    org: search.org,
-    open: search.open,
-    size: search.size,
-    gpu: search.gpu,
-    caps: activeCaps.map((c) => CAP_CODES[c]),
-    sort: search.sort as ExplorerSort,
-  }
-  const rows = selectExplorer(data.models, query, data.gpus)
+  // Re-run the (whole-catalog) filter/sort only when an input actually changes, not on every
+  // keystroke-triggered URL update / re-render. Deps are the raw search strings (stable), not
+  // the per-render `activeCaps` array.
+  const rows = useMemo(() => {
+    const query: ExplorerQuery = {
+      q: search.q,
+      org: search.org,
+      open: search.open,
+      size: search.size,
+      gpu: search.gpu,
+      caps: search.caps
+        .split(',')
+        .filter((c): c is keyof typeof CAP_CODES => c in CAP_CODES)
+        .map((c) => CAP_CODES[c]),
+      sort: search.sort as ExplorerSort,
+    }
+    return selectExplorer(data.models, query, data.gpus)
+  }, [
+    data.models,
+    data.gpus,
+    search.q,
+    search.org,
+    search.open,
+    search.size,
+    search.gpu,
+    search.caps,
+    search.sort,
+  ])
 
   // Virtualize only after mount (same SSR-safety pattern as the rankings table): the first
   // paint renders the full, non-virtualized grid so there's no client/server size mismatch
@@ -142,13 +162,24 @@ export function ExplorerScreen({
         <span>{fmtPrice(m.price, m.open)}</span>
       </div>
       <div className="mt-0.5 flex items-center gap-2">
-        <InlineBar pct={Math.round(m.index)} height={4} className="flex-1" />
-        <span className="font-mono text-[11px] font-semibold">{m.index.toFixed(1)}</span>
+        <InlineBar
+          pct={Object.keys(m.bench).length > 0 ? Math.round(m.index) : 0}
+          height={4}
+          className="flex-1"
+        />
+        <span
+          className="font-mono text-[11px] font-semibold"
+          style={{ color: m.ranked ? 'var(--text)' : 'var(--mut)' }}
+          title={m.ranked ? undefined : 'Too few benchmark results to rank'}
+        >
+          {/* An unrated 0-benchmark model reads '—', not a misleading '0.0' (D20). */}
+          {Object.keys(m.bench).length > 0 ? m.index.toFixed(1) : '—'}
+        </span>
       </div>
       <div className="flex flex-wrap gap-1">
         {(Object.keys(m.caps) as CapabilityKey[])
           .filter((k) => m.caps[k] && k !== 'coding')
-          .slice(0, 4)
+          .slice(0, 5)
           .map((k) => (
             <span
               key={k}

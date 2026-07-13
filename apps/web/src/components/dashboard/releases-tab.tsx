@@ -1,15 +1,11 @@
 import { type CatalogSnapshot, fmtDate } from '@rankedmodel/shared'
 import { Link } from '@tanstack/react-router'
 import { CadenceBars } from '#/components/charts/cadence-bars'
-import { arenaPct } from '#/components/charts/scales'
 import { dashboardStats } from './dashboard-data'
 
 /** Design's Releases variant: month-grouped feed + cadence + open-vs-closed frontier. */
 export function ReleasesTab({ catalog }: { catalog: CatalogSnapshot }) {
   const stats = dashboardStats(catalog)
-  const arenaBounds = catalog.benchmarks.find((b) => b.slug === 'arena')
-  const arenaMin = arenaBounds?.normMin ?? 1000
-  const arenaMax = arenaBounds?.normMax ?? 1500
 
   // month-grouped feed: 22 most recent (design)
   const feed: { month: string; items: typeof catalog.models }[] = []
@@ -23,30 +19,39 @@ export function ReleasesTab({ catalog }: { catalog: CatalogSnapshot }) {
     group.items.push(m)
   }
 
-  // quarters: 'YYYY Qn' → design label 'YY Qn
+  // quarters: 'YYYY Qn' → design label 'YY Qn. Empty quarters are zero-filled so the axis
+  // stays contiguous (real history opens with a 2020 Q3/Q4 gap that would otherwise compress).
   const counts = new Map<string, number>()
+  let minQ = Number.POSITIVE_INFINITY
+  let maxQ = Number.NEGATIVE_INFINITY
   for (const m of catalog.models) {
     const [y, mo] = m.date.split('-') as [string, string]
-    const key = `${y} Q${Math.floor((Number(mo) - 1) / 3) + 1}`
-    counts.set(key, (counts.get(key) ?? 0) + 1)
+    const qi = Number(y) * 4 + Math.floor((Number(mo) - 1) / 3)
+    counts.set(`${y} Q${(qi % 4) + 1}`, (counts.get(`${y} Q${(qi % 4) + 1}`) ?? 0) + 1)
+    minQ = Math.min(minQ, qi)
+    maxQ = Math.max(maxQ, qi)
   }
-  const quarterKeys = [...counts.keys()].sort()
-  const quarters = quarterKeys.map((k, i) => ({
-    label: k.replace('20', "'"),
-    count: counts.get(k) ?? 0,
-    latest: i === quarterKeys.length - 1,
-  }))
+  const quarters =
+    maxQ >= minQ
+      ? Array.from({ length: maxQ - minQ + 1 }, (_, i) => {
+          const qi = minQ + i
+          const key = `${Math.floor(qi / 4)} Q${(qi % 4) + 1}`
+          return { label: key.replace('20', "'"), count: counts.get(key) ?? 0, latest: qi === maxQ }
+        })
+      : []
 
+  // Open-vs-closed frontier is the top RANKED model on each side, compared on the universal
+  // index (arena covers only a sliver of the field — D20). Empty only if nothing is ranked.
   const frontier = [
     { label: 'Closed frontier', m: stats.closedBest, color: 'var(--closed)' },
     { label: 'Open frontier', m: stats.openBest, color: 'var(--open)' },
-  ].filter((f) => f.m?.bench.arena != null)
+  ].filter((f) => f.m != null)
 
   const gapNote =
-    stats.gapElo != null
-      ? `The open frontier trails by ${stats.gapElo} Elo — roughly a ${Math.round(
-          100 / (1 + 10 ** (-stats.gapElo / 400)),
-        )}% head-to-head win rate. Effectively equivalent for many tasks.`
+    stats.gapIndex != null
+      ? stats.gapIndex <= 0
+        ? `The open frontier (${stats.openBest?.name}) now leads the closed frontier on the overall index.`
+        : `The open frontier trails by ${stats.gapIndex} index points — the gap between the best open and best closed model has narrowed to a few points.`
       : ''
 
   return (
@@ -99,23 +104,20 @@ export function ReleasesTab({ catalog }: { catalog: CatalogSnapshot }) {
         </div>
         <div className="rounded-[10px] border border-border bg-card px-4 py-3.5">
           <div className="text-[13px] font-semibold">Open vs closed frontier</div>
-          <div className="mt-px text-[11px] text-mut">Best Arena Elo by camp</div>
+          <div className="mt-px text-[11px] text-mut">Best overall index by camp</div>
           <div className="mt-3 flex flex-col gap-2.5" data-testid="frontier">
             {frontier.map((f) => (
               <div key={f.label}>
                 <div className="flex items-baseline text-xs">
                   <span className="font-semibold">{f.label}</span>
                   <span className="ml-auto font-mono text-[11px] text-mut">
-                    {f.m?.name} · {f.m?.bench.arena}
+                    {f.m?.name} · {f.m?.index.toFixed(1)}
                   </span>
                 </div>
                 <div className="mt-[5px] h-[5px] overflow-hidden rounded-[3px] bg-bar">
                   <div
                     className="h-full"
-                    style={{
-                      width: `${arenaPct(f.m?.bench.arena as number, arenaMin, arenaMax)}%`,
-                      background: f.color,
-                    }}
+                    style={{ width: `${Math.round(f.m?.index ?? 0)}%`, background: f.color }}
                   />
                 </div>
               </div>

@@ -48,12 +48,12 @@ function DashboardRoute() {
     {
       label: 'Releases · 90 days',
       value: String(stats.recent90d),
-      sub: 'accelerating cadence',
+      sub: 'tracked in the last quarter',
       subColor: 'var(--mut)',
     },
     {
       label: 'Open–closed gap',
-      value: stats.gapElo != null ? `${stats.gapElo} Elo` : '—',
+      value: stats.gapIndex != null ? `${stats.gapIndex} idx` : '—',
       sub: stats.openBest ? `${stats.openBest.name} leads open` : '',
       subColor: 'var(--mut)',
     },

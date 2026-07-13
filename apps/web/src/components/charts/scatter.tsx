@@ -1,13 +1,14 @@
 import type * as React from 'react'
 import { useState } from 'react'
 import { ChartTipBox, useChartTip } from './chart-tip'
-import { type EloWindow, SCATTER, scatterX, scatterY } from './scales'
+import { SCATTER, type ScatterYWindow, scatterX, scatterY } from './scales'
 
 export interface ScatterPoint {
   slug: string
   name: string
   outputPrice: number
-  elo: number
+  /** Overall Index (0–100) — the universal quality signal on the y-axis. */
+  index: number
   open: boolean
   labeled?: boolean
 }
@@ -20,11 +21,11 @@ const NEAR = 24
 /** Quality-vs-price scatter (design dashboard, viewBox 720×320, log-x). */
 export function QualityPriceScatter({
   points,
-  eloWindow,
+  yWindow,
   onSelect,
 }: {
   points: ScatterPoint[]
-  eloWindow: EloWindow
+  yWindow: ScatterYWindow
   onSelect?: (slug: string) => void
 }) {
   const { containerRef, tip, show, showAt, hide } = useChartTip()
@@ -33,7 +34,7 @@ export function QualityPriceScatter({
   const positions = points.map((p) => ({
     p,
     x: scatterX(p.outputPrice),
-    y: scatterY(p.elo, eloWindow),
+    y: scatterY(p.index, yWindow),
   }))
 
   const tipContent = (p: ScatterPoint) => (
@@ -44,7 +45,7 @@ export function QualityPriceScatter({
           className="mr-1.5 inline-block size-[7px] rounded-full"
           style={{ background: p.open ? 'var(--open)' : 'var(--closed)' }}
         />
-        {p.elo} Elo · ${p.outputPrice}/M out
+        index {p.index.toFixed(1)} · ${p.outputPrice}/M out
       </div>
     </>
   )
@@ -80,7 +81,7 @@ export function QualityPriceScatter({
         viewBox={SCATTER.viewBox}
         className={`mt-2 block h-auto w-full ${hovered ? 'cursor-pointer' : ''}`}
         role="group"
-        aria-label="Arena Elo against output price (log scale)"
+        aria-label="Overall index against output price (log scale)"
         onPointerMove={(e) => {
           const hit = locate(e)
           if (!hit) {
@@ -104,10 +105,10 @@ export function QualityPriceScatter({
           if (hit) onSelect(hit.p.slug)
         }}
       >
-        {eloWindow.yTicks.map((elo) => {
-          const y = scatterY(elo, eloWindow)
+        {yWindow.yTicks.map((tick) => {
+          const y = scatterY(tick, yWindow)
           return (
-            <g key={elo}>
+            <g key={tick}>
               <line
                 x1={SCATTER.left}
                 x2={SCATTER.right}
@@ -124,7 +125,7 @@ export function QualityPriceScatter({
                 fill="var(--dim)"
                 fontFamily="var(--font-mono)"
               >
-                {elo}
+                {tick}
               </text>
             </g>
           )
@@ -144,7 +145,7 @@ export function QualityPriceScatter({
         ))}
         {positions.map(({ p, x, y }) => {
           const active = hovered === p.slug
-          const label = `${p.name} — ${p.elo} Elo · $${p.outputPrice}/M out`
+          const label = `${p.name} — index ${p.index.toFixed(1)} · $${p.outputPrice}/M out`
           const dotProps = {
             cx: x.toFixed(1),
             cy: y.toFixed(1),
@@ -186,7 +187,7 @@ export function QualityPriceScatter({
             <text
               key={`label-${p.slug}`}
               x={(scatterX(p.outputPrice) + 8).toFixed(1)}
-              y={(scatterY(p.elo, eloWindow) + 3).toFixed(1)}
+              y={(scatterY(p.index, yWindow) + 3).toFixed(1)}
               fontSize="10"
               fill="var(--mut)"
               pointerEvents="none"

@@ -93,8 +93,13 @@ function OrgRoute() {
               </span>
               <span className="text-right font-mono text-[11px] text-mut">{fmtCtx(m.ctxK)}</span>
               <span className="text-right">
-                <span className="font-mono text-[11.5px] font-semibold">{m.index.toFixed(1)}</span>
-                <InlineBar pct={Math.round(m.index)} className="mt-[3px]" />
+                <span className="font-mono text-[11.5px] font-semibold">
+                  {Object.keys(m.bench).length > 0 ? m.index.toFixed(1) : '—'}
+                </span>
+                <InlineBar
+                  pct={Object.keys(m.bench).length > 0 ? Math.round(m.index) : 0}
+                  className="mt-[3px]"
+                />
               </span>
             </Link>
           ))}

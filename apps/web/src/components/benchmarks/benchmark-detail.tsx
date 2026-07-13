@@ -2,6 +2,7 @@ import {
   CATEGORY_LABELS,
   type CatalogSnapshot,
   fmtParams,
+  fmtScore,
   type SnapshotBenchmark,
 } from '@rankedmodel/shared'
 import { useNavigate } from '@tanstack/react-router'
@@ -37,7 +38,7 @@ export function BenchmarkDetail({
   const field = catalog.models
     .filter((m) => m.bench[benchmark.slug] != null)
     .sort((a, b) => (b.bench[benchmark.slug] as number) - (a.bench[benchmark.slug] as number))
-  const fmtv = (v: number) => (benchmark.slug === 'arena' ? String(v) : `${v.toFixed(1)}%`)
+  const fmtv = (v: number) => fmtScore(v, benchmark.unit)
   const bins = histogramBins(
     field.map((m) => m.bench[benchmark.slug] as number),
     benchmark.normMin,
@@ -138,7 +139,8 @@ export function BenchmarkDetail({
           <div className="rounded-[10px] border border-border bg-card px-4 py-3.5">
             <div className="text-[13px] font-semibold">Score distribution</div>
             <div className="mt-px text-[11px] text-mut">
-              {field.length} tracked results across the normalization window
+              {field.length} tracked result{field.length === 1 ? '' : 's'} across the normalization
+              window
             </div>
             <div ref={histTip.containerRef} className="relative">
               <div className="mt-3.5 flex h-[90px] items-end gap-[3px]" data-testid="histogram">
@@ -189,107 +191,115 @@ export function BenchmarkDetail({
           <div className="rounded-[10px] border border-border bg-card px-4 py-3.5">
             <div className="text-[13px] font-semibold">Score vs. parameters</div>
             <div className="mt-px text-[11px] text-mut">Open-weights models, log-x params</div>
-            <div ref={scatterTip.containerRef} className="relative">
-              {/* biome-ignore lint/a11y/useSemanticElements: SVG chart with interactive child links — role=img would make them presentational and <fieldset> is not an SVG element */}
-              {/* biome-ignore lint/a11y/useKeyWithClickEvents: the svg onClick is a pointer-only nearest-point convenience; keyboard users activate the focusable <a> point links inside, which carry the same navigation */}
-              <svg
-                viewBox="0 0 280 170"
-                className={`mt-2 block h-auto w-full ${hoverPoint ? 'cursor-pointer' : ''}`}
-                role="group"
-                aria-label="Score against parameter count for open models"
-                data-testid="params-scatter"
-                onPointerMove={(e) => {
-                  const hit = locateParamsPoint(e)
-                  if (!hit) {
-                    if (hoverPoint) {
-                      setHoverPoint(null)
-                      scatterTip.hide()
-                    }
-                    return
-                  }
-                  if (hit.m.slug !== hoverPoint) {
-                    setHoverPoint(hit.m.slug)
-                    scatterTip.showAt(
-                      hit.rect.left + (hit.x / 280) * hit.rect.width,
-                      hit.rect.top + (hit.y / 170) * hit.rect.height - 6,
-                      <>
-                        <div className="font-sans font-semibold text-text">{hit.m.name}</div>
-                        <div className="mt-px text-mut">
-                          {fmtv(hit.v)} · {fmtParams(hit.m.params, hit.m.active)}
-                        </div>
-                      </>,
-                    )
-                  }
-                }}
-                onPointerLeave={() => {
-                  setHoverPoint(null)
-                  scatterTip.hide()
-                }}
-                onClick={(e) => {
-                  if ((e.target as Element).closest('a')) return
-                  const hit = locateParamsPoint(e as unknown as React.PointerEvent<SVGSVGElement>)
-                  if (hit) navigate({ to: '/models/$slug', params: { slug: hit.m.slug } })
-                }}
-              >
-                {[1, 10, 100, 1000].map((p) => (
-                  <text
-                    key={p}
-                    x={(12 + logPos(p, PARAMS_AXIS_MIN, PARAMS_AXIS_MAX) * 256).toFixed(1)}
-                    y="166"
-                    textAnchor="middle"
-                    fontSize="8.5"
-                    fill="var(--dim)"
-                    fontFamily="var(--font-mono)"
-                  >
-                    {p}B
-                  </text>
-                ))}
-                {paramsPoints.map(({ m, v, x, y }) => {
-                  const active = hoverPoint === m.slug
-                  return (
-                    // SVG <a>: real link semantics; click is intercepted for SPA navigation.
-                    <a
-                      key={m.slug}
-                      href={`/models/${m.slug}`}
-                      aria-label={`${m.name} — ${fmtv(v)} · ${fmtParams(m.params, m.active)}`}
-                      className="cursor-pointer"
-                      onClick={(e) => {
-                        e.preventDefault()
-                        navigate({ to: '/models/$slug', params: { slug: m.slug } })
-                      }}
-                      onFocus={(e) => {
-                        setHoverPoint(m.slug)
-                        scatterTip.show(
-                          e.currentTarget,
-                          <>
-                            <div className="font-sans font-semibold text-text">{m.name}</div>
-                            <div className="mt-px text-mut">
-                              {fmtv(v)} · {fmtParams(m.params, m.active)}
-                            </div>
-                          </>,
-                        )
-                      }}
-                      onBlur={() => {
+            {paramsPoints.length < 2 ? (
+              <div className="mt-3 text-[11.5px] text-mut">
+                {paramsPoints.length === 0
+                  ? 'No open-weights models with disclosed parameter counts have a score here yet.'
+                  : 'Only one open-weights model with a disclosed parameter count — not enough to plot a trend.'}
+              </div>
+            ) : (
+              <div ref={scatterTip.containerRef} className="relative">
+                {/* biome-ignore lint/a11y/useSemanticElements: SVG chart with interactive child links — role=img would make them presentational and <fieldset> is not an SVG element */}
+                {/* biome-ignore lint/a11y/useKeyWithClickEvents: the svg onClick is a pointer-only nearest-point convenience; keyboard users activate the focusable <a> point links inside, which carry the same navigation */}
+                <svg
+                  viewBox="0 0 280 170"
+                  className={`mt-2 block h-auto w-full ${hoverPoint ? 'cursor-pointer' : ''}`}
+                  role="group"
+                  aria-label="Score against parameter count for open models"
+                  data-testid="params-scatter"
+                  onPointerMove={(e) => {
+                    const hit = locateParamsPoint(e)
+                    if (!hit) {
+                      if (hoverPoint) {
                         setHoverPoint(null)
                         scatterTip.hide()
-                      }}
+                      }
+                      return
+                    }
+                    if (hit.m.slug !== hoverPoint) {
+                      setHoverPoint(hit.m.slug)
+                      scatterTip.showAt(
+                        hit.rect.left + (hit.x / 280) * hit.rect.width,
+                        hit.rect.top + (hit.y / 170) * hit.rect.height - 6,
+                        <>
+                          <div className="font-sans font-semibold text-text">{hit.m.name}</div>
+                          <div className="mt-px text-mut">
+                            {fmtv(hit.v)} · {fmtParams(hit.m.params, hit.m.active)}
+                          </div>
+                        </>,
+                      )
+                    }
+                  }}
+                  onPointerLeave={() => {
+                    setHoverPoint(null)
+                    scatterTip.hide()
+                  }}
+                  onClick={(e) => {
+                    if ((e.target as Element).closest('a')) return
+                    const hit = locateParamsPoint(e as unknown as React.PointerEvent<SVGSVGElement>)
+                    if (hit) navigate({ to: '/models/$slug', params: { slug: hit.m.slug } })
+                  }}
+                >
+                  {[1, 10, 100, 1000].map((p) => (
+                    <text
+                      key={p}
+                      x={(12 + logPos(p, PARAMS_AXIS_MIN, PARAMS_AXIS_MAX) * 256).toFixed(1)}
+                      y="166"
+                      textAnchor="middle"
+                      fontSize="8.5"
+                      fill="var(--dim)"
+                      fontFamily="var(--font-mono)"
                     >
-                      <circle
-                        cx={x.toFixed(1)}
-                        cy={y.toFixed(1)}
-                        r={active ? 5.5 : 4}
-                        fill="var(--open)"
-                        fillOpacity={active ? 1 : 0.75}
-                        stroke={active ? 'var(--text)' : 'var(--bg)'}
-                        strokeWidth="1"
-                        data-testid="params-point"
-                      />
-                    </a>
-                  )
-                })}
-              </svg>
-              <ChartTipBox tip={scatterTip.tip} />
-            </div>
+                      {p}B
+                    </text>
+                  ))}
+                  {paramsPoints.map(({ m, v, x, y }) => {
+                    const active = hoverPoint === m.slug
+                    return (
+                      // SVG <a>: real link semantics; click is intercepted for SPA navigation.
+                      <a
+                        key={m.slug}
+                        href={`/models/${m.slug}`}
+                        aria-label={`${m.name} — ${fmtv(v)} · ${fmtParams(m.params, m.active)}`}
+                        className="cursor-pointer"
+                        onClick={(e) => {
+                          e.preventDefault()
+                          navigate({ to: '/models/$slug', params: { slug: m.slug } })
+                        }}
+                        onFocus={(e) => {
+                          setHoverPoint(m.slug)
+                          scatterTip.show(
+                            e.currentTarget,
+                            <>
+                              <div className="font-sans font-semibold text-text">{m.name}</div>
+                              <div className="mt-px text-mut">
+                                {fmtv(v)} · {fmtParams(m.params, m.active)}
+                              </div>
+                            </>,
+                          )
+                        }}
+                        onBlur={() => {
+                          setHoverPoint(null)
+                          scatterTip.hide()
+                        }}
+                      >
+                        <circle
+                          cx={x.toFixed(1)}
+                          cy={y.toFixed(1)}
+                          r={active ? 5.5 : 4}
+                          fill="var(--open)"
+                          fillOpacity={active ? 1 : 0.75}
+                          stroke={active ? 'var(--text)' : 'var(--bg)'}
+                          strokeWidth="1"
+                          data-testid="params-point"
+                        />
+                      </a>
+                    )
+                  })}
+                </svg>
+                <ChartTipBox tip={scatterTip.tip} />
+              </div>
+            )}
           </div>
         </div>
       </div>

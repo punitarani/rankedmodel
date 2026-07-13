@@ -1,4 +1,4 @@
-import { BENCHMARK_CATEGORIES, CATEGORY_LABELS } from '@rankedmodel/shared'
+import { BENCHMARK_CATEGORIES, CATEGORY_LABELS, fmtScore } from '@rankedmodel/shared'
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { catalogQueryOptions } from '#/lib/catalog'
@@ -63,9 +63,7 @@ function BenchmarksIndex() {
                         <span className="font-mono text-[9.5px] uppercase text-dim">leader</span>
                         <span className="font-semibold">{leader.name}</span>
                         <span className="ml-auto font-mono text-mut">
-                          {b.slug === 'arena'
-                            ? leader.bench[b.slug]
-                            : `${(leader.bench[b.slug] as number).toFixed(1)}%`}
+                          {fmtScore(leader.bench[b.slug] as number, b.unit)}
                         </span>
                       </div>
                     )}

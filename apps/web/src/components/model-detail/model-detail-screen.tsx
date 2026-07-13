@@ -6,6 +6,7 @@ import {
   fmtCtx,
   fmtDate,
   fmtPrice,
+  fmtScore,
   type SnapshotModel,
 } from '@rankedmodel/shared'
 import { Link, useNavigate } from '@tanstack/react-router'
@@ -53,13 +54,13 @@ export function ModelDetailScreen({
     model.vramQ4 == null
       ? []
       : catalog.gpus.filter((g) => g.vramGb >= (model.vramQ4 as number) * 1.08)
-  // Compare-against default: the top model by index, preferring one on the OTHER side of
-  // the open/closed line for a meaningful contrast — falls back to the runner-up if this
-  // model itself is the #1 (catalog-derived, never a fixed slug).
-  const byIndex = [...catalog.models]
-    .filter((x) => x.slug !== model.slug)
-    .sort((a, b) => b.index - a.index)
-  const compareB = (byIndex.find((x) => x.open !== model.open) ?? byIndex[0])?.slug ?? model.slug
+  // Compare-against default: the top RANK-ELIGIBLE model, preferring one on the OTHER side of
+  // the open/closed line for a meaningful contrast — falls back to the runner-up if this model
+  // itself is the #1 (catalog-derived, never a fixed slug, never an unrated model — D20).
+  const byRank = catalog.models
+    .filter((x) => x.slug !== model.slug && x.ranked && x.rank != null)
+    .sort((a, b) => (a.rank as number) - (b.rank as number))
+  const compareB = (byRank.find((x) => x.open !== model.open) ?? byRank[0])?.slug ?? model.slug
 
   const meta = [
     { label: 'Parameters', value: model.params == null ? 'Undisclosed' : `${model.params}B` },
@@ -90,7 +91,7 @@ export function ModelDetailScreen({
         .sort((x, y) => (y.bench[b.slug] as number) - (x.bench[b.slug] as number))
       const best = field[0] as SnapshotModel
       const rank = field.findIndex((x) => x.slug === model.slug) + 1
-      const fmtv = (v: number) => (b.slug === 'arena' ? String(v) : `${v.toFixed(1)}%`)
+      const fmtv = (v: number) => fmtScore(v, b.unit)
       return {
         slug: b.slug,
         name: b.name,
@@ -182,9 +183,13 @@ export function ModelDetailScreen({
               className="font-mono text-[26px] font-semibold tracking-[-0.02em]"
               data-testid="model-index"
             >
-              {model.index.toFixed(1)}
+              {Object.keys(model.bench).length > 0 ? model.index.toFixed(1) : '—'}
             </div>
-            <MicroLabel>Index · rank #{model.rank}</MicroLabel>
+            <MicroLabel>
+              {model.ranked && model.rank != null
+                ? `Index · rank #${model.rank}`
+                : 'Index · unrated'}
+            </MicroLabel>
           </div>
           <button
             type="button"
@@ -376,8 +381,8 @@ export function ModelDetailScreen({
       </div>
 
       <div className="mt-3 text-[11px] text-dim">
-        API price {fmtPrice(model.price, model.open)} · benchmark provenance: curated dataset (see{' '}
-        <Link to="/methodology">methodology</Link>)
+        API price {fmtPrice(model.price, model.open)} · each benchmark row carries its own source
+        badge (see <Link to="/methodology">methodology</Link>)
       </div>
     </div>
   )

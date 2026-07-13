@@ -2,6 +2,7 @@ import {
   type CatalogSnapshot,
   fmtCtx,
   fmtDate,
+  fmtScore,
   RADAR_AXES,
   type SnapshotModel,
 } from '@rankedmodel/shared'
@@ -79,6 +80,9 @@ export function CompareScreen({
     .map((m, i) => ({ m, i }))
     .filter((x): x is { m: SnapshotModel; i: number } => x.m != null)
   const options = [...catalog.models].sort((a, b) => a.name.localeCompare(b.name))
+  const benchRows = catalog.benchmarks.filter((b) =>
+    active.some(({ m }) => m.bench[b.slug] != null),
+  )
   const [saveName, setSaveName] = useState('')
   const [savedFlash, setSavedFlash] = useState(false)
 
@@ -193,20 +197,30 @@ export function CompareScreen({
             })}
           </div>
 
-          {/* benchmarks */}
+          {/* benchmarks — only rows some compared model was actually evaluated on (D20), so
+              the card isn't a wall of em-dashes over 100+ untested benchmarks. */}
           <div className="overflow-hidden rounded-[10px] border border-border bg-card">
             <div className="px-4 pt-[13px] pb-[9px] text-[13px] font-semibold">Benchmarks</div>
-            {catalog.benchmarks.map((b) => {
+            {benchRows.length === 0 && (
+              <div className="border-t border-border px-4 py-3 text-[11.5px] text-mut">
+                No shared benchmark results across the selected models.
+              </div>
+            )}
+            {benchRows.map((b) => {
+              // "Best" only means something when ≥2 selected models actually scored this row.
               let bestI = -1
               let bestV: number | null = null
+              let covered = 0
               for (const { m, i } of active) {
                 const v = m.bench[b.slug]
                 if (v == null) continue
+                covered++
                 if (bestV == null || v > bestV) {
                   bestV = v
                   bestI = i
                 }
               }
+              const highlight = covered > 1
               return (
                 <div
                   key={b.slug}
@@ -221,18 +235,11 @@ export function CompareScreen({
                         <span
                           className="block overflow-hidden text-ellipsis whitespace-nowrap font-mono text-[11.5px]"
                           style={{
-                            color:
-                              i === bestI && active.length > 1 ? SLOT_COLORS[i] : 'var(--text)',
-                            fontWeight: i === bestI ? 600 : 400,
+                            color: highlight && i === bestI ? SLOT_COLORS[i] : 'var(--text)',
+                            fontWeight: highlight && i === bestI ? 600 : 400,
                           }}
                         >
-                          {m == null
-                            ? ''
-                            : v == null
-                              ? '—'
-                              : b.slug === 'arena'
-                                ? String(v)
-                                : v.toFixed(1)}
+                          {m == null ? '' : v == null ? '—' : fmtScore(v, b.unit)}
                         </span>
                         {m != null && (
                           <InlineBar
@@ -262,6 +269,12 @@ export function CompareScreen({
               }))}
             />
           </div>
+          {active.some(({ m }) => RADAR_AXES.some((a) => m.categoryIdx[a.category] == null)) && (
+            <div className="mt-1 text-[10px] leading-snug text-dim">
+              An axis reads 0 where a model has no benchmark in that category — that's untested, not
+              a zero score. See the benchmark table for exact coverage.
+            </div>
+          )}
           <div className="mt-2 flex flex-col gap-[5px]" data-testid="compare-legend">
             {active.map(({ m, i }) => (
               <div key={m.slug} className="flex items-baseline gap-[7px] text-xs">

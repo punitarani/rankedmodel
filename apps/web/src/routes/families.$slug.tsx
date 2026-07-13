@@ -61,7 +61,11 @@ function FamilyRoute() {
       <div className="mt-3.5 overflow-hidden rounded-[10px] border border-border bg-card">
         {members.map((m) => {
           const pred = m.predecessor ? bySlug.get(m.predecessor) : null
-          const delta = pred ? Math.round((m.index - pred.index) * 10) / 10 : null
+          const hasBench = Object.keys(m.bench).length > 0
+          // A succession delta only makes sense between two rank-eligible models — an
+          // unbenchmarked config sitting at index 0 would otherwise show a huge phantom jump (D20).
+          const delta =
+            pred && m.ranked && pred.ranked ? Math.round((m.index - pred.index) * 10) / 10 : null
           return (
             <Link
               key={m.slug}
@@ -97,8 +101,10 @@ function FamilyRoute() {
                 )}
               </span>
               <span className="ml-auto text-right">
-                <span className="font-mono text-[11.5px] font-semibold">{m.index.toFixed(1)}</span>
-                <InlineBar pct={Math.round(m.index)} className="mt-[3px] w-[90px]" />
+                <span className="font-mono text-[11.5px] font-semibold">
+                  {hasBench ? m.index.toFixed(1) : '—'}
+                </span>
+                <InlineBar pct={hasBench ? Math.round(m.index) : 0} className="mt-[3px] w-[90px]" />
               </span>
             </Link>
           )

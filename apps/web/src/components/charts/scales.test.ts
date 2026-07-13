@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest'
 import {
-  arenaPct,
   cadenceHeight,
   histogramBins,
   logPos,
@@ -20,10 +19,10 @@ describe('scatter scales (C6)', () => {
     expect(scatterX(0.06)).toBeCloseTo(46, 6)
     expect(scatterX(200)).toBeCloseTo(712, 6)
   })
-  it('maps Elo edges: 1140 → 296 (bottom), 1520 → 12 (top)', () => {
-    const w = { yMinElo: 1140, yMaxElo: 1520, yTicks: [] }
-    expect(scatterY(1140, w)).toBeCloseTo(296, 6)
-    expect(scatterY(1520, w)).toBeCloseTo(12, 6)
+  it('maps the index y-window edges: yMin → 296 (bottom), yMax → 12 (top)', () => {
+    const w = { yMin: 0, yMax: 100, yTicks: [] }
+    expect(scatterY(0, w)).toBeCloseTo(296, 6)
+    expect(scatterY(100, w)).toBeCloseTo(12, 6)
   })
   it('log placement: $1 sits left of the midpoint between $0.06 and $200', () => {
     const mid = (46 + 712) / 2
@@ -69,10 +68,6 @@ describe('sparkline (C6)', () => {
 })
 
 describe('bars', () => {
-  it('arena rail pct over the 1250–1520 window', () => {
-    expect(arenaPct(1520, 1250, 1520)).toBe(100)
-    expect(arenaPct(1385, 1250, 1520)).toBe(50)
-  })
   it('cadence bars: proportional with a 4px floor', () => {
     expect(cadenceHeight(10, 10)).toBe(62)
     expect(cadenceHeight(0, 10)).toBe(4)

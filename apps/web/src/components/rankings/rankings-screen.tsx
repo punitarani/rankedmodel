@@ -7,9 +7,15 @@ import {
 } from '@rankedmodel/shared'
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { useNavigate } from '@tanstack/react-router'
+import { useMemo } from 'react'
 import { SearchSelect } from '#/components/search-select'
 import { Segmented } from '#/components/segmented'
 import { catalogQueryOptions } from '#/lib/catalog'
+import {
+  CORE_RANKINGS_CANDIDATES,
+  CORE_RANKINGS_LABELS,
+  RANKINGS_COLUMN_MIN_COVERAGE,
+} from '#/lib/search'
 import { RankingsTable } from './rankings-table'
 
 /** Fixed (non-benchmark) sort keys; any other key is looked up in the live benchmark catalog. */
@@ -43,6 +49,47 @@ export function RankingsScreen({
   const sortKey = parseSort(search.sort).key
   const benchLabel = data.benchmarks.find((b) => b.slug === sortKey)?.name
   const sortLabel = FIXED_SORT_LABELS[sortKey] ?? benchLabel ?? sortKey
+
+  // Live per-benchmark coverage (full catalog) drives which columns are worth showing, so
+  // near-empty benchmarks never render as columns of em-dashes (D20).
+  const coverage = useMemo(() => {
+    const c: Record<string, number> = {}
+    for (const m of data.models) {
+      for (const [slug, v] of Object.entries(m.bench)) if (v != null) c[slug] = (c[slug] ?? 0) + 1
+    }
+    return c
+  }, [data.models])
+
+  const columns = useMemo(() => {
+    const label = (slug: string) =>
+      CORE_RANKINGS_LABELS[slug] ?? data.benchmarks.find((b) => b.slug === slug)?.name ?? slug
+    if (category) {
+      // A category page shows that category's benchmarks by coverage; a >=5 floor keeps a
+      // top-5 meaningful, capped so a broad category doesn't overflow into dozens of columns.
+      const inCat = data.benchmarks
+        .filter((b) => b.category === category)
+        .sort((a, b) => (coverage[b.slug] ?? 0) - (coverage[a.slug] ?? 0))
+      const covered = inCat.filter((b) => (coverage[b.slug] ?? 0) >= 5)
+      return (covered.length >= 3 ? covered : inCat.slice(0, 6)).map((b) => ({
+        slug: b.slug,
+        label: label(b.slug),
+      }))
+    }
+    return CORE_RANKINGS_CANDIDATES.filter(
+      (slug) => (coverage[slug] ?? 0) >= RANKINGS_COLUMN_MIN_COVERAGE,
+    ).map((slug) => ({ slug, label: label(slug) }))
+  }, [category, data.benchmarks, coverage])
+
+  // If the user sorts by a benchmark that isn't a default column, surface it as an extra
+  // column so the sort arrow + "sorted by X" line always name a column you can see (D20).
+  const displayColumns = useMemo(() => {
+    const isBench = data.benchmarks.some((b) => b.slug === sortKey)
+    if (!isBench || columns.some((c) => c.slug === sortKey)) return columns
+    return [
+      ...columns,
+      { slug: sortKey, label: CORE_RANKINGS_LABELS[sortKey] ?? benchLabel ?? sortKey },
+    ]
+  }, [columns, sortKey, benchLabel, data.benchmarks])
 
   return (
     <div className="animate-fadeup px-6 py-5 pb-10">
@@ -90,9 +137,9 @@ export function RankingsScreen({
       <RankingsTable
         rows={rows}
         benchmarks={data.benchmarks}
+        columns={displayColumns}
         sort={search.sort}
         onSort={(sort) => navigateSearch({ sort })}
-        category={category}
       />
       {category && (
         <div className="mt-2.5 text-[11px] text-dim">
@@ -107,8 +154,9 @@ export function RankingsScreen({
         </div>
       )}
       <div className="mt-2.5 text-[11px] text-dim">
-        Index = normalized mean across all available benchmarks (0–100). Missing scores are
-        excluded, not penalized.
+        Index = normalized mean across a model's available benchmarks (0–100). Missing scores are
+        excluded, not penalized; models with too few results to compare fairly are shown{' '}
+        <span className="font-mono">unrated</span> and sorted last.
       </div>
     </div>
   )

@@ -30,3 +30,16 @@ export function fmtDate(isoDate: string, long = false): string {
   const month = MONTHS[Number(mo) - 1] ?? '?'
   return long ? `${month} ${Number(day)}, ${y}` : `${month} ${y}`
 }
+
+/**
+ * A benchmark score in its own unit. Percentage benchmarks get one decimal + `%`
+ * (`82.4%`); every non-% scale (Elo, F1, CIDEr, /10, /1000, …) renders the raw value with
+ * sensible precision — never a bogus `%` (a `2887` LiveCodeBench-Pro Elo must not read
+ * `2887.0%`). Integer-scale units (Elo, /1000) drop decimals.
+ */
+export function fmtScore(value: number, unit: string): string {
+  if (unit === '%') return `${value.toFixed(1)}%`
+  if (unit === 'Elo' || unit === '/1000') return String(Math.round(value))
+  // /10, F1, CIDEr and other bounded/real scales: one decimal, trailing zeros trimmed.
+  return String(Number(value.toFixed(2)))
+}

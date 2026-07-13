@@ -30,19 +30,41 @@ export function sortParam(keys: readonly string[], def: string) {
 export const RANKINGS_SORT_KEYS = ['name', 'params', 'ctx', 'index', '[a-z][a-z0-9-]*'] as const
 
 /**
- * One flagship benchmark per category (arena + 6), in category order — the rankings
- * table's default CORE column set. Category subpages (`/rankings/$category`) instead show
- * every benchmark in that category, sourced live from the snapshot's benchmark catalog.
+ * Ordered candidate benchmarks for the default `/rankings` columns. Real-world coverage is
+ * heterogeneous and era-split — the older majority reports MMLU/GSM8K/HumanEval while the
+ * current frontier reports GPQA/AIME/SWE-bench/HLE — so a single "best per category" pick
+ * leaves flagship rows empty. This spans both baskets; `resolveRankingsColumns` keeps only
+ * the candidates that clear a coverage floor in the live catalog, so near-empty columns
+ * (arena 13, tau-bench 9, mmmu 46 in the current data) never ship as walls of em-dashes.
+ * Category subpages (`/rankings/$category`) show that category's benchmarks by coverage.
  */
-export const CORE_RANKINGS_SLUGS = [
-  'arena', // human-preference
-  'mmlu', // knowledge
-  'gpqa', // reasoning
-  'swe-bench', // coding
-  'aime', // math
+export const CORE_RANKINGS_CANDIDATES = [
+  'mmlu', // knowledge (classic)
+  'gpqa', // reasoning (modern)
+  'hle', // reasoning (frontier)
+  'math', // math (classic)
+  'aime', // math (modern)
+  'humaneval', // coding (classic)
+  'livecodebench', // coding (modern)
+  'swe-bench', // coding (agentic)
   'mmmu', // vision
-  'tau-bench', // agents
 ] as const
+
+/** Short column labels for the rankings CORE candidates (fallback: the benchmark's name). */
+export const CORE_RANKINGS_LABELS: Record<string, string> = {
+  mmlu: 'MMLU',
+  gpqa: 'GPQA',
+  hle: 'HLE',
+  math: 'MATH',
+  aime: 'AIME',
+  humaneval: 'HEval',
+  livecodebench: 'LCB',
+  'swe-bench': 'SWE',
+  mmmu: 'MMMU',
+}
+
+/** A benchmark needs at least this many scored models to earn a default/category column. */
+export const RANKINGS_COLUMN_MIN_COVERAGE = 20
 
 /** Compact capability codes in URLs (C4 `?caps=fc,tools`) → shared CapabilityKey. */
 export const CAP_CODES = {

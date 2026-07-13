@@ -1,7 +1,7 @@
 import {
-  type BenchmarkCategory,
   fmtCtx,
   fmtParams,
+  fmtScore,
   parseSort,
   type SnapshotBenchmark,
   type SnapshotModel,
@@ -14,23 +14,13 @@ import { useEffect, useRef, useState } from 'react'
 import { InlineBar } from '#/components/charts/inline-bar'
 import { normPct } from '#/components/charts/scales'
 import { ModelTag } from '#/components/model-tag'
-import { CORE_RANKINGS_SLUGS } from '#/lib/search'
 
 /**
  * The design's dense rankings table: headless TanStack Table for the column/row model
  * (sorting stays in the URL via the shared selector), design grid markup for rendering.
+ * Which benchmark columns show is resolved by the parent screen from live coverage (D20),
+ * so near-empty benchmarks never render as columns of em-dashes.
  */
-
-/** Short header labels for the CORE column set only (`/rankings`, no category filter). */
-const CORE_LABELS: Record<string, string> = {
-  arena: 'Arena',
-  mmlu: 'MMLU',
-  gpqa: 'GPQA',
-  'swe-bench': 'SWE',
-  aime: 'AIME',
-  mmmu: 'MMMU',
-  'tau-bench': 'TAU',
-}
 
 const FIXED_COL_WIDTH = 72
 /** Fixed row height (px) — every row renders one line of text at identical padding. */
@@ -41,31 +31,22 @@ const columnHelper = createColumnHelper<SnapshotModel>()
 export function RankingsTable({
   rows,
   benchmarks,
+  columns,
   sort,
   onSort,
-  category,
 }: {
   rows: SnapshotModel[]
   benchmarks: SnapshotBenchmark[]
+  columns: { slug: string; label: string }[]
   sort: string
   onSort: (next: string) => void
-  category?: BenchmarkCategory
 }) {
   const navigate = useNavigate()
   const boundsBySlug = new Map(benchmarks.map((b) => [b.slug, b]))
   const { key: sortKey, desc } = parseSort(sort)
   const arrow = (key: string) => (sortKey === key ? (desc ? '↓' : '↑') : '')
 
-  // Category pages show every benchmark actually in that category (data-driven, count
-  // varies); the default view shows one flagship benchmark per category (CORE set).
-  const benchCols = category
-    ? benchmarks
-        .filter((b) => b.category === category)
-        .map((b) => ({ slug: b.slug, label: b.name }))
-    : CORE_RANKINGS_SLUGS.filter((slug) => boundsBySlug.has(slug)).map((slug) => ({
-        slug,
-        label: CORE_LABELS[slug] ?? slug,
-      }))
+  const benchCols = columns
 
   const gridTemplate = `34px minmax(190px,1.6fr) 74px 62px 84px repeat(${benchCols.length || 1}, ${FIXED_COL_WIDTH}px)`
   const minWidth =
@@ -116,53 +97,71 @@ export function RankingsTable({
     </button>
   )
 
-  const renderRow = (m: SnapshotModel, i: number) => (
-    <button
-      key={m.slug}
-      type="button"
-      onClick={() => navigate({ to: '/models/$slug', params: { slug: m.slug } })}
-      className="grid w-full cursor-pointer items-center gap-2 border-b border-border bg-card px-3.5 py-[7px] text-left text-[12.5px] hover:bg-hover"
-      style={{ gridTemplateColumns: gridTemplate }}
-      data-testid="ranking-row"
-    >
-      <span className="font-mono text-[11px] text-dim">{i + 1}</span>
-      <span className="flex min-w-0 items-baseline gap-[7px]">
-        <span className="overflow-hidden text-ellipsis whitespace-nowrap font-semibold">
-          {m.name}
-        </span>
-        <span className="flex-none text-[11px] text-mut">{m.org}</span>
-        <ModelTag open={m.open} />
-      </span>
-      <span className="text-right font-mono text-[11px] text-mut">
-        {fmtParams(m.params, m.active)}
-      </span>
-      <span className="text-right font-mono text-[11px] text-mut">{fmtCtx(m.ctxK)}</span>
-      <span className="text-right">
-        <span className="font-mono text-[11.5px] font-semibold">{m.index.toFixed(1)}</span>
-        <InlineBar pct={Math.round(m.index)} className="mt-[3px]" />
-      </span>
-      {benchCols.map((c) => {
-        const bounds = boundsBySlug.get(c.slug)
-        const v = m.bench[c.slug]
-        const pct = bounds ? normPct(v, bounds.normMin, bounds.normMax) : 0
-        return (
-          <span key={c.slug} className="text-right">
-            <span
-              className="font-mono text-[11px]"
-              style={{ color: v == null ? 'var(--dim)' : 'var(--text)' }}
-            >
-              {v == null ? '—' : c.slug === 'arena' ? String(v) : v.toFixed(1)}
-            </span>
-            <InlineBar
-              pct={pct}
-              color={pct > 92 ? 'var(--acc)' : 'var(--border2)'}
-              className="mt-[3px]"
-            />
+  const renderRow = (m: SnapshotModel, i: number) => {
+    const hasAnyBench = Object.values(m.bench).some((v) => v != null)
+    return (
+      <button
+        key={m.slug}
+        type="button"
+        onClick={() => navigate({ to: '/models/$slug', params: { slug: m.slug } })}
+        className="grid w-full cursor-pointer items-center gap-2 border-b border-border bg-card px-3.5 py-[7px] text-left text-[12.5px] hover:bg-hover"
+        style={{ gridTemplateColumns: gridTemplate }}
+        data-testid="ranking-row"
+        data-ranked={m.ranked}
+      >
+        {/* Rank-eligible models get a position; unrated ones (D20) show a dash, not a fake rank. */}
+        <span className="font-mono text-[11px] text-dim">{m.ranked ? i + 1 : '—'}</span>
+        <span className="flex min-w-0 items-baseline gap-[7px]">
+          <span className="overflow-hidden text-ellipsis whitespace-nowrap font-semibold">
+            {m.name}
           </span>
-        )
-      })}
-    </button>
-  )
+          <span className="flex-none text-[11px] text-mut">{m.org}</span>
+          <ModelTag open={m.open} />
+          {!m.ranked && (
+            <span
+              className="flex-none rounded border border-border px-1 py-px font-mono text-[8.5px] uppercase text-dim"
+              title="Too few benchmark results to rank — index shown for reference only"
+            >
+              unrated
+            </span>
+          )}
+        </span>
+        <span className="text-right font-mono text-[11px] text-mut">
+          {fmtParams(m.params, m.active)}
+        </span>
+        <span className="text-right font-mono text-[11px] text-mut">{fmtCtx(m.ctxK)}</span>
+        <span className="text-right">
+          <span
+            className="font-mono text-[11.5px] font-semibold"
+            style={{ color: m.ranked ? 'var(--text)' : 'var(--mut)' }}
+          >
+            {hasAnyBench ? m.index.toFixed(1) : '—'}
+          </span>
+          <InlineBar pct={hasAnyBench ? Math.round(m.index) : 0} className="mt-[3px]" />
+        </span>
+        {benchCols.map((c) => {
+          const bounds = boundsBySlug.get(c.slug)
+          const v = m.bench[c.slug]
+          const pct = bounds ? normPct(v, bounds.normMin, bounds.normMax) : 0
+          return (
+            <span key={c.slug} className="text-right">
+              <span
+                className="font-mono text-[11px]"
+                style={{ color: v == null ? 'var(--dim)' : 'var(--text)' }}
+              >
+                {v == null || !bounds ? '—' : fmtScore(v, bounds.unit)}
+              </span>
+              <InlineBar
+                pct={pct}
+                color={pct > 92 ? 'var(--acc)' : 'var(--border2)'}
+                className="mt-[3px]"
+              />
+            </span>
+          )
+        })}
+      </button>
+    )
+  }
 
   return (
     <div className="overflow-x-auto rounded-[10px] border border-border bg-card">

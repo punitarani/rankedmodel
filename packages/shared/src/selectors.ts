@@ -42,18 +42,23 @@ export function selectRankings(models: SnapshotModel[], query: RankingsQuery): S
   const { key, desc } = parseSort(query.sort)
   const dir = desc ? -1 : 1
 
-  const sortVal = (m: SnapshotModel): string | number => {
+  // `has` = whether this model carries a value for the sort key; models WITHOUT one always
+  // sort last (both directions) instead of the old -1e9 sentinel, which floated the wall of
+  // unscored models to the TOP on an ascending benchmark sort (D20).
+  const sortInfo = (m: SnapshotModel): { has: boolean; val: string | number } => {
     switch (key) {
       case 'name':
-        return m.name.toLowerCase()
+        return { has: true, val: m.name.toLowerCase() }
       case 'params':
-        return m.params == null ? -1 : m.params
+        return { has: m.params != null, val: m.params ?? 0 }
       case 'ctx':
-        return m.ctxK
+        return { has: true, val: m.ctxK }
       case 'index':
-        return m.index
-      default:
-        return m.bench[key] ?? -1e9
+        return { has: true, val: m.index }
+      default: {
+        const v = m.bench[key]
+        return { has: v != null, val: v ?? 0 }
+      }
     }
   }
 
@@ -65,11 +70,19 @@ export function selectRankings(models: SnapshotModel[], query: RankingsQuery): S
         (!q || textHaystack(m).includes(q)),
     )
     .sort((a, b) => {
-      const va = sortVal(a)
-      const vb = sortVal(b)
-      // design quirk preserved: string columns invert the direction sign
-      const c = typeof va === 'string' ? va.localeCompare(vb as string) : va - (vb as number)
-      return c * (typeof va === 'string' ? -dir : dir)
+      const ia = sortInfo(a)
+      const ib = sortInfo(b)
+      // 1) scored-for-the-sort-key before unscored, regardless of direction
+      if (ia.has !== ib.has) return ia.has ? -1 : 1
+      // 2) on the default Index leaderboard, rank-eligible models sit above unrated ones (D20)
+      if (key === 'index' && a.ranked !== b.ranked) return a.ranked ? -1 : 1
+      // 3) by value in the requested direction (design quirk: string columns invert the sign)
+      const c =
+        typeof ia.val === 'string'
+          ? ia.val.localeCompare(ib.val as string)
+          : (ia.val as number) - (ib.val as number)
+      const primary = c * (typeof ia.val === 'string' ? -dir : dir)
+      return primary || a.slug.localeCompare(b.slug)
     })
 }
 
@@ -156,7 +169,9 @@ export function selectExplorer(
       case 'cheap':
         return (a.price?.output ?? 1e9) - (b.price?.output ?? 1e9)
       default:
-        return b.index - a.index
+        // Index sort: rank-eligible models first so a single-benchmark model can't lead the
+        // grid (D20); unrated models keep their index but sort after every ranked one.
+        return a.ranked !== b.ranked ? (a.ranked ? -1 : 1) : b.index - a.index
     }
   })
 }
