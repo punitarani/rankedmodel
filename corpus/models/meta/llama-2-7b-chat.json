@@ -54,9 +54,9 @@
     {
       "benchmarkSlug": "mmlu",
       "score": 45.3,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://telnyx.com/llm-library/llama-2-7b-chat-hf",
-      "notes": "5-shot, reported for Llama-2-7b-chat-hf"
+      "notes": "5-shot, reported for Llama-2-7b-chat-hf [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "arena",

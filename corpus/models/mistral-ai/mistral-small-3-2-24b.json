@@ -67,7 +67,7 @@
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506"
     },
     {
-      "benchmarkSlug": "humaneval",
+      "benchmarkSlug": "humaneval-plus",
       "score": 92.9,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",

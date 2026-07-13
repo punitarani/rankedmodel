@@ -69,7 +69,7 @@
       "notes": "SWE-bench Pro (harder held-out variant)"
     },
     {
-      "benchmarkSlug": "terminal-bench",
+      "benchmarkSlug": "terminal-bench-2",
       "score": 23.9,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",

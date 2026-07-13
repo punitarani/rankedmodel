@@ -52,40 +52,42 @@
     {
       "benchmarkSlug": "mmlu",
       "score": 87.5,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
-      "evaluatedAt": "2025-04-01"
+      "evaluatedAt": "2025-04-01",
+      "notes": "[relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gpqa",
       "score": 65,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
       "evaluatedAt": "2025-04-01",
-      "notes": "GPQA Diamond"
+      "notes": "GPQA Diamond [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "swe-bench",
       "score": 23.6,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
       "evaluatedAt": "2025-04-01",
-      "notes": "SWE-bench Verified"
+      "notes": "SWE-bench Verified [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "aime",
       "score": 49.6,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
       "evaluatedAt": "2025-04-01",
-      "notes": "AIME 2024"
+      "notes": "AIME 2024 [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "ifeval",
       "score": 84.1,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
-      "evaluatedAt": "2025-04-01"
+      "evaluatedAt": "2025-04-01",
+      "notes": "[relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Confirmed release 2025-04-14 and $0.40/$1.60 per 1M token pricing via OpenAI docs and independent coverage. All 5 benchmark rows (MMLU 87.5, GPQA 65, SWE-bench 23.6, AIME 49.6, IFEval 84.1) confirmed verbatim on the cited docsbot.ai page. No changes made."

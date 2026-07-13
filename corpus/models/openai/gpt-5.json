@@ -90,7 +90,7 @@
       "notes": "high reasoning effort"
     },
     {
-      "benchmarkSlug": "tau-bench",
+      "benchmarkSlug": "tau2-bench-telecom",
       "score": 96.7,
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",

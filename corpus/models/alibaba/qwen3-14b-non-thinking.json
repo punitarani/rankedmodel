@@ -71,7 +71,7 @@
       "notes": "GPQA-Diamond, Non-thinking mode"
     },
     {
-      "benchmarkSlug": "bfcl",
+      "benchmarkSlug": "bfcl-v3",
       "score": 61.5,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/pdf/2505.09388",

@@ -83,7 +83,7 @@
       "notes": "SWE-Bench Verified, single attempt"
     },
     {
-      "benchmarkSlug": "mmmu",
+      "benchmarkSlug": "mmmu-pro",
       "score": 81.2,
       "source": "self-reported",
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf",

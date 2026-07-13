@@ -52,57 +52,65 @@
     {
       "benchmarkSlug": "mmlu",
       "score": 85.9,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
-      "notes": "0-shot CoT; matches Amazon's Nova technical report"
+      "notes": "0-shot CoT; matches Amazon's Nova technical report [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gpqa",
       "score": 46.9,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "math",
       "score": 76.6,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "humaneval",
       "score": 89,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gsm8k",
       "score": 94.8,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "bbh",
       "score": 86.9,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "ifeval",
       "score": 92.1,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "drop",
       "score": 85.4,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "arc-challenge",
       "score": 94.8,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Confirmed real: Dec 3, 2024 re:Invent launch corroborated by multiple press sources. Confirmed 300K multimodal context, 200-language support, $0.80/$3.20 per M pricing (AWS Nova pricing/docs). All 9 benchmark rows (MMLU 85.9, GPQA 46.9, MATH 76.6, HumanEval 89.0, GSM8K 94.8, BBH 86.9, IFEval 92.1, DROP 85.4, ARC-Challenge 94.8) confirmed to literally appear on deepranking.ai/llm-models/nova-pro. No changes made."

@@ -51,23 +51,30 @@
     {
       "benchmarkSlug": "aime",
       "score": 93,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://binaryverseai.com/chatgpt-o3-pro-review-benchmarks-hacks/",
-      "notes": "AIME 2024; OpenAI has not published a full official benchmark table for o3-pro"
+      "notes": "AIME 2024; OpenAI has not published a full official benchmark table for o3-pro [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gpqa",
       "score": 84,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://binaryverseai.com/chatgpt-o3-pro-review-benchmarks-hacks/",
-      "notes": "GPQA Diamond"
+      "notes": "GPQA Diamond [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "codeforces",
       "score": 2748,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://binaryverseai.com/chatgpt-o3-pro-review-benchmarks-hacks/",
-      "notes": "Elo rating"
+      "notes": "Elo rating [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 75,
+      "source": "independent",
+      "sourceUrl": "https://www.datalearner.com/en/leaderboards/category/code",
+      "notes": "SWE-bench Verified, thinking level high; DataLearner coding leaderboard (2026-07); serenitiesai.com lists 70.0 (conflict); no official OpenAI benchmark table exists for o3-pro"
     }
   ],
   "verificationNotes": "Confirmed real. TechCrunch (fetched) confirms June 10, 2025 launch, ChatGPT Pro/Team + API availability, and $20/$80 per-1M pricing verbatim. developers.openai.com/api/docs/models/o3-pro confirms 200K context / 100K max output. Fetched binaryverseai.com directly and confirmed all three claimed numbers appear verbatim on the page: AIME 2024 '93 percent,' GPQA Diamond '84 percent,' Codeforces '2,748 points.' No changes made."

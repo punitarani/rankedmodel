@@ -61,7 +61,7 @@
       "notes": "MMLU-Pro (EM)"
     },
     {
-      "benchmarkSlug": "mmlu",
+      "benchmarkSlug": "mmlu-redux",
       "score": 93.7,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",

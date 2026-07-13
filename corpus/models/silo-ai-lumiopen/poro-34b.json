@@ -95,10 +95,10 @@
     },
     {
       "benchmarkSlug": "humaneval",
-      "score": 41.8,
+      "score": 37.2,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2404.01856",
-      "notes": "Average of HumanEval and MBPP code accuracy as reported in paper"
+      "notes": "HumanEval (Python, pass@10) per arXiv:2404.01856 Table 8; corrected from 41.8, a prior value that was not a pure HumanEval score."
     }
   ],
   "verificationNotes": "Fully confirmed by fetching the actual arXiv PDF (2404.01856, Luukkonen et al., \"Poro 34B and the Blessing of Multilinguality\") and the HF model card. Architecture (54 layers, d_model 7168, 56 heads, BLOOM+ALiBi), 34.2B params, Apache-2.0 license, and 2048 sequence length all match Table 5 of the paper exactly. All 8 benchmark rows verified literally against Tables 6, 7, and 8 of the paper, including the FinGPT-13B=48.92 comparison note and the HumanEval/MBPP average (37.20/47.40 → 41.80)."

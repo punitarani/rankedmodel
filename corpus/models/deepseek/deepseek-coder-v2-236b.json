@@ -58,7 +58,7 @@
       "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2"
     },
     {
-      "benchmarkSlug": "mbpp",
+      "benchmarkSlug": "mbpp-plus",
       "score": 76.2,
       "source": "self-reported",
       "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",

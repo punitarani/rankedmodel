@@ -48,7 +48,7 @@
   },
   "results": [
     {
-      "benchmarkSlug": "tau-bench",
+      "benchmarkSlug": "tau2-bench-telecom",
       "score": 87,
       "source": "independent",
       "sourceUrl": "https://www.ajupress.com/view/20251230092739502",

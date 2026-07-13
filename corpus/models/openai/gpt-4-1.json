@@ -52,25 +52,26 @@
     {
       "benchmarkSlug": "mmlu",
       "score": 90.2,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.rdworldonline.com/openai-claims-gpt-4-1-sets-new-90-standard-in-mmlu-reasoning-benchmark/",
-      "evaluatedAt": "2025-04-01"
+      "evaluatedAt": "2025-04-01",
+      "notes": "[relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gpqa",
       "score": 66.3,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.rdworldonline.com/openai-claims-gpt-4-1-sets-new-90-standard-in-mmlu-reasoning-benchmark/",
       "evaluatedAt": "2025-04-01",
-      "notes": "GPQA Diamond"
+      "notes": "GPQA Diamond [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "swe-bench",
       "score": 55,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.rdworldonline.com/openai-claims-gpt-4-1-sets-new-90-standard-in-mmlu-reasoning-benchmark/",
       "evaluatedAt": "2025-04-01",
-      "notes": "SWE-bench Verified"
+      "notes": "SWE-bench Verified [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Confirmed release 2025-04-14 and $2/$8 per 1M token pricing, 1M context window via OpenAI docs and independent coverage. All 3 benchmark rows (MMLU 90.2, GPQA 66.3, SWE-bench 55) confirmed verbatim on the cited rdworldonline.com article. No changes made."

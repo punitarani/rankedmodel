@@ -77,7 +77,7 @@
       "notes": "Humanity's Last Exam, GPT-5.2 Thinking; confirmed"
     },
     {
-      "benchmarkSlug": "tau-bench",
+      "benchmarkSlug": "tau2-bench-telecom",
       "score": 98.7,
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",

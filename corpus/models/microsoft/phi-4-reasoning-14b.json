@@ -63,7 +63,7 @@
       "notes": "GPQA-Diamond"
     },
     {
-      "benchmarkSlug": "humaneval",
+      "benchmarkSlug": "humaneval-plus",
       "score": 92.9,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",

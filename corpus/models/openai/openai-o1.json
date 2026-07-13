@@ -52,42 +52,42 @@
     {
       "benchmarkSlug": "aime",
       "score": 74.3,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.datacamp.com/blog/o3-openai",
       "evaluatedAt": "2024-12-01",
-      "notes": "AIME 2024"
+      "notes": "AIME 2024 [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gpqa",
       "score": 78,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.datacamp.com/blog/o3-openai",
       "evaluatedAt": "2024-12-01",
-      "notes": "GPQA Diamond"
+      "notes": "GPQA Diamond [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "swe-bench",
       "score": 48.9,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.datacamp.com/blog/o3-openai",
       "evaluatedAt": "2024-12-01",
-      "notes": "SWE-bench Verified"
+      "notes": "SWE-bench Verified [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "codeforces",
       "score": 1891,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.datacamp.com/blog/o3-openai",
       "evaluatedAt": "2024-12-01",
-      "notes": "Codeforces Elo"
+      "notes": "Codeforces Elo [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "mmmu",
       "score": 77.6,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.datacamp.com/blog/o3-openai",
       "evaluatedAt": "2024-12-01",
-      "notes": "MMMU college-level visual reasoning"
+      "notes": "MMMU college-level visual reasoning [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Full o1 launch on 2024-12-05 (alongside o1-pro/ChatGPT Pro) confirmed via multiple independent sources (Wikipedia, InfoQ, OpenAI o1 system card PDF dated 2024-12-05). AIME 74.3, GPQA 78, SWE-bench 48.9, Codeforces 1891, MMMU 77.6 all confirmed by direct fetch of datacamp.com/blog/o3-openai, matching exactly. Scheduled shutdown 2026-10-23 confirmed via OpenAI deprecation coverage (TheRouter.ai, OpenAI community deprecation notice) - the model is still real/active as of today (2026-07-12). No changes made."

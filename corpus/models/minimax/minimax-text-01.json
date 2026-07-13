@@ -88,7 +88,7 @@
       "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-Text-01"
     },
     {
-      "benchmarkSlug": "mbpp",
+      "benchmarkSlug": "mbpp-plus",
       "score": 71.7,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-Text-01",

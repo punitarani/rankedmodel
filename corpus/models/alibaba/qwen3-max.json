@@ -56,7 +56,7 @@
       "notes": "SWE-bench Verified, Qwen3-Max-Preview (Instruct)"
     },
     {
-      "benchmarkSlug": "tau-bench",
+      "benchmarkSlug": "tau2-bench-telecom",
       "score": 74.8,
       "source": "self-reported",
       "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-max-just-scale-it_602621",
@@ -64,10 +64,31 @@
     },
     {
       "benchmarkSlug": "super-gpqa",
-      "score": 81.4,
+      "score": 64.6,
       "source": "self-reported",
-      "sourceUrl": "https://dev.to/czmilo/qwen3-max-2025-complete-release-analysis-in-depth-review-of-alibabas-most-powerful-ai-model-3j7l",
-      "notes": "SuperGPQA"
+      "sourceUrl": "https://felloai.com/qwen-3-max-ai-all-you-need-to-know-about-alibabas-1-trillion-parameter-llm/",
+      "notes": "SuperGPQA, Qwen3-Max-Instruct (Preview) official launch chart (same felloai transcription as the AIME/Arena-Hard rows; chart also shows Qwen3-235B 62.6, Kimi K2 57.2, Claude Opus 4 56.5). llm-stats lists the GA release at 65.1. Corrects a prior 81.4 (dev.to) that misread the AIME bar (GA AIME transcriptions cite 81.6)."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 80.6,
+      "source": "self-reported",
+      "sourceUrl": "https://felloai.com/qwen-3-max-ai-all-you-need-to-know-about-alibabas-1-trillion-parameter-llm/",
+      "notes": "AIME 2025, Qwen3-Max-Instruct (Preview, non-thinking), official launch chart (also transcribed by localllm.in). Some GA-release transcriptions cite 81.6; Thinking variant later reported 100 with tools + test-time compute."
+    },
+    {
+      "benchmarkSlug": "arena-hard-v2",
+      "score": 86.1,
+      "source": "self-reported",
+      "sourceUrl": "https://felloai.com/qwen-3-max-ai-all-you-need-to-know-about-alibabas-1-trillion-parameter-llm/",
+      "notes": "Arena-Hard v2, Qwen3-Max-Instruct (Preview), official launch chart (also transcribed by localllm.in)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 57.5,
+      "source": "self-reported",
+      "sourceUrl": "https://felloai.com/qwen-3-max-ai-all-you-need-to-know-about-alibabas-1-trillion-parameter-llm/",
+      "notes": "LiveCodeBench v6, Qwen3-Max-Instruct (Preview) launch chart. Conflicting GA-era transcriptions cite 74.8 (e.g. apidog); no official text source resolves it."
     }
   ],
   "verificationNotes": "Confirmed real: preview announced Sept 5, 2025 (X/Alibaba_Qwen, MarkTechPost, Cybernews, Interesting Engineering all corroborate), over 1T total params (undisclosed exact figure) trained on 36T tokens, MoE architecture, closed/API-only via Alibaba Cloud/DashScope -- all confirmed. SWE-bench Verified 69.6 and Tau2-Bench 74.8 confirmed verbatim via direct fetch of the cited alibabacloud.com blog. SuperGPQA 81.4 confirmed verbatim via direct fetch of the cited dev.to article. Pricing ($1.2/$6 per M, 0-32K tier) confirmed exactly via Alibaba Cloud Model Studio official pricing page. No changes made."

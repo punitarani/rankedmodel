@@ -62,10 +62,10 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 81,
+      "score": 57,
       "source": "independent",
-      "sourceUrl": "https://artificialanalysis.ai/models/ernie-4-5-300b-a47b",
-      "notes": "GPQA Diamond, non-reasoning variant, Artificial Analysis Intelligence Index v4.1 suite"
+      "sourceUrl": "https://www.datacamp.com/blog/ernie-4-5-x1",
+      "notes": "GPQA ~57 (DataCamp); corrected from Artificial Analysis 81, an internally-inconsistent outlier (same AA page: HLE 4, Index 9/last)."
     },
     {
       "benchmarkSlug": "hle",

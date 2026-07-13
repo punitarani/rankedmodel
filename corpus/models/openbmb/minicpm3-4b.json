@@ -64,7 +64,7 @@
       "evaluatedAt": "2024-09-01"
     },
     {
-      "benchmarkSlug": "humaneval",
+      "benchmarkSlug": "humaneval-plus",
       "score": 68.3,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/openbmb/MiniCPM3-4B",

@@ -58,30 +58,30 @@
     {
       "benchmarkSlug": "gpqa",
       "score": 53.6,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947",
-      "notes": "OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching"
+      "notes": "OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "math",
       "score": 76.6,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947",
-      "notes": "OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching"
+      "notes": "OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "humaneval",
       "score": 90.2,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947",
-      "notes": "OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching"
+      "notes": "OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "mgsm",
       "score": 90.5,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947",
-      "notes": "Multilingual Grade School Math; OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching"
+      "notes": "Multilingual Grade School Math; OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Release May 13, 2024 confirmed (Wikipedia); 128K context and $2.50/$10 per-million pricing confirmed via multiple independent pricing pages. MMLU 88.7 verified literally on the cited Wikipedia page. However, Wikipedia's GPT-4o article does NOT literally contain the GPQA/MATH/HumanEval/MGSM numbers (directly fetched and confirmed only MMLU is present there) — the original sourceUrl was wrong for those 4 rows. OpenAI's primary announcement (openai.com/index/hello-gpt-4o/) returned HTTP 403 to automated fetch, so I re-sourced those 4 rows to a community.openai.com thread I fetched directly and confirmed contains the exact literal figures (53.6/76.6/90.2/90.5), changing their source type to 'independent'."

@@ -53,9 +53,10 @@
     {
       "benchmarkSlug": "mmlu",
       "score": 77.3,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistral-community/Mixtral-8x22B-v0.1/discussions/3",
-      "evaluatedAt": "2024-04-01"
+      "evaluatedAt": "2024-04-01",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gsm8k",

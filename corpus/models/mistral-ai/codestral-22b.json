@@ -53,16 +53,18 @@
     {
       "benchmarkSlug": "humaneval",
       "score": 81.1,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.analyticsvidhya.com/blog/2024/06/codestral-22b/",
-      "evaluatedAt": "2024-05-01"
+      "evaluatedAt": "2024-05-01",
+      "notes": "[relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "mbpp",
       "score": 78.2,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.analyticsvidhya.com/blog/2024/06/codestral-22b/",
-      "evaluatedAt": "2024-05-01"
+      "evaluatedAt": "2024-05-01",
+      "notes": "[relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Confirmed via HF model page and config.json: 22.2B params, MNPL-0.1 license, 32K context (max_position_embeddings). Fetched analyticsvidhya.com directly: literally confirms '81.1% pass rate on HumanEval' and '78.2% success rate in MBPP'. No changes made."

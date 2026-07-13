@@ -49,14 +49,14 @@
   },
   "results": [
     {
-      "benchmarkSlug": "swe-bench",
+      "benchmarkSlug": "swe-bench-pro",
       "score": 58.6,
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-5",
       "notes": "SWE-Bench Pro, base GPT-5.5 (not Pro variant); confirmed via marktechpost.com direct report"
     },
     {
-      "benchmarkSlug": "terminal-bench",
+      "benchmarkSlug": "terminal-bench-2",
       "score": 82.7,
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-5",

@@ -50,56 +50,65 @@
     {
       "benchmarkSlug": "mmlu",
       "score": 77.6,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gpqa",
       "score": 40,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "math",
       "score": 69.3,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "humaneval",
       "score": 81.1,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gsm8k",
       "score": 92.3,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "bbh",
       "score": 79.5,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "ifeval",
       "score": 87.2,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "drop",
       "score": 79.3,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "arc-challenge",
       "score": 90.2,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-micro",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Confirmed real: Dec 3, 2024 re:Invent launch corroborated by multiple press sources. Confirmed 128K text-only context (AWS Nova docs — Micro is text-to-text only, unlike Lite/Pro/Premier). 200-language support and $0.035/$0.14 per M pricing confirmed against AWS Nova pricing/docs. All 9 benchmark rows (MMLU 77.6, GPQA 40, MATH 69.3, HumanEval 81.1, GSM8K 92.3, BBH 79.5, IFEval 87.2, DROP 79.3, ARC-Challenge 90.2) confirmed to literally appear on deepranking.ai/llm-models/nova-micro. No changes made."

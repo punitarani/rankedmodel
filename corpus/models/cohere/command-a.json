@@ -84,7 +84,7 @@
       "notes": "Taubench agentic benchmark"
     },
     {
-      "benchmarkSlug": "mbpp",
+      "benchmarkSlug": "mbpp-plus",
       "score": 86.2,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2504.00698",

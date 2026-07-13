@@ -50,9 +50,10 @@
     {
       "benchmarkSlug": "humaneval",
       "score": 75,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.marktechpost.com/2024/07/17/mistral-ai-launches-codestral-mamba-7b-a-revolutionary-code-llm-achieving-75-on-humaneval-for-python-coding/",
-      "evaluatedAt": "2024-07-01"
+      "evaluatedAt": "2024-07-01",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Fetched mistral.ai/news/codestral-mamba/ directly: confirms 2024-07-16 release, Mamba2/linear-time architecture, Apache 2.0, tested to 256K-token in-context retrieval. Fetched marktechpost.com article directly: literal params 7,285,403,648 (~7.3B) and HumanEval 75% appear in the page title/headline; corroborated independently by Philipp Schmid and multiple other outlets in search results. No changes made."

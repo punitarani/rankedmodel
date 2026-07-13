@@ -81,9 +81,9 @@
     {
       "benchmarkSlug": "math",
       "score": 97.4,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://venturebeat.com/ai/moonshot-ais-kimi-k2-outperforms-gpt-4-in-key-benchmarks-and-its-free",
-      "notes": "MATH-500"
+      "notes": "MATH-500 [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Confirmed real model. GitHub README (moonshotai/Kimi-K2, mirrors HF card) verified 1T total/32B active/384 experts/128K ctx/Modified MIT License and all 5 benchmark scores (LiveCodeBench 53.7, AIME24 69.6, MMLU 89.5, SWE-bench 65.8, MATH-500 97.4) verbatim. Exact release date July 11, 2025 confirmed via multiple sources (model's own '0711' version tag, Global Times, Wikipedia). Pricing $0.57/$2.30 per M tokens confirmed via OpenRouter/pricepertoken listings for 'Kimi K2 0711'. HF page itself was rate-limited (429) during this session but GitHub README mirror gave identical figures."

@@ -63,6 +63,7 @@ export function auditCorpus(root: string): { findings: Finding[]; stats: Record<
   }))
   const benchmarks = JSON.parse(readFileSync(join(root, 'benchmarks.json'), 'utf8')) as {
     slug: string
+    name: string
   }[]
   const results = models.flatMap((m) => (m.results ?? []).map((r) => ({ ...r, _m: m.name })))
   const findings: Finding[] = []
@@ -138,12 +139,19 @@ export function auditCorpus(root: string): { findings: Finding[]; stats: Record<
   // the single highest-impact quality issue an audit found — e.g. SWE-Bench Pro (64.6) filed under
   // the generic 'swe-bench' slug that elsewhere holds SWE-bench Verified (74–80), which inverts the
   // flagship coding ranking. Detectable because the corpus honestly records the variant in `notes`.
+  // Match the benchmark PHRASE in notes, not a bare word — "pro"/"v2" also appear in model names
+  // (o3-pro, deepseek-v2-5) and would false-positive. Note the `math` slug's benchmark IS MATH-500,
+  // so a "MATH-500" note there is correct and gets no marker.
   const VARIANT_MARKERS: { slug: string; needle: RegExp; variant: string }[] = [
-    { slug: 'swe-bench', needle: /\bpro\b/i, variant: 'SWE-Bench Pro' },
-    { slug: 'math', needle: /math[\s-]?500/i, variant: 'MATH-500' },
-    { slug: 'arena-hard', needle: /\bv2\b/i, variant: 'Arena-Hard v2' },
-    { slug: 'tau-bench', needle: /(τ²|τ2|tau[\s-]?2)/i, variant: 'τ²-Bench' },
-    { slug: 'mmlu', needle: /redux/i, variant: 'MMLU-Redux' },
+    { slug: 'swe-bench', needle: /swe-?bench pro/i, variant: 'SWE-Bench Pro' },
+    { slug: 'arena-hard', needle: /arena-?hard v2/i, variant: 'Arena-Hard v2' },
+    { slug: 'tau-bench', needle: /(τ²|tau-?2|tau²)/i, variant: 'τ²-Bench' },
+    { slug: 'mmlu', needle: /mmlu-?redux/i, variant: 'MMLU-Redux' },
+    { slug: 'bfcl', needle: /bfcl[\s-]?v3/i, variant: 'BFCL v3' },
+    { slug: 'mmmu', needle: /mmmu-?pro/i, variant: 'MMMU-Pro' },
+    { slug: 'terminal-bench', needle: /terminal-?bench 2/i, variant: 'Terminal-Bench 2' },
+    { slug: 'mbpp', needle: /mbpp[\s-]?(plus|\+)/i, variant: 'MBPP+' },
+    { slug: 'humaneval', needle: /humaneval[\s-]?(plus|\+)/i, variant: 'HumanEval+' },
   ]
   for (const m of models) {
     for (const r of m.results ?? []) {
@@ -156,12 +164,25 @@ export function auditCorpus(root: string): { findings: Finding[]; stats: Record<
             `${m.name} · ${r.benchmarkSlug}=${r.score}: notes name "${v.variant}" but it is filed under the generic '${v.slug}' slug — not comparable to other '${v.slug}' rows`,
           )
       }
-      if (/\b(average|avg) of\b/i.test(notes))
-        add(
-          'high',
-          'comparability',
-          `${m.name} · ${r.benchmarkSlug}=${r.score}: notes say this value is an "average of" multiple benchmarks — not a pure ${r.benchmarkSlug} score`,
+      // "average of X and Y" only conflates when X/Y are DIFFERENT benchmarks — an average of a
+      // benchmark's own sub-metrics (IFEval instruct+prompt strict) is a legitimate single score.
+      if (/\b(average|avg) of\b/i.test(notes)) {
+        const nl = notes.toLowerCase()
+        const other = benchmarks.find(
+          (b) =>
+            b.slug !== r.benchmarkSlug &&
+            b.name.length >= 4 &&
+            new RegExp(`\\b${b.name.toLowerCase().replace(/[^a-z0-9]+/g, '[^a-z0-9]?')}\\b`).test(
+              nl,
+            ),
         )
+        if (other)
+          add(
+            'high',
+            'comparability',
+            `${m.name} · ${r.benchmarkSlug}=${r.score}: notes say this is an "average of" including ${other.name} — not a pure ${r.benchmarkSlug} score`,
+          )
+      }
     }
   }
 

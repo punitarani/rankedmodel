@@ -74,7 +74,7 @@
       "notes": "Qwen 3 32B 90.6"
     },
     {
-      "benchmarkSlug": "humaneval",
+      "benchmarkSlug": "humaneval-plus",
       "score": 91.4,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think",
@@ -93,6 +93,27 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think",
       "notes": "LiveCodeBench v3; Qwen 3 32B 90.2"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 61,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/allenai-olmo-3-32b-think/",
+      "notes": "GPQA Diamond, measured by Artificial Analysis (Intelligence Index v4.0), republished on the fetched page; NOTE: Ai2's own reported GPQA 58.1 (HF card/blog/paper) uses the gpqa_main split per allenai/olmes task config, not Diamond, so the independent Diamond number is used here"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 5.9,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/allenai-olmo-3-32b-think/",
+      "notes": "Humanity's Last Exam, no tools; Artificial Analysis measurement (Intelligence Index v4.0), republished on the fetched page; not reported by Ai2 in the OLMo 3 blog/card/paper"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 75.9,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/allenai-olmo-3-32b-think/",
+      "notes": "MMLU-Pro; Artificial Analysis measurement (Intelligence Index v4.0), republished on the fetched page; Ai2 reports MMLU-Pro only for OLMo 3 base models (OlmoBaseEval held-out), not the Think 32B post-trained model"
     }
   ],
   "verificationNotes": "Existence confirmed via allenai.org/blog/olmo3 and press coverage (Nov 20, 2025). paramsB re-derived from model.safetensors.index.json total ≈32.2B (matches 32.23 within rounding). config.json confirms max_position_embeddings=65536 (~64K) and hybrid sliding/full attention across 64 layers, and no tool-use/function-calling exposed on this model card (matches capability flags). All 6 result rows independently confirmed on the HF model card table, including every cited Qwen 3 32B comparison number (MATH 95.4, AIME 80.8, BBH 90.6, HumanEvalPlus 91.2, IFEval 86.5, LiveCodeBench 90.2) except the 'Qwen 3 VL 32B Thinking 96.7' aside which I could not independently re-confirm in my fetch (left in notes as unverified color, does not affect the primary score)."

@@ -49,39 +49,44 @@
     {
       "benchmarkSlug": "mmlu",
       "score": 72.14,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b",
-      "notes": "Independent eval, text-only mode"
+      "notes": "Independent eval, text-only mode [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "mmlu-pro",
       "score": 47.16,
-      "source": "independent",
-      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b"
+      "source": "self-reported",
+      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gpqa",
       "score": 34.38,
-      "source": "independent",
-      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b"
+      "source": "self-reported",
+      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "math",
       "score": 69.3,
-      "source": "independent",
-      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b"
+      "source": "self-reported",
+      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "humaneval",
       "score": 62.2,
-      "source": "independent",
-      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b"
+      "source": "self-reported",
+      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "mbpp",
       "score": 70.43,
-      "source": "independent",
-      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b"
+      "source": "self-reported",
+      "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Confirmed genuine via Cohere's official blog, TechCrunch (2025-03-04), and Cohere Labs' X announcement — release date corrected/confirmed to 2025-03-04 (a WebFetch misattribution briefly suggested Dec 2024 by confusing it with the separate Aya Expanse paper arXiv:2412.04261; independently verified this was wrong and 2025-03-04 is correct). HF model card confirms 32B decoder + SigLIP2 vision encoder, CC-BY-NC. All six benchmark rows (MMLU 72.14, MMLU-Pro 47.16, GPQA 34.38, MATH 69.3, HumanEval 62.2, MBPP 70.43) independently re-fetched from datalearner.com and confirmed to literally match. No changes needed."

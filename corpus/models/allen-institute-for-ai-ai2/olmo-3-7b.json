@@ -69,7 +69,7 @@
       "sourceUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct"
     },
     {
-      "benchmarkSlug": "humaneval",
+      "benchmarkSlug": "humaneval-plus",
       "score": 77.2,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",

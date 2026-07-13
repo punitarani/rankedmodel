@@ -52,51 +52,58 @@
     {
       "benchmarkSlug": "mmlu",
       "score": 80.5,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://deepranking.ai/llm-models/nova-lite",
-      "notes": "0-shot CoT; figure traces to Amazon's Nova technical report"
+      "notes": "0-shot CoT; figure traces to Amazon's Nova technical report [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gpqa",
       "score": 42,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "math",
       "score": 73.3,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "humaneval",
       "score": 85.4,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "gsm8k",
       "score": 94.5,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "bbh",
       "score": 82.4,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "ifeval",
       "score": 89.7,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "drop",
       "score": 80.2,
-      "source": "independent",
-      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite"
+      "source": "self-reported",
+      "sourceUrl": "https://deepranking.ai/llm-models/nova-lite",
+      "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     }
   ],
   "verificationNotes": "Confirmed real: Dec 3, 2024 re:Invent launch (Amazon Press Center, TechCrunch, Businesswire all corroborate). Confirmed 300K context, multimodal text/image/video (AWS Nova docs), 200-language support (AWS re:Post + Nova language docs), $0.06/$0.24 per M pricing (matches $0.00006/$0.00024 per 1K on AWS Nova pricing page). All 8 benchmark rows (MMLU 80.5, GPQA 42, MATH 73.3, HumanEval 85.4, GSM8K 94.5, BBH 82.4, IFEval 89.7, DROP 80.2) confirmed to literally appear on deepranking.ai/llm-models/nova-lite. Minor note: deepranking.ai's own page lists a Nov 19, 2024 date for Nova Lite, but all official Amazon sources confirm Dec 3, 2024 — kept the Amazon-sourced date."

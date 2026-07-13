@@ -45,9 +45,9 @@
     {
       "benchmarkSlug": "mmlu",
       "score": 79.6,
-      "source": "independent",
+      "source": "self-reported",
       "sourceUrl": "https://www.searchenginejournal.com/new-ai-model-outperforms-googles-powerful-palm-2/502191/",
-      "notes": "Independent comparison table; Inflection-2 ranked 2nd behind GPT-4 (86.4), just above Claude-2 CoT (78.5). Literally confirmed on page."
+      "notes": "Independent comparison table; Inflection-2 ranked 2nd behind GPT-4 (86.4), just above Claude-2 CoT (78.5). Literally confirmed on page. [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
     },
     {
       "benchmarkSlug": "hellaswag",

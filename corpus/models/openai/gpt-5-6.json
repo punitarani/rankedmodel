@@ -49,14 +49,14 @@
   },
   "results": [
     {
-      "benchmarkSlug": "swe-bench",
+      "benchmarkSlug": "swe-bench-pro",
       "score": 64.6,
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/gpt-5-6/",
       "notes": "SWE-Bench Pro, GPT-5.6 Sol; confirmed via marktechpost.com direct report of launch page"
     },
     {
-      "benchmarkSlug": "terminal-bench",
+      "benchmarkSlug": "terminal-bench-2",
       "score": 88.8,
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/gpt-5-6/",
@@ -89,6 +89,20 @@
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/gpt-5-6/",
       "notes": "FrontierMath Tier 4 v2, GPT-5.6 Sol; confirmed"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 94.6,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/benchmarks/gpqaDiamond",
+      "notes": "GPQA Diamond, GPT-5.6 Sol; BenchLM published-score snapshot (verified July 11, 2026); not included in OpenAI's own launch eval tables"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 47.2,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "notes": "Humanity's Last Exam, GPT-5.6 Sol (max reasoning); Artificial Analysis independent evaluation; tool setting not stated on page"
     }
   ],
   "verificationNotes": "Existence, July 9 2026 GA (June 26 limited govt preview), 1.05M context, and $5/$30 Sol pricing all confirmed directly via developers.openai.com/api/docs/models/gpt-5.6-sol and multiple outlets (Simon Willison, VentureBeat, MarkTechPost). All six benchmark scores independently corroborated via MarkTechPost's direct report of the OpenAI launch page."
