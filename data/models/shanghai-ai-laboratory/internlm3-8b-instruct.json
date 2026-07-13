@@ -1,0 +1,47 @@
+{
+  "slug": "internlm3-8b-instruct",
+  "name": "InternLM3-8B-Instruct",
+  "orgSlug": "shanghai-ai-laboratory",
+  "familySlug": "internlm3",
+  "releaseDate": "2025-01-15",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer decoder; hybrid deep-thinking/normal response modes",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "internlm/internlm3-8b-instruct",
+    "gh": "InternLM/InternLM",
+    "docs": "internlm.readthedocs.io"
+  },
+  "note": "Apache-2.0 hybrid deep-thinking/normal-mode model trained on only 4T tokens, saving over 75% of training cost vs peers.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ Int4"
+  ],
+  "vramQ4Gb": 5.5,
+  "vramFp16Gb": 16,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

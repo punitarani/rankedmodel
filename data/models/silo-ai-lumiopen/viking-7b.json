@@ -1,0 +1,46 @@
+{
+  "slug": "viking-7b",
+  "name": "Viking 7B",
+  "orgSlug": "silo-ai-lumiopen",
+  "familySlug": "viking",
+  "releaseDate": "2024-05-15",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 7.55,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, LLaMA-style + RoPE + FlashAttention, standard multi-head attention (32 layers, d_model 4096, 32 heads)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 6,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "LumiOpen/Viking-7B",
+    "docs": "amd.com/en/blogs/2024/viking-7b-13b-33b-sailing-the-nordic-seas-of-multilinguality.html"
+  },
+  "note": "First open LLM covering all Nordic languages plus English and code; base checkpoint of the 7B/13B/33B Viking family trained on LUMI.",
+  "quants": [
+    "GGUF",
+    "EXL2"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 15,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

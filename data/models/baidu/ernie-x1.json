@@ -1,0 +1,46 @@
+{
+  "slug": "ernie-x1",
+  "name": "ERNIE X1",
+  "orgSlug": "baidu",
+  "familySlug": "ernie",
+  "releaseDate": "2025-03-16",
+  "status": "released",
+  "predecessor": "ernie-4-0",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Heterogeneous multimodal Mixture-of-Experts (deep-thinking reasoner)",
+  "ctxK": 8,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.28,
+    "output": 1.1
+  },
+  "links": {
+    "docs": "qianfan.baidubce.com"
+  },
+  "note": "Deep-thinking reasoner pitched against DeepSeek R1 at about half the price, but only an 8K context vs R1's 128K.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

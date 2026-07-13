@@ -7,11 +7,11 @@
   "status": "released",
   "predecessor": null,
   "openness": "open-weights",
-  "license": "Llama 4 Community",
+  "license": "Llama 4 Community License Agreement",
   "paramsB": 400,
   "activeParamsB": 17,
   "archClass": "moe",
-  "archDisplay": "MoE",
+  "archDisplay": "MoE, 128 experts (routed + shared) with early-fusion native multimodality, 17B active / 400B total",
   "ctxK": 1000,
   "modalities": [
     "text",
@@ -24,26 +24,26 @@
     "vision": true,
     "functionCalling": true,
     "toolUse": true,
-    "agentic": false
+    "agentic": true
   },
   "apiAvailable": true,
-  "price": {
-    "input": 0.22,
-    "output": 0.85
-  },
+  "price": null,
   "links": {
-    "hf": "meta-llama/Llama-4-Maverick-17B-128E",
+    "hf": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
     "gh": "meta-llama/llama-models",
-    "docs": "llama.com"
+    "docs": "llama.com/models/llama-4"
   },
-  "note": "128-expert MoE; strong multimodal, mixed community reception.",
+  "note": "Natively multimodal MoE flagship; 17B active over 400B total across 128 experts, 1M-token context.",
   "quants": [
-    "FP8",
-    "GGUF Q4",
-    "AWQ"
+    "GGUF",
+    "AWQ",
+    "MLX"
   ],
-  "vramQ4Gb": 230,
+  "vramQ4Gb": 210,
   "vramFp16Gb": 800,
   "tps4090": null,
-  "tpsNote": "Needs multi-GPU; ~28 t/s on 4×A100"
+  "tpsNote": "400B total MoE weights (~210GB at Q4) far exceed a single RTX 4090; needs multi-GPU/datacenter hardware — no single-4090 benchmark exists.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

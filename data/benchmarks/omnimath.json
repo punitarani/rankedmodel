@@ -1,0 +1,10 @@
+{
+  "slug": "omnimath",
+  "name": "OmniMath",
+  "category": "math",
+  "unit": "%",
+  "description": "Broad olympiad-level mathematics problem set.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

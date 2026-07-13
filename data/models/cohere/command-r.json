@@ -1,0 +1,48 @@
+{
+  "slug": "command-r",
+  "name": "Command R",
+  "orgSlug": "cohere",
+  "familySlug": "command-r",
+  "releaseDate": "2024-03-11",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC-BY-NC-4.0 (+ Acceptable Use Policy)",
+  "paramsB": 35,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (35B), optimized for RAG and multi-step tool use",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 10,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.5,
+    "output": 1.5
+  },
+  "links": {
+    "hf": "CohereLabs/c4ai-command-r-v01",
+    "docs": "docs.cohere.com"
+  },
+  "note": "35B RAG/tool-use model with 128K context; first open-weights (CC-BY-NC) Command release, later superseded by the 08-2024 refresh.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 21.6,
+  "vramFp16Gb": 70,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

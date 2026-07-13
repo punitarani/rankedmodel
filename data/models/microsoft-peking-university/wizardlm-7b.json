@@ -1,0 +1,46 @@
+{
+  "slug": "wizardlm-7b",
+  "name": "WizardLM 7B",
+  "orgSlug": "microsoft-peking-university",
+  "familySlug": "microsoft-peking-university-wizardlm",
+  "releaseDate": "2023-04-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Non-commercial research license",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense LLaMA-based decoder-only transformer",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "WizardLM/WizardLM-7B-V1.0",
+    "gh": "nlpxucan/WizardLM"
+  },
+  "note": "Original WizardLM: LLaMA fine-tuned on Evol-Instruct data, a method that seeded WizardCoder/WizardMath and much of the field.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 4.1,
+  "vramFp16Gb": 13.5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

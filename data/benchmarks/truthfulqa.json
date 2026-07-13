@@ -1,0 +1,10 @@
+{
+  "slug": "truthfulqa",
+  "name": "TruthfulQA",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Questions designed to elicit common human misconceptions.",
+  "normMin": 20,
+  "normMax": 95,
+  "higherIsBetter": true
+}

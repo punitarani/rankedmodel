@@ -1,0 +1,46 @@
+{
+  "slug": "claude-opus-4",
+  "name": "Claude Opus 4",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-4",
+  "releaseDate": "2025-05-22",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, hybrid-reasoning (parameter count undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 15,
+    "output": 75
+  },
+  "links": {
+    "docs": "platform.claude.com"
+  },
+  "note": "Opened the Claude 4 generation and took the SWE-bench Verified coding lead at launch.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

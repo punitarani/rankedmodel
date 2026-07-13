@@ -7,16 +7,16 @@
   "status": "released",
   "predecessor": null,
   "openness": "open-weights",
-  "license": "Modified MIT",
+  "license": "Modified MIT License",
   "paramsB": 1000,
   "activeParamsB": 32,
   "archClass": "moe",
-  "archDisplay": "MoE",
+  "archDisplay": "Mixture-of-Experts, 384 experts (8 active + 1 shared/token), 61 layers, MLA attention",
   "ctxK": 128,
   "modalities": [
     "text"
   ],
-  "langCount": 30,
+  "langCount": null,
   "capabilities": {
     "reasoning": false,
     "coding": true,
@@ -27,22 +27,23 @@
   },
   "apiAvailable": true,
   "price": {
-    "input": 0.55,
-    "output": 2.2
+    "input": 0.57,
+    "output": 2.3
   },
   "links": {
     "hf": "moonshotai/Kimi-K2-Instruct",
-    "gh": "MoonshotAI/Kimi-K2",
+    "gh": "moonshotai/Kimi-K2",
     "docs": "platform.moonshot.ai"
   },
-  "note": "First open 1T-parameter model; non-thinking agentic specialist.",
+  "note": "1T-parameter MoE agentic model trained with the MuonClip optimizer; open-sourced under a modified MIT license.",
   "quants": [
-    "FP8",
-    "GGUF Q4",
-    "1.8-bit dynamic"
+    "GGUF"
   ],
-  "vramQ4Gb": 555,
+  "vramQ4Gb": 600,
   "vramFp16Gb": 2000,
   "tps4090": null,
-  "tpsNote": "~10 t/s on M3 Ultra (1.8-bit)"
+  "tpsNote": "Does not fit on a single RTX 4090 (24GB); practical Q4 quants need ~250-600GB combined RAM/VRAM, with heavy CPU/SSD offload reported at only ~5-10 tok/s",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

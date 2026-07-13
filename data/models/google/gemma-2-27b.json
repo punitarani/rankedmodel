@@ -1,0 +1,49 @@
+{
+  "slug": "gemma-2-27b",
+  "name": "Gemma 2 27B",
+  "orgSlug": "google",
+  "familySlug": "gemma-2",
+  "releaseDate": "2024-06-27",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Gemma Terms of Use",
+  "paramsB": 27.2,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer, GQA + interleaved local/global attention, logit soft-capping",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "google/gemma-2-27b",
+    "gh": "google-deepmind/gemma",
+    "docs": "ai.google.dev/gemma/docs/core/model_card_2"
+  },
+  "note": "Flagship dense 27B Gemma 2 with GQA and 13T-token training; rivals models more than twice its size.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 16,
+  "vramFp16Gb": 54,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,4 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gemma-3-12b,47.9,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,Bird-SQL dev
+gemma-3-27b,54.4,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,Bird-SQL dev
+gemma-3-4b,36.3,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,Bird-SQL dev

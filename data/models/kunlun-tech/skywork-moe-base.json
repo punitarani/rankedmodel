@@ -1,0 +1,45 @@
+{
+  "slug": "skywork-moe-base",
+  "name": "Skywork-MoE-Base",
+  "orgSlug": "kunlun-tech",
+  "familySlug": "skywork-moe",
+  "releaseDate": "2024-06-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Skywork Community License",
+  "paramsB": 146,
+  "activeParamsB": 22,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 16 experts, 22B active (upcycled from Skywork-13B dense checkpoints)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Skywork/Skywork-MoE-Base",
+    "gh": "SkyworkAI/Skywork-MoE"
+  },
+  "note": "146B/22B-active MoE upcycled from Skywork-13B; first big open MoE runnable on a single 8x4090 server via FP8",
+  "quants": [
+    "FP8"
+  ],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 292,
+  "tps4090": null,
+  "tpsNote": "Official FP8 checkpoint reaches ~2,200 tok/s aggregate across an 8x RTX4090 cluster via non-uniform tensor parallelism -- not a single-GPU llama.cpp Q4 measurement",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

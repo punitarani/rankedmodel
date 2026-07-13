@@ -1,22 +1,22 @@
 {
   "slug": "phi-4-reasoning",
-  "name": "Phi-4 Reasoning Plus",
+  "name": "Phi-4-reasoning",
   "orgSlug": "microsoft",
-  "familySlug": "phi",
+  "familySlug": "phi-4",
   "releaseDate": "2025-04-30",
   "status": "released",
-  "predecessor": "phi-4",
+  "predecessor": "phi-4-multimodal-instruct",
   "openness": "open-weights",
   "license": "MIT",
   "paramsB": 14,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense",
+  "archDisplay": "Dense decoder-only Transformer, 14B (same base architecture as Phi-4)",
   "ctxK": 32,
   "modalities": [
     "text"
   ],
-  "langCount": 8,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
@@ -25,21 +25,22 @@
     "toolUse": false,
     "agentic": false
   },
-  "apiAvailable": false,
+  "apiAvailable": true,
   "price": null,
   "links": {
-    "hf": "microsoft/Phi-4-reasoning-plus",
-    "gh": "microsoft/PhiCookBook",
-    "docs": "azure.microsoft.com"
+    "hf": "microsoft/Phi-4-reasoning",
+    "docs": "arxiv.org/abs/2504.21318"
   },
-  "note": "RL-tuned Phi-4; punches far above 14B on math and reasoning.",
+  "note": "14B dense reasoning specialist SFT-tuned on ~1.4M o3-mini CoT traces; beats DeepSeek-R1-Distill-70B on math/science benchmarks. Shipped alongside Phi-4-reasoning-plus (same size, extra RL, higher scores).",
   "quants": [
-    "GGUF Q4",
-    "GGUF Q8",
-    "AWQ"
+    "GGUF",
+    "MLX"
   ],
-  "vramQ4Gb": 9.1,
-  "vramFp16Gb": 28,
-  "tps4090": 62,
-  "tpsNote": null
+  "vramQ4Gb": 13.8,
+  "vramFp16Gb": 31,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

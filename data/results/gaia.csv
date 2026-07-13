@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+minimax-m2,75.7,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,text only

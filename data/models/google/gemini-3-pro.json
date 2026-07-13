@@ -7,11 +7,11 @@
   "status": "released",
   "predecessor": null,
   "openness": "closed",
-  "license": "Proprietary",
+  "license": "Proprietary (Google API Terms)",
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "moe",
-  "archDisplay": "MoE (undisclosed)",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (natively multimodal)",
   "ctxK": 1000,
   "modalities": [
     "text",
@@ -19,7 +19,7 @@
     "audio",
     "video"
   ],
-  "langCount": 100,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
@@ -34,12 +34,15 @@
     "output": 12
   },
   "links": {
-    "docs": "ai.google.dev"
+    "docs": "ai.google.dev/gemini-api/docs/gemini-3"
   },
-  "note": "Generational leap over 2.5; native 1M context.",
+  "note": "Google's frontier reasoning/agentic-coding flagship; sparse MoE, natively multimodal, 1M context; >200k-token prompts bill at $4/$18 per M.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

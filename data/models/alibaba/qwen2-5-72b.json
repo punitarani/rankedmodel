@@ -1,0 +1,49 @@
+{
+  "slug": "qwen2-5-72b",
+  "name": "Qwen2.5-72B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2-5",
+  "releaseDate": "2024-09-19",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Qwen (Tongyi Qianwen License)",
+  "paramsB": 72.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, 80 layers (GQA 64Q/8KV)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 29,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen2.5-72B",
+    "gh": "QwenLM/Qwen2.5",
+    "docs": "qwenlm.github.io/blog/qwen2.5"
+  },
+  "note": "Gen-2.5 dense flagship trained on 18T tokens; large MMLU/MATH/coding gains over Qwen2; Qwen license (non-Apache) for the 72B/3B sizes.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ Int4",
+    "MLX"
+  ],
+  "vramQ4Gb": 47.4,
+  "vramFp16Gb": 145,
+  "tps4090": null,
+  "tpsNote": "Q4 weights (~47GB) exceed a single RTX 4090's 24GB VRAM; requires multi-GPU or CPU offload for local inference.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

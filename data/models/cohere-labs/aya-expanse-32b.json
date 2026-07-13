@@ -1,0 +1,49 @@
+{
+  "slug": "aya-expanse-32b",
+  "name": "Aya Expanse 32B",
+  "orgSlug": "cohere-labs",
+  "familySlug": "aya-expanse",
+  "releaseDate": "2024-10-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC-BY-NC",
+  "paramsB": 32,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (Command-based, data arbitrage + model merging), 32B",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 23,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.5,
+    "output": 1.5
+  },
+  "links": {
+    "hf": "CohereLabs/aya-expanse-32b",
+    "docs": "docs.cohere.com/docs/aya-expanse"
+  },
+  "note": "SOTA-for-size open multilingual 32B model built via data arbitrage, preference tuning, and model merging across 23 languages.",
+  "quants": [
+    "GGUF Q4",
+    "EXL2"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 64,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

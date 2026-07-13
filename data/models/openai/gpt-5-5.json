@@ -2,23 +2,22 @@
   "slug": "gpt-5-5",
   "name": "GPT-5.5",
   "orgSlug": "openai",
-  "familySlug": "gpt-5",
-  "releaseDate": "2026-04-02",
+  "familySlug": "gpt-5-5",
+  "releaseDate": "2026-04-23",
   "status": "released",
-  "predecessor": "gpt-5",
+  "predecessor": null,
   "openness": "closed",
   "license": "Proprietary",
   "paramsB": null,
   "activeParamsB": null,
-  "archClass": "moe",
-  "archDisplay": "MoE (undisclosed)",
-  "ctxK": 400,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture (presumed dense transformer, reasoning-tuned); codename \"Spud\"; Thinking + Pro tiers",
+  "ctxK": 1050,
   "modalities": [
     "text",
-    "vision",
-    "audio"
+    "vision"
   ],
-  "langCount": 60,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
@@ -29,16 +28,19 @@
   },
   "apiAvailable": true,
   "price": {
-    "input": 2.5,
-    "output": 20
+    "input": 5,
+    "output": 30
   },
   "links": {
-    "docs": "platform.openai.com"
+    "docs": "platform.openai.com/docs/models/gpt-5.5"
   },
-  "note": "Mainline GPT-5.5 with adaptive routing between fast and thinking modes.",
+  "note": "Codename Spud; ChatGPT/Codex launched Apr 23, 2026 with API following ~1 day later once safeguards were finalized.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

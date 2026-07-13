@@ -1,5 +1,7 @@
 {
   "slug": "cohere",
   "name": "Cohere",
-  "type": "company"
+  "type": "company",
+  "country": "CA",
+  "url": "https://cohere.com"
 }

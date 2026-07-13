@@ -1,5 +1,7 @@
 {
   "slug": "xai",
   "name": "xAI",
-  "type": "lab"
+  "type": "lab",
+  "country": "US",
+  "url": "https://x.ai"
 }

@@ -1,0 +1,10 @@
+{
+  "slug": "arc-agi-2",
+  "name": "ARC-AGI-2",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Harder abstraction-and-reasoning puzzle grid tasks, v2.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

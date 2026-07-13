@@ -1,0 +1,44 @@
+{
+  "slug": "ul2-20b",
+  "name": "UL2 20B",
+  "orgSlug": "google",
+  "familySlug": "ul2",
+  "releaseDate": "2022-10-14",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 20,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense encoder-decoder Transformer (20B, Mixture-of-Denoisers)",
+  "ctxK": 0.5,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "google/ul2",
+    "gh": "google-research/google-research",
+    "docs": "arxiv.org/abs/2205.05131"
+  },
+  "note": "20B open encoder-decoder trained with Mixture-of-Denoisers; strong chain-of-thought despite small size.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 40,
+  "tps4090": null,
+  "tpsNote": "No confirmed GGUF/quantized builds found; encoder-decoder architecture is not a standard llama.cpp target, so no measured RTX 4090 figures exist.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

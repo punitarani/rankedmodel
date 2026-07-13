@@ -1,0 +1,15 @@
+model_slug,score,source,source_url,evaluated_at,notes
+baichuan2-13b,58.1,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,5-shot
+baichuan2-7b,54,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,5-shot
+chatglm-6b,38.9,independent,https://ar5iv.labs.arxiv.org/html/2305.08322,,"Zero-shot, answer-only (C-Eval paper's own evaluation)"
+chatglm2-6b,50.1,self-reported,https://github.com/zai-org/ChatGLM2-6B,,Chat-aligned checkpoint
+chatglm3-6b,69,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
+glm-4-9b-chat,75.6,self-reported,https://huggingface.co/THUDM/glm-4-9b-chat,,Chinese academic-exam benchmark
+minicpm-2b,51.13,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table; Chinese exam benchmark
+qwen-1-8b,56.2,self-reported,https://huggingface.co/Qwen/Qwen-1_8B,2023-11-30,test set
+qwen-14b,72.1,self-reported,https://huggingface.co/Qwen/Qwen-14B,2023-09-25,5-shot
+qwen-72b,83.3,self-reported,https://huggingface.co/Qwen/Qwen-72B,2023-11-30,
+qwen-7b,63.5,self-reported,https://huggingface.co/Qwen/Qwen-7B,2023-09-28,"5-shot, val"
+qwen1-5-72b,84.1,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
+skywork-13b,60.6,self-reported,https://huggingface.co/Skywork/Skywork-13B-base,,
+skywork-moe-base,82.2,self-reported,https://arxiv.org/html/2406.06563v1,,

@@ -1,0 +1,48 @@
+{
+  "slug": "reka-core",
+  "name": "Reka Core",
+  "orgSlug": "reka-ai",
+  "familySlug": "reka",
+  "releaseDate": "2024-04-15",
+  "status": "released",
+  "predecessor": "reka-flash-21b",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, PaLM-like (no parallel layers); full architecture undisclosed",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": 32,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2,
+    "output": 6
+  },
+  "links": {
+    "docs": "docs.reka.ai"
+  },
+  "note": "Reka's frontier multimodal model (text/image/video/audio); approached GPT-4V/Claude-3-Opus class on multimodal + language benchmarks at launch.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

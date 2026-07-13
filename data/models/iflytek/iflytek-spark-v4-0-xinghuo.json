@@ -1,0 +1,44 @@
+{
+  "slug": "iflytek-spark-v4-0-xinghuo",
+  "name": "iFlytek Spark V4.0 (Xinghuo)",
+  "orgSlug": "iflytek",
+  "familySlug": "spark-xinghuo",
+  "releaseDate": "2024-06-27",
+  "status": "released",
+  "predecessor": "iflytek-spark-v3-0-xinghuo",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Proprietary transformer, trained fully on domestic (Huawei Ascend) compute",
+  "ctxK": 8,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "xfyun.cn/doc/spark"
+  },
+  "note": "GPT-4-Turbo-class flagship trained on fully domestic compute; later refreshed as Spark 4.0 Turbo in October 2024.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

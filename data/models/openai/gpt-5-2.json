@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-5-2",
+  "name": "GPT-5.2",
+  "orgSlug": "openai",
+  "familySlug": "gpt-5-2",
+  "releaseDate": "2025-12-11",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture (presumed dense transformer, reasoning-tuned); shipped as Instant/Thinking/Pro tiers",
+  "ctxK": 400,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.75,
+    "output": 14
+  },
+  "links": {
+    "docs": "platform.openai.com/docs/models/gpt-5.2"
+  },
+  "note": "Adds GPT-5.2 Pro tier and new xhigh reasoning effort; SOTA at launch on GDPval, ARC-AGI-2, and long-context MRCRv2.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

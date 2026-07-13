@@ -1,0 +1,3 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gpt-5-5,35.4,self-reported,https://openai.com/index/introducing-gpt-5-5,,"FrontierMath Tier 4, base model (Pro scores 39.6); confirmed"
+gpt-5-6,83,self-reported,https://openai.com/index/gpt-5-6/,,"FrontierMath Tier 4 v2, GPT-5.6 Sol; confirmed"

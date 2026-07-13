@@ -1,0 +1,49 @@
+{
+  "slug": "qwen2-5-coder-32b",
+  "name": "Qwen2.5-Coder-32B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2-5-coder",
+  "releaseDate": "2024-11-12",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 32.5,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, 64 layers (GQA 40Q/8KV)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen2.5-Coder-32B",
+    "gh": "QwenLM/Qwen2.5-Coder",
+    "docs": "qwenlm.github.io/blog/qwen2.5-coder-family"
+  },
+  "note": "Apache-2.0 coding flagship; Instruct sibling rivals GPT-4o on EvalPlus/LiveCodeBench/BigCodeBench and Aider code-repair.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ Int4",
+    "MLX"
+  ],
+  "vramQ4Gb": 19.9,
+  "vramFp16Gb": 65,
+  "tps4090": null,
+  "tpsNote": "~20GB Q4 fits within 24GB with limited headroom for context/KV cache; no single independently verified 4090 tok/s figure found.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

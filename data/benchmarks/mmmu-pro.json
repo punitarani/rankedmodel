@@ -1,0 +1,10 @@
+{
+  "slug": "mmmu-pro",
+  "name": "MMMU-Pro",
+  "category": "vision",
+  "unit": "%",
+  "description": "Harder, vision-only-input variant of MMMU.",
+  "normMin": 15,
+  "normMax": 85,
+  "higherIsBetter": true
+}

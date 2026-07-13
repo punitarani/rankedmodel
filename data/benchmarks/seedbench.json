@@ -1,0 +1,10 @@
+{
+  "slug": "seedbench",
+  "name": "SEED-Bench",
+  "category": "vision",
+  "unit": "%",
+  "description": "Broad generative multimodal comprehension benchmark.",
+  "normMin": 40,
+  "normMax": 95,
+  "higherIsBetter": true
+}

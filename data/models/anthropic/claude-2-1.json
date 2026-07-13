@@ -1,0 +1,45 @@
+{
+  "slug": "claude-2-1",
+  "name": "Claude 2.1",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-2",
+  "releaseDate": "2023-11-21",
+  "status": "deprecated",
+  "predecessor": "claude-2",
+  "openness": "closed",
+  "license": "Proprietary (Anthropic Commercial Terms of Service)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (parameter count undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 8,
+    "output": 24
+  },
+  "links": {
+    "docs": "docs.claude.com"
+  },
+  "note": "Industry-first 200K context window, ~2x fewer hallucinations than Claude 2.0, plus beta tool use and system prompts.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "alpacaeval",
+  "name": "AlpacaEval",
+  "category": "human-preference",
+  "unit": "%",
+  "description": "LLM-judged length-controlled win rate vs a reference model.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

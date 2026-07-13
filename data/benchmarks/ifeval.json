@@ -1,0 +1,10 @@
+{
+  "slug": "ifeval",
+  "name": "IFEval",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Verifiable instruction-following (format/length/content constraints).",
+  "normMin": 20,
+  "normMax": 92,
+  "higherIsBetter": true
+}

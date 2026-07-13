@@ -1,0 +1,66 @@
+model_slug,score,source,source_url,evaluated_at,notes
+codestral-25-01,37.9,self-reported,https://mistral.ai/news/codestral-2501/,,
+deepseek-coder-v2-236b,43.4,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,,
+deepseek-r1-0528,73.3,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,LiveCodeBench (2408-2505)
+deepseek-r1-671b,65.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,LiveCodeBench pass@1
+deepseek-r1-distill-llama-70b,57.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B,2025-01-20,LiveCodeBench pass@1
+deepseek-r1-distill-qwen-32b,57.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B,2025-01-20,LiveCodeBench pass@1
+deepseek-r1-zero,50,self-reported,https://arxiv.org/html/2501.12948v1,2025-01-20,LiveCodeBench pass@1
+deepseek-v2-5,41.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2.5,,Jan-Sep 2024 window
+deepseek-v3-0324,49.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3-0324,2025-03-24,LiveCodeBench
+deepseek-v3-1-non-thinking,56.4,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,2408-2505 Pass@1
+deepseek-v3-1-thinking,74.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,2408-2505 Pass@1
+deepseek-v3-671b,37.6,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,Pass@1
+falcon-h1r-7b,68.6,self-reported,https://falcon-lm.github.io/blog/falcon-h1r-7b/,,LiveCodeBench v6
+gemini-2-0-flash,34.5,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,"v5, GA version"
+gemini-2-0-flash-lite,28.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,"v5, Public Preview"
+gemini-2-5-flash,63.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"LiveCodeBench v5, single attempt, thinking on"
+gemini-2-5-flash-lite-non-thinking,33.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"LiveCodeBench v5, (06-17), non-thinking"
+gemini-2-5-flash-lite-thinking,34.3,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"LiveCodeBench v5, (06-17), thinking on"
+gemma-3-12b,24.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+gemma-3-27b,29.7,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+gemma-3-4b,12.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+glm-4-5-355b-a32b,72.9,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
+glm-4-5-air-106b-a12b,70.7,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
+grok-3-mini,69.6,independent,https://designforonline.com/ai-models/xai-grok-3-mini/,,
+grok-3-think,79.4,self-reported,https://futureagi.com/blog/grok-3-technical-review-2025/,2025-02-17,Think mode
+grok-4,79,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,no tools
+grok-4-heavy,79.4,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,
+hunyuan-t1,64.9,self-reported,https://tencent.github.io/llm.hunyuan.T1/README_EN.html,,
+internlm3-8b-instruct,17.8,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,
+kimi-k1-5,47.3,self-reported,https://arxiv.org/abs/2501.12599,,Short-CoT variant
+kimi-k2,53.7,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,
+lg-exaone-4-0-32b-non-reasoning,43.3,self-reported,https://arxiv.org/abs/2507.11407,,"LiveCodeBench v5, non-reasoning mode"
+lg-exaone-4-0-32b-reasoning,72.6,self-reported,https://arxiv.org/abs/2507.11407,,"LiveCodeBench v5, reasoning mode"
+lg-exaone-deep-32b,59.5,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-Deep,2025-03-01,"LiveCodeBench, pass@1"
+llama-3-1-nemotron-ultra-253b-v1-reasoning-off,29.03,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,Reasoning Off
+llama-3-1-nemotron-ultra-253b-v1-reasoning-on,66.31,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,Reasoning On; beats DeepSeek-R1's 65.9
+magistral-small,55.84,self-reported,https://huggingface.co/mistralai/Magistral-Small-2506,,LiveCodeBench v5
+minimax-m1,65,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,,M1-80K
+minimax-m2,83,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,
+nemotron-3-ultra-550b-a55b,89,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,,v6
+nemotron-nano-2-nemotron-nano-9b-v2,71.1,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"Reasoning On, vs Qwen3-8B's 59.5"
+olmo-3-7b,29.5,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,LiveCodeBench v3
+olmo-3-think-32b,83.5,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,LiveCodeBench v3; Qwen 3 32B 90.2
+phi-4-reasoning,53.8,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,
+phi-4-reasoning-14b,53.8,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,,
+qwen2-5-max,38.7,self-reported,https://www.datacamp.com/blog/qwen-2-5-max,,
+qwen2-72b,35.7,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,Instruct variant
+qwen3-14b-non-thinking,29,self-reported,https://arxiv.org/pdf/2505.09388,,"LiveCodeBench v5, Non-thinking mode"
+qwen3-14b-thinking,63.5,self-reported,https://arxiv.org/pdf/2505.09388,,"LiveCodeBench v5, Thinking mode"
+qwen3-235b-a22b-instruct-2507,51.8,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,LiveCodeBench v6
+qwen3-235b-a22b-non-thinking,35.3,self-reported,https://arxiv.org/pdf/2505.09388,,"LiveCodeBench v5, Non-thinking mode"
+qwen3-235b-a22b-thinking,70.7,self-reported,https://arxiv.org/pdf/2505.09388,,"LiveCodeBench v5, Thinking mode"
+qwen3-30b-a3b-non-thinking,29.8,self-reported,https://arxiv.org/abs/2505.09388,,"LiveCodeBench v5, non-thinking mode"
+qwen3-30b-a3b-thinking,62.6,self-reported,https://arxiv.org/abs/2505.09388,,"LiveCodeBench v5, thinking mode"
+qwen3-32b-non-thinking,31.3,self-reported,https://arxiv.org/abs/2505.09388,,"LiveCodeBench v5, non-thinking mode"
+qwen3-32b-thinking,65.7,self-reported,https://arxiv.org/abs/2505.09388,,"LiveCodeBench v5, thinking mode"
+qwen3-8b-non-thinking,22.8,self-reported,https://arxiv.org/abs/2505.09388,,"LiveCodeBench v5, non-thinking mode"
+qwen3-8b-thinking,57.5,self-reported,https://arxiv.org/abs/2505.09388,,"LiveCodeBench v5, thinking mode"
+qwq-32b,63.4,self-reported,https://www.datacamp.com/blog/qwq-32b,,
+qwq-32b-preview,50,self-reported,https://qwenlm.github.io/blog/qwq-32b-preview/,,
+sarvam-105b,71.7,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,LiveCodeBench v6
+seed-oss-36b,67.4,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,LiveCodeBench v6
+seed1-5-thinking,64.9,self-reported,https://github.com/ByteDance-Seed/Seed-Thinking-v1.5,,LiveCodeBench v5
+smollm3-3b-no-thinking,15.2,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM3-3B,,"LiveCodeBench v4, no extended thinking"
+smollm3-3b-think,30,self-reported,https://huggingface.co/blog/smollm3,,reasoning mode

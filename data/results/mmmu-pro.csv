@@ -1,0 +1,4 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gemini-3-1-flash-lite,76.8,self-reported,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/,2026-03-03,
+gemini-3-1-pro,80.5,self-reported,https://deepmind.google/models/gemini/pro/,2026-02-19,
+gemini-3-5-flash,83.6,self-reported,https://deepmind.google/models/gemini/flash/,2026-05-19,

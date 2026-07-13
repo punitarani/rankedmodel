@@ -1,0 +1,45 @@
+{
+  "slug": "skywork-o1-open-llama-3-1-8b",
+  "name": "Skywork-o1-Open-Llama-3.1-8B",
+  "orgSlug": "kunlun-tech",
+  "familySlug": "skywork-o1",
+  "releaseDate": "2024-11-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Skywork Community License",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (Llama-3.1-8B architecture), fine-tuned with o1-style slow-thinking + process-reward-model data",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Skywork/Skywork-o1-Open-Llama-3.1-8B",
+    "gh": "SkyworkAI/skywork-o1-prm-inference"
+  },
+  "note": "Early open o1-style reasoning model built on Llama-3.1-8B with PRM-guided slow-thinking reasoning traces",
+  "quants": [
+    "GGUF Q4_K_M"
+  ],
+  "vramQ4Gb": 4.92,
+  "vramFp16Gb": 16.1,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

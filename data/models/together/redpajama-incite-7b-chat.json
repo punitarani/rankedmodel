@@ -1,0 +1,46 @@
+{
+  "slug": "redpajama-incite-7b-chat",
+  "name": "RedPajama-INCITE-7B-Chat",
+  "orgSlug": "together",
+  "familySlug": "redpajama-incite",
+  "releaseDate": "2023-06-06",
+  "status": "released",
+  "predecessor": "redpajama-incite-base-3b-v1",
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 6.9,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "GPT-NeoX / Pythia-style dense transformer",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "togethercomputer/RedPajama-INCITE-7B-Chat",
+    "gh": "togethercomputer/OpenChatKit",
+    "docs": "together.ai/blog/redpajama-7b"
+  },
+  "note": "Chat variant fine-tuned on OASST1 + Dolly v2 via OpenChatKit, kept free of distilled proprietary data.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

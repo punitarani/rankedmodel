@@ -1,0 +1,48 @@
+{
+  "slug": "reka-flash-3",
+  "name": "Reka Flash 3",
+  "orgSlug": "reka-ai",
+  "familySlug": "reka",
+  "releaseDate": "2025-03-10",
+  "status": "released",
+  "predecessor": "reka-core",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 21,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "21B dense transformer, reasoning model with 'budget forcing' CoT control, Llama-compatible",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.2,
+    "output": 0.8
+  },
+  "links": {
+    "hf": "RekaAI/reka-flash-3",
+    "docs": "docs.reka.ai"
+  },
+  "note": "21B from-scratch reasoning model with a novel budget-forcing mechanism; text-only despite the Reka name's multimodal history; rivals OpenAI o1-mini.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 14,
+  "vramFp16Gb": 42,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

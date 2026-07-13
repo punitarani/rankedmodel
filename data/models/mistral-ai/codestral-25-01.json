@@ -1,0 +1,45 @@
+{
+  "slug": "codestral-25-01",
+  "name": "Codestral 25.01",
+  "orgSlug": "mistral-ai",
+  "familySlug": "codestral",
+  "releaseDate": "2025-01-13",
+  "status": "deprecated",
+  "predecessor": "codestral-mamba-7b",
+  "openness": "closed",
+  "license": "Proprietary (Mistral Commercial License)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed dense transformer, improved tokenizer vs Codestral 22B (closed weights)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "links": {
+    "docs": "docs.mistral.ai/models/codestral-25-01"
+  },
+  "note": "Faster closed Codestral refresh: improved tokenizer, ~2x speed, 256k context; debuted #1 on LMSYS Copilot Arena.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

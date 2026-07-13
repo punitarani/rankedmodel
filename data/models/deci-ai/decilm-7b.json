@@ -1,0 +1,45 @@
+{
+  "slug": "decilm-7b",
+  "name": "DeciLM-7B",
+  "orgSlug": "deci-ai",
+  "familySlug": "decilm",
+  "releaseDate": "2023-12-12",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 7.04,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "AutoNAC (NAS)-designed dense transformer with variable per-layer Grouped-Query Attention",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "Deci/DeciLM-7B"
+  },
+  "note": "AutoNAC-searched variable-GQA 7B; billed as the fastest and most accurate 7B base LLM at launch (up to 4.4x Mistral-7B throughput).",
+  "quants": [
+    "GGUF Q4",
+    "GGUF INT8"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": "Vendor reports 1,174 tok/s on A100 with PyTorch — not an RTX 4090 llama.cpp measurement",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

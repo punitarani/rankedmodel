@@ -1,0 +1,46 @@
+{
+  "slug": "olmo-7b",
+  "name": "OLMo 7B",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "olmo",
+  "releaseDate": "2024-02-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 6.9,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (32 layers, non-parametric LayerNorm, RoPE, SwiGLU, full attention)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "allenai/OLMo-7B",
+    "gh": "allenai/OLMo",
+    "docs": "allenai.org/olmo"
+  },
+  "note": "Ai2's first truly open LLM: weights, Dolma pretraining data, training code and every-1000-step checkpoints all released",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 4.2,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

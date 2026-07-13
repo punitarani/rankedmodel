@@ -1,0 +1,10 @@
+{
+  "slug": "terminal-bench",
+  "name": "Terminal-Bench",
+  "category": "coding",
+  "unit": "%",
+  "description": "Autonomous shell/terminal task completion in realistic environments.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

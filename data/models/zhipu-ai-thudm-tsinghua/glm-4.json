@@ -1,0 +1,42 @@
+{
+  "slug": "glm-4",
+  "name": "GLM-4",
+  "orgSlug": "zhipu-ai-thudm-tsinghua",
+  "familySlug": "zhipu-ai-thudm-tsinghua-glm-4",
+  "releaseDate": "2024-01-16",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Zhipu AI commercial API)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (undisclosed size; architecture details not published)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "docs.bigmodel.cn"
+  },
+  "note": "Original closed flagship unveiled at Zhipu DevDay, 128K context + 'All Tools' agent, positioned near GPT-4; since retired from the API in favor of GLM-4-Long/Flash and the open GLM-4.x/GLM-5 lines.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

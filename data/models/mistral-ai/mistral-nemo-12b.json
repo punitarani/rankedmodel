@@ -1,0 +1,50 @@
+{
+  "slug": "mistral-nemo-12b",
+  "name": "Mistral NeMo 12B",
+  "orgSlug": "mistral-ai",
+  "familySlug": "mistral-nemo",
+  "releaseDate": "2024-07-18",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 12,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (40 layers, 5120d, Tekken tokenizer)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 11,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.15,
+    "output": 0.15
+  },
+  "links": {
+    "hf": "mistralai/Mistral-Nemo-Instruct-2407",
+    "docs": "docs.mistral.ai/models/overview"
+  },
+  "note": "12B dense model co-built with NVIDIA; 128k context, Apache 2.0, new Tekken tokenizer; now in Mistral's retirement window.",
+  "quants": [
+    "GGUF Q4",
+    "MLX",
+    "AWQ"
+  ],
+  "vramQ4Gb": 7,
+  "vramFp16Gb": 24,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

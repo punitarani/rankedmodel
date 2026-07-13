@@ -1,0 +1,47 @@
+{
+  "slug": "amazon-nova-pro",
+  "name": "Amazon Nova Pro",
+  "orgSlug": "amazon",
+  "familySlug": "amazon-nova",
+  "releaseDate": "2024-12-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (AWS Bedrock service terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Transformer, architecture/size undisclosed",
+  "ctxK": 300,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": 200,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.8,
+    "output": 3.2
+  },
+  "links": {
+    "docs": "docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html"
+  },
+  "note": "Highest-accuracy multimodal Nova at launch; workhorse mid/high tier for complex text, image and video tasks before Premier arrived.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

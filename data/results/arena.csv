@@ -1,56 +1,14 @@
 model_slug,score,source,source_url,evaluated_at,notes
-gpt-5-5-pro,1506,curated,,,
-gpt-5-5,1494,curated,,,
-gpt-5,1481,curated,,,
-o3,1444,curated,,,
-gpt-4o,1336,curated,,,
-gpt-oss-120b,1352,curated,,,
-gpt-oss-20b,1288,curated,,,
-claude-opus-4-8,1510,curated,,,
-claude-opus-4-7,1502,curated,,,
-claude-sonnet-4-6,1488,curated,,,
-claude-sonnet-4,1420,curated,,,
-claude-3-5-sonnet,1310,curated,,,
-claude-haiku-4-5,1408,curated,,,
-gemini-3-1-pro,1499,curated,,,
-gemini-3-pro,1490,curated,,,
-gemini-2-5-pro,1451,curated,,,
-gemini-2-5-flash,1401,curated,,,
-gemma-3-27b,1341,curated,,,
-gemma-3-12b,1321,curated,,,
-llama-4-maverick,1354,curated,,,
-llama-4-scout,1318,curated,,,
-llama-3-3-70b,1290,curated,,,
-llama-3-1-405b,1269,curated,,,
-llama-3-1-8b,1176,curated,,,
-deepseek-v4-1,1478,curated,,,
-deepseek-v3-2,1442,curated,,,
-deepseek-r1,1358,curated,,,
-qwen3-7-max,1470,curated,,,
-qwen3-235b,1398,curated,,,
-qwen3-32b,1349,curated,,,
-qwen3-8b,1276,curated,,,
-qwq-32b,1316,curated,,,
-glm-5-2,1474,curated,,,
-glm-5,1451,curated,,,
-glm-4-7,1445,curated,,,
-kimi-k2-5,1448,curated,,,
-kimi-k2,1416,curated,,,
-mistral-large-3,1430,curated,,,
-mistral-small-3-2,1330,curated,,,
-magistral-medium,1370,curated,,,
-grok-4-2,1484,curated,,,
-grok-4,1446,curated,,,
-grok-4-fast,1421,curated,,,
-phi-4,1250,curated,,,
-phi-4-reasoning,1262,curated,,,
-minimax-m2-5,1436,curated,,,
-step-3-5-flash,1402,curated,,,
-nemotron-super-49b,1360,curated,,,
-command-a,1305,curated,,,
-hermes-4-405b,1322,curated,,,
-olmo-3-32b,1284,curated,,,
-granite-4-h,1246,curated,,,
-smollm3-3b,1148,curated,,,
-llama-5,1456,curated,,,
-deepseek-v4-5,1483,curated,,,
+claude-1,1195,independent,https://www.lmsys.org/blog/2023-05-25-leaderboard/,2023-05-25,"LMSYS Chatbot Arena Elo, 2nd place overall at the time"
+gemini-3-1-flash-lite,1432,arena,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/,2026-03-03,Artificial Analysis text arena Elo
+gemma-3-27b,1338,arena,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-08,"LMSys Chatbot Arena Elo, preliminary result; ranked top-10 at launch"
+gpt-4-turbo,1251,arena,https://telnyx.com/llm-library/gpt-4-1106-preview,,"LMSYS Chatbot Arena Elo (historical), gpt-4-1106-preview"
+grok-3-think,1400,arena,https://www.rdworldonline.com/musk-says-grok-3-will-be-best-ai-model-to-date/,2025-02-17,"LMSYS Chatbot Arena Elo, #1 at launch"
+hunyuan-turbos,1356,arena,https://arxiv.org/abs/2505.15431,,"LMSYS Chatbot Arena Elo, overall top-7 rank at evaluation time"
+koala-13b,1022,arena,https://www.lmsys.org/blog/2023-05-10-leaderboard/,2023-05-10,"Chatbot Arena Elo, rank 5 at the time"
+llama-2-7b-chat,1037,arena,https://telnyx.com/llm-library/llama-2-7b-chat-hf,,"Chatbot Arena Elo (historical, 2023-era leaderboard)"
+llama-3-1-405b,1229,arena,https://lmmarketcap.com/benchmarks/arena_elo,,"Current LMArena Elo (dynamic, decays as newer models are added; peaked much higher at launch)"
+llama-3-1-70b,1198,arena,https://lmmarketcap.com/benchmarks/arena_elo,,"Current LMArena Elo (dynamic, decays as newer models are added)"
+qwen-max-0428,1186,self-reported,https://qwenlm.github.io/blog/qwen-max-0428/,2024-05-11,Chatbot Arena Elo rating; top-10 on leaderboard at launch
+vicuna-13b-v1-5,1041,arena,https://huggingface.co/api/resolve-cache/spaces/lmarena-ai/arena-leaderboard/36556125921b70e4b87ae9b7aff2ac624b3c2220/leaderboard_table_20231220.csv?download=true&etag=%22c9eda02db9aa30464ba0334945d39e8f27b49bb6%22,,"Elo rating, Chatbot Arena Dec 2023 snapshot"
+yi-lightning,1287,arena,https://arxiv.org/abs/2412.01253,,"Chatbot Arena Elo at launch, ranked 6th overall, 1st in China"

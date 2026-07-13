@@ -1,0 +1,46 @@
+{
+  "slug": "chatglm-6b",
+  "name": "ChatGLM-6B",
+  "orgSlug": "zhipu-ai-thudm-tsinghua",
+  "familySlug": "chatglm",
+  "releaseDate": "2023-03-14",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0 (code); ChatGLM-6B Model License for weights (free for research; free commercial use after registration)",
+  "paramsB": 6.2,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (GLM, prefix-LM decoder)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "THUDM/chatglm-6b",
+    "gh": "zai-org/ChatGLM-6B"
+  },
+  "note": "Pivotal open bilingual (EN/ZH) dialogue model runnable on consumer GPUs via INT4 (6GB); China's early open ChatGPT-style release.",
+  "quants": [
+    "INT4",
+    "INT8"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 13,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

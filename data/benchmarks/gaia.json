@@ -1,0 +1,10 @@
+{
+  "slug": "gaia",
+  "name": "GAIA",
+  "category": "agents",
+  "unit": "%",
+  "description": "General-assistant tasks requiring reasoning, tool use and web browsing.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

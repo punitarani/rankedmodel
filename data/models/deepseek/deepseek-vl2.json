@@ -1,0 +1,44 @@
+{
+  "slug": "deepseek-vl2",
+  "name": "DeepSeek-VL2",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-vl",
+  "releaseDate": "2024-12-13",
+  "status": "released",
+  "predecessor": "deepseek-vl-7b",
+  "openness": "open-weights",
+  "license": "DeepSeek Model License (code: MIT)",
+  "paramsB": 27,
+  "activeParamsB": 4.5,
+  "archClass": "moe",
+  "archDisplay": "MoE vision-language transformer (Base variant), 27B total / 4.5B active — DeepSeekMoE+MLA language backbone + SigLIP-SO400M vision encoder with dynamic tiling (family also ships Tiny: 3B/1.0B-active, Small: 16B/2.8B-active)",
+  "ctxK": 4,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "deepseek-ai/deepseek-vl2",
+    "gh": "deepseek-ai/DeepSeek-VL2"
+  },
+  "note": "MoE VLM family (Tiny/Small/Base) with dynamic image tiling; Base variant scores strongly on OCRBench (811) and DocVQA (93.3) among open VLMs of its era.",
+  "quants": [],
+  "vramQ4Gb": 14,
+  "vramFp16Gb": 54,
+  "tps4090": null,
+  "tpsNote": "No public RTX 4090 llama.cpp benchmark found; no confirmed GGUF/MLX conversion of the vision-language model",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

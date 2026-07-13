@@ -1,0 +1,10 @@
+{
+  "slug": "vqav2",
+  "name": "VQAv2",
+  "category": "vision",
+  "unit": "%",
+  "description": "Open-ended visual question answering.",
+  "normMin": 40,
+  "normMax": 90,
+  "higherIsBetter": true
+}

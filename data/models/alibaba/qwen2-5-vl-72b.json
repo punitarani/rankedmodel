@@ -1,0 +1,49 @@
+{
+  "slug": "qwen2-5-vl-72b",
+  "name": "Qwen2.5-VL-72B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2-5-vl",
+  "releaseDate": "2025-01-28",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Qwen (Tongyi Qianwen) License",
+  "paramsB": 73,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Vision-Language Transformer (window-attention ViT + Qwen2.5 LLM, mRoPE)",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen2.5-VL-72B-Instruct",
+    "gh": "QwenLM/Qwen2.5-VL",
+    "docs": "qwenlm.github.io/blog/qwen2.5-vl"
+  },
+  "note": "Gen-2.5 vision flagship with agentic GUI/computer-use grounding and 1hr+ video understanding; 3B/7B/72B family.",
+  "quants": [
+    "GGUF",
+    "AWQ"
+  ],
+  "vramQ4Gb": 42,
+  "vramFp16Gb": 144,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

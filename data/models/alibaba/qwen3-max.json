@@ -1,0 +1,45 @@
+{
+  "slug": "qwen3-max",
+  "name": "Qwen3-Max",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen3-max",
+  "releaseDate": "2025-09-05",
+  "status": "preview",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "MoE, exact expert configuration undisclosed (>1T total params)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 100,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.2,
+    "output": 6
+  },
+  "links": {
+    "docs": "www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "note": "Alibaba's biggest model yet, over 1T params (exact undisclosed) trained on 36T tokens; API-only preview.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

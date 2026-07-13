@@ -1,0 +1,49 @@
+{
+  "slug": "deepseek-v2-236b",
+  "name": "DeepSeek-V2 236B",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-v2",
+  "releaseDate": "2024-05-07",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "DeepSeek Model License (code: MIT)",
+  "paramsB": 236,
+  "activeParamsB": 21,
+  "archClass": "moe",
+  "archDisplay": "MoE transformer, 236B total / 21B active — DeepSeekMoE + Multi-head Latent Attention (MLA)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.14,
+    "output": 0.28
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-V2-Chat",
+    "gh": "deepseek-ai/DeepSeek-V2",
+    "docs": "api-docs.deepseek.com"
+  },
+  "note": "Introduced Multi-head Latent Attention; its ultra-low launch price (~$0.14/$0.28 per M tokens) triggered China's 2024 LLM price war.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 118,
+  "vramFp16Gb": 472,
+  "tps4090": null,
+  "tpsNote": "236B total params exceed a single RTX 4090's 24GB even at 4-bit; requires multi-GPU or CPU/RAM offload",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

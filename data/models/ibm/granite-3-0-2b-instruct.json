@@ -1,0 +1,46 @@
+{
+  "slug": "granite-3-0-2b-instruct",
+  "name": "Granite 3.0 2B Instruct",
+  "orgSlug": "ibm",
+  "familySlug": "granite-3-0",
+  "releaseDate": "2024-10-21",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 2.53,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (GQA, RoPE, SwiGLU, RMSNorm)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 12,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "ibm-granite/granite-3.0-2b-instruct",
+    "gh": "ibm-granite/granite-3.0-language-models",
+    "docs": "ibm.com/granite/docs"
+  },
+  "note": "Smaller dense Granite 3.0 model for cost-efficient enterprise inference; Apache 2.0, same 12T-token corpus, 12 languages.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 1.6,
+  "vramFp16Gb": 5.27,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

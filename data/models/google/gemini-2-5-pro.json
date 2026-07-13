@@ -2,16 +2,16 @@
   "slug": "gemini-2-5-pro",
   "name": "Gemini 2.5 Pro",
   "orgSlug": "google",
-  "familySlug": "gemini-2",
+  "familySlug": "gemini-2-5",
   "releaseDate": "2025-03-25",
-  "status": "released",
+  "status": "deprecated",
   "predecessor": null,
   "openness": "closed",
-  "license": "Proprietary",
+  "license": "Proprietary (Google API/Vertex AI)",
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "moe",
-  "archDisplay": "MoE (undisclosed)",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer with native always-on thinking",
   "ctxK": 1000,
   "modalities": [
     "text",
@@ -19,7 +19,7 @@
     "audio",
     "video"
   ],
-  "langCount": 100,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
@@ -34,12 +34,15 @@
     "output": 10
   },
   "links": {
-    "docs": "ai.google.dev"
+    "docs": "ai.google.dev/gemini-api/docs/models"
   },
-  "note": "First Gemini with always-on thinking.",
+  "note": "First Gemini with always-on thinking; #1 on LMArena at launch; official deprecation announced with successor gemini-3.1-pro-preview, shutdown scheduled ~Oct 2026.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

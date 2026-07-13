@@ -1,0 +1,10 @@
+{
+  "slug": "minif2f-valid",
+  "name": "MiniF2F (valid)",
+  "category": "math",
+  "unit": "%",
+  "description": "Formal (Lean 4) theorem-proving benchmark, validation split.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

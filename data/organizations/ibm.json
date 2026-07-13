@@ -1,5 +1,6 @@
 {
   "slug": "ibm",
   "name": "IBM",
-  "type": "company"
+  "type": "company",
+  "country": "US"
 }

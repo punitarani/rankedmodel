@@ -1,0 +1,49 @@
+{
+  "slug": "llama-3-70b",
+  "name": "Llama 3 70B",
+  "orgSlug": "meta",
+  "familySlug": "llama-3",
+  "releaseDate": "2024-04-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3 Community License Agreement",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer decoder with grouped-query attention (GQA), 128K-token vocabulary",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/Meta-Llama-3-70B-Instruct",
+    "gh": "meta-llama/llama3",
+    "docs": "llama.meta.com"
+  },
+  "note": "Llama 3 flagship; Instruct checkpoint scored 82.0% MMLU and 81.7% HumanEval at launch, competitive with Gemini 1.5 Pro and beating Claude 3 Sonnet on several benchmarks. Officially English-only at this release (multilingual support came with Llama 3.1).",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 40,
+  "vramFp16Gb": 140,
+  "tps4090": 18,
+  "tpsNote": "70B at Q4 (~40GB) exceeds the 4090's 24GB VRAM and requires partial CPU-layer offload; ~18 tok/s reported for same-class 70B Llama checkpoints with most layers on GPU, dropping to 8-15 tok/s under heavier offload. Not independently verified for this exact checkpoint.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

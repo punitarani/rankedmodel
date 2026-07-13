@@ -1,0 +1,10 @@
+{
+  "slug": "bbh",
+  "name": "BIG-Bench Hard",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "23 of the hardest BIG-bench tasks, chain-of-thought.",
+  "normMin": 30,
+  "normMax": 95,
+  "higherIsBetter": true
+}

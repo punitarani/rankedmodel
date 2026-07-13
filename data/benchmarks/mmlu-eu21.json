@@ -1,0 +1,10 @@
+{
+  "slug": "mmlu-eu21",
+  "name": "MMLU (EU-21 languages)",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "MMLU translated and averaged across 21 official EU languages.",
+  "normMin": 20,
+  "normMax": 90,
+  "higherIsBetter": true
+}

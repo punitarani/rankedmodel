@@ -1,0 +1,10 @@
+{
+  "slug": "torchhub-apibench",
+  "name": "APIBench (TorchHub)",
+  "category": "agents",
+  "unit": "%",
+  "description": "Zero-shot, no-retriever API-call generation over TorchHub APIs.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

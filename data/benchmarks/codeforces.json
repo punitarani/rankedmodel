@@ -1,0 +1,10 @@
+{
+  "slug": "codeforces",
+  "name": "Codeforces",
+  "category": "coding",
+  "unit": "Elo",
+  "description": "Competitive-programming rating estimated from Codeforces-style problems.",
+  "normMin": 800,
+  "normMax": 3000,
+  "higherIsBetter": true
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "mistral-small-3-2-24b",
+  "name": "Mistral Small 3.2 (24B)",
+  "orgSlug": "mistral-ai",
+  "familySlug": "mistral-small",
+  "releaseDate": "2025-06-20",
+  "status": "released",
+  "predecessor": "mistral-small-3-1-24b",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 24,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (24B), vision-language, incremental update of Small 3.1",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.08,
+    "output": 0.2
+  },
+  "links": {
+    "hf": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "docs": "docs.mistral.ai"
+  },
+  "note": "Drop-in upgrade over 3.1: markedly better instruction following, roughly half the infinite-generation errors, more reliable function calling.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 14.5,
+  "vramFp16Gb": 55,
+  "tps4090": 70,
+  "tpsNote": "~70 tok/s (est.) at Q4_K_M on RTX 4090, based on same-architecture Mistral Small 3.1 measurement",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

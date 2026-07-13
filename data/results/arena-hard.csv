@@ -1,0 +1,23 @@
+model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba-1-5-large,65.4,self-reported,https://www.ai21.com/blog/announcing-jamba-model-family/,,Arena-Hard
+ai21-jamba-1-5-mini,46.1,self-reported,https://www.ai21.com/blog/announcing-jamba-model-family/,,Arena-Hard
+deepseek-v2-5,76.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2.5,,ArenaHard
+granite-3-2-8b-instruct,55.25,self-reported,https://huggingface.co/ibm-granite/granite-3.2-8b-instruct,,
+granite-3-3-8b-instruct,57.56,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,
+hunyuan-t1,91.9,self-reported,https://tencent.github.io/llm.hunyuan.T1/README_EN.html,,Arena-Hard-Auto
+lg-exaone-3-0-7-8b-instruct,46.8,self-reported,https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct,2024-08-01,Arena-Hard-v0.1
+lg-exaone-3-5-32b-instruct,78.6,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-3.5,2024-12-01,Arena-Hard
+llama-3-1-nemotron-70b-instruct,85,self-reported,https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF,,#1 on Arena Hard as of Oct 1 2024
+llama-3-3-nemotron-super-49b-v1-reasoning-off,88.3,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning Off
+minimax-text-01,89.1,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,Arena-Hard-Auto
+phi-3-5-moe-16x3-8b-6-6b-active,37.9,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,"Arena-Hard win rate, not Chatbot Arena Elo"
+phi-4-mini-3-8b,32.8,self-reported,https://huggingface.co/microsoft/Phi-4-mini-instruct,,Arena Hard
+phi-4-mini-instruct,32.8,self-reported,https://huggingface.co/microsoft/Phi-4-mini-instruct,,"Arena-Hard win rate, not Chatbot Arena Elo"
+qwen2-5-max,89.4,self-reported,https://www.datacamp.com/blog/qwen-2-5-max,,vs DeepSeek V3 85.5
+qwen2-72b,48.1,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,Instruct variant
+qwen3-30b-a3b-non-thinking,88,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, non-thinking mode"
+qwen3-30b-a3b-thinking,91,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, thinking mode"
+qwen3-32b-non-thinking,92.8,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, non-thinking mode"
+qwen3-32b-thinking,93.8,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, thinking mode"
+qwen3-8b-non-thinking,79.6,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, non-thinking mode"
+qwen3-8b-thinking,85.8,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, thinking mode"

@@ -1,0 +1,42 @@
+{
+  "slug": "palm-2",
+  "name": "PaLM 2",
+  "orgSlug": "google",
+  "familySlug": "palm-2",
+  "releaseDate": "2023-05-10",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Google Cloud Vertex AI)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (decoder, mixture-of-objectives pretraining)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "ai.google/discover/palm2"
+  },
+  "note": "Powered Bard in 2023; basis for Med-PaLM 2 and Codey; PaLM API decommissioned Aug 15 2024.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

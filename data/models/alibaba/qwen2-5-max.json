@@ -1,0 +1,45 @@
+{
+  "slug": "qwen2-5-max",
+  "name": "Qwen2.5-Max",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2-5",
+  "releaseDate": "2025-01-28",
+  "status": "deprecated",
+  "predecessor": "qwen2-5-7b",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Proprietary large-scale MoE (configuration undisclosed)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.6,
+    "output": 6.4
+  },
+  "links": {
+    "docs": "qwenlm.github.io/blog/qwen2.5-max"
+  },
+  "note": "Large proprietary MoE pretrained on 20T+ tokens; API model id qwen-max-2025-01-25, competitive with DeepSeek V3.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

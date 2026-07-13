@@ -1,0 +1,46 @@
+{
+  "slug": "granite-8b-code-instruct",
+  "name": "Granite 8B Code Instruct",
+  "orgSlug": "ibm",
+  "familySlug": "granite-code",
+  "releaseDate": "2024-05-06",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "ibm-granite/granite-8b-code-instruct-4k",
+    "gh": "ibm-granite/granite-code-models",
+    "docs": "ibm.com/granite/docs/models/code"
+  },
+  "note": "IBM's workhorse code model (family spans 3B-34B) trained on 116 languages; now deprecated in favor of newer Granite releases.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 4.6,
+  "vramFp16Gb": 16,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

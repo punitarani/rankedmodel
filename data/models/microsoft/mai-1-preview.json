@@ -1,0 +1,42 @@
+{
+  "slug": "mai-1-preview",
+  "name": "MAI-1-preview",
+  "orgSlug": "microsoft",
+  "familySlug": "mai",
+  "releaseDate": "2025-08-28",
+  "status": "preview",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Microsoft; not publicly licensed)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (MoE) foundation model, total/active params undisclosed",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "microsoft.ai/news/two-new-in-house-models"
+  },
+  "note": "Microsoft AI's first foundation model trained end-to-end in-house (pre+post-trained on ~15,000 H100s); debuted at rank #13 on the LMArena Text leaderboard (per LMArena's own Aug 2025 announcement), the first entry from a new provider into the Top 15. Feeds Copilot text use cases; also offered to trusted testers via API. Context window/param count undisclosed; ctxK is an unconfirmed estimate, not sourced.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

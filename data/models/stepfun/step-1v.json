@@ -1,0 +1,43 @@
+{
+  "slug": "step-1v",
+  "name": "Step-1V",
+  "orgSlug": "stepfun",
+  "familySlug": "step-1",
+  "releaseDate": "2024-09-01",
+  "status": "deprecated",
+  "predecessor": "step-1",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense multimodal transformer (LLM backbone + vision encoder), exact scale undisclosed",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "platform.stepfun.com/docs/api-reference/models/list"
+  },
+  "note": "StepFun's first publicly released multimodal (vision) model, adding image understanding atop the Step-1 text base in September 2024; since deprecated in favor of newer Step vision models.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

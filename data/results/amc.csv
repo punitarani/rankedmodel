@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+qwen2-math-72b,60,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, AMC 2023, 24/40 greedy CoT"

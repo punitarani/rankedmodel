@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+plamo-100b,9.73,self-reported,https://arxiv.org/html/2410.07563,,"PLaMo-100B-Instruct absolute eval, 0-10 scale; GPT-4-0125-Preview scored 9.55"

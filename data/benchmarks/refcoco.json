@@ -1,0 +1,10 @@
+{
+  "slug": "refcoco",
+  "name": "RefCOCO",
+  "category": "vision",
+  "unit": "%",
+  "description": "Referring-expression visual grounding accuracy.",
+  "normMin": 50,
+  "normMax": 96,
+  "higherIsBetter": true
+}

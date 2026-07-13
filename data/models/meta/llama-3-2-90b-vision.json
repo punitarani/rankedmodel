@@ -1,0 +1,50 @@
+{
+  "slug": "llama-3-2-90b-vision",
+  "name": "Llama 3.2 90B Vision",
+  "orgSlug": "meta",
+  "familySlug": "llama-3-2",
+  "releaseDate": "2024-09-25",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3.2 Community License Agreement",
+  "paramsB": 88.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Llama 3.1 text backbone + cross-attention vision adapter (late fusion)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/Llama-3.2-90B-Vision-Instruct",
+    "gh": "meta-llama/llama-models",
+    "docs": "llama.com/docs/model-cards-and-prompt-formats/llama3_2"
+  },
+  "note": "Multimodal 90B-class vision flagship (128K ctx) rivaling closed models like Claude 3 Haiku on image reasoning tasks.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 55,
+  "vramFp16Gb": 178,
+  "tps4090": null,
+  "tpsNote": "Even at Q4 (~55GB) it exceeds a single RTX 4090's 24GB VRAM; no verified single-4090 llama.cpp benchmark exists — needs multi-GPU or CPU offload.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

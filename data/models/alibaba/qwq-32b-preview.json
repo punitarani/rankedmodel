@@ -1,0 +1,46 @@
+{
+  "slug": "qwq-32b-preview",
+  "name": "QwQ-32B-Preview",
+  "orgSlug": "alibaba",
+  "familySlug": "qwq",
+  "releaseDate": "2024-11-28",
+  "status": "preview",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 32.5,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (GQA, RoPE, SwiGLU, RMSNorm)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "Qwen/QwQ-32B-Preview",
+    "gh": "QwenLM/Qwen2.5",
+    "docs": "qwenlm.github.io/blog/qwq-32b-preview"
+  },
+  "note": "First Qwen o1-style CoT reasoning preview; superseded by QwQ-32B three months later.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 19.85,
+  "vramFp16Gb": 65,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

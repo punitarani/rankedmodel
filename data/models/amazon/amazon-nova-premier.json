@@ -1,0 +1,47 @@
+{
+  "slug": "amazon-nova-premier",
+  "name": "Amazon Nova Premier",
+  "orgSlug": "amazon",
+  "familySlug": "amazon-nova",
+  "releaseDate": "2025-04-30",
+  "status": "released",
+  "predecessor": "amazon-nova-pro",
+  "openness": "closed",
+  "license": "Proprietary (AWS Bedrock service terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Transformer, architecture/size undisclosed",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": 200,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2.5,
+    "output": 12.5
+  },
+  "links": {
+    "docs": "docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-premier.html"
+  },
+  "note": "Amazon's most capable Nova: 1M-token context for complex agentic/long-document tasks; explicitly not a reasoning model, positioned mainly as a distillation teacher for smaller Nova models.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

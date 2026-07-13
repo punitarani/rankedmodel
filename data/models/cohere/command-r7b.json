@@ -1,0 +1,48 @@
+{
+  "slug": "command-r7b",
+  "name": "Command R7B",
+  "orgSlug": "cohere",
+  "familySlug": "command-r",
+  "releaseDate": "2024-12-13",
+  "status": "released",
+  "predecessor": "command-r",
+  "openness": "open-weights",
+  "license": "CC-BY-NC-4.0 (+ Acceptable Use Policy)",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (7B), optimized for on-device/edge RAG and tool use",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 23,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.0375,
+    "output": 0.15
+  },
+  "links": {
+    "hf": "CohereLabs/c4ai-command-r7b-12-2024",
+    "docs": "docs.cohere.com"
+  },
+  "note": "Smallest, fastest model in the R series for edge/on-device RAG and tool use; ranked first among similarly-sized open-weights models on the Open LLM Leaderboard.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

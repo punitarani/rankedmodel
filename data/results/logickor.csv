@@ -1,0 +1,3 @@
+model_slug,score,source,source_url,evaluated_at,notes
+lg-exaone-3-0-7-8b-instruct,8.62,self-reported,https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct,2024-08-01,Korean LogicKor
+lg-exaone-3-5-32b-instruct,9.06,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-3.5,2024-12-01,Korean LogicKor

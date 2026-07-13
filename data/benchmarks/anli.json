@@ -1,0 +1,10 @@
+{
+  "slug": "anli",
+  "name": "ANLI",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Adversarial natural-language-inference benchmark.",
+  "normMin": 30,
+  "normMax": 95,
+  "higherIsBetter": true
+}

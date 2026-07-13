@@ -1,0 +1,46 @@
+{
+  "slug": "hunyuan-turbos",
+  "name": "Hunyuan-TurboS",
+  "orgSlug": "tencent",
+  "familySlug": "hunyuan",
+  "releaseDate": "2025-02-27",
+  "status": "released",
+  "predecessor": "hunyuan-large-a52b",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 560,
+  "activeParamsB": 56,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Transformer-Mamba2 MoE, 128 layers with AMF/MF block pattern (560B total / 56B active)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.12,
+    "output": 0.3
+  },
+  "links": {
+    "gh": "Tencent-Hunyuan/Hunyuan-TurboS",
+    "docs": "arxiv.org/abs/2505.15431"
+  },
+  "note": "First industry-deployed ultra-large Hybrid Transformer-Mamba MoE (560B/56B-active) fast-thinking model with adaptive CoT; ranked top-7 on LMSYS Chatbot Arena (1356).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

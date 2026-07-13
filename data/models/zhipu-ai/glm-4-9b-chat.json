@@ -1,0 +1,47 @@
+{
+  "slug": "glm-4-9b-chat",
+  "name": "GLM-4-9B-Chat",
+  "orgSlug": "zhipu-ai",
+  "familySlug": "glm-4",
+  "releaseDate": "2024-06-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "GLM-4 License (custom, free for research & most commercial use)",
+  "paramsB": 9,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (GLM-4 architecture)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 26,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "zai-org/glm-4-9b-chat",
+    "gh": "zai-org/GLM-4"
+  },
+  "note": "Open 9B GLM-4 checkpoint (co-developed by Zhipu AI/THUDM Tsinghua) beating Llama-3-8B on semantics/math/code/reasoning; 26 languages, 128K context (separate 1M variant exists).",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "MLX"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 18,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

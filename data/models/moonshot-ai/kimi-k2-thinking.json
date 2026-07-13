@@ -1,0 +1,50 @@
+{
+  "slug": "kimi-k2-thinking",
+  "name": "Kimi K2 Thinking",
+  "orgSlug": "moonshot-ai",
+  "familySlug": "kimi-k2",
+  "releaseDate": "2025-11-06",
+  "status": "released",
+  "predecessor": "kimi-k2",
+  "openness": "open-weights",
+  "license": "Modified MIT License",
+  "paramsB": 1000,
+  "activeParamsB": 32,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 384 experts (8 active + 1 shared/token), native INT4 quantization-aware training",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.6,
+    "output": 2.5
+  },
+  "links": {
+    "hf": "moonshotai/Kimi-K2-Thinking",
+    "gh": "moonshotai/Kimi-K2",
+    "docs": "moonshotai.github.io/Kimi-K2/thinking.html"
+  },
+  "note": "Open-weight 1T MoE reasoning agent with native INT4 weights and 256K context, chaining 200-300 sequential tool calls.",
+  "quants": [
+    "GGUF",
+    "INT4 (native QAT)"
+  ],
+  "vramQ4Gb": 600,
+  "vramFp16Gb": 2000,
+  "tps4090": null,
+  "tpsNote": "Does not fit on a single RTX 4090 (24GB); native INT4 packs ~500-600GB combined RAM/VRAM, community reports only ~5-10 tok/s with heavy CPU/SSD offload",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -7,18 +7,17 @@
   "status": "released",
   "predecessor": null,
   "openness": "closed",
-  "license": "Proprietary",
+  "license": "Proprietary (OpenAI API Terms)",
   "paramsB": null,
   "activeParamsB": null,
-  "archClass": "moe",
-  "archDisplay": "MoE (undisclosed)",
+  "archClass": "dense",
+  "archDisplay": "Unified reasoning/non-reasoning system behind a real-time auto-router; dense transformer, exact size undisclosed",
   "ctxK": 400,
   "modalities": [
     "text",
-    "vision",
-    "audio"
+    "vision"
   ],
-  "langCount": 57,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
@@ -33,12 +32,15 @@
     "output": 10
   },
   "links": {
-    "docs": "platform.openai.com"
+    "docs": "developers.openai.com/api/docs/models/gpt-5"
   },
-  "note": "Unified successor to GPT-4o and the o-series.",
+  "note": "Unified model merging o-series reasoning with fast GPT responses via an auto-router.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

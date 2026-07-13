@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-4-1-mini",
+  "name": "GPT-4.1 mini",
+  "orgSlug": "openai",
+  "familySlug": "gpt-4-1",
+  "releaseDate": "2025-04-14",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (size undisclosed; non-reasoning)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.4,
+    "output": 1.6
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-4.1-mini"
+  },
+  "note": "Balanced mid-tier of the 4.1 family with a 1M-token context window, vision, and strong instruction-following.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

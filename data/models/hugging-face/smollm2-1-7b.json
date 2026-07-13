@@ -1,0 +1,48 @@
+{
+  "slug": "smollm2-1-7b",
+  "name": "SmolLM2 1.7B",
+  "orgSlug": "hugging-face",
+  "familySlug": "smollm",
+  "releaseDate": "2024-11-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 1.71,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Llama-style decoder-only Transformer (SwiGLU, RoPE, tied embeddings), 24 layers, 2048 hidden dim",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "HuggingFaceTB/SmolLM2-1.7B",
+    "gh": "huggingface/smollm",
+    "docs": "arxiv.org/abs/2502.02737"
+  },
+  "note": "Fully-open small-model family (135M/360M/1.7B) for on-device use, trained on 11T curated tokens (FineWeb-Edu, DCLM, Stack, custom math/code).",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "MLX"
+  ],
+  "vramQ4Gb": 1.5,
+  "vramFp16Gb": 4,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

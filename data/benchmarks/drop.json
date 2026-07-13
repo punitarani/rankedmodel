@@ -1,0 +1,10 @@
+{
+  "slug": "drop",
+  "name": "DROP",
+  "category": "reasoning",
+  "unit": "F1",
+  "description": "Discrete reasoning over paragraphs requiring numerical/set operations.",
+  "normMin": 20,
+  "normMax": 95,
+  "higherIsBetter": true
+}

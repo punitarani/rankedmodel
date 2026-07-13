@@ -1,0 +1,46 @@
+{
+  "slug": "claude-3-sonnet",
+  "name": "Claude 3 Sonnet",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-3",
+  "releaseDate": "2024-03-04",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Anthropic Commercial Terms of Service)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense multimodal Transformer (parameter count undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "docs.claude.com"
+  },
+  "note": "Balanced mid-tier of the Claude 3 family; roughly 2x faster than Claude 2 at a fraction of the cost.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

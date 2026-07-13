@@ -1,0 +1,45 @@
+{
+  "slug": "xgen-7b-8k",
+  "name": "XGen-7B 8K",
+  "orgSlug": "salesforce",
+  "familySlug": "xgen",
+  "releaseDate": "2023-07-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, trained with staged 2K to 4K to 8K sequence-length curriculum, OpenAI Tiktoken tokenizer",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Salesforce/xgen-7b-8k-base",
+    "gh": "salesforce/xgen"
+  },
+  "note": "General-purpose 7B LLM trained on 1.5T tokens with an 8K context window under Apache-2.0; Salesforce's long-context entry",
+  "quants": [
+    "SqueezeLLM 3-bit"
+  ],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "gemma-4",
+  "name": "Gemma 4",
+  "orgSlug": "google",
+  "familySlug": "gemma-4",
+  "releaseDate": "2026-04-02",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 30.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer, hybrid local/global attention (31B flagship variant)",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 140,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "https://huggingface.co/google/gemma-4-31B-it",
+    "docs": "https://ai.google.dev/gemma/docs/core/model_card_4"
+  },
+  "note": "Most capable open Gemma yet; 31B dense flagship ranks #3 among open models on the Arena AI text leaderboard.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 64,
+  "tps4090": null,
+  "tpsNote": "Third-party RTX 4090 tok/s figures found in the wild referenced non-existent Gemma 4 sizes (7B/9B/27B) and were discarded as unreliable.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

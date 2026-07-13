@@ -1,0 +1,46 @@
+{
+  "slug": "glm-130b",
+  "name": "GLM-130B",
+  "orgSlug": "zhipu-ai-thudm-tsinghua",
+  "familySlug": "glm",
+  "releaseDate": "2022-08-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Custom GLM-130B Model License (non-commercial research; code Apache-2.0)",
+  "paramsB": 130,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense bidirectional Transformer (GLM objective)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "gh": "zai-org/GLM-130B",
+    "docs": "keg.cs.tsinghua.edu.cn/glm-130b/posts/glm-130b/"
+  },
+  "note": "GPT-3-scale 130B bilingual (EN/ZH) dense model; open code, weights and training logs (ICLR 2023).",
+  "quants": [
+    "INT4",
+    "INT8"
+  ],
+  "vramQ4Gb": 96,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

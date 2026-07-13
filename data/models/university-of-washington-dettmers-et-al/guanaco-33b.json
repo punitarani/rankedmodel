@@ -1,0 +1,48 @@
+{
+  "slug": "guanaco-33b",
+  "name": "Guanaco 33B",
+  "orgSlug": "university-of-washington-dettmers-et-al",
+  "familySlug": "guanaco",
+  "releaseDate": "2023-05-23",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0 (LoRA adapter); base LLaMA-33B weights under Meta's non-commercial research license",
+  "paramsB": 33,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (LLaMA-33B base) with 4-bit QLoRA adapter finetune",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "timdettmers/guanaco-33b",
+    "gh": "artidoro/qlora",
+    "docs": "arxiv.org/abs/2305.14314"
+  },
+  "note": "QLoRA 4-bit finetune of LLaMA-33B on OASST1 that reached 97.8% of ChatGPT's Vicuna-benchmark quality (second-best in the paper, after the 65B model's 99.3%) after roughly 12 hours on a single 24GB consumer GPU.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ",
+    "AWQ"
+  ],
+  "vramQ4Gb": 21,
+  "vramFp16Gb": 66,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

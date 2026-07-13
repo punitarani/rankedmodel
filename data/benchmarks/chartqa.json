@@ -1,0 +1,10 @@
+{
+  "slug": "chartqa",
+  "name": "ChartQA",
+  "category": "vision",
+  "unit": "%",
+  "description": "Question answering over charts and graphs.",
+  "normMin": 30,
+  "normMax": 95,
+  "higherIsBetter": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "arena-hard",
+  "name": "Arena-Hard",
+  "category": "human-preference",
+  "unit": "%",
+  "description": "LLM-judged win rate on hard, real-world Arena-style prompts.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

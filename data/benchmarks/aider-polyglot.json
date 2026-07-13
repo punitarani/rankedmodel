@@ -1,0 +1,10 @@
+{
+  "slug": "aider-polyglot",
+  "name": "Aider Polyglot",
+  "category": "coding",
+  "unit": "%",
+  "description": "Real-world multi-language code-editing benchmark used by the Aider tool.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

@@ -2,48 +2,46 @@
   "slug": "qwq-32b",
   "name": "QwQ-32B",
   "orgSlug": "alibaba",
-  "familySlug": "qwen2-5",
+  "familySlug": "qwq",
   "releaseDate": "2025-03-06",
   "status": "released",
-  "predecessor": null,
+  "predecessor": "qwq-32b-preview",
   "openness": "open-weights",
   "license": "Apache 2.0",
   "paramsB": 32.5,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense",
-  "ctxK": 131,
+  "archDisplay": "Dense Transformer (GQA, RL-scaled reasoning)",
+  "ctxK": 128,
   "modalities": [
     "text"
   ],
-  "langCount": 29,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
     "vision": false,
     "functionCalling": true,
-    "toolUse": false,
+    "toolUse": true,
     "agentic": false
   },
   "apiAvailable": true,
-  "price": {
-    "input": 0.15,
-    "output": 0.4
-  },
+  "price": null,
   "links": {
     "hf": "Qwen/QwQ-32B",
-    "gh": "QwenLM/Qwen2.5",
-    "docs": "qwen.readthedocs.io"
+    "gh": "QwenLM/QwQ",
+    "docs": "qwenlm.github.io/blog/qwq-32b"
   },
-  "note": "R1-class reasoning from a single 24GB GPU.",
+  "note": "RL-scaled reasoning flagship matching DeepSeek-R1 (671B) at 1/20th the size; Apache 2.0.",
   "quants": [
-    "GGUF Q4",
-    "GGUF Q8",
-    "AWQ",
-    "EXL2"
+    "GGUF",
+    "AWQ"
   ],
-  "vramQ4Gb": 20,
+  "vramQ4Gb": 19.85,
   "vramFp16Gb": 65,
-  "tps4090": 34,
-  "tpsNote": null
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

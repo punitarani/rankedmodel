@@ -1,0 +1,45 @@
+{
+  "slug": "palmyra-med-70b",
+  "name": "Palmyra Med 70B",
+  "orgSlug": "writer",
+  "familySlug": "palmyra",
+  "releaseDate": "2024-07-31",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Writer Open Model License (non-commercial, research use)",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer fine-tuned from Palmyra-X-003 (~70B) via DPO on biomedical instructions",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "Writer/Palmyra-Med-70B",
+    "docs": "docs.api.nvidia.com"
+  },
+  "note": "Healthcare specialist; zero-shot 85.9% avg across 9 biomedical benchmarks beats Med-PaLM-2's 5-shot 84%.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 42,
+  "vramFp16Gb": 140,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

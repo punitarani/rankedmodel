@@ -1,0 +1,43 @@
+{
+  "slug": "grok-4-heavy",
+  "name": "Grok 4 Heavy",
+  "orgSlug": "xai",
+  "familySlug": "grok-4",
+  "releaseDate": "2025-07-09",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Grok 4 base model served via parallel multi-agent test-time compute (reports describe 8-32 agents cross-checking answers)",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "docs.x.ai"
+  },
+  "note": "Multi-agent 'Heavy' configuration of Grok 4, consumer-only via the $300/month SuperGrok Heavy tier; no public API model slug.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

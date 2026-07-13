@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-3-flash",
+  "name": "Gemini 3 Flash",
+  "orgSlug": "google",
+  "familySlug": "gemini-3",
+  "releaseDate": "2025-12-17",
+  "status": "released",
+  "predecessor": "gemini-3-pro",
+  "openness": "closed",
+  "license": "Proprietary (Google API Terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (natively multimodal, based on Gemini 3 Pro)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.5,
+    "output": 3
+  },
+  "links": {
+    "docs": "ai.google.dev/gemini-api/docs/gemini-3"
+  },
+  "note": "Pro-grade reasoning at Flash latency/cost via an adjustable thinking_level parameter; default model in the Gemini app.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

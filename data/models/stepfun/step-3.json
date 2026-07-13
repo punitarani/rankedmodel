@@ -1,0 +1,50 @@
+{
+  "slug": "step-3",
+  "name": "Step-3",
+  "orgSlug": "stepfun",
+  "familySlug": "step-3",
+  "releaseDate": "2025-07-31",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 321,
+  "activeParamsB": 38,
+  "archClass": "moe",
+  "archDisplay": "MoE — 48 experts (3 routed + 1 shared per token), Multi-Matrix Factorization Attention (MFA) + Attention-FFN Disaggregation (AFD)",
+  "ctxK": 64,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.57,
+    "output": 1.42
+  },
+  "links": {
+    "hf": "stepfun-ai/step3",
+    "gh": "stepfun-ai/Step3",
+    "docs": "stepfun.ai/research/en/step3"
+  },
+  "note": "Open-source 321B MoE (38B active) multimodal reasoning VLM, Apache-2.0, co-designed with MFA/AFD for cost-effective decoding.",
+  "quants": [
+    "FP8"
+  ],
+  "vramQ4Gb": 177,
+  "vramFp16Gb": 642,
+  "tps4090": null,
+  "tpsNote": "321B total params must stay resident even with 38B active — infeasible on a single consumer GPU; needs multi-GPU/datacenter serving.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

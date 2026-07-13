@@ -1,0 +1,10 @@
+{
+  "slug": "mmlu-clinical-knowledge",
+  "name": "MMLU: Clinical Knowledge",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Clinical-knowledge subject slice of MMLU.",
+  "normMin": 40,
+  "normMax": 100,
+  "higherIsBetter": true
+}

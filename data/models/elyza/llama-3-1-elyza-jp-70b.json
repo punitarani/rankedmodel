@@ -1,0 +1,42 @@
+{
+  "slug": "llama-3-1-elyza-jp-70b",
+  "name": "Llama-3.1-ELYZA-JP-70B",
+  "orgSlug": "elyza",
+  "familySlug": "elyza-llm-for-jp",
+  "releaseDate": "2024-10-25",
+  "status": "released",
+  "predecessor": "llama-3-elyza-jp-8b",
+  "openness": "closed",
+  "license": "Proprietary — enterprise/partner access only (no public license terms published; not an open-weight release)",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "70B dense transformer (Llama-3.1 architecture, Japanese continual pretrain + instruction tuning)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "elyza.ai"
+  },
+  "note": "Latest ELYZA LLM for JP flagship, built on Llama 3.1 for longer context and improved Japanese instruction-following vs. the earlier Llama-3-based 70B; distributed only via demo and enterprise API/joint-development deals, not as public open weights.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

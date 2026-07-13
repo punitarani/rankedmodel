@@ -1,0 +1,48 @@
+{
+  "slug": "airoboros-70b-l2",
+  "name": "Airoboros 70B (L2)",
+  "orgSlug": "jon-durbin-independent",
+  "familySlug": "airoboros",
+  "releaseDate": "2023-08-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 2 Community License Agreement (custom Meta license)",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Llama 2 (dense decoder-only transformer)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "jondurbin/airoboros-l2-70b-gpt4-2.0",
+    "gh": "jondurbin/airoboros"
+  },
+  "note": "Fully synthetic, GPT-4-generated self-instruct fine-tune of Llama 2 70B; a solo-developer pipeline that produced a broadly competitive open 70B chat model.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ",
+    "GGML",
+    "EXL2"
+  ],
+  "vramQ4Gb": 40,
+  "vramFp16Gb": 140,
+  "tps4090": null,
+  "tpsNote": "70B does not fit in a single RTX 4090's 24GB VRAM at Q4 (~40GB needed); no verified single-GPU llama.cpp measurement found.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

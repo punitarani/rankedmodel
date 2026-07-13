@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+granite-3-0-2b-instruct,43.2,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,OBQA

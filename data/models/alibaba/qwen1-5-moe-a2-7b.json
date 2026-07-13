@@ -1,0 +1,43 @@
+{
+  "slug": "qwen1-5-moe-a2-7b",
+  "name": "Qwen1.5-MoE-A2.7B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen1-5",
+  "releaseDate": "2024-03-28",
+  "status": "released",
+  "predecessor": "qwen1-5-72b",
+  "openness": "open-weights",
+  "license": "Tongyi Qianwen LICENSE AGREEMENT (custom, free commercial use below usage threshold)",
+  "paramsB": 14.3,
+  "activeParamsB": 2.7,
+  "archClass": "moe",
+  "archDisplay": "Fine-grained MoE, decoder-only, upcycled from Qwen-1.8B: 64 experts (4 always-on shared + 60 routed, 4 routed activated per token)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen1.5-MoE-A2.7B",
+    "docs": "qwenlm.github.io/blog/qwen-moe"
+  },
+  "note": "First Qwen MoE model: 14.3B total/2.7B active params match dense Qwen1.5-7B quality at ~25% of its training cost and 1.74x inference throughput.",
+  "quants": [],
+  "vramQ4Gb": 9,
+  "vramFp16Gb": 29,
+  "tps4090": null,
+  "tpsNote": "VRAM sized on the 14.3B total weights (all experts must stay resident even though only 2.7B are active per token); at release only HF transformers and vLLM were supported, llama.cpp/GGUF support came later.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

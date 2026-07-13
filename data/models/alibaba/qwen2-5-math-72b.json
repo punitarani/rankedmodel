@@ -1,0 +1,49 @@
+{
+  "slug": "qwen2-5-math-72b",
+  "name": "Qwen2.5-Math-72B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2-5-math",
+  "releaseDate": "2024-09-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Qwen (Tongyi Qianwen License)",
+  "paramsB": 72.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, 80 layers (GQA 64Q/8KV)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen2.5-Math-72B",
+    "gh": "QwenLM/Qwen2.5-Math",
+    "docs": "qwenlm.github.io/blog/qwen2.5-math"
+  },
+  "note": "Base math-specialized model continual-pretrained from Qwen2.5-72B on Qwen Math Corpus v2; Instruct sibling adds CoT+TIR reasoning.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ Int4",
+    "MLX"
+  ],
+  "vramQ4Gb": 47,
+  "vramFp16Gb": 145,
+  "tps4090": null,
+  "tpsNote": "Q4 weights (~47GB) exceed a single RTX 4090's 24GB VRAM; requires multi-GPU or CPU offload for local inference.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

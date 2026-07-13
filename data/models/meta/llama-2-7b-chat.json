@@ -1,0 +1,49 @@
+{
+  "slug": "llama-2-7b-chat",
+  "name": "Llama 2 7B Chat",
+  "orgSlug": "meta",
+  "familySlug": "llama-2",
+  "releaseDate": "2023-07-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 2 Community License",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (decoder-only), RLHF-tuned",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/Llama-2-7b-chat-hf",
+    "gh": "facebookresearch/llama",
+    "docs": "llama.com/llama2"
+  },
+  "note": "RLHF dialogue-tuned Llama 2 7B; 4K context; MMLU 45.3, far behind later Llama generations.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 4.1,
+  "vramFp16Gb": 13.5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

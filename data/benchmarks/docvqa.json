@@ -1,0 +1,10 @@
+{
+  "slug": "docvqa",
+  "name": "DocVQA",
+  "category": "vision",
+  "unit": "%",
+  "description": "Question answering over scanned document images.",
+  "normMin": 50,
+  "normMax": 100,
+  "higherIsBetter": true
+}

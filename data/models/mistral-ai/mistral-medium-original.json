@@ -1,0 +1,45 @@
+{
+  "slug": "mistral-medium-original",
+  "name": "Mistral Medium (original)",
+  "orgSlug": "mistral-ai",
+  "familySlug": "mistral-medium",
+  "releaseDate": "2023-12-11",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed dense transformer (closed weights)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 5,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 2.75,
+    "output": 8.1
+  },
+  "links": {
+    "docs": "docs.mistral.ai/resources/changelogs"
+  },
+  "note": "Early closed top-tier endpoint launched with la Plateforme beta; 8.6 MT-Bench; direct ancestor of Large/Medium 3.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

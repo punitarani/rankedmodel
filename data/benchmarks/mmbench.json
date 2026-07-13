@@ -1,0 +1,10 @@
+{
+  "slug": "mmbench",
+  "name": "MMBench",
+  "category": "vision",
+  "unit": "%",
+  "description": "Broad multimodal ability benchmark with circular-eval robustness check.",
+  "normMin": 40,
+  "normMax": 95,
+  "higherIsBetter": true
+}

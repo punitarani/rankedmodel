@@ -1,0 +1,46 @@
+{
+  "slug": "falcon-mamba-7b",
+  "name": "Falcon Mamba 7B",
+  "orgSlug": "tii",
+  "familySlug": "falcon-mamba",
+  "releaseDate": "2024-08-12",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "TII Falcon-Mamba License 2.0",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "ssm",
+  "archDisplay": "Pure Mamba State-Space Model, 7B, attention-free with extra RMS norm layers",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "tiiuae/falcon-mamba-7b",
+    "docs": "huggingface.co/blog/falconmamba"
+  },
+  "note": "First competitive attention-free State-Space (Mamba) open model; constant memory over sequence length, beats Llama 3.1 8B and Mistral 7B on Open LLM Leaderboard v1.",
+  "quants": [
+    "GGUF",
+    "bitsandbytes 4-bit"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 15,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

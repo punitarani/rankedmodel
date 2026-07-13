@@ -1,0 +1,46 @@
+{
+  "slug": "apple-openelm-270m-3b",
+  "name": "Apple OpenELM (270M–3B)",
+  "orgSlug": "apple",
+  "familySlug": "apple-openelm",
+  "releaseDate": "2024-04-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apple Sample Code License",
+  "paramsB": 3,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer with layer-wise parameter scaling (270M/450M/1.1B/3B family)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "apple/OpenELM",
+    "gh": "apple/corenet",
+    "docs": "machinelearning.apple.com/research/openelm"
+  },
+  "note": "Fully open, reproducible 270M/450M/1.1B/3B family with code, training logs, and checkpoints; layer-wise scaling beats OLMo at matched budget.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 1.9,
+  "vramFp16Gb": 6.4,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

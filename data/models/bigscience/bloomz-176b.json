@@ -1,0 +1,44 @@
+{
+  "slug": "bloomz-176b",
+  "name": "BLOOMZ (176B)",
+  "orgSlug": "bigscience",
+  "familySlug": "bloomz",
+  "releaseDate": "2022-11-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "BigScience RAIL License v1.0",
+  "paramsB": 176.25,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (BLOOM architecture), instruction fine-tuned on xP3",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 46,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "bigscience/bloomz"
+  },
+  "note": "BLOOM 176B fine-tuned on the xP3 crosslingual task mixture for zero-shot multilingual instruction following.",
+  "quants": [
+    "INT8 (bitsandbytes)"
+  ],
+  "vramQ4Gb": 106,
+  "vramFp16Gb": 352,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+bloomz-176b,48.6,self-reported,https://huggingface.co/bigscience/bloomz,,"ANLI round 1, validation, zero-shot accuracy"

@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-neo-2-7b",
+  "name": "GPT-Neo 2.7B",
+  "orgSlug": "eleutherai",
+  "familySlug": "gpt-neo",
+  "releaseDate": "2021-03-21",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "MIT",
+  "paramsB": 2.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer, alternating local (256-token window) and global sparse attention (GPT-3 replication)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "EleutherAI/gpt-neo-2.7B",
+    "gh": "EleutherAI/gpt-neo",
+    "docs": "huggingface.co/docs/transformers/model_doc/gpt_neo"
+  },
+  "note": "First open GPT-3-style replication trained on The Pile; largest freely available autoregressive LM at its March 2021 launch",
+  "quants": [
+    "Int8"
+  ],
+  "vramQ4Gb": 2.2,
+  "vramFp16Gb": 6.4,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

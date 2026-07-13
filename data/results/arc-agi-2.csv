@@ -1,0 +1,4 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gemini-3-1-pro,77.1,self-reported,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/,2026-02-19,"ARC-AGI-2, verified score, more than double Gemini 3 Pro"
+gpt-5-2,52.9,self-reported,https://openai.com/index/introducing-gpt-5-2/,,"ARC-AGI-2 Verified, GPT-5.2 Thinking; confirmed"
+grok-4,15.9,self-reported,https://introl.com/blog/grok-4-just-shattered-the-ai-ceilingheres-why-that-changes-everything,2025-07-09,

@@ -1,0 +1,52 @@
+{
+  "slug": "qwen3-32b-thinking",
+  "name": "Qwen3-32B (Thinking)",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen3",
+  "releaseDate": "2025-04-29",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 32.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, GQA + SwiGLU + QK-Norm",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 119,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.287,
+    "output": 1.147
+  },
+  "links": {
+    "hf": "Qwen/Qwen3-32B",
+    "gh": "QwenLM/Qwen3",
+    "docs": "qwen.readthedocs.io"
+  },
+  "note": "Largest Qwen3 dense model; thinking mode rivals OpenAI o3-mini (medium) on reasoning benchmarks.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 19.9,
+  "vramFp16Gb": 65.6,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Thinking",
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

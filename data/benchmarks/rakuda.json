@@ -1,0 +1,10 @@
+{
+  "slug": "rakuda",
+  "name": "Rakuda",
+  "category": "human-preference",
+  "unit": "/10",
+  "description": "Japanese-language absolute-quality chat evaluation, GPT-4-judged.",
+  "normMin": 3,
+  "normMax": 10,
+  "higherIsBetter": true
+}

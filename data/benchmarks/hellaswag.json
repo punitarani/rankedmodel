@@ -1,0 +1,10 @@
+{
+  "slug": "hellaswag",
+  "name": "HellaSwag",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Commonsense sentence-completion, adversarially filtered.",
+  "normMin": 25,
+  "normMax": 98,
+  "higherIsBetter": true
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "claude-opus-4-5-high",
+  "name": "Claude Opus 4.5 (High)",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-4",
+  "releaseDate": "2025-11-24",
+  "status": "released",
+  "predecessor": "claude-haiku-4-5",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (undisclosed configuration)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 5,
+    "output": 25
+  },
+  "links": {
+    "docs": "platform.claude.com"
+  },
+  "note": "Efficiency-focused flagship; API default (high) effort; record 80.9% SWE-bench Verified with major price cut vs Opus 4.1.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "High",
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

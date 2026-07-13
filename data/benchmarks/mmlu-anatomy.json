@@ -1,0 +1,10 @@
+{
+  "slug": "mmlu-anatomy",
+  "name": "MMLU: Anatomy",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Anatomy subject slice of MMLU.",
+  "normMin": 40,
+  "normMax": 100,
+  "higherIsBetter": true
+}

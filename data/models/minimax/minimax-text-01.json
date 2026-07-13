@@ -1,0 +1,46 @@
+{
+  "slug": "minimax-text-01",
+  "name": "MiniMax-Text-01",
+  "orgSlug": "minimax",
+  "familySlug": "minimax-01",
+  "releaseDate": "2025-01-15",
+  "status": "released",
+  "predecessor": "minimax-vl-01",
+  "openness": "open-weights",
+  "license": "MiniMax Model License Agreement (custom, source-available; code under MIT)",
+  "paramsB": 456,
+  "activeParamsB": 45.9,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Lightning Attention + Softmax Attention, MoE (32 experts, top-2 routing, 80 layers)",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "MiniMaxAI/MiniMax-Text-01",
+    "gh": "MiniMax-AI/MiniMax-01",
+    "docs": "platform.minimax.io/docs"
+  },
+  "note": "456B-param MoE (45.9B active) using Lightning Attention; trained to 1M-token context and extrapolates to 4M at inference; released open-weight alongside vision variant MiniMax-VL-01.",
+  "quants": [
+    "INT8 (Quanto)"
+  ],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": "MiniMax's own report targets ~640GB memory across 8 GPUs at 8-bit quantization for 1M-token inference; far beyond a single RTX 4090's 24GB, so no consumer-GPU throughput figures exist.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

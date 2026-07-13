@@ -1,0 +1,47 @@
+{
+  "slug": "guanaco-65b",
+  "name": "Guanaco 65B",
+  "orgSlug": "university-of-washington-dettmers-et-al",
+  "familySlug": "guanaco",
+  "releaseDate": "2023-05-23",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0 (LoRA adapter weights); base LLaMA weights remain under Meta's non-commercial research license",
+  "paramsB": 65,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "LLaMA (dense decoder-only transformer) + 4-bit QLoRA adapter",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "timdettmers/guanaco-65b",
+    "gh": "artidoro/qlora"
+  },
+  "note": "4-bit QLoRA fine-tune of LLaMA 65B on OASST1, reaching 99.3% of ChatGPT's performance on the Vicuna benchmark in ~24 GPU-hours on one 48GB GPU.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ",
+    "GGML"
+  ],
+  "vramQ4Gb": 39,
+  "vramFp16Gb": 130,
+  "tps4090": null,
+  "tpsNote": "65B does not fit in a single RTX 4090's 24GB VRAM even at Q4 (~39GB needed); no verified single-GPU llama.cpp measurement found.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

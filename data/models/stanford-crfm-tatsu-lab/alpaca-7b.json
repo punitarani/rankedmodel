@@ -1,0 +1,45 @@
+{
+  "slug": "alpaca-7b",
+  "name": "Alpaca 7B",
+  "orgSlug": "stanford-crfm-tatsu-lab",
+  "familySlug": "alpaca",
+  "releaseDate": "2023-03-13",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC-BY-NC-4.0 (data/weights, non-commercial); Apache-2.0 (training code)",
+  "paramsB": 6.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (LLaMA 7B architecture, fine-tuned)",
+  "ctxK": 0.512,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "gh": "tatsu-lab/stanford_alpaca",
+    "docs": "crfm.stanford.edu/2023/03/13/alpaca.html"
+  },
+  "note": "LLaMA 7B fine-tuned on 52K self-instruct demos for under $600; sparked the open instruction-tuning wave.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 13,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "llama-3-2-1b",
+  "name": "Llama 3.2 1B",
+  "orgSlug": "meta",
+  "familySlug": "llama-3-2",
+  "releaseDate": "2024-09-25",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3.2 Community License Agreement",
+  "paramsB": 1.24,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (GQA), distilled from Llama 3.1 8B/70B",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/Llama-3.2-1B-Instruct",
+    "gh": "meta-llama/llama-models",
+    "docs": "llama.com/docs/model-cards-and-prompt-formats/llama3_2"
+  },
+  "note": "On-device text model with 128K context, pruned/distilled from larger Llama 3.1 models, for edge and mobile.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 1.3,
+  "vramFp16Gb": 2.5,
+  "tps4090": null,
+  "tpsNote": "No widely reported RTX 4090 llama.cpp Q4 benchmark found; model is tiny (~1.3GB Q4) and expected to run at several hundred tok/s",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-4-1",
+  "name": "GPT-4.1",
+  "orgSlug": "openai",
+  "familySlug": "gpt-4-1",
+  "releaseDate": "2025-04-14",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (size undisclosed; non-reasoning)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2,
+    "output": 8
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-4.1"
+  },
+  "note": "API-only coding-focused flagship with a 1,047,576-token context window and June 2024 knowledge cutoff.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

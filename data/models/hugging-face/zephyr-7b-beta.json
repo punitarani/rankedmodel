@@ -1,0 +1,48 @@
+{
+  "slug": "zephyr-7b-beta",
+  "name": "Zephyr 7B Beta",
+  "orgSlug": "hugging-face",
+  "familySlug": "zephyr",
+  "releaseDate": "2023-10-25",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "MIT",
+  "paramsB": 7.24,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer (Mistral-7B-v0.1 base), distilled SFT + Direct Preference Optimization on synthetic feedback data",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "HuggingFaceH4/zephyr-7b-beta",
+    "gh": "huggingface/alignment-handbook",
+    "docs": "arxiv.org/abs/2310.16944"
+  },
+  "note": "DPO-aligned Mistral-7B fine-tune that popularized distilled preference tuning; weights, training recipe (alignment-handbook), and data all open under MIT.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 15,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "livecodebench-pro",
+  "name": "LiveCodeBench Pro",
+  "category": "coding",
+  "unit": "Elo",
+  "description": "Elo-rated variant of LiveCodeBench judged against competitive-programmer ratings.",
+  "normMin": 1000,
+  "normMax": 3000,
+  "higherIsBetter": true
+}

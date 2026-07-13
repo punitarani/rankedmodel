@@ -1,0 +1,45 @@
+{
+  "slug": "deepseek-prover-v2-671b",
+  "name": "DeepSeek-Prover-V2 671B",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-prover",
+  "releaseDate": "2025-04-30",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 671,
+  "activeParamsB": 37,
+  "archClass": "moe",
+  "archDisplay": "DeepSeekMoE (same architecture as DeepSeek-V3): 256 routed + 1 shared expert, top-8 routing, MLA attention, initialized from DeepSeek-V3-Base",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-Prover-V2-671B",
+    "gh": "deepseek-ai/DeepSeek-Prover-V2"
+  },
+  "note": "Formal theorem-proving model for Lean 4 built on V3-Base via recursive proof search and subgoal decomposition; state-of-the-art neural theorem prover.",
+  "quants": [
+    "GGUF Q4_K_M (Unsloth Dynamic)"
+  ],
+  "vramQ4Gb": 404,
+  "vramFp16Gb": 1342,
+  "tps4090": null,
+  "tpsNote": "671B MoE far exceeds a single 24GB 4090; only Unsloth Dynamic GGUF quants for CPU/multi-GPU offload are available.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

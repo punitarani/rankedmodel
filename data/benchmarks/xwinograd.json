@@ -1,0 +1,10 @@
+{
+  "slug": "xwinograd",
+  "name": "XWinograd",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Cross-lingual Winograd-schema commonsense resolution.",
+  "normMin": 50,
+  "normMax": 95,
+  "higherIsBetter": true
+}

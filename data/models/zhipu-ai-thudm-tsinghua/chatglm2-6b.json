@@ -1,0 +1,46 @@
+{
+  "slug": "chatglm2-6b",
+  "name": "ChatGLM2-6B",
+  "orgSlug": "zhipu-ai-thudm-tsinghua",
+  "familySlug": "chatglm",
+  "releaseDate": "2023-06-25",
+  "status": "released",
+  "predecessor": "chatglm-6b",
+  "openness": "open-weights",
+  "license": "Apache-2.0 (code); ChatGLM2-6B Model License for weights (free for research; free commercial use after registration)",
+  "paramsB": 6.24,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (GLM, Multi-Query Attention, FlashAttention)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "zai-org/chatglm2-6b",
+    "gh": "zai-org/ChatGLM2-6B"
+  },
+  "note": "Second-gen 6B chat model; FlashAttention-based context extended to 32K, +23% MMLU / +571% GSM8K over gen 1, faster INT4 inference.",
+  "quants": [
+    "INT4",
+    "INT8"
+  ],
+  "vramQ4Gb": 5.5,
+  "vramFp16Gb": 13.1,
+  "tps4090": null,
+  "tpsNote": "44.62 tok/s generating 2K tokens, measured on A100-SXM-80G (official repo); no RTX 4090 llama.cpp figure found",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

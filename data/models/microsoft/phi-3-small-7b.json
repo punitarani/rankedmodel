@@ -1,0 +1,50 @@
+{
+  "slug": "phi-3-small-7b",
+  "name": "Phi-3-small (7B)",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-3",
+  "releaseDate": "2024-05-21",
+  "status": "released",
+  "predecessor": "phi-3-mini-3-8b",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (alternating dense + blocksparse attention)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.15,
+    "output": 0.6
+  },
+  "links": {
+    "hf": "microsoft/Phi-3-small-8k-instruct",
+    "gh": "microsoft/PhiCookBook",
+    "docs": "azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms"
+  },
+  "note": "7B dense mid-tier Phi-3 with blocksparse attention; 8K (also 128K variant), 75.7 MMLU.",
+  "quants": [
+    "GGUF Q4",
+    "ONNX INT4"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 15,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

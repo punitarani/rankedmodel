@@ -1,0 +1,44 @@
+{
+  "slug": "nemotron-h-56b",
+  "name": "Nemotron-H 56B",
+  "orgSlug": "nvidia",
+  "familySlug": "nemotron-h",
+  "releaseDate": "2025-04-14",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "NVIDIA Internal Scientific Research and Development Model License (non-commercial, internal R&D only)",
+  "paramsB": 56,
+  "activeParamsB": null,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Mamba-2 + Transformer (54 Mamba-2 layers, 54 MLP layers, 10 self-attention layers of 118 total)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 10,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "nvidia/Nemotron-H-56B-Base-8K",
+    "gh": "NVIDIA-NeMo/Nemotron",
+    "docs": "research.nvidia.com/labs/adlr/nemotronh"
+  },
+  "note": "Hybrid Mamba-2/Transformer base model, up to 3x faster inference than similarly-sized pure Transformers; non-commercial research license only.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": "Non-commercial research-only license; no consumer-GPU quantization confirmed.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

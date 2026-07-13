@@ -1,0 +1,50 @@
+{
+  "slug": "hunyuan-a13b",
+  "name": "Hunyuan-A13B",
+  "orgSlug": "tencent",
+  "familySlug": "hunyuan",
+  "releaseDate": "2025-06-27",
+  "status": "released",
+  "predecessor": "hunyuan-t1",
+  "openness": "open-weights",
+  "license": "Tencent Hunyuan Community License Agreement",
+  "paramsB": 80,
+  "activeParamsB": 13,
+  "archClass": "moe",
+  "archDisplay": "Fine-grained sparse MoE Transformer, 1 shared + 64 routed experts, 8 active/token (80B total / 13B active)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.07,
+    "output": 0.3
+  },
+  "links": {
+    "hf": "tencent/Hunyuan-A13B-Instruct",
+    "gh": "Tencent-Hunyuan/Hunyuan-A13B"
+  },
+  "note": "Open-weights fine-grained MoE (80B total/13B active) with dual fast/slow reasoning, GQA and 256K context; leads open agentic benchmarks like BFCL-v3 (78.3).",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ-Int4",
+    "FP8"
+  ],
+  "vramQ4Gb": 44,
+  "vramFp16Gb": 160,
+  "tps4090": null,
+  "tpsNote": "80B total params exceed a single RTX 4090's 24GB VRAM at 4-bit despite only 13B active; needs multi-GPU or CPU offload to serve.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

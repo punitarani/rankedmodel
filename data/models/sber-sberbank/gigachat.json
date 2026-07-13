@@ -1,0 +1,42 @@
+{
+  "slug": "gigachat",
+  "name": "GigaChat",
+  "orgSlug": "sber-sberbank",
+  "familySlug": "gigachat",
+  "releaseDate": "2023-04-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Proprietary ensemble architecture (NeONKA; undisclosed details)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "developers.sber.ru/docs/ru/gigachat"
+  },
+  "note": "Sberbank's Russian ChatGPT rival, launched in closed testing April 24 2023, built on the NeONKA neural-network ensemble; params were never disclosed for the original model. 128K ctx reflects the current GigaChat-2 API (the original 2023 model is deprecated/redirected).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

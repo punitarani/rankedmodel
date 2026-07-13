@@ -1,0 +1,46 @@
+{
+  "slug": "minicpm-2b",
+  "name": "MiniCPM-2B",
+  "orgSlug": "openbmb",
+  "familySlug": "minicpm",
+  "releaseDate": "2024-02-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Custom (OpenBMB General Model License; free for research, free commercial use after registration)",
+  "paramsB": 2.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer, deep-and-thin design (40 layers, 2304 hidden dim, Mistral-derived tokenizer)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openbmb/MiniCPM-2B-sft-bf16",
+    "gh": "OpenBMB/MiniCPM"
+  },
+  "note": "Pioneering ~2.4B-non-embedding edge LLM matching Mistral-7B on many benchmarks; runs on-device including smartphones",
+  "quants": [
+    "GGUF",
+    "Int4"
+  ],
+  "vramQ4Gb": 2,
+  "vramFp16Gb": 6.2,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

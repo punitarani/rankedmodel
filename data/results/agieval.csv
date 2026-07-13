@@ -1,0 +1,4 @@
+model_slug,score,source,source_url,evaluated_at,notes
+granite-3-0-2b-instruct,29.75,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,AGI-Eval
+nous-hermes-2-mixtral-8x7b-dpo,46.05,self-reported,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO,,AGIEval average
+openhermes-2-5-mistral-7b,43.07,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,,AGIEval average

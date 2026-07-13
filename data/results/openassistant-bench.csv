@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+guanaco-33b,1002,self-reported,https://huggingface.co/timdettmers/guanaco-33b,,"Elo rating, OpenAssistant benchmark, GPT-4 judge, rank 4"

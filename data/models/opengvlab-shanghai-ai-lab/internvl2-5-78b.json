@@ -1,0 +1,46 @@
+{
+  "slug": "internvl2-5-78b",
+  "name": "InternVL2.5-78B",
+  "orgSlug": "opengvlab-shanghai-ai-lab",
+  "familySlug": "internvl-2-5",
+  "releaseDate": "2024-12-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Qwen License (InternViT component MIT; Qwen2.5-72B-Instruct component under Qwen License)",
+  "paramsB": 78,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "InternViT-6B vision encoder + Qwen2.5-72B language model (dense composite MLLM)",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "OpenGVLab/InternVL2_5-78B",
+    "gh": "OpenGVLab/InternVL"
+  },
+  "note": "First open-source MLLM to exceed 70% on MMMU, rivaling GPT-4o while trained on far fewer tokens than competitors.",
+  "quants": [
+    "AWQ"
+  ],
+  "vramQ4Gb": 53,
+  "vramFp16Gb": 156,
+  "tps4090": null,
+  "tpsNote": "78B model exceeds a single RTX 4090's 24GB VRAM even at Q4 (~53GB needed); no single-4090 measurement exists.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

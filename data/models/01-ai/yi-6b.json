@@ -1,0 +1,47 @@
+{
+  "slug": "yi-6b",
+  "name": "Yi-6B",
+  "orgSlug": "01-ai",
+  "familySlug": "yi",
+  "releaseDate": "2023-11-02",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 6,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (Llama-style, GQA, SwiGLU, RoPE with adjusted base frequency)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "01-ai/Yi-6B",
+    "gh": "01-ai/Yi"
+  },
+  "note": "Smaller bilingual EN/ZH sibling of Yi-34B from 01.AI's debut Yi series, trained on 3.1T tokens under Apache 2.0.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 4.5,
+  "vramFp16Gb": 12.1,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

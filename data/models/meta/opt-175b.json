@@ -1,0 +1,46 @@
+{
+  "slug": "opt-175b",
+  "name": "OPT-175B",
+  "orgSlug": "meta",
+  "familySlug": "opt",
+  "releaseDate": "2022-05-03",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "OPT-175B License Agreement (non-commercial research use, gated access)",
+  "paramsB": 175,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (GPT-3-style architecture)",
+  "ctxK": 2.048,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "facebook/opt-175b",
+    "gh": "facebookresearch/metaseq",
+    "docs": "arxiv.org/abs/2205.01068"
+  },
+  "note": "First GPT-3-scale (175B) open-weight model, released with training code and a full day-by-day training logbook.",
+  "quants": [
+    "GPTQ"
+  ],
+  "vramQ4Gb": 90,
+  "vramFp16Gb": 350,
+  "tps4090": null,
+  "tpsNote": "llama.cpp does not support the OPT architecture and the model far exceeds a single RTX 4090's 24GB VRAM even at 4-bit; no such benchmark exists.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

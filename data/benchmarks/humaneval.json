@@ -1,0 +1,10 @@
+{
+  "slug": "humaneval",
+  "name": "HumanEval",
+  "category": "coding",
+  "unit": "%",
+  "description": "Hand-written Python programming problems, pass@1. Long-saturated at the frontier.",
+  "normMin": 10,
+  "normMax": 98,
+  "higherIsBetter": true
+}

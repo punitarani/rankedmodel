@@ -1,0 +1,47 @@
+{
+  "slug": "upstage-solar-10-7b",
+  "name": "Upstage SOLAR 10.7B",
+  "orgSlug": "upstage",
+  "familySlug": "solar",
+  "releaseDate": "2023-12-13",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0 (base); Instruct variant is CC-BY-NC-4.0",
+  "paramsB": 10.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Depth Up-Scaled (DUS) dense transformer — two 24-layer Mistral-7B-derived stacks merged to 48 layers, then continually pretrained",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "upstage/SOLAR-10.7B-v1.0",
+    "docs": "upstage.ai"
+  },
+  "note": "DUS-merged from two Mistral-7B copies; the Instruct variant (H6=74.20) briefly topped the Dec 2023 HF Open LLM Leaderboard.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 7,
+  "vramFp16Gb": 21,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

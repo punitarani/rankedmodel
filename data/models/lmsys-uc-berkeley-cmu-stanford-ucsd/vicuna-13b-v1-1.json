@@ -1,0 +1,46 @@
+{
+  "slug": "vicuna-13b-v1-1",
+  "name": "Vicuna 13B (v1.1)",
+  "orgSlug": "lmsys-uc-berkeley-cmu-stanford-ucsd",
+  "familySlug": "vicuna",
+  "releaseDate": "2023-04-12",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Non-commercial research (LLaMA license + OpenAI ToS + ShareGPT terms); serving code Apache 2.0",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "LLaMA-13B fine-tuned dense transformer (SFT on ShareGPT conversations)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "lmsys/vicuna-13b-v1.1",
+    "gh": "lm-sys/FastChat"
+  },
+  "note": "LLaMA-13B fine-tuned on 70K ShareGPT chats; ~92% ChatGPT quality per LMSYS's original GPT-4-as-judge eval, popularizing that evaluation method.",
+  "quants": [
+    "GGML",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 9,
+  "vramFp16Gb": 26,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "ai21-jurassic-2-ultra",
+  "name": "AI21 Jurassic-2 (Ultra)",
+  "orgSlug": "ai21-labs",
+  "familySlug": "ai21-jurassic",
+  "releaseDate": "2023-03-09",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (architecture undisclosed)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 7,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 18.8,
+    "output": 18.8
+  },
+  "links": {
+    "docs": "docs.ai21.com"
+  },
+  "note": "AI21's 2023 flagship API model (renamed from Jumbo) with zero-shot instruction-following and multilingual support; now Legacy on Bedrock.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

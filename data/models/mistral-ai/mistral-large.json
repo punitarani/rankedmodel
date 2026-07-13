@@ -1,0 +1,42 @@
+{
+  "slug": "mistral-large",
+  "name": "Mistral Large",
+  "orgSlug": "mistral-ai",
+  "familySlug": "mistral-large",
+  "releaseDate": "2024-02-26",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (size undisclosed)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 5,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "mistral.ai/news/mistral-large"
+  },
+  "note": "Mistral's first GPT-4-class closed flagship, launched with the Microsoft/Azure partnership and Le Chat; retired from the API by 2025.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

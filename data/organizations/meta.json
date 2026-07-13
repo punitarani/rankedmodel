@@ -1,5 +1,7 @@
 {
   "slug": "meta",
   "name": "Meta",
-  "type": "company"
+  "type": "lab",
+  "country": "US",
+  "url": "https://ai.meta.com"
 }

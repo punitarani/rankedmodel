@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+claude-opus-4-6,65.4,self-reported,https://www.vellum.ai/blog/claude-opus-4-6-benchmarks,2026-02-05,"Terminal-Bench 2.0; per Anthropic's Feb 2026 system card this figure was measured at max effort with adaptive thinking, not the model's 'default high' setting — corrected from the original 'default (high) effort' label."

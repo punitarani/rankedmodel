@@ -1,0 +1,4 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gpt-4o,90.5,independent,https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947,,"Multilingual Grade School Math; OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching"
+gpt-4o-mini,87,self-reported,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,2024-07-18,
+phi-4-14b,80.6,self-reported,https://huggingface.co/microsoft/phi-4,,

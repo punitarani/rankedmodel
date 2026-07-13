@@ -1,0 +1,10 @@
+{
+  "slug": "streamingbench",
+  "name": "StreamingBench",
+  "category": "vision",
+  "unit": "%",
+  "description": "Real-time, live-streaming video comprehension benchmark.",
+  "normMin": 30,
+  "normMax": 90,
+  "higherIsBetter": true
+}

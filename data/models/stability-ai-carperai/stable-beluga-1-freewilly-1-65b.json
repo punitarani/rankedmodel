@@ -1,0 +1,42 @@
+{
+  "slug": "stable-beluga-1-freewilly-1-65b",
+  "name": "Stable Beluga 1 (FreeWilly 1) 65B",
+  "orgSlug": "stability-ai-carperai",
+  "familySlug": "stable-beluga-freewilly",
+  "releaseDate": "2023-07-21",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC BY-NC-4.0 (Non-Commercial Creative Commons License) — released as delta weights over Meta's LLaMA 65B",
+  "paramsB": 65,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "LLaMA 65B dense Transformer, Orca-style supervised fine-tune",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "stabilityai/StableBeluga1-Delta"
+  },
+  "note": "Ranked #4 on the HF Open LLM Leaderboard at launch (Jul 27 2023); released as delta weights over Meta's LLaMA 65B.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 130,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

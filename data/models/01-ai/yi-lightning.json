@@ -1,0 +1,45 @@
+{
+  "slug": "yi-lightning",
+  "name": "Yi-Lightning",
+  "orgSlug": "01-ai",
+  "familySlug": "yi-lightning",
+  "releaseDate": "2024-10-16",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (closed weights, API-only)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts transformer with fine-grained expert segmentation & routing, hybrid attention, optimized KV-caching",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.14,
+    "output": 0.14
+  },
+  "links": {
+    "docs": "platform.lingyiwanwu.com/docs"
+  },
+  "note": "API-only MoE flagship; reached #6 on LMArena/Chatbot Arena at launch, first Chinese model to surpass GPT-4o there, at $0.14/M tokens.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

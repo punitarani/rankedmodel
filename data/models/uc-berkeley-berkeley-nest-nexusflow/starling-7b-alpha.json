@@ -1,0 +1,46 @@
+{
+  "slug": "starling-7b-alpha",
+  "name": "Starling-7B (alpha)",
+  "orgSlug": "uc-berkeley-berkeley-nest-nexusflow",
+  "familySlug": "starling",
+  "releaseDate": "2023-11-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0 (with condition not to compete with OpenAI)",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (Mistral-7B via OpenChat-3.5 base)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "berkeley-nest/Starling-LM-7B-alpha",
+    "docs": "starling.cs.berkeley.edu"
+  },
+  "note": "RLAIF fine-tune of OpenChat-3.5/Mistral-7B using the GPT-4-labeled Nectar dataset and APA policy optimization; scored 8.09 MT-Bench (GPT-4 judge) and 91.99 AlpacaEval, best 7B at release behind only GPT-4/GPT-4-Turbo.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 4.5,
+  "vramFp16Gb": 14,
+  "tps4090": 135,
+  "tpsNote": "Architecture-class estimate for a 7B dense model at Q4_K_M GGUF on RTX 4090; not a checkpoint-specific measurement (Mistral's GQA may run somewhat faster in practice).",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

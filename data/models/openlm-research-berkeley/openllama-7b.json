@@ -1,0 +1,46 @@
+{
+  "slug": "openllama-7b",
+  "name": "OpenLLaMA 7B",
+  "orgSlug": "openlm-research-berkeley",
+  "familySlug": "openllama",
+  "releaseDate": "2023-05-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 6.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense LLaMA-architecture transformer decoder, from-scratch reproduction trained on RedPajama",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openlm-research/open_llama_7b",
+    "gh": "openlm-research/open_llama"
+  },
+  "note": "Apache-2.0 from-scratch reproduction of Meta LLaMA on RedPajama (3B/7B/13B, plus v2); a permissive drop-in base free of LLaMA's license.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 4.5,
+  "vramFp16Gb": 13.5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

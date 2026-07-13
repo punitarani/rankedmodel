@@ -1,0 +1,10 @@
+{
+  "slug": "arc-agi-1",
+  "name": "ARC-AGI-1",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Abstraction-and-reasoning visual puzzle grid tasks, v1.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

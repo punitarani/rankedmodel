@@ -1,0 +1,46 @@
+{
+  "slug": "dbrx",
+  "name": "DBRX",
+  "orgSlug": "databricks",
+  "familySlug": "dbrx",
+  "releaseDate": "2024-03-27",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Databricks Open Model License",
+  "paramsB": 132,
+  "activeParamsB": 36,
+  "archClass": "moe",
+  "archDisplay": "Fine-grained MoE, 16 experts (4 active per token)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "databricks/dbrx-instruct",
+    "gh": "databricks/dbrx",
+    "docs": "www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm"
+  },
+  "note": "Fine-grained MoE (132B total/36B active) pretrained on 12T tokens; a leading open model at launch, beating GPT-3.5 on MMLU/GSM8K/HumanEval.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 66,
+  "vramFp16Gb": 264,
+  "tps4090": null,
+  "tpsNote": "Exceeds a single RTX 4090's 24GB VRAM even at Q4 (~66GB needed); requires multi-GPU or CPU offload",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

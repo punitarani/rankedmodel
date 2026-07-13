@@ -1,0 +1,45 @@
+{
+  "slug": "h2o-danube-1-8b",
+  "name": "H2O-Danube 1.8B",
+  "orgSlug": "h2o-ai",
+  "familySlug": "h2o-danube",
+  "releaseDate": "2024-01-30",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 1.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Llama-2/Mistral-style transformer with sliding-window attention + GQA",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "h2oai/h2o-danube-1.8b-chat",
+    "docs": "arxiv.org/abs/2401.16818"
+  },
+  "note": "H2O.ai's debut small LLM, Llama-style architecture, tuned for efficient on-device/mobile inference.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 1.4,
+  "vramFp16Gb": 3.8,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

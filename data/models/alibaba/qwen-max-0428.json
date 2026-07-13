@@ -1,0 +1,42 @@
+{
+  "slug": "qwen-max-0428",
+  "name": "Qwen-Max-0428",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen-max",
+  "releaseDate": "2024-05-11",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Proprietary Transformer; architecture and parameter count undisclosed. Announced (2024-05-11) as \"a larger model\" than Qwen1.5-110B, not stated to be built on it",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "qwenlm.github.io/blog/qwen-max-0428"
+  },
+  "note": "Early proprietary Qwen-Max flagship, announced alongside Qwen1.5-110B as Alibaba's larger closed-weight model; entered Chatbot Arena top-10 at launch.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

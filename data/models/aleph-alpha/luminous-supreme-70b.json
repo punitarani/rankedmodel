@@ -1,0 +1,45 @@
+{
+  "slug": "luminous-supreme-70b",
+  "name": "Luminous Supreme (70B)",
+  "orgSlug": "aleph-alpha",
+  "familySlug": "luminous",
+  "releaseDate": "2022-04-14",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Aleph Alpha API Terms & Conditions, SaaS-only)",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only autoregressive transformer with rotary position embeddings",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 5,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 175,
+    "output": 192.5
+  },
+  "links": {
+    "docs": "docs.aleph-alpha.com/docs/introduction/luminous"
+  },
+  "note": "Germany's first large-scale sovereign LLM; API-only 70B flagship of the original Luminous family, now a legacy offering behind PhariaAI.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "falcon-40b",
+  "name": "Falcon-40B",
+  "orgSlug": "tii",
+  "familySlug": "falcon",
+  "releaseDate": "2023-05-25",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 40,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Causal decoder-only Transformer, 40B (60 layers, multiquery attention, RoPE, FlashAttention)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 11,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "tiiuae/falcon-40b",
+    "docs": "falconllm.tii.ae/falcon-40b.html"
+  },
+  "note": "Topped the Hugging Face Open LLM Leaderboard in mid-2023, trained on 1T RefinedWeb tokens; first UAE-built model to lead open-source rankings.",
+  "quants": [
+    "GGUF",
+    "GPTQ",
+    "AWQ"
+  ],
+  "vramQ4Gb": 23,
+  "vramFp16Gb": 80,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

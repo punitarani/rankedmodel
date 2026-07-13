@@ -1,0 +1,40 @@
+{
+  "slug": "grok-1-5",
+  "name": "Grok-1.5",
+  "orgSlug": "xai",
+  "familySlug": "grok-1-5",
+  "releaseDate": "2024-03-29",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (exact configuration undisclosed by xAI)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {},
+  "note": "First major closed xAI iteration with 128K context; never exposed via a public developer API (xAI's API launched later, atop Grok-2).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

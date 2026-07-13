@@ -1,0 +1,47 @@
+{
+  "slug": "mpt-7b-instruct",
+  "name": "MPT-7B-Instruct",
+  "orgSlug": "mosaicml",
+  "familySlug": "mpt",
+  "releaseDate": "2023-05-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC-BY-SA-3.0",
+  "paramsB": 6.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer, no positional embeddings (ALiBi), FlashAttention; 32L/32H, d_model 4096",
+  "ctxK": 2.048,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "mosaicml/mpt-7b-instruct",
+    "gh": "mosaicml/llm-foundry",
+    "docs": "databricks.com/blog/mpt-7b"
+  },
+  "note": "MPT-7B fine-tuned on Dolly-15k + Anthropic HH-RLHF (dolly_hhrlhf) for short-form instruction following; licensed CC-BY-SA-3.0 (more restrictive than the Apache-2.0 base model) due to the derived instruction dataset.",
+  "quants": [
+    "GGUF",
+    "GGML"
+  ],
+  "vramQ4Gb": 4.5,
+  "vramFp16Gb": 14.5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

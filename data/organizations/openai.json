@@ -1,5 +1,7 @@
 {
   "slug": "openai",
   "name": "OpenAI",
-  "type": "lab"
+  "type": "lab",
+  "country": "US",
+  "url": "https://openai.com"
 }

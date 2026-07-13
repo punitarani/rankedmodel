@@ -1,0 +1,10 @@
+{
+  "slug": "tensorhub-apibench",
+  "name": "APIBench (TensorHub)",
+  "category": "agents",
+  "unit": "%",
+  "description": "Zero-shot, no-retriever API-call generation over TensorHub APIs.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

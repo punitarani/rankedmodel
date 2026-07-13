@@ -1,0 +1,46 @@
+{
+  "slug": "idefics2-8b",
+  "name": "Idefics2 8B",
+  "orgSlug": "hugging-face",
+  "familySlug": "idefics",
+  "releaseDate": "2024-04-15",
+  "status": "released",
+  "predecessor": "idefics-80b",
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "SigLIP-SO400M vision encoder + Mistral-7B-v0.1 decoder, connected via learned Perceiver resampler + MLP modality projection",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "HuggingFaceM4/idefics2-8b",
+    "docs": "huggingface.co/blog/idefics2"
+  },
+  "note": "Compact Apache-2.0 VLM roughly 10x smaller than IDEFICS-80B, with strong OCR/document QA via SigLIP + Mistral-7B.",
+  "quants": [
+    "AWQ"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 17,
+  "tps4090": null,
+  "tpsNote": "llama.cpp only converts the Mistral-7B LLM portion (mmproj vision tower unsupported), so no verified end-to-end Q4 4090 throughput exists.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

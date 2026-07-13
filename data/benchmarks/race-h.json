@@ -1,0 +1,10 @@
+{
+  "slug": "race-h",
+  "name": "RACE-H",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "High-school-level reading-comprehension multiple choice.",
+  "normMin": 30,
+  "normMax": 95,
+  "higherIsBetter": true
+}

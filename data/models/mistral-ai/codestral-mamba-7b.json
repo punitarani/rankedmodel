@@ -1,0 +1,45 @@
+{
+  "slug": "codestral-mamba-7b",
+  "name": "Codestral Mamba (7B)",
+  "orgSlug": "mistral-ai",
+  "familySlug": "codestral",
+  "releaseDate": "2024-07-16",
+  "status": "deprecated",
+  "predecessor": "codestral-22b",
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 7.3,
+  "activeParamsB": null,
+  "archClass": "ssm",
+  "archDisplay": "Mamba2 state-space model (linear-time inference)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "mistralai/Mamba-Codestral-7B-v0.1",
+    "docs": "docs.mistral.ai/models/model-cards/codestral-mamba-7b-0-1"
+  },
+  "note": "First Mamba2-architecture code model from Mistral; linear-time inference, tested to 256K-token in-context retrieval, Apache 2.0.",
+  "quants": [
+    "GGUF Q4 (experimental Mamba2 support)"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 15,
+  "tps4090": null,
+  "tpsNote": "Mamba2 quantization/support in llama.cpp was experimental and unstable at launch; state-space caching differs from transformer KV-cache VRAM scaling",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

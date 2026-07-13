@@ -1,0 +1,46 @@
+{
+  "slug": "snowflake-arctic",
+  "name": "Snowflake Arctic",
+  "orgSlug": "snowflake",
+  "familySlug": "arctic",
+  "releaseDate": "2024-04-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 480,
+  "activeParamsB": 17,
+  "archClass": "hybrid",
+  "archDisplay": "Dense-MoE Hybrid (10B dense transformer + 128x3.66B residual MoE experts, top-2 gating)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "Snowflake/snowflake-arctic-instruct",
+    "gh": "Snowflake-Labs/snowflake-arctic",
+    "docs": "snowflake.com/en/blog/arctic-open-efficient-foundation-language-models-snowflake"
+  },
+  "note": "Apache-2.0 480B-total/17B-active dense+MoE hybrid (128 experts) tuned for enterprise SQL/code/instruction-following, trained for under $2M.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 291,
+  "vramFp16Gb": 960,
+  "tps4090": null,
+  "tpsNote": "480B total parameters (Q4 ~291GB) require a multi-GPU server; not runnable on a single consumer GPU, and mainline llama.cpp needs a community fork for Arctic's architecture.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

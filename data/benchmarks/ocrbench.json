@@ -1,0 +1,10 @@
+{
+  "slug": "ocrbench",
+  "name": "OCRBench",
+  "category": "vision",
+  "unit": "/1000",
+  "description": "Text-recognition-in-images benchmark across 5 OCR task types.",
+  "normMin": 300,
+  "normMax": 900,
+  "higherIsBetter": true
+}

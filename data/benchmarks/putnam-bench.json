@@ -1,0 +1,10 @@
+{
+  "slug": "putnam-bench",
+  "name": "PutnamBench",
+  "category": "math",
+  "unit": "%",
+  "description": "Formal (Lean 4) proofs of William Lowell Putnam Competition problems.",
+  "normMin": 0,
+  "normMax": 50,
+  "higherIsBetter": true
+}

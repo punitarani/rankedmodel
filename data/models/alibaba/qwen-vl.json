@@ -1,0 +1,46 @@
+{
+  "slug": "qwen-vl",
+  "name": "Qwen-VL",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen-vl",
+  "releaseDate": "2023-08-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Tongyi Qianwen LICENSE AGREEMENT (custom, free for research and commercial use)",
+  "paramsB": 9.6,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "OpenCLIP ViT-bigG vision encoder + Qwen-7B decoder, single-layer cross-attention position-aware adapter",
+  "ctxK": 8,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen-VL",
+    "gh": "QwenLM/Qwen-VL"
+  },
+  "note": "First Qwen VLM (ViT-bigG + Qwen-7B, 9.6B total); accepts image/text/bounding-box input and can output bounding boxes for grounding.",
+  "quants": [
+    "GPTQ Int4"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 19,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

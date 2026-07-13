@@ -1,0 +1,50 @@
+{
+  "slug": "phi-3-mini-3-8b",
+  "name": "Phi-3-mini (3.8B)",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-3",
+  "releaseDate": "2024-04-23",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 3.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.13,
+    "output": 0.52
+  },
+  "links": {
+    "hf": "microsoft/Phi-3-mini-4k-instruct",
+    "docs": "learn.microsoft.com/en-us/azure/ai-studio/how-to/deploy-models-phi-3"
+  },
+  "note": "First production-grade Phi; ~GPT-3.5-class quality at 3.8B, runs on-device, shipped in a 4K-context variant (this record) and a separate 128K-context sibling, both MIT-licensed.",
+  "quants": [
+    "GGUF",
+    "MLX",
+    "ONNX"
+  ],
+  "vramQ4Gb": 2.3,
+  "vramFp16Gb": 10,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "gemini-1-5-pro",
+  "name": "Gemini 1.5 Pro",
+  "orgSlug": "google",
+  "familySlug": "gemini-1-5",
+  "releaseDate": "2024-02-15",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Google API/Vertex AI)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf"
+  },
+  "note": "Breakthrough 1M-token context (up to 2M for some users); all 1.5 models shut down on Gemini API by Sept 24 2025.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

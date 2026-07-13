@@ -1,0 +1,49 @@
+{
+  "slug": "gemma-2-9b",
+  "name": "Gemma 2 9B",
+  "orgSlug": "google",
+  "familySlug": "gemma-2",
+  "releaseDate": "2024-06-27",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Gemma Terms of Use",
+  "paramsB": 9.24,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer, GQA + interleaved local/global attention, distilled from a larger model",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "google/gemma-2-9b",
+    "gh": "google-deepmind/gemma",
+    "docs": "ai.google.dev/gemma/docs/core/model_card_2"
+  },
+  "note": "Efficient mid-size Gemma 2 with GQA, online-distilled; outperforms Llama 3 8B in its size class.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 7,
+  "vramFp16Gb": 20,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "reka-edge-7b",
+  "name": "Reka Edge (7B)",
+  "orgSlug": "reka-ai",
+  "familySlug": "reka",
+  "releaseDate": "2024-02-12",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense 7B transformer decoder + vision encoder (SwiGLU, Grouped Query Attention, RoPE, RMSNorm)",
+  "ctxK": 64,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.1,
+    "output": 0.1
+  },
+  "links": {
+    "docs": "docs.reka.ai"
+  },
+  "note": "Compact 7B multimodal model for on-device/local use, announced alongside Reka Flash on Feb 12, 2024 (documented together with Flash/Core in Reka's April 2024 technical report); beat Gemma 7B and Mistral 7B on Reka's reported benchmarks.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "big-bench",
+  "name": "BIG-bench",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Broad collaborative benchmark of 200+ diverse reasoning tasks.",
+  "normMin": 20,
+  "normMax": 95,
+  "higherIsBetter": true
+}

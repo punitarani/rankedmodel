@@ -1,0 +1,42 @@
+{
+  "slug": "inflection-2-5",
+  "name": "Inflection-2.5",
+  "orgSlug": "inflection-ai",
+  "familySlug": "inflection",
+  "releaseDate": "2024-03-07",
+  "status": "deprecated",
+  "predecessor": "inflection-2",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (architecture undisclosed)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "inflection.ai/inflection-2-5"
+  },
+  "note": "Reached ~94% of GPT-4's average IQ-benchmark performance using only 40% of GPT-4's training compute; Inflection's last flagship before the March 2024 Microsoft talent exodus.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

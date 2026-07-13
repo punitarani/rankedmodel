@@ -1,0 +1,48 @@
+{
+  "slug": "minicpm-llama3-v-2-5",
+  "name": "MiniCPM-Llama3-V 2.5",
+  "orgSlug": "openbmb",
+  "familySlug": "minicpm-v",
+  "releaseDate": "2024-05-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MiniCPM Model License (custom; free for research and, after registration, commercial use) + Apache-2.0 code",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "SigLip-400M vision encoder + Llama3-8B-Instruct LLM",
+  "ctxK": 8,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 30,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openbmb/MiniCPM-Llama3-V-2_5",
+    "gh": "OpenBMB/MiniCPM-V"
+  },
+  "note": "First end-side 8B MLLM to reach GPT-4V level, surpassing Gemini Pro and Claude 3 on OpenCompass (65.1 avg).",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GGUF Q5_K_S",
+    "GGUF Q2_K"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 16,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

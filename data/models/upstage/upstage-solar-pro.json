@@ -1,0 +1,45 @@
+{
+  "slug": "upstage-solar-pro",
+  "name": "Upstage Solar Pro",
+  "orgSlug": "upstage",
+  "familySlug": "solar",
+  "releaseDate": "2024-09-11",
+  "status": "released",
+  "predecessor": "upstage-solar-10-7b",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 22,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Depth Up-Scaled (DUS) dense transformer built from Phi-3-medium (14B)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "upstage/solar-pro-preview-instruct",
+    "docs": "upstage.ai"
+  },
+  "note": "Sept 2024 MIT-licensed preview (4K ctx, English) topped the <70B Open LLM Leaderboard; a Nov 2024 official update added 32K context and multilingual support via API only.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 13,
+  "vramFp16Gb": 44,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "arc-easy",
+  "name": "ARC-Easy",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Grade-school science questions, easy split.",
+  "normMin": 40,
+  "normMax": 99,
+  "higherIsBetter": true
+}

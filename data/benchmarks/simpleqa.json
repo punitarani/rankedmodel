@@ -1,0 +1,10 @@
+{
+  "slug": "simpleqa",
+  "name": "SimpleQA",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Short factual questions with a single verifiable answer; notoriously low scores.",
+  "normMin": 0,
+  "normMax": 70,
+  "higherIsBetter": true
+}

@@ -159,12 +159,17 @@ function crossChecks(ds: Dataset, errors: string[]): void {
   }
 
   // Effort/compute-tier cohorts (same weights, different serving budget): models sharing
-  // org+family+releaseDate+paramsB are configuration siblings — exactly one must be the
-  // default tier and exactly one the best tier. (Same-day DIFFERENT-size releases, e.g.
-  // Qwen3 235B/32B/8B, land in separate cohorts because paramsB differs, so this doesn't
-  // collide with the pre-existing same-day-size-variant pattern.)
+  // org+family+releaseDate+paramsB AND actually carrying a non-null effortLabel are
+  // configuration siblings — exactly one must be the default tier and exactly one the best
+  // tier. Models with effortLabel=null are exempt from cohort grouping entirely: two
+  // genuinely different models (different names/sizes, e.g. Claude 3 Opus vs Sonnet, GPT-4.1
+  // vs mini vs nano) can share org+family+releaseDate+null-paramsB (undisclosed param count)
+  // without being effort-tier siblings of each other. (Same-day DIFFERENT-size releases with
+  // disclosed params, e.g. Qwen3 235B/32B/8B, also land in separate cohorts because paramsB
+  // differs — this check only ever fires among models that opted into the effort-tier axis.)
   const cohorts = new Map<string, typeof ds.models>()
   for (const m of ds.models) {
+    if (m.effortLabel == null) continue
     const key = `${m.orgSlug}::${m.familySlug}::${m.releaseDate}::${m.paramsB ?? 'null'}`
     const group = cohorts.get(key) ?? []
     group.push(m)

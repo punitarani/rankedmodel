@@ -1,0 +1,10 @@
+{
+  "slug": "frontiermath-tier1-3",
+  "name": "FrontierMath (Tiers 1-3)",
+  "category": "math",
+  "unit": "%",
+  "description": "Novel unpublished research-level math problems, easier tiers.",
+  "normMin": 0,
+  "normMax": 95,
+  "higherIsBetter": true
+}

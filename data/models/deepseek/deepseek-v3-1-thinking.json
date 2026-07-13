@@ -1,0 +1,50 @@
+{
+  "slug": "deepseek-v3-1-thinking",
+  "name": "DeepSeek-V3.1 (Thinking)",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-v3",
+  "releaseDate": "2025-08-21",
+  "status": "deprecated",
+  "predecessor": "deepseek-v3-0324",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 671,
+  "activeParamsB": 37,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (671B total / 37B active) — DeepSeekMoE + Multi-head Latent Attention, hybrid think/non-think chat template",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.56,
+    "output": 1.68
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-V3.1",
+    "gh": "deepseek-ai/DeepSeek-V3",
+    "docs": "api-docs.deepseek.com"
+  },
+  "note": "Thinking mode of the hybrid V3.1 checkpoint; served via deepseek-reasoner, faster than R1-0528 at similar quality",
+  "quants": [
+    "GGUF",
+    "FP8"
+  ],
+  "vramQ4Gb": 405,
+  "vramFp16Gb": 1340,
+  "tps4090": null,
+  "tpsNote": "Exceeds a single RTX 4090's 24GB VRAM even at Q4 (~405GB); requires multi-GPU or heavy CPU offload",
+  "effortLabel": "Thinking",
+  "isDefaultConfig": false,
+  "isBestConfig": true
+}

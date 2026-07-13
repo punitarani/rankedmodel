@@ -1,0 +1,49 @@
+{
+  "slug": "olmo-3-think-32b",
+  "name": "OLMo 3-Think 32B",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "olmo-3",
+  "releaseDate": "2025-11-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 32.23,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (decoder-only, sliding/full attention mix, exposed CoT)",
+  "ctxK": 64,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.15,
+    "output": 0.5
+  },
+  "links": {
+    "hf": "allenai/Olmo-3-32B-Think",
+    "gh": "allenai/OLMo-core",
+    "docs": "allenai.org/blog/olmo3"
+  },
+  "note": "Latest flagship and strongest fully open reasoning model; narrows the gap to Qwen 3-32B-Thinking on reasoning benchmarks while trained on ~6x fewer tokens.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 65,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

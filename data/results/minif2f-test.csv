@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+deepseek-prover-v2-671b,88.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-Prover-V2-671B,2025-04-30,MiniF2F-test pass ratio (Lean 4)

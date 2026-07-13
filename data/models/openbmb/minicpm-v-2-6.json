@@ -1,0 +1,50 @@
+{
+  "slug": "minicpm-v-2-6",
+  "name": "MiniCPM-V 2.6",
+  "orgSlug": "openbmb",
+  "familySlug": "minicpm-v",
+  "releaseDate": "2024-08-06",
+  "status": "released",
+  "predecessor": "minicpm-llama3-v-2-5",
+  "openness": "open-weights",
+  "license": "MiniCPM Model License (custom; free for research and, after registration, commercial use) + Apache-2.0 code",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "SigLip-400M vision encoder + Qwen2-7B LLM",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": 30,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openbmb/MiniCPM-V-2_6",
+    "gh": "OpenBMB/MiniCPM-V"
+  },
+  "note": "8B MLLM adding multi-image and video understanding on-device, surpassing GPT-4V/Gemini 1.5 Pro on OpenCompass (65.2 avg).",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GGUF Q5_K_M",
+    "GGUF Q8_0",
+    "BNB INT4"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 16,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

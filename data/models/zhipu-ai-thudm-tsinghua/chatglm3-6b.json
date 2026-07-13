@@ -1,0 +1,46 @@
+{
+  "slug": "chatglm3-6b",
+  "name": "ChatGLM3-6B",
+  "orgSlug": "zhipu-ai-thudm-tsinghua",
+  "familySlug": "chatglm",
+  "releaseDate": "2023-10-27",
+  "status": "released",
+  "predecessor": "chatglm2-6b",
+  "openness": "open-weights",
+  "license": "Apache-2.0 (code); ChatGLM3-6B Model License for weights (free for research; free commercial use after registration)",
+  "paramsB": 6.2,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (GLM, Multi-Query Attention, SwiGLU, 28 layers)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "zai-org/chatglm3-6b",
+    "gh": "zai-org/ChatGLM3"
+  },
+  "note": "Third-gen 6B model adding native function calling, code interpreter and agent tool use; strongest sub-10B base model on its release benchmarks.",
+  "quants": [
+    "INT4",
+    "INT8"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 13,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

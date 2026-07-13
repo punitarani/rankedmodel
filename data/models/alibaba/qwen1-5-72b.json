@@ -1,0 +1,48 @@
+{
+  "slug": "qwen1-5-72b",
+  "name": "Qwen1.5-72B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen1-5",
+  "releaseDate": "2024-02-04",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Tongyi Qianwen LICENSE AGREEMENT (custom, free commercial use below usage threshold)",
+  "paramsB": 72,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer, 80 layers, standard multi-head attention (SwiGLU, RMSNorm, attention QKV bias)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 12,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen1.5-72B",
+    "docs": "qwenlm.github.io/blog/qwen1.5"
+  },
+  "note": "Gen-1.5 flagship with a uniform 32K context across the whole lineup, but at 72B this model uses standard multi-head attention, not GQA (config: num_key_value_heads = num_attention_heads = 64) — GQA in Qwen1.5 was applied only to the 32B/110B sizes.",
+  "quants": [
+    "GPTQ Int4",
+    "GPTQ Int8",
+    "AWQ",
+    "GGUF"
+  ],
+  "vramQ4Gb": 48,
+  "vramFp16Gb": 144,
+  "tps4090": null,
+  "tpsNote": "Q4 weights (~48GB) exceed a single RTX 4090's 24GB VRAM; requires multi-GPU or CPU/disk offload.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

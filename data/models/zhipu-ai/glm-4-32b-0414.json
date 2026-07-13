@@ -1,0 +1,49 @@
+{
+  "slug": "glm-4-32b-0414",
+  "name": "GLM-4-32B-0414",
+  "orgSlug": "zhipu-ai",
+  "familySlug": "glm-4-0414",
+  "releaseDate": "2025-04-14",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 32,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, 32B, pretrained on 15T tokens",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "zai-org/GLM-4-32B-0414",
+    "gh": "zai-org/GLM-4"
+  },
+  "note": "MIT-licensed 32B base pretrained on 15T tokens (incl. reasoning-heavy synthetic data); competitive with GPT-4o/DeepSeek-V3 on IFEval, BFCL-v3 function calling and TAU-Bench agent tasks at a fraction of the size. Separate 128K-context variant also released.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8",
+    "MLX",
+    "GPTQ",
+    "FP8"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 64,
+  "tps4090": null,
+  "tpsNote": "Third-party calculators estimate ~30 tok/s at Q4 on RTX 4090 (extrapolated, not a measured llama.cpp benchmark).",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

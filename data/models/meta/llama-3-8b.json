@@ -1,0 +1,49 @@
+{
+  "slug": "llama-3-8b",
+  "name": "Llama 3 8B",
+  "orgSlug": "meta",
+  "familySlug": "llama-3",
+  "releaseDate": "2024-04-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3 Community License Agreement",
+  "paramsB": 8.03,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (GQA)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "gh": "meta-llama/llama3",
+    "docs": "llama.com/docs/model-cards-and-prompt-formats/meta-llama-3"
+  },
+  "note": "First Llama 3 release; 15T-token pretrain, 8K context, best-in-tier 8B at launch (English-only).",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 5.5,
+  "vramFp16Gb": 16,
+  "tps4090": 100,
+  "tpsNote": "GGUF Q4_K_M fits fully in 24GB VRAM; ~95-110 tok/s widely reported via llama.cpp/Ollama",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

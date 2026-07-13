@@ -1,0 +1,10 @@
+{
+  "slug": "gaokao-math",
+  "name": "Gaokao Math",
+  "category": "math",
+  "unit": "%",
+  "description": "China's national college entrance exam, mathematics paper.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

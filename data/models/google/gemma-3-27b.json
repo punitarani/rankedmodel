@@ -2,16 +2,16 @@
   "slug": "gemma-3-27b",
   "name": "Gemma 3 27B",
   "orgSlug": "google",
-  "familySlug": "gemma",
+  "familySlug": "gemma-3",
   "releaseDate": "2025-03-12",
   "status": "released",
   "predecessor": null,
   "openness": "open-weights",
   "license": "Gemma",
-  "paramsB": 27,
+  "paramsB": 27.4,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense",
+  "archDisplay": "Dense decoder-only Transformer, GQA + 5:1 local:global attention, shared frozen SigLIP-400M vision encoder",
   "ctxK": 128,
   "modalities": [
     "text",
@@ -27,24 +27,25 @@
     "agentic": false
   },
   "apiAvailable": true,
-  "price": {
-    "input": 0.1,
-    "output": 0.2
-  },
+  "price": null,
   "links": {
     "hf": "google/gemma-3-27b-it",
     "gh": "google-deepmind/gemma",
-    "docs": "ai.google.dev/gemma"
+    "docs": "ai.google.dev/gemma/docs/core"
   },
-  "note": "Best-in-class single-GPU vision-language model of early 2025.",
+  "note": "Best-in-class single-GPU open VLM of early 2025; LMSYS Arena Elo 1338, top-10 among all models at launch.",
   "quants": [
-    "GGUF Q4",
-    "GGUF Q8",
+    "GGUF Q4_K_M",
+    "GGUF Q8_0",
     "AWQ",
-    "GPTQ"
+    "MLX",
+    "QAT Int4"
   ],
-  "vramQ4Gb": 18,
+  "vramQ4Gb": 14.1,
   "vramFp16Gb": 54,
-  "tps4090": 42,
-  "tpsNote": null
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

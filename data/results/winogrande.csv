@@ -1,0 +1,46 @@
+model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba,82.5,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
+apple-dclm-baseline-7b,72.69,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,"CORRECTED from original 88.28, which is actually the page's separate 'Winograd' score, not 'Winogrande'"
+apple-openelm-270m-3b,65.51,self-reported,https://huggingface.co/apple/OpenELM,2024-04-01,"OpenELM-3B (pretrained), zero-shot"
+bloomz-176b,59.27,self-reported,https://huggingface.co/bigscience/bloomz,,"Winogrande XL, validation, zero-shot accuracy"
+btlm-3b-8k,65.8,self-reported,https://arxiv.org/abs/2309.11568,,0-shot
+cerebras-gpt-13b,64.6,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,0-shot
+claude-3-haiku,74.2,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,5-shot
+claude-3-opus,88.5,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,5-shot
+claude-3-sonnet,75.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,5-shot
+decilm-7b,79.95,self-reported,https://huggingface.co/Deci/DeciLM-7B,,
+falcon-2-11b,78.3,independent,https://huggingface.co/blog/falcon2-11b,2024-05-13,5-shot
+falcon-mamba-7b,73.64,independent,https://huggingface.co/blog/falconmamba,2024-08-12,
+gemma-2-27b,83.7,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,partial score
+gemma-2-9b,80.6,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,partial score
+gemma-7b,72.3,self-reported,https://arxiv.org/html/2403.08295v4,,
+gpt-3-5-turbo,81.6,self-reported,https://arxiv.org/abs/2303.08774,,
+gpt-4,87.5,self-reported,https://arxiv.org/abs/2303.08774,,
+gpt-j-6b,65.3,self-reported,https://huggingface.co/EleutherAI/gpt-j-6b,2021-06-09,"zero-shot, LM Eval Harness"
+gpt-neo-2-7b,56.5,self-reported,https://huggingface.co/EleutherAI/gpt-neo-2.7B,2021-03-21,"zero-shot, LM Eval Harness"
+gpt-neox-20b,66.1,self-reported,https://blog.eleuther.ai/announcing-20b/,2022-02-09,"zero-shot, LM Eval Harness"
+granite-3-1-8b-instruct,75.37,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HF Open LLM Leaderboard V1
+h2o-danube-1-8b,65.35,self-reported,https://huggingface.co/h2oai/h2o-danube-1.8b-chat,,
+h2o-danube3-4b,76.48,independent,https://huggingface.co/h2oai/h2o-danube3-4b-chat,,Open LLM Leaderboard v1
+jais-70b,75.7,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,"English eval, jais-adapted-70b-chat"
+krutrim-2-12b,77,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,0-shot
+llama-13b,73,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+llama-3-1-minitron-4b,73.5,self-reported,https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/,2024-08-14,5-shot
+llama-33b,76,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+megatron-turing-nlg-530b,73,self-reported,https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/,2021-10-11,zero-shot
+mistral-7b,75.3,self-reported,https://arxiv.org/abs/2310.06825,,
+mistral-nemo-12b,76.8,self-reported,https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407,,
+mixtral-8x7b,77.2,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
+nemotron-3-8b,70.9,self-reported,https://huggingface.co/nvidia/nemotron-3-8b-base-4k,,0-shot
+nemotron-4-340b,89.5,self-reported,https://huggingface.co/nvidia/Nemotron-4-340B-Base,2024-06-14,
+nous-hermes-2-mixtral-8x7b-dpo,76.16,self-reported,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO,,part of GPT4All suite
+olmo-7b,67.9,self-reported,https://huggingface.co/allenai/OLMo-7B,,
+olmoe-1b-7b-0924,70.2,self-reported,https://huggingface.co/allenai/OLMoE-1B-7B-0924,,
+phi-1-5-1-3b,73.4,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,,"zero-shot accuracy, Table 2 of technical report"
+poro-34b,72.77,self-reported,https://arxiv.org/abs/2404.01856,,
+stable-lm-2-1-6b,64.09,independent,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,"instruct variant, 5-shot"
+stable-lm-2-12b,78.77,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,chat variant
+stablelm-3b-4e1t,71.19,independent,https://huggingface.co/stabilityai/stablelm-3b-4e1t,,"Open LLM Leaderboard, 5-shot"
+stablelm-zephyr-3b,65.51,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,5-shot
+xgen-7b-8k,64.9,self-reported,https://ar5iv.labs.arxiv.org/html/2309.03450,,
+zephyr-7b-beta,77.74,self-reported,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta,,5-shot

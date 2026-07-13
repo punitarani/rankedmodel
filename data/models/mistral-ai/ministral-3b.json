@@ -1,0 +1,45 @@
+{
+  "slug": "ministral-3b",
+  "name": "Ministral 3B",
+  "orgSlug": "mistral-ai",
+  "familySlug": "ministral",
+  "releaseDate": "2024-10-16",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Mistral Commercial License (proprietary; API-only, weights withheld)",
+  "paramsB": 3,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer, 36 layers",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 0.04,
+    "output": 0.04
+  },
+  "links": {
+    "docs": "docs.mistral.ai/models/overview"
+  },
+  "note": "Edge-class 3B model for on-device/low-latency use; API-only, weights never released; retired from platform as of late 2025.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

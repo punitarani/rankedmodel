@@ -1,0 +1,46 @@
+{
+  "slug": "olmoe-1b-7b-0924",
+  "name": "OLMoE-1B-7B-0924",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "olmoe",
+  "releaseDate": "2024-09-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 6.9,
+  "activeParamsB": 1.3,
+  "archClass": "moe",
+  "archDisplay": "Sparse MoE (64 experts, 8 active/token, 16 layers)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "allenai/OLMoE-1B-7B-0924",
+    "gh": "allenai/OLMoE",
+    "docs": "allenai.org/olmo"
+  },
+  "note": "First 100% open sparse MoE LLM (weights, data, code, logs); competitive with much larger dense models like Llama2-13B",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 4.2,
+  "vramFp16Gb": 13.8,
+  "tps4090": null,
+  "tpsNote": "Only 1.3B active params make this fast on modest GPUs, though no verified RTX 4090 llama.cpp number was found",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

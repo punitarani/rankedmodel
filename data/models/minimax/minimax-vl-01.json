@@ -1,0 +1,48 @@
+{
+  "slug": "minimax-vl-01",
+  "name": "MiniMax-VL-01",
+  "orgSlug": "minimax",
+  "familySlug": "minimax-01",
+  "releaseDate": "2025-01-14",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Custom MiniMax Model License (free for most use; platforms with >100M MAU must request a separate license; code under MIT)",
+  "paramsB": 456,
+  "activeParamsB": 45.9,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Lightning+Softmax Attention MoE (80 layers, 32 experts top-2) + 303M-param ViT/MLP vision encoder",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.2,
+    "output": 1.1
+  },
+  "links": {
+    "hf": "MiniMaxAI/MiniMax-VL-01",
+    "gh": "MiniMax-AI/MiniMax-01",
+    "docs": "platform.minimax.io"
+  },
+  "note": "Vision-language sibling of MiniMax-Text-01, adding a dynamic-resolution (336px-2016px) ViT+MLP encoder atop the same 456B hybrid-attention MoE backbone.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 912,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

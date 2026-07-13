@@ -1,23 +1,23 @@
 {
   "slug": "grok-4",
-  "name": "Grok 4",
+  "name": "Grok-4",
   "orgSlug": "xai",
-  "familySlug": "grok",
+  "familySlug": "grok-4",
   "releaseDate": "2025-07-09",
-  "status": "released",
+  "status": "deprecated",
   "predecessor": null,
   "openness": "closed",
   "license": "Proprietary",
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "moe",
-  "archDisplay": "MoE (undisclosed)",
+  "archDisplay": "Mixture-of-Experts (size undisclosed; RL-trained at pretraining scale on Colossus, ~200K H100s)",
   "ctxK": 256,
   "modalities": [
     "text",
     "vision"
   ],
-  "langCount": 30,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
@@ -34,10 +34,13 @@
   "links": {
     "docs": "docs.x.ai"
   },
-  "note": "Heavy mode debuted multi-agent test-time compute.",
+  "note": "Native tool-use reasoning flagship; led ARC-AGI-2 at launch. Official model card published by xAI (data.x.ai). Deprecated in the May 15, 2026 retirement wave, redirects to Grok 4.3.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

@@ -1,0 +1,42 @@
+{
+  "slug": "apple-dclm-baseline-7b",
+  "name": "Apple DCLM-Baseline 7B",
+  "orgSlug": "apple",
+  "familySlug": "apple-dclm",
+  "releaseDate": "2024-07-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apple Sample Code License",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (32 layers, 4096 hidden, 32 heads)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "apple/DCLM-Baseline-7B"
+  },
+  "note": "Data-centric base LM trained on the curated DCLM-Baseline corpus (3.8T tokens + StarCoder/ProofPile2); not instruction-tuned.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

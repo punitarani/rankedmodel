@@ -1,0 +1,49 @@
+{
+  "slug": "code-llama-70b",
+  "name": "Code Llama 70B",
+  "orgSlug": "meta",
+  "familySlug": "code-llama",
+  "releaseDate": "2024-01-29",
+  "status": "released",
+  "predecessor": "code-llama-7b",
+  "openness": "open-weights",
+  "license": "Llama 2 Community License Agreement",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer decoder (Llama 2 base), trained on 1T tokens of code",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "codellama/CodeLlama-70b-hf",
+    "gh": "meta-llama/codellama",
+    "docs": "ai.meta.com"
+  },
+  "note": "Largest Code Llama base model, released Jan 2024, trained on 1 trillion tokens of code (vs 500B for the 7B/13B/34B family).",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 40,
+  "vramFp16Gb": 140,
+  "tps4090": 18,
+  "tpsNote": "70B at Q4 (~40GB) exceeds the 4090's 24GB VRAM and requires partial CPU-layer offload; ~18 tok/s reported with most layers on GPU, dropping to 8-15 tok/s under heavier offload.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

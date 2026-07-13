@@ -1,0 +1,46 @@
+{
+  "slug": "seed-oss-36b",
+  "name": "Seed-OSS-36B",
+  "orgSlug": "bytedance",
+  "familySlug": "seed",
+  "releaseDate": "2025-08-20",
+  "status": "released",
+  "predecessor": "seed1-5-thinking",
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 36,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (RoPE, GQA, RMSNorm, SwiGLU)",
+  "ctxK": 512,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "gh": "ByteDance-Seed/seed-oss"
+  },
+  "note": "Apache-2.0 open release with native 512K context and a tunable thinking-length budget; trained on only 12T tokens.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8"
+  ],
+  "vramQ4Gb": 21.8,
+  "vramFp16Gb": 72,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

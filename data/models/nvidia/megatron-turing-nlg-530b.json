@@ -1,0 +1,43 @@
+{
+  "slug": "megatron-turing-nlg-530b",
+  "name": "Megatron-Turing NLG 530B",
+  "orgSlug": "nvidia",
+  "familySlug": "megatron-turing-nlg",
+  "releaseDate": "2021-10-11",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "None (research paper/blog only; weights never publicly released)",
+  "paramsB": 530,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (105 layers, 20480 hidden dim, 128 attention heads)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "gh": "deepspeedai/Megatron-DeepSpeed",
+    "docs": "developer.nvidia.com"
+  },
+  "note": "Joint NVIDIA-Microsoft dense transformer; largest monolithic LLM at launch, a scaling landmark; weights never released.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

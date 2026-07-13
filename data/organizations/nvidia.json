@@ -1,5 +1,6 @@
 {
   "slug": "nvidia",
   "name": "NVIDIA",
-  "type": "company"
+  "type": "company",
+  "country": "US"
 }

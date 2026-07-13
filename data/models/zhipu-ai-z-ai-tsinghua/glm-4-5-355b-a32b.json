@@ -1,0 +1,51 @@
+{
+  "slug": "glm-4-5-355b-a32b",
+  "name": "GLM-4.5 (355B-A32B)",
+  "orgSlug": "zhipu-ai-z-ai-tsinghua",
+  "familySlug": "glm-4-5",
+  "releaseDate": "2025-07-28",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 355,
+  "activeParamsB": 32,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 355B total / 32B active, hybrid thinking/non-thinking response modes",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.6,
+    "output": 2.2
+  },
+  "links": {
+    "hf": "zai-org/GLM-4.5",
+    "gh": "zai-org/GLM-4.5",
+    "docs": "docs.z.ai/guides/overview/pricing"
+  },
+  "note": "MIT-licensed agentic/reasoning/coding (ARC) MoE flagship; ranked 3rd overall and 2nd on agentic benchmarks among evaluated models at launch.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "FP8"
+  ],
+  "vramQ4Gb": 180,
+  "vramFp16Gb": 710,
+  "tps4090": null,
+  "tpsNote": "355B MoE needs multi-GPU (8x H100/H200-class) even at FP8; does not fit a single RTX 4090.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

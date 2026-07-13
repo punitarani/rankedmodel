@@ -1,0 +1,10 @@
+{
+  "slug": "okvqa",
+  "name": "OK-VQA",
+  "category": "vision",
+  "unit": "%",
+  "description": "VQA requiring outside/commonsense knowledge beyond the image.",
+  "normMin": 30,
+  "normMax": 90,
+  "higherIsBetter": true
+}

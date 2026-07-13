@@ -1,0 +1,10 @@
+{
+  "slug": "cybergym",
+  "name": "CyberGym",
+  "category": "coding",
+  "unit": "%",
+  "description": "Real-world cybersecurity vulnerability discovery and exploitation tasks.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

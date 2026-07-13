@@ -1,0 +1,45 @@
+{
+  "slug": "grok-3-standard",
+  "name": "Grok-3 (Standard)",
+  "orgSlug": "xai",
+  "familySlug": "grok-3",
+  "releaseDate": "2025-02-17",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (size undisclosed; trained on Colossus, ~10x Grok-2 compute)",
+  "ctxK": 131,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "docs.x.ai"
+  },
+  "note": "Instant/non-reasoning mode of Grok 3; API model card lists it as text-only. Deprecated May 15, 2026, requests now redirect to Grok 4.3.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Standard",
+  "isDefaultConfig": true,
+  "isBestConfig": false
+}

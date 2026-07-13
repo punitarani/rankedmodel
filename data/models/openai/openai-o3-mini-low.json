@@ -1,0 +1,45 @@
+{
+  "slug": "openai-o3-mini-low",
+  "name": "OpenAI o3-mini (Low)",
+  "orgSlug": "openai",
+  "familySlug": "o3",
+  "releaseDate": "2025-01-31",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer reasoning model (size undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.1,
+    "output": 4.4
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/o3-mini"
+  },
+  "note": "Low reasoning-effort setting: fastest/cheapest of the three o3-mini configurations.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Low",
+  "isDefaultConfig": false,
+  "isBestConfig": false
+}

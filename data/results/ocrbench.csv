@@ -1,0 +1,6 @@
+model_slug,score,source,source_url,evaluated_at,notes
+deepseek-vl2,811,self-reported,https://arxiv.org/html/2412.10302v1,,"Base variant, raw OCRBench score out of 1000"
+glm-4v-9b,786,self-reported,https://huggingface.co/THUDM/glm-4v-9b,,out of 1000
+internvl2-5-78b,854,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,
+internvl3-78b,906,self-reported,https://arxiv.org/html/2504.10479v1,,
+minicpm-o-2-6,897,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-01,State-of-the-art for models under 25B params

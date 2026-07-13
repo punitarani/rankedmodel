@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+ul2-20b,90.7,self-reported,https://arxiv.org/abs/2205.05131,,"SuperGLUE dev set average, finetuned"

@@ -1,0 +1,3 @@
+model_slug,score,source,source_url,evaluated_at,notes
+lg-exaone-4-0-32b-non-reasoning,89.8,self-reported,https://arxiv.org/abs/2507.11407,,Non-reasoning mode
+lg-exaone-4-0-32b-reasoning,92.3,self-reported,https://arxiv.org/abs/2507.11407,,Reasoning mode

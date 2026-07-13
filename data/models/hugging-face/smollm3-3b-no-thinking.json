@@ -1,0 +1,47 @@
+{
+  "slug": "smollm3-3b-no-thinking",
+  "name": "SmolLM3 3B (No Thinking)",
+  "orgSlug": "hugging-face",
+  "familySlug": "smollm",
+  "releaseDate": "2025-07-08",
+  "status": "released",
+  "predecessor": "smollm2-1-7b",
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 3.08,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer decoder, GQA (4 groups) + NoPE/RoPE 3:1 ratio, tied embeddings; single checkpoint with think/no_think dual reasoning modes",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 6,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "HuggingFaceTB/SmolLM3-3B",
+    "gh": "huggingface/smollm"
+  },
+  "note": "Non-reasoning (/no_think) mode of SmolLM3; faster inference, still outperforms other 3B non-reasoning instruct models.",
+  "quants": [
+    "GGUF Q4",
+    "MLX",
+    "ONNX"
+  ],
+  "vramQ4Gb": 3,
+  "vramFp16Gb": 6,
+  "tps4090": 300,
+  "tpsNote": "Community-reported estimate for Q4_K_M GGUF inference on RTX 4090 (llama.cpp)",
+  "effortLabel": "No Thinking",
+  "isDefaultConfig": false,
+  "isBestConfig": false
+}

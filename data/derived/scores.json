@@ -1,867 +1,6987 @@
 {
-  "computedFor": "2026-07-11",
+  "computedFor": "2026-07-01",
   "models": [
     {
-      "slug": "claude-3-5-sonnet",
-      "overallIndex": 47.8,
-      "rankOverall": 40,
-      "arenaElo": 1310,
+      "slug": "abab6-5",
+      "overallIndex": 0,
+      "rankOverall": 394,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 43.2,
-        "knowledge": 81.2,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ai21-jamba",
+      "overallIndex": 56.7,
+      "rankOverall": 228,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 40.4,
+        "reasoning": 62.8,
+        "coding": null,
+        "math": 59,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ai21-jamba-1-5-large",
+      "overallIndex": 67,
+      "rankOverall": 142,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 65.4,
+        "knowledge": 55.5,
+        "reasoning": 63.6,
+        "coding": 69.7,
+        "math": 88.2,
+        "vision": null,
+        "agents": 81.9
+      }
+    },
+    {
+      "slug": "ai21-jamba-1-5-mini",
+      "overallIndex": 55.3,
+      "rankOverall": 239,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 46.1,
+        "knowledge": 41.3,
+        "reasoning": 53,
+        "coding": 60,
+        "math": 76.1,
+        "vision": null,
+        "agents": 75.9
+      }
+    },
+    {
+      "slug": "ai21-jurassic-2-ultra",
+      "overallIndex": 0,
+      "rankOverall": 395,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "airoboros-70b-l2",
+      "overallIndex": 59,
+      "rankOverall": 214,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 45.2,
+        "reasoning": 72.9,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "alpaca-7b",
+      "overallIndex": 0,
+      "rankOverall": 396,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "amazon-nova-lite",
+      "overallIndex": 75.2,
+      "rankOverall": 57,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 67.5,
+        "reasoning": 71.3,
+        "coding": 85.7,
+        "math": 81.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "amazon-nova-micro",
+      "overallIndex": 73.5,
+      "rankOverall": 80,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 62.7,
+        "reasoning": 72.6,
+        "coding": 80.8,
+        "math": 77.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "amazon-nova-premier",
+      "overallIndex": 61.9,
+      "rankOverall": 195,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 77.7,
+        "reasoning": 46.1,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "amazon-nova-pro",
+      "overallIndex": 82,
+      "rankOverall": 20,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 76.5,
+        "reasoning": 80.8,
+        "coding": 89.8,
+        "math": 83.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "amazon-titan-text-express-lite",
+      "overallIndex": 0,
+      "rankOverall": 397,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "apple-dclm-baseline-7b",
+      "overallIndex": 48.2,
+      "rankOverall": 284,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 39.5,
+        "reasoning": 67.2,
+        "coding": null,
+        "math": 0,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "apple-foundation-model-on-device-3b",
+      "overallIndex": 35.7,
+      "rankOverall": 337,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 35.7,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "apple-openelm-270m-3b",
+      "overallIndex": 38.8,
+      "rankOverall": 326,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 38.8,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "aya-101",
+      "overallIndex": 0,
+      "rankOverall": 398,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "aya-23-35b",
+      "overallIndex": 30.3,
+      "rankOverall": 357,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 30.3,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "aya-expanse-32b",
+      "overallIndex": 40.5,
+      "rankOverall": 321,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 40.5,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "aya-vision-32b",
+      "overallIndex": 50.7,
+      "rankOverall": 270,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 48.2,
+        "reasoning": 18,
+        "coding": 64,
+        "math": 61.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "baichuan-3",
+      "overallIndex": 0,
+      "rankOverall": 399,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "baichuan-4",
+      "overallIndex": 0,
+      "rankOverall": 400,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "baichuan2-13b",
+      "overallIndex": 37.8,
+      "rankOverall": 330,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 46.2,
+        "reasoning": 28.9,
+        "coding": 8,
+        "math": 51.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "baichuan2-7b",
+      "overallIndex": 29.7,
+      "rankOverall": 360,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 39.5,
+        "reasoning": null,
+        "coding": 9.4,
+        "math": 21,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "bloom-176b",
+      "overallIndex": 6.3,
+      "rankOverall": 390,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 6.3,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "bloom-7b1",
+      "overallIndex": 0,
+      "rankOverall": 401,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "bloomz-176b",
+      "overallIndex": 31,
+      "rankOverall": 354,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 31,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "btlm-3b-8k",
+      "overallIndex": 23.2,
+      "rankOverall": 372,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 0,
+        "reasoning": 38.7,
+        "coding": 0,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "cerebras-gpt-13b",
+      "overallIndex": 35.2,
+      "rankOverall": 340,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 35.2,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "chatglm-6b",
+      "overallIndex": 25.2,
+      "rankOverall": 365,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 25.2,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "chatglm2-6b",
+      "overallIndex": 18.5,
+      "rankOverall": 380,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 24.6,
+        "reasoning": 0,
+        "coding": null,
+        "math": 24.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "chatglm3-6b",
+      "overallIndex": 47.4,
+      "rankOverall": 288,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 50.5,
+        "reasoning": 55.5,
+        "coding": 48.2,
+        "math": 39.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "chinchilla",
+      "overallIndex": 60.1,
+      "rankOverall": 206,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 56.2,
+        "reasoning": 64.1,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-1",
+      "overallIndex": 12.2,
+      "rankOverall": 387,
+      "arenaElo": 1195,
+      "categoryIdx": {
+        "human-preference": 12.2,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-2",
+      "overallIndex": 79.4,
+      "rankOverall": 35,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 69.5,
+        "math": 89.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-2-1",
+      "overallIndex": 0,
+      "rankOverall": 402,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-3-5-haiku",
+      "overallIndex": 57,
+      "rankOverall": 227,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 67.2,
         "reasoning": 27,
-        "coding": 44,
-        "math": 44.4,
+        "coding": 64.7,
+        "math": 61.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-3-5-sonnet",
+      "overallIndex": 74,
+      "rankOverall": 70,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 81.2,
+        "reasoning": 78.6,
+        "coding": 63.1,
+        "math": 81.1,
         "vision": 60.4,
-        "agents": 62.6
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-3-7-sonnet",
+      "overallIndex": 49,
+      "rankOverall": 279,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 60,
+        "coding": 63.7,
+        "math": 23.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-3-haiku",
+      "overallIndex": 63,
+      "rankOverall": 184,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 58.7,
+        "reasoning": 65.1,
+        "coding": 77.4,
+        "math": 56.9,
+        "vision": 37.8,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-3-opus",
+      "overallIndex": 74.1,
+      "rankOverall": 69,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 78,
+        "reasoning": 82.6,
+        "coding": 64.6,
+        "math": 73.4,
+        "vision": 49.3,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-3-sonnet",
+      "overallIndex": 67.2,
+      "rankOverall": 141,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 65,
+        "reasoning": 71,
+        "coding": 75.2,
+        "math": 61.4,
+        "vision": 41.4,
+        "agents": null
       }
     },
     {
       "slug": "claude-haiku-4-5",
-      "overallIndex": 69.8,
-      "rankOverall": 25,
-      "arenaElo": 1408,
+      "overallIndex": 71.9,
+      "rankOverall": 95,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 69.7,
-        "knowledge": 81.5,
-        "reasoning": 42,
-        "coding": 69.7,
-        "math": 87.3,
-        "vision": 70.5,
-        "agents": 78.2
+        "human-preference": null,
+        "knowledge": 86.7,
+        "reasoning": 55.7,
+        "coding": 73.3,
+        "math": null,
+        "vision": null,
+        "agents": null
       }
     },
     {
-      "slug": "claude-opus-4-7",
-      "overallIndex": 86.3,
-      "rankOverall": 3,
-      "arenaElo": 1502,
+      "slug": "claude-instant-1-2",
+      "overallIndex": 71.6,
+      "rankOverall": 99,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 95.1,
-        "knowledge": 88,
-        "reasoning": 74.6,
-        "coding": 82.9,
-        "math": 98.4,
-        "vision": 82.1,
-        "agents": 85.9
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 55.3,
+        "math": 87.8,
+        "vision": null,
+        "agents": null
       }
     },
     {
-      "slug": "claude-opus-4-8",
-      "overallIndex": 87.9,
-      "rankOverall": 1,
-      "arenaElo": 1510,
+      "slug": "claude-opus-4",
+      "overallIndex": 72,
+      "rankOverall": 94,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 97.3,
-        "knowledge": 88.5,
-        "reasoning": 78.3,
-        "coding": 84.2,
-        "math": 99,
-        "vision": 83.5,
-        "agents": 87.1
+        "human-preference": null,
+        "knowledge": 81.3,
+        "reasoning": 74.5,
+        "coding": 60.3,
+        "math": 75.5,
+        "vision": 70.6,
+        "agents": 81.4
+      }
+    },
+    {
+      "slug": "claude-opus-4-1",
+      "overallIndex": 69.2,
+      "rankOverall": 127,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 76.1,
+        "coding": 61.3,
+        "math": 78,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-opus-4-5",
+      "overallIndex": 76.9,
+      "rankOverall": 46,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 84.7,
+        "reasoning": 63.5,
+        "coding": 80.9,
+        "math": 93,
+        "vision": 75.9,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-opus-4-5-high",
+      "overallIndex": 72.4,
+      "rankOverall": 89,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 84.7,
+        "reasoning": 63.5,
+        "coding": 73.4,
+        "math": null,
+        "vision": 75.9,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-opus-4-5-medium",
+      "overallIndex": 0,
+      "rankOverall": 403,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "claude-opus-4-6",
+      "overallIndex": 70.6,
+      "rankOverall": 112,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 64.6,
+        "coding": 76.7,
+        "math": null,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "claude-sonnet-4",
-      "overallIndex": 70.8,
-      "rankOverall": 24,
-      "arenaElo": 1420,
+      "overallIndex": 68.3,
+      "rankOverall": 133,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 73,
-        "knowledge": 84,
-        "reasoning": 45.8,
-        "coding": 70.6,
-        "math": 84.7,
-        "vision": 72.4,
-        "agents": 76.5
+        "human-preference": null,
+        "knowledge": 77.5,
+        "reasoning": 69.3,
+        "coding": 56.1,
+        "math": 70.5,
+        "vision": 68,
+        "agents": 80.5
       }
     },
     {
-      "slug": "claude-sonnet-4-6",
-      "overallIndex": 82.7,
-      "rankOverall": 8,
-      "arenaElo": 1488,
+      "slug": "claude-sonnet-4-5",
+      "overallIndex": 79.4,
+      "rankOverall": 36,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 91.4,
-        "knowledge": 86.2,
-        "reasoning": 66.6,
-        "coding": 80.3,
-        "math": 96.4,
-        "vision": 79.3,
-        "agents": 84
+        "human-preference": null,
+        "knowledge": 81.8,
+        "reasoning": 79.3,
+        "coding": 77.2,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "code-llama-13b",
+      "overallIndex": 35.8,
+      "rankOverall": 334,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 35.8,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "code-llama-34b",
+      "overallIndex": 47.6,
+      "rankOverall": 287,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 47.6,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "code-llama-34b-python",
+      "overallIndex": 51.1,
+      "rankOverall": 267,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 51.1,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "code-llama-70b",
+      "overallIndex": 0,
+      "rankOverall": 404,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "code-llama-70b-instruct",
+      "overallIndex": 65.7,
+      "rankOverall": 152,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 65.7,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "code-llama-7b",
+      "overallIndex": 31.2,
+      "rankOverall": 353,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 31.2,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "codegeex-13b",
+      "overallIndex": 14.6,
+      "rankOverall": 384,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 14.6,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "codegemma-7b",
+      "overallIndex": 45.9,
+      "rankOverall": 298,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 45.9,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "codegen-16b-mono",
+      "overallIndex": 21.9,
+      "rankOverall": 376,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 21.9,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "codegen2-5-7b",
+      "overallIndex": 26.6,
+      "rankOverall": 363,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 26.6,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "codeqwen1-5-7b",
+      "overallIndex": 59.1,
+      "rankOverall": 212,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 59.1,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "codestral-22b",
+      "overallIndex": 79.1,
+      "rankOverall": 39,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 79.1,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "codestral-25-01",
+      "overallIndex": 65.7,
+      "rankOverall": 153,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 65.7,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "codestral-mamba-7b",
+      "overallIndex": 73.9,
+      "rankOverall": 73,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 73.9,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "codet5-16b",
+      "overallIndex": 23.8,
+      "rankOverall": 370,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 23.8,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "cogvlm-17b",
+      "overallIndex": 87.3,
+      "rankOverall": 5,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 87.3,
+        "agents": null
+      }
+    },
+    {
+      "slug": "command",
+      "overallIndex": 0,
+      "rankOverall": 405,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "command-a",
-      "overallIndex": 40.2,
-      "rankOverall": 46,
-      "arenaElo": 1305,
+      "overallIndex": 68.7,
+      "rankOverall": 130,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 41.9,
+        "human-preference": null,
         "knowledge": 75.8,
-        "reasoning": 21.8,
-        "coding": 25.5,
+        "reasoning": 68.5,
+        "coding": 86.6,
+        "math": 75,
+        "vision": null,
+        "agents": 53.2
+      }
+    },
+    {
+      "slug": "command-r",
+      "overallIndex": 0,
+      "rankOverall": 406,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "command-r7b",
+      "overallIndex": 48.3,
+      "rankOverall": 283,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 42,
+        "reasoning": 44.1,
+        "coding": 70.5,
         "math": 48.9,
         "vision": null,
-        "agents": 51.4
+        "agents": 40.3
       }
     },
     {
-      "slug": "deepseek-r1",
-      "overallIndex": 60.7,
-      "rankOverall": 33,
-      "arenaElo": 1358,
+      "slug": "dbrx",
+      "overallIndex": 69.7,
+      "rankOverall": 121,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 56.2,
+        "human-preference": null,
+        "knowledge": 56.2,
+        "reasoning": 87.7,
+        "coding": 68.3,
+        "math": 66.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "decilm-7b",
+      "overallIndex": 55.1,
+      "rankOverall": 241,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 32.9,
+        "reasoning": 65.7,
+        "coding": null,
+        "math": 45.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-coder-33b",
+      "overallIndex": 73.5,
+      "rankOverall": 81,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 73.5,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-coder-v2-236b",
+      "overallIndex": 73.5,
+      "rankOverall": 82,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 64.8,
+        "reasoning": null,
+        "coding": 69.9,
+        "math": 83.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-llm-67b",
+      "overallIndex": 57.9,
+      "rankOverall": 220,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 51.8,
+        "reasoning": 64.2,
+        "coding": 72.5,
+        "math": 50.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-prover-v2-671b",
+      "overallIndex": 64.9,
+      "rankOverall": 162,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": 64.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-r1-0528",
+      "overallIndex": 68.3,
+      "rankOverall": 134,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 93.3,
+        "reasoning": 47,
+        "coding": 65.5,
+        "math": 91.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-r1-671b",
+      "overallIndex": 70.9,
+      "rankOverall": 108,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
         "knowledge": 84.7,
-        "reasoning": 36.5,
-        "coding": 57.6,
+        "reasoning": 64.4,
+        "coding": 57,
         "math": 88.2,
         "vision": null,
-        "agents": 41
+        "agents": null
       }
     },
     {
-      "slug": "deepseek-v3-2",
-      "overallIndex": 76.6,
-      "rankOverall": 18,
-      "arenaElo": 1442,
+      "slug": "deepseek-r1-distill-llama-70b",
+      "overallIndex": 63,
+      "rankOverall": 185,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 78.9,
-        "knowledge": 85,
-        "reasoning": 56.9,
-        "coding": 74.6,
-        "math": 95.2,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 56.5,
+        "coding": 47.7,
+        "math": 81.6,
         "vision": null,
-        "agents": 72
+        "agents": null
       }
     },
     {
-      "slug": "deepseek-v4-1",
-      "overallIndex": 82.7,
-      "rankOverall": 9,
-      "arenaElo": 1478,
+      "slug": "deepseek-r1-distill-qwen-32b",
+      "overallIndex": 63.2,
+      "rankOverall": 180,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 88.6,
-        "knowledge": 87,
-        "reasoning": 69.2,
-        "coding": 80.8,
-        "math": 97.9,
-        "vision": 77,
-        "agents": 78.8
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 52.6,
+        "coding": 48.9,
+        "math": 82.7,
+        "vision": null,
+        "agents": null
       }
     },
     {
-      "slug": "deepseek-v4-5",
-      "overallIndex": 83.7,
-      "rankOverall": 6,
-      "arenaElo": 1483,
+      "slug": "deepseek-r1-zero",
+      "overallIndex": 62.4,
+      "rankOverall": 191,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 90,
-        "knowledge": 87.3,
-        "reasoning": 70.9,
-        "coding": 81.7,
-        "math": 98.3,
-        "vision": 78,
-        "agents": 80.2
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 66.6,
+        "coding": 39.6,
+        "math": 82.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-v2-236b",
+      "overallIndex": 71.1,
+      "rankOverall": 105,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 63,
+        "reasoning": 76.5,
+        "coding": 75.6,
+        "math": 68.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-v2-5",
+      "overallIndex": 68.9,
+      "rankOverall": 129,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 76.2,
+        "knowledge": 67.8,
+        "reasoning": null,
+        "coding": 65.8,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-v3-0324",
+      "overallIndex": 64.3,
+      "rankOverall": 169,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 88.3,
+        "reasoning": 60.5,
+        "coding": 49.2,
+        "math": 59.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-v3-1-non-thinking",
+      "overallIndex": 72.5,
+      "rankOverall": 87,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 89,
+        "reasoning": 68.6,
+        "coding": 61.2,
+        "math": 66.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-v3-1-thinking",
+      "overallIndex": 73.6,
+      "rankOverall": 76,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 91.3,
+        "reasoning": 45.5,
+        "coding": 74.8,
+        "math": 93.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-v3-671b",
+      "overallIndex": 65.8,
+      "rankOverall": 151,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 81,
+        "reasoning": 48.9,
+        "coding": 54,
+        "math": 87.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-vl-7b",
+      "overallIndex": 45.5,
+      "rankOverall": 299,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 45.5,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseek-vl2",
+      "overallIndex": 72.3,
+      "rankOverall": 91,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 72.3,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseekmath-7b",
+      "overallIndex": 64.5,
+      "rankOverall": 167,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": 64.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "deepseekmoe-16b",
+      "overallIndex": 28.4,
+      "rankOverall": 361,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 8.3,
+        "reasoning": 71.4,
+        "coding": 19.1,
+        "math": 14.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "devstral-small",
+      "overallIndex": 46.8,
+      "rankOverall": 291,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 46.8,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "dolphin-2-5-mixtral-8x7b",
+      "overallIndex": 0,
+      "rankOverall": 407,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "doubao-1-5-pro",
+      "overallIndex": 0,
+      "rankOverall": 408,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "doubao-1st-gen",
+      "overallIndex": 0,
+      "rankOverall": 409,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "doubao-seed-1-6",
+      "overallIndex": 96,
+      "rankOverall": 1,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": 96,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ernie-3-0-titan",
+      "overallIndex": 0,
+      "rankOverall": 410,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ernie-4-0",
+      "overallIndex": 0,
+      "rankOverall": 411,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ernie-4-5-300b-a47b",
+      "overallIndex": 54.9,
+      "rankOverall": 242,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 84.5,
+        "reasoning": 40.1,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ernie-4-5-vl-424b-a47b",
+      "overallIndex": 0,
+      "rankOverall": 412,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ernie-5-0-preview",
+      "overallIndex": 42.8,
+      "rankOverall": 310,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 42.8,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ernie-bot-ernie-3-5",
+      "overallIndex": 0,
+      "rankOverall": 413,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ernie-x1",
+      "overallIndex": 0,
+      "rankOverall": 414,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "falcon-180b",
+      "overallIndex": 0,
+      "rankOverall": 415,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "falcon-2-11b",
+      "overallIndex": 53.5,
+      "rankOverall": 252,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 37,
+        "reasoning": 64.8,
+        "coding": null,
+        "math": 52.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "falcon-40b",
+      "overallIndex": 17.7,
+      "rankOverall": 382,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": 17.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "falcon-7b",
+      "overallIndex": 0,
+      "rankOverall": 416,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "falcon-h1-34b",
+      "overallIndex": 69.7,
+      "rankOverall": 122,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 65.9,
+        "reasoning": 62.6,
+        "coding": 87.7,
+        "math": 82.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "falcon-h1r-7b",
+      "overallIndex": 65.4,
+      "rankOverall": 155,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 76.1,
+        "reasoning": 31.4,
+        "coding": 68.6,
+        "math": 92.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "falcon-mamba-7b",
+      "overallIndex": 52.7,
+      "rankOverall": 255,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 40.7,
+        "reasoning": 61.2,
+        "coding": null,
+        "math": 51.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "falcon3-10b",
+      "overallIndex": 46.7,
+      "rankOverall": 292,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 56.5,
+        "reasoning": 34.5,
+        "coding": 73.5,
+        "math": 46.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "falcon3-7b",
+      "overallIndex": 46.3,
+      "rankOverall": 296,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 50.8,
+        "reasoning": 44.8,
+        "coding": null,
+        "math": 47,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "flan-t5-xxl",
+      "overallIndex": 24.4,
+      "rankOverall": 368,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 25.2,
+        "reasoning": 23.5,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "galactica-120b",
+      "overallIndex": 26.7,
+      "rankOverall": 362,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 33.9,
+        "reasoning": 38.3,
+        "coding": null,
+        "math": 0.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-1-0-nano",
+      "overallIndex": 26.3,
+      "rankOverall": 364,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 26.3,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-1-0-pro",
+      "overallIndex": 53,
+      "rankOverall": 253,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 53,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-1-0-ultra",
+      "overallIndex": 83.3,
+      "rankOverall": 15,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 83.3,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-1-5-flash",
+      "overallIndex": 65.1,
+      "rankOverall": 160,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 64.8,
+        "reasoning": 68,
+        "coding": 73.1,
+        "math": 65.5,
+        "vision": 45.1,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-1-5-flash-8b",
+      "overallIndex": 35.8,
+      "rankOverall": 335,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 46.8,
+        "reasoning": 37.1,
+        "coding": null,
+        "math": 19.9,
+        "vision": 37.9,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-1-5-pro",
+      "overallIndex": 54.6,
+      "rankOverall": 246,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 76.5,
+        "reasoning": 32.8,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-2-0-flash",
+      "overallIndex": 64.3,
+      "rankOverall": 170,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 83.5,
+        "reasoning": 50.1,
+        "coding": 34.5,
+        "math": 88.6,
+        "vision": 64.6,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-2-0-flash-lite",
+      "overallIndex": 57.4,
+      "rankOverall": 221,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 75.5,
+        "reasoning": 39.4,
+        "coding": 28.9,
+        "math": 83.5,
+        "vision": 60,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-2-0-pro-experimental",
+      "overallIndex": 0,
+      "rankOverall": 417,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "gemini-2-5-flash",
-      "overallIndex": 64.9,
-      "rankOverall": 29,
-      "arenaElo": 1401,
+      "overallIndex": 63,
+      "rankOverall": 186,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 67.8,
-        "knowledge": 80.3,
-        "reasoning": 42.5,
-        "coding": 56.2,
-        "math": 84.9,
-        "vision": 70.9,
-        "agents": 63
+        "human-preference": null,
+        "knowledge": 80.7,
+        "reasoning": 44.7,
+        "coding": 62.1,
+        "math": 72,
+        "vision": 74.6,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-2-5-flash-lite-non-thinking",
+      "overallIndex": 40.7,
+      "rankOverall": 320,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 68.5,
+        "reasoning": 30.4,
+        "coding": 32.7,
+        "math": 49.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-2-5-flash-lite-thinking",
+      "overallIndex": 44.1,
+      "rankOverall": 306,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 74.2,
+        "reasoning": 32.6,
+        "coding": 31,
+        "math": 63.1,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "gemini-2-5-pro",
-      "overallIndex": 74.7,
-      "rankOverall": 22,
-      "arenaElo": 1451,
+      "overallIndex": 41.3,
+      "rankOverall": 314,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 81.4,
-        "knowledge": 84.7,
-        "reasoning": 52.3,
-        "coding": 69.7,
-        "math": 93.9,
-        "vision": 77.5,
-        "agents": 71.9
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 18.8,
+        "coding": 63.8,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-3-1-flash-lite",
+      "overallIndex": 82.7,
+      "rankOverall": 17,
+      "arenaElo": 1432,
+      "categoryIdx": {
+        "human-preference": 76.2,
+        "knowledge": null,
+        "reasoning": 83.6,
+        "coding": null,
+        "math": null,
+        "vision": 88.3,
+        "agents": null
       }
     },
     {
       "slug": "gemini-3-1-pro",
-      "overallIndex": 85.9,
-      "rankOverall": 4,
-      "arenaElo": 1499,
+      "overallIndex": 87.7,
+      "rankOverall": 3,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 94.3,
-        "knowledge": 87.7,
-        "reasoning": 72.9,
-        "coding": 83.1,
-        "math": 98.9,
-        "vision": 85,
-        "agents": 82.7
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 85,
+        "coding": 87.5,
+        "math": null,
+        "vision": 93.6,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-3-5-flash",
+      "overallIndex": 82.6,
+      "rankOverall": 18,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 69.9,
+        "math": null,
+        "vision": 95.4,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemini-3-flash",
+      "overallIndex": 74.8,
+      "rankOverall": 61,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 86.3,
+        "reasoning": 60.9,
+        "coding": 71.9,
+        "math": 95.2,
+        "vision": 76.5,
+        "agents": null
       }
     },
     {
       "slug": "gemini-3-pro",
-      "overallIndex": 82.5,
-      "rankOverall": 10,
-      "arenaElo": 1490,
+      "overallIndex": 76.2,
+      "rankOverall": 51,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 91.9,
-        "knowledge": 86.7,
+        "human-preference": null,
+        "knowledge": 86.3,
         "reasoning": 63.7,
-        "coding": 80.6,
-        "math": 96.6,
-        "vision": 84.5,
-        "agents": 80.1
+        "coding": 74.1,
+        "math": 95,
+        "vision": 76.3,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemma-2-27b",
+      "overallIndex": 68.2,
+      "rankOverall": 135,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 58.7,
+        "reasoning": 74.2,
+        "coding": 47.5,
+        "math": 74.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemma-2-9b",
+      "overallIndex": 60.6,
+      "rankOverall": 204,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 52.2,
+        "reasoning": 67.3,
+        "coding": 34.3,
+        "math": 68.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemma-2b",
+      "overallIndex": 23.6,
+      "rankOverall": 371,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 3.8,
+        "reasoning": 43.5,
+        "coding": 13.6,
+        "math": 13.7,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "gemma-3-12b",
-      "overallIndex": 30,
-      "rankOverall": 53,
-      "arenaElo": 1321,
+      "overallIndex": 46.4,
+      "rankOverall": 295,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 46.2,
-        "knowledge": 57.5,
-        "reasoning": 11.2,
-        "coding": 15.4,
-        "math": 34.8,
+        "human-preference": null,
+        "knowledge": 46,
+        "reasoning": 26.1,
+        "coding": 38.9,
+        "math": 79.8,
         "vision": 49.5,
-        "agents": 24.5
+        "agents": null
       }
     },
     {
       "slug": "gemma-3-27b",
-      "overallIndex": 36.2,
-      "rankOverall": 50,
-      "arenaElo": 1341,
+      "overallIndex": 51.8,
+      "rankOverall": 262,
+      "arenaElo": 1338,
       "categoryIdx": {
-        "human-preference": 51.6,
-        "knowledge": 64.3,
-        "reasoning": 16.5,
-        "coding": 19.9,
-        "math": 43.1,
+        "human-preference": 50.8,
+        "knowledge": 51.6,
+        "reasoning": 28,
+        "coding": 45.1,
+        "math": 86.3,
         "vision": 56.1,
-        "agents": 31
+        "agents": null
       }
     },
     {
-      "slug": "glm-4-7",
-      "overallIndex": 78.1,
-      "rankOverall": 17,
-      "arenaElo": 1445,
+      "slug": "gemma-3-4b",
+      "overallIndex": 32.7,
+      "rankOverall": 345,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 79.7,
-        "knowledge": 84.3,
-        "reasoning": 56.8,
-        "coding": 79.4,
-        "math": 96.6,
+        "human-preference": null,
+        "knowledge": 30.7,
+        "reasoning": 13.5,
+        "coding": 26.5,
+        "math": 69.5,
+        "vision": 36,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gemma-4",
+      "overallIndex": 87.7,
+      "rankOverall": 4,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 93.6,
+        "reasoning": 80.4,
+        "coding": null,
+        "math": 89.2,
         "vision": null,
-        "agents": 73.8
+        "agents": null
       }
     },
     {
-      "slug": "glm-5",
-      "overallIndex": 79.8,
-      "rankOverall": 15,
-      "arenaElo": 1451,
+      "slug": "gemma-7b",
+      "overallIndex": 46.5,
+      "rankOverall": 294,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 81.4,
-        "knowledge": 85.3,
-        "reasoning": 61.9,
-        "coding": 79.4,
-        "math": 96.7,
+        "human-preference": null,
+        "knowledge": 40.5,
+        "reasoning": 56.2,
+        "coding": 25.3,
+        "math": 44.5,
         "vision": null,
-        "agents": 75.6
+        "agents": null
       }
     },
     {
-      "slug": "glm-5-2",
-      "overallIndex": 82.3,
-      "rankOverall": 11,
-      "arenaElo": 1474,
+      "slug": "gigachat",
+      "overallIndex": 0,
+      "rankOverall": 418,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 87.6,
-        "knowledge": 86.7,
-        "reasoning": 68,
-        "coding": 81.1,
-        "math": 97.5,
-        "vision": 76.1,
-        "agents": 79.4
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "glm-130b",
+      "overallIndex": 40.5,
+      "rankOverall": 322,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 8,
+        "reasoning": 73.1,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "glm-4",
+      "overallIndex": 76.1,
+      "rankOverall": 53,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 72.2,
+        "reasoning": 84.2,
+        "coding": 77.8,
+        "math": 73.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "glm-4-32b-0414",
+      "overallIndex": 74.9,
+      "rankOverall": 59,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 93.9,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": 65.4
+      }
+    },
+    {
+      "slug": "glm-4-5-355b-a32b",
+      "overallIndex": 68.5,
+      "rankOverall": 132,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 92.8,
+        "reasoning": 44.1,
+        "coding": 68.6,
+        "math": 91,
+        "vision": null,
+        "agents": 70.1
+      }
+    },
+    {
+      "slug": "glm-4-5-air-106b-a12b",
+      "overallIndex": 64.3,
+      "rankOverall": 171,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 88.5,
+        "reasoning": 39.7,
+        "coding": 64.2,
+        "math": 89.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "glm-4-9b-chat",
+      "overallIndex": 64.1,
+      "rankOverall": 172,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 64.1,
+        "reasoning": 68.1,
+        "coding": 70.2,
+        "math": 59.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "glm-4-plus",
+      "overallIndex": 78,
+      "rankOverall": 41,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 78,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "glm-4v-9b",
+      "overallIndex": 74.6,
+      "rankOverall": 63,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 74.6,
+        "agents": null
+      }
+    },
+    {
+      "slug": "glm-z1-32b-0414",
+      "overallIndex": 0,
+      "rankOverall": 419,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gopher",
+      "overallIndex": 51.5,
+      "rankOverall": 265,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 42.5,
+        "reasoning": 57.5,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gorilla-7b",
+      "overallIndex": 71.5,
+      "rankOverall": 100,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": 71.5
+      }
+    },
+    {
+      "slug": "gpt-3-175b",
+      "overallIndex": 74,
+      "rankOverall": 71,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 63.4,
+        "reasoning": 79.4,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-3-5-turbo",
+      "overallIndex": 64.1,
+      "rankOverall": 173,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 50,
+        "reasoning": 74.8,
+        "coding": 43.3,
+        "math": 56,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-4",
+      "overallIndex": 85.7,
+      "rankOverall": 10,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 77.3,
+        "reasoning": 91.1,
+        "coding": 64.8,
+        "math": 93.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-4-1",
+      "overallIndex": 65.5,
+      "rankOverall": 154,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 83.7,
+        "reasoning": 57.9,
+        "coding": 55,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-4-1-mini",
+      "overallIndex": 59.5,
+      "rankOverall": 209,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 79.2,
+        "reasoning": 72.6,
+        "coding": 23.6,
+        "math": 49.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-4-1-nano",
+      "overallIndex": 38.5,
+      "rankOverall": 329,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 66.8,
+        "reasoning": 37.9,
+        "coding": 10.9,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-4-5",
+      "overallIndex": 63.5,
+      "rankOverall": 178,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 87,
+        "reasoning": 64.3,
+        "coding": 38,
+        "math": 36.7,
+        "vision": 68,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-4-turbo",
+      "overallIndex": 52.4,
+      "rankOverall": 261,
+      "arenaElo": 1251,
+      "categoryIdx": {
+        "human-preference": 27.3,
+        "knowledge": 77.5,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "gpt-4o",
-      "overallIndex": 43.8,
-      "rankOverall": 43,
-      "arenaElo": 1336,
+      "overallIndex": 75.3,
+      "rankOverall": 55,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 50.3,
+        "human-preference": null,
         "knowledge": 81.2,
-        "reasoning": 22.6,
-        "coding": 33.6,
-        "math": 42.1,
-        "vision": 61.4,
-        "agents": 48.8
+        "reasoning": 42,
+        "coding": 91.1,
+        "math": 81.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-4o-mini",
+      "overallIndex": 73.6,
+      "rankOverall": 77,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 70,
+        "reasoning": null,
+        "coding": 87.7,
+        "math": 87.5,
+        "vision": 49.3,
+        "agents": null
       }
     },
     {
       "slug": "gpt-5",
-      "overallIndex": 81.1,
-      "rankOverall": 12,
-      "arenaElo": 1481,
+      "overallIndex": 78.7,
+      "rankOverall": 40,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 89.5,
-        "knowledge": 86.5,
-        "reasoning": 64.4,
-        "coding": 77.4,
-        "math": 96.1,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 53.5,
+        "coding": 86.3,
+        "math": 94.6,
         "vision": 80.3,
-        "agents": 79
+        "agents": 96.7
+      }
+    },
+    {
+      "slug": "gpt-5-1",
+      "overallIndex": 85.1,
+      "rankOverall": 13,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 76.3,
+        "math": 94,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-5-2",
+      "overallIndex": 77.5,
+      "rankOverall": 44,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 66,
+        "coding": 80,
+        "math": 100,
+        "vision": null,
+        "agents": 98.7
       }
     },
     {
       "slug": "gpt-5-5",
-      "overallIndex": 84.4,
-      "rankOverall": 5,
-      "arenaElo": 1494,
+      "overallIndex": 72.1,
+      "rankOverall": 93,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 93,
-        "knowledge": 87.3,
-        "reasoning": 71.2,
-        "coding": 80.3,
-        "math": 98.6,
-        "vision": 82.4,
-        "agents": 81.5
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 80.5,
+        "math": 46.9,
+        "vision": null,
+        "agents": 84.7
       }
     },
     {
-      "slug": "gpt-5-5-pro",
-      "overallIndex": 87.1,
-      "rankOverall": 2,
-      "arenaElo": 1506,
+      "slug": "gpt-5-6",
+      "overallIndex": 82,
+      "rankOverall": 21,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 96.2,
-        "knowledge": 88.2,
-        "reasoning": 76.7,
-        "coding": 83,
-        "math": 99.5,
-        "vision": 84.3,
-        "agents": 84
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 81.6,
+        "math": 93,
+        "vision": null,
+        "agents": 71.6
       }
     },
     {
-      "slug": "gpt-oss-120b",
-      "overallIndex": 62.9,
-      "rankOverall": 31,
-      "arenaElo": 1352,
+      "slug": "gpt-5-codex",
+      "overallIndex": 74.5,
+      "rankOverall": 64,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 54.6,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 74.5,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-5-mini",
+      "overallIndex": 66.3,
+      "rankOverall": 148,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 47.3,
+        "coding": 79.6,
+        "math": 91.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-5-nano",
+      "overallIndex": 64,
+      "rankOverall": 174,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 64,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-j-6b",
+      "overallIndex": 51.4,
+      "rankOverall": 266,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 51.4,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-neo-2-7b",
+      "overallIndex": 32.3,
+      "rankOverall": 347,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 32.3,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-neox-20b",
+      "overallIndex": 33.9,
+      "rankOverall": 342,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 0,
+        "reasoning": 45.2,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-oss-120b-high",
+      "overallIndex": 79.2,
+      "rankOverall": 37,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
         "knowledge": 83.3,
-        "reasoning": 39.6,
-        "coding": 56.1,
-        "math": 87.7,
+        "reasoning": 75.1,
+        "coding": 62.4,
+        "math": 95.8,
         "vision": null,
-        "agents": 61.7
+        "agents": null
       }
     },
     {
-      "slug": "gpt-oss-20b",
-      "overallIndex": 52.4,
-      "rankOverall": 38,
-      "arenaElo": 1288,
+      "slug": "gpt-oss-120b-low",
+      "overallIndex": 59.9,
+      "rankOverall": 208,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 37.3,
+        "human-preference": null,
+        "knowledge": 76.5,
+        "reasoning": 58.9,
+        "coding": 47.9,
+        "math": 56.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-oss-120b-medium",
+      "overallIndex": 69.8,
+      "rankOverall": 119,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 80,
+        "reasoning": 66.4,
+        "coding": 52.6,
+        "math": 80.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-oss-20b-high",
+      "overallIndex": 73.2,
+      "rankOverall": 83,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
         "knowledge": 75.5,
-        "reasoning": 32.2,
-        "coding": 42.8,
-        "math": 80.7,
+        "reasoning": 64.4,
+        "coding": 60.7,
+        "math": 92.1,
         "vision": null,
-        "agents": 47.2
+        "agents": null
       }
     },
     {
-      "slug": "granite-4-h",
-      "overallIndex": 31.3,
-      "rankOverall": 52,
-      "arenaElo": 1246,
+      "slug": "gpt-oss-20b-low",
+      "overallIndex": 48.2,
+      "rankOverall": 285,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 25.9,
-        "knowledge": 64,
-        "reasoning": 16.3,
-        "coding": 18.9,
-        "math": 40.6,
+        "human-preference": null,
+        "knowledge": 67.3,
+        "reasoning": 46,
+        "coding": 37.4,
+        "math": 42.1,
         "vision": null,
-        "agents": 40.2
+        "agents": null
+      }
+    },
+    {
+      "slug": "gpt-oss-20b-medium",
+      "overallIndex": 66,
+      "rankOverall": 149,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 73.3,
+        "reasoning": 57.5,
+        "coding": 53.2,
+        "math": 80,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "granite-3-0-2b-instruct",
+      "overallIndex": 34.8,
+      "rankOverall": 341,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 61,
+        "knowledge": 22,
+        "reasoning": 34.7,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "granite-3-0-8b-instruct",
+      "overallIndex": 52.6,
+      "rankOverall": 258,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 70.3,
+        "knowledge": 34.5,
+        "reasoning": 61.9,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "granite-3-1-8b-instruct",
+      "overallIndex": 40.8,
+      "rankOverall": 319,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 29.9,
+        "reasoning": 45.3,
+        "coding": null,
+        "math": 38.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "granite-3-2-8b-instruct",
+      "overallIndex": 63.2,
+      "rankOverall": 181,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 55.3,
+        "knowledge": 44.7,
+        "reasoning": 56.7,
+        "coding": 90.2,
+        "math": 82.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "granite-3-3-8b-instruct",
+      "overallIndex": 58.9,
+      "rankOverall": 215,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 57.6,
+        "knowledge": 42.6,
+        "reasoning": 62.9,
+        "coding": 90.6,
+        "math": 50.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "granite-34b-code-instruct",
+      "overallIndex": 50.9,
+      "rankOverall": 268,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 50.9,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "granite-4-0-h-small",
+      "overallIndex": 70,
+      "rankOverall": 115,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 59,
+        "reasoning": 66.3,
+        "coding": 74.7,
+        "math": 88.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "granite-8b-code-instruct",
+      "overallIndex": 45,
+      "rankOverall": 302,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 45,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "grok-1",
+      "overallIndex": 0,
+      "rankOverall": 420,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "grok-1-5",
+      "overallIndex": 56.5,
+      "rankOverall": 230,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 58.4,
+        "reasoning": 19.9,
+        "coding": 72.8,
+        "math": 64.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "grok-2",
+      "overallIndex": 72.8,
+      "rankOverall": 85,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 79.9,
+        "reasoning": 45,
+        "coding": 89.1,
+        "math": 70.1,
+        "vision": 72.9,
+        "agents": null
+      }
+    },
+    {
+      "slug": "grok-2-mini",
+      "overallIndex": 69.6,
+      "rankOverall": 124,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 76.5,
+        "reasoning": 38.8,
+        "coding": 86,
+        "math": 66.3,
+        "vision": 71,
+        "agents": null
+      }
+    },
+    {
+      "slug": "grok-3-mini",
+      "overallIndex": 81.8,
+      "rankOverall": 25,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 73.9,
+        "coding": 69.6,
+        "math": 91.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "grok-3-standard",
+      "overallIndex": 60.7,
+      "rankOverall": 203,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 69.3,
+        "coding": null,
+        "math": 52.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "grok-3-think",
+      "overallIndex": 81.5,
+      "rankOverall": 26,
+      "arenaElo": 1400,
+      "categoryIdx": {
+        "human-preference": 67.6,
+        "knowledge": 86.5,
+        "reasoning": 80.7,
+        "coding": 79.4,
+        "math": 93.3,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "grok-4",
-      "overallIndex": 75.5,
-      "rankOverall": 20,
-      "arenaElo": 1446,
+      "overallIndex": 59.3,
+      "rankOverall": 211,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 80,
-        "knowledge": 86,
-        "reasoning": 54.9,
-        "coding": 72.7,
-        "math": 94.7,
-        "vision": 76.1,
-        "agents": 68.4
-      }
-    },
-    {
-      "slug": "grok-4-2",
-      "overallIndex": 82.8,
-      "rankOverall": 7,
-      "arenaElo": 1484,
-      "categoryIdx": {
-        "human-preference": 90.3,
-        "knowledge": 86.8,
-        "reasoning": 69.5,
-        "coding": 79.2,
-        "math": 98.5,
-        "vision": 78.9,
-        "agents": 77.9
-      }
-    },
-    {
-      "slug": "grok-4-fast",
-      "overallIndex": 69.1,
-      "rankOverall": 26,
-      "arenaElo": 1421,
-      "categoryIdx": {
-        "human-preference": 73.2,
-        "knowledge": 83,
-        "reasoning": 47.4,
-        "coding": 61.2,
-        "math": 92.6,
-        "vision": 70.6,
-        "agents": 62.1
-      }
-    },
-    {
-      "slug": "hermes-4-405b",
-      "overallIndex": 55.3,
-      "rankOverall": 36,
-      "arenaElo": 1322,
-      "categoryIdx": {
-        "human-preference": 46.5,
-        "knowledge": 79.8,
-        "reasoning": 36.2,
-        "coding": 40.1,
-        "math": 86.7,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 41.9,
+        "coding": 79,
+        "math": 91.7,
         "vision": null,
-        "agents": 44.9
+        "agents": null
+      }
+    },
+    {
+      "slug": "grok-4-heavy",
+      "overallIndex": 74.4,
+      "rankOverall": 66,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 65.3,
+        "coding": 79.4,
+        "math": 81,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "guanaco-33b",
+      "overallIndex": 43.7,
+      "rankOverall": 308,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 51.4,
+        "knowledge": 28.3,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "guanaco-65b",
+      "overallIndex": 55.8,
+      "rankOverall": 236,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 55.8,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "h2o-danube-1-8b",
+      "overallIndex": 31,
+      "rankOverall": 355,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 9.7,
+        "reasoning": 38.1,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "h2o-danube3-4b",
+      "overallIndex": 51.7,
+      "rankOverall": 263,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 24.6,
+        "reasoning": 61.8,
+        "coding": null,
+        "math": 48.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "hermes-3-405b",
+      "overallIndex": 62.7,
+      "rankOverall": 189,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 62.7,
+        "reasoning": 62.8,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "hunyuan-1st-gen",
+      "overallIndex": 0,
+      "rankOverall": 421,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "hunyuan-a13b",
+      "overallIndex": 73.9,
+      "rankOverall": 74,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 80.3,
+        "reasoning": 36.4,
+        "coding": null,
+        "math": 90.1,
+        "vision": null,
+        "agents": 72.9
+      }
+    },
+    {
+      "slug": "hunyuan-large-a52b",
+      "overallIndex": 76.8,
+      "rankOverall": 47,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 80.7,
+        "reasoning": null,
+        "coding": 69.8,
+        "math": 78.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "hunyuan-t1",
+      "overallIndex": 82,
+      "rankOverall": 22,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 91.9,
+        "knowledge": 96.3,
+        "reasoning": 61.6,
+        "coding": 64.9,
+        "math": 95.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "hunyuan-turbos",
+      "overallIndex": 55.7,
+      "rankOverall": 238,
+      "arenaElo": 1356,
+      "categoryIdx": {
+        "human-preference": 55.7,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "idefics-80b",
+      "overallIndex": 32.7,
+      "rankOverall": 346,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 32.7,
+        "agents": null
+      }
+    },
+    {
+      "slug": "idefics2-8b",
+      "overallIndex": 57.3,
+      "rankOverall": 222,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 57.3,
+        "agents": null
+      }
+    },
+    {
+      "slug": "iflytek-spark-v1-0-xinghuo",
+      "overallIndex": 0,
+      "rankOverall": 422,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "iflytek-spark-v3-0-xinghuo",
+      "overallIndex": 0,
+      "rankOverall": 423,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "iflytek-spark-v4-0-xinghuo",
+      "overallIndex": 0,
+      "rankOverall": 424,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "iflytek-spark-x1-xinghuo-x1",
+      "overallIndex": 0,
+      "rankOverall": 425,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "inflection-1",
+      "overallIndex": 54.5,
+      "rankOverall": 247,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 54.5,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "inflection-2",
+      "overallIndex": 76.8,
+      "rankOverall": 48,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 66,
+        "reasoning": 87.7,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "inflection-2-5",
+      "overallIndex": 0,
+      "rankOverall": 426,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "internlm2-20b",
+      "overallIndex": 54.4,
+      "rankOverall": 249,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 44.2,
+        "reasoning": 58.9,
+        "coding": 64.1,
+        "math": 47.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "internlm2-5-7b",
+      "overallIndex": 64,
+      "rankOverall": 175,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 54.7,
+        "reasoning": 64,
+        "coding": null,
+        "math": 68.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "internlm3-8b-instruct",
+      "overallIndex": 52.6,
+      "rankOverall": 259,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 58.9,
+        "reasoning": 52.1,
+        "coding": 50,
+        "math": 49.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "internvl2-5-78b",
+      "overallIndex": 80.8,
+      "rankOverall": 28,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 80.8,
+        "agents": null
+      }
+    },
+    {
+      "slug": "internvl3-78b",
+      "overallIndex": 83.8,
+      "rankOverall": 14,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 83.8,
+        "agents": null
+      }
+    },
+    {
+      "slug": "jais-13b",
+      "overallIndex": 24.3,
+      "rankOverall": 369,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 14.1,
+        "reasoning": 44.8,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "jais-70b",
+      "overallIndex": 45.3,
+      "rankOverall": 301,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 0,
+        "reasoning": 60.4,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "kimi-chat",
+      "overallIndex": 0,
+      "rankOverall": 427,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "kimi-k1-5",
+      "overallIndex": 75.3,
+      "rankOverall": 56,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 47.3,
+        "math": 86.4,
+        "vision": 81.1,
+        "agents": null
       }
     },
     {
       "slug": "kimi-k2",
-      "overallIndex": 66.1,
-      "rankOverall": 28,
-      "arenaElo": 1416,
+      "overallIndex": 73.7,
+      "rankOverall": 75,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 71.9,
+        "human-preference": null,
         "knowledge": 82.5,
-        "reasoning": 41.9,
+        "reasoning": null,
         "coding": 59.7,
         "math": 83.2,
         "vision": null,
-        "agents": 70.6
+        "agents": null
       }
     },
     {
-      "slug": "kimi-k2-5",
-      "overallIndex": 80.4,
-      "rankOverall": 14,
-      "arenaElo": 1448,
+      "slug": "kimi-k2-thinking",
+      "overallIndex": 71.2,
+      "rankOverall": 102,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 80.5,
-        "knowledge": 85.7,
-        "reasoning": 64.7,
-        "coding": 80,
-        "math": 97.1,
-        "vision": 73.6,
-        "agents": 81
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 62.8,
+        "coding": 71.3,
+        "math": 99.1,
+        "vision": null,
+        "agents": 60.2
+      }
+    },
+    {
+      "slug": "koala-13b",
+      "overallIndex": 10.1,
+      "rankOverall": 388,
+      "arenaElo": 1022,
+      "categoryIdx": {
+        "human-preference": 11.2,
+        "knowledge": 7.8,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "krutrim-2-12b",
+      "overallIndex": 66.5,
+      "rankOverall": 146,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 38.3,
+        "reasoning": 71.9,
+        "coding": 79.5,
+        "math": 71,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "lamda",
+      "overallIndex": 0,
+      "rankOverall": 428,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "lg-exaone-3-0-7-8b-instruct",
+      "overallIndex": 64.7,
+      "rankOverall": 166,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 64.7,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "lg-exaone-3-5-32b-instruct",
+      "overallIndex": 76.5,
+      "rankOverall": 50,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 74.6,
+        "knowledge": null,
+        "reasoning": 85.7,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "lg-exaone-4-0-32b-non-reasoning",
+      "overallIndex": 65,
+      "rankOverall": 161,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 83.2,
+        "reasoning": 72.3,
+        "coding": 43.3,
+        "math": 35.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "lg-exaone-4-0-32b-reasoning",
+      "overallIndex": 82,
+      "rankOverall": 23,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 88.1,
+        "reasoning": 78.9,
+        "coding": 72.6,
+        "math": 85.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "lg-exaone-deep-32b",
+      "overallIndex": 71,
+      "rankOverall": 107,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 57.6,
+        "coding": 59.5,
+        "math": 83.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-13b",
+      "overallIndex": 31.7,
+      "rankOverall": 350,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 26.2,
+        "reasoning": 55.7,
+        "coding": 10.1,
+        "math": 13.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-2-13b",
+      "overallIndex": 24.7,
+      "rankOverall": 366,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 24.7,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-2-13b-chat",
+      "overallIndex": 56.2,
+      "rankOverall": 233,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 56.2,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-2-70b",
+      "overallIndex": 44.2,
+      "rankOverall": 304,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 44.2,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-2-70b-chat",
+      "overallIndex": 58.9,
+      "rankOverall": 216,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 58.9,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-2-7b",
+      "overallIndex": 13.3,
+      "rankOverall": 385,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 13.3,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-2-7b-chat",
+      "overallIndex": 4.4,
+      "rankOverall": 392,
+      "arenaElo": 1037,
+      "categoryIdx": {
+        "human-preference": 0,
+        "knowledge": 8.8,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "llama-3-1-405b",
-      "overallIndex": 38.3,
-      "rankOverall": 48,
-      "arenaElo": 1269,
+      "overallIndex": 70.9,
+      "rankOverall": 109,
+      "arenaElo": 1229,
       "categoryIdx": {
-        "human-preference": 32.2,
-        "knowledge": 81,
-        "reasoning": 21.7,
-        "coding": 26.1,
-        "math": 45.3,
+        "human-preference": 21.4,
+        "knowledge": 78.3,
+        "reasoning": 66.8,
+        "coding": 89.8,
+        "math": 83,
         "vision": null,
-        "agents": 45.2
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-1-70b",
+      "overallIndex": 64.8,
+      "rankOverall": 165,
+      "arenaElo": 1198,
+      "categoryIdx": {
+        "human-preference": 13,
+        "knowledge": 70.6,
+        "reasoning": 63.6,
+        "coding": 80.1,
+        "math": 78.4,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "llama-3-1-8b",
-      "overallIndex": 17,
-      "rankOverall": 54,
-      "arenaElo": 1176,
+      "overallIndex": 55.3,
+      "rankOverall": 240,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 7,
-        "knowledge": 49,
-        "reasoning": 7.5,
-        "coding": 8,
-        "math": 23.3,
+        "human-preference": null,
+        "knowledge": 46.7,
+        "reasoning": 48.4,
+        "coding": 71.1,
+        "math": 62.7,
         "vision": null,
-        "agents": 19.4
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-1-elyza-jp-70b",
+      "overallIndex": 0,
+      "rankOverall": 429,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-1-minitron-4b",
+      "overallIndex": 44.4,
+      "rankOverall": 303,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 34.2,
+        "reasoning": 56,
+        "coding": 25.5,
+        "math": 38.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-1-nemotron-70b-instruct",
+      "overallIndex": 75.2,
+      "rankOverall": 58,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 75.2,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-1-nemotron-ultra-253b-v1-reasoning-off",
+      "overallIndex": 52.5,
+      "rankOverall": 260,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 70.7,
+        "coding": 29,
+        "math": 46.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-1-nemotron-ultra-253b-v1-reasoning-on",
+      "overallIndex": 79.2,
+      "rankOverall": 38,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 80.4,
+        "coding": 66.3,
+        "math": 84.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-2-11b-vision",
+      "overallIndex": 60.8,
+      "rankOverall": 201,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 55,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 62.3,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-2-1b",
+      "overallIndex": 31.8,
+      "rankOverall": 349,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 15.5,
+        "reasoning": 34.7,
+        "coding": null,
+        "math": 42.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-2-3b",
+      "overallIndex": 63,
+      "rankOverall": 187,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 39,
+        "reasoning": 67.4,
+        "coding": null,
+        "math": 78.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-2-90b-vision",
+      "overallIndex": 70.3,
+      "rankOverall": 114,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 70.3,
+        "agents": null
       }
     },
     {
       "slug": "llama-3-3-70b",
-      "overallIndex": 38.7,
-      "rankOverall": 47,
-      "arenaElo": 1290,
+      "overallIndex": 77.7,
+      "rankOverall": 43,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 37.8,
-        "knowledge": 76.7,
-        "reasoning": 21.2,
-        "coding": 25.2,
-        "math": 47.3,
+        "human-preference": null,
+        "knowledge": 74.3,
+        "reasoning": 69.1,
+        "coding": 89.1,
+        "math": 83.9,
         "vision": null,
-        "agents": 46.8
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-3-nemotron-super-49b-v1-reasoning-off",
+      "overallIndex": 67.7,
+      "rankOverall": 139,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 87.2,
+        "knowledge": null,
+        "reasoning": 66.8,
+        "coding": 85.1,
+        "math": 40.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-3-nemotron-super-49b-v1-reasoning-on",
+      "overallIndex": 76.2,
+      "rankOverall": 52,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 58.3,
+        "coding": 92.4,
+        "math": 77.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-70b",
+      "overallIndex": 60.9,
+      "rankOverall": 200,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 65.8,
+        "reasoning": 24.4,
+        "coding": 81.5,
+        "math": 66.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-8b",
+      "overallIndex": 43.4,
+      "rankOverall": 309,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 47.3,
+        "reasoning": 17.8,
+        "coding": 59.3,
+        "math": 46.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-3-elyza-jp-8b",
+      "overallIndex": 0,
+      "rankOverall": 430,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-33b",
+      "overallIndex": 42.4,
+      "rankOverall": 311,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 41.8,
+        "reasoning": 62,
+        "coding": 18.1,
+        "math": 32.9,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "llama-4-maverick",
-      "overallIndex": 51.3,
-      "rankOverall": 39,
-      "arenaElo": 1354,
+      "overallIndex": 69.5,
+      "rankOverall": 126,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 55.1,
-        "knowledge": 75.8,
-        "reasoning": 34.1,
-        "coding": 38.8,
-        "math": 58.5,
-        "vision": 66.8,
-        "agents": 52
+        "human-preference": null,
+        "knowledge": 87.3,
+        "reasoning": 62.2,
+        "coding": 76.8,
+        "math": 51.5,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "llama-4-scout",
-      "overallIndex": 42.7,
-      "rankOverall": 44,
-      "arenaElo": 1318,
+      "overallIndex": 57.3,
+      "rankOverall": 223,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 45.4,
-        "knowledge": 66,
-        "reasoning": 26.7,
-        "coding": 30,
-        "math": 48.1,
-        "vision": 61.8,
-        "agents": 44.1
+        "human-preference": null,
+        "knowledge": 79.1,
+        "reasoning": 46.5,
+        "coding": 65.7,
+        "math": 37.9,
+        "vision": null,
+        "agents": null
       }
     },
     {
-      "slug": "llama-5",
-      "overallIndex": 78.7,
-      "rankOverall": 16,
-      "arenaElo": 1456,
+      "slug": "llama-65b",
+      "overallIndex": 38.6,
+      "rankOverall": 328,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 82.7,
-        "knowledge": 85.8,
-        "reasoning": 60.8,
-        "coding": 76.2,
-        "math": 96.2,
-        "vision": 78.1,
-        "agents": 74.5
+        "human-preference": null,
+        "knowledge": 38.6,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "llama-7b",
+      "overallIndex": 4.9,
+      "rankOverall": 391,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 4.9,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "luminous-supreme-70b",
+      "overallIndex": 0,
+      "rankOverall": 431,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
       }
     },
     {
       "slug": "magistral-medium",
-      "overallIndex": 61.5,
-      "rankOverall": 32,
-      "arenaElo": 1370,
+      "overallIndex": 73.6,
+      "rankOverall": 78,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 59.5,
-        "knowledge": 78,
-        "reasoning": 38.2,
-        "coding": 51.4,
-        "math": 90.1,
-        "vision": 62.8,
-        "agents": 55
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": 73.6,
+        "vision": null,
+        "agents": null
       }
     },
     {
-      "slug": "minimax-m2-5",
-      "overallIndex": 76.3,
-      "rankOverall": 19,
-      "arenaElo": 1436,
+      "slug": "magistral-small",
+      "overallIndex": 62.4,
+      "rankOverall": 192,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 77.3,
-        "knowledge": 83.5,
-        "reasoning": 54.7,
-        "coding": 75.6,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 60.2,
+        "coding": 55.8,
+        "math": 66.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mai-1-preview",
+      "overallIndex": 0,
+      "rankOverall": 432,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "megatron-turing-nlg-530b",
+      "overallIndex": 67,
+      "rankOverall": 143,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 67,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "minicpm-2b",
+      "overallIndex": 41,
+      "rankOverall": 318,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 35.1,
+        "reasoning": 51.4,
+        "coding": 43.9,
+        "math": 26.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "minicpm-llama3-v-2-5",
+      "overallIndex": 0,
+      "rankOverall": 433,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "minicpm-o-2-6",
+      "overallIndex": 79.8,
+      "rankOverall": 34,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 79.8,
+        "agents": null
+      }
+    },
+    {
+      "slug": "minicpm-v-2-6",
+      "overallIndex": 0,
+      "rankOverall": 434,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "minicpm3-4b",
+      "overallIndex": 67.4,
+      "rankOverall": 140,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 73.5,
+        "knowledge": 45.3,
+        "reasoning": null,
+        "coding": 66.3,
+        "math": 81.8,
+        "vision": null,
+        "agents": 70
+      }
+    },
+    {
+      "slug": "minimax-m1",
+      "overallIndex": 71.2,
+      "rankOverall": 103,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 87.5,
+        "reasoning": 61.5,
+        "coding": 60.5,
+        "math": 86,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "minimax-m2",
+      "overallIndex": 69.6,
+      "rankOverall": 125,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 89.3,
+        "reasoning": 31.8,
+        "coding": 67.9,
+        "math": 78,
+        "vision": null,
+        "agents": 84.1
+      }
+    },
+    {
+      "slug": "minimax-text-01",
+      "overallIndex": 80.6,
+      "rankOverall": 29,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 89.1,
+        "knowledge": 80.9,
+        "reasoning": 76.5,
+        "coding": 78.8,
+        "math": 84.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "minimax-vl-01",
+      "overallIndex": 80.4,
+      "rankOverall": 30,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 80.4,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ministral-3b",
+      "overallIndex": 50.1,
+      "rankOverall": 274,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 34.8,
+        "reasoning": null,
+        "coding": 76.6,
+        "math": 44.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ministral-8b",
+      "overallIndex": 58.6,
+      "rankOverall": 218,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 41.7,
+        "reasoning": null,
+        "coding": 72,
+        "math": 53.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mistral-7b",
+      "overallIndex": 41.2,
+      "rankOverall": 316,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 33.5,
+        "reasoning": 59.7,
+        "coding": 33,
+        "math": 25.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mistral-large",
+      "overallIndex": 68.7,
+      "rankOverall": 131,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 68.7,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mistral-large-2-24-07",
+      "overallIndex": 85.2,
+      "rankOverall": 12,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 73.3,
+        "reasoning": null,
+        "coding": 86.4,
         "math": 94.6,
         "vision": null,
-        "agents": 76.1
+        "agents": null
       }
     },
     {
-      "slug": "mistral-large-3",
-      "overallIndex": 74.4,
-      "rankOverall": 23,
-      "arenaElo": 1430,
+      "slug": "mistral-large-24-11",
+      "overallIndex": 0,
+      "rankOverall": 435,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 75.7,
-        "knowledge": 83.7,
-        "reasoning": 54,
-        "coding": 72.7,
-        "math": 94.1,
-        "vision": 71.9,
-        "agents": 71.2
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
       }
     },
     {
-      "slug": "mistral-small-3-2",
-      "overallIndex": 38.1,
+      "slug": "mistral-medium-3",
+      "overallIndex": 0,
+      "rankOverall": 436,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mistral-medium-original",
+      "overallIndex": 76.7,
       "rankOverall": 49,
-      "arenaElo": 1330,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 48.6,
-        "knowledge": 67.8,
-        "reasoning": 18.8,
-        "coding": 23.1,
-        "math": 45.8,
-        "vision": 53.5,
-        "agents": 35.9
-      }
-    },
-    {
-      "slug": "nemotron-super-49b",
-      "overallIndex": 60.1,
-      "rankOverall": 34,
-      "arenaElo": 1360,
-      "categoryIdx": {
-        "human-preference": 56.8,
-        "knowledge": 78.8,
-        "reasoning": 36.8,
-        "coding": 49.6,
-        "math": 89,
+        "human-preference": 76.7,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
         "vision": null,
-        "agents": 54.3
+        "agents": null
       }
     },
     {
-      "slug": "o3",
-      "overallIndex": 75.1,
-      "rankOverall": 21,
-      "arenaElo": 1444,
+      "slug": "mistral-nemo-12b",
+      "overallIndex": 64.5,
+      "rankOverall": 168,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 79.5,
-        "knowledge": 85.3,
+        "human-preference": null,
+        "knowledge": 57,
+        "reasoning": 72,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mistral-small-3-1-24b",
+      "overallIndex": 60.8,
+      "rankOverall": 202,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 67.7,
+        "reasoning": 30.5,
+        "coding": 89.1,
+        "math": 61.6,
+        "vision": 55,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mistral-small-3-2-24b",
+      "overallIndex": 69.2,
+      "rankOverall": 128,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 67.5,
+        "reasoning": null,
+        "coding": 94.2,
+        "math": 61.8,
+        "vision": 53.1,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mistral-small-3-24b",
+      "overallIndex": 74.5,
+      "rankOverall": 65,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 68.4,
+        "reasoning": 87.4,
+        "coding": 85,
+        "math": 63.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mixtral-8x22b",
+      "overallIndex": 61.7,
+      "rankOverall": 196,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 62.2,
+        "reasoning": null,
+        "coding": null,
+        "math": 61.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mixtral-8x7b",
+      "overallIndex": 54.8,
+      "rankOverall": 243,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 71.7,
+        "knowledge": 51,
+        "reasoning": 64.6,
+        "coding": 46,
+        "math": 42.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "molmo-2-8b",
+      "overallIndex": 0,
+      "rankOverall": 437,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "molmo-72b",
+      "overallIndex": 0,
+      "rankOverall": 438,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mpt-30b",
+      "overallIndex": 0,
+      "rankOverall": 439,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mpt-30b-instruct",
+      "overallIndex": 0,
+      "rankOverall": 440,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mpt-7b",
+      "overallIndex": 15.9,
+      "rankOverall": 383,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 0,
+        "reasoning": 68.5,
+        "coding": 11.3,
+        "math": 2.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mpt-7b-instruct",
+      "overallIndex": 0,
+      "rankOverall": 441,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "mpt-7b-storywriter-65k",
+      "overallIndex": 0,
+      "rankOverall": 442,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "naver-hyperclova-x",
+      "overallIndex": 60.2,
+      "rankOverall": 205,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 46.6,
+        "reasoning": null,
+        "coding": 51.7,
+        "math": 82.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "naver-hyperclova-x-seed-think-32b",
+      "overallIndex": 87,
+      "rankOverall": 7,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": 87
+      }
+    },
+    {
+      "slug": "nemotron-3-8b",
+      "overallIndex": 47.4,
+      "rankOverall": 289,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 24,
+        "reasoning": 58.6,
+        "coding": null,
+        "math": 37,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "nemotron-3-ultra-550b-a55b",
+      "overallIndex": 86.5,
+      "rankOverall": 8,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 95.7,
+        "reasoning": 86.1,
+        "coding": 79.9,
+        "math": null,
+        "vision": null,
+        "agents": 91
+      }
+    },
+    {
+      "slug": "nemotron-4-15b",
+      "overallIndex": 37.6,
+      "rankOverall": 332,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 40.3,
+        "reasoning": 44.2,
+        "coding": 29.7,
+        "math": 44.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "nemotron-4-340b",
+      "overallIndex": 81,
+      "rankOverall": 27,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 68.5,
+        "reasoning": 91,
+        "coding": 53.8,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "nemotron-h-56b",
+      "overallIndex": 74.3,
+      "rankOverall": 67,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 67.2,
+        "reasoning": 91.8,
+        "coding": 57.2,
+        "math": 72.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "nemotron-nano-2-nemotron-nano-9b-v2",
+      "overallIndex": 66.6,
+      "rankOverall": 145,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 53,
+        "coding": 71.1,
+        "math": 84.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "nous-hermes-2-mixtral-8x7b-dpo",
+      "overallIndex": 54.5,
+      "rankOverall": 248,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 54.5,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "olmo-2-13b",
+      "overallIndex": 60,
+      "rankOverall": 207,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 47.5,
+        "reasoning": 66.6,
+        "coding": null,
+        "math": 56.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "olmo-2-32b",
+      "overallIndex": 69.8,
+      "rankOverall": 120,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 62.2,
+        "reasoning": 77,
+        "coding": null,
+        "math": 63,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "olmo-2-7b",
+      "overallIndex": 56.3,
+      "rankOverall": 232,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 30.4,
+        "reasoning": 70,
+        "coding": null,
+        "math": 67.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "olmo-3-7b",
+      "overallIndex": 62.5,
+      "rankOverall": 190,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 48.5,
+        "reasoning": 77.2,
+        "coding": 52.9,
+        "math": 64.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "olmo-3-think-32b",
+      "overallIndex": 89.3,
+      "rankOverall": 2,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 93.9,
+        "coding": 88,
+        "math": 86,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "olmo-7b",
+      "overallIndex": 29.8,
+      "rankOverall": 358,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 0,
+        "reasoning": 48.4,
+        "coding": null,
+        "math": 3.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "olmoe-1b-7b-0924",
+      "overallIndex": 49.4,
+      "rankOverall": 278,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 23.5,
+        "reasoning": 58.1,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "openai-codex",
+      "overallIndex": 21.4,
+      "rankOverall": 377,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 21.4,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "openai-o1",
+      "overallIndex": 63.5,
+      "rankOverall": 179,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 72.5,
+        "coding": 49.2,
+        "math": 74.3,
+        "vision": 72,
+        "agents": null
+      }
+    },
+    {
+      "slug": "openai-o1-mini",
+      "overallIndex": 54.3,
+      "rankOverall": 251,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 38.6,
+        "math": 70,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "openai-o1-preview",
+      "overallIndex": 65.4,
+      "rankOverall": 156,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 84.7,
+        "reasoning": 66.6,
+        "coding": 57.2,
+        "math": 63.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "openai-o3",
+      "overallIndex": 71.7,
+      "rankOverall": 98,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
         "reasoning": 52,
-        "coding": 72.4,
-        "math": 94.1,
+        "coding": 77.9,
+        "math": 91.6,
         "vision": 78.6,
-        "agents": 70.4
+        "agents": null
       }
     },
     {
-      "slug": "olmo-3-32b",
-      "overallIndex": 45.8,
-      "rankOverall": 42,
-      "arenaElo": 1284,
+      "slug": "openai-o3-mini-high",
+      "overallIndex": 67.9,
+      "rankOverall": 136,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 36.2,
-        "knowledge": 70.3,
-        "reasoning": 27,
-        "coding": 30.8,
-        "math": 80.8,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 74.6,
+        "coding": 54.9,
+        "math": 87.3,
         "vision": null,
-        "agents": 28.7
+        "agents": null
       }
     },
     {
-      "slug": "phi-4",
-      "overallIndex": 34.5,
-      "rankOverall": 51,
-      "arenaElo": 1250,
+      "slug": "openai-o3-mini-low",
+      "overallIndex": 52.7,
+      "rankOverall": 256,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 27,
-        "knowledge": 74.7,
-        "reasoning": 24.6,
-        "coding": 17,
-        "math": 52.8,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 63.3,
+        "coding": 43.8,
+        "math": 60,
         "vision": null,
-        "agents": 20.1
+        "agents": null
+      }
+    },
+    {
+      "slug": "openai-o3-mini-medium",
+      "overallIndex": 61.7,
+      "rankOverall": 197,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 71,
+        "coding": 49.5,
+        "math": 76.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "openai-o3-pro",
+      "overallIndex": 87.2,
+      "rankOverall": 6,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 80,
+        "coding": 88.5,
+        "math": 93,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "openai-o4-mini",
+      "overallIndex": 70,
+      "rankOverall": 116,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 47.2,
+        "coding": 77.7,
+        "math": 93.4,
+        "vision": 77,
+        "agents": null
+      }
+    },
+    {
+      "slug": "openhermes-2-5-mistral-7b",
+      "overallIndex": 37.3,
+      "rankOverall": 333,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 44.1,
+        "reasoning": 29.4,
+        "coding": 46.3,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "openllama-7b",
+      "overallIndex": 17.8,
+      "rankOverall": 381,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 17.8,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "opt-175b",
+      "overallIndex": 56.5,
+      "rankOverall": 231,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 56.5,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "opt-66b",
+      "overallIndex": 52.7,
+      "rankOverall": 257,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 52.7,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "opt-iml-30b",
+      "overallIndex": 0,
+      "rankOverall": 443,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "orca-2-13b",
+      "overallIndex": 39.6,
+      "rankOverall": 324,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 29.5,
+        "reasoning": 31,
+        "coding": null,
+        "math": 58.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "palm-2",
+      "overallIndex": 74,
+      "rankOverall": 72,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 74,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "palm-540b",
+      "overallIndex": 61.6,
+      "rankOverall": 198,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 64,
+        "reasoning": null,
+        "coding": null,
+        "math": 57,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "palmyra-med-70b",
+      "overallIndex": 82.6,
+      "rankOverall": 19,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 82.6,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "palmyra-x-004",
+      "overallIndex": 71.1,
+      "rankOverall": 106,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 68.8,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": 73.5
+      }
+    },
+    {
+      "slug": "palmyra-x5",
+      "overallIndex": 57.1,
+      "rankOverall": 225,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 66.7,
+        "reasoning": 48.5,
+        "coding": null,
+        "math": 64.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "pharia-1-llm-7b-control",
+      "overallIndex": 22.7,
+      "rankOverall": 374,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 14,
+        "reasoning": 54.2,
+        "coding": null,
+        "math": 0,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-1-1-3b",
+      "overallIndex": 48.9,
+      "rankOverall": 280,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 48.9,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-1-5-1-3b",
+      "overallIndex": 35.3,
+      "rankOverall": 339,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 41.1,
+        "coding": 29.4,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-2-2-7b",
+      "overallIndex": 51.6,
+      "rankOverall": 264,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 27.2,
+        "reasoning": 57.5,
+        "coding": 55.7,
+        "math": 60.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-3-5-mini-3-8b",
+      "overallIndex": 55.9,
+      "rankOverall": 235,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 45.8,
+        "reasoning": 60.8,
+        "coding": 60,
+        "math": 61.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-3-5-moe-16x3-8b-6-6b-active",
+      "overallIndex": 64.9,
+      "rankOverall": 163,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 37.9,
+        "knowledge": 58.6,
+        "reasoning": 78,
+        "coding": 69,
+        "math": 69.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-3-5-vision-4-2b",
+      "overallIndex": 62.2,
+      "rankOverall": 194,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 62.2,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-3-medium-14b",
+      "overallIndex": 73.6,
+      "rankOverall": 79,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 63.3,
+        "reasoning": 79.1,
+        "coding": 59.3,
+        "math": 92.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-3-mini-3-8b",
+      "overallIndex": 54.4,
+      "rankOverall": 250,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 51.5,
+        "reasoning": 40.1,
+        "coding": 53.8,
+        "math": 86.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-3-small-7b",
+      "overallIndex": 69.9,
+      "rankOverall": 117,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 59.5,
+        "reasoning": 71.2,
+        "coding": 58,
+        "math": 91,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-4-14b",
+      "overallIndex": 62.3,
+      "rankOverall": 193,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 39.5,
+        "reasoning": 59.6,
+        "coding": 82.5,
+        "math": 77.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-4-mini-3-8b",
+      "overallIndex": 57.1,
+      "rankOverall": 226,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 32.8,
+        "knowledge": 45.5,
+        "reasoning": 62.2,
+        "coding": null,
+        "math": 72.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-4-mini-instruct",
+      "overallIndex": 56.1,
+      "rankOverall": 234,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 32.8,
+        "knowledge": 45.5,
+        "reasoning": null,
+        "coding": null,
+        "math": 89.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-4-multimodal-5-6b",
+      "overallIndex": 65.3,
+      "rankOverall": 158,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 65.3,
+        "agents": null
+      }
+    },
+    {
+      "slug": "phi-4-multimodal-instruct",
+      "overallIndex": 43.9,
+      "rankOverall": 307,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 43.9,
+        "agents": null
       }
     },
     {
       "slug": "phi-4-reasoning",
-      "overallIndex": 47.8,
-      "rankOverall": 41,
-      "arenaElo": 1262,
+      "overallIndex": 72.7,
+      "rankOverall": 86,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 30.3,
-        "knowledge": 75,
-        "reasoning": 34.1,
-        "coding": 31.7,
-        "math": 85.4,
+        "human-preference": null,
+        "knowledge": 79.1,
+        "reasoning": 57.3,
+        "coding": 74,
+        "math": 76,
         "vision": null,
-        "agents": 22.6
+        "agents": null
       }
     },
     {
-      "slug": "qwen3-235b",
-      "overallIndex": 63.1,
-      "rankOverall": 30,
-      "arenaElo": 1398,
+      "slug": "phi-4-reasoning-14b",
+      "overallIndex": 71.4,
+      "rankOverall": 101,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 67,
-        "knowledge": 82.2,
-        "reasoning": 37.8,
-        "coding": 51.7,
-        "math": 90.4,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 57.3,
+        "coding": 74,
+        "math": 76,
         "vision": null,
-        "agents": 58.9
+        "agents": null
       }
     },
     {
-      "slug": "qwen3-32b",
-      "overallIndex": 56.8,
-      "rankOverall": 35,
-      "arenaElo": 1349,
+      "slug": "pixtral-12b",
+      "overallIndex": 65.4,
+      "rankOverall": 157,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 53.8,
-        "knowledge": 77,
-        "reasoning": 32.8,
-        "coding": 44.8,
-        "math": 87.5,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 65.4,
+        "agents": null
+      }
+    },
+    {
+      "slug": "pixtral-large-124b",
+      "overallIndex": 74.3,
+      "rankOverall": 68,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 74.3,
+        "agents": null
+      }
+    },
+    {
+      "slug": "plamo-100b",
+      "overallIndex": 86.4,
+      "rankOverall": 9,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 96.1,
+        "knowledge": 76.7,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
         "vision": null,
-        "agents": 49.7
+        "agents": null
       }
     },
     {
-      "slug": "qwen3-7-max",
-      "overallIndex": 80.6,
-      "rankOverall": 13,
-      "arenaElo": 1470,
+      "slug": "poro-34b",
+      "overallIndex": 38.7,
+      "rankOverall": 327,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 86.5,
-        "knowledge": 86.3,
-        "reasoning": 64.3,
-        "coding": 78.3,
-        "math": 97,
-        "vision": 77.8,
-        "agents": 76.3
+        "human-preference": null,
+        "knowledge": 33.7,
+        "reasoning": 55,
+        "coding": 36.1,
+        "math": 7.3,
+        "vision": null,
+        "agents": null
       }
     },
     {
-      "slug": "qwen3-8b",
-      "overallIndex": 41,
+      "slug": "pythia-1-4b",
+      "overallIndex": 0,
+      "rankOverall": 444,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "pythia-12b",
+      "overallIndex": 54.8,
+      "rankOverall": 244,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 54.8,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "pythia-6-9b",
+      "overallIndex": 0,
+      "rankOverall": 445,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qvq-72b-preview",
+      "overallIndex": 50,
+      "rankOverall": 275,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": 20.4,
+        "vision": 59.8,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen-1-8b",
+      "overallIndex": 23.1,
+      "rankOverall": 373,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 28.6,
+        "reasoning": null,
+        "coding": 5.9,
+        "math": 29.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen-14b",
+      "overallIndex": 49.8,
+      "rankOverall": 276,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 56.6,
+        "reasoning": null,
+        "coding": 25.3,
+        "math": 60.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen-72b",
+      "overallIndex": 63.8,
+      "rankOverall": 177,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 73.4,
+        "reasoning": null,
+        "coding": 28.9,
+        "math": 79.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen-7b",
+      "overallIndex": 32.2,
+      "rankOverall": 348,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 44.2,
+        "reasoning": null,
+        "coding": 22.6,
+        "math": 25.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen-max-0428",
+      "overallIndex": 46.2,
+      "rankOverall": 297,
+      "arenaElo": 1186,
+      "categoryIdx": {
+        "human-preference": 46.2,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen-vl",
+      "overallIndex": 57.3,
+      "rankOverall": 224,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 57.3,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen1-5-110b",
+      "overallIndex": 59.5,
+      "rankOverall": 210,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 62.6,
+        "knowledge": 67.3,
+        "reasoning": 58.9,
+        "coding": 51.4,
+        "math": 61.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen1-5-72b",
+      "overallIndex": 58.8,
+      "rankOverall": 217,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 77.5,
+        "reasoning": 54.6,
+        "coding": 42.6,
+        "math": 48.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen1-5-moe-a2-7b",
+      "overallIndex": 41.9,
+      "rankOverall": 312,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 37.5,
+        "reasoning": null,
+        "coding": 27.5,
+        "math": 60.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-5-14b",
+      "overallIndex": 63.2,
+      "rankOverall": 182,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 57.2,
+        "reasoning": null,
+        "coding": 64.4,
+        "math": 68.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-5-32b",
+      "overallIndex": 67.8,
+      "rankOverall": 137,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 62.8,
+        "reasoning": null,
+        "coding": 69.9,
+        "math": 70.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-5-72b",
+      "overallIndex": 72.5,
+      "rankOverall": 88,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 67.2,
+        "reasoning": 86.6,
+        "coding": 70.3,
+        "math": 72.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-5-7b",
+      "overallIndex": 58.1,
+      "rankOverall": 219,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 48.5,
+        "reasoning": null,
+        "coding": 64.1,
+        "math": 61.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-5-coder-32b",
+      "overallIndex": 77.1,
       "rankOverall": 45,
-      "arenaElo": 1276,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 34.1,
-        "knowledge": 61.5,
-        "reasoning": 19.3,
-        "coding": 25.4,
-        "math": 75.8,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 77.1,
+        "math": null,
         "vision": null,
-        "agents": 32.8
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-5-math-72b",
+      "overallIndex": 75.4,
+      "rankOverall": 54,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": 75.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-5-max",
+      "overallIndex": 64.9,
+      "rankOverall": 164,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 89.4,
+        "knowledge": 81.5,
+        "reasoning": 50.1,
+        "coding": 38.7,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-5-vl-72b",
+      "overallIndex": 82,
+      "rankOverall": 24,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 82,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-57b-a14b",
+      "overallIndex": 50.3,
+      "rankOverall": 272,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 49.1,
+        "reasoning": 37.4,
+        "coding": 59.6,
+        "math": 55.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-72b",
+      "overallIndex": 62.8,
+      "rankOverall": 188,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 66.6,
+        "knowledge": 63.9,
+        "reasoning": 62.9,
+        "coding": 57.9,
+        "math": 64.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-7b",
+      "overallIndex": 49.6,
+      "rankOverall": 277,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 41.9,
+        "reasoning": 47.1,
+        "coding": 55.2,
+        "math": 55.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-math-72b",
+      "overallIndex": 66,
+      "rankOverall": 150,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 71.3,
+        "reasoning": null,
+        "coding": null,
+        "math": 64.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen2-vl-72b",
+      "overallIndex": 74.8,
+      "rankOverall": 62,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 74.8,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen3-14b-non-thinking",
+      "overallIndex": 39,
+      "rankOverall": 325,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 43.5,
+        "coding": 29,
+        "math": 31.7,
+        "vision": null,
+        "agents": 51.9
+      }
+    },
+    {
+      "slug": "qwen3-14b-thinking",
+      "overallIndex": 65.2,
+      "rankOverall": 159,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 55,
+        "coding": 63.5,
+        "math": 79.3,
+        "vision": null,
+        "agents": 63
+      }
+    },
+    {
+      "slug": "qwen3-235b-a22b-instruct-2507",
+      "overallIndex": 71.2,
+      "rankOverall": 104,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 79.2,
+        "knowledge": 90.7,
+        "reasoning": 71.9,
+        "coding": 51.8,
+        "math": 70.3,
+        "vision": null,
+        "agents": 63.6
+      }
+    },
+    {
+      "slug": "qwen3-235b-a22b-non-thinking",
+      "overallIndex": 47.3,
+      "rankOverall": 290,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 53.6,
+        "coding": 35.3,
+        "math": 40.1,
+        "vision": null,
+        "agents": 60
+      }
+    },
+    {
+      "slug": "qwen3-235b-a22b-thinking",
+      "overallIndex": 70.9,
+      "rankOverall": 110,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 70.9,
+        "reasoning": 63.9,
+        "coding": 70.7,
+        "math": 85.7,
+        "vision": null,
+        "agents": 63.5
+      }
+    },
+    {
+      "slug": "qwen3-30b-a3b-non-thinking",
+      "overallIndex": 48.5,
+      "rankOverall": 282,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 88,
+        "knowledge": null,
+        "reasoning": 43.5,
+        "coding": 29.8,
+        "math": 32.8,
+        "vision": null,
+        "agents": 48.3
+      }
+    },
+    {
+      "slug": "qwen3-30b-a3b-thinking",
+      "overallIndex": 70.5,
+      "rankOverall": 113,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 91,
+        "knowledge": null,
+        "reasoning": 57.3,
+        "coding": 62.6,
+        "math": 80.4,
+        "vision": null,
+        "agents": 61.4
+      }
+    },
+    {
+      "slug": "qwen3-32b-non-thinking",
+      "overallIndex": 50.4,
+      "rankOverall": 271,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 92.8,
+        "knowledge": null,
+        "reasoning": 43.3,
+        "coding": 31.3,
+        "math": 31,
+        "vision": null,
+        "agents": 53.8
+      }
+    },
+    {
+      "slug": "qwen3-32b-thinking",
+      "overallIndex": 72.9,
+      "rankOverall": 84,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 93.8,
+        "knowledge": null,
+        "reasoning": 60.5,
+        "coding": 65.7,
+        "math": 81.4,
+        "vision": null,
+        "agents": 62.9
+      }
+    },
+    {
+      "slug": "qwen3-8b-non-thinking",
+      "overallIndex": 41.2,
+      "rankOverall": 317,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 79.6,
+        "knowledge": null,
+        "reasoning": 24.1,
+        "coding": 22.8,
+        "math": 29.1,
+        "vision": null,
+        "agents": 50.3
+      }
+    },
+    {
+      "slug": "qwen3-8b-thinking",
+      "overallIndex": 66.4,
+      "rankOverall": 147,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 85.8,
+        "knowledge": null,
+        "reasoning": 52.5,
+        "coding": 57.5,
+        "math": 76,
+        "vision": null,
+        "agents": 60.1
+      }
+    },
+    {
+      "slug": "qwen3-coder-480b-a35b",
+      "overallIndex": 45.4,
+      "rankOverall": 300,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 45.4,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "qwen3-max",
+      "overallIndex": 77.9,
+      "rankOverall": 42,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 89.3,
+        "coding": 69.6,
+        "math": null,
+        "vision": null,
+        "agents": 74.8
       }
     },
     {
       "slug": "qwq-32b",
-      "overallIndex": 52.6,
-      "rankOverall": 37,
-      "arenaElo": 1316,
+      "overallIndex": 72.3,
+      "rankOverall": 92,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 44.9,
-        "knowledge": 72.5,
-        "reasoning": 28.8,
-        "coding": 43.7,
-        "math": 86.4,
+        "human-preference": null,
+        "knowledge": 72.1,
+        "reasoning": 88.8,
+        "coding": 63.4,
+        "math": 79.5,
         "vision": null,
-        "agents": 38.4
+        "agents": 58
       }
     },
     {
-      "slug": "smollm3-3b",
-      "overallIndex": 11.2,
-      "rankOverall": 55,
-      "arenaElo": 1148,
+      "slug": "qwq-32b-preview",
+      "overallIndex": 63.9,
+      "rankOverall": 176,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 74.6,
+        "reasoning": 56.5,
+        "coding": 50,
+        "math": 69.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "r1-1776",
+      "overallIndex": 0,
+      "rankOverall": 446,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "redpajama-incite-7b-base",
+      "overallIndex": 0,
+      "rankOverall": 447,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "redpajama-incite-7b-chat",
+      "overallIndex": 0,
+      "rankOverall": 448,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "redpajama-incite-7b-instruct",
+      "overallIndex": 0,
+      "rankOverall": 449,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "redpajama-incite-base-3b-v1",
+      "overallIndex": 0,
+      "rankOverall": 450,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "reka-core",
+      "overallIndex": 71.8,
+      "rankOverall": 96,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 72,
+        "reasoning": null,
+        "coding": 75.9,
+        "math": 93.8,
+        "vision": 45.4,
+        "agents": null
+      }
+    },
+    {
+      "slug": "reka-edge-7b",
+      "overallIndex": 53,
+      "rankOverall": 254,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 42.8,
+        "reasoning": null,
+        "coding": 50.3,
+        "math": 65.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "reka-flash-21b",
+      "overallIndex": 72.4,
+      "rankOverall": 90,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 59.8,
+        "reasoning": null,
+        "coding": 70.5,
+        "math": 86.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "reka-flash-3",
+      "overallIndex": 66.7,
+      "rankOverall": 144,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 66.7,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "rinna-japanese-gpt-neox-3-6b",
+      "overallIndex": 0,
+      "rankOverall": 451,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "santacoder-1-1b",
+      "overallIndex": 18.8,
+      "rankOverall": 379,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 18.8,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "sarashina2-70b",
+      "overallIndex": 0,
+      "rankOverall": 452,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "sarvam-1-2b",
+      "overallIndex": 48.9,
+      "rankOverall": 281,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 50.3,
+        "reasoning": 45.9,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "sarvam-105b",
+      "overallIndex": 74.9,
+      "rankOverall": 60,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 86.6,
+        "reasoning": 73.4,
+        "coding": 58.4,
+        "math": 93.3,
+        "vision": null,
+        "agents": 49.5
+      }
+    },
+    {
+      "slug": "seed-oss-36b",
+      "overallIndex": 83,
+      "rankOverall": 16,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 84.6,
+        "reasoning": null,
+        "coding": 67.4,
+        "math": 87,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "seed1-5-thinking",
+      "overallIndex": 55.8,
+      "rankOverall": 237,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 71.6,
+        "coding": 32.5,
+        "math": 86.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "skywork-13b",
+      "overallIndex": 50.3,
+      "rankOverall": 273,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 48.9,
+        "reasoning": null,
+        "coding": null,
+        "math": 54.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "skywork-moe-base",
+      "overallIndex": 59.1,
+      "rankOverall": 213,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 74.9,
+        "reasoning": null,
+        "coding": 38.5,
+        "math": 45.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "skywork-o1-open-llama-3-1-8b",
+      "overallIndex": 0,
+      "rankOverall": 453,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "skywork-r1v-38b",
+      "overallIndex": 69.9,
+      "rankOverall": 118,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 52,
+        "coding": null,
+        "math": 82.3,
+        "vision": 66.6,
+        "agents": null
+      }
+    },
+    {
+      "slug": "smollm2-1-7b",
+      "overallIndex": 35.6,
+      "rankOverall": 338,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 5.9,
+        "reasoning": 54.2,
+        "coding": null,
+        "math": 28,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "smollm3-3b-no-thinking",
+      "overallIndex": 30.7,
+      "rankOverall": 356,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 49.2,
+        "coding": 15.2,
+        "math": 9.3,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "smollm3-3b-think",
+      "overallIndex": 33.4,
+      "rankOverall": 343,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 30,
+        "math": 36.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "snowflake-arctic",
+      "overallIndex": 56.7,
+      "rankOverall": 229,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 45.5,
+        "reasoning": 45,
+        "coding": 61.7,
+        "math": 74.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "sonar",
+      "overallIndex": 1.1,
+      "rankOverall": 393,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 1.1,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "stable-beluga-1-freewilly-1-65b",
+      "overallIndex": 0,
+      "rankOverall": 454,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "stable-beluga-2-freewilly-2-70b",
+      "overallIndex": 48,
+      "rankOverall": 286,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 48,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "stable-lm-2-1-6b",
+      "overallIndex": 29.8,
+      "rankOverall": 359,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 23.7,
+        "knowledge": 3.1,
+        "reasoning": 40,
+        "coding": null,
+        "math": 32.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "stable-lm-2-12b",
+      "overallIndex": 61.3,
+      "rankOverall": 199,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 69.2,
+        "knowledge": 35.2,
+        "reasoning": 69,
+        "coding": null,
+        "math": 56.7,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "stablelm-3b-4e1t",
+      "overallIndex": 31.7,
+      "rankOverall": 351,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 8.7,
+        "reasoning": 49.9,
+        "coding": null,
+        "math": 0,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "stablelm-alpha-7b",
+      "overallIndex": 0,
+      "rankOverall": 455,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "stablelm-zephyr-3b",
+      "overallIndex": 39.7,
+      "rankOverall": 323,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 44,
+        "knowledge": 10.3,
+        "reasoning": 52.1,
+        "coding": null,
+        "math": 39.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "starcoder-15-5b",
+      "overallIndex": 37.7,
+      "rankOverall": 331,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 37.7,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "starcoder2-15b",
+      "overallIndex": 46.6,
+      "rankOverall": 293,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 37.5,
+        "math": 64.6,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "starcoder2-3b",
+      "overallIndex": 24.7,
+      "rankOverall": 367,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 24.8,
+        "math": 24.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "starling-7b-alpha",
+      "overallIndex": 80.1,
+      "rankOverall": 32,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 80.1,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "step-1",
+      "overallIndex": 0,
+      "rankOverall": 456,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "step-1v",
+      "overallIndex": 0,
+      "rankOverall": 457,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "step-2",
+      "overallIndex": 0,
+      "rankOverall": 458,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "step-3",
+      "overallIndex": 67.8,
+      "rankOverall": 138,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": 67.8,
+        "agents": null
+      }
+    },
+    {
+      "slug": "t-lu-2-dpo-70b",
+      "overallIndex": 80,
+      "rankOverall": 33,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 80,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "t-lu-3-405b",
+      "overallIndex": 85.7,
+      "rankOverall": 11,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 78.3,
+        "reasoning": 90.9,
+        "coding": 97.6,
+        "math": 78.2,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "t-lu-3-70b",
+      "overallIndex": 80.4,
+      "rankOverall": 31,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 71.8,
+        "reasoning": 83.9,
+        "coding": 93.6,
+        "math": 74.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "teuken-7b-instruct",
+      "overallIndex": 8.2,
+      "rankOverall": 389,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 16.4,
+        "reasoning": 0,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "turing-nlg-17b",
+      "overallIndex": 50.9,
+      "rankOverall": 269,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": 50.9,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "ul2-20b",
+      "overallIndex": 41.5,
+      "rankOverall": 313,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 0,
+        "reasoning": 83.1,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "upstage-solar-10-7b",
+      "overallIndex": 0,
+      "rankOverall": 459,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "upstage-solar-pro",
+      "overallIndex": 70.8,
+      "rankOverall": 111,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 57.4,
+        "reasoning": 89.4,
+        "coding": 58.6,
+        "math": 91.1,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "upstage-solar-pro-2-chat",
+      "overallIndex": 0,
+      "rankOverall": 460,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "upstage-solar-pro-2-reasoning",
+      "overallIndex": 0,
+      "rankOverall": 461,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "vicuna-13b-v1-1",
+      "overallIndex": 0,
+      "rankOverall": 462,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "vicuna-13b-v1-5",
+      "overallIndex": 13.2,
+      "rankOverall": 386,
+      "arenaElo": 1041,
       "categoryIdx": {
         "human-preference": 0,
-        "knowledge": 32.5,
-        "reasoning": 4.8,
-        "coding": 4.1,
-        "math": 21,
+        "knowledge": 26.3,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
         "vision": null,
-        "agents": 8.9
+        "agents": null
       }
     },
     {
-      "slug": "step-3-5-flash",
-      "overallIndex": 68.7,
-      "rankOverall": 27,
-      "arenaElo": 1402,
+      "slug": "viking-7b",
+      "overallIndex": 0,
+      "rankOverall": 463,
+      "arenaElo": null,
       "categoryIdx": {
-        "human-preference": 68.1,
-        "knowledge": 80.7,
-        "reasoning": 45.9,
-        "coding": 65.6,
-        "math": 92.8,
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
         "vision": null,
-        "agents": 60.8
+        "agents": null
+      }
+    },
+    {
+      "slug": "wizardcoder-python-34b-v1-0",
+      "overallIndex": 71.8,
+      "rankOverall": 97,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 71.8,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "wizardlm-2-8x22b",
+      "overallIndex": 22,
+      "rankOverall": 375,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 33.3,
+        "reasoning": 24.7,
+        "coding": null,
+        "math": 2.9,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "wizardlm-7b",
+      "overallIndex": 44.2,
+      "rankOverall": 305,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 78,
+        "knowledge": null,
+        "reasoning": null,
+        "coding": 10.3,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "xgen-7b-8k",
+      "overallIndex": 31.3,
+      "rankOverall": 352,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 0,
+        "reasoning": 41.7,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "yandexgpt-5-pro",
+      "overallIndex": 69.7,
+      "rankOverall": 123,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 71.2,
+        "reasoning": 68.3,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "yi-1-5-34b",
+      "overallIndex": 33.1,
+      "rankOverall": 344,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 42.8,
+        "reasoning": 40.9,
+        "coding": null,
+        "math": 0,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "yi-1-5-9b",
+      "overallIndex": 41.3,
+      "rankOverall": 315,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 41.3,
+        "reasoning": null,
+        "coding": null,
+        "math": null,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "yi-34b",
+      "overallIndex": 35.8,
+      "rankOverall": 336,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 60.5,
+        "reasoning": 37.4,
+        "coding": 25.1,
+        "math": 33.4,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "yi-6b",
+      "overallIndex": 18.9,
+      "rankOverall": 378,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": null,
+        "knowledge": 38.7,
+        "reasoning": 19.7,
+        "coding": 12.6,
+        "math": 14.8,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "yi-lightning",
+      "overallIndex": 63.1,
+      "rankOverall": 183,
+      "arenaElo": 1287,
+      "categoryIdx": {
+        "human-preference": 37,
+        "knowledge": null,
+        "reasoning": 62.3,
+        "coding": 83.5,
+        "math": 70.5,
+        "vision": null,
+        "agents": null
+      }
+    },
+    {
+      "slug": "zephyr-7b-beta",
+      "overallIndex": 54.7,
+      "rankOverall": 245,
+      "arenaElo": null,
+      "categoryIdx": {
+        "human-preference": 73.1,
+        "knowledge": 42.5,
+        "reasoning": 66,
+        "coding": null,
+        "math": 8.3,
+        "vision": null,
+        "agents": null
       }
     }
   ],
   "movers": [
     {
-      "slug": "qwen3-7-max",
-      "name": "Qwen3.7 Max",
-      "prevSlug": "qwen3-8b",
-      "prevName": "Qwen3 8B",
-      "delta": 39.6
+      "slug": "doubao-seed-1-6",
+      "name": "Doubao-Seed-1.6",
+      "prevSlug": "doubao-1-5-pro",
+      "prevName": "Doubao-1.5-Pro",
+      "delta": 96
     },
     {
-      "slug": "llama-3-3-70b",
-      "name": "Llama 3.3 70B",
-      "prevSlug": "llama-3-1-8b",
-      "prevName": "Llama 3.1 8B",
-      "delta": 21.7
+      "slug": "hunyuan-large-a52b",
+      "name": "Hunyuan-Large (A52B)",
+      "prevSlug": "hunyuan-1st-gen",
+      "prevName": "Hunyuan (1st-gen)",
+      "delta": 76.8
     },
     {
-      "slug": "kimi-k2-5",
-      "name": "Kimi K2.5",
-      "prevSlug": "kimi-k2",
-      "prevName": "Kimi K2",
-      "delta": 14.3
+      "slug": "upstage-solar-pro",
+      "name": "Upstage Solar Pro",
+      "prevSlug": "upstage-solar-10-7b",
+      "prevName": "Upstage SOLAR 10.7B",
+      "delta": 70.8
     },
     {
-      "slug": "grok-4-2",
-      "name": "Grok 4.2",
-      "prevSlug": "grok-4-fast",
-      "prevName": "Grok 4 Fast",
-      "delta": 13.7
+      "slug": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "prevSlug": "claude-opus-4-5-medium",
+      "prevName": "Claude Opus 4.5 (Medium)",
+      "delta": 70.6
     },
     {
-      "slug": "phi-4-reasoning",
-      "name": "Phi-4 Reasoning Plus",
-      "prevSlug": "phi-4",
-      "prevName": "Phi-4",
-      "delta": 13.3
+      "slug": "command-r7b",
+      "name": "Command R7B",
+      "prevSlug": "command-r",
+      "prevName": "Command R",
+      "delta": 48.3
     }
   ]
 }

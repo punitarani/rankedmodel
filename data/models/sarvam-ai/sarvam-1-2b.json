@@ -1,0 +1,45 @@
+{
+  "slug": "sarvam-1-2b",
+  "name": "Sarvam-1 (2B)",
+  "orgSlug": "sarvam-ai",
+  "familySlug": "sarvam",
+  "releaseDate": "2024-10-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Sarvam Non-Commercial License",
+  "paramsB": 2,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "2B dense transformer with custom Indic-optimized tokenizer",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 11,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "sarvamai/sarvam-1",
+    "docs": "sarvam.ai"
+  },
+  "note": "India's first from-scratch open foundation model; 2B params trained on 4T tokens with a low-fertility tokenizer for 10 Indic languages plus English; base text-completion model, not chat-tuned.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 2,
+  "vramFp16Gb": 5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

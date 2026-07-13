@@ -1,0 +1,49 @@
+{
+  "slug": "gpt-oss-20b-low",
+  "name": "gpt-oss-20b (Low)",
+  "orgSlug": "openai",
+  "familySlug": "gpt-oss",
+  "releaseDate": "2025-08-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 21,
+  "activeParamsB": 3.6,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-experts transformer, 32 experts/layer, top-4 active, 24 layers",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "openai/gpt-oss-20b",
+    "gh": "openai/gpt-oss",
+    "docs": "cookbook.openai.com"
+  },
+  "note": "21B MoE (3.6B active) open-weight sibling that runs on consumer hardware; Apache 2.0.",
+  "quants": [
+    "GGUF Q4",
+    "MXFP4 (native)",
+    "GGUF Q4_K_M",
+    "GGUF Q8_0"
+  ],
+  "vramQ4Gb": 13,
+  "vramFp16Gb": 42,
+  "tps4090": 225,
+  "tpsNote": "225 tok/s at 8k context (Q4_K_M GGUF, llama.cpp) on RTX 4090; throughput collapses to ~9 tok/s at full 128k context.",
+  "effortLabel": "Low",
+  "isDefaultConfig": false,
+  "isBestConfig": false
+}

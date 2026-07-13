@@ -1,0 +1,42 @@
+{
+  "slug": "gpt-3-175b",
+  "name": "GPT-3 175B",
+  "orgSlug": "openai",
+  "familySlug": "gpt-3",
+  "releaseDate": "2020-06-11",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 175,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "gh": "openai/gpt-3"
+  },
+  "note": "175B few-shot learner that launched the OpenAI API in private beta; base GPT-3 models were retired from the API on 2024-01-04.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

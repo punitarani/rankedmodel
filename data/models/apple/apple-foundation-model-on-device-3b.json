@@ -1,0 +1,42 @@
+{
+  "slug": "apple-foundation-model-on-device-3b",
+  "name": "Apple Foundation Model (on-device, ~3B)",
+  "orgSlug": "apple",
+  "familySlug": "apple-foundation-models",
+  "releaseDate": "2024-06-10",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 3,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, GQA (24 query / 8 KV heads), 26 layers",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "machinelearning.apple.com/research/introducing-apple-foundation-models"
+  },
+  "note": "~3B on-device model pruned from a 6.4B checkpoint; beat Phi-3-mini/Mistral-7B/Gemma-7B in Apple's 2024 evals, MMLU 61.4.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -5,19 +5,19 @@
   "familySlug": "claude-4",
   "releaseDate": "2025-10-15",
   "status": "released",
-  "predecessor": "claude-sonnet-4",
+  "predecessor": "claude-sonnet-4-5",
   "openness": "closed",
   "license": "Proprietary",
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense (undisclosed)",
+  "archDisplay": "Dense transformer, hybrid-reasoning (parameter count undisclosed)",
   "ctxK": 200,
   "modalities": [
     "text",
     "vision"
   ],
-  "langCount": 40,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
@@ -32,12 +32,15 @@
     "output": 5
   },
   "links": {
-    "docs": "docs.anthropic.com"
+    "docs": "platform.claude.com"
   },
-  "note": "Near-Sonnet coding at Haiku latency and price.",
+  "note": "First Claude-4-generation Haiku, matching Sonnet 4 coding performance at one-third the cost and 2x+ the speed.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

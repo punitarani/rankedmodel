@@ -1,0 +1,43 @@
+{
+  "slug": "codegen-16b-mono",
+  "name": "CodeGen 16B (Mono)",
+  "orgSlug": "salesforce",
+  "familySlug": "codegen",
+  "releaseDate": "2022-03-25",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "BSD-3-Clause",
+  "paramsB": 16.1,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense autoregressive transformer (GPT-2-style), 16.1B params, trained on TPU-v4",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Salesforce/codegen-16B-mono",
+    "gh": "salesforce/CodeGen"
+  },
+  "note": "Early open program-synthesis LLM (350M-16B) trained on TPU-v4; Mono variant was competitive with OpenAI Codex on HumanEval",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 32.2,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "cogvlm-17b",
+  "name": "CogVLM-17B",
+  "orgSlug": "zhipu-ai-thudm-tsinghua",
+  "familySlug": "cogvlm",
+  "releaseDate": "2023-10-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0 (code); CogVLM Model License for weights (non-commercial use / commercial by agreement)",
+  "paramsB": 17,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense dual-tower vision-language Transformer (trainable visual expert modules)",
+  "ctxK": 4,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "THUDM/cogvlm-chat-hf",
+    "gh": "zai-org/CogVLM"
+  },
+  "note": "Open VLM (10B vision expert + 7B Vicuna-based LM) with SOTA-level results on 10 cross-modal benchmarks at 490x490 resolution.",
+  "quants": [
+    "INT4",
+    "INT8"
+  ],
+  "vramQ4Gb": 11,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

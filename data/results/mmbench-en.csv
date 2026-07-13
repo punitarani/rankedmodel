@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+glm-4v-9b,81.1,self-reported,https://huggingface.co/THUDM/glm-4v-9b,,MMBench-EN-Test

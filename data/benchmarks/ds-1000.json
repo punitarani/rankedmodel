@@ -1,0 +1,10 @@
+{
+  "slug": "ds-1000",
+  "name": "DS-1000",
+  "category": "coding",
+  "unit": "%",
+  "description": "Realistic data-science coding problems across 7 Python libraries.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

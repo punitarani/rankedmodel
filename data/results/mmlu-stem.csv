@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+qwen2-math-72b,79.9,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, 5-shot"

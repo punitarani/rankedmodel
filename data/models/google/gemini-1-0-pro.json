@@ -1,0 +1,44 @@
+{
+  "slug": "gemini-1-0-pro",
+  "name": "Gemini 1.0 Pro",
+  "orgSlug": "google",
+  "familySlug": "gemini-1-0",
+  "releaseDate": "2023-12-13",
+  "status": "deprecated",
+  "predecessor": "gemini-1-0-nano",
+  "openness": "closed",
+  "license": "Proprietary (Google API/Vertex AI)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer decoder with multi-query attention",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "ai.google.dev/gemini-api/docs/deprecations"
+  },
+  "note": "General-purpose 1.0 workhorse; powered Bard at launch; shut down on Gemini API (404s on gemini-1.0-pro).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

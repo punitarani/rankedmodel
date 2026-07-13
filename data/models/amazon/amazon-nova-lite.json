@@ -1,0 +1,47 @@
+{
+  "slug": "amazon-nova-lite",
+  "name": "Amazon Nova Lite",
+  "orgSlug": "amazon",
+  "familySlug": "amazon-nova",
+  "releaseDate": "2024-12-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (AWS Bedrock service terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Transformer, architecture/size undisclosed",
+  "ctxK": 300,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": 200,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.06,
+    "output": 0.24
+  },
+  "links": {
+    "docs": "docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html"
+  },
+  "note": "Low-cost multimodal (text/image/video-in) Nova tier tuned for speed; launched alongside Micro and Pro at re:Invent 2024.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

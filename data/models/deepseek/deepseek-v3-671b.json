@@ -1,0 +1,50 @@
+{
+  "slug": "deepseek-v3-671b",
+  "name": "DeepSeek-V3 671B",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-v3",
+  "releaseDate": "2024-12-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "DeepSeek Model License (code: MIT)",
+  "paramsB": 671,
+  "activeParamsB": 37,
+  "archClass": "moe",
+  "archDisplay": "MoE transformer, 671B total / 37B active — DeepSeekMoE + MLA + multi-token prediction, auxiliary-loss-free load balancing",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.2,
+    "output": 0.8
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-V3",
+    "gh": "deepseek-ai/DeepSeek-V3",
+    "docs": "api-docs.deepseek.com"
+  },
+  "note": "671B/37B MoE trained on 14.8T tokens for ~$5.6M (2.788M H800 GPU-hours); matched GPT-4o/Claude 3.5 quality at a fraction of the cost.",
+  "quants": [
+    "GGUF",
+    "MLX"
+  ],
+  "vramQ4Gb": 400,
+  "vramFp16Gb": 1342,
+  "tps4090": null,
+  "tpsNote": "671B total params vastly exceed a single RTX 4090's 24GB even at 4-bit; requires a multi-GPU cluster or heavy CPU/RAM offload",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

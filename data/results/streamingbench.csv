@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+minicpm-o-2-6,66,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-01,Outperforms GPT-4o-202408 (64.1) on multimodal live-streaming benchmark

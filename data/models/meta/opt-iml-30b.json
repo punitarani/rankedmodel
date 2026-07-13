@@ -1,0 +1,46 @@
+{
+  "slug": "opt-iml-30b",
+  "name": "OPT-IML 30B",
+  "orgSlug": "meta",
+  "familySlug": "opt",
+  "releaseDate": "2022-12-22",
+  "status": "deprecated",
+  "predecessor": "opt-66b",
+  "openness": "open-weights",
+  "license": "OPT-175B License Agreement (non-commercial research use)",
+  "paramsB": 30,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (OPT architecture), instruction-tuned",
+  "ctxK": 2.048,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "facebook/opt-iml-30b",
+    "gh": "facebookresearch/metaseq",
+    "docs": "arxiv.org/abs/2212.12017"
+  },
+  "note": "Instruction-tuned OPT fine-tuned on a curated ~1,500-task subset of the OPT-IML Bench, with the remaining tasks held out for downstream evaluation; early instruction-tuning at scale. (OPT-IML-Max is a separate sibling checkpoint trained on the full ~2,000-task bench.)",
+  "quants": [
+    "GPTQ"
+  ],
+  "vramQ4Gb": 17,
+  "vramFp16Gb": 60,
+  "tps4090": null,
+  "tpsNote": "llama.cpp does not support the OPT architecture, so no RTX 4090 llama.cpp figure exists even though the Q4 footprint would fit in 24GB.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

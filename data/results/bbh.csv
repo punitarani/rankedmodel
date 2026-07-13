@@ -1,0 +1,59 @@
+model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba,45.4,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
+ai21-jamba-1-5-large,65.5,self-reported,https://arxiv.org/html/2408.12570v1,,
+ai21-jamba-1-5-mini,53.4,self-reported,https://arxiv.org/html/2408.12570v1,,
+amazon-nova-lite,82.4,independent,https://deepranking.ai/llm-models/nova-lite,,
+amazon-nova-micro,79.5,independent,https://deepranking.ai/llm-models/nova-micro,,
+amazon-nova-pro,86.9,independent,https://deepranking.ai/llm-models/nova-pro,,
+baichuan2-13b,48.78,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,3-shot
+chatglm2-6b,30,self-reported,https://github.com/zai-org/ChatGLM2-6B,,Chat-aligned checkpoint
+chatglm3-6b,66.1,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
+claude-3-5-sonnet,93.1,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,3-shot CoT
+claude-3-haiku,73.7,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,3-shot CoT
+claude-3-opus,86.8,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,3-shot CoT
+claude-3-sonnet,82.9,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,3-shot CoT
+deepseek-llm-67b,71.7,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"Chat variant, paper Table 6"
+deepseek-v2-236b,79.7,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,,Chat (RL) variant
+falcon-h1-34b,70.68,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
+falcon3-10b,44.82,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,
+falcon3-7b,52.4,self-reported,https://huggingface.co/tiiuae/Falcon3-7B-Instruct,,
+flan-t5-xxl,45.3,self-reported,https://arxiv.org/abs/2210.11416,,"3-shot, direct prompting"
+gemini-1-5-flash,85.5,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"3-shot, Table 11"
+gemini-1-5-flash-8b,69.5,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"3-shot, Table 22"
+gemma-2-27b,74.9,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,3-shot CoT
+gemma-2-9b,68.2,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,3-shot CoT
+glm-4,84.7,self-reported,https://arxiv.org/html/2406.12793v1,2024-05-20,"GLM-4 (0520) checkpoint, vs GPT-4-0314 83.1"
+granite-3-1-8b-instruct,34.09,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HF Open LLM Leaderboard V2
+granite-3-2-8b-instruct,64.77,self-reported,https://huggingface.co/ibm-granite/granite-3.2-8b-instruct,,BigBenchHard
+granite-3-3-8b-instruct,69.13,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,BigBenchHard
+granite-4-0-h-small,81.62,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+hermes-3-405b,75.37,self-reported,https://arxiv.org/pdf/2408.11857,,3-shot
+internlm2-20b,68.3,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,
+internlm2-5-7b,71.6,self-reported,https://huggingface.co/internlm/internlm2_5-7b-chat,,
+minicpm-2b,36.87,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table
+nemotron-4-15b,58.7,self-reported,https://unfoldai.com/nemotron-4-nvidia-powerful-language-model/,2024-02-26,3-shot
+nemotron-4-340b,85.44,self-reported,https://huggingface.co/nvidia/Nemotron-4-340B-Base,2024-06-14,
+olmo-2-13b,58.8,self-reported,https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct,,Instruct variant
+olmo-2-32b,70.6,self-reported,https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct,,"GPT-3.5 Turbo 66.6, GPT-4o mini 65.9"
+olmo-3-7b,71.2,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,
+olmo-3-think-32b,89.8,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,Qwen 3 32B 90.6
+orca-2-13b,50.18,self-reported,https://ar5iv.labs.arxiv.org/html/2311.11045,,zero-shot aggregate BigBench-Hard
+palm-2,78.1,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"PaLM 2-L on BIG-Bench Hard, as reported in PaLM 2 Technical Report (Table 6), 3-shot CoT"
+palmyra-x5,70.99,self-reported,https://dev.writer.com/home/models,,
+phi-2-2-7b,59.4,self-reported,https://arxiv.org/pdf/2404.14219,,
+phi-3-5-moe-16x3-8b-6-6b-active,79.1,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
+phi-3-medium-14b,81.4,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,3-shot
+phi-3-mini-3-8b,73.5,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,3-shot CoT
+phi-4-mini-3-8b,70.4,self-reported,https://huggingface.co/microsoft/Phi-4-mini-instruct,,0-shot CoT
+qwen1-5-110b,74.8,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Base model
+qwen1-5-72b,65.5,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
+qwen2-5-72b,86.3,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
+qwen2-57b-a14b,67,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen2-72b,82.4,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen2-7b,62.6,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+t-lu-3-405b,88.6,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B,,"DeepSeek V3 89.5, GPT-4o 83.3"
+t-lu-3-70b,82,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B,,BigBenchHard 3-shot CoT
+wizardlm-2-8x22b,48.58,independent,https://huggingface.co/alpindale/WizardLM-2-8x22B,,"Open LLM Leaderboard v2, 3-shot"
+yi-1-5-34b,59.8,independent,https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-34B-32K-details,,
+yi-34b,54.3,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,
+yi-6b,42.8,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,

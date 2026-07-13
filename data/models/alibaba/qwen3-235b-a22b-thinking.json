@@ -1,0 +1,49 @@
+{
+  "slug": "qwen3-235b-a22b-thinking",
+  "name": "Qwen3-235B-A22B (Thinking)",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen3",
+  "releaseDate": "2025-04-29",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 235,
+  "activeParamsB": 22,
+  "archClass": "moe",
+  "archDisplay": "MoE Transformer (128 experts, 8 active, hybrid thinking mode)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 119,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen3-235B-A22B",
+    "gh": "QwenLM/Qwen3",
+    "docs": "qwen.readthedocs.io"
+  },
+  "note": "Gen-3 flagship MoE, thinking-mode setting; rivals DeepSeek-R1, o1, Gemini 2.5 Pro.",
+  "quants": [
+    "GGUF",
+    "MLX",
+    "FP8",
+    "NVFP4"
+  ],
+  "vramQ4Gb": 132,
+  "vramFp16Gb": 470,
+  "tps4090": null,
+  "tpsNote": "Exceeds single RTX 4090 24GB VRAM even at Q4 (~132GB); requires multi-GPU or CPU offload.",
+  "effortLabel": "Thinking",
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "livecodebench",
+  "name": "LiveCodeBench",
+  "category": "coding",
+  "unit": "%",
+  "description": "Contamination-free competitive programming, rolling problem set.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

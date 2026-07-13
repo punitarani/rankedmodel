@@ -1,0 +1,10 @@
+{
+  "slug": "bfcl-v3",
+  "name": "BFCL v3",
+  "category": "agents",
+  "unit": "%",
+  "description": "Third-generation Berkeley Function-Calling Leaderboard.",
+  "normMin": 20,
+  "normMax": 100,
+  "higherIsBetter": true
+}

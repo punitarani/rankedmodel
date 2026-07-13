@@ -1,0 +1,48 @@
+{
+  "slug": "gpt-oss-120b-high",
+  "name": "gpt-oss-120b (High)",
+  "orgSlug": "openai",
+  "familySlug": "gpt-oss",
+  "releaseDate": "2025-08-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 117,
+  "activeParamsB": 5.1,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-experts transformer, 128 experts/layer, top-4 active, 36 layers",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "openai/gpt-oss-120b",
+    "gh": "openai/gpt-oss",
+    "docs": "cookbook.openai.com"
+  },
+  "note": "OpenAI's first open-weight model since GPT-2; 117B MoE (5.1B active), Apache 2.0.",
+  "quants": [
+    "MXFP4 (native)",
+    "GGUF Q4_K_M",
+    "GGUF Q8_0"
+  ],
+  "vramQ4Gb": 73,
+  "vramFp16Gb": 234,
+  "tps4090": null,
+  "tpsNote": "Does not fit on a single RTX 4090 (24GB); OpenAI specifies a single 80GB GPU (H100/MI300X) for native MXFP4 inference.",
+  "effortLabel": "High",
+  "isDefaultConfig": false,
+  "isBestConfig": true
+}

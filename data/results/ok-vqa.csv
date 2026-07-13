@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+qwen-vl,58.6,self-reported,https://huggingface.co/Qwen/Qwen-VL,,Zero-shot OK-VQA

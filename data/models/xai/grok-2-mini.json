@@ -1,0 +1,43 @@
+{
+  "slug": "grok-2-mini",
+  "name": "Grok-2 mini",
+  "orgSlug": "xai",
+  "familySlug": "grok-2",
+  "releaseDate": "2024-08-13",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (size undisclosed by xAI; smaller sibling of Grok-2)",
+  "ctxK": 131,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "docs.x.ai"
+  },
+  "note": "Smaller, faster, cost-efficient sibling of Grok-2 launched in the same beta; no distinct API price could be confirmed post-2024.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

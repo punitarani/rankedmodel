@@ -1,0 +1,48 @@
+{
+  "slug": "ai21-jamba-1-5-large",
+  "name": "AI21 Jamba 1.5 Large",
+  "orgSlug": "ai21-labs",
+  "familySlug": "ai21-jamba",
+  "releaseDate": "2024-08-22",
+  "status": "released",
+  "predecessor": "ai21-jamba",
+  "openness": "open-weights",
+  "license": "Jamba Open Model License",
+  "paramsB": 398,
+  "activeParamsB": 94,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Mamba-Transformer MoE (Jamba)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 9,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2,
+    "output": 8
+  },
+  "links": {
+    "hf": "ai21labs/AI21-Jamba-Large-1.5",
+    "docs": "docs.ai21.com"
+  },
+  "note": "Flagship open hybrid SSM-Transformer MoE, 94B/398B active/total, RULER-verified 256K context, function calling and JSON output.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 240.4,
+  "vramFp16Gb": 796,
+  "tps4090": null,
+  "tpsNote": "Too large to run on a single RTX 4090 even at Q4; requires multi-GPU or CPU offload.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

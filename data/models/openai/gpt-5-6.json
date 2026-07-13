@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-5-6",
+  "name": "GPT-5.6",
+  "orgSlug": "openai",
+  "familySlug": "gpt-5-6",
+  "releaseDate": "2026-07-09",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture (presumed dense transformer); three durable capability tiers Sol/Terra/Luna (this entry reflects flagship Sol)",
+  "ctxK": 1050,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 5,
+    "output": 30
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-5.6-sol"
+  },
+  "note": "Sol tier billed as OpenAI's best coding model yet (Terminal-Bench 2.1 SOTA); limited-preview June 26 under US govt review, GA July 9, 2026.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

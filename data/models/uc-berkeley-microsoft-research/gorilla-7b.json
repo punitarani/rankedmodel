@@ -1,0 +1,46 @@
+{
+  "slug": "gorilla-7b",
+  "name": "Gorilla 7B",
+  "orgSlug": "uc-berkeley-microsoft-research",
+  "familySlug": "gorilla",
+  "releaseDate": "2023-05-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0 (delta weights; base requires Meta LLaMA research license)",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "LLaMA-7B dense Transformer, retrieval-aware instruction fine-tune for API calls",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "gorilla-llm/gorilla-7b-hf-delta-v1",
+    "gh": "ShishirPatil/gorilla"
+  },
+  "note": "Zero-shot beats GPT-4 by 20.4pp and ChatGPT by 10.75pp on APIBench across TorchHub/HuggingFace/TensorHub.",
+  "quants": [
+    "GGML",
+    "GGUF"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

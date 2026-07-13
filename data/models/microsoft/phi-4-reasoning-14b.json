@@ -1,0 +1,46 @@
+{
+  "slug": "phi-4-reasoning-14b",
+  "name": "Phi-4-reasoning (14B)",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-4",
+  "releaseDate": "2025-04-30",
+  "status": "released",
+  "predecessor": "phi-4-multimodal-instruct",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 14,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (14B)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "microsoft/Phi-4-reasoning",
+    "docs": "azure.microsoft.com/en-us/products/phi"
+  },
+  "note": "14B reasoning specialist SFT-tuned on 1.4M STEM prompts with o3-mini-distilled chain-of-thought; beats DeepSeek-R1-Distill-70B on AIME despite far fewer params; shipped alongside Phi-4-reasoning-plus.",
+  "quants": [
+    "GGUF Q4",
+    "MLX 4-bit"
+  ],
+  "vramQ4Gb": 10,
+  "vramFp16Gb": 29,
+  "tps4090": null,
+  "tpsNote": "No independently verified RTX 4090 llama.cpp benchmark found; third-party estimates cluster around 70-90 tok/s at Q4/Q5 for this 14B dense model.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

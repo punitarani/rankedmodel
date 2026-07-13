@@ -1,0 +1,42 @@
+{
+  "slug": "ernie-3-0-titan",
+  "name": "ERNIE 3.0 Titan",
+  "orgSlug": "baidu",
+  "familySlug": "ernie",
+  "releaseDate": "2021-12-23",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (not publicly released)",
+  "paramsB": 260,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense knowledge-enhanced transformer (Transformer-XL-style, autoregressive + autoencoding)",
+  "ctxK": 0.512,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "research.baidu.com/Blog/index-view?id=165"
+  },
+  "note": "260B knowledge-enhanced dense model (with Peng Cheng Lab); then the largest Chinese dense LM and first knowledge-enhanced 100B+ model.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

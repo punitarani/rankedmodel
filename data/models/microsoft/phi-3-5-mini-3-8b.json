@@ -1,0 +1,52 @@
+{
+  "slug": "phi-3-5-mini-3-8b",
+  "name": "Phi-3.5-mini (3.8B)",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-3-5",
+  "releaseDate": "2024-08-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 3.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 22,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.13,
+    "output": 0.52
+  },
+  "links": {
+    "hf": "microsoft/Phi-3.5-mini-instruct",
+    "gh": "microsoft/PhiCookBook",
+    "docs": "techcommunity.microsoft.com/blog/azure-ai-foundry-blog/discover-the-new-multi-lingual-high-quality-phi-3-5-slms/4225280"
+  },
+  "note": "Refresh of Phi-3-mini with 22-language multilingual support and 128K context; beats Llama-3.1 8B on many tasks.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "ONNX INT4",
+    "MLX 4-bit"
+  ],
+  "vramQ4Gb": 4,
+  "vramFp16Gb": 8,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

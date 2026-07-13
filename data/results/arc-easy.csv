@@ -1,0 +1,4 @@
+model_slug,score,source,source_url,evaluated_at,notes
+apple-dclm-baseline-7b,82.2,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,
+minicpm-2b,85.44,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table (ARC-e)
+pythia-12b,70.2,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"zero-shot, LM Eval Harness, final checkpoint (step143000) — raw eval JSON acc=0.7024"

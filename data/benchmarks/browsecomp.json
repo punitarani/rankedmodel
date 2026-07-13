@@ -1,0 +1,10 @@
+{
+  "slug": "browsecomp",
+  "name": "BrowseComp",
+  "category": "agents",
+  "unit": "%",
+  "description": "Hard-to-find-information web-browsing agent benchmark.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

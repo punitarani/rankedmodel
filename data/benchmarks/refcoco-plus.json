@@ -1,0 +1,10 @@
+{
+  "slug": "refcoco-plus",
+  "name": "RefCOCO+",
+  "category": "vision",
+  "unit": "%",
+  "description": "RefCOCO variant excluding absolute-location expressions.",
+  "normMin": 50,
+  "normMax": 96,
+  "higherIsBetter": true
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "llama-3-1-minitron-4b",
+  "name": "Llama-3.1-Minitron 4B",
+  "orgSlug": "nvidia",
+  "familySlug": "minitron",
+  "releaseDate": "2024-08-14",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "NVIDIA Open Model License",
+  "paramsB": 4.5,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (width-pruned + distilled from Llama-3.1-8B)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "nvidia/Llama-3.1-Minitron-4B-Width-Base",
+    "docs": "developer.nvidia.com"
+  },
+  "note": "4B model pruned (width) and distilled from Llama-3.1-8B, using ~40x fewer training tokens than training from scratch.",
+  "quants": [
+    "GGUF Q4",
+    "MLX"
+  ],
+  "vramQ4Gb": 3.5,
+  "vramFp16Gb": 10,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

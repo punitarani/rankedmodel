@@ -1,0 +1,48 @@
+{
+  "slug": "qwen1-5-110b",
+  "name": "Qwen1.5-110B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen1-5",
+  "releaseDate": "2024-04-25",
+  "status": "released",
+  "predecessor": "codeqwen1-5-7b",
+  "openness": "open-weights",
+  "license": "Tongyi Qianwen License Agreement",
+  "paramsB": 111,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (GQA)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen1.5-110B-Chat",
+    "gh": "QwenLM/Qwen1.5",
+    "docs": "qwenlm.github.io/blog/qwen1.5-110b"
+  },
+  "note": "First 100B+ dense Qwen1.5, rivaled Llama-3-70B base; announced alongside the closed Qwen-Max-0428.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 65,
+  "vramFp16Gb": 222,
+  "tps4090": null,
+  "tpsNote": "Exceeds a single RTX 4090's 24GB VRAM even at Q4; requires multi-GPU or CPU offload.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

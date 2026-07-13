@@ -1,0 +1,51 @@
+{
+  "slug": "qwen3-coder-480b-a35b",
+  "name": "Qwen3-Coder-480B-A35B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen3-coder",
+  "releaseDate": "2025-07-22",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 480,
+  "activeParamsB": 35,
+  "archClass": "moe",
+  "archDisplay": "MoE, 160 experts / 8 active",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 119,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.5,
+    "output": 7.5
+  },
+  "links": {
+    "hf": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "gh": "QwenLM/Qwen3-Coder",
+    "docs": "qwen.readthedocs.io"
+  },
+  "note": "Most powerful open agentic coding MoE; 256K native (1M extrapolated) context, rivals Claude Sonnet 4.",
+  "quants": [
+    "GGUF",
+    "FP8",
+    "AWQ"
+  ],
+  "vramQ4Gb": 289,
+  "vramFp16Gb": 960,
+  "tps4090": null,
+  "tpsNote": "Far too large for a single RTX 4090; needs multi-GPU or large CPU-RAM offload setups.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

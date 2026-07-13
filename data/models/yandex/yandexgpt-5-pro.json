@@ -1,0 +1,42 @@
+{
+  "slug": "yandexgpt-5-pro",
+  "name": "YandexGPT 5 Pro",
+  "orgSlug": "yandex",
+  "familySlug": "yandexgpt",
+  "releaseDate": "2025-02-25",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Proprietary dense transformer, undisclosed size (YandexGPT 5 flagship)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "yandex.cloud/en/docs/foundation-models"
+  },
+  "note": "Yandex's closed flagship LLM powering the Alice assistant; vendor claims quality comparable to GPT-4o, with an independent review putting MMLU around 83%.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

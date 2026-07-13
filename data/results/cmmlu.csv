@@ -1,0 +1,7 @@
+model_slug,score,source,source_url,evaluated_at,notes
+baichuan2-13b,61.97,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,5-shot
+baichuan2-7b,57.07,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,5-shot
+minicpm-2b,51.07,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table; Chinese MMLU analogue
+qwen1-5-72b,83.5,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
+skywork-13b,61.8,self-reported,https://huggingface.co/Skywork/Skywork-13B-base,,
+skywork-moe-base,79.5,self-reported,https://arxiv.org/html/2406.06563v1,,

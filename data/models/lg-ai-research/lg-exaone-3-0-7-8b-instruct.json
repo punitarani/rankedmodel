@@ -1,0 +1,46 @@
+{
+  "slug": "lg-exaone-3-0-7-8b-instruct",
+  "name": "LG EXAONE 3.0 7.8B Instruct",
+  "orgSlug": "lg-ai-research",
+  "familySlug": "exaone-3-0",
+  "releaseDate": "2024-08-07",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "EXAONE AI Model License Agreement 1.1 - NC",
+  "paramsB": 7.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer, 32 layers",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct",
+    "gh": "LG-AI-EXAONE/EXAONE-3.0"
+  },
+  "note": "LG's first public bilingual (KO/EN) open-weights instruct model, pretrained on 8T tokens.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 16,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

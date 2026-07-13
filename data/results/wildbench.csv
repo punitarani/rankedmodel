@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+lg-exaone-3-0-7-8b-instruct,48.2,self-reported,https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct,2024-08-01,WildBench

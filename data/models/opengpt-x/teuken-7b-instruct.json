@@ -1,0 +1,47 @@
+{
+  "slug": "teuken-7b-instruct",
+  "name": "Teuken-7B (instruct)",
+  "orgSlug": "opengpt-x",
+  "familySlug": "teuken",
+  "releaseDate": "2024-11-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Custom decoder-only transformer with multilingual tokenizer, GQA, RMSNorm, SwiGLU, RoPE",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 24,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openGPT-X/Teuken-7B-instruct-commercial-v0.4",
+    "docs": "opengpt-x.de"
+  },
+  "note": "EU-funded model pre-trained from scratch and instruction-tuned across all 24 official EU languages; Apache-2.0 commercial variant.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "MLX 4-bit"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": "No RTX 4090-specific measurement found; a 7B model at Q4 fits comfortably and typically runs well above real-time on a 4090.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

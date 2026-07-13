@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+qwen-vl,85.8,self-reported,https://huggingface.co/Qwen/Qwen-VL,,"Zero-shot captioning CIDEr, reported SOTA among generalist VLMs at release"

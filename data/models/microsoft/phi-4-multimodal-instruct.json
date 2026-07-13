@@ -1,0 +1,52 @@
+{
+  "slug": "phi-4-multimodal-instruct",
+  "name": "Phi-4-multimodal-instruct",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-4",
+  "releaseDate": "2025-02-26",
+  "status": "released",
+  "predecessor": "phi-4-14b",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 5.6,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Unified dense Transformer (frozen Phi-4-mini backbone + modality-specific LoRA adapters for vision/speech)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": 23,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.08,
+    "output": 0.32
+  },
+  "links": {
+    "hf": "microsoft/Phi-4-multimodal-instruct",
+    "gh": "microsoft/PhiCookBook",
+    "docs": "techcommunity.microsoft.com/blog/educatordeveloperblog/welcome-to-the-new-phi-4-models---microsoft-phi-4-mini--phi-4-multimodal/4386037"
+  },
+  "note": "Unified text + vision + speech model (5.6B, 128K ctx) built on frozen Phi-4-mini weights with LoRA adapters.",
+  "quants": [
+    "GGUF Q4",
+    "ONNX INT4"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 12,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

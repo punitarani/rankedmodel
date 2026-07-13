@@ -1,0 +1,49 @@
+{
+  "slug": "llama-33b",
+  "name": "LLaMA 33B",
+  "orgSlug": "meta",
+  "familySlug": "llama",
+  "releaseDate": "2023-02-24",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "LLaMA License (non-commercial research, gated/case-by-case access)",
+  "paramsB": 32.5,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (RMSNorm, SwiGLU, rotary position embeddings)",
+  "ctxK": 2.048,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 20,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "huggyllama/llama-33b",
+    "gh": "facebookresearch/llama",
+    "docs": "arxiv.org/abs/2302.13971"
+  },
+  "note": "Mid-large LLaMA-1 checkpoint (32.5B params) trained on 1.4T tokens, sitting between the 13B and 65B sizes.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GGML",
+    "GPTQ",
+    "AWQ"
+  ],
+  "vramQ4Gb": 19,
+  "vramFp16Gb": 65,
+  "tps4090": null,
+  "tpsNote": "Original LLaMA-1 predates most public RTX 4090 llama.cpp benchmarks (which target Llama 2/3); no verified figure for this exact checkpoint was found.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

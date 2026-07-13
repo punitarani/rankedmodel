@@ -1,0 +1,47 @@
+{
+  "slug": "falcon-180b",
+  "name": "Falcon-180B",
+  "orgSlug": "tii",
+  "familySlug": "falcon",
+  "releaseDate": "2023-09-06",
+  "status": "released",
+  "predecessor": "falcon-7b",
+  "openness": "open-weights",
+  "license": "TII Falcon-180B License and Acceptable Use Policy (commercial use permitted, excludes hosting use)",
+  "paramsB": 180,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Causal decoder-only Transformer, 180B (80 layers, multiquery attention, RoPE, FlashAttention)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 11,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "tiiuae/falcon-180B",
+    "docs": "huggingface.co/blog/falcon-180b"
+  },
+  "note": "Billed as the world's most powerful openly released LLM at launch; trained on 3.5T RefinedWeb tokens, scored 67.85 avg on Open LLM Leaderboard.",
+  "quants": [
+    "GGUF",
+    "GPTQ",
+    "AWQ"
+  ],
+  "vramQ4Gb": 100,
+  "vramFp16Gb": 400,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

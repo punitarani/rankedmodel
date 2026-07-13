@@ -1,0 +1,45 @@
+{
+  "slug": "doubao-1-5-pro",
+  "name": "Doubao-1.5-Pro",
+  "orgSlug": "bytedance",
+  "familySlug": "doubao",
+  "releaseDate": "2025-01-22",
+  "status": "released",
+  "predecessor": "doubao-1st-gen",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 200,
+  "activeParamsB": 20,
+  "archClass": "moe",
+  "archDisplay": "Sparse MoE, 200B total / 20B active (7 experts/token, ~140B-dense-equivalent)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.11,
+    "output": 0.275
+  },
+  "links": {
+    "docs": "seed.bytedance.com"
+  },
+  "note": "MoE flagship matching GPT-4o/Claude 3.5 Sonnet at far lower cost; adds a Deep Thinking mode that beats o1-preview on AIME",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

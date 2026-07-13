@@ -1,0 +1,10 @@
+{
+  "slug": "superglue",
+  "name": "SuperGLUE",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Harder successor to GLUE spanning 8 diverse language-understanding tasks.",
+  "normMin": 50,
+  "normMax": 99,
+  "higherIsBetter": true
+}

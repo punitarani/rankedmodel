@@ -1,0 +1,44 @@
+{
+  "slug": "bloom-176b",
+  "name": "BLOOM (176B)",
+  "orgSlug": "bigscience",
+  "familySlug": "bloom",
+  "releaseDate": "2022-07-11",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "BigScience RAIL License v1.0",
+  "paramsB": 176.25,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (ALiBi positional encoding, GPT-2-style, GeLU)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 59,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "bigscience/bloom"
+  },
+  "note": "First openly-released 100B+ LLM, built by 1000+ BigScience researchers across 46 natural + 13 programming languages under RAIL license.",
+  "quants": [
+    "INT8 (bitsandbytes)"
+  ],
+  "vramQ4Gb": 106,
+  "vramFp16Gb": 352,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

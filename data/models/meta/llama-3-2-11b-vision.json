@@ -1,0 +1,50 @@
+{
+  "slug": "llama-3-2-11b-vision",
+  "name": "Llama 3.2 11B Vision",
+  "orgSlug": "meta",
+  "familySlug": "llama-3-2",
+  "releaseDate": "2024-09-25",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3.2 Community License Agreement",
+  "paramsB": 10.6,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer + cross-attention vision adapter (GQA)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+    "gh": "meta-llama/llama-models",
+    "docs": "llama.com/docs/model-cards-and-prompt-formats/llama3_2"
+  },
+  "note": "First Llama vision model, adding image reasoning/captioning on an 8B-text backbone (English-only for image+text).",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 7.5,
+  "vramFp16Gb": 21,
+  "tps4090": null,
+  "tpsNote": "llama.cpp's multimodal (mmproj/mtmd) vision support only matured in 2025; no widely reported RTX 4090 Q4 tok/s figure was found",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

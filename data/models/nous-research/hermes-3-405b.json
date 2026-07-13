@@ -1,0 +1,49 @@
+{
+  "slug": "hermes-3-405b",
+  "name": "Hermes 3 405B",
+  "orgSlug": "nous-research",
+  "familySlug": "hermes",
+  "releaseDate": "2024-08-15",
+  "status": "released",
+  "predecessor": "nous-hermes-2-mixtral-8x7b-dpo",
+  "openness": "open-weights",
+  "license": "Llama 3.1 Community License",
+  "paramsB": 405,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer decoder (Llama 3.1 architecture, grouped-query attention)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1,
+    "output": 1
+  },
+  "links": {
+    "hf": "NousResearch/Hermes-3-Llama-3.1-405B",
+    "docs": "nousresearch.com/hermes3"
+  },
+  "note": "First full-parameter fine-tune of Llama 3.1 405B; Nous's neutrally-aligned flagship generalist with strong agentic, function-calling and roleplay ability.",
+  "quants": [
+    "FP8",
+    "GGUF Q4_K_M"
+  ],
+  "vramQ4Gb": 250,
+  "vramFp16Gb": 810,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "krutrim-2-12b",
+  "name": "Krutrim-2 (12B)",
+  "orgSlug": "ola-krutrim",
+  "familySlug": "krutrim",
+  "releaseDate": "2025-01-31",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Krutrim Community License Agreement v1.0",
+  "paramsB": 12,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Mistral-NeMo-based transformer, 40 layers, GQA (32 heads / 8 KV heads)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 23,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "krutrim-ai-labs/Krutrim-2-instruct",
+    "gh": "ola-krutrim/Krutrim-2-12B"
+  },
+  "note": "12B Indic LLM built on Mistral-NeMo; 128K context spanning English plus 22 Indian languages.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 7.5,
+  "vramFp16Gb": 24.5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

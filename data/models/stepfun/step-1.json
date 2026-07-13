@@ -1,0 +1,42 @@
+{
+  "slug": "step-1",
+  "name": "Step-1",
+  "orgSlug": "stepfun",
+  "familySlug": "step-1",
+  "releaseDate": "2024-03-01",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 100,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, 100B+ params, bilingual (Chinese/English)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "platform.stepfun.com"
+  },
+  "note": "StepFun's debut 100B+-parameter bilingual LLM, publicly launched March 2024; offered via API in 8K/32K/128K/256K context variants (step-1-8k/32k/128k/256k per StepFun's model list docs), since superseded by the Step-3.x series and dropped from current pricing.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

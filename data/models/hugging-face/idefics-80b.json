@@ -1,0 +1,45 @@
+{
+  "slug": "idefics-80b",
+  "name": "IDEFICS 80B",
+  "orgSlug": "hugging-face",
+  "familySlug": "idefics",
+  "releaseDate": "2023-08-22",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Mixed: MIT (new cross-attention/connector params) + LLaMA-65B non-commercial research license (frozen backbone) + MIT (CLIP-ViT-H/14 vision encoder)",
+  "paramsB": 80,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Flamingo-style decoder: frozen CLIP-ViT-H/14 vision encoder + frozen LLaMA-65B LM connected via trained Perceiver-resampler cross-attention blocks",
+  "ctxK": 2,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "HuggingFaceM4/idefics-80b",
+    "gh": "huggingface/transformers",
+    "docs": "huggingface.co/blog/idefics"
+  },
+  "note": "First open-access reproduction of DeepMind's Flamingo; interleaved image-text sequences via frozen CLIP-ViT-H/14 + frozen LLaMA-65B with trained cross-attention.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 160,
+  "tps4090": null,
+  "tpsNote": "Custom Flamingo-style cross-attention architecture has no mainstream llama.cpp/GGUF conversion path; 80B dense at fp16 also exceeds a single 4090 regardless.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

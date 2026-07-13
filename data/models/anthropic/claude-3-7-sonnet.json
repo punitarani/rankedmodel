@@ -1,0 +1,46 @@
+{
+  "slug": "claude-3-7-sonnet",
+  "name": "Claude 3.7 Sonnet",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-3-7",
+  "releaseDate": "2025-02-24",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, hybrid-reasoning (parameter count undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "platform.claude.com"
+  },
+  "note": "First hybrid-reasoning Claude with visible extended thinking; launched alongside Claude Code; retired Feb 2026.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

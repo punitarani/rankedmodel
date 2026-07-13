@@ -1,0 +1,48 @@
+{
+  "slug": "deepseek-coder-v2-236b",
+  "name": "DeepSeek-Coder-V2 236B",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-coder-v2",
+  "releaseDate": "2024-06-17",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "DeepSeek Model License (code: MIT)",
+  "paramsB": 236,
+  "activeParamsB": 21,
+  "archClass": "moe",
+  "archDisplay": "MoE transformer, 236B total / 21B active — DeepSeekMoE + MLA, further pretrained from a DeepSeek-V2 checkpoint on 6T additional code/math tokens",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.14,
+    "output": 0.28
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-Coder-V2-Instruct",
+    "gh": "deepseek-ai/DeepSeek-Coder-V2"
+  },
+  "note": "Reached GPT-4-Turbo-level coding (90.2 HumanEval) while expanding language support from 86 to 338 programming languages at 128K context.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 118,
+  "vramFp16Gb": 472,
+  "tps4090": null,
+  "tpsNote": "236B total params exceed a single RTX 4090's 24GB even at 4-bit; requires multi-GPU or CPU/RAM offload",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

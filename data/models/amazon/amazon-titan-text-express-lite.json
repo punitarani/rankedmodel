@@ -1,0 +1,45 @@
+{
+  "slug": "amazon-titan-text-express-lite",
+  "name": "Amazon Titan Text (Express & Lite)",
+  "orgSlug": "amazon",
+  "familySlug": "amazon-titan",
+  "releaseDate": "2023-11-29",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (AWS Bedrock service terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (parameter count undisclosed)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.8,
+    "output": 1.6
+  },
+  "links": {
+    "docs": "docs.aws.amazon.com/bedrock/latest/userguide/titan-text-models.html"
+  },
+  "note": "Amazon's original Bedrock-native text duo predating Nova: Express (8K ctx, English + 100 languages in preview) and Lite (4K ctx, English-only, tuned for fine-tuning).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

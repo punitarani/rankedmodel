@@ -1,0 +1,46 @@
+{
+  "slug": "lg-exaone-3-5-32b-instruct",
+  "name": "LG EXAONE 3.5 32B Instruct",
+  "orgSlug": "lg-ai-research",
+  "familySlug": "exaone-3-5",
+  "releaseDate": "2024-12-09",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "EXAONE AI Model License Agreement 1.1 - NC",
+  "paramsB": 32,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer, 64 layers, GQA (40 Q-heads / 8 KV-heads)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct",
+    "gh": "LG-AI-EXAONE/EXAONE-3.5"
+  },
+  "note": "Flagship of the 2.4B/7.8B/32B EXAONE 3.5 family; 32K context, strong instruction-following.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 62,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

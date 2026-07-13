@@ -7,11 +7,11 @@
   "status": "released",
   "predecessor": null,
   "openness": "open-weights",
-  "license": "Llama 4 Community",
+  "license": "Llama 4 Community License Agreement",
   "paramsB": 109,
   "activeParamsB": 17,
   "archClass": "moe",
-  "archDisplay": "MoE",
+  "archDisplay": "MoE, 16 experts with early-fusion native multimodality, 17B active / 109B total, 10M-token context",
   "ctxK": 10000,
   "modalities": [
     "text",
@@ -24,26 +24,26 @@
     "vision": true,
     "functionCalling": true,
     "toolUse": true,
-    "agentic": false
+    "agentic": true
   },
   "apiAvailable": true,
-  "price": {
-    "input": 0.11,
-    "output": 0.34
-  },
+  "price": null,
   "links": {
-    "hf": "meta-llama/Llama-4-Scout-17B-16E",
+    "hf": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
     "gh": "meta-llama/llama-models",
-    "docs": "llama.com"
+    "docs": "llama.com/models/llama-4"
   },
-  "note": "10M-token advertised context; fastest hosted throughput of its class.",
+  "note": "Meta's first MoE Llama; 17B active over 109B total (16 experts) with an industry-leading 10M-token context window.",
   "quants": [
-    "FP8",
-    "GGUF Q4",
-    "AWQ"
+    "GGUF",
+    "AWQ",
+    "MLX"
   ],
-  "vramQ4Gb": 62,
-  "vramFp16Gb": 220,
+  "vramQ4Gb": 58,
+  "vramFp16Gb": 218,
   "tps4090": null,
-  "tpsNote": "~35 t/s on 2×RTX 5090 (Q4)"
+  "tpsNote": "Fits a single H100 80GB at Q4 (~58GB) but still exceeds a 24GB RTX 4090; no single-4090 llama.cpp benchmark exists.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

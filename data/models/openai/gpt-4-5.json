@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-4-5",
+  "name": "GPT-4.5",
+  "orgSlug": "openai",
+  "familySlug": "gpt-4-5",
+  "releaseDate": "2025-02-27",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense pretrained transformer (size undisclosed; non-reasoning)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 75,
+    "output": 150
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-4.5-preview"
+  },
+  "note": "'Orion' — OpenAI's largest non-reasoning model; shipped as a costly research preview, removed from API 2025-07-14 and fully sunset from ChatGPT 2026-06-27.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

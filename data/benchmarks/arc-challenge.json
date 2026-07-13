@@ -1,0 +1,10 @@
+{
+  "slug": "arc-challenge",
+  "name": "ARC-Challenge",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Grade-school science questions, challenge split.",
+  "normMin": 25,
+  "normMax": 98,
+  "higherIsBetter": true
+}

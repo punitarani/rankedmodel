@@ -1,0 +1,43 @@
+{
+  "slug": "santacoder-1-1b",
+  "name": "SantaCoder 1.1B",
+  "orgSlug": "bigcode",
+  "familySlug": "santacoder",
+  "releaseDate": "2022-12-22",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "BigCode OpenRAIL-M",
+  "paramsB": 1.1,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "GPT-2-style decoder with multi-query attention (GPTBigCode) + fill-in-the-middle",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 3,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "bigcode/santacoder",
+    "docs": "bigcode-project.org/docs/about/models"
+  },
+  "note": "BigCode's first model: 1.1B multilingual (Python/Java/JS) code LLM with FIM infilling, proof-of-concept for The Stack.",
+  "quants": [],
+  "vramQ4Gb": 0.8,
+  "vramFp16Gb": 2.3,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

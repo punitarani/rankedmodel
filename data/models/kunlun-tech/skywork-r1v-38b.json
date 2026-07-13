@@ -1,0 +1,44 @@
+{
+  "slug": "skywork-r1v-38b",
+  "name": "Skywork-R1V (38B)",
+  "orgSlug": "kunlun-tech",
+  "familySlug": "skywork-r1v",
+  "releaseDate": "2025-03-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 38,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "InternViT-6B-448px-V2_5 vision encoder + DeepSeek-R1-Distill-Qwen-32B LLM via lightweight visual projector",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Skywork/Skywork-R1V-38B",
+    "gh": "SkyworkAI/Skywork-R1V"
+  },
+  "note": "First open-sourced multimodal reasoning model with visual chain-of-thought, pairing InternViT-6B with DeepSeek-R1-Distill-Qwen-32B",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 76,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "stablelm-zephyr-3b",
+  "name": "StableLM Zephyr 3B",
+  "orgSlug": "stability-ai",
+  "familySlug": "stablelm",
+  "releaseDate": "2023-12-07",
+  "status": "released",
+  "predecessor": "stablelm-3b-4e1t",
+  "openness": "open-weights",
+  "license": "Stability AI Community License (non-commercial by default; commercial use requires Stability AI membership)",
+  "paramsB": 2.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer, DPO-tuned from StableLM-3B-4E1T",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "stabilityai/stablelm-zephyr-3b",
+    "gh": "Stability-AI/StableLM"
+  },
+  "note": "DPO-tuned chat model (UltraFeedback-style mix) on StableLM-3B-4E1T; capable assistant aimed at edge-device deployment.",
+  "quants": [
+    "GGUF",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 2.2,
+  "vramFp16Gb": 5.6,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

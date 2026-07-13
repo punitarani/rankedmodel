@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+deepseek-prover-v2-671b,91,self-reported,https://arxiv.org/pdf/2504.21801,2025-04-30,MiniF2F-valid pass ratio

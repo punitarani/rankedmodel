@@ -1,0 +1,46 @@
+{
+  "slug": "claude-sonnet-4-5",
+  "name": "Claude Sonnet 4.5",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-4",
+  "releaseDate": "2025-09-29",
+  "status": "released",
+  "predecessor": "claude-opus-4-1",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, hybrid-reasoning (parameter count undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "platform.claude.com"
+  },
+  "note": "Best coding/agent Sonnet at release, reported to sustain focus on complex tasks for 30+ hours.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "baichuan-3",
+  "name": "Baichuan 3",
+  "orgSlug": "baichuan-intelligence",
+  "familySlug": "baichuan-3",
+  "releaseDate": "2024-01-29",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (API-only)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture; vendor describes total parameters as exceeding one trillion",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.77,
+    "output": 1.77
+  },
+  "links": {
+    "docs": "platform.baichuan-ai.com"
+  },
+  "note": "Trillion-parameter-class closed model claimed to beat GPT-4 on CMMLU/Gaokao/AGIEval and medical exams (MCMLE/MedExam/CMExam); exact parameter count undisclosed.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

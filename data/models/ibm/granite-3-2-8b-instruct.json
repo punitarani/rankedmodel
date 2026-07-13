@@ -1,0 +1,47 @@
+{
+  "slug": "granite-3-2-8b-instruct",
+  "name": "Granite 3.2 8B Instruct",
+  "orgSlug": "ibm",
+  "familySlug": "granite-3-2",
+  "releaseDate": "2025-02-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 8.1,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer with toggleable chain-of-thought (thinking=True/False)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 12,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "ibm-granite/granite-3.2-8b-instruct",
+    "docs": "ibm.com/granite/docs/models/granite"
+  },
+  "note": "Adds a toggleable 'thinking' chain-of-thought mode plus inference-scaling techniques that let it rival much larger models on math reasoning.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 16.2,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

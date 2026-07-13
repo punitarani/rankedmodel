@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-4",
+  "name": "GPT-4",
+  "orgSlug": "openai",
+  "familySlug": "gpt-4",
+  "releaseDate": "2023-03-14",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Transformer; widely reported (unconfirmed by OpenAI) as an ~8x220B mixture-of-experts",
+  "ctxK": 8,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 30,
+    "output": 60
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-4"
+  },
+  "note": "First GPT-4; multimodal text+image input, 8K default context (32K gpt-4-32k variant, since deprecated); large reasoning jump over GPT-3.5.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

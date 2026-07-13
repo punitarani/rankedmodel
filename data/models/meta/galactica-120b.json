@@ -1,0 +1,46 @@
+{
+  "slug": "galactica-120b",
+  "name": "Galactica 120B",
+  "orgSlug": "meta",
+  "familySlug": "galactica",
+  "releaseDate": "2022-11-15",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC-BY-NC 4.0",
+  "paramsB": 120,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer trained on scientific papers, code, and reference material",
+  "ctxK": 2.048,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "facebook/galactica-120b",
+    "gh": "paperswithcode/galai",
+    "docs": "arxiv.org/abs/2211.09085"
+  },
+  "note": "Science LLM trained on papers/code; public demo pulled after about three days over hallucination concerns.",
+  "quants": [
+    "bitsandbytes INT8"
+  ],
+  "vramQ4Gb": 64,
+  "vramFp16Gb": 240,
+  "tps4090": null,
+  "tpsNote": "llama.cpp does not support the Galactica architecture; only bitsandbytes INT8/FP16 loading is documented, and even that exceeds a single RTX 4090's VRAM.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

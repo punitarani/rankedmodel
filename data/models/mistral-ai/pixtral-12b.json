@@ -1,0 +1,47 @@
+{
+  "slug": "pixtral-12b",
+  "name": "Pixtral 12B",
+  "orgSlug": "mistral-ai",
+  "familySlug": "pixtral",
+  "releaseDate": "2024-09-11",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 12.4,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder (12B) + vision encoder (0.4B)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "mistralai/Pixtral-12B-2409",
+    "docs": "docs.mistral.ai/models/overview"
+  },
+  "note": "Mistral's first multimodal model; 12B decoder + 400M vision encoder, 128k context, Apache 2.0; now retired from API.",
+  "quants": [
+    "GGUF Q4",
+    "MLX"
+  ],
+  "vramQ4Gb": 7.5,
+  "vramFp16Gb": 25,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

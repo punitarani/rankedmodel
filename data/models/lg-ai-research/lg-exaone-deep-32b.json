@@ -1,0 +1,46 @@
+{
+  "slug": "lg-exaone-deep-32b",
+  "name": "LG EXAONE Deep 32B",
+  "orgSlug": "lg-ai-research",
+  "familySlug": "exaone-deep",
+  "releaseDate": "2025-03-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "EXAONE AI Model License Agreement 1.1 - NC",
+  "paramsB": 32,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer, 64 layers, GQA (40 Q-heads / 8 KV-heads), <thought>-tag CoT reasoning",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "LGAI-EXAONE/EXAONE-Deep-32B",
+    "gh": "LG-AI-EXAONE/EXAONE-Deep"
+  },
+  "note": "Reasoning-specialized <thought>-tag CoT model rivaling much larger models on AIME/MATH.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 62,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

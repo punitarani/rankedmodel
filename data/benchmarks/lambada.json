@@ -1,0 +1,10 @@
+{
+  "slug": "lambada",
+  "name": "LAMBADA",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Broad-context last-word prediction requiring long-range coherence.",
+  "normMin": 40,
+  "normMax": 95,
+  "higherIsBetter": true
+}

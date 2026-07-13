@@ -1,0 +1,10 @@
+{
+  "slug": "trivia-qa",
+  "name": "TriviaQA",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Closed-book trivia question answering.",
+  "normMin": 30,
+  "normMax": 95,
+  "higherIsBetter": true
+}

@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gorilla-7b,59.13,self-reported,https://ar5iv.labs.arxiv.org/html/2305.15334,,"zero-shot, no retriever, overall accuracy — Table 1"

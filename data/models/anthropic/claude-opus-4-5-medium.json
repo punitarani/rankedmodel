@@ -1,0 +1,46 @@
+{
+  "slug": "claude-opus-4-5-medium",
+  "name": "Claude Opus 4.5 (Medium)",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-4",
+  "releaseDate": "2025-11-24",
+  "status": "released",
+  "predecessor": "claude-haiku-4-5",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (undisclosed configuration)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 5,
+    "output": 25
+  },
+  "links": {
+    "docs": "platform.claude.com"
+  },
+  "note": "Medium effort matches Sonnet 4.5's peak SWE-bench score while using 76% fewer output tokens.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Medium",
+  "isDefaultConfig": false,
+  "isBestConfig": false
+}

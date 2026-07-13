@@ -1,0 +1,53 @@
+{
+  "slug": "ernie-4-5-vl-424b-a47b",
+  "name": "ERNIE 4.5 VL 424B-A47B",
+  "orgSlug": "baidu",
+  "familySlug": "ernie-4-5",
+  "releaseDate": "2025-06-30",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 424,
+  "activeParamsB": 47,
+  "archClass": "moe",
+  "archDisplay": "Multimodal heterogeneous MoE, 128 experts (64 text + 64 vision), 8 active per modality, 54 layers",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.42,
+    "output": 1.25
+  },
+  "links": {
+    "hf": "baidu/ERNIE-4.5-VL-424B-A47B-PT",
+    "gh": "PaddlePaddle/ERNIE"
+  },
+  "note": "Largest open ERNIE 4.5 release; supports thinking/non-thinking modes, with Baidu claiming near-o1 results on MathVista, MMMU and VisualPuzzle.",
+  "quants": [
+    "GGUF Q4",
+    "FP8",
+    "INT4 (W4A16)",
+    "2-bit"
+  ],
+  "vramQ4Gb": 245,
+  "vramFp16Gb": 979,
+  "tps4090": null,
+  "tpsNote": "424B total / 47B active multimodal MoE needs roughly 1TB VRAM at FP16 and stays far beyond a single RTX 4090 even at 4-bit.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "mixtral-8x7b",
+  "name": "Mixtral 8x7B",
+  "orgSlug": "mistral-ai",
+  "familySlug": "mixtral",
+  "releaseDate": "2023-12-11",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 46.7,
+  "activeParamsB": 12.9,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts, 8 experts, top-2 routing",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 5,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "mistralai/Mixtral-8x7B-v0.1",
+    "gh": "mistralai/mistral-inference",
+    "docs": "docs.mistral.ai/models/model-cards/mixtral-8x7b-0-1"
+  },
+  "note": "First strong open sparse MoE (8 experts, top-2 routing); matched/beat GPT-3.5 at ~13B active params under Apache 2.0.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 26,
+  "vramFp16Gb": 93,
+  "tps4090": null,
+  "tpsNote": "At Q4 (~26GB) a single RTX 4090 (24GB) needs CPU/GPU layer offloading; community reports of roughly 15-23 tok/s with partial offload",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

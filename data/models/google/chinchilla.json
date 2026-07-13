@@ -1,0 +1,42 @@
+{
+  "slug": "chinchilla",
+  "name": "Chinchilla",
+  "orgSlug": "google",
+  "familySlug": "chinchilla",
+  "releaseDate": "2022-03-29",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Google DeepMind; research model, weights never released)",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (70B, compute-optimal)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "arxiv.org/abs/2203.15556"
+  },
+  "note": "70B model trained compute-optimally on 1.4T tokens; outperformed 280B Gopher, reshaping LLM scaling laws.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

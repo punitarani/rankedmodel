@@ -1,0 +1,10 @@
+{
+  "slug": "winogrande",
+  "name": "WinoGrande",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Large-scale Winograd-schema commonsense pronoun resolution.",
+  "normMin": 50,
+  "normMax": 92,
+  "higherIsBetter": true
+}

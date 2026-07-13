@@ -1,0 +1,49 @@
+{
+  "slug": "gemma-7b",
+  "name": "Gemma 7B",
+  "orgSlug": "google",
+  "familySlug": "gemma",
+  "releaseDate": "2024-02-21",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Gemma Terms of Use",
+  "paramsB": 8.54,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (28 layers, d_model 3072, 256k vocab)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "google/gemma-7b",
+    "gh": "google-deepmind/gemma",
+    "docs": "ai.google.dev/gemma/docs/releases"
+  },
+  "note": "First open-weights model built from Gemini research; 8.54B params, 8K context, strong for its size on MMLU/HellaSwag.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GGUF Q8_0",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 18,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

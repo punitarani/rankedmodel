@@ -1,0 +1,10 @@
+{
+  "slug": "ai2d",
+  "name": "AI2D",
+  "category": "vision",
+  "unit": "%",
+  "description": "Diagram question answering (science-textbook diagrams).",
+  "normMin": 40,
+  "normMax": 98,
+  "higherIsBetter": true
+}

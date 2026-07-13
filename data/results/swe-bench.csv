@@ -1,0 +1,57 @@
+model_slug,score,source,source_url,evaluated_at,notes
+claude-3-5-haiku,40.6,self-reported,https://www.anthropic.com/news/3-5-models-and-computer-use,2024-11-04,"SWE-bench Verified, at launch"
+claude-3-5-sonnet,33,self-reported,https://www.anthropic.com/research/swe-bench-sonnet,2025-01-06,"SWE-bench Verified; reported as 'Claude 3.5 Sonnet (old)' i.e. the June 2024 checkpoint, using Anthropic's agent scaffold"
+claude-3-7-sonnet,63.7,self-reported,https://www.anthropic.com/news/claude-3-7-sonnet,2025-02-24,"SWE-bench Verified, vanilla agent (no extra scaffold); confirmed on official announcement"
+claude-3-opus,22,self-reported,https://www.anthropic.com/research/swe-bench-sonnet,2025-01-06,"SWE-bench Verified, evaluated retrospectively by Anthropic with their agent scaffold"
+claude-haiku-4-5,73.3,self-reported,https://www.anthropic.com/news/claude-haiku-4-5,2025-10-15,"SWE-bench Verified, averaged over 50 trials, 128K thinking budget; confirmed via search corroboration of the official announcement"
+claude-opus-4,72.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"SWE-bench Verified, standard; confirmed via direct fetch of DataCamp article"
+claude-opus-4-1,74.5,self-reported,https://www.infoq.com/news/2025/08/anthropic-claude-opus-4-1/,2025-08-05,"SWE-bench Verified, up from 72.5% on Opus 4; confirmed via direct fetch of InfoQ article"
+claude-opus-4-5,80.9,self-reported,https://www.anthropic.com/news/claude-opus-4-5,,SWE-bench Verified
+claude-opus-4-5-high,80.9,self-reported,https://www.theunwindai.com/p/claude-opus-4-5-scores-80-9-on-swe-bench,2025-11-24,"High (default) effort, headline launch score"
+claude-opus-4-6,80.8,self-reported,https://www.vellum.ai/blog/claude-opus-4-6-benchmarks,2026-02-05,"Standard-scaffold figure (Anthropic's Feb 2026 system card reports 80.84%, averaged over 25 trials, max effort/adaptive thinking); Anthropic's own launch post cites a separate 81.42% obtained 'with a prompt modification' — a different methodology, not this headline number."
+claude-sonnet-4,72.7,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"SWE-bench Verified, state-of-the-art at launch; confirmed via direct fetch"
+claude-sonnet-4-5,77.2,self-reported,https://www.anthropic.com/news/claude-sonnet-4-5,2025-09-29,"SWE-bench Verified, averaged over 10 trials, 200K thinking budget; confirmed via search corroboration of the official announcement (77.2%, 'best score any Claude model had gotten at the time')"
+deepseek-r1-0528,57.6,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,"SWE-bench Verified, resolved rate"
+deepseek-r1-671b,49.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,"SWE-bench Verified, resolved rate"
+deepseek-v3-1-non-thinking,66,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,"SWE-bench Verified, agent mode"
+deepseek-v3-671b,42,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,"SWE-bench Verified, Resolved"
+devstral-small,46.8,self-reported,https://mistral.ai/news/devstral/,,"SWE-Bench Verified, evaluated under the OpenHands scaffold"
+gemini-2-5-flash,60.4,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"SWE-Bench Verified, thinking on"
+gemini-2-5-flash-lite-non-thinking,31.6,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"SWE-Bench Verified, single attempt, (06-17), non-thinking"
+gemini-2-5-flash-lite-thinking,27.6,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"SWE-Bench Verified, single attempt, (06-17), thinking on (44.9% with multiple attempts)"
+gemini-2-5-pro,63.8,self-reported,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/,,"SWE-bench Verified, custom agent setup"
+gemini-3-1-pro,80.6,self-reported,https://deepmind.google/models/gemini/pro/,2026-02-19,SWE-bench Verified
+gemini-3-5-flash,55.1,self-reported,https://deepmind.google/models/gemini/flash/,2026-05-19,SWE-bench Pro variant
+gemini-3-flash,78,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf,2025-12-01,"SWE-Bench Verified, single attempt"
+gemini-3-pro,76.2,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf,2025-11-01,"SWE-Bench Verified, single attempt"
+glm-4-5-355b-a32b,64.2,self-reported,https://arxiv.org/abs/2508.06471,,"SWE-bench Verified, GLM-4.5 paper"
+glm-4-5-air-106b-a12b,57.6,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,SWE-bench Verified
+gpt-4-1,55,independent,https://www.rdworldonline.com/openai-claims-gpt-4-1-sets-new-90-standard-in-mmlu-reasoning-benchmark/,2025-04-01,SWE-bench Verified
+gpt-4-1-mini,23.6,independent,https://docsbot.ai/models/gpt-4-1-mini,2025-04-01,SWE-bench Verified
+gpt-4-5,38,independent,https://www.helicone.ai/blog/gpt-4.5-benchmarks,2025-02-01,SWE-bench Verified
+gpt-5,74.9,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"SWE-bench Verified, high reasoning effort (n=477)"
+gpt-5-1,76.3,independent,https://claude5.com/news/gpt-5-1-performance-review-benchmarks-november-2025,2025-11-19,"SWE-bench Verified, Thinking mode; literally confirmed on cited page"
+gpt-5-2,80,self-reported,https://openai.com/index/introducing-gpt-5-2/,,"SWE-bench Verified, GPT-5.2 Thinking; confirmed"
+gpt-5-5,58.6,self-reported,https://openai.com/index/introducing-gpt-5-5,,"SWE-Bench Pro, base GPT-5.5 (not Pro variant); confirmed via marktechpost.com direct report"
+gpt-5-6,64.6,self-reported,https://openai.com/index/gpt-5-6/,,"SWE-Bench Pro, GPT-5.6 Sol; confirmed via marktechpost.com direct report of launch page"
+gpt-5-codex,74.5,independent,https://www.webpronews.com/openais-gpt-5-codex-hits-74-5-on-swe-bench-boosts-coding-efficiency/,2025-09-15,"SWE-bench Verified, reported at launch"
+gpt-oss-120b-high,62.4,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"SWE-bench Verified, high reasoning effort"
+gpt-oss-120b-low,47.9,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"SWE-bench Verified, low reasoning effort"
+gpt-oss-120b-medium,52.6,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"SWE-bench Verified, medium reasoning effort"
+gpt-oss-20b-high,60.7,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"SWE-bench Verified, high reasoning effort"
+gpt-oss-20b-low,37.4,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"SWE-bench Verified, low reasoning effort"
+gpt-oss-20b-medium,53.2,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"SWE-bench Verified, medium reasoning effort"
+kimi-k2,65.8,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,"SWE-bench Verified, single-attempt agentic"
+kimi-k2-thinking,71.3,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,SWE-bench Verified
+minimax-m1,56,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,,"SWE-bench Verified, M1-80K"
+minimax-m2,69.4,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,SWE-bench Verified
+nemotron-3-ultra-550b-a55b,70.7,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,,SWE-Bench Verified
+openai-o1,48.9,independent,https://www.datacamp.com/blog/o3-openai,2024-12-01,SWE-bench Verified
+openai-o3,69.1,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,SWE-bench Verified
+openai-o3-mini-high,49.3,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"SWE-bench Verified, high effort"
+openai-o3-mini-low,40.8,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"SWE-bench Verified, low effort"
+openai-o3-mini-medium,42.9,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"SWE-bench Verified, medium effort"
+openai-o4-mini,68.1,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,SWE-bench Verified
+qwen3-coder-480b-a35b,66.5,self-reported,https://qwenlm.github.io/blog/qwen3-coder/,,"SWE-bench Verified, Pass@1, no test-time scaling"
+qwen3-max,69.6,self-reported,https://www.alibabacloud.com/blog/qwen3-max-just-scale-it_602621,,"SWE-bench Verified, Qwen3-Max-Preview (Instruct)"
+sarvam-105b,45,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,"SWE-Bench Verified, SWE-Agent harness"

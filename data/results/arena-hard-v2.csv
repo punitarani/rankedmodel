@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+qwen3-235b-a22b-instruct-2507,79.2,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,

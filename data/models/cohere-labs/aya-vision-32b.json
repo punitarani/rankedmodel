@@ -1,0 +1,44 @@
+{
+  "slug": "aya-vision-32b",
+  "name": "Aya Vision 32B",
+  "orgSlug": "cohere-labs",
+  "familySlug": "aya-vision",
+  "releaseDate": "2025-03-04",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC-BY-NC",
+  "paramsB": 32,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Aya Expanse 32B decoder + SigLIP2-patch14-384 vision encoder",
+  "ctxK": 16,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 23,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "CohereLabs/aya-vision-32b",
+    "docs": "docs.cohere.com/docs/aya-vision"
+  },
+  "note": "Cohere's first vision-language model, pairing an Aya Expanse 32B backbone with a SigLIP2 encoder for multilingual multimodal tasks.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 66,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

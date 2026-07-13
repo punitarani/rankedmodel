@@ -1,0 +1,45 @@
+{
+  "slug": "bloom-7b1",
+  "name": "BLOOM-7B1",
+  "orgSlug": "bigscience",
+  "familySlug": "bloom",
+  "releaseDate": "2022-07-11",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "BigScience RAIL License v1.0",
+  "paramsB": 7.069,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (ALiBi positional encoding, GPT-2-style, GeLU)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 57,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "bigscience/bloom-7b1"
+  },
+  "note": "7.07B multilingual BLOOM checkpoint, the practical size for downstream fine-tuning and local deployment.",
+  "quants": [
+    "INT8 (bitsandbytes)",
+    "GGUF"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

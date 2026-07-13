@@ -1,0 +1,50 @@
+{
+  "slug": "ministral-8b",
+  "name": "Ministral 8B",
+  "orgSlug": "mistral-ai",
+  "familySlug": "ministral",
+  "releaseDate": "2024-10-16",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Mistral Research License (non-commercial; commercial license required for production)",
+  "paramsB": 8.02,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer w/ interleaved sliding-window attention, 36 layers",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 0.1,
+    "output": 0.1
+  },
+  "links": {
+    "hf": "mistralai/Ministral-8B-Instruct-2410",
+    "docs": "docs.mistral.ai/models/overview"
+  },
+  "note": "Open-weights 8B edge model with interleaved sliding-window attention (research license); instruct weights on HF.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 16,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

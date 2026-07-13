@@ -1,0 +1,10 @@
+{
+  "slug": "terminal-bench-2",
+  "name": "Terminal-Bench 2.0",
+  "category": "coding",
+  "unit": "%",
+  "description": "Second-generation Terminal-Bench, harder task suite.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

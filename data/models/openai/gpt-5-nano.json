@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-5-nano",
+  "name": "GPT-5 nano",
+  "orgSlug": "openai",
+  "familySlug": "gpt-5",
+  "releaseDate": "2025-08-07",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (OpenAI API Terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Smallest, fastest sibling of GPT-5's unified architecture; dense transformer, exact size undisclosed",
+  "ctxK": 400,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.05,
+    "output": 0.4
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-5-nano"
+  },
+  "note": "Smallest, fastest GPT-5 variant for high-volume, latency-sensitive workloads.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "pixtral-large-124b",
+  "name": "Pixtral Large (124B)",
+  "orgSlug": "mistral-ai",
+  "familySlug": "pixtral",
+  "releaseDate": "2024-11-18",
+  "status": "deprecated",
+  "predecessor": "pixtral-12b",
+  "openness": "open-weights",
+  "license": "Mistral Research License (non-commercial; commercial license required for production)",
+  "paramsB": 124,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder (123B, built on Mistral Large 2) + vision encoder (1B)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "mistralai/Pixtral-Large-Instruct-2411",
+    "docs": "docs.mistral.ai/models/model-cards/pixtral-large-24-11"
+  },
+  "note": "124B multimodal model built on Large 2; strong chart/document/math-vision reasoning; led LMSys vision leaderboard among open-weights models at launch.",
+  "quants": [
+    "GGUF Q4",
+    "MLX"
+  ],
+  "vramQ4Gb": 75,
+  "vramFp16Gb": 248,
+  "tps4090": null,
+  "tpsNote": "124B model exceeds a single RTX 4090's 24GB VRAM even at Q4; requires multi-GPU or CPU offload.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

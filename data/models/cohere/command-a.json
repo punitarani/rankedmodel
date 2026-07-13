@@ -2,16 +2,16 @@
   "slug": "command-a",
   "name": "Command A",
   "orgSlug": "cohere",
-  "familySlug": "command",
+  "familySlug": "command-a",
   "releaseDate": "2025-03-13",
   "status": "released",
   "predecessor": null,
   "openness": "open-weights",
-  "license": "CC-BY-NC",
+  "license": "CC-BY-NC-4.0 (+ Acceptable Use Policy)",
   "paramsB": 111,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense",
+  "archDisplay": "Dense transformer (111B) with hybrid sliding-window/full attention (3:1 ratio) and GQA",
   "ctxK": 256,
   "modalities": [
     "text"
@@ -32,17 +32,17 @@
   },
   "links": {
     "hf": "CohereLabs/c4ai-command-a-03-2025",
-    "gh": "cohere-ai/cohere-toolkit",
     "docs": "docs.cohere.com"
   },
-  "note": "Enterprise RAG and tool-use focus; 23 business languages.",
+  "note": "111B enterprise flagship, 256K context, runs on just two GPUs (A100/H100); rivals GPT-4o and DeepSeek-V3 on agentic enterprise tasks.",
   "quants": [
-    "GGUF Q4",
-    "GGUF Q8",
-    "AWQ"
+    "GGUF Q4"
   ],
-  "vramQ4Gb": 65,
+  "vramQ4Gb": 67,
   "vramFp16Gb": 222,
   "tps4090": null,
-  "tpsNote": "~32 t/s on 2×A100"
+  "tpsNote": "Requires ~2x A100/H100 GPUs for practical serving; does not fit on a single RTX 4090 even quantized",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

@@ -1,0 +1,10 @@
+{
+  "slug": "mt-bench",
+  "name": "MT-Bench",
+  "category": "human-preference",
+  "unit": "/10",
+  "description": "Multi-turn conversation quality, GPT-4-judged 1-10 scale.",
+  "normMin": 4,
+  "normMax": 10,
+  "higherIsBetter": true
+}

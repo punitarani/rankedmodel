@@ -1,0 +1,45 @@
+{
+  "slug": "amazon-nova-micro",
+  "name": "Amazon Nova Micro",
+  "orgSlug": "amazon",
+  "familySlug": "amazon-nova",
+  "releaseDate": "2024-12-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (AWS Bedrock service terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Transformer, architecture/size undisclosed",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 200,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.035,
+    "output": 0.14
+  },
+  "links": {
+    "docs": "docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html"
+  },
+  "note": "Text-only, lowest-latency/lowest-cost Nova tier; suited to simple tasks and high-throughput agent orchestration.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

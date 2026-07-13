@@ -1,0 +1,10 @@
+{
+  "slug": "openbookqa",
+  "name": "OpenBookQA",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Elementary science QA requiring open-book fact combination.",
+  "normMin": 40,
+  "normMax": 98,
+  "higherIsBetter": true
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "grok-3-think",
+  "name": "Grok-3 (Think)",
+  "orgSlug": "xai",
+  "familySlug": "grok-3",
+  "releaseDate": "2025-02-17",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (size undisclosed; trained on Colossus, ~10x Grok-2 compute)",
+  "ctxK": 131,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 3,
+    "output": 15
+  },
+  "links": {
+    "docs": "docs.x.ai"
+  },
+  "note": "Reasoning \"Think\"/Big Brain mode of Grok 3; hit #1 on Chatbot Arena at launch (~1400 Elo, per rdworldonline.com). Deprecated May 15, 2026, redirects to Grok 4.3.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Think",
+  "isDefaultConfig": false,
+  "isBestConfig": true
+}

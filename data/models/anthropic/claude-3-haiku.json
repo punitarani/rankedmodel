@@ -1,0 +1,46 @@
+{
+  "slug": "claude-3-haiku",
+  "name": "Claude 3 Haiku",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-3",
+  "releaseDate": "2024-03-13",
+  "status": "deprecated",
+  "predecessor": "claude-3-sonnet",
+  "openness": "closed",
+  "license": "Proprietary (Anthropic Commercial Terms of Service)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense multimodal Transformer (parameter count undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 0.25,
+    "output": 1.25
+  },
+  "links": {
+    "docs": "docs.claude.com"
+  },
+  "note": "Fastest, cheapest Claude 3; vision-capable with near-instant responses for its intelligence class.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "qwen3-235b-a22b-instruct-2507",
+  "name": "Qwen3-235B-A22B-Instruct-2507",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen3",
+  "releaseDate": "2025-07-21",
+  "status": "released",
+  "predecessor": "qwen3-8b-thinking",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 235,
+  "activeParamsB": 22,
+  "archClass": "moe",
+  "archDisplay": "MoE, 128 experts / 8 active",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 119,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.23,
+    "output": 0.92
+  },
+  "links": {
+    "hf": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "gh": "QwenLM/Qwen3",
+    "docs": "qwen.readthedocs.io"
+  },
+  "note": "July refresh drops hybrid mode for a dedicated non-thinking Instruct model with native 256K context.",
+  "quants": [
+    "GGUF",
+    "FP8",
+    "AWQ"
+  ],
+  "vramQ4Gb": 142,
+  "vramFp16Gb": 470,
+  "tps4090": null,
+  "tpsNote": "Too large to run on a single RTX 4090 even at Q4; requires multi-GPU or CPU offload.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "deepseek-coder-33b",
+  "name": "DeepSeek Coder 33B",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-coder",
+  "releaseDate": "2023-11-02",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "DeepSeek Model License (custom, commercial use permitted)",
+  "paramsB": 33.3,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer decoder, code-specialized, 16K context",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "deepseek-ai/deepseek-coder-33b-instruct",
+    "gh": "deepseek-ai/DeepSeek-Coder",
+    "docs": "deepseekcoder.github.io"
+  },
+  "note": "DeepSeek's first public model; open code LLM trained 87% code, beat Codex/GPT-3.5-turbo on HumanEval.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 67,
+  "tps4090": null,
+  "tpsNote": "Q4 (~20GB) fits within a 24GB RTX 4090, but no verified specific tokens/sec benchmark was found for this exact configuration.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

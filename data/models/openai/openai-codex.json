@@ -1,0 +1,42 @@
+{
+  "slug": "openai-codex",
+  "name": "OpenAI Codex",
+  "orgSlug": "openai",
+  "familySlug": "codex",
+  "releaseDate": "2021-08-10",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 12,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (GPT-3 fine-tuned on code)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "gh": "openai/human-eval"
+  },
+  "note": "GPT-3 fine-tuned on GitHub code; powered the original GitHub Copilot and introduced the HumanEval benchmark; Codex API discontinued 2023-03-23.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

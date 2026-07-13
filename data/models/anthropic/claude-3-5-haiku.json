@@ -1,0 +1,46 @@
+{
+  "slug": "claude-3-5-haiku",
+  "name": "Claude 3.5 Haiku",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-3-5",
+  "releaseDate": "2024-10-22",
+  "status": "deprecated",
+  "predecessor": "claude-3-5-sonnet",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (parameter count undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 0.8,
+    "output": 4
+  },
+  "links": {
+    "docs": "platform.claude.com"
+  },
+  "note": "Fast low-cost Claude 3.5 tier that matched Claude 3 Opus on many benchmarks; retired Feb 2026.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

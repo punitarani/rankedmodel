@@ -1,0 +1,51 @@
+{
+  "slug": "qwen2-vl-72b",
+  "name": "Qwen2-VL-72B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2-vl",
+  "releaseDate": "2024-09-19",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Qwen (Tongyi Qianwen License)",
+  "paramsB": 73.4,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer + 675M-param ViT vision encoder (GQA, M-ROPE, dynamic resolution)",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen2-VL-72B",
+    "gh": "QwenLM/Qwen2-VL",
+    "docs": "qwenlm.github.io/blog/qwen2-vl"
+  },
+  "note": "Gen-2 VLM flagship with dynamic-resolution ViT and M-ROPE for long video; benchmark scores below are for the -Instruct checkpoint.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ Int4",
+    "GPTQ Int8"
+  ],
+  "vramQ4Gb": 48,
+  "vramFp16Gb": 147,
+  "tps4090": null,
+  "tpsNote": "~48GB Q4 weights exceed a single RTX 4090's 24GB VRAM; requires multi-GPU or CPU offload.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

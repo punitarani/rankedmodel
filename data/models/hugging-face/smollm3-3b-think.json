@@ -1,0 +1,47 @@
+{
+  "slug": "smollm3-3b-think",
+  "name": "SmolLM3 3B (Think)",
+  "orgSlug": "hugging-face",
+  "familySlug": "smollm",
+  "releaseDate": "2025-07-08",
+  "status": "released",
+  "predecessor": "smollm2-1-7b",
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 3.08,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer with GQA + NoPE (selective RoPE removal) + intra-document masking",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 6,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "HuggingFaceTB/SmolLM3-3B",
+    "gh": "huggingface/smollm",
+    "docs": "huggingface.co/blog/smollm3"
+  },
+  "note": "Default extended-thinking mode (/think); open 3B multilingual dual-mode reasoner with 128K context, trained on 11.2T tokens.",
+  "quants": [
+    "GGUF Q4",
+    "MLX"
+  ],
+  "vramQ4Gb": 2.5,
+  "vramFp16Gb": 6.5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Think",
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

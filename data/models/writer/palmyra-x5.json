@@ -1,0 +1,45 @@
+{
+  "slug": "palmyra-x5",
+  "name": "Palmyra X5",
+  "orgSlug": "writer",
+  "familySlug": "palmyra-x",
+  "releaseDate": "2025-04-28",
+  "status": "released",
+  "predecessor": "palmyra-x-004",
+  "openness": "closed",
+  "license": "Proprietary (API-only, no released weights)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer with adaptive/dynamic reasoning, 1M-token context (architecture undisclosed)",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.6,
+    "output": 6
+  },
+  "links": {
+    "docs": "writer.com"
+  },
+  "note": "1M-token context trained with synthetic data for ~$1M in GPU compute; reads 1M tokens in ~22s, ~300ms per function-call turn.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

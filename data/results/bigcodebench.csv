@@ -1,0 +1,3 @@
+model_slug,score,source,source_url,evaluated_at,notes
+granite-4-0-h-small,46.23,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+qwen2-5-coder-32b,83,self-reported,https://arxiv.org/abs/2409.12186,,"Base model, BigCodeBench-Full"

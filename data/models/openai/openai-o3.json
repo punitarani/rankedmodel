@@ -1,0 +1,46 @@
+{
+  "slug": "openai-o3",
+  "name": "OpenAI o3",
+  "orgSlug": "openai",
+  "familySlug": "o3",
+  "releaseDate": "2025-04-16",
+  "status": "released",
+  "predecessor": "openai-o3-mini-medium",
+  "openness": "closed",
+  "license": "Proprietary (OpenAI API Terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer reasoning model (exact size undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2,
+    "output": 8
+  },
+  "links": {
+    "docs": "developers.openai.com"
+  },
+  "note": "Flagship reasoning model with native tool use; major gains on math, coding, and ARC-AGI. Price reflects OpenAI's June 2025 80% cut from the original $10/$40 launch price.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

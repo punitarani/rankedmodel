@@ -1,0 +1,43 @@
+{
+  "slug": "pharia-1-llm-7b-control",
+  "name": "Pharia-1-LLM-7B (control)",
+  "orgSlug": "aleph-alpha",
+  "familySlug": "pharia-1",
+  "releaseDate": "2024-08-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Open Aleph License (non-commercial research/educational use)",
+  "paramsB": 7.04,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer, 27 layers, 4-head grouped-query attention",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 4,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Aleph-Alpha/Pharia-1-LLM-7B-control",
+    "docs": "docs.aleph-alpha.com/products/pharia-1-llm/overview"
+  },
+  "note": "Open, EU-compliance-focused 7B trained on lawfully sourced data; Aleph Alpha's strategic successor to Luminous.",
+  "quants": [],
+  "vramQ4Gb": 4.5,
+  "vramFp16Gb": 14.5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

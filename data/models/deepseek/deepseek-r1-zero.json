@@ -1,0 +1,46 @@
+{
+  "slug": "deepseek-r1-zero",
+  "name": "DeepSeek-R1-Zero",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-r1",
+  "releaseDate": "2025-01-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 671,
+  "activeParamsB": 37,
+  "archClass": "moe",
+  "archDisplay": "DeepSeekMoE: 256 routed + 1 shared expert, top-8 routing, 61 layers (3 dense + 58 MoE), Multi-head Latent Attention (MLA)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-R1-Zero",
+    "gh": "deepseek-ai/DeepSeek-R1"
+  },
+  "note": "Trained by pure large-scale RL on V3-Base with no SFT cold start; first open proof reasoning can emerge from RL alone, but suffers repetition/readability/language-mixing issues.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GGUF Q8_0"
+  ],
+  "vramQ4Gb": 404,
+  "vramFp16Gb": 1342,
+  "tps4090": null,
+  "tpsNote": "Same 671B MoE footprint as DeepSeek-R1; does not fit a single 24GB 4090 even at Q4, and community quantization interest has been lower than for the instruction-tuned R1.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "pythia-6-9b",
+  "name": "Pythia-6.9B",
+  "orgSlug": "eleutherai",
+  "familySlug": "pythia",
+  "releaseDate": "2023-04-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 6.9,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer (GPT-NeoX architecture, RoPE, parallel attention+FF, 32 layers)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "EleutherAI/pythia-6.9b",
+    "gh": "EleutherAI/pythia"
+  },
+  "note": "Mid-large Pythia size widely used as a reproducible base for training-dynamics and scaling-law studies",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 4.7,
+  "vramFp16Gb": 15,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

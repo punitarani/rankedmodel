@@ -1,0 +1,45 @@
+{
+  "slug": "deepseekmath-7b",
+  "name": "DeepSeekMath 7B",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseekmath",
+  "releaseDate": "2024-02-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "DeepSeek Model License",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, initialized from DeepSeek-Coder-Base-v1.5 7B",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "deepseek-ai/deepseek-math-7b-rl",
+    "gh": "deepseek-ai/DeepSeek-Math"
+  },
+  "note": "Debuted GRPO reinforcement learning (later reused for R1); DeepSeekMath-RL 7B hit 51.7% on MATH via CoT, near GPT-4/Gemini-Ultra level at just 7B.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 4.5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

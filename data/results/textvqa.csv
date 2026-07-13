@@ -1,0 +1,5 @@
+model_slug,score,source,source_url,evaluated_at,notes
+idefics-80b,30.9,self-reported,https://huggingface.co/HuggingFaceM4/idefics-80b,,0-shot
+idefics2-8b,73,self-reported,https://huggingface.co/blog/idefics2,,
+phi-3-5-vision-4-2b,72,self-reported,https://huggingface.co/microsoft/Phi-3.5-vision-instruct,,test split
+qwen-vl,63.8,self-reported,https://huggingface.co/Qwen/Qwen-VL,,Zero-shot TextVQA

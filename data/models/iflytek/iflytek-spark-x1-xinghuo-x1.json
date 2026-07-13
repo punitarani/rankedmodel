@@ -1,0 +1,42 @@
+{
+  "slug": "iflytek-spark-x1-xinghuo-x1",
+  "name": "iFlytek Spark X1 (Xinghuo X1)",
+  "orgSlug": "iflytek",
+  "familySlug": "spark-xinghuo",
+  "releaseDate": "2025-01-15",
+  "status": "released",
+  "predecessor": "iflytek-spark-v4-0-xinghuo",
+  "openness": "closed",
+  "license": "Proprietary (closed API access, no weight release)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts transformer (exact total/active params undisclosed)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "xinghuo.xfyun.cn/sparkapi"
+  },
+  "note": "iFlytek's first deep-reasoning model, co-developed with Huawei and trained entirely on domestic Ascend 910B compute with no Nvidia dependency.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "phi-4-mini-3-8b",
+  "name": "Phi-4-mini (3.8B)",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-4",
+  "releaseDate": "2025-02-26",
+  "status": "released",
+  "predecessor": "phi-4-14b",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 3.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer with grouped-query attention",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 22,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.075,
+    "output": 0.3
+  },
+  "links": {
+    "hf": "microsoft/Phi-4-mini-instruct",
+    "docs": "azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/"
+  },
+  "note": "Compact text-only Phi-4 (128K context) with built-in function calling and 22-language support; MIT-licensed, tops the 3-4B class.",
+  "quants": [
+    "GGUF",
+    "MLX",
+    "ONNX"
+  ],
+  "vramQ4Gb": 3,
+  "vramFp16Gb": 10,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

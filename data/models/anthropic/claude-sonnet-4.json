@@ -4,20 +4,20 @@
   "orgSlug": "anthropic",
   "familySlug": "claude-4",
   "releaseDate": "2025-05-22",
-  "status": "released",
+  "status": "deprecated",
   "predecessor": null,
   "openness": "closed",
   "license": "Proprietary",
   "paramsB": null,
   "activeParamsB": null,
-  "archClass": "moe",
-  "archDisplay": "MoE (undisclosed)",
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, hybrid-reasoning (parameter count undisclosed)",
   "ctxK": 200,
   "modalities": [
     "text",
     "vision"
   ],
-  "langCount": 40,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
@@ -26,18 +26,21 @@
     "toolUse": true,
     "agentic": true
   },
-  "apiAvailable": true,
+  "apiAvailable": false,
   "price": {
     "input": 3,
     "output": 15
   },
   "links": {
-    "docs": "docs.anthropic.com"
+    "docs": "platform.claude.com"
   },
-  "note": "First Claude 4 generation Sonnet.",
+  "note": "Balanced Claude 4 model matching Opus 4 on SWE-bench Verified at a fraction of the price.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

@@ -1,0 +1,46 @@
+{
+  "slug": "internlm2-5-7b",
+  "name": "InternLM2.5-7B",
+  "orgSlug": "shanghai-ai-laboratory",
+  "familySlug": "internlm2-5",
+  "releaseDate": "2024-07-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer decoder (GQA)",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "internlm/internlm2_5-7b-chat",
+    "gh": "InternLM/InternLM",
+    "docs": "internlm.readthedocs.io"
+  },
+  "note": "Widely used open 7B; near-perfect 1M-token needle retrieval via chat-1m checkpoint, state-of-the-art 7B-scale math reasoning.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 4.5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

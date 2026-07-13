@@ -1,0 +1,45 @@
+{
+  "slug": "stable-lm-2-1-6b",
+  "name": "Stable LM 2 1.6B",
+  "orgSlug": "stability-ai",
+  "familySlug": "stablelm-2",
+  "releaseDate": "2024-01-19",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Stability AI Community License (non-commercial by default; commercial use requires Stability AI membership)",
+  "paramsB": 1.64,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (24 layers, LLaMA-style partial RoPE + LayerNorm, Arcade100k tokenizer)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 7,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "stabilityai/stablelm-2-1_6b",
+    "gh": "Stability-AI/StableLM"
+  },
+  "note": "Compact 7-language multilingual model (English, Spanish, German, Italian, French, Portuguese, Dutch) trained on 2T tokens over 2 epochs; smallest member of the StableLM 2 line.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 1.1,
+  "vramFp16Gb": 3.3,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

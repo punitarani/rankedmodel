@@ -1,0 +1,50 @@
+{
+  "slug": "nemotron-3-ultra-550b-a55b",
+  "name": "Nemotron 3 Ultra 550B A55B",
+  "orgSlug": "nvidia",
+  "familySlug": "nvidia-nemotron-3",
+  "releaseDate": "2026-06-04",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "OpenMDW License Agreement v1.1 (Linux Foundation Model Openness Framework)",
+  "paramsB": 550,
+  "activeParamsB": 55,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid LatentMoE + Mamba-2 (550B total / 55B active, MTP layers, NVFP4-native pretraining)",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 10,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.5,
+    "output": 2.2
+  },
+  "links": {
+    "hf": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "gh": "NVIDIA-NeMo/Nemotron",
+    "docs": "build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b"
+  },
+  "note": "NVIDIA's frontier open MoE with 1M-token context; hybrid LatentMoE+Mamba-2 flagship of the Nemotron 3 family, tuned for long-running agents.",
+  "quants": [
+    "NVFP4",
+    "GGUF"
+  ],
+  "vramQ4Gb": 352,
+  "vramFp16Gb": 1121,
+  "tps4090": null,
+  "tpsNote": "Needs 8x GB200/B200/H200-class GPUs natively; community GGUF still needs ~300GB+ combined RAM/VRAM, far beyond a single RTX 4090.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

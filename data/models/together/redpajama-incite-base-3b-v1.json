@@ -1,0 +1,45 @@
+{
+  "slug": "redpajama-incite-base-3b-v1",
+  "name": "RedPajama-INCITE-Base-3B-v1",
+  "orgSlug": "together",
+  "familySlug": "redpajama-incite",
+  "releaseDate": "2023-05-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 2.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "GPT-NeoX / Pythia-style dense transformer",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "togethercomputer/RedPajama-INCITE-Base-3B-v1",
+    "docs": "together.ai/blog/redpajama-models-v1"
+  },
+  "note": "First RedPajama model; strongest open 3B at launch (HELM 0.406), runs on a single consumer GPU.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 3,
+  "vramFp16Gb": 6,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

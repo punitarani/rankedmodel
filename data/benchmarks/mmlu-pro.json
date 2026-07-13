@@ -1,0 +1,10 @@
+{
+  "slug": "mmlu-pro",
+  "name": "MMLU-Pro",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Harder, 10-option MMLU successor with less shortcut-guessing.",
+  "normMin": 15,
+  "normMax": 90,
+  "higherIsBetter": true
+}

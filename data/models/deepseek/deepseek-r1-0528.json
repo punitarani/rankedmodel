@@ -1,0 +1,52 @@
+{
+  "slug": "deepseek-r1-0528",
+  "name": "DeepSeek-R1-0528",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-r1",
+  "releaseDate": "2025-05-28",
+  "status": "released",
+  "predecessor": "deepseek-r1-zero",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 671,
+  "activeParamsB": 37,
+  "archClass": "moe",
+  "archDisplay": "DeepSeekMoE: 256 routed + 1 shared expert, top-8 routing, 61 layers (3 dense + 58 MoE), Multi-head Latent Attention (MLA)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.55,
+    "output": 2.19
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-R1-0528",
+    "gh": "deepseek-ai/DeepSeek-R1",
+    "docs": "api-docs.deepseek.com"
+  },
+  "note": "Major R1 refresh with deeper chain-of-thought (AIME24 79.8 to 91.4), fewer hallucinations, and added JSON/function calling; approached o3/Gemini 2.5 Pro.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GGUF IQ1/IQ2 (Unsloth Dynamic)",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 404,
+  "vramFp16Gb": 1342,
+  "tps4090": null,
+  "tpsNote": "671B MoE far exceeds a single 24GB 4090; Unsloth's dynamic quants shrink it to ~185GB for CPU-offload rigs, still requiring far more than one consumer GPU.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

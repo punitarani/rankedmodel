@@ -1,0 +1,44 @@
+{
+  "slug": "jais-70b",
+  "name": "Jais 70B",
+  "orgSlug": "inception-g42",
+  "familySlug": "jais",
+  "releaseDate": "2024-08-05",
+  "status": "released",
+  "predecessor": "jais-13b",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Llama-2-70B architecture adapted with Arabic-expanded tokenizer (32K new Arabic tokens), RoPE + GQA",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "inceptionai/jais-adapted-70b"
+  },
+  "note": "Largest Jais model, adapted from Llama-2-70B; launched alongside 20+ other Jais variants (590M-70B) in the Aug 2024 family release.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 40,
+  "vramFp16Gb": 140,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "minif2f-test",
+  "name": "MiniF2F (test)",
+  "category": "math",
+  "unit": "%",
+  "description": "Formal (Lean 4) theorem-proving benchmark, test split.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

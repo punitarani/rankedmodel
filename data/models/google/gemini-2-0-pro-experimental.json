@@ -1,0 +1,45 @@
+{
+  "slug": "gemini-2-0-pro-experimental",
+  "name": "Gemini 2.0 Pro Experimental",
+  "orgSlug": "google",
+  "familySlug": "gemini-2-0",
+  "releaseDate": "2025-02-05",
+  "status": "deprecated",
+  "predecessor": "gemini-2-0-flash",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (params undisclosed); never reached GA",
+  "ctxK": 2000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "ai.google.dev/gemini-api/docs/models"
+  },
+  "note": "Experimental-only 2.0 Pro preview with a 2M-token context window; Google's strongest 2.0-era coding/reasoning model, never GA'd.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

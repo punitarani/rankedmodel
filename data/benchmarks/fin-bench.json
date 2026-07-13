@@ -1,0 +1,10 @@
+{
+  "slug": "fin-bench",
+  "name": "FIN-bench",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Finnish-language knowledge and reasoning benchmark suite.",
+  "normMin": 20,
+  "normMax": 95,
+  "higherIsBetter": true
+}

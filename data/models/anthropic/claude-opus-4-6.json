@@ -1,0 +1,46 @@
+{
+  "slug": "claude-opus-4-6",
+  "name": "Claude Opus 4.6",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-4",
+  "releaseDate": "2026-02-05",
+  "status": "released",
+  "predecessor": "claude-opus-4-5-medium",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (undisclosed configuration)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 5,
+    "output": 25
+  },
+  "links": {
+    "docs": "platform.claude.com"
+  },
+  "note": "First Opus-class model with a 1M-token context window in beta (Claude Developer Platform only) plus Claude Code agent teams; also exposes low/medium/high/max effort levels (reported here at default high).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "High",
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

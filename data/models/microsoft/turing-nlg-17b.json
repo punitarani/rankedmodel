@@ -1,0 +1,42 @@
+{
+  "slug": "turing-nlg-17b",
+  "name": "Turing-NLG (17B)",
+  "orgSlug": "microsoft",
+  "familySlug": "turing-nlg",
+  "releaseDate": "2020-02-13",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (weights never released)",
+  "paramsB": 17,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer decoder (78 layers, hidden size 4256, 28 attention heads)",
+  "ctxK": 1,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/"
+  },
+  "note": "At launch the largest Transformer LM (17B); showcased DeepSpeed/ZeRO; research-only, weights never released.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

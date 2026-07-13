@@ -1,0 +1,45 @@
+{
+  "slug": "redpajama-incite-7b-base",
+  "name": "RedPajama-INCITE-7B-Base",
+  "orgSlug": "together",
+  "familySlug": "redpajama-incite",
+  "releaseDate": "2023-06-06",
+  "status": "released",
+  "predecessor": "redpajama-incite-base-3b-v1",
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 6.9,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "GPT-NeoX / Pythia-style dense transformer",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "togethercomputer/RedPajama-INCITE-7B-Base",
+    "docs": "together.ai/blog/redpajama-7b"
+  },
+  "note": "Fully reproducible 7B trained on 1T RedPajama-1T tokens with 10 released checkpoints, Apache-2.0.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

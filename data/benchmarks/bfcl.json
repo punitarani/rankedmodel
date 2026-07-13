@@ -1,0 +1,10 @@
+{
+  "slug": "bfcl",
+  "name": "BFCL",
+  "category": "agents",
+  "unit": "%",
+  "description": "Berkeley Function-Calling Leaderboard, tool/API call accuracy.",
+  "normMin": 20,
+  "normMax": 100,
+  "higherIsBetter": true
+}

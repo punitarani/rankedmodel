@@ -1,0 +1,49 @@
+{
+  "slug": "code-llama-34b",
+  "name": "Code Llama 34B",
+  "orgSlug": "meta",
+  "familySlug": "code-llama",
+  "releaseDate": "2023-08-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 2 Community License",
+  "paramsB": 34,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (decoder-only), no infilling",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/CodeLlama-34b-hf",
+    "gh": "facebookresearch/codellama",
+    "docs": "ai.meta.com/blog/code-llama-large-language-model-coding"
+  },
+  "note": "34B code flagship, no infilling; HumanEval 48.8% pass@1 (Python variant reaches 53.7%).",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 22,
+  "vramFp16Gb": 68,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

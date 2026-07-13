@@ -1,0 +1,47 @@
+{
+  "slug": "vicuna-13b-v1-5",
+  "name": "Vicuna 13B v1.5",
+  "orgSlug": "lmsys-uc-berkeley-cmu-stanford-ucsd",
+  "familySlug": "vicuna",
+  "releaseDate": "2023-08-01",
+  "status": "released",
+  "predecessor": "vicuna-13b-v1-1",
+  "openness": "open-weights",
+  "license": "Llama 2 Community License Agreement",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Llama-2-13B fine-tuned dense transformer (SFT on ShareGPT); a 16K-context variant was also released",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "lmsys/vicuna-13b-v1.5",
+    "gh": "lm-sys/FastChat"
+  },
+  "note": "Llama-2-13B fine-tuned on ~125K ShareGPT chats; the more-permissive, commercially-usable successor to the original LLaMA-based Vicuna.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ",
+    "AWQ"
+  ],
+  "vramQ4Gb": 9,
+  "vramFp16Gb": 26,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "pubmedqa",
+  "name": "PubMedQA",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Biomedical-literature yes/no/maybe question answering.",
+  "normMin": 50,
+  "normMax": 92,
+  "higherIsBetter": true
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "gpt-3-5-turbo",
+  "name": "GPT-3.5 Turbo",
+  "orgSlug": "openai",
+  "familySlug": "gpt-3-5",
+  "releaseDate": "2023-03-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Transformer (architecture undisclosed)",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.5,
+    "output": 1.5
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-3.5-turbo"
+  },
+  "note": "Chat-tuned model behind ChatGPT's Nov 2022 launch; still served today with a 16K context window at $0.50/$1.50 per million tokens.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

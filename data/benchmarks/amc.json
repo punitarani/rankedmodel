@@ -1,0 +1,10 @@
+{
+  "slug": "amc",
+  "name": "AMC",
+  "category": "math",
+  "unit": "%",
+  "description": "American Mathematics Competitions problem set.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

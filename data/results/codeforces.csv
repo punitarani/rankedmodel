@@ -1,0 +1,15 @@
+model_slug,score,source,source_url,evaluated_at,notes
+deepseek-r1-671b,2029,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,"Codeforces rating, ~96.3rd percentile"
+deepseek-r1-distill-llama-70b,1633,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B,2025-01-20,Codeforces rating
+deepseek-r1-distill-qwen-32b,1691,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B,2025-01-20,Codeforces rating
+deepseek-r1-zero,1444,self-reported,https://arxiv.org/html/2501.12948v1,2025-01-20,Codeforces rating
+openai-o1,1891,independent,https://www.datacamp.com/blog/o3-openai,2024-12-01,Codeforces Elo
+openai-o1-mini,1650,independent,https://www.analyticsvidhya.com/blog/2024/09/o1-preview-vs-o1-mini/,2024-09-01,"Codeforces Elo, ~86th percentile"
+openai-o1-preview,1258,independent,https://www.analyticsvidhya.com/blog/2024/09/o1-preview-vs-o1-mini/,2024-09-01,
+openai-o3,2706,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,Elo rating
+openai-o3-mini-high,2130,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"Codeforces Elo, high effort"
+openai-o3-mini-low,1831,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"Codeforces Elo, low effort"
+openai-o3-mini-medium,2036,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"Codeforces Elo, medium effort"
+openai-o3-pro,2748,independent,https://binaryverseai.com/chatgpt-o3-pro-review-benchmarks-hacks/,,Elo rating
+openai-o4-mini,2719,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,Elo rating
+seed1-5-thinking,55,self-reported,https://github.com/ByteDance-Seed/Seed-Thinking-v1.5,,Codeforces pass@8

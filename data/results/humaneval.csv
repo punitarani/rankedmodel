@@ -1,0 +1,139 @@
+model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba-1-5-large,71.3,self-reported,https://arxiv.org/html/2408.12570v1,,
+ai21-jamba-1-5-mini,62.8,self-reported,https://arxiv.org/html/2408.12570v1,,
+amazon-nova-lite,85.4,independent,https://deepranking.ai/llm-models/nova-lite,,
+amazon-nova-micro,81.1,independent,https://deepranking.ai/llm-models/nova-micro,,
+amazon-nova-pro,89,independent,https://deepranking.ai/llm-models/nova-pro,,
+aya-vision-32b,62.2,independent,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,
+baichuan2-13b,17.07,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,0-shot
+baichuan2-7b,18.29,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,0-shot
+bloom-176b,15.5,self-reported,https://huggingface.co/bigscience/bloom,,"pass@1, Python"
+btlm-3b-8k,9.9,self-reported,https://arxiv.org/abs/2309.11568,,pass@1
+claude-2,71.2,self-reported,https://www.anthropic.com/news/claude-2,2023-07-11,"0-shot Python coding (Codex HumanEval), up from 56.0% on Claude 1.3"
+claude-3-5-haiku,88.1,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"0-shot, official model card addendum Table 8"
+claude-3-5-sonnet,92,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,0-shot
+claude-3-haiku,75.9,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,0-shot
+claude-3-opus,84.9,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,0-shot
+claude-3-sonnet,73,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,0-shot
+claude-instant-1-2,58.7,self-reported,https://www.anthropic.com/news/releasing-claude-instant-1-2,2023-08-09,"Reported by Anthropic as a Codex/HumanEval-style coding eval, up from 52.8% on v1.1"
+code-llama-13b,36,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, base Code Llama 13B"
+code-llama-34b,48.8,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, base Code Llama 34B (not the Python-specialized variant)"
+code-llama-34b-python,53.7,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, Code Llama - Python 34B; also cited in Meta's official blog"
+code-llama-70b-instruct,67.8,self-reported,https://the-decoder.com/code-llama-2-metas-latest-open-source-llm-for-code-beats-gpt-4-in-coding-benchmark/,,"pass@1, zero-shot; article confirms Code Llama 70B Instruct scored 67.8 on HumanEval, 'just ahead of GPT-4 and Gemini Pro for prompts without examples (zero-shot)'"
+code-llama-7b,33.5,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, base Code Llama 7B"
+codegeex-13b,22.89,self-reported,https://arxiv.org/pdf/2303.17568,,"HumanEval-X, Python, pass@1"
+codegemma-7b,44.5,self-reported,https://ai.google.dev/gemma/docs/codegemma/model_card,,7B pretrained (PT) variant
+codegen-16b-mono,29.28,self-reported,https://ar5iv.labs.arxiv.org/html/2203.13474,,"pass@1, CodeGen-Mono 16.1B"
+codegen2-5-7b,33.4,independent,https://github.com/zai-org/CodeGeeX2/blob/main/README.md,,"CodeGen2.5-7B-mono, pass@1"
+codeqwen1-5-7b,51.8,self-reported,https://qwenlm.github.io/blog/codeqwen1.5/,2024-04-16,"Base model, 0-shot"
+codestral-22b,81.1,independent,https://www.analyticsvidhya.com/blog/2024/06/codestral-22b/,2024-05-01,
+codestral-25-01,86.6,self-reported,https://mistral.ai/news/codestral-2501/,,
+codestral-mamba-7b,75,independent,https://www.marktechpost.com/2024/07/17/mistral-ai-launches-codestral-mamba-7b-a-revolutionary-code-llm-achieving-75-on-humaneval-for-python-coding/,2024-07-01,
+codet5-16b,30.9,self-reported,https://ar5iv.labs.arxiv.org/html/2305.07922,,"pass@1, base CodeT5+ 16B (pass@10 51.6)"
+dbrx,70.1,self-reported,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm,,
+deepseek-coder-33b,79.3,self-reported,https://ar5iv.labs.arxiv.org/html/2401.14196,,"HumanEval Python, Instruct-33B, from paper Table 3"
+deepseek-coder-v2-236b,90.2,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,,
+deepseek-llm-67b,73.8,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"Chat variant, paper Table 6"
+deepseek-v2-236b,81.1,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,,Chat (RL) variant
+deepseek-v2-5,89,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2.5,,HumanEval (Python)
+deepseek-v3-671b,82.6,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,HumanEval-Mul
+deepseekmoe-16b,26.8,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,,"Base variant, pass@1"
+falcon-h1-34b,87.2,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
+falcon3-10b,74.7,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,"EvalPlus code eval, 0-shot"
+gemini-1-5-flash,74.3,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"0-shot pass rate (PT chat preamble), Table 11"
+gemma-2-27b,51.8,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,pass@1
+gemma-2-9b,40.2,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,pass@1
+gemma-2b,22,self-reported,https://huggingface.co/google/gemma-2b,,pass@1
+gemma-7b,32.3,self-reported,https://arxiv.org/html/2403.08295v4,,pass@1
+glm-4,78.5,self-reported,https://arxiv.org/html/2406.12793v1,2024-05-20,"GLM-4 (0520) checkpoint, vs GPT-4-0314 67.0"
+glm-4-9b-chat,71.8,self-reported,https://huggingface.co/THUDM/glm-4-9b-chat,,
+gpt-3-5-turbo,48.1,self-reported,https://arxiv.org/abs/2303.08774,,
+gpt-4,67,self-reported,https://arxiv.org/abs/2303.08774,,
+gpt-4o,90.2,independent,https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947,,"OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching"
+gpt-4o-mini,87.2,self-reported,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,2024-07-18,
+granite-3-2-8b-instruct,89.35,self-reported,https://huggingface.co/ibm-granite/granite-3.2-8b-instruct,,
+granite-3-3-8b-instruct,89.73,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,
+granite-34b-code-instruct,54.8,independent,https://arxiv.org/html/2405.04324v1,,"HumanEvalSynthesize, avg across 6 languages (paper Table 3)"
+granite-34b-code-instruct,62.2,self-reported,https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k,,"HumanEvalSynthesize, Python pass@1"
+granite-4-0-h-small,88,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+granite-8b-code-instruct,49.6,independent,https://arxiv.org/html/2405.04324v1,,"HumanEvalSynthesize, avg across 6 languages (paper Table 3)"
+granite-8b-code-instruct,57.9,self-reported,https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k,,"HumanEvalSynthesize, Python pass@1"
+grok-1-5,74.1,self-reported,https://x.ai/news/grok-1.5,2024-03-29,
+grok-2,88.4,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
+grok-2-mini,85.7,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
+hunyuan-large-a52b,71.4,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,
+internlm2-20b,67.1,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,
+internlm3-8b-instruct,82.3,self-reported,https://huggingface.co/internlm/internlm3-8b-instruct,,
+krutrim-2-12b,80,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,Pass@10
+llama-13b,15.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"pass@1, Table 8"
+llama-3-1-405b,89,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,Instruct
+llama-3-1-70b,80.5,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,Instruct
+llama-3-1-8b,72.6,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, pass@1"
+llama-3-3-70b,88.4,self-reported,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,,
+llama-3-70b,81.7,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct,,"0-shot pass@1, Instruct-tuned checkpoint"
+llama-3-8b,62.2,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"Instruct, 0-shot"
+llama-33b,21.7,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"pass@1, Table 8"
+minicpm-2b,50,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table
+minicpm3-4b,68.3,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,HumanEval+
+minimax-text-01,86.9,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,
+ministral-3b,77.4,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,,pass@1
+ministral-8b,76.8,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,,pass@1
+mistral-7b,30.5,self-reported,https://arxiv.org/abs/2310.06825,,
+mistral-large-2-24-07,92,self-reported,https://huggingface.co/mistralai/Mistral-Large-Instruct-2407,,
+mistral-small-3-1-24b,88.41,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
+mistral-small-3-2-24b,92.9,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,"HumanEval Plus, pass@5"
+mistral-small-3-24b,84.8,self-reported,https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501,,
+mixtral-8x7b,40.2,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
+mpt-7b,17.1,independent,https://arxiv.org/abs/2405.13386,2024-05-22,confirmed Table 2
+naver-hyperclova-x,55.49,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, pass@1"
+nemotron-4-15b,31.6,self-reported,https://unfoldai.com/nemotron-4-nvidia-powerful-language-model/,2024-02-26,0-shot pass@1
+nemotron-4-340b,57.3,self-reported,https://huggingface.co/nvidia/Nemotron-4-340B-Base,2024-06-14,"pass@1, 0-shot"
+nemotron-h-56b,60.37,self-reported,https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K,,
+olmo-3-7b,77.2,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,HumanEvalPlus
+olmo-3-think-32b,91.4,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,HumanEvalPlus; Qwen 3 32B 91.2
+openai-codex,28.8,self-reported,https://arxiv.org/abs/2107.03374,,"pass@1, 12B code-davinci model"
+openai-o1-preview,92.4,independent,https://www.walturn.com/insights/comparing-openai-o1-to-other-top-models,2024-09-01,
+openhermes-2-5-mistral-7b,50.7,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,,pass@1
+phi-1-1-3b,50.6,self-reported,https://arxiv.org/abs/2306.11644,2023-06-20,pass@1
+phi-1-5-1-3b,34.1,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,,"pass@1, Table 4"
+phi-2-2-7b,59,self-reported,https://arxiv.org/pdf/2404.14219,,
+phi-3-5-mini-3-8b,62.8,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,
+phi-3-5-moe-16x3-8b-6-6b-active,70.7,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
+phi-3-medium-14b,62.2,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,0-shot
+phi-3-mini-3-8b,57.3,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,0-shot
+phi-3-small-7b,61,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,
+phi-4-14b,82.6,self-reported,https://huggingface.co/microsoft/phi-4,,
+phi-4-reasoning,92.9,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,HumanEvalPlus variant
+phi-4-reasoning-14b,92.9,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,,HumanEvalPlus
+poro-34b,41.8,self-reported,https://arxiv.org/abs/2404.01856,,Average of HumanEval and MBPP code accuracy as reported in paper
+qwen-1-8b,15.2,self-reported,https://huggingface.co/Qwen/Qwen-1_8B,2023-11-30,0-shot pass@1
+qwen-14b,32.3,self-reported,https://huggingface.co/Qwen/Qwen-14B,2023-09-25,0-shot pass@1
+qwen-72b,35.4,self-reported,https://huggingface.co/Qwen/Qwen-72B,2023-11-30,
+qwen-7b,29.9,self-reported,https://huggingface.co/Qwen/Qwen-7B,2023-09-28,0-shot pass@1
+qwen1-5-110b,52.4,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Base model
+qwen1-5-72b,41.5,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
+qwen1-5-moe-a2-7b,34.2,self-reported,https://qwenlm.github.io/blog/qwen-moe/,2024-03-28,base model
+qwen2-5-14b,56.7,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
+qwen2-5-32b,58.5,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
+qwen2-5-72b,59.1,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
+qwen2-5-7b,57.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
+qwen2-5-coder-32b,65.9,self-reported,https://arxiv.org/abs/2409.12186,,Base model
+qwen2-57b-a14b,53,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen2-72b,64.6,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen2-7b,51.2,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+reka-core,76.8,self-reported,https://arxiv.org/html/2404.12387v1,,"vs GPT-4 76.5, Claude 3 Opus 84.9"
+reka-edge-7b,54.3,self-reported,https://arxiv.org/html/2404.12387v1,,
+reka-flash-21b,72,self-reported,https://arxiv.org/abs/2404.12387,2024-02-12,0-shot
+santacoder-1-1b,18,self-reported,https://huggingface.co/bigcode/santacoder,,"pass@1, Python"
+skywork-moe-base,43.9,self-reported,https://arxiv.org/html/2406.06563v1,,
+snowflake-arctic,64.3,independent,https://www.flexera.com/blog/finops/snowflake-arctic,,
+starcoder-15-5b,33.6,self-reported,https://huggingface.co/blog/starcoder,,
+starcoder2-15b,46.3,self-reported,https://huggingface.co/bigcode/starcoder2-15b,,pass@1
+starcoder2-3b,31.7,self-reported,https://huggingface.co/bigcode/starcoder2-3b,,pass@1
+t-lu-3-405b,95.9,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B,,"pass@10; DeepSeek V3 94.6, GPT-4o 97.0"
+t-lu-3-70b,92.4,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B,,pass@10
+wizardcoder-python-34b-v1-0,73.2,self-reported,https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md,,"pass@1, WizardCoder team evaluation, surpasses GPT-4 (2023-03-15) and ChatGPT-3.5"
+wizardlm-7b,19.1,self-reported,https://huggingface.co/TheBloke/wizardLM-7B-GGUF,,"pass@1, per original WizardLM-7B-V1.0 model card"
+yi-34b,23.2,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,pass@1
+yi-6b,15.9,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,pass@1
+yi-lightning,83.5,self-reported,https://arxiv.org/abs/2412.01253,,0-shot

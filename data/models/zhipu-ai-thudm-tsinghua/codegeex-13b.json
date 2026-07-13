@@ -1,0 +1,45 @@
+{
+  "slug": "codegeex-13b",
+  "name": "CodeGeeX (13B)",
+  "orgSlug": "zhipu-ai-thudm-tsinghua",
+  "familySlug": "codegeex",
+  "releaseDate": "2022-09-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0 (code); custom Model License for weights (free research use; commercial use after registration)",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense autoregressive Transformer (GPT-style, trained w/ GLM recipe)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "gh": "zai-org/CodeGeeX",
+    "docs": "keg.cs.tsinghua.edu.cn/codegeex/"
+  },
+  "note": "13B multilingual code model covering 23 programming languages; introduced HumanEval-X benchmark (KDD 2023).",
+  "quants": [
+    "INT8"
+  ],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,5 +1,7 @@
 {
   "slug": "mistral-ai",
   "name": "Mistral AI",
-  "type": "lab"
+  "type": "lab",
+  "country": "FR",
+  "url": "https://mistral.ai"
 }

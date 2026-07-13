@@ -1,0 +1,45 @@
+{
+  "slug": "upstage-solar-pro-2-chat",
+  "name": "Upstage Solar Pro 2 (Chat)",
+  "orgSlug": "upstage",
+  "familySlug": "solar",
+  "releaseDate": "2025-07-10",
+  "status": "released",
+  "predecessor": "upstage-solar-pro",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 31,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer with switchable Chat / Reasoning (chain-of-thought) inference modes",
+  "ctxK": 64,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.15,
+    "output": 0.6
+  },
+  "links": {
+    "docs": "upstage.ai"
+  },
+  "note": "31B 'frontier' model billed as Korea's first; Chat mode is the fast default, Reasoning mode trades latency for accuracy on hard tasks.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Chat",
+  "isDefaultConfig": true,
+  "isBestConfig": false
+}

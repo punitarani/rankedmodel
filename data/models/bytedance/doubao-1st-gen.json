@@ -1,0 +1,42 @@
+{
+  "slug": "doubao-1st-gen",
+  "name": "Doubao (1st-gen)",
+  "orgSlug": "bytedance",
+  "familySlug": "doubao",
+  "releaseDate": "2024-05-15",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Transformer (MoE architecture inferred from ByteDance's later Doubao disclosures; exact 1st-gen configuration undisclosed)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "volcengine.com"
+  },
+  "note": "ByteDance's debut foundation-model family (pro-4k/32k/128k tiers) launched at Volcano Engine's FORCE conference ~99% below industry pricing; retired in favor of Doubao 1.5/Seed lines.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

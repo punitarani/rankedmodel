@@ -1,0 +1,10 @@
+{
+  "slug": "mathvista",
+  "name": "MathVista",
+  "category": "vision",
+  "unit": "%",
+  "description": "Visual mathematical reasoning over charts, diagrams and figures.",
+  "normMin": 10,
+  "normMax": 90,
+  "higherIsBetter": true
+}

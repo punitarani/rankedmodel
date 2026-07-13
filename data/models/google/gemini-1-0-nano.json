@@ -1,0 +1,43 @@
+{
+  "slug": "gemini-1-0-nano",
+  "name": "Gemini 1.0 Nano",
+  "orgSlug": "google",
+  "familySlug": "gemini-1-0",
+  "releaseDate": "2023-12-06",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (on-device, Android AICore)",
+  "paramsB": 3.25,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer decoder (distilled, 4-bit quantized for on-device)",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf"
+  },
+  "note": "On-device model for Pixel 8 Pro (Nano-2, 3.25B variant); distilled and 4-bit quantized from larger Gemini models.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "charxiv",
+  "name": "CharXiv",
+  "category": "vision",
+  "unit": "%",
+  "description": "Chart understanding drawn from real arXiv papers.",
+  "normMin": 10,
+  "normMax": 90,
+  "higherIsBetter": true
+}

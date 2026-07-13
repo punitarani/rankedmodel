@@ -1,5 +1,7 @@
 {
   "slug": "anthropic",
   "name": "Anthropic",
-  "type": "lab"
+  "type": "lab",
+  "country": "US",
+  "url": "https://www.anthropic.com"
 }

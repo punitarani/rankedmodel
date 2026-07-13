@@ -1,0 +1,47 @@
+{
+  "slug": "deepseek-r1-distill-llama-70b",
+  "name": "DeepSeek-R1-Distill-Llama-70B",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-r1",
+  "releaseDate": "2025-01-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3.3 Community License",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (Llama-3.3-70B-Instruct architecture, GQA)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "gh": "deepseek-ai/DeepSeek-R1"
+  },
+  "note": "Largest R1 distill: Llama-3.3-70B fine-tuned on R1 reasoning traces, the most popular self-hostable strong reasoner from the release.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 42,
+  "vramFp16Gb": 140,
+  "tps4090": null,
+  "tpsNote": "Q4_K_M needs ~40-42GB, exceeding a single 24GB 4090; community reports ~12-15 tok/s on dual RTX 3090 (48GB) setups.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

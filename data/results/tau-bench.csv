@@ -1,0 +1,10 @@
+model_slug,score,source,source_url,evaluated_at,notes
+claude-opus-4,81.4,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,tau-bench retail; confirmed via direct fetch
+claude-sonnet-4,80.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,tau-bench retail; confirmed via direct fetch
+command-a,51.7,self-reported,https://arxiv.org/abs/2504.00698,,Taubench agentic benchmark
+glm-4-32b-0414,68.7,self-reported,https://huggingface.co/zai-org/GLM-4-32B-0414,,Retail split
+glm-4-5-355b-a32b,70.1,self-reported,https://arxiv.org/abs/2508.06471,,"TAU-Bench, GLM-4.5 paper"
+gpt-5,96.7,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"τ²-bench telecom, high reasoning effort"
+gpt-5-2,98.7,self-reported,https://openai.com/index/introducing-gpt-5-2/,,"Tau2-bench Telecom, GPT-5.2 Thinking; confirmed"
+naver-hyperclova-x-seed-think-32b,87,independent,https://www.ajupress.com/view/20251230092739502,2025-12-26,"tau2-Bench Telecom, per Artificial Analysis (article phrases it as '87 percent in an evaluation that assessed agent tool usage capabilities through a simulated telecommunications customer support scenario')"
+qwen3-max,74.8,self-reported,https://www.alibabacloud.com/blog/qwen3-max-just-scale-it_602621,,"Tau2-Bench, surpassing Claude Opus 4 and DeepSeek V3.1"

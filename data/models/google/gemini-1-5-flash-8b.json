@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-1-5-flash-8b",
+  "name": "Gemini 1.5 Flash-8B",
+  "orgSlug": "google",
+  "familySlug": "gemini-1-5",
+  "releaseDate": "2024-10-03",
+  "status": "deprecated",
+  "predecessor": "gemini-1-5-flash",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer decoder model (single-digit-billion params per Google), inherits Gemini 1.5 Flash's architecture and optimizations",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.0375,
+    "output": 0.15
+  },
+  "links": {
+    "docs": "ai.google.dev/gemini-api/docs/models"
+  },
+  "note": "Smallest, cheapest 1.5 Flash tier for high-volume tasks; ~80-90% of Flash's quality at a fraction of the cost.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

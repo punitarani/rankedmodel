@@ -1,5 +1,7 @@
 {
   "slug": "deepseek",
   "name": "DeepSeek",
-  "type": "lab"
+  "type": "lab",
+  "country": "CN",
+  "url": "https://www.deepseek.com"
 }

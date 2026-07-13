@@ -1,0 +1,46 @@
+{
+  "slug": "olmo-2-13b",
+  "name": "OLMo 2 13B",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "olmo-2",
+  "releaseDate": "2024-11-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (Olmo2 arch: 40 layers, QK-norm, reordered post-norm)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "allenai/OLMo-2-1124-13B",
+    "gh": "allenai/OLMo",
+    "docs": "allenai.org/olmo"
+  },
+  "note": "Flagship of Ai2's fully-open Nov 2024 OLMo 2 launch; Instruct variant beats Qwen 2.5 14B Instruct on average score",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 8.4,
+  "vramFp16Gb": 27.4,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

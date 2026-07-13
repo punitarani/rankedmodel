@@ -1,0 +1,46 @@
+{
+  "slug": "qvq-72b-preview",
+  "name": "QVQ-72B-Preview",
+  "orgSlug": "alibaba",
+  "familySlug": "qvq",
+  "releaseDate": "2024-12-25",
+  "status": "preview",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Qwen (Tongyi Qianwen) License",
+  "paramsB": 73,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Vision-Language Transformer (built on Qwen2-VL-72B)",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "Qwen/QVQ-72B-Preview",
+    "docs": "qwenlm.github.io/blog/qvq-72b-preview"
+  },
+  "note": "Experimental step-by-step visual reasoning model on a Qwen2-VL-72B base; single-round dialogue, no video input.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 47,
+  "vramFp16Gb": 146,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

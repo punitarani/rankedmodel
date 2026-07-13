@@ -1,0 +1,42 @@
+{
+  "slug": "abab6-5",
+  "name": "abab6.5",
+  "orgSlug": "minimax",
+  "familySlug": "abab",
+  "releaseDate": "2024-04-17",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (MiniMax API terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, trillion-scale total params (exact count/expert configuration undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "platform.minimax.io/docs"
+  },
+  "note": "MiniMax's first trillion-parameter MoE LLM, targeting GPT-4/Claude-3-class performance at launch; the abab6.5s variant trades some quality for much higher throughput at the same 200K context.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "llama-3-elyza-jp-8b",
+  "name": "Llama-3-ELYZA-JP-8B",
+  "orgSlug": "elyza",
+  "familySlug": "elyza-llm-for-jp",
+  "releaseDate": "2024-06-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3 Community License",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "8B dense transformer (Llama-3 architecture, Japanese continual pretrain + instruction tuning)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "elyza/Llama-3-ELYZA-JP-8B",
+    "docs": "elyza.ai"
+  },
+  "note": "Llama-3 8B continually pretrained and instruction-tuned for Japanese; comparable to GPT-3.5 Turbo/Claude 3 Haiku on ELYZA Tasks 100 (the flagship 70B model, not this 8B, is the one claimed to exceed GPT-4).",
+  "quants": [
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 16.1,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

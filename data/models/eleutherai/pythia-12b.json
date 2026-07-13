@@ -1,0 +1,45 @@
+{
+  "slug": "pythia-12b",
+  "name": "Pythia-12B",
+  "orgSlug": "eleutherai",
+  "familySlug": "pythia",
+  "releaseDate": "2023-04-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 11.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer (GPT-NeoX architecture, RoPE, parallel attention+FF, 36 layers)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "EleutherAI/pythia-12b",
+    "gh": "EleutherAI/pythia"
+  },
+  "note": "Flagship of the 8-model Pythia suite; 154 released checkpoints per model for interpretability/training-dynamics research",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 7.9,
+  "vramFp16Gb": 25.7,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

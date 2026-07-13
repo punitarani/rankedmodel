@@ -1,0 +1,17 @@
+model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba,46.4,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
+airoboros-70b-l2,49.8,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot, 0-shot"
+falcon-2-11b,52.56,independent,https://huggingface.co/blog/falcon2-11b,2024-05-13,0-shot
+falcon-mamba-7b,53.42,independent,https://huggingface.co/blog/falconmamba,2024-08-12,
+hermes-3-405b,65.57,self-reported,https://arxiv.org/pdf/2408.11857,,"MC2, 0-shot"
+jais-13b,41.1,self-reported,https://huggingface.co/inceptionai/jais-13b,,
+llama-2-13b-chat,62.18,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
+llama-2-70b,50.18,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
+llama-2-70b-chat,64.14,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
+llama-2-7b,33.29,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
+llama-65b,48.71,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
+llama-7b,27.42,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
+openhermes-2-5-mistral-7b,53.04,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,,MC2
+poro-34b,41.66,self-reported,https://arxiv.org/abs/2404.01856,,
+teuken-7b-instruct,0.503,self-reported,https://huggingface.co/openGPT-X/Teuken-7B-instruct-commercial-v0.4,,"EU21-TruthfulQA, averaged across 21 EU languages"
+zephyr-7b-beta,57.45,self-reported,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta,,0-shot

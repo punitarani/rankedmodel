@@ -1,0 +1,49 @@
+{
+  "slug": "llama-3-1-70b",
+  "name": "Llama 3.1 70B",
+  "orgSlug": "meta",
+  "familySlug": "llama-3-1",
+  "releaseDate": "2024-07-23",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3.1 Community License Agreement",
+  "paramsB": 70.6,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (GQA)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "gh": "meta-llama/llama-models",
+    "docs": "llama.com/docs/model-cards-and-prompt-formats/llama3_1"
+  },
+  "note": "128K-context 70B for large-scale AI-native applications, with built-in multilingual tool use.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 40,
+  "vramFp16Gb": 140,
+  "tps4090": null,
+  "tpsNote": "Q4_K_M weights (~40GB) exceed a single RTX 4090's 24GB VRAM; requires CPU offload, yielding only ~8-12 tok/s degraded throughput rather than a clean in-VRAM figure",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

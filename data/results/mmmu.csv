@@ -1,32 +1,47 @@
 model_slug,score,source,source_url,evaluated_at,notes
-gpt-5-5-pro,87.4,curated,,,
-gpt-5-5,85.9,curated,,,
-gpt-5,84.2,curated,,,
-o3,82.9,curated,,,
-gpt-4o,69.1,curated,,,
-claude-opus-4-8,86.8,curated,,,
-claude-opus-4-7,85.7,curated,,,
-claude-sonnet-4-6,83.4,curated,,,
-claude-sonnet-4,77.9,curated,,,
-claude-3-5-sonnet,68.3,curated,,,
-claude-haiku-4-5,76.4,curated,,,
-gemini-3-1-pro,88,curated,,,
-gemini-3-pro,87.6,curated,,,
-gemini-2-5-pro,82,curated,,,
-gemini-2-5-flash,76.7,curated,,,
-gemma-3-27b,64.9,curated,,,
-gemma-3-12b,59.6,curated,,,
-llama-4-maverick,73.4,curated,,,
-llama-4-scout,69.4,curated,,,
-deepseek-v4-1,81.6,curated,,,
-qwen3-7-max,82.2,curated,,,
-glm-5-2,80.9,curated,,,
-kimi-k2-5,78.9,curated,,,
-mistral-large-3,77.5,curated,,,
-mistral-small-3-2,62.8,curated,,,
-magistral-medium,70.2,curated,,,
-grok-4-2,83.1,curated,,,
-grok-4,80.9,curated,,,
-grok-4-fast,76.5,curated,,,
-llama-5,82.5,curated,,,
-deepseek-v4-5,82.4,curated,,,
+claude-3-5-sonnet,68.3,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,"Validation set, overall"
+claude-3-haiku,50.2,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,"Validation set, overall"
+claude-3-opus,59.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"Validation set, overall"
+claude-3-sonnet,53.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"Validation set, overall"
+claude-opus-4,76.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,multimodal understanding; confirmed via direct fetch
+claude-opus-4-5,80.7,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,,
+claude-opus-4-5-high,80.7,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,2025-11-24,
+claude-sonnet-4,74.4,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,multimodal understanding; confirmed via direct fetch
+deepseek-vl-7b,36.6,self-reported,https://arxiv.org/html/2403.05525v2,,7B-chat variant
+deepseek-vl2,51.1,self-reported,https://arxiv.org/html/2412.10302v1,,Base (4.5B active) variant
+gemini-1-5-flash,56.1,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"val split, 0-shot, Table 22"
+gemini-1-5-flash-8b,50.3,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"val, 4-shot, Table 22"
+gemini-2-0-flash,71.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,GA version
+gemini-2-0-flash-lite,68,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,Public Preview
+gemini-2-5-flash,79.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"MMMU, single attempt, thinking on"
+gemini-3-flash,81.2,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf,2025-12-01,MMMU-Pro variant
+gemini-3-pro,81,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf,2025-11-01,MMMU-Pro variant
+gemma-3-12b,59.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,MMMU val
+gemma-3-27b,64.9,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,MMMU val
+gemma-3-4b,48.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,MMMU val
+gpt-4-5,74.4,independent,https://www.helicone.ai/blog/gpt-4.5-benchmarks,2025-02-01,
+gpt-4o-mini,59.4,self-reported,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,2024-07-18,
+gpt-5,84.2,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,high reasoning effort
+grok-2,66.1,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
+grok-2-mini,63.2,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
+idefics2-8b,43,self-reported,https://huggingface.co/blog/idefics2,,"val split, with image splitting"
+internvl2-5-78b,70.1,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,"MMMU val, with CoT"
+internvl3-78b,72.2,self-reported,https://arxiv.org/html/2504.10479v1,,Surpasses GPT-4o (70.7)
+llama-3-2-11b-vision,50.7,self-reported,https://huggingface.co/meta-llama/Llama-3.2-11B-Vision,2024-09-01,"Instruct, val 0-shot/CoT"
+llama-3-2-90b-vision,60.3,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,"MMMU val, CoT, instruct model"
+minimax-vl-01,68.5,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,
+mistral-small-3-1-24b,64,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
+mistral-small-3-2-24b,62.5,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,
+openai-o1,77.6,independent,https://www.datacamp.com/blog/o3-openai,2024-12-01,MMMU college-level visual reasoning
+openai-o3,82.9,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,
+openai-o4-mini,81.6,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,
+phi-3-5-vision-4-2b,43,self-reported,https://huggingface.co/microsoft/Phi-3.5-vision-instruct,,
+phi-4-multimodal-5-6b,55.1,self-reported,https://huggingface.co/microsoft/Phi-4-multimodal-instruct,,vision understanding
+phi-4-multimodal-instruct,55.1,self-reported,https://arxiv.org/abs/2503.01743,,"MMMU val, confirmed in Table 1 of the Phi-4-Mini/Multimodal technical report"
+pixtral-12b,52.5,self-reported,https://mistral.ai/news/pixtral-12b/,2024-09-11,CoT prompting
+qvq-72b-preview,70.3,self-reported,https://huggingface.co/Qwen/QVQ-72B-Preview,,MMMU val
+qwen2-5-vl-72b,70.2,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,,MMMU val
+qwen2-vl-72b,64.5,self-reported,https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct,,"Instruct checkpoint, MMMU val"
+reka-core,56.3,self-reported,https://reka.ai/news/reka-core-our-frontier-class-multimodal-language-model,,near GPT-4V 56.8
+skywork-r1v-38b,69,self-reported,https://arxiv.org/abs/2504.05599,,"MMMU val, pass@1"
+step-3,74.2,self-reported,https://chat.stepfun.com/research/en/step3,,Vision-language understanding

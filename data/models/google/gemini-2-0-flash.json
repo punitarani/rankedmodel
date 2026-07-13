@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-2-0-flash",
+  "name": "Gemini 2.0 Flash",
+  "orgSlug": "google",
+  "familySlug": "gemini-2-0",
+  "releaseDate": "2024-12-11",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (params undisclosed), refined architecture over Gemini 1.5",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.1,
+    "output": 0.4
+  },
+  "links": {
+    "docs": "ai.google.dev/gemini-api/docs/models"
+  },
+  "note": "Agentic, multimodal workhorse with native tool use and real-time streaming; twice the speed of 1.5 Pro.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

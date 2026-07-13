@@ -1,0 +1,10 @@
+{
+  "slug": "swe-bench-pro",
+  "name": "SWE-bench Pro",
+  "category": "coding",
+  "unit": "%",
+  "description": "Harder, held-out variant of SWE-bench Verified.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

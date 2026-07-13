@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-neox-20b",
+  "name": "GPT-NeoX-20B",
+  "orgSlug": "eleutherai",
+  "familySlug": "gpt-neox",
+  "releaseDate": "2022-02-09",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 20.6,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer with RoPE and parallel attention+FF blocks (GPT-NeoX library, 44 layers)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "EleutherAI/gpt-neox-20b",
+    "gh": "EleutherAI/gpt-neox",
+    "docs": "blog.eleuther.ai/announcing-20b"
+  },
+  "note": "Largest publicly available dense LM at its Feb 2022 release; trained on The Pile with the GPT-NeoX framework, Apache 2.0",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 13.1,
+  "vramFp16Gb": 43,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

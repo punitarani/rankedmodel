@@ -1,0 +1,45 @@
+{
+  "slug": "naver-hyperclova-x-seed-think-32b",
+  "name": "NAVER HyperCLOVA X SEED Think 32B",
+  "orgSlug": "naver",
+  "familySlug": "hyperclova-x-seed",
+  "releaseDate": "2025-12-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "HyperCLOVA X SEED 32B Think Model License Agreement",
+  "paramsB": 32,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense multimodal (vision-language) transformer with optional extended-thinking mode",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+    "docs": "artificialanalysis.ai/models/hyperclova-x-seed-think-32b"
+  },
+  "note": "Open-weights multimodal reasoning model; strong Korean open model, reported ahead of EXAONE 4.0 32B on Artificial Analysis Intelligence Index at launch (44 vs 43; later shown as 17 under recalibrated v4.1 methodology).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 66,
+  "tps4090": null,
+  "tpsNote": "No community GGUF/MLX quantization confirmed yet as of research date; custom VLM architecture not yet supported by llama.cpp",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

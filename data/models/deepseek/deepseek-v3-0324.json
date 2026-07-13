@@ -1,0 +1,51 @@
+{
+  "slug": "deepseek-v3-0324",
+  "name": "DeepSeek-V3-0324",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-v3",
+  "releaseDate": "2025-03-24",
+  "status": "released",
+  "predecessor": "deepseek-v3-671b",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 671,
+  "activeParamsB": 37,
+  "archClass": "moe",
+  "archDisplay": "DeepSeekMoE: 256 routed + 1 shared expert, top-8 routing, 61 layers (3 dense + 58 MoE), Multi-head Latent Attention (MLA)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.27,
+    "output": 1.1
+  },
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-V3-0324",
+    "gh": "deepseek-ai/DeepSeek-V3",
+    "docs": "api-docs.deepseek.com"
+  },
+  "note": "March 2025 refresh of V3 with big reasoning/math/coding/front-end gains (AIME 39.6 to 59.4) and improved function calling and JSON output; MIT-licensed.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 404,
+  "vramFp16Gb": 1342,
+  "tps4090": null,
+  "tpsNote": "671B MoE far exceeds a single 24GB 4090; typically deployed on multi-GPU servers or via CPU-offload dynamic GGUF quants (~150-250GB range).",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

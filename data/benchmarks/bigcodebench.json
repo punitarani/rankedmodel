@@ -1,0 +1,10 @@
+{
+  "slug": "bigcodebench",
+  "name": "BigCodeBench",
+  "category": "coding",
+  "unit": "%",
+  "description": "Practical, tool-using code generation with complex instructions.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

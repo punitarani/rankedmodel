@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-1-5-flash",
+  "name": "Gemini 1.5 Flash",
+  "orgSlug": "google",
+  "familySlug": "gemini-1-5",
+  "releaseDate": "2024-05-14",
+  "status": "deprecated",
+  "predecessor": "gemini-1-5-pro",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer decoder model (parameter count undisclosed), online-distilled from the larger Gemini 1.5 Pro",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": 100,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.075,
+    "output": 0.3
+  },
+  "links": {
+    "docs": "ai.google.dev/gemini-api/docs/models"
+  },
+  "note": "Distilled fast/cheap 1.5-series workhorse that became the free-tier Gemini model; 1M-token multimodal context.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

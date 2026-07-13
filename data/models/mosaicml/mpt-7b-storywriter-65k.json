@@ -1,0 +1,47 @@
+{
+  "slug": "mpt-7b-storywriter-65k",
+  "name": "MPT-7B-StoryWriter-65k+",
+  "orgSlug": "mosaicml",
+  "familySlug": "mpt",
+  "releaseDate": "2023-05-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 6.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer w/ ALiBi (65K-token fiction fine-tune)",
+  "ctxK": 65,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "mosaicml/mpt-7b-storywriter",
+    "gh": "mosaicml/llm-foundry",
+    "docs": "databricks.com"
+  },
+  "note": "Fiction-focused MPT-7B fine-tune trained at 65k tokens via ALiBi; demonstrated generations to ~84k tokens on a single A100-80GB node.",
+  "quants": [
+    "GGUF Q4",
+    "GGML"
+  ],
+  "vramQ4Gb": 4.4,
+  "vramFp16Gb": 13.4,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

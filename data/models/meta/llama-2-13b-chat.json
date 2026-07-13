@@ -1,0 +1,50 @@
+{
+  "slug": "llama-2-13b-chat",
+  "name": "Llama 2 13B Chat",
+  "orgSlug": "meta",
+  "familySlug": "llama-2",
+  "releaseDate": "2023-07-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 2 Community License Agreement",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/Llama-2-13b-chat",
+    "gh": "meta-llama/llama",
+    "docs": "ai.meta.com/llama"
+  },
+  "note": "RLHF-tuned dialogue version of Llama 2 13B, fine-tuned with SFT plus human-preference RLHF for helpfulness and safety.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF",
+    "GPTQ",
+    "AWQ",
+    "GGML"
+  ],
+  "vramQ4Gb": 10,
+  "vramFp16Gb": 26,
+  "tps4090": 70.9,
+  "tpsNote": "Measured via Ollama (llama.cpp backend) at Q4 on RTX 4090: ~92% GPU utilization, ~41% (~10GB) VRAM used, 70.90 tok/s evaluation speed.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

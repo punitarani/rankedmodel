@@ -1,0 +1,46 @@
+{
+  "slug": "baichuan-4",
+  "name": "Baichuan 4",
+  "orgSlug": "baichuan-intelligence",
+  "familySlug": "baichuan-4",
+  "releaseDate": "2024-05-22",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (API-only)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture; closed flagship with multimodal (MMMU/MMBench/MathVista) capability",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 14.75,
+    "output": 14.75
+  },
+  "links": {
+    "docs": "platform.baichuan-ai.com"
+  },
+  "note": "Closed flagship launched with the 'Baixiaoying' AI assistant; topped SuperCLUE (80.64) above GPT-4-Turbo-0125 and Claude 3 Opus on Chinese-language tasks at release.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

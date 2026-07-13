@@ -1,0 +1,47 @@
+{
+  "slug": "deepseek-llm-67b",
+  "name": "DeepSeek LLM 67B",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-llm",
+  "releaseDate": "2023-11-29",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "DeepSeek Model License (custom, commercial use permitted)",
+  "paramsB": 67,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense auto-regressive transformer decoder with grouped-query attention, 4K context",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "deepseek-ai/deepseek-llm-67b-chat",
+    "gh": "deepseek-ai/DeepSeek-LLM"
+  },
+  "note": "First general-purpose DeepSeek foundation model (dense, 7B/67B); 67B surpassed Llama 2 70B on code, math and reasoning.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 39,
+  "vramFp16Gb": 135,
+  "tps4090": null,
+  "tpsNote": "67B exceeds a single RTX 4090's 24GB VRAM even at Q4 (~39GB); no verified single-4090 llama.cpp benchmark found.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

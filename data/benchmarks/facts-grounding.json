@@ -1,0 +1,10 @@
+{
+  "slug": "facts-grounding",
+  "name": "FACTS Grounding",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Faithfulness of a model's response to a long provided context document.",
+  "normMin": 40,
+  "normMax": 95,
+  "higherIsBetter": true
+}

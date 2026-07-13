@@ -1,0 +1,47 @@
+{
+  "slug": "orca-2-13b",
+  "name": "Orca 2 (13B)",
+  "orgSlug": "microsoft",
+  "familySlug": "orca",
+  "releaseDate": "2023-11-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Microsoft Research License",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (Llama 2 13B backbone)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "microsoft/Orca-2-13b",
+    "gh": "microsoft/orca"
+  },
+  "note": "Reasoning-focused Llama-2 13B fine-tune trained with 'Prompt Erasure' to select its own reasoning strategy; rivals models 5-10x larger.",
+  "quants": [
+    "GGUF",
+    "GPTQ",
+    "AWQ"
+  ],
+  "vramQ4Gb": 7.5,
+  "vramFp16Gb": 26,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

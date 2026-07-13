@@ -1,0 +1,46 @@
+{
+  "slug": "grok-2",
+  "name": "Grok-2",
+  "orgSlug": "xai",
+  "familySlug": "grok-2",
+  "releaseDate": "2024-08-13",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (size undisclosed by xAI; third-party estimates unverified)",
+  "ctxK": 131,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2,
+    "output": 10
+  },
+  "links": {
+    "docs": "docs.x.ai"
+  },
+  "note": "Multimodal frontier beta with FLUX.1-powered image generation on X; an early build (\"sus-column-r\") ranked #2-3 on the LMSYS/Chatbot Arena leaderboard pre-release, matching GPT-4o (did not reach #1).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

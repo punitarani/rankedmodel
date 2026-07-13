@@ -1,0 +1,43 @@
+{
+  "slug": "aya-101",
+  "name": "Aya 101",
+  "orgSlug": "cohere-labs",
+  "familySlug": "aya",
+  "releaseDate": "2024-02-12",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense encoder-decoder Transformer (mT5-XXL backbone, instruction-finetuned)",
+  "ctxK": 1,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 101,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "CohereLabs/aya-101",
+    "docs": "cohere.com/research/aya"
+  },
+  "note": "13B mT5-based instruction model covering 101 languages, built by 3,000+ researchers; Apache-2.0, no hosted inference provider.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 26,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

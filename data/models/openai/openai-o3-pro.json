@@ -1,0 +1,46 @@
+{
+  "slug": "openai-o3-pro",
+  "name": "OpenAI o3-pro",
+  "orgSlug": "openai",
+  "familySlug": "o3",
+  "releaseDate": "2025-06-10",
+  "status": "released",
+  "predecessor": "openai-o3",
+  "openness": "closed",
+  "license": "Proprietary (OpenAI API Terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer reasoning model, extended test-time compute (exact size undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 20,
+    "output": 80
+  },
+  "links": {
+    "docs": "developers.openai.com"
+  },
+  "note": "Higher-compute o3 variant for the most reliable answers; replaced o1-pro.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

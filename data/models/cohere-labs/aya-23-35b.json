@@ -1,0 +1,45 @@
+{
+  "slug": "aya-23-35b",
+  "name": "Aya 23 35B",
+  "orgSlug": "cohere-labs",
+  "familySlug": "aya-23",
+  "releaseDate": "2024-05-23",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC-BY-NC",
+  "paramsB": 35,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (Command-based), 35B",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 23,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "CohereLabs/aya-23-35B",
+    "docs": "docs.cohere.com/docs/aya"
+  },
+  "note": "Cohere's 35B dense multilingual instruct model spanning 23 languages, research-only CC-BY-NC release.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 22,
+  "vramFp16Gb": 70,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

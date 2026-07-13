@@ -1,0 +1,51 @@
+{
+  "slug": "ernie-4-5-300b-a47b",
+  "name": "ERNIE 4.5 300B-A47B",
+  "orgSlug": "baidu",
+  "familySlug": "ernie-4-5",
+  "releaseDate": "2025-06-30",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 300,
+  "activeParamsB": 47,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 64 text experts / 8 active per token, 54 layers, GQA 64Q/8KV",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.28,
+    "output": 1.1
+  },
+  "links": {
+    "hf": "baidu/ERNIE-4.5-300B-A47B-PT",
+    "gh": "PaddlePaddle/ERNIE"
+  },
+  "note": "Flagship open-weights text MoE anchoring the 0.3B-424B ERNIE 4.5 family; scores below the median of comparable open models on Artificial Analysis's Intelligence Index.",
+  "quants": [
+    "GGUF Q4",
+    "FP8",
+    "INT4 (W4A16)",
+    "2-bit"
+  ],
+  "vramQ4Gb": 151,
+  "vramFp16Gb": 603,
+  "tps4090": null,
+  "tpsNote": "300B total / 47B active MoE far exceeds a single RTX 4090's 24GB even at 4-bit; needs multi-GPU/datacenter hardware.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

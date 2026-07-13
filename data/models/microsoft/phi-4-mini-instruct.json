@@ -1,0 +1,51 @@
+{
+  "slug": "phi-4-mini-instruct",
+  "name": "Phi-4-mini-instruct",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-4",
+  "releaseDate": "2025-02-26",
+  "status": "released",
+  "predecessor": "phi-4-14b",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 3.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (200K vocab, grouped-query attention, shared input/output embedding)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 23,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.075,
+    "output": 0.3
+  },
+  "links": {
+    "hf": "microsoft/Phi-4-mini-instruct",
+    "gh": "microsoft/PhiCookBook",
+    "docs": "techcommunity.microsoft.com/blog/educatordeveloperblog/welcome-to-the-new-phi-4-models---microsoft-phi-4-mini--phi-4-multimodal/4386037"
+  },
+  "note": "Compact text-only Phi-4 (3.8B, 128K context) with built-in function calling; tops the 3-4B class, MIT-licensed.",
+  "quants": [
+    "GGUF Q4",
+    "MLX 4-bit",
+    "ONNX INT4"
+  ],
+  "vramQ4Gb": 4,
+  "vramFp16Gb": 8,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

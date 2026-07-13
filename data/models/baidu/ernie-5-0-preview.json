@@ -1,0 +1,45 @@
+{
+  "slug": "ernie-5-0-preview",
+  "name": "ERNIE 5.0 (Preview)",
+  "orgSlug": "baidu",
+  "familySlug": "ernie",
+  "releaseDate": "2025-11-13",
+  "status": "preview",
+  "predecessor": "ernie-x1",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 2400,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Natively omni-modal Mixture-of-Experts, unified autoregressive next-token objective, <3% of experts active per token",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "ernie.baidu.com/blog/posts/ernie5.0"
+  },
+  "note": "2.4T-parameter natively omni-modal flagship unveiled at Baidu World 2025; scored 22 on Artificial Analysis's Intelligence Index as a free preview.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

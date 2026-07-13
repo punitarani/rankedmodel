@@ -1,0 +1,10 @@
+{
+  "slug": "c-eval",
+  "name": "C-Eval",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Comprehensive Chinese-language academic/professional knowledge exam.",
+  "normMin": 20,
+  "normMax": 95,
+  "higherIsBetter": true
+}

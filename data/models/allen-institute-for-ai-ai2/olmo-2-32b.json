@@ -1,0 +1,46 @@
+{
+  "slug": "olmo-2-32b",
+  "name": "OLMo 2 32B",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "olmo-2",
+  "releaseDate": "2025-03-13",
+  "status": "released",
+  "predecessor": "olmo-2-7b",
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 32.23,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (decoder-only)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "allenai/OLMo-2-0325-32B-Instruct",
+    "gh": "allenai/OLMo-core",
+    "docs": "allenai.org/blog/olmo2-32B"
+  },
+  "note": "First fully open model to outperform GPT-3.5 Turbo and GPT-4o mini; trained to 6T tokens and post-trained with Tülu 3.1.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 65,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

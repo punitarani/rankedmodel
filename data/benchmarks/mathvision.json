@@ -1,0 +1,10 @@
+{
+  "slug": "mathvision",
+  "name": "MathVision",
+  "category": "vision",
+  "unit": "%",
+  "description": "Harder visual math-competition problem set.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

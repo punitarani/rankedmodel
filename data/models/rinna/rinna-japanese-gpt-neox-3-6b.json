@@ -1,0 +1,45 @@
+{
+  "slug": "rinna-japanese-gpt-neox-3-6b",
+  "name": "rinna japanese-gpt-neox-3.6b",
+  "orgSlug": "rinna",
+  "familySlug": "japanese-gpt-neox",
+  "releaseDate": "2023-05-17",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 3.6,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense GPT-NeoX transformer (36 layers, 2816 hidden size)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "rinna/japanese-gpt-neox-3.6b",
+    "docs": "rinna.co.jp"
+  },
+  "note": "One of Japan's earliest openly released, MIT-licensed Japanese LLMs, launched alongside an instruction-tuned SFT variant the same day.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 2.2,
+  "vramFp16Gb": 7.2,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

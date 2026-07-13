@@ -1,0 +1,45 @@
+{
+  "slug": "stable-lm-2-12b",
+  "name": "Stable LM 2 12B",
+  "orgSlug": "stability-ai",
+  "familySlug": "stablelm-2",
+  "releaseDate": "2024-04-08",
+  "status": "released",
+  "predecessor": "stable-lm-2-1-6b",
+  "openness": "open-weights",
+  "license": "Stability AI Community License (non-commercial by default; commercial use requires Stability AI membership)",
+  "paramsB": 12.1,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (40 layers, GQA 32 query/8 KV heads, RoPE, parallel attn+FFN)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 7,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "stabilityai/stablelm-2-12b",
+    "gh": "Stability-AI/StableLM"
+  },
+  "note": "Mid-size multilingual flagship of StableLM 2; DPO-tuned chat variant adds tool-use and function-calling support.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 8,
+  "vramFp16Gb": 24.5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

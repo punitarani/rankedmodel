@@ -1,0 +1,44 @@
+{
+  "slug": "kimi-k1-5",
+  "name": "Kimi k1.5",
+  "orgSlug": "moonshot-ai",
+  "familySlug": "kimi-k1-5",
+  "releaseDate": "2025-01-20",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Transformer, RL-trained long/short-CoT reasoning (parameter count undisclosed)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "gh": "MoonshotAI/Kimi-k1.5",
+    "docs": "arxiv.org/abs/2501.12599"
+  },
+  "note": "Moonshot's first RL-trained multimodal reasoning model, claiming OpenAI o1-level math, coding, and vision performance.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

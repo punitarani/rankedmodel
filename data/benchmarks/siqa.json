@@ -1,0 +1,10 @@
+{
+  "slug": "siqa",
+  "name": "Social IQa",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Social/emotional commonsense reasoning about everyday situations.",
+  "normMin": 40,
+  "normMax": 95,
+  "higherIsBetter": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "openassistant-bench",
+  "name": "OpenAssistant Bench",
+  "category": "human-preference",
+  "unit": "Elo",
+  "description": "Early open community Elo ranking, GPT-4-judged.",
+  "normMin": 800,
+  "normMax": 1200,
+  "higherIsBetter": true
+}

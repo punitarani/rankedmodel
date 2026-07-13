@@ -1,0 +1,10 @@
+{
+  "slug": "gdpval",
+  "name": "GDPval",
+  "category": "agents",
+  "unit": "%",
+  "description": "Economically valuable real-world professional task completion, wins-or-ties.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

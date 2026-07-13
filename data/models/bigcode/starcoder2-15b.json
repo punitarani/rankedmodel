@@ -1,0 +1,46 @@
+{
+  "slug": "starcoder2-15b",
+  "name": "StarCoder2 15B",
+  "orgSlug": "bigcode",
+  "familySlug": "starcoder2",
+  "releaseDate": "2024-02-28",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "BigCode OpenRAIL-M",
+  "paramsB": 15,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Transformer decoder, grouped-query + sliding-window attention (4K window/16K ctx), FIM; NVIDIA-trained",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 600,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "bigcode/starcoder2-15b",
+    "gh": "bigcode-project/starcoder2",
+    "docs": "bigcode-project.org/docs/about/models"
+  },
+  "note": "Flagship 2nd-gen BigCode model, NVIDIA-trained on The Stack v2 (600+ languages, 4T+ tokens); HF/ServiceNow/NVIDIA collaboration.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 9.4,
+  "vramFp16Gb": 30.4,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

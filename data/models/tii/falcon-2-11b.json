@@ -1,0 +1,45 @@
+{
+  "slug": "falcon-2-11b",
+  "name": "Falcon 2 11B",
+  "orgSlug": "tii",
+  "familySlug": "falcon-2",
+  "releaseDate": "2024-05-13",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "TII Falcon License 2.0",
+  "paramsB": 11,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Causal decoder-only Transformer, 11B (60 layers, grouped-query attention (GQA, 32 query / 8 KV heads), RoPE, FlashAttention-2)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 11,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "tiiuae/falcon-11B",
+    "docs": "huggingface.co/blog/falcon2-11b"
+  },
+  "note": "Second-gen Falcon trained on 5.5T tokens across 11 languages; beats Llama 3 8B, on par with Gemma 7B; also shipped with a vision-to-language (VLM) variant.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 7,
+  "vramFp16Gb": 22,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

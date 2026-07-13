@@ -1,0 +1,46 @@
+{
+  "slug": "deepseek-vl-7b",
+  "name": "DeepSeek-VL 7B",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-vl",
+  "releaseDate": "2024-03-08",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "DeepSeek Model License (code: MIT)",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense 7B transformer (DeepSeek-LLM-7B base) + SigLIP-L/SAM-B hybrid vision encoder (up to 1024x1024)",
+  "ctxK": 4,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "deepseek-ai/deepseek-vl-7b-chat",
+    "gh": "deepseek-ai/DeepSeek-VL"
+  },
+  "note": "First DeepSeek VLM (1.3B/7B); hybrid SigLIP+SAM vision encoder trained jointly with the LLM to preserve language ability.",
+  "quants": [
+    "MLX"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": "No public RTX 4090 llama.cpp benchmark found for the full vision-language model",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,5 +1,7 @@
 {
   "slug": "google",
   "name": "Google",
-  "type": "company"
+  "type": "lab",
+  "country": "US",
+  "url": "https://ai.google"
 }

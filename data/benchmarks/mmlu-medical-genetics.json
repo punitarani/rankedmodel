@@ -1,0 +1,10 @@
+{
+  "slug": "mmlu-medical-genetics",
+  "name": "MMLU: Medical Genetics",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Medical-genetics subject slice of MMLU.",
+  "normMin": 40,
+  "normMax": 100,
+  "higherIsBetter": true
+}

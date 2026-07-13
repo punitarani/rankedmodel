@@ -1,0 +1,43 @@
+{
+  "slug": "nemotron-4-15b",
+  "name": "Nemotron-4 15B",
+  "orgSlug": "nvidia",
+  "familySlug": "nemotron-4",
+  "releaseDate": "2024-02-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "NVIDIA Open Model License",
+  "paramsB": 15,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (decoder-only, GQA, RoPE, squared-ReLU MLP)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 54,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "nvidia/Nemotron-4-15B-Base",
+    "docs": "research.nvidia.com"
+  },
+  "note": "15B multilingual base trained on 8T tokens (50+ languages, 40+ code); beat 4x-larger models on multilingual tasks.",
+  "quants": [],
+  "vramQ4Gb": 10,
+  "vramFp16Gb": 32,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

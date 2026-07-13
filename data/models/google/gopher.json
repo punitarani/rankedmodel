@@ -1,0 +1,42 @@
+{
+  "slug": "gopher",
+  "name": "Gopher",
+  "orgSlug": "google",
+  "familySlug": "gopher",
+  "releaseDate": "2021-12-08",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Google DeepMind; research model, weights never released)",
+  "paramsB": 280,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (280B)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "arxiv.org/abs/2112.11446"
+  },
+  "note": "280B dense decoder-only Transformer; DeepMind's key data point in scaling research ahead of Chinchilla.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

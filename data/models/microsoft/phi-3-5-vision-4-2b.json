@@ -1,0 +1,51 @@
+{
+  "slug": "phi-3-5-vision-4-2b",
+  "name": "Phi-3.5-vision (4.2B)",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-3-5",
+  "releaseDate": "2024-08-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 4.2,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer + vision encoder/connector (Phi-3 Mini backbone)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.13,
+    "output": 0.52
+  },
+  "links": {
+    "hf": "microsoft/Phi-3.5-vision-instruct",
+    "gh": "microsoft/PhiCookBook",
+    "docs": "techcommunity.microsoft.com/blog/azure-ai-foundry-blog/discover-the-new-multi-lingual-high-quality-phi-3-5-slms/4225280"
+  },
+  "note": "Multimodal Phi with 4.2B params and 128K context; adds multi-frame image understanding over Phi-3-vision.",
+  "quants": [
+    "GGUF Q4",
+    "MLX 4-bit"
+  ],
+  "vramQ4Gb": 4,
+  "vramFp16Gb": 9,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "openai-o1",
+  "name": "OpenAI o1",
+  "orgSlug": "openai",
+  "familySlug": "o1",
+  "releaseDate": "2024-12-05",
+  "status": "released",
+  "predecessor": "openai-o1-preview",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer reasoning model (size undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 15,
+    "output": 60
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/o1"
+  },
+  "note": "Full reasoning flagship (API snapshot o1-2024-12-17); added vision and function calling vs o1-preview; scheduled API shutdown 2026-10-23.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

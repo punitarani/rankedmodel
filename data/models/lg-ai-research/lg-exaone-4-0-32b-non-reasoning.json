@@ -1,0 +1,46 @@
+{
+  "slug": "lg-exaone-4-0-32b-non-reasoning",
+  "name": "LG EXAONE 4.0 32B (Non-reasoning)",
+  "orgSlug": "lg-ai-research",
+  "familySlug": "exaone-4-0",
+  "releaseDate": "2025-07-15",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "EXAONE AI Model License Agreement 1.2 (NC)",
+  "paramsB": 32,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense hybrid-attention transformer, 64 layers, local:global attention 3:1, GQA (40Q/8KV), QK-Reorder-Norm; single checkpoint with toggleable non-reasoning/reasoning modes",
+  "ctxK": 131,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 3,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "LGAI-EXAONE/EXAONE-4.0-32B",
+    "gh": "LG-AI-EXAONE/EXAONE-4.0"
+  },
+  "note": "Default (non-reasoning) mode of Korea's first open-weight hybrid model; faster, lower scores on math/coding than reasoning mode.",
+  "quants": [
+    "FP8",
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 64,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Non-reasoning",
+  "isDefaultConfig": true,
+  "isBestConfig": false
+}

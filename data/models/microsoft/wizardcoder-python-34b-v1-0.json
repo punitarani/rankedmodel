@@ -1,0 +1,47 @@
+{
+  "slug": "wizardcoder-python-34b-v1-0",
+  "name": "WizardCoder-Python-34B V1.0",
+  "orgSlug": "microsoft",
+  "familySlug": "wizardcoder",
+  "releaseDate": "2023-08-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 2 Community License",
+  "paramsB": 34,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (Code Llama-Python 34B backbone)",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "WizardLMTeam/WizardCoder-Python-34B-V1.0",
+    "gh": "nlpxucan/WizardLM"
+  },
+  "note": "Code Evol-Instruct fine-tune of Code Llama-Python 34B; 73.2 HumanEval pass@1, top open coding model of 2023 (ICLR 2024 paper).",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GPTQ",
+    "AWQ"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 68,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

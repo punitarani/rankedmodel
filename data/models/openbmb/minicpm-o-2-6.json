@@ -1,0 +1,49 @@
+{
+  "slug": "minicpm-o-2-6",
+  "name": "MiniCPM-o 2.6",
+  "orgSlug": "openbmb",
+  "familySlug": "minicpm-o",
+  "releaseDate": "2025-01-13",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MiniCPM Model License (custom; free for research and, after registration, commercial use) + Apache-2.0 code",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "SigLip-400M + Whisper-medium-300M + ChatTTS-200M + Qwen2.5-7B, end-to-end omni model",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision",
+    "video",
+    "audio"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openbmb/MiniCPM-o-2_6",
+    "gh": "OpenBMB/MiniCPM-o"
+  },
+  "note": "8B any-to-any omni model (vision+speech+language) with real-time streaming, matching GPT-4o-202405 on OpenCompass (70.2 avg).",
+  "quants": [
+    "GGUF Q4_K_M",
+    "BNB INT4"
+  ],
+  "vramQ4Gb": 7,
+  "vramFp16Gb": 18,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

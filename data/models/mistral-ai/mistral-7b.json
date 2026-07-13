@@ -1,0 +1,52 @@
+{
+  "slug": "mistral-7b",
+  "name": "Mistral 7B",
+  "orgSlug": "mistral-ai",
+  "familySlug": "mistral-7b",
+  "releaseDate": "2023-09-27",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 7.3,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer — 32 layers, grouped-query attention + sliding-window attention",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 0.25,
+    "output": 0.25
+  },
+  "links": {
+    "hf": "mistralai/Mistral-7B-v0.1",
+    "gh": "mistralai/mistral-inference",
+    "docs": "docs.mistral.ai/models/mistral-7b-0-1"
+  },
+  "note": "Debut open 7.3B model; Apache-2.0 weights beat Llama 2 13B on most benchmarks and launched Mistral AI.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 4.4,
+  "vramFp16Gb": 14.6,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

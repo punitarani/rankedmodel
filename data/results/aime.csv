@@ -1,56 +1,91 @@
 model_slug,score,source,source_url,evaluated_at,notes
-gpt-5-5-pro,100,curated,,,
-gpt-5-5,98.7,curated,,,
-gpt-5,94.6,curated,,,
-o3,91.6,curated,,,
-gpt-4o,13.4,curated,,,
-gpt-oss-120b,84.1,curated,,,
-gpt-oss-20b,74.5,curated,,,
-claude-opus-4-8,99.3,curated,,,
-claude-opus-4-7,98.1,curated,,,
-claude-sonnet-4-6,95.2,curated,,,
-claude-sonnet-4,76,curated,,,
-claude-3-5-sonnet,16,curated,,,
-claude-haiku-4-5,80.7,curated,,,
-gemini-3-1-pro,99,curated,,,
-gemini-3-pro,95,curated,,,
-gemini-2-5-pro,92,curated,,,
-gemini-2-5-flash,78,curated,,,
-gemma-3-27b,25,curated,,,
-gemma-3-12b,18.2,curated,,,
-llama-4-maverick,39.3,curated,,,
-llama-4-scout,28.4,curated,,,
-llama-3-3-70b,23.3,curated,,,
-llama-3-1-405b,23.3,curated,,,
-llama-3-1-8b,6.7,curated,,,
-deepseek-v4-1,97.4,curated,,,
-deepseek-v3-2,93.1,curated,,,
-deepseek-r1,79.8,curated,,,
-qwen3-7-max,96.2,curated,,,
-qwen3-235b,85.7,curated,,,
-qwen3-32b,81.4,curated,,,
-qwen3-8b,67.3,curated,,,
-qwq-32b,78,curated,,,
-glm-5-2,96.8,curated,,,
-glm-5,95.7,curated,,,
-glm-4-7,95.7,curated,,,
-kimi-k2-5,96.1,curated,,,
-kimi-k2,69.6,curated,,,
-mistral-large-3,91.8,curated,,,
-mistral-small-3-2,27.3,curated,,,
-magistral-medium,86.1,curated,,,
-grok-4-2,98.4,curated,,,
-grok-4,91.7,curated,,,
-grok-4-fast,89.2,curated,,,
-phi-4,30,curated,,,
-phi-4-reasoning,78,curated,,,
-minimax-m2-5,92.4,curated,,,
-step-3-5-flash,90.1,curated,,,
-nemotron-super-49b,84,curated,,,
-command-a,22.7,curated,,,
-hermes-4-405b,78.1,curated,,,
-olmo-3-32b,72.8,curated,,,
-granite-4-h,20,curated,,,
-smollm3-3b,9.3,curated,,,
-llama-5,94.8,curated,,,
-deepseek-v4-5,98,curated,,,
+claude-3-7-sonnet,23.3,self-reported,https://www.datacamp.com/blog/claude-3-7-sonnet,2025-02-24,"AIME 2024, standard mode (no thinking); same sourceUrl correction as GPQA row, confirmed 23.3% standard-mode on DataCamp"
+claude-opus-4,75.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"AIME 2025, with extended thinking, no tools; confirmed via direct fetch"
+claude-opus-4-1,78,self-reported,https://winbuzzer.com/2025/08/05/anthropic-launches-claude-opus-4-1-a-measured-upgrade-focused-on-coding-and-safety-xcxwbn/,2025-08-05,"AIME 2025, up from 75.5% on Opus 4; same sourceUrl correction as Terminal-bench row, confirmed 78.0% on Winbuzzer"
+claude-opus-4-5,93,self-reported,https://www.lesswrong.com/posts/HtdrtF5kcpLtWe5dW/claude-opus-4-5-is-the-best-model-available,,AIME 2025 without code tools; Anthropic flagged that decontamination efforts for AIME were not fully successful
+claude-sonnet-4,70.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"AIME 2025, with extended thinking; confirmed via direct fetch"
+deepseek-r1-0528,91.4,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,AIME 2024 pass@1
+deepseek-r1-671b,79.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,AIME 2024 pass@1
+deepseek-r1-distill-llama-70b,70,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B,2025-01-20,AIME 2024 pass@1
+deepseek-r1-distill-qwen-32b,72.6,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B,2025-01-20,AIME 2024 pass@1
+deepseek-r1-zero,71,self-reported,https://arxiv.org/html/2501.12948v1,2025-01-20,AIME 2024 pass@1 (cons@64 = 86.7)
+deepseek-v3-0324,59.4,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3-0324,2025-03-24,"AIME 2024, up from 39.6 in Dec-2024 V3"
+deepseek-v3-1-non-thinking,66.3,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,AIME 2024 Pass@1
+deepseek-v3-1-thinking,93.1,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,AIME 2024 Pass@1
+falcon-h1r-7b,88.1,self-reported,https://falcon-lm.github.io/blog/falcon-h1r-7b/,,AIME 2024
+gemini-2-5-flash,72,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"AIME 2025, single attempt, thinking on"
+gemini-2-5-flash-lite-non-thinking,49.8,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"AIME 2025, (06-17) release, non-thinking"
+gemini-2-5-flash-lite-thinking,63.1,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"AIME 2025, (06-17) release, thinking on"
+gemini-3-flash,95.2,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf,2025-12-01,"AIME 2025, no tools (99.7% with code execution)"
+gemini-3-pro,95,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf,2025-11-01,"AIME 2025, no tools (100% with code execution)"
+gemma-4,89.2,self-reported,https://ai.google.dev/gemma/docs/core/model_card_4,2026-04-02,"AIME 2026, no tools, 31B"
+glm-4-5-355b-a32b,91,self-reported,https://arxiv.org/abs/2508.06471,,"AIME 2024, GLM-4.5 paper"
+glm-4-5-air-106b-a12b,89.4,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,AIME 2024
+gpt-4-1-mini,49.6,independent,https://docsbot.ai/models/gpt-4-1-mini,2025-04-01,AIME 2024
+gpt-4-5,36.7,independent,https://www.helicone.ai/blog/gpt-4.5-benchmarks,2025-02-01,AIME 2024
+gpt-5,94.6,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"AIME 2025, no tools, high reasoning effort"
+gpt-5-1,94,independent,https://claude5.com/news/gpt-5-1-performance-review-benchmarks-november-2025,2025-11-19,"AIME 2025, Thinking mode; literally confirmed on cited page"
+gpt-5-2,100,self-reported,https://openai.com/index/introducing-gpt-5-2/,,"AIME 2025, no tools, GPT-5.2 Thinking; confirmed"
+gpt-5-mini,91.1,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"AIME 2025, no tools, high reasoning effort"
+gpt-oss-120b-high,95.8,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"AIME 2024, no tools, high reasoning effort"
+gpt-oss-120b-low,56.3,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"AIME 2024, no tools, low reasoning effort"
+gpt-oss-120b-medium,80.4,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"AIME 2024, no tools, medium reasoning effort"
+gpt-oss-20b-high,92.1,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"AIME 2024, no tools, high reasoning effort"
+gpt-oss-20b-low,42.1,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"AIME 2024, no tools, low reasoning effort"
+gpt-oss-20b-medium,80,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"AIME 2024, no tools, medium reasoning effort"
+granite-3-3-8b-instruct,8.12,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,AIME24
+grok-3-mini,84.7,independent,https://designforonline.com/ai-models/xai-grok-3-mini/,,AIME 2025
+grok-3-standard,52.2,self-reported,https://medium.com/@bernardloki/grok-3-review-a-critical-look-at-xais-smartest-ai-claim-aea15ca38b66,2025-02-17,"AIME 2024, non-reasoning mode"
+grok-3-think,93.3,self-reported,https://futureagi.com/blog/grok-3-technical-review-2025/,2025-02-17,"AIME 2025, Think mode, cons@64"
+grok-4,91.7,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,"AIME 2025, no tools"
+grok-4-heavy,100,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,AIME 2025
+hunyuan-a13b,87.3,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,AIME 2024
+internlm3-8b-instruct,20,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,AIME2024
+kimi-k1-5,77.5,self-reported,https://arxiv.org/abs/2501.12599,,Long-CoT variant
+kimi-k2,69.6,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,"AIME 2024, avg@64"
+kimi-k2-thinking,99.1,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,AIME25 with python tool
+lg-exaone-4-0-32b-non-reasoning,35.9,self-reported,https://arxiv.org/abs/2507.11407,,"AIME 2025, non-reasoning mode"
+lg-exaone-4-0-32b-reasoning,85.3,self-reported,https://arxiv.org/abs/2507.11407,,"AIME 2025, reasoning mode"
+lg-exaone-deep-32b,72.1,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-Deep,2025-03-01,"AIME 2024, pass@1 (90.0 consistency@64)"
+llama-3-1-nemotron-ultra-253b-v1-reasoning-off,16.67,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,"AIME25, Reasoning Off"
+llama-3-1-nemotron-ultra-253b-v1-reasoning-on,72.5,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,"AIME25, Reasoning On; DeepSeek-R1 scored 79.8"
+llama-3-3-nemotron-super-49b-v1-reasoning-off,13.33,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,"AIME25, Reasoning Off"
+llama-3-3-nemotron-super-49b-v1-reasoning-on,58.4,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,"AIME25, Reasoning On"
+magistral-medium,73.6,self-reported,https://mistral.ai/news/magistral/,2025-06-10,AIME2024 pass@1; 90% with maj@64
+magistral-small,70.68,self-reported,https://huggingface.co/mistralai/Magistral-Small-2506,,AIME2024 pass@1; 83.3% with maj@64 per Mistral's launch post
+minimax-m1,86,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,,"AIME 2024, M1-80K"
+minimax-m2,78,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,AIME25
+nemotron-nano-2-nemotron-nano-9b-v2,72.1,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"AIME25, Reasoning On, vs Qwen3-8B's 69.3"
+olmo-3-7b,44.3,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,AIME 2024
+olmo-3-think-32b,76.8,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,AIME 2024; Qwen 3 32B 80.8
+openai-o1,74.3,independent,https://www.datacamp.com/blog/o3-openai,2024-12-01,AIME 2024
+openai-o1-mini,70,independent,https://www.analyticsvidhya.com/blog/2024/09/o1-preview-vs-o1-mini/,2024-09-01,"AIME 2024, cited vs o1-preview 44.6%"
+openai-o1-preview,44.6,independent,https://www.analyticsvidhya.com/blog/2024/09/o1-preview-vs-o1-mini/,2024-09-01,AIME 2024 pass@1
+openai-o3,91.6,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,AIME 2024
+openai-o3-mini-high,87.3,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"AIME 2024, high effort"
+openai-o3-mini-low,60,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"AIME 2024, low effort, reproduces OpenAI system-card table"
+openai-o3-mini-medium,76.9,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"AIME 2024, medium effort (default)"
+openai-o3-pro,93,independent,https://binaryverseai.com/chatgpt-o3-pro-review-benchmarks-hacks/,,AIME 2024; OpenAI has not published a full official benchmark table for o3-pro
+openai-o4-mini,93.4,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,AIME 2024
+phi-4-reasoning,75.3,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,"AIME 2024, pass@1"
+phi-4-reasoning-14b,75.3,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,,AIME 2024
+qwen2-math-72b,20,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, AIME 2024, 6/30 greedy CoT"
+qwen3-14b-non-thinking,31.7,self-reported,https://arxiv.org/pdf/2505.09388,,"AIME'24, Non-thinking mode, Table 16"
+qwen3-14b-thinking,79.3,self-reported,https://arxiv.org/pdf/2505.09388,,"AIME'24, Thinking mode, Table 15"
+qwen3-235b-a22b-instruct-2507,70.3,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,AIME'25
+qwen3-235b-a22b-non-thinking,40.1,self-reported,https://arxiv.org/pdf/2505.09388,,"AIME'24, Non-thinking mode, Table 12"
+qwen3-235b-a22b-thinking,85.7,self-reported,https://arxiv.org/pdf/2505.09388,,"AIME'24, Thinking mode, Table 11"
+qwen3-30b-a3b-non-thinking,32.8,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, non-thinking mode, Table 16"
+qwen3-30b-a3b-thinking,80.4,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, thinking mode, Qwen3 Technical Report Table 15"
+qwen3-32b-non-thinking,31,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, non-thinking mode, Table 14"
+qwen3-32b-thinking,81.4,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, thinking mode, Table 13"
+qwen3-8b-non-thinking,29.1,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, non-thinking mode, Table 18"
+qwen3-8b-thinking,76,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, thinking mode, Table 17"
+qwq-32b,79.5,self-reported,https://www.datacamp.com/blog/qwq-32b,,"AIME24; DeepSeek-R1 79.8, o1-mini 63.6"
+qwq-32b-preview,50,self-reported,https://qwenlm.github.io/blog/qwq-32b-preview/,,AIME 2024
+sarvam-105b,88.3,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,"AIME 2025, without tools (96.7 with tools)"
+seed-oss-36b,91.7,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,AIME24
+seed1-5-thinking,86.7,self-reported,https://arxiv.org/abs/2504.13914,,AIME 2024
+skywork-r1v-38b,72,self-reported,https://arxiv.org/abs/2504.05599,,AIME 2024
+smollm3-3b-no-thinking,9.3,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM3-3B,,"AIME 2025, no extended thinking"
+smollm3-3b-think,36.7,self-reported,https://huggingface.co/blog/smollm3,,"AIME 2025, reasoning mode"

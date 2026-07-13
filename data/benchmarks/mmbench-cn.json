@@ -1,0 +1,10 @@
+{
+  "slug": "mmbench-cn",
+  "name": "MMBench (Chinese)",
+  "category": "vision",
+  "unit": "%",
+  "description": "Chinese split of MMBench.",
+  "normMin": 40,
+  "normMax": 95,
+  "higherIsBetter": true
+}

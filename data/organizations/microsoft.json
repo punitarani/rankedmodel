@@ -1,5 +1,6 @@
 {
   "slug": "microsoft",
   "name": "Microsoft",
-  "type": "company"
+  "type": "company",
+  "country": "US"
 }

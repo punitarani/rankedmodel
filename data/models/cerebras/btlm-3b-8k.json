@@ -1,0 +1,43 @@
+{
+  "slug": "btlm-3b-8k",
+  "name": "BTLM-3B-8K",
+  "orgSlug": "cerebras",
+  "familySlug": "btlm",
+  "releaseDate": "2023-07-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 2.6,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, GPT-2 style + SwiGLU + ALiBi + muP (32 layers, d_model 2560)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "cerebras/btlm-3b-8k-base",
+    "docs": "arxiv.org/abs/2309.11568"
+  },
+  "note": "Bittensor Language Model: 2.6B (marketed as 3B) with 7B-class quality and 8K context, trained on 627B tokens of SlimPajama, trained on the Condor Galaxy 1 (CG-1) supercomputer (Cerebras/G42 partnership).",
+  "quants": [],
+  "vramQ4Gb": 2,
+  "vramFp16Gb": 5.5,
+  "tps4090": null,
+  "tpsNote": "Cerebras reports the model fits in under 3GB of memory at 4-bit precision for mobile/edge deployment.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

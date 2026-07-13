@@ -1,0 +1,46 @@
+{
+  "slug": "poro-34b",
+  "name": "Poro 34B",
+  "orgSlug": "silo-ai-lumiopen",
+  "familySlug": "poro",
+  "releaseDate": "2024-04-01",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 34.2,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, BLOOM architecture + ALiBi (54 layers, d_model 7168, 56 heads)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "LumiOpen/Poro-34B",
+    "docs": "arxiv.org/abs/2404.01856"
+  },
+  "note": "Fully open Apache-2.0 Finnish/English/code model trained on 1T tokens on the LUMI supercomputer; pivotal European low-resource open LLM.",
+  "quants": [
+    "GGUF",
+    "AWQ"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 68,
+  "tps4090": null,
+  "tpsNote": "Q4 GGUF (~20GB) fits on a single 24GB RTX 4090 with limited headroom for context.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

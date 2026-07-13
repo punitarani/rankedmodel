@@ -1,0 +1,45 @@
+{
+  "slug": "grok-3-mini",
+  "name": "Grok-3 mini",
+  "orgSlug": "xai",
+  "familySlug": "grok-3",
+  "releaseDate": "2025-02-17",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts (size undisclosed; cost-efficient Grok 3 sibling)",
+  "ctxK": 131,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.3,
+    "output": 0.5
+  },
+  "links": {
+    "docs": "docs.x.ai"
+  },
+  "note": "Cost-efficient reasoning model, ~90% cheaper than Grok 3; exposes a low/high reasoning_effort API parameter. Deprecated Feb 28, 2026 and again in the May 15, 2026 retirement wave.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "mbpp",
+  "name": "MBPP",
+  "category": "coding",
+  "unit": "%",
+  "description": "Mostly Basic Python Problems, pass@1.",
+  "normMin": 10,
+  "normMax": 98,
+  "higherIsBetter": true
+}

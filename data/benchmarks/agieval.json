@@ -1,0 +1,10 @@
+{
+  "slug": "agieval",
+  "name": "AGIEval",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Human standardized exams (SAT/LSAT/Gaokao) repurposed as an LLM benchmark.",
+  "normMin": 20,
+  "normMax": 95,
+  "higherIsBetter": true
+}

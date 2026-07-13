@@ -1,0 +1,43 @@
+{
+  "slug": "iflytek-spark-v1-0-xinghuo",
+  "name": "iFlytek Spark V1.0 (Xinghuo)",
+  "orgSlug": "iflytek",
+  "familySlug": "spark-xinghuo",
+  "releaseDate": "2023-05-06",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Proprietary transformer (undisclosed)",
+  "ctxK": 8,
+  "modalities": [
+    "text",
+    "audio"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "xinghuo.xfyun.cn"
+  },
+  "note": "iFlytek's first Spark cognitive model, one of China's earliest ChatGPT challengers; launched with speech I/O, image understanding added later in 2023.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

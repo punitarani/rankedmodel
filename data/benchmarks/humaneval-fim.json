@@ -1,0 +1,10 @@
+{
+  "slug": "humaneval-fim",
+  "name": "HumanEval FIM",
+  "category": "coding",
+  "unit": "%",
+  "description": "Fill-in-the-middle code completion variant of HumanEval.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

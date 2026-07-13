@@ -1,0 +1,5 @@
+model_slug,score,source,source_url,evaluated_at,notes
+chinchilla,65.1,self-reported,https://arxiv.org/abs/2203.15556,,Average accuracy across 62 BIG-bench tasks
+gopher,54.4,self-reported,https://arxiv.org/abs/2203.15556,,"Average accuracy across 62 BIG-bench tasks, reported in Chinchilla paper"
+nous-hermes-2-mixtral-8x7b-dpo,49.7,self-reported,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO,,BigBench average (custom subset used by Nous)
+openhermes-2-5-mistral-7b,40.96,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,,BigBench average (custom subset used by Nous/Teknium)

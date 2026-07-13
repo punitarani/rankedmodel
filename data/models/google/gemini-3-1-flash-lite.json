@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-3-1-flash-lite",
+  "name": "Gemini 3.1 Flash-Lite",
+  "orgSlug": "google",
+  "familySlug": "gemini-3-1",
+  "releaseDate": "2026-03-03",
+  "status": "released",
+  "predecessor": "gemini-3-1-pro",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (configuration undisclosed)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.25,
+    "output": 1.5
+  },
+  "links": {
+    "docs": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/"
+  },
+  "note": "Ultra-cheap 3.x tier for high-volume workloads at $0.25/$1.50 per million tokens, 1M context.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

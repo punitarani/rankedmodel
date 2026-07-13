@@ -1,0 +1,48 @@
+{
+  "slug": "molmo-2-8b",
+  "name": "Molmo 2 8B",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "molmo-2",
+  "releaseDate": "2025-12-11",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 8.66,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (Qwen3-8B LLM decoder + SigLIP2 vision encoder)",
+  "ctxK": 36,
+  "modalities": [
+    "text",
+    "vision",
+    "video"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "allenai/Molmo2-8B",
+    "gh": "allenai/molmo2",
+    "docs": "allenai.org/blog/molmo2"
+  },
+  "note": "Latest open multimodal flagship (Qwen3-based); extends Molmo's grounded pointing to video with frame-level spatial/temporal grounding and multi-object tracking. Note: weights are Apache 2.0 but some training datasets are restricted to academic/non-commercial research use per Ai2's own blog.",
+  "quants": [
+    "MLX"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 18,
+  "tps4090": null,
+  "tpsNote": "No GGUF/llama.cpp support found (custom molmo2 architecture); MLX quants available for Apple Silicon.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

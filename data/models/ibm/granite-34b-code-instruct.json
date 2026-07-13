@@ -1,0 +1,46 @@
+{
+  "slug": "granite-34b-code-instruct",
+  "name": "Granite 34B Code Instruct",
+  "orgSlug": "ibm",
+  "familySlug": "granite-code",
+  "releaseDate": "2024-05-06",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 34,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (depth-upscaled from Granite-20B-Code)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "ibm-granite/granite-34b-code-instruct-8k",
+    "gh": "ibm-granite/granite-code-models",
+    "docs": "ibm.com/granite/docs/models/code"
+  },
+  "note": "Largest Granite Code model, depth-upscaled from Granite-20B-Code; now deprecated by IBM in favor of newer Granite releases.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 21.4,
+  "vramFp16Gb": 68,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

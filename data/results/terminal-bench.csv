@@ -1,0 +1,10 @@
+model_slug,score,source,source_url,evaluated_at,notes
+claude-opus-4,43.2,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"Terminal-bench, standard; confirmed via direct fetch"
+claude-opus-4-1,43.3,self-reported,https://winbuzzer.com/2025/08/05/anthropic-launches-claude-opus-4-1-a-measured-upgrade-focused-on-coding-and-safety-xcxwbn/,2025-08-05,"Terminal-bench; original InfoQ sourceUrl did not contain this figure in extracted text (only SWE-bench and safety metrics were present), so sourceUrl swapped to Winbuzzer, which explicitly lists 43.3%"
+claude-opus-4-5-high,59.3,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,2025-11-24,
+claude-sonnet-4,35.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,Terminal-bench; confirmed via direct fetch
+gemini-3-5-flash,76.2,self-reported,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/,2026-05-19,Terminal-Bench 2.1
+gpt-5-5,82.7,self-reported,https://openai.com/index/introducing-gpt-5-5,,"Terminal-Bench 2.0, new SOTA at launch; confirmed"
+gpt-5-6,88.8,self-reported,https://openai.com/index/gpt-5-6/,,"Terminal-Bench 2.1, GPT-5.6 Sol standard (91.9 with Ultra), new SOTA; confirmed"
+minimax-m2,46.3,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,
+qwen3-coder-480b-a35b,23.9,self-reported,https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct,,Terminal-Bench 2.0

@@ -1,0 +1,5 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gpt-5-5,84.4,self-reported,https://openai.com/index/introducing-gpt-5-5,,"BrowseComp, base model (Pro scores 90.1); confirmed"
+gpt-5-6,90.4,self-reported,https://openai.com/index/gpt-5-6/,,"BrowseComp, GPT-5.6 Sol standard (92.2 with Ultra); confirmed"
+kimi-k2-thinking,60.2,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,
+sarvam-105b,49.5,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,

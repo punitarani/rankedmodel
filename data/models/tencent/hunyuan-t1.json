@@ -1,0 +1,45 @@
+{
+  "slug": "hunyuan-t1",
+  "name": "Hunyuan-T1",
+  "orgSlug": "tencent",
+  "familySlug": "hunyuan",
+  "releaseDate": "2025-03-21",
+  "status": "released",
+  "predecessor": "hunyuan-turbos",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Transformer-Mamba MoE deep-reasoning model built on TurboS base (params undisclosed)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.15,
+    "output": 0.59
+  },
+  "links": {
+    "docs": "tencent.github.io/llm.hunyuan.T1/README_EN.html"
+  },
+  "note": "Mamba-powered deep-reasoning flagship built on TurboS, API-only via Tencent Cloud/Yuanbao; scores 87.2 MMLU-Pro and 96.2 MATH-500, close to DeepSeek R1 and trailing only o1.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

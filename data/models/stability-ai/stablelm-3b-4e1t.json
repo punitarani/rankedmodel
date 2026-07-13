@@ -1,0 +1,46 @@
+{
+  "slug": "stablelm-3b-4e1t",
+  "name": "StableLM-3B-4e1t",
+  "orgSlug": "stability-ai",
+  "familySlug": "stablelm",
+  "releaseDate": "2023-10-02",
+  "status": "released",
+  "predecessor": "stablelm-alpha-7b",
+  "openness": "open-weights",
+  "license": "CC BY-SA-4.0",
+  "paramsB": 2.8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (LLaMA-style, partial RoPE, LayerNorm w/ learned bias)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "stabilityai/stablelm-3b-4e1t",
+    "gh": "Stability-AI/StableLM"
+  },
+  "note": "Strong 3B base trained 4 epochs over ~1T English+code tokens; widely used fine-tuning base (later became Zephyr's foundation).",
+  "quants": [
+    "GGUF",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 2.2,
+  "vramFp16Gb": 5.6,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "openai-o1-mini",
+  "name": "OpenAI o1-mini",
+  "orgSlug": "openai",
+  "familySlug": "o1",
+  "releaseDate": "2024-09-12",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer reasoning model (size undisclosed)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 3,
+    "output": 12
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/o1-mini"
+  },
+  "note": "Cost-efficient STEM/coding reasoning model; retired from OpenAI's API on 2025-10-27.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

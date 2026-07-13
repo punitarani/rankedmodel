@@ -1,0 +1,10 @@
+{
+  "slug": "arena-hard-v2",
+  "name": "Arena-Hard v2",
+  "category": "human-preference",
+  "unit": "%",
+  "description": "Second-generation Arena-Hard, harder prompt set.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

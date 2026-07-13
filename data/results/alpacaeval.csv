@@ -1,0 +1,3 @@
+model_slug,score,source,source_url,evaluated_at,notes
+qwen1-5-110b,43.9,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,"Chat model, AlpacaEval 2.0 LC win rate %"
+wizardlm-7b,78,self-reported,https://huggingface.co/TheBloke/wizardLM-7B-GGUF,,"AlpacaEval win rate (%) vs text-davinci-003 baseline, per original model card table"

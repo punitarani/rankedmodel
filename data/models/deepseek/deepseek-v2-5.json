@@ -1,0 +1,45 @@
+{
+  "slug": "deepseek-v2-5",
+  "name": "DeepSeek-V2.5",
+  "orgSlug": "deepseek",
+  "familySlug": "deepseek-v2",
+  "releaseDate": "2024-09-05",
+  "status": "released",
+  "predecessor": "deepseek-v2-236b",
+  "openness": "open-weights",
+  "license": "DeepSeek Model License (code: MIT)",
+  "paramsB": 236,
+  "activeParamsB": 21,
+  "archClass": "moe",
+  "archDisplay": "MoE transformer, 236B total / 21B active — merge of DeepSeek-V2-Chat-0628 and DeepSeek-Coder-V2-Instruct-0724",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "deepseek-ai/DeepSeek-V2.5",
+    "docs": "api-docs.deepseek.com/news/news0905"
+  },
+  "note": "Merged V2-Chat and Coder-V2 into a single 236B model, improving general writing/instruction-following while retaining coding strength.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 118,
+  "vramFp16Gb": 472,
+  "tps4090": null,
+  "tpsNote": "236B total params exceed a single RTX 4090's 24GB even at 4-bit; requires multi-GPU or CPU/RAM offload",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

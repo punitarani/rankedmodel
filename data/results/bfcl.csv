@@ -1,0 +1,12 @@
+model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba-1-5-large,85.5,self-reported,https://arxiv.org/html/2408.12570v1,,Berkeley Function-Calling Leaderboard
+ai21-jamba-1-5-mini,80.7,self-reported,https://arxiv.org/html/2408.12570v1,,Berkeley Function-Calling Leaderboard
+command-a,63.8,self-reported,https://arxiv.org/abs/2504.00698,,Berkeley Function-Calling Leaderboard
+command-r7b,52.2,self-reported,https://arxiv.org/abs/2504.00698,,Berkeley Function-Calling Leaderboard
+minicpm3-4b,76,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,BFCL v2 function-calling benchmark
+palmyra-x-004,78.76,self-reported,https://www.businesswire.com/news/home/20241009659164/en/Writer-Releases-New-Frontier-Model-Palmyra-X-004-to-Add-Intelligent-Action-to-Enterprise-AI-Applications,,Berkeley Function-Calling Leaderboard overall accuracy
+qwen3-14b-non-thinking,61.5,self-reported,https://arxiv.org/pdf/2505.09388,,"BFCL v3, Non-thinking mode"
+qwen3-14b-thinking,70.4,self-reported,https://arxiv.org/pdf/2505.09388,,"BFCL v3, Thinking mode"
+qwen3-235b-a22b-non-thinking,68,self-reported,https://arxiv.org/pdf/2505.09388,,"BFCL v3, Non-thinking mode"
+qwen3-235b-a22b-thinking,70.8,self-reported,https://arxiv.org/pdf/2505.09388,,"BFCL v3, Thinking mode"
+qwq-32b,66.4,self-reported,https://www.datacamp.com/blog/qwq-32b,,BFCL v3

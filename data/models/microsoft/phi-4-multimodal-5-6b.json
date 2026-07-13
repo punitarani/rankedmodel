@@ -1,0 +1,51 @@
+{
+  "slug": "phi-4-multimodal-5-6b",
+  "name": "Phi-4-multimodal (5.6B)",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-4",
+  "releaseDate": "2025-02-26",
+  "status": "released",
+  "predecessor": "phi-4-14b",
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 5.6,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (Phi-4-Mini backbone) + mixture-of-LoRAs vision/speech adapters (5.6B)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": 23,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.08,
+    "output": 0.32
+  },
+  "links": {
+    "hf": "microsoft/Phi-4-multimodal-instruct",
+    "docs": "azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family"
+  },
+  "note": "5.6B unified text+vision+speech model on frozen Phi-4-Mini weights with LoRA adapters; ranked #1 on the HF OpenASR leaderboard (6.14% WER) at release.",
+  "quants": [
+    "GGUF Q4",
+    "ONNX INT4"
+  ],
+  "vramQ4Gb": 4,
+  "vramFp16Gb": 12,
+  "tps4090": null,
+  "tpsNote": "No independently verified RTX 4090 llama.cpp benchmark found; the 5.6B size runs comfortably above real-time on a single 4090.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

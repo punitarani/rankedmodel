@@ -1,0 +1,4 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gemini-3-1-pro,2887,self-reported,https://deepmind.google/models/gemini/pro/,2026-02-19,"LiveCodeBench Pro, Elo rating (not percent)"
+gemini-3-flash,2316,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf,2025-12-01,"LiveCodeBench Pro, Elo rating (not a 0-100 pass rate)"
+gemini-3-pro,2439,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf,2025-11-01,"LiveCodeBench Pro, Elo rating (not a 0-100 pass rate)"

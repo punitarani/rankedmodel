@@ -1,0 +1,48 @@
+{
+  "slug": "ai21-jamba-1-5-mini",
+  "name": "AI21 Jamba 1.5 Mini",
+  "orgSlug": "ai21-labs",
+  "familySlug": "ai21-jamba",
+  "releaseDate": "2024-08-22",
+  "status": "released",
+  "predecessor": "ai21-jamba",
+  "openness": "open-weights",
+  "license": "Jamba Open Model License",
+  "paramsB": 52,
+  "activeParamsB": 12,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Mamba-Transformer MoE (Jamba)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 9,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.2,
+    "output": 0.4
+  },
+  "links": {
+    "hf": "ai21labs/AI21-Jamba-Mini-1.5",
+    "docs": "docs.ai21.com"
+  },
+  "note": "Open hybrid SSM-Transformer, 12B/52B active/total, 256K context under the Jamba Open Model License; strongest Arena-Hard score in its class.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 29.5,
+  "vramFp16Gb": 103.2,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

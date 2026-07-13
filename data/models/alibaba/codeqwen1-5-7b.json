@@ -1,0 +1,47 @@
+{
+  "slug": "codeqwen1-5-7b",
+  "name": "CodeQwen1.5-7B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen1-5",
+  "releaseDate": "2024-04-16",
+  "status": "released",
+  "predecessor": "qwen1-5-moe-a2-7b",
+  "openness": "open-weights",
+  "license": "Tongyi Qianwen License Agreement",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (GQA), code-specialized",
+  "ctxK": 64,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/CodeQwen1.5-7B-Chat",
+    "docs": "qwenlm.github.io/blog/codeqwen1.5"
+  },
+  "note": "First Qwen code specialist: 3T code tokens, 92 languages, 64K context, HumanEval 83.5 (Chat).",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 16,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

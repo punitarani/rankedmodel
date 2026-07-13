@@ -1,0 +1,43 @@
+{
+  "slug": "plamo-100b",
+  "name": "PLaMo-100B",
+  "orgSlug": "preferred-networks",
+  "familySlug": "plamo",
+  "releaseDate": "2024-10-10",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Preferred Elements dual license (separate commercial and non-commercial terms)",
+  "paramsB": 100,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Ground-up dense causal decoder-only transformer with QK-normalization and Z-loss training stabilization",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "pfnet/plamo-100b",
+    "docs": "tech.preferred.jp"
+  },
+  "note": "Ground-up 100B trained from scratch by Preferred Elements (a PFN subsidiary) on 2T EN/JA tokens; base for the later PLaMo Prime line.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 200,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "phi-3-5-moe-16x3-8b-6-6b-active",
+  "name": "Phi-3.5-MoE (16x3.8B, 6.6B active)",
+  "orgSlug": "microsoft",
+  "familySlug": "phi-3-5",
+  "releaseDate": "2024-08-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MIT",
+  "paramsB": 41.9,
+  "activeParamsB": 6.6,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts decoder-only Transformer (16 experts, 2 active per token)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 22,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.13,
+    "output": 0.52
+  },
+  "links": {
+    "hf": "microsoft/Phi-3.5-MoE-instruct",
+    "gh": "microsoft/PhiCookBook",
+    "docs": "techcommunity.microsoft.com/blog/azure-ai-foundry-blog/discover-the-new-multi-lingual-high-quality-phi-3-5-slms/4225280"
+  },
+  "note": "First Phi mixture-of-experts (16 experts, 6.6B active); rivals Gemini-1.5-Flash and beats Llama-3.1 8B, MIT-licensed.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 27,
+  "vramFp16Gb": 85,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

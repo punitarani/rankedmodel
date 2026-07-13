@@ -1,0 +1,10 @@
+{
+  "slug": "mmbench-en",
+  "name": "MMBench (English)",
+  "category": "vision",
+  "unit": "%",
+  "description": "English split of MMBench.",
+  "normMin": 40,
+  "normMax": 95,
+  "higherIsBetter": true
+}

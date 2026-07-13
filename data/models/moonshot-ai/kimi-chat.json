@@ -1,0 +1,45 @@
+{
+  "slug": "kimi-chat",
+  "name": "Kimi Chat",
+  "orgSlug": "moonshot-ai",
+  "familySlug": "kimi",
+  "releaseDate": "2023-10-09",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Transformer (architecture and parameter count undisclosed)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2,
+    "output": 5
+  },
+  "links": {
+    "docs": "platform.kimi.ai/docs/pricing/chat-v1"
+  },
+  "note": "Moonshot's original chatbot; first AI product to ship a lossless 128K-token (~200K-character) context window.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,8 @@
+model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba,83.2,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
+gpt-j-6b,76.5,self-reported,https://huggingface.co/EleutherAI/gpt-j-6b,2021-06-09,"zero-shot, LM Eval Harness"
+gpt-neo-2-7b,72.14,self-reported,https://huggingface.co/EleutherAI/gpt-neo-2.7B,2021-03-21,"zero-shot, LM Eval Harness"
+megatron-turing-nlg-530b,82,self-reported,https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/,2021-10-11,"zero-shot, physical commonsense reasoning"
+opt-175b,81.07,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline, GPTQ paper"
+opt-66b,79.76,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline, GPTQ paper"
+pythia-12b,76,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"zero-shot, LM Eval Harness, final checkpoint (step143000) — raw eval JSON acc=0.7601"

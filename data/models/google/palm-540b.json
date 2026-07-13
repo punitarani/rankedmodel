@@ -1,0 +1,42 @@
+{
+  "slug": "palm-540b",
+  "name": "PaLM (540B)",
+  "orgSlug": "google",
+  "familySlug": "palm",
+  "releaseDate": "2022-04-04",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Google; limited later API access, no public weights)",
+  "paramsB": 540,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (540B, Pathways)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 124,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "arxiv.org/abs/2204.02311"
+  },
+  "note": "540B dense Pathways model; first to demonstrate strong chain-of-thought reasoning breakthroughs at scale.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

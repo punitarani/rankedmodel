@@ -1,0 +1,48 @@
+{
+  "slug": "granite-3-0-8b-instruct",
+  "name": "Granite 3.0 8B Instruct",
+  "orgSlug": "ibm",
+  "familySlug": "granite-3-0",
+  "releaseDate": "2024-10-21",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 8.1,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (GQA, RoPE, SwiGLU, RMSNorm)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 12,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "ibm-granite/granite-3.0-8b-instruct",
+    "gh": "ibm-granite/granite-3.0-language-models",
+    "docs": "ibm.com/granite/docs/models/granite"
+  },
+  "note": "Dense 8B enterprise LLM trained on 12T tokens across 12 languages/116 code languages for RAG, tool use and summarization.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 16.2,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

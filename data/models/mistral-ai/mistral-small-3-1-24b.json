@@ -1,0 +1,52 @@
+{
+  "slug": "mistral-small-3-1-24b",
+  "name": "Mistral Small 3.1 (24B)",
+  "orgSlug": "mistral-ai",
+  "familySlug": "mistral-small",
+  "releaseDate": "2025-03-17",
+  "status": "deprecated",
+  "predecessor": "mistral-small-3-24b",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 24,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer — 24B + Pixtral-style vision encoder, Tekken tokenizer",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 0.1,
+    "output": 0.3
+  },
+  "links": {
+    "hf": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "gh": "mistralai/mistral-inference",
+    "docs": "docs.mistral.ai/models/mistral-small-3-1-25-03"
+  },
+  "note": "First Mistral Small with native vision-language support; 128k context, Apache 2.0, fits a single RTX 4090 quantized.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 15,
+  "vramFp16Gb": 55,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

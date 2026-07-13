@@ -1,0 +1,10 @@
+{
+  "slug": "gqa",
+  "name": "GQA",
+  "category": "vision",
+  "unit": "%",
+  "description": "Compositional visual reasoning question answering.",
+  "normMin": 40,
+  "normMax": 90,
+  "higherIsBetter": true
+}

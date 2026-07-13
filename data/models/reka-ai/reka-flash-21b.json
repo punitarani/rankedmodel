@@ -1,0 +1,43 @@
+{
+  "slug": "reka-flash-21b",
+  "name": "Reka Flash (21B)",
+  "orgSlug": "reka-ai",
+  "familySlug": "reka",
+  "releaseDate": "2024-02-12",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 21,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "21B dense multimodal transformer (Core/Flash/Edge series)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "docs.reka.ai"
+  },
+  "note": "Original 21B Reka Flash, announced Feb 12, 2024 (documented together with Edge/Core in Reka's April 2024 tech report); iterated into a Sep 2024 build and then superseded by Flash 3/3.1, and no longer separately served on Reka's API under its original form.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

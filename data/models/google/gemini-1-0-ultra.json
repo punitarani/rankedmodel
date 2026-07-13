@@ -1,0 +1,44 @@
+{
+  "slug": "gemini-1-0-ultra",
+  "name": "Gemini 1.0 Ultra",
+  "orgSlug": "google",
+  "familySlug": "gemini-1-0",
+  "releaseDate": "2024-02-08",
+  "status": "deprecated",
+  "predecessor": "gemini-1-0-pro",
+  "openness": "closed",
+  "license": "Proprietary (Gemini Advanced / Vertex AI)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer decoder with multi-query attention",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf"
+  },
+  "note": "Google's first frontier model; launched Gemini Advanced ($19.99/mo Google One AI Premium) on Feb 8 2024; now shut down (404s).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

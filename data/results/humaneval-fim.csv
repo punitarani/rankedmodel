@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+codestral-25-01,85.9,self-reported,https://mistral.ai/news/codestral-2501/,,HumanEval fill-in-the-middle average

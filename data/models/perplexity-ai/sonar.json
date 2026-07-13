@@ -1,0 +1,45 @@
+{
+  "slug": "sonar",
+  "name": "Sonar",
+  "orgSlug": "perplexity-ai",
+  "familySlug": "sonar",
+  "releaseDate": "2025-02-11",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, fine-tune of Meta Llama 3.3 70B Instruct",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1,
+    "output": 1
+  },
+  "links": {
+    "docs": "docs.perplexity.ai/getting-started/models"
+  },
+  "note": "Web-grounded default search-answer model, fine-tuned from Llama 3.3 70B and served on Cerebras Wafer-Scale Engines at ~1200 tok/s.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": "Served on Cerebras WSE inference hardware, not commodity GPUs; ~1200 tok/s decode on that hardware, not measured on RTX 4090.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

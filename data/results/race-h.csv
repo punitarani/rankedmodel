@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gopher,71.6,self-reported,https://arxiv.org/abs/2203.15556,,"RACE-h few-shot reading comprehension score (corrected slug from 'arc-challenge', which was a mislabel in the source record -- this is RACE-h, not ARC-Challenge)"

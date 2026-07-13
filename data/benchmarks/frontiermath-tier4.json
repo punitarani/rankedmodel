@@ -1,0 +1,10 @@
+{
+  "slug": "frontiermath-tier4",
+  "name": "FrontierMath (Tier 4)",
+  "category": "math",
+  "unit": "%",
+  "description": "FrontierMath hardest tier — IMO/research-adjacent difficulty.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

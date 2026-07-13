@@ -1,0 +1,47 @@
+{
+  "slug": "mpt-7b",
+  "name": "MPT-7B",
+  "orgSlug": "mosaicml",
+  "familySlug": "mpt",
+  "releaseDate": "2023-05-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 6.7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer, no positional embeddings (ALiBi), FlashAttention; 32L/32H, d_model 4096",
+  "ctxK": 2.048,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "mosaicml/mpt-7b",
+    "gh": "mosaicml/llm-foundry",
+    "docs": "databricks.com/blog/mpt-7b"
+  },
+  "note": "Apache-2.0 decoder-only transformer trained from scratch on 1T tokens; ALiBi removes fixed context limits, FlashAttention for efficient training/inference.",
+  "quants": [
+    "GGUF",
+    "GGML"
+  ],
+  "vramQ4Gb": 4.5,
+  "vramFp16Gb": 14.5,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

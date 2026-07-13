@@ -1,0 +1,45 @@
+{
+  "slug": "command",
+  "name": "Command",
+  "orgSlug": "cohere",
+  "familySlug": "command",
+  "releaseDate": "2023-01-01",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (params undisclosed)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 1,
+    "output": 2
+  },
+  "links": {
+    "docs": "docs.cohere.com"
+  },
+  "note": "Cohere's first-generation flagship generative model (API id \"command\"); deprecated and shut down 2025-09-15, superseded by Command R.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

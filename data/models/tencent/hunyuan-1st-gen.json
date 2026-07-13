@@ -1,0 +1,42 @@
+{
+  "slug": "hunyuan-1st-gen",
+  "name": "Hunyuan (1st-gen)",
+  "orgSlug": "tencent",
+  "familySlug": "hunyuan",
+  "releaseDate": "2023-09-07",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer, 100B+ params (exact architecture undisclosed)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "cloud.tencent.com/product/tclm"
+  },
+  "note": "Tencent's first in-house foundation model (100B+ params, 2T+ pretraining tokens), launched for enterprises via Tencent Cloud API and wired into 50+ Tencent products.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

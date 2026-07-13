@@ -1,0 +1,46 @@
+{
+  "slug": "seed1-5-thinking",
+  "name": "Seed1.5-Thinking",
+  "orgSlug": "bytedance",
+  "familySlug": "seed",
+  "releaseDate": "2025-04-10",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 200,
+  "activeParamsB": 20,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 200B total / 20B active",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.556,
+    "output": 2.222
+  },
+  "links": {
+    "gh": "ByteDance-Seed/Seed-Thinking-v1.5",
+    "docs": "seed.bytedance.com/en/blog/bytedance-s-latest-thinking-model-seed-thinking-v1-5-technical-details-disclosed"
+  },
+  "note": "RL-trained reasoning MoE matching o3-mini-high on AIME24; served via Volcano Engine API only.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

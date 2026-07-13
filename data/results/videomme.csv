@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+qwen2-5-vl-72b,79.1,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,,w/ subtitles

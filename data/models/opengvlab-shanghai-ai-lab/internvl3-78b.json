@@ -1,0 +1,46 @@
+{
+  "slug": "internvl3-78b",
+  "name": "InternVL3-78B",
+  "orgSlug": "opengvlab-shanghai-ai-lab",
+  "familySlug": "internvl3",
+  "releaseDate": "2025-04-11",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Qwen License (InternViT component MIT; Qwen2.5-72B component under Qwen License)",
+  "paramsB": 78,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "InternViT-6B-448px-V2.5 vision encoder + Qwen2.5-72B language model, natively multimodal pre-training",
+  "ctxK": 32,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "OpenGVLab/InternVL3-78B",
+    "gh": "OpenGVLab/InternVL"
+  },
+  "note": "Flagship of the natively-multimodal InternVL3 series, surpassing GPT-4o on MMMU; adds tool use, GUI agents and 3D perception.",
+  "quants": [
+    "AWQ"
+  ],
+  "vramQ4Gb": 53,
+  "vramFp16Gb": 156,
+  "tps4090": null,
+  "tpsNote": "78B model exceeds a single RTX 4090's 24GB VRAM even at Q4 (AWQ build is 53GB); no single-4090 measurement exists.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

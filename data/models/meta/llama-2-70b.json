@@ -1,0 +1,49 @@
+{
+  "slug": "llama-2-70b",
+  "name": "Llama 2 70B",
+  "orgSlug": "meta",
+  "familySlug": "llama-2",
+  "releaseDate": "2023-07-18",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 2 Community License Agreement",
+  "paramsB": 69,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer with Grouped-Query Attention (GQA)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/Llama-2-70b",
+    "gh": "meta-llama/llama",
+    "docs": "ai.meta.com/llama"
+  },
+  "note": "First open-weights LLM licensed for commercial use at flagship scale; Llama 2's dense 70B base model with GQA for inference efficiency.",
+  "quants": [
+    "GGUF",
+    "GPTQ",
+    "AWQ",
+    "GGML"
+  ],
+  "vramQ4Gb": 38,
+  "vramFp16Gb": 140,
+  "tps4090": null,
+  "tpsNote": "Q4_K_M weights (~38-41GB) exceed the RTX 4090's 24GB VRAM, forcing CPU offload; no reliably sourced single-GPU 4090 tokens/sec figure was found specifically for this model.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

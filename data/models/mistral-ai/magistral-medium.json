@@ -1,9 +1,9 @@
 {
   "slug": "magistral-medium",
-  "name": "Magistral Medium 1.2",
+  "name": "Magistral Medium",
   "orgSlug": "mistral-ai",
   "familySlug": "magistral",
-  "releaseDate": "2025-09-18",
+  "releaseDate": "2025-06-10",
   "status": "released",
   "predecessor": null,
   "openness": "closed",
@@ -11,20 +11,19 @@
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense (undisclosed)",
-  "ctxK": 128,
+  "archDisplay": "Dense transformer, reasoning RL fine-tune of Mistral Medium 3 (architecture undisclosed)",
+  "ctxK": 40,
   "modalities": [
-    "text",
-    "vision"
+    "text"
   ],
-  "langCount": 24,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
-    "vision": true,
+    "vision": false,
     "functionCalling": true,
     "toolUse": true,
-    "agentic": false
+    "agentic": true
   },
   "apiAvailable": true,
   "price": {
@@ -32,12 +31,15 @@
     "output": 5
   },
   "links": {
-    "docs": "docs.mistral.ai"
+    "docs": "docs.mistral.ai/models/model-cards/magistral-medium-1-0-25-06"
   },
-  "note": "Mistral's reasoning line with transparent chain-of-thought.",
+  "note": "Closed enterprise reasoning model, RL-trained on Mistral Medium 3; 73.6% AIME2024 pass@1 (90% with maj@64), Flash Answers via Le Chat.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

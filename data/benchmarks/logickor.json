@@ -1,0 +1,10 @@
+{
+  "slug": "logickor",
+  "name": "LogicKor",
+  "category": "human-preference",
+  "unit": "/10",
+  "description": "Korean-language logical/reasoning chat-quality judge benchmark.",
+  "normMin": 3,
+  "normMax": 10,
+  "higherIsBetter": true
+}

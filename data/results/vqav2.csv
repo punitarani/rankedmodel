@@ -1,0 +1,6 @@
+model_slug,score,source,source_url,evaluated_at,notes
+cogvlm-17b,84.38,self-reported,https://arxiv.org/pdf/2311.03079,,"Ranked 2nd overall, surpassing/matching PaLI-X 55B"
+idefics-80b,60,self-reported,https://huggingface.co/HuggingFaceM4/idefics-80b,,0-shot
+idefics2-8b,81.2,self-reported,https://huggingface.co/blog/idefics2,,
+llama-3-2-90b-vision,78.1,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,VQAv2 test accuracy
+qwen-vl,78.8,self-reported,https://huggingface.co/Qwen/Qwen-VL,,Zero-shot VQAv2 test-dev

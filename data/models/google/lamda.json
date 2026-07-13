@@ -1,0 +1,42 @@
+{
+  "slug": "lamda",
+  "name": "LaMDA",
+  "orgSlug": "google",
+  "familySlug": "lamda",
+  "releaseDate": "2021-05-18",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Google; research model, weights never released)",
+  "paramsB": 137,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (137B, dialogue-tuned)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "arxiv.org/abs/2201.08239"
+  },
+  "note": "137B dialogue-specialized decoder-only Transformer; predecessor behind Google's original Bard chatbot.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

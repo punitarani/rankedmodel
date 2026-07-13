@@ -2,16 +2,16 @@
   "slug": "llama-3-1-405b",
   "name": "Llama 3.1 405B",
   "orgSlug": "meta",
-  "familySlug": "llama-3",
+  "familySlug": "llama-3-1",
   "releaseDate": "2024-07-23",
   "status": "released",
   "predecessor": null,
   "openness": "open-weights",
-  "license": "Llama 3.1 Community",
+  "license": "Llama 3.1 Community License Agreement",
   "paramsB": 405,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense",
+  "archDisplay": "Dense decoder-only Transformer (GQA)",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -23,26 +23,27 @@
     "vision": false,
     "functionCalling": true,
     "toolUse": true,
-    "agentic": false
+    "agentic": true
   },
   "apiAvailable": true,
-  "price": {
-    "input": 1,
-    "output": 3
-  },
+  "price": null,
   "links": {
-    "hf": "meta-llama/Llama-3.1-405B-Instruct",
+    "hf": "meta-llama/Meta-Llama-3.1-405B-Instruct",
     "gh": "meta-llama/llama-models",
-    "docs": "llama.com"
+    "docs": "llama.com/docs/model-cards-and-prompt-formats/llama3_1"
   },
-  "note": "The largest open dense model ever released.",
+  "note": "First openly available model rivaling top closed frontier models on knowledge, math, and tool use; 128K context.",
   "quants": [
-    "FP8",
     "GGUF Q4",
-    "AWQ"
+    "AWQ",
+    "GPTQ",
+    "MLX"
   ],
-  "vramQ4Gb": 243,
+  "vramQ4Gb": 230,
   "vramFp16Gb": 810,
   "tps4090": null,
-  "tpsNote": "Needs 8×A100/H100 node"
+  "tpsNote": "Far exceeds a single RTX 4090's 24GB VRAM even at Q4 (~230GB); needs multi-GPU or heavy CPU/disk offload, so no meaningful single-4090 tok/s figure is reported",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

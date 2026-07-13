@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-3-5-flash",
+  "name": "Gemini 3.5 Flash",
+  "orgSlug": "google",
+  "familySlug": "gemini-3-5",
+  "releaseDate": "2026-05-19",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (configuration undisclosed)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.5,
+    "output": 9
+  },
+  "links": {
+    "docs": "https://deepmind.google/models/gemini/flash/"
+  },
+  "note": "First Flash to beat the prior-gen Pro flagship; I/O 2026 headline, 4x faster output than rival frontier models.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

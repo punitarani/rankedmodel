@@ -1,0 +1,51 @@
+{
+  "slug": "gemma-3-4b",
+  "name": "Gemma 3 4B",
+  "orgSlug": "google",
+  "familySlug": "gemma-3",
+  "releaseDate": "2025-03-12",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Gemma",
+  "paramsB": 4.3,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer, GQA + 5:1 local:global attention, shared frozen SigLIP-400M vision encoder",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": 140,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "google/gemma-3-4b-it",
+    "gh": "google-deepmind/gemma",
+    "docs": "ai.google.dev/gemma/docs/core"
+  },
+  "note": "Compact multimodal Gemma 3 for edge deployment; dense decoder + shared SigLIP vision encoder, 128K context.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GGUF Q8_0",
+    "AWQ",
+    "MLX",
+    "QAT Int4"
+  ],
+  "vramQ4Gb": 2.6,
+  "vramFp16Gb": 8,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

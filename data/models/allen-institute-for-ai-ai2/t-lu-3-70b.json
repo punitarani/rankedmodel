@@ -1,0 +1,46 @@
+{
+  "slug": "t-lu-3-70b",
+  "name": "Tülu 3 70B",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "t-lu-3",
+  "releaseDate": "2024-11-21",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 3.1 Community License Agreement",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (Llama 3.1 70B architecture, GQA, RoPE with llama3 scaling)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "allenai/Llama-3.1-Tulu-3-70B",
+    "gh": "allenai/open-instruct",
+    "docs": "allenai.org/olmo"
+  },
+  "note": "Introduced the RLVR post-training recipe on Llama 3.1 70B; beats Llama 3.1 70B Instruct on MATH (+6.6) and BBH (+8.2)",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 42.5,
+  "vramFp16Gb": 140,
+  "tps4090": null,
+  "tpsNote": "70B model needs ~42.5GB even at Q4_K_M — exceeds a single RTX 4090's 24GB VRAM",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

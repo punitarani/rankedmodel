@@ -1,0 +1,10 @@
+{
+  "slug": "piqa",
+  "name": "PIQA",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Physical-interaction commonsense QA.",
+  "normMin": 50,
+  "normMax": 95,
+  "higherIsBetter": true
+}

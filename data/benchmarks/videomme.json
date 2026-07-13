@@ -1,0 +1,10 @@
+{
+  "slug": "videomme",
+  "name": "Video-MME",
+  "category": "vision",
+  "unit": "%",
+  "description": "Broad video understanding across short/medium/long clips.",
+  "normMin": 30,
+  "normMax": 90,
+  "higherIsBetter": true
+}

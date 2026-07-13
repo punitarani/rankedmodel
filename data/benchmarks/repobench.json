@@ -1,0 +1,10 @@
+{
+  "slug": "repobench",
+  "name": "RepoBench",
+  "category": "coding",
+  "unit": "%",
+  "description": "Repository-level code auto-completion benchmark.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

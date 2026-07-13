@@ -1,0 +1,47 @@
+{
+  "slug": "falcon-7b",
+  "name": "Falcon-7B",
+  "orgSlug": "tii",
+  "familySlug": "falcon",
+  "releaseDate": "2023-05-25",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Causal decoder-only Transformer, 7B (32 layers, multiquery attention, RoPE, FlashAttention)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 11,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "tiiuae/falcon-7b",
+    "docs": "falconllm.tii.ae"
+  },
+  "note": "Apache-2.0 causal decoder trained on 1.5T RefinedWeb tokens; the small, widely-adopted entry point of the original Falcon line.",
+  "quants": [
+    "GGUF",
+    "GPTQ",
+    "bitsandbytes 4-bit"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 16.2,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

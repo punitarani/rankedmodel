@@ -1,0 +1,48 @@
+{
+  "slug": "qwen2-57b-a14b",
+  "name": "Qwen2-57B-A14B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2",
+  "releaseDate": "2024-06-07",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 57,
+  "activeParamsB": 14,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts Transformer decoder (57B total / 14B active per token)",
+  "ctxK": 64,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 30,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen2-57B-A14B-Instruct",
+    "gh": "QwenLM/Qwen2",
+    "docs": "qwenlm.github.io/blog/qwen2"
+  },
+  "note": "Gen-2 MoE (14B active of 57B total) matching ~30B-dense-class quality; Apache 2.0.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 32,
+  "vramFp16Gb": 115,
+  "tps4090": null,
+  "tpsNote": "57B total weights exceed a single RTX 4090's 24GB VRAM even at Q4.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

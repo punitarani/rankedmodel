@@ -1,0 +1,52 @@
+{
+  "slug": "qwen3-30b-a3b-thinking",
+  "name": "Qwen3-30B-A3B (Thinking)",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen3",
+  "releaseDate": "2025-04-29",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 30.5,
+  "activeParamsB": 3.3,
+  "archClass": "moe",
+  "archDisplay": "MoE, 128 experts / 8 active (fine-grained, no shared experts)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 119,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.108,
+    "output": 0.431
+  },
+  "links": {
+    "hf": "Qwen/Qwen3-30B-A3B",
+    "gh": "QwenLM/Qwen3",
+    "docs": "qwen.readthedocs.io"
+  },
+  "note": "Efficient MoE (3B active) hybrid-reasoning model; thinking mode matches QwQ-32B with 1/10th active params.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 18.6,
+  "vramFp16Gb": 61,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "Thinking",
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

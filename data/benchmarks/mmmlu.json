@@ -1,0 +1,10 @@
+{
+  "slug": "mmmlu",
+  "name": "MMMLU",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Multilingual MMLU across 14 languages.",
+  "normMin": 30,
+  "normMax": 95,
+  "higherIsBetter": true
+}

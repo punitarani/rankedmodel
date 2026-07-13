@@ -1,0 +1,45 @@
+{
+  "slug": "skywork-13b",
+  "name": "Skywork-13B",
+  "orgSlug": "kunlun-tech",
+  "familySlug": "skywork",
+  "releaseDate": "2023-10-30",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Skywork Community License",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, 52 layers (thinner/deeper than Llama-2-13B), 4608 hidden dim",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Skywork/Skywork-13B-base",
+    "gh": "SkyworkAI/Skywork"
+  },
+  "note": "Bilingual (Chinese/English) base LLM trained on 3.2T tokens; best-in-class among ~13B Chinese open models at release",
+  "quants": [
+    "GGUF Q4_K_M"
+  ],
+  "vramQ4Gb": 8.4,
+  "vramFp16Gb": 26,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,19 @@
+model_slug,score,source,source_url,evaluated_at,notes
+amazon-nova-lite,80.2,independent,https://deepranking.ai/llm-models/nova-lite,,
+amazon-nova-micro,79.3,independent,https://deepranking.ai/llm-models/nova-micro,,
+amazon-nova-pro,85.4,independent,https://deepranking.ai/llm-models/nova-pro,,
+claude-3-5-sonnet,87.1,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,"F1 score, 3-shot"
+claude-3-haiku,78.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,"F1 score, 3-shot"
+claude-3-opus,83.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"F1 score, 3-shot"
+claude-3-sonnet,78.9,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"F1 score, 3-shot"
+gemini-1-5-flash,78.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"F1, variable shots, Table 11"
+gpt-3-5-turbo,64.1,self-reported,https://arxiv.org/abs/2303.08774,,F1 score
+gpt-4,80.9,self-reported,https://arxiv.org/abs/2303.08774,,F1 score
+granite-3-2-8b-instruct,50.95,self-reported,https://huggingface.co/ibm-granite/granite-3.2-8b-instruct,,
+granite-3-3-8b-instruct,59.36,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,
+minimax-text-01,87.8,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,F1
+olmo-2-13b,71.5,self-reported,https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct,,Instruct variant
+olmo-2-32b,78,self-reported,https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct,,"GPT-3.5 Turbo 70.2, GPT-4o mini 36.3"
+olmo-2-7b,60.8,self-reported,https://huggingface.co/allenai/OLMo-2-1124-7B,,
+phi-4-14b,75.5,self-reported,https://huggingface.co/microsoft/phi-4,,
+yandexgpt-5-pro,63,independent,https://habr.com/ru/companies/bothub/articles/893128/,2025-02-01,DROP-RU (Russian variant)

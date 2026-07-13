@@ -1,0 +1,46 @@
+{
+  "slug": "claude-opus-4-1",
+  "name": "Claude Opus 4.1",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-4",
+  "releaseDate": "2025-08-05",
+  "status": "deprecated",
+  "predecessor": "claude-sonnet-4",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, hybrid-reasoning (parameter count undisclosed)",
+  "ctxK": 200,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 15,
+    "output": 75
+  },
+  "links": {
+    "docs": "platform.claude.com"
+  },
+  "note": "Incremental Opus 4 upgrade improving agentic coding, refactoring and reasoning benchmarks; drop-in replacement at same price.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

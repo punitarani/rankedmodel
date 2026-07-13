@@ -1,0 +1,47 @@
+{
+  "slug": "minimax-m1",
+  "name": "MiniMax-M1",
+  "orgSlug": "minimax",
+  "familySlug": "minimax-m1",
+  "releaseDate": "2025-06-16",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 456,
+  "activeParamsB": 45.9,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Lightning+Softmax Attention MoE (80 layers, 32 experts top-2) reasoning model, trained with CISPO RL",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.4,
+    "output": 2.2
+  },
+  "links": {
+    "hf": "MiniMaxAI/MiniMax-M1-80k",
+    "gh": "MiniMax-AI/MiniMax-M1",
+    "docs": "platform.minimax.io"
+  },
+  "note": "World's first open-weight large-scale hybrid-attention reasoning model; shipped as two checkpoints (40K/80K thinking budget) - this entry reflects the flagship 80K checkpoint.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 912,
+  "tps4090": null,
+  "tpsNote": "llama.cpp did not support the MiniMaxM1ForCausalLM architecture at release, so no GGUF/Q4 quant or RTX 4090 figure exists.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

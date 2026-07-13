@@ -1,0 +1,10 @@
+{
+  "slug": "ifbench",
+  "name": "IFBench",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Extended verifiable instruction-following benchmark.",
+  "normMin": 20,
+  "normMax": 92,
+  "higherIsBetter": true
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "mixtral-8x22b",
+  "name": "Mixtral 8x22B",
+  "orgSlug": "mistral-ai",
+  "familySlug": "mixtral",
+  "releaseDate": "2024-04-17",
+  "status": "deprecated",
+  "predecessor": "mixtral-8x7b",
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 141,
+  "activeParamsB": 39,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts, 8 experts, top-2 routing",
+  "ctxK": 64,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 5,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "mistralai/Mixtral-8x22B-v0.1",
+    "gh": "mistralai/mistral-inference",
+    "docs": "docs.mistral.ai/models/mixtral-8x22b-0-1-0-3"
+  },
+  "note": "Larger Apache-2.0 sparse MoE (141B total / 39B active) with a 64K context window and native function calling; strong multilingual, math and code.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 80,
+  "vramFp16Gb": 263,
+  "tps4090": null,
+  "tpsNote": "Does not fit a single RTX 4090 (24GB) even at Q4 (~80GB needed); requires multi-GPU or large unified-memory hardware",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

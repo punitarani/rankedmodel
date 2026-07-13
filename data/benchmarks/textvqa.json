@@ -1,0 +1,10 @@
+{
+  "slug": "textvqa",
+  "name": "TextVQA",
+  "category": "vision",
+  "unit": "%",
+  "description": "VQA requiring reading text embedded in images.",
+  "normMin": 40,
+  "normMax": 90,
+  "higherIsBetter": true
+}

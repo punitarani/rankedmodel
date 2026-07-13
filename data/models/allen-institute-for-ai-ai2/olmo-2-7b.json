@@ -1,0 +1,46 @@
+{
+  "slug": "olmo-2-7b",
+  "name": "OLMo 2 7B",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "olmo-2",
+  "releaseDate": "2024-11-26",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 7.3,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (decoder-only)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "allenai/OLMo-2-1124-7B",
+    "gh": "allenai/OLMo-core",
+    "docs": "allenai.org/blog/olmo2"
+  },
+  "note": "Fully open 7B trained on up to 5T tokens; outperforms Llama 3.1 8B on English academic benchmarks despite lower training FLOPs.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 15,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

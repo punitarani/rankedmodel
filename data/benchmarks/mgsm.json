@@ -1,0 +1,10 @@
+{
+  "slug": "mgsm",
+  "name": "MGSM",
+  "category": "math",
+  "unit": "%",
+  "description": "Multilingual grade-school math word problems.",
+  "normMin": 10,
+  "normMax": 98,
+  "higherIsBetter": true
+}

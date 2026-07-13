@@ -1,0 +1,45 @@
+{
+  "slug": "stablelm-alpha-7b",
+  "name": "StableLM-Alpha 7B",
+  "orgSlug": "stability-ai",
+  "familySlug": "stablelm",
+  "releaseDate": "2023-04-19",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "CC BY-SA-4.0",
+  "paramsB": 7,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (GPT-NeoX style, parallel attention+FFN)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "stabilityai/stablelm-base-alpha-7b",
+    "gh": "Stability-AI/StableLM"
+  },
+  "note": "Stability AI's debut open-weights suite (3B/7B alpha), part of the early post-LLaMA open-model wave; later superseded.",
+  "quants": [
+    "GGUF"
+  ],
+  "vramQ4Gb": 4.5,
+  "vramFp16Gb": 14,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

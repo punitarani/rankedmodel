@@ -1,0 +1,43 @@
+{
+  "slug": "cerebras-gpt-13b",
+  "name": "Cerebras-GPT 13B",
+  "orgSlug": "cerebras",
+  "familySlug": "cerebras-gpt",
+  "releaseDate": "2023-03-28",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer, GPT-3 style (40 layers, d_model 5120, 40 heads)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "cerebras/Cerebras-GPT-13B",
+    "docs": "arxiv.org/abs/2304.03208"
+  },
+  "note": "Largest of Cerebras' seven-model, Chinchilla-optimal, fully-open GPT family trained entirely on CS-2 wafer-scale hardware.",
+  "quants": [],
+  "vramQ4Gb": 7,
+  "vramFp16Gb": 26,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

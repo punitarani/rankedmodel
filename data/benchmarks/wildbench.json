@@ -1,0 +1,10 @@
+{
+  "slug": "wildbench",
+  "name": "WildBench",
+  "category": "human-preference",
+  "unit": "%",
+  "description": "LLM-judged win rate on real, in-the-wild user queries.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

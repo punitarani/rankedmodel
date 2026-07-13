@@ -1,0 +1,45 @@
+{
+  "slug": "yi-1-5-9b",
+  "name": "Yi-1.5 9B",
+  "orgSlug": "01-ai",
+  "familySlug": "yi-1-5",
+  "releaseDate": "2024-05-13",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 9,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Llama-style decoder-only transformer",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "01-ai/Yi-1.5-9B",
+    "gh": "01-ai/Yi-1.5"
+  },
+  "note": "Popular mid-size Yi-1.5 variant, continually pretrained on 3.6T tokens; top performer among similarly sized open models at launch.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 18,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

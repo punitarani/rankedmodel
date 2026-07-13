@@ -2,16 +2,16 @@
   "slug": "llama-3-3-70b",
   "name": "Llama 3.3 70B",
   "orgSlug": "meta",
-  "familySlug": "llama-3",
+  "familySlug": "llama-3-3",
   "releaseDate": "2024-12-06",
   "status": "released",
-  "predecessor": "llama-3-1-8b",
+  "predecessor": null,
   "openness": "open-weights",
-  "license": "Llama 3.3 Community",
+  "license": "Llama 3.3 Community License Agreement",
   "paramsB": 70,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense",
+  "archDisplay": "Dense transformer decoder with grouped-query attention, 128K context",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -23,28 +23,27 @@
     "vision": false,
     "functionCalling": true,
     "toolUse": true,
-    "agentic": false
+    "agentic": true
   },
   "apiAvailable": true,
-  "price": {
-    "input": 0.2,
-    "output": 0.6
-  },
+  "price": null,
   "links": {
     "hf": "meta-llama/Llama-3.3-70B-Instruct",
     "gh": "meta-llama/llama-models",
-    "docs": "llama.com"
+    "docs": "llama.com/docs/model-cards-and-prompt-formats/llama3_3"
   },
-  "note": "405B-class quality in a dense 70B; enduring local favorite.",
+  "note": "Text-only 70B matching Llama 3.1 405B quality on many benchmarks at roughly 4-5x lower serving cost.",
   "quants": [
-    "GGUF Q4",
-    "GGUF Q8",
+    "GGUF",
     "AWQ",
     "GPTQ",
-    "EXL2"
+    "MLX"
   ],
   "vramQ4Gb": 42,
   "vramFp16Gb": 140,
-  "tps4090": 19,
-  "tpsNote": null
+  "tps4090": null,
+  "tpsNote": "70B exceeds a single RTX 4090's 24GB VRAM even at Q4 (~42GB); no verified single-4090 llama.cpp benchmark found.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

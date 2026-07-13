@@ -1,0 +1,10 @@
+model_slug,score,source,source_url,evaluated_at,notes
+chinchilla,73.2,self-reported,https://arxiv.org/abs/2203.15556,,"TriviaQA unfiltered, 5-shot"
+gopher,63.6,self-reported,https://arxiv.org/abs/2203.15556,,"TriviaQA unfiltered, 5-shot"
+gpt-3-175b,71.2,self-reported,https://arxiv.org/abs/2005.14165,,"few-shot, closed-book"
+h2o-danube-1-8b,36.29,self-reported,https://huggingface.co/h2oai/h2o-danube-1.8b-chat,,
+llama-13b,56.6,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot exact match, Table 5"
+llama-33b,65.1,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot exact match, Table 5"
+mistral-nemo-12b,73.8,self-reported,https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407,,
+palm-540b,81.4,self-reported,https://arxiv.org/abs/2204.02311,,Few-shot (1-shot) TriviaQA
+sarvam-1-2b,90.62,self-reported,https://huggingface.co/sarvamai/sarvam-1,2024-10-24,zero-shot

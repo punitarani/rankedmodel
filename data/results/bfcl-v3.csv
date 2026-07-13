@@ -1,0 +1,10 @@
+model_slug,score,source,source_url,evaluated_at,notes
+glm-4-32b-0414,69.6,self-reported,https://huggingface.co/zai-org/GLM-4-32B-0414,,Overall
+hunyuan-a13b,78.3,self-reported,https://www.marktechpost.com/2025/06/28/tencent-open-sources-hunyuan-a13b-a-13b-active-parameter-moe-model-with-dual-mode-reasoning-and-256k-context/,,"Berkeley Function-Calling Leaderboard v3, agentic tool-use"
+qwen3-235b-a22b-instruct-2507,70.9,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,
+qwen3-30b-a3b-non-thinking,58.6,self-reported,https://arxiv.org/abs/2505.09388,,"BFCL v3, non-thinking mode"
+qwen3-30b-a3b-thinking,69.1,self-reported,https://arxiv.org/abs/2505.09388,,"BFCL v3 agent/tool-use, thinking mode"
+qwen3-32b-non-thinking,63,self-reported,https://arxiv.org/abs/2505.09388,,"BFCL v3, non-thinking mode"
+qwen3-32b-thinking,70.3,self-reported,https://arxiv.org/abs/2505.09388,,"BFCL v3, thinking mode"
+qwen3-8b-non-thinking,60.2,self-reported,https://arxiv.org/abs/2505.09388,,"BFCL v3, non-thinking mode"
+qwen3-8b-thinking,68.1,self-reported,https://arxiv.org/abs/2505.09388,,"BFCL v3, thinking mode"

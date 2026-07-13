@@ -1,0 +1,10 @@
+{
+  "slug": "pinchbench",
+  "name": "PinchBench",
+  "category": "agents",
+  "unit": "%",
+  "description": "Agent productivity benchmark for long-running task completion.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

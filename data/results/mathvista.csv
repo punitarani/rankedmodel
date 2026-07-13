@@ -1,0 +1,18 @@
+model_slug,score,source,source_url,evaluated_at,notes
+deepseek-vl2,62.8,self-reported,https://arxiv.org/html/2412.10302v1,,Base variant
+grok-2,69,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
+grok-2-mini,68.1,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
+idefics2-8b,51.4,self-reported,https://huggingface.co/blog/idefics2,,"testmini, with image splitting"
+internvl2-5-78b,72.3,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,MathVista mini
+internvl3-78b,79,self-reported,https://arxiv.org/html/2504.10479v1,,
+kimi-k1-5,74.9,self-reported,https://arxiv.org/abs/2501.12599,,"Long-CoT variant, visual reasoning"
+llama-3-2-11b-vision,51.5,self-reported,https://huggingface.co/meta-llama/Llama-3.2-11B-Vision,2024-09-01,"Instruct, testmini"
+llama-3-2-90b-vision,57.3,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,MathVista testmini
+minimax-vl-01,68.6,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,
+phi-4-multimodal-5-6b,62.4,self-reported,https://huggingface.co/microsoft/Phi-4-multimodal-instruct,,
+pixtral-12b,58,self-reported,https://mistral.ai/news/pixtral-12b/,,CoT prompting
+pixtral-large-124b,69.4,self-reported,https://mistral.ai/news/pixtral-large/,2024-11-18,
+qvq-72b-preview,71.4,self-reported,https://huggingface.co/Qwen/QVQ-72B-Preview,,MathVista mini
+qwen2-5-vl-72b,74.8,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,,MathVista mini
+qwen2-vl-72b,70.5,self-reported,https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct,,"Instruct checkpoint, MathVista testmini"
+skywork-r1v-38b,67.5,self-reported,https://arxiv.org/abs/2504.05599,,MathVista-mini

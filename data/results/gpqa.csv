@@ -1,56 +1,145 @@
 model_slug,score,source,source_url,evaluated_at,notes
-gpt-5-5-pro,93.8,curated,,,
-gpt-5-5,91.6,curated,,,
-gpt-5,89.4,curated,,,
-o3,83.3,curated,,,
-gpt-4o,53.6,curated,,,
-gpt-oss-120b,71.5,curated,,,
-gpt-oss-20b,62.8,curated,,,
-claude-opus-4-8,94.2,curated,,,
-claude-opus-4-7,92.7,curated,,,
-claude-sonnet-4-6,89.6,curated,,,
-claude-sonnet-4,75.4,curated,,,
-claude-3-5-sonnet,59.4,curated,,,
-claude-haiku-4-5,73.1,curated,,,
-gemini-3-1-pro,92.1,curated,,,
-gemini-3-pro,91.9,curated,,,
-gemini-2-5-pro,86.4,curated,,,
-gemini-2-5-flash,78.3,curated,,,
-gemma-3-27b,42.4,curated,,,
-gemma-3-12b,34.9,curated,,,
-llama-4-maverick,67.1,curated,,,
-llama-4-scout,57.2,curated,,,
-llama-3-3-70b,50.5,curated,,,
-llama-3-1-405b,51.1,curated,,,
-llama-3-1-8b,30.4,curated,,,
-deepseek-v4-1,91,curated,,,
-deepseek-v3-2,86.9,curated,,,
-deepseek-r1,71.5,curated,,,
-qwen3-7-max,89.9,curated,,,
-qwen3-235b,71.1,curated,,,
-qwen3-32b,65.8,curated,,,
-qwen3-8b,47.3,curated,,,
-qwq-32b,59.5,curated,,,
-glm-5-2,91.2,curated,,,
-glm-5,88.4,curated,,,
-glm-4-7,85.7,curated,,,
-kimi-k2-5,87.6,curated,,,
-kimi-k2,75.1,curated,,,
-mistral-large-3,84.1,curated,,,
-mistral-small-3-2,46.1,curated,,,
-magistral-medium,71.2,curated,,,
-grok-4-2,90.6,curated,,,
-grok-4,87.5,curated,,,
-grok-4-fast,80.2,curated,,,
-phi-4,56.1,curated,,,
-phi-4-reasoning,68.9,curated,,,
-minimax-m2-5,83.9,curated,,,
-step-3-5-flash,78.8,curated,,,
-nemotron-super-49b,70.4,curated,,,
-command-a,50.8,curated,,,
-hermes-4-405b,70.2,curated,,,
-olmo-3-32b,58.1,curated,,,
-granite-4-h,43.2,curated,,,
-smollm3-3b,26.7,curated,,,
-llama-5,87.9,curated,,,
-deepseek-v4-5,91.8,curated,,,
+ai21-jamba-1-5-large,36.9,self-reported,https://arxiv.org/html/2408.12570v1,,
+ai21-jamba-1-5-mini,32.3,self-reported,https://arxiv.org/html/2408.12570v1,,
+amazon-nova-lite,42,independent,https://deepranking.ai/llm-models/nova-lite,,
+amazon-nova-micro,40,independent,https://deepranking.ai/llm-models/nova-micro,,
+amazon-nova-premier,56.9,independent,https://artificialanalysis.ai/models/nova-premier,,"GPQA Diamond, 0-shot CoT"
+amazon-nova-pro,46.9,independent,https://deepranking.ai/llm-models/nova-pro,,
+aya-vision-32b,34.38,independent,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,
+claude-3-5-haiku,41.6,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"GPQA Diamond, 0-shot CoT, official model card addendum Table 8"
+claude-3-5-sonnet,59.4,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,"GPQA Diamond, 0-shot CoT"
+claude-3-7-sonnet,68,self-reported,https://www.datacamp.com/blog/claude-3-7-sonnet,2025-02-24,"GPQA Diamond, standard mode (no thinking); original deeplearning.ai URL only showed the 84.8% extended-thinking figure in extracted text, so sourceUrl swapped to DataCamp which explicitly states 68.0% standard-mode"
+claude-3-haiku,33.3,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,"GPQA Diamond, 0-shot CoT"
+claude-3-opus,50.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"GPQA Diamond, 0-shot CoT"
+claude-3-sonnet,40.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"GPQA Diamond, 0-shot CoT"
+claude-haiku-4-5,64.6,independent,https://artificialanalysis.ai/models/claude-4-5-haiku,2025-10-01,"independent evaluation; AA page is JS-rendered and could not be scraped directly via fetch tools, but the exact 64.6% figure was cross-confirmed via secondary aggregators (e.g. pricepertoken.com, morphllm.com) explicitly citing Artificial Analysis's Claude Haiku 4.5 page"
+claude-opus-4,79.6,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"GPQA Diamond, with extended thinking; confirmed via direct fetch"
+claude-opus-4-1,80.9,self-reported,https://winbuzzer.com/2025/08/05/anthropic-launches-claude-opus-4-1-a-measured-upgrade-focused-on-coding-and-safety-xcxwbn/,2025-08-05,"GPQA Diamond, up from 79.6% on Opus 4; same sourceUrl correction, confirmed 80.9% on Winbuzzer"
+claude-opus-4-5,87,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,,GPQA Diamond
+claude-opus-4-5-high,87,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,2025-11-24,
+claude-opus-4-6,91.3,self-reported,https://www.vellum.ai/blog/claude-opus-4-6-benchmarks,2026-02-05,
+claude-sonnet-4,75.4,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"GPQA Diamond, with extended thinking; confirmed via direct fetch"
+claude-sonnet-4-5,83.4,self-reported,https://leanware.co/insights/claude-sonnet-4-5-overview,2025-09-29,GPQA Diamond; confirmed via direct fetch
+command-a,50.8,self-reported,https://arxiv.org/abs/2504.00698,,
+command-r7b,26.3,self-reported,https://arxiv.org/abs/2504.00698,,
+deepseek-r1-0528,81,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,GPQA Diamond pass@1
+deepseek-r1-671b,71.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,GPQA Diamond pass@1
+deepseek-r1-distill-llama-70b,65.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B,2025-01-20,GPQA Diamond pass@1
+deepseek-r1-distill-qwen-32b,62.1,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B,2025-01-20,GPQA Diamond pass@1
+deepseek-r1-zero,73.3,self-reported,https://arxiv.org/html/2501.12948v1,2025-01-20,GPQA Diamond pass@1
+deepseek-v3-0324,68.4,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3-0324,2025-03-24,GPQA Diamond
+deepseek-v3-1-non-thinking,74.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,GPQA-Diamond Pass@1
+deepseek-v3-1-thinking,80.1,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,GPQA-Diamond Pass@1
+deepseek-v3-671b,59.1,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,GPQA-Diamond
+ernie-4-5-300b-a47b,81,independent,https://artificialanalysis.ai/models/ernie-4-5-300b-a47b,,"GPQA Diamond, non-reasoning variant, Artificial Analysis Intelligence Index v4.1 suite"
+ernie-5-0-preview,78,independent,https://artificialanalysis.ai/models/ernie-5-0-thinking-preview,2025-11-01,"GPQA Diamond, ERNIE 5.0 Thinking Preview"
+falcon-h1-34b,41.53,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
+falcon-h1r-7b,61.3,self-reported,https://falcon-lm.github.io/blog/falcon-h1r-7b/,,GPQA-Diamond
+falcon3-10b,10.51,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,
+falcon3-7b,31.9,self-reported,https://huggingface.co/tiiuae/Falcon3-7B-Instruct,,
+gemini-1-5-flash,39.5,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"0-shot, Table 11"
+gemini-1-5-flash-8b,30.8,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"0-shot, Table 22"
+gemini-1-5-pro,46.2,self-reported,https://arxiv.org/pdf/2403.05530,,May 2024 updated version
+gemini-2-0-flash,60.1,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,"diamond, GA version"
+gemini-2-0-flash-lite,51.5,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,"diamond, Public Preview"
+gemini-2-5-flash,82.8,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"GPQA Diamond, single attempt, pass@1, thinking on"
+gemini-2-5-flash-lite-non-thinking,64.6,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"GPQA diamond, (06-17) release, non-thinking"
+gemini-2-5-flash-lite-thinking,66.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"GPQA diamond, (06-17) release, thinking on"
+gemini-3-1-flash-lite,86.9,self-reported,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/,2026-03-03,GPQA Diamond
+gemini-3-1-pro,94.3,self-reported,https://deepmind.google/models/gemini/pro/,2026-02-19,GPQA Diamond
+gemini-3-flash,90.4,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf,2025-12-01,"GPQA Diamond, no tools, thinking"
+gemini-3-pro,91.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf,2025-11-01,"GPQA Diamond, no tools"
+gemma-3-12b,40.9,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,GPQA Diamond
+gemma-3-27b,42.4,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,GPQA Diamond
+gemma-3-4b,30.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,GPQA Diamond
+gemma-4,84.3,self-reported,https://ai.google.dev/gemma/docs/core/model_card_4,2026-04-02,"GPQA Diamond, 31B"
+glm-4-5-355b-a32b,79.1,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
+glm-4-5-air-106b-a12b,75,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
+gpt-4-1,66.3,independent,https://www.rdworldonline.com/openai-claims-gpt-4-1-sets-new-90-standard-in-mmlu-reasoning-benchmark/,2025-04-01,GPQA Diamond
+gpt-4-1-mini,65,independent,https://docsbot.ai/models/gpt-4-1-mini,2025-04-01,GPQA Diamond
+gpt-4-1-nano,50.3,self-reported,https://openai.com/index/gpt-4-1/,2025-04-14,
+gpt-4-5,71.4,independent,https://www.helicone.ai/blog/gpt-4.5-benchmarks,2025-02-01,GPQA (science)
+gpt-4o,53.6,independent,https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947,,"OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching"
+gpt-5,85.7,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"GPQA Diamond, no tools, high reasoning effort"
+gpt-5-2,92.4,self-reported,https://openai.com/index/introducing-gpt-5-2/,,"GPQA Diamond, GPT-5.2 Thinking; confirmed via marktechpost.com report of the launch page"
+gpt-5-mini,82.3,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"GPQA Diamond, no tools, high reasoning effort"
+gpt-5-nano,71.2,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"GPQA Diamond, no tools, high reasoning effort"
+gpt-oss-120b-high,80.1,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"GPQA Diamond, no tools, high reasoning effort"
+gpt-oss-120b-low,67.1,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"GPQA Diamond, no tools, low reasoning effort"
+gpt-oss-120b-medium,73.1,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"GPQA Diamond, no tools, medium reasoning effort"
+gpt-oss-20b-high,71.5,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"GPQA Diamond, no tools, high reasoning effort"
+gpt-oss-20b-low,56.8,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"GPQA Diamond, no tools, low reasoning effort"
+gpt-oss-20b-medium,66,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"GPQA Diamond, no tools, medium reasoning effort"
+granite-3-1-8b-instruct,8.28,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HF Open LLM Leaderboard V2
+granite-4-0-h-small,40.63,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+grok-1-5,35.9,self-reported,https://klu.ai/glossary/xai-grok-2,,As reported in xAI's later Grok-2 comparison table
+grok-2,56,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
+grok-2-mini,51,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
+grok-3-mini,79.1,independent,https://designforonline.com/ai-models/xai-grok-3-mini/,,GPQA Diamond
+grok-3-standard,75.4,self-reported,https://medium.com/@bernardloki/grok-3-review-a-critical-look-at-xais-smartest-ai-claim-aea15ca38b66,2025-02-17,non-reasoning mode
+grok-3-think,84.6,self-reported,https://www.chatbase.co/blog/grok-3,2025-02-17,Think mode
+grok-4,87.5,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,"GPQA Diamond, no tools"
+grok-4-heavy,88.9,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,GPQA Diamond
+hermes-3-405b,44.84,self-reported,https://arxiv.org/pdf/2408.11857,,0-shot
+hunyuan-a13b,49.12,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,
+hunyuan-t1,69.3,self-reported,https://tencent.github.io/llm.hunyuan.T1/README_EN.html,,GPQA-Diamond
+internlm3-8b-instruct,37.4,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,GPQA-Diamond
+kimi-k2-thinking,84.5,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,
+lg-exaone-4-0-32b-non-reasoning,63.7,self-reported,https://arxiv.org/abs/2507.11407,,"GPQA-Diamond, non-reasoning mode"
+lg-exaone-4-0-32b-reasoning,75.4,self-reported,https://arxiv.org/abs/2507.11407,,"GPQA-Diamond, reasoning mode"
+lg-exaone-deep-32b,66.1,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-Deep,2025-03-01,"GPQA Diamond, pass@1"
+llama-3-1-405b,50.7,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,Instruct (corrected: original record mislabeled this as the base pretrained model; the 50.7 figure is the Instruct-model GPQA score in Meta's comparison table)
+llama-3-1-70b,46.7,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,Instruct (corrected: original record mislabeled this as the base pretrained model; the 46.7 figure is the Instruct-model GPQA score in Meta's comparison table)
+llama-3-1-8b,30.4,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, exact match (em) — corrected from mislabeled 'base pretrained model'"
+llama-3-1-nemotron-ultra-253b-v1-reasoning-off,56.6,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,Reasoning Off
+llama-3-1-nemotron-ultra-253b-v1-reasoning-on,71.5,independent,https://venturebeat.com/ai/nvidias-new-llama-3-1-nemotron-ultra-outperforms-deepseek-r1-at-half-the-size,,"DeepSeek-R1 comparison point; VentureBeat itself returned 403 on direct fetch, but the 71.5 GPQA-Diamond figure for DeepSeek-R1 is independently corroborated by multiple other sources"
+llama-3-1-nemotron-ultra-253b-v1-reasoning-on,76.01,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,Reasoning On; beats DeepSeek-R1's 71.5
+llama-3-3-70b,50.5,self-reported,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,,GPQA Diamond CoT
+llama-3-3-nemotron-super-49b-v1-reasoning-off,50,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning Off
+llama-3-3-nemotron-super-49b-v1-reasoning-on,66.67,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning On
+llama-3-70b,39.5,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct,,"0-shot, Instruct-tuned checkpoint"
+llama-3-8b,34.2,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"Instruct, 0-shot"
+llama-4-maverick,69.8,self-reported,https://huggingface.co/blog/llama4-release,,"GPQA Diamond, instruction-tuned"
+llama-4-scout,57.2,self-reported,https://huggingface.co/blog/llama4-release,,"GPQA Diamond, instruction-tuned"
+magistral-small,68.18,self-reported,https://huggingface.co/mistralai/Magistral-Small-2506,,GPQA Diamond
+minimax-m1,69.2,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,,"GPQA Diamond, M1-40K"
+minimax-text-01,54.4,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,"GPQA Diamond, 0-shot CoT"
+mistral-small-3-1-24b,44.42,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,"GPQA Main, 5-shot CoT"
+nemotron-nano-2-nemotron-nano-9b-v2,64,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"Reasoning On, vs Qwen3-8B's 59.6"
+openai-o1,78,independent,https://www.datacamp.com/blog/o3-openai,2024-12-01,GPQA Diamond
+openai-o1-preview,73.3,independent,https://www.walturn.com/insights/comparing-openai-o1-to-other-top-models,2024-09-01,GPQA 0-shot CoT
+openai-o3,83.3,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,GPQA Diamond
+openai-o3-mini-high,79.7,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"GPQA Diamond, high effort"
+openai-o3-mini-low,70.6,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"GPQA Diamond, low effort"
+openai-o3-mini-medium,76.8,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"GPQA Diamond, medium effort"
+openai-o3-pro,84,independent,https://binaryverseai.com/chatgpt-o3-pro-review-benchmarks-hacks/,,GPQA Diamond
+openai-o4-mini,81.4,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,GPQA Diamond
+palmyra-x5,47.2,self-reported,https://dev.writer.com/home/models,,
+phi-3-mini-3-8b,30.6,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,0-shot
+phi-4-14b,56.1,self-reported,https://huggingface.co/microsoft/phi-4,,
+phi-4-reasoning,65.8,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,GPQA-Diamond
+phi-4-reasoning-14b,65.8,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,,GPQA-Diamond
+qwen1-5-110b,35.9,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Base model
+qwen2-5-max,60.1,self-reported,https://www.datacamp.com/blog/qwen-2-5-max,,GPQA-Diamond
+qwen2-57b-a14b,34.3,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen2-72b,37.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen2-7b,31.8,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen3-14b-non-thinking,54.8,self-reported,https://arxiv.org/pdf/2505.09388,,"GPQA-Diamond, Non-thinking mode"
+qwen3-14b-thinking,64,self-reported,https://arxiv.org/pdf/2505.09388,,"GPQA-Diamond, Thinking mode"
+qwen3-235b-a22b-instruct-2507,77.5,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,
+qwen3-235b-a22b-non-thinking,62.9,self-reported,https://arxiv.org/pdf/2505.09388,,"GPQA-Diamond, Non-thinking mode"
+qwen3-235b-a22b-thinking,71.1,self-reported,https://arxiv.org/pdf/2505.09388,,"GPQA-Diamond, Thinking mode"
+qwen3-30b-a3b-non-thinking,54.8,self-reported,https://arxiv.org/abs/2505.09388,,"GPQA-Diamond, non-thinking mode"
+qwen3-30b-a3b-thinking,65.8,self-reported,https://arxiv.org/abs/2505.09388,,"GPQA-Diamond, thinking mode"
+qwen3-32b-non-thinking,54.6,self-reported,https://arxiv.org/abs/2505.09388,,"GPQA-Diamond, non-thinking mode"
+qwen3-32b-thinking,68.4,self-reported,https://arxiv.org/abs/2505.09388,,"GPQA-Diamond, thinking mode"
+qwen3-8b-non-thinking,39.3,self-reported,https://arxiv.org/abs/2505.09388,,"GPQA-Diamond, non-thinking mode"
+qwen3-8b-thinking,62,self-reported,https://arxiv.org/abs/2505.09388,,"GPQA-Diamond, thinking mode"
+qwq-32b-preview,65.2,self-reported,https://qwenlm.github.io/blog/qwq-32b-preview/,,GPQA (graduate-level)
+sarvam-105b,78.7,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,GPQA Diamond
+seed1-5-thinking,77.3,self-reported,https://arxiv.org/abs/2504.13914,,GPQA
+skywork-r1v-38b,61.6,self-reported,https://arxiv.org/abs/2504.05599,,
+smollm3-3b-no-thinking,35.7,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM3-3B,,"GPQA Diamond, no extended thinking"
+wizardlm-2-8x22b,17.56,independent,https://huggingface.co/alpindale/WizardLM-2-8x22B,,"Open LLM Leaderboard v2, 0-shot"
+yi-1-5-34b,36.3,independent,https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-34B-32K-details,,
+yi-lightning,50.9,self-reported,https://arxiv.org/abs/2412.01253,,0-shot

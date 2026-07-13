@@ -1,0 +1,10 @@
+{
+  "slug": "mmlu-redux",
+  "name": "MMLU-Redux",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Manually re-annotated, error-corrected subset of MMLU.",
+  "normMin": 40,
+  "normMax": 100,
+  "higherIsBetter": true
+}

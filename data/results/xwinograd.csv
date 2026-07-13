@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+bloomz-176b,69.08,self-reported,https://huggingface.co/bigscience/bloomz,,"XWinograd English, zero-shot accuracy"

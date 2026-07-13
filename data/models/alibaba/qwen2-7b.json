@@ -1,0 +1,49 @@
+{
+  "slug": "qwen2-7b",
+  "name": "Qwen2-7B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2",
+  "releaseDate": "2024-06-07",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 7.07,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (GQA)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 30,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen2-7B-Instruct",
+    "gh": "QwenLM/Qwen2",
+    "docs": "qwenlm.github.io/blog/qwen2"
+  },
+  "note": "Widely-used small Gen-2 dense model; Apache 2.0, 128K context on the Instruct variant.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 16,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+poro-34b,66.28,self-reported,https://arxiv.org/abs/2404.01856,,Finnish FIN-bench average; FinGPT 13B scored 48.92 for comparison

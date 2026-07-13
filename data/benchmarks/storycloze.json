@@ -1,0 +1,10 @@
+{
+  "slug": "storycloze",
+  "name": "StoryCloze",
+  "category": "reasoning",
+  "unit": "%",
+  "description": "Commonsense story-ending selection.",
+  "normMin": 50,
+  "normMax": 95,
+  "higherIsBetter": true
+}

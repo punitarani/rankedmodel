@@ -1,0 +1,42 @@
+{
+  "slug": "inflection-1",
+  "name": "Inflection-1",
+  "orgSlug": "inflection-ai",
+  "familySlug": "inflection",
+  "releaseDate": "2023-06-22",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (architecture, dataset, and training procedure undisclosed)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "inflection.ai/inflection-1"
+  },
+  "note": "Pi's original in-house model; GPT-3.5-class personal-AI chatbot tuned for empathetic conversation over coding or reasoning.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

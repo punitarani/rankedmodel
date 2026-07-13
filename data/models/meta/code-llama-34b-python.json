@@ -1,0 +1,49 @@
+{
+  "slug": "code-llama-34b-python",
+  "name": "Code Llama 34B Python",
+  "orgSlug": "meta",
+  "familySlug": "code-llama",
+  "releaseDate": "2023-08-24",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Llama 2 Community License",
+  "paramsB": 34,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (decoder-only), Python-specialized, no infilling",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "meta-llama/CodeLlama-34b-Python-hf",
+    "gh": "facebookresearch/codellama",
+    "docs": "ai.meta.com/blog/code-llama-large-language-model-coding"
+  },
+  "note": "Python-specialized Code Llama 34B, further trained on 100B Python tokens; HumanEval 53.7%, MBPP 56.2%.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 22,
+  "vramFp16Gb": 68,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "codestral-22b",
+  "name": "Codestral 22B",
+  "orgSlug": "mistral-ai",
+  "familySlug": "codestral",
+  "releaseDate": "2024-05-29",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Mistral AI Non-Production License (MNPL-0.1)",
+  "paramsB": 22.2,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (code-specialized, fill-in-the-middle)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "mistralai/Codestral-22B-v0.1",
+    "gh": "mistralai/mistral-inference",
+    "docs": "legal.mistral.ai/ai-governance/models/codestral"
+  },
+  "note": "Mistral's first dedicated code model; fill-in-the-middle across 80+ programming languages, 32K context, non-commercial MNPL license.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 18,
+  "vramFp16Gb": 44,
+  "tps4090": null,
+  "tpsNote": "Fits a single RTX 4090 at Q4_K_M (~18GB); no single authoritative tok/s benchmark found",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

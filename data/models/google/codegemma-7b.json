@@ -1,0 +1,49 @@
+{
+  "slug": "codegemma-7b",
+  "name": "CodeGemma 7B",
+  "orgSlug": "google",
+  "familySlug": "codegemma",
+  "releaseDate": "2024-04-09",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Gemma Terms of Use",
+  "paramsB": 8.54,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (Gemma 7B architecture, continued pretrain for code)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "google/codegemma-7b",
+    "gh": "google-deepmind/gemma",
+    "docs": "ai.google.dev/gemma/docs/codegemma/model_card"
+  },
+  "note": "Gemma 7B continued-pretrained on ~500B tokens of code (80/20 code-to-text) with fill-in-the-middle for completion.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GGUF Q8_0",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 18,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "ai21-jamba",
+  "name": "AI21 Jamba",
+  "orgSlug": "ai21-labs",
+  "familySlug": "ai21-jamba",
+  "releaseDate": "2024-03-28",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 52,
+  "activeParamsB": 12,
+  "archClass": "hybrid",
+  "archDisplay": "Hybrid Mamba-Transformer MoE (Jamba)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "ai21labs/Jamba-v0.1",
+    "docs": "docs.ai21.com"
+  },
+  "note": "First production-grade hybrid Mamba-Transformer MoE base model, 12B/52B active/total, 256K context fitting 140K tokens on one 80GB GPU.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 29.5,
+  "vramFp16Gb": 104,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

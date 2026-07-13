@@ -1,0 +1,10 @@
+{
+  "slug": "flickr30k",
+  "name": "Flickr30k",
+  "category": "vision",
+  "unit": "CIDEr",
+  "description": "Zero-shot image-captioning quality (CIDEr).",
+  "normMin": 0,
+  "normMax": 140,
+  "higherIsBetter": true
+}

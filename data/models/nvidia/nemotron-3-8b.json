@@ -1,0 +1,45 @@
+{
+  "slug": "nemotron-3-8b",
+  "name": "Nemotron-3 8B",
+  "orgSlug": "nvidia",
+  "familySlug": "nemotron-3",
+  "releaseDate": "2023-11-15",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "NVIDIA AI Foundation Models Community License Agreement",
+  "paramsB": 8,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (GPT-3 style decoder-only)",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 53,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "nvidia/nemotron-3-8b-base-4k",
+    "docs": "developer.nvidia.com"
+  },
+  "note": "NVIDIA's first Nemotron-branded open LLM family, aimed at enterprise chat/copilot builds via NeMo.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 5.4,
+  "vramFp16Gb": 17,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

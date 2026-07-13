@@ -1,0 +1,45 @@
+{
+  "slug": "claude-2",
+  "name": "Claude 2",
+  "orgSlug": "anthropic",
+  "familySlug": "claude-2",
+  "releaseDate": "2023-07-11",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (Anthropic Commercial Terms of Service)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only Transformer (parameter count undisclosed)",
+  "ctxK": 100,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 8,
+    "output": 24
+  },
+  "links": {
+    "docs": "docs.claude.com"
+  },
+  "note": "First broadly available Claude with a 100K-token context window and markedly stronger coding/math than Claude 1.3.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -2,30 +2,31 @@
   "slug": "gemini-2-5-flash",
   "name": "Gemini 2.5 Flash",
   "orgSlug": "google",
-  "familySlug": "gemini-2",
+  "familySlug": "gemini-2-5",
   "releaseDate": "2025-05-20",
   "status": "released",
   "predecessor": "gemini-2-5-pro",
   "openness": "closed",
-  "license": "Proprietary",
+  "license": "Proprietary (Google API Terms)",
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "moe",
-  "archDisplay": "MoE (undisclosed)",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (natively multimodal)",
   "ctxK": 1000,
   "modalities": [
     "text",
     "vision",
-    "audio"
+    "audio",
+    "video"
   ],
-  "langCount": 100,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
     "vision": true,
     "functionCalling": true,
     "toolUse": true,
-    "agentic": false
+    "agentic": true
   },
   "apiAvailable": true,
   "price": {
@@ -33,12 +34,15 @@
     "output": 2.5
   },
   "links": {
-    "docs": "ai.google.dev"
+    "docs": "ai.google.dev/gemini-api/docs/models/gemini"
   },
-  "note": "High-throughput tier with controllable thinking budget.",
+  "note": "High-throughput hybrid-reasoning workhorse with a controllable thinking budget.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

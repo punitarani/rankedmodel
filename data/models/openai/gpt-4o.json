@@ -2,7 +2,7 @@
   "slug": "gpt-4o",
   "name": "GPT-4o",
   "orgSlug": "openai",
-  "familySlug": "gpt-4",
+  "familySlug": "gpt-4o",
   "releaseDate": "2024-05-13",
   "status": "released",
   "predecessor": null,
@@ -11,14 +11,14 @@
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense (undisclosed)",
+  "archDisplay": "Transformer (architecture undisclosed); natively multimodal single model",
   "ctxK": 128,
   "modalities": [
     "text",
     "vision",
     "audio"
   ],
-  "langCount": 50,
+  "langCount": null,
   "capabilities": {
     "reasoning": false,
     "coding": true,
@@ -33,12 +33,15 @@
     "output": 10
   },
   "links": {
-    "docs": "platform.openai.com"
+    "docs": "developers.openai.com/api/docs/models/gpt-4o"
   },
-  "note": "The omni-modal workhorse of 2024-25; still widely deployed.",
+  "note": "Natively multimodal 'omni' flagship; the chat-completions API serves text+vision, with audio native to the underlying model exposed via separate Realtime/Audio endpoints.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

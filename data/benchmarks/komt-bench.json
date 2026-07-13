@@ -1,0 +1,10 @@
+{
+  "slug": "komt-bench",
+  "name": "KoMT-Bench",
+  "category": "human-preference",
+  "unit": "/10",
+  "description": "Korean-language multi-turn conversation quality, judged 1-10.",
+  "normMin": 3,
+  "normMax": 10,
+  "higherIsBetter": true
+}

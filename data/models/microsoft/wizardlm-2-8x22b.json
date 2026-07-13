@@ -1,0 +1,48 @@
+{
+  "slug": "wizardlm-2-8x22b",
+  "name": "WizardLM-2 8x22B",
+  "orgSlug": "microsoft",
+  "familySlug": "wizardlm",
+  "releaseDate": "2024-04-15",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 141,
+  "activeParamsB": 39,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts, 8 experts x22B (Mixtral 8x22B backbone)",
+  "ctxK": 64,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "alpindale/WizardLM-2-8x22B",
+    "gh": "nlpxucan/WizardLM"
+  },
+  "note": "Evol-Instruct fine-tune of Mixtral 8x22B (141B/~39B active); first open LLM to top 9.0 MT-Bench, pulled by Microsoft ~1 day after release for missing toxicity testing.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ",
+    "EXL2"
+  ],
+  "vramQ4Gb": 80,
+  "vramFp16Gb": 282,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

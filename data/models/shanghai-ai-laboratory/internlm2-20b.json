@@ -1,0 +1,47 @@
+{
+  "slug": "internlm2-20b",
+  "name": "InternLM2-20B",
+  "orgSlug": "shanghai-ai-laboratory",
+  "familySlug": "internlm2",
+  "releaseDate": "2024-01-17",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 20,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer decoder (GQA)",
+  "ctxK": 200,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "internlm/internlm2-20b",
+    "gh": "InternLM/InternLM",
+    "docs": "internlm.readthedocs.io"
+  },
+  "note": "Flagship dense InternLM2 model; near-perfect 200K-token needle-in-haystack retrieval, free commercial weight license.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ"
+  ],
+  "vramQ4Gb": 12,
+  "vramFp16Gb": 40,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

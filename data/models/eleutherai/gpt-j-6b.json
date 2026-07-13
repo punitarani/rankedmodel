@@ -1,0 +1,47 @@
+{
+  "slug": "gpt-j-6b",
+  "name": "GPT-J-6B",
+  "orgSlug": "eleutherai",
+  "familySlug": "gpt-j",
+  "releaseDate": "2021-06-09",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache-2.0",
+  "paramsB": 6.05,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Decoder-only Transformer with Rotary Position Embeddings and parallel attention+FF blocks (mesh-transformer-jax)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "EleutherAI/gpt-j-6b",
+    "gh": "kingoflolz/mesh-transformer-jax",
+    "docs": "huggingface.co/docs/transformers/model_doc/gptj"
+  },
+  "note": "6B Pile-trained model built with mesh-transformer-jax, Apache 2.0; the standard open GPT-3 alternative for roughly two years",
+  "quants": [
+    "GGUF",
+    "Int8"
+  ],
+  "vramQ4Gb": 4.2,
+  "vramFp16Gb": 13.4,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

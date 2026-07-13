@@ -1,0 +1,46 @@
+{
+  "slug": "t-lu-3-405b",
+  "name": "Tülu 3 405B",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "t-lu-3",
+  "releaseDate": "2025-01-30",
+  "status": "released",
+  "predecessor": "t-lu-3-70b",
+  "openness": "open-weights",
+  "license": "Llama 3.1 Community License Agreement",
+  "paramsB": 405.85,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (decoder-only, Llama 3.1 405B base)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 8,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "allenai/Llama-3.1-Tulu-3-405B",
+    "gh": "allenai/open-instruct",
+    "docs": "allenai.org/blog/tulu-3-405b"
+  },
+  "note": "Scaled the fully open Tülu 3 RLVR recipe to 405B (on Llama 3.1); matches or beats DeepSeek V3 and GPT-4o on key benchmarks.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 230,
+  "vramFp16Gb": 810,
+  "tps4090": null,
+  "tpsNote": "Too large to run on a single RTX 4090 at any practical quant; requires multi-GPU or CPU offload.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

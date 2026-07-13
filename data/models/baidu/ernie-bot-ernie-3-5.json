@@ -1,0 +1,42 @@
+{
+  "slug": "ernie-bot-ernie-3-5",
+  "name": "ERNIE Bot (ERNIE 3.5)",
+  "orgSlug": "baidu",
+  "familySlug": "ernie",
+  "releaseDate": "2023-06-26",
+  "status": "released",
+  "predecessor": "ernie-3-0-titan",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer (parameter count undisclosed)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "qianfan.baidubce.com"
+  },
+  "note": "ERNIE Bot itself first launched March 16, 2023 running on the ERNIE 3.0 model; it was upgraded to the ERNIE 3.5 foundation model in June 2023 (Robin Li announced the 3.5 iteration at the WIC Nishan Dialogue on June 26, 2023). The ERNIE-3.5-8K endpoint remains a free Qianfan tier today.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

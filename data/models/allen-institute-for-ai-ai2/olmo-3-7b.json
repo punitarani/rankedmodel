@@ -1,0 +1,46 @@
+{
+  "slug": "olmo-3-7b",
+  "name": "OLMo 3 7B",
+  "orgSlug": "allen-institute-for-ai-ai2",
+  "familySlug": "olmo-3",
+  "releaseDate": "2025-11-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 7.3,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (decoder-only, sliding/full attention mix)",
+  "ctxK": 64,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "allenai/Olmo-3-7B-Instruct",
+    "gh": "allenai/OLMo-core",
+    "docs": "allenai.org/blog/olmo3"
+  },
+  "note": "Lighter-weight member of the OLMo 3 family (Base/Think/Instruct) built on the Dolma 3 / Dolci stack; runs on a wider range of hardware.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 5,
+  "vramFp16Gb": 15,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

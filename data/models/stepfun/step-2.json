@@ -1,0 +1,42 @@
+{
+  "slug": "step-2",
+  "name": "Step-2",
+  "orgSlug": "stepfun",
+  "familySlug": "step-2",
+  "releaseDate": "2024-07-01",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 1000,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Trillion-parameter Mixture-of-Experts (first from a Chinese firm)",
+  "ctxK": 16,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "docs": "platform.stepfun.com"
+  },
+  "note": "First trillion-parameter MoE LLM from a Chinese firm; previewed March 2024, officially launched July 2024 at WAIC; Step-2-16k ranked 5th globally (1st in China) on LiveBench in Nov 2024, behind only OpenAI and Google models.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

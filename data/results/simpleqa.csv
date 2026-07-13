@@ -1,0 +1,7 @@
+model_slug,score,source,source_url,evaluated_at,notes
+gemma-3-12b,6.3,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+gemma-3-27b,10,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+gemma-3-4b,4,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+gpt-4-5,62.5,independent,https://www.helicone.ai/blog/gpt-4.5-benchmarks,2025-02-01,SimpleQA accuracy
+phi-4-14b,3,self-reported,https://huggingface.co/microsoft/phi-4,,
+sonar,0.773,self-reported,https://web.swipeinsight.app/posts/perplexity-launches-sonar-api-for-real-time-ai-search-capabilities-14187,,"SimpleQA F-score, 0-1 scale, from Perplexity's 'Meet new Sonar' evaluation; corroborated by openrouter.ai and other secondary trackers citing the same 0.773 figure"

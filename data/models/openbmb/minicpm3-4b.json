@@ -1,0 +1,47 @@
+{
+  "slug": "minicpm3-4b",
+  "name": "MiniCPM3-4B",
+  "orgSlug": "openbmb",
+  "familySlug": "minicpm-3",
+  "releaseDate": "2024-09-05",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "MiniCPM Model License (custom; free for research and, after registration, commercial use) + Apache-2.0 code",
+  "paramsB": 4,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense causal transformer (third-gen MiniCPM)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "openbmb/MiniCPM3-4B",
+    "gh": "OpenBMB/MiniCPM"
+  },
+  "note": "Third-gen 4B on-device LLM with function calling and code interpreter, outperforming GPT-3.5-Turbo-0125 and Phi-3.5-mini.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GGUF Q5_K_M",
+    "GGUF Q8_0"
+  ],
+  "vramQ4Gb": 3,
+  "vramFp16Gb": 8,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+qwen-vl,89.36,self-reported,https://huggingface.co/Qwen/Qwen-VL,,"RefCOCO val, referring-expression grounding accuracy"

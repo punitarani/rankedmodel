@@ -1,0 +1,10 @@
+{
+  "slug": "jaster",
+  "name": "JASTER",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "Japanese-language academic/professional knowledge benchmark suite.",
+  "normMin": 20,
+  "normMax": 95,
+  "higherIsBetter": true
+}

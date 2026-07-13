@@ -1,0 +1,54 @@
+model_slug,score,source,source_url,evaluated_at,notes
+aya-vision-32b,70.43,independent,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,
+chatglm3-6b,52.4,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
+claude-3-haiku,80.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,Pass@1
+claude-3-opus,86.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,Pass@1
+claude-3-sonnet,79.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,Pass@1
+code-llama-13b,47,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, base Code Llama 13B"
+code-llama-34b,55,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, base Code Llama 34B"
+code-llama-34b-python,56.2,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, Code Llama - Python 34B"
+code-llama-7b,41.4,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, base Code Llama 7B"
+codegemma-7b,56.2,self-reported,https://ai.google.dev/gemma/docs/codegemma/model_card,,7B pretrained (PT) variant
+codeqwen1-5-7b,72.2,self-reported,https://qwenlm.github.io/blog/codeqwen1.5/,2024-04-16,"Base model, 0-shot"
+codestral-22b,78.2,independent,https://www.analyticsvidhya.com/blog/2024/06/codestral-22b/,2024-05-01,
+codestral-25-01,80.2,self-reported,https://mistral.ai/news/codestral-2501/,,
+command-a,86.2,self-reported,https://arxiv.org/abs/2504.00698,,MBPP+
+command-r7b,72,self-reported,https://arxiv.org/abs/2504.00698,,MBPP+
+deepseek-coder-33b,70,self-reported,https://ar5iv.labs.arxiv.org/html/2401.14196,,"Instruct-33B, from paper Table 3"
+deepseek-coder-v2-236b,76.2,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,,MBPP+ (EvalPlus)
+deepseek-v2-236b,72,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,,Chat (RL) variant
+granite-4-0-h-small,84,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+internlm2-20b,65.8,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,
+llama-13b,22,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"pass@1, Table 8"
+llama-3-1-minitron-4b,32.4,self-reported,https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/,2024-08-14,0-shot pass@1
+llama-3-3-nemotron-super-49b-v1-reasoning-off,84.9,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning Off
+llama-3-3-nemotron-super-49b-v1-reasoning-on,91.3,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning On
+llama-33b,30.2,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"pass@1, Table 8"
+llama-4-maverick,77.6,self-reported,https://huggingface.co/blog/llama4-release,,"Pre-trained/base model comparison table, pass@1 (not instruction-tuned)"
+llama-4-scout,67.8,self-reported,https://huggingface.co/blog/llama4-release,,"Pre-trained/base model comparison table, pass@1 (not instruction-tuned)"
+minicpm-2b,47.31,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table
+minimax-text-01,71.7,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,MBPP+ variant
+ministral-8b,70,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,,pass@1
+mistral-7b,47.5,self-reported,https://arxiv.org/abs/2310.06825,,
+mistral-large-2-24-07,80,self-reported,https://huggingface.co/mistralai/Mistral-Large-Instruct-2407,,MBPP Base
+mixtral-8x7b,60.7,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
+mpt-7b,22.8,independent,https://arxiv.org/abs/2405.13386,2024-05-22,confirmed Table 2
+nemotron-4-15b,40.6,self-reported,https://unfoldai.com/nemotron-4-nvidia-powerful-language-model/,2024-02-26,
+phi-1-1-3b,55.5,self-reported,https://arxiv.org/abs/2306.11644,2023-06-20,pass@1
+phi-1-5-1-3b,37.7,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,,
+qwen1-5-110b,58.1,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Base model
+qwen1-5-72b,53.4,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
+qwen2-5-14b,76.7,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
+qwen2-5-32b,84.5,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
+qwen2-5-72b,84.7,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
+qwen2-5-7b,74.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
+qwen2-5-coder-32b,76.4,self-reported,https://arxiv.org/abs/2409.12186,,Base model
+qwen2-57b-a14b,71.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen2-72b,76.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen2-7b,65.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+santacoder-1-1b,35,self-reported,https://huggingface.co/bigcode/santacoder,,"pass@1, Python"
+starcoder-15-5b,52.7,self-reported,https://huggingface.co/blog/starcoder,,
+upstage-solar-pro,61.59,self-reported,https://huggingface.co/upstage/solar-pro-preview-instruct,,
+wizardcoder-python-34b-v1-0,73.2,self-reported,https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md,,pass@1
+yi-34b,41,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,pass@1
+yi-6b,26.3,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,pass@1

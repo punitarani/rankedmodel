@@ -1,0 +1,43 @@
+{
+  "slug": "codet5-16b",
+  "name": "CodeT5+ 16B",
+  "orgSlug": "salesforce",
+  "familySlug": "codet5",
+  "releaseDate": "2023-05-13",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "BSD-3-Clause",
+  "paramsB": 16,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Encoder-decoder (shallow encoder / deep decoder), initialized from CodeGen-350M-mono encoder + CodeGen-16B-mono decoder",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Salesforce/codet5p-16b",
+    "gh": "salesforce/CodeT5"
+  },
+  "note": "Encoder-decoder code LLM family (220M-16B); InstructCodeT5+ 16B tuned variant hit open-source SOTA HumanEval pass@1 in 2023 (non-commercial license)",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": 32,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

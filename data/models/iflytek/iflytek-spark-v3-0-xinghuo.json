@@ -1,0 +1,44 @@
+{
+  "slug": "iflytek-spark-v3-0-xinghuo",
+  "name": "iFlytek Spark V3.0 (Xinghuo)",
+  "orgSlug": "iflytek",
+  "familySlug": "spark-xinghuo",
+  "releaseDate": "2023-10-24",
+  "status": "released",
+  "predecessor": "iflytek-spark-v1-0-xinghuo",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Proprietary transformer (undisclosed)",
+  "ctxK": 8,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "docs": "xfyun.cn/doc/spark"
+  },
+  "note": "Third-gen Spark benchmarked against ChatGPT-3.5, unveiled at the 2023 iFlytek 1024 Developer Festival in Hefei; later rebranded as the API's 'Spark Pro' tier.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

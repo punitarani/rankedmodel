@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+nemotron-3-ultra-550b-a55b,91,self-reported,https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/,,Agent productivity benchmark

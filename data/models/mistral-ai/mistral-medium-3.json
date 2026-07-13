@@ -1,0 +1,46 @@
+{
+  "slug": "mistral-medium-3",
+  "name": "Mistral Medium 3",
+  "orgSlug": "mistral-ai",
+  "familySlug": "mistral-medium",
+  "releaseDate": "2025-05-07",
+  "status": "deprecated",
+  "predecessor": "mistral-medium-original",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed dense transformer, multimodal (closed weights)",
+  "ctxK": 128,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": {
+    "input": 0.4,
+    "output": 2
+  },
+  "links": {
+    "docs": "docs.mistral.ai/models/mistral-medium-3-25-05"
+  },
+  "note": "Cost-efficient closed frontier model claimed at ~90% of Claude 3.7 Sonnet across benchmarks, 8x cheaper.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-5-1",
+  "name": "GPT-5.1",
+  "orgSlug": "openai",
+  "familySlug": "gpt-5-1",
+  "releaseDate": "2025-11-12",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (OpenAI API Terms)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "GPT-5 upgrade with adaptive reasoning spanning Instant and Thinking behavior in one model; dense transformer, exact size undisclosed",
+  "ctxK": 400,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.25,
+    "output": 10
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-5.1"
+  },
+  "note": "Warmer, more conversational refresh with adaptive reasoning; Instant and Thinking modes.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": "High",
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

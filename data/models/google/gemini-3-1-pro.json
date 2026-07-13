@@ -2,24 +2,24 @@
   "slug": "gemini-3-1-pro",
   "name": "Gemini 3.1 Pro",
   "orgSlug": "google",
-  "familySlug": "gemini-3",
-  "releaseDate": "2026-03-11",
-  "status": "released",
-  "predecessor": "gemini-3-pro",
+  "familySlug": "gemini-3-1",
+  "releaseDate": "2026-02-19",
+  "status": "preview",
+  "predecessor": null,
   "openness": "closed",
   "license": "Proprietary",
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "moe",
-  "archDisplay": "MoE (undisclosed)",
-  "ctxK": 2000,
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (configuration undisclosed)",
+  "ctxK": 1000,
   "modalities": [
     "text",
     "vision",
     "audio",
     "video"
   ],
-  "langCount": 100,
+  "langCount": null,
   "capabilities": {
     "reasoning": true,
     "coding": true,
@@ -34,12 +34,15 @@
     "output": 12
   },
   "links": {
-    "docs": "ai.google.dev"
+    "docs": "https://deepmind.google/models/gemini/pro/"
   },
-  "note": "Leads coding-arena; 2M context at frontier quality.",
+  "note": "Coding-arena leader with extended long-context frontier reasoning; ARC-AGI-2 77.1%, 1M-token context.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

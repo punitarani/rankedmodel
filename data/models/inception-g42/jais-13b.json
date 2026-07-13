@@ -1,0 +1,45 @@
+{
+  "slug": "jais-13b",
+  "name": "Jais-13B",
+  "orgSlug": "inception-g42",
+  "familySlug": "jais",
+  "releaseDate": "2023-08-30",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense GPT-3-style decoder-only transformer, trained from scratch with SwiGLU activations and ALiBi position encoding",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 2,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "inceptionai/jais-13b"
+  },
+  "note": "First flagship open Arabic-English bilingual LLM, built with MBZUAI and trained on Cerebras' Condor Galaxy supercomputer.",
+  "quants": [
+    "GGUF Q4",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 9,
+  "vramFp16Gb": 27,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

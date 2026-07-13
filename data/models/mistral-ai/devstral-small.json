@@ -1,0 +1,48 @@
+{
+  "slug": "devstral-small",
+  "name": "Devstral Small",
+  "orgSlug": "mistral-ai",
+  "familySlug": "devstral",
+  "releaseDate": "2025-05-21",
+  "status": "deprecated",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 24,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer — 24B, finetuned from Mistral-Small-3.1-24B-Base",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "mistralai/Devstral-Small-2505",
+    "gh": "mistralai/mistral-inference",
+    "docs": "docs.mistral.ai/models/model-cards/devstral-small-1-0-25-05"
+  },
+  "note": "24B open agentic-coding model built with All Hands AI; 46.8% SWE-bench Verified, best open model under 100B at launch.",
+  "quants": [
+    "GGUF Q4",
+    "AWQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 14.3,
+  "vramFp16Gb": 47.2,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

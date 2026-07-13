@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+deepseek-vl-7b,70.4,self-reported,https://arxiv.org/html/2403.05525v2,,"7B variant, Table 5"

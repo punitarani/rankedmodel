@@ -1,0 +1,46 @@
+{
+  "slug": "stable-beluga-2-freewilly-2-70b",
+  "name": "Stable Beluga 2 (FreeWilly 2) 70B",
+  "orgSlug": "stability-ai-carperai",
+  "familySlug": "stable-beluga-freewilly",
+  "releaseDate": "2023-07-21",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Stable Beluga Non-Commercial Community License Agreement",
+  "paramsB": 70,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Llama 2 70B dense Transformer, Orca-style supervised fine-tune",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "stabilityai/StableBeluga2"
+  },
+  "note": "Briefly #1 on the HF Open LLM Leaderboard (Jul 27 2023); Llama 2 70B fine-tuned on ~600K Orca-style synthetic examples.",
+  "quants": [
+    "GGML",
+    "GGUF",
+    "GPTQ"
+  ],
+  "vramQ4Gb": 40,
+  "vramFp16Gb": 140,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

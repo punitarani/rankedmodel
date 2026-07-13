@@ -1,0 +1,20 @@
+model_slug,score,source,source_url,evaluated_at,notes
+granite-3-0-2b-instruct,7.66,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,
+granite-3-0-8b-instruct,8.22,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,Scale 0-10
+koala-13b,5.35,independent,https://arxiv.org/html/2312.06281v2,,MT-Bench score cited in the EQ-Bench paper's model comparison table
+lg-exaone-3-0-7-8b-instruct,9.01,self-reported,https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct,2024-08-01,English MT-Bench
+lg-exaone-3-5-32b-instruct,8.51,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-3.5,2024-12-01,MT-Bench
+llama-3-1-nemotron-70b-instruct,8.98,self-reported,https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF,,GPT-4-Turbo judge
+llama-3-3-nemotron-super-49b-v1-reasoning-off,9.17,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning Off
+minicpm3-4b,8.41,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,
+mistral-medium-original,8.6,self-reported,https://mistral.ai/news/la-plateforme/,,
+mixtral-8x7b,8.3,self-reported,https://mistral.ai/news/mixtral-of-experts/,2023-12-11,Instruct variant
+qwen-max-0428,8.96,self-reported,https://qwenlm.github.io/blog/qwen-max-0428/,2024-05-11,
+qwen1-5-110b,8.88,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Chat model
+qwen2-72b,9.1,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,Instruct variant
+stable-lm-2-1-6b,5.42,self-reported,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,DPO/instruct (Zephyr) variant
+stable-lm-2-12b,8.15,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,"chat/instruct variant, inflection-corrected MT-Bench"
+stablelm-zephyr-3b,6.64,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,MT-Bench
+starling-7b-alpha,8.09,self-reported,https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha,,"GPT-4-judged MT-Bench; best open 7B at release, behind only GPT-4/GPT-4-Turbo"
+t-lu-2-dpo-70b,7.89,self-reported,https://huggingface.co/allenai/tulu-2-dpo-70b,,MT-Bench score (0-10)
+zephyr-7b-beta,7.34,self-reported,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta,,

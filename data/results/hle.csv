@@ -1,56 +1,27 @@
 model_slug,score,source,source_url,evaluated_at,notes
-gpt-5-5-pro,61.2,curated,,,
-gpt-5-5,52.8,curated,,,
-gpt-5,42,curated,,,
-o3,24.9,curated,,,
-gpt-4o,3.1,curated,,,
-gpt-oss-120b,14.9,curated,,,
-gpt-oss-20b,10.9,curated,,,
-claude-opus-4-8,63.9,curated,,,
-claude-opus-4-7,58.4,curated,,,
-claude-sonnet-4-6,46.2,curated,,,
-claude-sonnet-4,22.3,curated,,,
-claude-3-5-sonnet,4.8,curated,,,
-claude-haiku-4-5,17.7,curated,,,
-gemini-3-1-pro,55.6,curated,,,
-gemini-3-pro,37.5,curated,,,
-gemini-2-5-pro,21.6,curated,,,
-gemini-2-5-flash,12.1,curated,,,
-gemma-3-27b,5.1,curated,,,
-gemma-3-12b,3.8,curated,,,
-llama-4-maverick,9.4,curated,,,
-llama-4-scout,6.8,curated,,,
-llama-3-3-70b,4.2,curated,,,
-llama-3-1-405b,4.6,curated,,,
-llama-3-1-8b,2,curated,,,
-deepseek-v4-1,49.7,curated,,,
-deepseek-v3-2,30.1,curated,,,
-deepseek-r1,8.6,curated,,,
-qwen3-7-max,41.2,curated,,,
-qwen3-235b,11.8,curated,,,
-qwen3-32b,8.4,curated,,,
-qwen3-8b,4.4,curated,,,
-qwq-32b,8.2,curated,,,
-glm-5-2,47,curated,,,
-glm-5,38.2,curated,,,
-glm-4-7,31.4,curated,,,
-kimi-k2-5,44.9,curated,,,
-kimi-k2,14.9,curated,,,
-mistral-large-3,27.9,curated,,,
-mistral-small-3-2,4.9,curated,,,
-magistral-medium,12.4,curated,,,
-grok-4-2,50.8,curated,,,
-grok-4,25.4,curated,,,
-grok-4-fast,19.6,curated,,,
-phi-4,4.1,curated,,,
-phi-4-reasoning,7.1,curated,,,
-minimax-m2-5,29.6,curated,,,
-step-3-5-flash,18.2,curated,,,
-nemotron-super-49b,10.6,curated,,,
-command-a,5.2,curated,,,
-hermes-4-405b,9.7,curated,,,
-olmo-3-32b,6.3,curated,,,
-granite-4-h,3.6,curated,,,
-smollm3-3b,1.2,curated,,,
-llama-5,36.8,curated,,,
-deepseek-v4-5,52.1,curated,,,
+claude-opus-4-5,43.2,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,,"Humanity's Last Exam, with search/tools"
+claude-opus-4-5-high,43.2,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,2025-11-24,with search/tool use
+claude-opus-4-6,40,self-reported,https://www.vellum.ai/blog/claude-opus-4-6-benchmarks,2026-02-05,without tools
+deepseek-r1-0528,17.7,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,Humanity's Last Exam
+deepseek-v3-1-thinking,15.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,"Humanity's Last Exam, text-only subset, Pass@1"
+ernie-4-5-300b-a47b,4,independent,https://artificialanalysis.ai/models/ernie-4-5-300b-a47b,,Humanity's Last Exam
+ernie-5-0-preview,13,independent,https://artificialanalysis.ai/models/ernie-5-0-thinking-preview,2025-11-01,Humanity's Last Exam
+falcon-h1r-7b,11.1,self-reported,https://falcon-lm.github.io/blog/falcon-h1r-7b/,,
+gemini-2-5-flash,11,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"Humanity's Last Exam, no tools, thinking on"
+gemini-2-5-flash-lite-non-thinking,5.1,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"Humanity's Last Exam, no tools, (06-17), non-thinking"
+gemini-2-5-flash-lite-thinking,6.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"Humanity's Last Exam, no tools, (06-17), thinking on"
+gemini-2-5-pro,18.8,self-reported,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/,,"Humanity's Last Exam, no tools, SOTA at launch"
+gemini-3-flash,33.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf,2025-12-01,"Humanity's Last Exam, no tools (43.5% with search+code exec)"
+gemini-3-pro,37.5,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf,2025-11-01,"Humanity's Last Exam, no tools (45.8% with search+code exec)"
+glm-4-5-355b-a32b,14.4,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
+glm-4-5-air-106b-a12b,10.6,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
+gpt-5,24.8,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"Humanity's Last Exam, no tools, high reasoning effort"
+gpt-5-2,34.5,self-reported,https://openai.com/index/introducing-gpt-5-2/,,"Humanity's Last Exam, GPT-5.2 Thinking; confirmed"
+gpt-5-mini,16.7,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"Humanity's Last Exam, no tools, high reasoning effort"
+grok-4,25.4,self-reported,https://www.scientificamerican.com/article/elon-musks-new-grok-4-takes-on-humanitys-last-exam-as-the-ai-race-heats-up/,2025-07-09,without tools
+grok-4-heavy,44.4,self-reported,https://www.scientificamerican.com/article/elon-musks-new-grok-4-takes-on-humanitys-last-exam-as-the-ai-race-heats-up/,2025-07-09,
+kimi-k2-thinking,44.9,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,"Humanity's Last Exam, with tools"
+minimax-m2,31.8,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,with tools
+nemotron-nano-2-nemotron-nano-9b-v2,6.5,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"Reasoning On, vs Qwen3-8B's 4.4"
+openai-o3,24.9,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,"Humanity's Last Exam, with tools"
+openai-o4-mini,17.7,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,"Humanity's Last Exam, with tools"

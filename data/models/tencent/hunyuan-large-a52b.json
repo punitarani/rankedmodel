@@ -1,0 +1,45 @@
+{
+  "slug": "hunyuan-large-a52b",
+  "name": "Hunyuan-Large (A52B)",
+  "orgSlug": "tencent",
+  "familySlug": "hunyuan",
+  "releaseDate": "2024-11-05",
+  "status": "released",
+  "predecessor": "hunyuan-1st-gen",
+  "openness": "open-weights",
+  "license": "Tencent Hunyuan Community License Agreement",
+  "paramsB": 389,
+  "activeParamsB": 52,
+  "archClass": "moe",
+  "archDisplay": "Sparse Transformer-based MoE (389B total / 52B active)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "tencent/Tencent-Hunyuan-Large",
+    "gh": "Tencent-Hunyuan/Tencent-Hunyuan-Large"
+  },
+  "note": "389B-total/52B-active open-weights MoE, the largest open-source Transformer-based MoE at release; beats Llama-3.1-405B on MMLU, GSM8K, MATH and HumanEval.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 215,
+  "vramFp16Gb": 780,
+  "tps4090": null,
+  "tpsNote": "389B total params vastly exceed a single RTX 4090's 24GB VRAM even at 4-bit; requires multi-GPU or heavy CPU offload to serve.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -2,16 +2,16 @@
   "slug": "llama-3-1-8b",
   "name": "Llama 3.1 8B",
   "orgSlug": "meta",
-  "familySlug": "llama-3",
+  "familySlug": "llama-3-1",
   "releaseDate": "2024-07-23",
   "status": "released",
   "predecessor": null,
   "openness": "open-weights",
-  "license": "Llama 3.1 Community",
-  "paramsB": 8,
+  "license": "Llama 3.1 Community License Agreement",
+  "paramsB": 8.03,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense",
+  "archDisplay": "Dense decoder-only Transformer (GQA)",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -19,32 +19,31 @@
   "langCount": 8,
   "capabilities": {
     "reasoning": false,
-    "coding": false,
+    "coding": true,
     "vision": false,
     "functionCalling": true,
     "toolUse": true,
-    "agentic": false
+    "agentic": true
   },
   "apiAvailable": true,
-  "price": {
-    "input": 0.05,
-    "output": 0.08
-  },
+  "price": null,
   "links": {
-    "hf": "meta-llama/Llama-3.1-8B-Instruct",
+    "hf": "meta-llama/Meta-Llama-3.1-8B",
     "gh": "meta-llama/llama-models",
-    "docs": "llama.com"
+    "docs": "llama.com/docs/model-cards-and-prompt-formats/llama3_1"
   },
-  "note": "The default small model of the Llama 3 era.",
+  "note": "Upgraded 8B with 128K context, native tool calling, and eight-language multilingual support.",
   "quants": [
     "GGUF Q4",
-    "GGUF Q8",
     "AWQ",
     "GPTQ",
-    "EXL2"
+    "MLX"
   ],
-  "vramQ4Gb": 4.9,
+  "vramQ4Gb": 5.5,
   "vramFp16Gb": 16,
-  "tps4090": 128,
-  "tpsNote": null
+  "tps4090": 100,
+  "tpsNote": "GGUF Q4_K_M fits fully in 24GB VRAM; ~95-110 tok/s widely reported via llama.cpp/Ollama",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

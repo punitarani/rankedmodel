@@ -1,0 +1,45 @@
+{
+  "slug": "palmyra-x-004",
+  "name": "Palmyra X 004",
+  "orgSlug": "writer",
+  "familySlug": "palmyra-x",
+  "releaseDate": "2024-10-09",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary (API-only, no released weights)",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Transformer, enterprise frontier model (~150B, architecture undisclosed)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 2.5,
+    "output": 10
+  },
+  "links": {
+    "docs": "dev.writer.com"
+  },
+  "note": "Topped Berkeley's Tool-Calling Leaderboard (78.76% ACC) at launch; priced $5/$15 per M tokens at launch, now $2.50/$10.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

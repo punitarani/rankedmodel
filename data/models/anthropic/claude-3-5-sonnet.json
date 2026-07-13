@@ -2,42 +2,45 @@
   "slug": "claude-3-5-sonnet",
   "name": "Claude 3.5 Sonnet",
   "orgSlug": "anthropic",
-  "familySlug": "claude-3",
+  "familySlug": "claude-3-5",
   "releaseDate": "2024-06-20",
-  "status": "released",
+  "status": "deprecated",
   "predecessor": null,
   "openness": "closed",
-  "license": "Proprietary",
+  "license": "Proprietary (Anthropic Commercial Terms of Service)",
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense (undisclosed)",
+  "archDisplay": "Dense multimodal Transformer (parameter count undisclosed)",
   "ctxK": 200,
   "modalities": [
     "text",
     "vision"
   ],
-  "langCount": 30,
+  "langCount": null,
   "capabilities": {
-    "reasoning": false,
+    "reasoning": true,
     "coding": true,
     "vision": true,
     "functionCalling": true,
     "toolUse": true,
-    "agentic": false
+    "agentic": true
   },
-  "apiAvailable": true,
+  "apiAvailable": false,
   "price": {
     "input": 3,
     "output": 15
   },
   "links": {
-    "docs": "docs.anthropic.com"
+    "docs": "docs.claude.com"
   },
-  "note": "Defined the coding-assistant era of 2024.",
+  "note": "Mid-tier that beat Opus 3, launched the Artifacts feature, and led coding/agentic benchmarks at a fraction of Opus's price.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
   "tps4090": null,
-  "tpsNote": null
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

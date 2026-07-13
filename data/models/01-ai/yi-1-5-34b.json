@@ -1,0 +1,46 @@
+{
+  "slug": "yi-1-5-34b",
+  "name": "Yi-1.5 34B",
+  "orgSlug": "01-ai",
+  "familySlug": "yi-1-5",
+  "releaseDate": "2024-05-13",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 34.4,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer, 34B",
+  "ctxK": 4,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "01-ai/Yi-1.5-34B",
+    "gh": "01-ai/Yi-1.5"
+  },
+  "note": "Continually pretrained on 500B extra high-quality tokens; separate 16K/32K-context chat checkpoints also released.",
+  "quants": [
+    "GGUF Q4",
+    "EXL2"
+  ],
+  "vramQ4Gb": 20,
+  "vramFp16Gb": 69,
+  "tps4090": null,
+  "tpsNote": "Q4 GGUF (~20GB) fits a 24GB card only with reduced context headroom; no verified llama.cpp 4090 tok/s figure found.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

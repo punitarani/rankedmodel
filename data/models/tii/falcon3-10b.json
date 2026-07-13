@@ -1,0 +1,48 @@
+{
+  "slug": "falcon3-10b",
+  "name": "Falcon3-10B",
+  "orgSlug": "tii",
+  "familySlug": "falcon-3",
+  "releaseDate": "2024-12-17",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "TII Falcon-LLM License 2.0",
+  "paramsB": 10,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense decoder-only transformer (depth-upscaled from Falcon3-7B, GQA, SwiGLU)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 4,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "tiiuae/Falcon3-10B-Instruct",
+    "docs": "falconllm.tii.ae/falcon3"
+  },
+  "note": "Depth-upscaled flagship of Falcon 3; topped Hugging Face's sub-13B leaderboard at release.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ",
+    "MLX"
+  ],
+  "vramQ4Gb": 6,
+  "vramFp16Gb": 22.94,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

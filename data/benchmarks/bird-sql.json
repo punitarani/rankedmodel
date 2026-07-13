@@ -1,0 +1,10 @@
+{
+  "slug": "bird-sql",
+  "name": "BIRD-SQL",
+  "category": "coding",
+  "unit": "%",
+  "description": "Text-to-SQL generation over large, real-world databases.",
+  "normMin": 0,
+  "normMax": 90,
+  "higherIsBetter": true
+}

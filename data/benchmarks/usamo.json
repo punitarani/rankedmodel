@@ -1,0 +1,10 @@
+{
+  "slug": "usamo",
+  "name": "USAMO",
+  "category": "math",
+  "unit": "%",
+  "description": "USA Mathematical Olympiad problem set.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

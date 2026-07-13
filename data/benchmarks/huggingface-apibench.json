@@ -1,0 +1,10 @@
+{
+  "slug": "huggingface-apibench",
+  "name": "APIBench (HuggingFace)",
+  "category": "agents",
+  "unit": "%",
+  "description": "Zero-shot, no-retriever API-call generation over HuggingFace APIs.",
+  "normMin": 0,
+  "normMax": 100,
+  "higherIsBetter": true
+}

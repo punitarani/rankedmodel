@@ -1,0 +1,10 @@
+{
+  "slug": "mmlu-stem",
+  "name": "MMLU (STEM)",
+  "category": "knowledge",
+  "unit": "%",
+  "description": "STEM-subject slice of MMLU.",
+  "normMin": 30,
+  "normMax": 100,
+  "higherIsBetter": true
+}

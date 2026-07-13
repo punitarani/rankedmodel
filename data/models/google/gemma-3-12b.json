@@ -2,16 +2,16 @@
   "slug": "gemma-3-12b",
   "name": "Gemma 3 12B",
   "orgSlug": "google",
-  "familySlug": "gemma",
+  "familySlug": "gemma-3",
   "releaseDate": "2025-03-12",
   "status": "released",
   "predecessor": null,
   "openness": "open-weights",
   "license": "Gemma",
-  "paramsB": 12,
+  "paramsB": 12.2,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense",
+  "archDisplay": "Dense decoder-only Transformer, GQA + 5:1 local:global attention, shared frozen SigLIP-400M vision encoder",
   "ctxK": 128,
   "modalities": [
     "text",
@@ -23,24 +23,29 @@
     "coding": true,
     "vision": true,
     "functionCalling": true,
-    "toolUse": false,
+    "toolUse": true,
     "agentic": false
   },
-  "apiAvailable": false,
+  "apiAvailable": true,
   "price": null,
   "links": {
     "hf": "google/gemma-3-12b-it",
     "gh": "google-deepmind/gemma",
-    "docs": "ai.google.dev/gemma"
+    "docs": "ai.google.dev/gemma/docs/core"
   },
-  "note": "Sweet spot for 12GB consumer cards.",
+  "note": "Sweet spot for 12GB consumer cards; dense decoder + shared SigLIP vision encoder, 128K context.",
   "quants": [
-    "GGUF Q4",
-    "GGUF Q8",
-    "AWQ"
+    "GGUF Q4_K_M",
+    "GGUF Q8_0",
+    "AWQ",
+    "MLX",
+    "QAT Int4"
   ],
-  "vramQ4Gb": 8.1,
+  "vramQ4Gb": 6.6,
   "vramFp16Gb": 24,
-  "tps4090": 74,
-  "tpsNote": null
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
 }

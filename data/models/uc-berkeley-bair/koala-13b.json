@@ -1,0 +1,46 @@
+{
+  "slug": "koala-13b",
+  "name": "Koala 13B",
+  "orgSlug": "uc-berkeley-bair",
+  "familySlug": "koala",
+  "releaseDate": "2023-04-03",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Research-only: LLaMA non-commercial license (base weights) + OpenAI ToS (ShareGPT-derived data); training/serving code Apache-2.0",
+  "paramsB": 13,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "LLaMA (dense decoder-only transformer)",
+  "ctxK": 2,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "young-geng/koala",
+    "gh": "young-geng/EasyLM"
+  },
+  "note": "LLaMA 13B fine-tuned on curated web dialogue (ShareGPT + HC3); a parallel academic effort to Vicuna, often preferred over Alpaca in blind human evals.",
+  "quants": [
+    "GPTQ",
+    "GGML"
+  ],
+  "vramQ4Gb": 8,
+  "vramFp16Gb": 26,
+  "tps4090": null,
+  "tpsNote": "13B at Q4 fits comfortably in 24GB VRAM; no model-specific RTX 4090 llama.cpp measurement found, though similarly-sized Llama models typically reach 60-90 tok/s.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

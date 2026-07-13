@@ -1,0 +1,10 @@
+{
+  "slug": "coco-caption",
+  "name": "COCO Captions",
+  "category": "vision",
+  "unit": "CIDEr",
+  "description": "Zero-shot COCO image-captioning quality (CIDEr).",
+  "normMin": 0,
+  "normMax": 140,
+  "higherIsBetter": true
+}

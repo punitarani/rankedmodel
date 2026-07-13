@@ -1,0 +1,45 @@
+{
+  "slug": "h2o-danube3-4b",
+  "name": "H2O-Danube3 4B",
+  "orgSlug": "h2o-ai",
+  "familySlug": "h2o-danube",
+  "releaseDate": "2024-07-12",
+  "status": "released",
+  "predecessor": "h2o-danube-1-8b",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 3.96,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense Llama-2-style transformer, wide architecture, GQA (24 layers, 3840 hidden)",
+  "ctxK": 8,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 1,
+  "capabilities": {
+    "reasoning": false,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "h2oai/h2o-danube3-4b-chat",
+    "docs": "h2o.ai/platform/danube"
+  },
+  "note": "Apache-2.0 small model trained on 6T tokens, compact enough to run locally on a modern smartphone.",
+  "quants": [
+    "GGUF Q4"
+  ],
+  "vramQ4Gb": 2.6,
+  "vramFp16Gb": 8.3,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

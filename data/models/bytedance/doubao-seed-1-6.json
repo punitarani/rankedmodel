@@ -1,0 +1,46 @@
+{
+  "slug": "doubao-seed-1-6",
+  "name": "Doubao-Seed-1.6",
+  "orgSlug": "bytedance",
+  "familySlug": "doubao",
+  "releaseDate": "2025-06-11",
+  "status": "released",
+  "predecessor": "doubao-1-5-pro",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": 230,
+  "activeParamsB": 23,
+  "archClass": "moe",
+  "archDisplay": "Mixture-of-Experts, 230B total / 23B active, with Adaptive-CoT (AdaCoT)",
+  "ctxK": 256,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.111,
+    "output": 0.278
+  },
+  "links": {
+    "docs": "seed.bytedance.com/en/blog/introduction-to-techniques-used-in-seed1-6"
+  },
+  "note": "Adaptive-CoT multimodal flagship, 256K context, ~63% cheaper than Doubao 1.5; spans standard/thinking/flash variants.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

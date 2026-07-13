@@ -1,0 +1,47 @@
+{
+  "slug": "flan-t5-xxl",
+  "name": "Flan-T5 XXL",
+  "orgSlug": "google",
+  "familySlug": "flan-t5",
+  "releaseDate": "2022-10-20",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-source",
+  "license": "Apache 2.0",
+  "paramsB": 11,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense encoder-decoder Transformer (11B, T5 + Flan instruction tuning)",
+  "ctxK": 1,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": false,
+    "vision": false,
+    "functionCalling": false,
+    "toolUse": false,
+    "agentic": false
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "google/flan-t5-xxl",
+    "gh": "google-research/FLAN",
+    "docs": "arxiv.org/abs/2210.11416"
+  },
+  "note": "11B instruction-tuned T5; popularized the Flan instruction-tuning recipe on fully open weights.",
+  "quants": [
+    "GGUF Q4",
+    "GGUF Q8"
+  ],
+  "vramQ4Gb": 7,
+  "vramFp16Gb": 22,
+  "tps4090": null,
+  "tpsNote": "T5/encoder-decoder support in llama.cpp is limited/experimental; no widely measured RTX 4090 llama.cpp throughput figures found.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

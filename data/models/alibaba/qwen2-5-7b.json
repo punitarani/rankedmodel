@@ -1,0 +1,49 @@
+{
+  "slug": "qwen2-5-7b",
+  "name": "Qwen2.5-7B",
+  "orgSlug": "alibaba",
+  "familySlug": "qwen2-5",
+  "releaseDate": "2024-09-19",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 7.61,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Dense transformer (GQA)",
+  "ctxK": 128,
+  "modalities": [
+    "text"
+  ],
+  "langCount": 29,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": false,
+  "price": null,
+  "links": {
+    "hf": "Qwen/Qwen2.5-7B",
+    "gh": "QwenLM/Qwen2.5",
+    "docs": "qwenlm.github.io/blog/qwen2.5"
+  },
+  "note": "Highly-downloaded Apache-2.0 small dense model; strong MMLU-Pro/GSM8K for its size.",
+  "quants": [
+    "GGUF",
+    "AWQ",
+    "GPTQ Int4",
+    "MLX"
+  ],
+  "vramQ4Gb": 4.7,
+  "vramFp16Gb": 15.2,
+  "tps4090": null,
+  "tpsNote": "Fits easily in 24GB VRAM at Q4 (~4.7GB); no independently verified 4090 llama.cpp tok/s figure found.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

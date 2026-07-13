@@ -1,0 +1,46 @@
+{
+  "slug": "nous-hermes-2-mixtral-8x7b-dpo",
+  "name": "Nous Hermes 2 Mixtral 8x7B DPO",
+  "orgSlug": "nous-research",
+  "familySlug": "hermes",
+  "releaseDate": "2024-01-15",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache-2.0",
+  "paramsB": 46.7,
+  "activeParamsB": 12.9,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts transformer (8 experts, top-2 routing, Mixtral architecture)",
+  "ctxK": 32,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": false,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": null,
+  "links": {
+    "hf": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
+  },
+  "note": "Flagship MoE fine-tune of Mixtral 8x7B, SFT+DPO on 1M+ mostly GPT-4-generated samples; first community model to beat Mixtral Instruct broadly.",
+  "quants": [
+    "GGUF Q4_K_M",
+    "GPTQ",
+    "AWQ"
+  ],
+  "vramQ4Gb": 30,
+  "vramFp16Gb": 93,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,2 @@
+model_slug,score,source,source_url,evaluated_at,notes
+teuken-7b-instruct,43,self-reported,https://huggingface.co/openGPT-X/Teuken-7B-instruct-commercial-v0.4,,"EU21-MMLU, averaged across 21 EU languages (0-1 scale)"
