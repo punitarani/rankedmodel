@@ -50,6 +50,77 @@
     "paramsB": "https://huggingface.co/CohereLabs/c4ai-command-r-v01",
     "ctxK": "https://huggingface.co/CohereLabs/c4ai-command-r-v01"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 68.2,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json",
+      "notes": "Computed as the mean of all 57 MMLU (hendrycksTest-*) subject accuracies in the raw Open LLM Leaderboard v1 eval run (2024-03-22, 5-shot), the same methodology the leaderboard itself used to display its MMLU column."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 65.53,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json",
+      "notes": "Open LLM Leaderboard v1, harness|arc:challenge|25 (25-shot), acc_norm."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 87,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json",
+      "notes": "Open LLM Leaderboard v1, harness|hellaswag|10 (10-shot), acc_norm."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 52.32,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json",
+      "notes": "Open LLM Leaderboard v1, harness|truthfulqa:mc|0, MC2 score."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 81.53,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json",
+      "notes": "Open LLM Leaderboard v1, harness|winogrande|5 (5-shot), acc."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 56.63,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json",
+      "notes": "Open LLM Leaderboard v1, harness|gsm8k|5 (5-shot), acc."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 53.52,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r-v01/results_2025-02-13T18-27-04.338360.json",
+      "notes": "Open LLM Leaderboard v2, leaderboard_bbh, 3-shot, acc_norm."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 30.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r-v01/results_2025-02-13T18-27-04.338360.json",
+      "notes": "Open LLM Leaderboard v2, leaderboard_gpqa_diamond (0-shot), acc_norm -- matches the taxonomy's gpqa slug definition (GPQA Diamond)."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 33.69,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r-v01/results_2025-02-13T18-27-04.338360.json",
+      "notes": "Open LLM Leaderboard v2, leaderboard_mmlu_pro, 5-shot, acc."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 62.66,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r-v01/results_2025-02-13T18-27-04.338360.json",
+      "notes": "Open LLM Leaderboard v2, leaderboard_ifeval, prompt_level_strict_acc."
+    }
+  ],
   "verificationNotes": "Confirmed via huggingface.co/CohereLabs/c4ai-command-r-v01 (35B params, 128K context, CC-BY-NC + Acceptable Use Policy license, 10 optimized languages plus 13 more pretrained) and cohere.com/blog/command-r (blog post titled 'Command R: Retrieval-Augmented Generation at Production Scale' dated March 11, 2024, matching the release date). Pricing $0.5/$1.5 corroborated independently (Command-R Mar'24 rate). No changes."
 }

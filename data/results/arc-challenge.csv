@@ -3,58 +3,133 @@ ai21-jamba,64.4,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
 ai21-jamba-1-5-large,93,self-reported,https://arxiv.org/html/2408.12570v1,,
 ai21-jamba-1-5-mini,85.7,self-reported,https://arxiv.org/html/2408.12570v1,,
 airoboros-70b-l2,68.5,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot, 25-shot"
+amazon-nova-lite,92.4,self-reported,https://cdn.amazon.science/96/7d/0d3e59514abf8fdcfafcdc574300/nova-tech-report-20250317-0810.pdf,,"ARC-Challenge (0-shot) from Table 2 (core text capabilities) of the official 'Amazon Nova Family of Models: Technical Report and Model Card' (also on arXiv as 2506.12103), fetched and read directly."
 amazon-nova-micro,90.2,self-reported,https://deepranking.ai/llm-models/nova-micro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 amazon-nova-pro,94.8,self-reported,https://deepranking.ai/llm-models/nova-pro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+apple-dclm-baseline-7b,59.9,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,"'ARC Challenge' row (0.5990) on the model's official HF eval table, same table the existing arc-easy/mmlu/winogrande/gsm8k/hellaswag entries were sourced from."
 apple-openelm-270m-3b,35.58,self-reported,https://huggingface.co/apple/OpenELM,2024-04-01,"OpenELM-3B (pretrained), ARC-Challenge, zero-shot"
 btlm-3b-8k,37.6,self-reported,https://arxiv.org/abs/2309.11568,,0-shot
 cerebras-gpt-13b,36.7,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,0-shot
+claude-2,91,self-reported,https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf,2023-07-11,"5-shot, same Section 4.3 table (Claude 2 column)."
 claude-3-haiku,89.2,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,25-shot
 claude-3-opus,96.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,25-shot
 claude-3-sonnet,93.2,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,25-shot
 comma-v0-1-2t,45.8,self-reported,https://huggingface.co/common-pile/comma-v0.1-2t,,
+command-r,65.53,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json,,"Open LLM Leaderboard v1, harness|arc:challenge|25 (25-shot), acc_norm."
+dbrx,68.9,self-reported,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm,,"25-shot, DBRX Instruct, from the official Databricks launch blog's open-model comparison table"
 decilm-7b,59.39,self-reported,https://huggingface.co/Deci/DeciLM-7B,,
+deepseek-coder-v2-236b,92.8,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,2024-06-17,
+deepseek-llm-67b,64.1,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6"
+deepseekmoe-16b,49.8,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, DeepSeekMoE 16B column, 0-shot accuracy."
 falcon-2-11b,59.73,independent,https://huggingface.co/blog/falcon2-11b,2024-05-13,25-shot
+falcon-40b,61.86,independent,https://huggingface.co/blog/falcon2-11b,2024-05-24,"25-shot, same comparison table"
+falcon-7b,44.5,self-reported,https://arxiv.org/abs/2311.16867,,"From Table 21 of the Falcon tech report (outlining choices in the prompt, per their Section 6.1 methodology)."
 falcon-h1-34b,61.01,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
 falcon-mamba-7b,62.03,independent,https://huggingface.co/blog/falconmamba,2024-08-12,
+falcon3-10b,66.2,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,"25-shot, internal pipeline table."
 falcon3-7b,62.6,self-reported,https://huggingface.co/tiiuae/Falcon3-7B-Instruct,,25-shot
+galactica-120b,67.9,self-reported,https://ar5iv.labs.arxiv.org/html/2211.09085,2022-11-01,"0-shot, in-domain, Table 10 'Question Answering Results'. Table caption confirms this column is for the 120B model (footnote only redirects Abstract Algebra and Medical Genetics rows to 30B)."
 gemma-2-27b,71.4,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,25-shot
 gemma-2-9b,68.4,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,25-shot
 gemma-2b,42.1,self-reported,https://huggingface.co/google/gemma-2b,,
 gemma-7b,53.2,self-reported,https://arxiv.org/html/2403.08295v4,,
+gpt-3-175b,51.5,self-reported,https://arxiv.org/abs/2005.14165,,Few-shot (Table 3.6)
 gpt-3-5-turbo,85.2,self-reported,https://arxiv.org/abs/2303.08774,,
 gpt-4,96.3,self-reported,https://arxiv.org/abs/2303.08774,,
+gpt-4o,96.7,independent,https://arxiv.org/abs/2407.21783,2024-07-23,"0-shot. From the same Meta Llama-3 paper comparison table (Table 2), verified directly against the PDF."
+gpt-j-6b,34,self-reported,https://arxiv.org/abs/2204.06745,2022-04-14,"Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.340)."
+gpt-neox-20b,38,self-reported,https://arxiv.org/abs/2204.06745,2022-04-14,"Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.380)."
+granite-3-0-2b-instruct,54.35,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,"ARC-C, pass@1"
+granite-3-0-8b-instruct,64.16,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"ARC-C, 25-shot. Confirmed in HF model-index YAML and technical report Table 10."
 granite-3-1-8b-instruct,62.62,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HF Open LLM Leaderboard V1
 h2o-danube-1-8b,39.25,self-reported,https://huggingface.co/h2oai/h2o-danube-1.8b-chat,,
 h2o-danube3-4b,58.96,independent,https://huggingface.co/h2oai/h2o-danube3-4b-chat,,Open LLM Leaderboard v1
 hermes-3-405b,69.45,self-reported,https://arxiv.org/pdf/2408.11857,,0-shot
+hunyuan-large-a52b,95,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,"ARC-C, pretrain/base model table."
+jais-13b,35.8,self-reported,https://huggingface.co/inceptionai/jais-13b,,"Arabic-translated ARC-Challenge (ARC-C), listed in the official HF model card's Arabic evaluation table alongside the already-recorded MMLU/HellaSwag/TruthfulQA rows."
 jais-70b,54.9,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,"English eval, jais-adapted-70b-chat"
+krutrim-2-12b,60,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,"ARC_Challenge, 0-shot accuracy"
+lg-exaone-3-0-7-8b-instruct,63.7,self-reported,https://arxiv.org/abs/2408.03541,2024-08-01,ARC-C
+lg-exaone-3-5-32b-instruct,91.7,self-reported,https://arxiv.org/abs/2412.04862,2024-12-01,ARC-C
 llama-13b,52.7,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+llama-2-13b-chat,51.37,independent,https://huggingface.co/datasets/open-llm-leaderboard/meta-llama__Llama-2-13b-chat-hf-details,2024-06-16,acc_norm from HF Open LLM Leaderboard v2's independent eval run of meta-llama/Llama-2-13b-chat-hf (fetched the raw results JSON directly)
+llama-2-70b,57.4,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (ARC-c column)."
+llama-2-7b,45.9,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (ARC-c column)."
+llama-3-1-405b,96.9,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct,2024-07-23,"0-shot acc, Instruction-tuned 405B row of the official HF model card's 'Instruction tuned models' benchmark table (directly re-fetched and confirmed verbatim: 'ARC-C | 0 | acc | ... | 96.9')."
+llama-3-1-70b,94.8,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md,2024-07-01,"Instruct, 0-shot acc, from official Llama 3.1 model card benchmark table"
+llama-3-1-8b,83.4,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md,2024-07-01,"Instruct, 0-shot acc, from official Llama 3.1 model card benchmark table"
 llama-3-1-minitron-4b,55.6,self-reported,https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/,2024-08-14,25-shot
 llama-3-2-1b,59.4,self-reported,https://huggingface.co/meta-llama/Llama-3.2-1B,2024-09-01,"Instruct, BF16"
 llama-3-2-3b,78.6,self-reported,https://huggingface.co/meta-llama/Llama-3.2-3B,2024-09-01,"Instruct, BF16"
+llama-3-70b,93,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct,,"ARC-Challenge, 25-shot, pretrained/base checkpoint."
+llama-3-8b,78.6,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"ARC-Challenge, 25-shot, pretrained/base checkpoint."
 llama-33b,57.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+llama-65b,56,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table (consistent with the 57.8/52.7 values already recorded for sibling LLaMA-33B/13B checkpoints from the same table)"
+llama-7b,47.6,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table (consistent with the 52.7/57.8 values already recorded for sibling LLaMA-13B/33B checkpoints from the same table)"
+luminous-supreme-70b,44.2,self-reported,https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/,2023-02-20,"Core 16-task suite (0-shot), Aleph Alpha's own official benchmark blog comparing luminous-supreme (70B, their 'current best model') against davinci/BLOOM/OPT."
 minicpm-2b,68,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table (ARC-c)
+ministral-3b,64.2,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Listed as 'Arc-c' in the base model comparison table
+ministral-8b,71.9,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Listed as 'Arc-c' in the base model comparison table
 mistral-7b,55.5,self-reported,https://arxiv.org/abs/2310.06825,,
+mistral-large,94,self-reported,https://mistral.ai/news/mistral-large/,2024-02-26,Table reports both 'Arc C (5-shot)'=94.2% and 'Arc C (25-shot)'=94.0%; the 25-shot figure was used as it matches the more common standard ARC-Challenge eval convention.
 mixtral-8x7b,59.7,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
+molmo-2-8b,89.6,self-reported,https://arxiv.org/abs/2601.10611,,"ARC-Challenge; Molmo2 Technical Report Table 19, Molmo2-8B row."
+mpt-30b,56,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b,2023-12-04,"25-shot acc_norm (harness|arc:challenge|25 = 0.5597), HF Open LLM Leaderboard v1 evaluation-run JSON for mosaicml/mpt-30b, confirmed via direct curl+grep of the raw results JSON"
+mpt-7b-storywriter-65k,45.65,independent,"https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",,"Open LLM Leaderboard-style ARC-Challenge 25-shot score for the StoryWriter fine-tune specifically, relayed via the LLM Explorer aggregator. No official model card/paper score exists for this fiction fine-tune; verified this figure differs from base MPT-7B's ARC score (59.6) on the same aggregator, so it is not a copy-paste artifact."
+nemotron-4-15b,55.5,self-reported,https://arxiv.org/abs/2402.16819,,"Table 3, zero-shot."
 nemotron-4-340b,94.28,self-reported,https://huggingface.co/nvidia/Nemotron-4-340B-Base,2024-06-14,
 nemotron-h-56b,94.97,self-reported,https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K,,25-shot
 nous-hermes-2-mixtral-8x7b-dpo,64.25,self-reported,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO,,"acc_norm, part of GPT4All suite"
+olmo-2-13b,83.5,self-reported,https://arxiv.org/abs/2501.00656,2025-01-02,"ARC-Challenge; OLMo 2 Technical Report ('2 OLMo 2 Furious') Table 6, base OLMo-2-13B (non-instruct) row - a cleanly labeled table with unambiguous column headers (Avg, FLOPs, MMLU, ARC-C, HSwag, WinoG, NQ, DROP, AGIEval, GSM8K, MMLUPro, TriviaQA)."
 olmo-2-7b,79.8,self-reported,https://huggingface.co/allenai/OLMo-2-1124-7B,,
 olmo-7b,48.5,self-reported,https://huggingface.co/allenai/OLMo-7B,,
 olmoe-1b-7b-0924,62.1,self-reported,https://huggingface.co/allenai/OLMoE-1B-7B-0924,,
+openhermes-2-5-mistral-7b,60.07,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,2023-11-03,"acc_norm, part of GPT4All suite on the official HF model card."
 openllama-7b,38,self-reported,https://github.com/openlm-research/open_llama,,"arc_challenge/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
 opt-175b,43.94,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline, GPTQ paper"
 opt-66b,40.02,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline, GPTQ paper"
+opt-iml-30b,45.5,self-reported,https://ar5iv.labs.arxiv.org/html/2212.12017,2022-12-22,"0-shot accuracy on ARC-Challenge for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', ARC(c) column = 45.5/46.7 (0-shot/32-shot)."
+orca-2-13b,83.36,self-reported,https://ar5iv.labs.arxiv.org/html/2311.11045,2023-11-18,"Zero-shot, Table 2 of the Orca 2 technical report, Orca-2-13B row (default/empty system message)."
+palm-2,95.1,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"Instruction-tuned PaLM 2 (L), 4-shot ARC-Challenge, from Table 5."
+palm-540b,53,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"PaLM 540B, 0-shot ARC-Challenge, from Table 4."
+pharia-1-llm-7b-control,54.6,self-reported,https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control,2024-08-26,"25-shot, acc_norm = 0.546 on the HF model card's 'General Knowledge Benchmarks' table."
 phi-1-5-1-3b,44.4,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,,zero-shot accuracy
 phi-2-2-7b,75.9,self-reported,https://arxiv.org/pdf/2404.14219,,
+phi-3-5-mini-3-8b,84.6,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,10-shot; official HF model card benchmark table.
+phi-3-5-moe-16x3-8b-6-6b-active,91,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,"ARC Challenge, from official comparison table"
+phi-3-medium-14b,91.6,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,10-shot
+phi-3-mini-3-8b,86.3,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,10-shot
+phi-3-small-7b,90.7,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,10-shot
+phi-4-mini-3-8b,83.7,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, 'Arc-C' (10-shot)."
+phi-4-mini-instruct,83.7,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, Arc-C (10-shot)."
 poro-34b,53.16,self-reported,https://arxiv.org/abs/2404.01856,,English
+pythia-1-4b,26,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json,2023-04-03,"Zero-shot, final checkpoint (step143000) — arc_challenge acc=0.2602."
+pythia-12b,31.8,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"Zero-shot, final checkpoint (step143000) — arc_challenge acc=0.3183."
+pythia-6-9b,31.3,self-reported,https://arxiv.org/abs/2304.01373,,"Zero-shot ARC-Challenge accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.313±0.014."
 qwen1-5-110b,69.6,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Base model
+qwen2-5-14b,67.3,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 25-shot (ARC-C)."
+qwen2-5-32b,70.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 25-shot (ARC-C)."
+qwen2-5-72b,72.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"ARC-C, base model"
+qwen2-5-7b,63.7,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"ARC-C, base model"
+qwen2-57b-a14b,64.1,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, ARC-C 25-shot"
+qwen2-72b,68.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, ARC-C 25-shot"
+qwen2-7b,60.6,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, ARC-C 25-shot"
+redpajama-incite-7b-base,39.25,self-reported,https://arxiv.org/abs/2411.12372,,"LM-eval-harness acc_norm, Table 9 ('LM eval harness results for RedPajama-INCITE-Base-7B-v1 and instruction tuned model') of the official RedPajama technical paper (Together AI et al., NeurIPS 2024 D&B track)."
+redpajama-incite-7b-instruct,40.78,self-reported,https://arxiv.org/abs/2411.12372,,"LM-eval-harness acc_norm, Table 9 of the official RedPajama technical paper (Together AI et al., NeurIPS 2024 D&B track)."
 sarvam-1-2b,58.5,self-reported,https://huggingface.co/sarvamai/sarvam-1,2024-10-24,zero-shot
+skywork-13b,50.2,self-reported,https://arxiv.org/pdf/2310.19341,2023-10-30,"From Table 11 of the Skywork-13B technical report (arXiv:2310.19341), column 'ARC-C'. Distinct from the pre-existing corpus rows (C-Eval/CMMLU/MMLU/GSM8K), which come from Table 5 of the same paper."
 smollm2-1-7b,60.5,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,"base model, ARC average"
+stable-beluga-1-freewilly-1-65b,68.2,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot (2023-09-04), ARC-Challenge 25-shot: 68.2, for stabilityai/StableBeluga1-Delta."
+stable-beluga-2-freewilly-2-70b,71.1,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot (2023-09-04), ARC-Challenge 25-shot: 71.1, for stabilityai/StableBeluga2. Also independently corroborated by a Japanese blog post (note.com/bakushu) quoting the same leaderboard figure."
 stable-lm-2-1-6b,43.69,independent,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,"instruct variant, 25-shot"
 stable-lm-2-12b,65.02,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,chat variant
 stablelm-3b-4e1t,46.59,independent,https://huggingface.co/stabilityai/stablelm-3b-4e1t,,"Open LLM Leaderboard, 25-shot"
+stablelm-zephyr-3b,46.08,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,"AI2 Reasoning Challenge (25-Shot), Open LLM Leaderboard, from the model-index metadata embedded in the HF README.md."
 teuken-7b-instruct,0.569,self-reported,https://huggingface.co/openGPT-X/Teuken-7B-instruct-commercial-v0.4,,"EU21-ARC, averaged across 21 EU languages"
+upstage-solar-10-7b,61.95,self-reported,https://arxiv.org/abs/2312.15166,,"Table 2 of the SOLAR 10.7B paper (base model row), Open-LLM-Leaderboard-style 25-shot ARC-Challenge."
+upstage-solar-pro,68.86,self-reported,https://huggingface.co/upstage/solar-pro-preview-instruct,,"HF model card benchmark table, ARC-C column, 25-shot acc_norm per the card's own eval-protocol notes."
 xgen-7b-8k,41.2,self-reported,https://ar5iv.labs.arxiv.org/html/2309.03450,,
 yi-1-5-34b,66.3,independent,https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-34B-32K-details,,
+yi-1-5-9b,61.52,independent,https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-9B-details,2024-06-16,"Yi-1.5-9B base model, Open LLM Leaderboard v2, acc_norm."
+yi-6b,50.3,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,"25-shot. Yi technical report Table 8 (depth-upscaling section, Yi-6B baseline row)."
 zephyr-7b-beta,62.03,self-reported,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta,,25-shot

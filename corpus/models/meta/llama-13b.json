@@ -114,6 +114,78 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
       "notes": "0-shot exact match, Table 5",
       "evaluatedAt": "2023-02-01"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 80.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Table 3 'Zero-shot performance on Common Sense Reasoning tasks'"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 50.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Table 3"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 74.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Table 3"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 56.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Table 3. Note: this exceeds the taxonomy's typical 40-50 range for this slug, but is the exact figure printed in the paper (confirmed via direct PDF text extraction) \u2014 GPT-3 175B and PaLM 540B score even higher (57.6/53.4) on the same table row, so a 13B model at 56.4 is plausible for this particular eval setup."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 47.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "RACE-high split, Table 6 'Reading Comprehension' (RACE-middle 61.6 not mapped, no taxonomy slug for it)"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 3.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "pass@1 (maj1@k variant separately reported as 8.8), Table 7. Note: below the taxonomy's typical 20-100 range, but this is the genuine, low, published figure for this small non-math-tuned 2023 base model."
+    },
+    {
+      "benchmarkSlug": "mmlu-stem",
+      "score": 35.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "5-shot, Table 9 MMLU breakdown (Humanities 45.0 / STEM 35.8 / Social Sciences 53.8 / Other 53.3 / Average 46.9 \u2014 average matches the existing corpus entry exactly)"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 37,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "3-shot. Not in the original LLaMA-1 paper \u2014 this is Meta's own re-evaluation of LLaMA-1 13B as a baseline in Table 3 of the later Llama 2 paper (grouped-benchmark comparison table), where it's reported alongside Llama-1 13B's MMLU=46.9 which exactly matches the existing corpus entry, corroborating this row's reliability."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 33.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "3-5 shot, English tasks average. Same source/table as the BBH addition above (Llama 2 paper's Table 3 baseline comparison)."
     }
   ],
   "verificationNotes": "Confirmed 13B params, 2023-02-24 release date, and gated non-commercial license via Meta's official LLaMA blog post (fetched directly). Confirmed via arxiv abstract page that the paper explicitly states 'LLaMA-13B outperforms GPT-3 (175B) on most benchmarks' (verbatim), supporting the note. All 8 result rows (HellaSwag 79.2, ARC-Challenge 52.7, WinoGrande 73, MMLU 46.9, GSM8k 17.8, HumanEval 15.8, MBPP 22, TriviaQA 56.6) confirmed as literal figures in arxiv 2302.13971 Tables 3/5/7/8/9 (fetched directly)."

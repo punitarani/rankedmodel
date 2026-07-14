@@ -74,7 +74,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/HuggingFaceM4/idefics-80b",
       "notes": "0-shot, CIDEr"
+    },
+    {
+      "benchmarkSlug": "flickr30k",
+      "score": 53.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/HuggingFaceM4/idefics-80b",
+      "notes": "0-shot CIDEr, base IDEFICS-80B model (not -Instruct), from the official HF model card's full shot-count benchmark table"
     }
   ],
-  "verificationNotes": "Confirmed real Aug 2023 Hugging Face release. paramsB (80B), mixed license (MIT connector/vision + LLaMA-65B non-commercial backbone), and architecture all verified against the official HuggingFaceM4/idefics-80b model card. All 4 zero-shot result rows (VQAv2 60.0, TextVQA 30.9, OKVQA 45.2, COCO CIDEr 91.8) confirmed verbatim on that same card — no changes needed."
+  "verificationNotes": "Confirmed real Aug 2023 Hugging Face release. paramsB (80B), mixed license (MIT connector/vision + LLaMA-65B non-commercial backbone), and architecture all verified against the official HuggingFaceM4/idefics-80b model card. All 4 zero-shot result rows (VQAv2 60.0, TextVQA 30.9, OKVQA 45.2, COCO CIDEr 91.8) confirmed verbatim on that same card \u2014 no changes needed."
 }

@@ -91,6 +91,78 @@
       "source": "self-reported",
       "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-5-benchmarks",
       "evaluatedAt": "2025-11-24"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 90.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
+      "evaluatedAt": "2025-11-24",
+      "notes": "The Opus 4.5 system card (Section 2.19) explicitly identifies this figure as MMMLU ('a score of 90.77% on MMMLU... average of 10 trials over the 14 languages'), not plain MMLU. The existing corpus row already carries this exact number (90.8) but under the slug 'mmlu' (inherited from vellum.ai, which mislabeled it) \u2014 since the score itself is not wrong, no 'correction' was filed per the audit rule against reporting corrections when old/new numbers agree, but this addition records its true benchmark identity. A maintainer may want to re-slug or remove the existing 'mmlu' row to avoid duplication."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 59.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+      "evaluatedAt": "2025-11-24",
+      "notes": "Anthropic's own launch page explicitly labels this row 'Agentic terminal coding / Terminal-bench 2.0' (128K thinking budget; 57.8% at 64K thinking per the system card footnote) \u2014 a distinct, harder benchmark suite from the classic Terminal-Bench used for Opus 4.1/Haiku 4.5. The existing corpus row carries this same number (59.3) under the generic 'terminal-bench' slug; per the same reasoning as the MMMLU item above, no correction was filed (numbers agree) but this addition records the correct identity."
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 80,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
+      "evaluatedAt": "2025-11-24",
+      "notes": "Per the system card (Section 2.10): 'The ARC Prize Foundation reports that Claude Opus 4.5 achieved 80.0% on ARC-AGI-1 ... with 64k thinking tokens on their private dataset.'"
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 37.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+      "evaluatedAt": "2025-11-24",
+      "notes": "ARC-AGI-2 (Verified), 64k thinking budget; confirmed on both the official launch-page comparison chart ('Novel problem solving / ARC-AGI-2 (Verified)': 37.6%) and system card Section 2.10/Figure 2.10.B."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 92.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
+      "evaluatedAt": "2025-11-24",
+      "notes": "AIME 2025, without-tools config (92.77%, rounded); system card Section 2.17 explicitly flags 'concerns that contamination may have inflated this score.' (With Python tools the model scores 100%, but 92.8% is the comparable no-tools figure used elsewhere in this corpus.)"
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 50.63,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
+      "evaluatedAt": "2025-11-24",
+      "notes": "System card Section 2.14: pass@1 over the 1,505-task CyberGym suite, averaged across 5 replicas, score 50.63%."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 52,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
+      "evaluatedAt": "2025-11-24",
+      "notes": "SWE-bench Pro (Scale AI's harder, 1,865-problem variant), no-thinking configuration (52.0%; 51.60% with 64k thinking) \u2014 system card Table 2.4.A."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 98.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+      "evaluatedAt": "2025-11-24",
+      "notes": "\u03c42-bench Telecom domain, from the official launch-page table and system card Table 2.3.A. (\u03c42-bench Retail 88.9% was also reported but has no matching taxonomy slug \u2014 mapping it to the generic 'tau-bench' slug would conflate it with the original, easier TAU-bench used for Opus 4/Sonnet 4/Opus 4.1, so it was left out.)"
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 66.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+      "evaluatedAt": "2025-11-24",
+      "notes": "Computer use / OSWorld, 1080p resolution, 100 steps, P@1 avg@5 = 66.26% per system card Section 2.9 (chart rounds to 66.3%). Score range confirms this is the 'Verified' variant (taxonomy's plain 'osworld' caps at 40%, far below this figure)."
     }
   ],
   "verificationNotes": "Confirmed real; anthropic.com/news/claude-opus-4-5 verifies release date, 200K context, $5/$25 pricing. The 80.9% SWE-bench figure is a genuine, widely-reported Anthropic claim, but it appears on anthropic.com's own page only as a chart label, not literal text, so the sourceUrl was swapped to theunwindai.com, whose headline literally states 'Claude Opus 4.5 Scores 80.9% on SWE-bench.' The other four rows (GPQA 87.0, MMLU 90.8, MMMU 80.7, HLE-with-search 43.2, Terminal-Bench 59.3) were all confirmed as literal quotes on vellum.ai/blog/claude-opus-4-5-benchmarks."

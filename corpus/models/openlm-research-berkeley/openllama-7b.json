@@ -54,6 +54,48 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/openlm-research/open_llama",
       "notes": "arc_challenge/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 68,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openlm-research/open_llama",
+      "notes": "arc_easy/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 72,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openlm-research/open_llama",
+      "notes": "hellaswag/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 40,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openlm-research/open_llama",
+      "notes": "openbookqa/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 77,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openlm-research/open_llama",
+      "notes": "piqa/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 35,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openlm-research/open_llama",
+      "notes": "truthfulqa_mc/mc2 via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 67,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openlm-research/open_llama",
+      "notes": "winogrande/acc via lm-evaluation-harness, OpenLLaMA 7B (v1)"
     }
   ],
   "verificationNotes": "Confirmed real via the official GitHub repo (openlm-research/open_llama) and HF model card (openlm-research/open_llama_7b): Apache 2.0, LLaMA-architecture from-scratch reproduction trained on RedPajama, 6.7B actual params (standard for the '7B' LLaMA architecture). ARC-Challenge acc_norm of 38 (0.38) confirmed verbatim in the GitHub README's lm-evaluation-harness results table for the v1 7B model. Note on releaseDate: 2023-05-03 (Simon Willison's post, confirmed) is the date of the initial preview checkpoint (200B tokens); per the GitHub README's own changelog, a 700B-token checkpoint followed on 2023-05-22 and the final 1T-token 7B/3B checkpoints were released 2023-06-07. Kept 2023-05-03 as in the source record since it is the widely-cited public announcement/release date of the OpenLLaMA 7B project, but the final trained weights arrived about five weeks later."

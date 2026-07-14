@@ -80,6 +80,38 @@
       "score": 76.6,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 83.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "evaluatedAt": "2025-04-30",
+      "notes": "IFEval Strict, avg pass@1 over 5 generations (Eureka ML Insights harness). Confirmed on HF model card and in Table 2 of the arXiv technical report (2504.21318)."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 73.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "evaluatedAt": "2025-04-30",
+      "notes": "ArenaHard, avg pass@1. Confirmed on HF model card and Table 2 of the technical report."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 74.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "evaluatedAt": "2025-04-30",
+      "notes": "MMLU-Pro; already present in the sibling corpus record 'Phi-4-reasoning' but missing from this one, though both cite the same HF model card."
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1736,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2504.21318",
+      "evaluatedAt": "2025-04-30",
+      "notes": "Codeforces Elo rating (Table 1 of the Phi-4-reasoning Technical Report), computed over 143 problems from contest IDs 1505-1536 with 10 submission attempts per problem, averaged over runs. Not present on the HF model card, only in the arXiv paper."
     }
   ],
   "verificationNotes": "Re-fetched HF model card: 14B params, MIT license, 32K context, release date April 30, 2025 all confirmed exact. All 5 benchmark rows (AIME 75.3, GPQA-Diamond 65.8, HumanEvalPlus 92.9, LiveCodeBench 53.8, OmniMath 76.6) confirmed literally on the card. No changes made."

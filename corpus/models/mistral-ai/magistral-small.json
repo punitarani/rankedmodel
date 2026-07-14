@@ -72,6 +72,22 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Magistral-Small-2506",
       "notes": "LiveCodeBench v5"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 95.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2506.10910",
+      "evaluatedAt": "2025-06-10",
+      "notes": "MATH-500, SFT+RL configuration; Magistral technical report Table 3 (not shown on the HF model card)"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 6.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2506.10910",
+      "evaluatedAt": "2025-06-10",
+      "notes": "Humanity's Last Exam, SFT+RL configuration; Magistral technical report Table 3 (not shown on the HF model card)"
     }
   ],
   "verificationNotes": "Fully confirmed via huggingface.co/mistralai/Magistral-Small-2506: 24B params, Apache 2.0, 128k context window (with 40k recommended for best quality, matching vendor guidance), AIME24 70.68, AIME25 62.76, GPQA Diamond 68.18, LiveCodeBench 55.84 all literally present on the page. Release date, langCount (~24-25 languages, vendor markets it as '24+ languages'), and pricing ($0.5/$1.5) corroborated independently. No changes."

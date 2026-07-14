@@ -1,2 +1,3 @@
 model_slug,score,source,source_url,evaluated_at,notes
 guanaco-33b,1002,self-reported,https://huggingface.co/timdettmers/guanaco-33b,,"Elo rating, OpenAssistant benchmark, GPT-4 judge, rank 4"
+guanaco-65b,1008,self-reported,https://huggingface.co/timdettmers/guanaco-65b,2023-05-23,"GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 3 - confirmed on the HF model card and in the QLoRA paper's Table 7; this benchmark had no entry at all yet for the 65B model."

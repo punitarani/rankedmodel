@@ -113,6 +113,38 @@
       "source": "arena",
       "sourceUrl": "https://lmmarketcap.com/benchmarks/arena_elo",
       "notes": "Current LMArena Elo (dynamic, decays as newer models are added; peaked much higher at launch)"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 96.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct",
+      "evaluatedAt": "2024-07-23",
+      "notes": "0-shot acc, Instruction-tuned 405B row of the official HF model card's 'Instruction tuned models' benchmark table (directly re-fetched and confirmed verbatim: 'ARC-C | 0 | acc | ... | 96.9')."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 88.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct",
+      "evaluatedAt": "2024-07-23",
+      "notes": "MBPP++ (EvalPlus-augmented) base version, 0-shot pass@1, Instruct 405B (confirmed verbatim: 'MBPP ++ base version | 0 | pass@1 | ... | 88.6')."
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 88.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct",
+      "evaluatedAt": "2024-07-23",
+      "notes": "Berkeley Function-Calling Leaderboard, 0-shot acc, Instruct 405B (confirmed verbatim: 'BFCL | 0 | acc | ... | 88.5'). Meta reports this as plain 'BFCL' (not a versioned v3 variant), so mapped to the 'bfcl' slug rather than 'bfcl-v3'."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 91.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct",
+      "evaluatedAt": "2024-07-23",
+      "notes": "Multilingual MGSM, chain-of-thought, 0-shot exact match, Instruct 405B (confirmed verbatim: 'Multilingual MGSM (CoT) | 0 | em | ... | 91.6')."
     }
   ],
   "verificationNotes": "Confirmed real. The cited HF page (meta-llama/Meta-Llama-3.1-8B) does contain comparative benchmark tables covering 8B/70B/405B together, and all seven Instruct scores for 405B (MMLU 87.3, MMLU-Pro 73.3, GPQA 50.7, IFEval 88.6, HumanEval 89.0, GSM8K 96.8, MATH 73.8) are literally present and match. Corrected the GPQA row's notes: it is the Instruct-model score per the table, not 'Base pretrained model' as the original record stated (score itself, 50.7, is unchanged and correct). Live-fetched lmmarketcap.com/benchmarks/arena_elo and confirmed it currently shows exactly 1229 Elo for Llama 3.1 405B. Release date (2024-07-23), 128K context, and Llama 3.1 Community License confirmed via Meta's blog and GitHub model card."

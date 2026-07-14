@@ -73,7 +73,28 @@
       "score": 69.6,
       "source": "independent",
       "sourceUrl": "https://designforonline.com/ai-models/xai-grok-3-mini/"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 82.8,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/xai-grok-3-mini/",
+      "notes": "Aggregator page cites Artificial Analysis / Hugging Face as the underlying data source; reasoning-effort level not specified by the aggregator."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 11.1,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/xai-grok-3-mini/",
+      "notes": "Humanity's Last Exam score, via Artificial Analysis per the aggregator page."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 45.9,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/xai-grok-3-mini/",
+      "notes": "Instruction-following score, via Artificial Analysis per the aggregator page."
     }
   ],
-  "verificationNotes": "Confirmed real, launched same Feb 17, 2025 event as Grok 3. All 4 result rows literally confirmed on designforonline.com via direct fetch ('GPQA Diamond 79.1%', 'MATH 500 99.2%', 'AIME 2025 84.7%', 'LiveCodeBench 69.6%'). Pricing $0.30/$0.50 per 1M tokens confirmed independently. Noted that xAI's own launch-day announcement separately advertised a higher AIME-2024/cons@64 figure (95.8%) not present in this record — left as-is since only the cited row's number needed literal confirmation, which it has."
+  "verificationNotes": "Confirmed real, launched same Feb 17, 2025 event as Grok 3. All 4 result rows literally confirmed on designforonline.com via direct fetch ('GPQA Diamond 79.1%', 'MATH 500 99.2%', 'AIME 2025 84.7%', 'LiveCodeBench 69.6%'). Pricing $0.30/$0.50 per 1M tokens confirmed independently. Noted that xAI's own launch-day announcement separately advertised a higher AIME-2024/cons@64 figure (95.8%) not present in this record \u2014 left as-is since only the cited row's number needed literal confirmation, which it has."
 }

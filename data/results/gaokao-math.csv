@@ -1,2 +1,3 @@
 model_slug,score,source,source_url,evaluated_at,notes
 doubao-seed-1-6,96,self-reported,https://finance.sina.com.cn/tech/discovery/2025-06-11/doc-inezskch4850147.shtml,,"144/150 on China's Gaokao (national college entrance exam) math paper, reported #1 among models at launch"
+qwen2-math-72b,59.8,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, Chinese GaoKao aggregate (GaoKao I/II 2024 + GaoKao-Math-QA + GaoKao-Math-Cloze + 91 collected 2024 problems), zero-shot CoT greedy decoding, from Table 4 (Chinese benchmarks) of the Qwen2.5-Math technical report, where Qwen2-Math-72B-Instruct is used as a baseline comparison row"

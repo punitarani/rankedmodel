@@ -77,6 +77,35 @@
       "source": "self-reported",
       "sourceUrl": "https://cohere.com/blog/command-a-plus",
       "notes": "reasoning subset"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 90,
+      "source": "self-reported",
+      "sourceUrl": "https://cohere.com/blog/command-a-plus",
+      "evaluatedAt": "2026-05-20",
+      "notes": "AIME 2025, official 30-question set, each question repeated 10 times, pass@1 over the 300-sample dataset (per the blog's own footnote methodology). Cohere reports an improvement from 57% (Command A Reasoning) to 90% (Command A+). The blog embeds the actual score only in a chart image, but the figure is corroborated verbatim by two independent secondary write-ups (codersera.com launch guide and a VentureBeat-sourced search summary), both citing the identical 57%->90% jump, which is strong convergent evidence for the primary vendor claim."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 76.1,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/command-a-plus",
+      "notes": "Artificial Analysis's independent GPQA Diamond re-evaluation of Command A+ (labeled 'AA-GPQA Diamond' on the aggregator). Not published by Cohere itself."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 11.4,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/command-a-plus",
+      "notes": "Artificial Analysis's independent Humanity's Last Exam score for Command A+ ('AA-HLE'). Not published by Cohere itself."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 73.9,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/command-a-plus",
+      "notes": "Artificial Analysis's independent IFBench score for Command A+ ('AA-IFBench'). Not published by Cohere itself."
     }
   ],
   "verificationNotes": "Confirmed via Cohere's own blog post (cohere.com/blog/command-a-plus), independent coverage on MarkTechPost (2026-05-21), and the CohereLabs Hugging Face org (bf16/fp8/w4a4 repos for 'command-a-plus-05-2026'), which confirms Apache 2.0 license, 218B/25B MoE, 128K input / 64K output context, and 48 languages. This is a genuine gap: the existing corpus's Cohere folder stops at 'Command A' (2025-03-13, CC-BY-NC); Command A+ is a distinct, newer, more permissively licensed release."

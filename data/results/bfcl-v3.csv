@@ -1,6 +1,20 @@
 model_slug,score,source,source_url,evaluated_at,notes
+amazon-nova-lite,66.6,self-reported,https://cdn.amazon.science/96/7d/0d3e59514abf8fdcfafcdc574300/nova-tech-report-20250317-0810.pdf,,"Berkeley Function-Calling Leaderboard v3 overall accuracy (as of the Nov 17, 2024 BFCL update) from Table 4 of the official Nova technical report, matching the bfcl-v3 taxonomy slug specifically since the report explicitly names it 'BFCL v3'."
+amazon-nova-micro,56.2,self-reported,https://arxiv.org/pdf/2506.12103,2024-11-17,"Berkeley Function-Calling Leaderboard v3, overall accuracy, Nov 17 2024 leaderboard snapshot (Table 4 of the Amazon Nova technical report)."
+amazon-nova-premier,63.7,self-reported,https://assets.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf,2025-04-25,"Berkeley Function-Calling Leaderboard v3, overall accuracy, 2025-04-25 leaderboard snapshot (Table 1)."
+amazon-nova-pro,68.4,self-reported,https://arxiv.org/pdf/2506.12103,2024-11-17,"Berkeley Function-Calling Leaderboard v3, overall accuracy, Nov 17 2024 leaderboard snapshot (Table 4)."
+deepseek-r1-0528,37,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,BFCL_v3_MultiTurn accuracy
 glm-4-32b-0414,69.6,self-reported,https://huggingface.co/zai-org/GLM-4-32B-0414,,Overall
+glm-4-5-355b-a32b,77.8,self-reported,https://arxiv.org/abs/2508.06471,,"BFCL V3 (Full), Table 3 'Results on Agentic Benchmarks' of the GLM-4.5 technical report."
+glm-4-5-air-106b-a12b,76.4,self-reported,https://arxiv.org/abs/2508.06471,,"BFCL V3 (Full), Table 3 of the GLM-4.5 technical report (which covers both GLM-4.5 and GLM-4.5-Air)."
+glm-z1-32b-0414,70.5,self-reported,https://github.com/zai-org/GLM-4/blob/main/README.md,,Labeled 'BFCL (v3)' in the official GitHub README benchmark chart.
+granite-4-0-h-small,64.69,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+granite-4-1-8b-instruct,68.27,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,
 hunyuan-a13b,78.3,self-reported,https://www.marktechpost.com/2025/06/28/tencent-open-sources-hunyuan-a13b-a-13b-active-parameter-moe-model-with-dual-mode-reasoning-and-256k-context/,,"Berkeley Function-Calling Leaderboard v3, agentic tool-use"
+lg-exaone-4-0-32b-non-reasoning,65.2,self-reported,https://arxiv.org/abs/2507.11407,,"BFCL-v3 tool/function-calling score, non-reasoning mode. Confirmed identically on both the arXiv paper (html v1) and the HuggingFace model card table."
+lg-exaone-4-0-32b-reasoning,63.9,self-reported,https://arxiv.org/abs/2507.11407,,"BFCL-v3 tool/function-calling score, reasoning mode. Confirmed identically on both the arXiv paper (html v1) and the HuggingFace model card table."
+nemotron-nano-2-nemotron-nano-9b-v2,66.9,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"Reasoning On, vs Qwen3-8B's 66.3; from the same HF model-card benchmark table as the existing 6 entries"
+olmo-3-7b,49.8,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,"OLMo 3 technical report (arXiv 2512.13961) confirms this is BFCLv3 (Patil et al. 2025), run via the official Gorilla repository"
 qwen3-14b-non-thinking,61.5,self-reported,https://arxiv.org/pdf/2505.09388,,"BFCL v3, Non-thinking mode"
 qwen3-14b-thinking,70.4,self-reported,https://arxiv.org/pdf/2505.09388,,"BFCL v3, Thinking mode"
 qwen3-235b-a22b-instruct-2507,70.9,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,

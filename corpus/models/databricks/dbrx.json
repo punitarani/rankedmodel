@@ -72,6 +72,34 @@
       "score": 89,
       "source": "self-reported",
       "sourceUrl": "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 68.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm",
+      "notes": "25-shot, DBRX Instruct, from the official Databricks launch blog's open-model comparison table"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 66.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm",
+      "notes": "0-shot, DBRX Instruct"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 81.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm",
+      "notes": "5-shot, DBRX Instruct"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.39,
+      "source": "self-reported",
+      "sourceUrl": "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm",
+      "notes": "\"MT Bench (Inflection Corrected)\", DBRX Instruct, reported alongside GPT-3.5/GPT-4/Claude comparison, score 8.39 \u00b1 0.08"
     }
   ],
   "verificationNotes": "Fully confirmed via fetch of the official Databricks blog post: release date March 27, 2024; 132B total/36B active fine-grained MoE with 16 experts (4 active per token); 32K max context; 12T pretraining tokens. License name 'Databricks Open Model License' confirmed verbatim via databricks.com/legal/open-model-license. All four benchmark rows (MMLU 73.7, HumanEval 70.1, GSM8K 66.9 5-shot, HellaSwag 89.0) literally appear on the cited blog page. No changes made; nothing dropped."

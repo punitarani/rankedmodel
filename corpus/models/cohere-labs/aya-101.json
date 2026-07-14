@@ -44,6 +44,15 @@
     "releaseDate": "https://arxiv.org/abs/2402.07827",
     "openness": "https://huggingface.co/CohereLabs/aya-101"
   },
-  "results": [],
-  "verificationNotes": "Confirmed genuine via arXiv:2402.07827 (submitted 2024-02-12, matches releaseDate) and HF CohereLabs/aya-101 model card. 13B mT5-based, 101 languages, Apache-2.0, ~1024-token (1K) context per mT5 pretraining/finetuning setup — all match input record. No results claimed, none added."
+  "results": [
+    {
+      "benchmarkSlug": "xwinograd",
+      "score": 70.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2402.07827",
+      "evaluatedAt": "2024-02-12",
+      "notes": "0-shot XWinograd (coreference resolution, 6 languages), Table 8 of the Aya paper, for the translation-heavy Aya variant that is the final released model (hf.co/CohereLabs/aya-101)."
+    }
+  ],
+  "verificationNotes": "Confirmed genuine via arXiv:2402.07827 (submitted 2024-02-12, matches releaseDate) and HF CohereLabs/aya-101 model card. 13B mT5-based, 101 languages, Apache-2.0, ~1024-token (1K) context per mT5 pretraining/finetuning setup \u2014 all match input record. No results claimed, none added."
 }

@@ -83,6 +83,34 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
       "notes": "0-shot"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 41.56,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
+      "notes": "3-shot, Baichuan2-7B-Base; present in the official README's General Domain table but missing from the corpus (the 13B sibling model already has its BBH score recorded)."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 24.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
+      "notes": "3-shot, Baichuan2-7B-Base."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 5.58,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
+      "notes": "4-shot, Baichuan2-7B-Base. Below the taxonomy's typical 20-100 'math' range but is the genuine reported number for this pre-CoT-era 7B dense base model on the full Hendrycks MATH set; included as-is."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 42.73,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
+      "notes": "5-shot (4-candidate multiple-choice subset only), Baichuan2-7B-Base."
     }
   ],
   "verificationNotes": "Confirmed real via arXiv 2309.10305, MarkTechPost (2023-09-19), and the official GitHub README_EN.md. All 5 benchmark scores (C-Eval 54.0, MMLU 54.16, CMMLU 57.07, GSM8K 24.49, HumanEval 18.29) confirmed to literally appear in the README table for the 7B-Base model. License and bilingual (zh/en) claim confirmed. Context length 4096 (4K) confirmed via Ollama model metadata; retargeted ctxK sourceUrl to a source that actually states the figure."

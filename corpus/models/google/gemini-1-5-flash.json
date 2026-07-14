@@ -122,7 +122,71 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
       "evaluatedAt": "2024-10-01",
       "notes": "val split, 0-shot, Table 22"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 82.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "8-shot, Table 11 of the Gemini 1.5 technical report (multilingual math reasoning). Note: a later revision of the same report (Table 22, added when Flash-8B was introduced ~Oct 2024) lists Flash's MGSM as 82.4%, a 0.2pt difference likely from a re-run/re-evaluation pass -- 82.6% from the primary Table 11 comparison is used here."
+    },
+    {
+      "benchmarkSlug": "amc",
+      "score": 34.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "AMC 2022-23 (250 latest AMC 8/10/12 problems), 4-shot, Table 11 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 58.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "MathVista testmini split, 0-shot, Table 18 (image understanding benchmarks) of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 91.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "AI2D test split, 0-shot, evaluated with transparent bounding box protocol, Table 18 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 85.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "ChartQA test split, 0-shot with chain-of-thought rationale, Table 18 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 89.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "DocVQA test split, 0-shot, with Google Cloud OCR annotations provided (per Table 18 methodology). A separate later table in the same report (Table 22, Flash-8B comparison) lists 88.8% for a run without OCR annotations."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 78.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "TextVQA val split, 0-shot, Table 18 (also corroborated at the same value in Table 22)."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 80.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "VQAv2 test-dev split, 0-shot, Table 18 of the Gemini 1.5 technical report."
     }
   ],
-  "verificationNotes": "CORRECTED: archClass changed from 'moe' to 'dense' and archDisplay rewritten — the official Gemini 1.5 technical report (Section 3.2 and Appendix 12.1 Model Card, Table 45) explicitly states 'Gemini 1.5 Flash is a dense Transformer based model that is online distilled ... from Gemini 1.5 Pro,' in direct contrast to 1.5 Pro which IS described as sparse MoE. Downloaded and text-extracted the full 154-page PDF report directly (prior fetch attempts were rate-limited/binary-blocked) and verbatim-confirmed all 9 result rows against Table 11 and Table 22. Release date (I/O, May 14 2024), 1M context, and '100+ languages' (developers.googleblog.com) also confirmed. Pricing ($0.075/$0.30 per 1M tokens, <=128K) confirmed as the Aug 2024 price-cut rate, matching the record."
+  "verificationNotes": "CORRECTED: archClass changed from 'moe' to 'dense' and archDisplay rewritten \u2014 the official Gemini 1.5 technical report (Section 3.2 and Appendix 12.1 Model Card, Table 45) explicitly states 'Gemini 1.5 Flash is a dense Transformer based model that is online distilled ... from Gemini 1.5 Pro,' in direct contrast to 1.5 Pro which IS described as sparse MoE. Downloaded and text-extracted the full 154-page PDF report directly (prior fetch attempts were rate-limited/binary-blocked) and verbatim-confirmed all 9 result rows against Table 11 and Table 22. Release date (I/O, May 14 2024), 1M context, and '100+ languages' (developers.googleblog.com) also confirmed. Pricing ($0.075/$0.30 per 1M tokens, <=128K) confirmed as the Aug 2024 price-cut rate, matching the record."
 }

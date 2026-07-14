@@ -47,6 +47,14 @@
     "releaseDate": "https://gigazine.net/gsc_news/en/20250124-doubao-deepseek-moonshot-ai-kimi/",
     "openness": "https://www.marktechpost.com/2025/01/25/bytedance-ai-introduces-doubao-1-5-pro-language-model-with-a-deep-thinking-mode-and-matches-gpt-4o-and-claude-3-5-sonnet-benchmarks-at-50x-cheaper/"
   },
-  "results": [],
-  "verificationNotes": "Confirmed real: released Jan 22 2025 (Gigazine and others), pricing $0.11/$0.275 per 1M tokens and 32K-256K context both literally confirmed on the MarkTechPost article. Active params 20B (~140B-dense-equivalent, 7 experts/token) also confirmed there. The 200B TOTAL-parameter figure is not stated in the MarkTechPost launch article itself — it traces to ByteDance Seed's own arXiv paper (2504.13914, Seed1.5-Thinking / 'Seed-Thinking-v1.5'), which discloses 20B activated / 200B total for the MoE reasoning model underlying Doubao's Deep Thinking mode, and is corroborated by multiple secondary write-ups (aibase.com, rosywheel.com) explicitly attributing 200B/20B to 'Doubao 1.5 Deep Thinking'. Updated specSources.paramsB to point to the primary arXiv disclosure rather than the launch article."
+  "results": [
+    {
+      "benchmarkSlug": "super-gpqa",
+      "score": 55.09,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2502.14739",
+      "notes": "SuperGPQA 'Overall (sample)' score for Doubao-1.5-pro-32k-250115 (chat-model category, zero-shot, temperature=0), from the independent SuperGPQA benchmark paper (M-A-P / Doubao Seed team et al., Table in Section 4.2, arXiv:2502.14739)."
+    }
+  ],
+  "verificationNotes": "Confirmed real: released Jan 22 2025 (Gigazine and others), pricing $0.11/$0.275 per 1M tokens and 32K-256K context both literally confirmed on the MarkTechPost article. Active params 20B (~140B-dense-equivalent, 7 experts/token) also confirmed there. The 200B TOTAL-parameter figure is not stated in the MarkTechPost launch article itself \u2014 it traces to ByteDance Seed's own arXiv paper (2504.13914, Seed1.5-Thinking / 'Seed-Thinking-v1.5'), which discloses 20B activated / 200B total for the MoE reasoning model underlying Doubao's Deep Thinking mode, and is corroborated by multiple secondary write-ups (aibase.com, rosywheel.com) explicitly attributing 200B/20B to 'Doubao 1.5 Deep Thinking'. Updated specSources.paramsB to point to the primary arXiv disclosure rather than the launch article."
 }

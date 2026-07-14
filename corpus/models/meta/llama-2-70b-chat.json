@@ -58,6 +58,30 @@
       "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md",
       "evaluatedAt": "2023-07-18",
       "notes": "Percent of generations rated both truthful and informative"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 6.86,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2312.06281",
+      "evaluatedAt": "2023-12-01",
+      "notes": "GPT-4-judged MT-Bench average for meta-llama/Llama-2-70b-chat-hf, per the EQ-Bench paper's cross-benchmark table (Table 3), which cites the LMSYS Chatbot Arena/MT-Bench leaderboard. Meta's own model card/paper never publishes an MT-Bench score for any Llama 2 model, so this is necessarily third-party/independent, not self-reported."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1051,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2312.06281",
+      "evaluatedAt": "2023-12-01",
+      "notes": "Chatbot Arena Elo, historical snapshot (~late 2023) per the EQ-Bench paper's Table 3, which cites the LMSYS Chatbot Arena Leaderboard as its data source. This is a point-in-time Elo (Elo drifts as new models join the arena), distinct from any current/live snapshot."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 63,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2312.06281",
+      "evaluatedAt": "2023-12-01",
+      "notes": "Independent re-measurement of the RLHF fine-tuned chat model itself. Verified directly against Meta's own official model card (github.com/meta-llama/llama-models MODEL_CARD.md): Meta's academic-benchmarks table (MMLU, BBH, AGI Eval, etc.) is reported ONLY for the base pretrained sizes (70B base = 68.9), never for the Llama-2-Chat fine-tunes, which get only a safety table (TruthfulQA/Toxigen). The EQ-Bench paper's Table 3 separately evaluated meta-llama/Llama-2-70b-chat-hf and got MMLU 63, which is what's added here rather than any Meta 'self-reported' figure (none exists for the chat model)."
     }
   ],
   "verificationNotes": "Confirmed real model and specs (matches Llama-2-70B base specs). Fetched MODEL_CARD.md safety table for Llama-2-Chat and confirmed 70B row shows TruthfulQA 64.14 / Toxigen 0.01, matching exactly. No changes made."

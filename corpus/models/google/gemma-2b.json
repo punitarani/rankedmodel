@@ -82,6 +82,74 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/google/gemma-2b",
       "notes": "maj@1"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 77.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b",
+      "notes": "0-shot"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 49.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b",
+      "notes": "SocialIQA, 0-shot"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 65.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b",
+      "notes": "partial score"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 47.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 73.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b",
+      "notes": "ARC-e"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 53.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 29.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b",
+      "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 11.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b",
+      "notes": "4-shot. Falls below this taxonomy's stated 20-100 floor for the math slug, but is the genuine self-reported number for this small, early (Feb 2024) base model -- confirmed in both the HF card and the original arXiv technical report (2403.08295, Table 6)."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 24.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 35.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2b",
+      "notes": "Labeled 'BIG-Bench' on the live HF card (with a link to the original BIG-bench paper), but this is the exact same row the official arXiv technical report (2403.08295, Table 6) labels 'BBH' -- mapped to bbh for consistency with how the identical benchmark is already mapped for Gemma 2 9B/27B in this corpus."
     }
   ],
   "verificationNotes": "Confirmed real: released 2024-02-21 per Hugging Face blog and Google blog (multiple independent sources agree). Directly fetched huggingface.co/google/gemma-2b model card: all five benchmark rows (MMLU 42.3, HellaSwag 71.4, ARC-c 42.1, HumanEval 22.0, GSM8K 17.7) appear verbatim in its evaluation table -- all confirmed exactly as claimed. Params corrected/confirmed at the source level: fetched arXiv 2403.08295v4 Table 2 directly, which gives an exact parameter count of 2,506,434,560 (524.5M embedding + 1.98B non-embedding) = 2.5B, matching paramsB despite the '2B' marketing name -- this is a genuine, well-documented quirk (Gemma 2B/7B names refer to rounded marketing tiers, not exact counts)."

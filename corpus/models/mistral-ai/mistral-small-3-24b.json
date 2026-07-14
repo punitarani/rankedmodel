@@ -9,7 +9,7 @@
   "paramsB": 24,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense transformer — 24B, Tekken tokenizer (131k vocab)",
+  "archDisplay": "Dense transformer \u2014 24B, Tekken tokenizer (131k vocab)",
   "ctxK": 32,
   "modalities": [
     "text"
@@ -84,7 +84,31 @@
       "score": 82.9,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.35,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+      "evaluatedAt": "2025-01-30",
+      "notes": "Listed as 'MTBench Dev' in the official HF model card's Instruction Following table (verified via raw README.md fetch)."
+    },
+    {
+      "benchmarkSlug": "wildbench",
+      "score": 52.27,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+      "evaluatedAt": "2025-01-30",
+      "notes": "WildBench row of the same Instruction Following table."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 87.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+      "evaluatedAt": "2025-01-30",
+      "notes": "Reported as 0.873 (Arena Hard) in the same table; converted to percentage."
     }
   ],
-  "verificationNotes": "Confirmed via mistral.ai/news/mistral-small-3/ (dated 2025-01-30, '24B-parameter model released under Apache 2.0', 'over 81% accuracy on MMLU', 3x+ faster than comparable models) and HF mistralai/Mistral-Small-24B-Instruct-2501 card (24B params, 32k context, Apache-2.0). All 4 HF benchmark rows confirmed exactly: MMLU-Pro 0.663→66.3, HumanEval 0.848→84.8, MATH 0.706→70.6, IFEval 0.829→82.9. Pricing $0.10/$0.30 and retirement 2025-11-30 corroborated by docs.mistral.ai/models/overview legacy table."
+  "verificationNotes": "Confirmed via mistral.ai/news/mistral-small-3/ (dated 2025-01-30, '24B-parameter model released under Apache 2.0', 'over 81% accuracy on MMLU', 3x+ faster than comparable models) and HF mistralai/Mistral-Small-24B-Instruct-2501 card (24B params, 32k context, Apache-2.0). All 4 HF benchmark rows confirmed exactly: MMLU-Pro 0.663\u219266.3, HumanEval 0.848\u219284.8, MATH 0.706\u219270.6, IFEval 0.829\u219282.9. Pricing $0.10/$0.30 and retirement 2025-11-30 corroborated by docs.mistral.ai/models/overview legacy table."
 }

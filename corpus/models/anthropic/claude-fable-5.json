@@ -32,7 +32,7 @@
   "links": {
     "docs": "https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5"
   },
-  "note": "Model id claude-fable-5. This is the correct current name of the family the task flagged as 'a newer Claude model family' — it is Anthropic's first widely-released 'Mythos-class' model (a tier above Opus), positioned above Opus 4.8. It shares identical underlying weights with the invitation-only Claude Mythos 5 (claude-mythos-5, Project Glasswing only) but adds safety classifiers that can refuse requests; Mythos 5 does not have those classifiers. Notably, access to Fable 5 was briefly restricted/pulled and then restored in July 2026 following a jailbreak-linked export-control issue (see anthropic.com/news/redeploying-fable-5) — this does not change its specs. NO SEPARATE '(High)' PRODUCT: like Sonnet 5, 'high' is the documented default effort level and is not a distinct marketed SKU; not added as a sibling entry. Claude Mythos 5 itself was NOT added as a separate corpus entry given its restricted, non-public availability and the difficulty independently sourcing benchmark numbers specific to it (as opposed to Fable 5).",
+  "note": "Model id claude-fable-5. This is the correct current name of the family the task flagged as 'a newer Claude model family' \u2014 it is Anthropic's first widely-released 'Mythos-class' model (a tier above Opus), positioned above Opus 4.8. It shares identical underlying weights with the invitation-only Claude Mythos 5 (claude-mythos-5, Project Glasswing only) but adds safety classifiers that can refuse requests; Mythos 5 does not have those classifiers. Notably, access to Fable 5 was briefly restricted/pulled and then restored in July 2026 following a jailbreak-linked export-control issue (see anthropic.com/news/redeploying-fable-5) \u2014 this does not change its specs. NO SEPARATE '(High)' PRODUCT: like Sonnet 5, 'high' is the documented default effort level and is not a distinct marketed SKU; not added as a sibling entry. Claude Mythos 5 itself was NOT added as a separate corpus entry given its restricted, non-public availability and the difficulty independently sourcing benchmark numbers specific to it (as opposed to Fable 5).",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
@@ -59,6 +59,60 @@
       "source": "independent",
       "sourceUrl": "https://www.vals.ai/benchmarks/swebench",
       "notes": "SWE-bench Verified, Vals AI independent leaderboard re-run, updated 2026-07-09. Leads the leaderboard."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1932,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "evaluatedAt": "2026-06-09",
+      "notes": "GDPval-AA (economically-valuable real-world professional work), from Anthropic's official benchmark-comparison chart on the announcement page (ahead of Opus 4.8's 1890, GPT-5.5's 1769, Gemini 3.1 Pro's 1314). Independently corroborated by a third-party benchmark explainer (Silicon Report) citing the identical 1932 figure."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "evaluatedAt": "2026-06-09",
+      "notes": "OSWorld-Verified (computer use), from the same official comparison chart (ahead of Opus 4.8's 83.4%; Claude Mythos Preview scored marginally higher at 85.4% but that is a different, earlier model)."
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 0,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "evaluatedAt": "2026-06-09",
+      "notes": "From a separate 'Offensive cyber evaluations' chart on the same announcement page that explicitly plots a 'Claude Fable' series (distinct from Opus 4.8, Mythos Preview, and Mythos 5) at 0.0% on CyberGym as well as on Firefox/OSS-Fuzz/CyScenarioBench. This reflects Fable 5's built-in safety refusal/fallback behavior on offensive-cyber tasks by design (per the model's safeguards described in its system card), not a raw capability ceiling \u2014 flagging this clearly since it could otherwise read as a capability score."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 84.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf",
+      "evaluatedAt": "2026-06-09",
+      "notes": "From the official Claude Fable 5 / Claude Mythos 5 System Card, Section 8.1 'Evaluation summary' master table (Fable 5 column specifically, distinct from Mythos 5's 88.0 in the same row). Extracted via pdftotext -layout from the primary system-card PDF."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 92.6,
+      "source": "independent",
+      "sourceUrl": "https://www.siliconreport.com/claude-fable-5-benchmarks-hle-swe-bench-gpqa-5c675c4e",
+      "notes": "GPQA Diamond, Artificial Analysis's independent evaluation (not an Anthropic-published figure -- confirmed by directly fetching both official Anthropic launch pages, anthropic.com/news/claude-fable-5-mythos-5 and the platform.claude.com docs page, and searching each specifically for 'GPQA'/'GPQA Diamond': zero mentions on either). Cross-corroborated at the identical 92.6% by a second independent aggregator (benchlm.ai/models/claude-fable, which likewise attributes it to 'Artificial Analysis') and by a July 2, 2026 GPQA leaderboard snapshot placing Fable 5 at 92.6%, just behind MiniMax M3 (92.9%) and ahead of the pack. One lower-quality secondary roundup (a Zvi Mowshowitz Substack post) cited a rounder '94%, described as saturated' figure without clear sourcing; given the 92.6% figure's triple corroboration from sources that explicitly cite Artificial Analysis as the measuring party, 92.6% was used as the more reliable number and the 94% figure was not added as a second contested entry."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 53.3,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/articles/claude-fable-5-mythos-intelligence-index",
+      "notes": "Humanity's Last Exam, Artificial Analysis's own independent evaluation as part of their Intelligence Index v4.1 methodology (AA's own article states in prose: 'Claude Fable 5 scores 53% on Humanity's Last Exam'; a secondary aggregator relaying the same AA measurement gives the more precise 53.3%, used here). This is explicitly NOT an Anthropic-published number: Anthropic's own launch page and docs page were both fetched directly and searched for 'HLE'/'Humanity's Last Exam' with zero hits, and a dedicated third-party analysis (espressio.ai) states outright that 'Claude Fable 5 publishes capability claims rather than HLE or GPQA numbers' and that Anthropic has 'retired GPQA Diamond and AIME from its reporting entirely, declaring them saturated.' A separate aggregator (digitalapplied.com) claimed a materially different 64.5% 'HLE with tools' figure attributed to an 'Anthropic benchmark table' -- this was deliberately excluded since it directly contradicts the more corroborated finding (from two independent sources) that Anthropic never published an HLE number for this model at all, making that specific attribution unreliable."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1505,
+      "source": "arena",
+      "sourceUrl": "https://arena.ai/leaderboard",
+      "evaluatedAt": "2026-07-10",
+      "notes": "Text Arena (LMArena/Arena.ai) crowd-sourced Elo rating, confirmed directly on the live arena.ai/leaderboard page: 1505 +/- 8, rank #1 overall in the text arena as of the July 10, 2026 snapshot (also #1 in the 'Expert' and 'Math' subcategories). Cross-corroborated by an independent secondary write-up (quasa.io) citing the identical 1505 +/- 8 figure from 7,252 votes. Note for context (not added as a separate figure since it is the same underlying model/leaderboard, just an earlier point in time): Fable 5 briefly peaked near ~1525 Elo immediately after its June 9, 2026 launch before a June 12-13, 2026 US export-control-driven worldwide suspension of non-US access disrupted voting volume; access was restored July 1, 2026, and the July 10 snapshot value used here reflects the stabilized post-restoration rating."
     }
   ],
   "verificationNotes": "Model id, pricing, context window, and Fable-vs-Mythos relationship confirmed directly from Anthropic's own Claude Platform docs (fetched in full). The July 2026 access-restoration event was corroborated by an independent news report (TheHackerNews) as well as Anthropic's own 'Redeploying Claude Fable 5' post referenced in the docs page."

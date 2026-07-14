@@ -61,6 +61,75 @@
       "source": "arena",
       "sourceUrl": "https://telnyx.com/llm-library/gpt-4-1106-preview",
       "notes": "LMSYS Chatbot Arena Elo (historical), gpt-4-1106-preview"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 9.32,
+      "source": "independent",
+      "sourceUrl": "https://telnyx.com/llm-library/gpt-4-1106-preview",
+      "notes": "MT-Bench score for gpt-4-1106-preview (the GPT-4 Turbo snapshot). MT-Bench is an LMSYS-run, GPT-4-judged multi-turn evaluation (a third-party benchmark run, not an OpenAI self-report), relayed here via the same Telnyx model page already used and independently confirmed (via direct fetch) as the source for this file's existing MMLU and Arena Elo rows."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 49.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2024-05-13",
+      "notes": "gpt-4-turbo-2024-04-09 (the snapshot this file's note field identifies as GPT-4 Turbo's current default), 0-shot CoT, 'assistant' system prompt. From OpenAI's own simple-evals repo \u2014 the accuracy table OpenAI publishes to be transparent about numbers accompanying its model launches; this row is the GPT-4 Turbo comparison point first published alongside the GPT-4o ('Hello GPT-4o') launch."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 73.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2024-05-13",
+      "notes": "gpt-4-turbo-2024-04-09, 0-shot CoT. Classic MATH test set (OpenAI's simple-evals only swaps to the newer MATH-500 split for o1-and-later models, so this is the original benchmark, not a variant)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 88.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2024-05-13",
+      "notes": "gpt-4-turbo-2024-04-09, 0-shot, OpenAI simple-evals. A harder/independent data point worth cross-checking against: Aider's April 2024 code-EDITING benchmark separately found this same snapshot scored only 62% (lowest of the GPT-4 family at the time) \u2014 not added here since Aider's benchmark isn't the same evaluation as any taxonomy slug (it predates and differs from 'aider-polyglot', which launched later in 2024)."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 89.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2024-05-13",
+      "notes": "gpt-4-turbo-2024-04-09, OpenAI simple-evals (Multilingual Grade School Math)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 86,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2024-05-13",
+      "notes": "gpt-4-turbo-2024-04-09, F1 score, 3-shot. OpenAI simple-evals."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 24.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2024-05-13",
+      "notes": "gpt-4-turbo-2024-04-09, OpenAI simple-evals SimpleQA column (short-form factuality / hallucination-rate proxy) \u2014 a genuinely hard, non-cherry-picked eval OpenAI's own suite ships this model on."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 82.6,
+      "source": "independent",
+      "sourceUrl": "https://github.com/lmarena/arena-hard-auto/blob/main/misc/past_leaderboards.md",
+      "notes": "gpt-4-turbo-2024-04-09, Arena-Hard-v0.1 (no style control), win-rate vs. the gpt-4-0314 baseline (fixed at 50.0), GPT-4-Turbo-as-judge pipeline. Official LMArena (formerly LMSYS) archived leaderboard. A style-controlled variant of the same benchmark, added later in 2024, scores this same snapshot at 74.3 in the same archive \u2014 noted for completeness but not added as a separate row since it isn't a distinct taxonomy slug."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 28.7,
+      "source": "independent",
+      "sourceUrl": "https://livecodebench.github.io/leaderboard.html",
+      "notes": "gpt-4-turbo-2024-04-09, Pass@1, official LiveCodeBench leaderboard, current problem time-window 2024-08-01 to 2025-05-01 (454 contamination-controlled problems released after model training cutoffs). A genuinely hard eval: breaks down to Easy 81.0 / Medium 24.8 / Hard 3.1, i.e. the model solves almost none of the Hard-tier problems \u2014 included deliberately per the instruction to surface harder evals, not just favorable ones."
     }
   ],
   "verificationNotes": "DevDay announcement Nov 6, 2023 confirmed (OpenAI/CNBC); 128K context and $10/$30 per-million pricing confirmed via OpenAI's own DevDay post and current docs. Both result rows (MMLU 86.5 5-shot; Arena Elo 1251) verified literally on the cited Telnyx page (fetched directly, confirmed exact text). No changes made."

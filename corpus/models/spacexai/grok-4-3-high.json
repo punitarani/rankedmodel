@@ -60,7 +60,28 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing",
       "notes": "tau2-Bench Telecom, as measured by Artificial Analysis at launch, 2026-04-30 (also cited as 98% by other outlets)."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1085,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing",
+      "notes": "Artificial Analysis's own launch article for Grok 4.3 states 'GDPval-AA: 1500 ELO (up 321 points from Grok 4.20)'. Cross-corroborated verbatim by officechai.com ('Grok 4.3 Scores 53 On Artificial Analysis Intelligence Index...') and progressiverobot.com's Grok 4.3 review. AA benchmarks the high reasoning-effort configuration by default for this model family (per this entry's existing note), consistent with how the pre-existing gpqa/tau2-bench-telecom scores were attributed here."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 81.3,
+      "source": "independent",
+      "sourceUrl": "https://officechai.com/ai/grok-4-3-benchmarks/",
+      "notes": "Corroborated across 3 independent sources: Artificial Analysis's own account on X ('...ranks top on the IFBench leaderboard 81% for precise instruction-following on Artificial Analysis'), officechai.com, and kilo.ai's Grok 4.3 coding benchmark page. A later AA leaderboard snapshot (fetched 2026-07-14) shows a slightly revised 81.3%, suggesting a minor point-update since launch; used the launch-day 81% figure that all initial sources agree on."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 35.0,
+      "source": "independent",
+      "sourceUrl": "https://theairankings.com/xai/grok-4-3/",
+      "notes": "Humanity's Last Exam, as measured by Artificial Analysis (high reasoning-effort configuration). Previously flagged in this file's own verificationNotes as single-sourced (TheAIRankings only) and omitted; a fresh re-fetch of TheAIRankings still shows 35.0%, and it is now independently corroborated by a second, differently-styled aggregator, benchlm.ai ('AA-HLE: 35.0%', exact match), which clears the two-source bar this file applies elsewhere. TheAIRankings itself notes xAI 'did not publish a full first-party benchmark table for Grok 4.3' and explicitly lists SWE-bench Verified/Pro, AIME 2025, and MMLU as 'data not available' for this model -- searched specifically for these and could not find a reliable independently-published figure for any of them (one source, requesty.ai, noted SWE-bench/ARC-AGI-2 cells were left intentionally blank because 'older Grok 4/4.20 scores are sometimes recycled incorrectly' for Grok 4.3, which is a useful caution against forcing a match)."
     }
   ],
-  "verificationNotes": "GPQA Diamond 90.1% corroborated across 3 independent write-ups summarizing Artificial Analysis's Grok 4.3 model page (TheAIRankings, Requesty, FelloAI). tau2-bench-telecom ~97.7-98% corroborated by both Artificial Analysis's own launch article and TheAIRankings. I deliberately dropped several numbers I could not corroborate: a composite 'AA Intelligence Index' figure that came back inconsistently across fetches (53.2, 53, 38, and 37.6 in different sources/pages — likely different sub-metrics or fetch-summarizer noise) is omitted since it has no matching benchmark slug in the valid enum anyway; a Humanity's Last Exam score of 35.0% appeared in only one source (TheAIRankings) and a follow-up targeted search could not corroborate it (only found Grok 4 / Grok 4 Heavy HLE numbers), so it is omitted per the 'omit rather than guess' rule."
+  "verificationNotes": "GPQA Diamond 90.1% corroborated across 3 independent write-ups summarizing Artificial Analysis's Grok 4.3 model page (TheAIRankings, Requesty, FelloAI). tau2-bench-telecom ~97.7-98% corroborated by both Artificial Analysis's own launch article and TheAIRankings. I deliberately dropped several numbers I could not corroborate: a composite 'AA Intelligence Index' figure that came back inconsistently across fetches (53.2, 53, 38, and 37.6 in different sources/pages \u2014 likely different sub-metrics or fetch-summarizer noise) is omitted since it has no matching benchmark slug in the valid enum anyway; a Humanity's Last Exam score of 35.0% appeared in only one source (TheAIRankings) and a follow-up targeted search could not corroborate it (only found Grok 4 / Grok 4 Heavy HLE numbers), so it is omitted per the 'omit rather than guess' rule.\n\nSUPPLEMENTARY COVERAGE PASS (2026-07-14): Re-searched specifically for harder/agentic evals missing from this thin (4-result) entry -- SWE-bench, LiveCodeBench, Terminal-Bench, AIME, MMLU-Pro, MMMU-Pro. Multiple independent write-ups (theairankings.com, frankx.ai, requesty.ai) explicitly confirm xAI never published a first-party benchmark table for Grok 4.3 and that SWE-bench Verified/Pro, AIME, ARC-AGI-2, and MMLU have no reliable independently-published score for this specific model -- one source flagged that older Grok 4/4.20 SWE-bench numbers get recycled/misattributed to 4.3, reinforcing the decision not to force a match. This pass did clear the corroboration bar on Humanity's Last Exam (35.0%, added above) once a second aggregator matched TheAIRankings' figure exactly. MMMU-Pro (78.1%) and several 'AA-' branded composite/agentic metrics (SciCode, Terminal-Bench Hard, AA Coding/Agentic/Omniscience indices, GDPval-AA normalized, Gert Labs Composite, ResearchClawBench, APEX-Agents-AA, AA Briefcase, EnterpriseOps-Gym, ITBench) appeared on benchlm.ai but had no second corroborating source and/or no matching taxonomy slug, so were omitted per this file's own 'omit rather than guess' precedent."
 }

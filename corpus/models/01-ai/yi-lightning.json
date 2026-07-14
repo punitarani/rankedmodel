@@ -81,7 +81,21 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2412.01253",
       "notes": "Prompt-level loose accuracy"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 91.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.01253",
+      "notes": "Judge: GPT-4o-0513. Yi-Lightning technical report Table 2, comparison vs. GPT-4o-0513/Claude-3.5-Sonnet-20240620/Yi-Large-Preview. Paper notes API-serving results may be slightly lower than local-deployment figures."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.75,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.01253",
+      "notes": "Judge: GPT-4o-0513. Yi-Lightning technical report Table 2."
     }
   ],
-  "verificationNotes": "Confirmed real via arXiv:2412.01253 (fetched html version) plus independent coverage (Kai-Fu Lee's own launch tweet, Pandaily, lmarena.ai's X post). Release date 2024-10-16, org 01.AI, and Arena score 1287 / rank #6 (matching GPT-4o-0513's #7/1285) all confirmed. All four benchmark rows (MATH 76.4, HumanEval 83.5, GPQA 50.9, IFEval 81.9) confirmed verbatim on the technical report. Confirmed the deployed API context is capped at 16K tokens (per crafiq.ai, serenitiesai.com, and an HN discussion) even though training data included longer sequences up to 64K — ctxK:16 is correct. Confirmed parameter count is genuinely undisclosed by 01.AI, so paramsB/activeParamsB null is correct. Pricing $0.14/M input+output confirmed via web search of platform docs."
+  "verificationNotes": "Confirmed real via arXiv:2412.01253 (fetched html version) plus independent coverage (Kai-Fu Lee's own launch tweet, Pandaily, lmarena.ai's X post). Release date 2024-10-16, org 01.AI, and Arena score 1287 / rank #6 (matching GPT-4o-0513's #7/1285) all confirmed. All four benchmark rows (MATH 76.4, HumanEval 83.5, GPQA 50.9, IFEval 81.9) confirmed verbatim on the technical report. Confirmed the deployed API context is capped at 16K tokens (per crafiq.ai, serenitiesai.com, and an HN discussion) even though training data included longer sequences up to 64K \u2014 ctxK:16 is correct. Confirmed parameter count is genuinely undisclosed by 01.AI, so paramsB/activeParamsB null is correct. Pricing $0.14/M input+output confirmed via web search of platform docs."
 }

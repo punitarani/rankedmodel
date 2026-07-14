@@ -75,6 +75,33 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-VL-01",
       "notes": "relaxed accuracy"
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 52.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-VL-01",
+      "notes": "From the same official evaluation table as the already-recorded MMMU score."
+    },
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 865,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-VL-01",
+      "notes": "Reported out of 1000 on the official model card; MiniMax-VL-01's highest-scoring benchmark in its comparison table."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 83.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-VL-01"
+    },
+    {
+      "benchmarkSlug": "olympiadbench",
+      "score": 24.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-VL-01",
+      "notes": "Listed as 'OlympiadBench (full)' in the card's Mathematics & Sciences section; slightly above the taxonomy's stated 0-22 range but is the same bilingual multimodal OlympiadBench evaluation."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card (MiniMaxAI/MiniMax-VL-01) and GitHub MiniMax-AI/MiniMax-01. 456B/45.9B MoE backbone + 303M ViT-MLP vision encoder, dynamic resolution 336-2016px all confirmed. All 4 benchmark scores (MMMU 68.5, MathVista 68.6, DocVQA 96.4, ChartQA 91.7) confirmed literally on the HF card. Price ($0.2 input / $1.1 output per 1M tokens) independently confirmed via current MiniMax pricing pages. No changes needed."

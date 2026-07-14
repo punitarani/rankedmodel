@@ -87,7 +87,63 @@
       "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
       "evaluatedAt": "2024-11-04",
       "notes": "0-shot, official model card addendum Table 8"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 65,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-11-04",
+      "notes": "0-shot CoT, Model Card Addendum Table 8 (Claude 3.5 Haiku column)."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 85.6,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-11-04",
+      "notes": "0-shot CoT, Table 8."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 83.1,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-11-04",
+      "notes": "F1 score, 3-shot, Table 8."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 86.6,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-11-04",
+      "notes": "3-shot CoT, Table 8."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 5.3,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-11-04",
+      "notes": "AIME 2024, 0-shot CoT single-sample (pass@1), Table 8. Maj@64 variant (10.1%) omitted as a different metric."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 85.9,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-11-04",
+      "notes": "Table 8."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 51,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-11-04",
+      "notes": "TAU-bench retail domain, pass^1, Table 3. Airline-domain score (22.8%) omitted to avoid a duplicate-key collision under this slug (per corpus convention)."
     }
   ],
-  "verificationNotes": "CORRECTED: apiAvailable changed from true to false — claude-3-5-haiku-20241022 was deprecated Dec 19, 2025 and retired from the Claude API on February 19, 2026 (confirmed on platform.claude.com/docs/en/about-claude/model-deprecations), so it is not currently API-available; this also matches the record's own note text ('retired Feb 2026'), which contradicted the old apiAvailable=true. DROPPED 2 rows: independent AA scores 'gpqa 40.8' and 'mmlu-pro 63.4' sourced to artificialanalysis.ai/models/claude-3-5-haiku — fetched the live page directly and it no longer surfaces individual GPQA Diamond or MMLU-Pro breakouts for this (now-retired) model under its current v4.1 Intelligence Index methodology, so the claimed numbers could not be confirmed on that page and were removed per instructions. KEPT and verified: SWE-bench 40.6% confirmed verbatim on the cited Anthropic blog post. GPQA 41.6, MMLU 80.3, MATH 69.2, HumanEval 88.1 all independently confirmed by downloading and reading (via pdftotext -layout) the actual Claude-3-Model-Card-October-Addendum.pdf, Table 8 (Claude 3.5 Haiku column) — all four numbers match verbatim. Pricing $0.80/$4 confirmed (Dec 2024 price cut). Release date 2024-10-22 corresponds to the official model ID (claude-3-5-haiku-20241022) and is what independent trackers list as the release date; note that broad public/API rollout was actually delayed about two weeks to November 4, 2024 for capacity reasons (confirmed via Simon Willison's Nov 4, 2024 post) — kept 2024-10-22 as it's the canonical/model-ID date, but flagging the nuance."
+  "verificationNotes": "CORRECTED: apiAvailable changed from true to false \u2014 claude-3-5-haiku-20241022 was deprecated Dec 19, 2025 and retired from the Claude API on February 19, 2026 (confirmed on platform.claude.com/docs/en/about-claude/model-deprecations), so it is not currently API-available; this also matches the record's own note text ('retired Feb 2026'), which contradicted the old apiAvailable=true. DROPPED 2 rows: independent AA scores 'gpqa 40.8' and 'mmlu-pro 63.4' sourced to artificialanalysis.ai/models/claude-3-5-haiku \u2014 fetched the live page directly and it no longer surfaces individual GPQA Diamond or MMLU-Pro breakouts for this (now-retired) model under its current v4.1 Intelligence Index methodology, so the claimed numbers could not be confirmed on that page and were removed per instructions. KEPT and verified: SWE-bench 40.6% confirmed verbatim on the cited Anthropic blog post. GPQA 41.6, MMLU 80.3, MATH 69.2, HumanEval 88.1 all independently confirmed by downloading and reading (via pdftotext -layout) the actual Claude-3-Model-Card-October-Addendum.pdf, Table 8 (Claude 3.5 Haiku column) \u2014 all four numbers match verbatim. Pricing $0.80/$4 confirmed (Dec 2024 price cut). Release date 2024-10-22 corresponds to the official model ID (claude-3-5-haiku-20241022) and is what independent trackers list as the release date; note that broad public/API rollout was actually delayed about two weeks to November 4, 2024 for capacity reasons (confirmed via Simon Willison's Nov 4, 2024 post) \u2014 kept 2024-10-22 as it's the canonical/model-ID date, but flagging the nuance."
 }

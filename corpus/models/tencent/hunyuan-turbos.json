@@ -55,7 +55,135 @@
       "source": "arena",
       "sourceUrl": "https://arxiv.org/abs/2505.15431",
       "notes": "LMSYS Chatbot Arena Elo, overall top-7 rank at evaluation time"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 94.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "4-shot, Table 4 of Tencent's Hunyuan-TurboS technical report (arxiv 2505.15431), Hunyuan-TurboS-20250416 checkpoint"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 90,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "5-shot, Table 4 of the same technical report"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 40,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "AIME 2025 pass@1, Table 4 (also shown in the paper's Figure 1 bar chart); the paper separately reports AIME 2024 = 56.7 but the taxonomy has only one undated 'aime' slug so only the 2025 figure is recorded"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 90.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "3-shot, Table 4"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 89.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "3-shot F1, Table 4"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 89,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "pass@1, Table 4"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 43,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "Table 4 (paper's LiveCodeBench-2408-2411 window)"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 85.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "5-shot, Table 4, post-trained/instruct TurboS-20250416 (distinct from the 87.94 pre-trained base-model number in Table 2)"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "5-shot, Table 4 (matches the 78.0 shown in Figure 1's bar chart)"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 62.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "GPQA-Diamond, Table 4"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 89.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "5-shot, Table 4"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 88.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "5-shot, Table 4"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 76,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "Table 4"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 87.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "Table 4 accuracy"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 9.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "/10 scale, Table 4 (the paper's 'AVG' row converts alignment scores to a 100-point scale, but the raw MTBench row itself is already /10)"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 91.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.15431",
+      "evaluatedAt": "2025-04-16",
+      "notes": "Table 4, Arena-Hard win rate"
     }
   ],
-  "verificationNotes": "Confirmed via arxiv abstract (2505.15431) and press coverage: 560B total/56B active, hybrid Transformer-Mamba2 MoE, 128 layers with AMF/MF block pattern, 256K context, all confirmed exact. Arena Elo 1356 (top-7, beating Gemini-2.0-Flash-001's 1352) confirmed literally on the arxiv page. Release date Feb 27, 2025 confirmed via Bloomberg headline/dateline. Corrected ctxK's specSource to arxiv (previously an unrelated aibase.com news URL); ctxK value itself (256) was already correct. Pricing: found ¥0.8/¥2 per 1M tokens (input/output) from Chinese coverage, which converts to roughly $0.11/$0.28 at prevailing CNY/USD rates - close to but not an exact match for the record's $0.12/$0.30; kept as a reasonable currency-converted approximation, not corrected."
+  "verificationNotes": "Confirmed via arxiv abstract (2505.15431) and press coverage: 560B total/56B active, hybrid Transformer-Mamba2 MoE, 128 layers with AMF/MF block pattern, 256K context, all confirmed exact. Arena Elo 1356 (top-7, beating Gemini-2.0-Flash-001's 1352) confirmed literally on the arxiv page. Release date Feb 27, 2025 confirmed via Bloomberg headline/dateline. Corrected ctxK's specSource to arxiv (previously an unrelated aibase.com news URL); ctxK value itself (256) was already correct. Pricing: found \u00a50.8/\u00a52 per 1M tokens (input/output) from Chinese coverage, which converts to roughly $0.11/$0.28 at prevailing CNY/USD rates - close to but not an exact match for the record's $0.12/$0.30; kept as a reasonable currency-converted approximation, not corrected."
 }

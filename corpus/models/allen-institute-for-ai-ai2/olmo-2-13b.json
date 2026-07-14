@@ -89,6 +89,60 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
       "notes": "Instruct variant"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 39.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
+      "notes": "AlpacaEval (2.0); OLMo-2-13B-1124-Instruct variant. Confirmed on the live HF model card's evaluation table and independently matches the identical figure (labeled 'AE2') in the OLMo 2 Technical Report (arXiv:2501.00656) Table 7."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 64.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
+      "notes": "TruthfulQA ('TruthQA'); OLMo-2-13B-1124-Instruct variant. Confirmed on the live HF model card and matches the OLMo 2 Technical Report Table 7 ('TQA') exactly."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 83.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.00656",
+      "evaluatedAt": "2025-01-02",
+      "notes": "ARC-Challenge; OLMo 2 Technical Report ('2 OLMo 2 Furious') Table 6, base OLMo-2-13B (non-instruct) row - a cleanly labeled table with unambiguous column headers (Avg, FLOPs, MMLU, ARC-C, HSwag, WinoG, NQ, DROP, AGIEval, GSM8K, MMLUPro, TriviaQA)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 86.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.00656",
+      "evaluatedAt": "2025-01-02",
+      "notes": "HellaSwag ('HSwag'); OLMo 2 Technical Report Table 6, base OLMo-2-13B row."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 81.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.00656",
+      "evaluatedAt": "2025-01-02",
+      "notes": "WinoGrande ('WinoG'); OLMo 2 Technical Report Table 6, base OLMo-2-13B row."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 35.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.00656",
+      "evaluatedAt": "2025-01-02",
+      "notes": "MMLU-Pro ('MMLUPRO'); OLMo 2 Technical Report Table 6, base OLMo-2-13B row."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 81.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.00656",
+      "evaluatedAt": "2025-01-02",
+      "notes": "TriviaQA; OLMo 2 Technical Report Table 6, base OLMo-2-13B row."
     }
   ],
   "verificationNotes": "Release date (Nov 26 2024) confirmed via live Ai2 blog fetch. All six benchmark rows literally confirmed on the live HF Instruct model card. paramsB=13 confirmed precisely: safetensors index total 54,864,793,600 bytes / 4 bytes (fp32) = ~13.72B, rounds to 13. ctxK=4 confirmed via config.json (max_position_embeddings=4096). No changes needed."

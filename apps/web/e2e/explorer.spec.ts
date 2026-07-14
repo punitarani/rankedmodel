@@ -10,7 +10,7 @@ test.describe('model explorer', () => {
     // JS-computed summary count above plus the always-rendered top row, not a raw card count.
     // Rank-eligible models sort first (D20), so the #1 card is the frontier leader, not a
     // single-benchmark curiosity.
-    await expect(page.getByTestId('explorer-card').first()).toContainText('Gemini 3.1 Pro')
+    await expect(page.getByTestId('explorer-card').first()).toContainText('GPT-5.6')
   })
 
   test('runs-on-my-hardware facet applies the curated 1.08× rule', async ({ page }) => {
@@ -34,8 +34,8 @@ test.describe('model explorer', () => {
     // real corpus: 19 open, <15B-param models with the reasoning capability
     await expect(page.getByTestId('explorer-count')).toHaveText('19 models')
     await expect(page.getByTestId('cap-reason')).toHaveAttribute('aria-pressed', 'true')
-    // default sort is by index (rank-eligible first) — Phi-4-reasoning leads this facet combo
-    await expect(page.getByTestId('explorer-card').first()).toContainText('Phi-4-reasoning')
+    // default sort is by index (rank-eligible first) — Qwen3-14B (Thinking) leads this facet combo
+    await expect(page.getByTestId('explorer-card').first()).toContainText('Qwen3-14B (Thinking)')
   })
 
   test('cheapest-API sort puts Ministral 3B first ($0.04/M out)', async ({ page }) => {

@@ -89,6 +89,54 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "notes": "BFCL v3, non-thinking mode"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 84.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MMLU-Redux, non-thinking mode, Qwen3 Technical Report Table 16"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 82.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "C-Eval, non-thinking mode, Table 16"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 83.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "IFEval strict-prompt, non-thinking mode, Table 16"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 89.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MATH-500, non-thinking mode, Table 16"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1267,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "CodeForces rating (Elo), non-thinking mode, Table 16; percentile given as 64.1%. Elo rating, not a 0-100 score."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 73.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MMMLU across 14 languages, non-thinking mode, Table 16"
     }
   ],
   "verificationNotes": "Fully confirmed. Table 16 of the fetched Qwen3 Technical Report PDF confirms all 5 rows exactly (AIME'24 32.8, GPQA-Diamond 54.8, LiveCodeBench v5 29.8, Arena-Hard 88.0, BFCL v3 58.6). Same model/arch verification as thinking-mode sibling record (same HF/GH/license/params/date all confirmed)."

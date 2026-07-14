@@ -91,6 +91,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2303.08774",
       "notes": "training set partially contaminated per OpenAI's own footnote"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 392,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2303.08774",
+      "evaluatedAt": "2023-03-15",
+      "notes": "Codeforces Rating from Table 1 ('GPT performance on academic and professional exams') of the GPT-4 Technical Report, for the RLHF/launch GPT-4 model, described as 'below 5th percentile' among competitive programmers. Estimated by having the model attempt problems from 10 recent Codeforces contests (10 attempts/problem) and running repeated Elo-adjustment simulations to convergence (100 simulations x 10 contests), per Appendix A. GPT-3.5 scored 260 on the same table for comparison. This is a distinct evaluation protocol from Table 2's few-shot academic benchmarks (base, pre-RLHF model) already in the corpus, but is the same kind of Codeforces-Elo-rating metric used for other models' 'codeforces' entries in this corpus."
     }
   ],
   "verificationNotes": "Release March 14, 2023 confirmed (TechCrunch/Wikipedia); 8K default / 32K variant context and $30/$60 per-million pricing confirmed via multiple independent sources. All 7 benchmark rows (MMLU 86.4, HellaSwag 95.3, ARC 96.3, Winogrande 87.5, HumanEval 67.0, DROP 80.9 F1, GSM8K 92.0) verified literally in arXiv 2303.08774 Table 2 (fetched directly). No changes made."

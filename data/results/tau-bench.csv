@@ -1,7 +1,24 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-3-5-haiku,51,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"TAU-bench retail domain, pass^1, Table 3. Airline-domain score (22.8%) omitted to avoid a duplicate-key collision under this slug (per corpus convention)."
 claude-3-5-sonnet-new,69.2,self-reported,https://www.anthropic.com/news/3-5-models-and-computer-use,,"TAU-bench retail domain, up from 62.6%. (kept per corpus convention of filing the retail split under this slug; airline-domain 46% from the same source omitted to avoid a duplicate-key collision)"
+claude-3-7-sonnet,81.2,self-reported,https://www.anthropic.com/news/claude-3-7-sonnet,2025-02-24,"TAU-bench retail domain, standard mode / no extended thinking; filed under this slug per existing corpus convention (airline-domain 58.4% from the same chart omitted to avoid a duplicate-key collision, matching how claude-3-5-sonnet-new.json handles the same benchmark)."
 claude-opus-4,81.4,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,tau-bench retail; confirmed via direct fetch
+claude-opus-4-1,82.4,self-reported,https://www.anthropic.com/news/claude-opus-4-1,2025-08-05,"TAU-bench Retail domain score, filed under 'tau-bench' per this corpus's existing convention (see claude-opus-4.json, claude-sonnet-4.json) of recording the Retail split under this slug; Airline 56.0% from the same table omitted to avoid a duplicate-key collision."
 claude-sonnet-4,80.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,tau-bench retail; confirmed via direct fetch
 command-a,51.7,self-reported,https://arxiv.org/abs/2504.00698,,Taubench agentic benchmark
+deepseek-r1-0528,53.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,"Tau-Bench Airline domain, pass@1"
 glm-4-32b-0414,68.7,self-reported,https://huggingface.co/zai-org/GLM-4-32B-0414,,Retail split
 glm-4-5-355b-a32b,70.1,self-reported,https://arxiv.org/abs/2508.06471,,"TAU-Bench, GLM-4.5 paper"
+gpt-4o,60.4,independent,https://github.com/sierra-research/tau-bench,,"TAU-bench retail domain, pass^1, gpt-4o with the tool-calling (TC) strategy, from Sierra Research's official leaderboard/repo. Airline-domain score (42.0%, pass^1) omitted per this corpus's established convention of filing only the retail split under the single 'tau-bench' slug to avoid a duplicate-key collision (see corpus/models/anthropic/claude-3-5-sonnet-new.json for precedent)."
+gpt-oss-120b-high,67.8,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Tau-Bench Retail, high reasoning effort. Read directly from Table 3 of the official model card."
+gpt-oss-120b-low,49.4,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Tau-Bench Retail, low reasoning effort. Read directly from Table 3 of the official model card."
+gpt-oss-120b-medium,62,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Tau-Bench Retail domain, medium reasoning effort"
+gpt-oss-20b-high,54.8,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Tau-Bench Retail domain, high reasoning effort"
+gpt-oss-20b-low,35,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Tau-Bench Retail domain, low reasoning effort"
+gpt-oss-20b-medium,47.3,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Tau-Bench Retail domain, medium reasoning effort"
+hunyuan-a13b,54.7,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,"τ-Bench, agentic tool-use."
+lg-exaone-4-0-32b-non-reasoning,55.9,self-reported,https://arxiv.org/abs/2507.11407,,"Tau-Bench Retail domain, non-reasoning mode (Airline domain separately scored 25.5; only the Retail split is added since the taxonomy has a single tau-bench slug, matching this repo's convention of one score per benchmarkSlug per model)."
+lg-exaone-4-0-32b-reasoning,62.8,self-reported,https://arxiv.org/abs/2507.11407,,"Tau-Bench Retail domain, reasoning mode (Airline domain separately scored 51.5; only the Retail split is added since the taxonomy has a single tau-bench slug, matching this repo's convention of one score per benchmarkSlug per model)."
+minimax-m1,63.5,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,2025-06-16,"TAU-bench retail, M1-80K checkpoint (M1-40K scores 67.8 on the same task). Cross-confirmed identically on the official HF model card and the github.com/MiniMax-AI/MiniMax-M1 README."
+qwen3-235b-a22b-instruct-2507,71.3,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,TAU1-Retail split (filed under tau-bench per corpus convention; TAU1-Airline 44.0 omitted to avoid a duplicate-slug collision)
+seed-oss-36b,70.4,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,TAU1-Retail domain

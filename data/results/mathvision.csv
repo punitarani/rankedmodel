@@ -1,5 +1,21 @@
 model_slug,score,source,source_url,evaluated_at,notes
+exaone-4-5,75.2,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,MATH-Vision
+gemma-4,85.6,self-reported,https://ai.google.dev/gemma/docs/core/model_card_4,2026-04-02,"MATH-Vision, 31B."
+gemma-4-26b-a4b,82.4,self-reported,https://huggingface.co/google/gemma-4-26B-A4B-it,2026-04-02,"MATH-Vision, 26B A4B."
+internvl2-5-78b,32.2,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,MathVision full test set (mini split scored 34.9)
+internvl3-78b,43.1,self-reported,https://internvl.github.io/blog/2025-04-11-InternVL-3.0/,,
+kimi-k1-5,38.6,self-reported,https://arxiv.org/abs/2501.12599,,"MathVision-Full (Pass@1) = 38.6, Kimi k1.5 long-CoT model, Table 2 (short-CoT model scores 31.0 per Table 3)."
+kimi-k2-5,84.2,self-reported,https://www.kimi.com/blog/kimi-k2-5,,"MathVision, Kimi K2.5 Thinking, avg@3, no python tool use."
+kimi-k2-6,87.4,self-reported,https://www.kimi.com/blog/kimi-k2-6,,"MathVision, no python tool use, avg@3; vendor also reports 93.2 with python tool use enabled."
+minicpm-o-2-6,23.1,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-13,Evaluated with chain-of-thought prompting per the model card's footnote.
+minicpm-v-2-6,18.3,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2024-08-06,Not in MiniCPM-V 2.6's own results table; taken from the fuller cross-model comparison table on the MiniCPM-o 2.6 model card.
 qvq-72b-preview,35.9,self-reported,https://huggingface.co/Qwen/QVQ-72B-Preview,,MathVision full
+qwen2-5-vl-72b,38.1,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,2025-01-28,MathVision_FULL
 qwen3-5-122b-a10b,86.2,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,,Vision-Language table; README footnote notes a fixed \boxed{} prompt was used for this model's score.
+qwen3-5-397b-a17b,88.6,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,"Vision-Language table, STEM and Puzzle section. Footnote: evaluated using a fixed \boxed{} prompt."
 qwen3-5-omni-flash,65.4,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Table 6 (Vision→Text), STEM and Puzzle section. Confirmed identical in arXiv:2604.15804 Table 6."
 qwen3-5-omni-plus,73,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 6 (Vision→Text), Qwen3.5-Omni-Plus column, cell S5.T6.3.5.4."
+qwen3-6-plus,88,self-reported,https://qwen.ai/blog?id=qwen3.6,2026-04-02,"Vision-language table, MathVision row; Qwen notes the score uses a fixed 'reason step by step, \boxed{}' prompt, taking the higher of boxed/non-boxed for other models."
+qwen3-7-plus,90.3,self-reported,https://qwen.ai/blog?id=qwen3.7-plus,2026-05-31,"Official Qwen launch blog, 'Multimodal Benchmarks / Multimodal Reasoning' table."
+seed-2-1-pro,92.6,self-reported,https://seed.bytedance.com/en/seed2_1,,"MathVision, no-tool configuration, from ByteDance's official Seed 2.1 launch page benchmark table (Multimodal & Vision section). With tool use, Seed 2.1 Pro scored 94.5% per the same table (Seed 2.1 Turbo: 90.1% no-tool / 92.7% with tool, for comparison)."
+step-3,64.8,self-reported,https://chat.stepfun.com/research/en/step3,2025-07-31,"MATH-Vision benchmark score for Step-3 (321B total/38B active). Read directly (not OCR'd) from the raw benchmark image figures/step3_bmk.jpeg, which is embedded identically in the GitHub README (github.com/stepfun-ai/Step3), the HF model card (huggingface.co/stepfun-ai/step3), and this official blog page. Downloading and visually inspecting the JPEG directly resolves the prior ambiguity noted in this model's verificationNotes: the full row reads MMMU 74.2, MATH-Vision 64.8, SimpleVQA 62.2, HallusionBench 64.2, ZeroBench(sub) 23.0, DynaMath 50.1, AIME25 82.9, GPQA-Diamond 73.0, LiveCodeBench(202408-202505) 67.1, HMMT25 70.0, CNMO24 83.7 — the existing mmmu/aime/gpqa/livecodebench entries all match this table exactly, confirming they are correct."

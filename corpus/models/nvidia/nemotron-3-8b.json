@@ -81,7 +81,21 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/nvidia/nemotron-3-8b-base-4k",
       "notes": "8-shot, majority voting"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 72.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/nvidia/nemotron-3-8b-base-4k",
+      "notes": "0-shot. From the evaluation table on the HF model card, confirmed via two independent literal-transcription fetches of the page."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 80.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/nvidia/nemotron-3-8b-base-4k",
+      "notes": "0-shot. From the evaluation table on the HF model card, confirmed via two independent literal-transcription fetches of the page."
     }
   ],
-  "verificationNotes": "Confirmed real and distinct from NVIDIA's unrelated December 2025 'Nemotron 3' family rebrand (Nano/Super/Ultra) — this is the original Nov 15, 2023 release, corroborated by Wikipedia's Nemotron timeline and a Microsoft Tech Community post ('Introducing NVIDIA Nemotron-3 8B LLMs on the Model Catalog'). All specs (8B params, 4096-token context, 53 languages + 37 programming languages, NVIDIA AI Foundation Models Community License Agreement) and all five benchmark scores (MMLU 54.4, HellaSwag 76.4, WinoGrande 70.9, LAMBADA 70.6, GSM8K 39.4) confirmed as literal text on the cited HuggingFace model card. No changes made."
+  "verificationNotes": "Confirmed real and distinct from NVIDIA's unrelated December 2025 'Nemotron 3' family rebrand (Nano/Super/Ultra) \u2014 this is the original Nov 15, 2023 release, corroborated by Wikipedia's Nemotron timeline and a Microsoft Tech Community post ('Introducing NVIDIA Nemotron-3 8B LLMs on the Model Catalog'). All specs (8B params, 4096-token context, 53 languages + 37 programming languages, NVIDIA AI Foundation Models Community License Agreement) and all five benchmark scores (MMLU 54.4, HellaSwag 76.4, WinoGrande 70.9, LAMBADA 70.6, GSM8K 39.4) confirmed as literal text on the cited HuggingFace model card. No changes made."
 }

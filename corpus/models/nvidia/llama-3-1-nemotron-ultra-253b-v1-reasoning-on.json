@@ -40,7 +40,7 @@
   "vramQ4Gb": 126.5,
   "vramFp16Gb": 506,
   "tps4090": null,
-  "tpsNote": "Needs ~127GB+ at INT4 — far beyond a single RTX 4090; designed to fit an 8xH100 node.",
+  "tpsNote": "Needs ~127GB+ at INT4 \u2014 far beyond a single RTX 4090; designed to fit an 8xH100 node.",
   "effortLabel": "Reasoning On",
   "isDefaultConfig": true,
   "isBestConfig": true,
@@ -92,7 +92,15 @@
       "source": "independent",
       "sourceUrl": "https://venturebeat.com/ai/nvidias-new-llama-3-1-nemotron-ultra-outperforms-deepseek-r1-at-half-the-size",
       "notes": "DeepSeek-R1 comparison point; VentureBeat itself returned 403 on direct fetch, but the 71.5 GPQA-Diamond figure for DeepSeek-R1 is independently corroborated by multiple other sources"
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 74.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+      "evaluatedAt": "2025-04-07",
+      "notes": "BFCL V2 Live, Reasoning On. Confirmed via raw README.md fetch of the HF model card, which publishes both modes (Off=73.62, On=74.10)."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card fetch: all 5 self-reported benchmark rows (MATH500 97.00, AIME25 72.50, GPQA 76.01, IFEval 89.45, LiveCodeBench 66.31) match exactly. DeepSeek-R1 GPQA-Diamond comparison figure of 71.5 independently corroborated (though VentureBeat URL itself 403'd on direct fetch — kept as independent row since the number is well corroborated elsewhere). CORRECTED price.provider from 'DeepInfra' to 'NVIDIA API' for the same reason as the Reasoning-Off variant."
+  "verificationNotes": "Confirmed real via HF model card fetch: all 5 self-reported benchmark rows (MATH500 97.00, AIME25 72.50, GPQA 76.01, IFEval 89.45, LiveCodeBench 66.31) match exactly. DeepSeek-R1 GPQA-Diamond comparison figure of 71.5 independently corroborated (though VentureBeat URL itself 403'd on direct fetch \u2014 kept as independent row since the number is well corroborated elsewhere). CORRECTED price.provider from 'DeepInfra' to 'NVIDIA API' for the same reason as the Reasoning-Off variant."
 }

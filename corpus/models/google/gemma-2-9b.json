@@ -106,6 +106,70 @@
       "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_2",
       "evaluatedAt": "2024-06-01",
       "notes": "3-shot CoT"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 52.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2-9b",
+      "evaluatedAt": "2024-06-01",
+      "notes": "AGIEval (English-only), 3-5-shot, PT 9B checkpoint. Confirmed identical in the official technical report (Table 13) and the live HF model card benchmark table. Exceeds this corpus's previously-observed agieval range ceiling (~48) but is Google's own directly-verified number, not an estimate."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 69.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf",
+      "evaluatedAt": "2024-06-01",
+      "notes": "3-shot, F1. Table 13 of the Gemma 2 technical report, PT 9B column (not currently listed on the abbreviated live HF card table)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 36.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2-9b",
+      "evaluatedAt": "2024-06-01",
+      "notes": "4-shot"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 88,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2-9b",
+      "evaluatedAt": "2024-06-01",
+      "notes": "ARC-e, 0-shot"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 81.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2-9b",
+      "evaluatedAt": "2024-06-01",
+      "notes": "0-shot"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 53.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2-9b",
+      "evaluatedAt": "2024-06-01",
+      "notes": "SocialIQA, 0-shot"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 76.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2-9b",
+      "evaluatedAt": "2024-06-01",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 52.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-2-9b",
+      "evaluatedAt": "2024-06-01",
+      "notes": "3-shot"
     }
   ],
   "verificationNotes": "Existence, release date (June 27 2024), 9B params (8T training tokens), 8192-token context, and all 7 benchmark rows verbatim-confirmed via fetched ai.google.dev model card. No changes made."

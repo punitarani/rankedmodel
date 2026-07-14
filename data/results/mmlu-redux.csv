@@ -1,9 +1,37 @@
 model_slug,score,source,source_url,evaluated_at,notes
+deepseek-r1-0528,93.4,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,MMLU-Redux (EM)
+deepseek-r1-671b,92.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,MMLU-Redux (EM)
 deepseek-v3-1-non-thinking,91.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,"MMLU-Redux (EM), not raw MMLU"
 deepseek-v3-1-thinking,93.7,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,"MMLU-Redux (EM), not raw MMLU"
+deepseek-v3-671b,89.1,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,"MMLU-Redux (EM), Chat model"
+kimi-k2,92.7,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,General Tasks table (EM); cross-confirmed verbatim in GitHub README mirror and arXiv:2507.20534 Table 3
+kimi-k2-thinking,94.4,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,"General Tasks table, MMLU-Redux score on official model card"
 lg-exaone-4-0-32b-non-reasoning,89.8,self-reported,https://arxiv.org/abs/2507.11407,,Non-reasoning mode
 lg-exaone-4-0-32b-reasoning,92.3,self-reported,https://arxiv.org/abs/2507.11407,,Reasoning mode
+qwen2-5-14b,76.6,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 5-shot; from the Qwen2.5-14B/32B base-model performance table."
+qwen2-5-32b,82,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 5-shot."
+qwen2-5-72b,83.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
+qwen2-5-7b,71.1,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
+qwen3-14b-non-thinking,82,self-reported,https://arxiv.org/pdf/2505.09388,,"MMLU-Redux, Qwen3 Technical Report Table 16, Qwen3-14B (Non-thinking) column"
+qwen3-14b-thinking,88.6,self-reported,https://arxiv.org/pdf/2505.09388,,"MMLU-Redux, Qwen3 Technical Report Table 15, Qwen3-14B (Thinking) column"
+qwen3-235b-a22b-instruct-2507,93.1,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,"MMLU-Redux, official HF model card Performance table"
+qwen3-235b-a22b-non-thinking,89.2,self-reported,https://arxiv.org/pdf/2505.09388,,"MMLU-Redux, Qwen3 Technical Report Table 12, Qwen3-235B-A22B (Non-thinking) column"
+qwen3-235b-a22b-thinking,92.7,self-reported,https://arxiv.org/pdf/2505.09388,2025-05-15,"MMLU-Redux, Thinking mode, Qwen3 Technical Report Table 11"
 qwen3-235b-a22b-thinking-2507,93.8,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507,,MMLU-Redux
+qwen3-30b-a3b-non-thinking,84.1,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"MMLU-Redux, non-thinking mode, Qwen3 Technical Report Table 16"
+qwen3-30b-a3b-thinking,89.5,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"MMLU-Redux, thinking mode, Qwen3 Technical Report Table 15"
+qwen3-32b-non-thinking,85.7,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"MMLU-Redux, non-thinking mode, Qwen3 Technical Report Table 14"
+qwen3-32b-thinking,90.9,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"Table 13 of the Qwen3 Technical Report (Qwen3-32B Thinking column), directly re-verified via PDF fetch. MMLU-Redux score for Qwen3-32B (Thinking)."
 qwen3-5-122b-a10b,94,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,,
+qwen3-5-397b-a17b,94.9,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,"Language benchmark table, Knowledge section, Qwen3.5-397B-A17B column."
 qwen3-5-omni-flash,90,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Table 4 (Text→Text), Knowledge section. Confirmed identical in arXiv:2604.15804 Table 4."
 qwen3-5-omni-plus,94.2,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 4 (Text→Text), Qwen3.5-Omni-Plus column, confirmed against raw HTML table cell S5.T4.3.4.4. Distinct from Qwen3.5-Plus-Instruct (94.3) and Qwen3.5-Omni-Flash (90.0) in the same row."
+qwen3-5-plus,94.3,self-reported,https://arxiv.org/abs/2604.15804,,"Qwen3.5-Plus-NoThinking column, Table 4 of the official Qwen3.5-Omni Technical Report (the column is used as the text-only baseline against Qwen3.5-Omni-Flash/Plus)."
+qwen3-6-27b,93.5,self-reported,https://huggingface.co/Qwen/Qwen3.6-27B,,Official HF model card.
+qwen3-6-35b-a3b,93.3,self-reported,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,,Official HF model card.
+qwen3-6-plus,94.5,self-reported,https://qwen.ai/blog?id=qwen3.6,2026-04-02,"Knowledge table, MMLU-Redux row."
+qwen3-7-max,95,self-reported,https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154,2026-05-21,"Same embedded table image, 'General Capability' section. Qwen3.7-Max scored 95.0 vs Opus-4.6 Max 95.2, K2.6 Thinking 95.3, GLM-5.1 Thinking 94.3, DS-V4-Pro Max 94.8, Qwen3.6-Plus 94.5."
+qwen3-7-plus,94.5,self-reported,https://qwen.ai/blog?id=qwen3.7-plus,2026-05-31,"Official Qwen launch blog, 'General Capability' table; recorded under this corpus's dedicated 'mmlu-redux' slug (not conflated with base MMLU, which was not separately reported for this model in this table)."
+qwen3-8b-non-thinking,79.5,self-reported,https://arxiv.org/abs/2505.09388,,"MMLU-Redux, non-thinking mode, Table 18 (verified via direct PDF fetch, page 18)"
+qwen3-8b-thinking,87.5,self-reported,https://arxiv.org/abs/2505.09388,,"MMLU-Redux, thinking mode, Table 17 (verified via direct PDF fetch, page 18)"
+qwq-32b,90,self-reported,https://arxiv.org/abs/2505.09388,,"Qwen3 Technical Report, Table 13 ('Comparison among Qwen3-32B (Thinking) and other reasoning baselines'), QwQ-32B baseline column. Cross-verified: the same table's IFEval-strict (83.9), AIME'24 (79.5), and BFCL v3 (66.4) figures for QwQ-32B exactly match the values already in this corpus entry, confirming this table is genuinely about the March-2025 QwQ-32B release and not the earlier QwQ-32B-Preview."

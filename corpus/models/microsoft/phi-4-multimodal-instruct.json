@@ -61,7 +61,63 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2503.01743",
       "notes": "MMMU val, confirmed in Table 1 of the Phi-4-Mini/Multimodal technical report"
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 62.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, MathVista (testmini); already present in the sibling phi-4-multimodal-5-6b.json record but missing here."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 93.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, DocVQA; already present in the sibling phi-4-multimodal-5-6b.json record but missing here."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 38.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, MMMUPro (standard/vision avg); sub-scores 39.7/37.3."
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 86.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, MMBench (dev-en)."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 82.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, AI2D."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 81.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, ChartQA."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 75.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, TextVQA (val); marginally above taxonomy's stated range ceiling but same benchmark."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 55,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, VideoMME-16Frame."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-4-multimodal-instruct): 5.6B params, 128K context, MIT license, text+image+audio modalities, 23 languages (text) — matches record exactly, no correction needed. MMMU 55.1 independently confirmed in Table 1 of arXiv:2503.01743 (fetched via ar5iv HTML rendering)."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-4-multimodal-instruct): 5.6B params, 128K context, MIT license, text+image+audio modalities, 23 languages (text) \u2014 matches record exactly, no correction needed. MMMU 55.1 independently confirmed in Table 1 of arXiv:2503.01743 (fetched via ar5iv HTML rendering)."
 }

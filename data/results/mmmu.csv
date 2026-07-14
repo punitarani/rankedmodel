@@ -1,38 +1,74 @@
 model_slug,score,source,source_url,evaluated_at,notes
+amazon-nova-lite,56.2,self-reported,https://cdn.amazon.science/96/7d/0d3e59514abf8fdcfafcdc574300/nova-tech-report-20250317-0810.pdf,,"MMMU (CoT, val) accuracy from Table 3 (image/video understanding) of the official Nova technical report."
+amazon-nova-premier,68,self-reported,https://assets.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf,2025-04-30,"MMMU with CoT prompting, exact-match accuracy (Table 1)."
+amazon-nova-pro,61.7,self-reported,https://arxiv.org/pdf/2506.12103,2024-12-03,"MMMU val split, CoT prompting, accuracy (Table 3 of the official Amazon Nova technical report)."
 claude-3-5-sonnet,68.3,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,"Validation set, overall"
+claude-3-5-sonnet-new,70.4,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"Validation set, 0-shot CoT, Table 5."
+claude-3-7-sonnet,71.8,self-reported,https://www.anthropic.com/news/claude-3-7-sonnet,2025-02-24,"Visual reasoning, MMMU (validation), standard mode / no extended thinking. Extended-thinking mode scores 75%."
 claude-3-haiku,50.2,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,"Validation set, overall"
 claude-3-opus,59.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"Validation set, overall"
 claude-3-sonnet,53.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"Validation set, overall"
+claude-haiku-4-5,73.2,self-reported,https://www.anthropic.com/news/claude-haiku-4-5,2025-10-15,"MMMU (validation split), visual reasoning."
 claude-opus-4,76.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,multimodal understanding; confirmed via direct fetch
+claude-opus-4-1,77.1,self-reported,https://www.anthropic.com/news/claude-opus-4-1,2025-08-05,"MMMU (validation split), visual reasoning, from the same official launch-page table."
 claude-opus-4-5,80.7,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,,
 claude-opus-4-5-high,80.7,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,2025-11-24,
 claude-sonnet-4,74.4,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,multimodal understanding; confirmed via direct fetch
+cogvlm-17b,41.1,self-reported,https://ar5iv.labs.arxiv.org/html/2311.03079,,"From a later-revised comparison table in the same paper (arXiv:2311.03079, updated version) for the 'CogVLM-Chat / Vicuna-7B' checkpoint, i.e. the same cogvlm-chat-hf model cataloged here. MMMU/MathVista postdate the Nov-2023 original release, confirming this table reflects a later official update to the paper."
 command-a-218b,75.1,self-reported,https://cohere.com/blog/command-a-plus,,
 deepseek-vl-7b,36.6,self-reported,https://arxiv.org/html/2403.05525v2,,7B-chat variant
 deepseek-vl2,51.1,self-reported,https://arxiv.org/html/2412.10302v1,,Base (4.5B active) variant
+ernie-4-5-vl-424b-a47b,70,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 8, thinking mode -- this is the near-o1 result referenced in this model's existing 'note' field."
+exaone-4-5,78.7,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,"MMMU (val), reasoning mode; also confirmed on the HF model card"
+gemini-1-0-ultra,62.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Stated directly in the report body (Section 1/5.1) as Gemini Ultra's new state-of-the-art MMMU score, corroborated by the paper's abstract; uses the uncertainty-routed CoT approach."
 gemini-1-5-flash,56.1,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"val split, 0-shot, Table 22"
 gemini-1-5-flash-8b,50.3,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"val, 4-shot, Table 22"
+gemini-1-5-pro,62.2,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"MMMU val split, 0-shot, Table 18 of the Gemini 1.5 technical report."
 gemini-2-0-flash,71.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,GA version
 gemini-2-0-flash-lite,68,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,Public Preview
 gemini-2-0-flash-thinking-experimental,75.4,self-reported,https://www.datacamp.com/blog/gemini-2-0-flash-experimental,,"MMMU, multimodal reasoning; same Google DeepMind self-reported figure, corroborated by DataCamp's writeup of the Jan 21 update."
+gemini-2-0-pro-experimental,72.7,self-reported,https://arxiv.org/abs/2503.19786,2025-03-25,MMMU (val); Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6.
 gemini-2-5-flash,79.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"MMMU, single attempt, thinking on"
+gemini-2-5-flash-lite-non-thinking,72.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"MMMU, single attempt, (06-17) release, non-thinking."
+gemini-2-5-flash-lite-thinking,72.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"MMMU, single attempt, (06-17) release, thinking on."
+gemini-2-5-pro,81.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf,2025-03-25,"MMMU, single attempt, Gemini 2.5 Pro (Experimental 03-25) column."
 gemini-3-5-flash,83,independent,https://pricepertoken.com/leaderboards/benchmark/mmmu,2026-07-12,"MMMU, LayerLens/Stratix independent eval via PricePerToken leaderboard; split (validation) not explicitly stated"
 gemma-3-12b,59.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,MMMU val
 gemma-3-27b,64.9,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,MMMU val
 gemma-3-4b,48.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,MMMU val
+glm-4v-9b,47.2,self-reported,https://huggingface.co/zai-org/glm-4v-9b,,From the official model card's multimodal benchmark comparison table.
+gpt-4-1,74.8,self-reported,https://futureagi.com/blog/gpt-4-1-benchmarks-2025/,2025-04-14,Also corroborated at 74.8% by docsbot.ai's GPT-4.1 comparison pages.
+gpt-4-1-mini,72.7,self-reported,https://docsbot.ai/models/gpt-4-1-mini,2025-04-14,Relayed from OpenAI's official GPT-4.1-family launch benchmark table.
+gpt-4-1-nano,55.4,self-reported,https://docsbot.ai/models/gpt-4-1-nano,2025-04-14,Relayed from OpenAI's official GPT-4.1-family launch benchmark table.
 gpt-4-5,74.4,independent,https://www.helicone.ai/blog/gpt-4.5-benchmarks,2025-02-01,
+gpt-4o,69.1,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,,"MMMU (validation), 0-shot CoT. OpenAI's own figure from the 'Hello GPT-4o' launch blog (openai.com/index/hello-gpt-4o/, blocked to automated fetch, HTTP 403), reproduced verbatim in Table 2 of Anthropic's Claude 3.5 Sonnet Model Card Addendum, which cites this column as 'GPT-4o [8]' = OpenAI's Hello GPT-4o post."
 gpt-4o-mini,59.4,self-reported,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,2024-07-18,
 gpt-5,84.2,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,high reasoning effort
 grok-2,66.1,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
 grok-2-mini,63.2,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
+grok-3-standard,73.2,self-reported,https://x.ai/news/grok-3,2025-02-17,"Official non-reasoning 'Grok 3 Beta' row in xAI's launch-blog benchmark table ('Grok 3 also excels in image understanding (MMMU)...'). Note: corpus currently marks this model modalities:['text']/capabilities.vision:false, which conflicts with xAI's own claim of an MMMU score for this exact (non-reasoning) configuration -- worth a separate look at the capabilities flags, though that's outside this results-only report."
+grok-3-think,78,self-reported,https://x.ai/news/grok-3,2025-02-17,"Official 'Grok 3 Beta (Think)' bar in the launch blog's MMMU chart (Grok 3 Beta (Think) 78 vs Gemini 2.0 Flash Thinking 75.4 vs o1 78.2). Note: corpus currently marks this model modalities:['text']/capabilities.vision:false, which conflicts with xAI's own claim of a Think-mode MMMU score -- worth a separate look at the capabilities flags, though that's outside this results-only report."
+grok-4-5,61.79,independent,https://www.vals.ai/models/grok_grok-4.5,,"Vals AI independent MMMU score, ranked 72/82 -- a comparatively weak result for Grok 4.5 relative to its other scores; included per this pass's brief to surface less-favorable numbers, not just strong ones."
 idefics2-8b,43,self-reported,https://huggingface.co/blog/idefics2,,"val split, with image splitting"
 internvl2-5-78b,70.1,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,"MMMU val, with CoT"
 internvl3-78b,72.2,self-reported,https://arxiv.org/html/2504.10479v1,,Surpasses GPT-4o (70.7)
+kimi-k1-5,70,self-reported,https://arxiv.org/abs/2501.12599,,"MMMU-Val (Pass@1) = 70.0, Kimi k1.5 long-CoT model, from Table 2 (the same table the existing MathVista/AIME/MATH-500 long-CoT entries come from). The short-CoT model scores 68.0 on the same benchmark per Table 3; long-CoT figure chosen for consistency with the model's other existing long-CoT entries."
 llama-3-2-11b-vision,50.7,self-reported,https://huggingface.co/meta-llama/Llama-3.2-11B-Vision,2024-09-01,"Instruct, val 0-shot/CoT"
 llama-3-2-90b-vision,60.3,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,"MMMU val, CoT, instruct model"
+llama-4-maverick,73.4,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,Instruction-tuned
+mimo-v2-5,80,independent,https://www.vals.ai/models/xiaomi_mimo-v2.5,,"MMMU (base version, distinct from the already-tracked MMMU-Pro), independently benchmarked by Vals AI for MiMo V2.5 (±0.96 CI)."
+minicpm-llama3-v-2-5,45.8,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md,2024-05-20,MMMU val split.
+minicpm-o-2-6,50.4,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-13,MMMU val split; evaluated with chain-of-thought prompting per the model card's footnote.
+minicpm-v-2-6,49.8,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md,2024-08-06,MMMU val; the model card marks this figure with an asterisk meaning OpenBMB independently re-ran the officially released checkpoint themselves.
 minimax-vl-01,68.5,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,
+mistral-large-3,66.19,independent,https://www.vals.ai/models/mistralai_mistral-large-2512,,"vals.ai independent eval, ±1.14pp CI, ranked 63rd of 82 models."
+mistral-medium-3,62.97,independent,https://www.vals.ai/models/mistralai_mistral-medium-2505,,"Independent Vals AI eval, ±1.16 std error, ranked 70/82."
 mistral-small-3-1-24b,64,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
 mistral-small-3-2-24b,62.5,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,
+molmo-2-8b,53,self-reported,https://arxiv.org/abs/2601.10611,,"Molmo2 Technical Report Table 6, Molmo2-8B row; consistent with the paper's statement that Molmo2 'is behind on open-weight reasoning benchmarks (MathVista, MMMU)' - Molmo2-8B's 53.0 is indeed well below most open-weight peers (InternVL3.5-8B 73.4, Qwen3-VL-8B 69.6)."
+molmo-72b,54.1,self-reported,https://arxiv.org/abs/2409.17146,2024-09-25,"MMMU val; Molmo Technical Report Table 1, Molmo-72B row."
+muse-spark-1-1-xhigh,86.59,independent,https://www.vals.ai/models/meta_muse-spark-1.1,,"MMMU, measured independently by Vals AI (±0.82 CI, ranked 11/82 models on their leaderboard)."
+nemotron-3-nano-omni,70.8,self-reported,https://arxiv.org/abs/2604.24954,,"Table 7, MMMU (val), reasoning-on mode (matches corpus's 'reasoning' effortLabel config); reasoning-off scores 55.2."
 openai-o1,77.6,self-reported,https://www.datacamp.com/blog/o3-openai,2024-12-01,"MMMU college-level visual reasoning [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 openai-o3,82.9,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,
 openai-o4-mini,81.6,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,
@@ -40,12 +76,18 @@ phi-3-5-vision-4-2b,43,self-reported,https://huggingface.co/microsoft/Phi-3.5-vi
 phi-4-multimodal-5-6b,55.1,self-reported,https://huggingface.co/microsoft/Phi-4-multimodal-instruct,,vision understanding
 phi-4-multimodal-instruct,55.1,self-reported,https://arxiv.org/abs/2503.01743,,"MMMU val, confirmed in Table 1 of the Phi-4-Mini/Multimodal technical report"
 pixtral-12b,52.5,self-reported,https://mistral.ai/news/pixtral-12b/,2024-09-11,CoT prompting
+pixtral-large-124b,64,self-reported,https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411,2024-11-18,MMMU (CoT) row of the card's benchmark comparison table.
 qvq-72b-preview,70.3,self-reported,https://huggingface.co/Qwen/QVQ-72B-Preview,,MMMU val
 qwen2-5-vl-72b,70.2,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,,MMMU val
 qwen2-vl-72b,64.5,self-reported,https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct,,"Instruct checkpoint, MMMU val"
 qwen3-5-122b-a10b,83.9,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,,"Vision-Language table, STEM and Puzzle category."
+qwen3-5-397b-a17b,85,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,"Vision-Language table, STEM and Puzzle section."
 qwen3-5-omni-flash,76.9,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Table 6 (Vision→Text), STEM and Puzzle section. Confirmed identical in arXiv:2604.15804 Table 6."
 qwen3-5-omni-plus,80.1,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 6 (Vision→Text), STEM and Puzzle section, Qwen3.5-Omni-Plus column, cell S5.T6.3.3.4."
+qwen3-6-27b,82.9,self-reported,https://huggingface.co/Qwen/Qwen3.6-27B,,"Official HF model card, vision-language benchmarks table."
+qwen3-6-35b-a3b,81.7,self-reported,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,,"Official HF model card, vision-language table."
+qwen3-6-plus,86,self-reported,https://qwen.ai/blog?id=qwen3.6,2026-04-02,"Vision-language table, STEM and Puzzle section, MMMU row."
 reka-core,56.3,self-reported,https://reka.ai/news/reka-core-our-frontier-class-multimodal-language-model,,near GPT-4V 56.8
+reka-flash-21b,53.3,self-reported,https://arxiv.org/html/2404.12387v1,,"MMMU (vision) 0-shot score for Reka Flash, Table 15 / corroborated in Table 5's 'Reka Flash v1.5' column (identical value, confirming same model/build)"
 skywork-r1v-38b,69,self-reported,https://arxiv.org/abs/2504.05599,,"MMMU val, pass@1"
 step-3,74.2,self-reported,https://chat.stepfun.com/research/en/step3,,Vision-language understanding

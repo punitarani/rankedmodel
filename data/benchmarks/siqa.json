@@ -5,6 +5,6 @@
   "unit": "%",
   "description": "Social/emotional commonsense reasoning about everyday situations.",
   "normMin": 40,
-  "normMax": 68,
+  "normMax": 84,
   "higherIsBetter": true
 }

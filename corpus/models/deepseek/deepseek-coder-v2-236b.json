@@ -9,7 +9,7 @@
   "paramsB": 236,
   "activeParamsB": 21,
   "archClass": "moe",
-  "archDisplay": "MoE transformer, 236B total / 21B active — DeepSeekMoE + MLA, further pretrained from a DeepSeek-V2 checkpoint on 6T additional code/math tokens",
+  "archDisplay": "MoE transformer, 236B total / 21B active \u2014 DeepSeekMoE + MLA, further pretrained from a DeepSeek-V2 checkpoint on 6T additional code/math tokens",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -87,6 +87,72 @@
       "score": 63.63,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 79.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "evaluatedAt": "2024-06-17",
+      "notes": "\"General Natural Language\" table, DeepSeek-Coder-V2-Instruct (236B/21B) \u2014 distinct from the mmlu-pro 63.63 already recorded from the HF card"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 83.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "evaluatedAt": "2024-06-17"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 92.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "evaluatedAt": "2024-06-17"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 79.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "evaluatedAt": "2024-06-17"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 80.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "evaluatedAt": "2024-06-17"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 65,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "evaluatedAt": "2024-06-17"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 36.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "evaluatedAt": "2024-06-17",
+      "notes": "AlpacaEval 2.0"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.77,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "evaluatedAt": "2024-06-17"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 13.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "evaluatedAt": "2024-06-17",
+      "notes": "AIME 2024, reported as 4/30 in the 'Mathematical Reasoning' table"
     }
   ],
   "verificationNotes": "Confirmed real via GitHub README and HF model card: 236B total/21B active MoE, 128K context (extended from 16K), DeepSeek Model License. Fetched GitHub README directly and confirmed GSM8K 94.9, MATH 75.7, HumanEval 90.2, MBPP+ 76.2, LiveCodeBench 43.4 all literally present. MMLU-Pro 63.63 confirmed on HF Instruct page. No changes needed."

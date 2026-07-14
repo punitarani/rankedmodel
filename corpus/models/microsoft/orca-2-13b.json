@@ -68,6 +68,38 @@
       "score": 57.73,
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.11045"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 92.85,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.11045",
+      "evaluatedAt": "2023-11-18",
+      "notes": "Zero-shot, Table 2 of the Orca 2 technical report (arXiv 2311.11045), Orca-2-13B row (default/empty system message)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 83.36,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.11045",
+      "evaluatedAt": "2023-11-18",
+      "notes": "Zero-shot, Table 2 of the Orca 2 technical report, Orca-2-13B row (default/empty system message)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 57.97,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.11045",
+      "evaluatedAt": "2023-11-18",
+      "notes": "Zero-shot, Table 1 of the technical report; paper notes DROP was adopted per the OpenLLM Leaderboard convention (F1)."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 6.15,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.11045",
+      "evaluatedAt": "2023-11-18",
+      "notes": "Table 3: MT-Bench average across Turn 1 (6.69) and Turn 2 (5.60), GPT-4-judged 1-10 scale, Orca-2-13B row (default system message)."
     }
   ],
   "verificationNotes": "Existence, Llama-2-13B backbone, Microsoft Research (non-commercial) License, and Nov 18 2023 HF card date all confirmed. Fetched arXiv 2311.11045 HTML directly and confirmed BBH 50.18, GSM8K 59.14, MMLU 57.73 verbatim (zero-shot). No discrepancies found."

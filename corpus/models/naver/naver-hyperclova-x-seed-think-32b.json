@@ -49,12 +49,76 @@
   "results": [
     {
       "benchmarkSlug": "tau2-bench-telecom",
-      "score": 87,
-      "source": "independent",
-      "sourceUrl": "https://www.ajupress.com/view/20251230092739502",
-      "notes": "tau2-Bench Telecom, per Artificial Analysis (article phrases it as '87 percent in an evaluation that assessed agent tool usage capabilities through a simulated telecommunications customer support scenario')",
+      "score": 65.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.03286",
+      "notes": "tau2-Bench Telecom, per Artificial Analysis (article phrases it as '87 percent in an evaluation that assessed agent tool usage capabilities through a simulated telecommunications customer support scenario') [Corrected during full-corpus audit: Fetched the model's own technical report (arXiv 2601.03286, 'HyperCLOVA X 32B Think') three times independently; Table 5 consistently reports Tau2-Airline 58.0, Tau2-Retail 71.6, and Tau2-Telecom 65.1 for this model \u2014 not 87. The existing 87 figure traces only to an Ajupress press article paraphrase ('achieved 87 percent in an evaluation that assessed agent tool usage capabilities...simulated tele]",
       "evaluatedAt": "2025-12-26"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 87.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.03286",
+      "evaluatedAt": "2026-01-03",
+      "notes": "Table 5, English text-to-text benchmarks."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 76.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.03286",
+      "evaluatedAt": "2026-01-03",
+      "notes": "Table 5, English text-to-text benchmarks."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 57.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.03286",
+      "evaluatedAt": "2026-01-03",
+      "notes": "Table 5, English text-to-text benchmarks."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 85.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.03286",
+      "evaluatedAt": "2026-01-03",
+      "notes": "Table 5, English vision-to-text benchmarks."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 95.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.03286",
+      "evaluatedAt": "2026-01-03",
+      "notes": "Table 5, English vision-to-text benchmarks."
+    },
+    {
+      "benchmarkSlug": "seedbench",
+      "score": 77.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.03286",
+      "evaluatedAt": "2026-01-03",
+      "notes": "Reported as 'SEED-IMG' (image split of SEED-Bench) in Table 5, English vision-to-text benchmarks."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 63.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.03286",
+      "evaluatedAt": "2026-01-03",
+      "notes": "Section 5.3 text: 'THINK achieves a score of 63.4' on Video-MME."
+    },
+    {
+      "benchmarkSlug": "terminal-bench",
+      "score": 21.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.03286",
+      "evaluatedAt": "2026-01-03",
+      "notes": "Reported as 'Terminal-Bench 1.0' in Table 5, agent benchmarks. The paper's separate 'Terminal-Bench Hard' (9.9) was left out \u2014 it doesn't cleanly correspond to either terminal-bench or terminal-bench-2 in the taxonomy."
     }
   ],
-  "verificationNotes": "Confirmed genuinely real (highest-scrutiny record given Dec-2025 release date) — found live HF model card, arXiv paper 2601.03286, Artificial Analysis model page, and independent press/X coverage (Ajupress, Artificial Analysis and Wes Roth X posts) all describing this exact model. 32B params, license name, 128K context, and text/image/video modalities all confirmed verbatim on the HF page. The '87' tau-bench score is confirmed present on the ajupress.com sourceUrl (paraphrased as '87 percent' for an agentic telecom customer-support tool-use eval, i.e. tau2-Bench Telecom). The note's claim of an initial 44 vs EXAONE (43) at launch, later recalibrated to 17 under AA's v4.1 methodology, was independently verified: X posts from Artificial Analysis/Wes Roth at launch cite 44 outperforming EXAONE 4.0 32B, while the current live artificialanalysis.ai page now shows Intelligence Index 17 under v4.1 methodology — both halves of the note check out."
+  "verificationNotes": "Confirmed genuinely real (highest-scrutiny record given Dec-2025 release date) \u2014 found live HF model card, arXiv paper 2601.03286, Artificial Analysis model page, and independent press/X coverage (Ajupress, Artificial Analysis and Wes Roth X posts) all describing this exact model. 32B params, license name, 128K context, and text/image/video modalities all confirmed verbatim on the HF page. The '87' tau-bench score is confirmed present on the ajupress.com sourceUrl (paraphrased as '87 percent' for an agentic telecom customer-support tool-use eval, i.e. tau2-Bench Telecom). The note's claim of an initial 44 vs EXAONE (43) at launch, later recalibrated to 17 under AA's v4.1 methodology, was independently verified: X posts from Artificial Analysis/Wes Roth at launch cite 44 outperforming EXAONE 4.0 32B, while the current live artificialanalysis.ai page now shows Intelligence Index 17 under v4.1 methodology \u2014 both halves of the note check out."
 }

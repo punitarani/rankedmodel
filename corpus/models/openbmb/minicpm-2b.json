@@ -135,6 +135,14 @@
       "sourceUrl": "https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md",
       "evaluatedAt": "2024-02-01",
       "notes": "MiniCPM GitHub README benchmark table; Chinese MMLU analogue"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 7.25,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM/blob/d047abf63e/README-en.md",
+      "evaluatedAt": "2024-02-01",
+      "notes": "MiniCPM-2B-dpo-bf16 variant, GPT-4-judged MT-Bench, from the MiniCPM GitHub README's 'DPO evaluation' table. The current main README-en.md has since been rewritten around the newer MiniCPM5 flagship and no longer shows this legacy table, so this cites an archived commit of the same official repo file that still contains it."
     }
   ],
   "verificationNotes": "Confirmed real model via HF model card (huggingface.co/openbmb/MiniCPM-2B-sft-bf16, 2.4B non-embedding params, Apache-2.0 code / custom GML weights license, Feb 1 2024 release corroborated by multiple independent sources). All 11 benchmark scores independently re-fetched from the OpenBMB/MiniCPM GitHub README table and match the input exactly (MMLU 53.46, BBH 36.87, GSM8K 53.83, MATH 10.24, HumanEval 50.00, MBPP 47.31, HellaSwag 68.25, ARC-C 68.00, ARC-E 85.44, C-Eval 51.13, CMMLU 51.07); swapped sourceUrl from the arxiv abstract page (which does not display the table) to the GitHub README that actually contains it, since arxiv abstract pages don't literally show these numbers."

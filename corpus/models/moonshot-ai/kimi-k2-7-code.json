@@ -34,7 +34,7 @@
     "hf": "moonshotai/Kimi-K2.7-Code",
     "docs": "https://www.kimi.com/resources/kimi-k2-7-code"
   },
-  "note": "Coding/agent-specialized variant built on the Kimi K2.6 base weights, tuned for long-horizon software-engineering workflows and thousands of sequential tool calls, with ~30% fewer thinking tokens than K2.6 for equivalent tasks. A same-weights 'HighSpeed' serving SKU (kimi-k2.7-code-highspeed) also shipped, at roughly 2x the price ($1.90/M input cache-miss, $8.00/M output) for ~180-260 tok/s output — this is a serving/throughput tier, not a reasoning-effort tier, so it is not modeled as a separate entry here. All benchmark improvements Moonshot has published for this model to date are on Moonshot's own proprietary/in-house suites (Kimi Code Bench v2, Program Bench, MLS Bench Lite, Kimi Claw 24/7 Bench, MCP Atlas, MCP Mark Verified); no standard public-benchmark numbers (SWE-bench, LiveCodeBench, AIME, GPQA) have been disclosed for K2.7 Code specifically, and no independent third-party re-run results were found as of this research.",
+  "note": "Coding/agent-specialized variant built on the Kimi K2.6 base weights, tuned for long-horizon software-engineering workflows and thousands of sequential tool calls, with ~30% fewer thinking tokens than K2.6 for equivalent tasks. A same-weights 'HighSpeed' serving SKU (kimi-k2.7-code-highspeed) also shipped, at roughly 2x the price ($1.90/M input cache-miss, $8.00/M output) for ~180-260 tok/s output \u2014 this is a serving/throughput tier, not a reasoning-effort tier, so it is not modeled as a separate entry here. All benchmark improvements Moonshot has published for this model to date are on Moonshot's own proprietary/in-house suites (Kimi Code Bench v2, Program Bench, MLS Bench Lite, Kimi Claw 24/7 Bench, MCP Atlas, MCP Mark Verified); no standard public-benchmark numbers (SWE-bench, LiveCodeBench, AIME, GPQA) have been disclosed for K2.7 Code specifically, and no independent third-party re-run results were found as of this research.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
@@ -48,6 +48,35 @@
     "releaseDate": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
     "priceInput/priceOutput": "https://platform.kimi.ai/docs/pricing/chat-k27-code"
   },
-  "results": [],
-  "verificationNotes": "Confirmed real, released model. Architecture (1T/32B active/384 experts/61 layers/MLA/256K ctx/Modified MIT) verified on the official Hugging Face model card and matches K2.6's base architecture, consistent with K2.7 Code being a specialized post-train rather than a from-scratch model. Release date June 12, 2026 taken from MarkTechPost's same-day coverage and corroborated generally by the Moonshot forum announcement (which some mirrors date June 16) and kimi.com resource page (which one crawl dated June 25, likely a later content-refresh timestamp rather than the launch date) — flagging this date spread explicitly since sources disagree by up to ~2 weeks. Pricing $0.95/$4.00 per M tokens (standard variant) confirmed on the official platform.kimi.ai pricing page, which also lists a 'HighSpeed' SKU at double price. IMPORTANT CAVEAT: attempted to find independent/third-party benchmark verification (vals.ai, Artificial Analysis) but vals.ai's page returned all benchmarks as literal 0.0% scores for this model, which reads as a broken/unrendered scrape rather than real data — excluded as unusable. A VentureBeat piece ('Kimi K2.7-Code cuts thinking tokens 30% — but practitioners say the benchmarks don't check out') indicates practitioner skepticism about the vendor's proprietary benchmark claims, and multiple aggregators independently note that, as of release, Moonshot had published no results on standard public suites (SWE-bench, LiveCodeBench, GPQA) for this specific model — only on its own in-house benchmarks, all of which are logged below as self-reported with new (non-catalog) benchmark slugs since none map to an existing entry in the valid slug list."
+  "results": [
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 67,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-7-code",
+      "notes": "Terminal-Bench v2.1, independently measured by Artificial Analysis as part of their Intelligence Index v4.1 methodology. Moonshot's own official model card (Hugging Face) discloses no standard public-benchmark numbers for K2.7 Code at all -- only proprietary in-house suites (Kimi Code Bench v2, Program Bench, MLS Bench Lite, Kimi Claw 24/7 Bench, MCP Atlas, MCP Mark Verified) -- so this independent re-run is the only real, sourced standard-benchmark data point available for this model. AA's independently-measured Kimi K2.6 score on the same eval (66%) closely corroborates K2.6's own vendor-reported Terminal-Bench 2.0 score of 66.7, supporting cross-comparability."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 90,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-7-code",
+      "notes": "GPQA Diamond, independently measured by Artificial Analysis (Intelligence Index v4.1 component)."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 33,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-7-code",
+      "notes": "Humanity's Last Exam, independently measured by Artificial Analysis (Intelligence Index v4.1 component, no external tools). Note this is a different evaluation setting than the tool-augmented HLE figures recorded for sibling K2.5 (50.2) and K2.6 (54.0) entries."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 63,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-7-code",
+      "notes": "IFBench, independently measured by Artificial Analysis."
+    }
+  ],
+  "verificationNotes": "Confirmed real, released model. Architecture (1T/32B active/384 experts/61 layers/MLA/256K ctx/Modified MIT) verified on the official Hugging Face model card and matches K2.6's base architecture, consistent with K2.7 Code being a specialized post-train rather than a from-scratch model. Release date June 12, 2026 taken from MarkTechPost's same-day coverage and corroborated generally by the Moonshot forum announcement (which some mirrors date June 16) and kimi.com resource page (which one crawl dated June 25, likely a later content-refresh timestamp rather than the launch date) \u2014 flagging this date spread explicitly since sources disagree by up to ~2 weeks. Pricing $0.95/$4.00 per M tokens (standard variant) confirmed on the official platform.kimi.ai pricing page, which also lists a 'HighSpeed' SKU at double price. IMPORTANT CAVEAT: attempted to find independent/third-party benchmark verification (vals.ai, Artificial Analysis) but vals.ai's page returned all benchmarks as literal 0.0% scores for this model, which reads as a broken/unrendered scrape rather than real data \u2014 excluded as unusable. A VentureBeat piece ('Kimi K2.7-Code cuts thinking tokens 30% \u2014 but practitioners say the benchmarks don't check out') indicates practitioner skepticism about the vendor's proprietary benchmark claims, and multiple aggregators independently note that, as of release, Moonshot had published no results on standard public suites (SWE-bench, LiveCodeBench, GPQA) for this specific model \u2014 only on its own in-house benchmarks, all of which are logged below as self-reported with new (non-catalog) benchmark slugs since none map to an existing entry in the valid slug list."
 }

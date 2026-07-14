@@ -1,3 +1,36 @@
 model_slug,score,source,source_url,evaluated_at,notes
+apple-dclm-baseline-7b,45.4,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,'OpenBookQA' row (0.4540) on the model's official HF eval table.
+btlm-3b-8k,40.4,self-reported,https://arxiv.org/abs/2309.11568,,"0-shot (test split), Table 3"
+cerebras-gpt-13b,28.6,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,"0-shot, from the same HF model card results table. Note: this falls below the taxonomy's typical openbookqa range (40-50), but it is the genuine value stated on the official model card for this 2023-era 13B dense base model."
 comma-v0-1-2t,46.2,self-reported,https://huggingface.co/common-pile/comma-v0.1-2t,,
+deepseek-llm-67b,63.2,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6. Note: score exceeds this corpus taxonomy's documented openbookqa range (40-50, based on smaller/older models); flagging in case downstream scaling needs adjusting, but the figure itself is verified verbatim from the paper table via two independent fetches."
+falcon-7b,44.6,self-reported,https://arxiv.org/abs/2311.16867,,"From Table 21 of the Falcon tech report; footnoted there as measured without outlining candidates in the prompt, since performance is otherwise close to random for the 7B model."
+falcon3-10b,48.2,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,"0-shot, internal pipeline table."
+gemma-2b,47.8,self-reported,https://huggingface.co/google/gemma-2b,,
+gemma-7b,52.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf,2024-02-21,"Table 6, OBQA, 0-shot. Slightly above the taxonomy's typical 40-50 range ceiling but this is the literal number printed in the official technical report's academic-benchmark table (verified via direct PDF text extraction)."
+gpt-3-175b,65.4,self-reported,https://arxiv.org/abs/2005.14165,,Few-shot (Table 3.6)
+gpt-j-6b,28.8,self-reported,https://arxiv.org/abs/2204.06745,2022-04-14,"Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.288)."
+gpt-neox-20b,29,self-reported,https://arxiv.org/abs/2204.06745,2022-04-14,"Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.290)."
 granite-3-0-2b-instruct,43.2,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,OBQA
+granite-3-0-8b-instruct,46.6,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"OBQA, 0-shot pass@1. Confirmed in HF model-index YAML and technical report Table 10."
+h2o-danube-1-8b,39.2,self-reported,https://huggingface.co/h2oai/h2o-danube-1.8b-chat,,"0-shot OpenBookQA for h2o-danube-1.8b-chat, from the HF model card's benchmark table; cross-confirmed in arXiv:2401.16818 Table 4."
+hermes-3-405b,48.8,self-reported,https://arxiv.org/pdf/2408.11857,,"0-shot, Table 5."
+jais-70b,44.4,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,English OpenBookQA score for jais-adapted-70b-chat.
+krutrim-2-12b,49,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,"OpenBookQA, 0-shot accuracy"
+llama-13b,56.4,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3. Note: this exceeds the taxonomy's typical 40-50 range for this slug, but is the exact figure printed in the paper (confirmed via direct PDF text extraction) — GPT-3 175B and PaLM 540B score even higher (57.6/53.4) on the same table row, so a 13B model at 56.4 is plausible for this particular eval setup."
+luminous-supreme-70b,33,self-reported,https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/,2023-02-20,"Core 16-task suite, 0-shot. Falls below the taxonomy's typical 40-50 display range for this benchmark, but is the number directly published by Aleph Alpha for this legacy (2022-era) 70B model."
+mistral-nemo-12b,60.6,self-reported,https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407,,"OpenBookQA 0-shot, from the official HF model card's Main Benchmarks table."
+nous-hermes-2-mixtral-8x7b-dpo,46.6,self-reported,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO,2024-01-15,"acc_norm, part of GPT4All suite on the official HF model card."
+olmo-7b,50.2,self-reported,https://huggingface.co/allenai/OLMo-7B,,
+openhermes-2-5-mistral-7b,44.8,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,2023-11-03,"acc_norm, part of GPT4All suite on the official HF model card."
+openllama-7b,40,self-reported,https://github.com/openlm-research/open_llama,,"openbookqa/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+opt-iml-30b,50.6,self-reported,https://ar5iv.labs.arxiv.org/html/2212.12017,2022-12-22,"0-shot accuracy on OpenBookQA for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', OpenBookQA column = 50.6/55.2 (0-shot/32-shot). Note: this is marginally above the taxonomy's documented 40-50 typical range, but it is the real, verbatim figure printed in the paper's table."
+phi-1-5-1-3b,37.2,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,2023-09-11,Table 3.
+phi-3-5-moe-16x3-8b-6-6b-active,89.6,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
+phi-3-medium-14b,87.4,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,10-shot
+phi-3-mini-3-8b,82.2,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,10-shot
+phi-3-small-7b,88,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,10-shot
+redpajama-incite-7b-base,50.4,self-reported,https://arxiv.org/abs/2411.12372,,"HELM OpenbookQA EM score, Table 8 ('HELM Benchmark results for RedPajama-INCITE-Base-7B-v1 and instruction tuned') of the RedPajama technical paper."
+redpajama-incite-7b-instruct,48.8,self-reported,https://arxiv.org/abs/2411.12372,,"HELM OpenbookQA EM score, Table 8."
+smollm2-1-7b,42.2,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,"Base pre-trained model, zero-shot."
+xgen-7b-8k,40.2,self-reported,https://ar5iv.labs.arxiv.org/html/2309.03450,2023-07-03,"Zero-shot, Table 6"

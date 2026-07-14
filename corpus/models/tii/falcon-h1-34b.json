@@ -109,6 +109,71 @@
       "score": 61.01,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 65.27,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct"
+    },
+    {
+      "benchmarkSlug": "mmlu-stem",
+      "score": 83.57,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct"
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 81.71,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
+      "notes": "HumanEval+"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 83.86,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 71.43,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
+      "notes": "MBPP+"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 49.71,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 48.32,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 9.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
+      "notes": "MTBench"
+    },
+    {
+      "benchmarkSlug": "amc",
+      "score": 69.38,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
+      "notes": "AMC-23"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 23.75,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
+      "notes": "AIME-24 (card also reports AIME-25=16.67, not added since only one aime slug exists)"
     }
   ],
   "verificationNotes": "Confirmed real model via MarkTechPost coverage + HF model card (fetched): release/announcement date 2025-05-21 (MarkTechPost article dated May 21 2025; some sources cite May 20 as embargo-lift), family spans 0.5B/1.5B/1.5B-Deep/3B/7B/34B confirming the 34B exists, 256K context confirmed, 18 languages confirmed verbatim on model card, HF license tag 'tii-falcon-llm' confirmed (exact '2.0' suffix inferred from consistency with Falcon3's confirmed 'TII Falcon-LLM License 2.0' naming, not independently pinned to a version number on the H1 card itself). All 10 result rows confirmed verbatim against the model card's benchmark table. No numeric changes made; one date-source caveat noted."

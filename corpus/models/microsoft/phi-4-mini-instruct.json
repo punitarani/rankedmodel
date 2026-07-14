@@ -72,7 +72,133 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
       "notes": "Arena-Hard win rate, not Chatbot Arena Elo"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 70.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, BigBench-Hard (0-shot, CoT); already correct in the sibling phi-4-mini-3-8b.json record but missing here."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 52.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, MMLU-Pro (0-shot, CoT)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 83.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, Arc-C (10-shot)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 30.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, GPQA (0-shot, CoT), confirmed directly from the PDF table image."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 69.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, HellaSwag (5-shot)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 77.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, PIQA (5-shot)."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 72.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, SociQA (5-shot); slightly exceeds taxonomy's stated 40-68 range but same benchmark."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 66.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, TruthfulQA (10-shot, MC2)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 67,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, WinoGrande (5-shot)."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 49.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, Multilingual-MMLU (5-shot)."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 63.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, MGSM (0-shot, CoT)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 70.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, IFEval (0-shot)."
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 70.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, BFCL (0-shot)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 74.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7/8, HumanEval (0-shot)."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 68.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 8, HumanEval+ (0-shot)."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 65.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7/8, MBPP (3-shot)."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 63.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 8, MBPP+ (3-shot)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 19.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 8, 'LCB (05-09-2024)' = LiveCodeBench."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-4-mini-instruct): 3.8B dense params, 128K context, MIT license, released Feb 2025 (marktechpost corroborates Feb 27 2025 announcement). All three benchmark rows (GSM8K 88.6, MMLU 67.3, Arena-Hard 32.8) literally confirmed on the HF card. Corrected langCount 22→23: the card's explicit language list (Arabic through Ukrainian) enumerates 23 languages, not 22."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-4-mini-instruct): 3.8B dense params, 128K context, MIT license, released Feb 2025 (marktechpost corroborates Feb 27 2025 announcement). All three benchmark rows (GSM8K 88.6, MMLU 67.3, Arena-Hard 32.8) literally confirmed on the HF card. Corrected langCount 22\u219223: the card's explicit language list (Arabic through Ukrainian) enumerates 23 languages, not 22."
 }

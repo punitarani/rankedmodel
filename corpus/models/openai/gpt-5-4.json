@@ -108,7 +108,15 @@
       "source": "self-reported",
       "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
       "notes": "BrowseComp (Pro variant scores 89.3)"
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 75,
+      "source": "self-reported",
+      "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "evaluatedAt": "2026-03-05",
+      "notes": "OSWorld-Verified score for GPT-5.4 standard/Thinking tier, found in the same the-decoder.com launch-day comparison table already used as the source for this model's other 9 results (directly re-fetched and reconfirmed present in this pass, in the row 'OSWorld-Verified | GPT-5.4 75.0% | GPT-5.4 Pro - | GPT-5.3 Codex 74.0% | GPT-5.2 47.3% | GPT-5.2 Pro -'). GPT-5.4 Pro has no published number for this benchmark in the same table."
     }
   ],
-  "verificationNotes": "Existence and March 5, 2026 launch date confirmed via TechCrunch ('OpenAI launches GPT-5.4 with Pro and Thinking versions') and Wikipedia. Pricing ($2.50/$15 per M) and 1M-token context (922K in / 128K out) cross-confirmed by The Decoder and LayerLens independently. Nine benchmark scores below (GDPval, FrontierMath T1-3/T4, GPQA Diamond, HLE, ARC-AGI-1/2, SWE-Bench Pro, BrowseComp) taken from The Decoder's launch-day writeup, which itself relays OpenAI's own announced figures (treated as self-reported per instructions). Could NOT confirm a separately-branded, separately-benchmarked 'GPT-5.4 (High)' tier distinct from the flagship numbers below or from the 'xhigh' config tracked by Artificial Analysis (AA composite Intelligence Index score 51 at launch, later cited as 57 in a follow-up AA post reflecting an index-methodology revision) — so no High-tier sibling was added; see 'uncertain'."
+  "verificationNotes": "Existence and March 5, 2026 launch date confirmed via TechCrunch ('OpenAI launches GPT-5.4 with Pro and Thinking versions') and Wikipedia. Pricing ($2.50/$15 per M) and 1M-token context (922K in / 128K out) cross-confirmed by The Decoder and LayerLens independently. Nine benchmark scores below (GDPval, FrontierMath T1-3/T4, GPQA Diamond, HLE, ARC-AGI-1/2, SWE-Bench Pro, BrowseComp) taken from The Decoder's launch-day writeup, which itself relays OpenAI's own announced figures (treated as self-reported per instructions). Could NOT confirm a separately-branded, separately-benchmarked 'GPT-5.4 (High)' tier distinct from the flagship numbers below or from the 'xhigh' config tracked by Artificial Analysis (AA composite Intelligence Index score 51 at launch, later cited as 57 in a follow-up AA post reflecting an index-methodology revision) \u2014 so no High-tier sibling was added; see 'uncertain'."
 }

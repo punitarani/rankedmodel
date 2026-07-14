@@ -54,6 +54,69 @@
       "source": "independent",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.08322",
       "notes": "Zero-shot, answer-only (C-Eval paper's own evaluation)"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 40.63,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/ChatGLM2-6B/blob/main/README_EN.md",
+      "notes": "From the official ChatGLM2-6B repo's head-to-head evaluation table (which reports first-gen ChatGLM-6B alongside ChatGLM2-6B); few-shot answer-only, average across STEM/Social Sciences/Humanities/Others subsets."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 4.82,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/ChatGLM2-6B/blob/main/README_EN.md",
+      "notes": "Few-shot CoT (English GSM8K), from the official ChatGLM2-6B repo comparison table. Slightly below the taxonomy's typical floor (5) but this is the verbatim published figure for the very weak first-gen model."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 18.73,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/ChatGLM2-6B/blob/main/README_EN.md",
+      "notes": "Few-shot CoT, from the official ChatGLM2-6B repo comparison table. Below the taxonomy's typical floor (30) but verbatim as published."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 3.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "From Table 1 of the official 2024 GLM family technical report, which re-evaluated ChatGLM-6B/2/3 under one consistent harness for a family comparison."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 25.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's family-wide technical report re-evaluation table (Table 1)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 30.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's family-wide technical report re-evaluation table (Table 1)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 65.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's family-wide technical report re-evaluation table (Table 1)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 3.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's family-wide technical report re-evaluation table (Table 1); below the taxonomy's typical floor but verbatim as published for this early weak model."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 0,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "Near-floor score reported verbatim in Table 1 of the GLM family technical report; ChatGLM-6B had essentially no code-generation ability in this harness."
     }
   ],
   "verificationNotes": "Confirmed exactly: release date March 14, 2023 per the official ChatGLM technical report arXiv:2406.12793 (\"went live on chatglm.cn\" that date). GitHub README confirms VRAM table FP16=13GB / INT4=6GB verbatim, and ~2048 token effective context. License wording (\"completely open for academic research, free commercial use after questionnaire\") confirmed verbatim in README, refining the raw MODEL_LICENSE text which itself doesn't mention registration. C-Eval score 38.9 confirmed verbatim in Table 3 of arXiv:2305.08322 (ar5iv). No changes made."

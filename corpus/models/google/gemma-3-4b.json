@@ -114,12 +114,100 @@
     },
     {
       "benchmarkSlug": "mmlu",
-      "score": 54.5,
+      "score": 58.1,
       "source": "self-reported",
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
       "evaluatedAt": "2025-03-12",
-      "notes": "Global MMLU-Lite variant"
+      "notes": "Global MMLU-Lite variant [Corrected during full-corpus audit: Directly extracted the technical report's PDF text (Table 6 vs Table 18). The existing 54.5 is actually the 'Global MMLU-Lite' score from Table 6 (a distinct, non-standard-MMLU benchmark not in our taxonomy) that was mapped onto the 'mmlu' slug with a note admitting the conflation. Table 18 ('Performance of instruction fine-tuned (IT) models... on more internal and external benchmarks') separately]"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 63.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 18, IT 4B, pass@1."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 71.3,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 18, IT 4B, pass@1."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 89.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 18, IT 4B."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 72.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 18, IT 4B (distinct from BBEH/BIG-Bench-Extra-Hard, which is not in the taxonomy and was excluded)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 90.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 18, IT 4B."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 75.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 16 'Performance of instruction fine-tuned (IT) models on multimodal benchmarks', 4B, with P&S applied."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 57.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 16, IT 4B."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 74.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 16, IT 4B."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 68.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 16, IT 4B."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 62.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 16, IT 4B, VQAv2 (val)."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 50,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Table 16, IT 4B, MathVista (testmini)."
     }
   ],
-  "verificationNotes": "Fetched the official Gemma 3 Technical Report PDF (dated 2025-03-12, Google DeepMind). Table 1 confirms 4B total params = vision encoder 417M + embedding 675M + non-embedding 3,209M = 4,301M ≈ 4.3B, matching paramsB exactly. Table 6 confirms every one of the 9 benchmark rows verbatim for the 4B IT column: MMLU-Pro 43.6, GPQA Diamond 30.8, MATH 75.6, MMMU val 48.8, LiveCodeBench 12.6, Bird-SQL dev 36.3, FACTS Grounding 70.1, SimpleQA 4.0, Global MMLU-Lite 54.5. Release date, 128K context (128K confirmed text: 'Gemma 3 models support context length of 128K tokens, with the exception of the 1B model'), and 140-language support corroborated by Google's developer blog. License 'Gemma' and open-weights status confirmed via ai.google.dev/gemma/terms. No changes made."
+  "verificationNotes": "Fetched the official Gemma 3 Technical Report PDF (dated 2025-03-12, Google DeepMind). Table 1 confirms 4B total params = vision encoder 417M + embedding 675M + non-embedding 3,209M = 4,301M \u2248 4.3B, matching paramsB exactly. Table 6 confirms every one of the 9 benchmark rows verbatim for the 4B IT column: MMLU-Pro 43.6, GPQA Diamond 30.8, MATH 75.6, MMMU val 48.8, LiveCodeBench 12.6, Bird-SQL dev 36.3, FACTS Grounding 70.1, SimpleQA 4.0, Global MMLU-Lite 54.5. Release date, 128K context (128K confirmed text: 'Gemma 3 models support context length of 128K tokens, with the exception of the 1B model'), and 140-language support corroborated by Google's developer blog. License 'Gemma' and open-weights status confirmed via ai.google.dev/gemma/terms. No changes made."
 }

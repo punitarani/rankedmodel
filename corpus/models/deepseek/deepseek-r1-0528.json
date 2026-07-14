@@ -102,6 +102,54 @@
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
       "evaluatedAt": "2025-05-28",
       "notes": "MMLU-Pro"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 93.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "evaluatedAt": "2025-05-28",
+      "notes": "MMLU-Redux (EM)"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1930,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "evaluatedAt": "2025-05-28",
+      "notes": "Codeforces-Div1 rating; DeepSeek changed Codeforces methodology between R1 and R1-0528 (the original R1 card reports a differently-defined 'Codeforces (Rating): 2029' overall metric, not Div1-specific, so these are not directly comparable across the two model cards)"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 71.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "evaluatedAt": "2025-05-28",
+      "notes": "Aider-Polyglot accuracy"
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 37,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "evaluatedAt": "2025-05-28",
+      "notes": "BFCL_v3_MultiTurn accuracy"
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 53.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "evaluatedAt": "2025-05-28",
+      "notes": "Tau-Bench Airline domain, pass@1"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 27.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "evaluatedAt": "2025-05-28",
+      "notes": "SimpleQA correct rate"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card + DeepSeek API docs news post. 671B total / 37B active cross-verified via OpenRouter/independent sources (an AI-summarized fetch briefly mis-stated 685B; rejected as summarizer error, primary 671B/37B figure holds). MIT license, 2025-05-28 date, and all 6 benchmark rows (AIME 91.4, GPQA 81.0, LiveCodeBench 73.3, SWE-bench 57.6, HLE 17.7, MMLU-Pro 85.0) confirmed verbatim on the HF model card. Note's '79.8 to 91.4' AIME progression confirmed against original R1 (Jan 2025) score of 79.8. Price $0.55/$2.19 confirmed as DeepSeek's official standard rate for R1-0528."

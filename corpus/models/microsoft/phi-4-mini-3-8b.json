@@ -87,6 +87,125 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
       "notes": "Arena Hard"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 52.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7 of the Phi-4-Mini Technical Report, 0-shot CoT."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 83.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, 'Arc-C' (10-shot)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 30.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, GPQA (0-shot, CoT). Note: some third-party summaries mis-cite this as 25.2 (which is actually Phi-3.5-Mini's score in the same table); 30.4 was confirmed directly from the PDF table image."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 69.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, HellaSwag (5-shot)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 77.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, PIQA (5-shot)."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 72.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, SociQA (5-shot). Slightly exceeds the taxonomy's stated 40-68 typical range but is unambiguously the same Social IQA benchmark."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 66.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, TruthfulQA (10-shot, MC2)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 67,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, WinoGrande (5-shot)."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 49.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, 'Multilingual-MMLU' (5-shot)."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 63.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, MGSM (0-shot, CoT)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 70.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, IFEval (0-shot)."
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 70.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7, BFCL (0-shot); consistent with the model's built-in function-calling capability."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 74.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7/8, HumanEval (0-shot)."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 68.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 8, HumanEval+ (0-shot)."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 65.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 7/8, MBPP (3-shot)."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 63.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 8, MBPP+ (3-shot)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 19.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 8, 'LCB (05-09-2024)' = LiveCodeBench dated release window, a contamination-controlled rolling problem set matching the livecodebench slug."
     }
   ],
   "verificationNotes": "Re-fetched HF model card: 3.8B params, MIT license, 128K context, 22 languages, function-calling all confirmed verbatim. All 5 benchmark rows (MMLU 67.3, GSM8K 88.6, MATH 64.0, BBH 70.4, Arena Hard 32.8) confirmed literally on the card. Azure AI Foundry pricing $0.075/$0.30 per 1M tokens confirmed exact via independent pricing page (cloudprice.net). No changes made."

@@ -81,11 +81,19 @@
     },
     {
       "benchmarkSlug": "arena",
-      "score": 1400,
-      "source": "arena",
-      "sourceUrl": "https://www.rdworldonline.com/musk-says-grok-3-will-be-best-ai-model-to-date/",
+      "score": 1402,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok-3",
       "evaluatedAt": "2025-02-17",
-      "notes": "LMSYS Chatbot Arena Elo, #1 at launch"
+      "notes": "LMSYS Chatbot Arena Elo, #1 at launch [Corrected during full-corpus audit: xAI's own launch blog states verbatim: 'Grok 3 has leading performance across both academic benchmarks and real-world user preferences, achieving an Elo score of 1402 in the Chatbot Arena.' The existing corpus value of 1400 comes from a Musk quote relayed via rdworldonline.com ('achieve a score of 1,400'), which is a rounded/misquoted version of xAI's own precise, primary-source figure of 1402.]"
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok-3",
+      "evaluatedAt": "2025-02-17",
+      "notes": "Official 'Grok 3 Beta (Think)' bar in the launch blog's MMMU chart (Grok 3 Beta (Think) 78 vs Gemini 2.0 Flash Thinking 75.4 vs o1 78.2). Note: corpus currently marks this model modalities:['text']/capabilities.vision:false, which conflicts with xAI's own claim of a Think-mode MMMU score -- worth a separate look at the capabilities flags, though that's outside this results-only report."
     }
   ],
   "verificationNotes": "CORRECTED: the GPQA=84.6 row's original sourceUrl (futureagi.com) was fetched and does NOT contain '84.6' anywhere on the page (it shows GPQA Diamond 75.4%, which belongs to the non-reasoning/Standard mode). Multiple independent sources confirm xAI's official claim of 84.6% GPQA for Think mode (matching AIME 93.3%/LiveCodeBench 79.4%), and chatbase.co/blog/grok-3 was fetched directly and literally contains '84.6' attributed to GPQA alongside the matching 93.3/79.4 figures, so the sourceUrl was swapped to that page. AIME 93.3, LiveCodeBench 79.4, and MMLU-Pro 79.9 were each confirmed literally present on the original futureagi.com page via direct fetch. Arena Elo 1400 confirmed literally on rdworldonline.com ('achieve a score of 1,400')."

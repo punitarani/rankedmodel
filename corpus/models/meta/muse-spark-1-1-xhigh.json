@@ -52,6 +52,89 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/articles/muse-spark-1-1-everything-you-need-to-know",
       "notes": "Humanity's Last Exam, Artificial Analysis independent evaluation of Muse Spark 1.1"
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 80.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report",
+      "evaluatedAt": "2026-07-09",
+      "notes": "Agentic computer-use benchmark, 361-task split, xhigh reasoning effort; Figure 44 of Meta's official evaluation report"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 61.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report",
+      "evaluatedAt": "2026-07-09",
+      "notes": "Sourced from Scale AI leaderboard per Meta's own report, mini-swe-agent harness"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 80,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report",
+      "evaluatedAt": "2026-07-09",
+      "notes": "Terminal-Bench 2.1, pass@1 averaged over 5 attempts on 89 tasks, bash-tool-only agent harness"
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1381,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report",
+      "evaluatedAt": "2026-07-09",
+      "notes": "GDPval-AA v2 Elo, sourced from the Artificial Analysis GDPval-AA Leaderboard per Meta's own report"
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 59,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report",
+      "evaluatedAt": "2026-07-09",
+      "notes": "CyberGym pass@1, real-world cybersecurity vulnerability discovery/exploitation, from Table 1 of Meta's official Preparedness Assessment (helpful-only variant)"
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 88.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report",
+      "evaluatedAt": "2026-07-09",
+      "notes": "CharXiv Reasoning subset (1,000 chart-reasoning questions from the CharXiv validation set, matching this corpus's convention of using the reasoning subset for the 'charxiv' slug), run with a code-execution tool, graded by gpt-oss-120b as LLM-judge for semantic/mathematical equivalence; Figure 44 of Meta's official Muse Spark 1.1 Evaluation Report, Section 5.2.4."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 90,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-1",
+      "notes": "GPQA Diamond, measured independently by Artificial Analysis as one of the 9 evaluations in their Intelligence Index v4.1 breakdown. Cross-checked by reading the same figure from two separate AA comparison-basket renders (Muse Spark 1.1's own page and Mistral Large 3's page, which both include Muse Spark 1.1 in their pinned comparison set) -- both show 90%."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 85.91,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/meta_muse-spark-1.1",
+      "notes": "LiveCodeBench, measured independently by Vals AI (\u00b10.99 CI, ranked 18/127 models on their leaderboard). Not reported anywhere in Meta's own materials for Muse Spark 1.1."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 88.73,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/meta_muse-spark-1.1",
+      "notes": "MMLU-Pro, measured independently by Vals AI (\u00b10.32 CI, ranked 11/120 models on their leaderboard). Meta has not published an MMLU or MMLU-Pro score for Muse Spark 1.1 in either the launch blog or the Evaluation Report."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 86.59,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/meta_muse-spark-1.1",
+      "notes": "MMMU, measured independently by Vals AI (\u00b10.82 CI, ranked 11/82 models on their leaderboard)."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 82,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/meta_muse-spark-1.1",
+      "notes": "SWE-bench (base/Verified-style variant, per this corpus's existing convention for the 'swe-bench' slug), measured independently by Vals AI (\u00b11.72 CI, ranked 8/69 models). Distinct from the 'swe-bench-pro' slug already recorded for this model, which is Scale AI's separate, harder SWE-Bench Pro benchmark self-reported by Meta at 61.5."
     }
   ],
   "verificationNotes": "Base Muse Spark's own April 2026 release announcement (via Meta AI blog, relayed by buildfastwithai.com) reports Intelligence Index v4.0 52, HealthBench Hard 42.8, HLE 50.2%, Terminal-Bench 2.0 59.0, ARC-AGI-2 42.5 -- these are self-reported. Artificial Analysis independently measured Muse Spark 1.1 (xhigh) at Intelligence Index 51, a +8pt gain over the original that AA attributes mostly to Coding (+12) and HLE (+5, to 45%)."

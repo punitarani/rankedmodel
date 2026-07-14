@@ -105,6 +105,38 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
       "evaluatedAt": "2025-11-01",
       "notes": "LiveCodeBench Pro, Elo rating (not a 0-100 pass rate)"
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 31.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-11-01",
+      "notes": "ARC-AGI-2, ARC Prize Verified setting."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 54.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-11-01",
+      "notes": "Terminal-Bench 2.0, Terminus-2 agent harness."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 81.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-11-01",
+      "notes": "CharXiv Reasoning, no tools, information synthesis from complex charts."
+    },
+    {
+      "benchmarkSlug": "facts-grounding",
+      "score": 70.5,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-11-01",
+      "notes": "FACTS Benchmark Suite (held-out internal grounding, parametric, MM and search retrieval benchmarks)."
     }
   ],
   "verificationNotes": "Directly downloaded and read the official Gemini 3 Pro Model Card PDF ('Model Release: November 2025'). Its evaluation table matches every claimed score digit-for-digit: GPQA 91.9, AIME 95.0 (100% with code execution), HLE 37.5 (45.8% with search+code exec), SWE-Bench 76.2, MMMU-Pro 81.0, MMMLU 91.8, LiveCodeBench Pro Elo 2,439. Release date Nov 18, 2025 corroborated by blog.google, CNBC, and InfoQ coverage. Pricing $2/$12 (base tier) and $4/$18 (>200k tokens) confirmed on ai.google.dev/gemini-api/docs/pricing (via the now-succeeding Gemini 3.1 Pro Preview page, which carries forward identical base-tier pricing). Model card explicitly names it a 'sparse mixture-of-experts (MoE) transformer-based model... with native multimodal support,' confirming archClass/archDisplay directly."

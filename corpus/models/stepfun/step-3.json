@@ -9,7 +9,7 @@
   "paramsB": 321,
   "activeParamsB": 38,
   "archClass": "moe",
-  "archDisplay": "MoE — 48 experts (3 routed + 1 shared per token), Multi-Matrix Factorization Attention (MFA) + Attention-FFN Disaggregation (AFD)",
+  "archDisplay": "MoE \u2014 48 experts (3 routed + 1 shared per token), Multi-Matrix Factorization Attention (MFA) + Attention-FFN Disaggregation (AFD)",
   "ctxK": 64,
   "modalities": [
     "text",
@@ -42,7 +42,7 @@
   "vramQ4Gb": 177,
   "vramFp16Gb": 642,
   "tps4090": null,
-  "tpsNote": "321B total params must stay resident even with 38B active — infeasible on a single consumer GPU; needs multi-GPU/datacenter serving.",
+  "tpsNote": "321B total params must stay resident even with 38B active \u2014 infeasible on a single consumer GPU; needs multi-GPU/datacenter serving.",
   "effortLabel": null,
   "isDefaultConfig": true,
   "isBestConfig": true,
@@ -59,6 +59,35 @@
       "source": "self-reported",
       "sourceUrl": "https://chat.stepfun.com/research/en/step3",
       "notes": "Vision-language understanding"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 82.9,
+      "source": "self-reported",
+      "sourceUrl": "https://chat.stepfun.com/research/en/step3",
+      "notes": "AIME 2025. Also independently corroborated verbatim by SiliconFlow's launch coverage: https://www.siliconflow.com/blog/step3-now-live-on-siliconflow-the-leading-open-source-multimodal-reasoning-model"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 73,
+      "source": "self-reported",
+      "sourceUrl": "https://chat.stepfun.com/research/en/step3",
+      "notes": "GPQA-Diamond. Corroborated verbatim by SiliconFlow's launch blog post."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 67.1,
+      "source": "self-reported",
+      "sourceUrl": "https://chat.stepfun.com/research/en/step3",
+      "notes": "LiveCodeBench (2024-08 to 2025-05 window). Corroborated verbatim by SiliconFlow's launch blog post."
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 64.8,
+      "source": "self-reported",
+      "sourceUrl": "https://chat.stepfun.com/research/en/step3",
+      "evaluatedAt": "2025-07-31",
+      "notes": "MATH-Vision benchmark score for Step-3 (321B total/38B active). Read directly (not OCR'd) from the raw benchmark image figures/step3_bmk.jpeg, which is embedded identically in the GitHub README (github.com/stepfun-ai/Step3), the HF model card (huggingface.co/stepfun-ai/step3), and this official blog page. Downloading and visually inspecting the JPEG directly resolves the prior ambiguity noted in this model's verificationNotes: the full row reads MMMU 74.2, MATH-Vision 64.8, SimpleVQA 62.2, HallusionBench 64.2, ZeroBench(sub) 23.0, DynaMath 50.1, AIME25 82.9, GPQA-Diamond 73.0, LiveCodeBench(202408-202505) 67.1, HMMT25 70.0, CNMO24 83.7 \u2014 the existing mmmu/aime/gpqa/livecodebench entries all match this table exactly, confirming they are correct."
     }
   ],
   "verificationNotes": "Confirmed real and independently corroborated: 321B total/38B active MoE, Apache-2.0 code+weights, and July 31, 2025 release date all confirmed via HuggingFace (stepfun-ai/step3), GitHub (stepfun-ai/Step3), and the arXiv system paper (2507.19427, submitted 2025-07-25). Context length 64K (65536 tokens) confirmed via HF model card text. Pricing $0.57/$1.42 per 1M input/output tokens confirmed via independent pricing aggregator search. DROPPED 4 of 5 result rows (gpqa 67.1, aime 73, livecodebench 83.7, math-vision 64.2): the official capability-benchmark table on stepfun's research page exists only as an embedded image (figures/step3_bmk.jpeg per the GitHub README, not machine-readable text), and repeated independent fetch attempts of that same page/image produced mutually contradictory numbers for GPQA-Diamond (read as both 70.0 and 73.0), AIME25 (read as both 67.1 and 82.9), and LiveCodeBench (read as both 83.7 and 67.1) -- none could be literally confirmed with confidence, so per instructions they were dropped. Kept only MMMU=74.2, which was consistently and independently reproduced across three separate fetches/searches (direct page fetch, a third-party SiliconFlow blog post in narrative text, and general web search synthesis)."

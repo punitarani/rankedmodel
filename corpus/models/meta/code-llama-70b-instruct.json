@@ -57,7 +57,15 @@
       "source": "self-reported",
       "sourceUrl": "https://the-decoder.com/code-llama-2-metas-latest-open-source-llm-for-code-beats-gpt-4-in-coding-benchmark/",
       "notes": "pass@1, zero-shot; article confirms Code Llama 70B Instruct scored 67.8 on HumanEval, 'just ahead of GPT-4 and Gemini Pro for prompts without examples (zero-shot)'"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 62.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2308.12950v3",
+      "evaluatedAt": "2024-01-29",
+      "notes": "pass@1, Code Llama - Instruct 70B, Table 2 of the Code Llama paper (arXiv 2308.12950v3, updated when the 70B family was released Jan 29 2024). Directly fetched and cross-confirmed via two independent fetches plus corroborating web search; not currently in the corpus (only HumanEval is recorded)."
     }
   ],
-  "verificationNotes": "Confirmed real. Fetched the-decoder.com article directly: it literally states Code Llama 70B Instruct scored 67.8 on HumanEval and edged out GPT-4/Gemini Pro zero-shot — matches the record exactly, kept. Release date, license (Llama 2 Community License Agreement), and 16K context corroborated the same way as the base model via HF card and Meta's blog. No changes."
+  "verificationNotes": "Confirmed real. Fetched the-decoder.com article directly: it literally states Code Llama 70B Instruct scored 67.8 on HumanEval and edged out GPT-4/Gemini Pro zero-shot \u2014 matches the record exactly, kept. Release date, license (Llama 2 Community License Agreement), and 16K context corroborated the same way as the base model via HF card and Meta's blog. No changes."
 }

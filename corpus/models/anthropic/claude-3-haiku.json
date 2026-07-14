@@ -143,6 +143,78 @@
       "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
       "evaluatedAt": "2024-03-13",
       "notes": "Validation set, overall"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 75.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-13",
+      "notes": "MGSM (multilingual math), 0-shot, from Table 1 / Table 4 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "pubmedqa",
+      "score": 76,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-13",
+      "notes": "PubMedQA, 5-shot, from Table 1 of the Claude 3 Model Card (0-shot alternate is 78.5%)."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 87,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-13",
+      "notes": "RACE-H reading comprehension, 5-shot, from Table 1 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "amc",
+      "score": 32,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-13",
+      "notes": "AMC 12 2023, 5-shot CoT, from Table 2 of the Claude 3 Model Card (raw score 48/150 converted to a percentage). The model card separately reports AMC 8 and AMC 10 rows too; AMC 12 was chosen as the representative value for this single generic 'amc' slug."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 88.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-13",
+      "notes": "DocVQA test set, ANLS score, 0-shot, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 46.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-13",
+      "notes": "MathVista testmini, Chain-of-Thought, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 86.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-13",
+      "notes": "AI2D science-diagram test set, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 81.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-13",
+      "notes": "ChartQA test set, relaxed accuracy, 4-shot CoT, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 65.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-13",
+      "notes": "Multilingual MMLU, 5-shot, from Table 5 of the Claude 3 Model Card."
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-haiku (release date 2024-03-13). Pricing $0.25/$1.25 confirmed via independent pricing trackers citing Anthropic's official rate. Downloaded and read the actual Model_Card_Claude_3.pdf Table 1/Table 3: all 12 self-reported benchmark numbers for Claude 3 Haiku (MMLU 75.2, MATH 38.9, GSM8K 88.9, HumanEval 75.9, GPQA 33.3, BBH 73.7, ARC-Challenge 89.2, HellaSwag 85.9, WinoGrande 74.2, DROP 78.4, MBPP 80.4, MMMU 50.2) match the PDF verbatim. apiAvailable=false confirmed: claude-3-haiku-20240307 retired from API April 20, 2026 (most recently retired of this batch). No changes made."

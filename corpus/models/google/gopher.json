@@ -78,6 +78,46 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2203.15556",
       "notes": "Zero-shot LAMBADA accuracy"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 79.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "evaluatedAt": "2022-03-29",
+      "notes": "Zero-shot, Table 8 of the Chinchilla paper's Gopher-vs-Chinchilla-vs-GPT-3 comparison (DeepMind reporting its own prior model's results)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 81.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "evaluatedAt": "2022-03-29",
+      "notes": "Zero-shot, Table 8."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 70.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "evaluatedAt": "2022-03-29",
+      "notes": "Zero-shot, Table 8."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 50.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "evaluatedAt": "2022-03-29",
+      "notes": "Zero-shot, Table 8; also stated directly in the original Gopher paper's prose ('Gopher achieves a 50.6% accuracy under the zero-shot setup' on SocialIQA)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 29.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "evaluatedAt": "2022-03-29",
+      "notes": "0-shot accuracy. The Chinchilla paper also reports Gopher at 43.7% 10-shot on the same benchmark; 0-shot chosen as the more standard comparison setting."
     }
   ],
   "verificationNotes": "Confirmed real via arxiv.org/abs/2112.11446 (submitted 2021-12-08, matches releaseDate) and press coverage (InfoQ) -- 280B dense decoder-only Transformer trained on MassiveText, matches paramsB/archDisplay. Confirmed 2048-token context window via independent summaries of the Gopher paper (matches ctxK=2). Fetched full text of the Chinchilla paper (arxiv 2203.15556, ar5iv rendering) and confirmed its comparison table literally shows Gopher: MMLU 60.0, BIG-bench 54.4, TriviaQA 63.6, LAMBADA 74.5, and RACE-h 71.6 -- all four numeric rows matched. Corrected one row: the source record labeled the 71.6 score 'arc-challenge' while its own notes admitted it was actually RACE-h; renamed the benchmarkSlug to 'race-h' to remove the mislabel rather than keep an inaccurate slug. Closed/proprietary status confirmed (DeepMind research model, no weight release)."

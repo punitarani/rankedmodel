@@ -80,6 +80,48 @@
       "score": 69.07,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/QwQ-32B"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 90,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "Qwen3 Technical Report, Table 13 ('Comparison among Qwen3-32B (Thinking) and other reasoning baselines'), QwQ-32B baseline column. Cross-verified: the same table's IFEval-strict (83.9), AIME'24 (79.5), and BFCL v3 (66.4) figures for QwQ-32B exactly match the values already in this corpus entry, confirming this table is genuinely about the March-2025 QwQ-32B release and not the earlier QwQ-32B-Preview."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 65.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "Qwen3 Technical Report, Table 13, GPQA-Diamond row, QwQ-32B column. See mmlu-redux entry's note on version verification."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 88.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "Qwen3 Technical Report, Table 13, C-Eval row, QwQ-32B column."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 89.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "Qwen3 Technical Report, Table 13, Arena-Hard row, QwQ-32B column."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 98,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "Qwen3 Technical Report, Table 13, MATH-500 row, QwQ-32B column."
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1982,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "Qwen3 Technical Report, Table 13, Codeforces row (rating/percentile format '1982 / 97.7%'), QwQ-32B column; using the Elo rating per this taxonomy's unit convention. Percentile (97.7%) omitted since the slug's unit is Elo."
     }
   ],
   "verificationNotes": "Confirmed via HF model card (32.5B total/31.0B non-embedding params, apache-2.0 license, 131,072-token/128K context) and qwenlm.github.io/blog/qwq-32b (release date literally states March 6, 2025). datacamp.com/blog/qwq-32b page confirmed AIME24=79.5, LiveCodeBench=63.4, LiveBench=73.1, IFEval=83.9, BFCL=66.4 verbatim; HF page confirmed MMLU-Pro=69.07 verbatim. No changes needed."

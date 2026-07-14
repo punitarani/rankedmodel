@@ -1,9 +1,17 @@
 model_slug,score,source,source_url,evaluated_at,notes
+amazon-nova-premier,16,self-reported,https://assets.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf,2025-04-30,"AIME 2025, average exact-match accuracy over 5 sampled responses per problem (Table 1)."
+claude-3-5-haiku,5.3,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"AIME 2024, 0-shot CoT single-sample (pass@1), Table 8. Maj@64 variant (10.1%) omitted as a different metric."
+claude-3-5-sonnet,9.6,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"AIME 2024, 0-shot CoT single-sample (pass@1), Table 7; introduced as a 'new benchmark' in the October addendum and reported retroactively for the original Sonnet. Maj@64 variant (16.7%) omitted as a different metric."
+claude-3-5-sonnet-new,16,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"AIME 2024, 0-shot CoT single-sample (pass@1), Table 7. Maj@64 variant (27.6%) omitted as a different metric."
 claude-3-7-sonnet,23.3,self-reported,https://www.datacamp.com/blog/claude-3-7-sonnet,2025-02-24,"AIME 2024, standard mode (no thinking); same sourceUrl correction as GPQA row, confirmed 23.3% standard-mode on DataCamp"
+claude-haiku-4-5,80.7,self-reported,https://www.anthropic.com/news/claude-haiku-4-5,2025-10-15,"AIME 2025, no-tools config (80.7%); the chart also shows a 96.3% 'with python tools' figure, but 80.7% is the fair apples-to-apples number matching how other Claude models in this corpus report AIME."
 claude-opus-4,75.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"AIME 2025, with extended thinking, no tools; confirmed via direct fetch"
 claude-opus-4-1,78,self-reported,https://winbuzzer.com/2025/08/05/anthropic-launches-claude-opus-4-1-a-measured-upgrade-focused-on-coding-and-safety-xcxwbn/,2025-08-05,"AIME 2025, up from 75.5% on Opus 4; same sourceUrl correction as Terminal-bench row, confirmed 78.0% on Winbuzzer"
 claude-opus-4-5,93,self-reported,https://www.lesswrong.com/posts/HtdrtF5kcpLtWe5dW/claude-opus-4-5-is-the-best-model-available,,AIME 2025 without code tools; Anthropic flagged that decontamination efforts for AIME were not fully successful
+claude-opus-4-5-high,92.8,self-reported,https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf,2025-11-24,"AIME 2025, without-tools config (92.77%, rounded); system card Section 2.17 explicitly flags 'concerns that contamination may have inflated this score.' (With Python tools the model scores 100%, but 92.8% is the comparable no-tools figure used elsewhere in this corpus.)"
 claude-sonnet-4,70.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"AIME 2025, with extended thinking; confirmed via direct fetch"
+command-a-218b,90,self-reported,https://cohere.com/blog/command-a-plus,2026-05-20,"AIME 2025, official 30-question set, each question repeated 10 times, pass@1 over the 300-sample dataset (per the blog's own footnote methodology). Cohere reports an improvement from 57% (Command A Reasoning) to 90% (Command A+). The blog embeds the actual score only in a chart image, but the figure is corroborated verbatim by two independent secondary write-ups (codersera.com launch guide and a VentureBeat-sourced search summary), both citing the identical 57%->90% jump, which is strong convergent evidence for the primary vendor claim."
+deepseek-coder-v2-236b,13.3,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,2024-06-17,"AIME 2024, reported as 4/30 in the 'Mathematical Reasoning' table"
 deepseek-r1-0528,91.4,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,AIME 2024 pass@1
 deepseek-r1-671b,79.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,AIME 2024 pass@1
 deepseek-r1-distill-llama-70b,70,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B,2025-01-20,AIME 2024 pass@1
@@ -13,12 +21,17 @@ deepseek-v3-0324,59.4,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-
 deepseek-v3-1-non-thinking,66.3,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,AIME 2024 Pass@1
 deepseek-v3-1-thinking,93.1,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,AIME 2024 Pass@1
 deepseek-v3-2-exp,89.3,self-reported,https://github.com/deepseek-ai/DeepSeek-V3.2-Exp,,AIME 2025
+deepseek-v3-671b,39.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,"AIME 2024 (Pass@1), Chat model"
 deepseek-v4-pro-think-max,87.5,self-reported,https://arxiv.org/abs/2606.19348,,"AIME 2025, Pro-Max mode; reported as an improvement from 70.0 in the prior generation"
+ernie-4-5-300b-a47b,35.1,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"AIME 2025, Table 5 (AIME 2024 score also given there: 54.8)."
+exaone-4-5,92.6,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,AIME 2026
+falcon-h1-34b,23.75,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,"AIME-24 (card also reports AIME-25=16.67, not added since only one aime slug exists)"
 falcon-h1r-7b,88.1,self-reported,https://falcon-lm.github.io/blog/falcon-h1r-7b/,,AIME 2024
 gemini-2-0-flash-thinking-experimental,73.3,self-reported,https://www.marktechpost.com/2025/01/21/google-ai-releases-gemini-2-0-flash-thinking-model-gemini-2-0-flash-thinking-exp-01-21-scoring-73-3-on-aime-math-and-74-2-on-gpqa-diamond-science-benchmarks/,,"AIME 2024; number originates from Google DeepMind CEO Demis Hassabis's own announcement, relayed here by press coverage -- counted as self-reported (vendor's own figure)."
 gemini-2-5-flash,72,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"AIME 2025, single attempt, thinking on"
 gemini-2-5-flash-lite-non-thinking,49.8,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"AIME 2025, (06-17) release, non-thinking"
 gemini-2-5-flash-lite-thinking,63.1,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"AIME 2025, (06-17) release, thinking on"
+gemini-2-5-pro,86.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf,2025-03-25,"AIME 2025, single attempt, Gemini 2.5 Pro (Experimental 03-25) column."
 gemini-3-flash,95.2,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf,2025-12-01,"AIME 2025, no tools (99.7% with code execution)"
 gemini-3-pro,95,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf,2025-11-01,"AIME 2025, no tools (100% with code execution)"
 gemma-4,89.2,self-reported,https://ai.google.dev/gemma/docs/core/model_card_4,2026-04-02,"AIME 2026, no tools, 31B"
@@ -29,12 +42,16 @@ glm-4-6,93.9,self-reported,https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-co
 glm-5,92.7,self-reported,https://huggingface.co/zai-org/GLM-5,,AIME 2026 I
 glm-5-1,95.3,self-reported,https://huggingface.co/zai-org/GLM-5.1,,AIME 2026
 glm-5-2-max,99.2,self-reported,https://huggingface.co/blog/zai-org/glm-52-blog,,AIME 2026
+glm-z1-32b-0414,80.8,self-reported,https://github.com/zai-org/GLM-4/blob/main/README.md,,"AIME24, read directly from the 'Bench-Z1-32B.png' evaluation chart in the official GLM-4/GLM-Z1-0414 GitHub README (Evaluation Results section)."
+gpt-4-1,48.1,self-reported,https://docsbot.ai/models/compare/gpt-4-1/gpt-4-1-mini,2025-04-14,AIME 2024; relayed from OpenAI's official GPT-4.1 launch benchmark table.
 gpt-4-1-mini,49.6,self-reported,https://docsbot.ai/models/gpt-4-1-mini,2025-04-01,"AIME 2024 [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
+gpt-4-1-nano,29.4,self-reported,https://docsbot.ai/models/gpt-4-1-nano,2025-04-14,AIME 2024; relayed from OpenAI's official GPT-4.1-family launch benchmark table.
 gpt-4-5,36.7,independent,https://www.helicone.ai/blog/gpt-4.5-benchmarks,2025-02-01,AIME 2024
 gpt-5,94.6,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"AIME 2025, no tools, high reasoning effort"
 gpt-5-1,94,independent,https://claude5.com/news/gpt-5-1-performance-review-benchmarks-november-2025,2025-11-19,"AIME 2025, Thinking mode; literally confirmed on cited page"
 gpt-5-2,100,self-reported,https://openai.com/index/introducing-gpt-5-2/,,"AIME 2025, no tools, GPT-5.2 Thinking; confirmed"
 gpt-5-mini,91.1,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"AIME 2025, no tools, high reasoning effort"
+gpt-5-nano,81.1,independent,https://themodelbeat.com/models/gpt-5-nano,,"Combined AIME 2024/2025 score from Epoch AI's independent evaluation. The corpus's prior verification pass had already found and dropped an unconfirmed self-reported nano AIME claim (85.2) that conflicted with an Artificial Analysis re-eval (83.7); this Epoch AI figure (81.1) is a third, independently-sourced data point in the same ballpark, offered here explicitly as an independent (not self-reported) figure to avoid re-introducing the earlier conflict as a vendor claim."
 gpt-5-pro,100,self-reported,https://openai.com/index/introducing-gpt-5/,,AIME 2025 with Python tools (without-tools figure reported elsewhere as 99.6%); distinct from base GPT-5's 94.6 no-tools figure already in the corpus
 gpt-oss-120b-high,95.8,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"AIME 2024, no tools, high reasoning effort"
 gpt-oss-120b-low,56.3,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"AIME 2024, no tools, low reasoning effort"
@@ -49,6 +66,8 @@ grok-3-think,93.3,self-reported,https://futureagi.com/blog/grok-3-technical-revi
 grok-4,91.7,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,"AIME 2025, no tools"
 grok-4-heavy,100,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,AIME 2025
 hunyuan-a13b,87.3,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,AIME 2024
+hunyuan-t1,78.2,self-reported,https://winbuzzer.com/2025/03/23/tencents-releases-its-hunyuan-t1-reasoning-model-beating-deepseek-r1-gpt-4-5-o1-across-benchmarks-xcxwbn/,,"AIME 2024. Tencent's own official comparison table (per the source article, this and the following rows are explicitly Tencent's official published figures, not the outlet's own eval) is rendered as an image on the primary tencent.github.io page and could not be OCR'd directly, but this figure is independently corroborated verbatim by a second outlet, SCMP: https://www.scmp.com/tech/big-tech/article/3303456/tencents-hunyuan-t1-ai-reasoning-model-rivals-deepseek-performance-and-price"
+hunyuan-turbos,40,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"AIME 2025 pass@1, Table 4 (also shown in the paper's Figure 1 bar chart); the paper separately reports AIME 2024 = 56.7 but the taxonomy has only one undated 'aime' slug so only the 2025 figure is recorded"
 intellect-3,90.8,self-reported,https://arxiv.org/pdf/2512.16144,,AIME 2024
 internlm3-8b-instruct,20,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,AIME2024
 kimi-k1-5,77.5,self-reported,https://arxiv.org/abs/2501.12599,,Long-CoT variant
@@ -67,6 +86,9 @@ magistral-medium,73.6,self-reported,https://mistral.ai/news/magistral/,2025-06-1
 magistral-small,70.68,self-reported,https://huggingface.co/mistralai/Magistral-Small-2506,,AIME2024 pass@1; 83.3% with maj@64 per Mistral's launch post
 minimax-m1,86,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,,"AIME 2024, M1-80K"
 minimax-m2,78,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,AIME25
+mistral-large-3,40,independent,https://medium.com/@layerlens/mistral-large-3-early-results-from-atlas-13f6a3c6b35a,2025-12-05,"AIME 2025, LayerLens/Atlas independent evaluation. The same source also reported AIME 2024 = 53.33%, which was not added since only one 'aime' slug exists in the taxonomy (following this corpus's established convention, e.g. tii/falcon-h1-34b, of keeping a single year per slug and noting the other in prose)."
+nemotron-3-nano-omni,82.1,self-reported,https://arxiv.org/abs/2604.24954,,"Table 10; AIME25, no tools, Pass@1 average of 8 runs."
+nemotron-3-super,90.21,self-reported,https://arxiv.org/abs/2604.12374,,"Table 5, AIME25 no tools."
 nemotron-nano-2-nemotron-nano-9b-v2,72.1,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"AIME25, Reasoning On, vs Qwen3-8B's 69.3"
 olmo-3-7b,44.3,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,AIME 2024
 olmo-3-think-32b,76.8,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,AIME 2024; Qwen 3 32B 80.8
@@ -96,16 +118,21 @@ qwen3-30b-a3b-thinking,80.4,self-reported,https://arxiv.org/abs/2505.09388,,"AIM
 qwen3-32b-non-thinking,31,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, non-thinking mode, Table 14"
 qwen3-32b-thinking,81.4,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, thinking mode, Table 13"
 qwen3-5-397b-a17b,91.3,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,"AIME26 (AIME 2026). Corrected from 93.3 to 91.3: the model's own HF model card table and the original qwen.ai/blog?id=qwen3.5 launch blog both report 91.3, corroborated independently by third-party trackers automatio.ai and morphllm.com. The candidate's cited value (93.3) came from qwen.ai/blog?id=qwen3.6-27b's cross-generation table, which carries an explicit footnote from Qwen themselves: 'We use the full AIME 2026 (I & II), where the scores may differ from Qwen 3.5 notes' -- i.e. Qwen is flagging that this is a different, non-canonical re-evaluation, not the model's own self-reported figure."
+qwen3-6-27b,94.1,self-reported,https://huggingface.co/Qwen/Qwen3.6-27B,,Listed as 'AIME26' (AIME 2026) on the official HF model card.
+qwen3-6-35b-a3b,92.7,self-reported,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,,Listed as 'AIME26' (AIME 2026) on the official HF model card.
 qwen3-6-plus,95.3,self-reported,https://qwen.ai/blog?id=qwen3.6,,AIME 2026 (I & II); same column-position inference
 qwen3-8b-non-thinking,29.1,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, non-thinking mode, Table 18"
 qwen3-8b-thinking,76,self-reported,https://arxiv.org/abs/2505.09388,,"AIME'24, thinking mode, Table 17"
 qwen3-max,80.6,self-reported,https://felloai.com/qwen-3-max-ai-all-you-need-to-know-about-alibabas-1-trillion-parameter-llm/,,"AIME 2025, Qwen3-Max-Instruct (Preview, non-thinking), official launch chart (also transcribed by localllm.in). Some GA-release transcriptions cite 81.6; Thinking variant later reported 100 with tools + test-time compute."
 qwq-32b,79.5,self-reported,https://www.datacamp.com/blog/qwq-32b,,"AIME24; DeepSeek-R1 79.8, o1-mini 63.6"
 qwq-32b-preview,50,self-reported,https://qwenlm.github.io/blog/qwq-32b-preview/,,AIME 2024
+r1-1776,80.96,self-reported,https://www.deeplearning.ai/the-batch/perplexity-launches-uncensored-version-of-deepseek-r1-ai-model,,"AIME 2024 pass@1, relaying Perplexity's own launch benchmark chart (original R1-1776 base model scored 80.96 on the same eval)"
 sarvam-105b,88.3,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,"AIME 2025, without tools (96.7 with tools)"
 seed-oss-36b,91.7,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,AIME24
 seed1-5-thinking,86.7,self-reported,https://arxiv.org/abs/2504.13914,,AIME 2024
 skywork-r1v-38b,72,self-reported,https://arxiv.org/abs/2504.05599,,AIME 2024
 smollm3-3b-no-thinking,9.3,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM3-3B,,"AIME 2025, no extended thinking"
 smollm3-3b-think,36.7,self-reported,https://huggingface.co/blog/smollm3,,"AIME 2025, reasoning mode"
+sonar,48.7,independent,https://designforonline.com/ai-models/perplexity-sonar/,,"AIME 2024; attributed to Artificial Analysis, corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats."
+step-3,82.9,self-reported,https://chat.stepfun.com/research/en/step3,,AIME 2025. Also independently corroborated verbatim by SiliconFlow's launch coverage: https://www.siliconflow.com/blog/step3-now-live-on-siliconflow-the-leading-open-source-multimodal-reasoning-model
 trinity-large-thinking,96.3,self-reported,https://huggingface.co/arcee-ai/Trinity-Large-Thinking,,AIME 2025

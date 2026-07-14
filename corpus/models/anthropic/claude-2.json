@@ -62,6 +62,46 @@
       "sourceUrl": "https://www.anthropic.com/news/claude-2",
       "evaluatedAt": "2023-07-11",
       "notes": "Grade-school math, up from 85.2% on Claude 1.3"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 78.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf",
+      "evaluatedAt": "2023-07-11",
+      "notes": "5-shot CoT, official Claude 2 Model Card and Evaluations report, Section 4.3 'Standard Benchmarks and Standardized Tests' table (Claude 2 column)."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 87.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf",
+      "evaluatedAt": "2023-07-11",
+      "notes": "5-shot, same Section 4.3 table (Claude 2 column)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 91,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf",
+      "evaluatedAt": "2023-07-11",
+      "notes": "5-shot, same Section 4.3 table (Claude 2 column)."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 88.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf",
+      "evaluatedAt": "2023-07-11",
+      "notes": "RACE-H (5-shot), Section 4.3 'Standard Benchmarks and Standardized Tests' table, Claude 2 column -- the same official model-card table already used for this model's existing humaneval/gsm8k/mmlu/trivia-qa/arc-challenge rows; this row was simply not extracted in the prior pass."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 69,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf",
+      "evaluatedAt": "2023-07-11",
+      "notes": "TruthfulQA 'With Free-Form Sampling' (Figure 4): Claude 2 scores 0.69, recorded here on this corpus's 0-100 percentage scale as 69. Non-standard methodology flagged explicitly: Anthropic samples an open-ended chatbot response and has a separate 'helpful-only' model match it to the closest multiple-choice option, rather than the more common direct MC2 scoring used by most other TruthfulQA rows in this corpus."
     }
   ],
   "verificationNotes": "Confirmed real: released July 11, 2023 per Anthropic's own announcement. 100K context window, HumanEval 71.2%, and GSM8K 88.0% all confirmed verbatim via direct fetch of anthropic.com/news/claude-2. Pricing: at July 2023 launch Claude 2 was priced the same as Claude 1 ($11.02/$32.68 per M, confirmed via Anthropic's official July-2023 pricing PDF), but by the Nov-2023 official Anthropic pricing PDF and prompthub.us model card, Claude 2.0's price had dropped to $8.00/$24.00 per M tokens -- the record's $8/$24 figure is confirmed as accurate for this later, more commonly cited price point. No other changes made."

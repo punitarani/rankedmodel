@@ -1,5 +1,7 @@
 model_slug,score,source,source_url,evaluated_at,notes
 aya-vision-32b,70.43,self-reported,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+baichuan2-13b,30.2,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,"3-shot, Baichuan2-13B-Base; from the official README's Math & Code results table (also matches the arXiv 2309.10305 technical report)."
+baichuan2-7b,24.2,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,"3-shot, Baichuan2-7B-Base."
 chatglm3-6b,52.4,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
 claude-3-haiku,80.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,Pass@1
 claude-3-opus,86.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,Pass@1
@@ -7,32 +9,79 @@ claude-3-sonnet,79.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7c
 code-llama-13b,47,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, base Code Llama 13B"
 code-llama-34b,55,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, base Code Llama 34B"
 code-llama-34b-python,56.2,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, Code Llama - Python 34B"
+code-llama-70b,62.4,self-reported,https://arxiv.org/html/2308.12950v3,2024-01-29,"pass@1, base Code Llama 70B. Table 2 of the Code Llama paper (arXiv 2308.12950v3). Confirmed via two independent direct fetches of the paper; consistent across sources."
+code-llama-70b-instruct,62.2,self-reported,https://arxiv.org/html/2308.12950v3,2024-01-29,"pass@1, Code Llama - Instruct 70B, Table 2 of the Code Llama paper (arXiv 2308.12950v3, updated when the 70B family was released Jan 29 2024). Directly fetched and cross-confirmed via two independent fetches plus corroborating web search; not currently in the corpus (only HumanEval is recorded)."
 code-llama-7b,41.4,self-reported,https://arxiv.org/html/2308.12950v3,2023-08-01,"pass@1, base Code Llama 7B"
+codegeex-13b,22.44,self-reported,https://arxiv.org/pdf/2303.17568,,"CodeGeeX-13B MBPP Pass@1, 3-shot setting (paper Table 11, Appendix A.4.2). The same table also reports a 1-shot setting result of Pass@1=24.37; I picked the 3-shot figure as it matches the standard MBPP paper convention."
 codegemma-7b,56.2,self-reported,https://ai.google.dev/gemma/docs/codegemma/model_card,,7B pretrained (PT) variant
+codegen-16b-mono,35.28,self-reported,https://ar5iv.labs.arxiv.org/html/2203.13474,,"pass@1 on sanitized MBPP (n=100, temperature=0.8), CodeGen-Mono 16.1B, Table 11 of the CodeGen paper (arXiv 2203.13474)"
 codeqwen1-5-7b,72.2,self-reported,https://qwenlm.github.io/blog/codeqwen1.5/,2024-04-16,"Base model, 0-shot"
 codestral-22b,78.2,self-reported,https://www.analyticsvidhya.com/blog/2024/06/codestral-22b/,2024-05-01,"[relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
 codestral-25-01,80.2,self-reported,https://mistral.ai/news/codestral-2501/,,
+codestral-mamba-7b,68.5,self-reported,https://huggingface.co/mistralai/Mamba-Codestral-7B-v0.1,,From the official HF model card's evaluation table; independently cross-confirmed against the identical table rendered from the official mistral.ai/news/codestral-mamba/ launch-blog chart image.
 comma-v0-1-2t,41.5,self-reported,https://huggingface.co/common-pile/comma-v0.1-2t,,
 deepseek-coder-33b,70,self-reported,https://ar5iv.labs.arxiv.org/html/2401.14196,,"Instruct-33B, from paper Table 3"
+deepseek-llm-67b,61.4,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6, pass@1"
 deepseek-v2-236b,72,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,,Chat (RL) variant
+deepseek-vl-7b,35.2,self-reported,https://arxiv.org/html/2403.05525v2,2024-03-08,"Table 7, DeepSeek-VL 7B Chat column: 'MBPP 10.0 35.2 35.2'."
+deepseekmoe-16b,39.2,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, MBPP Pass@1 3-shot, DeepSeekMoE 16B column."
+falcon-h1-34b,83.86,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
+gemini-1-0-nano,27.2,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Gemini Nano-2 (3.25B), Table 3."
+gemma-2-27b,62.6,self-reported,https://huggingface.co/google/gemma-2-27b,2024-06-01,3-shot
+gemma-2-9b,52.4,self-reported,https://huggingface.co/google/gemma-2-9b,2024-06-01,3-shot
+gemma-2b,29.2,self-reported,https://huggingface.co/google/gemma-2b,,3-shot
+gemma-3-4b,63.2,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Table 18, IT 4B, pass@1."
+gemma-7b,44.4,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf,2024-02-21,"Table 6, 3-shot."
+granite-3-0-2b-instruct,41,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,pass@1
+granite-3-0-8b-instruct,49.6,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"MBPP, pass@1. Confirmed in HF model-index YAML and technical report Table 10."
 granite-4-0-h-small,84,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+granite-4-1-8b-instruct,87.3,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,pass@1
+hunyuan-large-a52b,72.6,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
+inflection-1,43.8,self-reported,https://inflection.ai/assets/Inflection-1.pdf,2023-06-23,"pass@1, 3-shot prompt (Table 9 of the technical memo)."
+inflection-2,53,self-reported,https://www.searchenginejournal.com/new-ai-model-outperforms-googles-powerful-palm-2/502191/,2023-11-27,"Confirmed via direct raw-HTML fetch (not summarized) of the SEJ article: literal text 'MBPP Scores: LLaMA-2 70B: 45.0 | PaLM-2S: 50.0 | Inflection-2: 53.0' appears verbatim in the page body, relaying Inflection AI's own published chart (the inflection.ai/inflection-2 blog page shows the same data only as an unreadable chart image, so this press relay is the only text-form citation found). Labeled self-reported per the corpus's existing convention for this same source/page (aggregator relay of a vendor-published figure, not an independent re-measurement)."
 internlm2-20b,65.8,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,
+lamda,14.8,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"LaMDA 137B pass@1 on MBPP, reported by Google as a baseline comparison in the PaLM technical report (Table 12). Independently cross-confirmed by the LLaMA paper's Table 8, which cites the same figure."
+lg-exaone-3-0-7-8b-instruct,47.4,self-reported,https://arxiv.org/abs/2408.03541,2024-08-01,
+lg-exaone-3-5-32b-instruct,81.8,self-reported,https://arxiv.org/abs/2412.04862,2024-12-01,
 llama-13b,22,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"pass@1, Table 8"
+llama-2-13b,30.6,self-reported,https://ar5iv.labs.arxiv.org/html/2307.09288,2023-07-18,"pass@1 (3-shot), Table 21. Cross-checked: (HumanEval 18.3 + MBPP 30.6)/2 = 24.45 ≈ Table 3's composite 'Code' column value of 24.5 for this row, corroborating both figures."
+llama-2-70b,45,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"3-shot pass@1, Table 21 (Appendix A.2.2)."
+llama-2-7b,20.8,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"3-shot pass@1, Table 21 (Appendix A.2.2)."
 llama-3-1-minitron-4b,32.4,self-reported,https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/,2024-08-14,0-shot pass@1
 llama-3-3-nemotron-super-49b-v1-reasoning-off,84.9,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning Off
 llama-3-3-nemotron-super-49b-v1-reasoning-on,91.3,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning On
 llama-33b,30.2,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"pass@1, Table 8"
 llama-4-maverick,77.6,self-reported,https://huggingface.co/blog/llama4-release,,"Pre-trained/base model comparison table, pass@1 (not instruction-tuned)"
 llama-4-scout,67.8,self-reported,https://huggingface.co/blog/llama4-release,,"Pre-trained/base model comparison table, pass@1 (not instruction-tuned)"
+llama-65b,37.7,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"pass@1, Table 8"
+llama-7b,17.7,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"pass@1, Table 8"
 minicpm-2b,47.31,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table
+ministral-3b,67.7,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,"MBPP pass@1, instruct model comparison table"
 ministral-8b,70,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,,pass@1
 mistral-7b,47.5,self-reported,https://arxiv.org/abs/2310.06825,,
+mistral-large,73.1,self-reported,https://mistral.ai/news/mistral-large/,2024-02-26,Same coding/math chart (MBPP column).
 mistral-large-2-24-07,80,self-reported,https://huggingface.co/mistralai/Mistral-Large-Instruct-2407,,MBPP Base
+mistral-small-3-1-24b,74.71,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
 mixtral-8x7b,60.7,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
 mpt-7b,22.8,independent,https://arxiv.org/abs/2405.13386,2024-05-22,confirmed Table 2
+naver-hyperclova-x,33.41,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, 3-shot, Table 8 (coding)."
 nemotron-4-15b,40.6,self-reported,https://unfoldai.com/nemotron-4-nvidia-powerful-language-model/,2024-02-26,
+nemotron-h-56b,77.82,self-reported,https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K,,"MBPP (sanitized), 3-shot"
 phi-1-1-3b,55.5,self-reported,https://arxiv.org/abs/2306.11644,2023-06-20,pass@1
 phi-1-5-1-3b,37.7,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,,
+phi-2-2-7b,60.6,self-reported,https://arxiv.org/pdf/2404.14219,,3-shot; same comparison table.
+phi-3-5-mini-3-8b,69.6,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,3-shot; HF model card.
+phi-3-5-moe-16x3-8b-6-6b-active,80.8,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
+phi-3-medium-14b,75.2,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,3-shot
+phi-3-mini-3-8b,69.8,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,3-shot
+phi-3-small-7b,71.7,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,3-shot
+phi-4-mini-3-8b,65.3,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7/8, MBPP (3-shot)."
+phi-4-mini-instruct,65.3,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7/8, MBPP (3-shot)."
+poro-34b,47.4,self-reported,https://arxiv.org/abs/2404.01856,2024-04-01,"MBPP (Python) score from Table 8 (Code benchmark results) of the Poro 34B paper (Luukkonen et al., arXiv:2404.01856), directly adjacent to the already-recorded HumanEval 37.20 score; the two together form the paper's reported Code average of 41.80."
+qwen-1-8b,14.2,self-reported,https://github.com/QwenLM/Qwen/blob/main/README.md,2023-11-30,3-shot.
+qwen-14b,40.8,self-reported,https://huggingface.co/Qwen/Qwen-14B,2023-09-25,3-shot
+qwen-72b,52.2,self-reported,https://huggingface.co/Qwen/Qwen-72B,2023-11-30,3-shot
+qwen-7b,31.6,self-reported,https://huggingface.co/Qwen/Qwen-7B,2023-09-28,3-shot; from Qwen base-model comparison table on HF/GitHub README
 qwen1-5-110b,58.1,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Base model
 qwen1-5-72b,53.4,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
 qwen2-5-14b,76.7,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
@@ -47,5 +96,6 @@ santacoder-1-1b,35,self-reported,https://huggingface.co/bigcode/santacoder,,"pas
 starcoder-15-5b,52.7,self-reported,https://huggingface.co/blog/starcoder,,
 upstage-solar-pro,61.59,self-reported,https://huggingface.co/upstage/solar-pro-preview-instruct,,
 wizardcoder-python-34b-v1-0,73.2,self-reported,https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md,,pass@1
+yandexgpt-5-pro,84,independent,https://github.com/kuk/simple-evals-ru,2025-03-20,Independent third-party eval (216/257 correct) from the simple-evals-ru project's results table.
 yi-34b,41,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,pass@1
 yi-6b,26.3,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,pass@1

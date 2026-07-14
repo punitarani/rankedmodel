@@ -96,6 +96,46 @@
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-5",
       "notes": "CyberGym; confirmed"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 93.6,
+      "source": "self-reported",
+      "sourceUrl": "https://llm-stats.com/blog/research/gpt-5-5-vs-gpt-5-4",
+      "evaluatedAt": "2026-04-23",
+      "notes": "GPQA Diamond score for base GPT-5.5, explicitly labeled 'OpenAI self-reported (launch post)' by llm-stats.com's research comparison; independently corroborated at the identical 93.6% by buildfastwithai's GPT-5.5 review (2026) and by benchlm.ai's GPQA-D leaderboard. Not previously in this corpus entry."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 41.4,
+      "source": "self-reported",
+      "sourceUrl": "https://llm-stats.com/blog/research/gpt-5-5-vs-gpt-5-4",
+      "evaluatedAt": "2026-04-23",
+      "notes": "Humanity's Last Exam, no tools, base GPT-5.5. Explicitly labeled 'OpenAI self-reported (launch post)' by llm-stats.com; identical figure independently corroborated by buildfastwithai's review. Distinct from GPT-5.5 Pro's HLE-with-tools figure of 57.2% (a different setting, not added here)."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 78.7,
+      "source": "self-reported",
+      "sourceUrl": "https://llm-stats.com/blog/research/gpt-5-5-vs-gpt-5-4",
+      "evaluatedAt": "2026-04-23",
+      "notes": "OSWorld-Verified for base GPT-5.5, labeled OpenAI self-reported launch-post figure by llm-stats.com; independently corroborated at the identical 78.7% by kingy.ai's 'quoted verbatim from OpenAI's evaluation tables' rundown and by buildfastwithai's review."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 98,
+      "source": "self-reported",
+      "sourceUrl": "https://llm-stats.com/blog/research/gpt-5-5-vs-gpt-5-4",
+      "evaluatedAt": "2026-04-23",
+      "notes": "Tau2-bench Telecom, 'without any prompt tuning' per OpenAI's own framing, base GPT-5.5. Labeled OpenAI self-reported launch-post figure; identical figure independently corroborated by interestingengineering.com's GPT-5.5 coverage and the WebSearch synopsis of OpenAI's own launch page."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://kingy.ai/news/gpt-5-5-benchmarks-revealed-the-9-numbers-that-prove-chatgpt-5-5-just-changed-the-ai-race/",
+      "evaluatedAt": "2026-04-23",
+      "notes": "ARC-AGI-2, base GPT-5.5, listed by kingy.ai as one of the '9 numbers ... quoted verbatim from OpenAI's evaluation tables'; independently corroborated at the identical 85.0% by buildfastwithai's review and by benchlm.ai's dedicated ARC-AGI-2 leaderboard ('GPT-5.5 Leads at 85%'). Flagging that this exceeds the taxonomy's documented arc-agi-2 range ceiling of 82 -- multiple independent sources agree on 85.0% as a new-SOTA figure at launch, so the taxonomy range appears to be outdated rather than the score being wrong, but noting this for the ingesting pipeline's awareness."
     }
   ],
   "verificationNotes": "Existence, April 23 2026 release, codename Spud, 1.05M context window, and $5/$30 pricing all confirmed via multiple independent outlets (Axios, Wikipedia, MarkTechPost) plus developers.openai.com model docs. All seven benchmark scores (SWE-Bench Pro 58.6, Terminal-Bench 82.7, GDPval 84.9, BrowseComp 84.4, FrontierMath T1-3 51.7, FrontierMath T4 35.4, CyberGym 81.8) independently corroborated as base-model (not Pro-variant) figures across MarkTechPost and other launch-day coverage."

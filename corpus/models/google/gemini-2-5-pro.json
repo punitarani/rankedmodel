@@ -64,7 +64,55 @@
       "source": "self-reported",
       "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/",
       "notes": "SWE-bench Verified, custom agent setup"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 84,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-03-25",
+      "notes": "GPQA Diamond, single attempt, Gemini 2.5 Pro (Experimental 03-25) column."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 86.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-03-25",
+      "notes": "AIME 2025, single attempt, Gemini 2.5 Pro (Experimental 03-25) column."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 70.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-03-25",
+      "notes": "LiveCodeBench v5 (UI window 10/1/2024-2/1/2025), single attempt, Gemini 2.5 Pro (Experimental 03-25) column."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 74,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-03-25",
+      "notes": "Aider Polyglot, whole score (74.0% whole / 68.6% diff), Gemini 2.5 Pro (Experimental 03-25) column."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 52.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-03-25",
+      "notes": "SimpleQA, Gemini 2.5 Pro (Experimental 03-25) column."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 81.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf",
+      "evaluatedAt": "2025-03-25",
+      "notes": "MMMU, single attempt, Gemini 2.5 Pro (Experimental 03-25) column."
     }
   ],
-  "verificationNotes": "Fetched the primary blog.google launch post directly: confirmed publish date March 25, 2025 (updated Mar 26), and the exact HLE 18.8%, SWE-bench 63.8%, and '#1 on LMArena by a significant margin' quotes verbatim. Independently confirmed the deprecation claim via ai.google.dev/gemini-api/docs/deprecations live table: gemini-2.5-pro shutdown date is Oct 16, 2026, recommended replacement is gemini-3.1-pro-preview (a real, released model, confirmed via ai.google.dev model docs and Google Cloud blog) — matches the record's note exactly. Pricing $1.25/$10 confirmed on ai.google.dev/gemini-api/docs/pricing. Architecture 'sparse MoE transformer' confirmed via the official Gemini 2.5 Flash/3 Pro model cards' Architecture section (applies to the whole 2.5/3 family). No corrections needed."
+  "verificationNotes": "Fetched the primary blog.google launch post directly: confirmed publish date March 25, 2025 (updated Mar 26), and the exact HLE 18.8%, SWE-bench 63.8%, and '#1 on LMArena by a significant margin' quotes verbatim. Independently confirmed the deprecation claim via ai.google.dev/gemini-api/docs/deprecations live table: gemini-2.5-pro shutdown date is Oct 16, 2026, recommended replacement is gemini-3.1-pro-preview (a real, released model, confirmed via ai.google.dev model docs and Google Cloud blog) \u2014 matches the record's note exactly. Pricing $1.25/$10 confirmed on ai.google.dev/gemini-api/docs/pricing. Architecture 'sparse MoE transformer' confirmed via the official Gemini 2.5 Flash/3 Pro model cards' Architecture section (applies to the whole 2.5/3 family). No corrections needed."
 }

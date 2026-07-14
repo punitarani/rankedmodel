@@ -73,6 +73,48 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
       "notes": "Instruct checkpoint, MathVista testmini"
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 88.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
+      "notes": "ChartQA test split, from the official HF model card benchmark table."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 85.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
+      "notes": "TextVQA val split. Note this exceeds the taxonomy's documented normMax of 75 for textvqa \u2014 genuine same-benchmark match, just a high score for a strong 72B VLM."
+    },
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 877,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
+      "notes": "OCRBench, /1000 scale."
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 86.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
+      "notes": "MMBench-EN test split."
+    },
+    {
+      "benchmarkSlug": "mmbench-cn",
+      "score": 86.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
+      "notes": "MMBench-CN test split. Slightly exceeds the taxonomy's documented normMax of 82."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 77.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
+      "notes": "Video-MME w/ subtitles (w/o-subs value is 71.2)."
     }
   ],
   "verificationNotes": "Real model, confirmed via live fetch of the Qwen2-VL-72B-Instruct HF README benchmark table: MMMU val 64.5, DocVQA test 96.5, MathVista testmini 70.5 all match exactly. Corrected the DocVQA row's notes from 'DocVQA val' to 'DocVQA test' since the actual table reports the test split, not val (score itself was already correct). ViT vision encoder corrected from '~600M' to '675M' (confirmed exact figure via search). paramsB 73.4B confirmed via llm-stats.com. ctxK 32 (32,768) confirmed via live config.json fetch. Release date 2024-09-19 confirmed (arXiv paper submitted 2024-09-18, HF instruct checkpoint + quantized versions available 2024-09-19; broader Qwen2-VL 2B/7B series announced 2024-08-29). License tongyi-qianwen confirmed on HF and llm-stats.com."

@@ -70,6 +70,30 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2404.12387v1",
       "notes": ""
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 23.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "evaluatedAt": "2024-02-12",
+      "notes": "MATH 4-shot, Reka Edge 7B, from Table 14 of the Reka Core/Flash/Edge tech report (arXiv 2404.12387)"
+    },
+    {
+      "benchmarkSlug": "pubmedqa",
+      "score": 71.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "evaluatedAt": "2024-02-12",
+      "notes": "PubMedQA score for Reka Edge (7B), from the medical-reasoning comparison in Table 13 of the tech report"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 7.6,
+      "source": "self-reported",
+      "sourceUrl": "https://reka.ai/news/reka-flash-efficient-and-capable-multimodal-language-models",
+      "evaluatedAt": "2024-02-12",
+      "notes": "Reka Edge's MT-Bench score of 7.6, stated in Reka's official Feb 12, 2024 launch blog post as 'competitive with' contemporary chat models"
     }
   ],
   "verificationNotes": "CORRECTED releaseDate. Reka's own blog archive (reka.ai/news) lists only one Feb/Apr-2024-era post covering Edge: 'Reka Flash: Efficient and Capable Multimodal Language Models,' dated Feb 12, 2024, which explicitly introduces Reka Edge (7B) as a companion release; a Reka Twitter/X post ('we also launch Reka Edge') from the same window (~Feb 12-13, 2024) corroborates. The source record's date of 2024-04-15 conflated Edge's original release with Reka Core's separate April 15, 2024 launch date / the arxiv tech report's April 18 submission date. Changed releaseDate to 2024-02-12. All three benchmark rows confirmed exactly against arxiv 2404.12387v1 (MMLU 65.7 vs Gemma-7B 64.3/Mistral-7B 62.5, GSM8K 66.2, HumanEval 54.3). Current docs.reka.ai/pricing confirms $0.1/$0.1 pricing matches record exactly. Params (7B) and context (64K long-context variant) confirmed via arxiv report."

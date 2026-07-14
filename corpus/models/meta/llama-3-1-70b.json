@@ -113,7 +113,39 @@
       "source": "arena",
       "sourceUrl": "https://lmmarketcap.com/benchmarks/arena_elo",
       "notes": "Current LMArena Elo (dynamic, decays as newer models are added)"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 94.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluatedAt": "2024-07-01",
+      "notes": "Instruct, 0-shot acc, from official Llama 3.1 model card benchmark table"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 86,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluatedAt": "2024-07-01",
+      "notes": "Instruct, 'MBPP++ base' 0-shot pass@1"
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 84.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluatedAt": "2024-07-01",
+      "notes": "Instruct, BFCL 0-shot acc"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 86.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluatedAt": "2024-07-01",
+      "notes": "Instruct, Multilingual MGSM CoT 0-shot em"
     }
   ],
-  "verificationNotes": "Confirmed real. Exact parameter count 70.6B corroborated independently (apxml.com and others). HF comparison table (meta-llama/Meta-Llama-3.1-8B page, which covers all three sizes) literally lists all seven Instruct scores for 70B: MMLU 83.6, MMLU-Pro 66.4, GPQA 46.7, IFEval 87.5, HumanEval 80.5, GSM8K 95.1, MATH 68.0 — matches exactly. Corrected the GPQA row's notes the same way as the 405B entry (Instruct, not base). Live-fetched lmmarketcap.com/benchmarks/arena_elo and confirmed it currently shows exactly 1198 Elo for Llama 3.1 70B. Release date, 128K context, and Llama 3.1 Community License confirmed via Meta's blog/GitHub model card."
+  "verificationNotes": "Confirmed real. Exact parameter count 70.6B corroborated independently (apxml.com and others). HF comparison table (meta-llama/Meta-Llama-3.1-8B page, which covers all three sizes) literally lists all seven Instruct scores for 70B: MMLU 83.6, MMLU-Pro 66.4, GPQA 46.7, IFEval 87.5, HumanEval 80.5, GSM8K 95.1, MATH 68.0 \u2014 matches exactly. Corrected the GPQA row's notes the same way as the 405B entry (Instruct, not base). Live-fetched lmmarketcap.com/benchmarks/arena_elo and confirmed it currently shows exactly 1198 Elo for Llama 3.1 70B. Release date, 128K context, and Llama 3.1 Community License confirmed via Meta's blog/GitHub model card."
 }

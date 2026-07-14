@@ -97,6 +97,55 @@
       "source": "independent",
       "sourceUrl": "https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air",
       "evaluatedAt": "2026-07-12"
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 76.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.06471",
+      "notes": "BFCL V3 (Full), Table 3 of the GLM-4.5 technical report (which covers both GLM-4.5 and GLM-4.5-Air)."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 21.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.06471",
+      "notes": "Table 3, Agentic Benchmarks."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 98.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.06471",
+      "notes": "MATH 500, Table 4 'Results on Reasoning Benchmarks'."
+    },
+    {
+      "benchmarkSlug": "terminal-bench",
+      "score": 30,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.06471",
+      "notes": "Table 5 'Results on SWE-bench Verified and Terminal-Bench'."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 87.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.06471",
+      "notes": "MMLU (EM), Table 6 'Results on Commonly Used General Chat Benchmarks'."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 14.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.06471",
+      "notes": "SimpleQA (Correct), Table 6."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 86.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.06471",
+      "notes": "IFEval (Prompt Strict), Table 6."
     }
   ],
   "verificationNotes": "Existence and identity confirmed via official Z.ai blog and Hugging Face model card (zai-org/GLM-4.5-Air). paramsB=106, activeParamsB=12 confirmed verbatim on HF card ('106 billion total parameters', '12 billion active parameters'). License MIT confirmed on HF card. Release date 2025-07-28 confirmed (released simultaneously with GLM-4.5 per cometapi article). All six independent benchmark rows (AIME 89.4, MMLU-Pro 81.4, GPQA 75.0, SWE-bench 57.6, LiveCodeBench 70.7, HLE 10.6) verbatim-confirmed on llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air. Pricing ($0.2/$1.1 per 1M tokens) confirmed on docs.z.ai/guides/overview/pricing. No changes made to the original record; all fields checked out."

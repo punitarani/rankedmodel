@@ -92,6 +92,55 @@
       "score": 70.9,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 93.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "notes": "MMLU-Redux, official HF model card Performance table"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 88.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "notes": "IFEval"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 54.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "notes": "SimpleQA (English)"
+    },
+    {
+      "benchmarkSlug": "super-gpqa",
+      "score": 62.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "notes": "SuperGPQA"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 57.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "notes": "Aider-Polyglot"
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 71.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "notes": "TAU1-Retail split (filed under tau-bench per corpus convention; TAU1-Airline 44.0 omitted to avoid a duplicate-slug collision)"
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 32.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "notes": "TAU2-Telecom"
     }
   ],
   "verificationNotes": "Fully confirmed via direct fetch of the HF model card: 235B total/22B active params, 128 experts/8 active, Apache 2.0, native 262,144-token (256K) context, all six benchmark scores match verbatim. Independently confirmed 119-language support via Qwen3 Technical Report (arXiv 2505.09388) and Alibaba_Qwen official tweet. Pricing ($0.23/$0.92 per M tokens) confirmed exactly via Alibaba Cloud Model Studio official international pricing page. No changes made."

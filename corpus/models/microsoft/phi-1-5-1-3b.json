@@ -72,6 +72,62 @@
       "score": 37.7,
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.05463"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 75.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.05463",
+      "evaluatedAt": "2023-09-11",
+      "notes": "Zero-shot accuracy, Table 2 (Common Sense Reasoning Benchmarks) of the phi-1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 52.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.05463",
+      "evaluatedAt": "2023-09-11",
+      "notes": "Zero-shot accuracy, Table 2."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 76.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.05463",
+      "evaluatedAt": "2023-09-11",
+      "notes": "Table 3 (Language Understanding and Knowledge Benchmarks)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 47.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.05463",
+      "evaluatedAt": "2023-09-11",
+      "notes": "Table 3."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 37.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.05463",
+      "evaluatedAt": "2023-09-11",
+      "notes": "Table 3."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 37.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.05463",
+      "evaluatedAt": "2023-09-11",
+      "notes": "2-shot, Table 3."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 40.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.05463",
+      "evaluatedAt": "2023-09-11",
+      "notes": "Zero-shot pass@1, Table 4 (Multi-Step Reasoning Benchmarks); paper labels this result 'via coding' \u2014 the model solves math problems by generating code rather than direct chain-of-thought text."
     }
   ],
   "verificationNotes": "Existence, 1.3B params, MIT license, 2048 ctx and Sept 2023 release all confirmed on Microsoft's HF card and technical report. Fetched the actual arXiv 2309.05463 HTML and confirmed all four benchmark rows verbatim: winogrande 0.734 (73.4), arc-challenge 0.444 (44.4), humaneval 34.1, mbpp 37.7. No discrepancies found."

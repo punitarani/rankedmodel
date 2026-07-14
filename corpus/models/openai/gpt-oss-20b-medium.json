@@ -81,7 +81,47 @@
       "sourceUrl": "https://arxiv.org/abs/2508.10925",
       "evaluatedAt": "2025-08-05",
       "notes": "SWE-bench Verified, medium reasoning effort"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Humanity's Last Exam, no tools, medium reasoning effort (Table 3 of the gpt-oss model card)"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1998,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Codeforces Elo, no tools, medium reasoning effort"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 73.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Multilingual MMLU average, medium reasoning effort"
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 47.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Tau-Bench Retail domain, medium reasoning effort"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 26.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Aider Polyglot (diff), medium reasoning effort"
     }
   ],
-  "verificationNotes": "Fetched the full gpt-oss model card PDF (arXiv 2508.10925, OpenAI, dated Aug 5 2025) directly and located Table 3 (Full Evaluations): gpt-oss-20b medium = AIME2024(no tools) 80.0, GPQA Diamond(no tools) 66.0, MMLU 84.0, SWE-bench Verified 53.2 — all four claimed scores match exactly. Architecture confirmed in the paper: 24 layers, 32 experts/layer, top-4 routing, 20.91B total/3.61B active params (rounds to 21B/3.6B), 131,072-token context (128K), Apache 2.0 license, title page dated Aug 5 2025. No changes made."
+  "verificationNotes": "Fetched the full gpt-oss model card PDF (arXiv 2508.10925, OpenAI, dated Aug 5 2025) directly and located Table 3 (Full Evaluations): gpt-oss-20b medium = AIME2024(no tools) 80.0, GPQA Diamond(no tools) 66.0, MMLU 84.0, SWE-bench Verified 53.2 \u2014 all four claimed scores match exactly. Architecture confirmed in the paper: 24 layers, 32 experts/layer, top-4 routing, 20.91B total/3.61B active params (rounds to 21B/3.6B), 131,072-token context (128K), Apache 2.0 license, title page dated Aug 5 2025. No changes made."
 }

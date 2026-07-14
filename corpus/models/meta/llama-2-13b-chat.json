@@ -58,7 +58,47 @@
       "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md",
       "evaluatedAt": "2023-07-18",
       "notes": "Percent of generations rated both truthful and informative"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 51.37,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/meta-llama__Llama-2-13b-chat-hf-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "acc_norm from HF Open LLM Leaderboard v2's independent eval run of meta-llama/Llama-2-13b-chat-hf (fetched the raw results JSON directly)"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 33.17,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/meta-llama__Llama-2-13b-chat-hf-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "acc_norm, HF Open LLM Leaderboard v2 independent eval run"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 20.2,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/meta-llama__Llama-2-13b-chat-hf-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "GPQA Diamond subset, acc_norm, HF Open LLM Leaderboard v2 independent eval run"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 34.01,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/meta-llama__Llama-2-13b-chat-hf-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "prompt-level strict accuracy, HF Open LLM Leaderboard v2 independent eval run"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 19.23,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/meta-llama__Llama-2-13b-chat-hf-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "acc, HF Open LLM Leaderboard v2 independent eval run"
     }
   ],
-  "verificationNotes": "Confirmed real model and specs via Hugging Face model card. Confirmed MODEL_CARD.md Llama-2-Chat safety table shows 13B row TruthfulQA 62.18 / Toxigen 0.00, matching exactly. Also independently verified the RTX 4090 benchmark figure (70.90 tok/s, 92% GPU util, 41% VRAM) on databasemart.com's Ollama GPU benchmark article for llama2:13b — number confirmed as literally reported. No changes made."
+  "verificationNotes": "Confirmed real model and specs via Hugging Face model card. Confirmed MODEL_CARD.md Llama-2-Chat safety table shows 13B row TruthfulQA 62.18 / Toxigen 0.00, matching exactly. Also independently verified the RTX 4090 benchmark figure (70.90 tok/s, 92% GPU util, 41% VRAM) on databasemart.com's Ollama GPU benchmark article for llama2:13b \u2014 number confirmed as literally reported. No changes made."
 }

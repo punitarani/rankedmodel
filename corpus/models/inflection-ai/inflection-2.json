@@ -55,7 +55,23 @@
       "source": "self-reported",
       "sourceUrl": "https://inflection.ai/inflection-2",
       "notes": "10-shot HellaSwag. Literally confirmed: page text states 'Inflection-2 reaches 89.0 on HellaSwag 10-shot compared to GPT-4's 95.3.'"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 53,
+      "source": "self-reported",
+      "sourceUrl": "https://www.searchenginejournal.com/new-ai-model-outperforms-googles-powerful-palm-2/502191/",
+      "evaluatedAt": "2023-11-27",
+      "notes": "Confirmed via direct raw-HTML fetch (not summarized) of the SEJ article: literal text 'MBPP Scores: LLaMA-2 70B: 45.0 | PaLM-2S: 50.0 | Inflection-2: 53.0' appears verbatim in the page body, relaying Inflection AI's own published chart (the inflection.ai/inflection-2 blog page shows the same data only as an unreadable chart image, so this press relay is the only text-form citation found). Labeled self-reported per the corpus's existing convention for this same source/page (aggregator relay of a vendor-published figure, not an independent re-measurement)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 44.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www.searchenginejournal.com/new-ai-model-outperforms-googles-powerful-palm-2/502191/",
+      "evaluatedAt": "2023-11-27",
+      "notes": "Confirmed via direct raw-HTML fetch of the SEJ article: literal text 'These are the scores: LLaMA-2 70B: 29.9 | PaLM-2S: 37.6 | Inflection-2: 44.5 | GPT-4: 67.0' appears verbatim in the page body under the HumanEval section, relaying Inflection AI's own published chart. Labeled self-reported per the corpus's existing convention for this source."
     }
   ],
-  "verificationNotes": "Confirmed model is real; training-completion/announcement dated Nov 22-28 2023 across sources (Forbes article dated Nov 22, 2023), consistent with record. DROPPED three result rows that could not be confirmed as literal text on the cited inflection.ai/inflection-2 page: self-reported MMLU 86.8, GSM8K 89.3, and TriviaQA 86.3. Direct full-text fetch of that page (twice) found these benchmark tables are presented only as chart IMAGES — the numeric strings '86.8', '89.3', and '86.3' do not appear anywhere in the page's actual text/markdown, and no alternate source could locate a text-form citation of these exact figures. Kept HellaSwag 89 (literally stated as '89.0' in body text) and independent MMLU 79.6 (literally confirmed on searchenginejournal.com's comparison table)."
+  "verificationNotes": "Confirmed model is real; training-completion/announcement dated Nov 22-28 2023 across sources (Forbes article dated Nov 22, 2023), consistent with record. DROPPED three result rows that could not be confirmed as literal text on the cited inflection.ai/inflection-2 page: self-reported MMLU 86.8, GSM8K 89.3, and TriviaQA 86.3. Direct full-text fetch of that page (twice) found these benchmark tables are presented only as chart IMAGES \u2014 the numeric strings '86.8', '89.3', and '86.3' do not appear anywhere in the page's actual text/markdown, and no alternate source could locate a text-form citation of these exact figures. Kept HellaSwag 89 (literally stated as '89.0' in body text) and independent MMLU 79.6 (literally confirmed on searchenginejournal.com's comparison table)."
 }

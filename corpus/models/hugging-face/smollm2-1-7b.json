@@ -77,7 +77,35 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B",
       "notes": "base model, 5-shot"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 77.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B",
+      "notes": "Base pre-trained model, zero-shot. From the official model card's 'Base Pre-Trained Model' evaluation table."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 36.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B",
+      "notes": "Base pre-trained model, zero-shot."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 59.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B",
+      "notes": "Base pre-trained model, zero-shot."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 42.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B",
+      "notes": "Base pre-trained model, zero-shot."
     }
   ],
-  "verificationNotes": "Confirmed real 2024-11-01 Hugging Face release, Apache-2.0, 1.7B params, trained on 11T tokens — verified against the official model card and independent coverage (Simon Willison, MarkTechPost). All 4 base-model benchmark rows (HellaSwag 68.7, ARC avg 60.5, MMLU-Pro MCF 19.4, GSM8K 5-shot 31.0) confirmed verbatim on that card — no changes needed."
+  "verificationNotes": "Confirmed real 2024-11-01 Hugging Face release, Apache-2.0, 1.7B params, trained on 11T tokens \u2014 verified against the official model card and independent coverage (Simon Willison, MarkTechPost). All 4 base-model benchmark rows (HellaSwag 68.7, ARC avg 60.5, MMLU-Pro MCF 19.4, GSM8K 5-shot 31.0) confirmed verbatim on that card \u2014 no changes needed."
 }

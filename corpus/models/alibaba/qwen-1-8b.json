@@ -80,7 +80,39 @@
       "sourceUrl": "https://huggingface.co/Qwen/Qwen-1_8B",
       "evaluatedAt": "2023-11-30",
       "notes": "8-shot"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 2.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/QwenLM/Qwen/blob/main/README.md",
+      "evaluatedAt": "2023-11-30",
+      "notes": "4-shot. Below the taxonomy's typical 20-100 display range for MATH, but is the number directly published in the official Qwen GitHub README's performance table for the 1.8B model, consistent with this being the smallest Gen-1 Qwen model."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 14.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/QwenLM/Qwen/blob/main/README.md",
+      "evaluatedAt": "2023-11-30",
+      "notes": "3-shot."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 22.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/QwenLM/Qwen/blob/main/README.md",
+      "evaluatedAt": "2023-11-30",
+      "notes": "3-shot. Below the taxonomy's typical 30-97 display range, but directly sourced from the same official README table as the other Qwen-1.8B scores already in the corpus."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 52.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/QwenLM/Qwen/blob/main/README.md",
+      "evaluatedAt": "2023-11-30",
+      "notes": "5-shot."
     }
   ],
-  "verificationNotes": "Confirmed real, released 2023-11-30 per GitHub README (same day as Qwen-72B). 1.8B params, research-only license (commercial requires separate contact) confirmed on HF model card. Native 8K/max 32K context confirmed. c-eval score of 56.2 specifically confirmed as the 'Test Set' figure on the HF card (Val set = 56.1, a different number) — the record's 'test set' note is correct and the number is not a typo of the val figure. mmlu 45.3, humaneval 15.2, gsm8k 32.3 all confirmed verbatim."
+  "verificationNotes": "Confirmed real, released 2023-11-30 per GitHub README (same day as Qwen-72B). 1.8B params, research-only license (commercial requires separate contact) confirmed on HF model card. Native 8K/max 32K context confirmed. c-eval score of 56.2 specifically confirmed as the 'Test Set' figure on the HF card (Val set = 56.1, a different number) \u2014 the record's 'test set' note is correct and the number is not a typo of the val figure. mmlu 45.3, humaneval 15.2, gsm8k 32.3 all confirmed verbatim."
 }

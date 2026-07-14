@@ -80,6 +80,33 @@
       "source": "self-reported",
       "sourceUrl": "https://tencent.github.io/llm.hunyuan.T1/README_EN.html",
       "notes": "Arena-Hard-Auto"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 78.2,
+      "source": "self-reported",
+      "sourceUrl": "https://winbuzzer.com/2025/03/23/tencents-releases-its-hunyuan-t1-reasoning-model-beating-deepseek-r1-gpt-4-5-o1-across-benchmarks-xcxwbn/",
+      "notes": "AIME 2024. Tencent's own official comparison table (per the source article, this and the following rows are explicitly Tencent's official published figures, not the outlet's own eval) is rendered as an image on the primary tencent.github.io page and could not be OCR'd directly, but this figure is independently corroborated verbatim by a second outlet, SCMP: https://www.scmp.com/tech/big-tech/article/3303456/tencents-hunyuan-t1-ai-reasoning-model-rivals-deepseek-performance-and-price"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 91.8,
+      "source": "self-reported",
+      "sourceUrl": "https://winbuzzer.com/2025/03/23/tencents-releases-its-hunyuan-t1-reasoning-model-beating-deepseek-r1-gpt-4-5-o1-across-benchmarks-xcxwbn/",
+      "notes": "Independently corroborated verbatim by SCMP's coverage of the same official table."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 90,
+      "source": "self-reported",
+      "sourceUrl": "https://winbuzzer.com/2025/03/23/tencents-releases-its-hunyuan-t1-reasoning-model-beating-deepseek-r1-gpt-4-5-o1-across-benchmarks-xcxwbn/"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 93.1,
+      "source": "self-reported",
+      "sourceUrl": "https://winbuzzer.com/2025/03/23/tencents-releases-its-hunyuan-t1-reasoning-model-beating-deepseek-r1-gpt-4-5-o1-across-benchmarks-xcxwbn/",
+      "notes": "DROP F1; article notes T1 achieves the highest score on this metric among the models compared."
     }
   ],
   "verificationNotes": "Confirmed real release: Tencent officially launched Hunyuan-T1 on 2025-03-21 (WinBuzzer, MarketScreener, AnalyticsVidhya all corroborate). Fetched the official Tencent GitHub model card directly and confirmed all five benchmark numbers (MMLU-Pro 87.2, GPQA-Diamond 69.3, MATH-500 96.2, LiveCodeBench 64.9, Arena-Hard 91.9) literally appear there. Confirmed Hybrid-Transformer-Mamba MoE architecture built on TurboS base, API-only/proprietary availability, and 256K context length via independent search (apxml.com, analyticsvidhya). Params remain undisclosed as stated."

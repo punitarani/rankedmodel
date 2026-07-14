@@ -9,7 +9,7 @@
   "paramsB": 671,
   "activeParamsB": 37,
   "archClass": "moe",
-  "archDisplay": "Mixture-of-Experts (671B total / 37B active) — DeepSeekMoE + Multi-head Latent Attention, hybrid think/non-think chat template",
+  "archDisplay": "Mixture-of-Experts (671B total / 37B active) \u2014 DeepSeekMoE + Multi-head Latent Attention, hybrid think/non-think chat template",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -94,6 +94,27 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
       "notes": "Humanity's Last Exam, text-only subset, Pass@1"
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 30,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+      "notes": "BrowseComp (Acc.), Thinking mode, from official HF model card benchmark table"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 2091,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+      "notes": "Codeforces-Div1 Rating, Thinking mode, from official HF model card benchmark table"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 76.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+      "notes": "Aider-Polyglot (Acc.), Thinking mode, from official HF model card benchmark table"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card + DeepSeek API docs release post (2025-08-21). Same architecture facts as non-thinking variant confirmed. All 6 thinking-mode benchmark rows confirmed verbatim on the HF model card. Deprecated status and pricing confirmed the same way as the non-thinking record."

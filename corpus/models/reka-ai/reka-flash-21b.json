@@ -68,7 +68,50 @@
       "sourceUrl": "https://arxiv.org/abs/2404.12387",
       "evaluatedAt": "2024-02-12",
       "notes": "0-shot"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 29.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "notes": "MATH 4-shot, Reka Flash (21B), from Table 15 of the tech report (same table the corpus's existing MMLU/GSM8K/HumanEval rows are drawn from)"
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 53.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "notes": "MMMU (vision) 0-shot score for Reka Flash, Table 15 / corroborated in Table 5's 'Reka Flash v1.5' column (identical value, confirming same model/build)"
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 78.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "notes": "VQAv2 0-shot score for Reka Flash, Table 15 / Table 5"
+    },
+    {
+      "benchmarkSlug": "pubmedqa",
+      "score": 69,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "notes": "PubMedQA score for Reka Flash (21B), Table 13 medical-reasoning comparison"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 34,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "notes": "GPQA (main) score for 'Reka Flash v1.5' in Table 5, which shares identical MMLU (75.9)/GSM8K (85.8)/HumanEval (72.0)/MMMU (53.3)/VQAv2 (78.4)/Perception-test (56.4) values with Table 15's 'Reka Flash' -- confirming it is the same reported model/build as the corpus's existing rows"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.2,
+      "source": "self-reported",
+      "sourceUrl": "https://reka.ai/news/reka-flash-efficient-and-capable-multimodal-language-models",
+      "evaluatedAt": "2024-02-12",
+      "notes": "Reka Flash's MT-Bench score of 8.2 ('matching models such as Claude 1 and Claude 2'), from Reka's official Feb 12, 2024 launch blog post"
     }
   ],
-  "verificationNotes": "CORRECTED releaseDate. Reka's official blog post 'Reka Flash: Efficient and Capable Multimodal Language Models' has an in-body date of Feb 12, 2024 (confirmed via direct fetch of the article body, not just page metadata), and MarkTechPost/other outlets covered the launch Feb 28, 2024 — both well before the source record's stated 2024-04-18. That April date corresponds instead to the arxiv tech report submission (which covers Flash retroactively alongside the later Reka Core launch), not Flash's original release. Changed releaseDate to 2024-02-12. All three benchmark rows confirmed exactly via arxiv fetch: MMLU 75.9 (5-shot), GSM8K 85.8 (maj@8), HumanEval 72.0 (0-shot). Confirmed a distinct, still-served 'Reka Flash (Sep '24)' build exists on Reka's API/artificialanalysis today, supporting the record's claim that the original Feb 2024 build is no longer separately served (superseded first by the Sep '24 update, then Flash 3)."
+  "verificationNotes": "CORRECTED releaseDate. Reka's official blog post 'Reka Flash: Efficient and Capable Multimodal Language Models' has an in-body date of Feb 12, 2024 (confirmed via direct fetch of the article body, not just page metadata), and MarkTechPost/other outlets covered the launch Feb 28, 2024 \u2014 both well before the source record's stated 2024-04-18. That April date corresponds instead to the arxiv tech report submission (which covers Flash retroactively alongside the later Reka Core launch), not Flash's original release. Changed releaseDate to 2024-02-12. All three benchmark rows confirmed exactly via arxiv fetch: MMLU 75.9 (5-shot), GSM8K 85.8 (maj@8), HumanEval 72.0 (0-shot). Confirmed a distinct, still-served 'Reka Flash (Sep '24)' build exists on Reka's API/artificialanalysis today, supporting the record's claim that the original Feb 2024 build is no longer separately served (superseded first by the Sep '24 update, then Flash 3)."
 }

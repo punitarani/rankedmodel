@@ -86,6 +86,70 @@
       "score": 76.7,
       "source": "self-reported",
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 76.6,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model, 5-shot; from the Qwen2.5-14B/32B base-model performance table."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 78.2,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model, 3-shot."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 67.3,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model, 25-shot (ARC-C)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 58.4,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model, 0-shot."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 32.8,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model, 5-shot."
+    },
+    {
+      "benchmarkSlug": "mmlu-stem",
+      "score": 76.4,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 51.2,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model, 0-shot (EvalPlus-augmented HumanEval)."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 63.2,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model, 0-shot (EvalPlus-augmented MBPP)."
     }
   ],
   "verificationNotes": "Fully confirmed via live fetch of qwenlm.github.io/blog/qwen2.5-llm/ base-model table: MMLU 79.7, MMLU-Pro 51.2, MATH 55.6, GSM8K 90.2, HumanEval 56.7, MBPP 76.7 all match exactly. License Apache 2.0 explicitly confirmed on the page for both 14B and 32B. No changes needed."

@@ -57,7 +57,47 @@
       "source": "self-reported",
       "sourceUrl": "https://reka.ai/news/introducing-reka-flash",
       "evaluatedAt": "2025-03-10"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 61.1,
+      "source": "self-reported",
+      "sourceUrl": "https://reka.ai/news/introducing-reka-flash",
+      "evaluatedAt": "2025-03-10",
+      "notes": "GPQA score from the official 'Reasoning with Reka Flash 3' launch blog's benchmark comparison chart (vs Reka Flash 2.5's 20.5)"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 96.3,
+      "source": "self-reported",
+      "sourceUrl": "https://reka.ai/news/introducing-reka-flash",
+      "evaluatedAt": "2025-03-10",
+      "notes": "HumanEval score from the same official launch blog chart"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 62,
+      "source": "self-reported",
+      "sourceUrl": "https://reka.ai/news/introducing-reka-flash",
+      "evaluatedAt": "2025-03-10",
+      "notes": "Labeled 'LiveCodeBench V5' in the official launch blog's benchmark chart"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 90.6,
+      "source": "self-reported",
+      "sourceUrl": "https://reka.ai/news/introducing-reka-flash",
+      "evaluatedAt": "2025-03-10",
+      "notes": "Labeled 'MATH-500' in the official launch blog's benchmark chart, matching the taxonomy's 500-competition-math-problems definition"
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 77.2,
+      "source": "self-reported",
+      "sourceUrl": "https://reka.ai/news/introducing-reka-flash",
+      "evaluatedAt": "2025-03-10",
+      "notes": "Labeled 'BFCL V2' in the official launch blog's benchmark chart"
     }
   ],
-  "verificationNotes": "CONFIRMED. reka.ai's official 'Reasoning with Reka Flash 3' post explicitly states release date March 10, 2025, 21B params, 32k context, Apache 2.0 license, and MMLU-Pro score of 'only 65.0' — matches record exactly. HF config.json confirms max_position_embeddings=32768 (32K), matching ctxK 32 (a separate secondary source's claim of 65,536 tokens was found to be inconsistent with the primary config.json and was disregarded). Current docs.reka.ai pricing confirms $0.20 input / $0.80 output exactly. No corrections required."
+  "verificationNotes": "CONFIRMED. reka.ai's official 'Reasoning with Reka Flash 3' post explicitly states release date March 10, 2025, 21B params, 32k context, Apache 2.0 license, and MMLU-Pro score of 'only 65.0' \u2014 matches record exactly. HF config.json confirms max_position_embeddings=32768 (32K), matching ctxK 32 (a separate secondary source's claim of 65,536 tokens was found to be inconsistent with the primary config.json and was disregarded). Current docs.reka.ai pricing confirms $0.20 input / $0.80 output exactly. No corrections required."
 }

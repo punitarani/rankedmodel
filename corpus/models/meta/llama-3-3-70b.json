@@ -99,6 +99,27 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
       "notes": "GPQA Diamond CoT"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 87.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "notes": "MBPP EvalPlus (base), pass@1, 0-shot."
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 77.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "notes": "BFCL v2, overall_ast_summary/macro_avg/valid, 0-shot tool-use eval. Mapped to the unversioned 'bfcl' slug rather than 'bfcl-v3' since the source explicitly reports the v2 suite, not the third-generation v3 suite."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 91.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "notes": "MGSM, em, 0-shot multilingual grade-school math."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card fetch: params 70B, release 2024-12-06 (matches TechCrunch/Simon Willison contemporaneous coverage of the Dec 6 2024 surprise release), 8-language multilingual support (En/De/Fr/It/Pt/Hi/Es/Th). All 7 benchmark rows (MMLU 86.0, MMLU-Pro 68.9, HumanEval 88.4, GSM8K 94.84, MATH 77.0, IFEval 92.1, GPQA Diamond 50.5) literally confirmed on the cited HF page. Corrected license string from 'Llama 3.3 Community License' to the official 'Llama 3.3 Community License Agreement'."

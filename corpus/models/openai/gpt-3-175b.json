@@ -64,6 +64,69 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2005.14165",
       "notes": "few-shot, closed-book"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 77.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "Few-shot, Winogrande XL (Table 3.5)"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 82.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "Few-shot, evaluated on PIQA test server (Table 3.6); paper flags a possible test-set contamination issue on this result"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 70.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "Few-shot (Table 3.6)"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 51.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "Few-shot (Table 3.6)"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 65.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "Few-shot (Table 3.6)"
+    },
+    {
+      "benchmarkSlug": "storycloze",
+      "score": 87.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "Few-shot, StoryCloze 2016 (Table 3.2)"
+    },
+    {
+      "benchmarkSlug": "superglue",
+      "score": 71.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "Few-shot average (K=32 in-context examples), test set (Table 3.8)"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 36.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "Few-shot, F1 score (Table 3.7)"
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 46.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "Few-shot accuracy, RACE-h split (Table 3.7)"
     }
   ],
   "verificationNotes": "Confirmed via arXiv 2005.14165: 175B params, nctx=2048 (2K) context. LAMBADA 86.4 / HellaSwag 79.3 / TriviaQA 71.2 few-shot figures independently re-derived and match the paper. API private beta launch June 11, 2020 confirmed via TechCrunch. Base-model API retirement on 2024-01-04 confirmed (OpenAI's largest deprecation event). No changes made."

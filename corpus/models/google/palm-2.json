@@ -49,6 +49,62 @@
       "sourceUrl": "https://arxiv.org/abs/2305.10403",
       "evaluatedAt": "2023-05-17",
       "notes": "PaLM 2-L on BIG-Bench Hard, as reported in PaLM 2 Technical Report (Table 6), 3-shot CoT"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 78.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "Flan-PaLM 2 (L), instruction-tuned, 5-shot MMLU. From Table 16 (Appendix A.2, instruction-tuning ablation) -- explicitly labeled 'Flan-PaLM 2 (L)' in the paper, matching the instruction-tuned variant already anchoring the existing BBH=78.1 entry."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 80.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "Flan-PaLM 2 (instruction-tuned), 8-shot chain-of-thought (no self-consistency) on GSM8K, from Table 7. (With self-consistency/64 samples the paper reports 92.2%; 84.7% is the single-decode CoT figure, more comparable to pass@1.)"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 34.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "Flan-PaLM 2 (instruction-tuned), 4-shot chain-of-thought (no self-consistency) on MATH, from Table 7. (With self-consistency the paper reports 45.2%.)"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 72.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "Flan-PaLM 2 (instruction-tuned), 8-shot chain-of-thought (no self-consistency) on MGSM, from Table 7; independently cross-confirmed by the identical 75.9 figure for 'Flan-PaLM 2 (L)' in the Table 16 appendix ablation."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 90.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "Instruction-tuned PaLM 2 (L), 5-shot WinoGrande, from Table 5 (section 4.3 Reasoning)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 95.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "Instruction-tuned PaLM 2 (L), 4-shot ARC-Challenge, from Table 5."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "Instruction-tuned PaLM 2 (L), 3-shot DROP (F1), from Table 5."
     }
   ],
   "verificationNotes": "Confirmed real: announced by Sundar Pichai at Google I/O on 2023-05-10 (blog.google, TechCrunch, Axios all corroborate). Technical report (arXiv 2305.10403) submitted 2023-05-17, matching evaluatedAt. Fetched full-text (ar5iv) Table 6: PaLM 2-L scores exactly 78.1 on BBH 3-shot CoT vs PaLM's 65.2 -- score confirmed verbatim. PaLM API decommission date of Aug 15 2024 corroborated independently. Params were never disclosed by Google (kept null, correctly)."

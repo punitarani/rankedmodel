@@ -85,6 +85,14 @@
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324",
       "evaluatedAt": "2025-03-24",
       "notes": "LiveCodeBench"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 94,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324",
+      "evaluatedAt": "2025-03-24",
+      "notes": "MATH-500 pass@1 score (94.0, up from 90.2 for DeepSeek-V3), read directly from the bar chart image (figures/0324_comparison.png) embedded in the official HF model card \u2014 this fifth benchmark isn't in the card's text callouts (only MMLU-Pro/GPQA/AIME/LiveCodeBench are called out in prose) but is clearly labeled in the chart itself, which also matches the 4 already-recorded scores exactly (MMLU-Pro 81.2, GPQA Diamond 68.4, AIME 2024 59.4, LiveCodeBench 49.2)."
     }
   ],
   "verificationNotes": "Existence and release confirmed via DeepSeek's own news post (api-docs.deepseek.com/news/news250325, published 2025-03-25 referencing a 3/24 model card date) and the live HF card, both stating MIT license. Note: HF safetensors index sums to ~685B raw tensor weight but DeepSeek's own papers/cards and consistent third-party reporting describe the architecture as 671B total/37B active (685B includes the multi-token-prediction head), so 671B is kept as the standard-cited figure. All 4 result rows (AIME 59.4, GPQA 68.4, MMLU-Pro 81.2, LiveCodeBench 49.2) confirmed literally on the HF card as the 'after' values of the delta callouts. Caveat (not changed in record): DeepSeek's own 'deepseek-chat' API alias now silently routes to a newer V4-Flash model (since ~Apr 2026) and deprecates 2026-07-24, so the $0.27/$1.10 figure is the original 2025 DeepSeek-hosted launch price, not what DeepSeek's API bills today; the open weights remain genuinely available via self-host or third-party providers."

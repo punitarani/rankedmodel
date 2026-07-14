@@ -89,7 +89,28 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2507.11407",
       "notes": "Non-reasoning mode"
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 65.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.11407",
+      "notes": "BFCL-v3 tool/function-calling score, non-reasoning mode. Confirmed identically on both the arXiv paper (html v1) and the HuggingFace model card table."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 55.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.11407",
+      "notes": "Tau-Bench Retail domain, non-reasoning mode (Airline domain separately scored 25.5; only the Retail split is added since the taxonomy has a single tau-bench slug, matching this repo's convention of one score per benchmarkSlug per model)."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 80.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.11407",
+      "notes": "MMMLU (Multilingual MMLU) Spanish-language split, non-reasoning mode."
     }
   ],
-  "verificationNotes": "Existence, release date (2025-07-15, 'Korea's first open-weight hybrid AI model'), 131K context, license v1.2 NC, trilingual EN/KO/ES, and function-calling/tool-use/agentic support confirmed on HF model card and PR Newswire release. Fetched full text (arxiv.org/html/2507.11407) and confirmed all 6 non-reasoning-mode rows (Table 4) match exactly: MMLU-Redux 89.8, MMLU-Pro 77.6, GPQA-Diamond 63.7, AIME2025 35.9, LiveCodeBench v5 43.3, IFEval 84.8 — no changes."
+  "verificationNotes": "Existence, release date (2025-07-15, 'Korea's first open-weight hybrid AI model'), 131K context, license v1.2 NC, trilingual EN/KO/ES, and function-calling/tool-use/agentic support confirmed on HF model card and PR Newswire release. Fetched full text (arxiv.org/html/2507.11407) and confirmed all 6 non-reasoning-mode rows (Table 4) match exactly: MMLU-Redux 89.8, MMLU-Pro 77.6, GPQA-Diamond 63.7, AIME2025 35.9, LiveCodeBench v5 43.3, IFEval 84.8 \u2014 no changes."
 }

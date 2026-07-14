@@ -85,6 +85,34 @@
       "score": 60.2,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Thinking"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 84.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
+      "notes": "General Tasks table, MMLU-Pro score on official model card"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 94.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
+      "notes": "General Tasks table, MMLU-Redux score on official model card"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 83.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
+      "notes": "LiveCodeBench V6, no tools, from Coding Tasks table on official model card"
+    },
+    {
+      "benchmarkSlug": "terminal-bench",
+      "score": 47.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
+      "notes": "Terminal-Bench score evaluated with the model's simulated-JSON tool-calling harness (per model card's own footnote), from Coding Tasks table"
     }
   ],
   "verificationNotes": "Confirmed real model by directly fetching huggingface.co/moonshotai/Kimi-K2-Thinking: verbatim matched 1T total/32B active/384 experts (8 active)/256K context/Modified MIT License and all 5 benchmark scores (HLE-with-tools 44.9, SWE-bench 71.3, AIME25 99.1, GPQA 84.5, BrowseComp 60.2). Release date Nov 6, 2025 corroborated by CNBC and NIST CAISI evaluation coverage. Pricing $0.60/$2.50 per M tokens confirmed via OpenRouter listing."

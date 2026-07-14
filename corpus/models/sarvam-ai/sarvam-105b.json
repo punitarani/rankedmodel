@@ -108,7 +108,23 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/sarvamai/sarvam-105b",
       "evaluatedAt": "2026-02-18"
+    },
+    {
+      "benchmarkSlug": "arena-hard-v2",
+      "score": 71,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/sarvamai/sarvam-105b",
+      "evaluatedAt": "2026-02-18",
+      "notes": "Arena Hard v2, from the model card's 'Knowledge & Coding' benchmark table"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 84.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/sarvamai/sarvam-105b",
+      "evaluatedAt": "2026-02-18",
+      "notes": "IFEval, from the model card's 'Knowledge & Coding' benchmark table"
     }
   ],
-  "verificationNotes": "Confirmed real, very recent release — independently corroborated by Bloomberg ('Upstart Sarvam Unveils AI Model Customized for India Market', 2026-02-18), TechCrunch, Business Standard, and BusinessToday, all reporting weights publicly available since 2026-02-18 at the India AI Impact Summit (a later Sarvam blog post dated ~2026-03-06 appears to be a secondary/formal write-up, not the actual release date). Architecture (MoE, 128 experts, Multi-head Latent Attention, 10.3B active, 128K context via YaRN factor 40) and all 8 result rows literally confirmed on https://huggingface.co/sarvamai/sarvam-105b and the official Sarvam blog. Apache 2.0 license confirmed. Minor note: HF safetensors metadata reports actual weight size as '106B params' though the model is uniformly named/marketed as '105B' by Sarvam and all press — paramsB=105 kept per canonical naming. No corrections made to core fields."
+  "verificationNotes": "Confirmed real, very recent release \u2014 independently corroborated by Bloomberg ('Upstart Sarvam Unveils AI Model Customized for India Market', 2026-02-18), TechCrunch, Business Standard, and BusinessToday, all reporting weights publicly available since 2026-02-18 at the India AI Impact Summit (a later Sarvam blog post dated ~2026-03-06 appears to be a secondary/formal write-up, not the actual release date). Architecture (MoE, 128 experts, Multi-head Latent Attention, 10.3B active, 128K context via YaRN factor 40) and all 8 result rows literally confirmed on https://huggingface.co/sarvamai/sarvam-105b and the official Sarvam blog. Apache 2.0 license confirmed. Minor note: HF safetensors metadata reports actual weight size as '106B params' though the model is uniformly named/marketed as '105B' by Sarvam and all press \u2014 paramsB=105 kept per canonical naming. No corrections made to core fields."
 }

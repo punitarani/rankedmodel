@@ -62,6 +62,30 @@
       "score": 1.4,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 54.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control",
+      "evaluatedAt": "2024-08-26",
+      "notes": "25-shot, acc_norm = 0.546 on the HF model card's 'General Knowledge Benchmarks' table."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 54.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control",
+      "evaluatedAt": "2024-08-26",
+      "notes": "6-shot, prob_mass = 0.547 on the HF model card."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 65.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control",
+      "evaluatedAt": "2024-08-26",
+      "notes": "5-shot, acc = 0.651 on the HF model card."
     }
   ],
   "verificationNotes": "Existence and Aug 26, 2024 release confirmed via aleph-alpha.com blog post and corroborating coverage (VentureBeat, Maginative, dataphoenix, and Aleph Alpha's own X/Twitter announcement). 7.04B params (7,041,544,704 exact) and Open Aleph License (non-commercial research/educational use) confirmed by fetching the HF model card directly. All three benchmark scores (MMLU 48.4, HellaSwag 64.6, GSM8K 1.4) confirmed to literally appear on huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control - exact match, no changes needed."

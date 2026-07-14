@@ -91,7 +91,31 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
       "evaluatedAt": "2024-10-01",
       "notes": "val, 4-shot, Table 22"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 70.5,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-10-01",
+      "notes": "Table 22, 8-shot, multilingual math reasoning."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 73.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-10-01",
+      "notes": "Table 22, 0-shot, visual QA on documents."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 66.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-10-01",
+      "notes": "Table 22, 0-shot, visual QA on text within images."
     }
   ],
-  "verificationNotes": "CORRECTED: archClass changed from 'moe' to 'dense' and archDisplay rewritten — the technical report states Flash-8B 'is a transformer decoder model derived from the architectural innovations ... employed in the development of Flash' (which is itself confirmed dense, not MoE), and describes it as a 'single-digit billion parameter' model. paramsB=8 is corroborated by the product name and this 'single-digit billion' phrasing plus third-party estimates (artificialanalysis.ai), but Google has not disclosed an exact parameter count ('Flash-8B remains under active development'); flagged as an approximation, not an exact official figure. Release date (GA Oct 3 2024) confirmed via Google Developers Blog. All 5 result rows verbatim-confirmed against Table 22 of the fetched technical report. Pricing ($0.0375/$0.15 per 1M tokens) confirmed via the same GA announcement."
+  "verificationNotes": "CORRECTED: archClass changed from 'moe' to 'dense' and archDisplay rewritten \u2014 the technical report states Flash-8B 'is a transformer decoder model derived from the architectural innovations ... employed in the development of Flash' (which is itself confirmed dense, not MoE), and describes it as a 'single-digit billion parameter' model. paramsB=8 is corroborated by the product name and this 'single-digit billion' phrasing plus third-party estimates (artificialanalysis.ai), but Google has not disclosed an exact parameter count ('Flash-8B remains under active development'); flagged as an approximation, not an exact official figure. Release date (GA Oct 3 2024) confirmed via Google Developers Blog. All 5 result rows verbatim-confirmed against Table 22 of the fetched technical report. Pricing ($0.0375/$0.15 per 1M tokens) confirmed via the same GA announcement."
 }

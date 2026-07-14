@@ -88,6 +88,30 @@
       "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
       "evaluatedAt": "2025-04-01",
       "notes": "[relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 73.1,
+      "source": "self-reported",
+      "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
+      "evaluatedAt": "2025-04-14",
+      "notes": "MathVista (image reasoning); relayed from OpenAI's official GPT-4.1-family launch benchmark table (also cross-checked against docsbot.ai's GPT-4.1-vs-mini comparison page, which shows the identical figure)."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 72.7,
+      "source": "self-reported",
+      "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
+      "evaluatedAt": "2025-04-14",
+      "notes": "Relayed from OpenAI's official GPT-4.1-family launch benchmark table."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 78.5,
+      "source": "self-reported",
+      "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
+      "evaluatedAt": "2025-04-14",
+      "notes": "Listed as \"Global MMLU\" (multilingual MMLU) in OpenAI's launch table; relayed via docsbot.ai."
     }
   ],
   "verificationNotes": "Confirmed release 2025-04-14 and $0.40/$1.60 per 1M token pricing via OpenAI docs and independent coverage. All 5 benchmark rows (MMLU 87.5, GPQA 65, SWE-bench 23.6, AIME 49.6, IFEval 84.1) confirmed verbatim on the cited docsbot.ai page. No changes made."

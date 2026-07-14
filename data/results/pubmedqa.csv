@@ -1,2 +1,10 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-3-haiku,76,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,"PubMedQA, 5-shot, from Table 1 of the Claude 3 Model Card (0-shot alternate is 78.5%)."
+claude-3-opus,75.8,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"PubMedQA, 5-shot, from Table 1 of the Claude 3 Model Card (0-shot alternate is 74.9%)."
+claude-3-sonnet,78.3,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"PubMedQA, 5-shot, from Table 1 of the Claude 3 Model Card (0-shot alternate is 79.7%)."
 galactica-120b,77.6,self-reported,https://ar5iv.labs.arxiv.org/html/2211.09085,2022-11-01,Table 10
+gpt-neo-2-7b,57.54,self-reported,https://huggingface.co/EleutherAI/gpt-neo-2.7B,2021-03-21,"From the 'Physical and Scientific reasoning' evaluation table on the official HF model card (PubMedQA acc=57.54%), run with the LM Eval Harness alongside the 4 benchmarks already in the corpus. Not previously captured."
+palmyra-med-70b,79.6,self-reported,https://developer.nvidia.com/blog/writer-releases-domain-specific-llms-for-healthcare-and-finance/,,Same NVIDIA developer blog benchmark table already cited for the model's other 3 results rows; PubMedQA column.
+reka-core,74.6,self-reported,https://arxiv.org/html/2404.12387v1,,"Table 13 (medical reasoning benchmarks); vs Meditron-70B 79.8, Med-PaLM-2 79.2, GPT-4 80.4 in the same table."
+reka-edge-7b,71.6,self-reported,https://arxiv.org/html/2404.12387v1,2024-02-12,"PubMedQA score for Reka Edge (7B), from the medical-reasoning comparison in Table 13 of the tech report"
+reka-flash-21b,69,self-reported,https://arxiv.org/html/2404.12387v1,,"PubMedQA score for Reka Flash (21B), Table 13 medical-reasoning comparison"

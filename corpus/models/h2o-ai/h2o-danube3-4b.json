@@ -81,6 +81,41 @@
       "source": "independent",
       "sourceUrl": "https://huggingface.co/h2oai/h2o-danube3-4b-chat",
       "notes": "Open LLM Leaderboard v1"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 47.79,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/h2oai/h2o-danube3-4b-chat",
+      "notes": "Open LLM Leaderboard v1, 0-shot mc2 \u2014 same leaderboard run as the existing MMLU/HellaSwag/ARC-c/Winogrande rows"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 83.84,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.09276",
+      "notes": "ARC-Easy, 25-shot, from H2O-Danube3 technical report Table 2 (also verified via arxiv.org/html/2407.09276)"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 38.92,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.09276",
+      "notes": "3-shot CoT, from H2O-Danube3 technical report Table 2"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 82.64,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.09276",
+      "notes": "3-shot, from H2O-Danube3 technical report Table 2"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 6.49,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/h2oai/h2o-danube3-4b-chat",
+      "notes": "MT-Bench average score (Turn1 7.28 / Turn2 5.69), listed directly on the official HF chat model card and in technical-report Table 4"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card fetch (h2oai/h2o-danube3-4b-chat): 4B params (modified Llama-2 arch, 24 layers, 3840 hidden, GQA), Apache 2.0, 8192-token context (Mistral tokenizer, 32K vocab), release date matches arXiv 2407.09276 (submitted 2024-07-12). All 5 Open LLM Leaderboard v1 scores (MMLU 54.74, HellaSwag 80.36, ARC-C 58.96, GSM8K 50.18, Winogrande 76.48) literally verified present on the HF page. No changes needed."

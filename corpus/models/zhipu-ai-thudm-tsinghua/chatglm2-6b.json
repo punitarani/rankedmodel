@@ -75,6 +75,48 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/zai-org/ChatGLM2-6B",
       "notes": "Chat-aligned checkpoint"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 6.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report re-evaluation table (Table 1)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 9.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report re-evaluation table (Table 1)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 57,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report re-evaluation table (Table 1)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 69.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report re-evaluation table (Table 1)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 25.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report re-evaluation table (Table 1)."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 50,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report re-evaluation table (Table 1)."
     }
   ],
   "verificationNotes": "Fully confirmed. Release date June 25, 2023 confirmed by multiple independent sources (MarkTechPost coverage dated June 28 2023 referencing the June 25 GitHub announcement) and the official ChatGLM technical report. GitHub README_EN.md table confirms MMLU 45.46 / C-Eval 50.1 / GSM8K 28.05 / BBH 30.00 verbatim, and VRAM table confirms FP16=13.1GB / INT4=5.5GB verbatim (encoding-2048-tokens column). Context extension 2K->32K (base) with 8K dialogue training confirmed. No changes made."

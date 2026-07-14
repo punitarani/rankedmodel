@@ -95,7 +95,84 @@
       "score": 62.8,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 84.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "10-shot; official HF model card benchmark table."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 69,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "BigBench Hard CoT, 0-shot; HF model card."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 30.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "0-shot CoT; HF model card."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 81,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "5-shot; HF model card."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 74.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "Social IQA, 5-shot; HF model card."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 68.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "5-shot; HF model card."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 64,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "MC2, 10-shot; HF model card."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 55.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "Multilingual MMLU, 5-shot; HF model card."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 47.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "0-shot CoT; HF model card."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 69.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "3-shot; HF model card."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 37,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "notes": "'Popular aggregated benchmark' section of the HF model card's benchmark table."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3.5-mini-instruct, fetched): 3.8B dense, 128K context, MIT license, released Aug 2024. All six benchmark rows literally match the card. Language count is ambiguous at the source itself: the card's prose says '22 languages' but the actual enumerated list contains 23 names (Arabic through Ukrainian) — this is Microsoft's own card's internal inconsistency, not a fabrication in this record, so kept langCount=22 to match the card's stated figure."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3.5-mini-instruct, fetched): 3.8B dense, 128K context, MIT license, released Aug 2024. All six benchmark rows literally match the card. Language count is ambiguous at the source itself: the card's prose says '22 languages' but the actual enumerated list contains 23 names (Arabic through Ukrainian) \u2014 this is Microsoft's own card's internal inconsistency, not a fabrication in this record, so kept langCount=22 to match the card's stated figure."
 }

@@ -47,10 +47,10 @@
   "results": [
     {
       "benchmarkSlug": "gpqa",
-      "score": 87.2,
+      "score": 90.4,
       "source": "self-reported",
-      "sourceUrl": "https://github.com/Tencent-Hunyuan/Hy3-preview",
-      "notes": "GPQA Diamond, from Tencent's own Hy3-preview model card (295B-A21B); full July release benchmark table not separately located"
+      "sourceUrl": "https://huggingface.co/tencent/Hy3",
+      "notes": "GPQA Diamond, from Tencent's own Hy3-preview model card (295B-A21B); full July release benchmark table not separately located [Corrected during full-corpus audit: The existing 87.2 figure was pulled from the April-2026 Hy3-preview build's GitHub model card (explicitly flagged in the prior verificationNotes as a stand-in because 'the full July release benchmark table' hadn't been located). That table has now been located: the official tencent/Hy3 model card's benchmark-appendix image reports GPQA Diamond = 90.4 for the actual shipped Hy3 (295B-A21B) model, v]"
     },
     {
       "benchmarkSlug": "mmlu-pro",
@@ -58,6 +58,41 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/Tencent-Hunyuan/Hy3-preview",
       "notes": "5-shot, from Tencent's own Hy3-preview model card"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hy3",
+      "notes": "SWE-bench Verified; also confirmed via HF's structured Evaluation-results widget (SWE-bench/SWE-bench_Verified = 78) and the model card's benchmark-appendix image"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 57.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hy3",
+      "notes": "Confirmed via both HF's Evaluation-results widget (ScaleAI/SWE-bench_Pro = 57.9) and the benchmark-appendix image"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 71.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hy3",
+      "notes": "Terminal-Bench 2.1, from the model card's benchmark-appendix image (Agentic Coding section)"
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 84.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hy3",
+      "notes": "BrowseComp, from the benchmark-appendix image (Agentic Search section)"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 37,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hy3",
+      "notes": "HLE, no-tools/text-only variant, listed under the appendix's 'Reasoning' task category (a separate 'HLE with tools' row under 'STEM Agent' scores 53.2, but that is a distinct tool-augmented setup, not standard HLE)"
     }
   ],
   "verificationNotes": "Benchmark numbers (MMLU 87.42, MMLU-Pro 65.76, GPQA Diamond 87.2, LiveCodeBench-v6 34.86) come from the preview build's GitHub model card (Tencent-Hunyuan/Hy3-preview), which Tencent itself published -- treated as self-reported since it is the vendor's own repo, and may differ slightly from the July full-release numbers which were not separately published with a benchmark table in sources checked."

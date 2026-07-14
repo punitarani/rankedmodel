@@ -100,7 +100,59 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
       "notes": "Arena-Hard win rate, not Chatbot Arena Elo"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 91,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+      "notes": "ARC Challenge, from official comparison table"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 36.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+      "notes": "GPQA CoT"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 81.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 58.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+      "notes": "MGSM CoT"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 80.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 89.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 88.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+      "notes": "Social IQA"
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3.5-MoE-instruct, fetched): 16 experts x 3.8B, 6.6B active (2 experts/token), 128K context, MIT license, released Aug 2024. All eight benchmark rows literally match the card. Cross-checked total param figure independently (41.9B vs. commonly-quoted 42B rounding) via secondary sources (Skywork, llm-stats) — 41.9B confirmed as the precise figure."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3.5-MoE-instruct, fetched): 16 experts x 3.8B, 6.6B active (2 experts/token), 128K context, MIT license, released Aug 2024. All eight benchmark rows literally match the card. Cross-checked total param figure independently (41.9B vs. commonly-quoted 42B rounding) via secondary sources (Skywork, llm-stats) \u2014 41.9B confirmed as the precise figure."
 }

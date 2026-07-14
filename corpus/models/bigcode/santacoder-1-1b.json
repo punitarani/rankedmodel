@@ -58,6 +58,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/bigcode/santacoder",
       "notes": "pass@1, Python"
+    },
+    {
+      "benchmarkSlug": "humaneval-fim",
+      "score": 44,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/bigcode/santacoder",
+      "notes": "HumanEval FIM (Python) single-line infilling, exact_match = 0.44, taken verbatim from the model-index metadata in the official HF model card (dataset: loubnabnl/humaneval_infilling)."
     }
   ],
   "verificationNotes": "Fetched HF model card: confirmed 1.1B params, 2048-ctx, BigCode OpenRAIL-M, HumanEval 18.0/MBPP 35.0 pass@1 verbatim. arXiv 2301.03988 confirms project timeline; independent web search corroborates Dec 22 2022 release date. No changes."

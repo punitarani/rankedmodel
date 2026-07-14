@@ -75,6 +75,50 @@
       "source": "self-reported",
       "sourceUrl": "https://qwen.ai/blog?id=qwen3.5-omni",
       "notes": "Qwen3.5-Plus-NoThinking"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 94.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.15804",
+      "notes": "Qwen3.5-Plus-NoThinking column, Table 4 of the official Qwen3.5-Omni Technical Report (the column is used as the text-only baseline against Qwen3.5-Omni-Flash/Plus)."
+    },
+    {
+      "benchmarkSlug": "super-gpqa",
+      "score": 67.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.15804",
+      "notes": "Qwen3.5-Plus-NoThinking column, Table 4 of the Qwen3.5-Omni Technical Report."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 85.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.15804",
+      "notes": "GPQA (Diamond), Qwen3.5-Plus-NoThinking column, Table 4 of the Qwen3.5-Omni Technical Report."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 67.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.15804",
+      "notes": "LiveCodeBench v6, Qwen3.5-Plus-NoThinking column, Table 4 of the Qwen3.5-Omni Technical Report."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 71.2,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/alibaba_qwen3.5-plus-thinking",
+      "evaluatedAt": "2026-07-09",
+      "notes": "Vals AI independent evaluation of Qwen3.5-Plus (Thinking mode), tested live via the Alibaba Cloud Model Studio API (vals.ai model page links directly to https://www.alibabacloud.com/help/en/model-studio/getting-started/models as the provider). Vals.ai's 'SWE-bench' tile is specifically SWE-bench Verified (confirmed via https://www.vals.ai/benchmarks listing: 'SWE-bench Verified, 69 models tested', matching the model page's '42/69' rank). Reported as 71.20% +/- 2.03 SEM."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 22.77,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/alibaba_qwen3.5-plus-thinking",
+      "evaluatedAt": "2026-07-09",
+      "notes": "Vals AI independent evaluation of Qwen3.5-Plus (Thinking mode). Labeled 'MMMU' on the model summary card but the underlying benchmark page (vals.ai/benchmarks/mmmu) is titled 'MMMU Pro' and follows the official MMMU-Pro protocol (~1,700 questions, 4-option, chain-of-thought) with 82 models tracked -- matches the model page's '82/82' (last place) ranking, confirming this is MMMU-Pro not base MMMU. This is a genuinely weak, unfavorable result (dead last of 82 models tested) and is included per the instruction to prioritize thoroughness over favorable-only results; it may reflect a harness/prompting mismatch specific to vals.ai's protocol rather than a true multimodal weakness, since Qwen3.5-Plus scores far higher on other official multimodal benchmarks (MMMU 85.0, MathVision 88.6 per vendor-side reporting for the sibling open-weight model) -- flagged for maintainer judgment rather than silently omitted."
     }
   ],
   "verificationNotes": "Confirmed real via the official qwen.ai launch blog (which announces the open-weight 397B-A17B and the hosted Plus tier together) and the official Alibaba Cloud Model Studio pricing page, which lists a versioned snapshot 'qwen3.5-plus-2026-02-15' with explicit tiered pricing ($0.40/$2.40 per M for 0-256K, $0.50/$3.00 for 256K-1M, International) -- used the base tier. Independent corroboration: a third-party review (medium.com/@leucopsis, 'Qwen3.5-Plus Review') and CNBC's coverage of the joint launch both place the release at Feb 16-17, 2026, consistent with the official GitHub changelog date of 2026-02-16 (the pricing page's internal snapshot suffix of '2026-02-15' is a 1-day variance, likely a timezone/versioning artifact, common across this vendor's other Plus-tier entries in this corpus e.g. Qwen3.7-Plus). Benchmark results are only available as the 'NoThinking' baseline used in a later Qwen3.5-Omni comparison table (self-reported, single primary source) -- no independently-corroborated third-party score could be found in this pass; flagged as lower-confidence than the open-weight sibling's results. Architecture/params undisclosed for this hosted tier specifically, consistent with corpus convention for all Plus/Max hosted variants (Qwen3-Max, Qwen3.7-Max, Qwen3.7-Plus)."

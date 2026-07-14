@@ -46,6 +46,63 @@
     "releaseDate": "https://www.together.ai/blog/redpajama-7b",
     "openness": "https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base"
   },
-  "results": [],
-  "verificationNotes": "Confirmed via together.ai/blog/redpajama-7b (published June 6, 2023): Apache 2.0, 10 intermediate checkpoints released, 1.001T training tokens. HF card confirms '6.9B parameter' count and GPT-NeoX architecture. Fetched arxiv.org/html/2411.12372 directly and confirmed Table 8 verbatim: RedPajama-INCITE-7B-Base 0.431, LLaMA-7B 0.472, Falcon-7B 0.441, MPT-7B 0.444 — exact match to claimed row."
+  "results": [
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 39.25,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "LM-eval-harness acc_norm, Table 9 ('LM eval harness results for RedPajama-INCITE-Base-7B-v1 and instruction tuned model') of the official RedPajama technical paper (Together AI et al., NeurIPS 2024 D&B track)."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 69.23,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "LM-eval-harness acc, Table 9 of the RedPajama technical paper."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 70.37,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "LM-eval-harness acc_norm, Table 9. (A separate HELM-classic EM-metric HellaSwag score of 70.2 also appears in Table 8; using the acc_norm figure for consistency with how HellaSwag is scored elsewhere in this corpus.)"
+    },
+    {
+      "benchmarkSlug": "lambada",
+      "score": 71.43,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "LAMBADA-OpenAI acc, Table 9 of the RedPajama technical paper."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 77.37,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "PIQA acc_norm, Table 9 of the RedPajama technical paper."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 64.17,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "Winogrande acc, Table 9 of the RedPajama technical paper."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 50.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "HELM OpenbookQA EM score, Table 8 ('HELM Benchmark results for RedPajama-INCITE-Base-7B-v1 and instruction tuned') of the RedPajama technical paper."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 20.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "HELM TruthfulQA EM score, Table 8 of the RedPajama technical paper."
+    }
+  ],
+  "verificationNotes": "Confirmed via together.ai/blog/redpajama-7b (published June 6, 2023): Apache 2.0, 10 intermediate checkpoints released, 1.001T training tokens. HF card confirms '6.9B parameter' count and GPT-NeoX architecture. Fetched arxiv.org/html/2411.12372 directly and confirmed Table 8 verbatim: RedPajama-INCITE-7B-Base 0.431, LLaMA-7B 0.472, Falcon-7B 0.441, MPT-7B 0.444 \u2014 exact match to claimed row."
 }

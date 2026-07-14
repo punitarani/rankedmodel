@@ -84,7 +84,31 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M1-80k",
       "notes": "M1-40K"
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 63.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M1-80k",
+      "evaluatedAt": "2025-06-16",
+      "notes": "TAU-bench retail, M1-80K checkpoint (M1-40K scores 67.8 on the same task). Cross-confirmed identically on the official HF model card and the github.com/MiniMax-AI/MiniMax-M1 README."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 18.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M1-80k",
+      "evaluatedAt": "2025-06-16",
+      "notes": "SimpleQA, M1-80K checkpoint (M1-40K: 17.9)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 96.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M1-80k",
+      "evaluatedAt": "2025-06-16",
+      "notes": "MATH-500, M1-80K checkpoint (M1-40K: 96.0). Maps to the taxonomy's 'math' slug, which is itself defined as '500 competition math problems'."
     }
   ],
-  "verificationNotes": "Confirmed real via VentureBeat, Computerworld, arXiv 2506.13585, and HF model card MiniMaxAI/MiniMax-M1-80k. 456B/45.9B hybrid MoE, Apache-2.0, 1M context confirmed by multiple independent sources. All 5 result rows confirmed literally on the HF card, including the M1-80K vs M1-40K split (AIME 86.0, LCB 65.0, SWE-bench 56.0 for 80K; GPQA 69.2, MMLU-Pro 80.6 for 40K) — exact match, no changes. Pricing $0.4/$2.2 for 0-200K tier independently confirmed."
+  "verificationNotes": "Confirmed real via VentureBeat, Computerworld, arXiv 2506.13585, and HF model card MiniMaxAI/MiniMax-M1-80k. 456B/45.9B hybrid MoE, Apache-2.0, 1M context confirmed by multiple independent sources. All 5 result rows confirmed literally on the HF card, including the M1-80K vs M1-40K split (AIME 86.0, LCB 65.0, SWE-bench 56.0 for 80K; GPQA 69.2, MMLU-Pro 80.6 for 40K) \u2014 exact match, no changes. Pricing $0.4/$2.2 for 0-200K tier independently confirmed."
 }

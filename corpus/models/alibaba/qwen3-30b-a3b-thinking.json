@@ -89,6 +89,54 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "notes": "BFCL v3 agent/tool-use, thinking mode"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 89.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MMLU-Redux, thinking mode, Qwen3 Technical Report Table 15"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 86.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "C-Eval, thinking mode, Table 15"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 86.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "IFEval strict-prompt, thinking mode, Table 15"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 98,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MATH-500, thinking mode, Table 15"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1974,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "CodeForces rating (Elo), thinking mode, Table 15; percentile given as 97.7%. Elo rating, not a 0-100 score."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 78.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MMMLU across 14 languages, thinking mode, Table 15"
     }
   ],
   "verificationNotes": "Fully confirmed. Fetched full Qwen3 Technical Report PDF (arXiv:2505.09388, 14 May 2025) directly: Table 2 confirms MoE arch (48 layers, 32/4 heads, 128 total/8 activated experts, 128K context) and text confirms 'the Qwen3-MoE design excludes shared experts.' Table 15 confirms ALL 5 benchmark rows exactly (AIME'24 80.4, GPQA-Diamond 65.8, LiveCodeBench v5 62.6, Arena-Hard 91.0, BFCL v3 69.1). HF model card (huggingface.co/Qwen/Qwen3-30B-A3B) confirms '30.5B in total and 3.3B activated', 128/8 experts, Apache 2.0, native 32K/YaRN 131,072 context. Blog (qwenlm.github.io/blog/qwen3) and GitHub confirm April 29, 2025 release and 119 languages. DashScope official pricing page confirms $0.108/$0.431 (China region, non-thinking-output tier) matches exactly."

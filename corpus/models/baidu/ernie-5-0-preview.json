@@ -62,6 +62,20 @@
       "sourceUrl": "https://artificialanalysis.ai/models/ernie-5-0-thinking-preview",
       "notes": "Humanity's Last Exam",
       "evaluatedAt": "2025-11-01"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 41,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/ernie-5-0-thinking-preview",
+      "notes": "IFBench, from AA's Intelligence Evaluations breakdown for 'ERNIE 5.0 Thinking Preview'."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 65,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/ernie-5-0-thinking-preview",
+      "notes": "MMMU-Pro, from the same AA breakdown."
     }
   ],
   "verificationNotes": "Confirmed real: unveiled Nov 13 2025 at Baidu World per PRNewswire/winbuzzer/SCMP, 2.4T params with <3% experts active per inference matches winbuzzer. GPQA Diamond=78 and HLE=13 both literally confirmed on the artificialanalysis.ai page (ERNIE 5.0 Thinking Preview row in the evaluation breakdown charts). Free ($0/$0) preview pricing also confirmed on that page."

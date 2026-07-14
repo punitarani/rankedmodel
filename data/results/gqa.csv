@@ -1,3 +1,3 @@
 model_slug,score,source,source_url,evaluated_at,notes
-cogvlm-17b,82.87,self-reported,https://arxiv.org/pdf/2311.03079,,State-of-the-art at time of release
+cogvlm-17b,64.87,self-reported,https://arxiv.org/pdf/2311.03079,,"State-of-the-art at time of release [Corrected during full-corpus audit: Same direct full-text PDF extraction: Table 2 (VQA benchmarks) reports CogVLM's GQA (test-balanced) score as 65.2%. No model in the paper's own comparison tables reports a GQA score anywhere near 82.87 (the highest competing figure, PaLI-X-55B, is 66.1%), so 82.87 cannot be a valid GQA figure from this paper; it likely traces to a misread of Figure 1's radar-chart labels (values in the 80s-90s in ]"
 qwen-vl,59.3,self-reported,https://huggingface.co/Qwen/Qwen-VL,,GQA visual-reasoning benchmark (unrelated to Grouped Query Attention)

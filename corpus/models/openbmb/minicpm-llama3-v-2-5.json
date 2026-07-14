@@ -49,6 +49,63 @@
     "releaseDate": "https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5",
     "openness": "https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 725,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md",
+      "evaluatedAt": "2024-05-20",
+      "notes": "From the official MiniCPM-V repo's model-specific results table (also mirrored on the HF model card)."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 84.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md",
+      "evaluatedAt": "2024-05-20",
+      "notes": "DocVQA test split."
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 77.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md",
+      "evaluatedAt": "2024-05-20",
+      "notes": "Reported as 'MMB test (en)' in the official results table."
+    },
+    {
+      "benchmarkSlug": "mmbench-cn",
+      "score": 74.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md",
+      "evaluatedAt": "2024-05-20",
+      "notes": "Reported as 'MMB test (cn)' in the official results table."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 45.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md",
+      "evaluatedAt": "2024-05-20",
+      "notes": "MMMU val split."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 54.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md",
+      "evaluatedAt": "2024-05-20",
+      "notes": "Reported as 'Math-Vista' in the official results table."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 76.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md",
+      "evaluatedAt": "2024-05-20",
+      "notes": "TextVQA val split; slightly exceeds the taxonomy's typical 40-75 range for this benchmark but is the genuine, directly-confirmed official figure."
+    }
+  ],
   "verificationNotes": "Confirmed real, independently re-fetched HF model card (openbmb/MiniCPM-Llama3-V-2_5): 8B params (SigLip-400M + Llama3-8B-Instruct), MiniCPM Model License weights / Apache-2.0 code, released 2024-05-20 as stated on the model card. Context length confirmed as 8192 (8k) directly from config.json max_position_embeddings, correcting an unverified assumption to a directly-confirmed primary-source value. OpenCompass 65.1 average score confirmed present verbatim on the HF model card."
 }

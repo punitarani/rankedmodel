@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+cogvlm-17b,77.6,self-reported,https://ar5iv.labs.arxiv.org/html/2311.03079,,"Same later-revised comparison table; exact split (dev/test, en/cn) not specified in the compact comparison table, so mapped to the generic mmbench slug."
 deepseek-vl-7b,73.2,self-reported,https://arxiv.org/html/2403.05525v2,,"7B variant, Table 5"
 deepseek-vl2,79.2,self-reported,https://arxiv.org/html/2412.10302v1,,"Base variant, MMBench-V1.1 (testmini) column specifically — plain MMBench EN/CN test columns show 83.1/79.6"
 idefics2-8b,76.7,self-reported,https://huggingface.co/blog/idefics2,,

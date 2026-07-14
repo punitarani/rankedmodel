@@ -1,23 +1,47 @@
 model_slug,score,source,source_url,evaluated_at,notes
 ai21-jamba-1-5-large,65.4,self-reported,https://www.ai21.com/blog/announcing-jamba-model-family/,,Arena-Hard
 ai21-jamba-1-5-mini,46.1,self-reported,https://www.ai21.com/blog/announcing-jamba-model-family/,,Arena-Hard
+deepseek-coder-v2-236b,65,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,2024-06-17,
+deepseek-r1-671b,92.3,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,ArenaHard win rate vs GPT-4-1106
 deepseek-v2-5,76.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2.5,,ArenaHard
+deepseek-v3-671b,85.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,"Arena-Hard win rate, Chat model, open-ended generation eval section"
+glm-z1-32b-0414,90.6,self-reported,https://github.com/zai-org/GLM-4/blob/main/README.md,,Labeled 'ArenaHard' in the official GitHub README benchmark chart.
+gpt-3-5-turbo,24.82,independent,https://raw.githubusercontent.com/lmarena/arena-hard-auto/main/leaderboard/arena_hard_leaderboard_20240731.csv,,"gpt-3.5-turbo-0613 snapshot, win rate vs gpt-4-0314 baseline, official arena-hard-auto leaderboard (2024-07-31 data)"
+gpt-4-turbo,82.6,independent,https://github.com/lmarena/arena-hard-auto/blob/main/misc/past_leaderboards.md,,"gpt-4-turbo-2024-04-09, Arena-Hard-v0.1 (no style control), win-rate vs. the gpt-4-0314 baseline (fixed at 50.0), GPT-4-Turbo-as-judge pipeline. Official LMArena (formerly LMSYS) archived leaderboard. A style-controlled variant of the same benchmark, added later in 2024, scores this same snapshot at 74.3 in the same archive — noted for completeness but not added as a separate row since it isn't a distinct taxonomy slug."
 granite-3-2-8b-instruct,55.25,self-reported,https://huggingface.co/ibm-granite/granite-3.2-8b-instruct,,
 granite-3-3-8b-instruct,57.56,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,
+granite-4-0-h-small,46.48,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+granite-4-1-8b-instruct,68.98,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,
+hunyuan-large-a52b,81.8,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Instruct-model table.
 hunyuan-t1,91.9,self-reported,https://tencent.github.io/llm.hunyuan.T1/README_EN.html,,Arena-Hard-Auto
+hunyuan-turbos,91.9,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"Table 4, Arena-Hard win rate"
 lg-exaone-3-0-7-8b-instruct,46.8,self-reported,https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct,2024-08-01,Arena-Hard-v0.1
 lg-exaone-3-5-32b-instruct,78.6,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-3.5,2024-12-01,Arena-Hard
 llama-3-1-nemotron-70b-instruct,85,self-reported,https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF,,#1 on Arena Hard as of Oct 1 2024
 llama-3-3-nemotron-super-49b-v1-reasoning-off,88.3,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning Off
 minimax-text-01,89.1,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,Arena-Hard-Auto
+ministral-3b,64.3,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Instruct model comparison table
+ministral-8b,70.9,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Instruct model comparison table
+mistral-large-2-24-07,73.2,self-reported,https://huggingface.co/mistralai/Mistral-Large-Instruct-2407,2024-07-24,HF model card 'Instruction Benchmarks' table; cross-confirmed against the bar chart in the mistral.ai launch blog.
+mistral-small-3-24b,87.3,self-reported,https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501,2025-01-30,Reported as 0.873 (Arena Hard) in the same table; converted to percentage.
+phi-3-5-mini-3-8b,37,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,'Popular aggregated benchmark' section of the HF model card's benchmark table.
 phi-3-5-moe-16x3-8b-6-6b-active,37.9,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,"Arena-Hard win rate, not Chatbot Arena Elo"
+phi-4-14b,75.4,self-reported,https://arxiv.org/abs/2412.08905,,"Table 1, row 'ArenaHard', confirmed via direct PDF page read."
 phi-4-mini-3-8b,32.8,self-reported,https://huggingface.co/microsoft/Phi-4-mini-instruct,,Arena Hard
 phi-4-mini-instruct,32.8,self-reported,https://huggingface.co/microsoft/Phi-4-mini-instruct,,"Arena-Hard win rate, not Chatbot Arena Elo"
+phi-4-reasoning,73.3,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,"ArenaHard, avg pass@1. Confirmed on HF model card and Table 2 of the technical report."
+phi-4-reasoning-14b,73.3,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,"ArenaHard, avg pass@1. Confirmed on HF model card and Table 2 of the technical report."
 qwen2-5-max,89.4,self-reported,https://www.datacamp.com/blog/qwen-2-5-max,,vs DeepSeek V3 85.5
 qwen2-72b,48.1,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,Instruct variant
+qwen3-14b-non-thinking,86.3,self-reported,https://arxiv.org/pdf/2505.09388,,"Arena-Hard, Table 16, Qwen3-14B (Non-thinking) column"
+qwen3-14b-thinking,91.7,self-reported,https://arxiv.org/pdf/2505.09388,,"Arena-Hard, Table 15, Qwen3-14B (Thinking) column"
+qwen3-235b-a22b-non-thinking,96.1,self-reported,https://arxiv.org/pdf/2505.09388,,"Arena-Hard, Table 12, Qwen3-235B-A22B (Non-thinking) column"
+qwen3-235b-a22b-thinking,95.6,self-reported,https://arxiv.org/pdf/2505.09388,2025-05-15,"Arena-Hard (first-gen, distinct from Arena-Hard v2), Thinking mode, Table 11"
 qwen3-30b-a3b-non-thinking,88,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, non-thinking mode"
 qwen3-30b-a3b-thinking,91,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, thinking mode"
 qwen3-32b-non-thinking,92.8,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, non-thinking mode"
 qwen3-32b-thinking,93.8,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, thinking mode"
 qwen3-8b-non-thinking,79.6,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, non-thinking mode"
 qwen3-8b-thinking,85.8,self-reported,https://arxiv.org/abs/2505.09388,,"Arena-Hard, thinking mode"
+qwq-32b,89.5,self-reported,https://arxiv.org/abs/2505.09388,,"Qwen3 Technical Report, Table 13, Arena-Hard row, QwQ-32B column."
+yi-lightning,91.8,self-reported,https://arxiv.org/abs/2412.01253,,"Judge: GPT-4o-0513. Yi-Lightning technical report Table 2, comparison vs. GPT-4o-0513/Claude-3.5-Sonnet-20240620/Yi-Large-Preview. Paper notes API-serving results may be slightly lower than local-deployment figures."

@@ -74,7 +74,76 @@
       "score": 854,
       "source": "self-reported",
       "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/"
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 95.7,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "notes": "AI2D test, without-mask setting (89.1 with-mask also reported)"
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 88.3,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "notes": "ChartQA test average"
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 83.4,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "notes": "TextVQA val; exceeds the textvqa slug's stated 40-75 range but is the verbatim published number"
+    },
+    {
+      "benchmarkSlug": "olympiadbench",
+      "score": 11.6,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/"
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 32.2,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "notes": "MathVision full test set (mini split scored 34.9)"
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 88.3,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "notes": "MMBench v1.0 EN test"
+    },
+    {
+      "benchmarkSlug": "mmbench-cn",
+      "score": 88.5,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "notes": "MMBench v1.0 CN test; exceeds the mmbench-cn slug's stated 40-82 range but is the verbatim published number"
+    },
+    {
+      "benchmarkSlug": "refcoco",
+      "score": 93.7,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "notes": "RefCOCO val split (testA 95.6, testB 92.5 also reported); slightly exceeds the slug's stated 50-92 range"
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 72.1,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "notes": "Video-MME without subtitles (74.0 with subtitles also reported)"
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 48.6,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "notes": "MMMU-Pro overall (std10 51.4 / vision 45.9 / overall 48.6)"
     }
   ],
-  "verificationNotes": "Confirmed real: release date Dec 5, 2024 confirmed via internvl.github.io blog post. Fetched HF model card directly — confirms 78B total, architecture is InternViT-6B + Qwen2.5-72B-Instruct + MLP projector, and license is MIT for the project/InternViT component with Qwen2.5-72B-Instruct governed by the separate Qwen License (matches record). Fetched the InternVL 2.5 blog page directly and confirmed all four benchmark numbers verbatim: MMMU 70.1, MathVista 72.3, DocVQA 95.1, OCRBench 854. CAVEAT: ctxK=32 (32K) is inferred from the Qwen2.5-72B-Instruct backbone's native context length, not an explicit, directly-stated context spec for the multimodal InternVL2.5-78B checkpoint itself — the cited GitHub issue is an unanswered question, not a confirmation, and other InternVL documentation suggests InternVL2.5 models were officially evaluated at 16K rather than 32K. Kept the value since it is a defensible LLM-backbone-derived estimate, but confidence is moderate rather than high."
+  "verificationNotes": "Confirmed real: release date Dec 5, 2024 confirmed via internvl.github.io blog post. Fetched HF model card directly \u2014 confirms 78B total, architecture is InternViT-6B + Qwen2.5-72B-Instruct + MLP projector, and license is MIT for the project/InternViT component with Qwen2.5-72B-Instruct governed by the separate Qwen License (matches record). Fetched the InternVL 2.5 blog page directly and confirmed all four benchmark numbers verbatim: MMMU 70.1, MathVista 72.3, DocVQA 95.1, OCRBench 854. CAVEAT: ctxK=32 (32K) is inferred from the Qwen2.5-72B-Instruct backbone's native context length, not an explicit, directly-stated context spec for the multimodal InternVL2.5-78B checkpoint itself \u2014 the cited GitHub issue is an unanswered question, not a confirmation, and other InternVL documentation suggests InternVL2.5 models were officially evaluated at 16K rather than 32K. Kept the value since it is a defensible LLM-backbone-derived estimate, but confidence is moderate rather than high."
 }

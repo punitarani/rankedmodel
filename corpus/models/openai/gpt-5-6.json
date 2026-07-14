@@ -103,6 +103,22 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
       "notes": "Humanity's Last Exam, GPT-5.6 Sol (max reasoning); Artificial Analysis independent evaluation; tool setting not stated on page"
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1747.8,
+      "source": "independent",
+      "sourceUrl": "https://www.marktechpost.com/2026/07/09/openai-releases-gpt-5-6-a-three-tier-model-family-with-programmatic-tool-calling/",
+      "evaluatedAt": "2026-07-09",
+      "notes": "GDPval-AA v2 (Elo) for GPT-5.6 Sol = 1747.8, from MarkTechPost's direct report of OpenAI's GPT-5.6 launch comparison table (which also lists Terra 1593, Luna 1591.8, GPT-5.5 1493.7, Claude Fable 5 1759.6, Claude Opus 4.8 1600.1, Gemini 3.1 Pro Preview 962.3). Confirmed 'GDPval-AA' is Artificial Analysis's own independent evaluation methodology (per artificialanalysis.ai/articles/gpt-5-6-has-landed, which lists GDPval-AA v2 as part of their own Intelligence Index v4.1 suite), hence classified as 'independent' rather than self-reported. Identical 1747.8 figure independently corroborated by kingy.ai's GPT-5.6 benchmarks/specs blog post."
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 84.5,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/benchmarks/cyberGym",
+      "evaluatedAt": "2026-07-11",
+      "notes": "CyberGym score for GPT-5.6 Sol, from BenchLM's CyberGym leaderboard ('GPT-5.6 Sol leads the public snapshot at 84.5%', rank #1). This is a third-party independent leaderboard run, not an OpenAI self-reported figure (OpenAI's own launch materials report a different internal 'capture-the-flag suite' score of 96.7% and cite an external firm called Irregular for cyber capability evals, neither of which is the CyberGym benchmark itself). One other secondary mention of 83.6% for the same pairing surfaced in a noisy web-search synopsis but without a clean citation, so treating 84.5% (the leaderboard's own stated number) as authoritative."
     }
   ],
   "verificationNotes": "Existence, July 9 2026 GA (June 26 limited govt preview), 1.05M context, and $5/$30 Sol pricing all confirmed directly via developers.openai.com/api/docs/models/gpt-5.6-sol and multiple outlets (Simon Willison, VentureBeat, MarkTechPost). All six benchmark scores independently corroborated via MarkTechPost's direct report of the OpenAI launch page."

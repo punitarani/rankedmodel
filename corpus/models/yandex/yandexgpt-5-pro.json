@@ -74,7 +74,47 @@
       "sourceUrl": "https://habr.com/ru/companies/bothub/articles/893128/",
       "evaluatedAt": "2025-02-01",
       "notes": "IFEval-RU (Russian variant)"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 89.6,
+      "source": "independent",
+      "sourceUrl": "https://github.com/kuk/simple-evals-ru",
+      "evaluatedAt": "2025-03-20",
+      "notes": "Independent third-party eval (147/164 correct, zero-shot chain-of-thought, English, no translation) from the simple-evals-ru project's results table, which also tests Gigachat, T-Pro, Saiga, Vikhr against the same suite."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 84,
+      "source": "independent",
+      "sourceUrl": "https://github.com/kuk/simple-evals-ru",
+      "evaluatedAt": "2025-03-20",
+      "notes": "Independent third-party eval (216/257 correct) from the simple-evals-ru project's results table."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 84,
+      "source": "independent",
+      "sourceUrl": "https://github.com/kuk/simple-evals-ru",
+      "evaluatedAt": "2025-03-20",
+      "notes": "Independent third-party eval (168/200 correct) from the simple-evals-ru project's results table."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 44.9,
+      "source": "independent",
+      "sourceUrl": "https://github.com/kuk/simple-evals-ru",
+      "evaluatedAt": "2025-03-20",
+      "notes": "GPQA Diamond, independent third-party eval (89/198 correct) from the simple-evals-ru project's results table."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 57.5,
+      "source": "independent",
+      "sourceUrl": "https://github.com/kuk/simple-evals-ru",
+      "evaluatedAt": "2025-03-20",
+      "notes": "MATH-500 subset, independent third-party eval (115/200 correct). CAVEAT: the repo author and a Sber/Gigachat release post both flag a known discrepancy between this measured YandexGPT MATH score and Yandex's own official claims, attributed to possible answer-extraction/parsing issues in this specific eval harness rather than the repo mismeasuring other benchmarks -- see reports/errors/math/17_yandexgpt_5_pro.md in the repo for the error analysis."
     }
   ],
-  "verificationNotes": "Confirmed real release: multiple RU tech press (ppc.world, vc.ru, MashaGPT, Habr/Yandex official post) confirm YandexGPT 5 Pro launched ~2025-02-25 alongside the Alice chat relaunch. Context window corrected/confirmed as 32K (not a stray 256K figure seen in one loose secondary summary) — independently corroborated by llmreference.com ('YandexGPT Pro 5 – 32k context') and datastudios.org, which also confirms the successor 5.1 Pro (released Aug 2025) raised context to 128K, consistent with 5 Pro being 32K. All four independent benchmark rows (MMLU 83, MMLU-Pro 68, DROP-RU 63, IFEval-RU 77) were literally confirmed by direct fetch of the cited habr.com/bothub article text. No corrections made — record verified as accurate."
+  "verificationNotes": "Confirmed real release: multiple RU tech press (ppc.world, vc.ru, MashaGPT, Habr/Yandex official post) confirm YandexGPT 5 Pro launched ~2025-02-25 alongside the Alice chat relaunch. Context window corrected/confirmed as 32K (not a stray 256K figure seen in one loose secondary summary) \u2014 independently corroborated by llmreference.com ('YandexGPT Pro 5 \u2013 32k context') and datastudios.org, which also confirms the successor 5.1 Pro (released Aug 2025) raised context to 128K, consistent with 5 Pro being 32K. All four independent benchmark rows (MMLU 83, MMLU-Pro 68, DROP-RU 63, IFEval-RU 77) were literally confirmed by direct fetch of the cited habr.com/bothub article text. No corrections made \u2014 record verified as accurate."
 }

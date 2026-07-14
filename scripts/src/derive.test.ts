@@ -171,7 +171,7 @@ describe('derived scores match the design formula (goldens)', () => {
     expect(doubao?.rankOverall).toBeNull()
     // the real #1 rank goes to a broadly-benchmarked frontier model
     const top = models.find((m) => m.rankOverall === 1)
-    expect(top?.slug).toBe('gemini-3-1-pro')
+    expect(top?.slug).toBe('gpt-5-6')
   })
 
   it('pins a real, broadly-covered model — Llama 3.1 405B — category by category', async () => {
@@ -181,11 +181,11 @@ describe('derived scores match the design formula (goldens)', () => {
     expect(llama?.categoryIdx).toEqual({
       'human-preference': 49.8,
       knowledge: 79.8,
-      reasoning: 64.6,
-      coding: 87.8,
-      math: 81.9,
+      reasoning: 75,
+      coding: 93,
+      math: 86.6,
       vision: null,
-      agents: null,
+      agents: 99.3,
     })
     expect(llama?.arenaElo).toBe(1229)
   })
@@ -202,11 +202,11 @@ describe('derived scores match the design formula (goldens)', () => {
   it('pins the real top-5 movers (rank-eligible lineage edges only)', async () => {
     const { movers } = await deriveScores(DATA)
     expect(movers.map((m) => [m.slug, m.prevSlug, m.delta])).toEqual([
-      ['nemotron-4-340b', 'nemotron-4-15b', 42.6],
-      ['stable-lm-2-12b', 'stable-lm-2-1-6b', 32.2],
-      ['chatglm3-6b', 'chatglm2-6b', 29],
-      ['sarvam-105b', 'sarvam-1-2b', 27.4],
-      ['seed-oss-36b', 'seed1-5-thinking', 26.7],
+      ['gemini-1-0-pro', 'gemini-1-0-nano', 45.9],
+      ['mpt-30b', 'mpt-7b', 33.4],
+      ['stable-lm-2-12b', 'stable-lm-2-1-6b', 32.5],
+      ['chatglm3-6b', 'chatglm2-6b', 31.5],
+      ['nemotron-4-340b', 'nemotron-4-15b', 30],
     ])
   })
 

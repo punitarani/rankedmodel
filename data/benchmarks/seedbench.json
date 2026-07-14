@@ -5,6 +5,6 @@
   "unit": "%",
   "description": "Broad generative multimodal comprehension benchmark.",
   "normMin": 40,
-  "normMax": 72,
+  "normMax": 82,
   "higherIsBetter": true
 }

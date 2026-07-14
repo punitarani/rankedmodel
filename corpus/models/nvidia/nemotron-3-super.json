@@ -42,6 +42,98 @@
     "params/ctx/architecture": "https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/",
     "hfId": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 83.73,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5 of the arXiv technical report."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 79.23,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, GPQA no-tools; with-tools variant scores 82.70."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 90.21,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, AIME25 no tools."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 81.19,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, LiveCodeBench v5 (2024-07 to 2024-12)."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 18.26,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, HLE no tools; with-tools variant scores 22.82."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 72.56,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, IFBench (prompt)."
+    },
+    {
+      "benchmarkSlug": "arena-hard-v2",
+      "score": 73.88,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 60.47,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, 'SWE-Bench (OpenHands)' scaffold; page-32 text confirms this is the SWE-Bench Verified subset."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 31,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, 'Terminal Bench Core 2.0'."
+    },
+    {
+      "benchmarkSlug": "terminal-bench",
+      "score": 25.78,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, 'Terminal Bench (hard subset)' - the original Terminal-Bench's hard 48-task subset, distinct from the Core 2.0 figure above."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 64.36,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, 'TauBench V2 - Telecom' domain."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 31.28,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, 'BrowseComp with Search'."
+    },
+    {
+      "benchmarkSlug": "bird-sql",
+      "score": 41.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.12374",
+      "notes": "Table 5, 'BIRD Bench' - BIRD dev set, 1,534 samples, SQLite, execution accuracy."
+    }
+  ],
   "verificationNotes": "NVIDIA's own blog gives qualitative throughput/accuracy claims (5x throughput, 2x accuracy vs prior Nemotron Super, #1 on DeepResearch Bench via AI-Q agent) rather than a specific standard-benchmark table; could not locate an independently-verified numeric score from Artificial Analysis or similar for this specific model, so no results entry is included to avoid guessing."
 }

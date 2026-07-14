@@ -126,6 +126,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.1-8b-instruct",
       "notes": "IBM's own separate MMLU-Pro evaluation"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 66.23,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.1-8b-instruct",
+      "notes": "HuggingFace Open LLM Leaderboard V1 (same table as the existing ARC-Challenge/HellaSwag/MMLU/WinoGrande/GSM8K rows already in the corpus for this model); confirmed in the model card's raw README HTML table."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card (fetched): 8.1B params, 128K context, Apache 2.0, released 2024-12-18. Progressive RoPE-theta context extension from 4K to 128K using ~500B additional tokens independently confirmed via ibm-granite/granite-3.1-8b-base GitHub README (web_search excerpt). All 11 result rows confirmed literally present on the cited HF model card (Leaderboard V1: ARC-C 62.62, HellaSwag 84.48, MMLU 65.34, Winogrande 75.37, GSM8K 73.84; Leaderboard V2: IFEval 72.08, BBH 34.09, MATH 21.68, GPQA 8.28, MMLU-Pro 28.19; plus IBM's own MMLU-Pro 41.03). No changes made."

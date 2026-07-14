@@ -76,6 +76,27 @@
       "score": 61.59,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/upstage/solar-pro-preview-instruct"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 68.86,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/upstage/solar-pro-preview-instruct",
+      "notes": "HF model card benchmark table, ARC-C column, 25-shot acc_norm per the card's own eval-protocol notes."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 86.36,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/upstage/solar-pro-preview-instruct",
+      "notes": "HF model card benchmark table, HellaSwag column, 10-shot acc_norm per the card's own eval-protocol notes."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 67.31,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/upstage/solar-pro-preview-instruct",
+      "notes": "HF model card benchmark table, 'BigBench Hard' column, 3-shot."
     }
   ],
   "verificationNotes": "Confirmed real: Upstage announced Solar Pro Preview on 2024-09-11 (PRNewswire, Upstage's own blog corroborate). Fetched the Hugging Face model card and confirmed 22B params scaled from Phi-3-medium (14B) via DUS, MIT license, 4K context, and all five benchmark numbers (MMLU 79.14, MMLU-Pro 52.11, IFEval 84.37, GSM8K 89.69, MBPP 61.59) literally appear there."

@@ -91,6 +91,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
       "notes": "Thinking mode only; no Non-Thinking score reported"
+    },
+    {
+      "benchmarkSlug": "pinchbench",
+      "score": 85.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "PinchBench, Avg@3, Thinking mode column of the official benchmark table"
     }
   ],
   "verificationNotes": "Specs and benchmark table pulled directly from the official Hugging Face model card (openpangu/openPangu-2.0-Flash README_EN.md). Release date/venue cross-checked against independent HDC 2026 coverage."

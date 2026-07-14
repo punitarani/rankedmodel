@@ -87,6 +87,19 @@
       "score": 11.1,
       "source": "self-reported",
       "sourceUrl": "https://falcon-lm.github.io/blog/falcon-h1r-7b/"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 53.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1R-7B"
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 25.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon-H1R-7B",
+      "notes": "Listed on the card as '\u03c4\u00b2-Bench Telecom'."
     }
   ],
   "verificationNotes": "Confirmed real, released 2026-01-05 by TII (BusinessWire/ATRC press release dated 2026-01-05; MarkTechPost/VentureBeat coverage 2026-01-07). Confirmed via HF model card + falcon-lm.github.io blog + arXiv 2601.02346 + GitHub tiiuae/Falcon-H1: exact param count 7.59B (rounds to 7.6B, config.json hidden_size=3072/44 layers/hybrid Transformer+Mamba2 confirms), max_position_embeddings=262144 confirms 256K context, license tag is Falcon-LLM/TII license (successor to the confirmed real 'TII Falcon License 2.0' used since Falcon 2). DeepConf test-time-scaling method and '2x-7x larger' comparison independently confirmed via web_search summaries of the blog/paper. All 6 result rows (AIME 88.1, MATH-500 97.4, GPQA-D 61.3, MMLU-Pro 72.1, LiveCodeBench v6 68.6, HLE 11.1) literally confirmed present on their cited sourceUrls via fetch. No changes made."

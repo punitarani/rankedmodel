@@ -122,6 +122,78 @@
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
       "evaluatedAt": "2024-06-07",
       "notes": "Base model"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 77,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 5-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 60.6,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, ARC-C 25-shot"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 54.2,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 0-shot"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 83.2,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 5-shot"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 83.9,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 5-shot"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.41,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.10671",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant; same value on the blog"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 26.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.10671",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant, LiveCodeBench v1; same value on the blog"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 54.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.10671",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant, strict-prompt subset; only in the technical report (Table 8), not on the blog"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 57,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant, MGSM 0-shot CoT, from the blog's multilingual-capability table"
     }
   ],
   "verificationNotes": "Fully confirmed via live fetch of qwenlm.github.io/blog/qwen2/: every one of the 9 benchmark scores (MMLU 70.3, MMLU-Pro 40.0, GPQA 31.8, HumanEval 51.2, MBPP 65.9, GSM8K 79.9, MATH 44.2, BBH 62.6, HellaSwag 80.7) matches the base-model table exactly. License Apache 2.0 and 72.71B-family precedent confirmed the params table lists Qwen2-7B at 7.07B total / 5.98B non-embedding params (corrected paramsB from 7 to 7.07 for precision); blog confirms Apache 2.0 license and notes instruct variant reaches 128K via YARN vs 32K pretraining. No changes needed to results."

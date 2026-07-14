@@ -46,6 +46,35 @@
     "releaseDate": "https://www.together.ai/blog/redpajama-models-v1",
     "openness": "https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "lambada",
+      "score": 65.41,
+      "source": "self-reported",
+      "sourceUrl": "https://www.together.ai/blog/redpajama-models-v1",
+      "notes": "LAMBADA-OpenAI accuracy, zero-shot lm-evaluation-harness subset reported in the official launch blog (matches Table 7 of the later RedPajama technical paper, arXiv 2411.12372, exactly: 0.6541)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 63.17,
+      "source": "self-reported",
+      "sourceUrl": "https://www.together.ai/blog/redpajama-models-v1",
+      "notes": "HellaSwag acc_norm, zero-shot lm-evaluation-harness subset (also confirmed in arXiv 2411.12372 Table 7: 0.6317)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 63.22,
+      "source": "self-reported",
+      "sourceUrl": "https://www.together.ai/blog/redpajama-models-v1",
+      "notes": "Winogrande accuracy, zero-shot lm-evaluation-harness subset (also confirmed in arXiv 2411.12372 Table 7: 0.6322)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 74.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www.together.ai/blog/redpajama-models-v1",
+      "notes": "PIQA accuracy, zero-shot lm-evaluation-harness subset (also confirmed in arXiv 2411.12372 Table 7: 0.7470)."
+    }
+  ],
   "verificationNotes": "Confirmed via together.ai/blog/redpajama-models-v1 (published May 5, 2023): HELM table shows RedPajama-INCITE-Base-3B-v1 = 0.406 vs LLaMA-7B 0.465, matching exactly. HF model card confirms '2.8B parameter pretrained language model', GPT-NeoX architecture, Apache 2.0 license, 800B training tokens. Context length 2048 (2K) corroborated by independent sources on the RedPajama-INCITE family."
 }

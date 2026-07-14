@@ -4,16 +4,48 @@ baichuan2-7b,54,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/mai
 chatglm-6b,38.9,independent,https://ar5iv.labs.arxiv.org/html/2305.08322,,"Zero-shot, answer-only (C-Eval paper's own evaluation)"
 chatglm2-6b,50.1,self-reported,https://github.com/zai-org/ChatGLM2-6B,,Chat-aligned checkpoint
 chatglm3-6b,69,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
+deepseek-coder-v2-236b,79.4,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,2024-06-17,
+deepseek-llm-67b,65.2,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6; also matches the official GitHub README table"
+deepseek-r1-671b,91.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,C-Eval (EM). Note: slightly exceeds this corpus taxonomy's documented c-eval range (20-88) but is verified verbatim on the official HF card.
+deepseek-v2-236b,78,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,2024-05-07,"C-Eval score for DeepSeek-V2 Chat (RL), from the official HF model card's Chat Model benchmark table (same table/column already used for the corpus's existing MMLU/BBH/HumanEval/MBPP/GSM8K/Math rows)."
+deepseek-v3-671b,86.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,"C-Eval (EM), Chat model"
+deepseekmoe-16b,40.6,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, CEval accuracy 5-shot, DeepSeekMoE 16B column."
+ernie-4-5-300b-a47b,90.6,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 5, post-trained ERNIE-4.5-300B-A47B, non-thinking mode."
 glm-4-9b-chat,75.6,self-reported,https://huggingface.co/THUDM/glm-4-9b-chat,,Chinese academic-exam benchmark
+hunyuan-large-a52b,91.9,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
+hunyuan-t1,91.8,self-reported,https://winbuzzer.com/2025/03/23/tencents-releases-its-hunyuan-t1-reasoning-model-beating-deepseek-r1-gpt-4-5-o1-across-benchmarks-xcxwbn/,,Independently corroborated verbatim by SCMP's coverage of the same official table.
+hunyuan-turbos,88.1,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"5-shot, Table 4"
+kimi-k1-5,88.3,self-reported,https://arxiv.org/abs/2501.12599,,"C-Eval (EM) = 88.3, Kimi k1.5 short-CoT model, Table 3."
 minicpm-2b,51.13,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table; Chinese exam benchmark
+minicpm3-4b,73.6,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,Reported as 'CEVAL' on the model card.
+mpt-7b,23.5,independent,https://arxiv.org/abs/2405.13386,2024-05-22,"5-shot via OpenCompass, 360Zhinao Technical Report Table 2 — confirmed by direct PDF read of the table."
 qwen-1-8b,56.2,self-reported,https://huggingface.co/Qwen/Qwen-1_8B,2023-11-30,test set
 qwen-14b,72.1,self-reported,https://huggingface.co/Qwen/Qwen-14B,2023-09-25,5-shot
 qwen-72b,83.3,self-reported,https://huggingface.co/Qwen/Qwen-72B,2023-11-30,
 qwen-7b,63.5,self-reported,https://huggingface.co/Qwen/Qwen-7B,2023-09-28,"5-shot, val"
 qwen1-5-72b,84.1,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
+qwen2-57b-a14b,87.7,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 5-shot"
+qwen2-7b,83.2,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 5-shot"
+qwen3-14b-non-thinking,81,self-reported,https://arxiv.org/pdf/2505.09388,,"C-Eval, Table 16, Qwen3-14B (Non-thinking) column"
+qwen3-14b-thinking,86.2,self-reported,https://arxiv.org/pdf/2505.09388,,"C-Eval, Table 15, Qwen3-14B (Thinking) column"
+qwen3-235b-a22b-non-thinking,86.1,self-reported,https://arxiv.org/pdf/2505.09388,,"C-Eval, Table 12, Qwen3-235B-A22B (Non-thinking) column"
+qwen3-235b-a22b-thinking,89.6,self-reported,https://arxiv.org/pdf/2505.09388,2025-05-15,"C-Eval, Thinking mode, Table 11. Slightly above the taxonomy's stated 20-88 range but confirmed exact in the primary source."
+qwen3-30b-a3b-non-thinking,82.9,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"C-Eval, non-thinking mode, Table 16"
+qwen3-30b-a3b-thinking,86.6,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"C-Eval, thinking mode, Table 15"
+qwen3-32b-non-thinking,83.3,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"C-Eval, non-thinking mode, Table 14"
+qwen3-32b-thinking,87.3,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"Table 13 of the Qwen3 Technical Report, Qwen3-32B (Thinking) column."
 qwen3-5-122b-a10b,91.9,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,,"Knowledge category, Language benchmark table."
+qwen3-5-397b-a17b,93,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,"Language benchmark table, Knowledge section."
 qwen3-5-omni-flash,86,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,,
 qwen3-5-omni-plus,92,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,,
 qwen3-5-plus,92.3,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,,Qwen3.5-Plus-NoThinking
+qwen3-6-27b,91.4,self-reported,https://huggingface.co/Qwen/Qwen3.6-27B,,Official HF model card.
+qwen3-6-35b-a3b,90,self-reported,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,,Official HF model card.
+qwen3-6-plus,93.3,self-reported,https://qwen.ai/blog?id=qwen3.6,2026-04-02,"Knowledge table, C-Eval row."
+qwen3-8b-non-thinking,77.9,self-reported,https://arxiv.org/abs/2505.09388,,"C-Eval, non-thinking mode, Table 18"
+qwen3-8b-thinking,83.4,self-reported,https://arxiv.org/abs/2505.09388,,"C-Eval, thinking mode, Table 17"
+qwq-32b,88.4,self-reported,https://arxiv.org/abs/2505.09388,,"Qwen3 Technical Report, Table 13, C-Eval row, QwQ-32B column."
 skywork-13b,60.6,self-reported,https://huggingface.co/Skywork/Skywork-13B-base,,
 skywork-moe-base,82.2,self-reported,https://arxiv.org/html/2406.06563v1,,
+yi-34b,81.4,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,"Yi-34B base model, Yi technical report Table 2 (grouped academic benchmarks vs. open-source base models)."
+yi-6b,72,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,"Yi-6B base model, Yi technical report Table 2 (grouped academic benchmarks vs. open-source base models)."

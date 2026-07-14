@@ -66,6 +66,110 @@
       "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md",
       "evaluatedAt": "2023-07-18",
       "notes": "Percent of generations rated both truthful and informative"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 76.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Common Sense Reasoning table"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 79.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Common Sense Reasoning table"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 48.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Common Sense Reasoning table"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 70.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Common Sense Reasoning table"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 72.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Common Sense Reasoning table"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 47.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Common Sense Reasoning table (consistent with the 52.7/57.8 values already recorded for sibling LLaMA-13B/33B checkpoints from the same table)"
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 46.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, RACE-high split of the Reading Comprehension table"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 50,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot exact match, Table 5 (same table/citation convention already used for sibling LLaMA-33B/13B entries)"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 11,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "Table 7, single-sample result (the paper's separate majority-voting/maj1@k variant scores higher at 18.1 and is a distinct setting)"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 10.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "pass@1, Table 8"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 17.7,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "pass@1, Table 8"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 30.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md",
+      "evaluatedAt": "2023-07-18",
+      "notes": "Reported by Meta in the Llama 2 model card's Llama-1-vs-2 comparison table (same source already cited in this record for MMLU/TruthfulQA)"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 23.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md",
+      "evaluatedAt": "2023-07-18",
+      "notes": "Reported by Meta in the Llama 2 model card's Llama-1-vs-2 comparison table"
     }
   ],
   "verificationNotes": "Confirmed real release, part of the same 2023-02-24 LLaMA drop. Wikipedia confirms 7B=6.7B params exactly, 2048 ctx, gated non-commercial license. Fetched the MODEL_CARD.md comparison table and confirmed MMLU 35.1, TruthfulQA 27.42, Toxigen 23.00 all appear for the Llama-1-7B row. No changes made."

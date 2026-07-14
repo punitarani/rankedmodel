@@ -79,6 +79,55 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2309.11568",
       "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 77.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.11568",
+      "notes": "0-shot, Table 3"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 46.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.11568",
+      "notes": "0-shot, Table 3"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 40.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.11568",
+      "notes": "0-shot (test split), Table 3"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 66.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.11568",
+      "notes": "0-shot, Table 4"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 34.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.11568",
+      "notes": "0-shot, Table 4"
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 39.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.11568",
+      "notes": "RACE-high, 0-shot, Table 4"
+    },
+    {
+      "benchmarkSlug": "mmlu-stem",
+      "score": 27.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.11568",
+      "notes": "5-shot, Table 5. Sits slightly below the taxonomy's stated 30-83 range floor for this slug -- reflects BTLM being one of the smallest models in the corpus, not a data error"
     }
   ],
   "verificationNotes": "CORRECTED releaseDate: input record cited 2023-09-20 (the arXiv paper's submission date), but the model was actually publicly released earlier -- HuggingFace commit history shows weights uploaded ~2023-07-24, and Cerebras/Opentensor's own announcement says BTLM 'went live on Bittensor' July 27, 2023; downgraded to month precision (2023-07) since sources disagree on the exact day. Confirmed exact param count is 2.6B (not marketed '3B') via the paper. All 5 result rows (hellaswag 69.8, arc-challenge 37.6, winogrande 65.8, mmlu 28.1, humaneval 9.9) verified as literally present in Table 2 of the paper via the ar5iv HTML rendering (a text-accurate mirror of the arXiv LaTeX source) -- notably an initial web-search-synthesized read of the same paper produced shuffled/wrong numbers (e.g. arc-challenge misread as 65.8), which the direct ar5iv HTML fetch corrected. Apache-2.0 and 8192 context confirmed via HF model card."

@@ -96,7 +96,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2504.00698",
       "notes": "Berkeley Function-Calling Leaderboard"
+    },
+    {
+      "benchmarkSlug": "bird-sql",
+      "score": 59.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2504.00698",
+      "notes": "Command A technical report (arXiv 2504.00698), Table 1, page 2, 'Code' capability row, Bird-SQL column. Command A scores 59.5 vs. DeepSeek-V3 53.1, GPT-4o 50.5, Llama 3.3 70B 58.0. Directly re-read the table image from the downloaded PDF (page 2) to confirm this number, which is not currently in the corpus's results array."
     }
   ],
-  "verificationNotes": "Fully confirmed: release date March 13, 2025 verified via HPCwire and Cohere's own blog (cohere.com/blog/command-a); HF model card + arXiv paper confirm 111B params, 256K context, CC-BY-NC + AUP license, deployable on 2x A100/H100. Downloaded and read the actual PDF of arXiv 2504.00698 Table 1 directly — all seven Command A benchmark numbers (MMLU 85.5, MATH 80.0, IFEval 90.9, GPQA 50.8, Taubench 51.7, MBPP+ 86.2, BFCL 63.8) appear verbatim. Pricing ($2.50/$10 per 1M) confirmed via cohere.com/pricing-derived aggregators. No changes made."
+  "verificationNotes": "Fully confirmed: release date March 13, 2025 verified via HPCwire and Cohere's own blog (cohere.com/blog/command-a); HF model card + arXiv paper confirm 111B params, 256K context, CC-BY-NC + AUP license, deployable on 2x A100/H100. Downloaded and read the actual PDF of arXiv 2504.00698 Table 1 directly \u2014 all seven Command A benchmark numbers (MMLU 85.5, MATH 80.0, IFEval 90.9, GPQA 50.8, Taubench 51.7, MBPP+ 86.2, BFCL 63.8) appear verbatim. Pricing ($2.50/$10 per 1M) confirmed via cohere.com/pricing-derived aggregators. No changes made."
 }

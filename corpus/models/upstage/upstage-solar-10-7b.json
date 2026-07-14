@@ -9,7 +9,7 @@
   "paramsB": 10.7,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Depth Up-Scaled (DUS) dense transformer — two 24-layer Mistral-7B-derived stacks merged to 48 layers, then continually pretrained",
+  "archDisplay": "Depth Up-Scaled (DUS) dense transformer \u2014 two 24-layer Mistral-7B-derived stacks merged to 48 layers, then continually pretrained",
   "ctxK": 4,
   "modalities": [
     "text"
@@ -48,6 +48,49 @@
     "releaseDate": "https://www.upstage.ai/news/solar-10-7b-emerges-as-worlds-top-pre-trained-llm",
     "openness": "https://huggingface.co/upstage/SOLAR-10.7B-v1.0"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 61.95,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2312.15166",
+      "notes": "Table 2 of the SOLAR 10.7B paper (base model row), Open-LLM-Leaderboard-style 25-shot ARC-Challenge."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 84.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2312.15166",
+      "notes": "Table 2 of the SOLAR 10.7B paper (base model row), 10-shot HellaSwag."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 65.48,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2312.15166",
+      "notes": "Table 2 of the SOLAR 10.7B paper (base model row), 5-shot MMLU."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 45.04,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2312.15166",
+      "notes": "Table 2 of the SOLAR 10.7B paper (base model row), 0-shot TruthfulQA."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 83.66,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2312.15166",
+      "notes": "Table 2 of the SOLAR 10.7B paper (base model row), 5-shot Winogrande."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 55.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2312.15166",
+      "notes": "Table 2 of the SOLAR 10.7B paper (base model row), 5-shot GSM8K."
+    }
+  ],
   "verificationNotes": "Confirmed real: Upstage released SOLAR-10.7B on 2023-12-13, topping the HF Open LLM Leaderboard (confirmed via Upstage's own news page and MarkTechPost). Fetched the Hugging Face model card and confirmed ~11B (10.7B) params, Depth Up-Scaling from Mistral-7B, Apache 2.0 license for the base model, and the H6 base score of 66.04 literally appears there. Instruct variant's 74.20 H6 (cited only in the note, not a results row) independently corroborated by search."
 }

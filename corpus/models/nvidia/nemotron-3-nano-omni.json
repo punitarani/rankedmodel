@@ -50,10 +50,101 @@
   "results": [
     {
       "benchmarkSlug": "gpqa",
-      "score": 15,
-      "source": "independent",
-      "sourceUrl": "https://artificialanalysis.ai/models/nemotron-3-nano-omni-30b-a3b",
-      "notes": "Note: this is actually the Artificial Analysis composite Intelligence Index score (15), not a GPQA-specific score -- included here only because no single-benchmark independent number could be verified; treat with caution."
+      "score": 72.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Note: this is actually the Artificial Analysis composite Intelligence Index score (15), not a GPQA-specific score -- included here only because no single-benchmark independent number could be verified; treat with caution. [Corrected during full-corpus audit: The existing entry mapped the Artificial Analysis composite Intelligence Index score (15) to the 'gpqa' slug, which the corpus's own verificationNotes flagged as not actually a GPQA score. The NVIDIA arXiv technical report (Table 10, 'Comparison of Nemotron 3 Nano Omni, Nemotron 3 Nano LLM, and Qwen3-Omni across selected text-only benchmarks') reports the model's real GPQA-Diamond (no-tools, 4-run]"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 77.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 10 of the arXiv technical report."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 63.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 10; LiveCodeBench v5 (07/24-05/25)."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 82.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 10; AIME25, no tools, Pass@1 average of 8 runs."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 74.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 10; IFBench (prompt-level)."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 42.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 10, labeled 'TauBench V2 (Telecom)'."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 70.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 7, MMMU (val), reasoning-on mode (matches corpus's 'reasoning' effortLabel config); reasoning-off scores 55.2."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 82.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 7, MathVista-Mini split, reasoning-on mode; corroborated by Table 11's reasoning-budget ablation (82.8 with budget vs 80.3 without)."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 90.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 7, ChartQA Test split, reasoning-on mode."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 95.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 7, DocVQA Test split, reasoning-on mode; a separate Val-split ablation in Table 11 scores 95.2-95.3."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 88.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 7, AI2D Test split; identical score in both reasoning-on and reasoning-off modes."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 63.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 7, CharXiv reasoning (RQ) split, reasoning-on mode; independently corroborated by NVIDIA's HF launch blog (huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence) which states the identical figure."
+    },
+    {
+      "benchmarkSlug": "refcoco",
+      "score": 90.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 7, reasoning-on mode; a reasoning-budget ablation in Table 11 gives a nearly identical 90.6."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 72.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "notes": "Table 7, VideoMME (w/o subtitles), reasoning-on mode; independently corroborated by NVIDIA's HF launch blog stating the identical figure."
     }
   ],
   "verificationNotes": "Artificial Analysis Intelligence Index score of 15 (#29/130 in class) is an independent re-run; no independently-verified scores found for the individual named benchmarks (MMlongbench-Doc, OCRBenchV2, WorldSense, DailyOmni, VoiceBench) that NVIDIA's own materials claim leadership on, so only the composite index is reported."

@@ -1,3 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+amazon-nova-premier,28.1,self-reported,https://assets.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf,2025-04-30,"BigCodeBench Hard subset, Pass@1 (Table 1)."
 granite-4-0-h-small,46.23,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+granite-4-1-8b-instruct,35,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,pass@1
 qwen2-5-coder-32b,53.6,self-reported,https://arxiv.org/abs/2409.12186,,"BigCodeBench-Complete, Full split, base model; corrected from 83 (the MBPP column mis-transposed) per arXiv:2409.12186v3 Table 5."

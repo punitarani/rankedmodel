@@ -66,7 +66,75 @@
       "score": 906,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2504.10479v1"
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 95.4,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
+      "notes": "DocVQA test; cross-confirmed against arXiv 2504.10479"
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 96,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
+      "notes": "AI2D test, without-mask setting (89.7 with-mask also reported)"
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 89.7,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/"
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 84.3,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
+      "notes": "TextVQA val; exceeds the textvqa slug's stated 40-75 range but is the verbatim published number"
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 43.1,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/"
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 89,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
+      "notes": "MMBench v1.0 EN test"
+    },
+    {
+      "benchmarkSlug": "mmbench-cn",
+      "score": 88.7,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
+      "notes": "MMBench v1.0 CN test; exceeds the mmbench-cn slug's stated 40-82 range but is the verbatim published number"
+    },
+    {
+      "benchmarkSlug": "refcoco",
+      "score": 93.4,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
+      "notes": "RefCOCO val split (testA 95.4, testB 90.3 also reported); slightly exceeds the slug's stated 50-92 range"
+    },
+    {
+      "benchmarkSlug": "refcoco-plus",
+      "score": 90.1,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
+      "notes": "RefCOCO+ val split; exceeds the slug's stated 50-85 range but is the verbatim published number"
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 72.7,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
+      "notes": "Video-MME without subtitles (75.7 with subtitles also reported)"
     }
   ],
-  "verificationNotes": "Confirmed real model. Corrected releaseDate source to the official OpenGVLab blog post (internvl.github.io, dated 2025-04-11), which matches the record's date — the arXiv paper (v1) was actually first submitted 2025-04-14, so that URL was a weaker/slightly inconsistent source for the release-date claim even though the date value itself was right. Confirmed via arXiv HTML (2504.10479v1) full text: MMMU 72.2, MathVista 79.0, OCRBench 906 all literally appear in the benchmark tables. Confirmed 32K context ('sequences of up to 32K tokens') in the same paper. Confirmed via HF model card: 78B total params, InternViT-6B-448px-V2_5 vision encoder, Qwen2.5-72B LLM backbone. Confirmed InternViT-6B is MIT-licensed (HF) and Qwen2.5-72B uses the non-Apache 'Qwen Research License Agreement' (HF LICENSE file / Qwen blog), matching the split-license description. Confirmed OpenGVLab/InternVL3-78B-AWQ exists on HF and is ~53GB, matching vramQ4Gb. No changes to numeric values were needed."
+  "verificationNotes": "Confirmed real model. Corrected releaseDate source to the official OpenGVLab blog post (internvl.github.io, dated 2025-04-11), which matches the record's date \u2014 the arXiv paper (v1) was actually first submitted 2025-04-14, so that URL was a weaker/slightly inconsistent source for the release-date claim even though the date value itself was right. Confirmed via arXiv HTML (2504.10479v1) full text: MMMU 72.2, MathVista 79.0, OCRBench 906 all literally appear in the benchmark tables. Confirmed 32K context ('sequences of up to 32K tokens') in the same paper. Confirmed via HF model card: 78B total params, InternViT-6B-448px-V2_5 vision encoder, Qwen2.5-72B LLM backbone. Confirmed InternViT-6B is MIT-licensed (HF) and Qwen2.5-72B uses the non-Apache 'Qwen Research License Agreement' (HF LICENSE file / Qwen blog), matching the split-license description. Confirmed OpenGVLab/InternVL3-78B-AWQ exists on HF and is ~53GB, matching vramQ4Gb. No changes to numeric values were needed."
 }

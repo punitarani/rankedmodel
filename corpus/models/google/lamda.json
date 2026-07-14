@@ -43,6 +43,31 @@
     "releaseDate": "https://blog.google/technology/ai/lamda/",
     "openness": "https://arxiv.org/abs/2201.08239"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 14,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.02311",
+      "evaluatedAt": "2022-04-05",
+      "notes": "LaMDA 137B pass@1 on HumanEval, reported by Google as a baseline comparison in the PaLM technical report (Table 12). Independently cross-confirmed by the LLaMA paper's Table 8, which cites the same figure."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 14.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.02311",
+      "evaluatedAt": "2022-04-05",
+      "notes": "LaMDA 137B pass@1 on MBPP, reported by Google as a baseline comparison in the PaLM technical report (Table 12). Independently cross-confirmed by the LLaMA paper's Table 8, which cites the same figure."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 14.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2201.11903",
+      "evaluatedAt": "2022-01-28",
+      "notes": "LaMDA 137B, 8-shot chain-of-thought prompting on GSM8K (vs. 6.5% with standard/non-CoT prompting), reported in Google's Chain-of-Thought Prompting paper (Wei et al. 2022), Table 2 / Appendix B."
+    }
+  ],
   "verificationNotes": "Confirmed real via arxiv.org/abs/2201.08239 (submitted 2022-01-20, the research writeup) which literally states LaMDA models have 'up to 137B parameters' -- matches paramsB. Confirmed public unveiling date 2021-05-18 at Google I/O via blog.google/technology/ai/lamda/ and corroborating press (9to5google, VentureBeat) all dated May 18, 2021. Closed/proprietary status and 'weights never released' are well-established and uncontested. Could not independently confirm the exact 2K context-length figure from a primary source in this pass (left as-is, low confidence); no results rows were present to check. No changes made to core fields."
 }

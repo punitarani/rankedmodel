@@ -6,6 +6,7 @@ deepseek-r1-671b,65.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-
 deepseek-r1-distill-llama-70b,57.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B,2025-01-20,LiveCodeBench pass@1
 deepseek-r1-distill-qwen-32b,57.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B,2025-01-20,LiveCodeBench pass@1
 deepseek-r1-zero,50,self-reported,https://arxiv.org/html/2501.12948v1,2025-01-20,LiveCodeBench pass@1
+deepseek-v2-236b,32.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,2024-05-07,"LiveCodeBench (0901-0401 window) pass@1 for DeepSeek-V2 Chat (RL), from the same official HF model card table. Not previously recorded for this model (only the later V2.5 has a LiveCodeBench entry in the corpus)."
 deepseek-v2-5,41.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2.5,,Jan-Sep 2024 window
 deepseek-v3-0324,49.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3-0324,2025-03-24,LiveCodeBench
 deepseek-v3-1-non-thinking,56.4,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,2408-2505 Pass@1
@@ -18,49 +19,79 @@ deepseek-v4-flash-think-max,91.6,self-reported,https://macaron.im/blog/deepseek-
 deepseek-v4-pro-non-think,56.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,,Non-Think mode
 deepseek-v4-pro-think-high,89.8,self-reported,https://arxiv.org/abs/2606.19348,,Think-High mode
 deepseek-v4-pro-think-max,93.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,,Pro-Max mode
+ernie-4-5-300b-a47b,38.8,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,Table 5.
 exaone-4-5,81.4,self-reported,https://www.prnewswire.com/news-releases/lg-reveals-next-gen-multimodal-ai-exaone-4-5-302736993.html,,"LiveCodeBench v6, vendor-reported vs Gemma 4 (80.0)"
+falcon-h1-34b,49.71,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
 falcon-h1r-7b,68.6,self-reported,https://falcon-lm.github.io/blog/falcon-h1r-7b/,,LiveCodeBench v6
 gemini-2-0-flash,34.5,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,"v5, GA version"
 gemini-2-0-flash-lite,28.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,"v5, Public Preview"
+gemini-2-0-pro-experimental,36,self-reported,https://arxiv.org/abs/2503.19786,2025-03-25,LiveCodeBench; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6.
 gemini-2-5-flash,63.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"LiveCodeBench v5, single attempt, thinking on"
 gemini-2-5-flash-lite-non-thinking,33.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"LiveCodeBench v5, (06-17), non-thinking"
 gemini-2-5-flash-lite-thinking,34.3,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"LiveCodeBench v5, (06-17), thinking on"
+gemini-2-5-pro,70.4,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf,2025-03-25,"LiveCodeBench v5 (UI window 10/1/2024-2/1/2025), single attempt, Gemini 2.5 Pro (Experimental 03-25) column."
+gemini-3-1-flash-lite,72,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_3-1_flash-lite_model_evaluation.pdf,2026-03-01,"LiveCodeBench code generation, 175 UI problems dated 1/1/2025-5/1/2025 (distinct from LiveCodeBench Pro's Elo scale)."
 gemma-3-12b,24.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-27b,29.7,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-4b,12.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+gemma-4,80,self-reported,https://ai.google.dev/gemma/docs/core/model_card_4,2026-04-02,"LiveCodeBench v6, 31B dense, also confirmed on huggingface.co/google/gemma-4-31B-it."
 gemma-4-26b-a4b,77.1,self-reported,https://huggingface.co/google/gemma-4-26B-A4B-it,2026-04-02,"LiveCodeBench v6, 26B A4B."
 glm-4-5-355b-a32b,72.9,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
 glm-4-5-air-106b-a12b,70.7,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
 glm-4-6,82.8,self-reported,https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison,,LiveCodeBench v6; corroborated separately by CometAPI's write-up of the same launch figure
+glm-4-plus,45.8,self-reported,https://docs.bigmodel.cn/cn/guide/models/text/glm-4,,Labeled 'LCB' in the docs table and marked with an asterisk denoting a Zhipu-reproduced result (not the original paper's number); GLM-4-Plus vs GPT-4o 45.5 (101%).
+glm-z1-32b-0414,59.1,self-reported,https://github.com/zai-org/GLM-4/blob/main/README.md,,Labeled 'LCB (2408-2501)' (a time-windowed LiveCodeBench subset) in the official GitHub README benchmark chart.
+gpt-4-turbo,28.7,independent,https://livecodebench.github.io/leaderboard.html,,"gpt-4-turbo-2024-04-09, Pass@1, official LiveCodeBench leaderboard, current problem time-window 2024-08-01 to 2025-05-01 (454 contamination-controlled problems released after model training cutoffs). A genuinely hard eval: breaks down to Easy 81.0 / Medium 24.8 / Hard 3.1, i.e. the model solves almost none of the Hard-tier problems — included deliberately per the instruction to surface harder evals, not just favorable ones."
 grok-3-mini,69.6,independent,https://designforonline.com/ai-models/xai-grok-3-mini/,,
+grok-3-standard,57,self-reported,https://x.ai/news/grok-3,2025-02-17,Official non-reasoning 'Grok 3 Beta' row in xAI's launch-blog benchmark table (LCB column).
 grok-3-think,79.4,self-reported,https://futureagi.com/blog/grok-3-technical-review-2025/,2025-02-17,Think mode
 grok-4,79,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,no tools
+grok-4-5,87.35,independent,https://www.vals.ai/models/grok_grok-4.5,,"Vals AI independent eval of Grok 4.5, ranked 7/127 models on the platform's LiveCodeBench tracker (fetched July 2026)."
 grok-4-heavy,79.4,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,
+hunyuan-a13b,63.9,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,
 hunyuan-t1,64.9,self-reported,https://tencent.github.io/llm.hunyuan.T1/README_EN.html,,
+hunyuan-turbos,43,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,Table 4 (paper's LiveCodeBench-2408-2411 window)
 intellect-3,69.3,self-reported,https://www.primeintellect.ai/blog/intellect-3,,LiveCodeBench v6
 internlm3-8b-instruct,17.8,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,
 kimi-k1-5,47.3,self-reported,https://arxiv.org/abs/2501.12599,,Short-CoT variant
 kimi-k2,53.7,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,
 kimi-k2-5,85,self-reported,https://www.kimi.com/blog/kimi-k2-5,,LiveCodeBench v6
 kimi-k2-6,89.6,self-reported,https://www.kimi.com/blog/kimi-k2-6,,LiveCodeBench v6
+kimi-k2-thinking,83.1,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,"LiveCodeBench V6, no tools, from Coding Tasks table on official model card"
 lg-exaone-4-0-32b-non-reasoning,43.3,self-reported,https://arxiv.org/abs/2507.11407,,"LiveCodeBench v5, non-reasoning mode"
 lg-exaone-4-0-32b-reasoning,72.6,self-reported,https://arxiv.org/abs/2507.11407,,"LiveCodeBench v5, reasoning mode"
 lg-exaone-deep-32b,59.5,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-Deep,2025-03-01,"LiveCodeBench, pass@1"
 llama-3-1-nemotron-ultra-253b-v1-reasoning-off,29.03,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,Reasoning Off
 llama-3-1-nemotron-ultra-253b-v1-reasoning-on,66.31,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,Reasoning On; beats DeepSeek-R1's 65.9
+llama-3-3-nemotron-super-49b-v1-reasoning-off,29.7,self-reported,https://arxiv.org/abs/2505.00949,2025-05-01,"LiveCodeBench (2408-2502 window), Reasoning Off, Final checkpoint. From Table 4 of the technical report; this benchmark is absent from the HF model card entirely for this model."
+llama-3-3-nemotron-super-49b-v1-reasoning-on,45.5,self-reported,https://arxiv.org/abs/2505.00949,2025-05-01,"LiveCodeBench (2408-2502 window), Reasoning On, Final checkpoint. From Table 4 of the technical report; this benchmark is absent from the HF model card entirely for this model."
+llama-4-maverick,43.4,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Instruction-tuned, pass@1"
+llama-4-scout,32.8,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Instruction-tuned, pass@1"
+magistral-medium,59.4,self-reported,https://arxiv.org/abs/2506.10910,2025-06-10,LiveCodeBench v5; Magistral technical report Table 2 (59.36% per the HF comparison table)
 magistral-small,55.84,self-reported,https://huggingface.co/mistralai/Magistral-Small-2506,,LiveCodeBench v5
+mimo-v2-5,81.51,independent,https://www.vals.ai/models/xiaomi_mimo-v2.5,,"LiveCodeBench, independently benchmarked by Vals AI for MiMo V2.5 (±1.07 CI). Not published by Xiaomi itself for this model."
+minicpm3-4b,22.6,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,Reported as 'LiveCodeBench v3' on the model card.
 minimax-m1,65,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,,M1-80K
 minimax-m2,83,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,
+mistral-large-3,55.34,independent,https://www.vals.ai/models/mistralai_mistral-large-2512,,"vals.ai independent eval, ±1.15pp CI, ranked 97th of 127 models on their LiveCodeBench leaderboard."
+mistral-medium-3,44.84,independent,https://www.vals.ai/models/mistralai_mistral-medium-2505,,"Independent third-party eval by Vals AI of mistral-medium-2505 (release date 5/7/2025, price $0.4/$2, 131k context — all match this corpus entry). Vals AI labels the model 'Mistral Medium 3.1 (05/2025)' in their own versioning scheme but the model ID, price, and release date confirm this is Mistral Medium 3 (mistral-medium-2505). Score with ±1.15 std error, ranked 106/127 on their leaderboard at time of eval."
+muse-spark-1-1-xhigh,85.91,independent,https://www.vals.ai/models/meta_muse-spark-1.1,,"LiveCodeBench, measured independently by Vals AI (±0.99 CI, ranked 18/127 models on their leaderboard). Not reported anywhere in Meta's own materials for Muse Spark 1.1."
+nemotron-3-nano-omni,63.2,self-reported,https://arxiv.org/abs/2604.24954,,Table 10; LiveCodeBench v5 (07/24-05/25).
+nemotron-3-super,81.19,self-reported,https://arxiv.org/abs/2604.12374,,"Table 5, LiveCodeBench v5 (2024-07 to 2024-12)."
 nemotron-3-ultra-550b-a55b,89,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,,v6
 nemotron-nano-2-nemotron-nano-9b-v2,71.1,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"Reasoning On, vs Qwen3-8B's 59.5"
 olmo-3-7b,29.5,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,LiveCodeBench v3
 olmo-3-think-32b,83.5,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,LiveCodeBench v3; Qwen 3 32B 90.2
 openpangu-2-0-flash-non-thinking,50.9,self-reported,https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md,,"LiveCodeBench V6, Avg@3, Non-Thinking mode"
 openpangu-2-0-flash-thinking,85.1,self-reported,https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md,,"LiveCodeBench V6, Avg@3, Thinking mode"
+phi-4-mini-3-8b,19.9,self-reported,https://arxiv.org/abs/2503.01743,,"Table 8, 'LCB (05-09-2024)' = LiveCodeBench dated release window, a contamination-controlled rolling problem set matching the livecodebench slug."
+phi-4-mini-instruct,19.9,self-reported,https://arxiv.org/abs/2503.01743,,"Table 8, 'LCB (05-09-2024)' = LiveCodeBench."
 phi-4-reasoning,53.8,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,
 phi-4-reasoning-14b,53.8,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,,
 qwen2-5-max,38.7,self-reported,https://www.datacamp.com/blog/qwen-2-5-max,,
+qwen2-57b-a14b,25.5,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,"Instruct variant, LiveCodeBench v1; same value on the blog"
 qwen2-72b,35.7,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,Instruct variant
+qwen2-7b,26.6,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,"Instruct variant, LiveCodeBench v1; same value on the blog"
 qwen3-14b-non-thinking,29,self-reported,https://arxiv.org/pdf/2505.09388,,"LiveCodeBench v5, Non-thinking mode"
 qwen3-14b-thinking,63.5,self-reported,https://arxiv.org/pdf/2505.09388,,"LiveCodeBench v5, Thinking mode"
 qwen3-235b-a22b-instruct-2507,51.8,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,LiveCodeBench v6
@@ -75,16 +106,22 @@ qwen3-5-122b-a10b,78.9,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A1
 qwen3-5-397b-a17b,83.6,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,LiveCodeBench v6. Verified correct via fresh fetch of HF model card table and qwen.ai/blog?id=qwen3.5 launch blog table (both show 83.6).
 qwen3-5-omni-flash,56.6,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Reported as 'LiveCodeBench v6' in Table 4 (Text→Text), Reasoning section. Catalog has no version-specific LiveCodeBench slug, so mapped to the generic 'livecodebench' slug; note the v6 revision when comparing against other models' LiveCodeBench entries that may use a different code-release version."
 qwen3-5-omni-plus,65.6,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 4 (Text→Text), Reasoning section, Qwen3.5-Omni-Plus column, cell S5.T4.3.16.4. Paper specifically labels this 'LiveCodeBench v6'; catalog has no version-specific slug so mapped to generic livecodebench."
+qwen3-5-plus,67.1,self-reported,https://arxiv.org/abs/2604.15804,,"LiveCodeBench v6, Qwen3.5-Plus-NoThinking column, Table 4 of the Qwen3.5-Omni Technical Report."
 qwen3-6-27b,83.9,self-reported,https://qwen.ai/blog?id=qwen3.6-27b,,LiveCodeBench v6
 qwen3-6-35b-a3b,80.4,self-reported,https://qwen.ai/blog?id=qwen3.6-27b,,LiveCodeBench v6
 qwen3-6-plus,87.1,self-reported,https://qwen.ai/blog?id=qwen3.6,,LiveCodeBench v6; same column-position inference
+qwen3-7-max,91.6,self-reported,https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154,,"Confirmed via direct fetch of the official Alibaba Cloud launch blog; cross-corroborated by DataCamp, W&B, and CodingFleet write-ups citing the same blog."
+qwen3-7-plus,89.6,self-reported,https://qwen.ai/blog?id=qwen3.7-plus,2026-05-31,"Official Qwen launch blog, 'STEM & Reasoning' table."
 qwen3-8b-non-thinking,22.8,self-reported,https://arxiv.org/abs/2505.09388,,"LiveCodeBench v5, non-thinking mode"
 qwen3-8b-thinking,57.5,self-reported,https://arxiv.org/abs/2505.09388,,"LiveCodeBench v5, thinking mode"
 qwen3-max,57.5,self-reported,https://felloai.com/qwen-3-max-ai-all-you-need-to-know-about-alibabas-1-trillion-parameter-llm/,,"LiveCodeBench v6, Qwen3-Max-Instruct (Preview) launch chart. Conflicting GA-era transcriptions cite 74.8 (e.g. apidog); no official text source resolves it."
 qwq-32b,63.4,self-reported,https://www.datacamp.com/blog/qwq-32b,,
 qwq-32b-preview,50,self-reported,https://qwenlm.github.io/blog/qwq-32b-preview/,,
+reka-flash-3,62,self-reported,https://reka.ai/news/introducing-reka-flash,2025-03-10,Labeled 'LiveCodeBench V5' in the official launch blog's benchmark chart
 sarvam-105b,71.7,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,LiveCodeBench v6
 seed-oss-36b,67.4,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,LiveCodeBench v6
 seed1-5-thinking,64.9,self-reported,https://github.com/ByteDance-Seed/Seed-Thinking-v1.5,,LiveCodeBench v5
 smollm3-3b-no-thinking,15.2,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM3-3B,,"LiveCodeBench v4, no extended thinking"
 smollm3-3b-think,30,self-reported,https://huggingface.co/blog/smollm3,,reasoning mode
+sonar,29.5,independent,https://designforonline.com/ai-models/perplexity-sonar/,,Attributed to Artificial Analysis; corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats.
+step-3,67.1,self-reported,https://chat.stepfun.com/research/en/step3,,LiveCodeBench (2024-08 to 2025-05 window). Corroborated verbatim by SiliconFlow's launch blog post.

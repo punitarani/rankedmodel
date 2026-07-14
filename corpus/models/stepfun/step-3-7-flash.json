@@ -49,10 +49,58 @@
   "results": [
     {
       "benchmarkSlug": "gpqa",
-      "score": 30,
-      "source": "independent",
-      "sourceUrl": "https://artificialanalysis.ai/models/step-3-7-flash",
-      "notes": "Note: this is the Artificial Analysis composite Intelligence Index (30), not a GPQA-specific figure -- no single-benchmark independent score could be verified for this exact model."
+      "score": 78.41,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/stepfun-ai/Step-3.7-Flash/blob/main/README.md",
+      "notes": "Note: this is the Artificial Analysis composite Intelligence Index (30), not a GPQA-specific figure -- no single-benchmark independent score could be verified for this exact model. [Corrected during full-corpus audit: The existing entry mislabeled Artificial Analysis's composite Intelligence Index (30) as a 'gpqa' score -- the record's own verificationNotes already admit this was not a real GPQA figure. StepFun's official GitHub README states a real GPQA Diamond avg@16 item accuracy (over 3168 records) of 78.41% for the NVFP4 checkpoint (no MTP) vs 77.81% for the NVFP4+MTP speculative-decoding checkpoint. No pl]"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 76.5,
+      "source": "self-reported",
+      "sourceUrl": "https://static.stepfun.com/blog/step-3.7-flash/",
+      "evaluatedAt": "2026-05-29",
+      "notes": "SWE-Bench Verified score from StepFun's official Step 3.7 Flash launch-blog benchmark table (own column: Step 3.7 Flash 76.5%, vs. e.g. Claude Opus 4.7 87.6%, GPT 5.5 not tested)."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 56.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/stepfun-ai/Step-3.7-Flash/blob/main/README.md",
+      "evaluatedAt": "2026-05-29",
+      "notes": "Confirmed identically in both the official GitHub README ('secured a definitive second-place finish on SWE-Bench PRO with a score of 56.3') and the official launch blog's benchmark table."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 59.6,
+      "source": "self-reported",
+      "sourceUrl": "https://static.stepfun.com/blog/step-3.7-flash/",
+      "evaluatedAt": "2026-05-29",
+      "notes": "Terminal-Bench 2.1 score from the official launch-blog benchmark table (59.6%); the GitHub README's narrative text and chart tooltip round this to 59.5% -- both cite the same StepFun-run evaluation, minor rounding variance only."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 75.8,
+      "source": "self-reported",
+      "sourceUrl": "https://static.stepfun.com/blog/step-3.7-flash/",
+      "evaluatedAt": "2026-05-29",
+      "notes": "'It reaches 75.82% on BrowseComp, approaching larger models such as Claude Opus 4.7 and GLM 5.1' -- stated directly in StepFun's official launch blog text and confirmed in the accompanying benchmark chart (75.8%)."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 49.7,
+      "source": "self-reported",
+      "sourceUrl": "https://static.stepfun.com/blog/step-3.7-flash/",
+      "evaluatedAt": "2026-05-29",
+      "notes": "Text-only (no tool use) Humanity's Last Exam score, from the launch blog's benchmark table row 'HLE w. tool (acc) 47.2% (text-only 49.7%)'. The tool-augmented figure (47.2%) is a different, non-comparable setting and was not used."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1415.8,
+      "source": "self-reported",
+      "sourceUrl": "https://static.stepfun.com/blog/step-3.7-flash/",
+      "evaluatedAt": "2026-05-29",
+      "notes": "Raw GDPval-AA points score (unit matches taxonomy's 'pts, range 0-2000') from the launch blog's benchmark table: 'GDPval-Stirrup 1415.8 (ii 45.8%)'. The normalized percentage form (45.8%) is what StepFun's GitHub README instead reports as 'GDPval-AA: 45.8' -- both numbers describe the same underlying evaluation, but 1415.8 is the correct value for this taxonomy slug's declared point-scale unit."
     }
   ],
   "verificationNotes": "Artificial Analysis independently scored the Intelligence Index at 30 (#34/94); no independently-verified GPQA/LiveCodeBench numbers located for this specific model (only for the prior Step 3.5 Flash), so composite index is the only result reported."

@@ -91,6 +91,27 @@
       "score": 55.25,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.2-8b-instruct"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 61.19,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.2-8b-instruct",
+      "notes": "Listed as 'Alpaca-Eval-2' in the model card's main evaluation table (same row as the existing ArenaHard/MMLU/BBH/etc. entries)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 66.92,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.2-8b-instruct",
+      "notes": "TruthfulQA column of the same evaluation table already used for the model's other 7 recorded scores."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 85.72,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.2-8b-instruct",
+      "notes": "Listed as 'HumanEval+' immediately next to the existing HumanEval 89.35 column in the same table."
     }
   ],
   "verificationNotes": "Fetched HF model card directly. Release date (Feb 26, 2025), params (8B), license (Apache 2.0), 12 languages, and all 7 benchmark scores (mmlu 66.79, bbh 64.77, gsm8k 81.65, humaneval 89.35, ifeval 74.31, drop 50.95, arena-hard 55.25) confirmed verbatim on the page. No changes made."

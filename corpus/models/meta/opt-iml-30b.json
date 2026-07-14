@@ -47,6 +47,55 @@
     "releaseDate": "https://arxiv.org/abs/2212.12017",
     "openness": "https://huggingface.co/facebook/opt-iml-30b/blob/main/README.md"
   },
-  "results": [],
-  "verificationNotes": "Confirmed 30B params, 2048 ctx, and 2022-12-22 arxiv date (fetched arxiv abstract page submission history: 'v1 Thu, 22 Dec 2022'). CRITICAL CORRECTION: the input's 3 benchmark rows (MMLU 46.3 0-shot, BBH 30.9 3-shot, RAFT 69.3 5-shot) are misattributed — fetching arxiv 2212.12017 directly shows these exact figures live only in Table 14 for 'OPT-IML-Max 30B' (trained on the full ~1,991-task bench), a distinct sibling checkpoint from plain 'OPT-IML 30B' (this record, trained on a curated subset of ~1,500 tasks with the rest held out for eval). The paper does not report MMLU/BBH/RAFT for the non-Max OPT-IML 30B, so all 3 result rows were dropped per verification rules. Also corrected the model note, which had incorrectly described this checkpoint as trained on the full ~2,000-task bench (that describes OPT-IML-Max, not OPT-IML)."
+  "results": [
+    {
+      "benchmarkSlug": "storycloze",
+      "score": 80.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2212.12017",
+      "evaluatedAt": "2022-12-22",
+      "notes": "0-shot accuracy on StoryCloze for plain OPT-IML 30B (not Max), Table 9 of the OPT-IML paper ('Accuracies of OPT-IML compared with OPT on the 14 standard NLP tasks from Zhang et al. 2022', format 0-shot/32-shot). Verified directly against the raw table text: row 'OPT-IML 30B', StoryCloze column = 80.1/82.7."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 77.3,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2212.12017",
+      "evaluatedAt": "2022-12-22",
+      "notes": "0-shot accuracy on PIQA for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', PIQA column = 77.3/69.2 (0-shot/32-shot)."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 64.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2212.12017",
+      "evaluatedAt": "2022-12-22",
+      "notes": "0-shot accuracy on ARC-Easy for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', ARC(e) column = 64.9/72.1 (0-shot/32-shot)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 45.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2212.12017",
+      "evaluatedAt": "2022-12-22",
+      "notes": "0-shot accuracy on ARC-Challenge for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', ARC(c) column = 45.5/46.7 (0-shot/32-shot)."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 50.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2212.12017",
+      "evaluatedAt": "2022-12-22",
+      "notes": "0-shot accuracy on OpenBookQA for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', OpenBookQA column = 50.6/55.2 (0-shot/32-shot). Note: this is marginally above the taxonomy's documented 40-50 typical range, but it is the real, verbatim figure printed in the paper's table."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 67.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2212.12017",
+      "evaluatedAt": "2022-12-22",
+      "notes": "0-shot accuracy on WinoGrande for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', Winogrande column = 67.8/69.0 (0-shot/32-shot)."
+    }
+  ],
+  "verificationNotes": "Confirmed 30B params, 2048 ctx, and 2022-12-22 arxiv date (fetched arxiv abstract page submission history: 'v1 Thu, 22 Dec 2022'). CRITICAL CORRECTION: the input's 3 benchmark rows (MMLU 46.3 0-shot, BBH 30.9 3-shot, RAFT 69.3 5-shot) are misattributed \u2014 fetching arxiv 2212.12017 directly shows these exact figures live only in Table 14 for 'OPT-IML-Max 30B' (trained on the full ~1,991-task bench), a distinct sibling checkpoint from plain 'OPT-IML 30B' (this record, trained on a curated subset of ~1,500 tasks with the rest held out for eval). The paper does not report MMLU/BBH/RAFT for the non-Max OPT-IML 30B, so all 3 result rows were dropped per verification rules. Also corrected the model note, which had incorrectly described this checkpoint as trained on the full ~2,000-task bench (that describes OPT-IML-Max, not OPT-IML)."
 }

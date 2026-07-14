@@ -56,7 +56,55 @@
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-40b",
       "evaluatedAt": "2023-12-03",
       "notes": "harness gsm8k 5-shot accuracy, later leaderboard run"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 85.28,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falcon2-11b",
+      "evaluatedAt": "2024-05-24",
+      "notes": "10-shot; cited as a baseline comparison row for Falcon-40B in TII's official Falcon 2 blog post's Open LLM Leaderboard table"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 81.29,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falcon2-11b",
+      "evaluatedAt": "2024-05-24",
+      "notes": "5-shot, same comparison table"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 61.86,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falcon2-11b",
+      "evaluatedAt": "2024-05-24",
+      "notes": "25-shot, same comparison table"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 41.65,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falcon2-11b",
+      "evaluatedAt": "2024-05-24",
+      "notes": "0-shot, same comparison table"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 56.89,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falcon2-11b",
+      "evaluatedAt": "2024-05-24",
+      "notes": "5-shot, same comparison table"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 81.86,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falcon2-11b",
+      "evaluatedAt": "2024-05-24",
+      "notes": "0-shot, from the blog's separate zero-shot performance table"
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (tiiuae/falcon-40b) and TII/ATRC press coverage: 40B params, Apache 2.0, 2048-token (2K) context, released May 25 2023 alongside Falcon-7B/1.3B. Language list (4 primary + 7 limited-capability = 11) matches langCount exactly. Both result rows confirmed: open-llm-leaderboard-avg 60.4 appears verbatim on huggingface.co/blog/falcon; gsm8k 21.5 confirmed on the leaderboard-details dataset (raw acc 0.21456 ≈ 21.5)."
+  "verificationNotes": "Confirmed real via HF model card (tiiuae/falcon-40b) and TII/ATRC press coverage: 40B params, Apache 2.0, 2048-token (2K) context, released May 25 2023 alongside Falcon-7B/1.3B. Language list (4 primary + 7 limited-capability = 11) matches langCount exactly. Both result rows confirmed: open-llm-leaderboard-avg 60.4 appears verbatim on huggingface.co/blog/falcon; gsm8k 21.5 confirmed on the leaderboard-details dataset (raw acc 0.21456 \u2248 21.5)."
 }

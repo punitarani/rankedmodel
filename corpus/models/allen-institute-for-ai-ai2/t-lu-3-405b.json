@@ -1,7 +1,7 @@
 {
-  "name": "Tülu 3 405B",
+  "name": "T\u00fclu 3 405B",
   "org": "Allen Institute for AI (Ai2)",
-  "family": "Tülu 3",
+  "family": "T\u00fclu 3",
   "releaseDate": "2025-01-30",
   "status": "released",
   "openness": "open-weights",
@@ -30,7 +30,7 @@
     "gh": "allenai/open-instruct",
     "docs": "allenai.org/blog/tulu-3-405b"
   },
-  "note": "Scaled the fully open Tülu 3 RLVR recipe to 405B (on Llama 3.1); matches or beats DeepSeek V3 and GPT-4o on key benchmarks.",
+  "note": "Scaled the fully open T\u00fclu 3 RLVR recipe to 405B (on Llama 3.1); matches or beats DeepSeek V3 and GPT-4o on key benchmarks.",
   "quants": [
     "GGUF Q4"
   ],
@@ -89,7 +89,21 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B",
       "notes": "pass@10; DeepSeek V3 94.6, GPT-4o 97.0"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 51.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B",
+      "notes": "AlpacaEval 2 (LC % win) for the final T\u00fclu 3 405B (RLVR) model, from the same official 'Performance' table on the HF model card that sources the other 6 existing rows (verified via raw README.md)."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 92.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B",
+      "notes": "HumanEval+ (pass@10) for the final T\u00fclu 3 405B model, from the same official 'Performance' table (verified via raw README.md)."
     }
   ],
-  "verificationNotes": "Release (Jan 30 2025) confirmed via TechCrunch, MarkTechPost, and Ai2's own X announcement. paramsB=405.85 confirmed precisely: safetensors index total 811,707,301,888 bytes / 2 bytes (bf16) = ~405.85B, exact match. ctxK=128 (131072) confirmed via config.json. All six benchmark rows confirmed present verbatim, but on the HF model card rather than the original allenai.org blog post (the blog's table is embedded as an image and not machine-readable) — sourceUrl updated from the blog URL to the HF card URL where the numbers were literally verified; scores themselves are unchanged. langCount=8 reflects Llama 3.1's documented 8 supported languages but is not explicitly restated in the Tülu 3 405B card itself (which says 'primarily English'); kept as a reasonable inherited spec but flagged as lower-confidence."
+  "verificationNotes": "Release (Jan 30 2025) confirmed via TechCrunch, MarkTechPost, and Ai2's own X announcement. paramsB=405.85 confirmed precisely: safetensors index total 811,707,301,888 bytes / 2 bytes (bf16) = ~405.85B, exact match. ctxK=128 (131072) confirmed via config.json. All six benchmark rows confirmed present verbatim, but on the HF model card rather than the original allenai.org blog post (the blog's table is embedded as an image and not machine-readable) \u2014 sourceUrl updated from the blog URL to the HF card URL where the numbers were literally verified; scores themselves are unchanged. langCount=8 reflects Llama 3.1's documented 8 supported languages but is not explicitly restated in the T\u00fclu 3 405B card itself (which says 'primarily English'); kept as a reasonable inherited spec but flagged as lower-confidence."
 }

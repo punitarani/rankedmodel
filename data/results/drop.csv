@@ -2,18 +2,54 @@ model_slug,score,source,source_url,evaluated_at,notes
 amazon-nova-lite,80.2,self-reported,https://deepranking.ai/llm-models/nova-lite,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 amazon-nova-micro,79.3,self-reported,https://deepranking.ai/llm-models/nova-micro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 amazon-nova-pro,85.4,self-reported,https://deepranking.ai/llm-models/nova-pro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+chatglm-6b,3.9,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's family-wide technical report re-evaluation table (Table 1); below the taxonomy's typical floor but verbatim as published for this early weak model.
+chatglm2-6b,25.6,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's 2024 family-wide technical report re-evaluation table (Table 1).
+chatglm3-6b,70.9,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's 2024 family-wide technical report (Table 1).
+claude-3-5-haiku,83.1,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"F1 score, 3-shot, Table 8."
 claude-3-5-sonnet,87.1,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,"F1 score, 3-shot"
+claude-3-5-sonnet-new,88.3,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"F1 score, 3-shot, Table 7."
 claude-3-haiku,78.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,"F1 score, 3-shot"
 claude-3-opus,83.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"F1 score, 3-shot"
 claude-3-sonnet,78.9,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"F1 score, 3-shot"
+deepseek-llm-67b,71.9,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6, F1"
+deepseek-r1-671b,92.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,DROP 3-shot F1
+deepseek-v3-671b,91.6,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,"DROP (3-shot F1), Chat model"
+ernie-4-5-300b-a47b,91.1,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,Table 5.
+gemini-1-0-pro,74.1,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 2, F1 score, variable shots."
+gemini-1-0-ultra,82.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 2, F1 score, variable shots."
 gemini-1-5-flash,78.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"F1, variable shots, Table 11"
+gemini-1-5-pro,74.9,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"F1, variable shots, Table 11 of the Gemini 1.5 technical report."
+gemma-2-27b,74.2,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf,2024-06-01,"3-shot, F1. Table 13 of the Gemma 2 technical report, PT 27B column (not currently listed on the abbreviated live HF card table)."
+gemma-2-9b,69.4,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf,2024-06-01,"3-shot, F1. Table 13 of the Gemma 2 technical report, PT 9B column (not currently listed on the abbreviated live HF card table)."
+gpt-3-175b,36.5,self-reported,https://arxiv.org/abs/2005.14165,,"Few-shot, F1 score (Table 3.7)"
 gpt-3-5-turbo,64.1,self-reported,https://arxiv.org/abs/2303.08774,,F1 score
 gpt-4,80.9,self-reported,https://arxiv.org/abs/2303.08774,,F1 score
+gpt-4-turbo,86,self-reported,https://github.com/openai/simple-evals,2024-05-13,"gpt-4-turbo-2024-04-09, F1 score, 3-shot. OpenAI simple-evals."
+gpt-4o,83.4,self-reported,https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947,,"DROP (F1) score of 83.4 for GPT-4o, part of the same OpenAI-sourced benchmark table (MMLU/GPQA/MATH/HumanEval/MGSM) already used for this model's other 4 rows. Directly fetched this community.openai.com thread and confirmed it literally lists 'DROP: 83.4' alongside the other 5 figures already in the corpus."
 granite-3-2-8b-instruct,50.95,self-reported,https://huggingface.co/ibm-granite/granite-3.2-8b-instruct,,
 granite-3-3-8b-instruct,59.36,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,
+hunyuan-a13b,91.1,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,
+hunyuan-large-a52b,88.9,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
+hunyuan-t1,93.1,self-reported,https://winbuzzer.com/2025/03/23/tencents-releases-its-hunyuan-t1-reasoning-model-beating-deepseek-r1-gpt-4-5-o1-across-benchmarks-xcxwbn/,,DROP F1; article notes T1 achieves the highest score on this metric among the models compared.
+hunyuan-turbos,89.8,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"3-shot F1, Table 4"
+internlm3-8b-instruct,83.1,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,"0-shot DROP F1, from official model card table."
+llama-3-70b,79.7,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct,,"DROP, 3-shot, F1, pretrained/base checkpoint."
+llama-3-8b,58.4,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"DROP, 3-shot, F1, pretrained/base checkpoint."
 minimax-text-01,87.8,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,F1
+mpt-30b-instruct,38.3,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct,2023-10-14,"F1 score (harness|drop|3, 3-shot), from the HF Open LLM Leaderboard v1's own evaluation-run results JSON for mosaicml/mpt-30b-instruct (third-party aggregator run, not vendor-reported)"
+mpt-7b-instruct,29.4,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct,2023-09-23,"F1 score (harness|drop|3, 3-shot = 0.2940), HF Open LLM Leaderboard v1 evaluation-run JSON, confirmed via direct curl+grep"
 olmo-2-13b,71.5,self-reported,https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct,,Instruct variant
 olmo-2-32b,78,self-reported,https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct,,"GPT-3.5 Turbo 70.2, GPT-4o mini 36.3"
 olmo-2-7b,60.8,self-reported,https://huggingface.co/allenai/OLMo-2-1124-7B,,
+openai-o1,90.2,self-reported,https://github.com/openai/simple-evals,,"DROP F1, 3-shot."
+openai-o1-mini,83.9,self-reported,https://github.com/openai/simple-evals,,"DROP F1, 3-shot."
+openai-o1-preview,74.8,self-reported,https://github.com/openai/simple-evals,,"DROP F1, 3-shot."
+openai-o3-mini-high,80.6,self-reported,https://github.com/openai/simple-evals,,"DROP F1, 3-shot."
+openhermes-2-5-mistral-7b,35.79,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_teknium__OpenHermes-2.5-Mistral-7B,2023-11-20,"3-shot DROP F1 from the same Open LLM Leaderboard details dataset (harness|drop|3, f1 0.35794)."
+orca-2-13b,57.97,self-reported,https://ar5iv.labs.arxiv.org/html/2311.11045,2023-11-18,"Zero-shot, Table 1 of the technical report; paper notes DROP was adopted per the OpenLLM Leaderboard convention (F1)."
+palm-2,85,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"Instruction-tuned PaLM 2 (L), 3-shot DROP (F1), from Table 5."
+palm-540b,69.4,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"PaLM 540B, 0-shot DROP (F1), from Table 4."
 phi-4-14b,75.5,self-reported,https://huggingface.co/microsoft/phi-4,,
+stable-beluga-2-freewilly-2-70b,50.3,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__StableBeluga2,2023-10-15,"Same dataset/run, harness|drop|3 F1: 0.503 (EM 0.433)."
+t-lu-3-70b,74.3,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B,,"DROP (3-shot) F1 for the final Tülu 3 70B (RLVR) model, from the same official 'Performance' table that sources the other 6 existing rows (verified via raw README.md)."
 yandexgpt-5-pro,63,independent,https://habr.com/ru/companies/bothub/articles/893128/,2025-02-01,DROP-RU (Russian variant)

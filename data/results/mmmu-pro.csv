@@ -1,17 +1,43 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-opus-4-5,70.6,self-reported,https://www.vellum.ai/blog/claude-opus-4-6-benchmarks,2025-11-24,No-tools configuration; with-tools scored 73.9% per the same source.
+claude-opus-4-6,73.9,self-reported,https://www.vellum.ai/blog/claude-opus-4-6-benchmarks,2026-02-05,No-tools configuration; with-tools scored 77.3% per the same source.
+claude-sonnet-4-5,67.5,self-reported,https://www.anthropic.com/claude-sonnet-4-6-system-card,2026-02-17,"MMMU-Pro, reasoning-only (no tools) configuration, averaged over 5 runs (Figure 2.17.2.A). With an image-cropping tool, Sonnet 4.5 scored 68.9%."
+claude-sonnet-4-6,74.5,self-reported,https://www.anthropic.com/claude-sonnet-4-6-system-card,2026-02-17,"MMMU-Pro, no-tools/adaptive-thinking-max-effort configuration (Section 2.17.2). With an image-cropping tool, Sonnet 4.6 scored 75.6%."
 command-a-218b,63,self-reported,https://cohere.com/blog/command-a-plus,,
+ernie-4-5-vl-424b-a47b,58.8,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 8, thinking mode."
+ernie-5-0-preview,65,independent,https://artificialanalysis.ai/models/ernie-5-0-thinking-preview,,"MMMU-Pro, from the same AA breakdown."
+exaone-4-5,68.6,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,
 gemini-3-1-flash-lite,76.8,self-reported,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/,2026-03-03,
 gemini-3-1-pro,80.5,self-reported,https://deepmind.google/models/gemini/pro/,2026-02-19,
 gemini-3-5-flash,83.6,self-reported,https://deepmind.google/models/gemini/flash/,2026-05-19,
 gemini-3-flash,81.2,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf,2025-12-01,MMMU-Pro variant
 gemini-3-pro,81,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf,2025-11-01,MMMU-Pro variant
+gemma-4,76.9,self-reported,https://ai.google.dev/gemma/docs/core/model_card_4,2026-04-02,"MMMU-Pro (vision), 31B."
 gemma-4-26b-a4b,73.8,self-reported,https://huggingface.co/google/gemma-4-26B-A4B-it,2026-04-02,"MMMU-Pro (vision), 26B A4B; also independently listed in the model repo's structured eval_results (.eval_results/mmmu_pro.yaml, value 73.8)."
+gpt-5,78.4,self-reported,https://runbear.io/posts/gpt-5-benchmarks,2025-08-07,"MMMU-Pro, GPT-5 with thinking/high reasoning effort = 78.4%, relayed from OpenAI's own launch-blog figures via Runbear, whose 'GPT-5 (thinking)' column was cross-checked and found to match this corpus's existing SWE-bench (74.9), AIME (94.6 implied via other quotes), HLE (24.8) and tau2-bench-telecom (96.7) rows exactly -- strong evidence Runbear is quoting OpenAI's self-reported figures verbatim rather than running its own eval."
 gpt-5-4-mini,76.6,self-reported,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,2026-03-17,"MMMU-Pro (standard, no Python tool; the 'w/ Python' variant scores 78.0%), xhigh reasoning effort."
 gpt-5-4-nano,66.1,self-reported,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,2026-03-17,"MMMU-Pro (standard, no Python tool; the 'w/ Python' variant scores 69.5%), xhigh reasoning effort."
+grok-4-5,80.4,independent,https://benchlm.ai/models/grok-4-5,,MMMU-Pro 80.4% (Artificial Analysis independent evaluation). Cross-corroborated by doit.software/blog/grok-statistics ('MMMU-Pro: 80%'). AA's own Grok 4.5 model page (directly fetched) lists MMMU-Pro among its individual Intelligence Index evaluations for this model.
+internvl2-5-78b,48.6,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,MMMU-Pro overall (std10 51.4 / vision 45.9 / overall 48.6)
 kimi-k2-5,78.5,self-reported,https://www.kimi.com/blog/kimi-k2-5,,"MMMU-Pro, official protocol (input order preserved, images prepended)"
 kimi-k2-6,79.4,self-reported,https://www.kimi.com/blog/kimi-k2-6,,MMMU-Pro standard; vendor also reports 80.1 with python tool use enabled
+llama-3-2-11b-vision,23.7,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md,2024-09-01,"Instruct, 'MMMU-Pro, Vision (test)' 0-shot acc (vision-only-input split, matching taxonomy description)"
+llama-3-2-90b-vision,33.8,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,"MMMU-Pro, Vision setting (question rendered purely as an image) — matches the taxonomy's 'vision-only-input variant of MMMU' description. A separate 'Standard' MMMU-Pro setting scored 45.2 but that variant is text+image (10-option), not vision-only-input, so it was left unmapped rather than forced onto this slug."
 mimo-v2-5,77.9,self-reported,https://mimo.xiaomi.com/mimo-v2-5/,,MMMU-Pro ('Image Understanding & Reasoning'); from the embedded multimodalData chart array.
 minimax-m3,78.1,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M3,,Reported on the official model card as 'MMMU Pro'.
+minimax-vl-01,52.7,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,From the same official evaluation table as the already-recorded MMMU score.
+mistral-large-3,56,independent,https://artificialanalysis.ai/models/mistral-large-3,,"MMMU-Pro (visual reasoning), independently measured by Artificial Analysis; last of only 7 models in their comparison set with a reported score."
+mistral-small-3-1-24b,49.25,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
+phi-4-multimodal-5-6b,38.5,self-reported,https://arxiv.org/abs/2503.01743,,Table 1 (vision-language benchmarks) of the Phi-4-Mini/Multimodal Technical Report; standard/vision sub-scores 39.7/37.3.
+phi-4-multimodal-instruct,38.5,self-reported,https://arxiv.org/abs/2503.01743,,"Table 1, MMMUPro (standard/vision avg); sub-scores 39.7/37.3."
+qwen2-5-vl-72b,51.1,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,2025-01-28,"MMMU_Pro, from the official HF model card image-benchmark table"
 qwen3-5-122b-a10b,76.9,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,,Vision-Language table.
+qwen3-5-397b-a17b,79,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,"Vision-Language table, STEM and Puzzle section."
 qwen3-5-omni-flash,68.2,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Table 6 (Vision→Text), STEM and Puzzle section. Paper does not specify which MMMU-Pro input variant (standard vs. vision-only) was used; flagging as a minor methodology caveat."
 qwen3-5-omni-plus,73.9,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 6 (Vision→Text), Qwen3.5-Omni-Plus column, cell S5.T6.3.4.4."
+qwen3-5-plus,22.77,independent,https://www.vals.ai/models/alibaba_qwen3.5-plus-thinking,2026-07-09,"Vals AI independent evaluation of Qwen3.5-Plus (Thinking mode). Labeled 'MMMU' on the model summary card but the underlying benchmark page (vals.ai/benchmarks/mmmu) is titled 'MMMU Pro' and follows the official MMMU-Pro protocol (~1,700 questions, 4-option, chain-of-thought) with 82 models tracked -- matches the model page's '82/82' (last place) ranking, confirming this is MMMU-Pro not base MMMU. This is a genuinely weak, unfavorable result (dead last of 82 models tested) and is included per the instruction to prioritize thoroughness over favorable-only results; it may reflect a harness/prompting mismatch specific to vals.ai's protocol rather than a true multimodal weakness, since Qwen3.5-Plus scores far higher on other official multimodal benchmarks (MMMU 85.0, MathVision 88.6 per vendor-side reporting for the sibling open-weight model) -- flagged for maintainer judgment rather than silently omitted."
+qwen3-6-27b,75.8,self-reported,https://huggingface.co/Qwen/Qwen3.6-27B,,Official HF model card.
+qwen3-6-35b-a3b,75.3,self-reported,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,,Official HF model card.
+qwen3-6-plus,78.8,self-reported,https://qwen.ai/blog?id=qwen3.6,2026-04-02,"Vision-language table, MMMU-Pro row."
+qwen3-7-plus,79,self-reported,https://qwen.ai/blog?id=qwen3.7-plus,2026-05-31,"Official Qwen launch blog, 'Multimodal Benchmarks / Multimodal Reasoning' table."
+seed-2-1-pro,81.6,self-reported,https://seed.bytedance.com/en/seed2_1,,"MMMU-Pro, no-tool configuration, same official table. With tool use scored 82.7% (Turbo: 80.1% / 82.2%)."

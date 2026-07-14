@@ -82,7 +82,119 @@
       "source": "self-reported",
       "sourceUrl": "https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947",
       "notes": "Multilingual Grade School Math; OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 83.4,
+      "source": "self-reported",
+      "sourceUrl": "https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947",
+      "notes": "DROP (F1) score of 83.4 for GPT-4o, part of the same OpenAI-sourced benchmark table (MMLU/GPQA/MATH/HumanEval/MGSM) already used for this model's other 4 rows. Directly fetched this community.openai.com thread and confirmed it literally lists 'DROP: 83.4' alongside the other 5 figures already in the corpus."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 69.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "notes": "MMMU (validation), 0-shot CoT. OpenAI's own figure from the 'Hello GPT-4o' launch blog (openai.com/index/hello-gpt-4o/, blocked to automated fetch, HTTP 403), reproduced verbatim in Table 2 of Anthropic's Claude 3.5 Sonnet Model Card Addendum, which cites this column as 'GPT-4o [8]' = OpenAI's Hello GPT-4o post."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 63.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "notes": "MathVista (testmini), 0-shot CoT. Same provenance as the MMMU row: OpenAI's Hello GPT-4o figures, reproduced in Anthropic's Claude 3.5 Sonnet Model Card Addendum Table 2."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 94.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "notes": "AI2D (test), 0-shot. Same provenance as the MMMU row above."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 85.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "notes": "ChartQA (test, relaxed accuracy), 0-shot CoT. Same provenance as the MMMU row above."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 92.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "notes": "DocVQA (test, ANLS score), 0-shot. Same provenance as the MMMU row above."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 16,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/irthomasthomas/undecidability/issues/933",
+      "evaluatedAt": "2024-08-13",
+      "notes": "ORIGINAL (non-Verified) SWE-bench score, deliberately distinct from the 33.2% SWE-bench-Verified figure in the same OpenAI post (no swe-bench-verified taxonomy slug exists -- do not conflate). Verbatim quote from OpenAI's 'Introducing SWE-bench Verified' blog: 'GPT-4o resolves 33.2% of samples on SWE-bench Verified... doubling its previous score of 16% on SWE-bench.' Uses the best-performing open-source agentic scaffold (Agentless) with GPT-4o as the base model, not a bare single-turn completion. The original openai.com/index/introducing-swe-bench-verified/ post returns HTTP 403 to automated fetch; sourced via a GitHub-mirrored copy reproducing the text verbatim (same fallback pattern already used elsewhere in this corpus entry for openai.com-blocked content)."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 38.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.04368",
+      "evaluatedAt": "2024-11-04",
+      "notes": "'Correct' % from Table 3 of OpenAI's SimpleQA paper ('Measuring short-form factuality in large language models'). The paper labels the row simply 'GPT-4o' without a dated snapshot; the corresponding F-score for the same row is 38.4."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 72.55,
+      "source": "independent",
+      "sourceUrl": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+      "notes": "5-shot CoT, from TIGER-Lab's own MMLU-Pro leaderboard/paper (the benchmark's creators), published June 2024 -- contemporaneous with GPT-4o's initial release. Note: Meta's 'Llama 3 Herd of Models' paper (arXiv 2407.21783) independently re-measured GPT-4o at 74.0 on nominally the same 5-shot-CoT config; used the benchmark authors' own figure here as the more canonical measurement to avoid a conflicting duplicate row."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 85.6,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2407.21783",
+      "evaluatedAt": "2024-07-23",
+      "notes": "From Table 2 of Meta's 'The Llama 3 Herd of Models' (arXiv 2407.21783), which independently evaluated GPT-4o as a comparison baseline for the Llama 3.1 release. Verified directly against the paper's PDF table."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 87.8,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2407.21783",
+      "evaluatedAt": "2024-07-23",
+      "notes": "MBPP EvalPlus (i.e. MBPP+), 0-shot. From the same Meta Llama-3 paper comparison table (Table 2), verified directly against the PDF."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 96.1,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2407.21783",
+      "evaluatedAt": "2024-07-23",
+      "notes": "8-shot CoT. From the same Meta Llama-3 paper comparison table (Table 2), verified directly against the PDF."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 96.7,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2407.21783",
+      "evaluatedAt": "2024-07-23",
+      "notes": "0-shot. From the same Meta Llama-3 paper comparison table (Table 2), verified directly against the PDF."
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 80.5,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2407.21783",
+      "evaluatedAt": "2024-07-23",
+      "notes": "Berkeley Function-Calling Leaderboard, from the same Meta Llama-3 paper table (published July 23, 2024, before BFCL v3's Sept 2024 launch). Meta reports this as plain 'BFCL' (not a versioned v3 variant), so mapped to the 'bfcl' slug rather than 'bfcl-v3' -- matching this corpus's existing convention for the identical table (see corpus/models/meta/llama-3-1-405b.json's bfcl row)."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 60.4,
+      "source": "independent",
+      "sourceUrl": "https://github.com/sierra-research/tau-bench",
+      "notes": "TAU-bench retail domain, pass^1, gpt-4o with the tool-calling (TC) strategy, from Sierra Research's official leaderboard/repo. Airline-domain score (42.0%, pass^1) omitted per this corpus's established convention of filing only the retail split under the single 'tau-bench' slug to avoid a duplicate-key collision (see corpus/models/anthropic/claude-3-5-sonnet-new.json for precedent)."
     }
   ],
-  "verificationNotes": "Release May 13, 2024 confirmed (Wikipedia); 128K context and $2.50/$10 per-million pricing confirmed via multiple independent pricing pages. MMLU 88.7 verified literally on the cited Wikipedia page. However, Wikipedia's GPT-4o article does NOT literally contain the GPQA/MATH/HumanEval/MGSM numbers (directly fetched and confirmed only MMLU is present there) — the original sourceUrl was wrong for those 4 rows. OpenAI's primary announcement (openai.com/index/hello-gpt-4o/) returned HTTP 403 to automated fetch, so I re-sourced those 4 rows to a community.openai.com thread I fetched directly and confirmed contains the exact literal figures (53.6/76.6/90.2/90.5), changing their source type to 'independent'."
+  "verificationNotes": "Release May 13, 2024 confirmed (Wikipedia); 128K context and $2.50/$10 per-million pricing confirmed via multiple independent pricing pages. MMLU 88.7 verified literally on the cited Wikipedia page. However, Wikipedia's GPT-4o article does NOT literally contain the GPQA/MATH/HumanEval/MGSM numbers (directly fetched and confirmed only MMLU is present there) \u2014 the original sourceUrl was wrong for those 4 rows. OpenAI's primary announcement (openai.com/index/hello-gpt-4o/) returned HTTP 403 to automated fetch, so I re-sourced those 4 rows to a community.openai.com thread I fetched directly and confirmed contains the exact literal figures (53.6/76.6/90.2/90.5), changing their source type to 'independent'."
 }

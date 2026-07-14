@@ -54,7 +54,55 @@
       "source": "independent",
       "sourceUrl": "https://patmcguinness.substack.com/p/fantastic-ai-models-and-where-to-ec5",
       "notes": "article states verbatim: 'StableBeluga2 ... get 68.8 on MMLU'"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 71.1,
+      "source": "independent",
+      "sourceUrl": "https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "HF Open LLM Leaderboard snapshot (2023-09-04), ARC-Challenge 25-shot: 71.1, for stabilityai/StableBeluga2. Also independently corroborated by a Japanese blog post (note.com/bakushu) quoting the same leaderboard figure."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 86.4,
+      "source": "independent",
+      "sourceUrl": "https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "HF Open LLM Leaderboard snapshot (2023-09-04), HellaSwag 10-shot: 86.4."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 59.4,
+      "source": "independent",
+      "sourceUrl": "https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "HF Open LLM Leaderboard snapshot (2023-09-04), TruthfulQA MC 0-shot: 59.4."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 35.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__StableBeluga2",
+      "evaluatedAt": "2023-10-15",
+      "notes": "HF 'open-llm-leaderboard-old' details dataset for stabilityai/StableBeluga2, harness|gsm8k|5 accuracy: 0.359, from the run dated 2023-10-15."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 50.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__StableBeluga2",
+      "evaluatedAt": "2023-10-15",
+      "notes": "Same dataset/run, harness|drop|3 F1: 0.503 (EM 0.433)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 83,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__StableBeluga2",
+      "evaluatedAt": "2023-10-15",
+      "notes": "Same dataset/run, harness|winogrande|5 accuracy: 0.830."
     }
   ],
-  "verificationNotes": "CONFIRMED real via HF model card raw README (stabilityai/StableBeluga2) and Stability AI's blog post (Jul 21 2023, updated Jul 28): Llama-2-70B base, Orca-style SFT, licensed under 'STABLE BELUGA NON-COMMERCIAL COMMUNITY LICENSE AGREEMENT' exactly as the card states (matches record). Blog confirms Stable Beluga 2 ranked #1 on HF Open LLM Leaderboard as of Jul 27 2023 — matches the note. MMLU 68.8 result CONFIRMED verbatim on patmcguinness.substack.com. DROPPED the open-llm-leaderboard-avg 71.4 result row: fetched winbuzzer.com's article twice (different objectives) and both times it discussed the ranking/GPT-3.5 comparison but contained no numeric aggregate leaderboard score anywhere on the page, so the figure could not be verified there and was removed."
+  "verificationNotes": "CONFIRMED real via HF model card raw README (stabilityai/StableBeluga2) and Stability AI's blog post (Jul 21 2023, updated Jul 28): Llama-2-70B base, Orca-style SFT, licensed under 'STABLE BELUGA NON-COMMERCIAL COMMUNITY LICENSE AGREEMENT' exactly as the card states (matches record). Blog confirms Stable Beluga 2 ranked #1 on HF Open LLM Leaderboard as of Jul 27 2023 \u2014 matches the note. MMLU 68.8 result CONFIRMED verbatim on patmcguinness.substack.com. DROPPED the open-llm-leaderboard-avg 71.4 result row: fetched winbuzzer.com's article twice (different objectives) and both times it discussed the ranking/GPT-3.5 comparison but contained no numeric aggregate leaderboard score anywhere on the page, so the figure could not be verified there and was removed."
 }

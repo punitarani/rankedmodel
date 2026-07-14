@@ -34,7 +34,7 @@
     "hf": "moonshotai/Kimi-K2.6",
     "docs": "https://www.kimi.com/blog/kimi-k2-6"
   },
-  "note": "Successor to K2.5; Moonshot's flagship open-weight agentic/coding model, extends context to 256K, adds native image/video input, and scales its 'Agent Swarm' orchestration to 300 sub-agents / ~4,000 coordinated steps. Vendor claims top-of-open-weights on SWE-bench Verified and near-parity with GPT-5.5/Claude Opus 4.6-class closed models on several coding/agentic suites; independent Artificial Analysis Intelligence Index score was 44 (v4.1 methodology), and LMArena text arena placed it around #7 overall (Elo ~1522) as the top open-weight entrant at the time — both corroborate strong but not universally frontier-topping performance versus the more selective vendor benchmark set.",
+  "note": "Successor to K2.5; Moonshot's flagship open-weight agentic/coding model, extends context to 256K, adds native image/video input, and scales its 'Agent Swarm' orchestration to 300 sub-agents / ~4,000 coordinated steps. Vendor claims top-of-open-weights on SWE-bench Verified and near-parity with GPT-5.5/Claude Opus 4.6-class closed models on several coding/agentic suites; independent Artificial Analysis Intelligence Index score was 44 (v4.1 methodology), and LMArena text arena placed it around #7 overall (Elo ~1522) as the top open-weight entrant at the time \u2014 both corroborate strong but not universally frontier-topping performance versus the more selective vendor benchmark set.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
@@ -111,6 +111,27 @@
       "source": "self-reported",
       "sourceUrl": "https://www.kimi.com/blog/kimi-k2-6",
       "notes": "Terminal-Bench 2.0"
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 80.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.kimi.com/blog/kimi-k2-6",
+      "notes": "CharXiv (RQ), no python tool use, avg@3, max-tokens=98,304; vendor also reports 86.7 with python tool use enabled. From the official Kimi K2.6 tech blog benchmark table."
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 87.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.kimi.com/blog/kimi-k2-6",
+      "notes": "MathVision, no python tool use, avg@3; vendor also reports 93.2 with python tool use enabled."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 73.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www.kimi.com/blog/kimi-k2-6",
+      "notes": "OSWorld-Verified, from the official Kimi K2.6 tech blog Agentic benchmark table (Kimi K2.5's own OSWorld-Verified score of 63.3 is already recorded on the sibling K2.5 corpus entry)."
     }
   ],
   "verificationNotes": "Confirmed real, released model (not a rumor). Cross-verified architecture/param counts (1T total/32B active/384 experts/61 layers/MLA/MoonViT) across the official Hugging Face model card and the official Kimi blog post (kimi.com/blog/kimi-k2-6). Release date April 20, 2026 corroborated by SiliconANGLE, MarkTechPost, Yicai Global, and the kimi-k2.org mirror; HF repo's own lastModified timestamp (2026-05-19) reflects a later card update, not the release date. Pricing $0.95/M input (cache miss) and $4.00/M output confirmed directly on Moonshot's own hosted platform (both platform.kimi.ai and artificialanalysis.ai's tracked listing agree). Independent corroboration beyond vendor self-reports: Artificial Analysis Intelligence Index = 44/100 (composite of GDPval-AA v2, tau3-Banking, Terminal-Bench v2.1, SciCode, HLE, GPQA-Diamond, CritPt, AA-Omniscience, AA-LCR) and an LMArena text-arena placement around #7 overall / Elo ~1522, both independently measured and both broadly consistent with (though less flattering than) Moonshot's own benchmark table."

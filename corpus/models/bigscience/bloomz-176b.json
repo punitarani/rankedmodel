@@ -66,6 +66,20 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/bigscience/bloomz",
       "notes": "ANLI round 1, validation, zero-shot accuracy"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 12.06,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/bigscience/bloomz",
+      "notes": "HumanEval pass@1, Python, zero-shot; from the model-index in the HF model card (openai_humaneval, test split). pass@10 (26.53) and pass@100 (48.44) are also on the card but have no corresponding taxonomy slug."
+    },
+    {
+      "benchmarkSlug": "superglue",
+      "score": 82.14,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/bigscience/bloomz",
+      "notes": "SuperGLUE CB (CommitmentBank) subtask, validation, zero-shot accuracy."
     }
   ],
   "verificationNotes": "Confirmed on HF model card: 176B params, RAIL v1.0 license, Winogrande XL 59.27, XWinograd-English 69.08, ANLI-r1 48.6 all literally present. arXiv 2211.01786 (Crosslingual Generalization through Multitask Finetuning) was submitted November 3, 2022, exactly matching the record's release date. No changes made."

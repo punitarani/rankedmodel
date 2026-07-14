@@ -2,9 +2,7 @@ import { expect, test } from '@playwright/test'
 import { datasetCounts, gotoHydrated, pickOption } from './helpers'
 
 test.describe('rankings', () => {
-  test('default view: rank-eligible rows sorted by index, Gemini 3.1 Pro first', async ({
-    page,
-  }) => {
+  test('default view: rank-eligible rows sorted by index, GPT-5.6 first', async ({ page }) => {
     const { models } = datasetCounts()
     await gotoHydrated(page, '/rankings')
     await expect(page.getByTestId('rankings-meta')).toContainText(
@@ -13,8 +11,8 @@ test.describe('rankings', () => {
     // the coverage gate (D20) keeps single-benchmark curiosities (Doubao) out of the top; the
     // #1 row is the broadly-benchmarked frontier leader
     const first = page.getByTestId('ranking-row').first()
-    await expect(first).toContainText('Gemini 3.1 Pro')
-    await expect(first).toContainText('91.1')
+    await expect(first).toContainText('GPT-5.6')
+    await expect(first).toContainText('90.5')
   })
 
   test('column sort click mutates URL and reorders rows', async ({ page }) => {

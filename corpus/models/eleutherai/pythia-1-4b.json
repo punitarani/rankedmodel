@@ -46,6 +46,71 @@
     "releaseDate": "https://arxiv.org/abs/2304.01373",
     "openness": "https://huggingface.co/EleutherAI/pythia-1.4b"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "lambada",
+      "score": 61.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, LM Eval Harness, official final-checkpoint (step143000, i.e. fully-trained v1.1) raw eval JSON from the Pythia GitHub repo \u2014 lambada_openai acc=0.6161."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 70.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 piqa acc=0.7089."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 60.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 arc_easy acc=0.6065."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 26,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 arc_challenge acc=0.2602."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 57.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 winogrande acc=0.5730."
+    },
+    {
+      "benchmarkSlug": "mmlu-anatomy",
+      "score": 28.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 hendrycksTest-anatomy acc=0.2815 (near chance for this small base model)."
+    },
+    {
+      "benchmarkSlug": "mmlu-clinical-knowledge",
+      "score": 26.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 hendrycksTest-clinical_knowledge acc=0.2679 (near chance for this small base model)."
+    },
+    {
+      "benchmarkSlug": "mmlu-medical-genetics",
+      "score": 36,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 hendrycksTest-medical_genetics acc=0.36."
+    }
+  ],
   "verificationNotes": "Confirmed real: fetched huggingface.co/EleutherAI/pythia-1.4b - exact param count 1,414,647,808 (=1.41B, rounds to 1.4 matching record), 24 layers, Apache-2.0 license confirmed. Training used 2048 sequence length (ctxK=2 confirmed via arxiv paper details). Paper submission date 2023-04-03 confirmed on arxiv. No results rows to verify (none were provided)."
 }

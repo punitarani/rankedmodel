@@ -9,7 +9,7 @@
   "paramsB": 7.3,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense transformer — 32 layers, grouped-query attention + sliding-window attention",
+  "archDisplay": "Dense transformer \u2014 32 layers, grouped-query attention + sliding-window attention",
   "ctxK": 8,
   "modalities": [
     "text"
@@ -102,7 +102,28 @@
       "score": 47.5,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2310.06825"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 83,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2310.06825",
+      "notes": "Table 2 of the Mistral 7B paper, Pretrained row (fetched via ar5iv HTML mirror and cross-checked against raw arxiv text)."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 80,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2310.06825",
+      "notes": "Table 2 of the Mistral 7B paper (Arc-e column), Pretrained row."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 69.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2310.06825",
+      "notes": "Table 2 of the Mistral 7B paper (TriviaQA column), Pretrained row."
     }
   ],
-  "verificationNotes": "Existence and identity confirmed: mistral.ai/news/announcing-mistral-7b/ and HF mistralai/Mistral-7B-v0.1 card (magnet-link release 2023-09-27, Apache-2.0, 7B params ~7.3B per architecture config, GQA+SWA, 32 layers). All 8 benchmark rows confirmed literally in arxiv 2310.06825 Table 2 (fetched via ar5iv HTML mirror): MMLU 60.1, HellaSwag 81.3, WinoGrande 75.3, ARC-C 55.5, GSM8K 52.2, MATH 13.1, HumanEval 30.5, MBPP 47.5 — no changes. 8K context confirmed specific to v0.1 (docs page for v0.3 shows 32K, a later variant, so ctxK=8 for this v0.1 record is correct, not an error). Pricing $0.25/$0.25 and retirement date 2025-03-30 for open-mistral-7b corroborated by Microsoft Foundry retirement-schedule listing and Helicone pricing page."
+  "verificationNotes": "Existence and identity confirmed: mistral.ai/news/announcing-mistral-7b/ and HF mistralai/Mistral-7B-v0.1 card (magnet-link release 2023-09-27, Apache-2.0, 7B params ~7.3B per architecture config, GQA+SWA, 32 layers). All 8 benchmark rows confirmed literally in arxiv 2310.06825 Table 2 (fetched via ar5iv HTML mirror): MMLU 60.1, HellaSwag 81.3, WinoGrande 75.3, ARC-C 55.5, GSM8K 52.2, MATH 13.1, HumanEval 30.5, MBPP 47.5 \u2014 no changes. 8K context confirmed specific to v0.1 (docs page for v0.3 shows 32K, a later variant, so ctxK=8 for this v0.1 record is correct, not an error). Pricing $0.25/$0.25 and retirement date 2025-03-30 for open-mistral-7b corroborated by Microsoft Foundry retirement-schedule listing and Helicone pricing page."
 }

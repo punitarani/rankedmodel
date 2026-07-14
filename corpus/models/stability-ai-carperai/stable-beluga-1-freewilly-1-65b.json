@@ -5,7 +5,7 @@
   "releaseDate": "2023-07-21",
   "status": "released",
   "openness": "open-weights",
-  "license": "CC BY-NC-4.0 (Non-Commercial Creative Commons License) — released as delta weights over Meta's LLaMA 65B",
+  "license": "CC BY-NC-4.0 (Non-Commercial Creative Commons License) \u2014 released as delta weights over Meta's LLaMA 65B",
   "paramsB": 65,
   "activeParamsB": null,
   "archClass": "dense",
@@ -43,6 +43,39 @@
     "releaseDate": "https://stability.ai/news/stable-beluga-large-instruction-fine-tuned-models",
     "openness": "https://huggingface.co/stabilityai/StableBeluga1-Delta"
   },
-  "results": [],
-  "verificationNotes": "CONFIRMED real via HF model card raw README (stabilityai/StableBeluga1-Delta) and Stability AI's blog post (published Jul 21 2023, updated Jul 28): LLaMA-65B base, Orca-style SFT, delta-weight release, ranked #4 on HF Open LLM Leaderboard as of Jul 27 2023 — matches the note. CORRECTED license: the HF README literally states 'Fine-tuned checkpoints (StableBeluga1) is licensed under the Non-Commercial Creative Commons license (CC BY-NC-4.0)' — this is NOT the 'Stable Beluga Non-Commercial Community License' (that named license applies only to Beluga 2). Context length (2048) is the standard LLaMA-1 architecture value; the HF card itself states no explicit max-sequence-length. DROPPED the sole result row (MMLU 64.83, sourceUrl llm.extractum.io): that URL fails TLS certificate validation (hostname mismatch — the domain now resolves to an unrelated site, ag3ntum.com) and no alternate source could be found confirming this exact figure, so it was removed per the no-unconfirmed-numbers rule."
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 64.8,
+      "source": "independent",
+      "sourceUrl": "https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "HF Open LLM Leaderboard snapshot (2023-09-04) for stabilityai/StableBeluga1-Delta, MMLU 5-shot: 64.8. This replaces the previously-dropped MMLU 64.83 figure whose sourceUrl (llm.extractum.io) had gone dead; this new source is a live, fetchable archival mirror of the original leaderboard data and closely matches the earlier (unconfirmable) figure."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 68.2,
+      "source": "independent",
+      "sourceUrl": "https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "HF Open LLM Leaderboard snapshot (2023-09-04), ARC-Challenge 25-shot: 68.2, for stabilityai/StableBeluga1-Delta."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 85.9,
+      "source": "independent",
+      "sourceUrl": "https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "HF Open LLM Leaderboard snapshot (2023-09-04), HellaSwag 10-shot: 85.9."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 55.8,
+      "source": "independent",
+      "sourceUrl": "https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "HF Open LLM Leaderboard snapshot (2023-09-04), TruthfulQA MC 0-shot: 55.8."
+    }
+  ],
+  "verificationNotes": "CONFIRMED real via HF model card raw README (stabilityai/StableBeluga1-Delta) and Stability AI's blog post (published Jul 21 2023, updated Jul 28): LLaMA-65B base, Orca-style SFT, delta-weight release, ranked #4 on HF Open LLM Leaderboard as of Jul 27 2023 \u2014 matches the note. CORRECTED license: the HF README literally states 'Fine-tuned checkpoints (StableBeluga1) is licensed under the Non-Commercial Creative Commons license (CC BY-NC-4.0)' \u2014 this is NOT the 'Stable Beluga Non-Commercial Community License' (that named license applies only to Beluga 2). Context length (2048) is the standard LLaMA-1 architecture value; the HF card itself states no explicit max-sequence-length. DROPPED the sole result row (MMLU 64.83, sourceUrl llm.extractum.io): that URL fails TLS certificate validation (hostname mismatch \u2014 the domain now resolves to an unrelated site, ag3ntum.com) and no alternate source could be found confirming this exact figure, so it was removed per the no-unconfirmed-numbers rule."
 }

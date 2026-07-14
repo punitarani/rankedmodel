@@ -81,6 +81,48 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct",
       "notes": "0-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 60,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct",
+      "notes": "ARC_Challenge, 0-shot accuracy"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 82,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct",
+      "notes": "ARC_Easy, 0-shot accuracy"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 73,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct",
+      "notes": "IF_Eval, 0-shot accuracy"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 59,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct",
+      "notes": "TruthfulQA, 0-shot accuracy"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 62,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct",
+      "notes": "TriviaQA, 5-shot exact match"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 49,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct",
+      "notes": "OpenBookQA, 0-shot accuracy"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card fetch (krutrim-ai-labs/Krutrim-2-instruct): 12B dense Mistral-NeMo-based model, 40 layers, 5120 hidden dim, GQA 32 heads/8 KV heads, 128K context, 131,072 vocab, released 2025-01-31, license 'Krutrim Community License'. Natively supports English + 22 Indian languages (23 total), matching langCount. All 5 benchmark rows (MMLU 63, HumanEval Pass@10 80, GSM8K 71, HellaSwag 83, Winogrande 77) literally verified present on the HF page. apiAvailable=true confirmed via Krutrim Cloud platform (HF page itself notes no HF Inference Provider deployment, but model is served on Krutrim's own cloud/API). No changes needed."

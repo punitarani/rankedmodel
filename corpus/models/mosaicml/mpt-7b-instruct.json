@@ -48,6 +48,31 @@
     "releaseDate": "https://huggingface.co/mosaicml/mpt-7b-instruct",
     "openness": "https://www.databricks.com/blog/mpt-7b"
   },
-  "results": [],
-  "verificationNotes": "Existence and release date (2023-05-05, same announcement as base MPT-7B), fine-tuning datasets (Dolly-15k + Anthropic HH-RLHF / dolly_hhrlhf), and 6.7B params all corroborated via HF and MosaicML sources. CORRECTED the license: the input record claimed 'Apache 2.0' (with a note claiming this reversed an early CC-BY-SA-3.0 designation) — this is backwards. The official Databricks/MosaicML announcement blog explicitly states MPT-7B-Instruct is licensed CC-By-SA-3.0 (distinct from the Apache-2.0 base model and the non-commercial CC-By-NC-SA-4.0 Chat variant), and this is corroborated by the model's actual HF README frontmatter and multiple independent trackers (e.g. eugeneyan/open-llms). No results rows were present to verify (array was empty)."
+  "results": [
+    {
+      "benchmarkSlug": "drop",
+      "score": 29.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct",
+      "evaluatedAt": "2023-09-23",
+      "notes": "F1 score (harness|drop|3, 3-shot = 0.2940), HF Open LLM Leaderboard v1 evaluation-run JSON, confirmed via direct curl+grep"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 2.8,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct",
+      "evaluatedAt": "2023-09-23",
+      "notes": "5-shot accuracy (harness|gsm8k|5 = 0.0281), confirmed via direct curl+grep. Genuinely below the taxonomy's typical 5-100 range floor for this benchmark -- a real, verified very-low score for this small 2023 instruction-tuned model on GSM8K, not a transcription error."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 70.5,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct",
+      "evaluatedAt": "2023-09-23",
+      "notes": "5-shot accuracy (harness|winogrande|5 = 0.7048), confirmed via direct curl+grep"
+    }
+  ],
+  "verificationNotes": "Existence and release date (2023-05-05, same announcement as base MPT-7B), fine-tuning datasets (Dolly-15k + Anthropic HH-RLHF / dolly_hhrlhf), and 6.7B params all corroborated via HF and MosaicML sources. CORRECTED the license: the input record claimed 'Apache 2.0' (with a note claiming this reversed an early CC-BY-SA-3.0 designation) \u2014 this is backwards. The official Databricks/MosaicML announcement blog explicitly states MPT-7B-Instruct is licensed CC-By-SA-3.0 (distinct from the Apache-2.0 base model and the non-commercial CC-By-NC-SA-4.0 Chat variant), and this is corroborated by the model's actual HF README frontmatter and multiple independent trackers (e.g. eugeneyan/open-llms). No results rows were present to verify (array was empty)."
 }

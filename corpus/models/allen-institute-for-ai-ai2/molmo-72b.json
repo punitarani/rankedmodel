@@ -48,6 +48,63 @@
     "releaseDate": "https://huggingface.co/papers/2409.17146",
     "openness": "https://huggingface.co/allenai/Molmo-72B-0924"
   },
-  "results": [],
-  "verificationNotes": "Existence, Sept 25 2024 release, and Apache-2.0 license confirmed via Ai2 blog/TechCrunch and live HF model card. Both benchmark rows (81.2 academic avg, 1077 human Elo) literally confirmed on the HF card. paramsB=72 matches the official model name; live config.json (hidden=8192, 80 layers) plus safetensors index (293.2GB, fp32) implies actual total weights (LLM backbone + CLIP vision encoder) are closer to ~73.3B, with the Qwen2-72B LLM backbone alone ~72.7B — 72 is the conventional rounded label, kept unchanged. ctxK=4 (4096) confirmed exactly from config.json."
+  "results": [
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 96.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.17146",
+      "evaluatedAt": "2024-09-25",
+      "notes": "Molmo Technical Report ('Molmo and PixMo') Table 1, Molmo-72B row. Column order verified via direct PDF text extraction (pdftotext -raw, which preserved correct left-to-right header order unlike layout mode) and cross-checked against the paper's explicit claims (highest academic average 81.2, second-highest Elo 1077 just behind GPT-4o's 1079 - both match exactly)."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 87.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.17146",
+      "evaluatedAt": "2024-09-25",
+      "notes": "Molmo Technical Report Table 1, Molmo-72B row."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 86.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.17146",
+      "evaluatedAt": "2024-09-25",
+      "notes": "VQA v2.0 test-dev; Molmo Technical Report Table 1, Molmo-72B row."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 93.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.17146",
+      "evaluatedAt": "2024-09-25",
+      "notes": "Molmo Technical Report Table 1, Molmo-72B row."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 83.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.17146",
+      "evaluatedAt": "2024-09-25",
+      "notes": "Molmo Technical Report Table 1, Molmo-72B row. Exceeds the taxonomy's documented textvqa range (40-75); this is the value the paper itself reports, corroborated identically by the later Molmo2 Technical Report's own Molmo-72B baseline row."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 54.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.17146",
+      "evaluatedAt": "2024-09-25",
+      "notes": "MMMU val; Molmo Technical Report Table 1, Molmo-72B row."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 58.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.17146",
+      "evaluatedAt": "2024-09-25",
+      "notes": "MathVista testmini; Molmo Technical Report Table 1, Molmo-72B row."
+    }
+  ],
+  "verificationNotes": "Existence, Sept 25 2024 release, and Apache-2.0 license confirmed via Ai2 blog/TechCrunch and live HF model card. Both benchmark rows (81.2 academic avg, 1077 human Elo) literally confirmed on the HF card. paramsB=72 matches the official model name; live config.json (hidden=8192, 80 layers) plus safetensors index (293.2GB, fp32) implies actual total weights (LLM backbone + CLIP vision encoder) are closer to ~73.3B, with the Qwen2-72B LLM backbone alone ~72.7B \u2014 72 is the conventional rounded label, kept unchanged. ctxK=4 (4096) confirmed exactly from config.json."
 }

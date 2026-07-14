@@ -64,6 +64,22 @@
       "sourceUrl": "https://qwenlm.github.io/blog/codeqwen1.5/",
       "evaluatedAt": "2024-04-16",
       "notes": "Base model, 0-shot"
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 45.7,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/codeqwen1.5/",
+      "evaluatedAt": "2024-04-16",
+      "notes": "Base model, 0-shot."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 60.2,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/codeqwen1.5/",
+      "evaluatedAt": "2024-04-16",
+      "notes": "Base model, 0-shot."
     }
   ],
   "verificationNotes": "Fetched qwenlm.github.io/blog/codeqwen1.5/ directly: confirms release 2024-04-16, 7B params, 64K context, ~3T code tokens, 92 programming languages, HumanEval-Chat 83.5. Both cited result rows (HumanEval 51.8, MBPP 72.2, base 0-shot) appear verbatim on the page. No changes made."

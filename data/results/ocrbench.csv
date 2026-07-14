@@ -1,9 +1,17 @@
 model_slug,score,source,source_url,evaluated_at,notes
+deepseek-vl-7b,456,self-reported,https://arxiv.org/html/2403.05525v2,2024-03-08,"Table 5, DeepSeek-VL 7B row, raw OCRBench score out of 1000."
 deepseek-vl2,811,self-reported,https://arxiv.org/html/2412.10302v1,,"Base variant, raw OCRBench score out of 1000"
+ernie-4-5-vl-424b-a47b,872,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 8, thinking mode (non-thinking mode scores 883 in Table 7)."
 glm-4v-9b,786,self-reported,https://huggingface.co/THUDM/glm-4v-9b,,out of 1000
 internvl2-5-78b,854,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,
 internvl3-78b,906,self-reported,https://arxiv.org/html/2504.10479v1,,
+minicpm-llama3-v-2-5,725,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md,2024-05-20,From the official MiniCPM-V repo's model-specific results table (also mirrored on the HF model card).
 minicpm-o-2-6,897,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-01,State-of-the-art for models under 25B params
+minicpm-v-2-6,852,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md,2024-08-06,
+minimax-vl-01,865,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,Reported out of 1000 on the official model card; MiniMax-VL-01's highest-scoring benchmark in its comparison table.
+qwen2-5-vl-72b,885,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,2025-01-28,
+qwen2-vl-72b,877,self-reported,https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct,,"OCRBench, /1000 scale."
 qwen3-5-122b-a10b,92.1,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,,Text Recognition & Document Understanding category.
+qwen3-5-397b-a17b,93.1,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,"Vision-Language table, Text Recognition and Document Understanding section."
 qwen3-5-omni-flash,89.1,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Table 6 (Vision→Text), Text Recognition and Document Understanding section."
 qwen3-5-omni-plus,91.3,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 6 (Vision→Text), Qwen3.5-Omni-Plus column, cell S5.T6.3.20.4."

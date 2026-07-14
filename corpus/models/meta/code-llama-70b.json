@@ -50,6 +50,23 @@
     "releaseDate": "https://ai.meta.com/blog/code-llama-large-language-model-coding/",
     "openness": "https://ai.meta.com/blog/code-llama-large-language-model-coding/"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 53,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2308.12950v3",
+      "evaluatedAt": "2024-01-29",
+      "notes": "pass@1, base Code Llama 70B (non-instruct, non-Python). Table 2 of the Code Llama paper (arXiv 2308.12950v3, updated when the 70B family was released Jan 29 2024). Confirmed via two independent direct fetches of the paper plus corroborating web search (which also distinguished this from the separate Code Llama 70B Python variant at 57.3% and 70B Instruct at 67.8%, ruling out cross-variant confusion)."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 62.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2308.12950v3",
+      "evaluatedAt": "2024-01-29",
+      "notes": "pass@1, base Code Llama 70B. Table 2 of the Code Llama paper (arXiv 2308.12950v3). Confirmed via two independent direct fetches of the paper; consistent across sources."
+    }
+  ],
   "verificationNotes": "Confirmed real and unaltered. Meta's official blog (ai.meta.com/blog/code-llama-large-language-model-coding) shows the 'Update: Jan 29, 2024: Releasing Code Llama 70B' notice; independent press (CIO Dive, InfoQ, AI at Meta's own X announcement) corroborates the Jan 29 2024 date and the 1-trillion-token code training claim (vs 500B for earlier sizes). HF model card (codellama/CodeLlama-70b-hf) confirms 16K fine-tuned context (100K supported at inference) and the Llama 2 Community License Agreement governing the model. No numeric changes needed; paramsB kept at marketed '70B' though the HF card's raw config reports ~69B literal parameters."
 }

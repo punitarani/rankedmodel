@@ -77,6 +77,38 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen-72B",
       "evaluatedAt": "2023-11-30"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 35.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-72B",
+      "evaluatedAt": "2023-11-30",
+      "notes": "4-shot; from Qwen base-model comparison table on HF/GitHub README"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 52.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-72B",
+      "evaluatedAt": "2023-11-30",
+      "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 67.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-72B",
+      "evaluatedAt": "2023-11-30",
+      "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 83.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-72B",
+      "evaluatedAt": "2023-11-30",
+      "notes": "5-shot"
     }
   ],
   "verificationNotes": "Confirmed real, released 2023-11-30 per GitHub README. 72B params and 80 hidden layers confirmed via raw config.json (num_hidden_layers=80). Native 32K context (adapted RoPE base, no NTK extension needed) confirmed via GitHub README. Tongyi Qianwen commercial license confirmed. All 4 benchmark scores (mmlu 77.4, c-eval 83.3, gsm8k 78.9, humaneval 35.4) confirmed verbatim on HF/GitHub."

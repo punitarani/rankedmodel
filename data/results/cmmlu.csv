@@ -1,7 +1,29 @@
 model_slug,score,source,source_url,evaluated_at,notes
 baichuan2-13b,61.97,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,5-shot
 baichuan2-7b,57.07,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,5-shot
+chatglm-6b,25.3,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's family-wide technical report re-evaluation table (Table 1).
+chatglm2-6b,50,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's 2024 family-wide technical report re-evaluation table (Table 1).
+chatglm3-6b,67.5,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,"Official ChatGLM3 repo 'Evaluation Results / Typical Tasks' table (8-benchmark table), ChatGLM3-6B-Base row; 0-shot."
+deepseek-coder-v2-236b,80.9,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,2024-06-17,
+deepseek-llm-67b,67.8,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6; also matches the official GitHub README table"
+deepseek-v2-236b,81.6,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,2024-05-07,"CMMLU score for DeepSeek-V2 Chat (RL), from the same official HF model card table."
+deepseekmoe-16b,42.5,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, CMMLU accuracy 5-shot, DeepSeekMoE 16B column."
+ernie-4-5-300b-a47b,90.2,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,Table 5.
+hunyuan-large-a52b,90.2,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
+hunyuan-t1,90,self-reported,https://winbuzzer.com/2025/03/23/tencents-releases-its-hunyuan-t1-reasoning-model-beating-deepseek-r1-gpt-4-5-o1-across-benchmarks-xcxwbn/,,
+hunyuan-turbos,89.4,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"5-shot, Table 4"
+internlm2-5-7b,78,self-reported,https://huggingface.co/internlm/internlm2_5-7b-chat,,"InternLM2.5-7B-Chat, 5-shot, from official HF OpenCompass evaluation table."
+internlm3-8b-instruct,83.1,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,"0-shot, from official model card table (also on HF raw README)."
 minicpm-2b,51.07,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table; Chinese MMLU analogue
+minicpm3-4b,73.3,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,
+mpt-7b,25.9,independent,https://arxiv.org/abs/2405.13386,2024-05-22,"5-shot via OpenCompass, 360Zhinao Technical Report Table 2 — confirmed by direct PDF read."
+qwen-1-8b,52.1,self-reported,https://github.com/QwenLM/Qwen/blob/main/README.md,2023-11-30,5-shot.
+qwen-14b,71,self-reported,https://huggingface.co/Qwen/Qwen-14B,2023-09-25,5-shot
+qwen-72b,83.6,self-reported,https://huggingface.co/Qwen/Qwen-72B,2023-11-30,5-shot
+qwen-7b,62.2,self-reported,https://huggingface.co/Qwen/Qwen-7B,2023-09-28,5-shot
 qwen1-5-72b,83.5,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
+qwen2-7b,83.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 5-shot"
 skywork-13b,61.8,self-reported,https://huggingface.co/Skywork/Skywork-13B-base,,
 skywork-moe-base,79.5,self-reported,https://arxiv.org/html/2406.06563v1,,
+yi-34b,83.7,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,"Yi-34B base model, Yi technical report Table 2."
+yi-6b,75.5,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,"Yi-6B base model, Yi technical report Table 2."

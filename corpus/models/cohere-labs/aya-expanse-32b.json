@@ -59,6 +59,14 @@
       "sourceUrl": "https://huggingface.co/CohereLabs/aya-expanse-32b",
       "evaluatedAt": "2024-10-24",
       "notes": "English MMLU-Pro"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 73.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.04261",
+      "evaluatedAt": "2024-10-24",
+      "notes": "5-shot, native chain-of-thought with strict-match scoring, averaged across 7 languages (Table 3, 32B model class) from the Aya Expanse technical report."
     }
   ],
   "verificationNotes": "Confirmed genuine via official Cohere blog (cohere.com/blog/aya-expanse-connecting-our-world, dated 2024-10-24, matches releaseDate) and SiliconANGLE coverage same date. Context length independently verified at 128K on the HF model card (not 8K as one community discussion questioned). MMLU-Pro 45.41 score directly fetched and confirmed present on the exact sourceUrl (huggingface.co/CohereLabs/aya-expanse-32b). API pricing $0.50/$1.50 confirmed via Cohere pricing docs. No changes needed."

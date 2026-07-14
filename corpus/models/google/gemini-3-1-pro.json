@@ -88,7 +88,55 @@
       "sourceUrl": "https://deepmind.google/models/gemini/pro/",
       "evaluatedAt": "2026-02-19",
       "notes": "LiveCodeBench Pro, Elo rating (not percent)"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 44.4,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/pro/",
+      "evaluatedAt": "2026-02-19",
+      "notes": "Humanity's Last Exam, no tools (51.4% with search+code execution). Confirmed on both deepmind.google/models/gemini/pro/ and deepmind.google/models/model-cards/gemini-3-1-pro/."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 68.5,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/pro/",
+      "evaluatedAt": "2026-02-19",
+      "notes": "Terminal-Bench 2.0, Terminus-2 agent harness."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 54.2,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/pro/",
+      "evaluatedAt": "2026-02-19",
+      "notes": "SWE-Bench Pro (Public), single attempt."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1317,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/pro/",
+      "evaluatedAt": "2026-02-19",
+      "notes": "GDPval-AA, Elo-style rating for expert/professional tasks."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 99.3,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/pro/",
+      "evaluatedAt": "2026-02-19",
+      "notes": "tau2-bench Telecom domain (labeled '\u03c42-bench Telecom' on the page). Page also shows a separate '\u03c42-bench Retail' score of 90.8%, which has no matching taxonomy slug and was left out."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 85.9,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/pro/",
+      "evaluatedAt": "2026-02-19",
+      "notes": "BrowseComp agentic web-browsing benchmark, Search+Python+Browse tool setting."
     }
   ],
-  "verificationNotes": "Confirmed real via blog.google (2026-02-19 launch) and deepmind.google/models/gemini/pro/ (fetched directly). All 5 benchmark numbers (GPQA 94.3, ARC-AGI-2 77.1, SWE-bench 80.6, MMMU-Pro 80.5, LiveCodeBench Pro 2887 Elo) literally confirmed on the cited pages. 1M context and $2/$12 pricing confirmed via independent sources. Still in preview as of July 2026 (not yet GA) per multiple July-2026 press coverage — status left as preview, correctly. No changes to record."
+  "verificationNotes": "Confirmed real via blog.google (2026-02-19 launch) and deepmind.google/models/gemini/pro/ (fetched directly). All 5 benchmark numbers (GPQA 94.3, ARC-AGI-2 77.1, SWE-bench 80.6, MMMU-Pro 80.5, LiveCodeBench Pro 2887 Elo) literally confirmed on the cited pages. 1M context and $2/$12 pricing confirmed via independent sources. Still in preview as of July 2026 (not yet GA) per multiple July-2026 press coverage \u2014 status left as preview, correctly. No changes to record."
 }

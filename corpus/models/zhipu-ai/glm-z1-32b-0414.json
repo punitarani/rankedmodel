@@ -49,6 +49,63 @@
     "releaseDate": "https://www.prnewswire.com/news-releases/zai-unveils-new-glm-open-source-models-with-world-class-reasoning-performance-302429306.html",
     "openness": "https://huggingface.co/zai-org/GLM-Z1-32B-0414"
   },
-  "results": [],
-  "verificationNotes": "Confirmed real, released the same day (2025-04-14) as GLM-4-32B-0414 in the same Z.ai open-source batch ('base, reasoning, and rumination models... all under the MIT license' per PRNewswire announcement). MIT license and 'developed based on GLM-4-32B-0414 through cold start and extended reinforcement learning' description confirmed on the HF model card. HF safetensors API shows identical 32,566,081,536 params (32.57B, matches the 32B base it was tuned from). config.json max_position_embeddings=32768 confirms 32K context. Original record had zero result rows, so none needed to be dropped — nothing to verify there. No changes made."
+  "results": [
+    {
+      "benchmarkSlug": "aime",
+      "score": 80.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/GLM-4/blob/main/README.md",
+      "notes": "AIME24, read directly from the 'Bench-Z1-32B.png' evaluation chart in the official GLM-4/GLM-Z1-0414 GitHub README (Evaluation Results section)."
+    },
+    {
+      "benchmarkSlug": "omnimath",
+      "score": 68.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/GLM-4/blob/main/README.md",
+      "notes": "Labeled 'Omni-MATH' in the official GitHub README benchmark chart."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 59.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/GLM-4/blob/main/README.md",
+      "notes": "Labeled 'LCB (2408-2501)' (a time-windowed LiveCodeBench subset) in the official GitHub README benchmark chart."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 84.5,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/GLM-4/blob/main/README.md",
+      "notes": "From the official GitHub README benchmark chart."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 90.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/GLM-4/blob/main/README.md",
+      "notes": "Labeled 'ArenaHard' in the official GitHub README benchmark chart."
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 70.5,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/GLM-4/blob/main/README.md",
+      "notes": "Labeled 'BFCL (v3)' in the official GitHub README benchmark chart."
+    },
+    {
+      "benchmarkSlug": "super-gpqa",
+      "score": 52.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/GLM-4/blob/main/README.md",
+      "notes": "Labeled 'SuperGPQA' in the official GitHub README benchmark chart."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 66.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/GLM-4/blob/main/README.md",
+      "notes": "Labeled 'GPQA' in the official GitHub README benchmark chart."
+    }
+  ],
+  "verificationNotes": "Confirmed real, released the same day (2025-04-14) as GLM-4-32B-0414 in the same Z.ai open-source batch ('base, reasoning, and rumination models... all under the MIT license' per PRNewswire announcement). MIT license and 'developed based on GLM-4-32B-0414 through cold start and extended reinforcement learning' description confirmed on the HF model card. HF safetensors API shows identical 32,566,081,536 params (32.57B, matches the 32B base it was tuned from). config.json max_position_embeddings=32768 confirms 32K context. Original record had zero result rows, so none needed to be dropped \u2014 nothing to verify there. No changes made."
 }

@@ -70,6 +70,48 @@
       "score": 36.29,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/h2oai/h2o-danube-1.8b-chat"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 67.51,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/h2oai/h2o-danube-1.8b-chat",
+      "notes": "0-shot ARC-Easy for h2o-danube-1.8b-chat, from the HF model card's benchmark table; independently cross-confirmed in the technical report (arXiv:2401.16818, Table 4, chat-model commonsense reasoning results)."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 39.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/h2oai/h2o-danube-1.8b-chat",
+      "notes": "0-shot OpenBookQA for h2o-danube-1.8b-chat, from the HF model card's benchmark table; cross-confirmed in arXiv:2401.16818 Table 4."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 76.71,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/h2oai/h2o-danube-1.8b-chat",
+      "notes": "0-shot PIQA for h2o-danube-1.8b-chat, from the HF model card's benchmark table; cross-confirmed in arXiv:2401.16818 Table 4."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 33.49,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2401.16818",
+      "notes": "5-shot MMLU for h2o-danube-1.8b-chat, Open LLM Leaderboard-style eval, from the technical report Table 5. Below the taxonomy's typical MMLU floor, but this is a genuine, expected result for a 1.8B chat model and uses the same standardized harness as the leaderboard."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 40.82,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2401.16818",
+      "notes": "0-shot TruthfulQA (MC) for h2o-danube-1.8b-chat, Open LLM Leaderboard-style eval, from the technical report Table 5."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 15.54,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2401.16818",
+      "notes": "5-shot GSM8K for h2o-danube-1.8b-chat, Open LLM Leaderboard-style eval, from the technical report Table 5."
     }
   ],
   "verificationNotes": "Existence and Jan 30, 2024 release confirmed via arxiv.org/abs/2401.16818 and VentureBeat coverage. 1.8B params, 16,384 context length, and Mistral-style sliding-window attention (4096) confirmed by fetching the HF model card directly. Apache 2.0 license confirmed. All four benchmark scores (ARC-Challenge 39.25, HellaSwag 67.6, Winogrande 65.35, TriviaQA 36.29) confirmed to literally appear on huggingface.co/h2oai/h2o-danube-1.8b-chat - exact match, no changes needed."

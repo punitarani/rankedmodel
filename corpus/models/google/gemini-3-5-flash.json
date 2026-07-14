@@ -104,6 +104,30 @@
       "sourceUrl": "https://pricepertoken.com/leaderboards/benchmark/mmmu",
       "evaluatedAt": "2026-07-12",
       "notes": "MMMU, LayerLens/Stratix independent eval via PricePerToken leaderboard; split (validation) not explicitly stated"
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 72.1,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/flash/",
+      "evaluatedAt": "2026-05-19",
+      "notes": "ARC-AGI-2 abstract reasoning puzzles."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 78.4,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/flash/",
+      "evaluatedAt": "2026-05-19",
+      "notes": "OSWorld-Verified, agentic computer-use benchmark."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1656,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/flash/",
+      "evaluatedAt": "2026-05-19",
+      "notes": "GDPval-AA, Elo-style rating for economically valuable knowledge work."
     }
   ],
   "verificationNotes": "Confirmed real: launched at Google I/O 2026-05-19 with immediate GA (no waitlist), confirmed via blog.google and deepmind.google/models/gemini/flash/ (both fetched directly). All 4 benchmark numbers (SWE-bench Pro 55.1, MMMU-Pro 83.6, Terminal-Bench 2.1 76.2, CharXiv 84.2) literally confirmed on the cited pages. 1M/64k context, text/image/video/audio input modalities, and $1.50/$9 pricing all confirmed independently. No changes to record."

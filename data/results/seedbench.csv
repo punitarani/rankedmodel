@@ -1,2 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+cogvlm-17b,72.5,self-reported,https://ar5iv.labs.arxiv.org/html/2311.03079,,Same later-revised comparison table (labeled 'SEED'); marginally above the taxonomy's typical range (max 72) but verbatim as published.
 deepseek-vl-7b,70.4,self-reported,https://arxiv.org/html/2403.05525v2,,"7B variant, Table 5"
+glm-4v-9b,76.8,self-reported,https://huggingface.co/zai-org/glm-4v-9b,,Labeled 'SEEDBench_IMG' on the official model card (SEED-Bench image subset).
+naver-hyperclova-x-seed-think-32b,77.9,self-reported,https://arxiv.org/abs/2601.03286,2026-01-03,"Reported as 'SEED-IMG' (image split of SEED-Bench) in Table 5, English vision-to-text benchmarks."

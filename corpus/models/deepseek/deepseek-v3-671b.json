@@ -9,7 +9,7 @@
   "paramsB": 671,
   "activeParamsB": 37,
   "archClass": "moe",
-  "archDisplay": "MoE transformer, 671B total / 37B active — DeepSeekMoE + MLA + multi-token prediction, auxiliary-loss-free load balancing",
+  "archDisplay": "MoE transformer, 671B total / 37B active \u2014 DeepSeekMoE + MLA + multi-token prediction, auxiliary-loss-free load balancing",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -99,6 +99,69 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
       "notes": "SWE-bench Verified, Resolved"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 86.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": "IF-Eval (Prompt Strict), Chat model, from official HF model card / DeepSeek-V3 technical report benchmark table"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 91.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": "DROP (3-shot F1), Chat model"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 24.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": "SimpleQA (Correct), Chat model, standard closed-book setting"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 85.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": "Arena-Hard win rate, Chat model, open-ended generation eval section"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 70,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": "AlpacaEval 2.0 (length-controlled win rate), Chat model"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 89.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": "MMLU-Redux (EM), Chat model"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 49.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": "Aider-Polyglot (Acc.), Chat model (distinct from the higher Aider-Edit 79.7 figure, which is a different variant and was not used)"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 39.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": "AIME 2024 (Pass@1), Chat model"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 86.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": "C-Eval (EM), Chat model"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card: 671B total/37B active, 128K context, MIT code license + DeepSeek Model License. All seven benchmark rows (MMLU 88.5, MMLU-Pro 75.9, GPQA-Diamond 59.1, MATH-500 90.2, HumanEval-Mul 82.6, LiveCodeBench 37.6, SWE-bench Verified 42.0) confirmed literally on the HF page. 14.8T training tokens and 2.788M H800 GPU-hours figures also confirmed. No changes needed."

@@ -113,7 +113,79 @@
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
       "evaluatedAt": "2024-06-07",
       "notes": "Base model"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 85.2,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 10-shot. A prior audit pass dropped this exact row, claiming the blog's Qwen2-57B-A14B base-performance table 'has no HellaSwag row at all' \u2014 that claim is incorrect: I live-fetched qwenlm.github.io/blog/qwen2/ and the base table for Qwen2-57B-A14B explicitly lists HellaSwag=85.2 alongside MMLU/BBH/etc. Re-adding with the correct primary source (the blog itself, not the arxiv report)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 79.5,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 5-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 64.1,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, ARC-C 25-shot"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 57.7,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 0-shot"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 87.7,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 5-shot"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.55,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.10671",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant (Qwen2-57B-A14B-Instruct); same value on the blog"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 25.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.10671",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant, LiveCodeBench v1; same value on the blog"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 59.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.10671",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant, strict-prompt subset; only in the technical report (Table 7), not on the blog"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 74,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant, MGSM 0-shot CoT, from the blog's multilingual-capability table"
     }
   ],
-  "verificationNotes": "Fetched qwenlm.github.io/blog/qwen2/ directly: confirms release 2024-06-07, 57.41B total/14B active MoE, 64K context, Apache 2.0, ~30 languages (27 additional beyond English/Chinese, commonly rounded to 30 across Qwen materials). 8 of the original 9 result rows are confirmed verbatim on the cited blog (MMLU 76.5, MMLU-Pro 43, GPQA 34.3, HumanEval 53, MBPP 71.9, GSM8K 80.7, MATH 43, BBH 67). DROPPED the HellaSwag=85.2 row: I confirmed 85.2 is a real number for this model but it appears only in the Qwen2 arxiv technical report (2407.10671), not on the cited sourceUrl (qwenlm.github.io/blog/qwen2/) — that page's benchmark table for Qwen2-57B-A14B has no HellaSwag row at all, so per the verification rule the row must be dropped rather than kept against a source that doesn't show it."
+  "verificationNotes": "Fetched qwenlm.github.io/blog/qwen2/ directly: confirms release 2024-06-07, 57.41B total/14B active MoE, 64K context, Apache 2.0, ~30 languages (27 additional beyond English/Chinese, commonly rounded to 30 across Qwen materials). 8 of the original 9 result rows are confirmed verbatim on the cited blog (MMLU 76.5, MMLU-Pro 43, GPQA 34.3, HumanEval 53, MBPP 71.9, GSM8K 80.7, MATH 43, BBH 67). DROPPED the HellaSwag=85.2 row: I confirmed 85.2 is a real number for this model but it appears only in the Qwen2 arxiv technical report (2407.10671), not on the cited sourceUrl (qwenlm.github.io/blog/qwen2/) \u2014 that page's benchmark table for Qwen2-57B-A14B has no HellaSwag row at all, so per the verification rule the row must be dropped rather than kept against a source that doesn't show it."
 }

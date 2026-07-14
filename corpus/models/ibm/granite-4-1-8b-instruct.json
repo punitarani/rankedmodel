@@ -43,6 +43,127 @@
     "params/license/ctx/training": "https://research.ibm.com/blog/granite-4-1-ai-foundation-models",
     "hfId": "https://huggingface.co/ibm-granite/granite-4.1-8b"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 73.84,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "5-shot, '8B Dense' column"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 55.99,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 80.51,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 41.96,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 4.82,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 50.08,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "AlpacaEval 2.0"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 87.06,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "IFEval Avg"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 68.98,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.61,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "MTBench Avg"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 92.49,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "8-shot"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 85.37,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 79.88,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 87.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 73.81,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "bigcodebench",
+      "score": 35,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 68.27,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 64.84,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 82.32,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "notes": "8-shot"
+    }
+  ],
   "verificationNotes": "IBM's own materials describe the 8B as matching/beating Granite 4.0-H-Small qualitatively and 'competitive' on instruction-following/tool-calling vs Gemma/Qwen, without a specific numeric benchmark table in the sources checked; no results entry included to avoid guessing a number."
 }

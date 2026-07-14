@@ -56,6 +56,49 @@
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
       "evaluatedAt": "2025-08-07",
       "notes": "GPQA Diamond, no tools, high reasoning effort"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 11,
+      "source": "self-reported",
+      "sourceUrl": "https://cdn.openai.com/gpt-5-system-card.pdf",
+      "evaluatedAt": "2025-08-13",
+      "notes": "SimpleQA (no web) accuracy for gpt-5-thinking-nano = 11% (hallucination rate 31%), directly read from Table 8 of the official GPT-5 System Card PDF (cdn.openai.com/gpt-5-system-card.pdf). This is the reasoning ('thinking') path of GPT-5 nano, consistent with the model's existing gpqa row also being a 'high reasoning effort' figure."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 8.2,
+      "source": "independent",
+      "sourceUrl": "https://themodelbeat.com/models/gpt-5-nano",
+      "notes": "Humanity's Last Exam score from Epoch AI's independent evaluation of GPT-5 nano (relayed via themodelbeat.com, which attributes its benchmark table explicitly to Epoch AI). Not an OpenAI self-reported figure."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 78,
+      "source": "independent",
+      "sourceUrl": "https://themodelbeat.com/models/gpt-5-nano",
+      "notes": "MMLU-Pro score from Epoch AI's independent evaluation of GPT-5 nano, relayed via themodelbeat.com."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 81.1,
+      "source": "independent",
+      "sourceUrl": "https://themodelbeat.com/models/gpt-5-nano",
+      "notes": "Combined AIME 2024/2025 score from Epoch AI's independent evaluation. The corpus's prior verification pass had already found and dropped an unconfirmed self-reported nano AIME claim (85.2) that conflicted with an Artificial Analysis re-eval (83.7); this Epoch AI figure (81.1) is a third, independently-sourced data point in the same ballpark, offered here explicitly as an independent (not self-reported) figure to avoid re-introducing the earlier conflict as a vendor claim."
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 20.7,
+      "source": "independent",
+      "sourceUrl": "https://themodelbeat.com/models/gpt-5-nano",
+      "notes": "ARC-AGI (v1) score from Epoch AI's independent evaluation of GPT-5 nano, relayed via themodelbeat.com."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 22.6,
+      "source": "independent",
+      "sourceUrl": "https://themodelbeat.com/models/gpt-5-nano",
+      "notes": "ARC-AGI-2 score from Epoch AI's independent evaluation of GPT-5 nano, relayed via themodelbeat.com."
     }
   ],
   "verificationNotes": "Existence, release date and pricing/context ($0.05/$0.40 per 1M, 400K context) confirmed by live-fetching developers.openai.com/api/docs/models/gpt-5-nano (also cites snapshot gpt-5-nano-2025-08-07). Primary blog page inaccessible (403/rate-limited) for direct row-by-row confirmation. Only gpqa (71.2) could be independently corroborated verbatim via secondary sources. AIME claim (85.2) conflicts with an independent Artificial Analysis re-eval (83.7, different methodology, not the cited self-reported source) and could not be confirmed on the primary source; swe-bench (54.7), hle (8.7), mmmu (75.6) and tau-bench (35.5) could not be found on any accessible source. Dropped all 5 unconfirmed rows per verification policy, kept only gpqa."

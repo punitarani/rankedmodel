@@ -53,6 +53,13 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/pdf/2303.17568",
       "notes": "HumanEval-X, Python, pass@1"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 22.44,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2303.17568",
+      "notes": "CodeGeeX-13B MBPP Pass@1, 3-shot setting (paper Table 11, Appendix A.4.2). The same table also reports a 1-shot setting result of Pass@1=24.37; I picked the 3-shot figure as it matches the standard MBPP paper convention."
     }
   ],
   "verificationNotes": "Confirmed via GitHub README (13B params, Apache-2.0 code license + separate MODEL_LICENSE for weights, max sequence length 2,048 = ctxK 2) and arXiv:2303.17568 HTML (Table 5: HumanEval-X Python pass@1 = 22.89% exact match). Paper accepted at KDD 2023 (Aug 2023, Long Beach) but model itself pretrained/released by Zhipu in Sept 2022, consistent with record. No changes made."

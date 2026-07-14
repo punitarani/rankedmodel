@@ -1,2 +1,4 @@
 model_slug,score,source,source_url,evaluated_at,notes
+internvl2-5-78b,11.6,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,
+minimax-vl-01,24.2,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,Listed as 'OlympiadBench (full)' in the card's Mathematics & Sciences section; slightly above the taxonomy's stated 0-22 range but is the same bilingual multimodal OlympiadBench evaluation.
 qvq-72b-preview,20.4,self-reported,https://huggingface.co/Qwen/QVQ-72B-Preview,,

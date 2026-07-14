@@ -37,7 +37,7 @@
   "vramQ4Gb": 180,
   "vramFp16Gb": 628,
   "tps4090": null,
-  "tpsNote": "Needs well over 100GB even at aggressive quantization — nowhere near a single RTX 4090.",
+  "tpsNote": "Needs well over 100GB even at aggressive quantization \u2014 nowhere near a single RTX 4090.",
   "effortLabel": null,
   "isDefaultConfig": true,
   "isBestConfig": true,
@@ -47,6 +47,39 @@
     "releaseDate": "https://x.ai/news/grok-os",
     "openness": "https://x.ai/news/grok-os"
   },
-  "results": [],
-  "verificationNotes": "Confirmed real: 314B MoE, 8 experts/2 active, 86B active params confirmed directly from the official RELEASE file text (quoted on X/HN), Apache 2.0 license confirmed via GitHub and x.ai/news/grok-os, 8K context confirmed. CORRECTED releaseDate from 2023-11-04 to 2024-03-17 — 2023-11-04/05 was merely the limited-access debut of the Grok chatbot product (the CNBC source cited for that date is about the product preview, not model weights); the actual open-weights release under Apache 2.0 (matching this record's own openness/license fields and its note text 'open-sourced under Apache 2.0 on Mar 17 2024') happened March 17, 2024 per GitHub, x.ai/news/grok-os, and VentureBeat. Updated releaseDate/ctxK specSources citation accordingly."
+  "results": [
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 62.9,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok",
+      "evaluatedAt": "2023-11-03",
+      "notes": "8-shot, chain-of-thought prompt, per xAI's original 'Announcing Grok' blog post benchmark table; also corroborated in the later 'Announcing Grok-1.5' post's Grok-1 comparison column."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 73,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok",
+      "evaluatedAt": "2023-11-03",
+      "notes": "5-shot, per xAI's original 'Announcing Grok' blog post benchmark table; also corroborated in the later 'Announcing Grok-1.5' post's Grok-1 comparison column."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 63.2,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok",
+      "evaluatedAt": "2023-11-03",
+      "notes": "0-shot pass@1, per xAI's original 'Announcing Grok' blog post benchmark table; also corroborated in the later 'Announcing Grok-1.5' post's Grok-1 comparison column."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 23.9,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok",
+      "evaluatedAt": "2023-11-03",
+      "notes": "4-shot, per xAI's original 'Announcing Grok' blog post benchmark table; also corroborated in the later 'Announcing Grok-1.5' post's Grok-1 comparison column."
+    }
+  ],
+  "verificationNotes": "Confirmed real: 314B MoE, 8 experts/2 active, 86B active params confirmed directly from the official RELEASE file text (quoted on X/HN), Apache 2.0 license confirmed via GitHub and x.ai/news/grok-os, 8K context confirmed. CORRECTED releaseDate from 2023-11-04 to 2024-03-17 \u2014 2023-11-04/05 was merely the limited-access debut of the Grok chatbot product (the CNBC source cited for that date is about the product preview, not model weights); the actual open-weights release under Apache 2.0 (matching this record's own openness/license fields and its note text 'open-sourced under Apache 2.0 on Mar 17 2024') happened March 17, 2024 per GitHub, x.ai/news/grok-os, and VentureBeat. Updated releaseDate/ctxK specSources citation accordingly."
 }

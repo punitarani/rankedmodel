@@ -1,7 +1,39 @@
 model_slug,score,source,source_url,evaluated_at,notes
+aya-vision-32b,7.65,independent,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,"Text-only-mode SimpleQA score listed alongside the corpus's existing datalearner-sourced rows (which I re-verified and all still match exactly: MMLU 72.14, MMLU-Pro 47.16, GPQA 34.38, MATH 69.3, HumanEval 62.2, MBPP 70.43). No primary Cohere source (blog, HF model card, docs.cohere.com/docs/aya-vision, or the arXiv paper 2505.08751) publishes classic academic-benchmark numbers at all -- Cohere's own materials report only win-rate style metrics (AyaVisionBench, mWildVision). Marked independent per instructions since datalearner is a third-party aggregator whose original-measurement vs. vendor-relay status could not be confirmed."
+deepseek-r1-0528,27.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,SimpleQA correct rate
+deepseek-r1-671b,30.1,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,SimpleQA correct rate
+deepseek-v3-671b,24.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,"SimpleQA (Correct), Chat model, standard closed-book setting"
+ernie-4-5-300b-a47b,45.9,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,Table 5.
+gemini-2-0-flash,29.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,"World knowledge factuality with no search enabled, GA column of the official Gemini 2.0 Flash model card evaluation table."
+gemini-2-0-flash-lite,21.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,"World knowledge factuality with no search enabled, Public Preview column of the official Gemini 2.0 Flash-Lite model card evaluation table."
+gemini-2-0-pro-experimental,44.3,self-reported,https://arxiv.org/abs/2503.19786,2025-03-25,SimpleQA; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6.
+gemini-2-5-flash,26.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"SimpleQA, Gemini 2.5 Flash GA / Thinking column, (06-17)."
+gemini-2-5-flash-lite-non-thinking,10.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"SimpleQA, (06-17) release, non-thinking."
+gemini-2-5-flash-lite-thinking,13,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"SimpleQA, (06-17) release, thinking on."
+gemini-2-5-pro,52.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf,2025-03-25,"SimpleQA, Gemini 2.5 Pro (Experimental 03-25) column."
 gemma-3-12b,6.3,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-27b,10,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-4b,4,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+glm-4-5-355b-a32b,26.4,self-reported,https://arxiv.org/abs/2508.06471,,"SimpleQA (Correct), Table 6."
+glm-4-5-air-106b-a12b,14.5,self-reported,https://arxiv.org/abs/2508.06471,,"SimpleQA (Correct), Table 6."
 gpt-4-5,62.5,independent,https://www.helicone.ai/blog/gpt-4.5-benchmarks,2025-02-01,SimpleQA accuracy
+gpt-4-turbo,24.2,self-reported,https://github.com/openai/simple-evals,2024-05-13,"gpt-4-turbo-2024-04-09, OpenAI simple-evals SimpleQA column (short-form factuality / hallucination-rate proxy) — a genuinely hard, non-cherry-picked eval OpenAI's own suite ships this model on."
+gpt-4o,38.2,self-reported,https://arxiv.org/abs/2411.04368,2024-11-04,'Correct' % from Table 3 of OpenAI's SimpleQA paper ('Measuring short-form factuality in large language models'). The paper labels the row simply 'GPT-4o' without a dated snapshot; the corresponding F-score for the same row is 38.4.
+gpt-5,55,self-reported,https://cdn.openai.com/gpt-5-system-card.pdf,2025-08-13,"SimpleQA (no web) accuracy for gpt-5-thinking = 55% (hallucination rate 40%), directly read from Table 8 of the official GPT-5 System Card PDF. gpt-5-thinking is the same reasoning-mode configuration already used for this model's existing hle=24.8 row (which the system card's own Figure 2 independently reconfirms as 24.8% for gpt-5-thinking), so the mapping to this corpus entry is consistent."
+gpt-5-nano,11,self-reported,https://cdn.openai.com/gpt-5-system-card.pdf,2025-08-13,"SimpleQA (no web) accuracy for gpt-5-thinking-nano = 11% (hallucination rate 31%), directly read from Table 8 of the official GPT-5 System Card PDF (cdn.openai.com/gpt-5-system-card.pdf). This is the reasoning ('thinking') path of GPT-5 nano, consistent with the model's existing gpqa row also being a 'high reasoning effort' figure."
+granite-4-1-8b-instruct,4.82,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,
+grok-3-standard,43.6,self-reported,https://x.ai/news/grok-3,2025-02-17,Official non-reasoning 'Grok 3 Beta' row in xAI's launch-blog benchmark table.
+kimi-k2,31,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,SimpleQA 'Correct' metric; confirmed in GitHub README mirror and arXiv:2507.20534 Table 3
+minimax-m1,18.5,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,2025-06-16,"SimpleQA, M1-80K checkpoint (M1-40K: 17.9)."
+minimax-text-01,23.7,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,"SimpleQA factuality score listed on the official HF model card alongside the already-recorded MMLU/GSM8K/etc. table (C-SimpleQA 67.4 is a separate Chinese-language variant with no matching taxonomy slug, so it was left out)."
+mistral-small-3-1-24b,10.43,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,"SimpleQA TotalAcc, instruct model."
+mistral-small-3-2-24b,12.1,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,SimpleQA TotalAcc.
+openai-o1,42.6,self-reported,https://github.com/openai/simple-evals,,
+openai-o1-mini,7.6,self-reported,https://github.com/openai/simple-evals,,
+openai-o1-preview,42.4,self-reported,https://github.com/openai/simple-evals,,
+openai-o3-mini-high,13.8,self-reported,https://github.com/openai/simple-evals,,
 phi-4-14b,3,self-reported,https://huggingface.co/microsoft/phi-4,,
+qwen3-235b-a22b-instruct-2507,54.3,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,SimpleQA (English)
+seed-oss-36b,9.7,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,
+seed1-5-thinking,12.9,self-reported,https://github.com/ByteDance-Seed/Seed-Thinking-v1.5,,
 sonar,0.773,self-reported,https://web.swipeinsight.app/posts/perplexity-launches-sonar-api-for-real-time-ai-search-capabilities-14187,,"SimpleQA F-score, 0-1 scale, from Perplexity's 'Meet new Sonar' evaluation; corroborated by openrouter.ai and other secondary trackers citing the same 0.773 figure"

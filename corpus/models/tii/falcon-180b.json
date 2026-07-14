@@ -48,6 +48,23 @@
     "releaseDate": "https://www.tii.ae/news/technology-innovation-institute-introduces-worlds-most-powerful-open-llm-falcon-180b",
     "openness": "https://huggingface.co/blog/falcon-180b"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 86.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-180B",
+      "evaluatedAt": "2023-10-24",
+      "notes": "5-shot (harness|winogrande|5), archived Open LLM Leaderboard v1 evaluation run"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 45.94,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-180B",
+      "evaluatedAt": "2023-10-24",
+      "notes": "5-shot (harness|gsm8k|5), archived Open LLM Leaderboard v1 evaluation run"
+    }
+  ],
   "verificationNotes": "Confirmed via HF blog (huggingface.co/blog/falcon-180b, fetched): release date Sept 6 2023, 180B params, 3.5T training tokens, multiquery attention, license excludes hosting use, and the 67.85 Open LLM Leaderboard average (with 68.74 pre-Nov-2023 note) appear verbatim. Model card (tiiuae/falcon-180B, fetched) confirms 2048 context length, license name 'Falcon-180B TII License', and language list (English/German/Spanish/French plus 7 limited-capability languages = 11 total). No changes made; all fields and the single result row confirmed."
 }

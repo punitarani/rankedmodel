@@ -1,4 +1,14 @@
 model_slug,score,source,source_url,evaluated_at,notes
+gemini-2-0-flash,84.6,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,"FACTS Grounding benchmark, GA column of the official model card evaluation table."
+gemini-2-0-flash-lite,83.6,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,"FACTS Grounding benchmark, Public Preview column of the official model card evaluation table."
+gemini-2-0-pro-experimental,82.8,self-reported,https://arxiv.org/abs/2503.19786,2025-03-25,FACTS Grounding; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6.
+gemini-2-5-flash,85.3,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"FACTS Grounding, Gemini 2.5 Flash GA / Thinking column, (06-17)."
+gemini-2-5-flash-lite-non-thinking,84.1,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"FACTS Grounding, (06-17) release, non-thinking."
+gemini-2-5-flash-lite-thinking,86.8,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"FACTS Grounding, (06-17) release, thinking on."
+gemini-3-1-flash-lite,40.6,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_3-1_flash-lite_model_evaluation.pdf,2026-03-01,"FACTS Benchmark Suite (grounding, parametric, search and multimodal factuality)."
+gemini-3-flash,61.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf,2025-12-01,"FACTS Benchmark Suite (grounding, parametric, search, and multimodal factuality)."
+gemini-3-pro,70.5,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf,2025-11-01,"FACTS Benchmark Suite (held-out internal grounding, parametric, MM and search retrieval benchmarks)."
 gemma-3-12b,75.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-27b,74.9,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-4b,70.1,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+jamba2-mini,57,self-reported,https://www.ai21.com/blog/introducing-jamba2/,,"Read directly off the same chart's FACTS grounding bar (value 0.57), which matches the taxonomy's facts-grounding benchmark description (faithfulness to a provided context document)."

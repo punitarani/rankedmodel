@@ -79,6 +79,14 @@
       "sourceUrl": "https://huggingface.co/EleutherAI/gpt-neo-2.7B",
       "evaluatedAt": "2021-03-21",
       "notes": "zero-shot, LM Eval Harness"
+    },
+    {
+      "benchmarkSlug": "pubmedqa",
+      "score": 57.54,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/EleutherAI/gpt-neo-2.7B",
+      "evaluatedAt": "2021-03-21",
+      "notes": "From the 'Physical and Scientific reasoning' evaluation table on the official HF model card (PubMedQA acc=57.54%), run with the LM Eval Harness alongside the 4 benchmarks already in the corpus. Not previously captured."
     }
   ],
   "verificationNotes": "Confirmed real: fetched huggingface.co/EleutherAI/gpt-neo-2.7B model card table verbatim-matches all 4 scores (LAMBADA 62.22, Winogrande 56.50, HellaSwag 42.73, PIQA 72.14). MIT license and 2021-03-21 release date (eleuther.ai/artifacts/gpt-neo shows '21 Mar') confirmed. No changes needed."

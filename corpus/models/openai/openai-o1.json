@@ -88,6 +88,55 @@
       "sourceUrl": "https://www.datacamp.com/blog/o3-openai",
       "evaluatedAt": "2024-12-01",
       "notes": "MMMU college-level visual reasoning [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 91.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "From OpenAI's own simple-evals benchmark-harness README table (o1 row)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 96.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "MATH-500 (repo evaluates o-series models on MATH-500, not legacy MATH test set)."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 89.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 90.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "DROP F1, 3-shot."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 42.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals"
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 71.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www.datacamp.com/blog/o3-openai",
+      "evaluatedAt": "2025-04-16",
+      "notes": "Relayed from OpenAI's o3/o4-mini launch comparison table showing o1's prior score on MathVista Visual Math Reasoning; o1 has vision capability (confirmed already true in corpus)."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 55.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www.datacamp.com/blog/o3-openai",
+      "evaluatedAt": "2025-04-16",
+      "notes": "Relayed from the same o3-launch comparison table; CharXiv-Reasoning scientific-figure benchmark."
     }
   ],
   "verificationNotes": "Full o1 launch on 2024-12-05 (alongside o1-pro/ChatGPT Pro) confirmed via multiple independent sources (Wikipedia, InfoQ, OpenAI o1 system card PDF dated 2024-12-05). AIME 74.3, GPQA 78, SWE-bench 48.9, Codeforces 1891, MMMU 77.6 all confirmed by direct fetch of datacamp.com/blog/o3-openai, matching exactly. Scheduled shutdown 2026-10-23 confirmed via OpenAI deprecation coverage (TheRouter.ai, OpenAI community deprecation notice) - the model is still real/active as of today (2026-07-12). No changes made."

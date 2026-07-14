@@ -77,6 +77,54 @@
       "source": "self-reported",
       "sourceUrl": "https://mistral.ai/news/pixtral-12b/",
       "notes": "ANLS metric"
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 78.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "evaluatedAt": "2024-09-11",
+      "notes": "VQAv2 (VQA Match) row of the Multimodal Benchmarks table."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 69.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "evaluatedAt": "2024-09-11",
+      "notes": "MMLU (5-shot) row of the card's Text Benchmarks table."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 48.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "evaluatedAt": "2024-09-11",
+      "notes": "Math (Pass@1) row of the Text Benchmarks table."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 72,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "evaluatedAt": "2024-09-11",
+      "notes": "Human Eval (Pass@1) row of the Text Benchmarks table."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 7.68,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "evaluatedAt": "2024-09-11",
+      "notes": "Listed as 'Text MT-Bench' in the card's Instruction Following table -- the text-only-input variant of the same MT-Bench eval, distinct from the card's separate 'MM MT-Bench' (6.05) which was left out as a different (multimodal) evaluation."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 61.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "evaluatedAt": "2024-09-11",
+      "notes": "Listed as 'Text IF-Eval' in the same table -- text-only-input variant of IFEval, distinct from the card's separate 'MM IF-Eval' (52.7) which was left out as a different (multimodal) evaluation."
     }
   ],
   "verificationNotes": "Real release confirmed. Release date 2024-09-11 corroborated by two independent sources (TechCrunch article dated 2024-09-11, Simon Willison blog dated 2024-Sep-11) plus Mistral's own (now-marked '[Deprecated]') blog post. 12B decoder + 400M vision encoder, 128k ctx, Apache 2.0 confirmed via mistral.ai/news/pixtral-12b/ (fetched). All 4 benchmark rows confirmed literally on that page: MMMU 52.5 (CoT), MathVista 58.0 (CoT), ChartQA 81.8 (CoT), DocVQA 90.7 (ANLS). No corrections needed."

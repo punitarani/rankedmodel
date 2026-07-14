@@ -46,6 +46,14 @@
     "releaseDate": "https://www.perplexity.ai/de/hub/blog/open-sourcing-r1-1776",
     "openness": "https://huggingface.co/perplexity-ai/r1-1776"
   },
-  "results": [],
-  "verificationNotes": "Existence, Feb 18 2025 release (confirmed via perplexity.ai/de/hub/blog/open-sourcing-r1-1776 publish-date metadata), MIT license, and 671B/37B MoE DeepSeek-R1 architecture all confirmed. Dropped the sole lineage-bench result row (0.205 vs DeepSeek-R1's 0.780): follow-up investigation of the same Reddit/HuggingFace discussion thread shows the original low score was attributed to a flawed multi-threaded benchmark harness, and a corrected re-run had 'R1-1776 climbed to first place' — the 0.205 figure is a retracted/unreliable artifact, not a valid benchmark result, so it was removed rather than kept as a misleading number."
+  "results": [
+    {
+      "benchmarkSlug": "aime",
+      "score": 80.96,
+      "source": "self-reported",
+      "sourceUrl": "https://www.deeplearning.ai/the-batch/perplexity-launches-uncensored-version-of-deepseek-r1-ai-model",
+      "notes": "AIME 2024 pass@1, relaying Perplexity's own launch benchmark chart (original R1-1776 base model scored 80.96 on the same eval)"
+    }
+  ],
+  "verificationNotes": "Existence, Feb 18 2025 release (confirmed via perplexity.ai/de/hub/blog/open-sourcing-r1-1776 publish-date metadata), MIT license, and 671B/37B MoE DeepSeek-R1 architecture all confirmed. Dropped the sole lineage-bench result row (0.205 vs DeepSeek-R1's 0.780): follow-up investigation of the same Reddit/HuggingFace discussion thread shows the original low score was attributed to a flawed multi-threaded benchmark harness, and a corrected re-run had 'R1-1776 climbed to first place' \u2014 the 0.205 figure is a retracted/unreliable artifact, not a valid benchmark result, so it was removed rather than kept as a misleading number."
 }

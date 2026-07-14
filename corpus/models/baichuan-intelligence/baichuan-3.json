@@ -47,6 +47,14 @@
     "releaseDate": "https://pandaily.com/baichuan-ai-releases-large-scale-model-baichuan-3-with-parameters-exceeding-one-trillion/",
     "openness": "https://platform.baichuan-ai.com/prices"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 81.69,
+      "source": "self-reported",
+      "sourceUrl": "https://www.qbitai.com/2024/01/117217.html",
+      "notes": "Reported by Baichuan at the Jan 29 2024 Baichuan 3 launch event, relayed by QbitAI (\u91cf\u5b50\u4f4d); stated as ~94.55% of GPT-4's contemporaneous MMLU score. No official technical report or model card exists for this closed API-only model, so this Chinese tech-media relay of the vendor's own launch claim is the best available source. Could not find numeric CMMLU/Gaokao/AGIEval/GSM8K/HumanEval/MBPP scores anywhere (multiple EN and CN sources give only qualitative 'surpasses GPT-4' / 'reaches ~90% of GPT-4' comparisons with no digits), so those are left out."
+    }
+  ],
   "verificationNotes": "Confirmed real: independent search of Pandaily's article corroborates a Jan 29 2024 release with parameters 'exceeding one trillion', matching the record exactly. No result rows were present to verify. paramsB left null (genuinely undisclosed beyond the '>1T' claim); price/openness left unchanged as no contradicting evidence was found (platform pricing page not independently re-fetched due to search-tool rate limiting)."
 }

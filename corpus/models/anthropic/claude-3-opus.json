@@ -151,6 +151,78 @@
       "sourceUrl": "https://www.anthropic.com/research/swe-bench-sonnet",
       "evaluatedAt": "2025-01-06",
       "notes": "SWE-bench Verified, evaluated retrospectively by Anthropic with their agent scaffold"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 90.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "MGSM (multilingual math), 0-shot, from Table 1 / Table 4 of the Claude 3 Model Card; explicitly called out in the text as state-of-the-art (first model to score above 90% 0-shot)."
+    },
+    {
+      "benchmarkSlug": "pubmedqa",
+      "score": 75.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "PubMedQA, 5-shot, from Table 1 of the Claude 3 Model Card (0-shot alternate is 74.9%)."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 92.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "RACE-H reading comprehension, 5-shot, from Table 1 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "amc",
+      "score": 42,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "AMC 12 2023, 5-shot CoT, from Table 2 of the Claude 3 Model Card (raw score 63/150 converted to a percentage). The model card separately reports AMC 8 and AMC 10 rows too; AMC 12 was chosen as the representative value for this single generic 'amc' slug."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 89.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "DocVQA test set, ANLS score, 0-shot, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 50.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "MathVista testmini, Chain-of-Thought, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 88.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "AI2D science-diagram test set, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 80.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "ChartQA test set, relaxed accuracy, 4-shot CoT, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 79.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "Multilingual MMLU, 5-shot, from Table 5 of the Claude 3 Model Card (Opus outperforms Claude 2.1 by 15.7 points per the card's own text)."
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-family (release date 2024-03-04, pricing $15/$75, 200K ctx, vision). Downloaded and read the actual 42-page Model_Card_Claude_3.pdf Table 1/Table 3: every one of the 12 self-reported benchmark numbers (MMLU 86.8, MATH 60.1, GSM8K 95.0, HumanEval 84.9, GPQA 50.4, BBH 86.8, ARC-Challenge 96.4, HellaSwag 95.4, WinoGrande 88.5, DROP 83.1, MBPP 86.4, MMMU 59.4) matches the PDF verbatim. SWE-bench 22% confirmed on anthropic.com/research/swe-bench-sonnet. apiAvailable=false confirmed: claude-3-opus-20240229 retired from API January 5, 2026. No changes made."

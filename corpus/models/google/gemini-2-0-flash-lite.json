@@ -89,6 +89,30 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf",
       "evaluatedAt": "2025-02-01",
       "notes": "v5, Public Preview"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 21.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-02-01",
+      "notes": "World knowledge factuality with no search enabled, Public Preview column of the official Gemini 2.0 Flash-Lite model card evaluation table."
+    },
+    {
+      "benchmarkSlug": "facts-grounding",
+      "score": 83.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-02-01",
+      "notes": "FACTS Grounding benchmark, Public Preview column of the official model card evaluation table."
+    },
+    {
+      "benchmarkSlug": "bird-sql",
+      "score": 57.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-02-01",
+      "notes": "Bird-SQL (Dev) text-to-SQL benchmark, Public Preview column of the official model card evaluation table."
     }
   ],
   "verificationNotes": "Release as public preview on Feb 5 2025 confirmed via blog.google Feb 2025 model updates post. Fetched Gemini-2.0-Flash-Lite-Model-Card.pdf (published Apr 10 2025) and confirmed all 5 benchmark rows match the Public Preview column verbatim: MMLU-Pro 71.6%, GPQA diamond 51.5%, MATH 86.8%, MMMU 68.0%, LiveCodeBench v5 28.9%. Pricing $0.075/$0.30 per 1M tokens confirmed via search of ai.google.dev pricing coverage. No changes made."

@@ -1,5 +1,33 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-opus-4,72,independent,https://aider.chat/docs/leaderboards/,2025-05-22,"claude-opus-4-20250514 (32k thinking budget) on Aider's own official polyglot leaderboard, confirmed via direct fetch; the no-think configuration of the same model scored 70.7% on the same leaderboard. Independently corroborated by Aider's creator Paul Gauthier (https://x.com/paulgauthier/status/1926773685597172151): 'Claude 4 Opus scored 72% on the aider polyglot coding benchmark... with 32k think tokens.'"
+claude-opus-4-5,89.4,self-reported,https://huggingface.co/blog/Laser585/claude-4-benchmarks,2025-11-24,10.6-point improvement over Sonnet 4.5 per Anthropic's own launch post; absolute figure (89.4%) confirmed via direct fetch of this third-party writeup relaying the official number.
+claude-opus-4-7,79.7,independent,https://contracollective.com/blog/chatgpt-5-5-vs-claude-opus-4-7-aider-polyglot-tested-2026,2026-05-01,"Independent benchmark run by Contra Collective (not an Anthropic self-report), confirmed via direct fetch."
+claude-opus-4-8,79.1,independent,https://contracollective.com/blog/opus-4-8-vs-gemini-3-5-pro-aider-polyglot-coding-2026,2026-06-01,"Independent benchmark run by Contra Collective (their own testing, not an Anthropic claim), confirmed via direct fetch."
+deepseek-r1-0528,71.6,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,Aider-Polyglot accuracy
+deepseek-r1-671b,53.3,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,Aider-Polyglot accuracy
+deepseek-v2-5,17.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2.5,2024-09-05,'Aider' row from the same official HF model card table (real-world multi-language code-editing benchmark used by the Aider tool).
+deepseek-v3-1-non-thinking,68.4,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,"Aider-Polyglot (Acc.), Non-Thinking mode, from official HF model card benchmark table"
+deepseek-v3-1-thinking,76.3,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,"Aider-Polyglot (Acc.), Thinking mode, from official HF model card benchmark table"
 deepseek-v3-2-exp,74.5,self-reported,https://github.com/deepseek-ai/DeepSeek-V3.2-Exp,,
+deepseek-v3-671b,49.6,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,"Aider-Polyglot (Acc.), Chat model (distinct from the higher Aider-Edit 79.7 figure, which is a different variant and was not used)"
+gemini-2-5-flash,61.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"Aider Polyglot, whole score (61.9% whole / 56.7% diff), Gemini 2.5 Flash GA / Thinking column, (06-17)."
+gemini-2-5-flash-lite-non-thinking,26.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"Aider Polyglot, whole score, (06-17) release, non-thinking."
+gemini-2-5-flash-lite-thinking,27.1,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"Aider Polyglot, whole score, (06-17) release, thinking on."
+gemini-2-5-pro,74,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf,2025-03-25,"Aider Polyglot, whole score (74.0% whole / 68.6% diff), Gemini 2.5 Pro (Experimental 03-25) column."
 gpt-4-1-nano,9.8,self-reported,https://openai.com/index/gpt-4-1/,2025-04-14,Aider polyglot coding
 gpt-5,88,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"Aider polyglot (diff), high reasoning effort"
 gpt-5-mini,71.6,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"Aider polyglot (diff), high reasoning effort"
+gpt-oss-120b-high,44.4,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Aider Polyglot, high reasoning effort. Read directly from Table 3 of the official model card."
+gpt-oss-120b-low,24,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Aider Polyglot, low reasoning effort. Read directly from Table 3 of the official model card."
+gpt-oss-120b-medium,34.2,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Aider Polyglot (diff), medium reasoning effort"
+gpt-oss-20b-high,34.2,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Aider Polyglot (diff), high reasoning effort"
+gpt-oss-20b-low,16.6,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Aider Polyglot (diff), low reasoning effort"
+gpt-oss-20b-medium,26.6,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Aider Polyglot (diff), medium reasoning effort"
+kimi-k2,60,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,"Aider-Polyglot accuracy, from Coding Tasks table (GitHub README mirror)"
+magistral-medium,47.1,self-reported,https://arxiv.org/abs/2506.10910,2025-06-10,Aider Polyglot; Magistral technical report Table 2
+openai-o3,81.3,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,"Aider Polyglot code editing, diff format, o3-high (whole-format score is 81.3%). Diff-format figure used to match this corpus's existing aider-polyglot convention (e.g. gpt-5.json uses the diff figure)."
+openai-o3-pro,84.9,independent,https://aider.chat/docs/leaderboards/,,"Aider polyglot code-editing benchmark (225 exercises across 6 languages, diff-edit format), 'o3-pro (high)' config; ranks 3rd behind GPT-5 variants. Independently cross-corroborated with an identical 84.9 figure on DataLearner's agent leaderboard (datalearner.com/en/leaderboards/category/agent)."
+openai-o4-mini,72,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,"Aider Polyglot code editing, diff format, o4-mini-high (whole-format score is 68.9%). Diff-format figure used to match this corpus's existing aider-polyglot convention (e.g. gpt-5.json)."
+qwen3-235b-a22b-instruct-2507,57.3,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,Aider-Polyglot
+qwen3-coder-480b-a35b,61.8,independent,https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF/discussions/8,,"Aider Polyglot pass rate for the original bf16 Qwen3-Coder-480B-A35B-Instruct, run independently by a community member (Fernanda24) via aider against the model, July 25 2025; cited as the baseline against which a Q4 quantization (60.9%) was compared."
+seed1-5-thinking,54.2,self-reported,https://github.com/ByteDance-Seed/Seed-Thinking-v1.5,,Aider Polyglot

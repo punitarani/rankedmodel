@@ -55,6 +55,46 @@
       "source": "self-reported",
       "sourceUrl": "https://mistral.ai/news/pixtral-large/",
       "evaluatedAt": "2024-11-18"
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 64,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411",
+      "evaluatedAt": "2024-11-18",
+      "notes": "MMMU (CoT) row of the card's benchmark comparison table."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 88.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411",
+      "evaluatedAt": "2024-11-18",
+      "notes": "ChartQA (CoT) row of the same table."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 93.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411",
+      "evaluatedAt": "2024-11-18",
+      "notes": "DocVQA (ANLS) row of the same table."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 80.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411",
+      "evaluatedAt": "2024-11-18",
+      "notes": "VQAv2 (VQA Match) row of the same table."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 93.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411",
+      "evaluatedAt": "2024-11-18",
+      "notes": "AI2D (BBox) row of the same table."
     }
   ],
   "verificationNotes": "Real release confirmed via mistral.ai/news/pixtral-large/ (fetched): released 2024-11-18, 124B total (123B decoder built on Mistral Large 2 + 1B vision encoder) confirmed, Mistral Research License confirmed, 128k context confirmed ('fits minimum of 30 high-resolution images'). Sole benchmark row confirmed literally on the page: MathVista 69.4%. No corrections needed."

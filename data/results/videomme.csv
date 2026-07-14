@@ -1,6 +1,23 @@
 model_slug,score,source,source_url,evaluated_at,notes
+gpt-4-1,72,self-reported,https://futureagi.com/blog/gpt-4-1-benchmarks-2025/,2025-04-14,"Video-MME long-context video understanding, up 6.7 points from GPT-4o per OpenAI's launch table."
+internvl2-5-78b,72.1,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,Video-MME without subtitles (74.0 with subtitles also reported)
+internvl3-78b,72.7,self-reported,https://internvl.github.io/blog/2025-04-11-InternVL-3.0/,,Video-MME without subtitles (75.7 with subtitles also reported)
+kimi-k2-5,87.4,self-reported,https://www.kimi.com/blog/kimi-k2-5,,"VideoMME, Kimi K2.5 Thinking."
 mimo-v2-5,87.7,self-reported,https://mimo.xiaomi.com/mimo-v2-5/,,Video-MME ('General Video QA'); from the embedded multimodalData chart array.
+minicpm-o-2-6,63.9,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-13,Video-MME without subtitles; with subtitles the model scores 67.9.
+minicpm-v-2-6,60.9,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md,2024-08-06,Video-MME without subtitles; with subtitles the model scores 63.6.
 minimax-m3,85.4,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M3,,"Reported on the official model card as 'Video-MME v2'; mapped to the base videomme slug — flagging that this may be a newer/harder variant of the benchmark rather than the original Video-MME, so treat as approximate."
+molmo-2-8b,69.9,self-reported,https://arxiv.org/abs/2601.10611,,"Video-MME (no-subtitle variant); Molmo2 Technical Report Table 2 (video benchmarks), Molmo2-8B row. Table's overall 'Average' column (63.1) matches the HF model card's single reported metric ('Average Score on 15 Academic Benchmarks') exactly, confirming this table and its column order are correctly identified."
+naver-hyperclova-x-seed-think-32b,63.4,self-reported,https://arxiv.org/abs/2601.03286,2026-01-03,Section 5.3 text: 'THINK achieves a score of 63.4' on Video-MME.
+nemotron-3-nano-omni,72.2,self-reported,https://arxiv.org/abs/2604.24954,,"Table 7, VideoMME (w/o subtitles), reasoning-on mode; independently corroborated by NVIDIA's HF launch blog stating the identical figure."
+phi-4-multimodal-5-6b,55,self-reported,https://arxiv.org/abs/2503.01743,,"Table 1, 'VideoMME-16Frame'."
+phi-4-multimodal-instruct,55,self-reported,https://arxiv.org/abs/2503.01743,,"Table 1, VideoMME-16Frame."
 qwen2-5-vl-72b,79.1,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,,w/ subtitles
+qwen2-vl-72b,77.8,self-reported,https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct,,Video-MME w/ subtitles (w/o-subs value is 71.2).
 qwen3-5-omni-flash,77,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Reported as 'VideoMME(w/o sub.)' in Table 6 (Vision→Text), Video Understanding section — vision-only, no subtitles. A second, higher-scoring VideoMME variant ('VideoMME with audio' = 79.3, use_audio_in_video=True) appears in Table 7 (AudioVisual→Text) but was deliberately excluded here to avoid two conflicting scores under the same 'videomme' slug; see coverageNotes."
 qwen3-5-omni-plus,81.9,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 6 (Vision→Text), Video Understanding section, Qwen3.5-Omni-Plus column, cell S5.T6.3.28.4. Paper labels row 'VideoMME (w/o sub.)' — without-subtitles setting."
+qwen3-6-27b,87.7,self-reported,https://huggingface.co/Qwen/Qwen3.6-27B,,Listed as 'VideoMME (w sub.)' on the official HF model card.
+qwen3-6-35b-a3b,86.6,self-reported,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,,Listed as 'VideoMME (w sub.)' on the official HF model card.
+qwen3-6-plus,87.8,self-reported,https://qwen.ai/blog?id=qwen3.6,2026-04-02,"Vision-language table, 'VideoMME(w sub.)' (with-subtitles) row. Used the with-subtitles variant to stay consistent with how the sibling Qwen3.6 corpus entries (qwen3-6-27b, qwen3-6-35b-a3b) report VideoMME from their own HF model cards."
+qwen3-7-plus,88,self-reported,https://qwen.ai/blog?id=qwen3.7-plus,2026-05-31,"Reported as 'VideoMME (w/ sub.)' in the official table's Video Understanding section, consistent with how several other Qwen-family models in this corpus record VideoMME-with-subtitles under this slug."
+seed-2-1-pro,89.2,self-reported,https://seed.bytedance.com/en/seed2_1,,Seed2.1 Pro column of ByteDance's official launch-page benchmark table

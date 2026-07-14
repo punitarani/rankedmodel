@@ -36,7 +36,7 @@
   "vramQ4Gb": 5,
   "vramFp16Gb": 14,
   "tps4090": null,
-  "tpsNote": "Vendor reports 1,174 tok/s on A100 with PyTorch — not an RTX 4090 llama.cpp measurement",
+  "tpsNote": "Vendor reports 1,174 tok/s on A100 with PyTorch \u2014 not an RTX 4090 llama.cpp measurement",
   "effortLabel": null,
   "isDefaultConfig": true,
   "isBestConfig": true,
@@ -76,7 +76,14 @@
       "score": 47.38,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Deci/DeciLM-7B"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 40.33,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Deci/DeciLM-7B",
+      "notes": "Open LLM Leaderboard (v1) TruthfulQA score for the DeciLM-7B base model, listed alongside the other 5 already-recorded scores in the same model-card table"
     }
   ],
-  "verificationNotes": "Confirmed via huggingface.co/Deci/DeciLM-7B (7.04B params, Apache 2.0 license, 8192-token/8K context, AutoNAC-designed variable GQA) — all matching. All five self-reported Open LLM Leaderboard scores (ARC 59.39, HellaSwag 82.51, MMLU 59.76, Winogrande 79.95, GSM8K 47.38) confirmed present on the HF model card. MarkTechPost coverage (article dated 2023-12-14) and independent sources confirm the model was announced via Deci's Twitter on 2023-12-12, matching releaseDate. The 1,174 tok/s A100/PyTorch figure was independently corroborated (batch size 352), correctly distinguished in tpsNote from an RTX 4090 llama.cpp measurement, which is not available for this model. No changes made."
+  "verificationNotes": "Confirmed via huggingface.co/Deci/DeciLM-7B (7.04B params, Apache 2.0 license, 8192-token/8K context, AutoNAC-designed variable GQA) \u2014 all matching. All five self-reported Open LLM Leaderboard scores (ARC 59.39, HellaSwag 82.51, MMLU 59.76, Winogrande 79.95, GSM8K 47.38) confirmed present on the HF model card. MarkTechPost coverage (article dated 2023-12-14) and independent sources confirm the model was announced via Deci's Twitter on 2023-12-12, matching releaseDate. The 1,174 tok/s A100/PyTorch figure was independently corroborated (batch size 352), correctly distinguished in tpsNote from an RTX 4090 llama.cpp measurement, which is not available for this model. No changes made."
 }

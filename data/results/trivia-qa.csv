@@ -1,10 +1,46 @@
 model_slug,score,source,source_url,evaluated_at,notes
+apple-dclm-baseline-7b,52.7,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,'TriviaQA' row (0.5270) on the model's official HF eval table.
+btlm-3b-8k,34.9,self-reported,https://arxiv.org/abs/2309.11568,,"0-shot, Table 4"
 chinchilla,73.2,self-reported,https://arxiv.org/abs/2203.15556,,"TriviaQA unfiltered, 5-shot"
+claude-2,87.5,self-reported,https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf,2023-07-11,"5-shot, same Section 4.3 table (Claude 2 column)."
+deepseek-llm-67b,81.5,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6; also matches the official GitHub README table"
+deepseekmoe-16b,64.8,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, TriviaQA EM 5-shot, DeepSeekMoE 16B column."
+gemma-2-27b,83.7,self-reported,https://huggingface.co/google/gemma-2-27b,2024-06-01,5-shot
+gemma-2-9b,76.6,self-reported,https://huggingface.co/google/gemma-2-9b,2024-06-01,5-shot
+gemma-2b,53.2,self-reported,https://huggingface.co/google/gemma-2b,,5-shot
+gemma-7b,63.4,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf,2024-02-21,"Table 6, 5-shot."
 gopher,63.6,self-reported,https://arxiv.org/abs/2203.15556,,"TriviaQA unfiltered, 5-shot"
 gpt-3-175b,71.2,self-reported,https://arxiv.org/abs/2005.14165,,"few-shot, closed-book"
+gpt-j-6b,17,self-reported,https://arxiv.org/abs/2204.06745,2022-04-14,"Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.170); low score is expected/plausible for a 6B non-instruction-tuned 2021 base model on closed-book trivia."
+gpt-neox-20b,25.9,self-reported,https://arxiv.org/abs/2204.06745,2022-04-14,"Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.259)."
 h2o-danube-1-8b,36.29,self-reported,https://huggingface.co/h2oai/h2o-danube-1.8b-chat,,
+hunyuan-large-a52b,89.2,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
+inflection-1,70.3,self-reported,https://inflection.ai/assets/Inflection-1.pdf,2023-06-23,"0-shot, unfiltered-web dev split ('Split A', Table 3); this is the figure behind the public blog's claim of a 2.1-point edge over LLaMA-65B (68.2). Three other TriviaQA/split-and-shot variants are also reported (up to 85.0 on the Wikipedia split, 1-shot) but this one was chosen as the standard 0-shot comparison point."
+krutrim-2-12b,62,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,"TriviaQA, 5-shot exact match"
 llama-13b,56.6,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot exact match, Table 5"
+llama-2-13b,73.1,self-reported,https://ar5iv.labs.arxiv.org/html/2307.09288,2023-07-18,"0-shot, Wiki validation subset, Table 22"
+llama-2-70b,87.6,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"5-shot exact match on the TriviaQA-Wiki validation subset, Table 22 (Appendix A.2.2). Meta also reports 0/1/64-shot variants (82.4/85.0/87.5); 5-shot was chosen as the most commonly-cited setting."
+llama-2-7b,72.1,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"5-shot exact match on the TriviaQA-Wiki validation subset, Table 22 (Appendix A.2.2). Meta also reports 0/1/64-shot variants (65.8/68.9/73.7); 5-shot chosen as the most commonly-cited setting."
+llama-3-70b,89.7,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct,,"TriviaQA-Wiki, 5-shot, pretrained/base checkpoint."
+llama-3-8b,78.5,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"TriviaQA-Wiki, 5-shot, pretrained/base checkpoint."
 llama-33b,65.1,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot exact match, Table 5"
+llama-65b,68.2,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot exact match, Table 5 (same table/citation convention already used for sibling LLaMA-33B/13B entries)"
+llama-7b,50,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot exact match, Table 5 (same table/citation convention already used for sibling LLaMA-33B/13B entries)"
+luminous-supreme-70b,37.7,self-reported,https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/,2023-02-20,"Core 16-task suite, 0-shot, exact-match metric."
+ministral-3b,56.7,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Base model comparison table
+ministral-8b,65.5,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Base model comparison table
+mistral-7b,69.9,self-reported,https://arxiv.org/abs/2310.06825,,"Table 2 of the Mistral 7B paper (TriviaQA column), Pretrained row."
+mistral-large,82.7,self-reported,https://mistral.ai/news/mistral-large/,2024-02-26,Same table ('TriQA' column).
 mistral-nemo-12b,73.8,self-reported,https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407,,
+mixtral-8x7b,71.5,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,Table 2 of the paper (5-shot).
+naver-hyperclova-x,63.58,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, 5-shot, Table 6 (world knowledge)."
+olmo-2-13b,81.9,self-reported,https://arxiv.org/abs/2501.00656,2025-01-02,"TriviaQA; OLMo 2 Technical Report Table 6, base OLMo-2-13B row."
+olmo-2-7b,78,self-reported,https://huggingface.co/allenai/OLMo-2-1124-7B,,TriviaQA column in the OLMo-2-1124-7B comparison table
 palm-540b,81.4,self-reported,https://arxiv.org/abs/2204.02311,,Few-shot (1-shot) TriviaQA
+phi-2-2-7b,45.2,self-reported,https://arxiv.org/pdf/2404.14219,,5-shot; same comparison table.
+phi-3-medium-14b,73.9,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,5-shot
+phi-3-mini-3-8b,61.4,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,5-shot
+phi-3-small-7b,58.1,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,5-shot
 sarvam-1-2b,90.62,self-reported,https://huggingface.co/sarvamai/sarvam-1,2024-10-24,zero-shot
+skywork-13b,54,self-reported,https://arxiv.org/pdf/2310.19341,2023-10-30,From Table 11 of the Skywork-13B technical report (arXiv:2310.19341).
+smollm2-1-7b,36.7,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,"Base pre-trained model, zero-shot."

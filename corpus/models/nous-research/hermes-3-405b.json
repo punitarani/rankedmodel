@@ -100,6 +100,48 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/pdf/2408.11857",
       "notes": "MC2, 0-shot"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 86.24,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2408.11857",
+      "notes": "0-shot, Table 5 'Final downstream task evaluations'."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 84.87,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2408.11857",
+      "notes": "Strict accuracy, Table 5."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 48.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2408.11857",
+      "notes": "0-shot, Table 5."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 86.27,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2408.11857",
+      "notes": "5-shot, Table 5."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 85.96,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2408.11857",
+      "notes": "0-shot, Table 5."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 61.84,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2408.11857",
+      "notes": "0-shot, Table 5."
     }
   ],
   "verificationNotes": "Fetched and read the full arXiv 2408.11857 PDF (Hermes 3 Technical Report, arXiv watermark dated 15 Aug 2024, exactly matching record's release date). Table 5 'Final downstream task evaluations' literally shows all seven claimed Hermes-3-405B scores verbatim: MMLU 85.02 (5-shot), MMLU-PRO 54.14 (5-shot), GPQA 44.84 (0-shot), ARC-C 69.45 (0-shot), BBH 75.37 (3-shot), HellaSwag 90.19 (10-shot), TruthfulQA MC2 65.57 (0-shot). Paper confirms Llama 3.1 base sizes (8B/70B/405B) and 131,072 (128K) native context window. HF model card lists 406B raw param count vs. the record's standard '405B' naming; kept 405 as this is the universally used name for this Llama 3.1 size class. No changes made."

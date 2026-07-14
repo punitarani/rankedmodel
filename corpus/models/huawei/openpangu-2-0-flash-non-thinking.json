@@ -76,6 +76,20 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
       "notes": "SWE-bench Verified, Avg@3, Non-Thinking mode"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 79.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "GPQA-Diamond, Avg@4, Non-Thinking mode column of the official benchmark table"
+    },
+    {
+      "benchmarkSlug": "pinchbench",
+      "score": 82.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md",
+      "notes": "PinchBench, Avg@3, Non-Thinking mode column of the official benchmark table"
     }
   ],
   "verificationNotes": "Same official HF model card as the Thinking sibling; Non-Thinking column of the same benchmark table."

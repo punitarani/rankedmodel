@@ -1,2 +1,8 @@
 model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba-1-5-large,48.5,self-reported,https://arxiv.org/html/2408.12570v1,,"WildBench score from Table 3 (Chatbot Evaluations) of the Jamba-1.5 technical report, alongside the Arena-Hard 65.4 already in the corpus."
+ai21-jamba-1-5-mini,42.4,self-reported,https://arxiv.org/html/2408.12570v1,,"WildBench score from Table 3 (Chatbot Evaluations) of the Jamba-1.5 technical report, alongside the Arena-Hard 46.1 already in the corpus."
+internlm3-8b-instruct,33.1,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,"WildBench raw score, from official model card table."
 lg-exaone-3-0-7-8b-instruct,48.2,self-reported,https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct,2024-08-01,WildBench
+ministral-3b,36.3,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,"Instruct model comparison table, listed as 'Wild bench'"
+ministral-8b,41.3,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,"Instruct model comparison table, listed as 'Wild bench'"
+mistral-small-3-24b,52.27,self-reported,https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501,2025-01-30,WildBench row of the same Instruction Following table.

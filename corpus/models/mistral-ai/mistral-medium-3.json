@@ -47,6 +47,28 @@
     "ctxK": "https://docs.mistral.ai/models/mistral-medium-3-25-05",
     "openness": "https://mistral.ai/news/mistral-medium-3/"
   },
-  "results": [],
-  "verificationNotes": "Confirmed via mistral.ai/news/mistral-medium-3/ (fetched directly, dated 2025-05-07, pricing '$0.4 input / $2 output per M token', claim 'performs at or above 90% of Claude Sonnet 3.7 on benchmarks across the board' — matches note verbatim in substance). AA Intelligence Index score of 12 confirmed literally on artificialanalysis.ai/models/mistral-medium-3. Deprecation date 2026-05-22 confirmed via docs.mistral.ai/models/overview legacy table (deprecation 5/22/2026, retirement 8/31/2026)."
+  "results": [
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 44.84,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/mistralai_mistral-medium-2505",
+      "notes": "Independent third-party eval by Vals AI of mistral-medium-2505 (release date 5/7/2025, price $0.4/$2, 131k context \u2014 all match this corpus entry). Vals AI labels the model 'Mistral Medium 3.1 (05/2025)' in their own versioning scheme but the model ID, price, and release date confirm this is Mistral Medium 3 (mistral-medium-2505). Score with \u00b11.15 std error, ranked 106/127 on their leaderboard at time of eval."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 75.29,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/mistralai_mistral-medium-2505",
+      "notes": "Independent Vals AI eval, \u00b10.42 std error, ranked 95/120."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 62.97,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/mistralai_mistral-medium-2505",
+      "notes": "Independent Vals AI eval, \u00b11.16 std error, ranked 70/82."
+    }
+  ],
+  "verificationNotes": "Confirmed via mistral.ai/news/mistral-medium-3/ (fetched directly, dated 2025-05-07, pricing '$0.4 input / $2 output per M token', claim 'performs at or above 90% of Claude Sonnet 3.7 on benchmarks across the board' \u2014 matches note verbatim in substance). AA Intelligence Index score of 12 confirmed literally on artificialanalysis.ai/models/mistral-medium-3. Deprecation date 2026-05-22 confirmed via docs.mistral.ai/models/overview legacy table (deprecation 5/22/2026, retirement 8/31/2026)."
 }

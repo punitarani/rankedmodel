@@ -82,6 +82,55 @@
       "source": "self-reported",
       "sourceUrl": "https://unfoldai.com/nemotron-4-nvidia-powerful-language-model/",
       "evaluatedAt": "2024-02-26"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 60.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2402.16819",
+      "notes": "Table 3, zero-shot standard reasoning benchmarks."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 55.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2402.16819",
+      "notes": "Table 3, zero-shot."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 80.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2402.16819",
+      "notes": "Table 3, zero-shot."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 82.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2402.16819",
+      "notes": "Table 3, zero-shot."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2402.16819",
+      "notes": "Table 3, zero-shot."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 82.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2402.16819",
+      "notes": "Table 3, zero-shot."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 41.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2402.16819",
+      "notes": "Table 9, 8-shot English-Chain-of-Thought average across 10 languages."
     }
   ],
   "verificationNotes": "Confirmed real: arXiv:2402.16819 (submitted Feb 26/27, 2024) verifies 15B params, 8T training tokens, and multilingual claims. Architecture (decoder-only, GQA, RoPE, squared-ReLU MLP activations, no bias terms, untied embeddings) confirmed via technical-report summaries (32 layers, hidden dim 6144, 48 heads, 4096-token sequence length, 256K vocab). License (NVIDIA Open Model License) and open-weights status confirmed via HuggingFace search results for nvidia/Nemotron-4-15B-Base. All five benchmark scores (MMLU 64.2, BBH 58.7, GSM8K 46.0, HumanEval 31.6, MBPP 40.6) confirmed as literal text on unfoldai.com. langCount 54 reconciled from 'English + 53 additional languages.' No changes made."

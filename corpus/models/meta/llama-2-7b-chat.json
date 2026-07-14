@@ -53,10 +53,10 @@
   "results": [
     {
       "benchmarkSlug": "mmlu",
-      "score": 45.3,
-      "source": "self-reported",
-      "sourceUrl": "https://telnyx.com/llm-library/llama-2-7b-chat-hf",
-      "notes": "5-shot, reported for Llama-2-7b-chat-hf [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+      "score": 45.8,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2312.06281",
+      "notes": "5-shot, reported for Llama-2-7b-chat-hf [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement] [Corrected during full-corpus audit: The existing entry was labeled 'self-reported' and sourced to a telnyx.com aggregator page, but Meta's own official model card/paper (confirmed by direct fetch) never publishes an MMLU score for the RLHF fine-tuned Llama-2-7b-chat model \u2014 only for the base pretrained 7B, whose MMLU is exactly 45.3. That figure was mislabeled: it's the base model's number, not an independent measurement of the chat]"
     },
     {
       "benchmarkSlug": "arena",
@@ -64,6 +64,14 @@
       "source": "arena",
       "sourceUrl": "https://telnyx.com/llm-library/llama-2-7b-chat-hf",
       "notes": "Chatbot Arena Elo (historical, 2023-era leaderboard)"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 6.27,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2312.06281",
+      "evaluatedAt": "2023-12-01",
+      "notes": "GPT-4-judged MT-Bench average for meta-llama/Llama-2-7b-chat-hf, per the EQ-Bench paper's Table 3 (citing the LMSYS Chatbot Arena/MT-Bench leaderboard). Independently corroborated by telnyx.com/llm-library/llama-2-7b-chat-hf, which separately states 'MT Bench: 6.27' for this exact model."
     }
   ],
   "verificationNotes": "Confirmed existence and 2023-07-18 release via Meta/HF. Directly fetched telnyx.com/llm-library/llama-2-7b-chat-hf: both cited numbers (MMLU 45.3, Arena Elo 1037) literally appear on the page as text ('scores 45.3% on MMLU (5-shot)' and Arena Elo 1037), so both rows kept. Note: the same page also shows a separate spec-table MMLU figure of 45.8 elsewhere, an internal inconsistency on telnyx's own page, but the 45.3 figure is literally present and matches Meta's own reported base-model number, so it was not dropped."

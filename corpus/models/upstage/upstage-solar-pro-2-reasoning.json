@@ -47,6 +47,28 @@
     "releaseDate": "https://www.upstage.ai/news/solar-pro-2",
     "openness": "https://www.upstage.ai/pricing/api"
   },
-  "results": [],
-  "verificationNotes": "Confirmed the model itself is real (2025-07-10 release, 31B params, Reasoning mode confirmed via Upstage's own launch blog and independent press). However the claimed AA Intelligence Index result (score=15, sourceUrl .../solar-pro-2-reasoning/providers) could NOT be confirmed: the cited /providers sub-page shows no Intelligence Index score at all ('No API providers are currently available'), and the main solar-pro-2-reasoning model page currently shows a score of 9, not 15 (Artificial Analysis Intelligence Index is a live, frequently-recalculated metric, and an earlier press cycle cited 58 under an older methodology — none of these match the claimed 15). Per instructions, dropped this unconfirmed result row rather than keep or silently correct the number; removed the launch-quote 'scored 58... 5 points above GPT-4.1' claim from the note since it could not be tied to a verifiable current source and conflicts with the current index value."
+  "results": [
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 69,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/solar-pro-2-reasoning",
+      "notes": "Artificial Analysis independent evaluation, GPQA Diamond, Solar Pro 2 Reasoning mode."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 7,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/solar-pro-2-reasoning",
+      "notes": "Artificial Analysis independent evaluation, Humanity's Last Exam, Reasoning mode."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 37,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/solar-pro-2-reasoning",
+      "notes": "Artificial Analysis independent evaluation, IFBench, Reasoning mode."
+    }
+  ],
+  "verificationNotes": "Confirmed the model itself is real (2025-07-10 release, 31B params, Reasoning mode confirmed via Upstage's own launch blog and independent press). However the claimed AA Intelligence Index result (score=15, sourceUrl .../solar-pro-2-reasoning/providers) could NOT be confirmed: the cited /providers sub-page shows no Intelligence Index score at all ('No API providers are currently available'), and the main solar-pro-2-reasoning model page currently shows a score of 9, not 15 (Artificial Analysis Intelligence Index is a live, frequently-recalculated metric, and an earlier press cycle cited 58 under an older methodology \u2014 none of these match the claimed 15). Per instructions, dropped this unconfirmed result row rather than keep or silently correct the number; removed the launch-quote 'scored 58... 5 points above GPT-4.1' claim from the note since it could not be tied to a verifiable current source and conflicts with the current index value."
 }

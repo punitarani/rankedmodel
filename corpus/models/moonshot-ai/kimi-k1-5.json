@@ -72,7 +72,42 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2501.12599",
       "notes": "Long-CoT variant, visual reasoning"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 87.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.12599",
+      "notes": "MMLU (EM) = 87.4, Kimi k1.5 short-CoT model, from Table 3 of the arXiv paper (v4 HTML), which compares the short-CoT model against Qwen2.5-72B-Inst., LLaMA-3.1-405B-Inst., DeepSeek-V3, Claude-3.5-Sonnet-1022 and GPT-4o-0513."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 87.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.12599",
+      "notes": "IF-Eval (Prompt Strict) = 87.2, Kimi k1.5 short-CoT model, Table 3."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 88.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.12599",
+      "notes": "C-Eval (EM) = 88.3, Kimi k1.5 short-CoT model, Table 3."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 70,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.12599",
+      "notes": "MMMU-Val (Pass@1) = 70.0, Kimi k1.5 long-CoT model, from Table 2 (the same table the existing MathVista/AIME/MATH-500 long-CoT entries come from). The short-CoT model scores 68.0 on the same benchmark per Table 3; long-CoT figure chosen for consistency with the model's other existing long-CoT entries."
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 38.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.12599",
+      "notes": "MathVision-Full (Pass@1) = 38.6, Kimi k1.5 long-CoT model, Table 2 (short-CoT model scores 31.0 per Table 3)."
     }
   ],
-  "verificationNotes": "Confirmed genuine via arXiv:2501.12599 ('Kimi k1.5: Scaling Reinforcement Learning with LLMs', submitted 2025-01-20, matches releaseDate) and MoonshotAI/Kimi-k1.5 GitHub repo. All four benchmark rows (AIME 77.5, MATH-500 96.2, LiveCodeBench 47.3, MathVista 74.9) independently re-fetched from the exact sourceUrl and confirmed to literally match. apiAvailable:false confirmed correct — k1.5 was a research release; Moonshot's current public API model list (platform.kimi.ai) does not list a kimi-k1.5 model ID. No changes needed."
+  "verificationNotes": "Confirmed genuine via arXiv:2501.12599 ('Kimi k1.5: Scaling Reinforcement Learning with LLMs', submitted 2025-01-20, matches releaseDate) and MoonshotAI/Kimi-k1.5 GitHub repo. All four benchmark rows (AIME 77.5, MATH-500 96.2, LiveCodeBench 47.3, MathVista 74.9) independently re-fetched from the exact sourceUrl and confirmed to literally match. apiAvailable:false confirmed correct \u2014 k1.5 was a research release; Moonshot's current public API model list (platform.kimi.ai) does not list a kimi-k1.5 model ID. No changes needed."
 }

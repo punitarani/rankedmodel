@@ -74,7 +74,21 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/THUDM/glm-4v-9b",
       "notes": "out of 1000"
+    },
+    {
+      "benchmarkSlug": "seedbench",
+      "score": 76.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/glm-4v-9b",
+      "notes": "Labeled 'SEEDBench_IMG' on the official model card (SEED-Bench image subset)."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 47.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/glm-4v-9b",
+      "notes": "From the official model card's multimodal benchmark comparison table."
     }
   ],
-  "verificationNotes": "Confirmed real, same 2024-06-05 release batch as GLM-4-9B-Chat (GitHub README_20240605.md). Notably the paramsB:14 in the source record (despite the '9B' model name) is CORRECT — verified via HF API safetensors metadata showing 13,906,320,928 total params (13.9B, rounds to 14) because of the added ViT vision encoder. config.json seq_length=8192 confirms 8K context (matches ctxK:8, unusually short vs the text-only 9B's 128K). All 4 result rows (MMBench-EN 81.1, MMBench-CN 79.4, AI2D 81.1, OCRBench 786) re-confirmed verbatim on the HF README. No changes made."
+  "verificationNotes": "Confirmed real, same 2024-06-05 release batch as GLM-4-9B-Chat (GitHub README_20240605.md). Notably the paramsB:14 in the source record (despite the '9B' model name) is CORRECT \u2014 verified via HF API safetensors metadata showing 13,906,320,928 total params (13.9B, rounds to 14) because of the added ViT vision encoder. config.json seq_length=8192 confirms 8K context (matches ctxK:8, unusually short vs the text-only 9B's 128K). All 4 result rows (MMBench-EN 81.1, MMBench-CN 79.4, AI2D 81.1, OCRBench 786) re-confirmed verbatim on the HF README. No changes made."
 }

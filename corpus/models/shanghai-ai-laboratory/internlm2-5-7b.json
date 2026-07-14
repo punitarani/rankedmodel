@@ -71,6 +71,20 @@
       "score": 71.6,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/internlm/internlm2_5-7b-chat"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/internlm/internlm2_5-7b-chat",
+      "notes": "InternLM2.5-7B-Chat, 5-shot, from official HF OpenCompass evaluation table."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 38.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/internlm/internlm2_5-7b-chat",
+      "notes": "InternLM2.5-7B-Chat, 0-shot GPQA (Diamond), from official HF OpenCompass evaluation table."
     }
   ],
   "verificationNotes": "Confirmed real. Release date 2024-07-03 corroborated by web search (HF + GitHub model card). Apache-2.0 confirmed. All four benchmark rows re-confirmed verbatim on the internlm2_5-7b-chat HF model card. No changes needed."

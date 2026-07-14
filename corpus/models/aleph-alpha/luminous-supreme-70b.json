@@ -47,6 +47,79 @@
     "openness": "https://cloudprice.net/models/aleph-alpha-luminous-supreme",
     "ctxK": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 44.2,
+      "source": "self-reported",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/",
+      "evaluatedAt": "2023-02-20",
+      "notes": "Core 16-task suite (0-shot), Aleph Alpha's own official benchmark blog comparing luminous-supreme (70B, their 'current best model') against davinci/BLOOM/OPT."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 76.9,
+      "source": "self-reported",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/",
+      "evaluatedAt": "2023-02-20",
+      "notes": "Core 16-task suite, 0-shot."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 59.2,
+      "source": "self-reported",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/",
+      "evaluatedAt": "2023-02-20",
+      "notes": "Core 16-task suite, 0-shot."
+    },
+    {
+      "benchmarkSlug": "lambada",
+      "score": 74,
+      "source": "self-reported",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/",
+      "evaluatedAt": "2023-02-20",
+      "notes": "Core 16-task suite, 0-shot."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 33,
+      "source": "self-reported",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/",
+      "evaluatedAt": "2023-02-20",
+      "notes": "Core 16-task suite, 0-shot. Falls below the taxonomy's typical 40-50 display range for this benchmark, but is the number directly published by Aleph Alpha for this legacy (2022-era) 70B model."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 79.9,
+      "source": "self-reported",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/",
+      "evaluatedAt": "2023-02-20",
+      "notes": "Core 16-task suite, 0-shot."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 40.8,
+      "source": "self-reported",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/",
+      "evaluatedAt": "2023-02-20",
+      "notes": "Listed as 'race (RC)' in the core 16-task table; the extended-tasks table separately reports 'race_mid', implying the core 'race' entry is the high-school split (RACE-H) by elimination -- flagged as a best-effort mapping."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 37.7,
+      "source": "self-reported",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/",
+      "evaluatedAt": "2023-02-20",
+      "notes": "Core 16-task suite, 0-shot, exact-match metric."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 70,
+      "source": "self-reported",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/",
+      "evaluatedAt": "2023-02-20",
+      "notes": "Core 16-task suite, 0-shot."
+    }
+  ],
   "verificationNotes": "Release date (Aleph Alpha press release, April 14, 2022, Heidelberg) and 70B parameter count for the Supreme tier of the 13B/30B/70B Luminous family confirmed via multiple independent sources (innFactory, CRFM Stanford FMTI report). Dense decoder-only transformer with rotary position embeddings architecture confirmed. 2048-token context length confirmed as the legacy Luminous spec. Pricing of $175 input / $192.5 output per 1M tokens confirmed by fetching cloudprice.net directly - matches exactly. Deprecated/legacy status is consistent with Aleph Alpha's late-2024 pivot away from marketing Luminous to new customers in favor of PhariaAI/Pharia-1."
 }

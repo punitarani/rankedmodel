@@ -77,7 +77,35 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/apple/DCLM-Baseline-7B",
       "notes": "chain-of-thought"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 59.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/apple/DCLM-Baseline-7B",
+      "notes": "'ARC Challenge' row (0.5990) on the model's official HF eval table, same table the existing arc-easy/mmlu/winogrande/gsm8k/hellaswag entries were sourced from."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 81.28,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/apple/DCLM-Baseline-7B",
+      "notes": "'PIQA' row (0.8128) on the model's official HF eval table."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 45.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/apple/DCLM-Baseline-7B",
+      "notes": "'OpenBookQA' row (0.4540) on the model's official HF eval table."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 52.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/apple/DCLM-Baseline-7B",
+      "notes": "'TriviaQA' row (0.5270) on the model's official HF eval table."
     }
   ],
-  "verificationNotes": "Confirmed real. HF apple/DCLM-Baseline-7B page confirms license tag 'apple-ascl' (Apple Sample Code License) and architecture exactly: 32 layers, 4096 hidden, 32 attention heads, 2048 context (matches ctxK=2). Full eval table pulled from the model card confirms MMLU-few-shot 63.72, ARC-Easy 82.20, GSM8K-CoT 2.50 exactly as given. CORRECTED an error: the record's WinoGrande score of 88.28 does not match the page's 'Winogrande' row (72.69) — 88.28 is actually the page's separate 'Winograd' benchmark score. Replaced with the verified correct WinoGrande value of 72.69. Also verified the page has two distinct HellaSwag rows ('HellaSwag (zero-shot)' = 79.87 and 'HellaSwag' = 80.43); the record's 80.43 matches the latter, so kept as-is."
+  "verificationNotes": "Confirmed real. HF apple/DCLM-Baseline-7B page confirms license tag 'apple-ascl' (Apple Sample Code License) and architecture exactly: 32 layers, 4096 hidden, 32 attention heads, 2048 context (matches ctxK=2). Full eval table pulled from the model card confirms MMLU-few-shot 63.72, ARC-Easy 82.20, GSM8K-CoT 2.50 exactly as given. CORRECTED an error: the record's WinoGrande score of 88.28 does not match the page's 'Winogrande' row (72.69) \u2014 88.28 is actually the page's separate 'Winograd' benchmark score. Replaced with the verified correct WinoGrande value of 72.69. Also verified the page has two distinct HellaSwag rows ('HellaSwag (zero-shot)' = 79.87 and 'HellaSwag' = 80.43); the record's 80.43 matches the latter, so kept as-is."
 }

@@ -68,6 +68,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/bigcode/starcoder2-3b",
       "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 27.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/bigcode/starcoder2-3b",
+      "notes": "HumanEval+ pass@1 = 27.4, taken verbatim from the model-index metadata block in the official HF model card README (fetched raw)."
     }
   ],
   "verificationNotes": "Fetched HF model card: confirmed 3B params, 16K ctx, ServiceNow-trained, 17 languages, HumanEval 31.7/GSM8K(PAL) 27.7/DS-1000 25.0 verbatim. No changes."

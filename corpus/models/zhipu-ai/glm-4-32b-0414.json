@@ -71,7 +71,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/zai-org/GLM-4-32B-0414",
       "notes": "Retail split"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 33.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-4-32B-0414",
+      "notes": "SWE-bench Verified via the Moatless framework \u2014 the best of three published framework results on the same official model card (Moatless 33.8, Agentless 30.7, OpenHands 27.2). Not yet represented in the corpus at all."
     }
   ],
-  "verificationNotes": "Confirmed real. Release date 2025-04-14 corroborated by PRNewswire/Yahoo Finance ('Z.ai Unveils New GLM Open-Source Models...') and Synced (2025-04-16 article reporting on the launch two days prior) — note some auto-summarized tool output misread the year as 2024, but independent news coverage confirms 2025. MIT license confirmed via HF API license tag. Exact param count via HF safetensors API is 32,566,081,536 (32.57B); kept as 32 to match the model's own name/marketing (HF UI itself displays a rounded '33B' — both are consistent with the true 32.57B figure, not an error). config.json max_position_embeddings=32768 confirms 32K native context. All 3 result rows (IFEval 87.6, BFCL-v3 69.6, TAU-Bench-retail 68.7) re-confirmed verbatim on the HF README."
+  "verificationNotes": "Confirmed real. Release date 2025-04-14 corroborated by PRNewswire/Yahoo Finance ('Z.ai Unveils New GLM Open-Source Models...') and Synced (2025-04-16 article reporting on the launch two days prior) \u2014 note some auto-summarized tool output misread the year as 2024, but independent news coverage confirms 2025. MIT license confirmed via HF API license tag. Exact param count via HF safetensors API is 32,566,081,536 (32.57B); kept as 32 to match the model's own name/marketing (HF UI itself displays a rounded '33B' \u2014 both are consistent with the true 32.57B figure, not an error). config.json max_position_embeddings=32768 confirms 32K native context. All 3 result rows (IFEval 87.6, BFCL-v3 69.6, TAU-Bench-retail 68.7) re-confirmed verbatim on the HF README."
 }

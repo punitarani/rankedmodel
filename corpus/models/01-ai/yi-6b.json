@@ -95,7 +95,47 @@
       "sourceUrl": "https://arxiv.org/abs/2403.04652",
       "evaluatedAt": "2024-03-01",
       "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 72,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.04652",
+      "evaluatedAt": "2024-03-01",
+      "notes": "Yi-6B base model, Yi technical report Table 2 (grouped academic benchmarks vs. open-source base models)."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 75.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.04652",
+      "evaluatedAt": "2024-03-01",
+      "notes": "Yi-6B base model, Yi technical report Table 2."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 50.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.04652",
+      "evaluatedAt": "2024-03-01",
+      "notes": "25-shot. Yi technical report Table 8 (depth-upscaling section, Yi-6B baseline row)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 74.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.04652",
+      "evaluatedAt": "2024-03-01",
+      "notes": "10-shot. Yi technical report Table 8 (depth-upscaling section, Yi-6B baseline row)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 71.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.04652",
+      "evaluatedAt": "2024-03-01",
+      "notes": "5-shot. Yi technical report Table 8 (depth-upscaling section, Yi-6B baseline row)."
     }
   ],
-  "verificationNotes": "CORRECTED: input record's mbpp score of 23.2 does not appear in the source. Fetched the Yi technical report full text (ar5iv render of arXiv 2403.04652, Table 3: 'GSM8k, MATH, Human-Eval, and MBPP') and confirmed Yi-6B's actual MBPP pass@1 is 26.3, not 23.2 — corrected accordingly. All other benchmark numbers (mmlu 63.2, bbh 42.8, gsm8k 32.5, math 4.6, humaneval 15.9) and specs (release Nov 2, 2023; 6B; Apache 2.0; 4K ctx; bilingual) confirmed exactly against HF model card and the paper."
+  "verificationNotes": "CORRECTED: input record's mbpp score of 23.2 does not appear in the source. Fetched the Yi technical report full text (ar5iv render of arXiv 2403.04652, Table 3: 'GSM8k, MATH, Human-Eval, and MBPP') and confirmed Yi-6B's actual MBPP pass@1 is 26.3, not 23.2 \u2014 corrected accordingly. All other benchmark numbers (mmlu 63.2, bbh 42.8, gsm8k 32.5, math 4.6, humaneval 15.9) and specs (release Nov 2, 2023; 6B; Apache 2.0; 4K ctx; bilingual) confirmed exactly against HF model card and the paper."
 }

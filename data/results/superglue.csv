@@ -1,2 +1,4 @@
 model_slug,score,source,source_url,evaluated_at,notes
+bloomz-176b,82.14,self-reported,https://huggingface.co/bigscience/bloomz,,"SuperGLUE CB (CommitmentBank) subtask, validation, zero-shot accuracy."
+gpt-3-175b,71.8,self-reported,https://arxiv.org/abs/2005.14165,,"Few-shot average (K=32 in-context examples), test set (Table 3.8)"
 ul2-20b,90.7,self-reported,https://arxiv.org/abs/2205.05131,,"SuperGLUE dev set average, finetuned"

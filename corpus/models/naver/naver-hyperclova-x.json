@@ -65,6 +65,69 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2404.01954",
       "notes": "HCX-L, pass@1"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 53.51,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2404.01954",
+      "notes": "HCX-L, 3-shot, Table 4."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 53.25,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2404.01954",
+      "notes": "HCX-L, 0-shot, Table 4."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 86.05,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2404.01954",
+      "notes": "HCX-L, 5-shot, Table 5 (commonsense reasoning)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 79.64,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2404.01954",
+      "notes": "HCX-L, 5-shot, Table 5."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 86.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2404.01954",
+      "notes": "HCX-L, 0-shot, Table 5."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 63.58,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2404.01954",
+      "notes": "HCX-L, 5-shot, Table 6 (world knowledge)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 20.16,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2404.01954",
+      "notes": "HCX-L, 4-shot maj@4, Table 7 (mathematics)."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 33.41,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2404.01954",
+      "notes": "HCX-L, 3-shot, Table 8 (coding)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 69.52,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2404.01954",
+      "notes": "HCX-L, MC2 5-shot, Table 10 (harmlessness)."
     }
   ],
   "verificationNotes": "Confirmed real. Release 2023-08-24 corroborated by TechCrunch, KED Global, VentureBeat and NAVER's own press release. ~204B params corroborated by KED Global (NAVER itself did not disclose an exact breakdown beyond 'more than 204B'). All three HCX-L benchmark scores (MMLU 67.98, GSM8K 81.65, HumanEval 55.49) re-confirmed on arXiv 2404.01954. 32K context corroborated (paper describes final 10% of pretraining done at 32,768 tokens). No changes needed."

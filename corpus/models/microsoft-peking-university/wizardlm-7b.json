@@ -57,11 +57,19 @@
     },
     {
       "benchmarkSlug": "alpaca-eval",
-      "score": 78,
-      "source": "self-reported",
-      "sourceUrl": "https://huggingface.co/TheBloke/wizardLM-7B-GGUF",
-      "notes": "AlpacaEval win rate (%) vs text-davinci-003 baseline, per original model card table"
+      "score": 65.2,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.03450",
+      "notes": "AlpacaEval win rate (%) vs text-davinci-003 baseline, per original model card table [Corrected during full-corpus audit: Fetched the actual raw markdown table on the model's official card (huggingface.co/TheBloke/wizardLM-7B-GGUF/raw/main/README.md, mirroring WizardLM/WizardLM-7B-V1.0) directly. Its benchmark table has separate MT-Bench / AlpacaEval / WizardEval / HumanEval columns, and for the WizardLM-7B-V1.0 row, MT-Bench and AlpacaEval are BLANK \u2014 the 78.0% figure sits squarely under the 'WizardEval' column (a p]"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 5.29,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.03450",
+      "evaluatedAt": "2023-09-07",
+      "notes": "GPT-4 single-answer grading MT-Bench score for WizardLM-7B, Table 9 of Salesforce's XGen-7B Technical Report (arXiv 2309.03450), where it's used as one of many baseline comparison models. Verified directly in the raw table HTML (WizardLM-7B row = 5.29, between Koala-13B 5.35 and MPT-30B-instruct 5.22)."
     }
   ],
-  "verificationNotes": "Confirmed real: arXiv 2304.12244 (submitted 2023-04-24) lists authors Can Xu, Qingfeng Sun, Kai Zheng, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Qingwei Lin, Daxin Jiang, affiliated 1=Microsoft, 2=Peking University — org confirmed. Corrected: the official HF repo is WizardLM/WizardLM-7B-V1.0 (input had non-existent 'WizardLMTeam/WizardLM-7B-V1.0'; that org handle exists for the 13B/Math models but not this 7B one, and it 401'd/does not resolve). Corrected: the '78' score is NOT a 'vicuna-eval win rate vs Vicuna-13B' as the input claimed — the TheBloke-mirrored model card literally labels it 'AlpacaEval' win rate against the text-davinci-003 baseline, so I relabeled benchmarkSlug to alpacaeval and fixed the notes; HumanEval 19.1 pass@1 confirmed verbatim on the same page. Context length 2K is consistent with the LLaMA-1 base (2048 tokens) used in April 2023. License is not machine-readable on HF (tagged 'other') but is widely documented as non-commercial/research-only, inherited from Meta's original LLaMA-1 research license — kept with lower confidence."
+  "verificationNotes": "Confirmed real: arXiv 2304.12244 (submitted 2023-04-24) lists authors Can Xu, Qingfeng Sun, Kai Zheng, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Qingwei Lin, Daxin Jiang, affiliated 1=Microsoft, 2=Peking University \u2014 org confirmed. Corrected: the official HF repo is WizardLM/WizardLM-7B-V1.0 (input had non-existent 'WizardLMTeam/WizardLM-7B-V1.0'; that org handle exists for the 13B/Math models but not this 7B one, and it 401'd/does not resolve). Corrected: the '78' score is NOT a 'vicuna-eval win rate vs Vicuna-13B' as the input claimed \u2014 the TheBloke-mirrored model card literally labels it 'AlpacaEval' win rate against the text-davinci-003 baseline, so I relabeled benchmarkSlug to alpacaeval and fixed the notes; HumanEval 19.1 pass@1 confirmed verbatim on the same page. Context length 2K is consistent with the LLaMA-1 base (2048 tokens) used in April 2023. License is not machine-readable on HF (tagged 'other') but is widely documented as non-commercial/research-only, inherited from Meta's original LLaMA-1 research license \u2014 kept with lower confidence."
 }

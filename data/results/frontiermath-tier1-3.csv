@@ -1,6 +1,8 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-opus-4-8,47.241,independent,https://benchlm.ai/models/claude-opus-4-8,2026-05-28,"FrontierMath v2 Tiers 1-3, attributed to the independent Epoch AI FrontierMath v2 leaderboard."
 gpt-5-4,47.6,self-reported,https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/,,FrontierMath Tier 1-3 (Pro variant scores 50.0)
 gpt-5-4-pro,50,self-reported,https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/,2026-03-05,FrontierMath Tier 1-3. Cross-confirmed by aireleasetracker.com and DataLearnerAI (both list 50%).
 gpt-5-5,51.7,self-reported,https://openai.com/index/introducing-gpt-5-5,,"FrontierMath Tier 1-3, base model (Pro scores 51.0-52.4 across sources); confirmed"
 gpt-5-5-xhigh,51.7,self-reported,https://benchlm.ai/models/gpt-5-5,,Explicitly attributed to 'xhigh effort' by benchlm.ai. Numerically identical to the frontiermath-tier1-3 result already recorded on the base 'GPT-5.5' corpus entry -- see verificationNotes.
 gpt-5-6,89,self-reported,https://openai.com/index/gpt-5-6/,,"FrontierMath Tier 1-3 v2, GPT-5.6 Sol; confirmed"
+gpt-5-pro,55.8,independent,https://epoch.ai/models/gpt-5-pro,,"FrontierMath Tiers 1-3 (v2), Epoch AI's independent capability evaluation (±2.9% CI). Verified directly on Epoch's GPT-5 Pro model page (bar chart + numeric label)."

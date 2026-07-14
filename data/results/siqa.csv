@@ -1,3 +1,28 @@
 model_slug,score,source,source_url,evaluated_at,notes
+btlm-3b-8k,46.5,self-reported,https://arxiv.org/abs/2309.11568,,"0-shot, Table 3"
+chinchilla,51.3,self-reported,https://arxiv.org/abs/2203.15556,,"Zero-shot SIQA (Social IQA) accuracy, Table 8 of the Chinchilla paper."
 comma-v0-1-2t,52.3,self-reported,https://huggingface.co/common-pile/comma-v0.1-2t,,
+gemma-2-27b,53.7,self-reported,https://huggingface.co/google/gemma-2-27b,2024-06-01,"SocialIQA, 0-shot"
+gemma-2-9b,53.4,self-reported,https://huggingface.co/google/gemma-2-9b,2024-06-01,"SocialIQA, 0-shot"
+gemma-2b,49.7,self-reported,https://huggingface.co/google/gemma-2b,,"SocialIQA, 0-shot"
+gemma-7b,51.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf,2024-02-21,"Table 6, 0-shot."
+gopher,50.6,self-reported,https://arxiv.org/abs/2203.15556,2022-03-29,"Zero-shot, Table 8; also stated directly in the original Gopher paper's prose ('Gopher achieves a 50.6% accuracy under the zero-shot setup' on SocialIQA)."
 granite-3-0-2b-instruct,66.36,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,Social IQa
+granite-3-0-8b-instruct,71.21,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"SIQA, 0-shot pass@1. Confirmed in HF model-index YAML and technical report Table 10. Note: this exceeds the taxonomy's documented siqa range (40-68) by ~3 points; the number is nonetheless exactly what IBM's own model card and paper state."
+jais-70b,52.9,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,English SIQA (Social IQA) score for jais-adapted-70b-chat.
+llama-13b,50.4,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+llama-2-70b,50.7,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (SIQA column)."
+llama-2-7b,48.3,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (SIQA column)."
+llama-33b,50.4,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3 (Common Sense Reasoning)."
+llama-65b,52.3,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table"
+llama-7b,48.9,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table"
+nemotron-4-15b,60.9,self-reported,https://arxiv.org/abs/2402.16819,,"Table 3, zero-shot standard reasoning benchmarks."
+phi-1-5-1-3b,52.6,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,2023-09-11,"Zero-shot accuracy, Table 2."
+phi-2-2-7b,68.3,self-reported,https://arxiv.org/pdf/2404.14219,,5-shot (labeled 'SociQA' in the report); same comparison table.
+phi-3-5-mini-3-8b,74.7,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,"Social IQA, 5-shot; HF model card."
+phi-3-5-moe-16x3-8b-6-6b-active,78,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,Social IQA
+phi-3-medium-14b,80.2,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,"Social IQA, 5-shot"
+phi-3-mini-3-8b,77.6,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,"Social IQA, 5-shot"
+phi-3-small-7b,79.2,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,"Social IQA, 5-shot"
+phi-4-mini-3-8b,72.5,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, SociQA (5-shot). Slightly exceeds the taxonomy's stated 40-68 typical range but is unambiguously the same Social IQA benchmark."
+phi-4-mini-instruct,72.5,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, SociQA (5-shot); slightly exceeds taxonomy's stated 40-68 range but same benchmark."

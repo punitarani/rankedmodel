@@ -76,6 +76,78 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B",
       "notes": "BigBench average (custom subset used by Nous/Teknium)"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 60.07,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B",
+      "evaluatedAt": "2023-11-03",
+      "notes": "acc_norm, part of GPT4All suite on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 81.65,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B",
+      "evaluatedAt": "2023-11-03",
+      "notes": "acc_norm, part of GPT4All suite on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 81.73,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B",
+      "evaluatedAt": "2023-11-03",
+      "notes": "acc_norm, part of GPT4All suite on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 44.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B",
+      "evaluatedAt": "2023-11-03",
+      "notes": "acc_norm, part of GPT4All suite on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 82.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B",
+      "evaluatedAt": "2023-11-03",
+      "notes": "acc_norm, part of GPT4All suite on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 74.35,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B",
+      "evaluatedAt": "2023-11-03",
+      "notes": "Part of GPT4All suite on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 63.64,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_teknium__OpenHermes-2.5-Mistral-7B",
+      "evaluatedAt": "2023-11-20",
+      "notes": "5-shot MMLU, computed by averaging the raw per-subject acc values (57 subjects) from the HF Open LLM Leaderboard (old/v1) details dataset's latest run for this model (2023-11-20). Not present on the vendor card."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 26.08,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_teknium__OpenHermes-2.5-Mistral-7B",
+      "evaluatedAt": "2023-11-20",
+      "notes": "5-shot GSM8K acc from the same Open LLM Leaderboard details dataset raw results (harness|gsm8k|5, acc 0.26080)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 35.79,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_teknium__OpenHermes-2.5-Mistral-7B",
+      "evaluatedAt": "2023-11-20",
+      "notes": "3-shot DROP F1 from the same Open LLM Leaderboard details dataset (harness|drop|3, f1 0.35794)."
     }
   ],
   "verificationNotes": "Confirmed on HF model card: Apache-2.0 license, HumanEval 50.7 pass@1, TruthfulQA MC2 53.04, AGIEval avg 43.07, BigBench avg 40.96 all literally present. CORRECTED releaseDate from 2023-11-01 to 2023-11-03: multiple independent sources (aimodels.fyi, llm-explorer, general web search consensus) consistently cite November 3, 2023 as the release date, not November 1."

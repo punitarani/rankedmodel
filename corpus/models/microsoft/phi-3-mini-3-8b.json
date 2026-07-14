@@ -87,7 +87,77 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
       "notes": "0-shot"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 39,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "AGI Eval, 5-shot, June 2024 updated checkpoint numbers"
+    },
+    {
+      "benchmarkSlug": "anli",
+      "score": 53.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "7-shot"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 75.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 86.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "10-shot"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 82.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "10-shot"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 83.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 77.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "Social IQA, 5-shot"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 71.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 61.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 69.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+      "notes": "3-shot"
     }
   ],
-  "verificationNotes": "Existence, 3.8B params, MIT license, April 23 2024 Azure launch all confirmed. CORRECTED ctxK from 128 to 4: the record's own hf link names the '4k' variant (microsoft/Phi-3-mini-4k-instruct), and that model card / the original Phi-3 Technical Report confirm a native 4096-token context window (128K belongs to the separate sibling microsoft/Phi-3-mini-128k-instruct) — kept the record scoped to the 4k-instruct card per its own hf link. Fetched the live HF model card and confirmed all 5 benchmark rows verbatim (MMLU 70.9, HumanEval 57.3, GSM8K 85.7, BBH 73.5, GPQA 30.6); note these are the card's 'June 2024 Update' numbers superseding the original April 2024 launch table in the arXiv report (MMLU 68.8, GPQA 23.7) — both are legitimately Microsoft-reported for this same model, just at different checkpoints, and the record's numbers match the current/live card. Azure AI Foundry price ($0.13/$0.52 per 1M tokens) could not be independently reconfirmed on the current pricing page (fetch timed out) but no contradicting figure was found either; left as reported."
+  "verificationNotes": "Existence, 3.8B params, MIT license, April 23 2024 Azure launch all confirmed. CORRECTED ctxK from 128 to 4: the record's own hf link names the '4k' variant (microsoft/Phi-3-mini-4k-instruct), and that model card / the original Phi-3 Technical Report confirm a native 4096-token context window (128K belongs to the separate sibling microsoft/Phi-3-mini-128k-instruct) \u2014 kept the record scoped to the 4k-instruct card per its own hf link. Fetched the live HF model card and confirmed all 5 benchmark rows verbatim (MMLU 70.9, HumanEval 57.3, GSM8K 85.7, BBH 73.5, GPQA 30.6); note these are the card's 'June 2024 Update' numbers superseding the original April 2024 launch table in the arXiv report (MMLU 68.8, GPQA 23.7) \u2014 both are legitimately Microsoft-reported for this same model, just at different checkpoints, and the record's numbers match the current/live card. Azure AI Foundry price ($0.13/$0.52 per 1M tokens) could not be independently reconfirmed on the current pricing page (fetch timed out) but no contradicting figure was found either; left as reported."
 }

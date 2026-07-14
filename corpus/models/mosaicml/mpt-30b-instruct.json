@@ -48,6 +48,31 @@
     "releaseDate": "https://www.databricks.com/blog/mpt-30b",
     "openness": "https://www.databricks.com/blog/mpt-30b"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "drop",
+      "score": 38.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct",
+      "evaluatedAt": "2023-10-14",
+      "notes": "F1 score (harness|drop|3, 3-shot), from the HF Open LLM Leaderboard v1's own evaluation-run results JSON for mosaicml/mpt-30b-instruct (third-party aggregator run, not vendor-reported)"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 15.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct",
+      "evaluatedAt": "2023-10-14",
+      "notes": "5-shot accuracy (harness|gsm8k|5), HF Open LLM Leaderboard v1 run"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 75.1,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct",
+      "evaluatedAt": "2023-10-14",
+      "notes": "5-shot accuracy (harness|winogrande|5), HF Open LLM Leaderboard v1 run"
+    }
+  ],
   "verificationNotes": "Confirmed released alongside MPT-30B base on 2023-06-22 (same Databricks announcement); HF model card and secondary sources confirm CC-BY-SA-3.0 license and Dolly/HH-RLHF-derived instruction tuning data. No result rows to verify. All fields left unchanged."
 }

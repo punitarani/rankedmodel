@@ -95,7 +95,57 @@
       "sourceUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct",
       "evaluatedAt": "2024-08-01",
       "notes": "Korean LogicKor"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 79.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2408.03541",
+      "evaluatedAt": "2024-08-01"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 34.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2408.03541",
+      "evaluatedAt": "2024-08-01"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 72,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2408.03541",
+      "evaluatedAt": "2024-08-01"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 47.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2408.03541",
+      "evaluatedAt": "2024-08-01"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 63.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2408.03541",
+      "evaluatedAt": "2024-08-01",
+      "notes": "ARC-C"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 27.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2408.03541",
+      "evaluatedAt": "2024-08-01"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 72.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2408.03541",
+      "evaluatedAt": "2024-08-01"
     }
   ],
-  "verificationNotes": "Existence, release date (2024-08-07), params (7.8B), NC license, and bilingual EN/KO scope confirmed directly on the HF model card and GitHub README (both fetched). Architecture (32 layers) and 4096-token context confirmed via independent search results citing the arXiv technical report (2408.03541) and GGUF metadata. All 6 benchmark rows (MT-Bench 9.01, Arena-Hard 46.8, WildBench 48.2, AlpacaEval 45.0, KoMT-Bench 8.92, LogicKor 8.62) literally appear on the cited HF/GitHub pages, verbatim match — no changes."
+  "verificationNotes": "Existence, release date (2024-08-07), params (7.8B), NC license, and bilingual EN/KO scope confirmed directly on the HF model card and GitHub README (both fetched). Architecture (32 layers) and 4096-token context confirmed via independent search results citing the arXiv technical report (2408.03541) and GGUF metadata. All 6 benchmark rows (MT-Bench 9.01, Arena-Hard 46.8, WildBench 48.2, AlpacaEval 45.0, KoMT-Bench 8.92, LogicKor 8.62) literally appear on the cited HF/GitHub pages, verbatim match \u2014 no changes."
 }

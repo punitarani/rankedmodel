@@ -66,6 +66,76 @@
       "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
       "evaluatedAt": "2025-01-01",
       "notes": "Outperforms GPT-4o-202408 (64.1) on multimodal live-streaming benchmark"
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 71.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2025-01-13",
+      "notes": "MathVista mini; evaluated with chain-of-thought prompting per the model card's footnote."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 86.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2025-01-13"
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 80.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2025-01-13",
+      "notes": "Reported as 'MMB1.1 test' (harder MMBench-EN 1.1 revision) on the official model card."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 85.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2025-01-13"
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 50.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2025-01-13",
+      "notes": "MMMU val split; evaluated with chain-of-thought prompting per the model card's footnote."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 82,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2025-01-13",
+      "notes": "TextVQA val split; exceeds the taxonomy's typical 40-75 range for this benchmark but is the genuine, directly-confirmed official figure."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 93.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2025-01-13",
+      "notes": "DocVQA test split."
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 23.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2025-01-13",
+      "notes": "Evaluated with chain-of-thought prompting per the model card's footnote."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 63.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2025-01-13",
+      "notes": "Video-MME without subtitles; with subtitles the model scores 67.9."
     }
   ],
   "verificationNotes": "Confirmed real model via HF model card (8B total, SigLip-400M+Whisper-medium-300M+ChatTTS-200M+Qwen2.5-7B, MiniCPM Model License weights / Apache-2.0 code, max_position_embeddings=32768 -> 32k ctx, independently confirmed). Release corroborated: OpenBMB announced via X on Jan 13, 2025 with MarkTechPost/press covering it Jan 14, 2025 (1-day spread reflects announcement-vs-press-coverage timing, not a factual error) -- kept 2025-01-13 as the announcement date. OpenCompass 70.2, OCRBench 897, and StreamingBench 66.0 all confirmed present on the HF model card."

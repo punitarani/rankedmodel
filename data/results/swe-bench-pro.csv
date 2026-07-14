@@ -1,28 +1,40 @@
 model_slug,score,source,source_url,evaluated_at,notes
 claude-fable-5,80.3,self-reported,https://www.vellum.ai/blog/claude-fable-5-and-mythos-5-benchmarks-explained,,Ahead of Opus 4.8 (69.2%) and GPT-5.5 (58.6%).
+claude-opus-4-5-high,52,self-reported,https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf,2025-11-24,"SWE-bench Pro (Scale AI's harder, 1,865-problem variant), no-thinking configuration (52.0%; 51.60% with 64k thinking) — system card Table 2.4.A."
 claude-opus-4-7,64.3,self-reported,https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained,,Up from 53.4% on Opus 4.6 per the same source.
 claude-opus-4-8,69.2,self-reported,https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained,,
 claude-sonnet-4-6,58.1,self-reported,https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained,,"From the later Sonnet 5 launch comparison table, re-measured alongside Sonnet 5 and Opus 4.8."
 claude-sonnet-5,63.2,self-reported,https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained,,"5 points ahead of Sonnet 4.6 (58.1%), 6 points behind Opus 4.8 (69.2%)."
+deepseek-v4-flash-non-think,49.1,self-reported,https://arxiv.org/abs/2606.19348,,"SWE-Pro (Resolved), Non-Think mode, Table 7 of the DeepSeek-V4 technical report"
 deepseek-v4-flash-think-high,52.3,self-reported,https://macaron.im/blog/deepseek-v4-benchmarks,,Think High mode
 deepseek-v4-flash-think-max,52.6,self-reported,https://macaron.im/blog/deepseek-v4-benchmarks,,Max mode
+deepseek-v4-pro-non-think,52.1,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,2026-04-24,"SWE Pro (Resolved), Non-Think mode. Cross-verified identical value in DeepSeek-V4 tech report Table 7 (arXiv:2606.19348)."
 deepseek-v4-pro-think-high,54.4,self-reported,https://arxiv.org/abs/2606.19348,,Think-High mode
 deepseek-v4-pro-think-max,55.4,self-reported,https://macaron.im/blog/deepseek-v4-benchmarks,,Pro-Max mode
+gemini-3-1-pro,54.2,self-reported,https://deepmind.google/models/gemini/pro/,2026-02-19,"SWE-Bench Pro (Public), single attempt."
 gemini-3-5-flash,55.1,self-reported,https://deepmind.google/models/gemini/flash/,2026-05-19,SWE-bench Pro variant
 glm-5-1,58.4,self-reported,https://docs.z.ai/guides/llm/glm-5.1,,SWE-bench Pro; Z.ai claimed this briefly topped the global leaderboard ahead of GPT-5.4 (57.7) and Claude Opus 4.6 (57.3) at launch
 glm-5-2-max,62.1,self-reported,https://docs.z.ai/guides/llm/glm-5.2,,SWE-bench Pro; matches figure independently repeated on the HF blog
+gpt-5-2,55.6,self-reported,https://www.datacamp.com/blog/gpt-5-2,2025-12-11,"SWE-Bench Pro score of 55.6% for GPT-5.2 (a new SOTA at launch), part of OpenAI's own launch benchmarks. Directly fetched datacamp.com's article which reports this figure; corroborated by multiple independent sources (Vellum's GPT-5.2 benchmarks write-up, a SWE-bench Pro leaderboard aggregator, and third-party commentary) all citing the identical 55.6% number."
 gpt-5-4,57.7,self-reported,https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/,,SWE-Bench Pro (harder variant of SWE-bench; not the base 'swe-bench' slug)
 gpt-5-4-mini,54.4,self-reported,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,2026-03-17,"SWE-Bench Pro (Public), xhigh reasoning effort. Flagship scores 57.7%, GPT-5 mini scores 45.7% on the same table. Cross-confirmed verbatim by datacamp.com/blog/gpt-5-4-mini-nano (independent secondary source)."
 gpt-5-4-nano,52.4,self-reported,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,2026-03-17,"SWE-Bench Pro (Public), xhigh reasoning effort. Cross-confirmed verbatim by datacamp.com/blog/gpt-5-4-mini-nano."
 gpt-5-5,58.6,self-reported,https://openai.com/index/introducing-gpt-5-5,,"SWE-Bench Pro, base GPT-5.5 (not Pro variant); confirmed via marktechpost.com direct report"
 gpt-5-6,64.6,self-reported,https://openai.com/index/gpt-5-6/,,"SWE-Bench Pro, GPT-5.6 Sol; confirmed via marktechpost.com direct report of launch page"
 grok-4-5,64.7,self-reported,https://x.ai/news/grok-4-5,,"SWE-Bench Pro resolve rate, xAI/SpaceXAI's own reported number at launch, 2026-07-08 (below Opus 4.8's 69.2%, above Opus 4.7's 64.3% and GPT-5.5 xhigh's 58.6%); xAI emphasized resolving tasks with ~4.2x fewer output tokens than Opus 4.8."
+hy3,57.9,self-reported,https://huggingface.co/tencent/Hy3,,Confirmed via both HF's Evaluation-results widget (ScaleAI/SWE-bench_Pro = 57.9) and the benchmark-appendix image
 kimi-k2-5,50.7,self-reported,https://www.kimi.com/blog/kimi-k2-5,,"SWE-bench Pro, harder/agentic variant distinct from base swe-bench"
 kimi-k2-6,58.6,self-reported,https://www.kimi.com/blog/kimi-k2-6,,"SWE-bench Pro, harder/agentic variant distinct from base swe-bench"
 mimo-v2-5,56.1,self-reported,https://mimo.xiaomi.com/mimo-v2-5/,,SWE-Bench Pro ('Real-World Bug Fixing'); read directly from the embedded benchmark-chart JS data (codingData array) on Xiaomi's official MiMo-V2.5 product page.
 mimo-v2-5-pro,57.2,self-reported,https://mimo.xiaomi.com/mimo-v2-5-pro/,,SWE-Bench Pro; from the embedded fbCategories/benchData chart arrays (consistent value in both blocks on the page).
 minimax-m2-7,56.22,self-reported,https://www.minimax.io/news/minimax-m27-en,,Reported by MiniMax as 'SWE-Pro' score in the official M2.7 launch post.
 minimax-m3,59,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M3,,Also corroborated by independent press coverage citing the same 59.0% SWE-bench Pro figure vs GPT-5.5/Gemini 3.1 Pro.
+muse-spark-1-1-xhigh,61.5,self-reported,https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report,2026-07-09,"Sourced from Scale AI leaderboard per Meta's own report, mini-swe-agent harness"
+qwen3-235b-a22b-thinking,21.41,independent,https://scale.com/leaderboard/swe_bench_pro_public,,"Third-party Scale AI SWE-Bench Pro public leaderboard result, surfaced via the HF model card's community 'Eval Results' widget (unverified badge, PR-submitted by a HF community member, not by Qwen). This is an independent/aggregator result, not a Qwen self-report."
+qwen3-6-27b,53.5,self-reported,https://huggingface.co/Qwen/Qwen3.6-27B,,"SWE-bench Pro, from the official HF model card's benchmark table."
+qwen3-6-35b-a3b,49.5,self-reported,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,,"SWE-bench Pro, official HF model card."
+qwen3-6-plus,56.6,independent,https://apidog.com/blog/qwen3-6-plus-api/,,"SWE-bench Pro (harder, contamination-resistant successor to SWE-bench Verified). 56.6% corroborated by three independent write-ups (apidog.com, renovateqr.com, benchlm.ai) all citing the same figure alongside the already-verified SWE-bench Verified 78.8% score, which strengthens confidence these aggregators are drawing from the vendor's real launch table rather than fabricating. Named explicitly in the primary Alibaba Cloud blog mirror's benchmark list ('SWE-bench Pro') but its numeric score is only visible in an embedded image there."
 qwen3-7-max,60.6,self-reported,https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154,,SWE-Pro
 qwen3-7-plus,57.6,self-reported,https://www.digitalapplied.com/blog/qwen-3-7-plus-alibaba-multimodal-agent-model-2026-release,,SWE-Bench Pro (reported as approx. 57.6)
 qwen3-coder-480b-a35b,38.7,self-reported,https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct,,SWE-bench Pro (harder held-out variant)
+step-3-7-flash,56.3,self-reported,https://github.com/stepfun-ai/Step-3.7-Flash/blob/main/README.md,2026-05-29,Confirmed identically in both the official GitHub README ('secured a definitive second-place finish on SWE-Bench PRO with a score of 56.3') and the official launch blog's benchmark table.

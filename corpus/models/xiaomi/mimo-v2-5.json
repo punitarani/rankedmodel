@@ -85,7 +85,85 @@
       "source": "self-reported",
       "sourceUrl": "https://mimo.xiaomi.com/mimo-v2-5/",
       "notes": "CharXiv 'RQ' (reasoning-question) subset, chart-understanding benchmark; from the embedded multimodalData chart array."
+    },
+    {
+      "benchmarkSlug": "pinchbench",
+      "score": 89.7,
+      "source": "independent",
+      "sourceUrl": "https://pinchbench.com/model/xiaomi/xiaomi/mimo-v2.5",
+      "notes": "Official PinchBench (OpenClaw agent benchmark) leaderboard average score for MiMo-V2.5, ranked #6 of 50 official models. Confirmed on PinchBench's own site, distinct from the MiMo-V2.5-Pro entry on the same leaderboard."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 67.1,
+      "source": "independent",
+      "sourceUrl": "https://kilo.ai/models/xiaomi-mimo-v2-5",
+      "notes": "Independent (Artificial-Analysis-sourced) IFBench score for MiMo-V2.5 via Kilo Code's model page. Vendor (Xiaomi) does not publish this benchmark itself."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 84.9,
+      "source": "independent",
+      "sourceUrl": "https://openrouter.ai/xiaomi/mimo-v2.5",
+      "notes": "GPQA Diamond (graduate-level scientific reasoning), shown on OpenRouter's Benchmarks tab for the xiaomi/mimo-v2.5 model page (matches this model exactly: MIT, $0.105-0.14/$0.28, 1M context, Apr 22 2026 release). Data is sourced from Artificial Analysis's independent evaluation; cross-checked against artificialanalysis.ai/models/mimo-v2-5-0424 which shows the same figure rounded to 85%, and against the MiMo-V2.5-Pro comparison page which shows Pro at a distinct, higher 87% -- confirming no variant conflation with the Pro model."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 25.2,
+      "source": "independent",
+      "sourceUrl": "https://openrouter.ai/xiaomi/mimo-v2.5",
+      "notes": "Humanity's Last Exam, from OpenRouter's Benchmarks tab (Artificial-Analysis-sourced) for xiaomi/mimo-v2.5. Cross-checked against artificialanalysis.ai/models/mimo-v2-5-0424 (rounded to 25%) and against the head-to-head MiMo-V2.5-Pro-vs-MiMo-V2.5 comparison page, which shows Pro at a distinct, higher 34% -- confirming this figure is for the non-Pro model."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1145,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "notes": "GDPval-AA v2 raw Elo (anchored to a human baseline of 1000), read directly off Artificial Analysis's dedicated GDPval-AA v2 leaderboard chart after adding 'MiMo-V2.5, Xiaomi' via the page's own model picker -- distinct from MiMo-V2.5-Pro's 1265 on the same chart. (AA's model-overview pages additionally show this as a normalized '32%' via their internal (Elo-500)/2000 transform, which is NOT the unit this corpus's gdpval-aa benchmark uses -- the corpus's existing gdpval-aa entries for other models are all raw Elo in the ~800-1700 range, so the raw 1145 value was used instead.)"
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 90.6,
+      "source": "independent",
+      "sourceUrl": "https://openrouter.ai/xiaomi/mimo-v2.5",
+      "notes": "\u03c4\u00b2-Bench Telecom (Sierra Research's dual-control conversational-agent benchmark), from OpenRouter's Benchmarks tab, Artificial-Analysis-sourced, part of AA's Agentic Index (GDPval-AA + \u03c4\u00b2-Bench Telecom average) for MiMo-V2.5. Not to be confused with AA's newer, harder \u03c4\u00b3-Banking eval (MiMo-V2.5 scores a much lower 7% there) -- that is a genuinely different benchmark/domain and was deliberately NOT mapped to this or any taxonomy slug."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 81.51,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/xiaomi_mimo-v2.5",
+      "notes": "LiveCodeBench, independently benchmarked by Vals AI for MiMo V2.5 (\u00b11.07 CI). Not published by Xiaomi itself for this model."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 82.93,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/xiaomi_mimo-v2.5",
+      "notes": "MMLU-Pro, independently benchmarked by Vals AI for MiMo V2.5 (\u00b10.37 CI). Not published by Xiaomi itself for this model (the MMLU/MMLU-Pro table in the HF README is explicitly the pretrained -Base checkpoint, not this released model)."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 80,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/xiaomi_mimo-v2.5",
+      "notes": "MMMU (base version, distinct from the already-tracked MMMU-Pro), independently benchmarked by Vals AI for MiMo V2.5 (\u00b10.96 CI)."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 71,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/xiaomi_mimo-v2.5",
+      "notes": "SWE-bench (distinct from the already-tracked SWE-Bench Pro), independently benchmarked by Vals AI for MiMo V2.5 (\u00b12.03 CI). Not to be confused with the widely-reported 'SWE-bench Verified 78.9%' figure, which is for MiMo-V2.5-Pro, a different (1.02T/42B) model -- deliberately excluded here."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1434,
+      "source": "arena",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-10",
+      "notes": "Text Arena (Overall) Elo on arena.ai (formerly LMSYS Chatbot Arena), read directly off the live leaderboard for the 'mimo-v2.5' row specifically (MIT license, $0.10/$0.28, 1M context -- matching this model; explicitly distinct on the same leaderboard from mimo-v2.5-pro at 1466, mimo-v2-pro at 1448, and mimo-v2-omni at 1430). Rank #76 of 374 models, \u00b15 CI, 39,076 votes, per the Jul 10, 2026 snapshot."
     }
   ],
-  "verificationNotes": "Params/architecture/context/modalities/license confirmed directly against the raw HuggingFace README (XiaomiMiMo/MiMo-V2.5), which also gives an internal 'component table' cross-checked against the Pro repo's identical table (both agree: 310B/15B, 48-layer, 5:1 SWA:GA, 3x MTP). Release date corroborated by Wikipedia's Xiaomi MiMo lineage entry, MarkTechPost (published 2026-04-22), and Xiaomi's own blog (one secondary source, GSMArena, says 2026-04-28, and the Pro-specific Xiaomi page separately says 2026-04-27; treated as the same announcement week, with 2026-04-22 taken as authoritative per Wikipedia + the MarkTechPost publish date + this task's brief). IMPORTANT CAVEAT: the benchmark table embedded in the HuggingFace READMEs (GSM8K 83.3, MMLU 86.3, etc.) is explicitly labeled 'Base Model Evaluation' and reports the pretrained -Base checkpoint, not the released chat/agentic model — so those numbers were NOT used for 'results' below. Instead, results were pulled from the live JS-driven benchmark charts embedded in Xiaomi's own product page (https://mimo.xiaomi.com/mimo-v2-5/), fetched and parsed directly from raw HTML/JS (not summarized), which report the actual shipped model against Claude Opus 4.6, Gemini 3.1 Pro, GPT-5.4, Kimi K2.6, DeepSeek-V4-Flash."
+  "verificationNotes": "Params/architecture/context/modalities/license confirmed directly against the raw HuggingFace README (XiaomiMiMo/MiMo-V2.5), which also gives an internal 'component table' cross-checked against the Pro repo's identical table (both agree: 310B/15B, 48-layer, 5:1 SWA:GA, 3x MTP). Release date corroborated by Wikipedia's Xiaomi MiMo lineage entry, MarkTechPost (published 2026-04-22), and Xiaomi's own blog (one secondary source, GSMArena, says 2026-04-28, and the Pro-specific Xiaomi page separately says 2026-04-27; treated as the same announcement week, with 2026-04-22 taken as authoritative per Wikipedia + the MarkTechPost publish date + this task's brief). IMPORTANT CAVEAT: the benchmark table embedded in the HuggingFace READMEs (GSM8K 83.3, MMLU 86.3, etc.) is explicitly labeled 'Base Model Evaluation' and reports the pretrained -Base checkpoint, not the released chat/agentic model \u2014 so those numbers were NOT used for 'results' below. Instead, results were pulled from the live JS-driven benchmark charts embedded in Xiaomi's own product page (https://mimo.xiaomi.com/mimo-v2-5/), fetched and parsed directly from raw HTML/JS (not summarized), which report the actual shipped model against Claude Opus 4.6, Gemini 3.1 Pro, GPT-5.4, Kimi K2.6, DeepSeek-V4-Flash."
 }

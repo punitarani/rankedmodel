@@ -97,6 +97,38 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
       "evaluatedAt": "2025-06-01",
       "notes": "Global MMLU (Lite), thinking on"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 27.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-06-01",
+      "notes": "Aider Polyglot, whole score, (06-17) release, thinking on."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 72.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-06-01",
+      "notes": "MMMU, single attempt, (06-17) release, thinking on."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 13,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-06-01",
+      "notes": "SimpleQA, (06-17) release, thinking on."
+    },
+    {
+      "benchmarkSlug": "facts-grounding",
+      "score": 86.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-06-01",
+      "notes": "FACTS Grounding, (06-17) release, thinking on."
     }
   ],
   "verificationNotes": "Same verification path as the non-thinking variant: release date June 17, 2025 confirmed via Google Cloud blog; all 6 thinking-mode benchmark rows (GPQA 66.7, AIME 63.1, LiveCodeBench 34.3, SWE-Bench 27.6 incl. the 44.9% multi-attempt detail, HLE 6.9, MMLU 84.5) reproduced exactly by an independent secondary source citing the official model card. Pricing identical to non-thinking variant, confirmed on ai.google.dev/gemini-api/docs/pricing (same underlying model, thinking toggle only)."

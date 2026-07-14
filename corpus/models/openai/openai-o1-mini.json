@@ -63,6 +63,53 @@
       "sourceUrl": "https://www.analyticsvidhya.com/blog/2024/09/o1-preview-vs-o1-mini/",
       "evaluatedAt": "2024-09-01",
       "notes": "Codeforces Elo, ~86th percentile"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 85.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "From OpenAI's own simple-evals benchmark-harness README table (o1-mini row)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 60,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "GPQA Diamond, zero-shot pass@1 (simple-evals default GPQA variant is 'diamond', confirmed by reading gpqa_eval.py in the repo)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 90,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "MATH-500 (repo footnote: 'for newer models (anything on or after o1) we evaluate on MATH-500')."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 92.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "Same table; identical figure also reported for o1-preview."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 89.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 83.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "DROP F1, 3-shot."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 7.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals"
     }
   ],
   "verificationNotes": "Existence, release date (2024-09-12), and retirement date (2025-10-27, confirmed real since today is 2026-07-12) verified via independent sources (Portkey deprecation guide, OpenAI community, DocGPT). AIME 70.0% and Codeforces 1650 confirmed by direct fetch of analyticsvidhya.com article. Pricing $3/$12 per 1M tokens confirmed via two independent sources (artificialanalysis.ai, cross-referenced search) after an initial conflicting fetch of the (now-stale/redirect-confused) OpenAI docs page was discarded. No changes made."

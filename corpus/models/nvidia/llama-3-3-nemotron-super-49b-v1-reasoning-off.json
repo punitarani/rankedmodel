@@ -101,6 +101,22 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1",
       "notes": "Reasoning Off"
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 73.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1",
+      "evaluatedAt": "2025-03-18",
+      "notes": "BFCL V2 Live, Reasoning Off. Confirmed via raw README.md \u2014 the card publishes only this Reasoning-Off value for BFCL (no Reasoning-On value is published for this model)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 29.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.00949",
+      "evaluatedAt": "2025-05-01",
+      "notes": "LiveCodeBench (2408-2502 window), Reasoning Off, Final checkpoint. From Table 4 of the technical report; this benchmark is absent from the HF model card entirely for this model."
     }
   ],
   "verificationNotes": "Confirmed via HF model card (fetched): release date 3/18/2025, ~50B params (49.9B precise figure independently corroborated by llm-stats.com and other trackers), 128K context, NVIDIA+Llama 3.3 license, and all seven Reasoning-Off benchmark scores match exactly (Arena-Hard 88.3, MATH500 74.0, AIME25 13.33, GPQA 50, IFEval 89.21, MBPP 84.9, MT-Bench 9.17)."

@@ -53,7 +53,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "zero-shot accuracy, LM Eval Harness, lambada_openai task, final checkpoint (step143000) — raw eval JSON acc=0.7046"
+      "notes": "zero-shot accuracy, LM Eval Harness, lambada_openai task, final checkpoint (step143000) \u2014 raw eval JSON acc=0.7046"
     },
     {
       "benchmarkSlug": "piqa",
@@ -61,7 +61,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "zero-shot, LM Eval Harness, final checkpoint (step143000) — raw eval JSON acc=0.7601"
+      "notes": "zero-shot, LM Eval Harness, final checkpoint (step143000) \u2014 raw eval JSON acc=0.7601"
     },
     {
       "benchmarkSlug": "arc-easy",
@@ -69,8 +69,48 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "zero-shot, LM Eval Harness, final checkpoint (step143000) — raw eval JSON acc=0.7024"
+      "notes": "zero-shot, LM Eval Harness, final checkpoint (step143000) \u2014 raw eval JSON acc=0.7024"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 63.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, LM Eval Harness, final checkpoint (step143000) \u2014 winogrande acc=0.6393. Same source file already used and verified in this corpus for LAMBADA/PIQA/ARC-Easy."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 31.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 arc_challenge acc=0.3183."
+    },
+    {
+      "benchmarkSlug": "mmlu-anatomy",
+      "score": 26.7,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 hendrycksTest-anatomy acc=0.2667 (near chance)."
+    },
+    {
+      "benchmarkSlug": "mmlu-clinical-knowledge",
+      "score": 23.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 hendrycksTest-clinical_knowledge acc=0.2340 (near chance)."
+    },
+    {
+      "benchmarkSlug": "mmlu-medical-genetics",
+      "score": 38,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json",
+      "evaluatedAt": "2023-04-03",
+      "notes": "Zero-shot, final checkpoint (step143000) \u2014 hendrycksTest-medical_genetics acc=0.38."
     }
   ],
-  "verificationNotes": "Confirmed real: exact param count 11,846,072,320 (=11.846B, rounds to 11.8 matching record), 36 layers, Apache-2.0. Original sourceUrl (arxiv abstract page) does not literally display these numbers, so I re-sourced them: fetched the official raw eval JSON from github.com/EleutherAI/pythia (evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json, the final-checkpoint zero-shot run) and confirmed lambada_openai acc=0.7046(→70.5), piqa acc=0.7601(→76.0), arc_easy acc=0.7024(→70.2) — all match the claimed scores essentially exactly. Updated each row's sourceUrl to this verifiable GitHub JSON."
+  "verificationNotes": "Confirmed real: exact param count 11,846,072,320 (=11.846B, rounds to 11.8 matching record), 36 layers, Apache-2.0. Original sourceUrl (arxiv abstract page) does not literally display these numbers, so I re-sourced them: fetched the official raw eval JSON from github.com/EleutherAI/pythia (evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json, the final-checkpoint zero-shot run) and confirmed lambada_openai acc=0.7046(\u219270.5), piqa acc=0.7601(\u219276.0), arc_easy acc=0.7024(\u219270.2) \u2014 all match the claimed scores essentially exactly. Updated each row's sourceUrl to this verifiable GitHub JSON."
 }

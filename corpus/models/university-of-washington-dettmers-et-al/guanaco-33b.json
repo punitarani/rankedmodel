@@ -70,6 +70,22 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/timdettmers/guanaco-33b",
       "notes": "Elo rating, OpenAssistant benchmark, GPT-4 judge, rank 4"
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1065,
+      "source": "arena",
+      "sourceUrl": "https://www.lmsys.org/blog/2023-06-22-leaderboard/",
+      "evaluatedAt": "2023-06-22",
+      "notes": "Chatbot Arena Elo rating for Guanaco-33B, LMSYS Leaderboard Week 8 update ('Introducing MT-Bench and Vicuna-33B') - briefly the top open model on the arena at the time."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 6.53,
+      "source": "independent",
+      "sourceUrl": "https://www.lmsys.org/blog/2023-06-22-leaderboard/",
+      "evaluatedAt": "2023-06-22",
+      "notes": "GPT-4-judged MT-Bench score for Guanaco-33B from the same LMSYS Leaderboard Week 8 update table."
     }
   ],
   "verificationNotes": "Confirmed real model via HF model card (fetched). paramsB=33, license, ctxK=2 (LLaMA-1 base), MMLU=57, Vicuna Elo=1009 (human, rank4), OpenAssistant Elo=1002 (GPT-4 judge, rank4) all literally match the HF page. releaseDate 2023-05-23 confirmed via arXiv abstract page (2305.14314) which also literally states 'reaching 99.3% of the performance level of ChatGPT' but CORRECTED the note field: fetched full paper text (ar5iv) shows the 99.3% figure belongs to the 65B model; Guanaco 33B is explicitly called 'the second best model reaching 97.8% of the performance level of ChatGPT' and Table 6 lists 'Guanaco 33B ... 97.8%'. The 'trained on 24GB consumer GPU in <12 hours' claim for 33B is verbatim-confirmed in the paper. Original record incorrectly attributed 99.3% to the 33B model; fixed to 97.8%."

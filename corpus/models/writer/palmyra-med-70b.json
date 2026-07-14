@@ -64,6 +64,13 @@
       "score": 83.7,
       "source": "self-reported",
       "sourceUrl": "https://developer.nvidia.com/blog/writer-releases-domain-specific-llms-for-healthcare-and-finance/"
+    },
+    {
+      "benchmarkSlug": "pubmedqa",
+      "score": 79.6,
+      "source": "self-reported",
+      "sourceUrl": "https://developer.nvidia.com/blog/writer-releases-domain-specific-llms-for-healthcare-and-finance/",
+      "notes": "Same NVIDIA developer blog benchmark table already cited for the model's other 3 results rows; PubMedQA column."
     }
   ],
   "verificationNotes": "Confirmed real. SiliconAngle article dated 2024-07-31 confirms the Palmyra-Med-70B/Palmyra-Fin-70B announcement and the 85.9% zero-shot figure. HF Writer/Palmyra-Med-70B confirms: license 'writer-open-model-license' restricted to non-commercial/research use (matches record), base model Palmyra-X-003, context length 8192 (matches ctxK=8), actual param count ~71B (record's 70 matches the model's own '70B' naming). NVIDIA developer blog confirms all four result rows literally: 85.9% average, 90.9% clinical knowledge, 94% medical genetics, 83.7% anatomy. Confirmed apiAvailable via Writer API / Baseten / prior NVIDIA NIM catalog listing (the specific NIM reference URL in the record is a generic docs-domain link, not independently re-verified as a live endpoint)."

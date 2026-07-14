@@ -1,2 +1,8 @@
 model_slug,score,source,source_url,evaluated_at,notes
 bloomz-176b,48.6,self-reported,https://huggingface.co/bigscience/bloomz,,"ANLI round 1, validation, zero-shot accuracy"
+megatron-turing-nlg-530b,36.6,self-reported,https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/,2021-10-11,"ANLI-R2 natural language inference, zero-shot, reported on the test set. From Table 2 of the primary NVIDIA developer blog (0.366 = 36.6%)."
+palm-540b,48.4,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"PaLM 540B, 0-shot ANLI-R1 (Round 1), from Table 4. (R2=44.2, R3=45.7 in the same 0-shot setting, not separately recorded here since the taxonomy has a single 'anli' slug.)"
+phi-2-2-7b,42.5,self-reported,https://arxiv.org/pdf/2404.14219,,7-shot; same comparison table.
+phi-3-medium-14b,55.8,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,7-shot
+phi-3-mini-3-8b,53.6,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,7-shot
+phi-3-small-7b,58.1,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,7-shot

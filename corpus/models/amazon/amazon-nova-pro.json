@@ -111,6 +111,38 @@
       "source": "self-reported",
       "sourceUrl": "https://deepranking.ai/llm-models/nova-pro",
       "notes": "[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 61.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2506.12103",
+      "evaluatedAt": "2024-12-03",
+      "notes": "MMMU val split, CoT prompting, accuracy (Table 3 of the official Amazon Nova technical report)."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 89.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2506.12103",
+      "evaluatedAt": "2024-12-03",
+      "notes": "ChartQA test split, relaxed accuracy (Table 3)."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 93.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2506.12103",
+      "evaluatedAt": "2024-12-03",
+      "notes": "DocVQA test split, ANLS metric (Table 3)."
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 68.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2506.12103",
+      "evaluatedAt": "2024-11-17",
+      "notes": "Berkeley Function-Calling Leaderboard v3, overall accuracy, Nov 17 2024 leaderboard snapshot (Table 4)."
     }
   ],
   "verificationNotes": "Confirmed real: Dec 3, 2024 re:Invent launch corroborated by multiple press sources. Confirmed 300K multimodal context, 200-language support, $0.80/$3.20 per M pricing (AWS Nova pricing/docs). All 9 benchmark rows (MMLU 85.9, GPQA 46.9, MATH 76.6, HumanEval 89.0, GSM8K 94.8, BBH 86.9, IFEval 92.1, DROP 85.4, ARC-Challenge 94.8) confirmed to literally appear on deepranking.ai/llm-models/nova-pro. No changes made."

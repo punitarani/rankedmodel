@@ -70,6 +70,46 @@
       "sourceUrl": "https://openai.com/index/gpt-4-1/",
       "evaluatedAt": "2025-04-14",
       "notes": "Aider polyglot coding"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 29.4,
+      "source": "self-reported",
+      "sourceUrl": "https://docsbot.ai/models/gpt-4-1-nano",
+      "evaluatedAt": "2025-04-14",
+      "notes": "AIME 2024; relayed from OpenAI's official GPT-4.1-family launch benchmark table."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 55.4,
+      "source": "self-reported",
+      "sourceUrl": "https://docsbot.ai/models/gpt-4-1-nano",
+      "evaluatedAt": "2025-04-14",
+      "notes": "Relayed from OpenAI's official GPT-4.1-family launch benchmark table."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 56.2,
+      "source": "self-reported",
+      "sourceUrl": "https://docsbot.ai/models/gpt-4-1-nano",
+      "evaluatedAt": "2025-04-14",
+      "notes": "MathVista image reasoning; relayed from OpenAI's official launch table."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 66.9,
+      "source": "self-reported",
+      "sourceUrl": "https://docsbot.ai/models/gpt-4-1-nano",
+      "evaluatedAt": "2025-04-14",
+      "notes": "Listed as \"Global MMLU\" in OpenAI's launch table."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 74.5,
+      "source": "self-reported",
+      "sourceUrl": "https://docsbot.ai/models/gpt-4-1-nano",
+      "evaluatedAt": "2025-04-14",
+      "notes": "Relayed from OpenAI's official GPT-4.1-family launch benchmark table."
     }
   ],
   "verificationNotes": "Confirmed release 2025-04-14 and $0.10/$0.40 per 1M token pricing via OpenAI docs and independent coverage (GitHub Changelog, prompthub). Direct fetch of openai.com/index/gpt-4-1/ returned 403, but all 3 benchmark rows (MMLU 80.1, GPQA 50.3, Aider polyglot 9.8) were independently corroborated verbatim by multiple secondary sources quoting OpenAI's official figures. No changes made."

@@ -114,7 +114,39 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
       "notes": "0-shot exact match, Table 5",
       "evaluatedAt": "2023-02-01"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 82.3,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Table 3 (Common Sense Reasoning)."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 50.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Table 3 (Common Sense Reasoning)."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 80,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Table 3 (Common Sense Reasoning)."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 48.3,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "RACE-High split, reading comprehension table."
     }
   ],
-  "verificationNotes": "Confirmed exact param count of 32.5B (Table 2, matches record precisely — this is genuinely the '33B' checkpoint, not a mislabeled sibling), 2023-02-24 release date, and gated non-commercial license via Meta's blog and arxiv 2302.13971 (both fetched directly). All 8 result rows (HellaSwag 82.8, ARC-Challenge 57.8, WinoGrande 76, MMLU 57.8, GSM8k 35.6, HumanEval 21.7, MBPP 30.2, TriviaQA 65.1) confirmed as literal figures in the same tables."
+  "verificationNotes": "Confirmed exact param count of 32.5B (Table 2, matches record precisely \u2014 this is genuinely the '33B' checkpoint, not a mislabeled sibling), 2023-02-24 release date, and gated non-commercial license via Meta's blog and arxiv 2302.13971 (both fetched directly). All 8 result rows (HellaSwag 82.8, ARC-Challenge 57.8, WinoGrande 76, MMLU 57.8, GSM8k 35.6, HumanEval 21.7, MBPP 30.2, TriviaQA 65.1) confirmed as literal figures in the same tables."
 }

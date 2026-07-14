@@ -89,7 +89,55 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "notes": "BFCL v3, thinking mode"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 90.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "Table 13 of the Qwen3 Technical Report (Qwen3-32B Thinking column), directly re-verified via PDF fetch. MMLU-Redux score for Qwen3-32B (Thinking)."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 87.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "Table 13 of the Qwen3 Technical Report, Qwen3-32B (Thinking) column."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "Reported as 'IFEval strict prompt' in Table 13, Qwen3-32B (Thinking) column."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 97.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "Reported as 'MATH-500' in Table 13 -- catalog's 'math' slug is explicitly described as '500 competition math problems', a clean match. Qwen3-32B (Thinking) column."
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1977,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "CodeForces Elo rating (reported alongside 97.7th percentile) in Table 13, Qwen3-32B (Thinking) column."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 80.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "Reported as 'MMMLU 14 languages' in Table 13, Multilingual Tasks section, Qwen3-32B (Thinking) column."
     }
   ],
-  "verificationNotes": "Fully confirmed. HF model card confirms 32.8B total params, dense (GQA+SwiGLU+QK-Norm per report Sec.2), 128K context (native 32K + YaRN), Apache 2.0. Table 13 of fetched Qwen3 Technical Report PDF confirms all 5 benchmark rows exactly (AIME'24 81.4, GPQA-Diamond 68.4, LiveCodeBench v5 65.7, Arena-Hard 93.8, BFCL v3 70.3) and report text explicitly states Qwen3-32B (Thinking) 'competes with the closed-source OpenAI-o3-mini (medium)'. DashScope pricing page: China-region non-thinking rate is exactly $0.287 input / $1.147 output (confirmed after checking region+mode breakdown; international/Singapore tier differs at $0.16/$0.64, and China thinking-output tier is $2.868 — record uses the China non-thinking tier, consistent with sibling records)."
+  "verificationNotes": "Fully confirmed. HF model card confirms 32.8B total params, dense (GQA+SwiGLU+QK-Norm per report Sec.2), 128K context (native 32K + YaRN), Apache 2.0. Table 13 of fetched Qwen3 Technical Report PDF confirms all 5 benchmark rows exactly (AIME'24 81.4, GPQA-Diamond 68.4, LiveCodeBench v5 65.7, Arena-Hard 93.8, BFCL v3 70.3) and report text explicitly states Qwen3-32B (Thinking) 'competes with the closed-source OpenAI-o3-mini (medium)'. DashScope pricing page: China-region non-thinking rate is exactly $0.287 input / $1.147 output (confirmed after checking region+mode breakdown; international/Singapore tier differs at $0.16/$0.64, and China thinking-output tier is $2.868 \u2014 record uses the China non-thinking tier, consistent with sibling records)."
 }

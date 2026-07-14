@@ -90,6 +90,54 @@
       "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
       "evaluatedAt": "2024-04-01",
       "notes": "Instruct, 4-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 78.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "evaluatedAt": "2024-04-01",
+      "notes": "ARC-Challenge, 25-shot, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 76.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "evaluatedAt": "2024-04-01",
+      "notes": "WinoGrande, 5-shot, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 61.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "evaluatedAt": "2024-04-01",
+      "notes": "BIG-Bench Hard, 3-shot CoT, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 78.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "evaluatedAt": "2024-04-01",
+      "notes": "TriviaQA-Wiki, 5-shot, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 58.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "evaluatedAt": "2024-04-01",
+      "notes": "DROP, 3-shot, F1, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 45.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "evaluatedAt": "2024-04-01",
+      "notes": "AGIEval English, 3-5 shot, pretrained/base checkpoint. Unlike the 70B sibling's out-of-range 63.0 figure, this 8B score (45.9) sits comfortably within the corpus's established agieval calibration (20-48), so it was included as a clean match."
     }
   ],
   "verificationNotes": "Confirmed real. Exact parameter count 8.03B (8,030,257,152) corroborated by multiple independent sources (Ollama, technical writeups). Meta's official llama3 GitHub MODEL_CARD.md / HF page confirms all five Instruct scores exactly: MMLU 68.4, GPQA 34.2, HumanEval 62.2, GSM8K 79.6, MATH 30.0. 15T-token pretraining claim and April 18, 2024 release date confirmed via ai.meta.com/blog/meta-llama-3. No changes."

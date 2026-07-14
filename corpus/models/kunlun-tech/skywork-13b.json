@@ -70,6 +70,54 @@
       "score": 55.8,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Skywork/Skywork-13B-base"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 79.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2310.19341",
+      "evaluatedAt": "2023-10-30",
+      "notes": "From Table 11 ('More English benchmarks results') of the Skywork-13B technical report (arXiv:2310.19341), fetched and read directly page-by-page. Row: Skywork-13B | BoolQ 82.9 | PIQA 79.9 | Winogrande 72.2 | TriviaQA 54.0 | RACE 45.2 | HellaSwag 77.4 | ARC-E 78.5 | ARC-C 50.2."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 72.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2310.19341",
+      "evaluatedAt": "2023-10-30",
+      "notes": "From Table 11 of the Skywork-13B technical report (arXiv:2310.19341)."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 54,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2310.19341",
+      "evaluatedAt": "2023-10-30",
+      "notes": "From Table 11 of the Skywork-13B technical report (arXiv:2310.19341)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 77.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2310.19341",
+      "evaluatedAt": "2023-10-30",
+      "notes": "From Table 11 of the Skywork-13B technical report (arXiv:2310.19341)."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 78.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2310.19341",
+      "evaluatedAt": "2023-10-30",
+      "notes": "From Table 11 of the Skywork-13B technical report (arXiv:2310.19341), column 'ARC-E'."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 50.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2310.19341",
+      "evaluatedAt": "2023-10-30",
+      "notes": "From Table 11 of the Skywork-13B technical report (arXiv:2310.19341), column 'ARC-C'. Distinct from the pre-existing corpus rows (C-Eval/CMMLU/MMLU/GSM8K), which come from Table 5 of the same paper."
     }
   ],
   "verificationNotes": "Fetched HF model card: confirmed 13B params, 4K ctx, Skywork Community License, 3.2T tokens bilingual, MMLU 62.1/C-Eval 60.6/CMMLU 61.8/GSM8K 55.8 verbatim, Oct 2023 release. No changes."

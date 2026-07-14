@@ -82,6 +82,41 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/stabilityai/stablelm-zephyr-3b",
       "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 46.08,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/stabilityai/stablelm-zephyr-3b",
+      "notes": "AI2 Reasoning Challenge (25-Shot), Open LLM Leaderboard, from the model-index metadata embedded in the HF README.md."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 46.49,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/stabilityai/stablelm-zephyr-3b",
+      "notes": "TruthfulQA (0-shot, mc2), Open LLM Leaderboard, from the model-index metadata embedded in the HF README.md."
+    },
+    {
+      "benchmarkSlug": "big-bench",
+      "score": 35.26,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/stabilityai/stablelm-zephyr-3b",
+      "notes": "'BigBench (Avg)' row of the 'Other benchmarks' table in the official HF model card README."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 33.23,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/stabilityai/stablelm-zephyr-3b",
+      "notes": "'AGI Benchmark (Avg)' row of the 'Other benchmarks' table in the official HF model card README (maps to the AGIEval benchmark)."
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 76,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/stabilityai/stablelm-zephyr-3b",
+      "notes": "AlpacaEval win rate (%) for the DPO variant, from the MT-Bench/AlpacaEval comparison table in the official HF model card README."
     }
   ],
   "verificationNotes": "Confirmed real via direct fetch of huggingface.co/stabilityai/stablelm-zephyr-3b: 3B (2.8B) params, Stability AI Community License (commercial use requires membership reference to stability.ai/license), verbatim match. Release date Dec 7, 2023 corroborated by VentureBeat, Stability AI's own announcement blog, and Maginative coverage (license file itself dated Dec 6, 2023, announcement/release Dec 7). All 5 benchmark rows (MT-Bench 6.64, MMLU 46.17, HellaSwag 74.16, GSM8K 42.15, WinoGrande 65.51) verified literally on the HF page. Context length (4096) inherited from base model stablelm-3b-4e1t, not independently reprinted on the Zephyr card, so left as originally specified. No changes made to input values."

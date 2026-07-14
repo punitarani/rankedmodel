@@ -16,7 +16,7 @@
     "unit": "%",
     "description": "Human standardized exams (SAT/LSAT/Gaokao) repurposed as an LLM benchmark.",
     "normMin": 20,
-    "normMax": 48,
+    "normMax": 80,
     "higherIsBetter": true
   },
   {
@@ -76,7 +76,7 @@
     "unit": "%",
     "description": "Adversarial natural-language-inference benchmark.",
     "normMin": 30,
-    "normMax": 50,
+    "normMax": 62,
     "higherIsBetter": true
   },
   {
@@ -116,7 +116,7 @@
     "unit": "%",
     "description": "Grade-school science questions, easy split.",
     "normMin": 40,
-    "normMax": 88,
+    "normMax": 99,
     "higherIsBetter": true
   },
   {
@@ -326,7 +326,7 @@
     "unit": "%",
     "description": "Faithfulness of a model's response to a long provided context document.",
     "normMin": 40,
-    "normMax": 78,
+    "normMax": 90,
     "higherIsBetter": true
   },
   {
@@ -364,7 +364,7 @@
     "name": "FrontierMath (Tier 4)",
     "category": "math",
     "unit": "%",
-    "description": "FrontierMath hardest tier — IMO/research-adjacent difficulty.",
+    "description": "FrontierMath hardest tier \u2014 IMO/research-adjacent difficulty.",
     "normMin": 0,
     "normMax": 88,
     "higherIsBetter": true
@@ -586,7 +586,7 @@
     "unit": "%",
     "description": "Visual mathematical reasoning over charts, diagrams and figures.",
     "normMin": 10,
-    "normMax": 83,
+    "normMax": 96,
     "higherIsBetter": true
   },
   {
@@ -646,7 +646,7 @@
     "unit": "%",
     "description": "Chinese split of MMBench.",
     "normMin": 40,
-    "normMax": 82,
+    "normMax": 94,
     "higherIsBetter": true
   },
   {
@@ -796,7 +796,7 @@
     "unit": "%",
     "description": "VQA requiring outside/commonsense knowledge beyond the image.",
     "normMin": 30,
-    "normMax": 61,
+    "normMax": 68,
     "higherIsBetter": true
   },
   {
@@ -835,8 +835,8 @@
     "category": "reasoning",
     "unit": "%",
     "description": "Elementary science QA requiring open-book fact combination.",
-    "normMin": 40,
-    "normMax": 50,
+    "normMin": 25,
+    "normMax": 93,
     "higherIsBetter": true
   },
   {
@@ -856,7 +856,7 @@
     "unit": "%",
     "description": "Physical-interaction commonsense QA.",
     "normMin": 50,
-    "normMax": 85,
+    "normMax": 92,
     "higherIsBetter": true
   },
   {
@@ -886,7 +886,7 @@
     "unit": "%",
     "description": "High-school-level reading-comprehension multiple choice.",
     "normMin": 30,
-    "normMax": 74,
+    "normMax": 96,
     "higherIsBetter": true
   },
   {
@@ -916,7 +916,7 @@
     "unit": "%",
     "description": "RefCOCO variant excluding absolute-location expressions.",
     "normMin": 50,
-    "normMax": 85,
+    "normMax": 94,
     "higherIsBetter": true
   },
   {
@@ -936,7 +936,7 @@
     "unit": "%",
     "description": "Broad generative multimodal comprehension benchmark.",
     "normMin": 40,
-    "normMax": 72,
+    "normMax": 82,
     "higherIsBetter": true
   },
   {
@@ -956,7 +956,7 @@
     "unit": "%",
     "description": "Social/emotional commonsense reasoning about everyday situations.",
     "normMin": 40,
-    "normMax": 68,
+    "normMax": 84,
     "higherIsBetter": true
   },
   {
@@ -966,7 +966,7 @@
     "unit": "%",
     "description": "Commonsense story-ending selection.",
     "normMin": 50,
-    "normMax": 82,
+    "normMax": 91,
     "higherIsBetter": true
   },
   {
@@ -1065,8 +1065,8 @@
     "category": "vision",
     "unit": "%",
     "description": "VQA requiring reading text embedded in images.",
-    "normMin": 40,
-    "normMax": 75,
+    "normMin": 28,
+    "normMax": 90,
     "higherIsBetter": true
   },
   {
@@ -1106,7 +1106,7 @@
     "unit": "%",
     "description": "USA Mathematical Olympiad problem set.",
     "normMin": 0,
-    "normMax": 66,
+    "normMax": 90,
     "higherIsBetter": true
   },
   {
@@ -1166,15 +1166,15 @@
     "unit": "%",
     "description": "Cross-lingual Winograd-schema commonsense resolution.",
     "normMin": 50,
-    "normMax": 71,
+    "normMax": 88,
     "higherIsBetter": true
   },
   {
     "slug": "tau2-bench-telecom",
-    "name": "τ²-Bench Telecom",
+    "name": "\u03c4\u00b2-Bench Telecom",
     "category": "agents",
     "unit": "%",
-    "description": "τ²-Bench telecom domain — dual-control tool-agent-user tasks in a simulated telecom support setting; a harder successor to tau-bench, distinct scale.",
+    "description": "\u03c4\u00b2-Bench telecom domain \u2014 dual-control tool-agent-user tasks in a simulated telecom support setting; a harder successor to tau-bench, distinct scale.",
     "normMin": 30,
     "normMax": 99,
     "higherIsBetter": true
@@ -1204,7 +1204,7 @@
     "name": "OSWorld-Verified",
     "category": "agents",
     "unit": "%",
-    "description": "Verified/cleaned subset of OSWorld — real desktop-GUI computer-use tasks scored pass@1.",
+    "description": "Verified/cleaned subset of OSWorld \u2014 real desktop-GUI computer-use tasks scored pass@1.",
     "normMin": 0,
     "normMax": 90,
     "higherIsBetter": true
@@ -1214,9 +1214,9 @@
     "name": "OSWorld",
     "category": "agents",
     "unit": "%",
-    "description": "Original OSWorld computer-use benchmark (screenshot-only agent configuration) — distinct from the later OSWorld-Verified subset.",
+    "description": "Original OSWorld computer-use benchmark (screenshot-only agent configuration) \u2014 distinct from the later OSWorld-Verified subset.",
     "normMin": 0,
-    "normMax": 40,
+    "normMax": 88,
     "higherIsBetter": true
   },
   {
@@ -1224,7 +1224,7 @@
     "name": "GDPval-AA",
     "category": "agents",
     "unit": "pts",
-    "description": "Updated/harder economically-valuable-work evaluation (0-2000 scale) — distinct from the original GDPval benchmark.",
+    "description": "Updated/harder economically-valuable-work evaluation (0-2000 scale) \u2014 distinct from the original GDPval benchmark.",
     "normMin": 0,
     "normMax": 2000,
     "higherIsBetter": true

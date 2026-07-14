@@ -100,6 +100,38 @@
       "source": "self-reported",
       "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained",
       "notes": "Terminal-Bench 2.0, Terminus-2 harness."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained",
+      "evaluatedAt": "2026-04-16",
+      "notes": "Confirmed via direct fetch of the Opus 4.7-vs-4.6 comparison table (Opus 4.7: 78.0% vs Opus 4.6: 72.7%)."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 75.8,
+      "source": "independent",
+      "sourceUrl": "https://x.com/arcprize/status/2044834615417053305",
+      "evaluatedAt": "2026-04-16",
+      "notes": "ARC Prize's own verified ARC-AGI-2 Semi-Private run, Max effort ($7.43/task): 'Max: 75.8%, High: 68.3%, Med: 67.5%, Low: 62.0%'."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1753,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/articles/opus-4-7-everything-you-need-to-know",
+      "evaluatedAt": "2026-04-16",
+      "notes": "Artificial Analysis's own GDPval-AA evaluation, run in partnership with Anthropic ahead of launch: 'Opus 4.7 scored 1,753 Elo, a 79 Elo lead over the next closest models' (confirmed via direct fetch)."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 79.7,
+      "source": "independent",
+      "sourceUrl": "https://contracollective.com/blog/chatgpt-5-5-vs-claude-opus-4-7-aider-polyglot-tested-2026",
+      "evaluatedAt": "2026-05-01",
+      "notes": "Independent benchmark run by Contra Collective (not an Anthropic self-report), confirmed via direct fetch."
     }
   ],
   "verificationNotes": "Release date and pricing confirmed directly from Anthropic's own announcement (fetched). Architecture (paramsB, archClass) is never disclosed by Anthropic for any Claude model; 'dense' is a placeholder consistent with how prior Anthropic entries in this corpus are recorded, not a confirmed fact."

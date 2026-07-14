@@ -1,9 +1,70 @@
 model_slug,score,source,source_url,evaluated_at,notes
 ai21-jamba,83.2,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
+apple-dclm-baseline-7b,81.28,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,'PIQA' row (0.8128) on the model's official HF eval table.
+apple-openelm-270m-3b,78.24,self-reported,https://huggingface.co/apple/OpenELM,2024-04-01,"OpenELM-3B (pretrained), PIQA, zero-shot — same 'Zero-Shot Results' table as the existing three rows."
+btlm-3b-8k,77.2,self-reported,https://arxiv.org/abs/2309.11568,,"0-shot, Table 3"
+cerebras-gpt-13b,76.6,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,"0-shot; same official HF model card results table that already backs the model's hellaswag/arc-challenge/winogrande/lambada entries (which also lists a 5-shot PIQA of 76.8, not used here to stay consistent with the corpus's existing 0-shot convention for this model)."
+chatglm-6b,65.7,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's family-wide technical report re-evaluation table (Table 1).
+chatglm2-6b,69.6,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's 2024 family-wide technical report re-evaluation table (Table 1).
+chatglm3-6b,80.1,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's 2024 family-wide technical report (Table 1).
+chinchilla,81.8,self-reported,https://arxiv.org/abs/2203.15556,,"Zero-shot PIQA accuracy, Table 8 of the Chinchilla paper."
 comma-v0-1-2t,72.5,self-reported,https://huggingface.co/common-pile/comma-v0.1-2t,,
+deepseek-llm-67b,82.6,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6"
+deepseekmoe-16b,80.2,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3 (DeepSeek 7B vs DeepSeekMoE 16B, base models), verified via raw HTML grep of the full row: 'HellaSwag ... 77.1 PIQA ... 80.2 ARC-easy ... 68.1 ARC-challenge ... 49.8 RACE-middle ... 61.9 RACE-high ... 46.4 DROP ... 32.9 GSM8K ... 18.8 MATH ... 4.3 HumanEval ... 26.8 MBPP ... 39.2 TriviaQA ... 64.8 NaturalQuestions ... 25.5 MMLU ... 45.0 WinoGrande ... 70.2 CLUEWSC ... 72.1 CEval ... 40.6 CMMLU ... 42.5 CHID ... 89.4' — DeepSeekMoE 16B column, 0-shot."
+falcon-7b,80.3,self-reported,https://arxiv.org/abs/2311.16867,,From Table 20 of the Falcon tech report.
+falcon3-10b,78.4,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,"0-shot, internal pipeline table."
+gemma-2-27b,83.2,self-reported,https://huggingface.co/google/gemma-2-27b,2024-06-01,0-shot
+gemma-2-9b,81.7,self-reported,https://huggingface.co/google/gemma-2-9b,2024-06-01,0-shot
+gemma-2b,77.3,self-reported,https://huggingface.co/google/gemma-2b,,0-shot
+gemma-7b,81.2,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf,2024-02-21,"Table 6, 0-shot."
+gopher,81.8,self-reported,https://arxiv.org/abs/2203.15556,2022-03-29,"Zero-shot, Table 8."
+gpt-3-175b,82.8,self-reported,https://arxiv.org/abs/2005.14165,,"Few-shot, evaluated on PIQA test server (Table 3.6); paper flags a possible test-set contamination issue on this result"
 gpt-j-6b,76.5,self-reported,https://huggingface.co/EleutherAI/gpt-j-6b,2021-06-09,"zero-shot, LM Eval Harness"
 gpt-neo-2-7b,72.14,self-reported,https://huggingface.co/EleutherAI/gpt-neo-2.7B,2021-03-21,"zero-shot, LM Eval Harness"
+h2o-danube-1-8b,76.71,self-reported,https://huggingface.co/h2oai/h2o-danube-1.8b-chat,,"0-shot PIQA for h2o-danube-1.8b-chat, from the HF model card's benchmark table; cross-confirmed in arXiv:2401.16818 Table 4."
+h2o-danube3-4b,82.64,self-reported,https://arxiv.org/abs/2407.09276,,"3-shot, from H2O-Danube3 technical report Table 2"
+hermes-3-405b,85.96,self-reported,https://arxiv.org/pdf/2408.11857,,"0-shot, Table 5."
+hunyuan-large-a52b,88.3,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
+jais-13b,67.6,self-reported,https://huggingface.co/inceptionai/jais-13b,,"Arabic-translated PIQA, from the same official HF model card Arabic evaluation table."
+jais-70b,81.2,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,English PIQA score for jais-adapted-70b-chat.
+llama-13b,80.1,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3 'Zero-shot performance on Common Sense Reasoning tasks'"
+llama-2-70b,82.8,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20."
+llama-2-7b,78.8,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20."
+llama-33b,82.3,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3 (Common Sense Reasoning)."
+llama-65b,82.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table"
+llama-7b,79.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table"
+luminous-supreme-70b,79.9,self-reported,https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/,2023-02-20,"Core 16-task suite, 0-shot."
 megatron-turing-nlg-530b,82,self-reported,https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/,2021-10-11,"zero-shot, physical commonsense reasoning"
+mistral-7b,83,self-reported,https://arxiv.org/abs/2310.06825,,"Table 2 of the Mistral 7B paper, Pretrained row (fetched via ar5iv HTML mirror and cross-checked against raw arxiv text)."
+mixtral-8x7b,83.6,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,Table 2 (base model comparison) of the Mixtral of Experts paper.
+naver-hyperclova-x,86.4,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, 0-shot, Table 5."
+naver-hyperclova-x-seed-think-32b,76.7,self-reported,https://arxiv.org/abs/2601.03286,2026-01-03,"Table 5, English text-to-text benchmarks."
+nemotron-3-8b,80.4,self-reported,https://huggingface.co/nvidia/nemotron-3-8b-base-4k,,"0-shot. From the evaluation table on the HF model card, confirmed via two independent literal-transcription fetches of the page."
+nemotron-4-15b,82.4,self-reported,https://arxiv.org/abs/2402.16819,,"Table 3, zero-shot."
+nous-hermes-2-mixtral-8x7b-dpo,83.79,self-reported,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO,2024-01-15,"acc_norm, part of GPT4All suite on the official HF model card."
+olmo-7b,78.4,self-reported,https://huggingface.co/allenai/OLMo-7B,,
+olmoe-1b-7b-0924,79.8,self-reported,https://huggingface.co/allenai/OLMoE-1B-7B-0924,,PIQA score from the same 'Evaluation Snapshot' table on the official HF model card (verified by fetching README.md directly).
+openhermes-2-5-mistral-7b,82.7,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,2023-11-03,"acc_norm, part of GPT4All suite on the official HF model card."
+openllama-7b,77,self-reported,https://github.com/openlm-research/open_llama,,"piqa/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
 opt-175b,81.07,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline, GPTQ paper"
 opt-66b,79.76,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline, GPTQ paper"
+opt-iml-30b,77.3,self-reported,https://ar5iv.labs.arxiv.org/html/2212.12017,2022-12-22,"0-shot accuracy on PIQA for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', PIQA column = 77.3/69.2 (0-shot/32-shot)."
+palm-540b,82.3,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"PaLM 540B, 0-shot PIQA, from Table 4."
+phi-1-5-1-3b,76.6,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,2023-09-11,Table 3 (Language Understanding and Knowledge Benchmarks).
+phi-2-2-7b,60.2,self-reported,https://arxiv.org/pdf/2404.14219,,5-shot; same comparison table.
+phi-3-5-mini-3-8b,81,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,5-shot; HF model card.
+phi-3-5-moe-16x3-8b-6-6b-active,88.6,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
+phi-3-medium-14b,87.9,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,5-shot
+phi-3-mini-3-8b,83.5,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,5-shot
+phi-3-small-7b,86.9,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,5-shot
+phi-4-mini-3-8b,77.6,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, PIQA (5-shot)."
+phi-4-mini-instruct,77.6,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, PIQA (5-shot)."
+pythia-1-4b,70.9,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json,2023-04-03,"Zero-shot, final checkpoint (step143000) — piqa acc=0.7089."
 pythia-12b,76,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"zero-shot, LM Eval Harness, final checkpoint (step143000) — raw eval JSON acc=0.7601"
+pythia-6-9b,75.2,self-reported,https://arxiv.org/abs/2304.01373,,"Zero-shot PIQA accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.752±0.010."
+redpajama-incite-7b-base,77.37,self-reported,https://arxiv.org/abs/2411.12372,,"PIQA acc_norm, Table 9 of the RedPajama technical paper."
+redpajama-incite-7b-instruct,76.99,self-reported,https://arxiv.org/abs/2411.12372,,"PIQA acc_norm, Table 9."
+redpajama-incite-base-3b-v1,74.7,self-reported,https://www.together.ai/blog/redpajama-models-v1,,"PIQA accuracy, zero-shot lm-evaluation-harness subset (also confirmed in arXiv 2411.12372 Table 7: 0.7470)."
+skywork-13b,79.9,self-reported,https://arxiv.org/pdf/2310.19341,2023-10-30,"From Table 11 ('More English benchmarks results') of the Skywork-13B technical report (arXiv:2310.19341), fetched and read directly page-by-page. Row: Skywork-13B | BoolQ 82.9 | PIQA 79.9 | Winogrande 72.2 | TriviaQA 54.0 | RACE 45.2 | HellaSwag 77.4 | ARC-E 78.5 | ARC-C 50.2."
+smollm2-1-7b,77.6,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,"Base pre-trained model, zero-shot. From the official model card's 'Base Pre-Trained Model' evaluation table."
+xgen-7b-8k,75.5,self-reported,https://ar5iv.labs.arxiv.org/html/2309.03450,2023-07-03,"Zero-shot, Table 6"

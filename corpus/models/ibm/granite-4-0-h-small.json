@@ -106,6 +106,53 @@
       "score": 46.23,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.0-h-small"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 42.48,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.0-h-small",
+      "notes": "AlpacaEval 2.0, H Small MoE column of the model card's 'Alignment Tasks' table"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 46.48,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.0-h-small"
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 83,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.0-h-small",
+      "notes": "HumanEval+, pass@1"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 71,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.0-h-small",
+      "notes": "MBPP+, pass@1"
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 64.69,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.0-h-small"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 69.69,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.0-h-small",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 38.72,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.0-h-small",
+      "notes": "8-shot"
     }
   ],
   "verificationNotes": "Fetched HF model card directly: release date (Oct 2, 2025), 32B total/9B active hybrid Mamba-2/Transformer MoE, Apache 2.0, 128K context, 12 languages, and all 9 benchmark scores confirmed verbatim. Also independently confirmed watsonx.ai pricing ($0.06 in / $0.25 out per 1M tokens) via web search (getmaxim.ai and cloudprice.net cost calculators both show this rate). No changes made."

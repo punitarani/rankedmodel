@@ -79,6 +79,14 @@
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-34B-32K-details",
       "notes": "MATH Hard subset, exact match"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 31.19,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-34B-32K-details",
+      "evaluatedAt": "2024-06-17",
+      "notes": "Yi-1.5-34B-32K variant, Open LLM Leaderboard v2. IFEval 'Inst-and-Prompt Level Strict Acc' (average of prompt-level strict 25.32% and inst-level strict 37.05%), the standard v2 leaderboard convention."
     }
   ],
   "verificationNotes": "Confirmed via GitHub repo and web search: Yi-1.5 series (34B/9B/6B) open-sourced May 13, 2024, Apache 2.0, continually pretrained on 500B extra tokens with 4K/16K/32K context variants. Confirmed all 5 Open LLM Leaderboard v2 scores (mmlu-pro 47.1, bbh 59.8, arc-challenge 66.3, gpqa 36.3, math-hard 13.4) verbatim on the linked HF dataset page (evaluated 2024-06-17, for Yi-1.5-34B-32K variant as noted). paramsB 34.4 approximated from HF (34B nominal); exact figure not independently pinned down beyond 'B' rounding but consistent across sources. No score changes made."

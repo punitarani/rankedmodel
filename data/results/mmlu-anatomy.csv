@@ -1,2 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+galactica-120b,58.5,self-reported,https://ar5iv.labs.arxiv.org/html/2211.09085,2022-11-01,"Appendix Table 37 'Rest of MMLU', GAL 120B column, Anatomy subject."
 palmyra-med-70b,83.7,self-reported,https://developer.nvidia.com/blog/writer-releases-domain-specific-llms-for-healthcare-and-finance/,,
+pythia-1-4b,28.1,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json,2023-04-03,"Zero-shot, final checkpoint (step143000) — hendrycksTest-anatomy acc=0.2815 (near chance for this small base model)."
+pythia-12b,26.7,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"Zero-shot, final checkpoint (step143000) — hendrycksTest-anatomy acc=0.2667 (near chance)."

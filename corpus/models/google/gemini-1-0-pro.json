@@ -51,6 +51,62 @@
       "source": "self-reported",
       "sourceUrl": "https://llm-stats.com/models/compare/gemini-1.0-pro-vs-gemini-1.5-pro",
       "notes": "Gemini 1.0 Pro MMLU score [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 86.5,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, Maj1@32."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 32.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, 4-shot."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 75,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, 3-shot."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 67.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, 0-shot instruction-tuned."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 74.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, F1 score, variable shots."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 84.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, validation set, 10-shot."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 63.5,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 5, 8-shot, multilingual average."
     }
   ],
   "verificationNotes": "Confirmed real: Gemini Pro API access for developers opened 2023-12-13 (confirmed via TechCrunch, SiliconANGLE, Google Developers Blog -- distinct from the 2023-12-06 announcement date used for the Ultra/Nano records), with a 32K context window at that time, matching ctxK. Re-fetched llm-stats.com comparison page via search: it literally lists Gemini 1.0 Pro MMLU as 71.8%, matching the record exactly."

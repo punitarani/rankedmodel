@@ -113,6 +113,30 @@
       "sourceUrl": "https://mistral.ai/news/mixtral-of-experts/",
       "evaluatedAt": "2023-12-11",
       "notes": "Instruct variant"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 83.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.04088",
+      "evaluatedAt": "2024-01-01",
+      "notes": "Table 2 (base model comparison) of the Mixtral of Experts paper."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 83.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.04088",
+      "evaluatedAt": "2024-01-01",
+      "notes": "Table 2 of the paper; listed as ARC-Easy."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 71.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.04088",
+      "evaluatedAt": "2024-01-01",
+      "notes": "Table 2 of the paper (5-shot)."
     }
   ],
   "verificationNotes": "Fetched mistral.ai/news/mixtral-of-experts/ directly: confirms 2023-12-11 release, 46.7B total/12.9B active params, 32K context, Apache 2.0, MT-Bench 8.30. Fetched ar5iv.labs.arxiv.org/html/2401.04088 Table 2 directly: all 8 base-model benchmark scores (MMLU 70.6, HumanEval 40.2, MBPP 60.7, GSM8K 74.4, ARC-Challenge 59.7, HellaSwag 84.4, Winogrande 77.2, MATH 28.4) match exactly. No changes made."

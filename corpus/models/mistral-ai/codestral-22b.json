@@ -65,6 +65,20 @@
       "sourceUrl": "https://www.analyticsvidhya.com/blog/2024/06/codestral-22b/",
       "evaluatedAt": "2024-05-01",
       "notes": "[relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
+    },
+    {
+      "benchmarkSlug": "repobench",
+      "score": 34,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/codestral/",
+      "notes": "RepoBench EM (long-range repository-level completion), read directly from the official launch blog's benchmark chart image (verified by downloading and rendering the chart)."
+    },
+    {
+      "benchmarkSlug": "humaneval-fim",
+      "score": 91.6,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/codestral/",
+      "notes": "HumanEvalFIM average across Python/JavaScript/Java, read directly from the official launch blog's benchmark chart image; independently corroborated by the same figure on the Codestral-Mamba HF model card's comparison table."
     }
   ],
   "verificationNotes": "Confirmed via HF model page and config.json: 22.2B params, MNPL-0.1 license, 32K context (max_position_embeddings). Fetched analyticsvidhya.com directly: literally confirms '81.1% pass rate on HumanEval' and '78.2% success rate in MBPP'. No changes made."

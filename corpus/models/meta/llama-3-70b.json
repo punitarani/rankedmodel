@@ -85,7 +85,42 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
       "notes": "0-shot, Instruct-tuned checkpoint"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 93,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "notes": "ARC-Challenge, 25-shot, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 83.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "notes": "WinoGrande, 5-shot, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 81.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "notes": "BIG-Bench Hard, 3-shot CoT, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 89.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "notes": "TriviaQA-Wiki, 5-shot, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 79.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "notes": "DROP, 3-shot, F1, pretrained/base checkpoint."
     }
   ],
-  "verificationNotes": "Confirmed real. Fetched huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct: benchmark table literally lists pretrained MMLU 79.5, and Instruct HumanEval 81.7, GSM8K 93.0, MATH 50.4, GPQA 39.5 — every result row matches exactly. 8K context and 'Meta Llama 3 Community License' also confirmed on the same page. Release date 2024-04-18 confirmed via ai.meta.com/blog/meta-llama-3. No changes."
+  "verificationNotes": "Confirmed real. Fetched huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct: benchmark table literally lists pretrained MMLU 79.5, and Instruct HumanEval 81.7, GSM8K 93.0, MATH 50.4, GPQA 39.5 \u2014 every result row matches exactly. 8K context and 'Meta Llama 3 Community License' also confirmed on the same page. Release date 2024-04-18 confirmed via ai.meta.com/blog/meta-llama-3. No changes."
 }

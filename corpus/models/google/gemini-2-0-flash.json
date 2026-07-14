@@ -89,6 +89,38 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf",
       "evaluatedAt": "2025-02-01",
       "notes": "v5, GA version"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 29.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf",
+      "evaluatedAt": "2025-02-01",
+      "notes": "World knowledge factuality with no search enabled, GA column of the official Gemini 2.0 Flash model card evaluation table."
+    },
+    {
+      "benchmarkSlug": "facts-grounding",
+      "score": 84.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf",
+      "evaluatedAt": "2025-02-01",
+      "notes": "FACTS Grounding benchmark, GA column of the official model card evaluation table."
+    },
+    {
+      "benchmarkSlug": "bird-sql",
+      "score": 58.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf",
+      "evaluatedAt": "2025-02-01",
+      "notes": "Bird-SQL (Dev) text-to-SQL benchmark, GA column of the official model card evaluation table."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 51.8,
+      "source": "self-reported",
+      "sourceUrl": "https://developers.googleblog.com/en/the-next-chapter-of-the-gemini-era-for-developers/",
+      "evaluatedAt": "2024-12-11",
+      "notes": "SWE-bench Verified, agent setting: Gemini 2.0 Flash equipped with code execution tools plus a best-of-N sampling scaffold (selecting among many sampled solutions using unit tests and the model's own judgment), per Google's Dec 2024 developer blog post 'The next chapter of the Gemini era for developers.' This is a tool-augmented agent score, not a raw single-shot completion."
     }
   ],
   "verificationNotes": "Existence and Dec 11 2024 initial (experimental) announcement confirmed via blog.google; GA followed Feb 5 2025 (also confirmed). Fetched the actual Gemini-2.0-Flash-Model-Card.pdf (published Apr 15 2025) and confirmed all 5 benchmark rows match the GA column verbatim: MMLU-Pro 77.6%, GPQA diamond 60.1%, MATH 90.9%, MMMU 71.7%, LiveCodeBench v5 34.5%. Pricing $0.10/$0.40 per 1M tokens confirmed via ai.google.dev pricing coverage. Architecture description (sparse MoE, refined over 1.5) matches model card text verbatim. No changes made."

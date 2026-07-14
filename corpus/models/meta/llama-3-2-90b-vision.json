@@ -41,7 +41,7 @@
   "vramQ4Gb": 55,
   "vramFp16Gb": 178,
   "tps4090": null,
-  "tpsNote": "Even at Q4 (~55GB) it exceeds a single RTX 4090's 24GB VRAM; no verified single-4090 llama.cpp benchmark exists — needs multi-GPU or CPU offload.",
+  "tpsNote": "Even at Q4 (~55GB) it exceeds a single RTX 4090's 24GB VRAM; no verified single-4090 llama.cpp benchmark exists \u2014 needs multi-GPU or CPU offload.",
   "effortLabel": null,
   "isDefaultConfig": true,
   "isBestConfig": true,
@@ -86,6 +86,48 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
       "notes": "DocVQA test, ANLS"
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 92.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
+      "notes": "AI2 Diagram test, instruct-tuned model (base pretrained scored 75.3 on the same benchmark)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 86,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
+      "notes": "MMLU CoT, macro_avg/acc \u2014 text-backbone eval reported on the instruct-tuned vision model."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 68,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
+      "notes": "MATH CoT, final_em, instruct-tuned model."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 46.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
+      "notes": "GPQA accuracy, instruct-tuned model."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 86.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
+      "notes": "MGSM CoT, em, 0-shot multilingual math, instruct-tuned model."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 33.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
+      "notes": "MMMU-Pro, Vision setting (question rendered purely as an image) \u2014 matches the taxonomy's 'vision-only-input variant of MMMU' description. A separate 'Standard' MMMU-Pro setting scored 45.2 but that variant is text+image (10-option), not vision-only-input, so it was left unmapped rather than forced onto this slug."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card fetch: release 2024-09-25 (matches ai.meta.com blog), license Llama 3.2 Community License Agreement. All 5 benchmark rows (MMMU 60.3, VQAv2 78.1, MathVista 57.3, ChartQA 85.5, DocVQA 90.1) literally confirmed on the cited HF page. CORRECTED paramsB from 90 to 88.8: the model card's own parameter table lists this variant as '90B (88.8)', matching the same precise-vs-marketing-name pattern already used for the 11B Vision record (10.6 actual vs '11B' name)."

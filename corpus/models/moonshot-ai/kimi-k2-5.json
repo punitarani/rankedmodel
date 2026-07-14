@@ -124,6 +124,41 @@
       "score": 63.3,
       "source": "self-reported",
       "sourceUrl": "https://www.kimi.com/blog/kimi-k2-5"
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 77.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www.kimi.com/blog/kimi-k2-5",
+      "notes": "CharXiv (RQ), Kimi K2.5 Thinking, avg@3, max-tokens=64k, from the official Kimi K2.5 tech blog benchmark appendix table."
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 84.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.kimi.com/blog/kimi-k2-5",
+      "notes": "MathVision, Kimi K2.5 Thinking, avg@3, no python tool use."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 90.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www.kimi.com/blog/kimi-k2-5",
+      "notes": "MathVista (mini/testmini), Kimi K2.5 Thinking, avg@3."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 87.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.kimi.com/blog/kimi-k2-5",
+      "notes": "VideoMME, Kimi K2.5 Thinking."
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 41.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.kimi.com/blog/kimi-k2-5",
+      "notes": "CyberGym, Kimi K2.5 Thinking, averaged over 5 runs using Moonshot's in-house coding-eval framework."
     }
   ],
   "verificationNotes": "Confirmed as a real, released, and still-served model (not a rumor or vendor teaser). Architecture (1T total/32B active, 384 experts [8 routed + 1 shared], 61 layers [1 dense], MLA attention, 160K vocab, SwiGLU, 400M-param MoonViT vision encoder) and license (Modified MIT) verified directly on the official Hugging Face model card (huggingface.co/moonshotai/Kimi-K2.5) and cross-checked against the official Kimi tech blog (kimi.com/blog/kimi-k2-5), which present identical spec tables. Release date January 27, 2026 independently corroborated by TechCrunch's same-day coverage, OpenRouter's model listing ('Released Jan 27, 2026'), Artificial Analysis's model page (independently states 'released on January 27, 2026'), and multiple third-party trackers (aireleasetracker.com, pricepertoken.com, benchlm.ai) that all agree on the date. Pricing ($0.60/M input cache-miss, $3.00/M output, ~$0.10/M cache-hit) confirmed on Artificial Analysis's independently measured provider data and matches the 'Moonshot AI' direct-provider row shown on OpenRouter exactly. Benchmark scores are taken from the official Kimi K2.5 blog/HF results table (Kimi K2.5 'Thinking' configuration, the config the vendor itself reports as the flagship numbers): SWE-Bench Verified (76.8) is independently corroborated by a third-party tracker (aireleasetracker.com) reporting the identical 76.8%; GPQA-Diamond (87.6) is closely corroborated by Artificial Analysis's own independent re-run (87.9); HLE is reported here using the tool-augmented full-set score (50.2) for comparability with the sibling K2.6 entry's HLE figure, and Artificial Analysis's independent non-tool HLE run (29.4) is in the same range as the vendor's own non-tool figure (30.1), i.e. no red flags of inflated self-reporting. Overall Artificial Analysis Intelligence Index = 38/100 (v4.1 composite of GDPval-AA v2, tau3-Banking, Terminal-Bench v2.1, SciCode, HLE, GPQA-Diamond, CritPt, AA-Omniscience, AA-LCR), independently measured and broadly consistent with (though less flattering than) Moonshot's own selective benchmark table \u2014 mirroring the same self-reported/independent gap pattern documented on the sibling K2.6 corpus entry. As of July 2026 the model has been superseded as Moonshot's flagship by Kimi K2.6 (whose own note/docs explicitly call it 'Successor to K2.5') but remains live and actively served today via Moonshot's own API (platform.moonshot.ai) and third-party hosts (OpenRouter, Fireworks, ModelRun, Chutes, etc.), so it is catalogued as status=released rather than deprecated."

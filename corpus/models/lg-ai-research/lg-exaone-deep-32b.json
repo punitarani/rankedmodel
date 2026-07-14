@@ -79,7 +79,23 @@
       "sourceUrl": "https://github.com/LG-AI-EXAONE/EXAONE-Deep",
       "evaluatedAt": "2025-03-01",
       "notes": "LiveCodeBench, pass@1"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 83,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.12524",
+      "evaluatedAt": "2025-03-01",
+      "notes": "MMLU accuracy for the 32B model, confirmed via two independent fetches of the arXiv paper (html v1 and v2, Table 3). Not present on the abbreviated GitHub README / HF model-card comparison table, only in the full paper."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 74,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.12524",
+      "evaluatedAt": "2025-03-01",
+      "notes": "MMLU-Pro accuracy for the 32B model, confirmed via two independent fetches of the arXiv paper (html v1 and v2, Table 3)."
     }
   ],
-  "verificationNotes": "Existence and release date (2025-03-18) confirmed on GitHub README and HF model card. Params (30.95B, rounded 32B), 32K context, and 64-layer/GQA(40Q/8KV) architecture confirmed via HF card and independent search (model shares EXAONE-3.5-32B backbone). All 4 benchmark rows (MATH-500 95.7, AIME2024 72.1/90.0, GPQA-Diamond 66.1, LiveCodeBench 59.5) verbatim-confirmed on both the HF card and GitHub README — no changes."
+  "verificationNotes": "Existence and release date (2025-03-18) confirmed on GitHub README and HF model card. Params (30.95B, rounded 32B), 32K context, and 64-layer/GQA(40Q/8KV) architecture confirmed via HF card and independent search (model shares EXAONE-3.5-32B backbone). All 4 benchmark rows (MATH-500 95.7, AIME2024 72.1/90.0, GPQA-Diamond 66.1, LiveCodeBench 59.5) verbatim-confirmed on both the HF card and GitHub README \u2014 no changes."
 }

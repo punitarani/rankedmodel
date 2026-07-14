@@ -79,7 +79,15 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2210.17323",
       "notes": "FP16 baseline, GPTQ paper",
       "evaluatedAt": "2022-10-01"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 67.26,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2210.17323",
+      "evaluatedAt": "2022-10-01",
+      "notes": "FP16 baseline (zero-shot) for OPT-66B, Table 17 'OPT accuracy on ARC-easy' in the GPTQ paper (arXiv 2210.17323) \u2014 verified byte-for-byte in the raw table HTML (row 'full', 16 bits, 66B column = 67.26). Same source paper already used for the model's other 4 existing scores."
     }
   ],
-  "verificationNotes": "Confirmed 66B params, freely downloadable (non-gated) checkpoint, and 2048 ctx via the live HF model card. Corrected/pinned release date to 2022-06-22, the exact merge date of metaseq PR #171 'OPT-66B Release' (fetched directly) — this matches and sharpens the input's '2022-06'; updated specSources.releaseDate to that PR (the previously cited PR #221 is a later, unrelated HF-mirror note dated July 2022, not the release). All 4 benchmark rows confirmed as literal FP16 baseline figures in the GPTQ paper (arxiv 2210.17323)."
+  "verificationNotes": "Confirmed 66B params, freely downloadable (non-gated) checkpoint, and 2048 ctx via the live HF model card. Corrected/pinned release date to 2022-06-22, the exact merge date of metaseq PR #171 'OPT-66B Release' (fetched directly) \u2014 this matches and sharpens the input's '2022-06'; updated specSources.releaseDate to that PR (the previously cited PR #221 is a later, unrelated HF-mirror note dated July 2022, not the release). All 4 benchmark rows confirmed as literal FP16 baseline figures in the GPTQ paper (arxiv 2210.17323)."
 }

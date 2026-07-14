@@ -88,6 +88,30 @@
       "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
       "evaluatedAt": "2026-04-02",
       "notes": "MMMU-Pro (vision), 26B A4B; also independently listed in the model repo's structured eval_results (.eval_results/mmmu_pro.yaml, value 73.8)."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 8.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "evaluatedAt": "2026-04-02",
+      "notes": "Humanity's Last Exam, no tools, 26B A4B. Also independently confirmed via the HF repo's structured eval_results metadata (HLE-no-tools 8.7). Card also lists an HLE-with-search score of 17.2, which is a distinct tool-augmented setting not captured by the single 'hle' taxonomy slug and was omitted to avoid conflating settings."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 86.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "evaluatedAt": "2026-04-02",
+      "notes": "Multilingual MMLU, 26B A4B, from the official Gemma 4 benchmark table."
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 82.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "evaluatedAt": "2026-04-02",
+      "notes": "MATH-Vision, 26B A4B."
     }
   ],
   "verificationNotes": "Closes the gap flagged in gemma-4.json's own verificationNotes ('a separate 26B A4B MoE variant exists'). Confirmed via direct raw-HTML fetch (curl, not the LLM-summarized WebFetch tool) of both https://huggingface.co/google/gemma-4-26B-A4B and .../gemma-4-26B-A4B-it: both return HTTP 200 with real repo markers (Files-and-versions/tree/main/colab/kaggle links, safetensors index totalling ~26.5B params, license apache-2.0, tag arxiv:2607.02770) -- verified this isn't a 404 by diffing against a deliberately fake HF repo slug, which returned 401 with literal '404'/'Sorry' text, unlike the real pages. The -it page's rendered README contains an explicit 'Mixture-of-Experts (MoE) Model' properties table (Total Parameters 25.2B, Active Parameters 3.8B, 30 layers, 256K context, 262K vocab, 8 active/128 total experts + 1 shared, Text+Image modalities, ~550M vision encoder) and a 5-column benchmark table (Gemma 4 31B / 26B A4B / E4B / E2B / Gemma 3 27B). Critically, the 31B column in that same table (MMLU-Pro 85.2, AIME 89.2, GPQA-Diamond 84.3) matches the already-verified numbers on file in corpus/models/google/gemma-4.json exactly, which strongly corroborates the 26B A4B column is the same authentic Google-published table. Structured HF eval_results metadata (contributed by HF/Google staffer 'merve' via PR #3) independently lists GPQA-diamond 82.3, MMLU-Pro 82.6, MMMU-Pro-vision 73.8, HLE-no-tools 8.7 -- all consistent with the rendered table. Independently corroborated (second, non-Google, non-HF source) via a direct fetch of https://openrouter.ai/google/gemma-4-26b-a4b-it:free, which independently describes it as 'an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind', Apache-2.0, 262,144-token context (=256K), hf_slug google/gemma-4-26B-A4B-it, a Cloudflare-Workers-AI provider listing dated 2026-04-03 (one day after the dense 31B's 2026-04-02 launch), and states it 'Includes independent benchmarks from Artificial Analysis.' The Gemma 4 Technical Report (arxiv 2607.02770) was confirmed real via a direct fetch of its Hugging Face papers mirror (title: 'Gemma 4 Technical Report'). ai.google.dev/gemma/docs/core/model_card_4 was fetched directly and confirmed to exist in the live Google AI for Developers site nav (title 'Gemma 4 model card', with a 'Gemma 4 license' entry under Legal), matching the dense entry's docs link and the shared HF README's family blurb ('Featuring both Dense and Mixture-of-Experts (MoE) architectures'); its benchmark content itself is client-side JS-rendered and could not be scraped statically in this sandbox, so HF is used as the results sourceUrl since that content was directly verified byte-for-byte. Could not directly fetch blog.google's Gemma 4 launch post in this sandbox (network truncated repeatedly) but a WebSearch snippet independently paraphrased it as describing four sizes 'Effective 2B (E2B), Effective 4B (E4B), 26B Mixture of Experts (MoE) and 31B Dense', consistent with everything above; treated as corroborating-but-not-primary since it wasn't fetched directly. releaseDate 2026-04-02 assumed to match the dense sibling's family-wide launch date (OpenRouter's Cloudflare provider listing appearing 2026-04-03 is consistent with next-day provider onboarding, not a later model release). No modality/audio/video benchmark claims included since not confirmed on the primary table (OpenRouter's input_modalities listed video in addition to image/text, but the HF property table only states 'Text, Image' -- the video claim was not corroborated on the primary source and is omitted here)."

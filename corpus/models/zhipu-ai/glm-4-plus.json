@@ -53,7 +53,35 @@
       "source": "self-reported",
       "sourceUrl": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4",
       "notes": "vs GPT-4o 88.7 (98%)"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 74.2,
+      "source": "self-reported",
+      "sourceUrl": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4",
+      "notes": "From official Zhipu/Z.ai docs evaluation table; GLM-4-Plus vs GPT-4o 76.6 (97%)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 50.7,
+      "source": "self-reported",
+      "sourceUrl": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4",
+      "notes": "From official Zhipu/Z.ai docs evaluation table; GLM-4-Plus vs GPT-4o 51.0 (99%)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 45.8,
+      "source": "self-reported",
+      "sourceUrl": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4",
+      "notes": "Labeled 'LCB' in the docs table and marked with an asterisk denoting a Zhipu-reproduced result (not the original paper's number); GLM-4-Plus vs GPT-4o 45.5 (101%)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 79.5,
+      "source": "self-reported",
+      "sourceUrl": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4",
+      "notes": "From official Zhipu/Z.ai docs evaluation table; GLM-4-Plus vs GPT-4o 81.9 (97%)."
     }
   ],
-  "verificationNotes": "Confirmed real: release date 2024-08-29 at KDD 2024 corroborated by multiple independent news sources (aibase.com). Both result rows re-fetched from docs.bigmodel.cn and confirmed verbatim: AlignBench 83.2 vs GPT-4o 83.8, MMLU 86.8 vs GPT-4o 88.7. paramsB correctly left null/undisclosed — no primary source discloses size. No changes made."
+  "verificationNotes": "Confirmed real: release date 2024-08-29 at KDD 2024 corroborated by multiple independent news sources (aibase.com). Both result rows re-fetched from docs.bigmodel.cn and confirmed verbatim: AlignBench 83.2 vs GPT-4o 83.8, MMLU 86.8 vs GPT-4o 88.7. paramsB correctly left null/undisclosed \u2014 no primary source discloses size. No changes made."
 }

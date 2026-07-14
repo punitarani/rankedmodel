@@ -71,6 +71,20 @@
       "score": 70.2,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/OLMoE-1B-7B-0924"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 84.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMoE-1B-7B-0924",
+      "notes": "ARC-Easy score from the same 'Evaluation Snapshot' table on the official HF model card that already sources the model's other 4 benchmark rows (verified by fetching README.md directly)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 79.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMoE-1B-7B-0924",
+      "notes": "PIQA score from the same 'Evaluation Snapshot' table on the official HF model card (verified by fetching README.md directly)."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card and arXiv paper (2409.02060, submitted 2024-09-03). Apache-2.0 license confirmed. Architecture (64 experts, 8 active/token, 16 layers, 4096 ctx) confirmed directly from raw config.json. 6.9B total / 1.3B active params confirmed via independent secondary source quoting the paper. All 4 benchmark rows confirmed verbatim on the HF model card. Competitiveness-with-Llama2-13B claim in the note confirmed via paper summaries."

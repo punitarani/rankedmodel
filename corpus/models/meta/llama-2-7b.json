@@ -66,6 +66,94 @@
       "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md",
       "evaluatedAt": "2023-07-18",
       "notes": "Percent of generations rated both truthful and informative"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 32.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "3-shot chain-of-thought, Table 3 of the official Llama 2 paper (BBH aggregate across its 23 hard BIG-Bench tasks)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 14.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "8-shot maj1@1, Table 25 (Appendix A.2.2)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 12.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot pass@1, Table 21 (Appendix A.2.2)."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 20.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "3-shot pass@1, Table 21 (Appendix A.2.2)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 77.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 (Appendix A.2.2, 'Standard Benchmarks')."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 69.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 75.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 (ARC-e column)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 45.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 (ARC-c column)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 78.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 48.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 (SIQA column)."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 72.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "5-shot exact match on the TriviaQA-Wiki validation subset, Table 22 (Appendix A.2.2). Meta also reports 0/1/64-shot variants (65.8/68.9/73.7); 5-shot chosen as the most commonly-cited setting."
     }
   ],
   "verificationNotes": "Directly fetched Meta's official Llama 2 model card (github.com/meta-llama/llama-models MODEL_CARD.md): confirms MMLU 45.3, TruthfulQA 33.29%, ToxiGen 21.25%, 4K context window, 7B nominal params (actual param count ~6.7B, consistent with independently cross-checked calculations of 6.6-6.74B). Release date 2023-07-18 and Llama 2 Community License Agreement confirmed via Meta/GitHub. No changes made; all three benchmark rows confirmed literally present on the cited source."

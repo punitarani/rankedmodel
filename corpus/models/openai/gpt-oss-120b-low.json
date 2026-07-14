@@ -81,6 +81,46 @@
       "sourceUrl": "https://arxiv.org/abs/2508.10925",
       "evaluatedAt": "2025-08-05",
       "notes": "SWE-bench Verified, low reasoning effort"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 5.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "HLE, no tools, low reasoning effort. Read directly from Table 3 of the official model card."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 49.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Tau-Bench Retail, low reasoning effort. Read directly from Table 3 of the official model card."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 24,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Aider Polyglot, low reasoning effort. Read directly from Table 3 of the official model card."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 74.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "MMMLU average across 14 human-translated languages, low reasoning effort. Read directly from Table 2/Table 3 of the official model card."
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1595,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Codeforces Elo, no terminal tool, low reasoning effort (1653 Elo with tool access, per the same table -- chose the no-tools figure for consistency with the model's other no-tools rows). Read directly from Table 3 of the official model card."
     }
   ],
   "verificationNotes": "Confirmed real. HF model card (fetched) confirms 117B total / 5.1B active params and Apache 2.0 license verbatim. Independent architecture writeups corroborate 36 layers, 128 experts/layer, top-4 routing, 131,072-token (128K) native context via YaRN. Fetched arxiv.org/html/2508.10925v1 model-card table directly and confirmed all four low-effort scores appear verbatim: AIME 56.3, GPQA 67.1, MMLU 85.9, SWE-bench Verified 47.9. No changes made."

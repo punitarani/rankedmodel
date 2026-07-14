@@ -32,7 +32,7 @@
   "links": {
     "docs": "https://platform.claude.com/docs/en/about-claude/models/overview"
   },
-  "note": "CONFIRMED REAL — this is not a mix-up. Model id claude-sonnet-4-6. Direct predecessor to Claude Sonnet 5, sitting between Sonnet 4.5 and Sonnet 5 in the lineage; the corpus is missing it even though it already has both Opus 4.6 (2026-02-05) and Sonnet 5 (2026-06-30). Introduced 1M-token context (beta) and adaptive thinking for the Sonnet line.",
+  "note": "CONFIRMED REAL \u2014 this is not a mix-up. Model id claude-sonnet-4-6. Direct predecessor to Claude Sonnet 5, sitting between Sonnet 4.5 and Sonnet 5 in the lineage; the corpus is missing it even though it already has both Opus 4.6 (2026-02-05) and Sonnet 5 (2026-06-30). Introduced 1M-token context (beta) and adaptive thinking for the Sonnet line.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
@@ -62,10 +62,10 @@
     },
     {
       "benchmarkSlug": "arc-agi-2",
-      "score": 66.4,
+      "score": 58.3,
       "source": "self-reported",
-      "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "notes": "Max-effort configuration; scored 60.4% at high effort (120k thinking budget)."
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "notes": "Max-effort configuration; scored 60.4% at high effort (120k thinking budget). [Corrected during full-corpus audit: The existing entry's 'high effort' figure (60.4%) is correct and matches the System Card's footnote (60.42%), but its 'max-effort' figure of 66.4% does not appear in the primary source. Table 2.1.A and Figure 2.7.A (bar labeled 'Claude Sonnet 4.6 (Max)') both directly state Sonnet 4.6's ARC-AGI-2 (Verified) max-effort score as 58.3%.]"
     },
     {
       "benchmarkSlug": "swe-bench-pro",
@@ -83,11 +83,67 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 74.1,
+      "score": 89.9,
       "source": "self-reported",
-      "sourceUrl": "https://www.digitalapplied.com/blog/claude-sonnet-4-6-benchmarks-pricing-guide",
-      "notes": "Third-party recap of an Anthropic-reported figure; could not directly confirm the exact number against the primary system card text, so treat with reduced confidence."
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "notes": "Third-party recap of an Anthropic-reported figure; could not directly confirm the exact number against the primary system card text, so treat with reduced confidence. [Corrected during full-corpus audit: Existing value (74.1) came from a third-party recap (digitalapplied.com) that the previous audit pass explicitly flagged as unconfirmed. Directly fetched the official Claude Sonnet 4.6 System Card (Table 2.1.A and Section 2.9 body text, both independently): 'Claude Sonnet 4.6 achieved a score of 89.9% on GPQA Diamond, averaged over 10 trials, each run with adaptive thinking, max effort, and defaul]"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 89.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "MMMLU (Multilingual MMLU across 57 subjects x 14 non-English languages), averaged over 10 trials, adaptive thinking + max effort (System Card Section 2.11 / Table 2.1.A)."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1633,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "GDPval-AA Elo (Section 2.8 / Figure 2.8.A). A later 'GDPval-AA v2' re-measurement reported in the Claude Sonnet 5 System Card gives Sonnet 4.6 = 1381 under a rescaled/harder v2 methodology; this 1633 figure is Sonnet 4.6's own launch-era (v1) self-reported number."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 49,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "Humanity's Last Exam, with-tools configuration (web search, web fetch, code execution, context compaction up to 3M tokens). Without tools, Sonnet 4.6 scored 33.2%."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 97.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "\u03c4\u00b2-bench Telecom domain (Section 2.5). Sonnet 4.6 also scored 91.7% on the Retail sub-domain, which has no matching taxonomy slug."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 74.01,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "BrowseComp, single-orchestrator agent with context compaction, max reasoning effort, no thinking, 10M total sampled tokens (Section 2.20.1). Performance scaled with compute: 64.69% at 1M tokens, 69.67% at 3M."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 74.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "MMMU-Pro, no-tools/adaptive-thinking-max-effort configuration (Section 2.17.2). With an image-cropping tool, Sonnet 4.6 scored 75.6%."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 72.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "CharXiv Reasoning, no-tools configuration (Section 2.17.3). With an image-cropping tool, Sonnet 4.6 scored 77.4%."
     }
   ],
-  "verificationNotes": "Release date confirmed via Anthropic's own announcement (fetched directly; page states February 17, 2026, though one press recap gave February 15 — treated the primary source as authoritative). SWE-bench/OSWorld figures below are from direct launch-day press coverage citing Anthropic's numbers; GPQA figure is from a third-party recap with lower confidence."
+  "verificationNotes": "Release date confirmed via Anthropic's own announcement (fetched directly; page states February 17, 2026, though one press recap gave February 15 \u2014 treated the primary source as authoritative). SWE-bench/OSWorld figures below are from direct launch-day press coverage citing Anthropic's numbers; GPQA figure is from a third-party recap with lower confidence."
 }

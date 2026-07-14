@@ -71,6 +71,118 @@
       "score": 71.4,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 60.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table, consistent with the framing of the existing mmlu/gsm8k/math/humaneval rows for this entry."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 86.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 86.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 88.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 88.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 88.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 95,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "ARC-C, pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 89.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 90.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 91.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 72.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Pretrain/base model table."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 42.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "GPQA_diamond, from the separate Instruct-model competitive table (no pretrain GPQA figure was published, so no conflation risk)."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 9.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Instruct-model table."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "IFEval strict-prompt, Instruct-model table."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 81.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "Instruct-model table."
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 51.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Tencent-Hunyuan-Large",
+      "notes": "AlpacaEval-2.0, Instruct-model table."
     }
   ],
   "verificationNotes": "Re-fetched HF model card: 389B total / 52B active MoE confirmed exact; context 256K (pretrain) / 128K (instruct) confirmed, matching record's 128 (instruct default). License string 'Tencent Hunyuan Community License Agreement' confirmed verbatim via GitHub LICENSE.txt search. All 4 benchmark rows (MMLU 88.4 pretrain, GSM8K 92.8, MATH 69.8 pretrain, HumanEval 71.4 pretrain) confirmed literally on the HF card, matching the Llama-3.1-405B comparison framing. Release date: arxiv v1 was submitted 2024-11-04 (record says 2024-11-05, within 1 day of the paper's own v2 revision date) - close enough, not corrected. No changes made."

@@ -73,7 +73,55 @@
       "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
       "evaluatedAt": "2026-04-02",
       "notes": "GPQA Diamond, 31B"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 80,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "evaluatedAt": "2026-04-02",
+      "notes": "LiveCodeBench v6, 31B dense, also confirmed on huggingface.co/google/gemma-4-31B-it."
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 2150,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "evaluatedAt": "2026-04-02",
+      "notes": "Codeforces Elo, 31B dense (26B A4B sibling scores 1718 on the same table, already in corpus)."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 19.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "evaluatedAt": "2026-04-02",
+      "notes": "Humanity's Last Exam, no tools, 31B. Card also lists HLE-with-search 26.5, a distinct tool-augmented setting omitted to avoid conflating with the single 'hle' slug."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 88.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "evaluatedAt": "2026-04-02",
+      "notes": "Multilingual MMLU, 31B. Slightly above the taxonomy's typical 30-88 range ceiling but confirmed identically on two independent primary sources (ai.google.dev and huggingface.co)."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 76.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "evaluatedAt": "2026-04-02",
+      "notes": "MMMU-Pro (vision), 31B."
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 85.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "evaluatedAt": "2026-04-02",
+      "notes": "MATH-Vision, 31B."
     }
   ],
-  "verificationNotes": "Confirmed real: released 2026-04-02 (blog.google + deepmind.google, corroborated by independent press). Model card (ai.google.dev/gemma/docs/core/model_card_4, fetched directly) confirms the 31B variant is DENSE with hybrid local/global sliding-window attention (not MoE — a separate 26B A4B MoE variant exists in the family, which is what some press coverage of 'Gemma 4 MoE' refers to), 30.7B total params, 256K context, Apache-2.0 license, and all 3 benchmark numbers (MMLU-Pro 85.2, AIME 2026 89.2, GPQA Diamond 84.3) literally confirmed on that page. hf link google/gemma-4-31B-it confirmed to exist. Arena #3 ranking (1452 Elo) independently corroborated by arena.ai. No changes to record."
+  "verificationNotes": "Confirmed real: released 2026-04-02 (blog.google + deepmind.google, corroborated by independent press). Model card (ai.google.dev/gemma/docs/core/model_card_4, fetched directly) confirms the 31B variant is DENSE with hybrid local/global sliding-window attention (not MoE \u2014 a separate 26B A4B MoE variant exists in the family, which is what some press coverage of 'Gemma 4 MoE' refers to), 30.7B total params, 256K context, Apache-2.0 license, and all 3 benchmark numbers (MMLU-Pro 85.2, AIME 2026 89.2, GPQA Diamond 84.3) literally confirmed on that page. hf link google/gemma-4-31B-it confirmed to exist. Arena #3 ranking (1452 Elo) independently corroborated by arena.ai. No changes to record."
 }

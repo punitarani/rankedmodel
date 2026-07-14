@@ -83,6 +83,53 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
       "notes": "w/ subtitles"
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 51.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+      "evaluatedAt": "2025-01-28",
+      "notes": "MMMU_Pro, from the official HF model card image-benchmark table"
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 38.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+      "evaluatedAt": "2025-01-28",
+      "notes": "MathVision_FULL"
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 88,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+      "evaluatedAt": "2025-01-28",
+      "notes": "MMBench_DEV_EN_V11"
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 88.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+      "evaluatedAt": "2025-01-28",
+      "notes": "AI2D_TEST"
+    },
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 885,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+      "evaluatedAt": "2025-01-28"
+    },
+    {
+      "benchmarkSlug": "osworld",
+      "score": 8.83,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+      "evaluatedAt": "2025-01-28",
+      "notes": "Agent/computer-use benchmark, success rate, from the official 'Agent benchmark' table"
     }
   ],
   "verificationNotes": "Fetched HF model card directly: literally confirmed 73B total params, 'Qwen' (Tongyi Qianwen) license, 32,768-token native context, and all 5 benchmark rows (MMMU 70.2, MathVista 74.8, DocVQA 96.4, ChartQA 89.5, VideoMME-w/subs 79.1) appear verbatim on the page. Release date: qwenlm.github.io blog post itself is dated Jan 26 2025, while GitHub/weights repos show a 2025.01.28 release entry for the size family (both are legitimate; kept 2025-01-28 as in source record, minor 2-day spread between announcement and artifact release, not an error)."

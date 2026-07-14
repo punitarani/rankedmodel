@@ -53,7 +53,104 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3",
       "notes": "LayerLens/Atlas independent evaluation, as reported by Artificial Analysis"
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1418,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-3/",
+      "evaluatedAt": "2025-12-02",
+      "notes": "LMArena Elo score (\u00b111) for the non-thinking Mistral Large 3, from the launch blog's own 'LMArena ELO Score' chart (read directly from the chart image, which has labeled numeric values)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 67.17,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512",
+      "evaluatedAt": "2025-12-02",
+      "notes": "GPQA Diamond score from the HF 'Evaluation results' auto-generated widget (EvalEval automated eval-results datastore), i.e. a third-party automated eval run, not a number from Mistral's own written tables. Corroborated by two other independent re-runs found in the follow-up coverage pass: Artificial Analysis = 68% and vals.ai = 68.43% (±2.37) -- not added as separate entries since the 'gpqa' slug is already occupied, but the three-way convergence supports the existing figure."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 4,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3",
+      "notes": "Humanity's Last Exam, from Artificial Analysis's Intelligence Evaluations breakdown (part of their v4.1 Intelligence Index, which also includes GPQA Diamond already captured above). Mistral Large 3 placed 16th of 17 models shown."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 36,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3",
+      "notes": "IFBench (instruction following), independently measured by Artificial Analysis; 13th of 14 models with a reported score."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 56,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3",
+      "notes": "MMMU-Pro (visual reasoning), independently measured by Artificial Analysis; last of only 7 models in their comparison set with a reported score."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 12,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3",
+      "notes": "Terminal-Bench v2.1 (agentic coding & terminal use, Terminus-2 harness), part of AA's Coding Index. A separate independent evaluator (LayerLens/Atlas, https://medium.com/@layerlens/mistral-large-3-early-results-from-atlas-13f6a3c6b35a) reported a markedly different 23.75% for 'Terminal-Bench (Terminus-2)' on what appears to be the same benchmark generation -- AA's number is used here for consistency with how this corpus sources other models' terminal-bench-2 entries, but the ~2x spread between the two independent runs should be treated as a real discrepancy, not corpus error."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 55.34,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/mistralai_mistral-large-2512",
+      "notes": "vals.ai independent eval, ±1.15pp CI, ranked 97th of 127 models on their LiveCodeBench leaderboard."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 66.19,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/mistralai_mistral-large-2512",
+      "notes": "vals.ai independent eval, ±1.14pp CI, ranked 63rd of 82 models."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 41.4,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/mistralai_mistral-large-2512",
+      "notes": "SWE-bench Verified (vals.ai's SWE-bench leaderboard uses the Verified subset, evaluated with a minimal bash-tool-only agent harness), ±2.21pp CI, ranked 67th of 69 models."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 90.24,
+      "source": "independent",
+      "sourceUrl": "https://medium.com/@layerlens/mistral-large-3-early-results-from-atlas-13f6a3c6b35a",
+      "evaluatedAt": "2025-12-05",
+      "notes": "LayerLens/Atlas independent evaluation (same evaluator already cited above for MMLU-Pro); described as one of the model's strongest results in their write-up."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 74,
+      "source": "independent",
+      "sourceUrl": "https://medium.com/@layerlens/mistral-large-3-early-results-from-atlas-13f6a3c6b35a",
+      "evaluatedAt": "2025-12-05",
+      "notes": "AGIEval English subset, LayerLens/Atlas independent evaluation."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 93.6,
+      "source": "independent",
+      "sourceUrl": "https://medium.com/@layerlens/mistral-large-3-early-results-from-atlas-13f6a3c6b35a",
+      "evaluatedAt": "2025-12-05",
+      "notes": "MATH-500, LayerLens/Atlas independent evaluation; maps to this taxonomy's 'math' slug (500 competition math problems). One of the model's highest scores across all evaluations LayerLens ran."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 40,
+      "source": "independent",
+      "sourceUrl": "https://medium.com/@layerlens/mistral-large-3-early-results-from-atlas-13f6a3c6b35a",
+      "evaluatedAt": "2025-12-05",
+      "notes": "AIME 2025, LayerLens/Atlas independent evaluation. The same source also reported AIME 2024 = 53.33%, which was not added since only one 'aime' slug exists in the taxonomy (following this corpus's established convention, e.g. tii/falcon-h1-34b, of keeping a single year per slug and noting the other in prose)."
     }
   ],
-  "verificationNotes": "Non-reasoning model; Artificial Analysis independently scored it 16 on their Intelligence Index (below-average vs. peers), which is why it's a plausible gap for a corpus otherwise tracking frontier models."
+  "verificationNotes": "Non-reasoning model; Artificial Analysis independently scored it 16 on their Intelligence Index (below-average vs. peers), which is why it's a plausible gap for a corpus otherwise tracking frontier models. Follow-up coverage pass (2026-07-14): Mistral's own launch blog and HF model card only chart the INSTRUCT model against rivals via LMArena Elo (captured above) and pairwise human win-rates (Win/Lose vs. Deepseek V3.1 and Kimi K2 on general and multilingual prompts) -- the latter aren't single-benchmark accuracy numbers and don't map to a taxonomy slug. The blog's other bar chart ('Base Model Benchmark Comparison': MMMLU 85.5, GPQA-Diamond 43.9, SimpleQA 23.8, AMC 52.0, LiveCodeBench 34.4) is explicitly for the BASE checkpoint (Mistral-Large-3-675B-Base-2512), a different model from the Instruct checkpoint this corpus entry tracks, so those numbers were deliberately excluded rather than misattributed. Mistral itself has published no deeper benchmark table for the Instruct model beyond the Arena chart and the single HF eval-widget GPQA score -- for genuinely comprehensive coverage this pass added 8 additional benchmarks (hle, ifbench, mmmu-pro, terminal-bench-2, livecodebench, mmmu, swe-bench, humaneval, agieval, math, aime -- 11 results) sourced from two independent third-party evaluators (Artificial Analysis and vals.ai) plus a LayerLens/Atlas write-up, spanning both easy (HumanEval, MMLU-class) and hard evals (SWE-bench Verified, HLE, AIME, Terminal-Bench). One further AA metric, GDPval-AA v2 (7% on AA's 0-100 transformed scale), was found but deliberately NOT added: this corpus's existing 'gdpval-aa' entries for other models all use the raw Elo-like score (~1300-1700 range self-reported by vendors), and adding AA's rescaled percentage under the same slug would silently corrupt that scale rather than genuinely improve coverage."
 }

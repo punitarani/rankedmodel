@@ -93,6 +93,55 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
       "notes": "EvalPlus code eval, 0-shot"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 38.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
+      "notes": "From the card's official Open LLM Leaderboard comparison table (5-shot), matching the same table the existing ifeval/bbh/math/gpqa entries are sourced from. The card's separate 'internal pipeline' table reports a different MMLU-PRO value (44), not used here for consistency with how the other overlapping benchmarks were already sourced."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 66.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
+      "notes": "25-shot, internal pipeline table."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 78.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
+      "notes": "0-shot, internal pipeline table."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 71,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
+      "notes": "0-shot, internal pipeline table."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 48.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
+      "notes": "0-shot, internal pipeline table."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
+      "notes": "Internal pipeline table, listed as 'MT-Bench (avg)'."
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 24.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
+      "notes": "Internal pipeline table, listed as 'Alpaca (WC)' (length-controlled win rate)."
     }
   ],
   "verificationNotes": "Confirmed real model via HF model card and HF blog (huggingface.co/blog/falcon3, fetched): release date 2024-12-17, 10B params via depth-upscaling of Falcon3-7B, 32K context, license 'TII Falcon-LLM License 2.0' confirmed verbatim. All 7 result rows verified by directly querying the model card's two benchmark tables: ifeval 78.17/bbh 44.82/math 25.91/gpqa 10.51 match the 'official HF leaderboard' table; mmlu 73.9/gsm8k 84.9/humaneval(EvalPlus) 74.7 match the 'internal pipeline' table. Both tables are on the same official model card so all rows stand. No changes made."

@@ -5,7 +5,7 @@
   "releaseDate": "2026-06-01",
   "status": "released",
   "openness": "open-weights",
-  "license": "MiniMax Model Community License (non-commercial restrictions apply; HF license field shows 'minimax-community') — verify exact license text at https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE",
+  "license": "MiniMax Model Community License (non-commercial restrictions apply; HF license field shows 'minimax-community') \u2014 verify exact license text at https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE",
   "paramsB": 428,
   "activeParamsB": 23,
   "archClass": "moe",
@@ -34,7 +34,7 @@
     "hf": "MiniMaxAI/MiniMax-M3",
     "docs": "https://platform.minimax.io/docs/release-notes/models"
   },
-  "note": "Successor to M2 introducing MiniMax Sparse Attention (MSA), giving a native 1M-token multimodal (text/image/video input) context window with reported 9x faster prefill / 15x faster decode vs M2 at 1M context. Open-weight release on Hugging Face alongside hosted API access. Official pricing page lists a base rate of $0.60/$2.40 per million input/output tokens with a standing 50% promotional discount to the effective $0.30/$1.20 used here for inputs ≤512K tokens; price doubles beyond 512K tokens and a 1.5x 'priority' service tier also exists (not modeled as a separate entry).",
+  "note": "Successor to M2 introducing MiniMax Sparse Attention (MSA), giving a native 1M-token multimodal (text/image/video input) context window with reported 9x faster prefill / 15x faster decode vs M2 at 1M context. Open-weight release on Hugging Face alongside hosted API access. Official pricing page lists a base rate of $0.60/$2.40 per million input/output tokens with a standing 50% promotional discount to the effective $0.30/$1.20 used here for inputs \u2264512K tokens; price doubles beyond 512K tokens and a 1.5x 'priority' service tier also exists (not modeled as a separate entry).",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
@@ -76,8 +76,40 @@
       "score": 85.4,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "notes": "Reported on the official model card as 'Video-MME v2'; mapped to the base videomme slug — flagging that this may be a newer/harder variant of the benchmark rather than the original Video-MME, so treat as approximate."
+      "notes": "Reported on the official model card as 'Video-MME v2'; mapped to the base videomme slug \u2014 flagging that this may be a newer/harder variant of the benchmark rather than the original Video-MME, so treat as approximate."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 83.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimax.io/models/text/m3",
+      "evaluatedAt": "2026-06-01",
+      "notes": "Stated directly on MiniMax's official M3 product page as surpassing Claude Opus 4.7 (79.3); also relayed by independent press (VentureBeat and others)."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 66,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "evaluatedAt": "2026-06-01",
+      "notes": "Terminal-Bench 2.1, read directly from the benchmark table embedded as figures/benchmark.jpeg on the official HF model card (decoded the image directly since the table isn't in the markdown text). Per the card's evaluation-methodology footnotes: tested on MiniMax's internal infra with an 8C16G sandbox, 2-hour timeout, 128K max output tokens, using Terminus 2 as scaffolding. Exact figure (66.0%) independently corroborated by MarkTechPost's June 2026 launch coverage."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 75.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "evaluatedAt": "2026-06-01",
+      "notes": "OSWorld-Verified, from the same official model-card benchmark image. Per the card's methodology footnote: tested on 361 (of ~369) samples from a 'nogdrive' collection -- i.e. excluding Google-Drive-dependent tasks -- using the official OSWorld-Verified codebase, relative coordinates 0-1000, 1920x1080 resolution; flagged here as a near-complete-but-not-full-suite subset rather than the entire official benchmark. Note: independent press (MarkTechPost) cites a different figure, 70.06%, for what it labels the same benchmark; 75.2 is taken from MiniMax's own primary model card as the vendor-authoritative number and the discrepancy is flagged for the record rather than silently resolved."
+    },
+    {
+      "benchmarkSlug": "usamo",
+      "score": 85.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "evaluatedAt": "2026-06-01",
+      "notes": "USAMO 2026, reported as 36/42 (=85.7%) on the official model-card benchmark image. Per the card's methodology footnote, graded per MathArena's official evaluation approach: model proof output normalized, then graded by two independent judge models (GPT-5.4 and Gemini 3.1 Pro, both at high reasoning effort) using human-expert rubrics, with the minimum of the two judges' scores taken as final."
     }
   ],
-  "verificationNotes": "Confirmed released via official Hugging Face model repo (MiniMaxAI/MiniMax-M3, actively downloaded), MiniMax's own API docs, Artificial Analysis, and independent press (MarkTechPost, VentureBeat, TechTimes) covering the June 1, 2026 launch and the accompanying MSA architecture arXiv paper (2606.13392, June 11, 2026). Param counts (428B/23B) independently corroborated by Artificial Analysis and multiple press writeups; one press summary confused this with an unrelated 109B experimental MSA-paper model — the 428B/23B figures are the ones consistently tied to the actual MiniMax-M3 checkpoint."
+  "verificationNotes": "Confirmed released via official Hugging Face model repo (MiniMaxAI/MiniMax-M3, actively downloaded), MiniMax's own API docs, Artificial Analysis, and independent press (MarkTechPost, VentureBeat, TechTimes) covering the June 1, 2026 launch and the accompanying MSA architecture arXiv paper (2606.13392, June 11, 2026). Param counts (428B/23B) independently corroborated by Artificial Analysis and multiple press writeups; one press summary confused this with an unrelated 109B experimental MSA-paper model \u2014 the 428B/23B figures are the ones consistently tied to the actual MiniMax-M3 checkpoint."
 }

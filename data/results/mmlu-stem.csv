@@ -1,2 +1,8 @@
 model_slug,score,source,source_url,evaluated_at,notes
+btlm-3b-8k,27.1,self-reported,https://arxiv.org/abs/2309.11568,,"5-shot, Table 5. Sits slightly below the taxonomy's stated 30-83 range floor for this slug -- reflects BTLM being one of the smallest models in the corpus, not a data error"
+falcon-h1-34b,83.57,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
+llama-13b,35.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"5-shot, Table 9 MMLU breakdown (Humanities 45.0 / STEM 35.8 / Social Sciences 53.8 / Other 53.3 / Average 46.9 — average matches the existing corpus entry exactly)"
+qwen2-5-14b,76.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model.
+qwen2-5-32b,80.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model.
+qwen2-5-math-72b,82.8,self-reported,https://arxiv.org/abs/2409.12122,2024-09-18,"Base model, few-shot CoT, Table 2 of the Qwen2.5-Math Technical Report"
 qwen2-math-72b,79.9,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, 5-shot"

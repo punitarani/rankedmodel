@@ -60,6 +60,20 @@
       "score": 52.7,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/blog/starcoder"
+    },
+    {
+      "benchmarkSlug": "ds-1000",
+      "score": 26,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/bigcode/starcoder",
+      "notes": "DS-1000 overall pass@1 in completion mode, 26.0%, verbatim from the official HF model card / StarCoder paper (arXiv:2305.06161) evaluation table; cross-confirmed via direct model-card fetch."
+    },
+    {
+      "benchmarkSlug": "humaneval-fim",
+      "score": 62,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.06161",
+      "notes": "Single-line fill-in-the-middle (HumanEval-Infilling) benchmark, Python split, from Table 17 of the StarCoder paper. Cross-validated: the same table's SantaCoder figures (Java 0.62/JS 0.60/Python 0.44) match SantaCoder's own published model-card model-index exactly, giving high confidence the StarCoder figures (Java 0.73/JS 0.74/Python 0.62) are accurately relayed."
     }
   ],
   "verificationNotes": "Fetched HF blog (dated 2023-05-04) and model card: confirmed ~15B params, 80+ languages, BigCode OpenRAIL-M, HumanEval 33.6/MBPP 52.7 verbatim. No changes."

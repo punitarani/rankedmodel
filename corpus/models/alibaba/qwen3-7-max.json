@@ -67,6 +67,81 @@
       "source": "self-reported",
       "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
       "notes": "Terminal Bench 2.0-Terminus"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 80.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "notes": "Listed as 'SWE-Verified' (SWE-bench Verified) on Alibaba Cloud's own official launch blog, confirmed via direct fetch; independently corroborated at the identical value by three separate secondary write-ups (DataCamp, a Weights & Biases report, and CodingFleet), all of which explicitly cite the Alibaba blog as their source. This is the same figure the corpus's existing verificationNotes flagged as 'could not independently confirm' -- now confirmed directly."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 91.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "notes": "Confirmed via direct fetch of the official Alibaba Cloud launch blog; cross-corroborated by DataCamp, W&B, and CodingFleet write-ups citing the same blog."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 41.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "notes": "Humanity's Last Exam, confirmed via direct fetch of the official Alibaba Cloud launch blog."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 79.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "notes": "Confirmed via direct fetch of the official Alibaba Cloud launch blog's 'General Capabilities & Multilingualism' section."
+    },
+    {
+      "benchmarkSlug": "super-gpqa",
+      "score": 73.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "notes": "Confirmed via direct fetch of the official Alibaba Cloud launch blog."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 89.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "evaluatedAt": "2026-05-21",
+      "notes": "From the 'General Capability' benchmark table embedded as an image in Alibaba Cloud's official Qwen3.7 launch blog (the table is a PNG graphic, not present in the page's HTML/text, so a naive text scrape misses it -- confirmed via direct visual inspection of the embedded table image). Qwen3.7-Max scored 89.6 vs Opus-4.6 Max 89.7, K2.6 Thinking 87.1, GLM-5.1 Thinking 86.3, DS-V4-Pro Max 87.5, Qwen3.6-Plus 88.5."
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 95,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "evaluatedAt": "2026-05-21",
+      "notes": "Same embedded table image, 'General Capability' section. Qwen3.7-Max scored 95.0 vs Opus-4.6 Max 95.2, K2.6 Thinking 95.3, GLM-5.1 Thinking 94.3, DS-V4-Pro Max 94.8, Qwen3.6-Plus 94.5."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 94.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "evaluatedAt": "2026-05-21",
+      "notes": "Distinct row from IFBench (already tracked at 79.1) in the same table image -- IFEval and IFBench are separate taxonomy slugs and separate rows in Alibaba's own table. Qwen3.7-Max scored 94.3, tied with Qwen3.6-Plus and just behind K2.6 Thinking/GLM-5.1 Thinking (94.5 each)."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 90.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "evaluatedAt": "2026-05-21",
+      "notes": "From the 'Multilingualism' section of the same table image (Multilingual MMLU). Qwen3.7-Max scored 90.3, second only to Opus-4.6 Max's 90.6 among the six compared models."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 39,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-max",
+      "evaluatedAt": "2026-07-14",
+      "notes": "GDPval-AA v2 ('agentic real-world work tasks', normalized as (Elo-500)/2000), independently measured by Artificial Analysis on their live Qwen3.7-Max model page -- not vendor self-reported. Qwen3.7-Max scored 39%, behind Claude Opus 4.8 (max) at 55% and DeepSeek V4 Pro (max) at 40%, but ahead of Kimi K2.6 (35%) and Nemotron 3 Ultra (33%). This is one of the 9 components of AA's own Intelligence Index (v4.1) for this model."
     }
   ],
   "verificationNotes": "Confirmed real via multiple independent secondary sources (MarkTechPost, VentureBeat-cited coverage, Yotta Labs, digitalapplied, Alibaba Cloud's own community blog 'Qwen3.7: The Agent Frontier') plus a working OpenRouter listing (qwen/qwen3.7-max) and official Alibaba Cloud Model Studio pricing-page entry -- this is a real, currently-available model, not a rumor. Announcement date has minor variance across sources (May 19-21, 2026); used May 20 (Alibaba Cloud Summit date, matching the majority of sources) as releaseDate. Context length also varies by source: most (OpenRouter, Yotta Labs, digitalapplied) state 1M tokens; one direct fetch of the Alibaba Cloud blog surfaced a '256K' figure that appears to be a benchmark-footnote qualifier rather than the max context -- flagged as uncertain. Pricing is the list-price tier ($2.50/$7.50 per M, Intl) confirmed via Alibaba's own pricing page; a time-limited 50% launch promo ($1.25/$3.75) is also in effect per OpenRouter/Yotta Labs but list price was used per convention. Architecture (param count, MoE expert split) is undisclosed across all sources -- flagged null per corpus convention for undisclosed flagship models (matches existing Qwen3-Max entry's treatment). Benchmark scores (GPQA 92.4, SWE-bench Pro 60.6, Terminal-Bench 2.0-Terminus 69.7) were corroborated by two independent direct fetches (Alibaba Cloud's own blog + Yotta Labs); other cited figures (SWE-bench Verified 80.4, HMMT, IMOAnswerBench, Apex, MRCR-v2, MCP-Mark) could not be independently confirmed via a direct-render fetch of a primary source and were omitted rather than guessed."

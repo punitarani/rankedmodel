@@ -72,6 +72,27 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/cerebras/Cerebras-GPT-13B",
       "notes": "0-shot"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 76.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/cerebras/Cerebras-GPT-13B",
+      "notes": "0-shot; same official HF model card results table that already backs the model's hellaswag/arc-challenge/winogrande/lambada entries (which also lists a 5-shot PIQA of 76.8, not used here to stay consistent with the corpus's existing 0-shot convention for this model)."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 71.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/cerebras/Cerebras-GPT-13B",
+      "notes": "0-shot, from the same HF model card results table."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 28.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/cerebras/Cerebras-GPT-13B",
+      "notes": "0-shot, from the same HF model card results table. Note: this falls below the taxonomy's typical openbookqa range (40-50), but it is the genuine value stated on the official model card for this 2023-era 13B dense base model."
     }
   ],
   "verificationNotes": "Fully confirmed: March 28, 2023 release date corroborated by Forbes, MarkTechPost, and Cerebras' own press release/X announcement (7-model family, 111M-13B, Chinchilla-optimal, trained on CS-2). Apache-2.0 and 13B params confirmed on HF model card. All 4 result rows (hellaswag 51.3, arc-challenge 36.7, winogrande 64.6, lambada 69.6) verified as literally present, matching exactly, in the HF model card's 0-shot results table (which also lists PIQA 76.6, not included in the input record)."

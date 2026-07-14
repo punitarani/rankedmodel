@@ -66,7 +66,21 @@
       "score": 41.1,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/inceptionai/jais-13b"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 35.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/inceptionai/jais-13b",
+      "notes": "Arabic-translated ARC-Challenge (ARC-C), listed in the official HF model card's Arabic evaluation table alongside the already-recorded MMLU/HellaSwag/TruthfulQA rows."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 67.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/inceptionai/jais-13b",
+      "notes": "Arabic-translated PIQA, from the same official HF model card Arabic evaluation table."
     }
   ],
-  "verificationNotes": "Confirmed real via the official HF model card plus independent press (Cerebras/MBZUAI press releases, HPCwire) — all dated 2023-08-30, exactly matching the record. Confirmed 13B params, Apache 2.0 license, bilingual Arabic-English decoder-only transformer built by Inception/MBZUAI/Cerebras and trained on the Condor Galaxy-1 supercomputer. All three benchmark rows (MMLU 30.0, HellaSwag 57.7, TruthfulQA 41.1, Arabic evals) confirmed verbatim on the official HF model card."
+  "verificationNotes": "Confirmed real via the official HF model card plus independent press (Cerebras/MBZUAI press releases, HPCwire) \u2014 all dated 2023-08-30, exactly matching the record. Confirmed 13B params, Apache 2.0 license, bilingual Arabic-English decoder-only transformer built by Inception/MBZUAI/Cerebras and trained on the Condor Galaxy-1 supercomputer. All three benchmark rows (MMLU 30.0, HellaSwag 57.7, TruthfulQA 41.1, Arabic evals) confirmed verbatim on the official HF model card."
 }

@@ -96,6 +96,22 @@
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
       "notes": "ARC-AGI-2 Verified, GPT-5.2 Thinking; confirmed"
+    },
+    {
+      "benchmarkSlug": "gdpval",
+      "score": 70.9,
+      "source": "self-reported",
+      "sourceUrl": "https://simonwillison.net/2025/Dec/11/gpt-52/",
+      "evaluatedAt": "2025-12-11",
+      "notes": "GDPval 'wins or ties' score for GPT-5.2 Thinking, up from 38.8% for GPT-5. OpenAI's own launch page (openai.com/index/introducing-gpt-5-2/) returns 403 to automated fetch, so sourced to Simon Willison's write-up (fetched directly), which quotes OpenAI's official figure and matches the model's own 'note' field claiming SOTA on GDPval. Cross-corroborated by multiple other independent write-ups (vertu.com, turingcollege.com) all citing the same 70.9% figure."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 55.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.datacamp.com/blog/gpt-5-2",
+      "evaluatedAt": "2025-12-11",
+      "notes": "SWE-Bench Pro score of 55.6% for GPT-5.2 (a new SOTA at launch), part of OpenAI's own launch benchmarks. Directly fetched datacamp.com's article which reports this figure; corroborated by multiple independent sources (Vellum's GPT-5.2 benchmarks write-up, a SWE-bench Pro leaderboard aggregator, and third-party commentary) all citing the identical 55.6% number."
     }
   ],
   "verificationNotes": "Existence, Dec 11 2025 release, 400K context, and $1.75/$14 pricing confirmed directly via developers.openai.com/api/docs/models/gpt-5.2 and simonwillison.net/openai launch coverage. Six of seven benchmark rows (GPQA 92.4, SWE-bench 80, AIME 100, HLE 34.5, tau-bench 98.7, ARC-AGI-1 86.2, ARC-AGI-2 52.9) independently corroborated via marktechpost.com's direct report of the OpenAI launch page. Dropped the MMMLU row (89.6): could not find this figure for GPT-5.2 anywhere; found a different, unrelated 92.5% MMLU score and a 92.1% MGSM score instead, so 89.6 could not be confirmed and was removed."

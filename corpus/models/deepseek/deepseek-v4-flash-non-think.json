@@ -80,6 +80,20 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
       "notes": "SWE-bench Verified, Non-Think mode"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 49.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2606.19348",
+      "notes": "Terminal Bench 2.0 (Acc.), Non-Think mode, Table 7 of the official 'DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence' technical report (arXiv:2606.19348)"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 49.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2606.19348",
+      "notes": "SWE-Pro (Resolved), Non-Think mode, Table 7 of the DeepSeek-V4 technical report"
     }
   ],
   "verificationNotes": "Confirmed via official DeepSeek api-docs news post and the deepseek-ai/DeepSeek-V4-Flash HF model card (284B total/13B active, MIT, 1M context, same three-tier benchmark table format as V4-Pro)."

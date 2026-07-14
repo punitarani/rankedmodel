@@ -89,7 +89,15 @@
       "sourceUrl": "https://arxiv.org/html/2409.12122v1",
       "evaluatedAt": "2024-08-08",
       "notes": "Instruct, AMC 2023, 24/40 greedy CoT"
+    },
+    {
+      "benchmarkSlug": "gaokao-math",
+      "score": 59.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2409.12122v1",
+      "evaluatedAt": "2024-08-08",
+      "notes": "Instruct, Chinese GaoKao aggregate (GaoKao I/II 2024 + GaoKao-Math-QA + GaoKao-Math-Cloze + 91 collected 2024 problems), zero-shot CoT greedy decoding, from Table 4 (Chinese benchmarks) of the Qwen2.5-Math technical report, where Qwen2-Math-72B-Instruct is used as a baseline comparison row"
     }
   ],
-  "verificationNotes": "Real model, confirmed via qwenlm.github.io/blog/qwen2-math/ (published 2024-08-08, released 1.5B/7B/72B base+instruct) and HF model card (license 'Tongyi Qianwen', 73B rounded params). All 5 result rows independently re-derived from the actual Table 3/5 row for 'Qwen2-Math-72B-Instruct' in the Qwen2.5-Math technical report (arxiv 2409.12122, used there as a baseline comparison) — GSM8K 96.7, MATH 84.0, MMLU-STEM 79.9, AIME 6/30=20, AMC 24/40=60 all confirmed verbatim, including majority-voting variants not used here. Context length confirmed 4096 (4K) via live config.json fetch. Corrected paramsB from 72 to 72.7 to match the underlying Qwen2-72B architecture's official parameter count (72.71B per Qwen2 blog specs table, same hidden_size/layers as this fine-tune)."
+  "verificationNotes": "Real model, confirmed via qwenlm.github.io/blog/qwen2-math/ (published 2024-08-08, released 1.5B/7B/72B base+instruct) and HF model card (license 'Tongyi Qianwen', 73B rounded params). All 5 result rows independently re-derived from the actual Table 3/5 row for 'Qwen2-Math-72B-Instruct' in the Qwen2.5-Math technical report (arxiv 2409.12122, used there as a baseline comparison) \u2014 GSM8K 96.7, MATH 84.0, MMLU-STEM 79.9, AIME 6/30=20, AMC 24/40=60 all confirmed verbatim, including majority-voting variants not used here. Context length confirmed 4096 (4K) via live config.json fetch. Corrected paramsB from 72 to 72.7 to match the underlying Qwen2-72B architecture's official parameter count (72.71B per Qwen2 blog specs table, same hidden_size/layers as this fine-tune)."
 }

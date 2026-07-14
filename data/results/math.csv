@@ -1,14 +1,22 @@
 model_slug,score,source,source_url,evaluated_at,notes
 amazon-nova-lite,73.3,self-reported,https://deepranking.ai/llm-models/nova-lite,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 amazon-nova-micro,69.3,self-reported,https://deepranking.ai/llm-models/nova-micro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+amazon-nova-premier,82,self-reported,https://assets.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf,2025-04-30,"MATH-500 (the 500-problem competition-math test set), 0-shot CoT, exact-match accuracy (Table 1)."
 amazon-nova-pro,76.6,self-reported,https://deepranking.ai/llm-models/nova-pro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 aya-vision-32b,69.3,self-reported,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+baichuan2-13b,10.08,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,"4-shot, Baichuan2-13B-Base. Score is low relative to the taxonomy's typical 20-100 range for 'math' but is the genuine reported number for this pre-CoT-era 13B dense base model on the full Hendrycks MATH set; included as-is rather than omitted or altered."
+baichuan2-7b,5.58,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,"4-shot, Baichuan2-7B-Base. Below the taxonomy's typical 20-100 'math' range but is the genuine reported number for this pre-CoT-era 7B dense base model on the full Hendrycks MATH set; included as-is."
+chatglm-6b,3.1,self-reported,https://arxiv.org/html/2406.12793v1,,"From Table 1 of the official 2024 GLM family technical report, which re-evaluated ChatGLM-6B/2/3 under one consistent harness for a family comparison."
+chatglm2-6b,6.9,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's 2024 family-wide technical report re-evaluation table (Table 1).
 chatglm3-6b,25.7,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
 claude-3-5-haiku,69.2,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"0-shot CoT, official model card addendum Table 8"
 claude-3-5-sonnet,71.1,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,0-shot CoT
+claude-3-5-sonnet-new,78.3,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"0-shot CoT, Table 7."
+claude-3-7-sonnet,82.2,self-reported,https://www.anthropic.com/news/claude-3-7-sonnet,2025-02-24,"MATH 500 (500 competition math problems), standard mode / no extended thinking. Extended-thinking mode scores 96.2%."
 claude-3-haiku,38.9,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,0-shot CoT
 claude-3-opus,60.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,0-shot CoT
 claude-3-sonnet,43.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,0-shot CoT
+codegemma-7b,19.9,self-reported,https://arxiv.org/abs/2406.11409,,"CodeGemma PT (7B) MATH dataset accuracy, Table 5 of the CodeGemma technical report."
 command-a,80,self-reported,https://arxiv.org/abs/2504.00698,,
 command-r7b,59.1,self-reported,https://arxiv.org/abs/2504.00698,,
 deepseek-coder-v2-236b,75.7,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,,
@@ -18,25 +26,45 @@ deepseek-r1-distill-llama-70b,94.5,self-reported,https://huggingface.co/deepseek
 deepseek-r1-distill-qwen-32b,94.3,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B,2025-01-20,MATH-500 pass@1
 deepseek-r1-zero,95.9,self-reported,https://arxiv.org/html/2501.12948v1,2025-01-20,MATH-500 pass@1
 deepseek-v2-236b,53.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,,Chat (RL) variant
+deepseek-v3-0324,94,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3-0324,2025-03-24,"MATH-500 pass@1 score (94.0, up from 90.2 for DeepSeek-V3), read directly from the bar chart image (figures/0324_comparison.png) embedded in the official HF model card — this fifth benchmark isn't in the card's text callouts (only MMLU-Pro/GPQA/AIME/LiveCodeBench are called out in prose) but is clearly labeled in the chart itself, which also matches the 4 already-recorded scores exactly (MMLU-Pro 81.2, GPQA Diamond 68.4, AIME 2024 59.4, LiveCodeBench 49.2)."
 deepseek-v3-671b,90.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,MATH-500
 deepseekmath-7b,51.7,self-reported,https://arxiv.org/abs/2402.03300,2024-02-01,"DeepSeekMath-RL 7B, chain-of-thought, no external tools"
+deepseekmoe-16b,4.3,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, MATH EM 4-shot, DeepSeekMoE 16B column. Note: 4.3 is below the taxonomy's stated math range (20-100) but is the genuine, directly-confirmed paper figure — expected for a small 2024-era base model with no dedicated math training."
+ernie-4-5-300b-a47b,96.4,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"MATH-500, Table 5."
 falcon-h1-34b,83.8,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,MATH-500
 falcon-h1r-7b,97.4,self-reported,https://huggingface.co/tiiuae/Falcon-H1R-7B,,MATH-500
 falcon3-10b,25.91,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,"MATH Level-5, 4-shot"
 falcon3-7b,29.4,self-reported,https://huggingface.co/tiiuae/Falcon3-7B-Instruct,,"MATH Level-5, 4-shot"
 galactica-120b,20.4,self-reported,https://ar5iv.labs.arxiv.org/html/2211.09085,2022-11-01,"5-shot chain-of-thought, Table 9"
+gemini-1-0-nano,22.8,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Gemini Nano-2 (3.25B), Table 3, 4-shot."
+gemini-1-0-pro,32.6,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 2, 4-shot."
+gemini-1-0-ultra,53.2,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 2, 4-shot."
 gemini-1-5-flash,54.9,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"4-shot Minerva prompt, Table 11"
 gemini-1-5-flash-8b,35.9,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"4-shot Minerva prompt, Table 22"
+gemini-1-5-pro,67.7,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"4-shot Minerva prompt, Table 11 of the Gemini 1.5 technical report."
 gemini-2-0-flash,90.9,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,GA version
 gemini-2-0-flash-lite,86.8,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,Public Preview
+gemini-2-0-pro-experimental,91.8,self-reported,https://arxiv.org/abs/2503.19786,2025-03-25,MATH benchmark; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6.
+gemma-2-27b,42.3,self-reported,https://huggingface.co/google/gemma-2-27b,2024-06-01,4-shot
+gemma-2-9b,36.6,self-reported,https://huggingface.co/google/gemma-2-9b,2024-06-01,4-shot
+gemma-2b,11.8,self-reported,https://huggingface.co/google/gemma-2b,,"4-shot. Falls below this taxonomy's stated 20-100 floor for the math slug, but is the genuine self-reported number for this small, early (Feb 2024) base model -- confirmed in both the HF card and the original arXiv technical report (2403.08295, Table 6)."
 gemma-3-12b,83.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-27b,89,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-4b,75.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
+gemma-7b,24.3,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf,2024-02-21,"Table 6, 4-shot."
 glm-4,61.3,self-reported,https://arxiv.org/html/2406.12793v1,2024-05-20,"GLM-4 (0520) checkpoint, vs GPT-4-0314 52.9"
+glm-4-5-355b-a32b,98.2,self-reported,https://arxiv.org/abs/2508.06471,,"MATH 500 (the taxonomy's '500 competition math problems' benchmark), Table 4 'Results on Reasoning Benchmarks'."
+glm-4-5-air-106b-a12b,98.1,self-reported,https://arxiv.org/abs/2508.06471,,"MATH 500, Table 4 'Results on Reasoning Benchmarks'."
 glm-4-9b-chat,50.6,self-reported,https://huggingface.co/THUDM/glm-4-9b-chat,,
+glm-4-plus,74.2,self-reported,https://docs.bigmodel.cn/cn/guide/models/text/glm-4,,From official Zhipu/Z.ai docs evaluation table; GLM-4-Plus vs GPT-4o 76.6 (97%).
+gpt-4-turbo,73.4,self-reported,https://github.com/openai/simple-evals,2024-05-13,"gpt-4-turbo-2024-04-09, 0-shot CoT. Classic MATH test set (OpenAI's simple-evals only swaps to the newer MATH-500 split for o1-and-later models, so this is the original benchmark, not a variant)."
 gpt-4o,76.6,self-reported,https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947,,"OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
+gpt-4o-mini,70.2,self-reported,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,2024-07-18,"OpenAI's official GPT-4o mini launch page reports MATH at 70.2%, part of the same benchmark table as the already-recorded MMLU/MGSM/HumanEval/MMMU rows. Direct automated fetch of openai.com returns 403 (same as the existing 4 rows in this file), but the figure is corroborated verbatim and consistently across multiple independent secondary sources/search results quoting the official launch table."
+granite-3-0-2b-instruct,23.66,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,pass@1
+granite-3-0-8b-instruct,30.94,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"MATH, 4-shot. Confirmed in HF model-index YAML and technical report Table 10."
 granite-3-1-8b-instruct,21.68,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,"MATH Lvl 5, HF Open LLM Leaderboard V2"
 granite-3-3-8b-instruct,69.02,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,MATH-500
+grok-1,23.9,self-reported,https://x.ai/news/grok,2023-11-03,"4-shot, per xAI's original 'Announcing Grok' blog post benchmark table; also corroborated in the later 'Announcing Grok-1.5' post's Grok-1 comparison column."
 grok-1-5,50.6,self-reported,https://x.ai/news/grok-1.5,2024-03-29,
 grok-2,76.1,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
 grok-2-mini,73,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
@@ -44,17 +72,26 @@ grok-3-mini,99.2,independent,https://designforonline.com/ai-models/xai-grok-3-mi
 hunyuan-a13b,94.3,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,
 hunyuan-large-a52b,69.8,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,
 hunyuan-t1,96.2,self-reported,https://tencent.github.io/llm.hunyuan.T1/README_EN.html,,"MATH-500, closely trailing DeepSeek R1"
+hunyuan-turbos,90,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"5-shot, Table 4 of the same technical report"
 internlm2-20b,31.9,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,
 internlm2-5-7b,60.1,self-reported,https://huggingface.co/internlm/internlm2_5-7b-chat,,
 internlm3-8b-instruct,83,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,"MATH-500, thinking mode"
 kimi-k1-5,96.2,self-reported,https://arxiv.org/abs/2501.12599,,"MATH-500, long-CoT variant"
 kimi-k2,97.4,self-reported,https://venturebeat.com/ai/moonshot-ais-kimi-k2-outperforms-gpt-4-in-key-benchmarks-and-its-free,,"MATH-500 [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+lg-exaone-3-0-7-8b-instruct,34.4,self-reported,https://arxiv.org/abs/2408.03541,2024-08-01,
+lg-exaone-3-5-32b-instruct,70.5,self-reported,https://arxiv.org/abs/2412.04862,2024-12-01,MATH (CoT)
 lg-exaone-deep-32b,95.7,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-Deep,2025-03-01,"MATH-500, pass@1"
+llama-13b,3.9,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"pass@1 (maj1@k variant separately reported as 8.8), Table 7. Note: below the taxonomy's typical 20-100 range, but this is the genuine, low, published figure for this small non-math-tuned 2023 base model."
+llama-2-13b,3.9,self-reported,https://ar5iv.labs.arxiv.org/html/2307.09288,2023-07-18,"4-shot, maj1@1, Table 25. Note: below the taxonomy's typical 20-100 range, but is the genuine published figure for this 2023 base model on the full MATH test set."
 llama-3-1-405b,73.8,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, CoT"
 llama-3-1-70b,68,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, CoT"
 llama-3-1-8b,51.9,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, CoT"
 llama-3-1-nemotron-ultra-253b-v1-reasoning-off,80.4,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,"MATH500, Reasoning Off"
 llama-3-1-nemotron-ultra-253b-v1-reasoning-on,97,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,"MATH500, Reasoning On; DeepSeek-R1 scored 97.00"
+llama-3-2-11b-vision,51.9,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md,2024-09-01,"Instruct, text-only capability of the vision model, CoT final_em"
+llama-3-2-1b,30.6,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md,2024-09-01,"Instruct, BF16, MATH CoT final_em"
+llama-3-2-3b,48,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md,2024-09-01,"Instruct, BF16, MATH CoT final_em"
+llama-3-2-90b-vision,68,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,"MATH CoT, final_em, instruct-tuned model."
 llama-3-3-70b,77,self-reported,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,,MATH CoT
 llama-3-3-nemotron-super-49b-v1-reasoning-off,74,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,"MATH500, Reasoning Off"
 llama-3-3-nemotron-super-49b-v1-reasoning-on,96.6,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,"MATH500, Reasoning On"
@@ -62,29 +99,45 @@ llama-3-70b,50.4,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70
 llama-3-8b,30,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"Instruct, 4-shot"
 llama-4-maverick,61.2,self-reported,https://huggingface.co/blog/llama4-release,,Instruction-tuned
 llama-4-scout,50.3,self-reported,https://huggingface.co/blog/llama4-release,,Instruction-tuned
+magistral-medium,94.3,self-reported,https://arxiv.org/abs/2506.10910,2025-06-10,MATH-500; Magistral technical report Table 2
+magistral-small,95.9,self-reported,https://arxiv.org/abs/2506.10910,2025-06-10,"MATH-500, SFT+RL configuration; Magistral technical report Table 3 (not shown on the HF model card)"
 minicpm-2b,10.24,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table
+minicpm3-4b,46.6,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,
+minimax-m1,96.8,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,2025-06-16,"MATH-500, M1-80K checkpoint (M1-40K: 96.0). Maps to the taxonomy's 'math' slug, which is itself defined as '500 competition math problems'."
 minimax-text-01,77.4,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,
 ministral-3b,51.7,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,,maj@1
 ministral-8b,54.5,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,,maj@1
 mistral-7b,13.1,self-reported,https://arxiv.org/abs/2310.06825,,
+mistral-large,45,self-reported,https://mistral.ai/news/mistral-large/,2024-02-26,"Same chart, 'Math maj@4' column."
+mistral-large-2-24-07,70,self-reported,https://huggingface.co/mistralai/Mistral-Large-Instruct-2407,2024-07-24,"HF card's 'Math Instruct (0-shot, no CoT)' figure; cross-confirmed by directly reading the bar chart on the mistral.ai launch blog. Mistral also reports a '0-shot, CoT' variant at 71.5% on the same table; the no-CoT figure was chosen since it is the one independently corroborated by the blog chart."
+mistral-large-3,93.6,independent,https://medium.com/@layerlens/mistral-large-3-early-results-from-atlas-13f6a3c6b35a,2025-12-05,"MATH-500, LayerLens/Atlas independent evaluation; maps to this taxonomy's 'math' slug (500 competition math problems). One of the model's highest scores across all evaluations LayerLens ran."
 mistral-small-3-1-24b,69.3,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
 mistral-small-3-2-24b,69.42,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,
 mistral-small-3-24b,70.6,self-reported,https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501,,
 mixtral-8x22b,44.6,self-reported,https://mistral.ai/news/mixtral-8x22b/,2024-04-01,"maj@4, instruct variant"
 mixtral-8x7b,28.4,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
 mpt-7b,2.9,independent,https://arxiv.org/abs/2405.13386,2024-05-22,confirmed Table 2
+naver-hyperclova-x,20.16,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, 4-shot maj@4, Table 7 (mathematics)."
 nemotron-h-56b,59.42,self-reported,https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K,,4-shot CoT
 nemotron-nano-2-nemotron-nano-9b-v2,97.8,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"MATH500, Reasoning On"
 olmo-2-13b,39.2,self-reported,https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct,,Instruct variant
 olmo-2-32b,49.7,self-reported,https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct,,"GPT-3.5 Turbo 41.2, GPT-4o mini 67.9"
 olmo-3-7b,87.3,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,Olmo 3 Instruct 7B final (RLVR)
 olmo-3-think-32b,96.1,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,"Qwen 3 32B 95.4, Qwen 3 VL 32B Thinking 96.7"
+openai-o1,96.4,self-reported,https://github.com/openai/simple-evals,,"MATH-500 (repo evaluates o-series models on MATH-500, not legacy MATH test set)."
+openai-o1-mini,90,self-reported,https://github.com/openai/simple-evals,,MATH-500 (repo footnote: 'for newer models (anything on or after o1) we evaluate on MATH-500').
 openai-o1-preview,85.5,independent,https://www.walturn.com/insights/comparing-openai-o1-to-other-top-models,2024-09-01,MATH 0-shot CoT
+openai-o3-mini-high,97.9,self-reported,https://github.com/openai/simple-evals,,MATH-500.
+palm-2,34.3,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"Flan-PaLM 2 (instruction-tuned), 4-shot chain-of-thought (no self-consistency) on MATH, from Table 7. (With self-consistency the paper reports 45.2%.)"
 palmyra-x5,71.57,self-reported,https://dev.writer.com/home/models,,MATH-Hard subset
 phi-3-5-mini-3-8b,48.5,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,0-shot CoT
 phi-3-5-moe-16x3-8b-6-6b-active,59.5,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
 phi-4-14b,80.4,self-reported,https://huggingface.co/microsoft/phi-4,,
 phi-4-mini-3-8b,64,self-reported,https://huggingface.co/microsoft/Phi-4-mini-instruct,,0-shot CoT
+pixtral-12b,48.1,self-reported,https://huggingface.co/mistralai/Pixtral-12B-2409,2024-09-11,Math (Pass@1) row of the Text Benchmarks table.
+qwen-1-8b,2.3,self-reported,https://github.com/QwenLM/Qwen/blob/main/README.md,2023-11-30,"4-shot. Below the taxonomy's typical 20-100 display range for MATH, but is the number directly published in the official Qwen GitHub README's performance table for the 1.8B model, consistent with this being the smallest Gen-1 Qwen model."
+qwen-14b,24.8,self-reported,https://huggingface.co/Qwen/Qwen-14B,2023-09-25,4-shot; from Qwen base-model comparison table on HF/GitHub README
+qwen-72b,35.2,self-reported,https://huggingface.co/Qwen/Qwen-72B,2023-11-30,4-shot; from Qwen base-model comparison table on HF/GitHub README
 qwen-7b,11.6,self-reported,https://huggingface.co/Qwen/Qwen-7B,2023-09-28,4-shot
 qwen1-5-110b,49.6,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Base model
 qwen1-5-72b,34.1,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
@@ -97,15 +150,32 @@ qwen2-57b-a14b,43,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,
 qwen2-72b,51.1,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-7b,44.2,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-math-72b,84,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, greedy decoding (CoT)"
+qwen3-14b-non-thinking,90,self-reported,https://arxiv.org/pdf/2505.09388,,"MATH-500, Table 16, Qwen3-14B (Non-thinking) column"
+qwen3-14b-thinking,96.8,self-reported,https://arxiv.org/pdf/2505.09388,,"MATH-500, Table 15, Qwen3-14B (Thinking) column"
+qwen3-235b-a22b-non-thinking,91.2,self-reported,https://arxiv.org/pdf/2505.09388,,"MATH-500, Table 12, Qwen3-235B-A22B (Non-thinking) column"
+qwen3-235b-a22b-thinking,98,self-reported,https://arxiv.org/pdf/2505.09388,2025-05-15,"MATH-500, Thinking mode, Table 11"
+qwen3-30b-a3b-non-thinking,89.8,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"MATH-500, non-thinking mode, Table 16"
+qwen3-30b-a3b-thinking,98,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"MATH-500, thinking mode, Table 15"
+qwen3-32b-non-thinking,88.6,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"MATH-500, non-thinking mode, Table 14"
+qwen3-32b-thinking,97.2,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"Reported as 'MATH-500' in Table 13 -- catalog's 'math' slug is explicitly described as '500 competition math problems', a clean match. Qwen3-32B (Thinking) column."
+qwen3-8b-non-thinking,87.4,self-reported,https://arxiv.org/abs/2505.09388,,"MATH-500, non-thinking mode, Table 18"
+qwen3-8b-thinking,97.4,self-reported,https://arxiv.org/abs/2505.09388,,"MATH-500, thinking mode, Table 17"
+qwq-32b,98,self-reported,https://arxiv.org/abs/2505.09388,,"Qwen3 Technical Report, Table 13, MATH-500 row, QwQ-32B column."
 qwq-32b-preview,90.6,self-reported,https://qwenlm.github.io/blog/qwq-32b-preview/,,MATH-500
+reka-edge-7b,23.2,self-reported,https://arxiv.org/html/2404.12387v1,2024-02-12,"MATH 4-shot, Reka Edge 7B, from Table 14 of the Reka Core/Flash/Edge tech report (arXiv 2404.12387)"
+reka-flash-21b,29.6,self-reported,https://arxiv.org/html/2404.12387v1,,"MATH 4-shot, Reka Flash (21B), from Table 15 of the tech report (same table the corpus's existing MMLU/GSM8K/HumanEval rows are drawn from)"
+reka-flash-3,90.6,self-reported,https://reka.ai/news/introducing-reka-flash,2025-03-10,"Labeled 'MATH-500' in the official launch blog's benchmark chart, matching the taxonomy's 500-competition-math-problems definition"
 sarvam-105b,98.6,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,MATH-500
 seed-oss-36b,81.7,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,
 skywork-moe-base,31.9,self-reported,https://arxiv.org/html/2406.06563v1,,
 skywork-r1v-38b,94,self-reported,https://arxiv.org/abs/2504.05599,,
+sonar,81.7,independent,https://designforonline.com/ai-models/perplexity-sonar/,,"MATH-500; attributed to Artificial Analysis, corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats."
 t-lu-3-405b,67.3,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B,,"4-shot Flex; DeepSeek V3 72.5, GPT-4o 68.8"
 t-lu-3-70b,63,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B,,"4-shot CoT, Flex"
 wizardlm-2-8x22b,22.28,independent,https://huggingface.co/alpindale/WizardLM-2-8x22B,,"Open LLM Leaderboard v2, MATH Level 5"
+yandexgpt-5-pro,57.5,independent,https://github.com/kuk/simple-evals-ru,2025-03-20,"MATH-500 subset, independent third-party eval (115/200 correct). CAVEAT: the repo author and a Sber/Gigachat release post both flag a known discrepancy between this measured YandexGPT MATH score and Yandex's own official claims, attributed to possible answer-extraction/parsing issues in this specific eval harness rather than the repo mismeasuring other benchmarks -- see reports/errors/math/17_yandexgpt_5_pro.md in the repo for the error analysis."
 yi-1-5-34b,13.4,independent,https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-34B-32K-details,,"MATH Hard subset, exact match"
+yi-1-5-9b,10.2,independent,https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-9B-details,2024-06-16,"MATH Hard subset, exact match. Yi-1.5-9B base model, Open LLM Leaderboard v2."
 yi-34b,14.4,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,4-shot pass@1
 yi-6b,4.6,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,4-shot pass@1
 yi-lightning,76.4,self-reported,https://arxiv.org/abs/2412.01253,,0-shot

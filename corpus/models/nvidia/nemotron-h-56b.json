@@ -90,6 +90,34 @@
       "score": 89,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 84.45,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K",
+      "notes": "5-shot, from the same benchmark table on the HF model card as the existing entries"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 77.82,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K",
+      "notes": "MBPP (sanitized), 3-shot"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 67.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K",
+      "notes": "MBPP+, 0-shot"
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 54.27,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K",
+      "notes": "HumanEval+, 0-shot"
     }
   ],
   "verificationNotes": "Confirmed via HF model card (fetched): release date 2025-04-14, 56B params, 8K (8000-token) context, NVIDIA Internal Scientific R&D License, and all seven benchmark scores match exactly (MMLU 84.21, MMLU-Pro 60.51, GSM8K 93.71, MATH 59.42, HumanEval 60.37, ARC-C 94.97, HellaSwag 89.0)."

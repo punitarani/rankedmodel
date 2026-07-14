@@ -145,6 +145,46 @@
       "sourceUrl": "https://arxiv.org/abs/2407.10671",
       "evaluatedAt": "2024-06-07",
       "notes": "Instruct variant"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 85.1,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 5-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 68.9,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, ARC-C 25-shot"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 54.8,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Base model, 0-shot"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 77.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2407.10671",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant, strict-prompt subset; same value on the blog and in the technical report Table 6"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 86.6,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
+      "evaluatedAt": "2024-06-07",
+      "notes": "Instruct variant, MGSM 0-shot CoT, from the blog's multilingual-capability table"
     }
   ],
   "verificationNotes": "Fetched qwenlm.github.io/blog/qwen2/ and arxiv.org/abs/2407.10671 directly: confirms release 2024-06-07, 72.71B dense params, 128K context, Tongyi Qianwen License, ~30 languages. All 9 base-model rows (MMLU 84.2, MMLU-Pro 55.6, GPQA 37.9, HumanEval 64.6, MBPP 76.9, GSM8K 89.5, MATH 51.1, BBH 82.4, HellaSwag 87.6) appear verbatim on the blog. The 3 instruct rows are confirmed verbatim on the cited arxiv page, which states verbatim: 'Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench.' No changes made."

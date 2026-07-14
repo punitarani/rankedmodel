@@ -94,7 +94,23 @@
       "sourceUrl": "https://huggingface.co/blog/falcon2-11b",
       "evaluatedAt": "2024-05-13",
       "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 77.78,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falcon2-11b",
+      "evaluatedAt": "2024-05-24",
+      "notes": "0-shot, from the blog's separate 'Zero shot performance' table"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 29.59,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falcon2-11b",
+      "evaluatedAt": "2024-05-24",
+      "notes": "pass@1, Python; blog states this was evaluated via the BigCode Leaderboard"
     }
   ],
-  "verificationNotes": "Confirmed real model via HF blog + Bloomberg (2024-05-13) + TII news. Release date 2024-05-13 corroborated by Bloomberg article dated same day (the HF blog's own metadata date differs slightly but TII's official announcement and press coverage pin 2024-05-13). License 'TII Falcon License 2.0' confirmed verbatim on tiiuae/falcon-11B model card. All 6 benchmark rows (hellaswag 82.91, winogrande 78.3, arc-challenge 59.73, truthfulqa 52.56, mmlu 58.37, gsm8k 53.83) confirmed verbatim on the HF blog. CORRECTED: archDisplay changed from 'multiquery attention' to 'grouped-query attention (GQA, 32 query / 8 KV heads)' — the blog's own architecture table lists 32 query heads and 8 KV heads, which is GQA, not MQA (which would have exactly 1 KV head)."
+  "verificationNotes": "Confirmed real model via HF blog + Bloomberg (2024-05-13) + TII news. Release date 2024-05-13 corroborated by Bloomberg article dated same day (the HF blog's own metadata date differs slightly but TII's official announcement and press coverage pin 2024-05-13). License 'TII Falcon License 2.0' confirmed verbatim on tiiuae/falcon-11B model card. All 6 benchmark rows (hellaswag 82.91, winogrande 78.3, arc-challenge 59.73, truthfulqa 52.56, mmlu 58.37, gsm8k 53.83) confirmed verbatim on the HF blog. CORRECTED: archDisplay changed from 'multiquery attention' to 'grouped-query attention (GQA, 32 query / 8 KV heads)' \u2014 the blog's own architecture table lists 32 query heads and 8 KV heads, which is GQA, not MQA (which would have exactly 1 KV head)."
 }

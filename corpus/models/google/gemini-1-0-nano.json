@@ -51,6 +51,30 @@
       "sourceUrl": "https://arxiv.org/pdf/2312.11805",
       "evaluatedAt": "2023-12-06",
       "notes": "Gemini Nano-2 (3.25B), 5-shot"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 42.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Gemini Nano-2 (3.25B), Table 3, BIG-Bench-Hard 3-shot."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 27.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Gemini Nano-2 (3.25B), Table 3."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 22.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Gemini Nano-2 (3.25B), Table 3, 4-shot."
     }
   ],
   "verificationNotes": "Confirmed real: Gemini Nano-2 is genuinely a 3.25B-parameter distilled on-device model per the Gemini 1.0 technical report (arXiv 2312.11805), corroborated independently by Microsoft's Phi-2 blog post which quotes the same report's comparison table listing 'Gemini Nano 2, 3.2B params, MMLU 55.8' -- exact score match confirmed via two independent citations of the same primary source. Pixel 8 Pro on-device launch in Dec 2023 confirmed."

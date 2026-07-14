@@ -1,6 +1,20 @@
 model_slug,score,source,source_url,evaluated_at,notes
+doubao-1-5-pro,55.09,independent,https://arxiv.org/abs/2502.14739,,"SuperGPQA 'Overall (sample)' score for Doubao-1.5-pro-32k-250115 (chat-model category, zero-shot, temperature=0), from the independent SuperGPQA benchmark paper (M-A-P / Doubao Seed team et al., Table in Section 4.2, arXiv:2502.14739)."
+glm-z1-32b-0414,52.6,self-reported,https://github.com/zai-org/GLM-4/blob/main/README.md,,Labeled 'SuperGPQA' in the official GitHub README benchmark chart.
+kimi-k2,57.2,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,"SuperGPQA accuracy, from Math & STEM Tasks table (GitHub README mirror)"
+qwen3-235b-a22b-instruct-2507,62.6,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,SuperGPQA
 qwen3-235b-a22b-thinking-2507,64.9,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507,,SuperGPQA
 qwen3-5-122b-a10b,67.1,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,,Knowledge category.
+qwen3-5-397b-a17b,70.4,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,"Language benchmark table, Knowledge section."
 qwen3-5-omni-flash,54.9,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Table 4 (Text→Text), Knowledge section. Confirmed identical in arXiv:2604.15804 Table 4."
 qwen3-5-omni-plus,66.4,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 4 (Text→Text), Qwen3.5-Omni-Plus column, cell S5.T4.3.5.4."
+qwen3-5-plus,67.4,self-reported,https://arxiv.org/abs/2604.15804,,"Qwen3.5-Plus-NoThinking column, Table 4 of the Qwen3.5-Omni Technical Report."
+qwen3-6-27b,66,self-reported,https://huggingface.co/Qwen/Qwen3.6-27B,,Official HF model card.
+qwen3-6-35b-a3b,64.7,self-reported,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,,Official HF model card.
+qwen3-6-plus,71.6,self-reported,https://qwen.ai/blog?id=qwen3.6,2026-04-02,"Knowledge table, SuperGPQA row."
+qwen3-7-max,73.6,self-reported,https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154,,Confirmed via direct fetch of the official Alibaba Cloud launch blog.
+qwen3-7-plus,71.4,self-reported,https://qwen.ai/blog?id=qwen3.7-plus,2026-05-31,"SuperGPQA, official Qwen launch blog, 'General Capability' table."
 qwen3-max,64.6,self-reported,https://felloai.com/qwen-3-max-ai-all-you-need-to-know-about-alibabas-1-trillion-parameter-llm/,,"SuperGPQA, Qwen3-Max-Instruct (Preview) official launch chart (same felloai transcription as the AIME/Arena-Hard rows; chart also shows Qwen3-235B 62.6, Kimi K2 57.2, Claude Opus 4 56.5). llm-stats lists the GA release at 65.1. Corrects a prior 81.4 (dev.to) that misread the AIME bar (GA AIME transcriptions cite 81.6)."
+seed-2-1-pro,70.8,self-reported,https://seed.bytedance.com/en/seed2_1,,Seed2.1 Pro column of ByteDance's official launch-page benchmark table
+seed-oss-36b,55.7,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,
+seed1-5-thinking,62.1,self-reported,https://github.com/ByteDance-Seed/Seed-Thinking-v1.5,,

@@ -143,6 +143,78 @@
       "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
       "evaluatedAt": "2024-03-04",
       "notes": "Validation set, overall"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 83.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "MGSM (multilingual math), 0-shot, from Table 1 / Table 4 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "pubmedqa",
+      "score": 78.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "PubMedQA, 5-shot, from Table 1 of the Claude 3 Model Card (0-shot alternate is 79.7%)."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 88.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "RACE-H reading comprehension, 5-shot, from Table 1 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "amc",
+      "score": 18,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "AMC 12 2023, 5-shot CoT, from Table 2 of the Claude 3 Model Card (raw score 27/150 converted to a percentage). The model card separately reports AMC 8 and AMC 10 rows too; AMC 12 was chosen as the representative value for this single generic 'amc' slug."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 89.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "DocVQA test set, ANLS score, 0-shot, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 47.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "MathVista testmini, Chain-of-Thought, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 88.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "AI2D science-diagram test set, from Table 3 of the Claude 3 Model Card (Sonnet's best result of the family on this one)."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 81.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "ChartQA test set, relaxed accuracy, 4-shot CoT, from Table 3 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 69,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "evaluatedAt": "2024-03-04",
+      "notes": "Multilingual MMLU, 5-shot, from Table 5 of the Claude 3 Model Card."
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-family (release date, $3/$15 pricing, 200K ctx). Downloaded and read the actual Model_Card_Claude_3.pdf Table 1/Table 3: all 12 self-reported benchmark numbers for Claude 3 Sonnet (MMLU 79.0, MATH 43.1, GSM8K 92.3, HumanEval 73.0, GPQA 40.4, BBH 82.9, ARC-Challenge 93.2, HellaSwag 89.0, WinoGrande 75.1, DROP 78.9, MBPP 79.4, MMMU 53.1) match the PDF verbatim (note: a later June-2024 addendum re-reports Sonnet's MMLU 5-shot as 78.3 in a different table, but the ORIGINAL model card cited here shows 79.0, so no change made). apiAvailable=false confirmed: claude-3-sonnet-20240229 retired from API July 21, 2025."

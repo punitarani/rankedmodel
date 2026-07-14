@@ -78,6 +78,40 @@
       "score": 62.5,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 69.06,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "notes": "MMLU Pro 5-shot CoT, from the official HF model card's Small 3.2 24B Instruct column."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 46.13,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "notes": "GPQA Diamond 5-shot CoT; this benchmark was entirely absent from the corpus entry for 3.2 even though it's on the card."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 78.33,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "notes": "MBPP Plus, pass@5."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 12.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "notes": "SimpleQA TotalAcc."
+    },
+    {
+      "benchmarkSlug": "arena-hard-v2",
+      "score": 43.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506"
     }
   ],
   "verificationNotes": "Confirmed via huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506: 24B params, Apache 2.0, MMLU 80.5, MATH 69.42, HumanEval Plus pass@5 92.9, MMMU 62.5 all literally present. Release date 2025-06-20 corroborated by Simon Willison's contemporaneous blog post dated 2025/Jun/20. Pricing $0.08/$0.20 corroborated by independent pricing trackers. No changes."

@@ -1,2 +1,3 @@
 model_slug,score,source,source_url,evaluated_at,notes
+internvl3-78b,90.1,self-reported,https://internvl.github.io/blog/2025-04-11-InternVL-3.0/,,RefCOCO+ val split; exceeds the slug's stated 50-85 range but is the verbatim published number
 qwen-vl,83.12,self-reported,https://huggingface.co/Qwen/Qwen-VL,,RefCOCO+ val

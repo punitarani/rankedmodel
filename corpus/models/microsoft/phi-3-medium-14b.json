@@ -82,7 +82,84 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
       "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 50.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "AGI Eval, 5-shot"
+    },
+    {
+      "benchmarkSlug": "anli",
+      "score": 55.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "7-shot"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 82.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 91.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "10-shot"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 97.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "10-shot"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 81.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 73.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 75.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 87.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "10-shot"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 87.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 80.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "Social IQA, 5-shot"
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3-medium-4k-instruct, fetched): 14B params, MIT license, weights released 2024-05-21, and all four benchmark rows (MMLU 78 5-shot, HumanEval 62.2 0-shot, GSM8K 91 8-shot CoT, BBH 81.4 3-shot) literally match the card. Note: the cited 4k-instruct page itself shows a 4K context window, not 128K — corrected specSources.ctxK to point at the sibling microsoft/Phi-3-medium-128k-instruct card (independently fetched, confirms 14B/128K/MIT) which is the actual source for the 128K figure and the '4K/128K variants' framing in the note. GitHub repo microsoft/Phi-3CookBook confirmed to exist."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3-medium-4k-instruct, fetched): 14B params, MIT license, weights released 2024-05-21, and all four benchmark rows (MMLU 78 5-shot, HumanEval 62.2 0-shot, GSM8K 91 8-shot CoT, BBH 81.4 3-shot) literally match the card. Note: the cited 4k-instruct page itself shows a 4K context window, not 128K \u2014 corrected specSources.ctxK to point at the sibling microsoft/Phi-3-medium-128k-instruct card (independently fetched, confirms 14B/128K/MIT) which is the actual source for the 128K figure and the '4K/128K variants' framing in the note. GitHub repo microsoft/Phi-3CookBook confirmed to exist."
 }

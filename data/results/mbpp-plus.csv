@@ -1,5 +1,30 @@
 model_slug,score,source,source_url,evaluated_at,notes
+codeqwen1-5-7b,60.2,self-reported,https://qwenlm.github.io/blog/codeqwen1.5/,2024-04-16,"Base model, 0-shot."
 command-a,86.2,self-reported,https://arxiv.org/abs/2504.00698,,MBPP+
 command-r7b,72,self-reported,https://arxiv.org/abs/2504.00698,,MBPP+
 deepseek-coder-v2-236b,76.2,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,,MBPP+ (EvalPlus)
+ernie-4-5-300b-a47b,81,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"MBPP+, Table 5."
+falcon-h1-34b,71.43,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,MBPP+
+gpt-4o,87.8,independent,https://arxiv.org/abs/2407.21783,2024-07-23,"MBPP EvalPlus (i.e. MBPP+), 0-shot. From the same Meta Llama-3 paper comparison table (Table 2), verified directly against the PDF."
+granite-4-0-h-small,71,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,"MBPP+, pass@1"
+granite-4-1-8b-instruct,73.81,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,pass@1
+llama-3-1-405b,88.6,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct,2024-07-23,"MBPP++ (EvalPlus-augmented) base version, 0-shot pass@1, Instruct 405B (confirmed verbatim: 'MBPP ++ base version | 0 | pass@1 | ... | 88.6')."
+llama-3-1-70b,86,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md,2024-07-01,"Instruct, 'MBPP++ base' 0-shot pass@1"
+llama-3-1-8b,72.8,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md,2024-07-01,"Instruct, 'MBPP++ base' 0-shot pass@1"
+llama-3-3-70b,87.6,self-reported,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,,"MBPP EvalPlus (base), pass@1, 0-shot."
+minicpm3-4b,63.2,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,Reported as 'MBPP+' on the model card.
 minimax-text-01,71.7,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,MBPP+ variant
+mistral-large-2-24-07,69,self-reported,https://huggingface.co/mistralai/Mistral-Large-Instruct-2407,2024-07-24,HF model card 'Code & Reasoning Benchmarks' table (MBPP Plus row).
+mistral-small-3-2-24b,78.33,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,"MBPP Plus, pass@5."
+molmo-2-8b,57.5,self-reported,https://arxiv.org/abs/2601.10611,,"MBPP+; Molmo2 Technical Report Table 19, Molmo2-8B row."
+nemotron-h-56b,67.2,self-reported,https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K,,"MBPP+, 0-shot"
+olmo-3-7b,60.2,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,MBPP+
+olmo-3-think-32b,68,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,MBPP+; Qwen 3 32B 70.6
+phi-4-mini-3-8b,63.8,self-reported,https://arxiv.org/abs/2503.01743,,"Table 8, MBPP+ (3-shot)."
+phi-4-mini-instruct,63.8,self-reported,https://arxiv.org/abs/2503.01743,,"Table 8, MBPP+ (3-shot)."
+qwen2-5-14b,63.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 0-shot (EvalPlus-augmented MBPP)."
+qwen2-5-32b,67.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 0-shot (EvalPlus-augmented MBPP)."
+qwen2-5-72b,69.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
+qwen2-5-7b,62.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
+qwen2-5-coder-32b,68.2,self-reported,https://arxiv.org/abs/2409.12186,2024-11-12,"Base model, Table 5; this is the value that was previously mislabeled under the bigcodebench slug (see corrections)"
+wizardcoder-python-34b-v1-0,59.9,self-reported,https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md,,"MBPP+ pass@1, from the same official HF README comparison table."

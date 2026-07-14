@@ -1,20 +1,53 @@
 model_slug,score,source,source_url,evaluated_at,notes
+dbrx,8.39,self-reported,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm,,"""MT Bench (Inflection Corrected)"", DBRX Instruct, reported alongside GPT-3.5/GPT-4/Claude comparison, score 8.39 ± 0.08"
+deepseek-coder-v2-236b,8.77,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,2024-06-17,
+deepseek-llm-67b,8.35,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat average score, paper Table 8 (MT-Bench)"
+deepseek-v2-5,9.02,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2.5,2024-09-05,MT-Bench score from the same official HF model card table.
+falcon-h1-34b,9.2,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,MTBench
+falcon3-10b,8.2,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,"Internal pipeline table, listed as 'MT-Bench (avg)'."
+falcon3-7b,8.4,self-reported,https://huggingface.co/tiiuae/Falcon3-7B-Instruct,,"MT-Bench average score, 'Instructions Following' row of the model card's internal pipeline benchmarks table."
+glm-4-9b-chat,8.35,self-reported,https://huggingface.co/zai-org/glm-4-9b-chat,,MT-Bench score from official model card's main evaluation table.
+gpt-3-5-turbo,7.94,independent,https://arxiv.org/abs/2306.05685,,"GPT-4-judged MT-Bench score for gpt-3.5-turbo, Table 8 of the original MT-Bench / Chatbot Arena paper (Zheng et al., 2023)"
+gpt-4-turbo,9.32,independent,https://telnyx.com/llm-library/gpt-4-1106-preview,,"MT-Bench score for gpt-4-1106-preview (the GPT-4 Turbo snapshot). MT-Bench is an LMSYS-run, GPT-4-judged multi-turn evaluation (a third-party benchmark run, not an OpenAI self-report), relayed here via the same Telnyx model page already used and independently confirmed (via direct fetch) as the source for this file's existing MMLU and Arena Elo rows."
 granite-3-0-2b-instruct,7.66,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,
 granite-3-0-8b-instruct,8.22,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,Scale 0-10
+granite-4-1-8b-instruct,8.61,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,MTBench Avg
+guanaco-33b,6.53,independent,https://www.lmsys.org/blog/2023-06-22-leaderboard/,2023-06-22,GPT-4-judged MT-Bench score for Guanaco-33B from the same LMSYS Leaderboard Week 8 update table.
+guanaco-65b,6.41,independent,https://www.lmsys.org/blog/2023-06-22-leaderboard/,2023-06-22,GPT-4-judged MT-Bench score for Guanaco-65B from the LMSYS Chatbot Arena Leaderboard Week 8 update ('Introducing MT-Bench and Vicuna-33B').
+h2o-danube3-4b,6.49,self-reported,https://huggingface.co/h2oai/h2o-danube3-4b-chat,,"MT-Bench average score (Turn1 7.28 / Turn2 5.69), listed directly on the official HF chat model card and in technical-report Table 4"
+hunyuan-large-a52b,9.4,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Instruct-model table.
+hunyuan-turbos,9.3,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"/10 scale, Table 4 (the paper's 'AVG' row converts alignment scores to a 100-point scale, but the raw MTBench row itself is already /10)"
 koala-13b,5.35,independent,https://arxiv.org/html/2312.06281v2,,MT-Bench score cited in the EQ-Bench paper's model comparison table
 lg-exaone-3-0-7-8b-instruct,9.01,self-reported,https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct,2024-08-01,English MT-Bench
 lg-exaone-3-5-32b-instruct,8.51,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-3.5,2024-12-01,MT-Bench
+llama-2-70b-chat,6.86,independent,https://ar5iv.labs.arxiv.org/html/2312.06281,2023-12-01,"GPT-4-judged MT-Bench average for meta-llama/Llama-2-70b-chat-hf, per the EQ-Bench paper's cross-benchmark table (Table 3), which cites the LMSYS Chatbot Arena/MT-Bench leaderboard. Meta's own model card/paper never publishes an MT-Bench score for any Llama 2 model, so this is necessarily third-party/independent, not self-reported."
+llama-2-7b-chat,6.27,independent,https://ar5iv.labs.arxiv.org/html/2312.06281,2023-12-01,"GPT-4-judged MT-Bench average for meta-llama/Llama-2-7b-chat-hf, per the EQ-Bench paper's Table 3 (citing the LMSYS Chatbot Arena/MT-Bench leaderboard). Independently corroborated by telnyx.com/llm-library/llama-2-7b-chat-hf, which separately states 'MT Bench: 6.27' for this exact model."
 llama-3-1-nemotron-70b-instruct,8.98,self-reported,https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF,,GPT-4-Turbo judge
 llama-3-3-nemotron-super-49b-v1-reasoning-off,9.17,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning Off
+minicpm-2b,7.25,self-reported,https://github.com/OpenBMB/MiniCPM/blob/d047abf63e/README-en.md,2024-02-01,"MiniCPM-2B-dpo-bf16 variant, GPT-4-judged MT-Bench, from the MiniCPM GitHub README's 'DPO evaluation' table. The current main README-en.md has since been rewritten around the newer MiniCPM5 flagship and no longer shows this legacy table, so this cites an archived commit of the same official repo file that still contains it."
 minicpm3-4b,8.41,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,
+ministral-3b,8.1,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,"Instruct model comparison table, listed as 'MTBench'"
+ministral-8b,8.3,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,"Instruct model comparison table, listed as 'MTBench'"
+mistral-large-2-24-07,8.63,self-reported,https://huggingface.co/mistralai/Mistral-Large-Instruct-2407,2024-07-24,HF model card 'Instruction Benchmarks' table.
 mistral-medium-original,8.6,self-reported,https://mistral.ai/news/la-plateforme/,,
+mistral-small-3-24b,8.35,self-reported,https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501,2025-01-30,Listed as 'MTBench Dev' in the official HF model card's Instruction Following table (verified via raw README.md fetch).
 mixtral-8x7b,8.3,self-reported,https://mistral.ai/news/mixtral-of-experts/,2023-12-11,Instruct variant
+orca-2-13b,6.15,self-reported,https://ar5iv.labs.arxiv.org/html/2311.11045,2023-11-18,"Table 3: MT-Bench average across Turn 1 (6.69) and Turn 2 (5.60), GPT-4-judged 1-10 scale, Orca-2-13B row (default system message)."
+pixtral-12b,7.68,self-reported,https://huggingface.co/mistralai/Pixtral-12B-2409,2024-09-11,"Listed as 'Text MT-Bench' in the card's Instruction Following table -- the text-only-input variant of the same MT-Bench eval, distinct from the card's separate 'MM MT-Bench' (6.05) which was left out as a different (multimodal) evaluation."
+plamo-100b,7.78,self-reported,https://arxiv.org/html/2410.07563,,"Japanese MT-Bench, PLaMo-100B-Instruct (Table 4); GPT-4-0125-Preview scored 8.93 for comparison in the same table."
 qwen-max-0428,8.96,self-reported,https://qwenlm.github.io/blog/qwen-max-0428/,2024-05-11,
 qwen1-5-110b,8.88,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Chat model
+qwen2-57b-a14b,8.55,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,Instruct variant (Qwen2-57B-A14B-Instruct); same value on the blog
 qwen2-72b,9.1,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,Instruct variant
+qwen2-7b,8.41,self-reported,https://arxiv.org/abs/2407.10671,2024-06-07,Instruct variant; same value on the blog
+reka-edge-7b,7.6,self-reported,https://reka.ai/news/reka-flash-efficient-and-capable-multimodal-language-models,2024-02-12,"Reka Edge's MT-Bench score of 7.6, stated in Reka's official Feb 12, 2024 launch blog post as 'competitive with' contemporary chat models"
+reka-flash-21b,8.2,self-reported,https://reka.ai/news/reka-flash-efficient-and-capable-multimodal-language-models,2024-02-12,"Reka Flash's MT-Bench score of 8.2 ('matching models such as Claude 1 and Claude 2'), from Reka's official Feb 12, 2024 launch blog post"
 stable-lm-2-1-6b,5.42,self-reported,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,DPO/instruct (Zephyr) variant
 stable-lm-2-12b,8.15,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,"chat/instruct variant, inflection-corrected MT-Bench"
 stablelm-zephyr-3b,6.64,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,MT-Bench
 starling-7b-alpha,8.09,self-reported,https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha,,"GPT-4-judged MT-Bench; best open 7B at release, behind only GPT-4/GPT-4-Turbo"
 t-lu-2-dpo-70b,7.89,self-reported,https://huggingface.co/allenai/tulu-2-dpo-70b,,MT-Bench score (0-10)
+vicuna-13b-v1-5,6.57,independent,https://huggingface.co/api/resolve-cache/spaces/lmarena-ai/arena-leaderboard/36556125921b70e4b87ae9b7aff2ac624b3c2220/leaderboard_table_20231220.csv?download=true&etag=%22c9eda02db9aa30464ba0334945d39e8f27b49bb6%22,2023-12-20,"MT-Bench score (GPT-4-judged, 0-10) from the same Chatbot Arena leaderboard Dec-2023 snapshot CSV already cited in this file for the MMLU (0.558) and Elo (1041) rows; fetched the CSV directly and confirmed the row 'Vicuna-13B,6.57,1041,0.558,Llama 2 Community' links to lmsys/vicuna-13b-v1.5."
+wizardlm-7b,5.29,independent,https://ar5iv.labs.arxiv.org/html/2309.03450,2023-09-07,"GPT-4 single-answer grading MT-Bench score for WizardLM-7B, Table 9 of Salesforce's XGen-7B Technical Report (arXiv 2309.03450), where it's used as one of many baseline comparison models. Verified directly in the raw table HTML (WizardLM-7B row = 5.29, between Koala-13B 5.35 and MPT-30B-instruct 5.22)."
+yi-lightning,8.75,self-reported,https://arxiv.org/abs/2412.01253,,Judge: GPT-4o-0513. Yi-Lightning technical report Table 2.
 zephyr-7b-beta,7.34,self-reported,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta,,

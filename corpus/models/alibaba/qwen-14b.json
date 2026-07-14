@@ -80,7 +80,39 @@
       "sourceUrl": "https://huggingface.co/Qwen/Qwen-14B",
       "evaluatedAt": "2023-09-25",
       "notes": "0-shot pass@1"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 24.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-14B",
+      "evaluatedAt": "2023-09-25",
+      "notes": "4-shot; from Qwen base-model comparison table on HF/GitHub README"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 40.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-14B",
+      "evaluatedAt": "2023-09-25",
+      "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 53.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-14B",
+      "evaluatedAt": "2023-09-25",
+      "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 71,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-14B",
+      "evaluatedAt": "2023-09-25",
+      "notes": "5-shot"
     }
   ],
-  "verificationNotes": "Confirmed real, released 2023-09-25 per GitHub README. 14B params confirmed. Context length double-checked against raw config.json (max_position_embeddings=8192, seq_length=2048) and GitHub README ('extend from 2K to over 8K'/Max Length table shows 8K) — confirms native 2K/max 8K (ctxK=8) is correct; an intermediate automated page-summary incorrectly suggested 32K for this model and was rejected in favor of the primary config.json + README evidence. All 4 benchmark scores (mmlu 66.3, c-eval 72.1, gsm8k 61.3, humaneval 32.3) confirmed verbatim on HF/GitHub."
+  "verificationNotes": "Confirmed real, released 2023-09-25 per GitHub README. 14B params confirmed. Context length double-checked against raw config.json (max_position_embeddings=8192, seq_length=2048) and GitHub README ('extend from 2K to over 8K'/Max Length table shows 8K) \u2014 confirms native 2K/max 8K (ctxK=8) is correct; an intermediate automated page-summary incorrectly suggested 32K for this model and was rejected in favor of the primary config.json + README evidence. All 4 benchmark scores (mmlu 66.3, c-eval 72.1, gsm8k 61.3, humaneval 32.3) confirmed verbatim on HF/GitHub."
 }

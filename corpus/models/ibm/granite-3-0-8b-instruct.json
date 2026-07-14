@@ -80,6 +80,97 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
       "notes": "Scale 0-10"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 40.52,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "AGI-Eval, 5-shot pass@1. Present in HF model-index YAML and corroborated verbatim in the Granite 3.0 technical report (Table 10, arxiv/paper.pdf via github.com/ibm-granite/granite-3.0-language-models)."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 46.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "OBQA, 0-shot pass@1. Confirmed in HF model-index YAML and technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 71.21,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "SIQA, 0-shot pass@1. Confirmed in HF model-index YAML and technical report Table 10. Note: this exceeds the taxonomy's documented siqa range (40-68) by ~3 points; the number is nonetheless exactly what IBM's own model card and paper state."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 77.51,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "WinoGrande, 5-shot pass@1. Confirmed in HF model-index YAML and technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 60.32,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "TruthfulQA, 0-shot. Confirmed in HF model-index YAML and technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 64.16,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "ARC-C, 25-shot. Confirmed in HF model-index YAML and technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 33.81,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "GPQA, 0-shot. IBM's own self-reported eval (distinct from the much lower HF Open-LLM-Leaderboard-style GPQA figures seen on later Granite models). Confirmed in HF model-index YAML and technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 51.55,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "BBH, 3-shot. Confirmed in HF model-index YAML and technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 64.63,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "Listed as 'HumanEvalSynthesis' pass@1 on the model card / technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 49.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "MBPP, pass@1. Confirmed in HF model-index YAML and technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 68.99,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "GSM8K, 5-shot CoT. Confirmed in HF model-index YAML and technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 30.94,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "MATH, 4-shot. Confirmed in HF model-index YAML and technical report Table 10."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 48.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct",
+      "notes": "MGSM averaged across 6 languages, 5-shot. Confirmed in HF model-index YAML and technical report Table 10."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card (fetched): 8.1B params, 4K context, Apache 2.0, released 2024-10-21 (matches record exactly). All 5 result rows (IFEval 52.27, MMLU 65.82, MMLU-Pro 34.45, HellaSwag 82.61, MT-Bench 8.22) confirmed literally present on the cited HF model card. No changes made."

@@ -81,6 +81,46 @@
       "sourceUrl": "https://arxiv.org/abs/2508.10925",
       "evaluatedAt": "2025-08-05",
       "notes": "SWE-bench Verified, low reasoning effort"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 4.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Humanity's Last Exam, no tools, low reasoning effort (Table 3 of the gpt-oss model card)"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1366,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Codeforces Elo, no tools, low reasoning effort"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 67,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Multilingual MMLU average, low reasoning effort"
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 35,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Tau-Bench Retail domain, low reasoning effort"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 16.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Aider Polyglot (diff), low reasoning effort"
     }
   ],
   "verificationNotes": "Confirmed real. HF model card (fetched) confirms 21B total / 3.6B active params and Apache 2.0 license verbatim. Independent architecture writeups corroborate 24 layers, 32 experts/layer, top-4 routing. Third-party hardware guides corroborate the ~13GB Q4 VRAM footprint and the '225 tok/s on RTX 4090' throughput claim specifically (matched search result title verbatim). Fetched arxiv.org/html/2508.10925v1 table and confirmed all four low-effort scores verbatim: AIME 42.1, GPQA 56.8, MMLU 80.4, SWE-bench Verified 37.4. No changes made."

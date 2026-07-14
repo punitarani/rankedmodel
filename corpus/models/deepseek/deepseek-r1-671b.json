@@ -110,6 +110,78 @@
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
       "evaluatedAt": "2025-01-20",
       "notes": "Codeforces rating, ~96.3rd percentile"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 92.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "evaluatedAt": "2025-01-20",
+      "notes": "MMLU-Redux (EM)"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 84,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "evaluatedAt": "2025-01-20",
+      "notes": "MMLU-Pro (EM)"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 92.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "evaluatedAt": "2025-01-20",
+      "notes": "DROP 3-shot F1"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 83.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "evaluatedAt": "2025-01-20",
+      "notes": "IF-Eval Prompt Strict accuracy"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 30.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "evaluatedAt": "2025-01-20",
+      "notes": "SimpleQA correct rate"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 87.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "evaluatedAt": "2025-01-20",
+      "notes": "AlpacaEval 2.0 length-controlled win rate"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 92.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "evaluatedAt": "2025-01-20",
+      "notes": "ArenaHard win rate vs GPT-4-1106"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 53.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "evaluatedAt": "2025-01-20",
+      "notes": "Aider-Polyglot accuracy"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 91.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "evaluatedAt": "2025-01-20",
+      "notes": "C-Eval (EM). Note: slightly exceeds this corpus taxonomy's documented c-eval range (20-88) but is verified verbatim on the official HF card."
     }
   ],
   "verificationNotes": "Existence, MIT license, 671B/37B params, 128K ctx, and Jan 20 2025 release date all confirmed by fetching the live HF model card and GitHub repo. All 7 result rows verified literally present on the HF card. Caveat (not changed in record): as of the current date DeepSeek's own hosted 'deepseek-reasoner' API alias has been quietly routing to a newer V4-Flash model since ~Apr 2026 and deprecates entirely 2026-07-24, so the listed $0.55/$2.19 DeepSeek-hosted pricing reflects the original 2025 launch price rather than what DeepSeek's API currently bills; the open weights remain genuinely available (self-host or third-party inference providers)."

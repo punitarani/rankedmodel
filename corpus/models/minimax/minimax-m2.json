@@ -98,6 +98,38 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/MiniMax-AI/MiniMax-M2",
       "notes": "with tools"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/MiniMax-AI/MiniMax-M2",
+      "evaluatedAt": "2025-10-27",
+      "notes": "GPQA-Diamond; identical figure independently confirmed on the HF model card's 'Intelligence Benchmarks' table."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 44,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/MiniMax-AI/MiniMax-M2",
+      "evaluatedAt": "2025-10-27",
+      "notes": "BrowseComp (English); confirmed identically on the HF model card's 'Coding & Agentic Benchmarks' table. A separate BrowseComp-zh score of 48.5 also exists but has no distinct taxonomy slug."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 72,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/MiniMax-AI/MiniMax-M2",
+      "evaluatedAt": "2025-10-27",
+      "notes": "Confirmed identically on the HF model card."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 87,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/MiniMax-AI/MiniMax-M2",
+      "evaluatedAt": "2025-10-27",
+      "notes": "\u03c4\u00b2-Bench-Telecom, confirmed identically on the HF model card. Distinct from the generic \u03c4\u00b2-Bench (77.2) also reported, which mixes airline/retail/telecom domains and doesn't cleanly match either the tau-bench or tau2-bench-telecom taxonomy definitions, so that figure was left out."
     }
   ],
   "verificationNotes": "Confirmed real; official minimax.io/news/minimax-m2 post is literally dated 2025.10.27, matching releaseDate exactly (MarkTechPost/Simon Willison coverage followed a day or two later). 229.9B total/9.8B active MIT-licensed MoE confirmed via GitHub repo and MarkTechPost. All 7 benchmark rows (SWE-bench 69.4, LiveCodeBench 83, MMLU-Pro 82, AIME25 78, Terminal-Bench 46.3, GAIA 75.7, HLE 31.8) confirmed literally on the GitHub README. Independently confirmed the note's claim that later M2.x point releases (M2.1, M2.7) carry a distinct 'Modified-MIT' license requiring UI attribution, unlike the base M2's plain MIT."

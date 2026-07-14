@@ -93,6 +93,25 @@
       "source": "independent",
       "sourceUrl": "https://www.walturn.com/insights/comparing-openai-o1-to-other-top-models",
       "evaluatedAt": "2024-09-01"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 90.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 74.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "DROP F1, 3-shot."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 42.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals"
     }
   ],
   "verificationNotes": "Release date (2024-09-12) and retirement (2025-07-28) confirmed via independent sources. AIME 44.6 and Codeforces 1258 confirmed by direct fetch of analyticsvidhya.com. MATH 85.5, GPQA 73.3, MMLU 90.8, HumanEval 92.4 all confirmed by direct fetch of walturn.com article, matching exactly. Pricing $15/$60 confirmed via prompthub.us model card fetch. No changes made."

@@ -58,6 +58,70 @@
       "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md",
       "evaluatedAt": "2023-07-18",
       "notes": "Reported by Meta in the Llama 2 model card"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 39.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "3-shot, Table 3 'Overall performance on grouped academic benchmarks'"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 39.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "3-5 shot, English tasks average, Table 3 (detailed per-task breakdown in Table 24)"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 18.3,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "pass@1, Table 21 'Code generation results on Human-Eval and MBPP' (pretrained-model comparison table; also pass@100 = 60.2 reported there but not mapped, no taxonomy slug distinguishes pass@100)"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 30.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "pass@1 (3-shot), Table 21. Cross-checked: (HumanEval 18.3 + MBPP 30.6)/2 = 24.45 \u2248 Table 3's composite 'Code' column value of 24.5 for this row, corroborating both figures."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 73.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Wiki validation subset, Table 22"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 28.7,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "8-shot, maj1@1, Table 25 'Comparison to other open-source models on mathematical reasoning tasks'"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 3.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "4-shot, maj1@1, Table 25. Note: below the taxonomy's typical 20-100 range, but is the genuine published figure for this 2023 base model on the full MATH test set."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 41.86,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "Table 11 'Evaluation of pretrained LLMs on automatic safety benchmarks' (percent truthful+informative); a separate ToxiGen=26.10 is also reported there but has no taxonomy slug."
     }
   ],
   "verificationNotes": "Confirmed via Hugging Face meta-llama/Llama-2-13b page (13B params, 4096 ctx, Llama 2 Community License) and release date 2023-07-18 corroborated by Ollama/HF sources. Fetched MODEL_CARD.md and confirmed MMLU 54.8 appears for the Llama-2-13B pretrained row. No changes made."

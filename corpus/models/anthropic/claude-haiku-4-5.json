@@ -58,11 +58,11 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 64.6,
-      "source": "independent",
-      "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-haiku",
+      "score": 73,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
       "evaluatedAt": "2025-10-01",
-      "notes": "independent evaluation; AA page is JS-rendered and could not be scraped directly via fetch tools, but the exact 64.6% figure was cross-confirmed via secondary aggregators (e.g. pricepertoken.com, morphllm.com) explicitly citing Artificial Analysis's Claude Haiku 4.5 page"
+      "notes": "independent evaluation; AA page is JS-rendered and could not be scraped directly via fetch tools, but the exact 64.6% figure was cross-confirmed via secondary aggregators (e.g. pricepertoken.com, morphllm.com) explicitly citing Artificial Analysis's Claude Haiku 4.5 page [Corrected during full-corpus audit: Directly fetched Anthropic's official Oct 15 2025 launch page and viewed its embedded benchmark-comparison chart image: Claude Haiku 4.5 scores 73.0% on GPQA Diamond (128K thinking budget, averaged over 10 runs per the page's own methodology footnotes). The existing corpus value (64.6%) was sourced only to a third-party aggregator (Artificial Analysis) whose page could not be directly scraped and ]"
     },
     {
       "benchmarkSlug": "mmlu-pro",
@@ -70,8 +70,56 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-haiku",
       "evaluatedAt": "2025-10-01",
-      "notes": "independent evaluation; same caveat as GPQA row — 80.0% figure cross-confirmed via secondary aggregators citing Artificial Analysis"
+      "notes": "independent evaluation; same caveat as GPQA row \u2014 80.0% figure cross-confirmed via secondary aggregators citing Artificial Analysis"
+    },
+    {
+      "benchmarkSlug": "terminal-bench",
+      "score": 41,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "evaluatedAt": "2025-10-15",
+      "notes": "Terminal-Bench, Terminus-2 agent framework, averaged over 11 runs (6 without thinking at 40.21%, 5 with 32K thinking budget at 41.75%); chart shows composite 41.0%. Confirmed via official launch-page comparison chart and methodology text."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 83,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "evaluatedAt": "2025-10-15",
+      "notes": "\u03c42-bench Telecom domain, 128K thinking budget, avg of 10 runs. (\u03c42-bench Retail 83.2% and Airline 63.6% were also reported but have no matching taxonomy slug, so were left out to avoid conflating with the original/easier TAU-bench used by older Claude 4-family models.)"
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 50.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "evaluatedAt": "2025-10-15",
+      "notes": "Computer use / OSWorld-Verified framework, 100 max steps, 128K total thinking budget, avg of 4 runs, per the page's explicit methodology note that this uses 'the official OSWorld-Verified framework.'"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 80.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "evaluatedAt": "2025-10-15",
+      "notes": "AIME 2025, no-tools config (80.7%); the chart also shows a 96.3% 'with python tools' figure, but 80.7% is the fair apples-to-apples number matching how other Claude models in this corpus report AIME."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 83,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "evaluatedAt": "2025-10-15",
+      "notes": "Multilingual MMLU, averaged over 10 runs across 14 non-English languages, 128K thinking budget."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 73.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "evaluatedAt": "2025-10-15",
+      "notes": "MMMU (validation split), visual reasoning."
     }
   ],
-  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-haiku-4-5 (release 2025-10-15, $1/$5 pricing, 200K context, 'one-third the cost and more than twice the speed of Sonnet 4' claim verified verbatim). IMPORTANT CORRECTION: input record marked status='deprecated', but Anthropic's official model-deprecations page (fetched 2026-07-12) lists claude-haiku-4-5-20251001 as 'Active' with tentative retirement 'not sooner than 2026-10-15' — this model is currently live, not deprecated. Status corrected to 'released' (closest enum to 'Active'); apiAvailable=true confirmed correct. GPQA/MMLU-Pro rows: could not directly scrape the JS-rendered artificialanalysis.ai page, but the specific numbers were independently corroborated by secondary sources quoting the same Artificial Analysis data, so kept (not dropped) with sourceUrl unchanged and caveat noted."
+  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-haiku-4-5 (release 2025-10-15, $1/$5 pricing, 200K context, 'one-third the cost and more than twice the speed of Sonnet 4' claim verified verbatim). IMPORTANT CORRECTION: input record marked status='deprecated', but Anthropic's official model-deprecations page (fetched 2026-07-12) lists claude-haiku-4-5-20251001 as 'Active' with tentative retirement 'not sooner than 2026-10-15' \u2014 this model is currently live, not deprecated. Status corrected to 'released' (closest enum to 'Active'); apiAvailable=true confirmed correct. GPQA/MMLU-Pro rows: could not directly scrape the JS-rendered artificialanalysis.ai page, but the specific numbers were independently corroborated by secondary sources quoting the same Artificial Analysis data, so kept (not dropped) with sourceUrl unchanged and caveat noted."
 }

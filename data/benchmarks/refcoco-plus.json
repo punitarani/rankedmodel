@@ -5,6 +5,6 @@
   "unit": "%",
   "description": "RefCOCO variant excluding absolute-location expressions.",
   "normMin": 50,
-  "normMax": 85,
+  "normMax": 94,
   "higherIsBetter": true
 }

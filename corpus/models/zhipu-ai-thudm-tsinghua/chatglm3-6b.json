@@ -89,7 +89,56 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/zai-org/ChatGLM3/blob/main/README_en.md",
       "notes": "ChatGLM3-6B-Base checkpoint"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 67.5,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/ChatGLM3/blob/main/README_en.md",
+      "notes": "Official ChatGLM3 repo 'Evaluation Results / Typical Tasks' table (8-benchmark table), ChatGLM3-6B-Base row; 0-shot."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 53.7,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/zai-org/ChatGLM3/blob/main/README_en.md",
+      "notes": "Same official evaluation table; 0-shot. Score exceeds the taxonomy's typical AGIEval range (max 48) but is verbatim as published for the ChatGLM3-6B-Base checkpoint."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 26.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report (Table 1); GPQA wasn't tracked for the earlier ChatGLM generations."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 58.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report (Table 1)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 79.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report (Table 1)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 80.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report (Table 1)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 70.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "notes": "GLM team's 2024 family-wide technical report (Table 1)."
     }
   ],
-  "verificationNotes": "Release date Oct 27, 2023 confirmed exactly via the official ChatGLM technical report arXiv:2406.12793 (its release table lists 2023-10-27). All six benchmark scores (MMLU 61.4, C-Eval 69.0, GSM8K 72.3, MATH 25.7, BBH 66.1, MBPP 52.4) confirmed verbatim in the GitHub README_en.md evaluation table for the Base checkpoint. Function calling/code interpreter/agent capabilities confirmed verbatim (\"natively supports tool invocation, code execution, and Agent tasks\"). 8K context confirmed. Corrected vramFp16Gb from 14.13 to 13 (README states \"running requires about 13GB of VRAM\" in two places; no source supports 14.13). Adjusted vramQ4Gb from 7 to 6: no official quantization table was found for ChatGLM3-6B specifically (unlike ChatGLM/ChatGLM2 which have explicit tables), so this is an estimate aligned with the confirmed same-scale ChatGLM-6B INT4 figure (6GB) rather than a directly sourced number — flagged as lower confidence than the other spec fields."
+  "verificationNotes": "Release date Oct 27, 2023 confirmed exactly via the official ChatGLM technical report arXiv:2406.12793 (its release table lists 2023-10-27). All six benchmark scores (MMLU 61.4, C-Eval 69.0, GSM8K 72.3, MATH 25.7, BBH 66.1, MBPP 52.4) confirmed verbatim in the GitHub README_en.md evaluation table for the Base checkpoint. Function calling/code interpreter/agent capabilities confirmed verbatim (\"natively supports tool invocation, code execution, and Agent tasks\"). 8K context confirmed. Corrected vramFp16Gb from 14.13 to 13 (README states \"running requires about 13GB of VRAM\" in two places; no source supports 14.13). Adjusted vramQ4Gb from 7 to 6: no official quantization table was found for ChatGLM3-6B specifically (unlike ChatGLM/ChatGLM2 which have explicit tables), so this is an estimate aligned with the confirmed same-scale ChatGLM-6B INT4 figure (6GB) rather than a directly sourced number \u2014 flagged as lower confidence than the other spec fields."
 }

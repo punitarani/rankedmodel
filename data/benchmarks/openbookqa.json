@@ -4,7 +4,7 @@
   "category": "reasoning",
   "unit": "%",
   "description": "Elementary science QA requiring open-book fact combination.",
-  "normMin": 40,
-  "normMax": 50,
+  "normMin": 25,
+  "normMax": 93,
   "higherIsBetter": true
 }

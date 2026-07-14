@@ -28,10 +28,10 @@ test.describe('model detail', () => {
   })
 
   test('closed model shows the API-only pricing card + index rank', async ({ page }) => {
-    // Gemini 3.1 Pro: the #1 overall model on the Index.
+    // Gemini 3.1 Pro: a real, broadly-covered closed model (not #1 post-audit — GPT-5.6 leads).
     await gotoHydrated(page, '/models/gemini-3-1-pro')
-    await expect(page.getByTestId('model-index')).toHaveText('91.1')
-    await expect(page.getByText('Index · rank #1')).toBeVisible()
+    await expect(page.getByTestId('model-index')).toHaveText('83.6')
+    await expect(page.getByText('Index · rank #17')).toBeVisible()
     await expect(page.getByTestId('price-in')).toHaveText('$2')
     await expect(page.getByTestId('price-out')).toHaveText('$12')
     // benchmark row: GPQA 94.3; the field best is now Claude Sonnet 5 (96.2)
@@ -45,12 +45,12 @@ test.describe('model detail', () => {
     await gotoHydrated(page, '/models/gemini-3-1-pro')
     await page.getByTestId('compare-this').click()
     // compareB picks the top rank-eligible model on the OTHER side of the open/closed line —
-    // Nemotron 3 Ultra 550B A55B, the top open model — which isn't the static compare default
+    // Kimi K2.6, the top open model — which isn't the static compare default
     // pair, so the URL carries an explicit ?m=
-    await expect(page).toHaveURL(/m=gemini-3-1-pro(%2C|,)nemotron-3-ultra-550b-a55b/)
+    await expect(page).toHaveURL(/m=gemini-3-1-pro(%2C|,)kimi-k2-6/)
     const legend = page.getByTestId('compare-legend')
     await expect(legend).toContainText('Gemini 3.1 Pro')
-    await expect(legend).toContainText('Nemotron 3 Ultra 550B A55B')
+    await expect(legend).toContainText('Kimi K2.6')
   })
 
   test('unknown model slug 404s with the designed copy', async ({ page }) => {

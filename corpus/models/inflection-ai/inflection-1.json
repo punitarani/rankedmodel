@@ -49,6 +49,70 @@
       "sourceUrl": "https://inflection.ai/inflection-1",
       "evaluatedAt": "2023-06-22",
       "notes": "Average across 57 MMLU tasks; outperformed GPT-3.5, LLaMA, and PaLM-540B per Inflection's technical memo."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 62.9,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/assets/Inflection-1.pdf",
+      "evaluatedAt": "2023-06-23",
+      "notes": "8-shot chain-of-thought prompt (Table 8 of the Inflection-1 technical memo); GPT-4 92.0, PaLM-2-L 80.7 shown alongside for context."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 84.3,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/assets/Inflection-1.pdf",
+      "evaluatedAt": "2023-06-23",
+      "notes": "0-shot (Table 4 of the technical memo); a 10-shot figure of 85.8 is also reported (Table 5) but 0-shot is used here as the memo's primary comparison setting."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 43.8,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/assets/Inflection-1.pdf",
+      "evaluatedAt": "2023-06-23",
+      "notes": "pass@1, 3-shot prompt (Table 9 of the technical memo)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 35.4,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/assets/Inflection-1.pdf",
+      "evaluatedAt": "2023-06-23",
+      "notes": "pass@1, 0-shot (Table 9). Memo explicitly notes code generation is the one benchmark where Inflection-1 underperforms GPT-3.5 (48.1)."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 69.9,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/assets/Inflection-1.pdf",
+      "evaluatedAt": "2023-06-23",
+      "notes": "BIG-Bench Hard with chain-of-thought prompting (Table 6 of the technical memo)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 83.3,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/assets/Inflection-1.pdf",
+      "evaluatedAt": "2023-06-23",
+      "notes": "5-shot (Table 5 of the technical memo)."
+    },
+    {
+      "benchmarkSlug": "lambada",
+      "score": 78.5,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/assets/Inflection-1.pdf",
+      "evaluatedAt": "2023-06-23",
+      "notes": "0-shot (Table 7); a 1-shot figure of 83.3 is also reported."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 70.3,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/assets/Inflection-1.pdf",
+      "evaluatedAt": "2023-06-23",
+      "notes": "0-shot, unfiltered-web dev split ('Split A', Table 3); this is the figure behind the public blog's claim of a 2.1-point edge over LLaMA-65B (68.2). Three other TriviaQA/split-and-shot variants are also reported (up to 85.0 on the Wikipedia split, 1-shot) but this one was chosen as the standard 0-shot comparison point."
     }
   ],
   "verificationNotes": "Confirmed real via direct fetch of inflection.ai/inflection-1: page literally states '72.7% on average across all 57 tasks' on MMLU, matching the score exactly. Fetch also confirmed the June 22 2023 announcement date. No changes made."

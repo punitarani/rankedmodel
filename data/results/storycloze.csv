@@ -1,3 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+gpt-3-175b,87.7,self-reported,https://arxiv.org/abs/2005.14165,,"Few-shot, StoryCloze 2016 (Table 3.2)"
 opt-175b,79.82,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline, GPTQ paper"
 opt-66b,77.34,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline, GPTQ paper"
+opt-iml-30b,80.1,self-reported,https://ar5iv.labs.arxiv.org/html/2212.12017,2022-12-22,"0-shot accuracy on StoryCloze for plain OPT-IML 30B (not Max), Table 9 of the OPT-IML paper ('Accuracies of OPT-IML compared with OPT on the 14 standard NLP tasks from Zhang et al. 2022', format 0-shot/32-shot). Verified directly against the raw table text: row 'OPT-IML 30B', StoryCloze column = 80.1/82.7."

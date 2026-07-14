@@ -74,6 +74,54 @@
       "score": 93,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.63,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
+      "evaluatedAt": "2024-07-24",
+      "notes": "HF model card 'Instruction Benchmarks' table."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 73.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
+      "evaluatedAt": "2024-07-24",
+      "notes": "HF model card 'Instruction Benchmarks' table; cross-confirmed against the bar chart in the mistral.ai launch blog."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 87,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
+      "evaluatedAt": "2024-07-24",
+      "notes": "HF model card 'Code & Reasoning Benchmarks' table (Human Eval Plus row)."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 69,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
+      "evaluatedAt": "2024-07-24",
+      "notes": "HF model card 'Code & Reasoning Benchmarks' table (MBPP Plus row)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 70,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
+      "evaluatedAt": "2024-07-24",
+      "notes": "HF card's 'Math Instruct (0-shot, no CoT)' figure; cross-confirmed by directly reading the bar chart on the mistral.ai launch blog. Mistral also reports a '0-shot, CoT' variant at 71.5% on the same table; the no-CoT figure was chosen since it is the one independently corroborated by the blog chart."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 65.91,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
+      "evaluatedAt": "2024-07-24",
+      "notes": "From the HF 'Evaluation results' auto-generated widget, backed by the community EvalEval automated eval-results datastore - not a number Mistral wrote into their own benchmark tables, hence independent rather than self-reported."
     }
   ],
   "verificationNotes": "Real release confirmed via mistral.ai/news/mistral-large-2407/ (fetched): 123B dense, 128k ctx, released 2024-07-24, Mistral Research License (HF model card literally says 'Mistral AI Research License' / license tag 'mrl', non-commercial). All 4 result rows independently confirmed literally present on their cited pages: MMLU 84.0 (mistral.ai blog), HumanEval 92%, MBPP Base 80%, GSM8K 93% (all on HF model card, also corroborated by an independent MarkTechPost article). No corrections needed."

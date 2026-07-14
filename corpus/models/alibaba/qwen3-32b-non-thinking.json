@@ -89,6 +89,54 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "notes": "BFCL v3, non-thinking mode"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 85.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MMLU-Redux, non-thinking mode, Qwen3 Technical Report Table 14"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 83.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "C-Eval, non-thinking mode, Table 14"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 83.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "IFEval strict-prompt, non-thinking mode, Table 14"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 88.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MATH-500, non-thinking mode, Table 14"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1353,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "CodeForces rating (Elo), non-thinking mode, Table 14; percentile given as 71.0%. Elo rating, not a 0-100 score."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 76.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MMMLU across 14 languages, non-thinking mode, Table 14"
     }
   ],
   "verificationNotes": "Fully confirmed. Table 14 of fetched Qwen3 Technical Report PDF confirms all 5 rows exactly (AIME'24 31.0, GPQA-Diamond 54.6, LiveCodeBench v5 31.3, Arena-Hard 92.8, BFCL v3 63.0), matching baseline comparison vs Qwen2.5-72B-Instruct as claimed in report text. Same model identity/specs verification as thinking-mode sibling."

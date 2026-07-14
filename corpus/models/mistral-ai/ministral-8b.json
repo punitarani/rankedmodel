@@ -88,6 +88,62 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
       "notes": "maj@1"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 48.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Base model comparison table"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 75.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Base model comparison table"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 71.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Listed as 'Arc-c' in the base model comparison table"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 65.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Base model comparison table"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Instruct model comparison table, listed as 'MTBench'"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 70.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Instruct model comparison table"
+    },
+    {
+      "benchmarkSlug": "wildbench",
+      "score": 41.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Instruct model comparison table, listed as 'Wild bench'"
     }
   ],
   "verificationNotes": "Real release confirmed. HF model card (fetched) states exactly '8,019,808,256' parameters (=8.02B, matches), 'Released under the Mistral Research License,' 128k context window with interleaved sliding-window attention, 36 layers - all confirmed. Release date 2024-10-16 confirmed via mistral.ai/news/ministraux/. All 5 benchmark rows confirmed literally present on the HF card: MMLU 65.0, HumanEval pass@1 76.8, MBPP pass@1 70.0, GSM8K maj@8 64.5, MATH maj@1 54.5. No corrections needed."

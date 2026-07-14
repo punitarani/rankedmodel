@@ -101,6 +101,22 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
       "notes": "Think High mode"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 56.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "evaluatedAt": "2026-04-24",
+      "notes": "Terminal-Bench 2.0, Think High mode. Cross-verified identical value in DeepSeek-V4 tech report Table 7 (arXiv:2606.19348)."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 53.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "evaluatedAt": "2026-04-24",
+      "notes": "BrowseComp Pass@1, Think High mode. Cross-verified identical value in DeepSeek-V4 tech report Table 7 (arXiv:2606.19348)."
     }
   ],
   "verificationNotes": "Confirmed via official DeepSeek api-docs news post and the deepseek-ai/DeepSeek-V4-Flash HF model card (284B total/13B active, MIT, 1M context, same three-tier benchmark table format as V4-Pro)."

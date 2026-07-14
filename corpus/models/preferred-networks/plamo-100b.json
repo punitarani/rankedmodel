@@ -58,7 +58,42 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2410.07563",
       "notes": "PLaMo-100B-Instruct absolute eval, 0-10 scale; GPT-4-0125-Preview scored 9.55"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 7.78,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2410.07563",
+      "notes": "Japanese MT-Bench, PLaMo-100B-Instruct (Table 4); GPT-4-0125-Preview scored 8.93 for comparison in the same table."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 7.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2410.07563",
+      "notes": "COVERAGE PASS (2026-07-14): English MT-Bench, PLaMo-100B-Instruct (Table 5 of the same technical report) -- distinct from the Japanese MT-Bench row above (Table 4, same source, score 7.78). The paper explicitly reports both the English original and the Stability AI Japanese localization as separate evaluations; recorded as a second 'mt-bench' row per this benchmark's single taxonomy slug, clearly labeled English vs. Japanese to avoid conflating the two variants. GPT-3.5-Turbo scored 8.40 and Mixtral-8x7B-Instruct-v0.1 scored 8.02 for comparison in the same table; PLaMo-100B-Base (pre-instruct-tuning) scored 5.76."
+    },
+    {
+      "benchmarkSlug": "jaster",
+      "score": 73.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2410.07563",
+      "notes": "COVERAGE PASS (2026-07-14): Jaster 0-shot, PLaMo-100B-Instruct (Table 2 of the same technical report) -- a distinct standard eval configuration from the 4-shot Jaster row already on file (77.5, Table 3, same source). Recorded as a second 'jaster' row explicitly labeled 0-shot to avoid conflating it with the 4-shot figure. GPT-4-0125-Preview scored 72.2 (0.722) for comparison in the same table, i.e. PLaMo-100B-Instruct also beat GPT-4 in the 0-shot configuration."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 60.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2509.04897",
+      "notes": "Standard English MMLU, 5-shot accuracy, from Preferred Networks' own follow-up 'PLaMo 2 Technical Report' (Table 1), which re-reports the original pfnet/plamo-100b as a baseline comparison row (0.603 = 60.3%). Not present in the original PLaMo-100B paper (arXiv:2410.07563), which only reported Jaster/Rakuda/Japanese MT-Bench -- this later report is the first place Preferred Networks published a plain English-MMLU number for this specific model."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 22,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2509.04897",
+      "notes": "HumanEval+ (EvalPlus), 0-shot pass@1, from the same PLaMo 2 Technical Report (Table 2), Preferred Networks' own baseline row for pfnet/plamo-100b (0.220 = 22.0%). The report also lists 'JHumanEval' (a Japanese-translated HumanEval variant, 0.268) for the same row -- that one was NOT mapped to any slug since it is a different-language benchmark from the standard English HumanEval/HumanEval+ family and no matching taxonomy slug exists for it."
     }
   ],
-  "verificationNotes": "Confirmed real release via arxiv.org/abs/2410.07563 ('PLaMo-100B: A Ground-Up Language Model Designed for Japanese Proficiency', submitted 2024-10-10, revised 2024-10-22) and huggingface.co/pfnet/plamo-100b, which confirms the dual commercial/non-commercial license and that it was trained from scratch on 2T EN/JA tokens with QK-normalization and Z-loss. Fetched the arxiv HTML directly and confirmed exact scores: Jaster 4-shot PLaMo-100B-Instruct 0.775 (=77.5) vs GPT-4-0125-Preview 0.772 (=77.2); Rakuda PLaMo-100B-Instruct 9.73 vs GPT-4-0125-Preview 9.55 — both match the record exactly. Note: the HF model card's auto-computed parameter count shows ~102B, but Preferred Networks' own tech blog and the model name consistently use the rounded '100 billion parameters' figure, which was kept per official branding. Could not independently confirm the ctxK:4 (4K context) figure from a primary source (HF config.json is gated/unauthenticated-inaccessible, and the arxiv PDF text was not machine-readable for this detail); retained from input as unable to confirm or refute."
+  "verificationNotes": "Confirmed real release via arxiv.org/abs/2410.07563 ('PLaMo-100B: A Ground-Up Language Model Designed for Japanese Proficiency', submitted 2024-10-10, revised 2024-10-22) and huggingface.co/pfnet/plamo-100b, which confirms the dual commercial/non-commercial license and that it was trained from scratch on 2T EN/JA tokens with QK-normalization and Z-loss. Fetched the arxiv HTML directly and confirmed exact scores: Jaster 4-shot PLaMo-100B-Instruct 0.775 (=77.5) vs GPT-4-0125-Preview 0.772 (=77.2); Rakuda PLaMo-100B-Instruct 9.73 vs GPT-4-0125-Preview 9.55 \u2014 both match the record exactly. Note: the HF model card's auto-computed parameter count shows ~102B, but Preferred Networks' own tech blog and the model name consistently use the rounded '100 billion parameters' figure, which was kept per official branding. Could not independently confirm the ctxK:4 (4K context) figure from a primary source (HF config.json is gated/unauthenticated-inaccessible, and the arxiv PDF text was not machine-readable for this detail); retained from input as unable to confirm or refute.\n\nCOVERAGE-COMPLETENESS PASS (2026-07-14): re-fetched arxiv.org/html/2410.07563 in full (all sections, including Appendix A/B) to check for benchmarks beyond the three already on file. Confirmed the paper's entire evaluation suite is limited to Jaster (0-shot and 4-shot, Japanese-understanding), Japanese and English MT-Bench (LLM-as-judge conversational quality), and the Rakuda Benchmark (absolute + pairwise, Japanese-domestic-knowledge Q&A) -- no MMLU, GSM8K, HumanEval, BBH, or other English-standard academic/coding benchmarks were run by Preferred Networks/Preferred Elements for this model. Added the two genuinely new, taxonomy-mappable rows found in the full table read (English MT-Bench 7.70 from Table 5; Jaster 0-shot 73.8 from Table 2). Searched independently for any third-party or Nejumi-leaderboard scores for PLaMo-100B beyond the paper's own tables and found none -- this is a small-team, Japan-focused open-weights release with essentially no independent English-language benchmark coverage. This is a genuine, honest data-completeness ceiling: the vendor simply did not publish (and no independent evaluator appears to have run) any English general-knowledge, math, or coding benchmark for this model."
 }

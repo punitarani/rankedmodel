@@ -97,7 +97,39 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
       "evaluatedAt": "2025-06-01",
       "notes": "Global MMLU (Lite), non-thinking"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 26.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-06-01",
+      "notes": "Aider Polyglot, whole score, (06-17) release, non-thinking."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 72.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-06-01",
+      "notes": "MMMU, single attempt, (06-17) release, non-thinking."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 10.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-06-01",
+      "notes": "SimpleQA, (06-17) release, non-thinking."
+    },
+    {
+      "benchmarkSlug": "facts-grounding",
+      "score": 84.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf",
+      "evaluatedAt": "2025-06-01",
+      "notes": "FACTS Grounding, (06-17) release, non-thinking."
     }
   ],
-  "verificationNotes": "Confirmed release timeline via Google Cloud blog: Gemini 2.5 Flash-Lite preview rolled out June 17, 2025 (stable GA came July 22, 2025). Cross-checked all 6 benchmark rows against an independent secondary source (langbase.com model benchmarks page) which reproduced the official model card's non-thinking numbers exactly (GPQA 64.6, AIME 49.8, LiveCodeBench 33.7, SWE-Bench 31.6, HLE 5.1, MMLU 81.1) including the same 'multiple attempts 42.6%' SWE-bench detail that corroborates the thinking variant's note — strong signal this reflects the genuine model card table (direct PDF fetch was rate-limited/unparseable but WebSearch snippets independently corroborated GPQA/AIME directly from the card too). Pricing $0.10/$0.40 confirmed on ai.google.dev/gemini-api/docs/pricing."
+  "verificationNotes": "Confirmed release timeline via Google Cloud blog: Gemini 2.5 Flash-Lite preview rolled out June 17, 2025 (stable GA came July 22, 2025). Cross-checked all 6 benchmark rows against an independent secondary source (langbase.com model benchmarks page) which reproduced the official model card's non-thinking numbers exactly (GPQA 64.6, AIME 49.8, LiveCodeBench 33.7, SWE-Bench 31.6, HLE 5.1, MMLU 81.1) including the same 'multiple attempts 42.6%' SWE-bench detail that corroborates the thinking variant's note \u2014 strong signal this reflects the genuine model card table (direct PDF fetch was rate-limited/unparseable but WebSearch snippets independently corroborated GPQA/AIME directly from the card too). Pricing $0.10/$0.40 confirmed on ai.google.dev/gemini-api/docs/pricing."
 }

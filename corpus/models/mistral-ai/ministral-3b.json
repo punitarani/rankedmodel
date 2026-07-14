@@ -76,6 +76,70 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
       "notes": "maj@1"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 42.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Base model comparison table"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 72.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Base model comparison table"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 64.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Listed as 'Arc-c' in the base model comparison table"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 56.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Base model comparison table"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Instruct model comparison table, listed as 'MTBench'"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 64.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Instruct model comparison table"
+    },
+    {
+      "benchmarkSlug": "wildbench",
+      "score": 36.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "Instruct model comparison table, listed as 'Wild bench'"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 67.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "evaluatedAt": "2024-10-16",
+      "notes": "MBPP pass@1, instruct model comparison table"
     }
   ],
   "verificationNotes": "Real release confirmed via mistral.ai/news/ministraux/ (fetched): released 2024-10-16, Ministral 3B is API-only at $0.04/M tokens under Mistral Commercial License with no open-weights release (confirms 'closed' openness). Note: sourceUrl for all 4 result rows points to the Ministral-8B-Instruct-2410 HF card rather than a dedicated Ministral-3B card (none exists), but that HF page's comparison tables do contain a distinct Ministral-3B row - verified all 4 values appear literally there: MMLU 60.9 (base table), HumanEval pass@1 77.4 (instruct table), GSM8K maj@8 50.9 (base table), MATH maj@1 51.7 (instruct table). No corrections needed."

@@ -114,7 +114,35 @@
       "source": "independent",
       "sourceUrl": "https://designforonline.com/ai-models/allenai-olmo-3-32b-think/",
       "notes": "MMLU-Pro; Artificial Analysis measurement (Intelligence Index v4.0), republished on the fetched page; Ai2 reports MMLU-Pro only for OLMo 3 base models (OlmoBaseEval held-out), not the Think 32B post-trained model"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 85.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think",
+      "notes": "Currently missing from this model's results despite being on the primary card; Qwen 3 32B scores 88.8, Qwen 3 VL 32B Thinking 90.1"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 68,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think",
+      "notes": "MBPP+; Qwen 3 32B 70.6"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 47.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think",
+      "notes": "Qwen 3 32B 37.3"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 74.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think",
+      "notes": "AlpacaEval 2 LC; Qwen 3 32B 75.6"
     }
   ],
-  "verificationNotes": "Existence confirmed via allenai.org/blog/olmo3 and press coverage (Nov 20, 2025). paramsB re-derived from model.safetensors.index.json total ≈32.2B (matches 32.23 within rounding). config.json confirms max_position_embeddings=65536 (~64K) and hybrid sliding/full attention across 64 layers, and no tool-use/function-calling exposed on this model card (matches capability flags). All 6 result rows independently confirmed on the HF model card table, including every cited Qwen 3 32B comparison number (MATH 95.4, AIME 80.8, BBH 90.6, HumanEvalPlus 91.2, IFEval 86.5, LiveCodeBench 90.2) except the 'Qwen 3 VL 32B Thinking 96.7' aside which I could not independently re-confirm in my fetch (left in notes as unverified color, does not affect the primary score)."
+  "verificationNotes": "Existence confirmed via allenai.org/blog/olmo3 and press coverage (Nov 20, 2025). paramsB re-derived from model.safetensors.index.json total \u224832.2B (matches 32.23 within rounding). config.json confirms max_position_embeddings=65536 (~64K) and hybrid sliding/full attention across 64 layers, and no tool-use/function-calling exposed on this model card (matches capability flags). All 6 result rows independently confirmed on the HF model card table, including every cited Qwen 3 32B comparison number (MATH 95.4, AIME 80.8, BBH 90.6, HumanEvalPlus 91.2, IFEval 86.5, LiveCodeBench 90.2) except the 'Qwen 3 VL 32B Thinking 96.7' aside which I could not independently re-confirm in my fetch (left in notes as unverified color, does not affect the primary score)."
 }

@@ -89,7 +89,28 @@
       "source": "independent",
       "sourceUrl": "https://huggingface.co/blog/falconmamba",
       "evaluatedAt": "2024-08-12"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 33.36,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falconmamba",
+      "evaluatedAt": "2024-08-12"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 19.88,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falconmamba",
+      "evaluatedAt": "2024-08-12"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 14.47,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/blog/falconmamba",
+      "evaluatedAt": "2024-08-12"
     }
   ],
-  "verificationNotes": "Confirmed real model via HF blog (fetched): release date 2024-08-12, 7B params, Mamba SSM + extra RMS norm layers, 8192-token training sequence length (matches ctxK 8, confirmed on model card), and all 6 benchmark rows (arc-challenge 62.03, hellaswag 80.82, mmlu 62.11, winogrande 73.64, truthfulqa 53.42, gsm8k 52.54) appear verbatim. CORRECTED: license changed from 'TII Falcon Mamba 7B License 1.0' to 'TII Falcon-Mamba License 2.0' — confirmed via two independent searches/fetches of the tiiuae/falcon-mamba-7b model card and web search results; found no evidence of a '1.0'/differently-named license."
+  "verificationNotes": "Confirmed real model via HF blog (fetched): release date 2024-08-12, 7B params, Mamba SSM + extra RMS norm layers, 8192-token training sequence length (matches ctxK 8, confirmed on model card), and all 6 benchmark rows (arc-challenge 62.03, hellaswag 80.82, mmlu 62.11, winogrande 73.64, truthfulqa 53.42, gsm8k 52.54) appear verbatim. CORRECTED: license changed from 'TII Falcon Mamba 7B License 1.0' to 'TII Falcon-Mamba License 2.0' \u2014 confirmed via two independent searches/fetches of the tiiuae/falcon-mamba-7b model card and web search results; found no evidence of a '1.0'/differently-named license."
 }

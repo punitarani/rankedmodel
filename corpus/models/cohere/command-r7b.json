@@ -89,7 +89,28 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2504.00698",
       "notes": "Berkeley Function-Calling Leaderboard"
+    },
+    {
+      "benchmarkSlug": "bird-sql",
+      "score": 42.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2504.00698",
+      "notes": "Command A technical report (arXiv 2504.00698), Table 1, page 2, Command R7B column, Bird-SQL row (Command R7B 42.2 vs. Llama 3.1 8B 41.9, Ministral 8B 33.2)."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 54.94,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r7b-12-2024/results_2025-02-13T18-27-04.338360.json",
+      "notes": "Open LLM Leaderboard v2, leaderboard_bbh, 3-shot, acc_norm."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 35.72,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r7b-12-2024/results_2025-02-13T18-27-04.338360.json",
+      "notes": "Open LLM Leaderboard v2, leaderboard_mmlu_pro, 5-shot, acc."
     }
   ],
-  "verificationNotes": "Fully confirmed: Cohere blog dated Dec 13, 2024 (release); HF model card CohereLabs/c4ai-command-r7b-12-2024 confirms 7B params, 128K context, CC-BY-NC + Acceptable Use Policy, 23 languages. Downloaded and read the actual Command A tech report PDF (arXiv 2504.00698) Table 1 — all six Command R7B benchmark numbers (MMLU 65.2, MATH 59.1, IFEval 77.9, GPQA 26.3, MBPP+ 72.0, BFCL 52.2) appear verbatim. Pricing ($0.0375/$0.15 per 1M tokens) confirmed via independent pricing aggregators. No changes made."
+  "verificationNotes": "Fully confirmed: Cohere blog dated Dec 13, 2024 (release); HF model card CohereLabs/c4ai-command-r7b-12-2024 confirms 7B params, 128K context, CC-BY-NC + Acceptable Use Policy, 23 languages. Downloaded and read the actual Command A tech report PDF (arXiv 2504.00698) Table 1 \u2014 all six Command R7B benchmark numbers (MMLU 65.2, MATH 59.1, IFEval 77.9, GPQA 26.3, MBPP+ 72.0, BFCL 52.2) appear verbatim. Pricing ($0.0375/$0.15 per 1M tokens) confirmed via independent pricing aggregators. No changes made."
 }

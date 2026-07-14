@@ -62,6 +62,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2210.11416",
       "notes": "3-shot, direct prompting"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 4.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2210.11416",
+      "evaluatedAt": "2022-10-20",
+      "notes": "Table 5 ('Scaling Instruction-Finetuned Language Models'), Flan-T5-XXL (11B) row, MGSM held-out benchmark, CoT prompting, 10-language average. Score is genuinely very low compared to the PaLM-family rows in the same table -- T5's pretraining/tokenizer is not optimized for multilingual math reasoning, so this is real, not an error."
     }
   ],
   "verificationNotes": "Confirmed real via Hugging Face google/flan-t5-xxl model card: 11B params, Apache 2.0 license, matches record. Fetched full paper text (ar5iv rendering of arxiv 2210.11416) Table 5 and confirmed Flan-T5-XXL (11B) scores literally: MMLU 5-shot direct = 55.1, BBH 3-shot direct = 45.3 -- both kept as exact matches. Context length is genuinely ambiguous across sources (tokenizer default 512, but Flan instruction-tuning used ~1024-token input sequences per the paper, and some summaries cite up to 2K); left ctxK=1 (1024) as a reasonable middle estimate rather than fabricating false precision. No changes to core fields."

@@ -75,6 +75,13 @@
       "source": "independent",
       "sourceUrl": "https://www.datalearner.com/en/leaderboards/category/code",
       "notes": "SWE-bench Verified, thinking level high; DataLearner coding leaderboard (2026-07); serenitiesai.com lists 70.0 (conflict); no official OpenAI benchmark table exists for o3-pro"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 84.9,
+      "source": "independent",
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "notes": "Aider polyglot code-editing benchmark (225 exercises across 6 languages, diff-edit format), 'o3-pro (high)' config; ranks 3rd behind GPT-5 variants. Independently cross-corroborated with an identical 84.9 figure on DataLearner's agent leaderboard (datalearner.com/en/leaderboards/category/agent)."
     }
   ],
   "verificationNotes": "Confirmed real. TechCrunch (fetched) confirms June 10, 2025 launch, ChatGPT Pro/Team + API availability, and $20/$80 per-1M pricing verbatim. developers.openai.com/api/docs/models/o3-pro confirms 200K context / 100K max output. Fetched binaryverseai.com directly and confirmed all three claimed numbers appear verbatim on the page: AIME 2024 '93 percent,' GPQA Diamond '84 percent,' Codeforces '2,748 points.' No changes made."

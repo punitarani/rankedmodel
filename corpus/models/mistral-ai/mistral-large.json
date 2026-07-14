@@ -50,6 +50,78 @@
       "sourceUrl": "https://www.promptingguide.ai/models/mistral-large",
       "evaluatedAt": "2024-02-01",
       "notes": "Reported as second only to GPT-4 at launch"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 89.2,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-large/",
+      "evaluatedAt": "2024-02-26",
+      "notes": "Detailed benchmarks table embedded as a chart image in the launch blog (read directly from the image)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 86.7,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-large/",
+      "evaluatedAt": "2024-02-26",
+      "notes": "Same detailed benchmarks table/chart as above."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 94,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-large/",
+      "evaluatedAt": "2024-02-26",
+      "notes": "Table reports both 'Arc C (5-shot)'=94.2% and 'Arc C (25-shot)'=94.0%; the 25-shot figure was used as it matches the more common standard ARC-Challenge eval convention."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 82.7,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-large/",
+      "evaluatedAt": "2024-02-26",
+      "notes": "Same table ('TriQA' column)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 50.5,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-large/",
+      "evaluatedAt": "2024-02-26",
+      "notes": "Same table ('TruthfulQA' column)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 45.1,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-large/",
+      "evaluatedAt": "2024-02-26",
+      "notes": "'Coding & Math' detailed-benchmarks chart in the launch blog (HumanE column)."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 73.1,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-large/",
+      "evaluatedAt": "2024-02-26",
+      "notes": "Same coding/math chart (MBPP column)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 45,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-large/",
+      "evaluatedAt": "2024-02-26",
+      "notes": "Same chart, 'Math maj@4' column."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 81,
+      "source": "self-reported",
+      "sourceUrl": "https://mistral.ai/news/mistral-large/",
+      "evaluatedAt": "2024-02-26",
+      "notes": "Same chart reports 'GSM8K maj@1 (5-shot)'=81.0% and a self-consistency-boosted 'GSM8K maj@8 (8-shot)'=91.21%; the single-sample maj@1 figure was used as the directly comparable, non-boosted score."
     }
   ],
   "verificationNotes": "Fetched mistral.ai/news/mistral-large/ directly: confirms 2024-02-26 release, 32K context, native function calling. Fetched promptingguide.ai/models/mistral-large directly: literally confirms 'ranks second next to GPT-4 on the MMLU benchmark with a score of 81.2%'. Params/license genuinely undisclosed by Mistral for this closed model, correctly left null/Proprietary. No changes made."

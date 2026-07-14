@@ -83,7 +83,105 @@
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
       "notes": "Chat variant, paper Table 6"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 75.7,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6 (Base-vs-Chat comparison)"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 76,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 81.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6; also matches the official GitHub README table"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 81.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 64.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 46.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 71.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6, F1"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 61.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6, pass@1"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 65.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6; also matches the official GitHub README table"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 67.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6; also matches the official GitHub README table"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 82.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6"
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 56,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6, RACE-High split"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 63.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat, paper Table 6. Note: score exceeds this corpus taxonomy's documented openbookqa range (40-50, based on smaller/older models); flagging in case downstream scaling needs adjusting, but the figure itself is verified verbatim from the paper table via two independent fetches."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.35,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
+      "notes": "DeepSeek LLM 67B Chat average score, paper Table 8 (MT-Bench)"
     }
   ],
-  "verificationNotes": "Confirmed release date 2023-11-29 via web search (multiple independent sources incl. MarkTechPost coverage dated 2023-12-04 referencing the late-Nov release). Confirmed via ar5iv/2401.02954: 67B dense model uses GQA (paper states 67B uses Grouped-Query Attention instead of MHA), 4096-token training context, and Table 6 literally shows Chat-67B scores HumanEval 73.8, GSM8K 84.1, MATH 32.6, MMLU 71.1, BBH 71.7 — all match exactly."
+  "verificationNotes": "Confirmed release date 2023-11-29 via web search (multiple independent sources incl. MarkTechPost coverage dated 2023-12-04 referencing the late-Nov release). Confirmed via ar5iv/2401.02954: 67B dense model uses GQA (paper states 67B uses Grouped-Query Attention instead of MHA), 4096-token training context, and Table 6 literally shows Chat-67B scores HumanEval 73.8, GSM8K 84.1, MATH 32.6, MMLU 71.1, BBH 71.7 \u2014 all match exactly."
 }

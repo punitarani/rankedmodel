@@ -76,7 +76,23 @@
       "sourceUrl": "https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/",
       "evaluatedAt": "2021-10-11",
       "notes": "zero-shot, physical commonsense reasoning"
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 47.9,
+      "source": "self-reported",
+      "sourceUrl": "https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/",
+      "evaluatedAt": "2021-10-11",
+      "notes": "RACE-h reading comprehension, zero-shot, reported on the test set. From Table 2 of the primary NVIDIA developer blog (0.479 = 47.9%)."
+    },
+    {
+      "benchmarkSlug": "anli",
+      "score": 36.6,
+      "source": "self-reported",
+      "sourceUrl": "https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/",
+      "evaluatedAt": "2021-10-11",
+      "notes": "ANLI-R2 natural language inference, zero-shot, reported on the test set. From Table 2 of the primary NVIDIA developer blog (0.366 = 36.6%)."
     }
   ],
-  "verificationNotes": "Fully confirmed on the primary NVIDIA developer blog: 530B parameters, 105-layer transformer, 20480 hidden dim, 128 attention heads, and 2048-token sequence length all appear as literal text, as do all four zero-shot scores (LAMBADA 0.766, HellaSwag 0.802, WinoGrande 0.730, PIQA 0.820 = 76.6/80.2/73.0/82.0). Release date Oct 11, 2021 corroborated by The Register. Confirmed via independent search that no public weights/checkpoint were ever released — record's openness/license fields are accurate. No changes made."
+  "verificationNotes": "Fully confirmed on the primary NVIDIA developer blog: 530B parameters, 105-layer transformer, 20480 hidden dim, 128 attention heads, and 2048-token sequence length all appear as literal text, as do all four zero-shot scores (LAMBADA 0.766, HellaSwag 0.802, WinoGrande 0.730, PIQA 0.820 = 76.6/80.2/73.0/82.0). Release date Oct 11, 2021 corroborated by The Register. Confirmed via independent search that no public weights/checkpoint were ever released \u2014 record's openness/license fields are accurate. No changes made."
 }

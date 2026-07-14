@@ -52,6 +52,70 @@
       "sourceUrl": "https://blog.google/technology/ai/google-gemini-ai/",
       "evaluatedAt": "2023-12-06",
       "notes": "First model to exceed human-expert baseline on MMLU (CoT@32)"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 94.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, Maj1@32, with chain-of-thought and self-consistency."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 53.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, 4-shot."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 83.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, 3-shot."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 74.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, 0-shot instruction-tuned."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 82.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, F1 score, variable shots."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 87.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 2, validation set, 10-shot."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 79,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 5, 8-shot, multilingual average."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 62.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Stated directly in the report body (Section 1/5.1) as Gemini Ultra's new state-of-the-art MMMU score, corroborated by the paper's abstract; uses the uncertainty-routed CoT approach."
     }
   ],
   "verificationNotes": "Confirmed real: Gemini Advanced ($19.99/mo Google One AI Premium, giving access to Ultra 1.0) launched 2024-02-08, corroborated by 9to5google and TechCrunch. Fetched blog.google/technology/ai/google-gemini-ai/ directly: it literally states 'With a score of 90.0%, Gemini Ultra is the first model to outperform human experts on MMLU' -- exact quote confirms the 90 score and the note verbatim."

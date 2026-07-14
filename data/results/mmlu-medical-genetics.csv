@@ -1,2 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+galactica-120b,68,self-reported,https://ar5iv.labs.arxiv.org/html/2211.09085,2022-11-01,"Table 10's 'Medical Genetics' cell shows 70.0%, but the table's own footnote states that for Medical Genetics (and Abstract Algebra) the displayed figure is actually the 30B model's best result, and gives the true 120B score as 68.0% explicitly — using the footnote-corrected 120B figure, not the table cell."
 palmyra-med-70b,94,self-reported,https://developer.nvidia.com/blog/writer-releases-domain-specific-llms-for-healthcare-and-finance/,,
+pythia-1-4b,36,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json,2023-04-03,"Zero-shot, final checkpoint (step143000) — hendrycksTest-medical_genetics acc=0.36."
+pythia-12b,38,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"Zero-shot, final checkpoint (step143000) — hendrycksTest-medical_genetics acc=0.38."

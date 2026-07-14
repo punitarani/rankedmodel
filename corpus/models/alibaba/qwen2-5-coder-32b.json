@@ -71,6 +71,30 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2409.12186",
       "notes": "BigCodeBench-Complete, Full split, base model; corrected from 83 (the MBPP column mis-transposed) per arXiv:2409.12186v3 Table 5."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 60.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.12186",
+      "evaluatedAt": "2024-11-12",
+      "notes": "Base model, Table 5"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 68.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.12186",
+      "evaluatedAt": "2024-11-12",
+      "notes": "Base model, Table 5; this is the value that was previously mislabeled under the bigcodebench slug (see corrections)"
+    },
+    {
+      "benchmarkSlug": "humaneval-fim",
+      "score": 88.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.12186",
+      "evaluatedAt": "2024-11-12",
+      "notes": "Base model"
     }
   ],
   "verificationNotes": "Confirmed real; blog qwenlm.github.io/blog/qwen2.5-coder-family/ byline gives Nov 12 2024 and Apache-2.0 for 32B. HF card (huggingface.co/Qwen/Qwen2.5-Coder-32B) confirms 32.5B total/31.0B non-embedding params, 64 layers, GQA 40Q/8KV, 131,072 ctx. Qwen2.5-Coder Technical Report (arxiv 2409.12186, updated v3 Nov 12 2024 to add the 32B size) Table 5 confirms base-model HumanEval 65.9, MBPP 76.4 (MBPP+ is a separate 53.6), BigCodeBench-Complete-Full 83.0 -- all three result rows verified verbatim (an initial fetch pass mis-transposed columns; a second, targeted fetch separating base vs instruct rows corrected this and matched the input exactly). No changes made."

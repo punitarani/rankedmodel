@@ -90,6 +90,27 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
       "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 30.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
+      "notes": "3-shot, Baichuan2-13B-Base; from the official README's Math & Code results table (also matches the arXiv 2309.10305 technical report)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 10.08,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
+      "notes": "4-shot, Baichuan2-13B-Base. Score is low relative to the taxonomy's typical 20-100 range for 'math' but is the genuine reported number for this pre-CoT-era 13B dense base model on the full Hendrycks MATH set; included as-is rather than omitted or altered."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 48.17,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
+      "notes": "5-shot (4-candidate multiple-choice subset only, per the paper's methodology), Baichuan2-13B-Base."
     }
   ],
   "verificationNotes": "Confirmed real via arXiv 2309.10305, MarkTechPost (2023-09-19), and the official GitHub README_EN.md. All 6 benchmark scores (C-Eval 58.1, MMLU 59.17, CMMLU 61.97, GSM8K 52.77, HumanEval 17.07, BBH 48.78) confirmed to literally appear in the README table for the 13B-Base model. License (Apache-2.0 code + custom community license with DAU<1M free-commercial-use clause) confirmed. Context length 4096 (4K) confirmed via Ollama model metadata; retargeted ctxK sourceUrl from an unrelated HF text-generation-inference PR to a source that actually states the figure. Corrected hf link from Baichuan2-13B-Chat (was mistakenly Base in original links.hf field is now Chat, matching the Chat/4bit release most commonly used)."

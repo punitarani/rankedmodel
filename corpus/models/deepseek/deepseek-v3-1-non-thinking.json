@@ -9,7 +9,7 @@
   "paramsB": 671,
   "activeParamsB": 37,
   "archClass": "moe",
-  "archDisplay": "Mixture-of-Experts (671B total / 37B active) — DeepSeekMoE + Multi-head Latent Attention, hybrid think/non-think chat template",
+  "archDisplay": "Mixture-of-Experts (671B total / 37B active) \u2014 DeepSeekMoE + Multi-head Latent Attention, hybrid think/non-think chat template",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -94,6 +94,20 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
       "notes": "AIME 2024 Pass@1"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 68.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+      "notes": "Aider-Polyglot (Acc.), Non-Thinking mode, from official HF model card benchmark table"
+    },
+    {
+      "benchmarkSlug": "terminal-bench",
+      "score": 31.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+      "notes": "Terminal-bench (Terminus 1 framework), Non-Thinking mode, from official HF model card benchmark table"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card + DeepSeek API docs release post (2025-08-21). 671B/37B, MIT license, 128K context confirmed. All 6 non-thinking benchmark rows confirmed verbatim on the HF model card. Deprecated status confirmed: deepseek-chat/deepseek-reasoner legacy aliases are being retired 2026-07-24 in favor of V4, and multiple provider changelogs (Baseten, Lightning AI) show V3.1 API deprecation in 2026. Price $0.56/$1.68 confirmed as the post-2025-09-05 official DeepSeek cache-miss rate for deepseek-chat."

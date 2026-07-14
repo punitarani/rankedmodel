@@ -1,17 +1,71 @@
 model_slug,score,source,source_url,evaluated_at,notes
 ai21-jamba,46.4,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
+ai21-jamba-1-5-large,58.3,self-reported,https://arxiv.org/html/2408.12570v1,,0-shot TruthfulQA score from Table 2 (Academic Benchmarks) of the Jamba-1.5 technical report.
+ai21-jamba-1-5-mini,54.1,self-reported,https://arxiv.org/html/2408.12570v1,,0-shot TruthfulQA score from Table 2 (Academic Benchmarks) of the Jamba-1.5 technical report.
 airoboros-70b-l2,49.8,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot, 0-shot"
+apple-openelm-270m-3b,34.98,self-reported,https://huggingface.co/apple/OpenELM,2024-04-01,"OpenELM-3B (pretrained), from the HF card's 'LLM360'/'Open LLM Leaderboard' evaluation-harness table (a separate table from the zero-shot one, but same official card and same model)."
+chinchilla,43.6,self-reported,https://arxiv.org/abs/2203.15556,,Zero-shot TruthfulQA accuracy (Section 4.2.5). Paper also reports 58.5% 5-shot and 66.7% 10-shot for Chinchilla on the same benchmark.
+claude-2,69,self-reported,https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf,2023-07-11,"TruthfulQA 'With Free-Form Sampling' (Figure 4): Claude 2 scores 0.69, recorded here on this corpus's 0-100 percentage scale as 69. Non-standard methodology flagged explicitly: Anthropic samples an open-ended chatbot response and has a separate 'helpful-only' model match it to the closest multiple-choice option, rather than the more common direct MC2 scoring used by most other TruthfulQA rows in this corpus."
+command-r,52.32,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json,,"Open LLM Leaderboard v1, harness|truthfulqa:mc|0, MC2 score."
+dbrx,66.9,self-reported,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm,,"0-shot, DBRX Instruct"
+decilm-7b,40.33,self-reported,https://huggingface.co/Deci/DeciLM-7B,,"Open LLM Leaderboard (v1) TruthfulQA score for the DeciLM-7B base model, listed alongside the other 5 already-recorded scores in the same model-card table"
 falcon-2-11b,52.56,independent,https://huggingface.co/blog/falcon2-11b,2024-05-13,0-shot
+falcon-40b,41.65,independent,https://huggingface.co/blog/falcon2-11b,2024-05-24,"0-shot, same comparison table"
+falcon-h1-34b,65.27,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
 falcon-mamba-7b,53.42,independent,https://huggingface.co/blog/falconmamba,2024-08-12,
+galactica-120b,26,self-reported,https://ar5iv.labs.arxiv.org/html/2211.09085,2022-11-01,"MC1 accuracy (0-shot), Table 21 'TruthfulQA Results', GAL 120B row (std 0.02)."
+gopher,29.5,self-reported,https://arxiv.org/abs/2203.15556,2022-03-29,0-shot accuracy. The Chinchilla paper also reports Gopher at 43.7% 10-shot on the same benchmark; 0-shot chosen as the more standard comparison setting.
+granite-3-0-2b-instruct,53.37,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,pass@1
+granite-3-0-8b-instruct,60.32,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"TruthfulQA, 0-shot. Confirmed in HF model-index YAML and technical report Table 10."
+granite-3-1-8b-instruct,66.23,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HuggingFace Open LLM Leaderboard V1 (same table as the existing ARC-Challenge/HellaSwag/MMLU/WinoGrande/GSM8K rows already in the corpus for this model); confirmed in the model card's raw README HTML table.
+granite-3-2-8b-instruct,66.92,self-reported,https://huggingface.co/ibm-granite/granite-3.2-8b-instruct,,TruthfulQA column of the same evaluation table already used for the model's other 7 recorded scores.
+granite-3-3-8b-instruct,66.86,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,TruthfulQA column of the same evaluation table already used for the model's other 9 recorded scores.
+h2o-danube-1-8b,40.82,self-reported,https://arxiv.org/abs/2401.16818,,"0-shot TruthfulQA (MC) for h2o-danube-1.8b-chat, Open LLM Leaderboard-style eval, from the technical report Table 5."
+h2o-danube3-4b,47.79,independent,https://huggingface.co/h2oai/h2o-danube3-4b-chat,,"Open LLM Leaderboard v1, 0-shot mc2 — same leaderboard run as the existing MMLU/HellaSwag/ARC-c/Winogrande rows"
 hermes-3-405b,65.57,self-reported,https://arxiv.org/pdf/2408.11857,,"MC2, 0-shot"
 jais-13b,41.1,self-reported,https://huggingface.co/inceptionai/jais-13b,,
+jais-70b,44,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,English TruthfulQA score for jais-adapted-70b-chat.
+krutrim-2-12b,59,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,"TruthfulQA, 0-shot accuracy"
+llama-2-13b,41.86,self-reported,https://ar5iv.labs.arxiv.org/html/2307.09288,2023-07-18,Table 11 'Evaluation of pretrained LLMs on automatic safety benchmarks' (percent truthful+informative); a separate ToxiGen=26.10 is also reported there but has no taxonomy slug.
 llama-2-13b-chat,62.18,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
 llama-2-70b,50.18,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
 llama-2-70b-chat,64.14,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
 llama-2-7b,33.29,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
+llama-3-1-minitron-4b,42.89,self-reported,https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/,2024-08-14,"TruthfulQA MC2, 0-shot, for the base 'Llama-3.1-Minitron 4B (Width-pruned)' row in the blog's base-model accuracy table -- same row/column already used for the corpus's existing mmlu/hellaswag/gsm8k/mbpp/arc-challenge/winogrande scores, which I re-confirmed match exactly (60.53->60.5, 76.06->76.1, 41.24->41.2, 32.4->32.4, 55.55->55.6, 73.48->73.5)."
 llama-65b,48.71,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
 llama-7b,27.42,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Percent of generations rated both truthful and informative
+mistral-large,50.5,self-reported,https://mistral.ai/news/mistral-large/,2024-02-26,Same table ('TruthfulQA' column).
+mistral-nemo-12b,50.3,self-reported,https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407,,"TruthfulQA 0-shot, from the official HF model card's Main Benchmarks table."
+mpt-30b,38.4,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b,2023-12-04,"TruthfulQA MC2 (harness|truthfulqa:mc|0, mc2 = 0.3842), confirmed via direct curl+grep"
+mpt-7b-storywriter-65k,36.12,independent,"https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",,"Open LLM Leaderboard-style TruthfulQA (MC2, 0-shot) score for StoryWriter via LLM Explorer aggregator."
+naver-hyperclova-x,69.52,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, MC2 5-shot, Table 10 (harmlessness)."
+nous-hermes-2-mixtral-8x7b-dpo,54.83,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_NousResearch__Nous-Hermes-2-Mixtral-8x7B-DPO,2024-01-22,"MC2 score from the same Open LLM Leaderboard details dataset (harness|truthfulqa:mc|0, mc2 0.54826). Not present on the vendor's own HF card, which only lists GPT4All/AGIEval/BigBench."
+olmo-2-13b,64.3,self-reported,https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct,,TruthfulQA ('TruthQA'); OLMo-2-13B-1124-Instruct variant. Confirmed on the live HF model card and matches the OLMo 2 Technical Report Table 7 ('TQA') exactly.
+olmo-7b,36,self-reported,https://huggingface.co/allenai/OLMo-7B,,truthfulQA (MC2)
 openhermes-2-5-mistral-7b,53.04,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,,MC2
+openllama-7b,35,self-reported,https://github.com/openlm-research/open_llama,,"truthfulqa_mc/mc2 via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+pharia-1-llm-7b-control,54.7,self-reported,https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control,2024-08-26,"6-shot, prob_mass = 0.547 on the HF model card."
+phi-3-5-mini-3-8b,64,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,"MC2, 10-shot; HF model card."
+phi-4-mini-3-8b,66.4,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, TruthfulQA (10-shot, MC2)."
+phi-4-mini-instruct,66.4,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, TruthfulQA (10-shot, MC2)."
 poro-34b,41.66,self-reported,https://arxiv.org/abs/2404.01856,,
+qwen2-5-14b,58.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 0-shot."
+qwen2-5-32b,57.8,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 0-shot."
+qwen2-5-72b,60.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
+qwen2-5-7b,56.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
+qwen2-57b-a14b,57.7,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 0-shot"
+qwen2-72b,54.8,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 0-shot"
+qwen2-7b,54.2,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 0-shot"
+redpajama-incite-7b-base,20.5,self-reported,https://arxiv.org/abs/2411.12372,,"HELM TruthfulQA EM score, Table 8 of the RedPajama technical paper."
+redpajama-incite-7b-instruct,22.6,self-reported,https://arxiv.org/abs/2411.12372,,"HELM TruthfulQA EM score, Table 8."
+stable-beluga-1-freewilly-1-65b,55.8,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot (2023-09-04), TruthfulQA MC 0-shot: 55.8."
+stable-beluga-2-freewilly-2-70b,59.4,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot (2023-09-04), TruthfulQA MC 0-shot: 59.4."
+stable-lm-2-1-6b,45.21,independent,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,"Open LLM Leaderboard (mc2, 0-shot), instruct/Zephyr variant. Confirmed via HF model-card OpenLLM Leaderboard table and README.md raw fetch (row: stabilityai/stablelm-2-zephyr-1_6b, TruthfulQA 45.21%)."
+stable-lm-2-12b,62,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,"Open LLM Leaderboard (0-shot), chat variant. Confirmed via direct fetch of the official HF model card's OpenLLM Leaderboard comparison table (stabilityai/stablelm-2-12b-chat row: TruthfulQA 62.00)."
+stablelm-3b-4e1t,37.2,independent,https://huggingface.co/stabilityai/stablelm-3b-4e1t,,"Open LLM Leaderboard (mc2, 0-shot). Confirmed via direct fetch of the model-index metadata embedded in the HF README.md (TruthfulQA value: 37.2)."
+stablelm-zephyr-3b,46.49,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,"TruthfulQA (0-shot, mc2), Open LLM Leaderboard, from the model-index metadata embedded in the HF README.md."
+t-lu-3-70b,67.6,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B,,"TruthfulQA (6-shot) for the final Tülu 3 70B model, same table."
 teuken-7b-instruct,0.503,self-reported,https://huggingface.co/openGPT-X/Teuken-7B-instruct-commercial-v0.4,,"EU21-TruthfulQA, averaged across 21 EU languages"
+upstage-solar-10-7b,45.04,self-reported,https://arxiv.org/abs/2312.15166,,"Table 2 of the SOLAR 10.7B paper (base model row), 0-shot TruthfulQA."
+xgen-7b-8k,39.1,self-reported,https://ar5iv.labs.arxiv.org/html/2309.03450,2023-07-03,"Zero-shot, Table 6 of the XGen-7B technical report (same table as the corpus's existing MMLU/HellaSwag/ARC-Challenge/Winogrande rows)"
 zephyr-7b-beta,57.45,self-reported,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta,,0-shot

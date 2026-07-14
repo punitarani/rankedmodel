@@ -85,6 +85,65 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct",
       "notes": "LiveCodeBench v6"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 71.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "notes": "GPQA Diamond, Seed-OSS-36B-Instruct's own column in the model card's comparison table"
+    },
+    {
+      "benchmarkSlug": "super-gpqa",
+      "score": 55.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 9.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct"
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 1.45,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "notes": "ArcAGI V2"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 10.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "notes": "Humanity's Last Exam"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 85.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct"
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 70.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "notes": "TAU1-Retail domain"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 56,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "notes": "SWE-Bench Verified, OpenHands scaffold"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 78.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct"
     }
   ],
   "verificationNotes": "Fully confirmed: fetched the HF model card ByteDance-Seed/Seed-OSS-36B-Instruct directly. Confirms 36B params, native 512K context, Apache-2.0 license, and release date Aug 20, 2025. All six benchmark numbers (MMLU 87.4, MMLU-Pro 82.7, GSM8K 90.8, MATH 81.7, AIME24 91.7, LiveCodeBench v6 67.4) appear verbatim on the model card. No changes made."

@@ -32,7 +32,7 @@
   "links": {
     "docs": "https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5"
   },
-  "note": "Model id claude-sonnet-5. Drop-in upgrade for Sonnet 4.6: adaptive thinking on by default, manual extended-thinking removed (400 error), new tokenizer (~30% more tokens for same text vs Sonnet 4.6), non-default sampling params rejected. Introductory pricing $2/$10 per MTok through 2026-08-31, standard pricing $3/$15 thereafter (used here). On Terminal-Bench 2.1 and GDPval-AA v2 it narrowly beats Opus 4.8 despite Sonnet-tier pricing. NO SEPARATE '(High)' PRODUCT: Anthropic's docs state explicitly that setting effort to 'high' 'produces exactly the same behavior as omitting the effort parameter entirely,' and high is the documented default — there is no distinct marketed 'Sonnet 5 (High)' SKU to add as a sibling entry.",
+  "note": "Model id claude-sonnet-5. Drop-in upgrade for Sonnet 4.6: adaptive thinking on by default, manual extended-thinking removed (400 error), new tokenizer (~30% more tokens for same text vs Sonnet 4.6), non-default sampling params rejected. Introductory pricing $2/$10 per MTok through 2026-08-31, standard pricing $3/$15 thereafter (used here). On Terminal-Bench 2.1 and GDPval-AA v2 it narrowly beats Opus 4.8 despite Sonnet-tier pricing. NO SEPARATE '(High)' PRODUCT: Anthropic's docs state explicitly that setting effort to 'high' 'produces exactly the same behavior as omitting the effort parameter entirely,' and high is the documented default \u2014 there is no distinct marketed 'Sonnet 5 (High)' SKU to add as a sibling entry.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
@@ -94,6 +94,22 @@
       "source": "self-reported",
       "sourceUrl": "https://www.vellum.ai/blog/claude-sonnet-5-benchmarks-explained",
       "notes": "Humanity's Last Exam, with-tools configuration."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 77,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-system-card",
+      "evaluatedAt": "2026-06-30",
+      "notes": "CharXiv Reasoning, no-tools configuration (System Card Section 8.10.5). With a Python image-cropping tool, Sonnet 5 scored 88.3%."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 84.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-system-card",
+      "evaluatedAt": "2026-06-30",
+      "notes": "BrowseComp, single-agent configuration, adaptive thinking at max effort, 10M-token context-compaction limit (Section 8.9.2). With a multi-agent orchestrator setup, Sonnet 5 scored 86.6%."
     }
   ],
   "verificationNotes": "Model id, pricing, context window, and behavior changes confirmed directly from Anthropic's own Claude Platform docs (fetched in full). Benchmark numbers below come from a mix of a system-card-citing blog and an independent aggregator; flagged per-item."

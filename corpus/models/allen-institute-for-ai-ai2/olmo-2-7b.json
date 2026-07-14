@@ -83,6 +83,20 @@
       "score": 31,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 77.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B",
+      "notes": "WinoG column in the OLMo-2-1124-7B comparison table"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B",
+      "notes": "TriviaQA column in the OLMo-2-1124-7B comparison table"
     }
   ],
   "verificationNotes": "Release date (Nov 26 2024, same Ai2 blog as the 13B) confirmed. All six benchmark rows literally confirmed on the live HF base-model card. paramsB=7.3 confirmed precisely: safetensors index total 29,194,469,376 bytes / 4 bytes (fp32) = ~7.30B, exact match. Corrected release-date reasoning source: HF repo commit metadata suggested a Dec/Jan date tied to the later arXiv paper (2501.00656), but the model was publicly announced with the rest of the OLMo 2 family on the Nov 26 2024 Ai2 blog post, so the original date is kept. No other changes needed."

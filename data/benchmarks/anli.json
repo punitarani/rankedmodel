@@ -5,6 +5,6 @@
   "unit": "%",
   "description": "Adversarial natural-language-inference benchmark.",
   "normMin": 30,
-  "normMax": 50,
+  "normMax": 62,
   "higherIsBetter": true
 }

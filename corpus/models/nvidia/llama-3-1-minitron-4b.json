@@ -95,7 +95,15 @@
       "sourceUrl": "https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/",
       "evaluatedAt": "2024-08-14",
       "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 42.89,
+      "source": "self-reported",
+      "sourceUrl": "https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/",
+      "evaluatedAt": "2024-08-14",
+      "notes": "TruthfulQA MC2, 0-shot, for the base 'Llama-3.1-Minitron 4B (Width-pruned)' row in the blog's base-model accuracy table -- same row/column already used for the corpus's existing mmlu/hellaswag/gsm8k/mbpp/arc-challenge/winogrande scores, which I re-confirmed match exactly (60.53->60.5, 76.06->76.1, 41.24->41.2, 32.4->32.4, 55.55->55.6, 73.48->73.5)."
     }
   ],
-  "verificationNotes": "Confirmed via NVIDIA dev blog (fetched, published 2024-08-14): all six benchmark scores match exactly (60.5/76.1/41.2/32.4/55.6/73.5). Params confirmed at 4.5B total (3.7B non-embedding) and context length confirmed at 8192 (8K) via the Minitron arXiv paper (2408.11796v3), which explicitly states these figures for the width-pruned Llama-3.1-Minitron-4B — corrected specSources to point to arXiv paper for paramsB/ctxK since the HF card itself just shows a rounded '5B' safetensors-size label. Corrected arc-challenge notes to 25-shot (paper states 25-shot for ARC-C, not 0-shot as previously labeled) and winogrande to 5-shot per the same source."
+  "verificationNotes": "Confirmed via NVIDIA dev blog (fetched, published 2024-08-14): all six benchmark scores match exactly (60.5/76.1/41.2/32.4/55.6/73.5). Params confirmed at 4.5B total (3.7B non-embedding) and context length confirmed at 8192 (8K) via the Minitron arXiv paper (2408.11796v3), which explicitly states these figures for the width-pruned Llama-3.1-Minitron-4B \u2014 corrected specSources to point to arXiv paper for paramsB/ctxK since the HF card itself just shows a rounded '5B' safetensors-size label. Corrected arc-challenge notes to 25-shot (paper states 25-shot for ARC-C, not 0-shot as previously labeled) and winogrande to 5-shot per the same source."
 }

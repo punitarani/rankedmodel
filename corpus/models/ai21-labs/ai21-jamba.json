@@ -96,6 +96,20 @@
       "score": 46.4,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/ai21labs/Jamba-v0.1"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 73.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.19887v1",
+      "notes": "ARC-Easy (ARC-E, 0-shot) score from Table 2 of the original Jamba technical report -- not present on the HF model card, which only lists ARC-Challenge."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 29.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.19887v1",
+      "notes": "HumanEval pass@1 score from Table 2 of the original Jamba technical report -- not present on the HF model card, which omits code-generation results."
     }
   ],
   "verificationNotes": "Confirmed via ai21.com/blog/announcing-jamba/ (published 2024-03-28: Apache-2.0 open weights, 256K context window, 140K tokens on a single 80GB GPU) and HF model card ai21labs/Jamba-v0.1 (12B active/52B total MoE, hybrid Mamba-Transformer-MoE). All 8 benchmark rows (MMLU 67.4, HellaSwag 87.1, ARC-Challenge 64.4, GSM8K/CoT 59.9, WinoGrande 82.5, BBH 45.4, PIQA 83.2, TruthfulQA 46.4) were fetched directly from the HF model card's academic benchmarks table and match exactly. All fields left unchanged."

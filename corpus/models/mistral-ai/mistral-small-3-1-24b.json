@@ -9,7 +9,7 @@
   "paramsB": 24,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense transformer — 24B + Pixtral-style vision encoder, Tekken tokenizer",
+  "archDisplay": "Dense transformer \u2014 24B + Pixtral-style vision encoder, Tekken tokenizer",
   "ctxK": 128,
   "modalities": [
     "text",
@@ -75,14 +75,64 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 44.42,
+      "score": 45.96,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
-      "notes": "GPQA Main, 5-shot CoT"
+      "notes": "GPQA Main, 5-shot CoT [Corrected during full-corpus audit: The taxonomy's 'gpqa' slug is explicitly defined as GPQA Diamond, but the existing corpus entry (44.42, notes 'GPQA Main, 5-shot CoT') recorded the GPQA Main sub-benchmark instead. The same official HF model card also reports GPQA Diamond (5-shot CoT) = 45.96 for this exact model, which is the value that actually matches the taxonomy definition. 44.42 remains a real, correctly-cited GPQA Main scor]"
     },
     {
       "benchmarkSlug": "mmmu",
       "score": 64,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 66.76,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+      "notes": "MMLU Pro 5-shot CoT, instruct model, from the official HF model card."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 74.71,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 10.43,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+      "notes": "SimpleQA TotalAcc, instruct model."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 49.25,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 68.91,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 86.24,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 94.08,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 93.72,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
     }

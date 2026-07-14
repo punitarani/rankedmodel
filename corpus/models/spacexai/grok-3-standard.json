@@ -62,6 +62,38 @@
       "sourceUrl": "https://medium.com/@bernardloki/grok-3-review-a-critical-look-at-xais-smartest-ai-claim-aea15ca38b66",
       "evaluatedAt": "2025-02-17",
       "notes": "non-reasoning mode"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 57,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok-3",
+      "evaluatedAt": "2025-02-17",
+      "notes": "Official non-reasoning 'Grok 3 Beta' row in xAI's launch-blog benchmark table (LCB column)."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 79.9,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok-3",
+      "evaluatedAt": "2025-02-17",
+      "notes": "Official non-reasoning 'Grok 3 Beta' row in xAI's launch-blog benchmark table."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 43.6,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok-3",
+      "evaluatedAt": "2025-02-17",
+      "notes": "Official non-reasoning 'Grok 3 Beta' row in xAI's launch-blog benchmark table."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 73.2,
+      "source": "self-reported",
+      "sourceUrl": "https://x.ai/news/grok-3",
+      "evaluatedAt": "2025-02-17",
+      "notes": "Official non-reasoning 'Grok 3 Beta' row in xAI's launch-blog benchmark table ('Grok 3 also excels in image understanding (MMMU)...'). Note: corpus currently marks this model modalities:['text']/capabilities.vision:false, which conflicts with xAI's own claim of an MMMU score for this exact (non-reasoning) configuration -- worth a separate look at the capabilities flags, though that's outside this results-only report."
     }
   ],
   "verificationNotes": "Confirmed real: Grok 3 launched Feb 17, 2025 via livestream (TechCrunch, multiple outlets). Both result rows literally confirmed by fetching the medium.com source directly ('52.2%... AIME'24' and '75.4% on GPQA'). Oracle docs confirm 131,072 ctx, text-only, and deprecated May 15, 2026 status. Pricing $3/$15 per 1M tokens corroborated independently."

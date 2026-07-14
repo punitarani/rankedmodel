@@ -91,6 +91,54 @@
       "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision",
       "evaluatedAt": "2024-09-01",
       "notes": "Instruct, val/test"
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 23.7,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, 'MMMU-Pro, Vision (test)' 0-shot acc (vision-only-input split, matching taxonomy description)"
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 91.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, AI2 Diagram (test) 0-shot acc"
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 75.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, VQAv2 (test) 0-shot acc"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 32.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, text-only capability of the vision model, 0-shot acc"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 51.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, text-only capability of the vision model, CoT final_em"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 68.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, text-only capability of the vision model, Multilingual MGSM CoT 0-shot em"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card fetch: card states '11B (10.6)' params, release 2024-09-25 (matches ai.meta.com blog), license Llama 3.2 Community License Agreement. All 5 benchmark rows (MMMU 50.7, MMLU 73.0, MathVista 51.5, ChartQA 83.4, DocVQA 88.4) literally confirmed on the cited HF page."

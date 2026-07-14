@@ -48,6 +48,42 @@
     "releaseDate": "https://www.databricks.com/blog/mpt-7b",
     "openness": "https://huggingface.co/mosaicml/mpt-7b-storywriter"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 45.65,
+      "source": "independent",
+      "sourceUrl": "https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",
+      "notes": "Open LLM Leaderboard-style ARC-Challenge 25-shot score for the StoryWriter fine-tune specifically, relayed via the LLM Explorer aggregator. No official model card/paper score exists for this fiction fine-tune; verified this figure differs from base MPT-7B's ARC score (59.6) on the same aggregator, so it is not a copy-paste artifact."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 74.14,
+      "source": "independent",
+      "sourceUrl": "https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",
+      "notes": "Open LLM Leaderboard-style HellaSwag (10-shot convention) score for the StoryWriter checkpoint, via LLM Explorer aggregator; distinct from base MPT-7B's 75 on the same site."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 28.8,
+      "source": "independent",
+      "sourceUrl": "https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",
+      "notes": "Open LLM Leaderboard-style MMLU (5-shot) score for StoryWriter via LLM Explorer aggregator; base MPT-7B scores 27.5 on the same site, matching the independently-confirmed 360Zhinao-paper value, which increases confidence in this aggregator's reliability."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 36.12,
+      "source": "independent",
+      "sourceUrl": "https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",
+      "notes": "Open LLM Leaderboard-style TruthfulQA (MC2, 0-shot) score for StoryWriter via LLM Explorer aggregator."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 51.14,
+      "source": "independent",
+      "sourceUrl": "https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",
+      "notes": "Open LLM Leaderboard-style Winogrande (5-shot) score for StoryWriter via LLM Explorer aggregator; notably near-random, plausibly reflecting the model's fiction-only fine-tuning."
+    }
+  ],
   "verificationNotes": "Confirmed via Databricks MPT-7B blog (published 2023-05-05, confirms 65k-token fiction fine-tune and demonstrated generations to 84k tokens matching the note) and HF model card mosaicml/mpt-7b-storywriter (Apache-2.0 license, 65k training context, requires trust_remote_code). No result rows were present to verify. All fields left unchanged."
 }

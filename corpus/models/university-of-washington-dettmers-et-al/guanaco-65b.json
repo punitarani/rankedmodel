@@ -56,6 +56,30 @@
       "sourceUrl": "https://huggingface.co/timdettmers/guanaco-65b",
       "evaluatedAt": "2023-05-23",
       "notes": "Vicuna benchmark Elo rating (human-judged); GPT-4-judged Elo was 1022. Paper separately reports reaching 99.3% of ChatGPT's performance level on this benchmark."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 62.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/timdettmers/guanaco-65b",
+      "evaluatedAt": "2023-05-23",
+      "notes": "5-shot MMLU test accuracy listed on the official model card (LLaMA-65B baseline scored 63.4% on the same table); also matches Table 5 of the QLoRA paper (arxiv 2305.14314)."
+    },
+    {
+      "benchmarkSlug": "openassistant-bench",
+      "score": 1008,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/timdettmers/guanaco-65b",
+      "evaluatedAt": "2023-05-23",
+      "notes": "GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 3 - confirmed on the HF model card and in the QLoRA paper's Table 7; this benchmark had no entry at all yet for the 65B model."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 6.41,
+      "source": "independent",
+      "sourceUrl": "https://www.lmsys.org/blog/2023-06-22-leaderboard/",
+      "evaluatedAt": "2023-06-22",
+      "notes": "GPT-4-judged MT-Bench score for Guanaco-65B from the LMSYS Chatbot Arena Leaderboard Week 8 update ('Introducing MT-Bench and Vicuna-33B')."
     }
   ],
   "verificationNotes": "Confirmed real model via HF model card (fetched): 65B params, Apache-2.0 adapter license, Vicuna Elo human=1023/GPT-4=1022 literally match the page. releaseDate 2023-05-23 confirmed via arXiv (2305.14314). The paper's full text confirms 99.3% and '24 hours on a single [48GB] professional GPU' specifically describe the 65B (largest/best) model, so this note is correct as-is (no change needed, unlike the 33B record)."

@@ -88,6 +88,70 @@
       "source": "self-reported",
       "sourceUrl": "https://www.lesswrong.com/posts/HtdrtF5kcpLtWe5dW/claude-opus-4-5-is-the-best-model-available",
       "notes": "AIME 2025 without code tools; Anthropic flagged that decontamination efforts for AIME were not fully successful"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 59.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
+      "evaluatedAt": "2025-11-24",
+      "notes": "Terminal-Bench 2.0, per the side-by-side Opus 4.6-vs-4.5 comparison table (confirmed by direct fetch). A separate, unversioned 'Terminal-Bench' figure of 59.3% also circulates in some vendor-relayed writeups (e.g. huggingface.co/blog/Laser585/claude-4-benchmarks) for the same model; kept the versioned 2.0 figure since it is directly comparable to the terminal-bench-2 entries already recorded for Opus 4.6/4.7/4.8."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 37.6,
+      "source": "independent",
+      "sourceUrl": "https://arcprize.org/blog/arc-prize-2025-results-analysis",
+      "evaluatedAt": "2025-11-24",
+      "notes": "ARC Prize's own verified run: 'the top verified commercial model, Opus 4.5 (Thinking, 64k), scores 37.6% for $2.20/task' \u2014 confirmed via direct fetch."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 66.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
+      "evaluatedAt": "2025-11-24",
+      "notes": "Anthropic's system card reports this as OSWorld-Verified (P@1, avg@5, 66.26%); some vendor-relayed tables abbreviate the label to plain 'OSWorld', but the score (66.3%) is far above the original OSWorld benchmark's typical range, confirming it is the Verified variant."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 67.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
+      "evaluatedAt": "2025-11-24",
+      "notes": "Standard single-agent BrowseComp figure from Anthropic's system card, distinct from the higher 'BrowseComp-Plus' fetch-enabled figure (85.3%) Anthropic also reports separately."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 98.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
+      "evaluatedAt": "2025-11-24",
+      "notes": "Cross-confirmed at 0.982 on the independent llm-stats.com Tau2-Telecom leaderboard (https://llm-stats.com/benchmarks/tau2-telecom)."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1416,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
+      "evaluatedAt": "2025-11-24",
+      "notes": "GDPval-AA Elo, confirmed via direct fetch of the Opus 4.6-vs-4.5 comparison table."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 89.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/Laser585/claude-4-benchmarks",
+      "evaluatedAt": "2025-11-24",
+      "notes": "10.6-point improvement over Sonnet 4.5 per Anthropic's own launch post; absolute figure (89.4%) confirmed via direct fetch of this third-party writeup relaying the official number."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 70.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
+      "evaluatedAt": "2025-11-24",
+      "notes": "No-tools configuration; with-tools scored 73.9% per the same source."
     }
   ],
   "verificationNotes": "Confirmed real, released model via anthropic.com/news/claude-opus-4-5: release date 2025-11-24, pricing $5/$25 per million input/output tokens (67% cut vs Opus 4.1), 200K context, SWE-bench Verified 80.9% all literally appear on the official page. Cross-checked all vellum.ai-sourced rows by re-fetching that page directly: GPQA Diamond 87.0%, MMLU 90.8%, MMMU 80.7%, HLE (with search) ~43.2% all literally present. Confirmed AIME 93% (without code tools) and the AIME decontamination caveat by fetching the LessWrong post directly ('93% without code and 100% with Python'; Anthropic disclosed 'rephrased versions of at least some AIME questions... persisted in the training corpus'). Confirmed Artificial Analysis Intelligence Index score of 70 and #2 rank (behind Gemini 3 Pro at 73, tied GPT-5.1) by fetching artificialanalysis.ai directly. No changes to values were needed; architecture/params remain correctly marked null/undisclosed since Anthropic does not publish these."

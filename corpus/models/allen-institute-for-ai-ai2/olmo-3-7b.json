@@ -93,6 +93,54 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
       "notes": "LiveCodeBench v3"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 60.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
+      "notes": "MBPP+"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 32.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 40.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
+      "notes": "AlpacaEval 2 LC"
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 49.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
+      "notes": "OLMo 3 technical report (arXiv 2512.13961) confirms this is BFCLv3 (Patil et al. 2025), run via the official Gorilla repository"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 40.4,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/allenai-olmo-3-7b-instruct/",
+      "notes": "GPQA Diamond, measured by Artificial Analysis (Intelligence Index v4), republished on the fetched page. Ai2's own self-reported GPQA on the HF card/paper is 40.4, but per the OLMo 3 technical report this uses the gpqa_main split (via olmes), not Diamond, so the independent Diamond figure is used for this Diamond-scoped slug (consistent with how OLMo 3-Think 32B is handled in this corpus)"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 5.8,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/allenai-olmo-3-7b-instruct/",
+      "notes": "Humanity's Last Exam, no tools; Artificial Analysis measurement, republished on the fetched page; not reported by Ai2 on the Instruct 7B card"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 52.2,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/allenai-olmo-3-7b-instruct/",
+      "notes": "Artificial Analysis measurement, republished on the fetched page; Ai2 only reports MMLU-Pro for OLMo 3 base models (OlmoBaseEval), not the Instruct 7B post-trained model"
     }
   ],
   "verificationNotes": "Existence confirmed: official Ai2 blog (allenai.org/blog/olmo3) and multiple press (MarkTechPost, GeekWire, InfoQ) confirm Nov 20, 2025 release. paramsB re-derived from allenai/Olmo-3-1025-7B model.safetensors.index.json: 7,298,011,136 params = 7.30B (exact match). config.json confirms max_position_embeddings=65536 (~64K, matches ctxK) and hybrid sliding-window/full-attention architecture (32 layers). License Apache 2.0 and function-calling system-message confirmed on the allenai/Olmo-3-7B-Instruct model card. All 7 benchmark rows (MATH 87.3, AIME2024 44.3, BBH 71.2, HumanEvalPlus 77.2, IFEval 85.6, MMLU 69.1, LiveCodeBench v3 29.5) were literally confirmed present on the cited HF model card."

@@ -95,7 +95,7 @@
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
       "evaluatedAt": "2025-08-07",
-      "notes": "τ²-bench telecom, high reasoning effort"
+      "notes": "\u03c4\u00b2-bench telecom, high reasoning effort"
     },
     {
       "benchmarkSlug": "aider-polyglot",
@@ -104,7 +104,23 @@
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
       "evaluatedAt": "2025-08-07",
       "notes": "Aider polyglot (diff), high reasoning effort"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 55,
+      "source": "self-reported",
+      "sourceUrl": "https://cdn.openai.com/gpt-5-system-card.pdf",
+      "evaluatedAt": "2025-08-13",
+      "notes": "SimpleQA (no web) accuracy for gpt-5-thinking = 55% (hallucination rate 40%), directly read from Table 8 of the official GPT-5 System Card PDF. gpt-5-thinking is the same reasoning-mode configuration already used for this model's existing hle=24.8 row (which the system card's own Figure 2 independently reconfirms as 24.8% for gpt-5-thinking), so the mapping to this corpus entry is consistent."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 78.4,
+      "source": "self-reported",
+      "sourceUrl": "https://runbear.io/posts/gpt-5-benchmarks",
+      "evaluatedAt": "2025-08-07",
+      "notes": "MMMU-Pro, GPT-5 with thinking/high reasoning effort = 78.4%, relayed from OpenAI's own launch-blog figures via Runbear, whose 'GPT-5 (thinking)' column was cross-checked and found to match this corpus's existing SWE-bench (74.9), AIME (94.6 implied via other quotes), HLE (24.8) and tau2-bench-telecom (96.7) rows exactly -- strong evidence Runbear is quoting OpenAI's self-reported figures verbatim rather than running its own eval."
     }
   ],
-  "verificationNotes": "Existence, release date (Aug 7 2025, confirmed via TechCrunch) and pricing/context ($1.25/$10 per 1M, 400K context) confirmed by live-fetching developers.openai.com/api/docs/models/gpt-5. The primary blog (openai.com/index/introducing-gpt-5-for-developers/) itself returned HTTP 403 to direct fetch, so each of the 7 result rows was independently cross-checked via secondary sources (Vellum, digitalapplied.com, Runbear, and search-engine excerpts) that quote the OpenAI figures verbatim: SWE-bench 74.9, AIME 2025 94.6, GPQA(no tools) 85.7 (distinct from GPT-5 Pro's 88.4/89.4-with-tools figures, so no conflict), HLE 24.8 ('jumping from 6.3% to 24.8%' with thinking), MMMU 84.2, τ2-bench telecom 96.7, Aider polyglot 88 — all confirmed exactly, no changes."
+  "verificationNotes": "Existence, release date (Aug 7 2025, confirmed via TechCrunch) and pricing/context ($1.25/$10 per 1M, 400K context) confirmed by live-fetching developers.openai.com/api/docs/models/gpt-5. The primary blog (openai.com/index/introducing-gpt-5-for-developers/) itself returned HTTP 403 to direct fetch, so each of the 7 result rows was independently cross-checked via secondary sources (Vellum, digitalapplied.com, Runbear, and search-engine excerpts) that quote the OpenAI figures verbatim: SWE-bench 74.9, AIME 2025 94.6, GPQA(no tools) 85.7 (distinct from GPT-5 Pro's 88.4/89.4-with-tools figures, so no conflict), HLE 24.8 ('jumping from 6.3% to 24.8%' with thinking), MMMU 84.2, \u03c42-bench telecom 96.7, Aider polyglot 88 \u2014 all confirmed exactly, no changes."
 }

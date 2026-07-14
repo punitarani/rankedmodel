@@ -71,7 +71,39 @@
       "score": 64.9,
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.03450"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 39.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.03450",
+      "evaluatedAt": "2023-07-03",
+      "notes": "Zero-shot, Table 6 of the XGen-7B technical report (same table as the corpus's existing MMLU/HellaSwag/ARC-Challenge/Winogrande rows)"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 75.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.03450",
+      "evaluatedAt": "2023-07-03",
+      "notes": "Zero-shot, Table 6"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 40.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.03450",
+      "evaluatedAt": "2023-07-03",
+      "notes": "Zero-shot, Table 6"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 14.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2309.03450",
+      "evaluatedAt": "2023-07-03",
+      "notes": "pass@1, Table 7 of the XGen-7B technical report"
     }
   ],
-  "verificationNotes": "Confirmed real: arxiv 2309.03450 and HF repo Salesforce/xgen-7b-8k-base exist; Salesforce blog, Forbes, MarkTechPost all confirm late-June/July 2023 announcement (release date 2023-07-03 retained). Fetched ar5iv paper directly and confirmed Table 6 literally shows MMLU 32.1, HellaSwag 74.2, ARC-Challenge 41.2, Winogrande 64.9 — all 4 result rows confirmed verbatim. License Apache-2.0 confirmed."
+  "verificationNotes": "Confirmed real: arxiv 2309.03450 and HF repo Salesforce/xgen-7b-8k-base exist; Salesforce blog, Forbes, MarkTechPost all confirm late-June/July 2023 announcement (release date 2023-07-03 retained). Fetched ar5iv paper directly and confirmed Table 6 literally shows MMLU 32.1, HellaSwag 74.2, ARC-Challenge 41.2, Winogrande 64.9 \u2014 all 4 result rows confirmed verbatim. License Apache-2.0 confirmed."
 }

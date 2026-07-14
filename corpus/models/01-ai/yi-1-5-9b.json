@@ -53,7 +53,47 @@
       "source": "independent",
       "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B-Chat",
       "notes": "Yi-1.5-9B-Chat variant, via TIGER-Lab MMLU-Pro leaderboard evaluation"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 51.36,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-9B-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "Yi-1.5-9B base model, Open LLM Leaderboard v2, acc_norm (leaderboard_bbh aggregate)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 61.52,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-9B-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "Yi-1.5-9B base model, Open LLM Leaderboard v2, acc_norm."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 37.92,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-9B-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "Yi-1.5-9B base model, Open LLM Leaderboard v2, acc_norm."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 10.2,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-9B-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "MATH Hard subset, exact match. Yi-1.5-9B base model, Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 29.36,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-9B-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "Yi-1.5-9B base model, Open LLM Leaderboard v2. IFEval 'Inst-and-Prompt Level Strict Acc' (average of prompt-level strict 23.11% and inst-level strict 35.61%)."
     }
   ],
-  "verificationNotes": "Existence and release date (2024-05-13) confirmed on GitHub README ('Yi-1.5 series models are open-sourced'). Apache 2.0 license, 9B params, base-variant 4K context (vs the separate -16K/-32K suffixed checkpoints), and 3.6T-token continual pretraining confirmed on HF model card. The single result row is explicitly for the -Chat variant per its own notes field; fetched the cited HF page (01-ai/Yi-1.5-9B-Chat) and confirmed the MMLU-Pro 45.95 score literally appears there — no changes."
+  "verificationNotes": "Existence and release date (2024-05-13) confirmed on GitHub README ('Yi-1.5 series models are open-sourced'). Apache 2.0 license, 9B params, base-variant 4K context (vs the separate -16K/-32K suffixed checkpoints), and 3.6T-token continual pretraining confirmed on HF model card. The single result row is explicitly for the -Chat variant per its own notes field; fetched the cited HF page (01-ai/Yi-1.5-9B-Chat) and confirmed the MMLU-Pro 45.95 score literally appears there \u2014 no changes."
 }

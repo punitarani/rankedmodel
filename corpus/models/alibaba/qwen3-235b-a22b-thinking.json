@@ -84,6 +84,69 @@
       "score": 68.18,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 92.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MMLU-Redux, Thinking mode, Qwen3 Technical Report Table 11"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 89.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "C-Eval, Thinking mode, Table 11. Slightly above the taxonomy's stated 20-88 range but confirmed exact in the primary source."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 83.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "IFEval strict-prompt, Thinking mode, Table 11"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 95.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "Arena-Hard (first-gen, distinct from Arena-Hard v2), Thinking mode, Table 11"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 98,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MATH-500, Thinking mode, Table 11"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 2056,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "CodeForces rating (Elo), Thinking mode, Table 11; corresponding percentile given as 98.2%. Elo rating, not a 0-100 score."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 84.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2505.09388",
+      "evaluatedAt": "2025-05-15",
+      "notes": "MMMLU across 14 languages, Thinking mode, Table 11"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 21.41,
+      "source": "independent",
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "notes": "Third-party Scale AI SWE-Bench Pro public leaderboard result, surfaced via the HF model card's community 'Eval Results' widget (unverified badge, PR-submitted by a HF community member, not by Qwen). This is an independent/aggregator result, not a Qwen self-report."
     }
   ],
   "verificationNotes": "Confirmed via HF model card (235B total/22B active, 128 experts/8 active per token, Apache 2.0, native 32,768 tokens extendable to 131,072/128K via YaRN) and qwenlm.github.io/blog/qwen3 (release date 2025-04-29). Read Table 11 of arxiv.org/pdf/2505.09388 directly: AIME'24=85.7, LiveCodeBench v5=70.7, GPQA-Diamond=71.1, BFCL v3=70.8 all match exactly; HF page confirmed MMLU-Pro=68.18 verbatim. No changes."

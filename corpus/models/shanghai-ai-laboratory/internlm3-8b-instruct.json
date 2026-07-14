@@ -99,6 +99,41 @@
       "score": 79.3,
       "source": "self-reported",
       "sourceUrl": "https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 83.1,
+      "source": "self-reported",
+      "sourceUrl": "https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html",
+      "notes": "0-shot, from official model card table (also on HF raw README)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 83.1,
+      "source": "self-reported",
+      "sourceUrl": "https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html",
+      "notes": "0-shot DROP F1, from official model card table."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 91.2,
+      "source": "self-reported",
+      "sourceUrl": "https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html",
+      "notes": "10-shot, from official model card table."
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 51.1,
+      "source": "self-reported",
+      "sourceUrl": "https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html",
+      "notes": "AlpacaEval 2.0, length-controlled win rate, from official model card table."
+    },
+    {
+      "benchmarkSlug": "wildbench",
+      "score": 33.1,
+      "source": "self-reported",
+      "sourceUrl": "https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html",
+      "notes": "WildBench raw score, from official model card table."
     }
   ],
   "verificationNotes": "Confirmed real. Official announcement via Intern Large Models X post (2025-01-15) and OpenMMLab Medium post confirm release date, Apache-2.0 license, and the '4T tokens / 75% training-cost savings' claim verbatim. All eight benchmark rows re-confirmed verbatim on the readthedocs model card and HF page (HumanEval 82.3 on HF page). Minor note: HF safetensors metadata labels the checkpoint '9B params' though it is named/branded 8B (common rounding quirk, e.g. embeddings); kept paramsB=8 per model name/family convention."

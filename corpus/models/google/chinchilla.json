@@ -71,6 +71,48 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2203.15556",
       "notes": "Zero-shot LAMBADA accuracy"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 80.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "notes": "Zero-shot HellaSwag accuracy, Table 8 (Common Sense benchmarks) of the Chinchilla paper."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 81.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "notes": "Zero-shot PIQA accuracy, Table 8 of the Chinchilla paper."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 74.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "notes": "Zero-shot WinoGrande accuracy, Table 8 of the Chinchilla paper."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 51.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "notes": "Zero-shot SIQA (Social IQA) accuracy, Table 8 of the Chinchilla paper."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 82.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "notes": "Few-shot RACE-h accuracy, Table 7 of the Chinchilla paper. Paper notes GPT-3/MT-NLG use a different prompt format on RACE-h so cross-model comparisons on this specific table have caveats, but Chinchilla's own reported number is a genuine RACE-h result."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 43.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2203.15556",
+      "notes": "Zero-shot TruthfulQA accuracy (Section 4.2.5). Paper also reports 58.5% 5-shot and 66.7% 10-shot for Chinchilla on the same benchmark."
     }
   ],
   "verificationNotes": "Confirmed real via arxiv.org/abs/2203.15556 (Training Compute-Optimal Large Language Models) -- confirmed Chinchilla is a 70B model trained on 1.4T tokens using the same compute budget as Gopher, matching paramsB and note. Abstract states MMLU='67.5%' (rounded) but the full paper's detailed comparison table (fetched via ar5iv full text) literally lists 67.6, 65.1 (BIG-bench), 73.2 (TriviaQA), 77.4 (LAMBADA) -- all four rows confirmed as literal table values, kept unchanged. releaseDate 2022-03-29 corresponds to the arxiv submission date and is standard for this paper; closed/proprietary status confirmed (DeepMind research model, no public weights)."

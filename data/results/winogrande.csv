@@ -5,42 +5,110 @@ apple-openelm-270m-3b,65.51,self-reported,https://huggingface.co/apple/OpenELM,2
 bloomz-176b,59.27,self-reported,https://huggingface.co/bigscience/bloomz,,"Winogrande XL, validation, zero-shot accuracy"
 btlm-3b-8k,65.8,self-reported,https://arxiv.org/abs/2309.11568,,0-shot
 cerebras-gpt-13b,64.6,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,0-shot
+chinchilla,74.9,self-reported,https://arxiv.org/abs/2203.15556,,"Zero-shot WinoGrande accuracy, Table 8 of the Chinchilla paper."
 claude-3-haiku,74.2,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,5-shot
 claude-3-opus,88.5,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,5-shot
 claude-3-sonnet,75.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,5-shot
+command-r,81.53,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json,,"Open LLM Leaderboard v1, harness|winogrande|5 (5-shot), acc."
+dbrx,81.8,self-reported,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm,,"5-shot, DBRX Instruct"
 decilm-7b,79.95,self-reported,https://huggingface.co/Deci/DeciLM-7B,,
+deepseek-llm-67b,76,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6"
+deepseekmoe-16b,70.2,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, WinoGrande accuracy 0-shot, DeepSeekMoE 16B column."
+falcon-180b,86.9,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-180B,2023-10-24,"5-shot (harness|winogrande|5), archived Open LLM Leaderboard v1 evaluation run"
 falcon-2-11b,78.3,independent,https://huggingface.co/blog/falcon2-11b,2024-05-13,5-shot
+falcon-40b,81.29,independent,https://huggingface.co/blog/falcon2-11b,2024-05-24,"5-shot, same comparison table"
+falcon-7b,67.2,self-reported,https://arxiv.org/abs/2311.16867,,"5-shot, from Table 20 of the Falcon tech report."
 falcon-mamba-7b,73.64,independent,https://huggingface.co/blog/falconmamba,2024-08-12,
+falcon3-10b,71,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,"0-shot, internal pipeline table."
+falcon3-7b,70.4,self-reported,https://huggingface.co/tiiuae/Falcon3-7B-Instruct,,"Winogrande 0-shot, 'CommonSense' section of the model card's internal pipeline benchmarks table."
 gemma-2-27b,83.7,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,partial score
 gemma-2-9b,80.6,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,partial score
+gemma-2b,65.4,self-reported,https://huggingface.co/google/gemma-2b,,partial score
 gemma-7b,72.3,self-reported,https://arxiv.org/html/2403.08295v4,,
+gopher,70.1,self-reported,https://arxiv.org/abs/2203.15556,2022-03-29,"Zero-shot, Table 8."
+gpt-3-175b,77.7,self-reported,https://arxiv.org/abs/2005.14165,,"Few-shot, Winogrande XL (Table 3.5)"
 gpt-3-5-turbo,81.6,self-reported,https://arxiv.org/abs/2303.08774,,
 gpt-4,87.5,self-reported,https://arxiv.org/abs/2303.08774,,
 gpt-j-6b,65.3,self-reported,https://huggingface.co/EleutherAI/gpt-j-6b,2021-06-09,"zero-shot, LM Eval Harness"
 gpt-neo-2-7b,56.5,self-reported,https://huggingface.co/EleutherAI/gpt-neo-2.7B,2021-03-21,"zero-shot, LM Eval Harness"
 gpt-neox-20b,66.1,self-reported,https://blog.eleuther.ai/announcing-20b/,2022-02-09,"zero-shot, LM Eval Harness"
+granite-3-0-2b-instruct,71.9,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,"pass@1, from the model card's model-index metadata"
+granite-3-0-8b-instruct,77.51,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"WinoGrande, 5-shot pass@1. Confirmed in HF model-index YAML and technical report Table 10."
 granite-3-1-8b-instruct,75.37,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HF Open LLM Leaderboard V1
 h2o-danube-1-8b,65.35,self-reported,https://huggingface.co/h2oai/h2o-danube-1.8b-chat,,
 h2o-danube3-4b,76.48,independent,https://huggingface.co/h2oai/h2o-danube3-4b-chat,,Open LLM Leaderboard v1
+hermes-3-405b,86.27,self-reported,https://arxiv.org/pdf/2408.11857,,"5-shot, Table 5."
+hunyuan-large-a52b,88.7,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
+inflection-1,83.3,self-reported,https://inflection.ai/assets/Inflection-1.pdf,2023-06-23,5-shot (Table 5 of the technical memo).
 jais-70b,75.7,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,"English eval, jais-adapted-70b-chat"
 krutrim-2-12b,77,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,0-shot
 llama-13b,73,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+llama-2-70b,80.2,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20."
+llama-2-7b,69.2,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20."
 llama-3-1-minitron-4b,73.5,self-reported,https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/,2024-08-14,5-shot
+llama-3-70b,83.1,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct,,"WinoGrande, 5-shot, pretrained/base checkpoint."
+llama-3-8b,76.1,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"WinoGrande, 5-shot, pretrained/base checkpoint."
 llama-33b,76,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+llama-65b,77,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table"
+llama-7b,70.1,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table"
+luminous-supreme-70b,70,self-reported,https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/,2023-02-20,"Core 16-task suite, 0-shot."
 megatron-turing-nlg-530b,73,self-reported,https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/,2021-10-11,zero-shot
+ministral-3b,72.7,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Base model comparison table
+ministral-8b,75.3,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Base model comparison table
 mistral-7b,75.3,self-reported,https://arxiv.org/abs/2310.06825,,
+mistral-large,86.7,self-reported,https://mistral.ai/news/mistral-large/,2024-02-26,Same detailed benchmarks table/chart as above.
 mistral-nemo-12b,76.8,self-reported,https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407,,
 mixtral-8x7b,77.2,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
+mpt-30b,74.9,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b,2023-12-04,"5-shot accuracy (harness|winogrande|5 = 0.7490), confirmed via direct curl+grep"
+mpt-30b-instruct,75.1,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct,2023-10-14,"5-shot accuracy (harness|winogrande|5), HF Open LLM Leaderboard v1 run"
+mpt-7b-instruct,70.5,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct,2023-09-23,"5-shot accuracy (harness|winogrande|5 = 0.7048), confirmed via direct curl+grep"
+mpt-7b-storywriter-65k,51.14,independent,"https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",,"Open LLM Leaderboard-style Winogrande (5-shot) score for StoryWriter via LLM Explorer aggregator; notably near-random, plausibly reflecting the model's fiction-only fine-tuning."
+naver-hyperclova-x,79.64,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, 5-shot, Table 5."
 nemotron-3-8b,70.9,self-reported,https://huggingface.co/nvidia/nemotron-3-8b-base-4k,,0-shot
+nemotron-4-15b,78,self-reported,https://arxiv.org/abs/2402.16819,,"Table 3, zero-shot."
 nemotron-4-340b,89.5,self-reported,https://huggingface.co/nvidia/Nemotron-4-340B-Base,2024-06-14,
+nemotron-h-56b,84.45,self-reported,https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K,,"5-shot, from the same benchmark table on the HF model card as the existing entries"
 nous-hermes-2-mixtral-8x7b-dpo,76.16,self-reported,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO,,part of GPT4All suite
+olmo-2-13b,81.5,self-reported,https://arxiv.org/abs/2501.00656,2025-01-02,"WinoGrande ('WinoG'); OLMo 2 Technical Report Table 6, base OLMo-2-13B row."
+olmo-2-7b,77.2,self-reported,https://huggingface.co/allenai/OLMo-2-1124-7B,,WinoG column in the OLMo-2-1124-7B comparison table
 olmo-7b,67.9,self-reported,https://huggingface.co/allenai/OLMo-7B,,
 olmoe-1b-7b-0924,70.2,self-reported,https://huggingface.co/allenai/OLMoE-1B-7B-0924,,
+openhermes-2-5-mistral-7b,74.35,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,2023-11-03,Part of GPT4All suite on the official HF model card.
+openllama-7b,67,self-reported,https://github.com/openlm-research/open_llama,,"winogrande/acc via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+opt-iml-30b,67.8,self-reported,https://ar5iv.labs.arxiv.org/html/2212.12017,2022-12-22,"0-shot accuracy on WinoGrande for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', Winogrande column = 67.8/69.0 (0-shot/32-shot)."
+palm-2,90.9,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"Instruction-tuned PaLM 2 (L), 5-shot WinoGrande, from Table 5 (section 4.3 Reasoning)."
+palm-540b,81.1,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"PaLM 540B, 0-shot WinoGrande, from Table 4 (main English NLP tasks results)."
+pharia-1-llm-7b-control,65.1,self-reported,https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control,2024-08-26,"5-shot, acc = 0.651 on the HF model card."
 phi-1-5-1-3b,73.4,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,,"zero-shot accuracy, Table 2 of technical report"
+phi-2-2-7b,54.7,self-reported,https://arxiv.org/pdf/2404.14219,,5-shot; same comparison table.
+phi-3-5-mini-3-8b,68.5,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,5-shot; HF model card.
+phi-3-5-moe-16x3-8b-6-6b-active,81.3,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
+phi-3-medium-14b,81.5,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,5-shot
+phi-3-mini-3-8b,71.6,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,5-shot
+phi-3-small-7b,81.5,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,5-shot
+phi-4-mini-3-8b,67,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, WinoGrande (5-shot)."
+phi-4-mini-instruct,67,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, WinoGrande (5-shot)."
 poro-34b,72.77,self-reported,https://arxiv.org/abs/2404.01856,,
+pythia-1-4b,57.3,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json,2023-04-03,"Zero-shot, final checkpoint (step143000) — winogrande acc=0.5730."
+pythia-12b,63.9,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"Zero-shot, LM Eval Harness, final checkpoint (step143000) — winogrande acc=0.6393. Same source file already used and verified in this corpus for LAMBADA/PIQA/ARC-Easy."
+pythia-6-9b,60.9,self-reported,https://arxiv.org/abs/2304.01373,,"Zero-shot WinoGrande accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.609±0.014."
+qwen2-5-32b,82,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 5-shot."
+qwen2-5-72b,83.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
+qwen2-5-7b,75.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
+qwen2-57b-a14b,79.5,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 5-shot"
+qwen2-72b,85.1,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 5-shot"
+qwen2-7b,77,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 5-shot"
+redpajama-incite-7b-base,64.17,self-reported,https://arxiv.org/abs/2411.12372,,"Winogrande acc, Table 9 of the RedPajama technical paper."
+redpajama-incite-7b-instruct,65.67,self-reported,https://arxiv.org/abs/2411.12372,,"Winogrande acc, Table 9."
+redpajama-incite-base-3b-v1,63.22,self-reported,https://www.together.ai/blog/redpajama-models-v1,,"Winogrande accuracy, zero-shot lm-evaluation-harness subset (also confirmed in arXiv 2411.12372 Table 7: 0.6322)."
+skywork-13b,72.2,self-reported,https://arxiv.org/pdf/2310.19341,2023-10-30,From Table 11 of the Skywork-13B technical report (arXiv:2310.19341).
+smollm2-1-7b,59.4,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,"Base pre-trained model, zero-shot."
+stable-beluga-2-freewilly-2-70b,83,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__StableBeluga2,2023-10-15,"Same dataset/run, harness|winogrande|5 accuracy: 0.830."
 stable-lm-2-1-6b,64.09,independent,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,"instruct variant, 5-shot"
 stable-lm-2-12b,78.77,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,chat variant
 stablelm-3b-4e1t,71.19,independent,https://huggingface.co/stabilityai/stablelm-3b-4e1t,,"Open LLM Leaderboard, 5-shot"
 stablelm-zephyr-3b,65.51,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,5-shot
+upstage-solar-10-7b,83.66,self-reported,https://arxiv.org/abs/2312.15166,,"Table 2 of the SOLAR 10.7B paper (base model row), 5-shot Winogrande."
 xgen-7b-8k,64.9,self-reported,https://ar5iv.labs.arxiv.org/html/2309.03450,,
+yi-6b,71.3,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,"5-shot. Yi technical report Table 8 (depth-upscaling section, Yi-6B baseline row)."
 zephyr-7b-beta,77.74,self-reported,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta,,5-shot

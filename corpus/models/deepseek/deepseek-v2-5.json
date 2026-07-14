@@ -9,7 +9,7 @@
   "paramsB": 236,
   "activeParamsB": 21,
   "archClass": "moe",
-  "archDisplay": "MoE transformer, 236B total / 21B active — merge of DeepSeek-V2-Chat-0628 and DeepSeek-Coder-V2-Instruct-0724",
+  "archDisplay": "MoE transformer, 236B total / 21B active \u2014 merge of DeepSeek-V2-Chat-0628 and DeepSeek-Coder-V2-Instruct-0724",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -73,6 +73,38 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V2.5",
       "notes": "ArenaHard"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 50.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V2.5",
+      "evaluatedAt": "2024-09-05",
+      "notes": "AlpacaEval 2.0 score from the official HF model card's benchmark comparison table (DeepSeek-V2-0628 / DeepSeek-Coder-V2-0724 / DeepSeek-V2.5 columns)."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 9.02,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V2.5",
+      "evaluatedAt": "2024-09-05",
+      "notes": "MT-Bench score from the same official HF model card table."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 17.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V2.5",
+      "evaluatedAt": "2024-09-05",
+      "notes": "'Aider' row from the same official HF model card table (real-world multi-language code-editing benchmark used by the Aider tool)."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 16.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V2.5",
+      "evaluatedAt": "2024-09-05",
+      "notes": "'SWE-verified' row from the same official HF model card table, i.e. SWE-bench Verified."
     }
   ],
   "verificationNotes": "Confirmed real via official DeepSeek api-docs announcement (release date literally states '2024/09/05') and HF model card: 236B/21B active, merge of V2-Chat-0628 + Coder-V2-Instruct-0724. Context length 128K corroborated via OpenRouter listing. HumanEval 89, MMLU-Pro 65.83, LiveCodeBench 41.8, ArenaHard 76.2 all match figures found. No changes needed."

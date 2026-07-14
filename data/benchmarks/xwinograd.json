@@ -5,6 +5,6 @@
   "unit": "%",
   "description": "Cross-lingual Winograd-schema commonsense resolution.",
   "normMin": 50,
-  "normMax": 71,
+  "normMax": 88,
   "higherIsBetter": true
 }

@@ -45,6 +45,98 @@
     "releaseDate/pricing": "https://datanorth.ai/news/bytedance-releases-seed-2-1-pro-and-seed-2-1-turbo",
     "ctxK": "https://zenmux.ai/bytedance/doubao-seed-2.1-pro"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "super-gpqa",
+      "score": 70.8,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/en/seed2_1",
+      "notes": "Seed2.1 Pro column of ByteDance's official launch-page benchmark table"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 71,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/en/seed2_1",
+      "notes": "Labeled 'Terminal Bench 2.1' by ByteDance; part of the Terminal-Bench 2.x lineage (also tracked as 'Terminal-Bench v2.1' by Artificial Analysis), the harder successor to Terminal-Bench 1.0"
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 89.2,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/en/seed2_1",
+      "notes": "Seed2.1 Pro column of ByteDance's official launch-page benchmark table"
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 92.6,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/en/seed2_1",
+      "notes": "MathVision, no-tool configuration, from ByteDance's official Seed 2.1 launch page benchmark table (Multimodal & Vision section). With tool use, Seed 2.1 Pro scored 94.5% per the same table (Seed 2.1 Turbo: 90.1% no-tool / 92.7% with tool, for comparison)."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 81.6,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/en/seed2_1",
+      "notes": "MMMU-Pro, no-tool configuration, same official table. With tool use scored 82.7% (Turbo: 80.1% / 82.2%)."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 85.4,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/en/seed2_1",
+      "notes": "Labeled 'CharXiv-RQ' (reasoning-questions subset) on the official table, no-tool configuration -- matches this corpus's established convention of mapping the RQ/reasoning subset specifically to the 'charxiv' slug (see e.g. the kimi-k2-5, kimi-k2-6, and exaone-4-5 entries in data/results/charxiv.csv, which use the identical convention). With tool use scored 86.4% (Turbo: 82.5% / 83.6%)."
+    },
+    {
+      "benchmarkSlug": "gdpval",
+      "score": 87.9,
+      "source": "self-reported",
+      "sourceUrl": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf",
+      "notes": "GDPval win/tie rate, Table 1 ('General-agent automatic evaluation') of ByteDance's official Seed2.1 Model Card PDF (linked directly from the official seed.bytedance.com/en/seed2_1 launch page as 'Model Card'). Seed2.1-Pro scores 87.9, the best listed result, ahead of GPT-5.5 (84.9), Claude-4.7-Opus (82.7) and Gemini-3.1-Pro (67.3); confirmed in the accompanying prose ('On GDPval, Seed2.1-Pro achieves the best listed score at 87.9...'). Cross-validated: the GPT-5.5=84.9 figure in this same row exactly matches OpenAI's own self-reported GDPval score for GPT-5.5 already in this corpus's gdpval.csv, confirming both vendors are reporting the identical win-or-tie-rate metric on the same 0-100 scale (i.e. the original OpenAI GDPval benchmark, not the Elo-scaled 'GDPval-AA' Artificial Analysis variant)."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 41.4,
+      "source": "self-reported",
+      "sourceUrl": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf",
+      "notes": "Agents' Last Exam (ALE), Table 1 of the official Seed2.1 Model Card PDF. ByteDance reports Seed2.1-Pro as Pass@1/Score = 19.5/41.4; I use the Score component (41.4) as the headline figure, since it is independently corroborated by llm-stats.com's public Agents' Last Exam leaderboard, which lists Seed 2.1 Pro's score as 41.4% (0.414) with no other models yet tracked. Confirmed in the model card's prose ('On Agents' Last Exam, Seed2.1-Pro reaches 19.5 / 41.4, outperforming Claude-4.7-Opus and Gemini-3.1-Pro while approaching GPT-5.5')."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 86.2,
+      "source": "self-reported",
+      "sourceUrl": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf",
+      "notes": "BrowseComp (with Search -- the benchmark's standard/only mode, since it is unsolvable without browsing access), Table 11 ('Fundamental language capability evaluation') of the official model card, citing the original OpenAI BrowseComp paper (Wei et al.) as its reference. Seed2.1-Pro scores 86.2, the highest of the five compared (GPT-5.5 84.4, Claude-4.7-Opus 79.3, Gemini-3.1-Pro 85.9, Seed2.1-Turbo 84.9)."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 42.9,
+      "source": "self-reported",
+      "sourceUrl": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf",
+      "notes": "HLE-Verified (no tool), Table 11 of the official model card, citing the original Humanity's Last Exam paper (Phan et al., arXiv:2501.14249) as its source -- i.e. the verified/cleaned-question subset of the same underlying HLE benchmark, not a different eval. This mirrors an existing convention already in this corpus (see corpus/models/alibaba/qwen3-6-plus.json's hle entry, which explicitly treats a vendor's 'HLE-Verified' figure as equivalent to the base 'hle' slug when a concrete number is available). Seed2.1-Pro scores 42.9 in the no-tool configuration (GPT-5.5 50.4, Claude-4.7-Opus 46.9, Gemini-3.1-Pro 48.2, Seed2.1-Turbo 42.4); the model card separately reports a 'with Search' HLE-textonly figure (55.7) which is not used here to keep the no-tool convention consistent."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 62.5,
+      "source": "self-reported",
+      "sourceUrl": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf",
+      "notes": "Labeled 'ArcAGI2' in Table 11 of the official model card (GPT-5.5 85.0, Claude-4.7-Opus 75.8, Gemini-3.1-Pro 77.1, Seed2.1-Turbo 61.3, Seed2.1-Pro 62.5). Flagging one citation inconsistency for transparency: the model card's own footnote reference for this row points to the ARC Prize's ARC-AGI-1 page (arcprize.org/arc-agi/1/) rather than an ARC-AGI-2-specific source, but the benchmark is explicitly and consistently named 'ArcAGI2' in both the table header and the surrounding prose, so it is mapped to the arc-agi-2 taxonomy slug on the strength of that explicit naming rather than the (likely just reused/stale) citation."
+    },
+    {
+      "benchmarkSlug": "osworld",
+      "score": 78.8,
+      "source": "self-reported",
+      "sourceUrl": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf",
+      "notes": "OSWorld, Table 4 ('Generalist Computer-Use Agent evaluation') of the official model card: Seed2.1-Pro reaches 78.8 under the 'Generalist CUA' setting (agent may issue Bash commands/scripts alongside GUI actions), up from a 72.6 GUI-only baseline -- this matches this corpus's existing 'osworld' slug convention (generic, non-'-verified' computer-use runs). GPT-5.5 78.7, Claude-4.7-Opus 82.8, Gemini-3.1-Pro 76.2, Seed2.1-Turbo 76.4. Flagging one internal inconsistency for transparency: Section 2.5.1's prose states 'Seed2.1-Pro reaches 78.2', which conflicts with Table 4 and Figure 5's narrative ('Success rises from 72.6% to 78.8% (Pro)') on the same result -- I used 78.8 since two independent parts of the document (table + figure caption) agree on it against the single conflicting prose sentence."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 90.7,
+      "source": "self-reported",
+      "sourceUrl": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf",
+      "notes": "MathVista (no-tool), Table 9 ('Fundamental vision capability evaluation') of the official model card. Seed2.1-Pro scores 90.7, the best listed no-tool score (GPT-5.5 84.2, Gemini-3.1-Pro 90.2, Claude-4.7-Opus 84.4, Seed2.1-Turbo 90.5), confirmed in Section C.1's prose ('achieving the best no-tool performance on MathVista (90.7)...')."
+    }
+  ],
   "verificationNotes": "ByteDance's own blog and secondary coverage only make qualitative 'leads OSWorld/MobileWorld/MMMU-Pro/Terminal Bench 2.1/SWE-Pro/SciCode' claims without exact numbers, except for a non-standard 'Code Arena frontend' design-benchmark score of 1539 (#8, tied with Claude Opus 4.6) -- Code Arena/Design Arena is not one of the pre-approved benchmark slugs, so it is proposed here as a new slug rather than filed under an existing one."
 }

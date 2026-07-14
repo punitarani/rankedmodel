@@ -119,6 +119,70 @@
       "sourceUrl": "https://www.anthropic.com/research/swe-bench-sonnet",
       "evaluatedAt": "2025-01-06",
       "notes": "SWE-bench Verified; reported as 'Claude 3.5 Sonnet (old)' i.e. the June 2024 checkpoint, using Anthropic's agent scaffold"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 91.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "evaluatedAt": "2024-06-20",
+      "notes": "0-shot CoT, Model Card Addendum Table 1 (Claude 3.5 Sonnet column); also independently confirmed as 91.6% in the later October addendum's comparison baseline column (Table 7)."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 67.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "evaluatedAt": "2024-06-20",
+      "notes": "testmini split, Table 2."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 94.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "evaluatedAt": "2024-06-20",
+      "notes": "test split, Table 2."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 90.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "evaluatedAt": "2024-06-20",
+      "notes": "test split, relaxed accuracy, Table 2."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 95.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+      "evaluatedAt": "2024-06-20",
+      "notes": "test split, ANLS score, Table 2."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 75.1,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-10-22",
+      "notes": "0-shot CoT; MMLU-Pro was introduced in the later October addendum's comparison Table 7, which retroactively reports this score for the original (June 2024) Claude 3.5 Sonnet checkpoint."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 9.6,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-10-22",
+      "notes": "AIME 2024, 0-shot CoT single-sample (pass@1), Table 7; introduced as a 'new benchmark' in the October addendum and reported retroactively for the original Sonnet. Maj@64 variant (16.7%) omitted as a different metric."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 87.8,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-10-22",
+      "notes": "Table 7; introduced as a 'new benchmark' in the October addendum, reported retroactively for the original Sonnet."
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-5-sonnet (release date 2024-06-20 per multiple independent sources incl. Simon Willison's dated post; $3/$15 pricing; 200K ctx; Artifacts feature). Downloaded and fully read Model_Card_Claude_3_Addendum.pdf Table 1/Table 5: all 8 self-reported benchmark numbers (MMLU 88.7, MATH 71.1, GSM8K 96.4, HumanEval 92.0, GPQA 59.4, BBH 93.1, DROP 87.1, MMMU 68.3) and the needle-in-haystack cross-reference match the PDF verbatim. SWE-bench 33% confirmed on anthropic.com/research/swe-bench-sonnet (labeled 'Claude 3.5 Sonnet (old)'). apiAvailable=false confirmed: claude-3-5-sonnet-20240620 retired from API October 28, 2025. No changes made."

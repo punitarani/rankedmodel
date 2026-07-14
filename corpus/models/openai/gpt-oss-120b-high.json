@@ -81,6 +81,46 @@
       "sourceUrl": "https://arxiv.org/abs/2508.10925",
       "evaluatedAt": "2025-08-05",
       "notes": "SWE-bench Verified, high reasoning effort"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 14.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "HLE, no tools, high reasoning effort. Read directly from Table 3 ('Evaluations across multiple benchmarks and reasoning levels') of the official gpt-oss-120b & gpt-oss-20b Model Card PDF."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 67.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Tau-Bench Retail, high reasoning effort. Read directly from Table 3 of the official model card."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 44.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Aider Polyglot, high reasoning effort. Read directly from Table 3 of the official model card."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 81.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "MMMLU average across 14 human-translated languages, high reasoning effort. Read directly from Table 2/Table 3 of the official model card."
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 2463,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Codeforces Elo, no terminal tool, high reasoning effort (2622 Elo with tool access, per the same table -- chose the no-tools figure for consistency with the model's other no-tools rows). Read directly from Table 3 of the official model card."
     }
   ],
   "verificationNotes": "Confirmed real. Same HF/architecture verification as other effort variants. Fetched arxiv.org/html/2508.10925v1 table directly and confirmed all four high-effort scores appear verbatim: AIME 95.8, GPQA 80.1, MMLU 90.0, SWE-bench Verified 62.4. No changes made."

@@ -98,6 +98,76 @@
       "score": 7.66,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 71.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "pass@1, from the model card's model-index metadata"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 53.37,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 54.35,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "ARC-C, pass@1"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 28.61,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 43.74,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 50.61,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "reported as 'HumanEvalSynthesis' (standard HumanEval code-synthesis task), pass@1"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 41,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 59.66,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 23.66,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 37.13,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct",
+      "notes": "averaged across 6 languages, pass@1"
     }
   ],
   "verificationNotes": "CORRECTED paramsB from 2.63 to 2.53: HF model card architecture table states '2.5B' active/total params (dense, no MoE); independently re-derived from config.json (hidden_size=2048, 40 layers, intermediate=8192, vocab=49155, tie_word_embeddings=true, GQA 32 heads/8 KV) giving ~2.53B, matching IBM's own figure and Granite 3.3 2B's published 2.53B for the same architecture family. All 8 benchmark rows (MMLU 56.03, HellaSwag 76.79, IFEval 46.07, MMLU-Pro 27.92, SIQA 66.36, OBQA 43.2, AGI-Eval 29.75, MT-Bench 7.66) confirmed literally present on the cited HF model card. Release date/license/12-language claim confirmed via HF card and IBM newsroom announcement."

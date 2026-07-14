@@ -66,12 +66,76 @@
     },
     {
       "benchmarkSlug": "mmlu",
-      "score": 89.1,
+      "score": 89.5,
       "source": "self-reported",
-      "sourceUrl": "https://leanware.co/insights/claude-sonnet-4-5-overview",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
       "evaluatedAt": "2025-09-29",
-      "notes": "multilingual Q&A (MMMLU); confirmed via direct fetch"
+      "notes": "multilingual Q&A (MMMLU); confirmed via direct fetch [Corrected during full-corpus audit: Existing value (89.1) came from leanware.co's third-party recap of Sonnet 4.5's launch chart. Anthropic's own Claude Sonnet 4.6 System Card (Table 2.1.A, directly fetched) re-reports Sonnet 4.5's score on this same benchmark as 89.5%. Note this benchmark is actually MMMLU (Multilingual MMLU, 57 subjects x 14 non-English languages) rather than single-language MMLU; the existing entry's notes alread]"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 51,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "Terminal-Bench 2.0 (default thinking, no set effort level). Reported as a Sonnet 4.5 comparison figure in the Claude Sonnet 4.6 System Card, Table 2.1.A / Figure 2.3.A."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 98,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "\u03c4\u00b2-bench Telecom domain, Sonnet 4.5 comparison figure, Table 2.1.A. (Sonnet 4.5 also scored 86.2% on the Retail sub-domain, which has no matching taxonomy slug distinct from tau-bench.)"
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 61.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "OSWorld-Verified, first-attempt success rate. Confirmed both in Sonnet 4.6 System Card Table 2.1.A/Figure 2.6.A (Sonnet 4.5 column = 61.4%) and independently in Sonnet 4.5's own launch announcement, which cites the same figure."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 13.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "ARC-AGI-2 (Verified). Sonnet 4.5 does not support the later adaptive-thinking/effort parameter, so this max-configuration figure from Table 2.1.A is its only reported ARC-AGI-2 score."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1276,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "GDPval-AA Elo, Sonnet 4.5 comparison figure, Table 2.1.A / Figure 2.8.A."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 67.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "MMMU-Pro, reasoning-only (no tools) configuration, averaged over 5 runs (Figure 2.17.2.A). With an image-cropping tool, Sonnet 4.5 scored 68.9%."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 67,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "CharXiv Reasoning, no-tools configuration (Figure 2.17.3.A). With an image-cropping tool, Sonnet 4.5 scored 69.9%."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 33.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
+      "evaluatedAt": "2026-02-17",
+      "notes": "Humanity's Last Exam, with-tools configuration (Figure 2.20.2.A). Without tools, Sonnet 4.5 scored 17.7%."
     }
   ],
-  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-sonnet-4-5 (release 2025-09-29, $3/$15 pricing, 200K context, 30+ hour focus claim). GPQA/MMLU rows confirmed verbatim via direct fetch of leanware.co. IMPORTANT CORRECTION: input record marked status='deprecated', but Anthropic's official model-deprecations page (fetched 2026-07-12) lists claude-sonnet-4-5-20250929 as 'Active' with tentative retirement 'not sooner than 2026-09-29' — this model is currently live, not deprecated. Status corrected to 'released' (closest enum to 'Active'); apiAvailable=true confirmed correct."
+  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-sonnet-4-5 (release 2025-09-29, $3/$15 pricing, 200K context, 30+ hour focus claim). GPQA/MMLU rows confirmed verbatim via direct fetch of leanware.co. IMPORTANT CORRECTION: input record marked status='deprecated', but Anthropic's official model-deprecations page (fetched 2026-07-12) lists claude-sonnet-4-5-20250929 as 'Active' with tentative retirement 'not sooner than 2026-09-29' \u2014 this model is currently live, not deprecated. Status corrected to 'released' (closest enum to 'Active'); apiAvailable=true confirmed correct."
 }

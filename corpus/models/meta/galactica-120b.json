@@ -79,6 +79,54 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2211.09085",
       "notes": "Table 10",
       "evaluatedAt": "2022-11-01"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 67.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2211.09085",
+      "evaluatedAt": "2022-11-01",
+      "notes": "0-shot, in-domain, Table 10 'Question Answering Results'. Table caption confirms this column is for the 120B model (footnote only redirects Abstract Algebra and Medical Genetics rows to 30B)."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 83.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2211.09085",
+      "evaluatedAt": "2022-11-01",
+      "notes": "0-shot, in-domain, Table 10 'Question Answering Results', GAL=120B column."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 26,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2211.09085",
+      "evaluatedAt": "2022-11-01",
+      "notes": "MC1 accuracy (0-shot), Table 21 'TruthfulQA Results', GAL 120B row (std 0.02)."
+    },
+    {
+      "benchmarkSlug": "mmlu-anatomy",
+      "score": 58.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2211.09085",
+      "evaluatedAt": "2022-11-01",
+      "notes": "Appendix Table 37 'Rest of MMLU', GAL 120B column, Anatomy subject."
+    },
+    {
+      "benchmarkSlug": "mmlu-clinical-knowledge",
+      "score": 59.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2211.09085",
+      "evaluatedAt": "2022-11-01",
+      "notes": "Appendix Table 37 'Rest of MMLU', GAL 120B column, Clinical Knowledge subject."
+    },
+    {
+      "benchmarkSlug": "mmlu-medical-genetics",
+      "score": 68,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2211.09085",
+      "evaluatedAt": "2022-11-01",
+      "notes": "Table 10's 'Medical Genetics' cell shows 70.0%, but the table's own footnote states that for Medical Genetics (and Abstract Algebra) the displayed figure is actually the 30B model's best result, and gives the true 120B score as 68.0% explicitly \u2014 using the footnote-corrected 120B figure, not the table cell."
     }
   ],
   "verificationNotes": "Confirmed 120B model exists, CC-BY-NC-4.0 license (per live HF model card), 2048 ctx window, Nov 15 2022 release and the 3-day public-demo pulldown via MIT Technology Review (fetched directly, quotes match). All 4 result rows (MATH 20.4, MMLU-math 41.3, BIG-bench 48.7, PubMedQA 77.6) confirmed as literal figures in arxiv 2211.09085."

@@ -5,7 +5,7 @@
   "releaseDate": "2026-03-18",
   "status": "released",
   "openness": "open-weights",
-  "license": "MiniMax Model Community License (non-commercial use restrictions; commercial use requires separate agreement) — verify exact license text at https://huggingface.co/MiniMaxAI/MiniMax-M2.7/blob/main/LICENSE",
+  "license": "MiniMax Model Community License (non-commercial use restrictions; commercial use requires separate agreement) \u2014 verify exact license text at https://huggingface.co/MiniMaxAI/MiniMax-M2.7/blob/main/LICENSE",
   "paramsB": 230,
   "activeParamsB": 10,
   "archClass": "moe",
@@ -62,7 +62,15 @@
       "source": "self-reported",
       "sourceUrl": "https://www.minimax.io/news/minimax-m27-en",
       "notes": "Reported by MiniMax as 'Terminal Bench 2' score in the official M2.7 launch post."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1495,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimax.io/news/minimax-m27-en",
+      "evaluatedAt": "2026-03-18",
+      "notes": "GDPval-AA Elo score across 45 evaluated models, stated on MiniMax's official M2.7 launch post as the highest among open-weight models (behind only Opus 4.6/Sonnet 4.6/GPT-5.4). Corroborated verbatim by independent press (MarkTechPost, Artificial Analysis)."
     }
   ],
-  "verificationNotes": "Confirmed released (not just announced) via official minimax.io news post, MiniMax API docs, NVIDIA developer blog, Hugging Face model page, and Artificial Analysis independent tracker — all agree on a March 18, 2026 launch. Param counts (230B total/10B active) corroborated by both NVIDIA's technical blog and the official model page; the HF repo metadata itself lists a slightly different '229B' which is very likely a rounding artifact of the same figure. Context window cited as 200K by NVIDIA and ~205K tokens by Artificial Analysis (likely 204,800 rounded two different ways) — used 200 as the vendor-stated round figure."
+  "verificationNotes": "Confirmed released (not just announced) via official minimax.io news post, MiniMax API docs, NVIDIA developer blog, Hugging Face model page, and Artificial Analysis independent tracker \u2014 all agree on a March 18, 2026 launch. Param counts (230B total/10B active) corroborated by both NVIDIA's technical blog and the official model page; the HF repo metadata itself lists a slightly different '229B' which is very likely a rounding artifact of the same figure. Context window cited as 200K by NVIDIA and ~205K tokens by Artificial Analysis (likely 204,800 rounded two different ways) \u2014 used 200 as the vendor-stated round figure."
 }

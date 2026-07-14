@@ -9,7 +9,7 @@
   "paramsB": 236,
   "activeParamsB": 21,
   "archClass": "moe",
-  "archDisplay": "MoE transformer, 236B total / 21B active — DeepSeekMoE + Multi-head Latent Attention (MLA)",
+  "archDisplay": "MoE transformer, 236B total / 21B active \u2014 DeepSeekMoE + Multi-head Latent Attention (MLA)",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -93,7 +93,31 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat",
       "notes": "Chat (RL) variant"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat",
+      "evaluatedAt": "2024-05-07",
+      "notes": "C-Eval score for DeepSeek-V2 Chat (RL), from the official HF model card's Chat Model benchmark table (same table/column already used for the corpus's existing MMLU/BBH/HumanEval/MBPP/GSM8K/Math rows)."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 81.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat",
+      "evaluatedAt": "2024-05-07",
+      "notes": "CMMLU score for DeepSeek-V2 Chat (RL), from the same official HF model card table."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 32.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat",
+      "evaluatedAt": "2024-05-07",
+      "notes": "LiveCodeBench (0901-0401 window) pass@1 for DeepSeek-V2 Chat (RL), from the same official HF model card table. Not previously recorded for this model (only the later V2.5 has a LiveCodeBench entry in the corpus)."
     }
   ],
-  "verificationNotes": "Confirmed real via arxiv 2405.04434 (submitted 2024-05-07) and HF model card: 236B total/21B active MoE, 128K context, MIT code license + DeepSeek Model License. Fetched full HF page and confirmed the Chat(RL) column literally shows MMLU 77.8, BBH 79.7 (this row is on the page though truncated in initial excerpt), HumanEval 81.1, MBPP 72.0, GSM8K 92.2, Math 53.9 — all match exactly. $0.14/$0.28 launch pricing corroborated by multiple independent sources discussing the 2024 China LLM price war. No changes needed."
+  "verificationNotes": "Confirmed real via arxiv 2405.04434 (submitted 2024-05-07) and HF model card: 236B total/21B active MoE, 128K context, MIT code license + DeepSeek Model License. Fetched full HF page and confirmed the Chat(RL) column literally shows MMLU 77.8, BBH 79.7 (this row is on the page though truncated in initial excerpt), HumanEval 81.1, MBPP 72.0, GSM8K 92.2, Math 53.9 \u2014 all match exactly. $0.14/$0.28 launch pricing corroborated by multiple independent sources discussing the 2024 China LLM price war. No changes needed."
 }

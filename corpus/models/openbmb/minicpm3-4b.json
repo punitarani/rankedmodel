@@ -85,6 +85,59 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/openbmb/MiniCPM3-4B",
       "evaluatedAt": "2024-09-01"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 70.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM3-4B",
+      "evaluatedAt": "2024-09-01"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 68.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM3-4B",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Reported as 'IFEVAL (Prompt Strict-Acc.)' on the model card."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 73.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM3-4B",
+      "evaluatedAt": "2024-09-01"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 73.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM3-4B",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Reported as 'CEVAL' on the model card."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 46.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM3-4B",
+      "evaluatedAt": "2024-09-01"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 63.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM3-4B",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Reported as 'MBPP+' on the model card."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 22.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM3-4B",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Reported as 'LiveCodeBench v3' on the model card."
     }
   ],
   "verificationNotes": "Confirmed real, independently re-fetched HF model card: 4B params, 32k native context, MiniCPM Model License (weights) + Apache-2.0 (code), function calling + code interpreter support. Release date 2024-09-05 corroborated by MarkTechPost coverage (2024-09-11) and OpenBMB's own announcement tweet; all five benchmark numbers (MMLU 67.2, GSM8K 81.1, HumanEval+ 68.3, BFCL v2 76.0, MT-Bench 8.41) confirmed present on the HF model card."

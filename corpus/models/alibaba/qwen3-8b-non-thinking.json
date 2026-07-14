@@ -89,6 +89,48 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "notes": "BFCL v3, non-thinking mode"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 79.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "MMLU-Redux, non-thinking mode, Table 18 (verified via direct PDF fetch, page 18)"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 83,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "IFEval strict prompt, non-thinking mode, Table 18"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 87.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "MATH-500, non-thinking mode, Table 18"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 77.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "C-Eval, non-thinking mode, Table 18"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1110,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "CodeForces rating (52.4th percentile), non-thinking mode, Table 18"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 66.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "MMMLU across 14 languages, non-thinking mode, Table 18"
     }
   ],
   "verificationNotes": "Fully confirmed. Table 18 of fetched Qwen3 Technical Report PDF confirms all 5 rows exactly (AIME'24 29.1, GPQA-Diamond 39.3, LiveCodeBench v5 22.8, Arena-Hard 79.6, BFCL v3 60.2). Same model identity/specs verification as thinking-mode sibling."

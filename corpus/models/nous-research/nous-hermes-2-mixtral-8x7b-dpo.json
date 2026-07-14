@@ -82,6 +82,54 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
       "notes": "BigBench average (custom subset used by Nous)"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 86.36,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+      "evaluatedAt": "2024-01-15",
+      "notes": "acc_norm, part of GPT4All suite on the official HF model card (same table already used for arc-challenge/hellaswag/winogrande in the corpus)."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 46.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+      "evaluatedAt": "2024-01-15",
+      "notes": "acc_norm, part of GPT4All suite on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 83.79,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+      "evaluatedAt": "2024-01-15",
+      "notes": "acc_norm, part of GPT4All suite on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 72.17,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_NousResearch__Nous-Hermes-2-Mixtral-8x7B-DPO",
+      "evaluatedAt": "2024-01-22",
+      "notes": "5-shot MMLU, computed by averaging the raw per-subject acc values (57 subjects) in the HF Open LLM Leaderboard (old/v1) details dataset's latest run (2024-01-22). Not on the vendor's own model card, hence independent/third-party."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 71.65,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_NousResearch__Nous-Hermes-2-Mixtral-8x7B-DPO",
+      "evaluatedAt": "2024-01-22",
+      "notes": "5-shot GSM8K acc from the same HF Open LLM Leaderboard (old) details dataset raw results JSON (harness|gsm8k|5, acc 0.71645)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 54.83,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_NousResearch__Nous-Hermes-2-Mixtral-8x7B-DPO",
+      "evaluatedAt": "2024-01-22",
+      "notes": "MC2 score from the same Open LLM Leaderboard details dataset (harness|truthfulqa:mc|0, mc2 0.54826). Not present on the vendor's own HF card, which only lists GPT4All/AGIEval/BigBench."
     }
   ],
   "verificationNotes": "Confirmed on HF model card: Apache-2.0 license, ARC-C norm 64.25, HellaSwag norm 84.89, Winogrande 76.16, AGIEval 46.05, BigBench 49.70 all literally present. Mixtral base spec (46.7B total / 12.9B active / 32K context) confirmed verbatim on Mistral AI's official 'Mixtral of experts' blog post. Decoded the cited tweet's Twitter snowflake ID (1746988416779309143) to 2024-01-15 20:11 UTC, exactly matching the record's release date, and confirmed via search that the tweet text matches the quoted 'first model to beat Mixtral Instruct' claim. No changes made."

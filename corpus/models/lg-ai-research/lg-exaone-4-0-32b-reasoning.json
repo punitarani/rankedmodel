@@ -89,7 +89,28 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2507.11407",
       "notes": "Reasoning mode"
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 63.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.11407",
+      "notes": "BFCL-v3 tool/function-calling score, reasoning mode. Confirmed identically on both the arXiv paper (html v1) and the HuggingFace model card table."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 62.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.11407",
+      "notes": "Tau-Bench Retail domain, reasoning mode (Airline domain separately scored 51.5; only the Retail split is added since the taxonomy has a single tau-bench slug, matching this repo's convention of one score per benchmarkSlug per model)."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 85.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.11407",
+      "notes": "MMMLU (Multilingual MMLU) Spanish-language split, reasoning mode."
     }
   ],
-  "verificationNotes": "Same underlying checkpoint as the non-reasoning entry, verified identically (HF card, PR Newswire, release date, license, context, capabilities). LG's own PR Newswire release independently cites the reasoning-mode headline numbers (MMLU-Redux/Pro 92.3/81.8, GPQA-Diamond 75.4, AIME2025 85.3), corroborating them outside the paper. Fetched arxiv.org/html/2507.11407 and confirmed all 6 reasoning-mode rows (Table 3) match exactly: MMLU-Redux 92.3, MMLU-Pro 81.8, GPQA-Diamond 75.4, AIME2025 85.3, LiveCodeBench v5 72.6, IFEval 83.7 — no changes."
+  "verificationNotes": "Same underlying checkpoint as the non-reasoning entry, verified identically (HF card, PR Newswire, release date, license, context, capabilities). LG's own PR Newswire release independently cites the reasoning-mode headline numbers (MMLU-Redux/Pro 92.3/81.8, GPQA-Diamond 75.4, AIME2025 85.3), corroborating them outside the paper. Fetched arxiv.org/html/2507.11407 and confirmed all 6 reasoning-mode rows (Table 3) match exactly: MMLU-Redux 92.3, MMLU-Pro 81.8, GPQA-Diamond 75.4, AIME2025 85.3, LiveCodeBench v5 72.6, IFEval 83.7 \u2014 no changes."
 }

@@ -1,9 +1,33 @@
 model_slug,score,source,source_url,evaluated_at,notes
-nemotron-3-ultra-550b-a55b,82,self-reported,https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/,,Instruction following
+command-a-218b,73.9,independent,https://benchlm.ai/models/command-a-plus,,Artificial Analysis's independent IFBench score for Command A+ ('AA-IFBench'). Not published by Cohere itself.
+ernie-4-5-300b-a47b,39,independent,https://artificialanalysis.ai/models/ernie-4-5-300b-a47b,,"IFBench, from AA's Intelligence Evaluations breakdown."
+ernie-5-0-preview,41,independent,https://artificialanalysis.ai/models/ernie-5-0-thinking-preview,,"IFBench, from AA's Intelligence Evaluations breakdown for 'ERNIE 5.0 Thinking Preview'."
+exaone-4-5,62.6,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,
+falcon-h1r-7b,53.4,self-reported,https://huggingface.co/tiiuae/Falcon-H1R-7B,,
+glm-5-1,76,independent,https://artificialanalysis.ai/models/glm-5-1,2026-07-14,"IFBench (instruction-following), one of 9 components in Artificial Analysis's Intelligence Index v4.1. Read directly from AA's live ranked bar chart (GLM-5.1 tied 8th of 23 models at 76%). Not self-reported by Z.ai; GLM-5.1 was never evaluated on IFBench in its own launch materials."
+glm-5-2-max,73.3,independent,https://benchlm.ai/models/glm-5-2,,"Artificial Analysis's independent IFBench measurement for GLM-5.2 (max), surfaced via the BenchLM.ai AA-data mirror. Not reported by Zhipu/Z.ai itself."
+grok-3-mini,45.9,independent,https://designforonline.com/ai-models/xai-grok-3-mini/,,"Instruction-following score, via Artificial Analysis per the aggregator page."
+grok-4-20,82.9,independent,https://artificialanalysis.ai/evaluations/ifbench,,"Directly fetched Artificial Analysis's own IFBench leaderboard page, which explicitly states: 'Grok 4.3 (medium) scores the highest on IFBench with a score of 83.3%, followed by Grok 4.20 0309 (Reasoning) with a score of 82.9%, and MiniMax-M3 with a score of 82.9%.' This unambiguously names the base/single-agent 'Grok 4.20 0309 (Reasoning)' model (matching this corpus entry, not the Multi-Agent sibling)."
+grok-4-3-high,81.3,independent,https://officechai.com/ai/grok-4-3-benchmarks/,,"Corroborated across 3 independent sources: Artificial Analysis's own account on X ('...ranks top on the IFBench leaderboard 81% for precise instruction-following on Artificial Analysis'), officechai.com, and kilo.ai's Grok 4.3 coding benchmark page. A later AA leaderboard snapshot (fetched 2026-07-14) shows a slightly revised 81.3%, suggesting a minor point-update since launch; used the launch-day 81% figure that all initial sources agree on."
+kimi-k2-7-code,63,independent,https://artificialanalysis.ai/models/kimi-k2-7-code,,"IFBench, independently measured by Artificial Analysis."
+mimo-v2-5,67.1,independent,https://kilo.ai/models/xiaomi-mimo-v2-5,,Independent (Artificial-Analysis-sourced) IFBench score for MiMo-V2.5 via Kilo Code's model page. Vendor (Xiaomi) does not publish this benchmark itself.
+minimax-m2,72,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,2025-10-27,Confirmed identically on the HF model card.
+mistral-large-3,36,independent,https://artificialanalysis.ai/models/mistral-large-3,,"IFBench (instruction following), independently measured by Artificial Analysis; 13th of 14 models with a reported score."
+nemotron-3-nano-omni,74.2,self-reported,https://arxiv.org/abs/2604.24954,,Table 10; IFBench (prompt-level).
+nemotron-3-super,72.56,self-reported,https://arxiv.org/abs/2604.12374,,"Table 5, IFBench (prompt)."
+nemotron-3-ultra-550b-a55b,81.7,self-reported,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf,,"Instruction following [Corrected during full-corpus audit: The technical report's main comparison table (Table 10) reports IFBench (prompt loose) = 81.7 for the BF16 model, consistent with the MOPD-ablation table's final checkpoint value of 81.7 elsewhere in the same paper. The existing corpus figure of 82 (sourced from the developer blog) rounds/paraphrases the primary source's precise number.]"
+olmo-3-7b,32.3,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,
+olmo-3-think-32b,47.6,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,Qwen 3 32B 37.3
 openpangu-2-0-flash-non-thinking,54.4,self-reported,https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md,,Non-Thinking mode
 openpangu-2-0-flash-thinking,79.6,self-reported,https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md,,"Prompt-level strict, Thinking mode"
 qwen3-5-122b-a10b,76.1,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,,Instruction Following category.
+qwen3-5-397b-a17b,76.5,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,"Language benchmark table, Instruction Following section."
 qwen3-5-omni-flash,38.4,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Table 4 (Text→Text), Instruction Following section. Confirmed identical in arXiv:2604.15804 Table 4."
 qwen3-5-omni-plus,52.6,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 4 (Text→Text), Qwen3.5-Omni-Plus column, cell S5.T4.3.9.4 (bold/best score in that row)."
 qwen3-5-plus,51.1,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,,Qwen3.5-Plus-NoThinking
+qwen3-6-plus,75.2,independent,https://designforonline.com/ai-models/qwen-qwen3-6-plus/,,"IFBench, as measured by Artificial Analysis. 75.2% corroborated exactly by a second aggregator, benchlm.ai ('AA-IFBench: 75.2%'). Distinct from the IFEval result above."
+qwen3-7-max,79.1,self-reported,https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154,,Confirmed via direct fetch of the official Alibaba Cloud launch blog's 'General Capabilities & Multilingualism' section.
+qwen3-7-plus,79.1,self-reported,https://qwen.ai/blog?id=qwen3.7-plus,2026-05-31,"Official Qwen launch blog, 'General Capability' table; reported as a separate row from IFEval."
 trinity-large-thinking,52.3,self-reported,https://huggingface.co/arcee-ai/Trinity-Large-Thinking,,
+upstage-solar-pro-2-chat,34,independent,https://artificialanalysis.ai/models/solar-pro-2,,"Artificial Analysis independent evaluation, IFBench, Chat mode."
+upstage-solar-pro-2-reasoning,37,independent,https://artificialanalysis.ai/models/solar-pro-2-reasoning,,"Artificial Analysis independent evaluation, IFBench, Reasoning mode."

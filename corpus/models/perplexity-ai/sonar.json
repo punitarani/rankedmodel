@@ -54,6 +54,48 @@
       "source": "self-reported",
       "sourceUrl": "https://web.swipeinsight.app/posts/perplexity-launches-sonar-api-for-real-time-ai-search-capabilities-14187",
       "notes": "SimpleQA F-score, 0-1 scale, from Perplexity's 'Meet new Sonar' evaluation; corroborated by openrouter.ai and other secondary trackers citing the same 0.773 figure"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 47.1,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/perplexity-sonar/",
+      "notes": "GPQA Diamond, attributed to Artificial Analysis benchmark data; independently corroborated with an identical figure by https://www.mindstudio.ai/models/sonar. Perplexity's own blog ('Meet new Sonar') could not be fetched directly (403/bot-protected, consistent with prior verificationNotes) and only qualitatively claims Sonar beats GPT-4o mini/Claude 3.5 Haiku on IFEval/MMLU without exact figures. Artificial Analysis's live page for plain 'Sonar' now shows only a composite Intelligence Index (10), not this per-benchmark breakdown, so this is best-available third-party aggregator data rather than a current vendor-published number."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 68.9,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/perplexity-sonar/",
+      "notes": "Attributed to Artificial Analysis; corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 29.5,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/perplexity-sonar/",
+      "notes": "Attributed to Artificial Analysis; corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 81.7,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/perplexity-sonar/",
+      "notes": "MATH-500; attributed to Artificial Analysis, corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 48.7,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/perplexity-sonar/",
+      "notes": "AIME 2024; attributed to Artificial Analysis, corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 7.3,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/perplexity-sonar/",
+      "notes": "Humanity's Last Exam; attributed to Artificial Analysis, corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats."
     }
   ],
   "verificationNotes": "Existence, Feb 11 2025 release, Llama 3.3 70B base, $1/$1 pricing, and 128K context all confirmed via perplexity.ai/hub/blog/meet-new-sonar and docs.perplexity.ai/getting-started/pricing (fetched via search excerpts; direct fetch of some Perplexity pages was blocked by bot protection but content was corroborated across independent secondary sources including OpenRouter). SimpleQA 0.773 confirmed via independent secondary sources quoting the same figure; the original cited sourceUrl returned a rate-limit error on direct fetch but its title/content was verified present in search results."

@@ -45,6 +45,79 @@
     "ctxK": "https://blog.google/technology/google-deepmind/gemini-model-updates-february-2025/",
     "openness": "https://ai.google.dev/gemini-api/docs/models"
   },
-  "results": [],
-  "verificationNotes": "Confirmed real: launched Feb 5 2025 per official blog.google post and corroborated by VentureBeat/9to5Google coverage, as gemini-2.0-pro-exp-02-05, with a 2-million-token context window and positioned as Google's strongest 2.0-era coding model. Independently confirmed via targeted search that it never reached GA — Google moved directly to the Gemini 2.5 Pro line (GA June 17 2025) instead, and the experimental 2.0 Pro endpoints were later shut down. No results rows were present to verify (record correctly ships an empty results array). No changes made."
+  "results": [
+    {
+      "benchmarkSlug": "arena",
+      "score": 1380,
+      "source": "arena",
+      "sourceUrl": "https://arxiv.org/abs/2503.19786",
+      "evaluatedAt": "2025-03-08",
+      "notes": "LMSYS Chatbot Arena Elo for gemini-2.0-pro-exp-02-05 (ranked #3, 95% CI +5/-6), per Table 5 of Google DeepMind's Gemma 3 Technical Report."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 79.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.19786",
+      "evaluatedAt": "2025-03-25",
+      "notes": "MMLU-Pro, zero-shot; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 36,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.19786",
+      "evaluatedAt": "2025-03-25",
+      "notes": "LiveCodeBench; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6."
+    },
+    {
+      "benchmarkSlug": "bird-sql",
+      "score": 59.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.19786",
+      "evaluatedAt": "2025-03-25",
+      "notes": "Bird-SQL (dev); Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 64.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.19786",
+      "evaluatedAt": "2025-03-25",
+      "notes": "GPQA Diamond; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 44.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.19786",
+      "evaluatedAt": "2025-03-25",
+      "notes": "SimpleQA; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6."
+    },
+    {
+      "benchmarkSlug": "facts-grounding",
+      "score": 82.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.19786",
+      "evaluatedAt": "2025-03-25",
+      "notes": "FACTS Grounding; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 91.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.19786",
+      "evaluatedAt": "2025-03-25",
+      "notes": "MATH benchmark; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 72.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.19786",
+      "evaluatedAt": "2025-03-25",
+      "notes": "MMMU (val); Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6."
+    }
+  ],
+  "verificationNotes": "Confirmed real: launched Feb 5 2025 per official blog.google post and corroborated by VentureBeat/9to5Google coverage, as gemini-2.0-pro-exp-02-05, with a 2-million-token context window and positioned as Google's strongest 2.0-era coding model. Independently confirmed via targeted search that it never reached GA \u2014 Google moved directly to the Gemini 2.5 Pro line (GA June 17 2025) instead, and the experimental 2.0 Pro endpoints were later shut down. No results rows were present to verify (record correctly ships an empty results array). No changes made."
 }

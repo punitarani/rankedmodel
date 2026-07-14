@@ -1,8 +1,16 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-haiku-4-5,41,self-reported,https://www.anthropic.com/news/claude-haiku-4-5,2025-10-15,"Terminal-Bench, Terminus-2 agent framework, averaged over 11 runs (6 without thinking at 40.21%, 5 with 32K thinking budget at 41.75%); chart shows composite 41.0%. Confirmed via official launch-page comparison chart and methodology text."
 claude-opus-4,43.2,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"Terminal-bench, standard; confirmed via direct fetch"
 claude-opus-4-1,43.3,self-reported,https://winbuzzer.com/2025/08/05/anthropic-launches-claude-opus-4-1-a-measured-upgrade-focused-on-coding-and-safety-xcxwbn/,2025-08-05,"Terminal-bench; original InfoQ sourceUrl did not contain this figure in extracted text (only SWE-bench and safety metrics were present), so sourceUrl swapped to Winbuzzer, which explicitly lists 43.3%"
 claude-opus-4-5-high,59.3,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,2025-11-24,
 claude-sonnet-4,35.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,Terminal-bench; confirmed via direct fetch
+deepseek-v3-1-non-thinking,31.3,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,"Terminal-bench (Terminus 1 framework), Non-Thinking mode, from official HF model card benchmark table"
 deepseek-v3-2-exp,37.7,self-reported,https://github.com/deepseek-ai/DeepSeek-V3.2-Exp,,
+glm-4-5-355b-a32b,37.5,self-reported,https://arxiv.org/abs/2508.06471,,Table 5 'Results on SWE-bench Verified and Terminal-Bench'.
+glm-4-5-air-106b-a12b,30,self-reported,https://arxiv.org/abs/2508.06471,,Table 5 'Results on SWE-bench Verified and Terminal-Bench'.
 glm-4-6,40.5,self-reported,https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison,,Terminal-Bench; exact harness version (2.0 vs original) not specified in source
+kimi-k2,25,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,TerminalBench score under the standard 'Terminus' harness (25.0); the model card also separately reports 30.0 under an in-house framework variant of the same benchmark -- Terminus figure used as the more standard/citable evaluation harness.
+kimi-k2-thinking,47.1,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,"Terminal-Bench score evaluated with the model's simulated-JSON tool-calling harness (per model card's own footnote), from Coding Tasks table"
 minimax-m2,46.3,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,
+naver-hyperclova-x-seed-think-32b,21.8,self-reported,https://arxiv.org/abs/2601.03286,2026-01-03,"Reported as 'Terminal-Bench 1.0' in Table 5, agent benchmarks. The paper's separate 'Terminal-Bench Hard' (9.9) was left out — it doesn't cleanly correspond to either terminal-bench or terminal-bench-2 in the taxonomy."
+nemotron-3-super,25.78,self-reported,https://arxiv.org/abs/2604.12374,,"Table 5, 'Terminal Bench (hard subset)' - the original Terminal-Bench's hard 48-task subset, distinct from the Core 2.0 figure above."

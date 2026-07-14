@@ -94,7 +94,35 @@
       "score": 3,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/phi-4"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 70.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.08905",
+      "notes": "From Table 1 of the Phi-4 Technical Report (simple-evals framework); confirmed via three independent fetches (arxiv html, ar5iv, and direct PDF page image read)."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 82.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.08905",
+      "notes": "Table 1, row 'HumanEval+', confirmed via direct PDF page read of the official Microsoft Research PDF."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 75.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.08905",
+      "notes": "Table 1, row 'ArenaHard', confirmed via direct PDF page read."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 63,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.08905",
+      "notes": "Table 1, row 'IFEval', confirmed via direct PDF page read."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/phi-4, fetched) plus independent news coverage of both milestones: announced/research-preview Dec 12, 2024 (TechCrunch, MarkTechPost, TheTechPortal — initially research-license-only via Azure AI Foundry) and fully open-sourced under MIT on Hugging Face Jan 8, 2025 (MarkTechPost, VentureBeat, Winbuzzer). All seven benchmark rows (MMLU 84.8, GPQA 56.1, MATH 80.4, HumanEval 82.6, DROP 75.5, MGSM 80.6, SimpleQA 3.0) literally match the card. 16K context and phi-3-medium-style architecture also confirmed. releaseDate kept as the initial 2024-12-12 announcement while license/openness reflect the final MIT/open-weights state reached Jan 8, 2025 — consistent with the record's own note."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/phi-4, fetched) plus independent news coverage of both milestones: announced/research-preview Dec 12, 2024 (TechCrunch, MarkTechPost, TheTechPortal \u2014 initially research-license-only via Azure AI Foundry) and fully open-sourced under MIT on Hugging Face Jan 8, 2025 (MarkTechPost, VentureBeat, Winbuzzer). All seven benchmark rows (MMLU 84.8, GPQA 56.1, MATH 80.4, HumanEval 82.6, DROP 75.5, MGSM 80.6, SimpleQA 3.0) literally match the card. 16K context and phi-3-medium-style architecture also confirmed. releaseDate kept as the initial 2024-12-12 announcement while license/openness reflect the final MIT/open-weights state reached Jan 8, 2025 \u2014 consistent with the record's own note."
 }

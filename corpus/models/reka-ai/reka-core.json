@@ -77,6 +77,36 @@
       "source": "self-reported",
       "sourceUrl": "https://reka.ai/news/reka-core-our-frontier-class-multimodal-language-model",
       "notes": "near GPT-4V 56.8"
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 78.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "notes": "Table 5 of the Reka Core/Flash/Edge technical report."
+    },
+    {
+      "benchmarkSlug": "pubmedqa",
+      "score": 74.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "notes": "Table 13 (medical reasoning benchmarks); vs Meditron-70B 79.8, Med-PaLM-2 79.2, GPT-4 80.4 in the same table."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 38.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "evaluatedAt": "2024-04-18",
+      "notes": "Reported as \"GPQA-main (Hard QA)\" in Table 5 of the Reka Core/Flash/Edge technical report; also appears in the Apr 15, 2024 press release table. vs GPT-4 38.1, Claude 3 Opus 50.2, Claude 3 Sonnet 39.1, Gemini Ultra 35.7, Gemini Pro 1.5 41.5. Not previously in the corpus despite being in the same source table as the model's existing MMLU/GSM8K/HumanEval results."
+    },
+    {
+      "benchmarkSlug": "xwinograd",
+      "score": 86.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "evaluatedAt": "2024-04-18",
+      "notes": "Table 11 (cross-lingual evaluations), 0-shot accuracy, mean across 6 languages (fr, en, jp, pt, zh, ru). vs GPT-4 91.5, Reka Flash 84.0, Llama-2 70B 65.3, GPT-3.5 72.2. Reka Core underperforms GPT-4 here per the paper's own discussion (one of only two multilingual tasks where Core trails GPT-4)."
     }
   ],
   "verificationNotes": "CONFIRMED. reka.ai blog post body dated Apr 15, 2024 confirms Core's launch, 128K context, 32 languages, and MMMU 56.3 near GPT-4V 56.8. arxiv 2404.12387v1 (Reka Core/Flash/Edge tech report, submitted Apr 18 2024) confirms all three benchmark rows exactly: MMLU 83.2, GSM8K 92.2, HumanEval 76.8. Current docs.reka.ai/pricing confirms $2/$6 per-million-token pricing exactly matches the record (launch-day press-release pricing of $10/$25 was superseded and is no longer current, but current live pricing matches record so no change needed). No corrections required."

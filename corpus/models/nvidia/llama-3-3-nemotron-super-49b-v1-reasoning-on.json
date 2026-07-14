@@ -80,6 +80,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1",
       "notes": "Reasoning On"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 45.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.00949",
+      "evaluatedAt": "2025-05-01",
+      "notes": "LiveCodeBench (2408-2502 window), Reasoning On, Final checkpoint. From Table 4 of the technical report; this benchmark is absent from the HF model card entirely for this model."
     }
   ],
   "verificationNotes": "Confirmed via HF model card (fetched): same model card as Reasoning-Off variant; all four Reasoning-On benchmark scores match exactly (MATH500 96.6, AIME25 58.4, GPQA 66.67, MBPP 91.3)."

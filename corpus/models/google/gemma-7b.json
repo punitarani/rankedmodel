@@ -90,6 +90,78 @@
       "score": 72.3,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2403.08295v4"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 81.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Table 6, 0-shot."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 51.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Table 6, 0-shot."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 81.5,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Table 6, ARC-e, 0-shot."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 63.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Table 6, 5-shot."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 44.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Table 6, 3-shot."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 24.3,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Table 6, 4-shot."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 41.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Table 6, English subset average."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 55.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Table 6."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 52.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Table 6, OBQA, 0-shot. Slightly above the taxonomy's typical 40-50 range ceiling but this is the literal number printed in the official technical report's academic-benchmark table (verified via direct PDF text extraction)."
     }
   ],
   "verificationNotes": "Existence, release date (Feb 21 2024, blog.google), params (~8.54B: 786.8M embedding + 7.75B non-embedding, Table 2), 8K context, and license all confirmed via fetched arXiv HTML (2403.08295v4) and ai.google.dev. All 6 benchmark rows (MMLU 64.3, HellaSwag 81.2, HumanEval 32.3, GSM8K 46.4, ARC-c 53.2, Winogrande 72.3) verbatim-confirmed on the fetched arXiv page. No changes made."

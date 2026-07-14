@@ -79,6 +79,45 @@
       "sourceUrl": "https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days",
       "evaluatedAt": "2025-01-01",
       "notes": "SWE-bench Verified, high effort"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 86.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "From OpenAI's own simple-evals benchmark-harness README table (o3-mini-high row)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 97.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "MATH-500."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 97.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 92,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 80.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "DROP F1, 3-shot."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 13.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals"
     }
   ],
   "verificationNotes": "Existence, release date (2025-01-31), 200K context and $1.10/$4.40 pricing all confirmed via independent sources (VentureBeat, OpenAI docs mirrors). All 4 benchmark rows (AIME 87.3, GPQA 79.7, Codeforces 2130, SWE-bench 49.3) confirmed verbatim on the cited LessWrong post. No changes made."

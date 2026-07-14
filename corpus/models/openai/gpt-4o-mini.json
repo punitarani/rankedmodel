@@ -75,6 +75,14 @@
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
       "evaluatedAt": "2024-07-18"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 70.2,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+      "evaluatedAt": "2024-07-18",
+      "notes": "OpenAI's official GPT-4o mini launch page reports MATH at 70.2%, part of the same benchmark table as the already-recorded MMLU/MGSM/HumanEval/MMMU rows. Direct automated fetch of openai.com returns 403 (same as the existing 4 rows in this file), but the figure is corroborated verbatim and consistently across multiple independent secondary sources/search results quoting the official launch table."
     }
   ],
   "verificationNotes": "Confirmed via web search of OpenAI's official announcement (direct fetch blocked by 403, but search excerpts quote the page verbatim): MMLU 82%, MGSM 87%, HumanEval 87.2%, MMMU 59.4% all match exactly. Release date 2024-07-18, 128K context, and closed/proprietary licensing confirmed by independent sources (OpenAI blog via search, Azure blog, DataCamp). No changes made."

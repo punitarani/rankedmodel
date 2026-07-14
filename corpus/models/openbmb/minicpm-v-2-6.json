@@ -51,6 +51,85 @@
     "releaseDate": "https://github.com/OpenBMB/MiniCPM-V",
     "openness": "https://huggingface.co/openbmb/MiniCPM-V-2_6"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 852,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md",
+      "evaluatedAt": "2024-08-06"
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 49.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md",
+      "evaluatedAt": "2024-08-06",
+      "notes": "MMMU val; the model card marks this figure with an asterisk meaning OpenBMB independently re-ran the officially released checkpoint themselves."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 60.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md",
+      "evaluatedAt": "2024-08-06",
+      "notes": "MathVista mini."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 79.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2024-08-06",
+      "notes": "Not in MiniCPM-V 2.6's own results table; taken from the fuller cross-model comparison table on the MiniCPM-o 2.6 model card, which includes a MiniCPM-V 2.6 reference row with additional columns (ChartQA, MathVision) beyond the model's own doc."
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md",
+      "evaluatedAt": "2024-08-06",
+      "notes": "Reported as 'MMB1.1 test' (harder MMBench-EN 1.1 revision)."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 82.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md",
+      "evaluatedAt": "2024-08-06"
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 80.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md",
+      "evaluatedAt": "2024-08-06",
+      "notes": "TextVQA val split; exceeds the taxonomy's typical 40-75 range for this benchmark but is the genuine, directly-confirmed official figure."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 90.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md",
+      "evaluatedAt": "2024-08-06",
+      "notes": "DocVQA test split."
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 18.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "evaluatedAt": "2024-08-06",
+      "notes": "Not in MiniCPM-V 2.6's own results table; taken from the fuller cross-model comparison table on the MiniCPM-o 2.6 model card."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 60.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md",
+      "evaluatedAt": "2024-08-06",
+      "notes": "Video-MME without subtitles; with subtitles the model scores 63.6."
+    }
+  ],
   "verificationNotes": "Confirmed real, independently re-fetched HF model card (openbmb/MiniCPM-V-2_6): 8B params (SigLip-400M + Qwen2-7B), MiniCPM Model License weights / Apache-2.0 code. 32k context window independently confirmed via multiple sources (HF card, MarkTechPost coverage) as a first-class feature (multi-image + video understanding), not an unverified guess. Paper/GitHub dated August 2024 (arxiv paper timestamp Aug 3 2024; release announcements early August), consistent with the 2024-08-06 release date. OpenCompass 65.2 average confirmed present verbatim on the HF model card."
 }

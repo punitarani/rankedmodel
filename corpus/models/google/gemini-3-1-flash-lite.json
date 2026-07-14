@@ -72,7 +72,39 @@
       "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/",
       "evaluatedAt": "2026-03-03",
       "notes": "Artificial Analysis text arena Elo"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 16,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-1_flash-lite_model_evaluation.pdf",
+      "evaluatedAt": "2026-03-01",
+      "notes": "Humanity's Last Exam, full set (text+MM), no tools. From Google's official March-2026 'Model Evaluation - Approach, Methodology & Results' document for Gemini 3.1 Flash-Lite (linked from deepmind.google/models/evals-methodology/gemini-3-1-flash-lite)."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 73.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-1_flash-lite_model_evaluation.pdf",
+      "evaluatedAt": "2026-03-01",
+      "notes": "CharXiv Reasoning, information synthesis from complex charts."
+    },
+    {
+      "benchmarkSlug": "facts-grounding",
+      "score": 40.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-1_flash-lite_model_evaluation.pdf",
+      "evaluatedAt": "2026-03-01",
+      "notes": "FACTS Benchmark Suite (grounding, parametric, search and multimodal factuality)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 72,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-1_flash-lite_model_evaluation.pdf",
+      "evaluatedAt": "2026-03-01",
+      "notes": "LiveCodeBench code generation, 175 UI problems dated 1/1/2025-5/1/2025 (distinct from LiveCodeBench Pro's Elo scale)."
     }
   ],
-  "verificationNotes": "Confirmed real: preview launched 2026-03-03 (blog.google, fetched), all 3 benchmark numbers (GPQA 86.9, MMMU-Pro 76.8, Arena Elo 1432) literally confirmed on that page. Pricing $0.25/$1.50 confirmed independently. CORRECTED status from 'preview' to 'released': the model reached general availability ~2026-05-07/08 (cloud.google.com GA blog, fetched) and the original preview checkpoint was deprecated/shut down 2026-05-25 (ai.google.dev docs, fetched) — as of today (2026-07-12) the model is GA, not preview. CORRECTED modalities: added 'video' — the official model docs page (ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-preview) confirms input modalities as Text, Image, Video, Audio, and PDF, so 'video' was missing from the original record."
+  "verificationNotes": "Confirmed real: preview launched 2026-03-03 (blog.google, fetched), all 3 benchmark numbers (GPQA 86.9, MMMU-Pro 76.8, Arena Elo 1432) literally confirmed on that page. Pricing $0.25/$1.50 confirmed independently. CORRECTED status from 'preview' to 'released': the model reached general availability ~2026-05-07/08 (cloud.google.com GA blog, fetched) and the original preview checkpoint was deprecated/shut down 2026-05-25 (ai.google.dev docs, fetched) \u2014 as of today (2026-07-12) the model is GA, not preview. CORRECTED modalities: added 'video' \u2014 the official model docs page (ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-preview) confirms input modalities as Text, Image, Video, Audio, and PDF, so 'video' was missing from the original record."
 }

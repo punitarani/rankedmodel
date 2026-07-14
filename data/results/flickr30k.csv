@@ -1,2 +1,3 @@
 model_slug,score,source,source_url,evaluated_at,notes
+idefics-80b,53.7,self-reported,https://huggingface.co/HuggingFaceM4/idefics-80b,,"0-shot CIDEr, base IDEFICS-80B model (not -Instruct), from the official HF model card's full shot-count benchmark table"
 qwen-vl,85.8,self-reported,https://huggingface.co/Qwen/Qwen-VL,,"Zero-shot captioning CIDEr, reported SOTA among generalist VLMs at release"

@@ -59,6 +59,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2205.05131",
       "notes": "Zero-shot MMLU, base (non-Flan) UL2 20B"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 6.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2205.05131",
+      "evaluatedAt": "2022-05-10",
+      "notes": "UL2 20B (base, non-Flan), 8-shot chain-of-thought + external calculator (no self-consistency) on GSM8K, from Table 12. This was notable as the first publicly-available pretrained checkpoint (no fine-tuning) shown to successfully leverage CoT prompting. With self-consistency added the paper reports 10.2%; with plain CoT (no calculator) only 4.4%; I chose the CoT+calculator (no SC) figure since it's the closest match to the calculator-augmented, non-self-consistency methodology already used for PaLM 540B's existing GSM8K entry in this corpus."
     }
   ],
   "verificationNotes": "Confirmed real and re-derived from primary sources: Google Research blog post (blog.research.google/2022/10/ul2-20b...) dated 2022-10-14 matches releaseDate exactly. Fetched the full paper text (ar5iv rendering of arxiv 2205.05131) and confirmed Table 9 shows SuperGLUE dev average finetuned = 90.7 and Table 14 shows zero-shot MMLU for base UL2 20B = 39.2 -- both literal matches, kept. Apache 2.0 license confirmed via Hugging Face google/ul2 model card. No changes to core fields."

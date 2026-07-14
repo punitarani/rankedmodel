@@ -79,6 +79,38 @@
       "sourceUrl": "https://blog.eleuther.ai/announcing-20b/",
       "evaluatedAt": "2022-02-09",
       "notes": "average across Humanities/Social Science/STEM subject clusters; one of the earliest models eval'd on then-new MMLU"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 72.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.06745",
+      "evaluatedAt": "2022-04-14",
+      "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.723)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 38,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.06745",
+      "evaluatedAt": "2022-04-14",
+      "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.380)."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 25.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.06745",
+      "evaluatedAt": "2022-04-14",
+      "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.259)."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 29,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.06745",
+      "evaluatedAt": "2022-04-14",
+      "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.290)."
     }
   ],
   "verificationNotes": "Confirmed real: fetched blog.eleuther.ai/announcing-20b/ - all 4 scores (LAMBADA 72.00, Winogrande 66.10, HellaSwag 53.50, MMLU avg 28.98) verbatim-match. HF model card gives exact param count 20,554,567,680 which rounds to 20.6B, matching record. Apache-2.0 and 2022-02-09 release date confirmed. No changes needed."

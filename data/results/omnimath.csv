@@ -1,3 +1,4 @@
 model_slug,score,source,source_url,evaluated_at,notes
+glm-z1-32b-0414,68.4,self-reported,https://github.com/zai-org/GLM-4/blob/main/README.md,,Labeled 'Omni-MATH' in the official GitHub README benchmark chart.
 phi-4-reasoning,76.6,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,OmniMath benchmark
 phi-4-reasoning-14b,76.6,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,,

@@ -46,6 +46,15 @@
     "releaseDate": "https://crfm.stanford.edu/2023/03/13/alpaca.html",
     "openness": "https://github.com/tatsu-lab/stanford_alpaca"
   },
-  "results": [],
-  "verificationNotes": "Confirmed real release via crfm.stanford.edu/2023/03/13/alpaca.html (blog post dated 2023-03-13, exactly matching releaseDate). Confirmed via direct fetch of tatsu-lab/stanford_alpaca GitHub repo: three-license split is accurate (code = Apache 2.0, data = CC BY NC 4.0, weight diff = CC BY NC 4.0) and training used a 512-token max sequence length, matching ctxK 0.512. Confirmed the head-to-head result: CRFM blog states 'Alpaca wins 90 versus 89 comparisons against text-davinci-003' — 90+89=179, matching the record's '90 of 179' framing and the 50.3% win rate (90/179≈50.3%). paramsB 6.7 matches the well-documented actual parameter count of the 'LLaMA-7B' base model. No changes to values were needed."
+  "results": [
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 5.9,
+      "source": "independent",
+      "sourceUrl": "https://github.com/tatsu-lab/alpaca_eval/blob/main/docs/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+      "evaluatedAt": "2024-01-01",
+      "notes": "AlpacaEval 2.0 length-controlled win rate vs GPT-4-Turbo baseline (weighted gpt4-turbo judge): Alpaca 7B scores length_controlled_winrate=5.875% (raw win_rate=2.59%, n=396 outputs), verified directly against the leaderboard CSV in tatsu-lab's own alpaca_eval GitHub repo. Classified independent since AlpacaEval is a uniform third-party evaluation harness applied identically across hundreds of models from many vendors, not a claim made in Alpaca's own model card/blog. Rounded to 1dp (5.9) for storage."
+    }
+  ],
+  "verificationNotes": "Confirmed real release via crfm.stanford.edu/2023/03/13/alpaca.html (blog post dated 2023-03-13, exactly matching releaseDate). Confirmed via direct fetch of tatsu-lab/stanford_alpaca GitHub repo: three-license split is accurate (code = Apache 2.0, data = CC BY NC 4.0, weight diff = CC BY NC 4.0) and training used a 512-token max sequence length, matching ctxK 0.512. Confirmed the head-to-head result: CRFM blog states 'Alpaca wins 90 versus 89 comparisons against text-davinci-003' \u2014 90+89=179, matching the record's '90 of 179' framing and the 50.3% win rate (90/179\u224850.3%). paramsB 6.7 matches the well-documented actual parameter count of the 'LLaMA-7B' base model. No changes to values were needed."
 }

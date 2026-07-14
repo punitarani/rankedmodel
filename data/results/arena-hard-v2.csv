@@ -1,4 +1,7 @@
 model_slug,score,source,source_url,evaluated_at,notes
+mistral-small-3-2-24b,43.1,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,
+nemotron-3-super,73.88,self-reported,https://arxiv.org/abs/2604.12374,,Table 5.
 qwen3-235b-a22b-instruct-2507,79.2,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,
 qwen3-235b-a22b-thinking-2507,79.7,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507,,Arena-Hard v2
 qwen3-max,86.1,self-reported,https://felloai.com/qwen-3-max-ai-all-you-need-to-know-about-alibabas-1-trillion-parameter-llm/,,"Arena-Hard v2, Qwen3-Max-Instruct (Preview), official launch chart (also transcribed by localllm.in)."
+sarvam-105b,71,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,"Arena Hard v2, from the model card's 'Knowledge & Coding' benchmark table"

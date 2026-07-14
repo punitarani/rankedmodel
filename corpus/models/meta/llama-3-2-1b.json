@@ -82,6 +82,53 @@
       "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.2-1B",
       "evaluatedAt": "2024-09-01",
       "notes": "Instruct, CoT, BF16"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 59.5,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, BF16, Avg(Prompt/Instruction acc Loose/Strict)"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 30.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, BF16, MATH CoT final_em"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 27.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, BF16, 0-shot acc"
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 25.7,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, BF16, 'BFCL V2' 0-shot acc"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 24.5,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "evaluatedAt": "2024-09-01",
+      "notes": "Instruct, BF16, MGSM CoT 0-shot em"
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1111,
+      "source": "arena",
+      "sourceUrl": "https://lmmarketcap.com/benchmarks/arena_elo",
+      "notes": "Current LMArena Elo (dynamic, decays as newer models are added); rank #124, lowest on the leaderboard as of fetch"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card fetch: params 1.24B (search-confirmed across multiple secondary sources), release 2024-09-25, license Llama 3.2 Community License Agreement. All 4 benchmark rows (MMLU 49.3, ARC-Challenge 59.4, HellaSwag 41.2, GSM8K 44.4) literally confirmed on the cited HF page."

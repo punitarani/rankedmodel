@@ -75,17 +75,52 @@
     },
     {
       "benchmarkSlug": "pinchbench",
-      "score": 91,
+      "score": 90,
       "source": "self-reported",
-      "sourceUrl": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/",
-      "notes": "Agent productivity benchmark"
+      "sourceUrl": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf",
+      "notes": "Agent productivity benchmark [Corrected during full-corpus audit: The official technical report states PinchBench = 90.0 for the BF16 model in three separate places: the main model-comparison table (Table 10), the quantization-comparison table, and explicit prose ('On PinchBench, Nemotron 3 Ultra achieves 90.0, within 1.3 points of the best model in the comparison'). The existing 91 figure, per the corpus's own verificationNotes, came from secondary blog coverag]"
     },
     {
       "benchmarkSlug": "ifbench",
-      "score": 82,
+      "score": 81.7,
       "source": "self-reported",
-      "sourceUrl": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/",
-      "notes": "Instruction following"
+      "sourceUrl": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf",
+      "notes": "Instruction following [Corrected during full-corpus audit: The technical report's main comparison table (Table 10) reports IFBench (prompt loose) = 81.7 for the BF16 model, consistent with the MOPD-ablation table's final checkpoint value of 81.7 elsewhere in the same paper. The existing corpus figure of 82 (sourced from the developer blog) rounds/paraphrases the primary source's precise number.]"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 56.4,
+      "source": "self-reported",
+      "sourceUrl": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf",
+      "notes": "Table 10, 'Terminal Bench 2.1'."
+    },
+    {
+      "benchmarkSlug": "gdpval",
+      "score": 46.7,
+      "source": "self-reported",
+      "sourceUrl": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf",
+      "notes": "Table 10."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 44.4,
+      "source": "self-reported",
+      "sourceUrl": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf",
+      "notes": "Table 10."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 87,
+      "source": "self-reported",
+      "sourceUrl": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf",
+      "notes": "Table 10, GPQA no-tools."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 26.7,
+      "source": "self-reported",
+      "sourceUrl": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf",
+      "notes": "Table 10, HLE no-tools; with-tools variant scores 37.4."
     }
   ],
   "verificationNotes": "This is the newest/highest-risk record but is genuinely real and well-corroborated: confirmed via direct HF model-card fetch (550B total/55B active, OpenMDW-1.1 license, 1M ctx, released 2026-06-04) plus independent corroboration from NVIDIA's developer blog, research.nvidia.com, MarkTechPost, Linux Foundation press release on OpenMDW-1.1, and OpenRouter (pricing $0.50/$2.20 matched exactly). Benchmark rows MMLU-Pro 86.8, SWE-Bench Verified 70.7, and LiveCodeBench v6 89.0 confirmed on the HF card; RULER@1M 94.7 and IFBench 82 confirmed via NVIDIA's blog and secondary coverage; PinchBench score varies slightly across secondary sources (90 vs 91) but 91 is corroborated by at least one source matching the record."

@@ -68,6 +68,70 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2403.05525v2",
       "notes": "7B variant, Table 5"
+    },
+    {
+      "benchmarkSlug": "mmbench-cn",
+      "score": 72.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.05525v2",
+      "evaluatedAt": "2024-03-08",
+      "notes": "Table 5 ('MMC' column), DeepSeek-VL 7B (ours) row: '36.6 37.9 73.2 72.8 70.4 456 88.1 36.1 41.5' = MMMU/CMMMU/MMB/MMC/SEED/OCRB/POPE/MathV/MMVet. Verified against raw arXiv HTML text directly."
+    },
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 456,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.05525v2",
+      "evaluatedAt": "2024-03-08",
+      "notes": "Table 5, DeepSeek-VL 7B row, raw OCRBench score out of 1000."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 36.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.05525v2",
+      "evaluatedAt": "2024-03-08",
+      "notes": "Table 5, DeepSeek-VL 7B row, 'MathV' column."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 68.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.05525v2",
+      "evaluatedAt": "2024-03-08",
+      "notes": "Table 7 (language benchmarks), 'DeepSeek-VL 7B Chat' column: 'HellaSwag 56.0 68.4 68.5' across DeepSeek-VL-1B-Chat / DeepSeek-VL-7B-Chat / DeepSeek-LLM-7B-Chat baseline."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 52.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.05525v2",
+      "evaluatedAt": "2024-03-08",
+      "notes": "Table 7, DeepSeek-VL 7B Chat column: 'MMLU 32.5 52.4 49.4'."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 55,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.05525v2",
+      "evaluatedAt": "2024-03-08",
+      "notes": "Table 7, DeepSeek-VL 7B Chat column: 'GSM8K 18.0 55.0 63.0'."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 35.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.05525v2",
+      "evaluatedAt": "2024-03-08",
+      "notes": "Table 7, DeepSeek-VL 7B Chat column: 'MBPP 10.0 35.2 35.2'."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 27.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2403.05525v2",
+      "evaluatedAt": "2024-03-08",
+      "notes": "Table 7, DeepSeek-VL 7B Chat column: 'AGIEval 14.0 27.8 19.3'."
     }
   ],
   "verificationNotes": "Confirmed real via arxiv 2403.05525 (submitted 2024-03-08) and HF model card: 7B params, DeepSeek Model License + MIT code, SigLIP-L/SAM-B hybrid vision encoder on DeepSeek-LLM-7B base, 1024x1024 input. All three benchmark scores (MMMU 36.6, MMBench 73.2, SEEDBench 70.4) literally confirmed in arxiv HTML Table 5. MLX quant (mlx-community/deepseek-vl-7b-chat-4bit) confirmed to exist. No changes needed."

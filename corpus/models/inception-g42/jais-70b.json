@@ -73,7 +73,42 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/inceptionai/jais-adapted-70b",
       "notes": "English eval, jais-adapted-70b-chat"
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 42.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/inceptionai/jais-adapted-70b",
+      "notes": "English RACE score for jais-adapted-70b-chat, from the same HF model card English evaluation table used for the existing MMLU/HellaSwag/ARC-Challenge/Winogrande rows."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 81.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/inceptionai/jais-adapted-70b",
+      "notes": "English PIQA score for jais-adapted-70b-chat."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 52.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/inceptionai/jais-adapted-70b",
+      "notes": "English SIQA (Social IQA) score for jais-adapted-70b-chat."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 44.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/inceptionai/jais-adapted-70b",
+      "notes": "English OpenBookQA score for jais-adapted-70b-chat."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 44,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/inceptionai/jais-adapted-70b",
+      "notes": "English TruthfulQA score for jais-adapted-70b-chat."
     }
   ],
-  "verificationNotes": "Confirmed real via the official HF model card (inceptionai/jais-adapted-70b, which lists both base and chat-variant scores) plus the G42/Inception press release dated 2024-08-05, matching the record exactly. Confirmed 70B params, Apache 2.0, 4096-token context, Llama-2-70B-adapted architecture with 32K new Arabic tokens, and that it launched alongside 20+ other Jais sizes (590M-70B). All four benchmark rows (MMLU 38.7, HellaSwag 82.7, ARC-Challenge 54.9, Winogrande 75.7) confirmed verbatim under the jais-adapted-70b-chat row on the HF page, consistent with the notes field (the base jais-adapted-70b row shows slightly different numbers: MMLU 40.4, HellaSwag 81.2, ARC-Challenge 50.4, Winogrande 75.8 — record correctly uses the chat variant as labeled)."
+  "verificationNotes": "Confirmed real via the official HF model card (inceptionai/jais-adapted-70b, which lists both base and chat-variant scores) plus the G42/Inception press release dated 2024-08-05, matching the record exactly. Confirmed 70B params, Apache 2.0, 4096-token context, Llama-2-70B-adapted architecture with 32K new Arabic tokens, and that it launched alongside 20+ other Jais sizes (590M-70B). All four benchmark rows (MMLU 38.7, HellaSwag 82.7, ARC-Challenge 54.9, Winogrande 75.7) confirmed verbatim under the jais-adapted-70b-chat row on the HF page, consistent with the notes field (the base jais-adapted-70b row shows slightly different numbers: MMLU 40.4, HellaSwag 81.2, ARC-Challenge 50.4, Winogrande 75.8 \u2014 record correctly uses the chat variant as labeled)."
 }

@@ -88,6 +88,30 @@
       "sourceUrl": "https://huggingface.co/Qwen/Qwen-7B",
       "evaluatedAt": "2023-09-28",
       "notes": "4-shot"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 31.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-7B",
+      "evaluatedAt": "2023-09-28",
+      "notes": "3-shot; from Qwen base-model comparison table on HF/GitHub README"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 45,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-7B",
+      "evaluatedAt": "2023-09-28",
+      "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 62.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-7B",
+      "evaluatedAt": "2023-09-28",
+      "notes": "5-shot"
     }
   ],
   "verificationNotes": "Confirmed real, released 2023-08-03 per GitHub QwenLM/Qwen README ('2023.8.3 We release both Qwen-7B and Qwen-7B-Chat'). HF model card confirms 7B params, native 8,192 / max 32,768 context (dynamic NTK+LogN+window attention), Tongyi Qianwen commercial license. All 5 scores (mmlu 58.2, c-eval 63.5, gsm8k 51.7, math 11.6, humaneval 29.9) confirmed verbatim on the HF model card."

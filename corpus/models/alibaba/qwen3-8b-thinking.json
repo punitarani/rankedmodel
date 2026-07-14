@@ -89,6 +89,48 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "notes": "BFCL v3, thinking mode"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 87.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "MMLU-Redux, thinking mode, Table 17 (verified via direct PDF fetch, page 18)"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "IFEval strict prompt, thinking mode, Table 17"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 97.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "MATH-500, thinking mode, Table 17"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 83.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "C-Eval, thinking mode, Table 17"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 1785,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "CodeForces rating (95.6th percentile), thinking mode, Table 17"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 74.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.09388",
+      "notes": "MMMLU across 14 languages, thinking mode, Table 17"
     }
   ],
   "verificationNotes": "Fully confirmed. HF model card confirms 8.2B total params, dense, 128K context (32K native + YaRN), Apache 2.0. Table 17 of fetched Qwen3 Technical Report PDF confirms all 5 rows exactly (AIME'24 76.0, GPQA-Diamond 62.0, LiveCodeBench v5 57.5, Arena-Hard 85.8, BFCL v3 68.1), beating the larger 14B DeepSeek-R1-Distill-Qwen-14B baseline shown in the same table, supporting the 'outsized for its size' claim. DashScope pricing confirms $0.072/$0.287 (China region) exactly."

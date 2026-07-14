@@ -81,6 +81,46 @@
       "sourceUrl": "https://arxiv.org/abs/2508.10925",
       "evaluatedAt": "2025-08-05",
       "notes": "SWE-bench Verified, medium reasoning effort"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 8.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Humanity's Last Exam, no tools, medium reasoning effort (Table 3 of the gpt-oss model card)"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 2205,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Codeforces Elo, no tools, medium reasoning effort"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 79.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Multilingual MMLU average, medium reasoning effort"
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 62,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Tau-Bench Retail domain, medium reasoning effort"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 34.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Aider Polyglot (diff), medium reasoning effort"
     }
   ],
   "verificationNotes": "Confirmed real. Same HF/architecture verification as the Low-effort variant (117B/5.1B active, Apache 2.0, 36 layers/128 experts/top-4, 128K context). Fetched arxiv.org/html/2508.10925v1 table directly and confirmed all four medium-effort scores appear verbatim: AIME 80.4, GPQA 73.1, MMLU 88.0, SWE-bench Verified 52.6. No changes made."

@@ -123,6 +123,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
       "notes": "TAU2-Telecom"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 2134,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "evaluatedAt": "2025-07-25",
+      "notes": "Listed as 'CFEval' in the official model card's Performance table (Coding section). Elo-style rating, not a 0-100 score; same convention already used elsewhere in corpus (e.g. Qwen3.5-122B-A10B) for Qwen's internal Codeforces-style eval. Treat as vendor-reported, not necessarily apples-to-apples with third-party CodeForces evals."
     }
   ],
   "verificationNotes": "Confirmed real and released via direct fetch of the HF model card and independently via Simon Willison's July 25, 2025 blog post and OpenRouter listing. Full benchmark table transcribed verbatim from the HF model card (MMLU-Pro 84.4, MMLU-Redux 93.8, GPQA 81.1, SuperGPQA 64.9, AIME25 92.3, HLE 18.2, LiveCodeBench v6 74.1, IFEval 87.8, Arena-Hard v2 79.7, BFCL-v3 71.9, TAU2-Telecom 45.6, among others). Pricing ($0.23/$2.30 per M tokens, Intl/Singapore tier) confirmed exactly via Alibaba Cloud Model Studio's official pricing page, which lists the model by its exact HF name. langCount (119) carried over from the Qwen3 Technical Report figure already used for the sibling Instruct-2507 entry in corpus, since both are the same base model family/training corpus."

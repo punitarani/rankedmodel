@@ -58,14 +58,15 @@
       "benchmarkSlug": "mmlu-pro",
       "score": 78.4,
       "source": "self-reported",
-      "sourceUrl": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT"
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "notes": "[Corrected during full-corpus audit: The existing 78.4 is HF's auto-linked 'Evaluation Results' widget value, which is itself sourced to the TIGER-Lab/MMLU-Pro community leaderboard (an independent third-party eval), not a Baidu self-report, despite being labeled 'self-reported' in the corpus. Directly read Table 5 (p.38) of Baidu's own ERNIE 4.5 Technical Report PDF (June 29, 2025), which reports MMLU-Pro = 78.9 for the post-trained]"
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 57,
+      "score": 81,
       "source": "independent",
-      "sourceUrl": "https://www.datacamp.com/blog/ernie-4-5-x1",
-      "notes": "GPQA ~57 (DataCamp); corrected from Artificial Analysis 81, an internally-inconsistent outlier (same AA page: HLE 4, Index 9/last)."
+      "sourceUrl": "https://artificialanalysis.ai/models/ernie-4-5-300b-a47b",
+      "notes": "GPQA ~57 (DataCamp); corrected from Artificial Analysis 81, an internally-inconsistent outlier (same AA page: HLE 4, Index 9/last). [Corrected during full-corpus audit: Directly re-fetched the live, JS-rendered Artificial Analysis page for 'ERNIE 4.5 300B A47B' (browser render, not the static WebFetch scrape). It currently shows GPQA Diamond = 81% for this exact model, presented consistently in the same Intelligence-Evaluations breakdown that also shows HLE = 4% and Intelligence Index = 9 (both already accepted in this corpus entry) -- i.e. it is not an 'internal]"
     },
     {
       "benchmarkSlug": "hle",
@@ -73,7 +74,118 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/ernie-4-5-300b-a47b",
       "notes": "Humanity's Last Exam"
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 90.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "Table 5, post-trained ERNIE-4.5-300B-A47B, non-thinking mode."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 90.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "Table 5."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 86.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "Table 5."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 45.9,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "Table 5."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 94.3,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "Table 5."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 91.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "Table 5."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 96.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "MATH-500, Table 5."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 96.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "Table 5."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 35.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "AIME 2025, Table 5 (AIME 2024 score also given there: 54.8)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 38.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "Table 5."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 92.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "HumanEval+, Table 5."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 81,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "MBPP+, Table 5."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 88,
+      "source": "self-reported",
+      "sourceUrl": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "evaluatedAt": "2025-06-29",
+      "notes": "Table 5."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 39,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/ernie-4-5-300b-a47b",
+      "notes": "IFBench, from AA's Intelligence Evaluations breakdown."
     }
   ],
-  "verificationNotes": "Model, params (300B/47B), Apache-2.0 license, and release date (June 30 2025) confirmed via HF model card and the official ERNIE blog announcement. MMLU-Pro 78.4 literally confirmed on the HF page. However, the claimed GPQA Diamond=78 and HLE=8 do NOT literally appear on the cited artificialanalysis.ai page — that page currently lists ERNIE 4.5 300B A47B at GPQA Diamond=81 and HLE=4 (78 and 8 belong to a neighboring model, gpt-oss-120b/GLM-5.2, in the chart). Corrected both scores to the values actually shown on the page."
+  "verificationNotes": "Model, params (300B/47B), Apache-2.0 license, and release date (June 30 2025) confirmed via HF model card and the official ERNIE blog announcement. MMLU-Pro 78.4 literally confirmed on the HF page. However, the claimed GPQA Diamond=78 and HLE=8 do NOT literally appear on the cited artificialanalysis.ai page \u2014 that page currently lists ERNIE 4.5 300B A47B at GPQA Diamond=81 and HLE=4 (78 and 8 belong to a neighboring model, gpt-oss-120b/GLM-5.2, in the chart). Corrected both scores to the values actually shown on the page."
 }

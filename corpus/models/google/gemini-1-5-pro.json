@@ -59,6 +59,126 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/pdf/2403.05530",
       "notes": "May 2024 updated version"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 67.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "4-shot Minerva prompt, Table 11 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 90.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "11-shot, Table 11 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 89.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "3-shot, Table 11 of the Gemini 1.5 technical report; state-of-the-art at publication."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 93.3,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "10-shot, Table 11 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 74.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "F1, variable shots, Table 11 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 84.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "0-shot pass rate (PT chat preamble), Table 11 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 87.5,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "8-shot, Table 11 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "amc",
+      "score": 46.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "AMC 2022-23 (250 latest AMC 8/10/12 problems), 4-shot, Table 11 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 62.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "MMMU val split, 0-shot, Table 18 of the Gemini 1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 63.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "MathVista testmini split, 0-shot, Table 18; new SOTA result at publication."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 94.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "AI2D test split, 0-shot, transparent bounding box protocol, Table 18."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 87.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "ChartQA test split, 0-shot with chain-of-thought rationale, Table 18."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 93.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "DocVQA test split, 0-shot, with Google Cloud OCR annotations provided, Table 18."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 78.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "TextVQA val split, 0-shot, Table 18."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 80.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "VQAv2 test-dev split, 0-shot, Table 18."
     }
   ],
   "verificationNotes": "Confirmed real, announced 2024-02-15 per Google blog. Both benchmark rows corroborated: search results directly quoting the Gemini 1.5 technical report confirm 'Gemini 1.5 Pro scores 46.2% [GPQA] ... and 85.9% on MMLU' for the updated (May 2024) checkpoint. Sept 24 2025 shutdown date corroborated by ai.google.dev deprecations page and independent tracker (avalai docs), confirming all 1.5 models return errors as of that date."

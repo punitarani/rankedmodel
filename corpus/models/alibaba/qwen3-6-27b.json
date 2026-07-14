@@ -76,6 +76,104 @@
       "score": 86.2,
       "source": "self-reported",
       "sourceUrl": "https://qwen.ai/blog?id=qwen3.6-27b"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 53.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "SWE-bench Pro, from the official HF model card's benchmark table."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 59.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Terminal-Bench 2.0, official HF model card."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 91.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Official HF model card."
+    },
+    {
+      "benchmarkSlug": "super-gpqa",
+      "score": 66,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Official HF model card."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 24,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Humanity's Last Exam, official HF model card."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 94.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Listed as 'AIME26' (AIME 2026) on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 93.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Official HF model card."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 82.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Official HF model card, vision-language benchmarks table."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 75.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Official HF model card."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 87.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Listed as 'MathVista mini' on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 87.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Listed as 'VideoMME (w sub.)' on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "refcoco",
+      "score": 92.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Listed as 'RefCOCO avg' on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 78.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Listed as 'CharXiv RQ' on the official HF model card."
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 92.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "notes": "Listed as 'MMBenchEN-DEV-v1.1' on the official HF model card."
     }
   ],
   "verificationNotes": "Confirmed real via direct fetch of its own HF model card (huggingface.co/Qwen/Qwen3.6-27B), its own launch blog (qwen.ai/blog?id=qwen3.6-27b, 'Flagship-Level Coding in a 27B Dense Model'), and the official QwenLM/Qwen3.6 GitHub README changelog -- all three independently agree on the 2026-04-22 release date. Not part of the original flagged leads (which covered a generic 'Qwen3.6, ~35B' entry only); found while directly browsing qwen.ai/blog and github.com/QwenLM/Qwen3.6 per task instructions, and included because it is a real, distinct, currently-shipping model that is arguably the single biggest gap in the corpus's Qwen coverage -- Alibaba's own framing is that it 'outperforms the 397B-parameter Qwen3.5-397B-A17B on every major agentic coding benchmark' at 1/15th the total parameter count. SWE-bench Verified score (77.2) independently corroborated by a third-party review site (localaimaster.com, 'Qwen3.6-27B Review: Dense 27B Beats 397B MoE'), which reports the identical figure -- this is a genuine independent (non-Alibaba) confirmation, unlike most other results in this batch. archClass is 'hybrid' (not 'dense') despite having no MoE routing, because the defining architectural feature is the Gated DeltaNet/Gated-Attention hybrid-attention interleaving, consistent with how the other Qwen3.5/3.6-generation models in this batch are classified."

@@ -6,13 +6,16 @@ amazon-nova-micro,40,self-reported,https://deepranking.ai/llm-models/nova-micro,
 amazon-nova-premier,56.9,independent,https://artificialanalysis.ai/models/nova-premier,,"GPQA Diamond, 0-shot CoT"
 amazon-nova-pro,46.9,self-reported,https://deepranking.ai/llm-models/nova-pro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 aya-vision-32b,34.38,self-reported,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+chatglm3-6b,26.8,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's 2024 family-wide technical report (Table 1); GPQA wasn't tracked for the earlier ChatGLM generations.
 claude-3-5-haiku,41.6,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"GPQA Diamond, 0-shot CoT, official model card addendum Table 8"
 claude-3-5-sonnet,59.4,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,"GPQA Diamond, 0-shot CoT"
+claude-3-5-sonnet-new,65,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"GPQA Diamond, 0-shot CoT, Model Card Addendum Table 7 (Claude 3.5 Sonnet New column)."
 claude-3-7-sonnet,68,self-reported,https://www.datacamp.com/blog/claude-3-7-sonnet,2025-02-24,"GPQA Diamond, standard mode (no thinking); original deeplearning.ai URL only showed the 84.8% extended-thinking figure in extracted text, so sourceUrl swapped to DataCamp which explicitly states 68.0% standard-mode"
 claude-3-haiku,33.3,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,"GPQA Diamond, 0-shot CoT"
 claude-3-opus,50.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"GPQA Diamond, 0-shot CoT"
 claude-3-sonnet,40.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"GPQA Diamond, 0-shot CoT"
-claude-haiku-4-5,64.6,independent,https://artificialanalysis.ai/models/claude-4-5-haiku,2025-10-01,"independent evaluation; AA page is JS-rendered and could not be scraped directly via fetch tools, but the exact 64.6% figure was cross-confirmed via secondary aggregators (e.g. pricepertoken.com, morphllm.com) explicitly citing Artificial Analysis's Claude Haiku 4.5 page"
+claude-fable-5,92.6,independent,https://www.siliconreport.com/claude-fable-5-benchmarks-hle-swe-bench-gpqa-5c675c4e,,"GPQA Diamond, Artificial Analysis's independent evaluation (not an Anthropic-published figure -- confirmed by directly fetching both official Anthropic launch pages, anthropic.com/news/claude-fable-5-mythos-5 and the platform.claude.com docs page, and searching each specifically for 'GPQA'/'GPQA Diamond': zero mentions on either). Cross-corroborated at the identical 92.6% by a second independent aggregator (benchlm.ai/models/claude-fable, which likewise attributes it to 'Artificial Analysis') and by a July 2, 2026 GPQA leaderboard snapshot placing Fable 5 at 92.6%, just behind MiniMax M3 (92.9%) and ahead of the pack. One lower-quality secondary roundup (a Zvi Mowshowitz Substack post) cited a rounder '94%, described as saturated' figure without clear sourcing; given the 92.6% figure's triple corroboration from sources that explicitly cite Artificial Analysis as the measuring party, 92.6% was used as the more reliable number and the 94% figure was not added as a second contested entry."
+claude-haiku-4-5,73,self-reported,https://www.anthropic.com/news/claude-haiku-4-5,2025-10-01,"independent evaluation; AA page is JS-rendered and could not be scraped directly via fetch tools, but the exact 64.6% figure was cross-confirmed via secondary aggregators (e.g. pricepertoken.com, morphllm.com) explicitly citing Artificial Analysis's Claude Haiku 4.5 page [Corrected during full-corpus audit: Directly fetched Anthropic's official Oct 15 2025 launch page and viewed its embedded benchmark-comparison chart image: Claude Haiku 4.5 scores 73.0% on GPQA Diamond (128K thinking budget, averaged over 10 runs per the page's own methodology footnotes). The existing corpus value (64.6%) was sourced only to a third-party aggregator (Artificial Analysis) whose page could not be directly scraped and ]"
 claude-opus-4,79.6,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"GPQA Diamond, with extended thinking; confirmed via direct fetch"
 claude-opus-4-1,80.9,self-reported,https://winbuzzer.com/2025/08/05/anthropic-launches-claude-opus-4-1-a-measured-upgrade-focused-on-coding-and-safety-xcxwbn/,2025-08-05,"GPQA Diamond, up from 79.6% on Opus 4; same sourceUrl correction, confirmed 80.9% on Winbuzzer"
 claude-opus-4-5,87,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,,GPQA Diamond
@@ -22,9 +25,11 @@ claude-opus-4-7,94.2,self-reported,https://www.vellum.ai/blog/claude-opus-4-7-be
 claude-opus-4-8,93.6,self-reported,https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained,,"GPQA Diamond; roughly flat vs Opus 4.7 (94.2%), within saturation noise."
 claude-sonnet-4,75.4,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,"GPQA Diamond, with extended thinking; confirmed via direct fetch"
 claude-sonnet-4-5,83.4,self-reported,https://leanware.co/insights/claude-sonnet-4-5-overview,2025-09-29,GPQA Diamond; confirmed via direct fetch
-claude-sonnet-4-6,74.1,self-reported,https://www.digitalapplied.com/blog/claude-sonnet-4-6-benchmarks-pricing-guide,,"Third-party recap of an Anthropic-reported figure; could not directly confirm the exact number against the primary system card text, so treat with reduced confidence."
+claude-sonnet-4-6,89.9,self-reported,https://www.anthropic.com/claude-sonnet-4-6-system-card,,"Third-party recap of an Anthropic-reported figure; could not directly confirm the exact number against the primary system card text, so treat with reduced confidence. [Corrected during full-corpus audit: Existing value (74.1) came from a third-party recap (digitalapplied.com) that the previous audit pass explicitly flagged as unconfirmed. Directly fetched the official Claude Sonnet 4.6 System Card (Table 2.1.A and Section 2.9 body text, both independently): 'Claude Sonnet 4.6 achieved a score of 89.9% on GPQA Diamond, averaged over 10 trials, each run with adaptive thinking, max effort, and defaul]"
 claude-sonnet-5,96.2,self-reported,https://o-mega.ai/articles/claude-sonnet-5-benchmarks-and-cost-breakdown,,"GPQA Diamond, third-party recap of Anthropic's reported figure."
 command-a,50.8,self-reported,https://arxiv.org/abs/2504.00698,,
+command-a-218b,76.1,independent,https://benchlm.ai/models/command-a-plus,,Artificial Analysis's independent GPQA Diamond re-evaluation of Command A+ (labeled 'AA-GPQA Diamond' on the aggregator). Not published by Cohere itself.
+command-r,30.3,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r-v01/results_2025-02-13T18-27-04.338360.json,,"Open LLM Leaderboard v2, leaderboard_gpqa_diamond (0-shot), acc_norm -- matches the taxonomy's gpqa slug definition (GPQA Diamond)."
 command-r7b,26.3,self-reported,https://arxiv.org/abs/2504.00698,,
 deepseek-r1-0528,81,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,GPQA Diamond pass@1
 deepseek-r1-671b,71.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,GPQA Diamond pass@1
@@ -42,8 +47,9 @@ deepseek-v4-flash-think-max,88.1,self-reported,https://macaron.im/blog/deepseek-
 deepseek-v4-pro-non-think,72.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,,"GPQA Diamond, Non-Think mode"
 deepseek-v4-pro-think-high,89.1,self-reported,https://arxiv.org/abs/2606.19348,,"GPQA Diamond, Think-High mode"
 deepseek-v4-pro-think-max,90.1,self-reported,https://arxiv.org/abs/2606.19348,,"GPQA Diamond, Pro-Max mode"
-ernie-4-5-300b-a47b,57,independent,https://www.datacamp.com/blog/ernie-4-5-x1,,"GPQA ~57 (DataCamp); corrected from Artificial Analysis 81, an internally-inconsistent outlier (same AA page: HLE 4, Index 9/last)."
+ernie-4-5-300b-a47b,81,independent,https://artificialanalysis.ai/models/ernie-4-5-300b-a47b,,"GPQA ~57 (DataCamp); corrected from Artificial Analysis 81, an internally-inconsistent outlier (same AA page: HLE 4, Index 9/last). [Corrected during full-corpus audit: Directly re-fetched the live, JS-rendered Artificial Analysis page for 'ERNIE 4.5 300B A47B' (browser render, not the static WebFetch scrape). It currently shows GPQA Diamond = 81% for this exact model, presented consistently in the same Intelligence-Evaluations breakdown that also shows HLE = 4% and Intelligence Index = 9 (both already accepted in this corpus entry) -- i.e. it is not an 'internal]"
 ernie-5-0-preview,78,independent,https://artificialanalysis.ai/models/ernie-5-0-thinking-preview,2025-11-01,"GPQA Diamond, ERNIE 5.0 Thinking Preview"
+exaone-4-5,80.5,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,GPQA-Diamond
 falcon-h1-34b,41.53,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
 falcon-h1r-7b,61.3,self-reported,https://falcon-lm.github.io/blog/falcon-h1r-7b/,,GPQA-Diamond
 falcon3-10b,10.51,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,
@@ -54,9 +60,11 @@ gemini-1-5-pro,46.2,self-reported,https://arxiv.org/pdf/2403.05530,,May 2024 upd
 gemini-2-0-flash,60.1,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,"diamond, GA version"
 gemini-2-0-flash-lite,51.5,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,"diamond, Public Preview"
 gemini-2-0-flash-thinking-experimental,74.2,self-reported,https://www.marktechpost.com/2025/01/21/google-ai-releases-gemini-2-0-flash-thinking-model-gemini-2-0-flash-thinking-exp-01-21-scoring-73-3-on-aime-math-and-74-2-on-gpqa-diamond-science-benchmarks/,,GPQA Diamond; same Google DeepMind self-reported figure.
+gemini-2-0-pro-experimental,64.7,self-reported,https://arxiv.org/abs/2503.19786,2025-03-25,GPQA Diamond; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6.
 gemini-2-5-flash,82.8,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf,2025-05-01,"GPQA Diamond, single attempt, pass@1, thinking on"
 gemini-2-5-flash-lite-non-thinking,64.6,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"GPQA diamond, (06-17) release, non-thinking"
 gemini-2-5-flash-lite-thinking,66.7,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Lite-Model-Card.pdf,2025-06-01,"GPQA diamond, (06-17) release, thinking on"
+gemini-2-5-pro,84,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf,2025-03-25,"GPQA Diamond, single attempt, Gemini 2.5 Pro (Experimental 03-25) column."
 gemini-3-1-flash-lite,86.9,self-reported,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/,2026-03-03,GPQA Diamond
 gemini-3-1-pro,94.3,self-reported,https://deepmind.google/models/gemini/pro/,2026-02-19,GPQA Diamond
 gemini-3-5-flash,92.2,independent,https://benchlm.ai/models/gemini-3-5-flash,2026-07-11,"GPQA Diamond, measured by Artificial Analysis (cited via BenchLM, which states AA reports 92.2%); Vals AI GPQA mirror reports 92.7%; no official Google number published"
@@ -67,16 +75,20 @@ gemma-3-27b,42.4,self-reported,https://storage.googleapis.com/deepmind-media/gem
 gemma-3-4b,30.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,GPQA Diamond
 gemma-4,84.3,self-reported,https://ai.google.dev/gemma/docs/core/model_card_4,2026-04-02,"GPQA Diamond, 31B"
 gemma-4-26b-a4b,82.3,self-reported,https://huggingface.co/google/gemma-4-26B-A4B-it,2026-04-02,"GPQA Diamond, 26B A4B."
+glm-4,39.9,self-reported,https://arxiv.org/html/2406.12793v1,2024-05-20,"GLM-4 (0520) checkpoint, Table 2 of the ChatGLM/GLM-4 technical report (columns: MMLU GSM8K MATH BBH GPQA HumanEval -> 83.3 93.3 61.3 84.7 39.9 78.5); GPT-4-0314 scores 35.7 on the same table."
 glm-4-5-355b-a32b,79.1,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
 glm-4-5-air-106b-a12b,75,independent,https://llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air,2026-07-12,
 glm-4-6,81,self-reported,https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison,,GPQA Diamond
+glm-4-plus,50.7,self-reported,https://docs.bigmodel.cn/cn/guide/models/text/glm-4,,From official Zhipu/Z.ai docs evaluation table; GLM-4-Plus vs GPT-4o 51.0 (99%).
 glm-5,86,self-reported,https://huggingface.co/zai-org/GLM-5,,GPQA-Diamond
 glm-5-1,86.2,self-reported,https://huggingface.co/zai-org/GLM-5.1,,GPQA-Diamond
 glm-5-2-max,91.2,self-reported,https://huggingface.co/blog/zai-org/glm-52-blog,,GPQA-Diamond
+glm-z1-32b-0414,66.1,self-reported,https://github.com/zai-org/GLM-4/blob/main/README.md,,Labeled 'GPQA' in the official GitHub README benchmark chart.
 gpt-4-1,66.3,self-reported,https://www.rdworldonline.com/openai-claims-gpt-4-1-sets-new-90-standard-in-mmlu-reasoning-benchmark/,2025-04-01,"GPQA Diamond [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
 gpt-4-1-mini,65,self-reported,https://docsbot.ai/models/gpt-4-1-mini,2025-04-01,"GPQA Diamond [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
 gpt-4-1-nano,50.3,self-reported,https://openai.com/index/gpt-4-1/,2025-04-14,
 gpt-4-5,71.4,independent,https://www.helicone.ai/blog/gpt-4.5-benchmarks,2025-02-01,GPQA (science)
+gpt-4-turbo,49.3,self-reported,https://github.com/openai/simple-evals,2024-05-13,"gpt-4-turbo-2024-04-09 (the snapshot this file's note field identifies as GPT-4 Turbo's current default), 0-shot CoT, 'assistant' system prompt. From OpenAI's own simple-evals repo — the accuracy table OpenAI publishes to be transparent about numbers accompanying its model launches; this row is the GPT-4 Turbo comparison point first published alongside the GPT-4o ('Hello GPT-4o') launch."
 gpt-4o,53.6,self-reported,https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947,,"OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
 gpt-5,85.7,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"GPQA Diamond, no tools, high reasoning effort"
 gpt-5-2,92.4,self-reported,https://openai.com/index/introducing-gpt-5-2/,,"GPQA Diamond, GPT-5.2 Thinking; confirmed via marktechpost.com report of the launch page"
@@ -84,6 +96,7 @@ gpt-5-4,92.8,self-reported,https://the-decoder.com/openai-launches-gpt-5-4-think
 gpt-5-4-mini,88,self-reported,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,2026-03-17,"GPQA Diamond, xhigh reasoning effort."
 gpt-5-4-nano,82.8,self-reported,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,2026-03-17,"GPQA Diamond, xhigh reasoning effort. datacamp.com independently notes GPT-5.4 nano scores 9.8 points higher than Claude Haiku 4.5 on this benchmark, consistent with this figure."
 gpt-5-4-pro,94.4,self-reported,https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/,2026-03-05,GPQA Diamond. Cross-confirmed by aireleasetracker.com and DataLearnerAI (both list 94.4%).
+gpt-5-5,93.6,self-reported,https://llm-stats.com/blog/research/gpt-5-5-vs-gpt-5-4,2026-04-23,"GPQA Diamond score for base GPT-5.5, explicitly labeled 'OpenAI self-reported (launch post)' by llm-stats.com's research comparison; independently corroborated at the identical 93.6% by buildfastwithai's GPT-5.5 review (2026) and by benchlm.ai's GPQA-D leaderboard. Not previously in this corpus entry."
 gpt-5-6,94.6,independent,https://benchlm.ai/benchmarks/gpqaDiamond,,"GPQA Diamond, GPT-5.6 Sol; BenchLM published-score snapshot (verified July 11, 2026); not included in OpenAI's own launch eval tables"
 gpt-5-mini,82.3,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"GPQA Diamond, no tools, high reasoning effort"
 gpt-5-nano,71.2,self-reported,https://openai.com/index/introducing-gpt-5-for-developers/,2025-08-07,"GPQA Diamond, no tools, high reasoning effort"
@@ -94,8 +107,11 @@ gpt-oss-120b-medium,73.1,self-reported,https://arxiv.org/abs/2508.10925,2025-08-
 gpt-oss-20b-high,71.5,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"GPQA Diamond, no tools, high reasoning effort"
 gpt-oss-20b-low,56.8,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"GPQA Diamond, no tools, low reasoning effort"
 gpt-oss-20b-medium,66,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"GPQA Diamond, no tools, medium reasoning effort"
+granite-3-0-2b-instruct,28.61,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,pass@1
+granite-3-0-8b-instruct,33.81,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"GPQA, 0-shot. IBM's own self-reported eval (distinct from the much lower HF Open-LLM-Leaderboard-style GPQA figures seen on later Granite models). Confirmed in HF model-index YAML and technical report Table 10."
 granite-3-1-8b-instruct,8.28,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HF Open LLM Leaderboard V2
 granite-4-0-h-small,40.63,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+granite-4-1-8b-instruct,41.96,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,
 grok-1-5,35.9,self-reported,https://klu.ai/glossary/xai-grok-2,,As reported in xAI's later Grok-2 comparison table
 grok-2,56,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
 grok-2-mini,51,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
@@ -104,25 +120,37 @@ grok-3-standard,75.4,self-reported,https://medium.com/@bernardloki/grok-3-review
 grok-3-think,84.6,self-reported,https://www.chatbase.co/blog/grok-3,2025-02-17,Think mode
 grok-4,87.5,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,"GPQA Diamond, no tools"
 grok-4-3-high,90.1,independent,https://theairankings.com/xai/grok-4-3/,,"GPQA Diamond, as measured/reported by Artificial Analysis; high reasoning-effort configuration. Evaluated at launch, 2026-04-30."
+grok-4-5,93.1,independent,https://benchlm.ai/models/grok-4-5,,"GPQA Diamond 93.1% (relaying Artificial Analysis's independent evaluation, not an xAI-published number). Cross-corroborated by doit.software/blog/grok-statistics ('Grok 4.5 scores 93% on GPQA Diamond'). Artificial Analysis's own Grok 4.5 model page (directly fetched) confirms 'GPQA Diamond (scientific reasoning)' is one of the individual evaluations feeding its Intelligence Index for this model, supporting that AA does have a real score here even though AA's dynamic leaderboard page did not render the specific row in my fetch. One source (awesomeagents.ai) claimed 'GPQA Diamond... hasn't been published yet,' but this is outweighed by two independent numeric citations plus AA's own page confirming the evaluation was run."
 grok-4-heavy,88.9,self-reported,https://www.datacamp.com/blog/grok-4,2025-07-09,GPQA Diamond
 hermes-3-405b,44.84,self-reported,https://arxiv.org/pdf/2408.11857,,0-shot
-hunyuan-a13b,49.12,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,
+hunyuan-a13b,71.2,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,"[Corrected during full-corpus audit: The existing 49.12 figure is pulled from the HF model card's separate 'Base Model' benchmark table (plain 'GPQA', pretrain checkpoint) -- confirmed present there via two independent fetches of the raw README. But the catalog entry represents the released Instruct/chat model (tencent/Hunyuan-A13B-Instruct, the same repo already cited for the other rows), and that model's own competitive-benchmark t]"
+hunyuan-large-a52b,42.4,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,"GPQA_diamond, from the separate Instruct-model competitive table (no pretrain GPQA figure was published, so no conflation risk)."
 hunyuan-t1,69.3,self-reported,https://tencent.github.io/llm.hunyuan.T1/README_EN.html,,GPQA-Diamond
-hy3,87.2,self-reported,https://github.com/Tencent-Hunyuan/Hy3-preview,,"GPQA Diamond, from Tencent's own Hy3-preview model card (295B-A21B); full July release benchmark table not separately located"
-intellect-3,76.1,self-reported,https://www.primeintellect.ai/blog/intellect-3,,GPQA Diamond
+hunyuan-turbos,62.1,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"GPQA-Diamond, Table 4"
+hy3,90.4,self-reported,https://huggingface.co/tencent/Hy3,,"GPQA Diamond, from Tencent's own Hy3-preview model card (295B-A21B); full July release benchmark table not separately located [Corrected during full-corpus audit: The existing 87.2 figure was pulled from the April-2026 Hy3-preview build's GitHub model card (explicitly flagged in the prior verificationNotes as a stand-in because 'the full July release benchmark table' hadn't been located). That table has now been located: the official tencent/Hy3 model card's benchmark-appendix image reports GPQA Diamond = 90.4 for the actual shipped Hy3 (295B-A21B) model, v]"
+intellect-3,74.4,self-reported,https://arxiv.org/pdf/2512.16144,,"GPQA Diamond [Corrected during full-corpus audit: The INTELLECT-3 Technical Report's own Table 2 ('Evaluations', Section 4) explicitly lists INTELLECT-3's GPQA Diamond score as 74.4, not 76.1. The existing 76.1 figure was sourced from Prime Intellect's blog post, whose only benchmark presentation is a bar chart (Figure 1 in the same report) without printed axis values — the precise, explicitly labeled Table 2 in the technical report is the more a]"
+internlm2-5-7b,38.4,self-reported,https://huggingface.co/internlm/internlm2_5-7b-chat,,"InternLM2.5-7B-Chat, 0-shot GPQA (Diamond), from official HF OpenCompass evaluation table."
 internlm3-8b-instruct,37.4,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,GPQA-Diamond
+kimi-k2,75.1,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,"GPQA-Diamond, avg@8; confirmed in GitHub README mirror and arXiv:2507.20534 Table 3"
 kimi-k2-5,87.6,self-reported,https://www.kimi.com/blog/kimi-k2-5,,"GPQA-Diamond, avg@8, 96k-token completion budget; Artificial Analysis's independent re-run scored 87.9, closely matching"
 kimi-k2-6,90.5,self-reported,https://www.kimi.com/blog/kimi-k2-6,,GPQA-Diamond
+kimi-k2-7-code,90,independent,https://artificialanalysis.ai/models/kimi-k2-7-code,,"GPQA Diamond, independently measured by Artificial Analysis (Intelligence Index v4.1 component)."
 kimi-k2-thinking,84.5,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,
+lg-exaone-3-5-32b-instruct,39.7,self-reported,https://arxiv.org/abs/2412.04862,2024-12-01,"GPQA (CoT), the model's own general-domain eval harness (not the Open LLM Leaderboard 2 style used in the EXAONE 3.0 report)"
 lg-exaone-4-0-32b-non-reasoning,63.7,self-reported,https://arxiv.org/abs/2507.11407,,"GPQA-Diamond, non-reasoning mode"
 lg-exaone-4-0-32b-reasoning,75.4,self-reported,https://arxiv.org/abs/2507.11407,,"GPQA-Diamond, reasoning mode"
 lg-exaone-deep-32b,66.1,self-reported,https://github.com/LG-AI-EXAONE/EXAONE-Deep,2025-03-01,"GPQA Diamond, pass@1"
+llama-2-13b-chat,20.2,independent,https://huggingface.co/datasets/open-llm-leaderboard/meta-llama__Llama-2-13b-chat-hf-details,2024-06-16,"GPQA Diamond subset, acc_norm, HF Open LLM Leaderboard v2 independent eval run"
 llama-3-1-405b,50.7,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,Instruct (corrected: original record mislabeled this as the base pretrained model; the 50.7 figure is the Instruct-model GPQA score in Meta's comparison table)
 llama-3-1-70b,46.7,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,Instruct (corrected: original record mislabeled this as the base pretrained model; the 46.7 figure is the Instruct-model GPQA score in Meta's comparison table)
 llama-3-1-8b,30.4,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, exact match (em) — corrected from mislabeled 'base pretrained model'"
 llama-3-1-nemotron-ultra-253b-v1-reasoning-off,56.6,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,Reasoning Off
 llama-3-1-nemotron-ultra-253b-v1-reasoning-on,71.5,independent,https://venturebeat.com/ai/nvidias-new-llama-3-1-nemotron-ultra-outperforms-deepseek-r1-at-half-the-size,,"DeepSeek-R1 comparison point; VentureBeat itself returned 403 on direct fetch, but the 71.5 GPQA-Diamond figure for DeepSeek-R1 is independently corroborated by multiple other sources"
 llama-3-1-nemotron-ultra-253b-v1-reasoning-on,76.01,self-reported,https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1,,Reasoning On; beats DeepSeek-R1's 71.5
+llama-3-2-11b-vision,32.8,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md,2024-09-01,"Instruct, text-only capability of the vision model, 0-shot acc"
+llama-3-2-1b,27.2,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md,2024-09-01,"Instruct, BF16, 0-shot acc"
+llama-3-2-3b,32.8,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md,2024-09-01,"Instruct, BF16, 0-shot acc"
+llama-3-2-90b-vision,46.7,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,"GPQA accuracy, instruct-tuned model."
 llama-3-3-70b,50.5,self-reported,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,,GPQA Diamond CoT
 llama-3-3-nemotron-super-49b-v1-reasoning-off,50,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning Off
 llama-3-3-nemotron-super-49b-v1-reasoning-on,66.67,self-reported,https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1,,Reasoning On
@@ -130,14 +158,24 @@ llama-3-70b,39.5,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70
 llama-3-8b,34.2,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"Instruct, 0-shot"
 llama-4-maverick,69.8,self-reported,https://huggingface.co/blog/llama4-release,,"GPQA Diamond, instruction-tuned"
 llama-4-scout,57.2,self-reported,https://huggingface.co/blog/llama4-release,,"GPQA Diamond, instruction-tuned"
+magistral-medium,70.8,self-reported,https://arxiv.org/abs/2506.10910,2025-06-10,GPQA Diamond; Magistral technical report Table 2 (70.83% per the HF comparison table)
 magistral-small,68.18,self-reported,https://huggingface.co/mistralai/Magistral-Small-2506,,GPQA Diamond
+mimo-v2-5,84.9,independent,https://openrouter.ai/xiaomi/mimo-v2.5,,"GPQA Diamond (graduate-level scientific reasoning), shown on OpenRouter's Benchmarks tab for the xiaomi/mimo-v2.5 model page (matches this model exactly: MIT, $0.105-0.14/$0.28, 1M context, Apr 22 2026 release). Data is sourced from Artificial Analysis's independent evaluation; cross-checked against artificialanalysis.ai/models/mimo-v2-5-0424 which shows the same figure rounded to 85%, and against the MiMo-V2.5-Pro comparison page which shows Pro at a distinct, higher 87% -- confirming no variant conflation with the Pro model."
 minimax-m1,69.2,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,,"GPQA Diamond, M1-40K"
+minimax-m2,78,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,2025-10-27,GPQA-Diamond; identical figure independently confirmed on the HF model card's 'Intelligence Benchmarks' table.
 minimax-text-01,54.4,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,"GPQA Diamond, 0-shot CoT"
-mistral-small-3-1-24b,44.42,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,"GPQA Main, 5-shot CoT"
-nemotron-3-nano-omni,15,independent,https://artificialanalysis.ai/models/nemotron-3-nano-omni-30b-a3b,,"Note: this is actually the Artificial Analysis composite Intelligence Index score (15), not a GPQA-specific score -- included here only because no single-benchmark independent number could be verified; treat with caution."
+mistral-large-3,67.17,independent,https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512,2025-12-02,"GPQA Diamond score from the HF 'Evaluation results' auto-generated widget (EvalEval automated eval-results datastore), i.e. a third-party automated eval run, not a number from Mistral's own written tables. Corroborated by two other independent re-runs found in the follow-up coverage pass: Artificial Analysis = 68% and vals.ai = 68.43% (±2.37) -- not added as separate entries since the 'gpqa' slug is already occupied, but the three-way convergence supports the existing figure."
+mistral-small-3-1-24b,45.96,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,"GPQA Main, 5-shot CoT [Corrected during full-corpus audit: The taxonomy's 'gpqa' slug is explicitly defined as GPQA Diamond, but the existing corpus entry (44.42, notes 'GPQA Main, 5-shot CoT') recorded the GPQA Main sub-benchmark instead. The same official HF model card also reports GPQA Diamond (5-shot CoT) = 45.96 for this exact model, which is the value that actually matches the taxonomy definition. 44.42 remains a real, correctly-cited GPQA Main scor]"
+mistral-small-3-2-24b,46.13,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,GPQA Diamond 5-shot CoT; this benchmark was entirely absent from the corpus entry for 3.2 even though it's on the card.
+muse-spark-1-1-xhigh,90,independent,https://artificialanalysis.ai/models/muse-spark-1-1,,"GPQA Diamond, measured independently by Artificial Analysis as one of the 9 evaluations in their Intelligence Index v4.1 breakdown. Cross-checked by reading the same figure from two separate AA comparison-basket renders (Muse Spark 1.1's own page and Mistral Large 3's page, which both include Muse Spark 1.1 in their pinned comparison set) -- both show 90%."
+nemotron-3-nano-omni,72.2,self-reported,https://arxiv.org/abs/2604.24954,,"Note: this is actually the Artificial Analysis composite Intelligence Index score (15), not a GPQA-specific score -- included here only because no single-benchmark independent number could be verified; treat with caution. [Corrected during full-corpus audit: The existing entry mapped the Artificial Analysis composite Intelligence Index score (15) to the 'gpqa' slug, which the corpus's own verificationNotes flagged as not actually a GPQA score. The NVIDIA arXiv technical report (Table 10, 'Comparison of Nemotron 3 Nano Omni, Nemotron 3 Nano LLM, and Qwen3-Omni across selected text-only benchmarks') reports the model's real GPQA-Diamond (no-tools, 4-run]"
+nemotron-3-super,79.23,self-reported,https://arxiv.org/abs/2604.12374,,"Table 5, GPQA no-tools; with-tools variant scores 82.70."
+nemotron-3-ultra-550b-a55b,87,self-reported,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf,,"Table 10, GPQA no-tools."
 nemotron-nano-2-nemotron-nano-9b-v2,64,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"Reasoning On, vs Qwen3-8B's 59.6"
+olmo-3-7b,40.4,independent,https://designforonline.com/ai-models/allenai-olmo-3-7b-instruct/,,"GPQA Diamond, measured by Artificial Analysis (Intelligence Index v4), republished on the fetched page. Ai2's own self-reported GPQA on the HF card/paper is 40.4, but per the OLMo 3 technical report this uses the gpqa_main split (via olmes), not Diamond, so the independent Diamond figure is used for this Diamond-scoped slug (consistent with how OLMo 3-Think 32B is handled in this corpus)"
 olmo-3-think-32b,61,independent,https://designforonline.com/ai-models/allenai-olmo-3-32b-think/,,"GPQA Diamond, measured by Artificial Analysis (Intelligence Index v4.0), republished on the fetched page; NOTE: Ai2's own reported GPQA 58.1 (HF card/blog/paper) uses the gpqa_main split per allenai/olmes task config, not Diamond, so the independent Diamond number is used here"
 openai-o1,78,self-reported,https://www.datacamp.com/blog/o3-openai,2024-12-01,"GPQA Diamond [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+openai-o1-mini,60,self-reported,https://github.com/openai/simple-evals,,"GPQA Diamond, zero-shot pass@1 (simple-evals default GPQA variant is 'diamond', confirmed by reading gpqa_eval.py in the repo)."
 openai-o1-preview,73.3,independent,https://www.walturn.com/insights/comparing-openai-o1-to-other-top-models,2024-09-01,GPQA 0-shot CoT
 openai-o3,83.3,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,GPQA Diamond
 openai-o3-mini-high,79.7,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"GPQA Diamond, high effort"
@@ -145,13 +183,22 @@ openai-o3-mini-low,70.6,independent,https://www.lesswrong.com/posts/srdxEAcdmetd
 openai-o3-mini-medium,76.8,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"GPQA Diamond, medium effort"
 openai-o3-pro,84,self-reported,https://binaryverseai.com/chatgpt-o3-pro-review-benchmarks-hacks/,,"GPQA Diamond [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
 openai-o4-mini,81.4,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,GPQA Diamond
+openpangu-2-0-flash-non-thinking,79.8,self-reported,https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md,,"GPQA-Diamond, Avg@4, Non-Thinking mode column of the official benchmark table"
 openpangu-2-0-flash-thinking,83.7,self-reported,https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md,,"GPQA-Diamond, Avg@4, Thinking mode"
 palmyra-x5,47.2,self-reported,https://dev.writer.com/home/models,,
+phi-3-5-mini-3-8b,30.4,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,0-shot CoT; HF model card.
+phi-3-5-moe-16x3-8b-6-6b-active,36.8,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,GPQA CoT
 phi-3-mini-3-8b,30.6,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,0-shot
 phi-4-14b,56.1,self-reported,https://huggingface.co/microsoft/phi-4,,
+phi-4-mini-3-8b,30.4,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, GPQA (0-shot, CoT). Note: some third-party summaries mis-cite this as 25.2 (which is actually Phi-3.5-Mini's score in the same table); 30.4 was confirmed directly from the PDF table image."
+phi-4-mini-instruct,30.4,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, GPQA (0-shot, CoT), confirmed directly from the PDF table image."
 phi-4-reasoning,65.8,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,GPQA-Diamond
 phi-4-reasoning-14b,65.8,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,,GPQA-Diamond
 qwen1-5-110b,35.9,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Base model
+qwen2-5-14b,32.8,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 5-shot."
+qwen2-5-32b,48,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 5-shot."
+qwen2-5-72b,45.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model; blog reports as 'GPQA', consistent with GPQA-Diamond convention used elsewhere in this corpus for the same series"
+qwen2-5-7b,36.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model; blog reports as 'GPQA', consistent with GPQA-Diamond convention used elsewhere in this corpus for the same series"
 qwen2-5-max,60.1,self-reported,https://www.datacamp.com/blog/qwen-2-5-max,,GPQA-Diamond
 qwen2-57b-a14b,34.3,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-72b,37.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
@@ -170,20 +217,34 @@ qwen3-5-122b-a10b,86.6,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A1
 qwen3-5-397b-a17b,88.4,self-reported,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,,GPQA Diamond. Verified correct via fresh fetch of HF model card table and the original qwen.ai/blog?id=qwen3.5 launch blog table (both show 88.4); also matches automatio.ai third-party listing.
 qwen3-5-omni-flash,76.4,self-reported,https://qwen.ai/blog?id=qwen3.5-omni,2026-04-17,"Table 4 (Text→Text), STEM section. Distinct from SuperGPQA, mapped separately above. Confirmed identical in arXiv:2604.15804 Table 4."
 qwen3-5-omni-plus,83.9,self-reported,https://arxiv.org/abs/2604.15804,2026-04-21,"Table 4 (Text→Text), STEM section, Qwen3.5-Omni-Plus column, cell S5.T4.3.14.4. Paper labels it simply 'GPQA' with no subset (diamond/main) specified."
+qwen3-5-plus,85.9,self-reported,https://arxiv.org/abs/2604.15804,,"GPQA (Diamond), Qwen3.5-Plus-NoThinking column, Table 4 of the Qwen3.5-Omni Technical Report."
 qwen3-6-27b,87.8,self-reported,https://qwen.ai/blog?id=qwen3.6-27b,,GPQA Diamond
 qwen3-6-35b-a3b,86,self-reported,https://qwen.ai/blog?id=qwen3.6-27b,,GPQA Diamond
+qwen3-6-plus,88.2,independent,https://designforonline.com/ai-models/qwen-qwen3-6-plus/,,"GPQA Diamond as independently measured by Artificial Analysis (distinct methodology/harness from the vendor's own self-reported 90.4% already in this file, hence recorded as a separate result). 88.2% corroborated exactly by a second aggregator, benchlm.ai ('AA-GPQA Diamond: 88.2%'). Could not load Artificial Analysis's own model page as text (JS-rendered dashboard) to confirm at the primary source."
 qwen3-6-plus,90.4,self-reported,https://qwen.ai/blog?id=qwen3.6,,GPQA; same column-position inference as above
 qwen3-7-max,92.4,self-reported,https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154,,GPQA Diamond
 qwen3-7-plus,90.3,self-reported,https://www.digitalapplied.com/blog/qwen-3-7-plus-alibaba-multimodal-agent-model-2026-release,,GPQA Diamond
 qwen3-8b-non-thinking,39.3,self-reported,https://arxiv.org/abs/2505.09388,,"GPQA-Diamond, non-thinking mode"
 qwen3-8b-thinking,62,self-reported,https://arxiv.org/abs/2505.09388,,"GPQA-Diamond, thinking mode"
+qwq-32b,65.6,self-reported,https://arxiv.org/abs/2505.09388,,"Qwen3 Technical Report, Table 13, GPQA-Diamond row, QwQ-32B column. See mmlu-redux entry's note on version verification."
 qwq-32b-preview,65.2,self-reported,https://qwenlm.github.io/blog/qwq-32b-preview/,,GPQA (graduate-level)
+reka-core,38.2,self-reported,https://arxiv.org/html/2404.12387v1,2024-04-18,"Reported as ""GPQA-main (Hard QA)"" in Table 5 of the Reka Core/Flash/Edge technical report; also appears in the Apr 15, 2024 press release table. vs GPT-4 38.1, Claude 3 Opus 50.2, Claude 3 Sonnet 39.1, Gemini Ultra 35.7, Gemini Pro 1.5 41.5. Not previously in the corpus despite being in the same source table as the model's existing MMLU/GSM8K/HumanEval results."
+reka-flash-21b,34,self-reported,https://arxiv.org/html/2404.12387v1,,"GPQA (main) score for 'Reka Flash v1.5' in Table 5, which shares identical MMLU (75.9)/GSM8K (85.8)/HumanEval (72.0)/MMMU (53.3)/VQAv2 (78.4)/Perception-test (56.4) values with Table 15's 'Reka Flash' -- confirming it is the same reported model/build as the corpus's existing rows"
+reka-flash-3,61.1,self-reported,https://reka.ai/news/introducing-reka-flash,2025-03-10,GPQA score from the official 'Reasoning with Reka Flash 3' launch blog's benchmark comparison chart (vs Reka Flash 2.5's 20.5)
 sarvam-105b,78.7,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,GPQA Diamond
+seed-oss-36b,71.4,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,"GPQA Diamond, Seed-OSS-36B-Instruct's own column in the model card's comparison table"
 seed1-5-thinking,77.3,self-reported,https://arxiv.org/abs/2504.13914,,GPQA
 skywork-r1v-38b,61.6,self-reported,https://arxiv.org/abs/2504.05599,,
 smollm3-3b-no-thinking,35.7,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM3-3B,,"GPQA Diamond, no extended thinking"
-step-3-7-flash,30,independent,https://artificialanalysis.ai/models/step-3-7-flash,,"Note: this is the Artificial Analysis composite Intelligence Index (30), not a GPQA-specific figure -- no single-benchmark independent score could be verified for this exact model."
+smollm3-3b-think,41.7,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM3-3B,,"GPQA Diamond, extended-thinking mode. From the official model card's 'Extended Thinking' evaluation table (matches the HF blog post's chart)."
+sonar,47.1,independent,https://designforonline.com/ai-models/perplexity-sonar/,,"GPQA Diamond, attributed to Artificial Analysis benchmark data; independently corroborated with an identical figure by https://www.mindstudio.ai/models/sonar. Perplexity's own blog ('Meet new Sonar') could not be fetched directly (403/bot-protected, consistent with prior verificationNotes) and only qualitatively claims Sonar beats GPT-4o mini/Claude 3.5 Haiku on IFEval/MMLU without exact figures. Artificial Analysis's live page for plain 'Sonar' now shows only a composite Intelligence Index (10), not this per-benchmark breakdown, so this is best-available third-party aggregator data rather than a current vendor-published number."
+step-3,73,self-reported,https://chat.stepfun.com/research/en/step3,,GPQA-Diamond. Corroborated verbatim by SiliconFlow's launch blog post.
+step-3-7-flash,78.41,self-reported,https://github.com/stepfun-ai/Step-3.7-Flash/blob/main/README.md,,"Note: this is the Artificial Analysis composite Intelligence Index (30), not a GPQA-specific figure -- no single-benchmark independent score could be verified for this exact model. [Corrected during full-corpus audit: The existing entry mislabeled Artificial Analysis's composite Intelligence Index (30) as a 'gpqa' score -- the record's own verificationNotes already admit this was not a real GPQA figure. StepFun's official GitHub README states a real GPQA Diamond avg@16 item accuracy (over 3168 records) of 78.41% for the NVFP4 checkpoint (no MTP) vs 77.81% for the NVFP4+MTP speculative-decoding checkpoint. No pl]"
 trinity-large-thinking,76.3,self-reported,https://huggingface.co/arcee-ai/Trinity-Large-Thinking,,GPQA-Diamond
+upstage-solar-pro-2-chat,56,independent,https://artificialanalysis.ai/models/solar-pro-2,,"Artificial Analysis independent evaluation, GPQA Diamond, Solar Pro 2 non-reasoning/Chat mode."
+upstage-solar-pro-2-reasoning,69,independent,https://artificialanalysis.ai/models/solar-pro-2-reasoning,,"Artificial Analysis independent evaluation, GPQA Diamond, Solar Pro 2 Reasoning mode."
 wizardlm-2-8x22b,17.56,independent,https://huggingface.co/alpindale/WizardLM-2-8x22B,,"Open LLM Leaderboard v2, 0-shot"
+yandexgpt-5-pro,44.9,independent,https://github.com/kuk/simple-evals-ru,2025-03-20,"GPQA Diamond, independent third-party eval (89/198 correct) from the simple-evals-ru project's results table."
 yi-1-5-34b,36.3,independent,https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-34B-32K-details,,
+yi-1-5-9b,37.92,independent,https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-9B-details,2024-06-16,"Yi-1.5-9B base model, Open LLM Leaderboard v2, acc_norm."
 yi-lightning,50.9,self-reported,https://arxiv.org/abs/2412.01253,,0-shot

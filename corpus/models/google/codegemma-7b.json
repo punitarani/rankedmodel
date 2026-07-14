@@ -64,6 +64,27 @@
       "source": "self-reported",
       "sourceUrl": "https://ai.google.dev/gemma/docs/codegemma/model_card",
       "notes": "7B pretrained (PT) variant"
+    },
+    {
+      "benchmarkSlug": "humaneval-fim",
+      "score": 76.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2406.11409",
+      "notes": "HumanEval Infilling, single-line variant, for CodeGemma 7B (PT/base), Table 2 of the CodeGemma technical report: 76.09%. The same table also reports a multi-line infilling score of 58.44% for this model, which was not added since the taxonomy has only one humaneval-fim slug."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 44.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2406.11409",
+      "notes": "CodeGemma PT (7B) GSM8K accuracy, Table 5 of the CodeGemma technical report."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 19.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2406.11409",
+      "notes": "CodeGemma PT (7B) MATH dataset accuracy, Table 5 of the CodeGemma technical report."
     }
   ],
   "verificationNotes": "Existence and HumanEval/MBPP scores (44.5 / 56.2) for the 7B pretrained variant verbatim-confirmed on fetched ai.google.dev model card. Release date (April 9 2024) confirmed via Hugging Face blog announcement. 8K context confirmed by web search corroborating it inherits Gemma 7B's 8192-token context. No changes made."

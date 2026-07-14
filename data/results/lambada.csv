@@ -1,15 +1,24 @@
 model_slug,score,source,source_url,evaluated_at,notes
 cerebras-gpt-13b,69.6,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,0-shot
 chinchilla,77.4,self-reported,https://arxiv.org/abs/2203.15556,,Zero-shot LAMBADA accuracy
+falcon-7b,74.9,self-reported,https://arxiv.org/abs/2311.16867,,From Table 20 of the Falcon tech report.
 glm-130b,80.2,self-reported,https://arxiv.org/pdf/2210.02414,,"Zero-shot accuracy; beats GPT-3 175B, OPT-175B, BLOOM-176B"
 gopher,74.5,self-reported,https://arxiv.org/abs/2203.15556,,Zero-shot LAMBADA accuracy
 gpt-3-175b,86.4,self-reported,https://arxiv.org/abs/2005.14165,,few-shot
 gpt-j-6b,69.7,self-reported,https://huggingface.co/EleutherAI/gpt-j-6b,2021-06-09,"zero-shot accuracy, LM Eval Harness"
 gpt-neo-2-7b,62.22,self-reported,https://huggingface.co/EleutherAI/gpt-neo-2.7B,2021-03-21,"zero-shot accuracy, LM Eval Harness"
 gpt-neox-20b,72,self-reported,https://blog.eleuther.ai/announcing-20b/,2022-02-09,"zero-shot accuracy, LM Eval Harness"
+inflection-1,78.5,self-reported,https://inflection.ai/assets/Inflection-1.pdf,2023-06-23,0-shot (Table 7); a 1-shot figure of 83.3 is also reported.
+luminous-supreme-70b,74,self-reported,https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/,2023-02-20,"Core 16-task suite, 0-shot."
 megatron-turing-nlg-530b,76.6,self-reported,https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/,2021-10-11,zero-shot
 nemotron-3-8b,70.6,self-reported,https://huggingface.co/nvidia/nemotron-3-8b-base-4k,,0-shot
 opt-175b,75.59,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline (zero-shot), reported in GPTQ paper Table results"
 opt-66b,74.93,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline (zero-shot), GPTQ paper"
+palm-540b,77.9,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"PaLM 540B, 0-shot LAMBADA (EM), from Table 4."
+pythia-1-4b,61.6,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json,2023-04-03,"Zero-shot, LM Eval Harness, official final-checkpoint (step143000, i.e. fully-trained v1.1) raw eval JSON from the Pythia GitHub repo — lambada_openai acc=0.6161."
 pythia-12b,70.5,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"zero-shot accuracy, LM Eval Harness, lambada_openai task, final checkpoint (step143000) — raw eval JSON acc=0.7046"
+pythia-6-9b,67.3,self-reported,https://arxiv.org/abs/2304.01373,,"Zero-shot LAMBADA (OpenAI) accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7 (Appendix G.1) of the Pythia paper: 0.673±0.007."
+redpajama-incite-7b-base,71.43,self-reported,https://arxiv.org/abs/2411.12372,,"LAMBADA-OpenAI acc, Table 9 of the RedPajama technical paper."
+redpajama-incite-7b-instruct,68.95,self-reported,https://arxiv.org/abs/2411.12372,,"LAMBADA-OpenAI acc, Table 9."
+redpajama-incite-base-3b-v1,65.41,self-reported,https://www.together.ai/blog/redpajama-models-v1,,"LAMBADA-OpenAI accuracy, zero-shot lm-evaluation-harness subset reported in the official launch blog (matches Table 7 of the later RedPajama technical paper, arXiv 2411.12372, exactly: 0.6541)."
 turing-nlg-17b,67.98,self-reported,https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/,2020-02-13,Next-word prediction accuracy; new SOTA at the time (prior best 66.51%)

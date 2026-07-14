@@ -1,2 +1,9 @@
 model_slug,score,source,source_url,evaluated_at,notes
+deepseek-vl-7b,72.8,self-reported,https://arxiv.org/html/2403.05525v2,2024-03-08,"Table 5 ('MMC' column), DeepSeek-VL 7B (ours) row: '36.6 37.9 73.2 72.8 70.4 456 88.1 36.1 41.5' = MMMU/CMMMU/MMB/MMC/SEED/OCRB/POPE/MathV/MMVet. Verified against raw arXiv HTML text directly."
+deepseek-vl2,79.6,self-reported,https://arxiv.org/html/2412.10302v1,2024-12-13,Same Table 4 row; plain MMBench (CN test) column.
+ernie-4-5-vl-424b-a47b,90.9,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 8 (thinking mode), p.40 of the ERNIE 4.5 Technical Report."
 glm-4v-9b,79.4,self-reported,https://huggingface.co/THUDM/glm-4v-9b,,MMBench-CN-Test
+internvl2-5-78b,88.5,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,MMBench v1.0 CN test; exceeds the mmbench-cn slug's stated 40-82 range but is the verbatim published number
+internvl3-78b,88.7,self-reported,https://internvl.github.io/blog/2025-04-11-InternVL-3.0/,,MMBench v1.0 CN test; exceeds the mmbench-cn slug's stated 40-82 range but is the verbatim published number
+minicpm-llama3-v-2-5,74.2,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md,2024-05-20,Reported as 'MMB test (cn)' in the official results table.
+qwen2-vl-72b,86.6,self-reported,https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct,,MMBench-CN test split. Slightly exceeds the taxonomy's documented normMax of 82.

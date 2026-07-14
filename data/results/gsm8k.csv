@@ -8,6 +8,7 @@ amazon-nova-pro,94.8,self-reported,https://deepranking.ai/llm-models/nova-pro,,"
 apple-dclm-baseline-7b,2.5,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,chain-of-thought
 baichuan2-13b,52.77,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,4-shot
 baichuan2-7b,24.49,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,4-shot
+chatglm-6b,4.82,self-reported,https://github.com/zai-org/ChatGLM2-6B/blob/main/README_EN.md,,"Few-shot CoT (English GSM8K), from the official ChatGLM2-6B repo comparison table. Slightly below the taxonomy's typical floor (5) but this is the verbatim published figure for the very weak first-gen model."
 chatglm2-6b,28.05,self-reported,https://github.com/zai-org/ChatGLM2-6B,,Chat-aligned checkpoint
 chatglm3-6b,72.3,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
 claude-2,88,self-reported,https://www.anthropic.com/news/claude-2,2023-07-11,"Grade-school math, up from 85.2% on Claude 1.3"
@@ -16,39 +17,62 @@ claude-3-haiku,88.9,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cb
 claude-3-opus,95,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,0-shot CoT
 claude-3-sonnet,92.3,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,0-shot CoT
 claude-instant-1-2,86.7,self-reported,https://www.anthropic.com/news/releasing-claude-instant-1-2,2023-08-09,Up from 80.9% on v1.1
+codegemma-7b,44.2,self-reported,https://arxiv.org/abs/2406.11409,,"CodeGemma PT (7B) GSM8K accuracy, Table 5 of the CodeGemma technical report."
+command-r,56.63,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json,,"Open LLM Leaderboard v1, harness|gsm8k|5 (5-shot), acc."
 dbrx,66.9,self-reported,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm,,5-shot CoT
 decilm-7b,47.38,self-reported,https://huggingface.co/Deci/DeciLM-7B,,
 deepseek-coder-v2-236b,94.9,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,,
 deepseek-llm-67b,84.1,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"Chat variant, paper Table 6"
 deepseek-v2-236b,92.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,,Chat (RL) variant
+deepseek-vl-7b,55,self-reported,https://arxiv.org/html/2403.05525v2,2024-03-08,"Table 7, DeepSeek-VL 7B Chat column: 'GSM8K 18.0 55.0 63.0'."
 deepseekmath-7b,88.2,self-reported,https://arxiv.org/abs/2402.03300,2024-02-01,"DeepSeekMath-RL 7B, chain-of-thought"
 deepseekmoe-16b,18.8,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,,"Base variant, EM 8-shot"
+ernie-4-5-300b-a47b,96.6,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,Table 5.
+falcon-180b,45.94,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-180B,2023-10-24,"5-shot (harness|gsm8k|5), archived Open LLM Leaderboard v1 evaluation run"
 falcon-2-11b,53.83,independent,https://huggingface.co/blog/falcon2-11b,2024-05-13,5-shot
 falcon-40b,21.5,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-40b,2023-12-03,"harness gsm8k 5-shot accuracy, later leaderboard run"
 falcon-h1-34b,83.62,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
 falcon-mamba-7b,52.54,independent,https://huggingface.co/blog/falconmamba,2024-08-12,
 falcon3-10b,84.9,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,
 falcon3-7b,81.4,self-reported,https://huggingface.co/tiiuae/Falcon3-7B-Instruct,,
+gemini-1-0-pro,86.5,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 2, Maj1@32."
+gemini-1-0-ultra,94.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 2, Maj1@32, with chain-of-thought and self-consistency."
 gemini-1-5-flash,86.2,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"11-shot, Table 11"
+gemini-1-5-pro,90.8,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"11-shot, Table 11 of the Gemini 1.5 technical report."
 gemma-2-27b,74,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,5-shot maj@1
 gemma-2-9b,68.6,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,5-shot maj@1
 gemma-2b,17.7,self-reported,https://huggingface.co/google/gemma-2b,,maj@1
+gemma-3-4b,89.2,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Table 18, IT 4B."
 gemma-7b,46.4,self-reported,https://arxiv.org/html/2403.08295v4,,maj@1
 glm-4,93.3,self-reported,https://arxiv.org/html/2406.12793v1,2024-05-20,"GLM-4 (0520) checkpoint, vs GPT-4-0314 92.0"
 glm-4-9b-chat,79.6,self-reported,https://huggingface.co/THUDM/glm-4-9b-chat,,
 gpt-3-5-turbo,57.1,self-reported,https://arxiv.org/abs/2303.08774,,
 gpt-4,92,self-reported,https://arxiv.org/abs/2303.08774,,training set partially contaminated per OpenAI's own footnote
+gpt-4o,96.1,independent,https://arxiv.org/abs/2407.21783,2024-07-23,"8-shot CoT. From the same Meta Llama-3 paper comparison table (Table 2), verified directly against the PDF."
+granite-3-0-2b-instruct,59.66,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,pass@1
+granite-3-0-8b-instruct,68.99,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"GSM8K, 5-shot CoT. Confirmed in HF model-index YAML and technical report Table 10."
 granite-3-1-8b-instruct,73.84,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HF Open LLM Leaderboard V1
 granite-3-2-8b-instruct,81.65,self-reported,https://huggingface.co/ibm-granite/granite-3.2-8b-instruct,,
 granite-3-3-8b-instruct,80.89,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,
 granite-4-0-h-small,87.27,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+granite-4-1-8b-instruct,92.49,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,8-shot
+grok-1,62.9,self-reported,https://x.ai/news/grok,2023-11-03,"8-shot, chain-of-thought prompt, per xAI's original 'Announcing Grok' blog post benchmark table; also corroborated in the later 'Announcing Grok-1.5' post's Grok-1 comparison column."
 grok-1-5,90,self-reported,https://x.ai/news/grok-1.5,2024-03-29,
+h2o-danube-1-8b,15.54,self-reported,https://arxiv.org/abs/2401.16818,,"5-shot GSM8K for h2o-danube-1.8b-chat, Open LLM Leaderboard-style eval, from the technical report Table 5."
 h2o-danube3-4b,50.18,self-reported,https://huggingface.co/h2oai/h2o-danube3-4b-chat,,Open LLM Leaderboard v1
 hunyuan-large-a52b,92.8,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,
+hunyuan-turbos,94.4,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"4-shot, Table 4 of Tencent's Hunyuan-TurboS technical report (arxiv 2505.15431), Hunyuan-TurboS-20250416 checkpoint"
+inflection-1,62.9,self-reported,https://inflection.ai/assets/Inflection-1.pdf,2023-06-23,"8-shot chain-of-thought prompt (Table 8 of the Inflection-1 technical memo); GPT-4 92.0, PaLM-2-L 80.7 shown alongside for context."
 internlm2-20b,79.6,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,"InternLM2-Chat-20B, 4-shot"
 internlm2-5-7b,86,self-reported,https://huggingface.co/internlm/internlm2_5-7b-chat,,
 krutrim-2-12b,71,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,0-shot exact match
+lamda,14.3,self-reported,https://arxiv.org/abs/2201.11903,2022-01-28,"LaMDA 137B, 8-shot chain-of-thought prompting on GSM8K (vs. 6.5% with standard/non-CoT prompting), reported in Google's Chain-of-Thought Prompting paper (Wei et al. 2022), Table 2 / Appendix B."
+lg-exaone-3-0-7-8b-instruct,79.8,self-reported,https://arxiv.org/abs/2408.03541,2024-08-01,
+lg-exaone-3-5-32b-instruct,91.9,self-reported,https://arxiv.org/abs/2412.04862,2024-12-01,GSM8K (CoT)
 llama-13b,17.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot exact match, Table 7"
+llama-2-13b,28.7,self-reported,https://ar5iv.labs.arxiv.org/html/2307.09288,2023-07-18,"8-shot, maj1@1, Table 25 'Comparison to other open-source models on mathematical reasoning tasks'"
+llama-2-70b,56.8,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"8-shot maj1@1, Table 25 (Appendix A.2.2) of the official Llama 2 paper."
+llama-2-7b,14.6,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"8-shot maj1@1, Table 25 (Appendix A.2.2)."
 llama-3-1-405b,96.8,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, CoT"
 llama-3-1-70b,95.1,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, CoT"
 llama-3-1-8b,84.5,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, CoT"
@@ -59,27 +83,38 @@ llama-3-3-70b,94.84,self-reported,https://huggingface.co/meta-llama/Llama-3.3-70
 llama-3-70b,93,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct,,"8-shot CoT, Instruct-tuned checkpoint"
 llama-3-8b,79.6,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"Instruct, 8-shot"
 llama-33b,35.6,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot exact match, Table 7"
+llama-65b,50.9,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"Table 7, single-sample result (the paper's separate majority-voting/maj1@k variant scores higher at 69.7 and is a distinct setting)"
+llama-7b,11,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"Table 7, single-sample result (the paper's separate majority-voting/maj1@k variant scores higher at 18.1 and is a distinct setting)"
 minicpm-2b,53.83,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table
 minicpm3-4b,81.1,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,
 minimax-text-01,94.8,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,
 ministral-3b,50.9,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,,"maj@8, base model"
 ministral-8b,64.5,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,,"maj@8, base model"
 mistral-7b,52.2,self-reported,https://arxiv.org/abs/2310.06825,,
+mistral-large,81,self-reported,https://mistral.ai/news/mistral-large/,2024-02-26,"Same chart reports 'GSM8K maj@1 (5-shot)'=81.0% and a self-consistency-boosted 'GSM8K maj@8 (8-shot)'=91.21%; the single-sample maj@1 figure was used as the directly comparable, non-boosted score."
 mistral-large-2-24-07,93,self-reported,https://huggingface.co/mistralai/Mistral-Large-Instruct-2407,,
 mixtral-8x22b,90.8,self-reported,https://mistral.ai/news/mixtral-8x22b/,2024-04-01,"maj@8, instruct variant"
 mixtral-8x7b,74.4,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
+molmo-2-8b,89.7,self-reported,https://arxiv.org/abs/2601.10611,,"Molmo2 Technical Report Table 19, Molmo2-8B row."
+mpt-30b,16.9,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b,2023-12-04,"5-shot accuracy (harness|gsm8k|5 = 0.1691), confirmed via direct curl+grep"
+mpt-30b-instruct,15.3,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct,2023-10-14,"5-shot accuracy (harness|gsm8k|5), HF Open LLM Leaderboard v1 run"
 mpt-7b,9.1,independent,https://arxiv.org/abs/2405.13386,2024-05-22,"CORRECTED from 10 to 9.1 — the actual Table 2 value for MPT-7B GSM8K is 9.1, not 10; confirmed by direct read of the table"
+mpt-7b-instruct,2.8,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct,2023-09-23,"5-shot accuracy (harness|gsm8k|5 = 0.0281), confirmed via direct curl+grep. Genuinely below the taxonomy's typical 5-100 range floor for this benchmark -- a real, verified very-low score for this small 2023 instruction-tuned model on GSM8K, not a transcription error."
 naver-hyperclova-x,81.65,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, 8-shot maj@8"
 nemotron-3-8b,39.4,self-reported,https://huggingface.co/nvidia/nemotron-3-8b-base-4k,,"8-shot, majority voting"
 nemotron-4-15b,46,self-reported,https://unfoldai.com/nemotron-4-nvidia-powerful-language-model/,2024-02-26,
 nemotron-h-56b,93.71,self-reported,https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K,,8-shot CoT
+nous-hermes-2-mixtral-8x7b-dpo,71.65,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_NousResearch__Nous-Hermes-2-Mixtral-8x7B-DPO,2024-01-22,"5-shot GSM8K acc from the same HF Open LLM Leaderboard (old) details dataset raw results JSON (harness|gsm8k|5, acc 0.71645)."
 olmo-2-13b,87.4,self-reported,https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct,,Instruct variant
 olmo-2-32b,87.6,self-reported,https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct,,"GPT-3.5 Turbo 74.3, GPT-4o mini 83.0"
 olmo-2-7b,67.5,self-reported,https://huggingface.co/allenai/OLMo-2-1124-7B,,
 olmo-7b,8.5,self-reported,https://huggingface.co/allenai/OLMo-7B,,"8-shot CoT, mixed eval"
+openhermes-2-5-mistral-7b,26.08,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_teknium__OpenHermes-2.5-Mistral-7B,2023-11-20,"5-shot GSM8K acc from the same Open LLM Leaderboard details dataset raw results (harness|gsm8k|5, acc 0.26080)."
 orca-2-13b,59.14,self-reported,https://ar5iv.labs.arxiv.org/html/2311.11045,,zero-shot
+palm-2,80.7,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"Flan-PaLM 2 (instruction-tuned), 8-shot chain-of-thought (no self-consistency) on GSM8K, from Table 7. (With self-consistency/64 samples the paper reports 92.2%; 84.7% is the single-decode CoT figure, more comparable to pass@1.)"
 palm-540b,58,self-reported,https://arxiv.org/abs/2204.02311,,8-shot chain-of-thought + external calculator
 pharia-1-llm-7b-control,1.4,self-reported,https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control,,
+phi-1-5-1-3b,40.2,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,2023-09-11,"Zero-shot pass@1, Table 4 (Multi-Step Reasoning Benchmarks); paper labels this result 'via coding' — the model solves math problems by generating code rather than direct chain-of-thought text."
 phi-2-2-7b,61.1,self-reported,https://arxiv.org/pdf/2404.14219,,8-shot CoT
 phi-3-5-mini-3-8b,86.2,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,8-shot CoT
 phi-3-5-moe-16x3-8b-6-6b-active,88.7,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
@@ -113,6 +148,7 @@ skywork-13b,55.8,self-reported,https://huggingface.co/Skywork/Skywork-13B-base,,
 skywork-moe-base,76.1,self-reported,https://arxiv.org/html/2406.06563v1,,
 smollm2-1-7b,31,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,"base model, 5-shot"
 snowflake-arctic,74.2,independent,https://www.flexera.com/blog/finops/snowflake-arctic,,
+stable-beluga-2-freewilly-2-70b,35.9,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__StableBeluga2,2023-10-15,"HF 'open-llm-leaderboard-old' details dataset for stabilityai/StableBeluga2, harness|gsm8k|5 accuracy: 0.359, from the run dated 2023-10-15."
 stable-lm-2-1-6b,35.18,independent,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,"instruct variant, 5-shot"
 stable-lm-2-12b,57.7,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,chat variant
 stablelm-3b-4e1t,3.34,independent,https://huggingface.co/stabilityai/stablelm-3b-4e1t,,"Open LLM Leaderboard, 5-shot"
@@ -121,6 +157,8 @@ starcoder2-15b,65.1,self-reported,https://huggingface.co/bigcode/starcoder2-15b,
 starcoder2-3b,27.7,self-reported,https://huggingface.co/bigcode/starcoder2-3b,,PAL
 t-lu-3-405b,95.5,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B,,"8-shot CoT; DeepSeek V3 94.1, GPT-4o 91.7"
 t-lu-3-70b,93.5,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B,,8-shot CoT
+ul2-20b,6.9,self-reported,https://arxiv.org/abs/2205.05131,2022-05-10,"UL2 20B (base, non-Flan), 8-shot chain-of-thought + external calculator (no self-consistency) on GSM8K, from Table 12. This was notable as the first publicly-available pretrained checkpoint (no fine-tuning) shown to successfully leverage CoT prompting. With self-consistency added the paper reports 10.2%; with plain CoT (no calculator) only 4.4%; I chose the CoT+calculator (no SC) figure since it's the closest match to the calculator-augmented, non-self-consistency methodology already used for PaLM 540B's existing GSM8K entry in this corpus."
+upstage-solar-10-7b,55.5,self-reported,https://arxiv.org/abs/2312.15166,,"Table 2 of the SOLAR 10.7B paper (base model row), 5-shot GSM8K."
 upstage-solar-pro,89.69,self-reported,https://huggingface.co/upstage/solar-pro-preview-instruct,,
 yi-34b,67.2,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,8-shot pass@1
 yi-6b,32.5,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,8-shot pass@1

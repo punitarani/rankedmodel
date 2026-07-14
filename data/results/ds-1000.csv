@@ -1,3 +1,4 @@
 model_slug,score,source,source_url,evaluated_at,notes
+starcoder-15-5b,26,self-reported,https://huggingface.co/bigcode/starcoder,,"DS-1000 overall pass@1 in completion mode, 26.0%, verbatim from the official HF model card / StarCoder paper (arXiv:2305.06161) evaluation table; cross-confirmed via direct model-card fetch."
 starcoder2-15b,33.8,self-reported,https://huggingface.co/bigcode/starcoder2-15b,,pass@1
 starcoder2-3b,25,self-reported,https://huggingface.co/bigcode/starcoder2-3b,,pass@1

@@ -78,6 +78,30 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/blog/llama4-release",
       "notes": "Pre-trained/base model comparison table, pass@1 (not instruction-tuned)"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 79.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Pre-trained/base model comparison table (macro_avg/acc_char), not instruction-tuned"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 32.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Instruction-tuned, pass@1"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 90.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Instruction-tuned, average/exact-match"
     }
   ],
   "verificationNotes": "Re-confirmed via huggingface.co/blog/llama4-release and ai.meta.com/blog/llama-4-multimodal-intelligence/: release date 2025-04-05, 109B total/17B active MoE with 16 experts, 10M-token instruct context, 12-language fine-tuning support, MMLU-Pro 74.3 / GPQA Diamond 57.2 / MATH 50.3 (instruction-tuned) all match verbatim. Corrected the MBPP row's notes field: the 67.8 score is from the pre-trained/base-model comparison table, not the instruction-tuned table as originally labeled (score itself confirmed correct)."

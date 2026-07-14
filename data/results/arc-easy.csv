@@ -1,5 +1,56 @@
 model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba,73.5,self-reported,https://arxiv.org/html/2403.19887v1,,"ARC-Easy (ARC-E, 0-shot) score from Table 2 of the original Jamba technical report -- not present on the HF model card, which only lists ARC-Challenge."
 apple-dclm-baseline-7b,82.2,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,
+apple-openelm-270m-3b,59.89,self-reported,https://huggingface.co/apple/OpenELM,2024-04-01,"OpenELM-3B (pretrained), ARC-Easy, zero-shot — same 'Zero-Shot Results' table on the official HF model card as the existing ARC-Challenge/HellaSwag/WinoGrande rows."
+btlm-3b-8k,66.9,self-reported,https://arxiv.org/abs/2309.11568,,"0-shot, Table 4"
+cerebras-gpt-13b,71.4,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,"0-shot, from the same HF model card results table."
 comma-v0-1-2t,71.8,self-reported,https://huggingface.co/common-pile/comma-v0.1-2t,,
+deepseek-llm-67b,81.6,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6"
+deepseekmoe-16b,68.1,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, DeepSeekMoE 16B column, 0-shot accuracy."
+falcon-2-11b,77.78,independent,https://huggingface.co/blog/falcon2-11b,2024-05-24,"0-shot, from the blog's separate 'Zero shot performance' table"
+falcon-40b,81.86,independent,https://huggingface.co/blog/falcon2-11b,2024-05-24,"0-shot, from the blog's separate zero-shot performance table"
+falcon-7b,73.6,self-reported,https://arxiv.org/abs/2311.16867,,From Table 21 of the Falcon tech report.
+galactica-120b,83.8,self-reported,https://ar5iv.labs.arxiv.org/html/2211.09085,2022-11-01,"0-shot, in-domain, Table 10 'Question Answering Results', GAL=120B column."
+gemma-2-27b,88.6,self-reported,https://huggingface.co/google/gemma-2-27b,2024-06-01,"ARC-e, 0-shot"
+gemma-2-9b,88,self-reported,https://huggingface.co/google/gemma-2-9b,2024-06-01,"ARC-e, 0-shot"
+gemma-2b,73.2,self-reported,https://huggingface.co/google/gemma-2b,,ARC-e
+gemma-7b,81.5,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf,2024-02-21,"Table 6, ARC-e, 0-shot."
+gpt-3-175b,70.1,self-reported,https://arxiv.org/abs/2005.14165,,Few-shot (Table 3.6)
+gpt-j-6b,67,self-reported,https://arxiv.org/abs/2204.06745,2022-04-14,"Zero-shot, Table 2 of the GPT-NeoX-20B paper (Black et al. 2022), which EleutherAI ran as a head-to-head comparison across GPT-J-6B, GPT-NeoX-20B, GPT-3 and FairSeq models using the LM Eval Harness (acc=0.670)."
+gpt-neox-20b,72.3,self-reported,https://arxiv.org/abs/2204.06745,2022-04-14,"Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.723)."
+h2o-danube-1-8b,67.51,self-reported,https://huggingface.co/h2oai/h2o-danube-1.8b-chat,,"0-shot ARC-Easy for h2o-danube-1.8b-chat, from the HF model card's benchmark table; independently cross-confirmed in the technical report (arXiv:2401.16818, Table 4, chat-model commonsense reasoning results)."
+h2o-danube3-4b,83.84,self-reported,https://arxiv.org/abs/2407.09276,,"ARC-Easy, 25-shot, from H2O-Danube3 technical report Table 2 (also verified via arxiv.org/html/2407.09276)"
+hermes-3-405b,86.24,self-reported,https://arxiv.org/pdf/2408.11857,,"0-shot, Table 5 'Final downstream task evaluations'."
+krutrim-2-12b,82,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,"ARC_Easy, 0-shot accuracy"
+llama-13b,74.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+llama-2-70b,80.2,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (ARC-e column)."
+llama-2-7b,75.2,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (ARC-e column)."
+llama-33b,80,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3 (Common Sense Reasoning)."
+llama-65b,78.9,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table"
+llama-7b,72.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Common Sense Reasoning table"
+luminous-supreme-70b,76.9,self-reported,https://aleph-alpha.com/en/blog/luminous-performance-benchmarks/,2023-02-20,"Core 16-task suite, 0-shot."
 minicpm-2b,85.44,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table (ARC-e)
+mistral-7b,80,self-reported,https://arxiv.org/abs/2310.06825,,"Table 2 of the Mistral 7B paper (Arc-e column), Pretrained row."
+mixtral-8x7b,83.1,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,Table 2 of the paper; listed as ARC-Easy.
+nemotron-3-8b,72.9,self-reported,https://huggingface.co/nvidia/nemotron-3-8b-base-4k,,"0-shot. From the evaluation table on the HF model card, confirmed via two independent literal-transcription fetches of the page."
+nemotron-4-15b,80.9,self-reported,https://arxiv.org/abs/2402.16819,,"Table 3, zero-shot."
+nous-hermes-2-mixtral-8x7b-dpo,86.36,self-reported,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO,2024-01-15,"acc_norm, part of GPT4All suite on the official HF model card (same table already used for arc-challenge/hellaswag/winogrande in the corpus)."
+olmo-7b,65.4,self-reported,https://huggingface.co/allenai/OLMo-7B,,arc_easy row in the OLMo 7B vs. peer models table
+olmoe-1b-7b-0924,84.2,self-reported,https://huggingface.co/allenai/OLMoE-1B-7B-0924,,ARC-Easy score from the same 'Evaluation Snapshot' table on the official HF model card that already sources the model's other 4 benchmark rows (verified by fetching README.md directly).
+openhermes-2-5-mistral-7b,81.65,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,2023-11-03,"acc_norm, part of GPT4All suite on the official HF model card."
+openllama-7b,68,self-reported,https://github.com/openlm-research/open_llama,,"arc_easy/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+opt-175b,71.04,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline (zero-shot) for OPT-175B, Table 17 'OPT accuracy on ARC-easy' in the GPTQ paper (arXiv 2210.17323) — verified byte-for-byte in the raw table HTML (row 'full', 16 bits, 175B column = 71.04). Same source paper already used for the model's other 4 existing scores (LAMBADA/PIQA/ARC-Challenge/StoryCloze); this is the one remaining task from that same 5-task table that was missing from the corpus."
+opt-66b,67.26,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline (zero-shot) for OPT-66B, Table 17 'OPT accuracy on ARC-easy' in the GPTQ paper (arXiv 2210.17323) — verified byte-for-byte in the raw table HTML (row 'full', 16 bits, 66B column = 67.26). Same source paper already used for the model's other 4 existing scores."
+opt-iml-30b,64.9,self-reported,https://ar5iv.labs.arxiv.org/html/2212.12017,2022-12-22,"0-shot accuracy on ARC-Easy for OPT-IML 30B, Table 9 of the OPT-IML paper. Row 'OPT-IML 30B', ARC(e) column = 64.9/72.1 (0-shot/32-shot)."
+orca-2-13b,92.85,self-reported,https://ar5iv.labs.arxiv.org/html/2311.11045,2023-11-18,"Zero-shot, Table 2 of the Orca 2 technical report (arXiv 2311.11045), Orca-2-13B row (default/empty system message)."
+palm-540b,76.6,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"PaLM 540B, 0-shot ARC-Easy, from Table 4."
+phi-1-5-1-3b,75.6,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,2023-09-11,"Zero-shot accuracy, Table 2 (Common Sense Reasoning Benchmarks) of the phi-1.5 technical report."
+phi-2-2-7b,88.5,self-reported,https://arxiv.org/pdf/2404.14219,,10-shot; same comparison table.
+phi-3-medium-14b,97.7,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,10-shot
+phi-3-small-7b,97,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,10-shot
+pythia-1-4b,60.6,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json,2023-04-03,"Zero-shot, final checkpoint (step143000) — arc_easy acc=0.6065."
 pythia-12b,70.2,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"zero-shot, LM Eval Harness, final checkpoint (step143000) — raw eval JSON acc=0.7024"
+pythia-6-9b,67.3,self-reported,https://arxiv.org/abs/2304.01373,,"Zero-shot ARC-Easy accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.673±0.010."
+redpajama-incite-7b-base,69.23,self-reported,https://arxiv.org/abs/2411.12372,,"LM-eval-harness acc, Table 9 of the RedPajama technical paper."
+redpajama-incite-7b-instruct,71.59,self-reported,https://arxiv.org/abs/2411.12372,,"LM-eval-harness acc, Table 9."
+skywork-13b,78.5,self-reported,https://arxiv.org/pdf/2310.19341,2023-10-30,"From Table 11 of the Skywork-13B technical report (arXiv:2310.19341), column 'ARC-E'."

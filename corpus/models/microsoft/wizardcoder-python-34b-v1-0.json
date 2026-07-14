@@ -62,7 +62,21 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md",
       "notes": "pass@1"
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 64.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md",
+      "notes": "HumanEval+ pass@1, from the same comparison table on the official HF README that already sources the existing HumanEval/MBPP rows; the existing verificationNotes had already spotted this number but it was never added as its own row."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 59.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md",
+      "notes": "MBPP+ pass@1, from the same official HF README comparison table."
     }
   ],
-  "verificationNotes": "Existence and identity confirmed on WizardLMTeam's own HF repo (name, org, Aug 26 2023 release consistent across HF discussions). HumanEval 73.2 and MBPP 73.2 confirmed verbatim in the README comparison table (also lists HumanEval+ 64.6, MBPP+ 59.9 which the record doesn't claim, so no conflict). Llama 2 license / Code Llama-Python 34B backbone confirmed. ctxK=16 confirmed directly from config.json (max_position_embeddings=16384), though community discussion notes some quantized builds default to a 4096 window in practice — kept 16K since that's the model's native config."
+  "verificationNotes": "Existence and identity confirmed on WizardLMTeam's own HF repo (name, org, Aug 26 2023 release consistent across HF discussions). HumanEval 73.2 and MBPP 73.2 confirmed verbatim in the README comparison table (also lists HumanEval+ 64.6, MBPP+ 59.9 which the record doesn't claim, so no conflict). Llama 2 license / Code Llama-Python 34B backbone confirmed. ctxK=16 confirmed directly from config.json (max_position_embeddings=16384), though community discussion notes some quantized builds default to a 4096 window in practice \u2014 kept 16K since that's the model's native config."
 }

@@ -51,6 +51,13 @@
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2203.13474",
       "notes": "pass@1, CodeGen-Mono 16.1B"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 35.28,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2203.13474",
+      "notes": "pass@1 on sanitized MBPP (n=100, temperature=0.8), CodeGen-Mono 16.1B, Table 11 of the CodeGen paper (arXiv 2203.13474)"
     }
   ],
   "verificationNotes": "Confirmed real: arxiv 2203.13474 (v1 submitted 2022-03-25) and HF repo Salesforce/codegen-16B-mono exist. Fetched ar5iv paper directly and confirmed Table 1 literally shows CodeGen-Mono 16.1B pass@1 = 29.28 on HumanEval. License BSD-3-Clause confirmed via HF/search."

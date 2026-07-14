@@ -72,6 +72,48 @@
       "score": 93.2,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct"
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 38.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1 (vision-language benchmarks) of the Phi-4-Mini/Multimodal Technical Report; standard/vision sub-scores 39.7/37.3."
+    },
+    {
+      "benchmarkSlug": "mmbench-en",
+      "score": 86.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, 'MMBench (dev-en)'."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 82.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, AI2D."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 81.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, ChartQA."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 75.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, TextVQA (val); marginally above the taxonomy's stated 40-75 range ceiling but the same benchmark."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 55,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "notes": "Table 1, 'VideoMME-16Frame'."
     }
   ],
   "verificationNotes": "Re-fetched HF model card: 5.6B params, MIT license, 128K context, 23 text languages, vision (English-only) + 8-language audio confirmed. MMMU 55.1, MathVista 62.4, DocVQA 93.2 confirmed literally on card; card also literally states '#1 on Huggingface OpenASR leaderboard with word error rate 6.14%' (an alternate 6.02 figure also appears on the page but 6.14 is the explicitly cited leaderboard number, kept as-is). Azure pricing $0.08/$0.32 confirmed exact via independent pricing sources. No changes made."

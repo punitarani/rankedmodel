@@ -40,7 +40,7 @@
   "vramQ4Gb": 210,
   "vramFp16Gb": 800,
   "tps4090": null,
-  "tpsNote": "400B total MoE weights (~210GB at Q4) far exceed a single RTX 4090; needs multi-GPU/datacenter hardware — no single-4090 benchmark exists.",
+  "tpsNote": "400B total MoE weights (~210GB at Q4) far exceed a single RTX 4090; needs multi-GPU/datacenter hardware \u2014 no single-4090 benchmark exists.",
   "effortLabel": null,
   "isDefaultConfig": true,
   "isBestConfig": true,
@@ -78,6 +78,54 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/blog/llama4-release",
       "notes": "Pre-trained/base model comparison table, pass@1 (not instruction-tuned)"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 85.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Pre-trained/base model comparison table (macro_avg/acc_char), not instruction-tuned"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 43.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Instruction-tuned, pass@1"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 92.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Instruction-tuned, average/exact-match"
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 73.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Instruction-tuned"
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 85.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Pre-trained/base model comparison table, relaxed_accuracy metric"
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 91.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Pre-trained/base model comparison table, ANLS metric"
     }
   ],
   "verificationNotes": "Re-confirmed via huggingface.co/blog/llama4-release and ai.meta.com/blog/llama-4-multimodal-intelligence/: release date 2025-04-05, 400B total/17B active MoE with 128 experts, 1M-token instruct context, 12-language fine-tuning support, MMLU-Pro 80.5 / GPQA Diamond 69.8 / MATH 61.2 (instruction-tuned) all match verbatim. Corrected the MBPP row's notes field: the 77.6 score is from the pre-trained/base-model comparison table on that page, not the instruction-tuned table as originally labeled (score itself confirmed correct)."

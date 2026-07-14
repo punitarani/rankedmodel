@@ -80,6 +80,38 @@
       "sourceUrl": "https://huggingface.co/EleutherAI/gpt-j-6b",
       "evaluatedAt": "2021-06-09",
       "notes": "zero-shot, LM Eval Harness"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 67,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.06745",
+      "evaluatedAt": "2022-04-14",
+      "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (Black et al. 2022), which EleutherAI ran as a head-to-head comparison across GPT-J-6B, GPT-NeoX-20B, GPT-3 and FairSeq models using the LM Eval Harness (acc=0.670)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 34,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.06745",
+      "evaluatedAt": "2022-04-14",
+      "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.340)."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 17,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.06745",
+      "evaluatedAt": "2022-04-14",
+      "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.170); low score is expected/plausible for a 6B non-instruction-tuned 2021 base model on closed-book trivia."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 28.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.06745",
+      "evaluatedAt": "2022-04-14",
+      "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.288)."
     }
   ],
   "verificationNotes": "Confirmed real: fetched huggingface.co/EleutherAI/gpt-j-6b model card, exact param count 6,053,381,344 = 6.05B matches record; Apache-2.0 license and 2048 context confirmed; evaluation table verbatim-matches all 4 scores. Wikipedia confirms release date June 9, 2021. No changes needed."

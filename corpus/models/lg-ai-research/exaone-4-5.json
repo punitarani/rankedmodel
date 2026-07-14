@@ -51,6 +51,105 @@
       "source": "self-reported",
       "sourceUrl": "https://www.prnewswire.com/news-releases/lg-reveals-next-gen-multimodal-ai-exaone-4-5-302736993.html",
       "notes": "LiveCodeBench v6, vendor-reported vs Gemma 4 (80.0)"
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 78.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09",
+      "notes": "MMMU (val), reasoning mode; also confirmed on the HF model card"
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 68.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09"
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09",
+      "notes": "MathVista (mini)"
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 75.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09",
+      "notes": "MATH-Vision"
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 89,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09"
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 71.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09",
+      "notes": "CharXiv (RQ / reasoning-questions subset)"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 83.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 80.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09",
+      "notes": "GPQA-Diamond"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 92.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09",
+      "notes": "AIME 2026"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 89.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 62.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09"
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 73,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B",
+      "evaluatedAt": "2026-04-09",
+      "notes": "tau2-Bench, telecom domain (model card also reports Retail 77.9 and Airline 56.5 domains, which don't map to any taxonomy slug and are omitted)"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 85.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.08644",
+      "evaluatedAt": "2026-04-09",
+      "notes": "MMMLU average over ko/de/es/ja subset only (paper does not report the full 14-language average), so treat as approximate/partial match to the taxonomy definition"
     }
   ],
   "verificationNotes": "Context window (256K, precisely 262,144 tokens) sourced from the EXAONE 4.5 Technical Report, not the press release."

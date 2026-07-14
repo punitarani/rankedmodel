@@ -92,6 +92,70 @@
       "score": 84.7,
       "source": "self-reported",
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/"
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 83.9,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 72.4,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "ARC-C, base model"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 60.4,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 83.9,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 87.6,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 45.9,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model; blog reports as 'GPQA', consistent with GPQA-Diamond convention used elsewhere in this corpus for the same series"
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 51.2,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 69.2,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Base model"
     }
   ],
   "verificationNotes": "Existence, org, and Sept 19 2024 date confirmed via qwenlm.github.io/blog/qwen2.5/ byline. HF model card (huggingface.co/Qwen/Qwen2.5-72B) confirms 72.7B total / 70.0B non-embedding params, 80 layers, GQA 64Q/8KV, 131,072 ctx, 'qwen' (non-Apache) license. Blog confirms 29+ language support and Apache-2.0-except-3B/72B licensing. All 7 result rows (MMLU 86.1, MMLU-Pro 58.1, BBH 86.3, MATH 62.1, GSM8K 91.5, HumanEval 59.1, MBPP 84.7) verified verbatim on qwenlm.github.io/blog/qwen2.5-llm/. No changes made."

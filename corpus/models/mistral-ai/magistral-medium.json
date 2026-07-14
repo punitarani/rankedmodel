@@ -54,6 +54,46 @@
       "sourceUrl": "https://mistral.ai/news/magistral/",
       "evaluatedAt": "2025-06-10",
       "notes": "AIME2024 pass@1; 90% with maj@64"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 70.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2506.10910",
+      "evaluatedAt": "2025-06-10",
+      "notes": "GPQA Diamond; Magistral technical report Table 2 (70.83% per the HF comparison table)"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 59.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2506.10910",
+      "evaluatedAt": "2025-06-10",
+      "notes": "LiveCodeBench v5; Magistral technical report Table 2 (59.36% per the HF comparison table)"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 94.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2506.10910",
+      "evaluatedAt": "2025-06-10",
+      "notes": "MATH-500; Magistral technical report Table 2"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 47.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2506.10910",
+      "evaluatedAt": "2025-06-10",
+      "notes": "Aider Polyglot; Magistral technical report Table 2"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2506.10910",
+      "evaluatedAt": "2025-06-10",
+      "notes": "Humanity's Last Exam; Magistral technical report Table 2"
     }
   ],
   "verificationNotes": "Release date, closed/proprietary status, and AIME2024 73.6% pass@1 confirmed on mistral.ai/news/magistral/. Pricing $2/$5 per 1M tokens confirmed independently via artificialanalysis.ai and other pricing trackers. CORRECTED ctxK from 128 to 40: the input record's 128K figure does not match Mistral's own model card (docs.mistral.ai/models/model-cards/magistral-medium-1-0-25-06), which lists the context window as 40k, corroborated by OpenRouter listing 'Context: 41K' for magistral-medium-2506. The 128K figure appears to have been conflated with Magistral Small's (different) context window."

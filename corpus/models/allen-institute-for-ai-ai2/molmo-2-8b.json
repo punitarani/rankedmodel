@@ -49,6 +49,91 @@
     "releaseDate": "https://allenai.org/blog/molmo2",
     "openness": "https://huggingface.co/allenai/Molmo2-8B/raw/main/README.md"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 95.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "Molmo2 Technical Report Table 6 (11-benchmark image suite), Molmo2-8B row. Column order verified via direct PDF text extraction (pdftotext -raw) and cross-checked against the paper's own claims (e.g. Molmo2-8B stated as SOTA among open models on VQAv2/RealWorldQA, which the reconstructed columns confirm)."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 86,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "Molmo2 Technical Report Table 6, Molmo2-8B row."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 93.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "Molmo2 Technical Report Table 6, Molmo2-8B row; consistent with the paper's text noting Molmo2 is 'a bit behind the best open-weight model' on DocVQA (Qwen3-VL-8B=96.1, PLM-8B=94.6 both higher)."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 85.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "Molmo2 Technical Report Table 6, Molmo2-8B row. Note this exceeds the taxonomy's documented textvqa range (40-75); several other 2026-era models in the same table (GPT-5=78.7, Qwen3-VL-8B=82.8, PLM-8B=86.5) also exceed 75, suggesting the taxonomy range predates this generation of models rather than indicating a mapping error."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 87,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "VQA v2.0; Molmo2 Technical Report Table 6. This is the single highest score in the entire column across every open-weight/open model listed, matching the paper's explicit claim of 'state-of-the-art performance on VQA v2.0' among open models - strong confirmation of correct column mapping."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 53,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "Molmo2 Technical Report Table 6, Molmo2-8B row; consistent with the paper's statement that Molmo2 'is behind on open-weight reasoning benchmarks (MathVista, MMMU)' - Molmo2-8B's 53.0 is indeed well below most open-weight peers (InternVL3.5-8B 73.4, Qwen3-VL-8B 69.6)."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 58.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "MathVista testmini; Molmo2 Technical Report Table 6, Molmo2-8B row."
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 69.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "Video-MME (no-subtitle variant); Molmo2 Technical Report Table 2 (video benchmarks), Molmo2-8B row. Table's overall 'Average' column (63.1) matches the HF model card's single reported metric ('Average Score on 15 Academic Benchmarks') exactly, confirming this table and its column order are correctly identified."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 76.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "Molmo2 Technical Report Table 19 (Appendix D.2, 'NLP Benchmarks'), Molmo2-8B row - a small, cleanly-labeled table (MMLU/GSM8K/ARC-C/MBPP+) with no column-order ambiguity."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 89.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "Molmo2 Technical Report Table 19, Molmo2-8B row."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 89.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "ARC-Challenge; Molmo2 Technical Report Table 19, Molmo2-8B row."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 57.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2601.10611",
+      "notes": "MBPP+; Molmo2 Technical Report Table 19, Molmo2-8B row."
+    }
+  ],
   "verificationNotes": "Existence and Dec 11, 2025 release date confirmed via allenai.org/blog/molmo2. paramsB re-derived exactly from model.safetensors.index.json: 8,661,703,120 = 8.66B (exact match). config.json confirms text max_position_embeddings=36864 (=36K, exact match to ctxK) and architecture (Qwen3-8B decoder + SigLIP2-based ViT, 36 transformer blocks). License is Apache 2.0 per HF repo, though Ai2's blog notes some training data is restricted to academic/non-commercial use (added as a caveat in the note field). The single result row (63.1 avg, with GPT-5 70.6 / Gemini 2.5 Pro 71.2 / Qwen3-VL-8B 59.5 comparisons) was confirmed literally present on the cited HF model card."
 }

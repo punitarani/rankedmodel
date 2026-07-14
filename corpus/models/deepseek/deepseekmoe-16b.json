@@ -9,7 +9,7 @@
   "paramsB": 16.4,
   "activeParamsB": 2.8,
   "archClass": "moe",
-  "archDisplay": "MoE — 2 shared + 64 fine-grained routed experts (2 shared + 6 routed active/token), 4K context",
+  "archDisplay": "MoE \u2014 2 shared + 64 fine-grained routed experts (2 shared + 6 routed active/token), 4K context",
   "ctxK": 4,
   "modalities": [
     "text"
@@ -74,6 +74,86 @@
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
       "notes": "Base variant, 0-shot"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 80.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3 (DeepSeek 7B vs DeepSeekMoE 16B, base models), verified via raw HTML grep of the full row: 'HellaSwag ... 77.1 PIQA ... 80.2 ARC-easy ... 68.1 ARC-challenge ... 49.8 RACE-middle ... 61.9 RACE-high ... 46.4 DROP ... 32.9 GSM8K ... 18.8 MATH ... 4.3 HumanEval ... 26.8 MBPP ... 39.2 TriviaQA ... 64.8 NaturalQuestions ... 25.5 MMLU ... 45.0 WinoGrande ... 70.2 CLUEWSC ... 72.1 CEval ... 40.6 CMMLU ... 42.5 CHID ... 89.4' \u2014 DeepSeekMoE 16B column, 0-shot."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 68.1,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3, DeepSeekMoE 16B column, 0-shot accuracy."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 49.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3, DeepSeekMoE 16B column, 0-shot accuracy."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 46.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3, 'RACE-high' row, 5-shot accuracy, DeepSeekMoE 16B column. (RACE-middle 61.9 also reported but has no matching taxonomy slug.)"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 39.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3, MBPP Pass@1 3-shot, DeepSeekMoE 16B column."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 64.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3, TriviaQA EM 5-shot, DeepSeekMoE 16B column."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 70.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3, WinoGrande accuracy 0-shot, DeepSeekMoE 16B column."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 40.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3, CEval accuracy 5-shot, DeepSeekMoE 16B column."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 42.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3, CMMLU accuracy 5-shot, DeepSeekMoE 16B column."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 4.3,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.06066",
+      "evaluatedAt": "2024-01-11",
+      "notes": "Table 3, MATH EM 4-shot, DeepSeekMoE 16B column. Note: 4.3 is below the taxonomy's stated math range (20-100) but is the genuine, directly-confirmed paper figure \u2014 expected for a small 2024-era base model with no dedicated math training."
     }
   ],
   "verificationNotes": "Confirmed via ar5iv/2401.06066: 16.4B total / 2.8B active params, 2 shared + 64 routed fine-grained experts (2 shared + 6 routed active per token = 8 total active experts), 4K context, 2T training tokens. Base-model scores literally match: HumanEval 26.8, GSM8K 18.8, MMLU 45.0, HellaSwag 77.1. Release date 2024-01-11 corroborated by independent web search (HF last-update ~2024-01-12)."

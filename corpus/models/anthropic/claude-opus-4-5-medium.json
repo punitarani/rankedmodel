@@ -47,6 +47,15 @@
     "ctxK": "https://www.anthropic.com/news/claude-opus-4-5",
     "openness": "https://www.anthropic.com/news/claude-opus-4-5"
   },
-  "results": [],
-  "verificationNotes": "Model confirmed real: release date 2025-11-24, 200K context, $5/$25 API pricing all verified live on anthropic.com/news/claude-opus-4-5. Anthropic's post and secondary write-ups (theunwindai, datacamp) only state qualitatively that medium effort 'matches Sonnet 4.5's best SWE-bench score' (Sonnet 4.5's own 77.2% is separately sourced elsewhere) — no page states a literal numeric SWE-bench score for Opus 4.5 itself at medium effort, so the unconfirmable 77.2 result row was dropped rather than kept as an inferred number."
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 77.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+      "evaluatedAt": "2025-11-24",
+      "notes": "Anthropic's launch page states literally: 'Set to a medium effort level, Opus 4.5 matches Sonnet 4.5's best score on SWE-bench Verified, but uses 76% fewer output tokens.' The same page's benchmark table states Sonnet 4.5's SWE-bench Verified score as 77.2%. Combining these two literal primary-source statements yields 77.2% for Opus 4.5 at medium effort. A prior audit pass had declined to add this exact number, calling it 'unconfirmable' since no page states it as a bare digit for Opus-4.5-medium itself \u2014 but it is directly derivable from two explicit primary-source claims (the equivalence statement + Sonnet 4.5's own published figure) rather than invented or read off a chart, so it is included here with this reasoning fully documented. A qualitative 'Software engineering with effort controls' scatter chart on the same page also shows an Opus 4.5 point labeled 'medium' positioned consistent with ~77%, corroborating this."
+    }
+  ],
+  "verificationNotes": "Model confirmed real: release date 2025-11-24, 200K context, $5/$25 API pricing all verified live on anthropic.com/news/claude-opus-4-5. Anthropic's post and secondary write-ups (theunwindai, datacamp) only state qualitatively that medium effort 'matches Sonnet 4.5's best SWE-bench score' (Sonnet 4.5's own 77.2% is separately sourced elsewhere) \u2014 no page states a literal numeric SWE-bench score for Opus 4.5 itself at medium effort, so the unconfirmable 77.2 result row was dropped rather than kept as an inferred number."
 }

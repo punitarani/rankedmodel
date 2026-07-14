@@ -61,7 +61,15 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha",
       "notes": "Self-reported AlpacaEval score listed on the official model card"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 63.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha",
+      "evaluatedAt": "2023-11-20",
+      "notes": "MMLU score listed in the official model card's benchmark comparison table (also confirmed on the official project page starling.cs.berkeley.edu, described there as testing 'basic capability of the model')."
     }
   ],
-  "verificationNotes": "Existence, org (UC Berkeley/Berkeley NEST), and Nov 20, 2023 release date independently reconfirmed (secondary sources explicitly state 'released on November 20, 2023 by the same UC Berkeley BAIR team'). Fetched the HF model card directly (huggingface.co/berkeley-nest/Starling-LM-7B-alpha) and literally confirmed: license = 'Apache-2.0 license under the condition that the model is not used to compete with OpenAI', base = Openchat-3.5/Mistral-7B-v0.1 (7B params), MT-Bench = 8.09, AlpacaEval = 91.99 — all four values matched the input record exactly, no corrections needed. ctxK=8 consistent with Mistral-7B-v0.1's native 8192-token context. vramQ4Gb/vramFp16Gb/tps4090 are labeled as architecture-class estimates (not vendor-measured), which is appropriate given no checkpoint-specific benchmark was found."
+  "verificationNotes": "Existence, org (UC Berkeley/Berkeley NEST), and Nov 20, 2023 release date independently reconfirmed (secondary sources explicitly state 'released on November 20, 2023 by the same UC Berkeley BAIR team'). Fetched the HF model card directly (huggingface.co/berkeley-nest/Starling-LM-7B-alpha) and literally confirmed: license = 'Apache-2.0 license under the condition that the model is not used to compete with OpenAI', base = Openchat-3.5/Mistral-7B-v0.1 (7B params), MT-Bench = 8.09, AlpacaEval = 91.99 \u2014 all four values matched the input record exactly, no corrections needed. ctxK=8 consistent with Mistral-7B-v0.1's native 8192-token context. vramQ4Gb/vramFp16Gb/tps4090 are labeled as architecture-class estimates (not vendor-measured), which is appropriate given no checkpoint-specific benchmark was found."
 }

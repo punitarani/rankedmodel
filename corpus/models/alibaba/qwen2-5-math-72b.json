@@ -64,6 +64,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2409.12122",
       "notes": "Base model, few-shot CoT"
+    },
+    {
+      "benchmarkSlug": "mmlu-stem",
+      "score": 82.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.12122",
+      "evaluatedAt": "2024-09-18",
+      "notes": "Base model, few-shot CoT, Table 2 of the Qwen2.5-Math Technical Report"
     }
   ],
   "verificationNotes": "Real model, existence and both result rows confirmed via live fetch of arxiv.org/html/2409.12122v1 (Qwen2.5-Math Technical Report): base model Table 2 shows exactly MATH 66.8 and GSM8K 90.8, matching an improvement of 5.3 points over Qwen2-Math-72B as stated in the paper. paramsB 72.7 confirmed (matches Qwen2.5-72B's official 72.7B/70.0B non-embedding param count) and ctxK 4 confirmed via live config.json fetch (max_position_embeddings=4096, hidden_size=8192, num_hidden_layers=80). License 'qwen'/tongyi-qianwen confirmed on HF. releaseDate 2024-09-18 matches arXiv submission date."

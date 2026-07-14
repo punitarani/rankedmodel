@@ -1,3 +1,4 @@
 model_slug,score,source,source_url,evaluated_at,notes
+cogvlm-17b,64.8,self-reported,https://arxiv.org/pdf/2311.03079,,"Paper Table 2, VQA benchmarks, val split. Slightly exceeds the taxonomy's typical OK-VQA range (max 61) but is verbatim as published (the paper's own comparison table shows PaLI-X-55B scoring 66.1 on the same benchmark)."
 idefics-80b,45.2,self-reported,https://huggingface.co/HuggingFaceM4/idefics-80b,,0-shot
 qwen-vl,58.6,self-reported,https://huggingface.co/Qwen/Qwen-VL,,Zero-shot OK-VQA

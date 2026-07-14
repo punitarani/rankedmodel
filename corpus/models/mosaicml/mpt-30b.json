@@ -48,6 +48,47 @@
     "releaseDate": "https://www.businesswire.com/news/home/20230622195151/en/MosaicML-Releases-Open-Source-MPT-30B-LLMs-Trained-on-H100s-to-Power-Generative-AI-Applications",
     "openness": "https://huggingface.co/mosaicml/mpt-30b"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 56,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b",
+      "evaluatedAt": "2023-12-04",
+      "notes": "25-shot acc_norm (harness|arc:challenge|25 = 0.5597), HF Open LLM Leaderboard v1 evaluation-run JSON for mosaicml/mpt-30b, confirmed via direct curl+grep of the raw results JSON"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 82.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b",
+      "evaluatedAt": "2023-12-04",
+      "notes": "10-shot acc_norm (harness|hellaswag|10 = 0.8242), confirmed via direct curl+grep of the raw results JSON"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 74.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b",
+      "evaluatedAt": "2023-12-04",
+      "notes": "5-shot accuracy (harness|winogrande|5 = 0.7490), confirmed via direct curl+grep"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 16.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b",
+      "evaluatedAt": "2023-12-04",
+      "notes": "5-shot accuracy (harness|gsm8k|5 = 0.1691), confirmed via direct curl+grep"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 38.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b",
+      "evaluatedAt": "2023-12-04",
+      "notes": "TruthfulQA MC2 (harness|truthfulqa:mc|0, mc2 = 0.3842), confirmed via direct curl+grep"
+    }
+  ],
   "verificationNotes": "Confirmed via Databricks MPT-30B blog (published 2023-06-22): 30B params, 1T tokens total (1T at 2k context + 50B extension tokens for 8k context), 8k context window, Apache-2.0, trained on H100s, sized for single 80GB GPU deployment. No result rows to verify. All fields left unchanged."
 }

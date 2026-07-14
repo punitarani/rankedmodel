@@ -1,4 +1,31 @@
 model_slug,score,source,source_url,evaluated_at,notes
+baichuan2-13b,48.17,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,"5-shot (4-candidate multiple-choice subset only, per the paper's methodology), Baichuan2-13B-Base."
+baichuan2-7b,42.73,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,"5-shot (4-candidate multiple-choice subset only), Baichuan2-7B-Base."
+chatglm3-6b,53.7,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,Same official evaluation table; 0-shot. Score exceeds the taxonomy's typical AGIEval range (max 48) but is verbatim as published for the ChatGLM3-6B-Base checkpoint.
+deepseek-llm-67b,46.4,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"DeepSeek LLM 67B Chat, paper Table 6"
+deepseek-vl-7b,27.8,self-reported,https://arxiv.org/html/2403.05525v2,2024-03-08,"Table 7, DeepSeek-VL 7B Chat column: 'AGIEval 14.0 27.8 19.3'."
+gemma-2-27b,55.1,self-reported,https://huggingface.co/google/gemma-2-27b,2024-06-01,"AGIEval (English-only), 3-5-shot, PT 27B checkpoint. Confirmed identical in the official technical report (Table 13) and the live HF model card benchmark table. Exceeds this corpus's previously-observed agieval range ceiling (~48) but is Google's own directly-verified number, not an estimate."
+gemma-2-9b,52.8,self-reported,https://huggingface.co/google/gemma-2-9b,2024-06-01,"AGIEval (English-only), 3-5-shot, PT 9B checkpoint. Confirmed identical in the official technical report (Table 13) and the live HF model card benchmark table. Exceeds this corpus's previously-observed agieval range ceiling (~48) but is Google's own directly-verified number, not an estimate."
+gemma-2b,24.2,self-reported,https://huggingface.co/google/gemma-2b,,
+gemma-7b,41.7,self-reported,https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf,2024-02-21,"Table 6, English subset average."
 granite-3-0-2b-instruct,29.75,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,AGI-Eval
+granite-3-0-8b-instruct,40.52,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"AGI-Eval, 5-shot pass@1. Present in HF model-index YAML and corroborated verbatim in the Granite 3.0 technical report (Table 10, arxiv/paper.pdf via github.com/ibm-granite/granite-3.0-language-models)."
+hermes-3-405b,61.84,self-reported,https://arxiv.org/pdf/2408.11857,,"0-shot, Table 5."
+internlm2-20b,50.3,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,"InternLM2-Chat-20B AGIEval score, from the official HF model-card OpenCompass evaluation table (fetched directly, raw README); base InternLM2-20B scores 53.0 on the same table."
+llama-13b,33.9,self-reported,https://ar5iv.labs.arxiv.org/html/2307.09288,2023-07-18,"3-5 shot, English tasks average. Same source/table as the BBH addition above (Llama 2 paper's Table 3 baseline comparison)."
+llama-2-13b,39.1,self-reported,https://ar5iv.labs.arxiv.org/html/2307.09288,2023-07-18,"3-5 shot, English tasks average, Table 3 (detailed per-task breakdown in Table 24)"
+llama-3-8b,45.9,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"AGIEval English, 3-5 shot, pretrained/base checkpoint. Unlike the 70B sibling's out-of-range 63.0 figure, this 8B score (45.9) sits comfortably within the corpus's established agieval calibration (20-48), so it was included as a clean match."
+llama-65b,47.6,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Reported by Meta in the Llama 2 model card's Llama-1-vs-2 comparison table
+llama-7b,23.9,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Reported by Meta in the Llama 2 model card's Llama-1-vs-2 comparison table
+ministral-3b,42.1,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Base model comparison table
+ministral-8b,48.3,self-reported,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410,2024-10-16,Base model comparison table
+mistral-large-3,74,independent,https://medium.com/@layerlens/mistral-large-3-early-results-from-atlas-13f6a3c6b35a,2025-12-05,"AGIEval English subset, LayerLens/Atlas independent evaluation."
+mpt-7b,21.3,independent,https://arxiv.org/abs/2405.13386,2024-05-22,"0-shot per paper's stated methodology, 360Zhinao Technical Report Table 2 — confirmed by direct PDF read."
+naver-hyperclova-x,53.25,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, 0-shot, Table 4."
 nous-hermes-2-mixtral-8x7b-dpo,46.05,self-reported,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO,,AGIEval average
 openhermes-2-5-mistral-7b,43.07,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,,AGIEval average
+phi-2-2-7b,29.8,self-reported,https://arxiv.org/pdf/2404.14219,,0-shot; same comparison table.
+phi-3-medium-14b,50.2,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,"AGI Eval, 5-shot"
+phi-3-mini-3-8b,39,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,"AGI Eval, 5-shot, June 2024 updated checkpoint numbers"
+phi-3-small-7b,45.1,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,"AGI Eval, 5-shot"
+stablelm-zephyr-3b,33.23,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,'AGI Benchmark (Avg)' row of the 'Other benchmarks' table in the official HF model card README (maps to the AGIEval benchmark).

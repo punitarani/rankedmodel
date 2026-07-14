@@ -90,6 +90,34 @@
       "score": 57.1,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2303.08774"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 24.82,
+      "source": "independent",
+      "sourceUrl": "https://raw.githubusercontent.com/lmarena/arena-hard-auto/main/leaderboard/arena_hard_leaderboard_20240731.csv",
+      "notes": "gpt-3.5-turbo-0613 snapshot, win rate vs gpt-4-0314 baseline, official arena-hard-auto leaderboard (2024-07-31 data)"
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 22.35,
+      "source": "independent",
+      "sourceUrl": "https://raw.githubusercontent.com/tatsu-lab/alpaca_eval/main/docs/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+      "notes": "GPT 3.5 Turbo (06/13), length-controlled win rate, official AlpacaEval 2.0 leaderboard data"
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1112,
+      "source": "independent",
+      "sourceUrl": "https://www.lmsys.org/blog/2023-12-07-leaderboard/",
+      "notes": "gpt-3.5-turbo-0613 Elo, LMSYS Chatbot Arena leaderboard update, Dec 2023"
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 7.94,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2306.05685",
+      "notes": "GPT-4-judged MT-Bench score for gpt-3.5-turbo, Table 8 of the original MT-Bench / Chatbot Arena paper (Zheng et al., 2023)"
     }
   ],
   "verificationNotes": "Release confirmed March 1, 2023 via OpenAI's 'Introducing ChatGPT and Whisper APIs' post. Current 16,385-token context and $0.50/$1.50 per-million pricing confirmed on OpenAI's live model docs page. All 7 benchmark rows (MMLU 70.0, HellaSwag 85.5, ARC 85.2, Winogrande 81.6, HumanEval 48.1, DROP 64.1 F1, GSM8K 57.1) verified to literally appear in arXiv 2303.08774's GPT-3.5 comparison column. No changes made."

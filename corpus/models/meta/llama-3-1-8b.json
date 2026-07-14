@@ -73,7 +73,7 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B",
       "evaluatedAt": "2024-07-01",
-      "notes": "Instruct, exact match (em) — corrected from mislabeled 'base pretrained model'"
+      "notes": "Instruct, exact match (em) \u2014 corrected from mislabeled 'base pretrained model'"
     },
     {
       "benchmarkSlug": "ifeval",
@@ -106,6 +106,45 @@
       "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B",
       "evaluatedAt": "2024-07-01",
       "notes": "Instruct, CoT"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 83.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluatedAt": "2024-07-01",
+      "notes": "Instruct, 0-shot acc, from official Llama 3.1 model card benchmark table"
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 72.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluatedAt": "2024-07-01",
+      "notes": "Instruct, 'MBPP++ base' 0-shot pass@1"
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 76.1,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluatedAt": "2024-07-01",
+      "notes": "Instruct, BFCL 0-shot acc"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 68.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluatedAt": "2024-07-01",
+      "notes": "Instruct, Multilingual MGSM CoT 0-shot em"
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1211,
+      "source": "arena",
+      "sourceUrl": "https://lmmarketcap.com/benchmarks/arena_elo",
+      "notes": "Current LMArena Elo (dynamic, decays as newer models are added); rank #119 as of fetch"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card fetch: params 8.03B, release 2024-07-23 (matches ai.meta.com blog), license Llama 3.1 Community License Agreement. All 7 benchmark rows (MMLU 69.4, MMLU-Pro 48.3, GPQA 30.4, IFEval 80.4, HumanEval 72.6, GSM8K 84.5, MATH 51.9) literally confirmed on the cited HF page. Corrected the GPQA row's notes field: it was mislabeled 'Base pretrained model' but 30.4 is actually the Instruct model's em score per the card."

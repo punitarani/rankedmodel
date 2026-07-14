@@ -74,9 +74,10 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 49.12,
+      "score": 71.2,
       "source": "self-reported",
-      "sourceUrl": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct"
+      "sourceUrl": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct",
+      "notes": "[Corrected during full-corpus audit: The existing 49.12 figure is pulled from the HF model card's separate 'Base Model' benchmark table (plain 'GPQA', pretrain checkpoint) -- confirmed present there via two independent fetches of the raw README. But the catalog entry represents the released Instruct/chat model (tencent/Hunyuan-A13B-Instruct, the same repo already cited for the other rows), and that model's own competitive-benchmark t]"
     },
     {
       "benchmarkSlug": "bfcl-v3",
@@ -84,6 +85,39 @@
       "source": "self-reported",
       "sourceUrl": "https://www.marktechpost.com/2025/06/28/tencent-open-sources-hunyuan-a13b-a-13b-active-parameter-moe-model-with-dual-mode-reasoning-and-256k-context/",
       "notes": "Berkeley Function-Calling Leaderboard v3, agentic tool-use"
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 63.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 89.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct",
+      "notes": "Instruct-model competitive-table figure (base/pretrain table separately reports BBH=87.56, not used here to stay consistent with the Instruct framing of this catalog entry)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 91.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 84.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct",
+      "notes": "IF-Eval strict-prompt."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 54.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct",
+      "notes": "\u03c4-Bench, agentic tool-use."
     }
   ],
   "verificationNotes": "Confirmed real: Tencent announced Hunyuan-A13B open-source release on 2025-06-27 (official Tencent Hunyuan X/Twitter post, GitHub repo, MarkTechPost coverage all corroborate). Fetched the Hugging Face model card directly and confirmed MMLU 88.17, AIME2024 87.3, MATH 94.3, GPQA 49.12 literally appear; fetched MarkTechPost article and confirmed BFCL-v3 78.3 literally appears. Confirmed 80B total/13B active MoE (1 shared + 64 routed experts, 8 active), 256K native context, and license identifier 'tencent-hunyuan-a13b' whose full text is the Tencent Hunyuan Community License Agreement (verified via GitHub LICENSE file)."

@@ -12,7 +12,7 @@ test.describe('dashboard overview', () => {
     // Open–closed gap is computed on the universal index (arena covers only a sliver), so it's
     // always a real number, and the leader is the top-ranked open model.
     await expect(cards.nth(3)).toContainText('idx')
-    await expect(cards.nth(3)).toContainText('Nemotron 3 Ultra 550B A55B leads open')
+    await expect(cards.nth(3)).toContainText('Kimi K2.6 leads open')
   })
 
   test('scatter plots every priced+ranked model; movers show real lineage gains', async ({
@@ -26,8 +26,8 @@ test.describe('dashboard overview', () => {
     expect(await points.count()).toBeGreaterThan(50)
     const movers = page.getByTestId('movers')
     // real top mover is a rank-eligible family edge; the old 0-index-config phantoms are gone
-    await expect(movers).toContainText('Nemotron-4 340B')
-    await expect(movers).toContainText('+42.6')
+    await expect(movers).toContainText('Gemini 1.0 Pro')
+    await expect(movers).toContainText('+45.9')
   })
 
   test('y-axis auto-zooms to the data instead of the fixed 0–100 axis', async ({ page }) => {
@@ -81,12 +81,12 @@ test.describe('dashboard overview', () => {
     await gotoHydrated(page, '/')
     const rail = page.getByTestId('arena-rail')
     // rail now leads with the #1 overall model by index
-    await expect(rail).toContainText('Gemini 3.1 Pro')
-    await expect(rail).toContainText('91.1')
+    await expect(rail).toContainText('GPT-5.6')
+    await expect(rail).toContainText('90.5')
     await pickOption(page, 'qc-b', 'Llama 3.1 405B — Meta')
     await page.getByTestId('qc-go').click()
-    // quick-compare slot A defaults to the #1 rank-eligible model (Gemini 3.1 Pro)
-    await expect(page).toHaveURL(/m=gemini-3-1-pro(%2C|,)llama-3-1-405b/)
+    // quick-compare slot A defaults to the #1 rank-eligible model (GPT-5.6)
+    await expect(page).toHaveURL(/m=gpt-5-6(%2C|,)llama-3-1-405b/)
   })
 })
 
@@ -111,8 +111,8 @@ test.describe('dashboard releases + bench tabs', () => {
     await gotoHydrated(page, '/?tab=releases')
     const frontier = page.getByTestId('frontier')
     // regrounded on the universal index, so both camps' leaders always plot
-    await expect(frontier).toContainText('Gemini 3.1 Pro')
-    await expect(frontier).toContainText('Nemotron 3 Ultra 550B A55B')
+    await expect(frontier).toContainText('GPT-5.6')
+    await expect(frontier).toContainText('Kimi K2.6')
     await expect(page.getByTestId('gap-note')).not.toHaveText('')
   })
 

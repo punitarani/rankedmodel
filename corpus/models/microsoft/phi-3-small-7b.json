@@ -77,6 +77,83 @@
       "score": 61,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 79.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "BigBench Hard, 3-shot"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 45.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "AGI Eval, 5-shot"
+    },
+    {
+      "benchmarkSlug": "anli",
+      "score": 58.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "7-shot"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 90.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "10-shot"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 97,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "10-shot"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 88,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "10-shot"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 86.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 79.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "Social IQA, 5-shot"
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 81.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 58.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 71.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
+      "notes": "3-shot"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3-small-8k-instruct, fetched): 7B dense decoder-only with alternating dense/blocksparse attention, 8K context, MIT license. All four benchmark rows (MMLU 75.7, HellaSwag 77, GSM8K 89.6 CoT, HumanEval 61) literally match the card. GitHub repo microsoft/PhiCookBook confirmed to exist (Phi-3CookBook was renamed/merged into PhiCookBook)."

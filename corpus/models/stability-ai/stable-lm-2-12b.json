@@ -88,6 +88,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/stabilityai/stablelm-2-12b-chat",
       "notes": "chat variant"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 62,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/stabilityai/stablelm-2-12b-chat",
+      "notes": "Open LLM Leaderboard (0-shot), chat variant. Confirmed via direct fetch of the official HF model card's OpenLLM Leaderboard comparison table (stabilityai/stablelm-2-12b-chat row: TruthfulQA 62.00)."
     }
   ],
   "verificationNotes": "CONFIRMED. HF model card verifies 12.1B params (12,143,605,760 exact), 40 layers, GQA 32q/8kv, RoPE, 4096-token context, Stability AI Community License, 7 languages (EN/ES/DE/IT/FR/PT/NL). Chat variant HF card confirms function-calling support and all 6 benchmark rows exactly (MT-Bench 8.15, MMLU 61.14, HellaSwag 86.06, ARC-C 65.02, Winogrande 78.77, GSM8K 57.7). CORRECTED releaseDate: official Stability AI blog post body reads 'Apr 8' (2024), not Apr 9 as in the source record; VentureBeat corroborates April 8, 2024 1PM PT. Updated releaseDate to 2024-04-08 and specSource to the primary Stability AI blog post."

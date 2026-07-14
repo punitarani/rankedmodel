@@ -54,6 +54,22 @@
       "sourceUrl": "https://arxiv.org/abs/2405.15032",
       "evaluatedAt": "2024-05-23",
       "notes": "Multilingual MMLU 5-shot avg across 14 languages"
+    },
+    {
+      "benchmarkSlug": "xwinograd",
+      "score": 84.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2405.15032",
+      "evaluatedAt": "2024-05-23",
+      "notes": "0-shot XWinoGrad (coreference resolution), Table 4 held-out task evaluation for Aya-23-35B."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 53.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2405.15032",
+      "evaluatedAt": "2024-05-23",
+      "notes": "5-shot, native chain-of-thought with strict-match scoring, averaged across 7 languages (Table 6, Multilingual Grade School Math benchmark) for Aya-23-35B."
     }
   ],
   "verificationNotes": "Confirmed genuine via arXiv:2405.15032 (Aya 23: Open Weight Releases to Further Multilingual Progress, submitted 2024-05-23) and HF CohereLabs/aya-23-35B model card (CC-BY-NC license, 8192-token/8K context, GQA+256k BPE tokenizer). MMLU 58.2 score for the 35B variant specifically confirmed via search of the paper's content ('Aya-23-35B achieves an average score of 58.2 on multilingual MMLU'). No changes needed."

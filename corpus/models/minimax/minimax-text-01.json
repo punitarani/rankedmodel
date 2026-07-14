@@ -113,6 +113,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-Text-01",
       "notes": "Arena-Hard-Auto"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 23.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-Text-01",
+      "notes": "SimpleQA factuality score listed on the official HF model card alongside the already-recorded MMLU/GSM8K/etc. table (C-SimpleQA 67.4 is a separate Chinese-language variant with no matching taxonomy slug, so it was left out)."
     }
   ],
   "verificationNotes": "Confirmed real via MarkTechPost (release 2025-01-15), arXiv 2501.08313, GitHub MiniMax-AI/MiniMax-01, and HF model card. 456B total/45.9B active MoE with Lightning Attention, 1M train / 4M inference context all confirmed. All 10 benchmark scores (MMLU 88.5, MMLU-Pro 75.7, GPQA 54.4, DROP 87.8, GSM8K 94.8, MATH 77.4, MBPP+ 71.7, HumanEval 86.9, IFEval 89.1, Arena-Hard 89.1) verified to literally appear on the HF model card (retargeted sourceUrl from arXiv abstract page, which did not render the table, to the HF card which does); no numbers changed."

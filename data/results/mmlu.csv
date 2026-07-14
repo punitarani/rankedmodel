@@ -5,19 +5,24 @@ ai21-jamba-1-5-mini,69.7,self-reported,https://arxiv.org/html/2408.12570v1,,
 airoboros-70b-l2,70.4,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot, 5-shot"
 amazon-nova-lite,80.5,self-reported,https://deepranking.ai/llm-models/nova-lite,,"0-shot CoT; figure traces to Amazon's Nova technical report [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 amazon-nova-micro,77.6,self-reported,https://deepranking.ai/llm-models/nova-micro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+amazon-nova-premier,87.4,self-reported,https://assets.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf,2025-04-30,"0-shot CoT, macro-average exact-match accuracy (Table 1 of the official Nova Premier technical report and model card)."
 amazon-nova-pro,85.9,self-reported,https://deepranking.ai/llm-models/nova-pro,,"0-shot CoT; matches Amazon's Nova technical report [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 apple-dclm-baseline-7b,63.72,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,5-shot (few-shot MMLU row)
 apple-foundation-model-on-device-3b,61.4,self-reported,https://arxiv.org/html/2407.21075v1,2024-07-01,"5-shot, AFM-on-device, from Apple's July 2024 tech report"
 aya-23-35b,58.2,self-reported,https://arxiv.org/abs/2405.15032,2024-05-23,Multilingual MMLU 5-shot avg across 14 languages
 aya-vision-32b,72.14,self-reported,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,"Independent eval, text-only mode [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+baichuan-3,81.69,self-reported,https://www.qbitai.com/2024/01/117217.html,,"Reported by Baichuan at the Jan 29 2024 Baichuan 3 launch event, relayed by QbitAI (量子位); stated as ~94.55% of GPT-4's contemporaneous MMLU score. No official technical report or model card exists for this closed API-only model, so this Chinese tech-media relay of the vendor's own launch claim is the best available source. Could not find numeric CMMLU/Gaokao/AGIEval/GSM8K/HumanEval/MBPP scores anywhere (multiple EN and CN sources give only qualitative 'surpasses GPT-4' / 'reaches ~90% of GPT-4' comparisons with no digits), so those are left out."
 baichuan2-13b,59.17,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,5-shot
 baichuan2-7b,54.16,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,5-shot
 btlm-3b-8k,28.1,self-reported,https://arxiv.org/abs/2309.11568,,5-shot
+chatglm-6b,40.63,self-reported,https://github.com/zai-org/ChatGLM2-6B/blob/main/README_EN.md,,"From the official ChatGLM2-6B repo's head-to-head evaluation table (which reports first-gen ChatGLM-6B alongside ChatGLM2-6B); few-shot answer-only, average across STEM/Social Sciences/Humanities/Others subsets."
 chatglm2-6b,45.46,self-reported,https://github.com/zai-org/ChatGLM2-6B,,Chat-aligned checkpoint
 chatglm3-6b,61.4,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
 chinchilla,67.6,self-reported,https://arxiv.org/abs/2203.15556,,5-shot average accuracy
+claude-2,78.5,self-reported,https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf,2023-07-11,"5-shot CoT, official Claude 2 Model Card and Evaluations report, Section 4.3 'Standard Benchmarks and Standardized Tests' table (Claude 2 column)."
 claude-3-5-haiku,80.3,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"0-shot CoT, official model card addendum Table 8"
 claude-3-5-sonnet,88.7,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,5-shot
+claude-3-5-sonnet-new,88.7,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"5-shot, Table 7 (matches corpus convention used for the original June 2024 Sonnet entry, also 88.7% 5-shot)."
 claude-3-haiku,75.2,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,5-shot
 claude-3-opus,86.8,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,5-shot
 claude-3-sonnet,79,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,5-shot
@@ -25,18 +30,24 @@ claude-opus-4,88.8,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-
 claude-opus-4-5,90.8,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,,
 claude-opus-4-5-high,90.8,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,2025-11-24,
 claude-sonnet-4,86.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,with extended thinking; confirmed via direct fetch
-claude-sonnet-4-5,89.1,self-reported,https://leanware.co/insights/claude-sonnet-4-5-overview,2025-09-29,multilingual Q&A (MMMLU); confirmed via direct fetch
+claude-sonnet-4-5,89.5,self-reported,https://www.anthropic.com/claude-sonnet-4-6-system-card,2025-09-29,"multilingual Q&A (MMMLU); confirmed via direct fetch [Corrected during full-corpus audit: Existing value (89.1) came from leanware.co's third-party recap of Sonnet 4.5's launch chart. Anthropic's own Claude Sonnet 4.6 System Card (Table 2.1.A, directly fetched) re-reports Sonnet 4.5's score on this same benchmark as 89.5%. Note this benchmark is actually MMMLU (Multilingual MMLU, 57 subjects x 14 non-English languages) rather than single-language MMLU; the existing entry's notes alread]"
 comma-v0-1-2t,49.8,self-reported,https://huggingface.co/common-pile/comma-v0.1-2t,,5-shot
 command-a,85.5,self-reported,https://arxiv.org/abs/2504.00698,,"Command A technical report, Table 1"
+command-r,68.2,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json,,"Computed as the mean of all 57 MMLU (hendrycksTest-*) subject accuracies in the raw Open LLM Leaderboard v1 eval run (2024-03-22, 5-shot), the same methodology the leaderboard itself used to display its MMLU column."
 command-r7b,65.2,self-reported,https://arxiv.org/abs/2504.00698,,"Command A technical report, Table 1"
 dbrx,73.7,self-reported,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm,,
 decilm-7b,59.76,self-reported,https://huggingface.co/Deci/DeciLM-7B,,
+deepseek-coder-v2-236b,79.2,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,2024-06-17,"""General Natural Language"" table, DeepSeek-Coder-V2-Instruct (236B/21B) — distinct from the mmlu-pro 63.63 already recorded from the HF card"
 deepseek-llm-67b,71.1,self-reported,https://ar5iv.labs.arxiv.org/html/2401.02954,,"Chat variant, paper Table 6"
 deepseek-r1-671b,90.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,MMLU pass@1
 deepseek-v2-236b,77.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,,Chat (RL) variant
 deepseek-v3-671b,88.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,
+deepseek-vl-7b,52.4,self-reported,https://arxiv.org/html/2403.05525v2,2024-03-08,"Table 7, DeepSeek-VL 7B Chat column: 'MMLU 32.5 52.4 49.4'."
 deepseekmoe-16b,45,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,,"Base variant, 5-shot"
+ernie-4-5-300b-a47b,86.5,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,Table 5.
 falcon-2-11b,58.37,independent,https://huggingface.co/blog/falcon2-11b,2024-05-13,5-shot
+falcon-40b,56.89,independent,https://huggingface.co/blog/falcon2-11b,2024-05-24,"5-shot, same comparison table"
+falcon-7b,28,self-reported,https://arxiv.org/abs/2311.16867,,"5-shot, from TII's own 'Falcon Series of Open Language Models' tech report Table 21. TII notes Falcon-7B underperforms on MMLU relative to other tasks, likely due to their web-heavy pretraining mix."
 falcon-h1-34b,84.05,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
 falcon-mamba-7b,62.11,independent,https://huggingface.co/blog/falconmamba,2024-08-12,
 falcon3-10b,73.9,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,
@@ -59,10 +70,12 @@ gemma-2-9b,71.3,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2
 gemma-2b,42.3,self-reported,https://huggingface.co/google/gemma-2b,,5-shot
 gemma-3-12b,69.5,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,Global MMLU-Lite variant
 gemma-3-27b,75.1,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,Global MMLU-Lite variant
-gemma-3-4b,54.5,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,Global MMLU-Lite variant
+gemma-3-4b,58.1,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Global MMLU-Lite variant [Corrected during full-corpus audit: Directly extracted the technical report's PDF text (Table 6 vs Table 18). The existing 54.5 is actually the 'Global MMLU-Lite' score from Table 6 (a distinct, non-standard-MMLU benchmark not in our taxonomy) that was mapped onto the 'mmlu' slug with a note admitting the conflation. Table 18 ('Performance of instruction fine-tuned (IT) models... on more internal and external benchmarks') separately]"
 gemma-7b,64.3,self-reported,https://arxiv.org/html/2403.08295v4,,5-shot
 glm-130b,44.8,self-reported,https://arxiv.org/pdf/2210.02414,,"5-shot, after viewing 400B bilingual tokens"
 glm-4,83.3,self-reported,https://arxiv.org/html/2406.12793v1,2024-05-20,"GLM-4 (0520) checkpoint, vs GPT-4-0314 86.4"
+glm-4-5-355b-a32b,90,self-reported,https://arxiv.org/abs/2508.06471,,"MMLU (EM), Table 6 'Results on Commonly Used General Chat Benchmarks'."
+glm-4-5-air-106b-a12b,87.4,self-reported,https://arxiv.org/abs/2508.06471,,"MMLU (EM), Table 6 'Results on Commonly Used General Chat Benchmarks'."
 glm-4-9b-chat,72.4,self-reported,https://huggingface.co/THUDM/glm-4-9b-chat,,
 glm-4-plus,86.8,self-reported,https://docs.bigmodel.cn/cn/guide/models/text/glm-4,,vs GPT-4o 88.7 (98%)
 gopher,60,self-reported,https://arxiv.org/abs/2203.15556,,"5-shot average accuracy, reported in the Chinchilla paper's comparison table"
@@ -87,14 +100,19 @@ granite-3-1-8b-instruct,65.34,independent,https://huggingface.co/ibm-granite/gra
 granite-3-2-8b-instruct,66.79,self-reported,https://huggingface.co/ibm-granite/granite-3.2-8b-instruct,,
 granite-3-3-8b-instruct,65.54,self-reported,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct,,
 granite-4-0-h-small,78.44,self-reported,https://huggingface.co/ibm-granite/granite-4.0-h-small,,
+granite-4-1-8b-instruct,73.84,self-reported,https://huggingface.co/ibm-granite/granite-4.1-8b,,"5-shot, '8B Dense' column"
+grok-1,73,self-reported,https://x.ai/news/grok,2023-11-03,"5-shot, per xAI's original 'Announcing Grok' blog post benchmark table; also corroborated in the later 'Announcing Grok-1.5' post's Grok-1 comparison column."
 grok-1-5,81.3,self-reported,https://klu.ai/glossary/xai-grok-2,,As reported in xAI's later Grok-2 comparison table
 grok-2,87.5,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
 grok-2-mini,86.2,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
 guanaco-33b,57,self-reported,https://huggingface.co/timdettmers/guanaco-33b,,5-shot
+guanaco-65b,62.2,self-reported,https://huggingface.co/timdettmers/guanaco-65b,2023-05-23,5-shot MMLU test accuracy listed on the official model card (LLaMA-65B baseline scored 63.4% on the same table); also matches Table 5 of the QLoRA paper (arxiv 2305.14314).
+h2o-danube-1-8b,33.49,self-reported,https://arxiv.org/abs/2401.16818,,"5-shot MMLU for h2o-danube-1.8b-chat, Open LLM Leaderboard-style eval, from the technical report Table 5. Below the taxonomy's typical MMLU floor, but this is a genuine, expected result for a 1.8B chat model and uses the same standardized harness as the leaderboard."
 h2o-danube3-4b,54.74,independent,https://huggingface.co/h2oai/h2o-danube3-4b-chat,,Open LLM Leaderboard v1
 hermes-3-405b,85.02,self-reported,https://arxiv.org/pdf/2408.11857,,5-shot
 hunyuan-a13b,88.17,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,
 hunyuan-large-a52b,88.4,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,pretrained base vs Llama-3.1-405B's 85.2
+hunyuan-turbos,85.8,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"5-shot, Table 4, post-trained/instruct TurboS-20250416 (distinct from the 87.94 pre-trained base-model number in Table 2)"
 inflection-1,72.7,self-reported,https://inflection.ai/inflection-1,2023-06-22,"Average across 57 MMLU tasks; outperformed GPT-3.5, LLaMA, and PaLM-540B per Inflection's technical memo."
 inflection-2,79.6,self-reported,https://www.searchenginejournal.com/new-ai-model-outperforms-googles-powerful-palm-2/502191/,,"Independent comparison table; Inflection-2 ranked 2nd behind GPT-4 (86.4), just above Claude-2 CoT (78.5). Literally confirmed on page. [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 internlm2-20b,66.5,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,InternLM2-Chat-20B
@@ -102,14 +120,18 @@ internlm2-5-7b,72.8,self-reported,https://huggingface.co/internlm/internlm2_5-7b
 internlm3-8b-instruct,76.6,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,
 jais-13b,30,self-reported,https://huggingface.co/inceptionai/jais-13b,,Arabic-translated MMLU
 jais-70b,38.7,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,"English eval, jais-adapted-70b-chat"
+kimi-k1-5,87.4,self-reported,https://arxiv.org/abs/2501.12599,,"MMLU (EM) = 87.4, Kimi k1.5 short-CoT model, from Table 3 of the arXiv paper (v4 HTML), which compares the short-CoT model against Qwen2.5-72B-Inst., LLaMA-3.1-405B-Inst., DeepSeek-V3, Claude-3.5-Sonnet-1022 and GPT-4o-0513."
 kimi-k2,89.5,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,
 koala-13b,44.7,independent,https://arxiv.org/html/2312.06281v2,,Cited in the EQ-Bench paper's model comparison table
 krutrim-2-12b,63,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,5-shot
+lg-exaone-3-5-32b-instruct,78.3,self-reported,https://arxiv.org/abs/2412.04862,2024-12-01,MMLU (CoT)
+lg-exaone-deep-32b,83,self-reported,https://arxiv.org/abs/2503.12524,2025-03-01,"MMLU accuracy for the 32B model, confirmed via two independent fetches of the arXiv paper (html v1 and v2, Table 3). Not present on the abbreviated GitHub README / HF model-card comparison table, only in the full paper."
 llama-13b,46.9,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"5-shot, Table 9"
 llama-2-13b,54.8,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Reported by Meta in the Llama 2 model card
 llama-2-70b,68.9,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Reported by Meta in the Llama 2 model card
+llama-2-70b-chat,63,independent,https://ar5iv.labs.arxiv.org/html/2312.06281,2023-12-01,"Independent re-measurement of the RLHF fine-tuned chat model itself. Verified directly against Meta's own official model card (github.com/meta-llama/llama-models MODEL_CARD.md): Meta's academic-benchmarks table (MMLU, BBH, AGI Eval, etc.) is reported ONLY for the base pretrained sizes (70B base = 68.9), never for the Llama-2-Chat fine-tunes, which get only a safety table (TruthfulQA/Toxigen). The EQ-Bench paper's Table 3 separately evaluated meta-llama/Llama-2-70b-chat-hf and got MMLU 63, which is what's added here rather than any Meta 'self-reported' figure (none exists for the chat model)."
 llama-2-7b,45.3,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Reported by Meta in the Llama 2 model card
-llama-2-7b-chat,45.3,self-reported,https://telnyx.com/llm-library/llama-2-7b-chat-hf,,"5-shot, reported for Llama-2-7b-chat-hf [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+llama-2-7b-chat,45.8,independent,https://ar5iv.labs.arxiv.org/html/2312.06281,,"5-shot, reported for Llama-2-7b-chat-hf [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement] [Corrected during full-corpus audit: The existing entry was labeled 'self-reported' and sourced to a telnyx.com aggregator page, but Meta's own official model card/paper (confirmed by direct fetch) never publishes an MMLU score for the RLHF fine-tuned Llama-2-7b-chat model — only for the base pretrained 7B, whose MMLU is exactly 45.3. That figure was mislabeled: it's the base model's number, not an independent measurement of the chat]"
 llama-3-1-405b,87.3,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,Instruct
 llama-3-1-70b,83.6,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,Instruct
 llama-3-1-8b,69.4,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,Instruct
@@ -117,10 +139,13 @@ llama-3-1-minitron-4b,60.5,self-reported,https://developer.nvidia.com/blog/how-t
 llama-3-2-11b-vision,73,self-reported,https://huggingface.co/meta-llama/Llama-3.2-11B-Vision,2024-09-01,"Instruct, CoT, text-only"
 llama-3-2-1b,49.3,self-reported,https://huggingface.co/meta-llama/Llama-3.2-1B,2024-09-01,"Instruct, 5-shot, BF16"
 llama-3-2-3b,63.4,self-reported,https://huggingface.co/meta-llama/Llama-3.2-3B,2024-09-01,"Instruct, 5-shot, BF16"
+llama-3-2-90b-vision,86,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,"MMLU CoT, macro_avg/acc — text-backbone eval reported on the instruct-tuned vision model."
 llama-3-3-70b,86,self-reported,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,,MMLU CoT
 llama-3-70b,79.5,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct,,"5-shot, pretrained/base checkpoint"
 llama-3-8b,68.4,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"Instruct, 5-shot"
 llama-33b,57.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"5-shot, Table 9"
+llama-4-maverick,85.5,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Pre-trained/base model comparison table (macro_avg/acc_char), not instruction-tuned"
+llama-4-scout,79.6,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Pre-trained/base model comparison table (macro_avg/acc_char), not instruction-tuned"
 llama-65b,63.4,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Reported by Meta in the Llama 2 model card's comparison table against Llama 1 models
 llama-7b,35.1,self-reported,https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md,2023-07-18,Reported by Meta in the Llama 2 model card's comparison table against Llama 1 models
 minicpm-2b,53.46,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table
@@ -137,23 +162,34 @@ mistral-small-3-2-24b,80.5,self-reported,https://huggingface.co/mistralai/Mistra
 mistral-small-3-24b,81,self-reported,https://mistral.ai/news/mistral-small-3/,,
 mixtral-8x22b,77.3,self-reported,https://huggingface.co/mistral-community/Mixtral-8x22B-v0.1/discussions/3,2024-04-01,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 mixtral-8x7b,70.6,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
+molmo-2-8b,76.6,self-reported,https://arxiv.org/abs/2601.10611,,"Molmo2 Technical Report Table 19 (Appendix D.2, 'NLP Benchmarks'), Molmo2-8B row - a small, cleanly-labeled table (MMLU/GSM8K/ARC-C/MBPP+) with no column-order ambiguity."
 mpt-7b,27.5,independent,https://arxiv.org/abs/2405.13386,2024-05-22,"5-shot via OpenCompass, 360Zhinao Technical Report Table 2 — confirmed by direct read of table"
+mpt-7b-storywriter-65k,28.8,independent,"https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",,"Open LLM Leaderboard-style MMLU (5-shot) score for StoryWriter via LLM Explorer aggregator; base MPT-7B scores 27.5 on the same site, matching the independently-confirmed 360Zhinao-paper value, which increases confidence in this aggregator's reliability."
 naver-hyperclova-x,67.98,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L (flagship), 5-shot"
+naver-hyperclova-x-seed-think-32b,87.7,self-reported,https://arxiv.org/abs/2601.03286,2026-01-03,"Table 5, English text-to-text benchmarks."
 nemotron-3-8b,54.4,self-reported,https://huggingface.co/nvidia/nemotron-3-8b-base-4k,,5-shot
 nemotron-4-15b,64.2,self-reported,https://unfoldai.com/nemotron-4-nvidia-powerful-language-model/,2024-02-26,5-shot
 nemotron-4-340b,81.1,self-reported,https://huggingface.co/nvidia/Nemotron-4-340B-Base,2024-06-14,"average, 5-shot"
 nemotron-h-56b,84.21,self-reported,https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K,,
+nous-hermes-2-mixtral-8x7b-dpo,72.17,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_NousResearch__Nous-Hermes-2-Mixtral-8x7B-DPO,2024-01-22,"5-shot MMLU, computed by averaging the raw per-subject acc values (57 subjects) in the HF Open LLM Leaderboard (old/v1) details dataset's latest run (2024-01-22). Not on the vendor's own model card, hence independent/third-party."
 olmo-2-13b,68.5,self-reported,https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct,,OLMo-2-13B-1124-Instruct variant; beats Qwen-2.5-14B-Instruct's 60.8 average
 olmo-2-32b,77.3,self-reported,https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct,,"GPT-3.5 Turbo 70.2, GPT-4o mini 82.2, Qwen2.5-32B 84.7"
 olmo-2-7b,63.7,self-reported,https://huggingface.co/allenai/OLMo-2-1124-7B,,
 olmo-3-7b,69.1,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,
+olmo-3-think-32b,85.4,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,"Currently missing from this model's results despite being on the primary card; Qwen 3 32B scores 88.8, Qwen 3 VL 32B Thinking 90.1"
 olmo-7b,28.3,self-reported,https://huggingface.co/allenai/OLMo-7B,,5-shot MC
 olmoe-1b-7b-0924,54.1,self-reported,https://huggingface.co/allenai/OLMoE-1B-7B-0924,,
+openai-o1,91.8,self-reported,https://github.com/openai/simple-evals,,From OpenAI's own simple-evals benchmark-harness README table (o1 row).
+openai-o1-mini,85.2,self-reported,https://github.com/openai/simple-evals,,From OpenAI's own simple-evals benchmark-harness README table (o1-mini row).
 openai-o1-preview,90.8,independent,https://www.walturn.com/insights/comparing-openai-o1-to-other-top-models,2024-09-01,MMLU 0-shot CoT
+openai-o3-mini-high,86.9,self-reported,https://github.com/openai/simple-evals,,From OpenAI's own simple-evals benchmark-harness README table (o3-mini-high row).
+openhermes-2-5-mistral-7b,63.64,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_teknium__OpenHermes-2.5-Mistral-7B,2023-11-20,"5-shot MMLU, computed by averaging the raw per-subject acc values (57 subjects) from the HF Open LLM Leaderboard (old/v1) details dataset's latest run for this model (2023-11-20). Not present on the vendor card."
 orca-2-13b,57.73,self-reported,https://ar5iv.labs.arxiv.org/html/2311.11045,,
+palm-2,78.3,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"Flan-PaLM 2 (L), instruction-tuned, 5-shot MMLU. From Table 16 (Appendix A.2, instruction-tuning ablation) -- explicitly labeled 'Flan-PaLM 2 (L)' in the paper, matching the instruction-tuned variant already anchoring the existing BBH=78.1 entry."
 palm-540b,69.3,self-reported,https://arxiv.org/abs/2204.02311,,5-shot average
 palmyra-x-004,81.3,self-reported,https://dev.writer.com/home/models,,HELM MMLU
 pharia-1-llm-7b-control,48.4,self-reported,https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control,,
+phi-1-5-1-3b,37.6,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,2023-09-11,"2-shot, Table 3."
 phi-2-2-7b,56.3,self-reported,https://arxiv.org/pdf/2404.14219,,reported in Phi-3 Technical Report comparison table
 phi-3-5-mini-3-8b,69,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,5-shot
 phi-3-5-moe-16x3-8b-6-6b-active,78.9,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
@@ -163,6 +199,8 @@ phi-3-small-7b,75.7,self-reported,https://huggingface.co/microsoft/Phi-3-small-8
 phi-4-14b,84.8,self-reported,https://huggingface.co/microsoft/phi-4,,
 phi-4-mini-3-8b,67.3,self-reported,https://huggingface.co/microsoft/Phi-4-mini-instruct,,5-shot
 phi-4-mini-instruct,67.3,self-reported,https://huggingface.co/microsoft/Phi-4-mini-instruct,,
+pixtral-12b,69.2,self-reported,https://huggingface.co/mistralai/Pixtral-12B-2409,2024-09-11,MMLU (5-shot) row of the card's Text Benchmarks table.
+plamo-100b,60.3,self-reported,https://arxiv.org/pdf/2509.04897,,"Standard English MMLU, 5-shot accuracy, from Preferred Networks' own follow-up 'PLaMo 2 Technical Report' (Table 1), which re-reports the original pfnet/plamo-100b as a baseline comparison row (0.603 = 60.3%). Not present in the original PLaMo-100B paper (arXiv:2410.07563), which only reported Jaster/Rakuda/Japanese MT-Bench -- this later report is the first place Preferred Networks published a plain English-MMLU number for this specific model."
 poro-34b,46.29,self-reported,https://arxiv.org/abs/2404.01856,,
 qwen-1-8b,45.3,self-reported,https://huggingface.co/Qwen/Qwen-1_8B,2023-11-30,5-shot
 qwen-14b,66.3,self-reported,https://huggingface.co/Qwen/Qwen-14B,2023-09-25,5-shot
@@ -187,14 +225,17 @@ seed-oss-36b,87.4,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-3
 skywork-13b,62.1,self-reported,https://huggingface.co/Skywork/Skywork-13B-base,,
 skywork-moe-base,77.4,self-reported,https://arxiv.org/html/2406.06563v1,,
 snowflake-arctic,67.3,independent,https://www.flexera.com/blog/finops/snowflake-arctic,,Reproduces Snowflake's official benchmark chart.
+stable-beluga-1-freewilly-1-65b,64.8,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot (2023-09-04) for stabilityai/StableBeluga1-Delta, MMLU 5-shot: 64.8. This replaces the previously-dropped MMLU 64.83 figure whose sourceUrl (llm.extractum.io) had gone dead; this new source is a live, fetchable archival mirror of the original leaderboard data and closely matches the earlier (unconfirmable) figure."
 stable-beluga-2-freewilly-2-70b,68.8,independent,https://patmcguinness.substack.com/p/fantastic-ai-models-and-where-to-ec5,,article states verbatim: 'StableBeluga2 ... get 68.8 on MMLU'
 stable-lm-2-1-6b,41.85,independent,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,"Open LLM Leaderboard, instruct variant, 5-shot"
 stable-lm-2-12b,61.14,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,"chat variant, Open LLM Leaderboard"
 stablelm-3b-4e1t,45.23,independent,https://huggingface.co/stabilityai/stablelm-3b-4e1t,,"Open LLM Leaderboard, 5-shot"
 stablelm-zephyr-3b,46.17,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,5-shot
+starling-7b-alpha,63.9,self-reported,https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha,2023-11-20,"MMLU score listed in the official model card's benchmark comparison table (also confirmed on the official project page starling.cs.berkeley.edu, described there as testing 'basic capability of the model')."
 t-lu-3-405b,87,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B,,"5-shot CoT; DeepSeek V3 82.1, GPT-4o 87.9, Llama 3.1 405B 88.0"
 t-lu-3-70b,83.1,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B,,0-shot CoT
 ul2-20b,39.2,self-reported,https://arxiv.org/abs/2205.05131,,"Zero-shot MMLU, base (non-Flan) UL2 20B"
+upstage-solar-10-7b,65.48,self-reported,https://arxiv.org/abs/2312.15166,,"Table 2 of the SOLAR 10.7B paper (base model row), 5-shot MMLU."
 upstage-solar-pro,79.14,self-reported,https://huggingface.co/upstage/solar-pro-preview-instruct,,
 vicuna-13b-v1-5,55.8,independent,https://huggingface.co/api/resolve-cache/spaces/lmarena-ai/arena-leaderboard/36556125921b70e4b87ae9b7aff2ac624b3c2220/leaderboard_table_20231220.csv?download=true&etag=%22c9eda02db9aa30464ba0334945d39e8f27b49bb6%22,,"LMSYS Chatbot Arena leaderboard snapshot, Dec 2023"
 xgen-7b-8k,32.1,self-reported,https://ar5iv.labs.arxiv.org/html/2309.03450,,0-shot weighted average

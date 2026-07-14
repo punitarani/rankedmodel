@@ -79,6 +79,69 @@
       "score": 75.9,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/pdf/2404.14219"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 53.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "5-shot; Phi-3 Technical Report's standardized baseline-comparison table, Phi-2 column."
+    },
+    {
+      "benchmarkSlug": "anli",
+      "score": 42.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "7-shot; same comparison table."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 29.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "0-shot; same comparison table."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 45.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "5-shot; same comparison table."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 88.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "10-shot; same comparison table."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 60.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "5-shot; same comparison table."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 68.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "5-shot (labeled 'SociQA' in the report); same comparison table."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 54.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "5-shot; same comparison table."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 60.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "3-shot; same comparison table."
     }
   ],
   "verificationNotes": "Existence, 2.7B params, MIT license, and Dec 2023 Microsoft Research blog release all confirmed. Fetched the Phi-3 Technical Report (arXiv 2404.14219) comparison table and confirmed Phi-2 row verbatim: MMLU 56.3, HumanEval 59.0, GSM8K 61.1, BBH 59.4, ARC-Challenge 75.9. No discrepancies found."

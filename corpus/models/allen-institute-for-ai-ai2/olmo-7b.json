@@ -79,6 +79,32 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/OLMo-7B",
       "notes": "8-shot CoT, mixed eval"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 65.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-7B",
+      "notes": "arc_easy row in the OLMo 7B vs. peer models table"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 50.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-7B"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 78.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-7B"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 36,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-7B",
+      "notes": "truthfulQA (MC2)"
     }
   ],
   "verificationNotes": "Confirmed real via HF model card and arXiv paper (2402.00838, submitted 2024-02-01). Apache-2.0 license, 32-layer dense architecture, and max_sequence_length=2048 (ctxK=2) all confirmed directly from raw config.json. All 5 benchmark rows (MMLU 28.3, ARC-C 48.5, HellaSwag 76.4, WinoGrande 67.9, GSM8k 8.5) confirmed verbatim on the HF model card. ~6.9B total parameter figure cross-confirmed via the OLMoE paper's comparison table."

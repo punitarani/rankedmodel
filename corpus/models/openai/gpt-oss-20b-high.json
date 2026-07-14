@@ -81,7 +81,47 @@
       "sourceUrl": "https://arxiv.org/abs/2508.10925",
       "evaluatedAt": "2025-08-05",
       "notes": "SWE-bench Verified, high reasoning effort"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 10.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Humanity's Last Exam, no tools, high reasoning effort (Table 3 of the gpt-oss model card)"
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 2230,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Codeforces Elo, no tools, high reasoning effort"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 75.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Multilingual MMLU average, high reasoning effort"
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 54.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Tau-Bench Retail domain, high reasoning effort"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 34.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2508.10925",
+      "evaluatedAt": "2025-08-05",
+      "notes": "Aider Polyglot (diff), high reasoning effort"
     }
   ],
-  "verificationNotes": "Same primary source as Medium config (arXiv 2508.10925 Table 3): gpt-oss-20b high = AIME2024(no tools) 92.1, GPQA Diamond(no tools) 71.5, MMLU 85.3, SWE-bench Verified 60.7 — all four match exactly. Params/arch/license/date verified identically. No changes made."
+  "verificationNotes": "Same primary source as Medium config (arXiv 2508.10925 Table 3): gpt-oss-20b high = AIME2024(no tools) 92.1, GPQA Diamond(no tools) 71.5, MMLU 85.3, SWE-bench Verified 60.7 \u2014 all four match exactly. Params/arch/license/date verified identically. No changes made."
 }

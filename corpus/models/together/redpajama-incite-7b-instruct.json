@@ -46,6 +46,63 @@
     "releaseDate": "https://www.together.ai/blog/redpajama-7b",
     "openness": "https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Instruct"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 40.78,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "LM-eval-harness acc_norm, Table 9 of the official RedPajama technical paper (Together AI et al., NeurIPS 2024 D&B track)."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 71.59,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "LM-eval-harness acc, Table 9."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 71.03,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "LM-eval-harness acc_norm, Table 9. (A separate HELM-classic EM-metric HellaSwag score of 69.8 also appears in Table 8; using the acc_norm figure for consistency with the rest of the corpus.)"
+    },
+    {
+      "benchmarkSlug": "lambada",
+      "score": 68.95,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "LAMBADA-OpenAI acc, Table 9."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 76.99,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "PIQA acc_norm, Table 9."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 65.67,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "Winogrande acc, Table 9."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 48.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "HELM OpenbookQA EM score, Table 8."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 22.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "HELM TruthfulQA EM score, Table 8."
+    }
+  ],
   "verificationNotes": "Confirmed via together.ai/blog/redpajama-7b (June 6, 2023): text states Instruct model 'outperforms LLaMA-7B and state-of-the-art open models such as Falcon-7B (Base and Instruct) and MPT-7B (Base and Instruct) on HELM by 2-9 points' and 'appears to be the best open instruct model at this scale.' Fetched arxiv.org/html/2411.12372 Table 8 directly and confirmed exact score 0.492 for RedPajama-INCITE-7B-Instruct verbatim."
 }

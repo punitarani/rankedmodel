@@ -1,14 +1,24 @@
 model_slug,score,source,source_url,evaluated_at,notes
+deepseek-r1-0528,1930,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,"Codeforces-Div1 rating; DeepSeek changed Codeforces methodology between R1 and R1-0528 (the original R1 card reports a differently-defined 'Codeforces (Rating): 2029' overall metric, not Div1-specific, so these are not directly comparable across the two model cards)"
 deepseek-r1-671b,2029,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,"Codeforces rating, ~96.3rd percentile"
 deepseek-r1-distill-llama-70b,1633,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B,2025-01-20,Codeforces rating
 deepseek-r1-distill-qwen-32b,1691,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B,2025-01-20,Codeforces rating
 deepseek-r1-zero,1444,self-reported,https://arxiv.org/html/2501.12948v1,2025-01-20,Codeforces rating
+deepseek-v3-1-thinking,2091,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,"Codeforces-Div1 Rating, Thinking mode, from official HF model card benchmark table"
 deepseek-v3-2-exp,2121,self-reported,https://github.com/deepseek-ai/DeepSeek-V3.2-Exp,,Codeforces rating
 deepseek-v4-flash-think-high,2816,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,,"Codeforces rating, Think High mode"
 deepseek-v4-flash-think-max,3052,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,,"Codeforces rating, Think Max mode"
 deepseek-v4-pro-think-high,2919,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,,"Codeforces rating, Think High mode"
 deepseek-v4-pro-think-max,3206,self-reported,https://redreamality.com/blog/deepseek-v4-benchmarks-guide/,,"CodeElo/Codeforces rating, Pro-Max mode"
+gemma-4,2150,self-reported,https://ai.google.dev/gemma/docs/core/model_card_4,2026-04-02,"Codeforces Elo, 31B dense (26B A4B sibling scores 1718 on the same table, already in corpus)."
 gemma-4-26b-a4b,1718,self-reported,https://huggingface.co/google/gemma-4-26B-A4B-it,2026-04-02,"Codeforces Elo, 26B A4B (dense 31B scores 2150 on the same table)."
+gpt-4,392,self-reported,https://arxiv.org/abs/2303.08774,2023-03-15,"Codeforces Rating from Table 1 ('GPT performance on academic and professional exams') of the GPT-4 Technical Report, for the RLHF/launch GPT-4 model, described as 'below 5th percentile' among competitive programmers. Estimated by having the model attempt problems from 10 recent Codeforces contests (10 attempts/problem) and running repeated Elo-adjustment simulations to convergence (100 simulations x 10 contests), per Appendix A. GPT-3.5 scored 260 on the same table for comparison. This is a distinct evaluation protocol from Table 2's few-shot academic benchmarks (base, pre-RLHF model) already in the corpus, but is the same kind of Codeforces-Elo-rating metric used for other models' 'codeforces' entries in this corpus."
+gpt-oss-120b-high,2463,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Codeforces Elo, no terminal tool, high reasoning effort (2622 Elo with tool access, per the same table -- chose the no-tools figure for consistency with the model's other no-tools rows). Read directly from Table 3 of the official model card."
+gpt-oss-120b-low,1595,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Codeforces Elo, no terminal tool, low reasoning effort (1653 Elo with tool access, per the same table -- chose the no-tools figure for consistency with the model's other no-tools rows). Read directly from Table 3 of the official model card."
+gpt-oss-120b-medium,2205,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Codeforces Elo, no tools, medium reasoning effort"
+gpt-oss-20b-high,2230,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Codeforces Elo, no tools, high reasoning effort"
+gpt-oss-20b-low,1366,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Codeforces Elo, no tools, low reasoning effort"
+gpt-oss-20b-medium,1998,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Codeforces Elo, no tools, medium reasoning effort"
 openai-o1,1891,self-reported,https://www.datacamp.com/blog/o3-openai,2024-12-01,"Codeforces Elo [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 openai-o1-mini,1650,independent,https://www.analyticsvidhya.com/blog/2024/09/o1-preview-vs-o1-mini/,2024-09-01,"Codeforces Elo, ~86th percentile"
 openai-o1-preview,1258,independent,https://www.analyticsvidhya.com/blog/2024/09/o1-preview-vs-o1-mini/,2024-09-01,
@@ -18,5 +28,19 @@ openai-o3-mini-low,1831,independent,https://www.lesswrong.com/posts/srdxEAcdmetd
 openai-o3-mini-medium,2036,independent,https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days,2025-01-01,"Codeforces Elo, medium effort"
 openai-o3-pro,2748,self-reported,https://binaryverseai.com/chatgpt-o3-pro-review-benchmarks-hacks/,,"Elo rating [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
 openai-o4-mini,2719,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,Elo rating
+phi-4-reasoning,1736,self-reported,https://arxiv.org/abs/2504.21318,2025-04-30,"Codeforces Elo rating (Table 1 of the Phi-4-reasoning Technical Report), 143 problems from Codeforces contest IDs 1505-1536, 10 attempts/problem. Not on the HF card, only in the arXiv paper."
+phi-4-reasoning-14b,1736,self-reported,https://arxiv.org/abs/2504.21318,2025-04-30,"Codeforces Elo rating (Table 1 of the Phi-4-reasoning Technical Report), computed over 143 problems from contest IDs 1505-1536 with 10 submission attempts per problem, averaged over runs. Not present on the HF model card, only in the arXiv paper."
+qwen3-14b-non-thinking,1200,self-reported,https://arxiv.org/pdf/2505.09388,,"Codeforces rating (58.6th percentile), Table 16, Qwen3-14B (Non-thinking) column"
+qwen3-14b-thinking,1766,self-reported,https://arxiv.org/pdf/2505.09388,,"Codeforces rating (95.3rd percentile), Table 15, Qwen3-14B (Thinking) column"
+qwen3-235b-a22b-non-thinking,1387,self-reported,https://arxiv.org/pdf/2505.09388,,"Codeforces rating (75.7th percentile), Table 12, Qwen3-235B-A22B (Non-thinking) column"
+qwen3-235b-a22b-thinking,2056,self-reported,https://arxiv.org/pdf/2505.09388,2025-05-15,"CodeForces rating (Elo), Thinking mode, Table 11; corresponding percentile given as 98.2%. Elo rating, not a 0-100 score."
+qwen3-235b-a22b-thinking-2507,2134,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507,2025-07-25,"Listed as 'CFEval' in the official model card's Performance table (Coding section). Elo-style rating, not a 0-100 score; same convention already used elsewhere in corpus (e.g. Qwen3.5-122B-A10B) for Qwen's internal Codeforces-style eval. Treat as vendor-reported, not necessarily apples-to-apples with third-party CodeForces evals."
+qwen3-30b-a3b-non-thinking,1267,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"CodeForces rating (Elo), non-thinking mode, Table 16; percentile given as 64.1%. Elo rating, not a 0-100 score."
+qwen3-30b-a3b-thinking,1974,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"CodeForces rating (Elo), thinking mode, Table 15; percentile given as 97.7%. Elo rating, not a 0-100 score."
+qwen3-32b-non-thinking,1353,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"CodeForces rating (Elo), non-thinking mode, Table 14; percentile given as 71.0%. Elo rating, not a 0-100 score."
+qwen3-32b-thinking,1977,self-reported,https://arxiv.org/abs/2505.09388,2025-05-15,"CodeForces Elo rating (reported alongside 97.7th percentile) in Table 13, Qwen3-32B (Thinking) column."
 qwen3-5-122b-a10b,2100,self-reported,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,,"Elo rating, not a 0-100 score. Footnote in the README states this was evaluated on Qwen's own query set (not necessarily the standard public CodeForces problem set), so treat as vendor-reported and not perfectly apples-to-apples with third-party CodeForces evals."
+qwen3-8b-non-thinking,1110,self-reported,https://arxiv.org/abs/2505.09388,,"CodeForces rating (52.4th percentile), non-thinking mode, Table 18"
+qwen3-8b-thinking,1785,self-reported,https://arxiv.org/abs/2505.09388,,"CodeForces rating (95.6th percentile), thinking mode, Table 17"
+qwq-32b,1982,self-reported,https://arxiv.org/abs/2505.09388,,"Qwen3 Technical Report, Table 13, Codeforces row (rating/percentile format '1982 / 97.7%'), QwQ-32B column; using the Elo rating per this taxonomy's unit convention. Percentile (97.7%) omitted since the slug's unit is Elo."
 seed1-5-thinking,55,self-reported,https://github.com/ByteDance-Seed/Seed-Thinking-v1.5,,Codeforces pass@8

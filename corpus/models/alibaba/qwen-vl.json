@@ -110,7 +110,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen-VL",
       "notes": "Zero-shot captioning CIDEr, reported SOTA among generalist VLMs at release"
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 62.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen-VL",
+      "notes": "AI2D diagram QA, base Qwen-VL row (distinct from Qwen-VL-Chat) in the HF model card's text-oriented VQA table"
     }
   ],
-  "verificationNotes": "Confirmed real (arXiv 2308.12966, pub. 2023-08-24; GitHub QwenLM/Qwen-VL). 9.6B total params, 8,192 context, Tongyi Qianwen license (free research+commercial) all confirmed on HF/GitHub README. Re-fetched GitHub README benchmark tables: vqav2 78.8, ok-vqa 58.6, gqa-vqa 59.3, textvqa 63.8, docvqa 65.1, chartqa 65.7, refcoco 89.36, refcoco-plus 83.12, flickr30k 85.8 all literally match the 'Qwen-VL' (base model) row. DROPPED touchstone-en (645.2) and touchstone-zh (401.2): the README table shows these scores belong to the 'Qwen-VL-Chat' row, not the base 'Qwen-VL' pretrained model this record describes — no TouchStone score exists for base Qwen-VL, so the original attribution was wrong-model, not just wrong-number."
+  "verificationNotes": "Confirmed real (arXiv 2308.12966, pub. 2023-08-24; GitHub QwenLM/Qwen-VL). 9.6B total params, 8,192 context, Tongyi Qianwen license (free research+commercial) all confirmed on HF/GitHub README. Re-fetched GitHub README benchmark tables: vqav2 78.8, ok-vqa 58.6, gqa-vqa 59.3, textvqa 63.8, docvqa 65.1, chartqa 65.7, refcoco 89.36, refcoco-plus 83.12, flickr30k 85.8 all literally match the 'Qwen-VL' (base model) row. DROPPED touchstone-en (645.2) and touchstone-zh (401.2): the README table shows these scores belong to the 'Qwen-VL-Chat' row, not the base 'Qwen-VL' pretrained model this record describes \u2014 no TouchStone score exists for base Qwen-VL, so the original attribution was wrong-model, not just wrong-number."
 }

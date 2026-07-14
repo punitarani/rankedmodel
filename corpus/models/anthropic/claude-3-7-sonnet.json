@@ -71,7 +71,47 @@
       "sourceUrl": "https://www.datacamp.com/blog/claude-3-7-sonnet",
       "evaluatedAt": "2025-02-24",
       "notes": "AIME 2024, standard mode (no thinking); same sourceUrl correction as GPQA row, confirmed 23.3% standard-mode on DataCamp"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 83.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "evaluatedAt": "2025-02-24",
+      "notes": "Multilingual Q&A (MMMLU), standard mode / no extended thinking, from Anthropic's official benchmark-comparison chart on the announcement page. Extended-thinking mode scores 86.1% (not used, to stay consistent with the standard-mode convention of the existing 3 rows)."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 71.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "evaluatedAt": "2025-02-24",
+      "notes": "Visual reasoning, MMMU (validation), standard mode / no extended thinking. Extended-thinking mode scores 75%."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 90.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "evaluatedAt": "2025-02-24",
+      "notes": "Instruction-following (IFEval), standard mode / no extended thinking. Extended-thinking mode scores 93.2%."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 82.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "evaluatedAt": "2025-02-24",
+      "notes": "MATH 500 (500 competition math problems), standard mode / no extended thinking. Extended-thinking mode scores 96.2%."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 81.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "evaluatedAt": "2025-02-24",
+      "notes": "TAU-bench retail domain, standard mode / no extended thinking; filed under this slug per existing corpus convention (airline-domain 58.4% from the same chart omitted to avoid a duplicate-key collision, matching how claude-3-5-sonnet-new.json handles the same benchmark)."
     }
   ],
-  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-3-7-sonnet (release 2025-02-24, 200K context, $3/$15 pricing, launched alongside Claude Code). Per Anthropic's official model-deprecations page (fetched 2026-07-12), claude-3-7-sonnet-20250219 was deprecated 2025-10-28 and RETIRED 2026-02-19 — since today is 2026-07-12 this model is now fully retired, not merely deprecated; apiAvailable corrected to false (schema has no 'retired' status enum, so status kept as 'deprecated', the closest option). SWE-bench 63.7% confirmed on the primary announcement. GPQA/AIME standard-mode figures (68%/23.3%) were NOT literally present in the given deeplearning.ai sourceUrl's extracted text (it only showed extended-thinking scores); confirmed the exact same numbers on DataCamp's writeup instead and swapped sourceUrl accordingly rather than dropping real, verifiable data."
+  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-3-7-sonnet (release 2025-02-24, 200K context, $3/$15 pricing, launched alongside Claude Code). Per Anthropic's official model-deprecations page (fetched 2026-07-12), claude-3-7-sonnet-20250219 was deprecated 2025-10-28 and RETIRED 2026-02-19 \u2014 since today is 2026-07-12 this model is now fully retired, not merely deprecated; apiAvailable corrected to false (schema has no 'retired' status enum, so status kept as 'deprecated', the closest option). SWE-bench 63.7% confirmed on the primary announcement. GPQA/AIME standard-mode figures (68%/23.3%) were NOT literally present in the given deeplearning.ai sourceUrl's extracted text (it only showed extended-thinking scores); confirmed the exact same numbers on DataCamp's writeup instead and swapped sourceUrl accordingly rather than dropping real, verifiable data."
 }
