@@ -98,6 +98,22 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
       "notes": "MMLU-Pro listed in the HF model card's evaluation results section."
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 59.5,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Mistral-Nemo-Instruct-12.2B_2407'). Matches this catalog entry's linked mistralai/Mistral-Nemo-Instruct-2407 exactly."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 5.9,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-09-15",
+      "notes": "LogicKor official leaderboard, model_id mistralai/Mistral-Nemo-Instruct-2407 (exact hf-link match to catalog), default prompt strategy"
     }
   ],
   "verificationNotes": "Fetched mistral.ai/news/mistral-nemo/ directly: confirms 2024-07-18 release, 12B params, 128K context, Apache 2.0, function calling, 11 languages listed (English/French/German/Spanish/Italian/Portuguese/Chinese/Japanese/Korean/Arabic/Hindi). Fetched HF model card directly: MMLU 68.0, HellaSwag 83.5, Winogrande 76.8, TriviaQA 73.8 all match exactly. Docs.mistral.ai confirms model is now deprecated with retirement date 2026-07-31 (essentially now) -- status/note updated to reflect this. Pricing $0.15/$0.15 corroborated by multiple independent aggregators (Sim.ai, Inworld, pricepertoken.com) tied to official Mistral La Plateforme; a lower $0.02/$0.03 figure also appears in some trackers but I could not confirm it against a primary Mistral source, so kept the better-corroborated $0.15/$0.15 with this caveat noted."

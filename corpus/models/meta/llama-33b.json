@@ -146,6 +146,14 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
       "evaluatedAt": "2023-02-01",
       "notes": "RACE-High split, reading comprehension table."
+    },
+    {
+      "benchmarkSlug": "fin-bench",
+      "score": 53.36,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2404.01856",
+      "evaluatedAt": "2024-04-01",
+      "notes": "FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating LLaMA 33B as a reference model alongside Poro 34B."
     }
   ],
   "verificationNotes": "Confirmed exact param count of 32.5B (Table 2, matches record precisely \u2014 this is genuinely the '33B' checkpoint, not a mislabeled sibling), 2023-02-24 release date, and gated non-commercial license via Meta's blog and arxiv 2302.13971 (both fetched directly). All 8 result rows (HellaSwag 82.8, ARC-Challenge 57.8, WinoGrande 76, MMLU 57.8, GSM8k 35.6, HumanEval 21.7, MBPP 30.2, TriviaQA 65.1) confirmed as literal figures in the same tables."

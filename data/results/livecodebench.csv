@@ -122,6 +122,7 @@ reka-flash-3,62,self-reported,https://reka.ai/news/introducing-reka-flash,2025-0
 sarvam-105b,71.7,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,LiveCodeBench v6
 seed-oss-36b,67.4,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,LiveCodeBench v6
 seed1-5-thinking,64.9,self-reported,https://github.com/ByteDance-Seed/Seed-Thinking-v1.5,,LiveCodeBench v5
+skywork-o1-open-llama-3-1-8b,26,self-reported,https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B,2024-11-26,Column labeled 'LiveCodeBench-2024.01-2024.11' in official HF model card table (row 'Skywork-o1-Open-8B').
 smollm3-3b-no-thinking,15.2,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM3-3B,,"LiveCodeBench v4, no extended thinking"
 smollm3-3b-think,30,self-reported,https://huggingface.co/blog/smollm3,,reasoning mode
 sonar,29.5,independent,https://designforonline.com/ai-models/perplexity-sonar/,,Attributed to Artificial Analysis; corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats.

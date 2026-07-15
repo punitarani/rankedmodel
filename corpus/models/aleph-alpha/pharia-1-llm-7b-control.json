@@ -86,6 +86,14 @@
       "sourceUrl": "https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control",
       "evaluatedAt": "2024-08-26",
       "notes": "5-shot, acc = 0.651 on the HF model card."
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 35.3,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Pharia-1-LLM-7B-control'). Matches this catalog entry's linked Aleph-Alpha/Pharia-1-LLM-7B-control exactly."
     }
   ],
   "verificationNotes": "Existence and Aug 26, 2024 release confirmed via aleph-alpha.com blog post and corroborating coverage (VentureBeat, Maginative, dataphoenix, and Aleph Alpha's own X/Twitter announcement). 7.04B params (7,041,544,704 exact) and Open Aleph License (non-commercial research/educational use) confirmed by fetching the HF model card directly. All three benchmark scores (MMLU 48.4, HellaSwag 64.6, GSM8K 1.4) confirmed to literally appear on huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control - exact match, no changes needed."

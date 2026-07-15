@@ -119,6 +119,13 @@
       "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
       "evaluatedAt": "2025-10-15",
       "notes": "MMMU (validation split), visual reasoning."
+    },
+    {
+      "benchmarkSlug": "gaia",
+      "score": 56.36,
+      "source": "independent",
+      "sourceUrl": "https://hal.cs.princeton.edu/gaia",
+      "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, Claude Haiku 4.5 (Oct 2025 snapshot). GAIA validation set."
     }
   ],
   "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-haiku-4-5 (release 2025-10-15, $1/$5 pricing, 200K context, 'one-third the cost and more than twice the speed of Sonnet 4' claim verified verbatim). IMPORTANT CORRECTION: input record marked status='deprecated', but Anthropic's official model-deprecations page (fetched 2026-07-12) lists claude-haiku-4-5-20251001 as 'Active' with tentative retirement 'not sooner than 2026-10-15' \u2014 this model is currently live, not deprecated. Status corrected to 'released' (closest enum to 'Active'); apiAvailable=true confirmed correct. GPQA/MMLU-Pro rows: could not directly scrape the JS-rendered artificialanalysis.ai page, but the specific numbers were independently corroborated by secondary sources quoting the same Artificial Analysis data, so kept (not dropped) with sourceUrl unchanged and caveat noted."

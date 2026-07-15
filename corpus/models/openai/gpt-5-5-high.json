@@ -46,6 +46,49 @@
     "priceInput/priceOutput": "https://artificialanalysis.ai/models/gpt-5-5-high",
     "ctxK": "https://artificialanalysis.ai/models/gpt-5-5-high"
   },
-  "results": [],
-  "verificationNotes": "OpenAI's own reasoning-models guide and OpenAI Help Center confirm GPT-5.5 exposes none/low/medium/high/xhigh reasoning-effort levels, with Plus-tier ChatGPT users able to select 'High' directly in the model picker. Artificial Analysis independently benchmarks this exact configuration as a distinct model page ('GPT-5.5 (high)') with its own composite score (53, rank #12/188), separate from both the base/medium config already in the corpus and the 'xhigh' page below (55, rank #7/188) — confirming these are genuinely differentiated, independently-measured configurations rather than a single number relabeled three ways. Could not find high-tier-specific per-benchmark (GPQA/AIME/etc.) scores published separately from the flagship figures already recorded under the base 'GPT-5.5' entry, which appear (per exact-match FrontierMath figures) to actually represent the xhigh configuration — flagging this for the ingesting pipeline; recommend also flipping the existing 'GPT-5.5' entry's isBestConfig to false now that a genuine xhigh sibling is being added."
+  "results": [
+    {
+      "benchmarkSlug": "hle",
+      "score": 43,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-high",
+      "notes": "Humanity's Last Exam (no tools), from Artificial Analysis's per-model JSON data payload keyed to slug \"gpt-5-5-high\" (id b13c1257-d746-4027-8fc8-4892dc14701c), confirmed distinct from the sibling 'GPT-5.5 (xhigh)' and 'GPT-5.5 (medium)' entries on the same site."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 71.6,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-high",
+      "notes": "IFBench, from Artificial Analysis's per-model data for 'GPT-5.5 (high)'."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 48.6,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-high",
+      "notes": "GDPval-AA v2, normalized score (gdpvalNormalized field), from Artificial Analysis's per-model data for 'GPT-5.5 (high)'."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 81.1,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-high",
+      "notes": "MMMU-Pro, from Artificial Analysis's per-model data for 'GPT-5.5 (high)'."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 79.4,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-high",
+      "notes": "Terminal-Bench v2.1 (field 'terminalbenchV21'), from Artificial Analysis's per-model data for 'GPT-5.5 (high)'."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 44,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), Codex harness, High reasoning effort: Pass rate 24.2% / Score 44.0% (rank 13). Matches this catalog entry's own effortLabel ('High'). Score component used per corpus convention."
+    }
+  ],
+  "verificationNotes": "OpenAI's own reasoning-models guide and OpenAI Help Center confirm GPT-5.5 exposes none/low/medium/high/xhigh reasoning-effort levels, with Plus-tier ChatGPT users able to select 'High' directly in the model picker. Artificial Analysis independently benchmarks this exact configuration as a distinct model page ('GPT-5.5 (high)') with its own composite score (53, rank #12/188), separate from both the base/medium config already in the corpus and the 'xhigh' page below (55, rank #7/188) \u2014 confirming these are genuinely differentiated, independently-measured configurations rather than a single number relabeled three ways. Could not find high-tier-specific per-benchmark (GPQA/AIME/etc.) scores published separately from the flagship figures already recorded under the base 'GPT-5.5' entry, which appear (per exact-match FrontierMath figures) to actually represent the xhigh configuration \u2014 flagging this for the ingesting pipeline; recommend also flipping the existing 'GPT-5.5' entry's isBestConfig to false now that a genuine xhigh sibling is being added."
 }

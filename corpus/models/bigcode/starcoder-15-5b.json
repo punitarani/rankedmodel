@@ -74,6 +74,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2305.06161",
       "notes": "Single-line fill-in-the-middle (HumanEval-Infilling) benchmark, Python split, from Table 17 of the StarCoder paper. Cross-validated: the same table's SantaCoder figures (Java 0.62/JS 0.60/Python 0.44) match SantaCoder's own published model-card model-index exactly, giving high confidence the StarCoder figures (Java 0.73/JS 0.74/Python 0.62) are accurately relayed."
+    },
+    {
+      "benchmarkSlug": "fin-bench",
+      "score": 45.55,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2404.01856",
+      "evaluatedAt": "2024-04-01",
+      "notes": "FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating StarCoder as a reference model alongside Poro 34B despite it being a code-focused model."
     }
   ],
   "verificationNotes": "Fetched HF blog (dated 2023-05-04) and model card: confirmed ~15B params, 80+ languages, BigCode OpenRAIL-M, HumanEval 33.6/MBPP 52.7 verbatim. No changes."

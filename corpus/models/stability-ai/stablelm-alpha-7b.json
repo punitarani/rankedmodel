@@ -46,6 +46,55 @@
     "releaseDate": "https://simonwillison.net/2023/Apr/19/stablelm/",
     "openness": "https://huggingface.co/stabilityai/stablelm-base-alpha-7b"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 32,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b",
+      "evaluatedAt": "2023-07-19",
+      "notes": "25-shot acc_norm from the (old) Open LLM Leaderboard's lm-evaluation-harness run on stabilityai/stablelm-base-alpha-7b (config.model_name and model_sha 38366357b confirmed in the run's results JSON). Independent third-party eval, not from Stability AI's own model card (which publishes no benchmark numbers)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 51.78,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b",
+      "evaluatedAt": "2023-07-19",
+      "notes": "10-shot acc_norm from the (old) Open LLM Leaderboard's lm-evaluation-harness run on stabilityai/stablelm-base-alpha-7b."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 26.21,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b",
+      "evaluatedAt": "2023-07-19",
+      "notes": "5-shot MMLU average (acc) computed across all 57 hendrycksTest subject splits in the run's raw results JSON (results_2023-07-19T17:27:18.412966.json) for stabilityai/stablelm-base-alpha-7b."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 40.19,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b",
+      "evaluatedAt": "2023-07-19",
+      "notes": "TruthfulQA-MC2 (0-shot) from the (old) Open LLM Leaderboard run on stabilityai/stablelm-base-alpha-7b."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 55.41,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b",
+      "evaluatedAt": "2023-10-15",
+      "notes": "5-shot acc from a later Open LLM Leaderboard re-run (2023-10-15) on the same stabilityai/stablelm-base-alpha-7b checkpoint."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 0.006065,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b",
+      "evaluatedAt": "2023-10-15",
+      "notes": "5-shot acc from the 2023-10-15 Open LLM Leaderboard re-run; near-zero score is expected for a 2023 base model with no math/instruction tuning. [score corrected during adversarial verify: proposed 0.61 -> 0.006065, per verifier: Fetched the source (HF dataset open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b) via two independent methods: the dataset details page and the raw results_2023-10-15T02-46-02.440007.json file. Both agree: gsm8k (harness|gsm8k|5, 5-shot, 1319 samples) acc = 0.006065200909780136 (~0.006, \u00b10.002), NOT 0.61. Model/benchmark identity checks out (correct HF repo, correct 2023-10-15 re-run, correct 5-shot gsm8k task) \u2014 this is not a wrong-model or wrong-variant mixup, just a wrong score value, likely a decimal/percentage slip (0.61% \u2248 0.0061 is close to the true value, suggesting the claimant may have mis-transcribed a percentage as a fraction, or simply copied the wrong digit). Notably, the claim's own notes field says \"near-zero score is expected for a 2023 base model with no math/instruction tuning\" \u2014 which the true 0.006 score satisfies but the stated 0.61 score (61%) contradicts. Recommend recording correctedScore ~0.006065 (or rounded 0.0061) for corpus/models/stability-ai/stablelm-alpha-7b.json gsm8k entry, sourced to https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b (results_2023-10-15T02-46-02.440007.json). Note the corpus file currently has an empty results array, so this would be a new entry, not an edit to an existing one.]"
+    }
+  ],
   "verificationNotes": "Confirmed real via direct fetch of huggingface.co/stabilityai/stablelm-base-alpha-7b (CC BY-SA-4.0 license verbatim, 7B params, 4096 context confirmed) and cross-checked release date Apr 19, 2023 against contemporaneous coverage (TechCrunch, VentureBeat, SiliconANGLE, Simon Willison's blog) all dated April 19, 2023. No benchmark results are published on the model card, so the empty results array was kept as-is (correctly, per instructions, rather than fabricating any). No changes made to input values."
 }

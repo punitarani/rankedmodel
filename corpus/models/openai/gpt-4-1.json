@@ -112,6 +112,13 @@
       "sourceUrl": "https://futureagi.com/blog/gpt-4-1-benchmarks-2025/",
       "evaluatedAt": "2025-04-14",
       "notes": "Video-MME long-context video understanding, up 6.7 points from GPT-4o per OpenAI's launch table."
+    },
+    {
+      "benchmarkSlug": "gaia",
+      "score": 49.7,
+      "source": "independent",
+      "sourceUrl": "https://hal.cs.princeton.edu/gaia",
+      "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, GPT-4.1 (April 2025 snapshot). GAIA validation set."
     }
   ],
   "verificationNotes": "Confirmed release 2025-04-14 and $2/$8 per 1M token pricing, 1M context window via OpenAI docs and independent coverage. All 3 benchmark rows (MMLU 90.2, GPQA 66.3, SWE-bench 55) confirmed verbatim on the cited rdworldonline.com article. No changes made."

@@ -23,6 +23,7 @@ qwen2-5-32b,52.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-0
 qwen2-5-72b,51.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
 qwen2-5-7b,50.6,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
 qwen2-5-coder-32b,60.4,self-reported,https://arxiv.org/abs/2409.12186,2024-11-12,"Base model, Table 5"
+skywork-o1-open-llama-3-1-8b,78.7,self-reported,https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B,2024-11-26,"HumanEval+ column, official HF model card table (row 'Skywork-o1-Open-8B'). This is the base model's best score on this metric (QStar variant scored lower, 77.4)."
 starcoder2-15b,37.8,self-reported,https://huggingface.co/bigcode/starcoder2-15b,,"HumanEval+ pass@1 = 37.8, taken verbatim from the model-index metadata block in the official HF model card README (fetched raw)."
 starcoder2-3b,27.4,self-reported,https://huggingface.co/bigcode/starcoder2-3b,,"HumanEval+ pass@1 = 27.4, taken verbatim from the model-index metadata block in the official HF model card README (fetched raw)."
 t-lu-3-405b,92.9,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B,,"HumanEval+ (pass@10) for the final Tülu 3 405B model, from the same official 'Performance' table (verified via raw README.md)."

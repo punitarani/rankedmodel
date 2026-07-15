@@ -6,3 +6,4 @@ falcon-h1-34b,69.38,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-In
 gemini-1-5-flash,34.8,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"AMC 2022-23 (250 latest AMC 8/10/12 problems), 4-shot, Table 11 of the Gemini 1.5 technical report."
 gemini-1-5-pro,46.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"AMC 2022-23 (250 latest AMC 8/10/12 problems), 4-shot, Table 11 of the Gemini 1.5 technical report."
 qwen2-math-72b,60,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, AMC 2023, 24/40 greedy CoT"
+skywork-o1-open-llama-3-1-8b,55,self-reported,https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B,2024-11-26,AMC-23 column in official HF model card table (row 'Skywork-o1-Open-8B').

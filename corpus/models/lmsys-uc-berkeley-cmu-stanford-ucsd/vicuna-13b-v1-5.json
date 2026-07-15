@@ -70,6 +70,14 @@
       "sourceUrl": "https://huggingface.co/api/resolve-cache/spaces/lmarena-ai/arena-leaderboard/36556125921b70e4b87ae9b7aff2ac624b3c2220/leaderboard_table_20231220.csv?download=true&etag=%22c9eda02db9aa30464ba0334945d39e8f27b49bb6%22",
       "evaluatedAt": "2023-12-20",
       "notes": "MT-Bench score (GPT-4-judged, 0-10) from the same Chatbot Arena leaderboard Dec-2023 snapshot CSV already cited in this file for the MMLU (0.558) and Elo (1041) rows; fetched the CSV directly and confirmed the row 'Vicuna-13B,6.57,1041,0.558,Llama 2 Community' links to lmsys/vicuna-13b-v1.5."
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 44.8,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Vicuna-13b-v1.5'). Matches this catalog entry's linked lmsys/vicuna-13b-v1.5 exactly."
     }
   ],
   "verificationNotes": "Confirmed via huggingface.co/lmsys/vicuna-13b-v1.5 (Llama 2 Community License, fine-tuned from Llama 2 on ~125K ShareGPT conversations) and FastChat's vicuna_weights_version.md (v1.5 weights released 2023-08-01, matches releaseDate:2023-08). Fetched the cited leaderboard CSV directly and confirmed the exact row 'Vicuna-13B,6.57,1041,0.558,Llama 2 Community' \u2014 MMLU 0.558 (=55.8) and Elo 1041 both match the record precisely. No changes made."

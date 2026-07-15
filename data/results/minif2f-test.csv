@@ -1,2 +1,3 @@
 model_slug,score,source,source_url,evaluated_at,notes
 deepseek-prover-v2-671b,88.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-Prover-V2-671B,2025-04-30,MiniF2F-test pass ratio (Lean 4)
+gpt-4-turbo,23,independent,https://arxiv.org/abs/2405.14333,2024-05-23,"GPT-4-turbo-2024-04-09 snapshot (the same snapshot this repo's gpt-4-turbo.json file already treats as this model's default for other benchmark rows), whole-proof generation with 64 samples, from DeepSeek-Prover (Xin et al., arXiv:2405.14333) Table 1 comparison of state-of-the-art methods on miniF2F. Paper reports 23.0% test / 25.4% valid; this is the test-split figure."

@@ -215,6 +215,14 @@
       "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
       "evaluatedAt": "2024-03-13",
       "notes": "Multilingual MMLU, 5-shot, from Table 5 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 8.26,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-27",
+      "notes": "LogicKor official leaderboard, model_id anthropic/claude-3-haiku-20240307, default prompt strategy"
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-haiku (release date 2024-03-13). Pricing $0.25/$1.25 confirmed via independent pricing trackers citing Anthropic's official rate. Downloaded and read the actual Model_Card_Claude_3.pdf Table 1/Table 3: all 12 self-reported benchmark numbers for Claude 3 Haiku (MMLU 75.2, MATH 38.9, GSM8K 88.9, HumanEval 75.9, GPQA 33.3, BBH 73.7, ARC-Challenge 89.2, HellaSwag 85.9, WinoGrande 74.2, DROP 78.4, MBPP 80.4, MMMU 50.2) match the PDF verbatim. apiAvailable=false confirmed: claude-3-haiku-20240307 retired from API April 20, 2026 (most recently retired of this batch). No changes made."

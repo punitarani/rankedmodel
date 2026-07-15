@@ -132,6 +132,13 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/minimax-m2-7",
       "notes": "Second, independently-run Terminal-Bench v2.1 measurement by Artificial Analysis (their own harness/sandbox), distinct from MiniMax's self-reported 57.0 already present in this model's corpus entry (sourced from minimax.io's launch post) and from the 57.0 in arXiv:2605.26494 Table 4 \u2014 recorded as a separate result under the same terminal-bench-2 slug per this corpus's existing dual-sourcing convention (e.g. Grok 4.5's terminal-bench-2 has both a self-reported and an AA-independent entry). Read off AA's live model-comparison chart for MiniMax-M2.7 on 2026-07-14."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 14.2,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), OpenClaw harness, High reasoning effort: Pass rate 5.9% / Score 14.2% (rank 49). Score component used per corpus convention."
     }
   ],
   "verificationNotes": "Confirmed released (not just announced) via official minimax.io news post, MiniMax API docs, NVIDIA developer blog, Hugging Face model page, and Artificial Analysis independent tracker \u2014 all agree on a March 18, 2026 launch. Param counts (230B total/10B active) corroborated by both NVIDIA's technical blog and the official model page; the HF repo metadata itself lists a slightly different '229B' which is very likely a rounding artifact of the same figure. Context window cited as 200K by NVIDIA and ~205K tokens by Artificial Analysis (likely 204,800 rounded two different ways) \u2014 used 200 as the vendor-stated round figure."

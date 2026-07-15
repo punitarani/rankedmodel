@@ -145,6 +145,30 @@
       "source": "arena",
       "sourceUrl": "https://lmmarketcap.com/benchmarks/arena_elo",
       "notes": "Current LMArena Elo (dynamic, decays as newer models are added); rank #119 as of fetch"
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 57.6,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Meta-Llama-3.1-8B-Instruct'). This catalog entry's own results (mmlu=69.4, gsm8k=84.5, etc.) are all explicitly labeled Instruct despite the bare 'Meta-Llama-3.1-8B' HF link field, so the Instruct-variant score (57.6) was used to match the entry's established convention rather than the base-model score (55.6)."
+    },
+    {
+      "benchmarkSlug": "komt-bench",
+      "score": 6.06,
+      "source": "independent",
+      "sourceUrl": "https://github.com/LG-AI-EXAONE/KoMT-Bench",
+      "evaluatedAt": "2024-08-01",
+      "notes": "Reported as 'Llama 3.1 8B Inst.' in the official KoMT-Bench GitHub repo results table (LG AI Research), reproduced from the EXAONE 3.0 7.8B technical report (arXiv:2408.03541). Score is on the 1-10 GPT-4-judged scale with the benchmark's language-detector penalty applied."
+    },
+    {
+      "benchmarkSlug": "gaokao-math",
+      "score": 30.4,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/html/2409.12122v1",
+      "evaluatedAt": "2024-08-08",
+      "notes": "Llama-3.1-8B-Instruct, Chinese GaoKao aggregate, zero-shot CoT greedy decoding, from Table 4 of the Qwen2.5-Math technical report where it is used as a general-model baseline (third-party evaluation by the Qwen team)."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card fetch: params 8.03B, release 2024-07-23 (matches ai.meta.com blog), license Llama 3.1 Community License Agreement. All 7 benchmark rows (MMLU 69.4, MMLU-Pro 48.3, GPQA 30.4, IFEval 80.4, HumanEval 72.6, GSM8K 84.5, MATH 51.9) literally confirmed on the cited HF page. Corrected the GPQA row's notes field: it was mislabeled 'Base pretrained model' but 30.4 is actually the Instruct model's em score per the card."

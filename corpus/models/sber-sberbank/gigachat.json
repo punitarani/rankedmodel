@@ -42,6 +42,47 @@
     "archDisplay": "https://www.karmactive.com/the-russian-ai-chatbot-entrance-giga-chat-vs-chatgpt/",
     "ctxK": "https://cloudprice.net/models/gigachat-2-max"
   },
-  "results": [],
-  "verificationNotes": "Existence and April 24, 2023 launch date independently reconfirmed via TechStartups, The National, Cyprus Mail and other outlets (all dated 2023-04-24) — original given date was correct. NeONKA architecture name and description ('Neural Omnimodal Network with Knowledge-Awareness', ensemble of models incl. Kandinsky 2.1 for images) independently confirmed via multiple secondary sources — not a hallucination. Could NOT confirm openness/license claim from the cited Wikipedia article itself (it says nothing about licensing); however other sources confirm the original 2023 GigaChat chatbot/API product is closed/proprietary (note: Sber has since open-sourced separate newer 'GigaChat3' MoE checkpoints under MIT in 2025, but that is a distinct later release not covered by this record's release date). 128K context window reconfirmed as current spec for GigaChat-2/2-Pro/2-Max via CloudPrice API listings; original 2023-era first-gen models are now deprecated and redirect to GigaChat-2. No results/benchmark rows were present to verify. Params/activeParams correctly left null as undisclosed for this specific (original, non-MoE) product."
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 53.38,
+      "source": "self-reported",
+      "sourceUrl": "https://habr.com/ru/companies/sberdevices/articles/780334/",
+      "evaluatedAt": "2023-12-13",
+      "notes": "5-shot MMLU (English) pretrain metric for base 'GigaChat' model, reported as a comparison baseline in Sber SberDevices' official GigaChat Pro technical-details blog post (row labeled plainly 'GigaChat', distinct from the GigaChat Pro row scoring 65.01)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 24.39,
+      "source": "self-reported",
+      "sourceUrl": "https://habr.com/ru/companies/sberdevices/articles/780334/",
+      "evaluatedAt": "2023-12-13",
+      "notes": "pass@1 pretrain metric for base 'GigaChat', from the same official Sber comparison table (GigaChat Pro scored 35.37 in the adjacent row)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 76.92,
+      "source": "self-reported",
+      "sourceUrl": "https://habr.com/ru/companies/sberdevices/articles/780334/",
+      "evaluatedAt": "2023-12-13",
+      "notes": "0-shot pretrain metric for base 'GigaChat' from Sber's official technical blog table."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 71.27,
+      "source": "self-reported",
+      "sourceUrl": "https://habr.com/ru/companies/sberdevices/articles/780334/",
+      "evaluatedAt": "2023-12-13",
+      "notes": "0-shot pretrain metric for base 'GigaChat' from Sber's official technical blog table."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 26.7,
+      "source": "self-reported",
+      "sourceUrl": "https://habr.com/ru/companies/sberdevices/articles/780334/",
+      "evaluatedAt": "2023-12-13",
+      "notes": "8-shot pretrain metric for base 'GigaChat' from Sber's official technical blog table, alongside llama-2-7b/34b and mistral-7b comparison rows."
+    }
+  ],
+  "verificationNotes": "Existence and April 24, 2023 launch date independently reconfirmed via TechStartups, The National, Cyprus Mail and other outlets (all dated 2023-04-24) \u2014 original given date was correct. NeONKA architecture name and description ('Neural Omnimodal Network with Knowledge-Awareness', ensemble of models incl. Kandinsky 2.1 for images) independently confirmed via multiple secondary sources \u2014 not a hallucination. Could NOT confirm openness/license claim from the cited Wikipedia article itself (it says nothing about licensing); however other sources confirm the original 2023 GigaChat chatbot/API product is closed/proprietary (note: Sber has since open-sourced separate newer 'GigaChat3' MoE checkpoints under MIT in 2025, but that is a distinct later release not covered by this record's release date). 128K context window reconfirmed as current spec for GigaChat-2/2-Pro/2-Max via CloudPrice API listings; original 2023-era first-gen models are now deprecated and redirect to GigaChat-2. No results/benchmark rows were present to verify. Params/activeParams correctly left null as undisclosed for this specific (original, non-MoE) product."
 }

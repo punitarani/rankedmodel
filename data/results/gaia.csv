@@ -1,2 +1,13 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-3-7-sonnet,56.36,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, standard (non-High) config, Claude 3.7 Sonnet (Feb 2025 snapshot). GAIA validation set."
+claude-haiku-4-5,56.36,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, Claude Haiku 4.5 (Oct 2025 snapshot). GAIA validation set."
+claude-opus-4,30.3,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, standard config, Claude Opus 4 (May 2025 snapshot). GAIA validation set. Note: same leaderboard's alternate 'HF Open Deep Research' scaffold scored this model 57.58% and a High-thinking config scored 64.85%, illustrating strong scaffold-dependence of GAIA scores."
+claude-opus-4-1,64.24,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, standard (non-High-thinking) config, Claude Opus 4.1 (Aug 2025 snapshot). GAIA validation set."
+claude-sonnet-4-5,74.55,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL (Holistic Agent Leaderboard), 'HAL Generalist Agent' scaffold, standard (non-extended-thinking) config, Claude Sonnet 4.5 (Sept 2025 snapshot). GAIA validation set. Top-ranked entry on this leaderboard."
+deepseek-r1-671b,30.3,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, DeepSeek R1 (Jan 2025 original release). GAIA validation set."
+deepseek-v3-0324,29.39,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, DeepSeek V3 (March 2025 snapshot = the V3-0324 update, distinct from original Dec-2024 V3). GAIA validation set."
+gemini-2-0-flash,32.73,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, Gemini 2.0 Flash (Feb 2025 snapshot). GAIA validation set."
+gpt-4-1,49.7,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, GPT-4.1 (April 2025 snapshot). GAIA validation set."
+gpt-5,59.39,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, GPT-5 at 'Medium' reasoning effort (Aug 2025 snapshot). GAIA validation set."
 minimax-m2,75.7,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,text only
+openai-o3,28.48,independent,https://hal.cs.princeton.edu/gaia,,"Princeton HAL 'HAL Generalist Agent' scaffold, o3 at 'Medium' reasoning effort (April 2025 snapshot) -- only effort level tested for o3 on this leaderboard, so no variant ambiguity. GAIA validation set."

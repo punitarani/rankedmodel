@@ -120,6 +120,14 @@
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r-v01/results_2025-02-13T18-27-04.338360.json",
       "notes": "Open LLM Leaderboard v2, leaderboard_ifeval, prompt_level_strict_acc."
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 56.1,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('c4ai-command-r-35B-v01'). Matches this catalog entry's linked HF checkpoint CohereLabs/c4ai-command-r-v01 exactly."
     }
   ],
   "verificationNotes": "Confirmed via huggingface.co/CohereLabs/c4ai-command-r-v01 (35B params, 128K context, CC-BY-NC + Acceptable Use Policy license, 10 optimized languages plus 13 more pretrained) and cohere.com/blog/command-r (blog post titled 'Command R: Retrieval-Augmented Generation at Production Scale' dated March 11, 2024, matching the release date). Pricing $0.5/$1.5 corroborated independently (Command-R Mar'24 rate). No changes."

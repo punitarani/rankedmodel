@@ -55,6 +55,29 @@
       "sourceUrl": "https://www.lmsys.org/blog/2023-05-25-leaderboard/",
       "evaluatedAt": "2023-05-25",
       "notes": "LMSYS Chatbot Arena Elo, 2nd place overall at the time"
+    },
+    {
+      "benchmarkSlug": "torchhub-apibench",
+      "score": 18.81,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "notes": "Gorilla paper (Patil et al. 2023), Table 1: claude-v1, zero-shot, no retriever, overall AST accuracy on TorchHub subset of APIBench."
+    },
+    {
+      "benchmarkSlug": "huggingface-apibench",
+      "score": 6.19,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "evaluatedAt": "2023-05-24",
+      "notes": "Gorilla paper (Patil et al., arXiv 2305.15334), Table 1 \u2014 zero-shot, no-retriever accuracy on APIBench (HuggingFace subset). Model evaluated as the claude-v1 checkpoint."
+    },
+    {
+      "benchmarkSlug": "tensorhub-apibench",
+      "score": 9.19,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "evaluatedAt": "2023-05-24",
+      "notes": "Gorilla paper (Patil et al. 2023), Table 1: zero-shot (no retriever) overall accuracy on the TensorFlow Hub (TensorHub) split of APIBench, using the claude-v1 checkpoint (hallu 88.46%, err 2.33%)."
     }
   ],
   "verificationNotes": "Confirmed real: announced March 14, 2023 alongside Claude Instant (per Anthropic's own announcement and multiple retrospectives). Context window of 9,000 tokens and pricing of $11.02/$32.68 per M tokens confirmed verbatim by directly reading the official Anthropic pricing PDF (apr-pricing-tokens_2023-05-10 -- table explicitly lists 'Claude-v1: 9,000 tokens, Prompt $11.02/M, Completion $32.68/M'). Arena Elo 1195 (2nd place) confirmed verbatim via direct fetch of the cited lmsys.org blog post. Retirement Nov 2024 confirmed via multiple independent sources (Anthropic deprecation notices, Sept 4 2024 notice, retired Nov 6 2024). No changes made."

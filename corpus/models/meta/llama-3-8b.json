@@ -138,6 +138,22 @@
       "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
       "evaluatedAt": "2024-04-01",
       "notes": "AGIEval English, 3-5 shot, pretrained/base checkpoint. Unlike the 70B sibling's out-of-range 63.0 figure, this 8B score (45.9) sits comfortably within the corpus's established agieval calibration (20-48), so it was included as a clean match."
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 54.8,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Meta-Llama-3-8B-Instruct'). This catalog entry links meta-llama/Meta-Llama-3-8B-Instruct and already mixes Instruct-labeled results (e.g. its mmlu=68.4 is Instruct), so the Instruct-variant EU21-MMLU score is consistent with the entry's established convention."
+    },
+    {
+      "benchmarkSlug": "minif2f-valid",
+      "score": 25.41,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2407.03203",
+      "evaluatedAt": "2024-07-03",
+      "notes": "From TheoremLlama paper's Table 1, listed as 'Llama3-Instruct 8B' (matches catalog entry, which links to meta-llama/Meta-Llama-3-8B-Instruct) evaluated un-finetuned on miniF2F-valid (Lean 4): 25.41% valid / 20.08% test."
     }
   ],
   "verificationNotes": "Confirmed real. Exact parameter count 8.03B (8,030,257,152) corroborated by multiple independent sources (Ollama, technical writeups). Meta's official llama3 GitHub MODEL_CARD.md / HF page confirms all five Instruct scores exactly: MMLU 68.4, GPQA 34.2, HumanEval 62.2, GSM8K 79.6, MATH 30.0. 15T-token pretraining claim and April 18, 2024 release date confirmed via ai.meta.com/blog/meta-llama-3. No changes."

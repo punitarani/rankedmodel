@@ -1,2 +1,6 @@
 model_slug,score,source,source_url,evaluated_at,notes
+falcon-40b,42.58,independent,https://arxiv.org/abs/2404.01856,2024-04-01,"FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating Falcon-40B as a reference model alongside Poro 34B."
+llama-33b,53.36,independent,https://arxiv.org/abs/2404.01856,2024-04-01,"FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating LLaMA 33B as a reference model alongside Poro 34B."
+mpt-30b,53.22,independent,https://arxiv.org/abs/2404.01856,2024-04-01,"FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating MPT-30B as a reference model alongside Poro 34B."
 poro-34b,66.28,self-reported,https://arxiv.org/abs/2404.01856,,Finnish FIN-bench average; FinGPT 13B scored 48.92 for comparison
+starcoder-15-5b,45.55,independent,https://arxiv.org/abs/2404.01856,2024-04-01,"FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating StarCoder as a reference model alongside Poro 34B despite it being a code-focused model."

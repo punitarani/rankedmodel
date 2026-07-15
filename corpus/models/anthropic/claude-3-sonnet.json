@@ -215,6 +215,14 @@
       "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
       "evaluatedAt": "2024-03-04",
       "notes": "Multilingual MMLU, 5-shot, from Table 5 of the Claude 3 Model Card."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 8.36,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-27",
+      "notes": "LogicKor official leaderboard, model_id anthropic/claude-3-sonnet-20240229, default prompt strategy"
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-family (release date, $3/$15 pricing, 200K ctx). Downloaded and read the actual Model_Card_Claude_3.pdf Table 1/Table 3: all 12 self-reported benchmark numbers for Claude 3 Sonnet (MMLU 79.0, MATH 43.1, GSM8K 92.3, HumanEval 73.0, GPQA 40.4, BBH 82.9, ARC-Challenge 93.2, HellaSwag 89.0, WinoGrande 75.1, DROP 78.9, MBPP 79.4, MMMU 53.1) match the PDF verbatim (note: a later June-2024 addendum re-reports Sonnet's MMLU 5-shot as 78.3 in a different table, but the ORIGINAL model card cited here shows 79.0, so no change made). apiAvailable=false confirmed: claude-3-sonnet-20240229 retired from API July 21, 2025."

@@ -137,6 +137,22 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.04088",
       "evaluatedAt": "2024-01-01",
       "notes": "Table 2 of the paper (5-shot)."
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 61.5,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Mixtral-8x7B-v0.1', base checkpoint). Matches this catalog entry's linked mistralai/Mixtral-8x7B-v0.1 exactly."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 5.99,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-26",
+      "notes": "LogicKor official leaderboard, model_id mistralai/mixtral-8x7b-instruct, default prompt strategy"
     }
   ],
   "verificationNotes": "Fetched mistral.ai/news/mixtral-of-experts/ directly: confirms 2023-12-11 release, 46.7B total/12.9B active params, 32K context, Apache 2.0, MT-Bench 8.30. Fetched ar5iv.labs.arxiv.org/html/2401.04088 Table 2 directly: all 8 base-model benchmark scores (MMLU 70.6, HumanEval 40.2, MBPP 60.7, GSM8K 74.4, ARC-Challenge 59.7, HellaSwag 84.4, Winogrande 77.2, MATH 28.4) match exactly. No changes made."

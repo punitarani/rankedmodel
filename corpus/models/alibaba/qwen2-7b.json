@@ -194,6 +194,38 @@
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
       "evaluatedAt": "2024-06-07",
       "notes": "Instruct variant, MGSM 0-shot CoT, from the blog's multilingual-capability table"
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 58.4,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Qwen2-7B-Instruct'). This catalog entry links Qwen/Qwen2-7B-Instruct but tracks a mix of base- and instruct-labeled results (its other results are explicitly labeled 'Base model' or 'Instruct variant'); this score is the Instruct variant, noted accordingly. Paper text also states Qwen2-7B-Instruct 'demonstrates the highest median accuracy in EU21-MMLU' among small models."
+    },
+    {
+      "benchmarkSlug": "komt-bench",
+      "score": 7.69,
+      "source": "independent",
+      "sourceUrl": "https://github.com/LG-AI-EXAONE/KoMT-Bench",
+      "evaluatedAt": "2024-08-01",
+      "notes": "Reported as 'QWEN 2 7B Inst.' in the official KoMT-Bench GitHub repo results table (LG AI Research), reproduced from the EXAONE 3.0 7.8B technical report (arXiv:2408.03541). Score is on the 1-10 GPT-4-judged scale with the benchmark's language-detector penalty applied."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 6.3,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-25",
+      "notes": "LogicKor official leaderboard, model_id Qwen/Qwen2-7B-Instruct (exact hf-link match), default prompt strategy [score corrected during adversarial verify: proposed 6.31 -> 6.3, per verifier: Fetched the LogicKor leaderboard (https://lk.instruct.kr/) directly. Qwen/Qwen2-7B-Instruct appears three times with different prompt strategies: 1-shot = 6.71, cot-1-shot = 6.47, and default = 6.30. The claim correctly identifies the model (exact hf-link match \"Qwen/Qwen2-7B-Instruct\") and correctly identifies the \"default\" prompt strategy variant (ruling out a wrong-variant mixup with the 1-shot/cot-1-shot rows), but the score is off by 0.01: the site displays 6.30 for the default-strategy row, not 6.31. This appears to be a rounding artifact \u2014 the per-category average (reasoning 6.07, math 4.71, writing 7.21, coding 7.00, comprehension 8.00, grammar 4.85) computes to 6.3067, and the singleton/multi-turn average (6.61 and 6.00) is 6.305, both of which are closer to 6.31 under round-half-up, while the site itself displays 6.30 (apparently truncating/rounding down). Given the site's own displayed figure is the authoritative number to cite, the correct score to record is 6.30, not the claimed 6.31. No unit mismatch or wrong-model/wrong-benchmark issue found; source URL and notes are otherwise accurate.]"
+    },
+    {
+      "benchmarkSlug": "gaokao-math",
+      "score": 35.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2409.12122v1",
+      "evaluatedAt": "2024-08-08",
+      "notes": "Qwen2-7B-Instruct, Chinese GaoKao aggregate, zero-shot CoT greedy decoding, from Table 4 (Chinese benchmarks) of the Qwen2.5-Math technical report, where Qwen2-7B-Instruct is used as a general-model baseline comparison row."
     }
   ],
   "verificationNotes": "Fully confirmed via live fetch of qwenlm.github.io/blog/qwen2/: every one of the 9 benchmark scores (MMLU 70.3, MMLU-Pro 40.0, GPQA 31.8, HumanEval 51.2, MBPP 65.9, GSM8K 79.9, MATH 44.2, BBH 62.6, HellaSwag 80.7) matches the base-model table exactly. License Apache 2.0 and 72.71B-family precedent confirmed the params table lists Qwen2-7B at 7.07B total / 5.98B non-embedding params (corrected paramsB from 7 to 7.07 for precision); blog confirms Apache 2.0 license and notes instruct variant reaches 128K via YARN vs 32K pretraining. No changes needed to results."

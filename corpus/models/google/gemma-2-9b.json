@@ -170,6 +170,14 @@
       "sourceUrl": "https://huggingface.co/google/gemma-2-9b",
       "evaluatedAt": "2024-06-01",
       "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "komt-bench",
+      "score": 7.92,
+      "source": "independent",
+      "sourceUrl": "https://github.com/LG-AI-EXAONE/KoMT-Bench",
+      "evaluatedAt": "2024-08-01",
+      "notes": "Reported as 'Gemma 2 9B Inst.' in the official KoMT-Bench GitHub repo results table (LG AI Research), reproduced from the EXAONE 3.0 7.8B technical report (arXiv:2408.03541). Score is on the 1-10 GPT-4-judged scale with the benchmark's language-detector penalty applied."
     }
   ],
   "verificationNotes": "Existence, release date (June 27 2024), 9B params (8T training tokens), 8192-token context, and all 7 benchmark rows verbatim-confirmed via fetched ai.google.dev model card. No changes made."

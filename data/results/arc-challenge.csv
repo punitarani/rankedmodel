@@ -8,6 +8,7 @@ amazon-nova-micro,90.2,self-reported,https://deepranking.ai/llm-models/nova-micr
 amazon-nova-pro,94.8,self-reported,https://deepranking.ai/llm-models/nova-pro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 apple-dclm-baseline-7b,59.9,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,"'ARC Challenge' row (0.5990) on the model's official HF eval table, same table the existing arc-easy/mmlu/winogrande/gsm8k/hellaswag entries were sourced from."
 apple-openelm-270m-3b,35.58,self-reported,https://huggingface.co/apple/OpenELM,2024-04-01,"OpenELM-3B (pretrained), ARC-Challenge, zero-shot"
+bloom-7b1,41.13,independent,https://huggingface.co/datasets/open-llm-leaderboard/details_bigscience__bloom-7b1,2023-08-01,"acc_norm on ARC-Challenge (25-shot), from the raw lm-evaluation-harness run for bigscience/bloom-7b1 in the HF Open LLM Leaderboard v1 per-model details dataset (results_2023-08-01T14:42:42.953249.json, key harness|arc:challenge|25)."
 btlm-3b-8k,37.6,self-reported,https://arxiv.org/abs/2309.11568,,0-shot
 cerebras-gpt-13b,36.7,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,0-shot
 claude-2,91,self-reported,https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf,2023-07-11,"5-shot, same Section 4.3 table (Claude 2 column)."
@@ -116,6 +117,7 @@ qwen2-57b-a14b,64.1,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-0
 qwen2-72b,68.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, ARC-C 25-shot"
 qwen2-7b,60.6,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, ARC-C 25-shot"
 redpajama-incite-7b-base,39.25,self-reported,https://arxiv.org/abs/2411.12372,,"LM-eval-harness acc_norm, Table 9 ('LM eval harness results for RedPajama-INCITE-Base-7B-v1 and instruction tuned model') of the official RedPajama technical paper (Together AI et al., NeurIPS 2024 D&B track)."
+redpajama-incite-7b-chat,42.06,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Chat/results_2023-07-19T17-30-52.522444.json,2023-07-19,"Hugging Face Open LLM Leaderboard (v1) lm-eval-harness run for togethercomputer/RedPajama-INCITE-7B-Chat: harness|arc:challenge|25 acc_norm = 0.42065 (42.06%). Exact-model result, not a sibling checkpoint."
 redpajama-incite-7b-instruct,40.78,self-reported,https://arxiv.org/abs/2411.12372,,"LM-eval-harness acc_norm, Table 9 of the official RedPajama technical paper (Together AI et al., NeurIPS 2024 D&B track)."
 sarvam-1-2b,58.5,self-reported,https://huggingface.co/sarvamai/sarvam-1,2024-10-24,zero-shot
 skywork-13b,50.2,self-reported,https://arxiv.org/pdf/2310.19341,2023-10-30,"From Table 11 of the Skywork-13B technical report (arXiv:2310.19341), column 'ARC-C'. Distinct from the pre-existing corpus rows (C-Eval/CMMLU/MMLU/GSM8K), which come from Table 5 of the same paper."
@@ -125,6 +127,7 @@ stable-beluga-2-freewilly-2-70b,71.1,independent,https://raw.githubusercontent.c
 stable-lm-2-1-6b,43.69,independent,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,"instruct variant, 25-shot"
 stable-lm-2-12b,65.02,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,chat variant
 stablelm-3b-4e1t,46.59,independent,https://huggingface.co/stabilityai/stablelm-3b-4e1t,,"Open LLM Leaderboard, 25-shot"
+stablelm-alpha-7b,32,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b,2023-07-19,"25-shot acc_norm from the (old) Open LLM Leaderboard's lm-evaluation-harness run on stabilityai/stablelm-base-alpha-7b (config.model_name and model_sha 38366357b confirmed in the run's results JSON). Independent third-party eval, not from Stability AI's own model card (which publishes no benchmark numbers)."
 stablelm-zephyr-3b,46.08,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,"AI2 Reasoning Challenge (25-Shot), Open LLM Leaderboard, from the model-index metadata embedded in the HF README.md."
 starling-7b-alpha,63.82,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-04T15-57-32.180703.json,2023-12-04,"AI2 Reasoning Challenge (Challenge set), 25-shot, acc_norm. From the original (v1) Open LLM Leaderboard's automated lm-eval-harness run for berkeley-nest/Starling-LM-7B-alpha (job finished 2023-12-04, status FINISHED per the leaderboard's request file); verified directly against the raw results JSON."
 teuken-7b-instruct,0.569,self-reported,https://huggingface.co/openGPT-X/Teuken-7B-instruct-commercial-v0.4,,"EU21-ARC, averaged across 21 EU languages"

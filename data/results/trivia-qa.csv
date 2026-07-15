@@ -41,6 +41,7 @@ phi-2-2-7b,45.2,self-reported,https://arxiv.org/pdf/2404.14219,,5-shot; same com
 phi-3-medium-14b,73.9,self-reported,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct,,5-shot
 phi-3-mini-3-8b,61.4,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct,,5-shot
 phi-3-small-7b,58.1,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,5-shot
+sarashina2-70b,53.73,independent,https://swallow-llm.github.io/evaluation/index.en.html,,"From Swallow LLM Leaderboard English-task table. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.5373), normalized to percentage]"
 sarvam-1-2b,90.62,self-reported,https://huggingface.co/sarvamai/sarvam-1,2024-10-24,zero-shot
 skywork-13b,54,self-reported,https://arxiv.org/pdf/2310.19341,2023-10-30,From Table 11 of the Skywork-13B technical report (arXiv:2310.19341).
 smollm2-1-7b,36.7,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,"Base pre-trained model, zero-shot."

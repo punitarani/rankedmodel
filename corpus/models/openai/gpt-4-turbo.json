@@ -138,6 +138,37 @@
       "sourceUrl": "https://github.com/openai/simple-evals",
       "evaluatedAt": "2024-05-13",
       "notes": "gpt-4-turbo-2024-04-09, 0-shot CoT, 'assistant' system prompt, OpenAI simple-evals. Distinct from \u2014 not a replacement for \u2014 the existing 86.5 row already in this file (gpt-4-1106-preview, classic 5-shot, via Telnyx): different snapshot AND different eval protocol, so both are genuine and kept side by side. Headline-score precedence in this repo's derive step still favors the existing 'independent'-sourced row over this 'self-reported' one, so adding it cannot silently inflate the index."
+    },
+    {
+      "benchmarkSlug": "minif2f-test",
+      "score": 23,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2405.14333",
+      "evaluatedAt": "2024-05-23",
+      "notes": "GPT-4-turbo-2024-04-09 snapshot (the same snapshot this repo's gpt-4-turbo.json file already treats as this model's default for other benchmark rows), whole-proof generation with 64 samples, from DeepSeek-Prover (Xin et al., arXiv:2405.14333) Table 1 comparison of state-of-the-art methods on miniF2F. Paper reports 23.0% test / 25.4% valid; this is the test-split figure."
+    },
+    {
+      "benchmarkSlug": "minif2f-valid",
+      "score": 25.4,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2405.14333",
+      "evaluatedAt": "2024-05-23",
+      "notes": "Reported as 'GPT-4-turbo 0409' (matches catalog's default snapshot gpt-4-turbo-2024-04-09) in the DeepSeek-Prover paper's Table 1, whole-proof generation on miniF2F-valid (Lean 4). Cross-confirmed at 25.41% by the independent TheoremLlama paper (arXiv:2407.03203)."
+    },
+    {
+      "benchmarkSlug": "rakuda",
+      "score": 9.18,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/shisa-ai/shisa-v1-llama3-70b",
+      "notes": "Reported as gpt-4-turbo-2024-04-09 (matches this catalog entry's noted 'current default snapshot'), scored via Shaberi eval framework's Rakuda test (GPT-4-judged, 0-10 absolute scale, 40 Japan-topic questions)."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 9.1,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-26",
+      "notes": "LogicKor official leaderboard, model_id openai/gpt-4-1106-preview (matches catalog's 2023-11-06 GPT-4 Turbo release), default prompt strategy [score corrected during adversarial verify: proposed 9.18 -> 9.1, per verifier: Fetched lk.instruct.kr directly and parsed the embedded logickor_v2_scores dataset (245 records). Exactly two records exist for model_id \"openai/gpt-4-1106-preview\": (1) prompt_strategy \"1-shot\", avg=9.095238095238095 (\u22489.10); (2) prompt_strategy \"cot-1-shot\", avg=8.976190476190476 (\u22488.98). There is NO \"default\" prompt-strategy record for this model_id at all \u2014 that part of the claimed provenance is fabricated. The claimed score 9.18 does not match either real record. Best real match is the 1-shot avg, \u22489.10 (or 9.09 if truncated rather than rounded to 2dp). A separate, different model_id (\"openai/gpt-4-0125-preview\", default strategy, avg=9.13) exists in the dataset and could be a source of confusion but is a different snapshot, not GPT-4 Turbo (1106) per the catalog's release date. Recommend updating the result to score=9.10, source note \"1-shot prompt strategy\" (or 8.98 for cot-1-shot if that variant is preferred), and removing the incorrect \"default prompt strategy\" characterization.]"
     }
   ],
   "verificationNotes": "DevDay announcement Nov 6, 2023 confirmed (OpenAI/CNBC); 128K context and $10/$30 per-million pricing confirmed via OpenAI's own DevDay post and current docs. Both result rows (MMLU 86.5 5-shot; Arena Elo 1251) verified literally on the cited Telnyx page (fetched directly, confirmed exact text). No changes made."

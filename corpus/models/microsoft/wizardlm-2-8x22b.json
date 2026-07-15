@@ -84,7 +84,15 @@
       "source": "independent",
       "sourceUrl": "https://huggingface.co/alpindale/WizardLM-2-8x22B",
       "notes": "Open LLM Leaderboard v2, 5-shot"
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 8.13,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-25",
+      "notes": "LogicKor official leaderboard, model_id alpindale/WizardLM-2-8x22B (exact hf-link match to catalog), default prompt strategy"
     }
   ],
-  "verificationNotes": "Existence confirmed via alpindale community mirror (official microsoft/WizardLM-2-8x22B and GitHub repo were pulled by Microsoft ~1 day after the April 15 2024 announcement, officially attributed to a missed toxicity-testing step — confirmed via MarkTechPost article); mirrors still circulate on HF/OpenRouter/DeepInfra, so 'deprecated' + community hf link is accurate. 141B total / 39B active MoE and Apache 2.0 confirmed. Fetched the HF page directly and confirmed all 5 benchmark rows verbatim: IFEval 52.72, BBH 48.58, MATH 22.28, GPQA 17.56, MMLU-Pro 39.96. No discrepancies found."
+  "verificationNotes": "Existence confirmed via alpindale community mirror (official microsoft/WizardLM-2-8x22B and GitHub repo were pulled by Microsoft ~1 day after the April 15 2024 announcement, officially attributed to a missed toxicity-testing step \u2014 confirmed via MarkTechPost article); mirrors still circulate on HF/OpenRouter/DeepInfra, so 'deprecated' + community hf link is accurate. 141B total / 39B active MoE and Apache 2.0 confirmed. Fetched the HF page directly and confirmed all 5 benchmark rows verbatim: IFEval 52.72, BBH 48.58, MATH 22.28, GPQA 17.56, MMLU-Pro 39.96. No discrepancies found."
 }

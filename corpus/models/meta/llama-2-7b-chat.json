@@ -72,6 +72,21 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2312.06281",
       "evaluatedAt": "2023-12-01",
       "notes": "GPT-4-judged MT-Bench average for meta-llama/Llama-2-7b-chat-hf, per the EQ-Bench paper's Table 3 (citing the LMSYS Chatbot Arena/MT-Bench leaderboard). Independently corroborated by telnyx.com/llm-library/llama-2-7b-chat-hf, which separately states 'MT Bench: 6.27' for this exact model."
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 37,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Meta-Llama-2-7B-Chat'). Matches this catalog entry's linked meta-llama/Llama-2-7b-chat-hf."
+    },
+    {
+      "benchmarkSlug": "rakuda",
+      "score": 2.08,
+      "source": "independent",
+      "sourceUrl": "https://github.com/shisa-ai/shaberi",
+      "notes": "Reported as meta-llama/Llama-2-7b-chat-hf, exact hf match. Shaberi eval framework Rakuda test, GPT-4-judged 0-10 scale."
     }
   ],
   "verificationNotes": "Confirmed existence and 2023-07-18 release via Meta/HF. Directly fetched telnyx.com/llm-library/llama-2-7b-chat-hf: both cited numbers (MMLU 45.3, Arena Elo 1037) literally appear on the page as text ('scores 45.3% on MMLU (5-shot)' and Arena Elo 1037), so both rows kept. Note: the same page also shows a separate spec-table MMLU figure of 45.8 elsewhere, an internal inconsistency on telnyx's own page, but the 45.3 figure is literally present and matches Meta's own reported base-model number, so it was not dropped."

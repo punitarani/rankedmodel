@@ -32,5 +32,6 @@ phi-3-mini-3-8b,82.2,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4
 phi-3-small-7b,88,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,10-shot
 redpajama-incite-7b-base,50.4,self-reported,https://arxiv.org/abs/2411.12372,,"HELM OpenbookQA EM score, Table 8 ('HELM Benchmark results for RedPajama-INCITE-Base-7B-v1 and instruction tuned') of the RedPajama technical paper."
 redpajama-incite-7b-instruct,48.8,self-reported,https://arxiv.org/abs/2411.12372,,"HELM OpenbookQA EM score, Table 8."
+sarashina2-70b,39.2,independent,https://swallow-llm.github.io/evaluation/index.en.html,,"From Swallow LLM Leaderboard English-task table. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.392), normalized to percentage]"
 smollm2-1-7b,42.2,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,"Base pre-trained model, zero-shot."
 xgen-7b-8k,40.2,self-reported,https://ar5iv.labs.arxiv.org/html/2309.03450,2023-07-03,"Zero-shot, Table 6"

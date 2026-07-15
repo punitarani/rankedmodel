@@ -696,7 +696,7 @@
     "unit": "%",
     "description": "MMLU translated and averaged across 21 official EU languages.",
     "normMin": 20,
-    "normMax": 45,
+    "normMax": 80,
     "higherIsBetter": true
   },
   {
@@ -825,8 +825,8 @@
     "category": "human-preference",
     "unit": "Elo",
     "description": "Early open community Elo ranking, GPT-4-judged.",
-    "normMin": 800,
-    "normMax": 1020,
+    "normMin": 900,
+    "normMax": 1320,
     "higherIsBetter": true
   },
   {
@@ -1115,8 +1115,8 @@
     "category": "human-preference",
     "unit": "Elo",
     "description": "Early human/LLM-judged Elo ranking on 80 diverse questions.",
-    "normMin": 800,
-    "normMax": 1040,
+    "normMin": 880,
+    "normMax": 1200,
     "higherIsBetter": true
   },
   {

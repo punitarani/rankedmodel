@@ -45,6 +45,70 @@
     "releaseDate": "https://huggingface.co/sbintuitions/sarashina2-70b/commits/main",
     "openness": "https://huggingface.co/sbintuitions/sarashina2-70b"
   },
-  "results": [],
-  "verificationNotes": "Confirmed real model. HF config.json (fetched) shows LlamaForCausalLM architecture, max_position_embeddings=8192 (=ctxK 8), hidden_size 8192, 80 layers — consistent with a 70B-class dense Llama-style model. HF commit history (fetched) shows the initial commit was made 2024-08-06, exactly matching the claimed releaseDate (a separate SB Intuitions tech-blog post about the model was dated 2024-08-21, but the HF repo's own commit history is the more precise/primary source and is used here). MIT license and 'not instruction-tuned' base-model status confirmed via search of SB Intuitions' own materials. 2.1T token / Japanese-English-code training mix confirmed via search results describing the Sarashina2 series (Japanese:English:Code ratio 5:4:1, ~2.1T tokens total). No results rows were present to check. No changes needed."
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 63.03,
+      "source": "independent",
+      "sourceUrl": "https://swallow-llm.github.io/evaluation/index.en.html",
+      "notes": "5-shot accuracy, from the Swallow LLM Leaderboard (Institute of Science Tokyo / Swallow project) English-task evaluation table. Row verified: 'En' average (0.4945) exactly equals the mean of the 9 English-task scores in Sarashina2-70B's row, confirming correct column alignment. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.6303), normalized to percentage to match corpus convention]"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 1.06,
+      "source": "independent",
+      "sourceUrl": "https://swallow-llm.github.io/evaluation/index.en.html",
+      "notes": "4-shot exact-match accuracy per Swallow leaderboard methodology (llm-jp eval harness). Very low score is plausible for a non-instruction-tuned Japanese base model under strict few-shot exact-match without CoT prompting. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.0106), normalized to percentage]"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 63.86,
+      "source": "independent",
+      "sourceUrl": "https://swallow-llm.github.io/evaluation/index.en.html",
+      "notes": "3-shot chain-of-thought exact-match accuracy, Swallow LLM Leaderboard. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.6386), normalized to percentage]"
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 27.99,
+      "source": "independent",
+      "sourceUrl": "https://swallow-llm.github.io/evaluation/index.en.html",
+      "notes": "0-shot pass@1 (10 trials), Swallow LLM Leaderboard (llm-jp / bigcode-evaluation-harness). [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.2799), normalized to percentage]"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 62.7,
+      "source": "independent",
+      "sourceUrl": "https://swallow-llm.github.io/evaluation/index.en.html",
+      "notes": "From Swallow LLM Leaderboard English-task table. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.627), normalized to percentage]"
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 39.2,
+      "source": "independent",
+      "sourceUrl": "https://swallow-llm.github.io/evaluation/index.en.html",
+      "notes": "From Swallow LLM Leaderboard English-task table. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.392), normalized to percentage]"
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 53.73,
+      "source": "independent",
+      "sourceUrl": "https://swallow-llm.github.io/evaluation/index.en.html",
+      "notes": "From Swallow LLM Leaderboard English-task table. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.5373), normalized to percentage]"
+    },
+    {
+      "benchmarkSlug": "xwinograd",
+      "score": 91.78,
+      "source": "independent",
+      "sourceUrl": "https://swallow-llm.github.io/evaluation/index.en.html",
+      "notes": "Listed as 'XWINO' column in the Swallow LLM Leaderboard English-task table; mapped to xwinograd. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.9178), normalized to percentage]"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 48.8,
+      "source": "independent",
+      "sourceUrl": "https://swallow-llm.github.io/evaluation/index.en.html",
+      "notes": "This is the Japanese-only subset of MGSM (4-shot exact match), listed under the leaderboard's 'Japanese tasks' column group, not a full multilingual MGSM average. Mapped to mgsm as the closest/only matching taxonomy slug; flagging the single-language caveat. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.488), normalized to percentage]"
+    }
+  ],
+  "verificationNotes": "Confirmed real model. HF config.json (fetched) shows LlamaForCausalLM architecture, max_position_embeddings=8192 (=ctxK 8), hidden_size 8192, 80 layers \u2014 consistent with a 70B-class dense Llama-style model. HF commit history (fetched) shows the initial commit was made 2024-08-06, exactly matching the claimed releaseDate (a separate SB Intuitions tech-blog post about the model was dated 2024-08-21, but the HF repo's own commit history is the more precise/primary source and is used here). MIT license and 'not instruction-tuned' base-model status confirmed via search of SB Intuitions' own materials. 2.1T token / Japanese-English-code training mix confirmed via search results describing the Sarashina2 series (Japanese:English:Code ratio 5:4:1, ~2.1T tokens total). No results rows were present to check. No changes needed."
 }

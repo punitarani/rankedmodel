@@ -47,6 +47,23 @@
     "releaseDate": "https://github.com/lm-sys/FastChat/blob/main/docs/vicuna_weights_version.md",
     "openness": "https://huggingface.co/lmsys/vicuna-13b-v1.1"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "vicuna-bench",
+      "score": 984,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.14314",
+      "evaluatedAt": "2023-05-23",
+      "notes": "Vicuna benchmark Elo rating (human-judged), rank 5 of 8, from Table 1/7 of the QLoRA paper (Dettmers et al., arXiv:2305.14314), listed as 'Vicuna-13B'. Matched to the v1.1 release (not v1.5) because the paper predates Vicuna v1.3/v1.5; version is not explicitly labeled in the source table, so this match carries slightly lower confidence than the others. GPT-4-judged Elo for the same model was 974 in the paper's companion table."
+    },
+    {
+      "benchmarkSlug": "openassistant-bench",
+      "score": 936,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2305.14314",
+      "evaluatedAt": "2023-05-23",
+      "notes": "GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 5, from the QLoRA paper (Dettmers et al., Table 7). Matched to the v1.1 release since the paper predates Vicuna v1.5 (released Aug 2023)."
+    }
+  ],
   "verificationNotes": "Confirmed existence and details by fetching lmsys.org/blog/2023-03-30-vicuna/ (published by 'The Vicuna Team', March 30, 2023): Table 2 literally states Vicuna-13B scores 92% of ChatGPT's score under the GPT-4-judge eval, and the blog states a 2048-token context window (matches ctxK:2). FastChat's vicuna_weights_version.md confirms v1.1 weights released 2023-04-12, fine-tuned from LLaMA-1 (matches releaseDate/archDisplay). Confirmed huggingface.co/lmsys/vicuna-13b-v1.1 exists with matching description ('fine-tuning LLaMA on user-shared conversations... ShareGPT') and non-commercial license. No changes made; all fields confirmed accurate."
 }

@@ -128,6 +128,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2404.01954",
       "notes": "HCX-L, MC2 5-shot, Table 10 (harmlessness)."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 7.76,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-07-07",
+      "notes": "LogicKor official leaderboard, model_id naver/HCX-003 (commercial API snapshot of HyperCLOVA X), default prompt strategy"
     }
   ],
   "verificationNotes": "Confirmed real. Release 2023-08-24 corroborated by TechCrunch, KED Global, VentureBeat and NAVER's own press release. ~204B params corroborated by KED Global (NAVER itself did not disclose an exact breakdown beyond 'more than 204B'). All three HCX-L benchmark scores (MMLU 67.98, GSM8K 81.65, HumanEval 55.49) re-confirmed on arXiv 2404.01954. 32K context corroborated (paper describes final 10% of pretraining done at 32,768 tokens). No changes needed."

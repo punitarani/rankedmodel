@@ -66,6 +66,13 @@
       "sourceUrl": "https://arxiv.org/html/2308.12950v3",
       "evaluatedAt": "2023-08-01",
       "notes": "pass@1, base Code Llama 34B"
+    },
+    {
+      "benchmarkSlug": "repobench",
+      "score": 39.79,
+      "source": "curated",
+      "sourceUrl": "https://arxiv.org/abs/2402.19173",
+      "notes": "RepoBench v1.1 exact match (EM), averaged across the Python and Java splits reported in Table 17 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024): Python EM 37.22, Java EM 42.35. (Distinct from the Python-specialized 'Code Llama 34B Python' variant, which is not included here.)"
     }
   ],
   "verificationNotes": "Confirmed release 2023-08-24 and license. Directly fetched arxiv.org/html/2308.12950v3 Table 2: HumanEval 48.8 / MBPP 55.0 for base Code Llama 34B confirmed exactly. Confirmed 34B does not support FIM infilling (only 7B/13B do), consistent with archDisplay."

@@ -47,6 +47,55 @@
     "releaseDate": "https://www.together.ai/blog/redpajama-7b",
     "openness": "https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Chat"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 42.06,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Chat/results_2023-07-19T17-30-52.522444.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "Hugging Face Open LLM Leaderboard (v1) lm-eval-harness run for togethercomputer/RedPajama-INCITE-7B-Chat: harness|arc:challenge|25 acc_norm = 0.42065 (42.06%). Exact-model result, not a sibling checkpoint."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 70.82,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Chat/results_2023-07-19T17-30-52.522444.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "Same HF Open LLM Leaderboard (v1) run: harness|hellaswag|10 acc_norm = 0.70823 (70.82%)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 36.09,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Chat/results_2023-07-19T17-30-52.522444.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "Same run: harness|truthfulqa:mc|0 mc2 = 0.36095 (36.09%)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 26.94,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Chat/results_2023-07-19T17-30-52.522444.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "Same run: 5-shot acc averaged across all 57 hendrycksTest (MMLU) subject-level results in the raw JSON (recomputed by hand from the per-subject acc values since the file has no single aggregate MMLU field); result = 26.94%, essentially chance level, consistent with a small non-MMLU-tuned 2023 chat model."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 59.83,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Chat/results_2023-10-19T02-47-12.906889.json",
+      "evaluatedAt": "2023-10-19",
+      "notes": "Follow-up HF Open LLM Leaderboard supplemental run (adding winogrande/gsm8k/drop to earlier-evaluated models): winogrande acc = 0.59826 (59.83%)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 0.0045,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Chat/results_2023-10-19T02-47-12.906889.json",
+      "evaluatedAt": "2023-10-19",
+      "notes": "Same supplemental run: gsm8k acc = 0.00455 (0.45%). Near-zero \u2014 a known lm-eval-harness answer-extraction limitation for small 2023 non-reasoning chat models on this leaderboard version, but it is the genuine recorded score for this exact checkpoint, included for completeness. [score corrected during adversarial verify: proposed 0.45 -> 0.0045, per verifier: Fetched the raw source JSON directly (results_2023-10-19T02-47-12.906889.json for togethercomputer/RedPajama-INCITE-7B-Chat). Confirmed model name matches exactly and the harness|gsm8k|5 entry is present and correctly attributed (no benchmark-variant or model mixup). However, the stored value is acc=0.004548900682335102 (i.e., 0.45% / 0.00455 as a fraction), not 0.45. The claimed score of 0.45 appears to be a units error \u2014 someone likely took \"0.45%\" and dropped the percent sign rather than converting it to a 0-1 fraction (0.45% = 0.0045, not 0.45). This is a genuine, low but real recorded score for this exact checkpoint (a known lm-eval-harness answer-extraction issue for small 2023 non-reasoning chat models), so it should be recorded as 0.0045 (or 0.00455 for full precision), not 0.45, to stay consistent with standard 0-1 fraction units used elsewhere in the corpus.]"
+    }
+  ],
   "verificationNotes": "Confirmed real model released alongside 7B-Base/Instruct per together.ai/blog/redpajama-7b (June 6, 2023), same 6.9B param count, GPT-NeoX architecture, and Apache 2.0 license as sibling 7B checkpoints. No results claimed, none added (no HELM score for Chat variant found in the blog or arxiv paper)."
 }

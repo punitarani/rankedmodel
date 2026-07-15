@@ -1,3 +1,6 @@
 model_slug,score,source,source_url,evaluated_at,notes
+gpt-3-5-turbo,1015,independent,https://arxiv.org/abs/2305.14314,2023-05-23,"Reported as 'ChatGPT-3.5 Turbo', GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 2, from the QLoRA paper (Dettmers et al., Table 7)."
+gpt-4,1294,independent,https://arxiv.org/abs/2305.14314,2023-05-23,"GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 1, from the QLoRA paper (Dettmers et al., Table 7) - same table that supplies the existing Guanaco-33B (1002) and Guanaco-65B (1008) entries for this benchmark."
 guanaco-33b,1002,self-reported,https://huggingface.co/timdettmers/guanaco-33b,,"Elo rating, OpenAssistant benchmark, GPT-4 judge, rank 4"
 guanaco-65b,1008,self-reported,https://huggingface.co/timdettmers/guanaco-65b,2023-05-23,"GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 3 - confirmed on the HF model card and in the QLoRA paper's Table 7; this benchmark had no entry at all yet for the 65B model."
+vicuna-13b-v1-1,936,independent,https://arxiv.org/abs/2305.14314,2023-05-23,"GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 5, from the QLoRA paper (Dettmers et al., Table 7). Matched to the v1.1 release since the paper predates Vicuna v1.5 (released Aug 2023)."

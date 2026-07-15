@@ -194,6 +194,45 @@
       "source": "independent",
       "sourceUrl": "https://github.com/sierra-research/tau-bench",
       "notes": "TAU-bench retail domain, pass^1, gpt-4o with the tool-calling (TC) strategy, from Sierra Research's official leaderboard/repo. Airline-domain score (42.0%, pass^1) omitted per this corpus's established convention of filing only the retail split under the single 'tau-bench' slug to avoid a duplicate-key collision (see corpus/models/anthropic/claude-3-5-sonnet-new.json for precedent)."
+    },
+    {
+      "benchmarkSlug": "streamingbench",
+      "score": 64.1,
+      "source": "independent",
+      "sourceUrl": "https://streamingbench.github.io/",
+      "evaluatedAt": "2024-06-15",
+      "notes": "Overall accuracy on StreamingBench official leaderboard; rank 3 of 16. Paper (arXiv:2411.03628) reports 60.15% in its Table 2 print version; leaderboard site shows 64.10% as the updated/canonical figure -- used the leaderboard as source of record."
+    },
+    {
+      "benchmarkSlug": "putnam-bench",
+      "score": 0.16,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2407.11214",
+      "evaluatedAt": "2024-11-03",
+      "notes": "From the original PutnamBench paper (Tsoukalas et al. 2024, NeurIPS'24 D&B track), Table 3: few-shot GPT-4 evaluated via in-context learning at pass@10 on the Lean 4 formalizations, solving 1 of 640 problems (0.16%). Footnote 3 of the paper confirms 'We use GPT-4o for all our evaluations', so the 'GPT-4' rows in Table 3 are GPT-4o. The same paper also reports GPT-4o solving 1/640 in Isabelle and 1/412 in Coq under separate prompting configs; the Lean result is reported here as the canonical PutnamBench figure (matching the methodology of the already-tracked DeepSeek-Prover-V2-671B entry, which also uses the Lean split)."
+    },
+    {
+      "benchmarkSlug": "rakuda",
+      "score": 9.15,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/shisa-ai/shisa-v1-llama3-70b",
+      "notes": "Reported as gpt-4o-2024-05-13 (initial GPT-4o snapshot), scored via Shaberi eval framework's Rakuda test (GPT-4-judged, 0-10 absolute scale)."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 9.33,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-26",
+      "notes": "LogicKor official leaderboard, model_id openai/gpt-4o-2024-05-13, default prompt strategy, avg of single/multi-turn across 6 categories"
+    },
+    {
+      "benchmarkSlug": "gaokao-math",
+      "score": 42.6,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/html/2409.12122v1",
+      "evaluatedAt": "2024-08-08",
+      "notes": "GPT-4o-2024-08-06, Chinese GaoKao aggregate (GaoKao I/II 2024 + GaoKao-Math-QA + GaoKao-Math-Cloze + 91 collected 2024 problems), zero-shot CoT greedy decoding, from Table 4 (Chinese benchmarks) of the Qwen2.5-Math technical report where GPT-4o is used as a general-model baseline (third-party evaluation by the Qwen team, not OpenAI)."
     }
   ],
   "verificationNotes": "Release May 13, 2024 confirmed (Wikipedia); 128K context and $2.50/$10 per-million pricing confirmed via multiple independent pricing pages. MMLU 88.7 verified literally on the cited Wikipedia page. However, Wikipedia's GPT-4o article does NOT literally contain the GPQA/MATH/HumanEval/MGSM numbers (directly fetched and confirmed only MMLU is present there) \u2014 the original sourceUrl was wrong for those 4 rows. OpenAI's primary announcement (openai.com/index/hello-gpt-4o/) returned HTTP 403 to automated fetch, so I re-sourced those 4 rows to a community.openai.com thread I fetched directly and confirmed contains the exact literal figures (53.6/76.6/90.2/90.5), changing their source type to 'independent'."

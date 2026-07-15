@@ -1,2 +1,8 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-3-opus,8.75,independent,https://huggingface.co/shisa-ai/shisa-v1-llama3-70b,,"Reported as claude-3-opus-20240229, scored via Shaberi eval framework's Rakuda test (GPT-4-judged, 0-10 absolute scale)."
+gemini-1-5-pro,9.2,independent,https://huggingface.co/shisa-ai/shisa-v1-llama3-70b,,"Reported as gemini-1.5-pro (no specific dated snapshot given), scored via Shaberi eval framework's Rakuda test (GPT-4-judged, 0-10 absolute scale)."
+gpt-4-turbo,9.18,independent,https://huggingface.co/shisa-ai/shisa-v1-llama3-70b,,"Reported as gpt-4-turbo-2024-04-09 (matches this catalog entry's noted 'current default snapshot'), scored via Shaberi eval framework's Rakuda test (GPT-4-judged, 0-10 absolute scale, 40 Japan-topic questions)."
+gpt-4o,9.15,independent,https://huggingface.co/shisa-ai/shisa-v1-llama3-70b,,"Reported as gpt-4o-2024-05-13 (initial GPT-4o snapshot), scored via Shaberi eval framework's Rakuda test (GPT-4-judged, 0-10 absolute scale)."
+llama-2-13b-chat,2.27,independent,https://github.com/shisa-ai/shaberi,,"Reported as meta-llama/Llama-2-13b-chat-hf, exact hf match. Shaberi eval framework Rakuda test, GPT-4-judged 0-10 scale."
+llama-2-7b-chat,2.08,independent,https://github.com/shisa-ai/shaberi,,"Reported as meta-llama/Llama-2-7b-chat-hf, exact hf match. Shaberi eval framework Rakuda test, GPT-4-judged 0-10 scale."
 plamo-100b,9.73,self-reported,https://arxiv.org/html/2410.07563,,"PLaMo-100B-Instruct absolute eval, 0-10 scale; GPT-4-0125-Preview scored 9.55"

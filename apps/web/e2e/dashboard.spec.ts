@@ -12,7 +12,7 @@ test.describe('dashboard overview', () => {
     // Open–closed gap is computed on the universal index (arena covers only a sliver), so it's
     // always a real number, and the leader is the top-ranked open model.
     await expect(cards.nth(3)).toContainText('idx')
-    await expect(cards.nth(3)).toContainText('Kimi K2.6 leads open')
+    await expect(cards.nth(3)).toContainText('Qwen3.6-27B leads open')
   })
 
   test('scatter plots every priced+ranked model; movers show real lineage gains', async ({
@@ -33,11 +33,12 @@ test.describe('dashboard overview', () => {
   test('y-axis auto-zooms to the data instead of the fixed 0–100 axis', async ({ page }) => {
     await gotoHydrated(page, '/')
     // The old axis was a fixed 0–100 with ticks {20,40,60,80}. Fitted to the priced+ranked index
-    // range, the dead low band is gone: the axis lifts off the floor (min tick ≥ 30) while still
-    // reaching the frontier (max tick ≥ 80), with round, evenly-spaced interior ticks that frame it.
+    // range, the dead low band is gone: the axis lifts off the floor (min tick ≥ 20 — Claude 1's
+    // low-but-now-ranked 22.7 sets the real floor) while still reaching the frontier (max tick ≥
+    // 80), with round, evenly-spaced interior ticks that frame it.
     const ticks = (await page.getByTestId('y-tick').allTextContents()).map(Number)
     expect(ticks.length).toBeGreaterThanOrEqual(3)
-    expect(Math.min(...ticks)).toBeGreaterThanOrEqual(30)
+    expect(Math.min(...ticks)).toBeGreaterThanOrEqual(20)
     expect(Math.max(...ticks)).toBeGreaterThanOrEqual(80)
     for (const t of ticks) expect(t % 5).toBe(0)
   })
@@ -112,7 +113,7 @@ test.describe('dashboard releases + bench tabs', () => {
     const frontier = page.getByTestId('frontier')
     // regrounded on the universal index, so both camps' leaders always plot
     await expect(frontier).toContainText('GPT-5.6')
-    await expect(frontier).toContainText('Kimi K2.6')
+    await expect(frontier).toContainText('Qwen3.6-27B')
     await expect(page.getByTestId('gap-note')).not.toHaveText('')
   })
 

@@ -98,6 +98,21 @@
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/meta-llama__Llama-2-13b-chat-hf-details",
       "evaluatedAt": "2024-06-16",
       "notes": "acc, HF Open LLM Leaderboard v2 independent eval run"
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 42.9,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Meta-Llama-2-13B-Chat'). Matches this catalog entry's linked meta-llama/Llama-2-13b-chat."
+    },
+    {
+      "benchmarkSlug": "rakuda",
+      "score": 2.27,
+      "source": "independent",
+      "sourceUrl": "https://github.com/shisa-ai/shaberi",
+      "notes": "Reported as meta-llama/Llama-2-13b-chat-hf, exact hf match. Shaberi eval framework Rakuda test, GPT-4-judged 0-10 scale."
     }
   ],
   "verificationNotes": "Confirmed real model and specs via Hugging Face model card. Confirmed MODEL_CARD.md Llama-2-Chat safety table shows 13B row TruthfulQA 62.18 / Toxigen 0.00, matching exactly. Also independently verified the RTX 4090 benchmark figure (70.90 tok/s, 92% GPU util, 41% VRAM) on databasemart.com's Ollama GPU benchmark article for llama2:13b \u2014 number confirmed as literally reported. No changes made."

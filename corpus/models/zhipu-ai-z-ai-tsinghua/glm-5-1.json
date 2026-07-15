@@ -114,6 +114,13 @@
       "sourceUrl": "https://artificialanalysis.ai/models/glm-5-1",
       "evaluatedAt": "2026-07-14",
       "notes": "IFBench (instruction-following), one of 9 components in Artificial Analysis's Intelligence Index v4.1. Read directly from AA's live ranked bar chart (GLM-5.1 tied 8th of 23 models at 76%). Not self-reported by Z.ai; GLM-5.1 was never evaluated on IFBench in its own launch materials."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 28.1,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), OpenClaw harness, High reasoning effort: Pass rate 11.5% / Score 28.1% (rank 44). Score component used per corpus convention."
     }
   ],
   "verificationNotes": "Confirmed real via Hugging Face model card (zai-org/GLM-5.1, MIT license), official docs.z.ai/guides/llm/glm-5.1 (200K context, 128K max output, SWE-bench Pro 58.4 claim), zai-org/GLM-5 GitHub repo (which lists GLM-5.1 alongside GLM-5/5.2 at 744B/40B), and independent coverage (BuildFastWithAI, DeepInfra blog, DeepLearning.AI's The Batch, Wikipedia GLM(AI) article) all dating the release to April 7, 2026 and describing its signature 'runs autonomously for up to 8 hours, re-evaluating its own plan hundreds of times' capability. The Hugging Face page's auto-surfaced 'release date' metadata (derived from the shared arXiv paper 2602.15763) incorrectly implied a February date -- overridden in favor of the April 7, 2026 date that is explicitly and consistently reported by multiple independent outlets describing the actual product launch. Params: HF card says '754 billion total' while GitHub repo says 744B -- used 744B (matches GLM-5 and GLM-5.2 in the same repo table) and flagged the 10B discrepancy as likely rounding/estimation noise between sources. Benchmark scores (SWE-bench Pro, Terminal-Bench 2.0, CyberGym, BrowseComp, AIME 2026, GPQA-Diamond) taken directly from the Hugging Face model card's self-reported table. Omitted NL2Repo (42.7), HMMT Nov 2025 (94.0), HMMT Feb 2026 (82.6), IMOAnswerBench (83.8), Tool-Decathlon (40.7), and MCP-Atlas (71.8) for lack of a matching corpus benchmark slug."

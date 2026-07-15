@@ -24,8 +24,8 @@ describe('catalog snapshot (C3 golden shape)', () => {
       org: 'Meta',
       family: 'Llama 3.1',
       open: true,
-      index: 81.6,
-      rank: 31,
+      index: 82.2,
+      rank: 26,
       ranked: true,
       ctxK: 128,
     })

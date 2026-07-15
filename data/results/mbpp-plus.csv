@@ -27,4 +27,5 @@ qwen2-5-32b,67.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-0
 qwen2-5-72b,69.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
 qwen2-5-7b,62.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
 qwen2-5-coder-32b,68.2,self-reported,https://arxiv.org/abs/2409.12186,2024-11-12,"Base model, Table 5; this is the value that was previously mislabeled under the bigcodebench slug (see corrections)"
+skywork-o1-open-llama-3-1-8b,65.2,self-reported,https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B,2024-11-26,"MBPP+ column, official HF model card table (row 'Skywork-o1-Open-8B')."
 wizardcoder-python-34b-v1-0,59.9,self-reported,https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md,,"MBPP+ pass@1, from the same official HF README comparison table."

@@ -185,6 +185,22 @@
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
       "evaluatedAt": "2024-06-07",
       "notes": "Instruct variant, MGSM 0-shot CoT, from the blog's multilingual-capability table"
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 8.61,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-25",
+      "notes": "LogicKor official leaderboard, model_id Qwen/Qwen2-72B-Instruct (exact hf-link match), default prompt strategy [score corrected during adversarial verify: proposed 8.62 -> 8.61, per verifier: Fetched https://lk.instruct.kr/ directly (full leaderboard table, 253 rows) and confirmed the model/variant match: row #34 is \"Qwen/Qwen2-72B-Instruct\", 72B params, tongyi-qianwen license, prompt strategy \"default\" \u2014 exactly matching the claim's model_id and strategy. However the \"\ucd1d\uc810\" (total score) shown for that exact row is 8.61, not 8.62. Category breakdown for that row: \ucd94\ub860(reasoning) 8.92, \uc218\ud559(math) 7.78, \uae00\uc4f0\uae30(writing) 8.92, \ucf54\ub529(coding) 9.21, \uc774\ud574(comprehension) 9.92, \ubb38\ubc95(grammar) 6.92 \u2014 average = 51.67/6 = 8.6117, which the site itself rounds and displays as 8.61. No unit mismatch and no wrong-variant mixup: this is genuinely the base Qwen2-72B-Instruct (not a -VL, -Pro, or dpo/kor variant \u2014 those exist as separate rows #26/43/62 for 'denial07/Qwen2-72B-Instruct-kor-dpo' and are correctly not what's cited). Also verified there are two other prompt-strategy variants for the same base model on the same leaderboard (1-shot: 8.69, cot-1-shot: 8.46), so citing the specific \"default\" variant is correct and appropriately disambiguated \u2014 only the numeric score itself was mistyped/mis-rounded by 0.01. Correct value per the live site: 8.61.]"
+    },
+    {
+      "benchmarkSlug": "gaokao-math",
+      "score": 54.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2409.12122v1",
+      "evaluatedAt": "2024-08-08",
+      "notes": "Qwen2-72B-Instruct, Chinese GaoKao aggregate, zero-shot CoT greedy decoding, from Table 4 (Chinese benchmarks) of the Qwen2.5-Math technical report, where Qwen2-72B-Instruct is used as a general-model baseline comparison row."
     }
   ],
   "verificationNotes": "Fetched qwenlm.github.io/blog/qwen2/ and arxiv.org/abs/2407.10671 directly: confirms release 2024-06-07, 72.71B dense params, 128K context, Tongyi Qianwen License, ~30 languages. All 9 base-model rows (MMLU 84.2, MMLU-Pro 55.6, GPQA 37.9, HumanEval 64.6, MBPP 76.9, GSM8K 89.5, MATH 51.1, BBH 82.4, HellaSwag 87.6) appear verbatim on the blog. The 3 instruct rows are confirmed verbatim on the cited arxiv page, which states verbatim: 'Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench.' No changes made."

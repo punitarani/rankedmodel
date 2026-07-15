@@ -154,6 +154,14 @@
       "sourceUrl": "https://arxiv.org/abs/2307.09288",
       "evaluatedAt": "2023-07-18",
       "notes": "5-shot exact match on the TriviaQA-Wiki validation subset, Table 22 (Appendix A.2.2). Meta also reports 0/1/64-shot variants (65.8/68.9/73.7); 5-shot chosen as the most commonly-cited setting."
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 36.4,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Meta-Llama-2-7B', base checkpoint). Matches this catalog entry's linked meta-llama/Llama-2-7b."
     }
   ],
   "verificationNotes": "Directly fetched Meta's official Llama 2 model card (github.com/meta-llama/llama-models MODEL_CARD.md): confirms MMLU 45.3, TruthfulQA 33.29%, ToxiGen 21.25%, 4K context window, 7B nominal params (actual param count ~6.7B, consistent with independently cross-checked calculations of 6.6-6.74B). Release date 2023-07-18 and Llama 2 Community License Agreement confirmed via Meta/GitHub. No changes made; all three benchmark rows confirmed literally present on the cited source."

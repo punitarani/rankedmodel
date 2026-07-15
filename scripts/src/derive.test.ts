@@ -179,7 +179,7 @@ describe('derived scores match the design formula (goldens)', () => {
     const llama = models.find((m) => m.slug === 'llama-3-1-405b')
     expect(llama?.ranked).toBe(true)
     expect(llama?.categoryIdx).toEqual({
-      'human-preference': 49.8,
+      'human-preference': 69.4,
       knowledge: 79.8,
       reasoning: 75,
       coding: 93,
@@ -203,7 +203,7 @@ describe('derived scores match the design formula (goldens)', () => {
     const { movers } = await deriveScores(DATA)
     expect(movers.map((m) => [m.slug, m.prevSlug, m.delta])).toEqual([
       ['gemini-1-0-pro', 'gemini-1-0-nano', 45.9],
-      ['mpt-30b', 'mpt-7b', 33.4],
+      ['mpt-30b', 'mpt-7b', 37.1],
       ['stable-lm-2-12b', 'stable-lm-2-1-6b', 32.5],
       ['chatglm3-6b', 'chatglm2-6b', 31.5],
       ['nemotron-4-340b', 'nemotron-4-15b', 30],

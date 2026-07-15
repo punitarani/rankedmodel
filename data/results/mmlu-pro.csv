@@ -4,6 +4,7 @@ ai21-jamba-1-5-mini,39.8,self-reported,https://arxiv.org/html/2408.12570v1,,
 amazon-nova-premier,73.3,independent,https://artificialanalysis.ai/models/nova-premier,,
 aya-expanse-32b,45.41,self-reported,https://huggingface.co/CohereLabs/aya-expanse-32b,2024-10-24,English MMLU-Pro
 aya-vision-32b,47.16,self-reported,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
+bloom-7b1,11.05,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/bigscience/bloom-7b1/results_2025-02-13T18-27-04.338360.json,2025-02-13,"acc on MMLU-Pro, same HF Open LLM Leaderboard v2 results file. Distinct benchmark from plain MMLU, mapped to its own mmlu-pro slug."
 claude-3-5-haiku,65,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"0-shot CoT, Model Card Addendum Table 8 (Claude 3.5 Haiku column)."
 claude-3-5-sonnet,75.1,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"0-shot CoT; MMLU-Pro was introduced in the later October addendum's comparison Table 7, which retroactively reports this score for the original (June 2024) Claude 3.5 Sonnet checkpoint."
 claude-3-5-sonnet-new,78,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"0-shot CoT, Table 7."

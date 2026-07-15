@@ -4,7 +4,7 @@
   "category": "human-preference",
   "unit": "Elo",
   "description": "Early open community Elo ranking, GPT-4-judged.",
-  "normMin": 800,
-  "normMax": 1020,
+  "normMin": 900,
+  "normMax": 1320,
   "higherIsBetter": true
 }

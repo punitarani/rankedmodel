@@ -136,6 +136,13 @@
       "sourceUrl": "https://deepmind.google/models/gemini/pro/",
       "evaluatedAt": "2026-02-19",
       "notes": "BrowseComp agentic web-browsing benchmark, Search+Python+Browse tool setting."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 32,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), Gemini CLI harness, High reasoning effort: Pass rate 15.8% / Score 32.0% (rank 34). Score component used per corpus convention."
     }
   ],
   "verificationNotes": "Confirmed real via blog.google (2026-02-19 launch) and deepmind.google/models/gemini/pro/ (fetched directly). All 5 benchmark numbers (GPQA 94.3, ARC-AGI-2 77.1, SWE-bench 80.6, MMMU-Pro 80.5, LiveCodeBench Pro 2887 Elo) literally confirmed on the cited pages. 1M context and $2/$12 pricing confirmed via independent sources. Still in preview as of July 2026 (not yet GA) per multiple July-2026 press coverage \u2014 status left as preview, correctly. No changes to record."

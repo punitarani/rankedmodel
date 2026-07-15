@@ -1,2 +1,6 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-1,18.81,self-reported,https://ar5iv.labs.arxiv.org/html/2305.15334,,"Gorilla paper (Patil et al. 2023), Table 1: claude-v1, zero-shot, no retriever, overall AST accuracy on TorchHub subset of APIBench."
 gorilla-7b,59.13,self-reported,https://ar5iv.labs.arxiv.org/html/2305.15334,,"zero-shot, no retriever, overall accuracy — Table 1"
+gpt-3-5-turbo,48.38,self-reported,https://ar5iv.labs.arxiv.org/html/2305.15334,,"Gorilla paper (Patil et al. 2023), Table 1: gpt-3.5-turbo-0301, zero-shot, no retriever, overall AST accuracy on TorchHub subset of APIBench."
+gpt-4,38.7,self-reported,https://ar5iv.labs.arxiv.org/html/2305.15334,,"Gorilla paper (Patil et al. 2023), Table 1: gpt-4-0314, zero-shot, no retriever, overall AST accuracy on TorchHub subset of APIBench."
+llama-7b,0,self-reported,https://ar5iv.labs.arxiv.org/html/2305.15334,,"Gorilla paper (Patil et al. 2023), Table 1: LLaMA-7B, zero-shot, no retriever, overall AST accuracy on TorchHub subset of APIBench (reported as 0)."

@@ -170,6 +170,7 @@ reka-flash-3,90.6,self-reported,https://reka.ai/news/introducing-reka-flash,2025
 sarvam-105b,98.6,self-reported,https://huggingface.co/sarvamai/sarvam-105b,2026-02-18,MATH-500
 seed-oss-36b,81.7,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct,,
 skywork-moe-base,31.9,self-reported,https://arxiv.org/html/2406.06563v1,,
+skywork-o1-open-llama-3-1-8b,78.1,self-reported,https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B,2024-11-26,"From official HF model card table (row 'Skywork-o1-Open-8B', base model without QStar test-time scaling)."
 skywork-r1v-38b,94,self-reported,https://arxiv.org/abs/2504.05599,,
 sonar,81.7,independent,https://designforonline.com/ai-models/perplexity-sonar/,,"MATH-500; attributed to Artificial Analysis, corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats."
 t-lu-3-405b,67.3,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B,,"4-shot Flex; DeepSeek V3 72.5, GPT-4o 68.8"

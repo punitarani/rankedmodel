@@ -183,6 +183,22 @@
       "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
       "evaluatedAt": "2024-10-22",
       "notes": "Table 7; introduced as a 'new benchmark' in the October addendum, reported retroactively for the original Sonnet."
+    },
+    {
+      "benchmarkSlug": "streamingbench",
+      "score": 59.71,
+      "source": "independent",
+      "sourceUrl": "https://streamingbench.github.io/",
+      "evaluatedAt": "2024-07-30",
+      "notes": "Overall accuracy on StreamingBench official leaderboard; rank 5 of 16. Leaderboard's tested date (2024-07-30) falls between the original Claude 3.5 Sonnet release (2024-06-20) and the 'New' Oct 2024 refresh (2024-10-22), so matched to the original claude-3-5-sonnet.json variant, not claude-3-5-sonnet-new.json."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 9.21,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-27",
+      "notes": "LogicKor official leaderboard, model_id anthropic/claude-3-5-sonnet-20240620, default prompt strategy"
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-5-sonnet (release date 2024-06-20 per multiple independent sources incl. Simon Willison's dated post; $3/$15 pricing; 200K ctx; Artifacts feature). Downloaded and fully read Model_Card_Claude_3_Addendum.pdf Table 1/Table 5: all 8 self-reported benchmark numbers (MMLU 88.7, MATH 71.1, GSM8K 96.4, HumanEval 92.0, GPQA 59.4, BBH 93.1, DROP 87.1, MMMU 68.3) and the needle-in-haystack cross-reference match the PDF verbatim. SWE-bench 33% confirmed on anthropic.com/research/swe-bench-sonnet (labeled 'Claude 3.5 Sonnet (old)'). apiAvailable=false confirmed: claude-3-5-sonnet-20240620 retired from API October 28, 2025. No changes made."

@@ -122,6 +122,14 @@
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
       "evaluatedAt": "2024-07-24",
       "notes": "From the HF 'Evaluation results' auto-generated widget, backed by the community EvalEval automated eval-results datastore - not a number Mistral wrote into their own benchmark tables, hence independent rather than self-reported."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 9.03,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-07-31",
+      "notes": "LogicKor official leaderboard, model_id mistralai/Mistral-Large-Instruct-2407, default prompt strategy [score corrected during adversarial verify: proposed 9.04 -> 9.03, per verifier: Fetched https://lk.instruct.kr/ live (browser tab, full page text extracted, not just WebFetch summary \u2014 cross-checked twice). Row 16 lists mistralai/Mistral-Large-Instruct-2407, prompt strategy \"default\", \ucd1d\uc810 (overall) = 9.03, params 123B, license mrl \u2014 matching the target model file (corpus/models/mistral-ai/mistral-large-2-24-07.json, HF id mistralai/Mistral-Large-Instruct-2407, 123B dense, MRL license). Claimed score 9.04 is off by 0.01. Model, benchmark, and variant (default, not 1-shot=9.16 or cot-1-shot=7.48) are all correctly identified in the claim \u2014 this is a simple digit/transcription error, not a wrong-model or wrong-variant mixup. Note: this benchmark result is not currently present in the model's JSON file (only mmlu, humaneval, mbpp, gsm8k, mt-bench, arena-hard, humaneval-plus, mbpp-plus, math, mmlu-pro exist there), so this appears to be a proposed addition \u2014 if added, it should use 9.03, not 9.04, with sourceUrl https://lk.instruct.kr/ and a note specifying the \"default\" prompt strategy to disambiguate from the 1-shot/cot-1-shot variants.]"
     }
   ],
   "verificationNotes": "Real release confirmed via mistral.ai/news/mistral-large-2407/ (fetched): 123B dense, 128k ctx, released 2024-07-24, Mistral Research License (HF model card literally says 'Mistral AI Research License' / license tag 'mrl', non-commercial). All 4 result rows independently confirmed literally present on their cited pages: MMLU 84.0 (mistral.ai blog), HumanEval 92%, MBPP Base 80%, GSM8K 93% (all on HF model card, also corroborated by an independent MarkTechPost article). No corrections needed."

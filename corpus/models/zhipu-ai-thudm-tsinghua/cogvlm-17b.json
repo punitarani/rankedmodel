@@ -104,6 +104,14 @@
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.03079",
       "notes": "Same later-revised comparison table (labeled 'SEED'); marginally above the taxonomy's typical range (max 72) but verbatim as published."
+    },
+    {
+      "benchmarkSlug": "flickr30k",
+      "score": 94.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2311.03079",
+      "evaluatedAt": "2023-11-06",
+      "notes": "Zero-shot CIDEr on Flickr30K Karpathy-test split, Table 1 of the CogVLM paper (arXiv:2311.03079). Paper text explicitly states: 'On the Flickr benchmark, our model achieves a SOTA score of 94.9 surpassing the concurrently released Qwen-VL model by 9.1 points' \u2014 consistent with the catalog's existing Qwen-VL flickr30k entry of 85.8 (94.9 - 85.8 = 9.1), cross-confirming both numbers come from the same comparison table."
     }
   ],
   "verificationNotes": "Corrected releaseDate from the unconfirmed exact day 2023-10-05 to month-precision 2023-10: GitHub commit history (checked via API) shows the earliest real commits Sept 28-Oct 9, 2023 with no activity specifically on Oct 5; independent Chinese-language press coverage (Jiqizhixin, Tencent News) appeared Oct 12-15, 2023; the arXiv paper wasn't submitted until Nov 6, 2023 and HF weights uploaded Nov 16, 2023. Params (17B = ~10B vision expert + 7B Vicuna LM), Apache-2.0 code license + separate Model License, and INT4 VRAM ~11GB on RTX 3090 all confirmed verbatim in README. VQAv2 84.38 / GQA 82.87 corroborated by an independent web search but I could not directly open the full PDF (10MB size limit) to see the table myself, so treat with slightly lower confidence than other rows. Removed vramFp16Gb (record's 29GB) since README only gives system-level guidance (1xA100-80G or 2xRTX3090-24G) and I found no single verified per-model FP16 VRAM figure to corroborate 29GB specifically."

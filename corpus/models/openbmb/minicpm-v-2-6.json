@@ -129,6 +129,14 @@
       "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md",
       "evaluatedAt": "2024-08-06",
       "notes": "Video-MME without subtitles; with subtitles the model scores 63.6."
+    },
+    {
+      "benchmarkSlug": "streamingbench",
+      "score": 57.67,
+      "source": "independent",
+      "sourceUrl": "https://streamingbench.github.io/",
+      "evaluatedAt": "2024-08-12",
+      "notes": "Overall accuracy (8B params, 64 frames) on StreamingBench official leaderboard; rank 8 of 16."
     }
   ],
   "verificationNotes": "Confirmed real, independently re-fetched HF model card (openbmb/MiniCPM-V-2_6): 8B params (SigLip-400M + Qwen2-7B), MiniCPM Model License weights / Apache-2.0 code. 32k context window independently confirmed via multiple sources (HF card, MarkTechPost coverage) as a first-class feature (multi-image + video understanding), not an unverified guess. Paper/GitHub dated August 2024 (arxiv paper timestamp Aug 3 2024; release announcements early August), consistent with the 2024-08-06 release date. OpenCompass 65.2 average confirmed present verbatim on the HF model card."

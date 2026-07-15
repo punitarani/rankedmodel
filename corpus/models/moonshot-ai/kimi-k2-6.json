@@ -132,6 +132,13 @@
       "source": "self-reported",
       "sourceUrl": "https://www.kimi.com/blog/kimi-k2-6",
       "notes": "OSWorld-Verified, from the official Kimi K2.6 tech blog Agentic benchmark table (Kimi K2.5's own OSWorld-Verified score of 63.3 is already recorded on the sibling K2.5 corpus entry)."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 21.7,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), OpenClaw harness, High reasoning effort: Pass rate 9.2% / Score 21.7% (rank 45). Score component used per corpus convention."
     }
   ],
   "verificationNotes": "Confirmed real, released model (not a rumor). Cross-verified architecture/param counts (1T total/32B active/384 experts/61 layers/MLA/MoonViT) across the official Hugging Face model card and the official Kimi blog post (kimi.com/blog/kimi-k2-6). Release date April 20, 2026 corroborated by SiliconANGLE, MarkTechPost, Yicai Global, and the kimi-k2.org mirror; HF repo's own lastModified timestamp (2026-05-19) reflects a later card update, not the release date. Pricing $0.95/M input (cache miss) and $4.00/M output confirmed directly on Moonshot's own hosted platform (both platform.kimi.ai and artificialanalysis.ai's tracked listing agree). Independent corroboration beyond vendor self-reports: Artificial Analysis Intelligence Index = 44/100 (composite of GDPval-AA v2, tau3-Banking, Terminal-Bench v2.1, SciCode, HLE, GPQA-Diamond, CritPt, AA-Omniscience, AA-LCR) and an LMArena text-arena placement around #7 overall / Elo ~1522, both independently measured and both broadly consistent with (though less flattering than) Moonshot's own benchmark table."

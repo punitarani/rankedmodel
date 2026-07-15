@@ -3,6 +3,7 @@ ai21-jamba,87.1,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
 airoboros-70b-l2,87.9,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot, 10-shot"
 apple-dclm-baseline-7b,80.43,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,'HellaSwag' row (distinct from the separate 'HellaSwag (zero-shot)' row of 79.87)
 apple-openelm-270m-3b,72.44,self-reported,https://huggingface.co/apple/OpenELM,2024-04-01,"OpenELM-3B (pretrained), zero-shot"
+bloom-7b1,62,independent,https://huggingface.co/datasets/open-llm-leaderboard/details_bigscience__bloom-7b1,2023-08-01,"acc_norm on HellaSwag (10-shot), same primary results file, key harness|hellaswag|10."
 btlm-3b-8k,69.8,self-reported,https://arxiv.org/abs/2309.11568,,0-shot
 cerebras-gpt-13b,51.3,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,0-shot
 chatglm-6b,30.4,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's family-wide technical report re-evaluation table (Table 1).
@@ -32,6 +33,7 @@ gemma-2-27b,86.4,self-reported,https://ai.google.dev/gemma/docs/core/model_card_
 gemma-2-9b,81.9,self-reported,https://ai.google.dev/gemma/docs/core/model_card_2,2024-06-01,10-shot
 gemma-2b,71.4,self-reported,https://huggingface.co/google/gemma-2b,,0-shot
 gemma-7b,81.2,self-reported,https://arxiv.org/html/2403.08295v4,,0-shot
+gigachat,76.92,self-reported,https://habr.com/ru/companies/sberdevices/articles/780334/,2023-12-13,0-shot pretrain metric for base 'GigaChat' from Sber's official technical blog table.
 gopher,79.2,self-reported,https://arxiv.org/abs/2203.15556,2022-03-29,"Zero-shot, Table 8 of the Chinchilla paper's Gopher-vs-Chinchilla-vs-GPT-3 comparison (DeepMind reporting its own prior model's results)."
 gpt-3-175b,79.3,self-reported,https://arxiv.org/abs/2005.14165,,few-shot
 gpt-3-5-turbo,85.5,self-reported,https://arxiv.org/abs/2303.08774,,
@@ -104,8 +106,10 @@ qwen2-57b-a14b,85.2,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-0
 qwen2-72b,87.6,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-7b,80.7,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 redpajama-incite-7b-base,70.37,self-reported,https://arxiv.org/abs/2411.12372,,"LM-eval-harness acc_norm, Table 9. (A separate HELM-classic EM-metric HellaSwag score of 70.2 also appears in Table 8; using the acc_norm figure for consistency with how HellaSwag is scored elsewhere in this corpus.)"
+redpajama-incite-7b-chat,70.82,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Chat/results_2023-07-19T17-30-52.522444.json,2023-07-19,Same HF Open LLM Leaderboard (v1) run: harness|hellaswag|10 acc_norm = 0.70823 (70.82%).
 redpajama-incite-7b-instruct,71.03,self-reported,https://arxiv.org/abs/2411.12372,,"LM-eval-harness acc_norm, Table 9. (A separate HELM-classic EM-metric HellaSwag score of 69.8 also appears in Table 8; using the acc_norm figure for consistency with the rest of the corpus.)"
 redpajama-incite-base-3b-v1,63.17,self-reported,https://www.together.ai/blog/redpajama-models-v1,,"HellaSwag acc_norm, zero-shot lm-evaluation-harness subset (also confirmed in arXiv 2411.12372 Table 7: 0.6317)."
+sarashina2-70b,62.7,independent,https://swallow-llm.github.io/evaluation/index.en.html,,"From Swallow LLM Leaderboard English-task table. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.627), normalized to percentage]"
 skywork-13b,77.4,self-reported,https://arxiv.org/pdf/2310.19341,2023-10-30,From Table 11 of the Skywork-13B technical report (arXiv:2310.19341).
 smollm2-1-7b,68.7,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,base model
 stable-beluga-1-freewilly-1-65b,85.9,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot (2023-09-04), HellaSwag 10-shot: 85.9."
@@ -113,6 +117,7 @@ stable-beluga-2-freewilly-2-70b,86.4,independent,https://raw.githubusercontent.c
 stable-lm-2-1-6b,69.34,independent,https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b,,"instruct variant, 10-shot"
 stable-lm-2-12b,86.06,self-reported,https://huggingface.co/stabilityai/stablelm-2-12b-chat,,chat variant
 stablelm-3b-4e1t,75.94,independent,https://huggingface.co/stabilityai/stablelm-3b-4e1t,,"Open LLM Leaderboard, 10-shot"
+stablelm-alpha-7b,51.78,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__stablelm-base-alpha-7b,2023-07-19,10-shot acc_norm from the (old) Open LLM Leaderboard's lm-evaluation-harness run on stabilityai/stablelm-base-alpha-7b.
 stablelm-zephyr-3b,74.16,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,10-shot
 starling-7b-alpha,84.9,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-04T15-57-32.180703.json,2023-12-04,"HellaSwag, 10-shot, acc_norm. Same v1 Open LLM Leaderboard automated run, verified against raw results JSON."
 teuken-7b-instruct,0.62,self-reported,https://huggingface.co/openGPT-X/Teuken-7B-instruct-commercial-v0.4,,"EU21-HellaSwag, averaged across 21 EU languages"

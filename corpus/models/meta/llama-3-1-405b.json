@@ -145,6 +145,14 @@
       "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct",
       "evaluatedAt": "2024-07-23",
       "notes": "Multilingual MGSM, chain-of-thought, 0-shot exact match, Instruct 405B (confirmed verbatim: 'Multilingual MGSM (CoT) | 0 | em | ... | 91.6')."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 8.79,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-07-31",
+      "notes": "LogicKor official leaderboard, model_id meta-llama/Meta-Llama-3.1-405B-Instruct-FP8, default prompt strategy [score corrected during adversarial verify: proposed 8.8 -> 8.79, per verifier: Fetched https://lk.instruct.kr/ directly (two independent fetches, consistent results). The model meta-llama/Meta-Llama-3.1-405B-Instruct-FP8 appears three times on the LogicKor leaderboard with different prompt strategies: - 1-shot: 8.84 - default: 8.79 - cot-1-shot: 8.45 The claim specifies \"default prompt strategy\" and model_id meta-llama/Meta-Llama-3.1-405B-Instruct-FP8, both of which correctly match a real leaderboard row \u2014 but that row's score is 8.79, not 8.8. This is a small (0.01) discrepancy that looks like an unrounded/rounded transcription slip rather than a wrong-model or wrong-variant mixup (the 1-shot variant score of 8.84 is further off and not the source of the \"8.8\" figure; it's most likely 8.79 was rounded to 8.8 losing precision). Note: LogicKor is archived (as of Oct 2024) but the leaderboard data itself remains accessible and unchanged at the source URL, so the source is valid and reachable. Recommend correcting the stored score to 8.79 to match the source exactly.]"
     }
   ],
   "verificationNotes": "Confirmed real. The cited HF page (meta-llama/Meta-Llama-3.1-8B) does contain comparative benchmark tables covering 8B/70B/405B together, and all seven Instruct scores for 405B (MMLU 87.3, MMLU-Pro 73.3, GPQA 50.7, IFEval 88.6, HumanEval 89.0, GSM8K 96.8, MATH 73.8) are literally present and match. Corrected the GPQA row's notes: it is the Instruct-model score per the table, not 'Base pretrained model' as the original record stated (score itself, 50.7, is unchanged and correct). Live-fetched lmmarketcap.com/benchmarks/arena_elo and confirmed it currently shows exactly 1229 Elo for Llama 3.1 405B. Release date (2024-07-23), 128K context, and Llama 3.1 Community License confirmed via Meta's blog and GitHub model card."

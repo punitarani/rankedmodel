@@ -93,6 +93,7 @@ qwen2-57b-a14b,71.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-0
 qwen2-72b,76.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-7b,65.9,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 santacoder-1-1b,35,self-reported,https://huggingface.co/bigcode/santacoder,,"pass@1, Python"
+skywork-o1-open-llama-3-1-8b,77.9,self-reported,https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B,2024-11-26,From official HF model card table image misc/main_result_code.png (row 'Skywork-o1-Open-8B').
 starcoder-15-5b,52.7,self-reported,https://huggingface.co/blog/starcoder,,
 upstage-solar-pro,61.59,self-reported,https://huggingface.co/upstage/solar-pro-preview-instruct,,
 wizardcoder-python-34b-v1-0,73.2,self-reported,https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md,,pass@1

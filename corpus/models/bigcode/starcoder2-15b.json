@@ -75,6 +75,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/bigcode/starcoder2-15b",
       "notes": "HumanEval+ pass@1 = 37.8, taken verbatim from the model-index metadata block in the official HF model card README (fetched raw)."
+    },
+    {
+      "benchmarkSlug": "repobench",
+      "score": 39.78,
+      "source": "curated",
+      "sourceUrl": "https://arxiv.org/abs/2402.19173",
+      "notes": "RepoBench v1.1 exact match (EM), averaged across the Python and Java splits reported in Table 17 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024): Python EM 36.99, Java EM 42.57."
     }
   ],
   "verificationNotes": "Fetched HF blog (2024-02-28) and model card: confirmed 15B params, 16K ctx/4K sliding window, NVIDIA-trained (NeMo+Eos), BigCode OpenRAIL-M, HumanEval 46.3/GSM8K(PAL) 65.1/DS-1000 33.8 verbatim. No changes."

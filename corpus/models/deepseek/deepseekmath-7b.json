@@ -62,7 +62,15 @@
       "sourceUrl": "https://arxiv.org/abs/2402.03300",
       "evaluatedAt": "2024-02-01",
       "notes": "DeepSeekMath-RL 7B, chain-of-thought"
+    },
+    {
+      "benchmarkSlug": "gaokao-math",
+      "score": 33.6,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/html/2409.12122v1",
+      "evaluatedAt": "2024-08-08",
+      "notes": "DeepSeekMath-7B-RL variant (matches this catalog entry's hf link deepseek-ai/deepseek-math-7b-rl), Chinese GaoKao aggregate, zero-shot CoT greedy decoding, from Table 4 of the Qwen2.5-Math technical report where DeepSeekMath-7B-RL is used as a specific-model baseline (third-party evaluation by the Qwen team)."
     }
   ],
-  "verificationNotes": "Confirmed via arxiv 2402.03300 (fetched via ar5iv rendering): initialized from DeepSeek-Coder-Base-v1.5 7B, paper's Table 5 literally shows DeepSeekMath-RL 7B row '88.2% 51.7% 79.6% 88.8%' — GSM8K 88.2 and MATH 51.7 (CoT, no tools) confirmed exactly. Feb 2024 release date matches arXiv submission date (2402.xxxxx = Feb 2024)."
+  "verificationNotes": "Confirmed via arxiv 2402.03300 (fetched via ar5iv rendering): initialized from DeepSeek-Coder-Base-v1.5 7B, paper's Table 5 literally shows DeepSeekMath-RL 7B row '88.2% 51.7% 79.6% 88.8%' \u2014 GSM8K 88.2 and MATH 51.7 (CoT, no tools) confirmed exactly. Feb 2024 release date matches arXiv submission date (2402.xxxxx = Feb 2024)."
 }

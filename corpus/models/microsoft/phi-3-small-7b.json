@@ -154,6 +154,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-3-small-8k-instruct",
       "notes": "3-shot"
+    },
+    {
+      "benchmarkSlug": "komt-bench",
+      "score": 4.87,
+      "source": "independent",
+      "sourceUrl": "https://github.com/LG-AI-EXAONE/KoMT-Bench",
+      "evaluatedAt": "2024-08-01",
+      "notes": "Reported as 'Phi 3 7B Inst.' in the official KoMT-Bench GitHub repo results table (LG AI Research), reproduced from the EXAONE 3.0 7.8B technical report (arXiv:2408.03541). Score is on the 1-10 GPT-4-judged scale with the benchmark's language-detector penalty applied. Model-size match to Phi-3-small (7B) is reasonably confident but the repo table does not disambiguate a specific Phi-3 checkpoint name."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3-small-8k-instruct, fetched): 7B dense decoder-only with alternating dense/blocksparse attention, 8K context, MIT license. All four benchmark rows (MMLU 75.7, HellaSwag 77, GSM8K 89.6 CoT, HumanEval 61) literally match the card. GitHub repo microsoft/PhiCookBook confirmed to exist (Phi-3CookBook was renamed/merged into PhiCookBook)."

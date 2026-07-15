@@ -1,2 +1,6 @@
 model_slug,score,source,source_url,evaluated_at,notes
+claude-1,9.19,independent,https://ar5iv.labs.arxiv.org/html/2305.15334,2023-05-24,"Gorilla paper (Patil et al. 2023), Table 1: zero-shot (no retriever) overall accuracy on the TensorFlow Hub (TensorHub) split of APIBench, using the claude-v1 checkpoint (hallu 88.46%, err 2.33%)."
 gorilla-7b,83.79,self-reported,https://ar5iv.labs.arxiv.org/html/2305.15334,,"zero-shot, no retriever, overall accuracy — Table 1"
+gpt-3-5-turbo,41.75,independent,https://ar5iv.labs.arxiv.org/html/2305.15334,2023-05-24,"Gorilla paper (Patil et al. 2023), Table 1: zero-shot (no retriever) overall accuracy on the TensorFlow Hub (TensorHub) split of APIBench, using the gpt-3.5-turbo-0301 checkpoint (hallu 78.65%, err 3.13%)."
+gpt-4,18.2,independent,https://ar5iv.labs.arxiv.org/html/2305.15334,2023-05-24,"Gorilla paper (Patil et al. 2023), Table 1: zero-shot (no retriever) overall accuracy on the TensorFlow Hub (TensorHub) split of APIBench, using the gpt-4-0314 checkpoint (hallu 78.65%, err 3.13%)."
+llama-7b,0,independent,https://ar5iv.labs.arxiv.org/html/2305.15334,2023-05-24,"Gorilla paper (Patil et al. 2023), Table 1: zero-shot (no retriever) overall accuracy on the TensorFlow Hub (TensorHub) split of APIBench. LLaMA-7B scored 0% zero-shot, with 100% hallucination error."

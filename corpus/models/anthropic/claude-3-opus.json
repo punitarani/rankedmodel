@@ -223,6 +223,21 @@
       "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
       "evaluatedAt": "2024-03-04",
       "notes": "Multilingual MMLU, 5-shot, from Table 5 of the Claude 3 Model Card (Opus outperforms Claude 2.1 by 15.7 points per the card's own text)."
+    },
+    {
+      "benchmarkSlug": "rakuda",
+      "score": 8.75,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/shisa-ai/shisa-v1-llama3-70b",
+      "notes": "Reported as claude-3-opus-20240229, scored via Shaberi eval framework's Rakuda test (GPT-4-judged, 0-10 absolute scale)."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 8.88,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-27",
+      "notes": "LogicKor official leaderboard, model_id anthropic/claude-3-opus-20240229, default prompt strategy"
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-family (release date 2024-03-04, pricing $15/$75, 200K ctx, vision). Downloaded and read the actual 42-page Model_Card_Claude_3.pdf Table 1/Table 3: every one of the 12 self-reported benchmark numbers (MMLU 86.8, MATH 60.1, GSM8K 95.0, HumanEval 84.9, GPQA 50.4, BBH 86.8, ARC-Challenge 96.4, HellaSwag 95.4, WinoGrande 88.5, DROP 83.1, MBPP 86.4, MMMU 59.4) matches the PDF verbatim. SWE-bench 22% confirmed on anthropic.com/research/swe-bench-sonnet. apiAvailable=false confirmed: claude-3-opus-20240229 retired from API January 5, 2026. No changes made."

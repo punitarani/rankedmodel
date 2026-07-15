@@ -126,6 +126,13 @@
       "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
       "evaluatedAt": "2025-04-16",
       "notes": "Aider Polyglot code editing, diff format, o3-high (whole-format score is 81.3%). Diff-format figure used to match this corpus's existing aider-polyglot convention (e.g. gpt-5.json uses the diff figure)."
+    },
+    {
+      "benchmarkSlug": "gaia",
+      "score": 28.48,
+      "source": "independent",
+      "sourceUrl": "https://hal.cs.princeton.edu/gaia",
+      "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, o3 at 'Medium' reasoning effort (April 2025 snapshot) -- only effort level tested for o3 on this leaderboard, so no variant ambiguity. GAIA validation set."
     }
   ],
   "verificationNotes": "Confirmed release 2025-04-16 via OpenAI/TechCrunch. Pricing $2/$8 verified as OpenAI's current price after an 80% cut on 2025-06-10 from the original $10/$40 launch price (confirmed via OpenAI Devs official X post and VentureBeat) \u2014 note added to clarify this isn't the launch price. Direct fetch of openai.com/index/introducing-o3-and-o4-mini/ returned 403, but all 6 benchmark rows (AIME 91.6, GPQA 83.3, SWE-bench 69.1, MMMU 82.9, HLE 24.9-with-tools, Codeforces 2706) were independently corroborated verbatim by multiple secondary sources quoting OpenAI's official launch figures \u2014 distinct from the earlier Dec-2024 o3 preview-announcement numbers (e.g. 96.7% AIME), confirming these are the correct April-2025 released-model figures."

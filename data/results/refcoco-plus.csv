@@ -1,3 +1,7 @@
 model_slug,score,source,source_url,evaluated_at,notes
+deepseek-vl2,91.2,self-reported,https://arxiv.org/abs/2412.10302,,"RefCOCO+ val split, Table 5 of the DeepSeek-VL2 technical report (arXiv:2412.10302). Same table also reports testA 94.9 and testB 87.4 for this model."
+internvl2-5-78b,90.4,independent,https://arxiv.org/abs/2504.10479,,"RefCOCO+ val split, from Table 6 of the InternVL3 technical report (arXiv:2504.10479), which lists InternVL2.5-78B as a comparison baseline (same organization, OpenGVLab, prior model generation). Same table also lists testA 94.7 and testB 86.9 for this model."
 internvl3-78b,90.1,self-reported,https://internvl.github.io/blog/2025-04-11-InternVL-3.0/,,RefCOCO+ val split; exceeds the slug's stated 50-85 range but is the verbatim published number
 qwen-vl,83.12,self-reported,https://huggingface.co/Qwen/Qwen-VL,,RefCOCO+ val
+qwen2-5-vl-72b,88.9,independent,https://arxiv.org/abs/2504.10479,,"RefCOCO+ val split, from Table 6 of the InternVL3 technical report (arXiv:2504.10479), which compiles a multi-model RefCOCO/RefCOCO+/RefCOCOg comparison table including Qwen2.5-VL-72B as a baseline. Same table also lists testA 92.2 and testB 83.7 for this model."
+qwen2-vl-72b,90.1,self-reported,https://arxiv.org/abs/2409.12191,,"RefCOCO+ val split, Table 6 ('Performance Comparison on Referring Expression Comprehension Task') of the Qwen2-VL technical report (arXiv:2409.12191). Same paper also reports testA 93.8 and testB 85.6 for this model."

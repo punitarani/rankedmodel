@@ -46,6 +46,103 @@
     "releaseDate": "https://huggingface.co/bigscience/bloom-7b1",
     "openness": "https://huggingface.co/bigscience/bloom-7b1"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 41.13,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_bigscience__bloom-7b1",
+      "evaluatedAt": "2023-08-01",
+      "notes": "acc_norm on ARC-Challenge (25-shot), from the raw lm-evaluation-harness run for bigscience/bloom-7b1 in the HF Open LLM Leaderboard v1 per-model details dataset (results_2023-08-01T14:42:42.953249.json, key harness|arc:challenge|25)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 62,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_bigscience__bloom-7b1",
+      "evaluatedAt": "2023-08-01",
+      "notes": "acc_norm on HellaSwag (10-shot), same primary results file, key harness|hellaswag|10."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 38.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_bigscience__bloom-7b1",
+      "evaluatedAt": "2023-08-01",
+      "notes": "mc2 score on TruthfulQA, same primary results file, key harness|truthfulqa:mc|0."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 65.43,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_bigscience__bloom-7b1",
+      "evaluatedAt": "2023-10-19",
+      "notes": "acc on Winogrande (5-shot), from results_2023-10-19T04-28-54.166367.json in the same HF Open LLM Leaderboard v1 details dataset."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 1.36,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_bigscience__bloom-7b1",
+      "evaluatedAt": "2023-12-04",
+      "notes": "acc on GSM8K (5-shot), from the final results_2023-12-04T13-10-02.911977.json re-run in the same details dataset. An earlier Oct 2023 run showed 0.76%; this is the last published value."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 26.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_bigscience__bloom-7b1",
+      "evaluatedAt": "2023-08-01",
+      "notes": "Approximate MMLU average. The Open LLM Leaderboard v1 raw file stores 57 per-subject harness|hendrycksTest-<subject>|5 scores rather than one aggregate key; manually averaging those subjects yields ~26.7%, closely matching the ~26.25% figure independently reported by the llm-explorer.com aggregator for the same model/eval. Treat as approximate given the manual averaging."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 8.1,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2408.01050",
+      "evaluatedAt": "2024-08-02",
+      "notes": "pass@1 on HumanEval for bigscience/bloom-7b1 (7.1B params), listed in Table I of Martinez, \"The Impact of Hyperparameters on Large Language Model Inference Performance\" (UPC-BarcelonaTech, arXiv:2408.01050). A separate independent survey reported a very close 7.73% for the same model/benchmark, corroborating the figure."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 30.86,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/bigscience/bloom-7b1/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "acc_norm on BBH (Big-Bench-Hard), from the HF Open LLM Leaderboard v2 automated eval results for bigscience/bloom-7b1."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 26.43,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/bigscience/bloom-7b1/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "acc_norm on GPQA, same HF Open LLM Leaderboard v2 results file."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 9.06,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/bigscience/bloom-7b1/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "prompt-level strict accuracy on IFEval, same HF Open LLM Leaderboard v2 results file."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 11.05,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/bigscience/bloom-7b1/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "acc on MMLU-Pro, same HF Open LLM Leaderboard v2 results file. Distinct benchmark from plain MMLU, mapped to its own mmlu-pro slug."
+    },
+    {
+      "benchmarkSlug": "mmlu-eu21",
+      "score": 25.6,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2410.08928",
+      "evaluatedAt": "2024-10-17",
+      "notes": "EU21-MMLU (DeepL-translated MMLU across 21 EU languages), Thellmann et al. 2024 'Towards Multilingual LLM Evaluation for European Languages', Table 13. HF checkpoint bigscience/bloom-7b1, exact name/size match."
+    }
+  ],
   "verificationNotes": "Confirmed on HF model card: 7,069,016,064 params (7.069B) exact match; RAIL v1.0 license; 2048-token context; 45 natural + 12 programming = 57 languages matches langCount exactly. Page states training ended ~July 5, 2022, consistent with the July 11, 2022 public release date shared across the BLOOM checkpoint family. No changes made."
 }

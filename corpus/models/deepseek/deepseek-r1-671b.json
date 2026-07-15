@@ -182,6 +182,13 @@
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
       "evaluatedAt": "2025-01-20",
       "notes": "C-Eval (EM). Note: slightly exceeds this corpus taxonomy's documented c-eval range (20-88) but is verified verbatim on the official HF card."
+    },
+    {
+      "benchmarkSlug": "gaia",
+      "score": 30.3,
+      "source": "independent",
+      "sourceUrl": "https://hal.cs.princeton.edu/gaia",
+      "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, DeepSeek R1 (Jan 2025 original release). GAIA validation set."
     }
   ],
   "verificationNotes": "Existence, MIT license, 671B/37B params, 128K ctx, and Jan 20 2025 release date all confirmed by fetching the live HF model card and GitHub repo. All 7 result rows verified literally present on the HF card. Caveat (not changed in record): as of the current date DeepSeek's own hosted 'deepseek-reasoner' API alias has been quietly routing to a newer V4-Flash model since ~Apr 2026 and deprecates entirely 2026-07-24, so the listed $0.55/$2.19 DeepSeek-hosted pricing reflects the original 2025 launch price rather than what DeepSeek's API currently bills; the open weights remain genuinely available (self-host or third-party inference providers)."

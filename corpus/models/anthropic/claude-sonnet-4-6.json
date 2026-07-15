@@ -143,6 +143,13 @@
       "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
       "evaluatedAt": "2026-02-17",
       "notes": "CharXiv Reasoning, no-tools configuration (Section 2.17.3). With an image-cropping tool, Sonnet 4.6 scored 77.4%."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 32,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (Linux-Task-Only leaderboard view), Hermes harness, Medium effort: Pass rate 13.2% / Score 32.0% -- the best of several claude-sonnet-4-6 rows (Forgecode Medium 28.5, Terminus 2 'Off' 30.9, OpenClaw High 31.0, Openhands 19.8). Not present in the top-50 of the main ALE-CLI Overall table, so sourced from the Linux-only leaderboard split of the same site. Score component used per corpus convention."
     }
   ],
   "verificationNotes": "Release date confirmed via Anthropic's own announcement (fetched directly; page states February 17, 2026, though one press recap gave February 15 \u2014 treated the primary source as authoritative). SWE-bench/OSWorld figures below are from direct launch-day press coverage citing Anthropic's numbers; GPQA figure is from a third-party recap with lower confidence."

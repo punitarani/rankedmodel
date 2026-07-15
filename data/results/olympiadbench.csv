@@ -3,3 +3,4 @@ internvl2-5-78b,11.6,self-reported,https://internvl.github.io/blog/2024-12-05-In
 minimax-vl-01,24.2,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,Listed as 'OlympiadBench (full)' in the card's Mathematics & Sciences section; slightly above the taxonomy's stated 0-22 range but is the same bilingual multimodal OlympiadBench evaluation.
 qvq-72b-preview,20.4,self-reported,https://huggingface.co/Qwen/QVQ-72B-Preview,,
 qwen2-math-72b,43,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, greedy decoding (CoT), zero-shot, from Table 3 (English benchmarks) of the Qwen2.5-Math technical report, where Qwen2-Math-72B-Instruct is used as a baseline comparison row."
+skywork-o1-open-llama-3-1-8b,43.1,self-reported,https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B,2024-11-26,From official HF model card table (row 'Skywork-o1-Open-8B').

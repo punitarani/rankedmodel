@@ -170,6 +170,29 @@
       "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md",
       "evaluatedAt": "2023-07-18",
       "notes": "Reported by Meta in the Llama 2 model card's Llama-1-vs-2 comparison table"
+    },
+    {
+      "benchmarkSlug": "torchhub-apibench",
+      "score": 0,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "notes": "Gorilla paper (Patil et al. 2023), Table 1: LLaMA-7B, zero-shot, no retriever, overall AST accuracy on TorchHub subset of APIBench (reported as 0)."
+    },
+    {
+      "benchmarkSlug": "huggingface-apibench",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "evaluatedAt": "2023-05-24",
+      "notes": "Gorilla paper (Patil et al., arXiv 2305.15334), Table 1 \u2014 zero-shot, no-retriever accuracy on APIBench (HuggingFace subset), using the 7B LLaMA checkpoint. Reported score is literally 0.00% (base LLaMA cannot produce valid API calls zero-shot) \u2014 a real, deliberately-reported floor baseline, not a placeholder."
+    },
+    {
+      "benchmarkSlug": "tensorhub-apibench",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "evaluatedAt": "2023-05-24",
+      "notes": "Gorilla paper (Patil et al. 2023), Table 1: zero-shot (no retriever) overall accuracy on the TensorFlow Hub (TensorHub) split of APIBench. LLaMA-7B scored 0% zero-shot, with 100% hallucination error."
     }
   ],
   "verificationNotes": "Confirmed real release, part of the same 2023-02-24 LLaMA drop. Wikipedia confirms 7B=6.7B params exactly, 2048 ctx, gated non-commercial license. Fetched the MODEL_CARD.md comparison table and confirmed MMLU 35.1, TruthfulQA 27.42, Toxigen 23.00 all appear for the Llama-1-7B row. No changes made."

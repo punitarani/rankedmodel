@@ -109,6 +109,14 @@
       "sourceUrl": "https://huggingface.co/Qwen/Qwen-72B",
       "evaluatedAt": "2023-11-30",
       "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 6.73,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-26",
+      "notes": "LogicKor official leaderboard, model_id qwen/qwen-72b-chat, default prompt strategy [score corrected during adversarial verify: proposed 6.74 -> 6.73, per verifier: Fetched https://lk.instruct.kr/ directly. Confirmed model_id \"qwen/qwen-72b-chat\" exists on the LogicKor leaderboard with three rows by prompt strategy: default=6.73 (rank 104), 1-shot=7.75 (rank 67), cot-1-shot=7.42 (rank 82). The claim specifies \"default prompt strategy,\" which is 6.73, not the claimed 6.74 (off by 0.01 \u2014 likely a rounding/transcription slip). Correctly matched to the older base Qwen-72B model (qwen-72b-chat), not conflated with the separate, higher-scoring Qwen2-72B-Instruct entries (8.61/8.69/8.46) \u2014 so no variant-conflation issue. No unit mismatch or wrong-model mixup found. Note: LogicKor site itself is archived/read-only since Oct 2024, but historical data remains accessible and unchanged on lk.instruct.kr.]"
     }
   ],
   "verificationNotes": "Confirmed real, released 2023-11-30 per GitHub README. 72B params and 80 hidden layers confirmed via raw config.json (num_hidden_layers=80). Native 32K context (adapted RoPE base, no NTK extension needed) confirmed via GitHub README. Tongyi Qianwen commercial license confirmed. All 4 benchmark scores (mmlu 77.4, c-eval 83.3, gsm8k 78.9, humaneval 35.4) confirmed verbatim on HF/GitHub."

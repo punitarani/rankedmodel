@@ -66,6 +66,13 @@
       "sourceUrl": "https://arxiv.org/html/2308.12950v3",
       "evaluatedAt": "2023-08-01",
       "notes": "pass@1, base Code Llama 7B"
+    },
+    {
+      "benchmarkSlug": "repobench",
+      "score": 36.73,
+      "source": "curated",
+      "sourceUrl": "https://arxiv.org/abs/2402.19173",
+      "notes": "RepoBench v1.1 exact match (EM), averaged across the Python and Java splits reported in Table 17 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024): Python EM 33.85, Java EM 39.61."
     }
   ],
   "verificationNotes": "Confirmed release 2023-08-24 (TechCrunch, Meta blog) and Llama 2 Community License. Directly fetched arxiv.org/html/2308.12950v3 Table 2: HumanEval 33.5 / MBPP 41.4 for base Code Llama 7B both confirmed exactly (an initial secondary web-search summary had returned different, incorrect numbers (28.2/37.3) before the primary-source fetch corrected this). FIM infilling support for 7B confirmed via Meta docs/arXiv (7B and 13B support infilling; 34B does not)."

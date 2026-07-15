@@ -46,6 +46,87 @@
     "releaseDate": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B/commits/main",
     "openness": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 91.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "From official HF model card table (row 'Skywork-o1-Open-8B', base model without QStar test-time scaling), embedded as image misc/main_result_math.png."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 78.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "From official HF model card table (row 'Skywork-o1-Open-8B', base model without QStar test-time scaling)."
+    },
+    {
+      "benchmarkSlug": "gaokao-math",
+      "score": 63.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "GaoKao column in official HF model card table (row 'Skywork-o1-Open-8B')."
+    },
+    {
+      "benchmarkSlug": "olympiadbench",
+      "score": 43.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "From official HF model card table (row 'Skywork-o1-Open-8B')."
+    },
+    {
+      "benchmarkSlug": "amc",
+      "score": 55,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "AMC-23 column in official HF model card table (row 'Skywork-o1-Open-8B')."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 77.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "From official HF model card table image misc/main_result_code.png (row 'Skywork-o1-Open-8B')."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 65.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "MBPP+ column, official HF model card table (row 'Skywork-o1-Open-8B')."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 82.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "From official HF model card table (row 'Skywork-o1-Open-8B')."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 78.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "HumanEval+ column, official HF model card table (row 'Skywork-o1-Open-8B'). This is the base model's best score on this metric (QStar variant scored lower, 77.4)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 26,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "Column labeled 'LiveCodeBench-2024.01-2024.11' in official HF model card table (row 'Skywork-o1-Open-8B')."
+    }
+  ],
   "verificationNotes": "Confirmed real HF repo exists with initial commit dated 2024-11-26 (matches release date). Config.json confirms max_position_embeddings=131072 (128K ctx, via RoPE scaling from base 8192) and 8B Llama-3.1 architecture. License and Kunlun/Skywork attribution confirmed via HF model card and press coverage of Skywork o1 series. No results rows were present to verify (none claimed)."
 }

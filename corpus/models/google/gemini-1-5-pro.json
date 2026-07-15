@@ -179,6 +179,37 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
       "evaluatedAt": "2024-05-01",
       "notes": "VQAv2 test-dev split, 0-shot, Table 18."
+    },
+    {
+      "benchmarkSlug": "streamingbench",
+      "score": 70.26,
+      "source": "independent",
+      "sourceUrl": "https://streamingbench.github.io/",
+      "evaluatedAt": "2024-06-15",
+      "notes": "Overall accuracy on StreamingBench (18-task, 900-video, 4,500-QA streaming video understanding benchmark from Tsinghua University); official leaderboard, rank 1 of 16 evaluated models. Also reported in the paper (arXiv:2411.03628) at 67.07%, but the maintained leaderboard site shows an updated/re-run figure of 70.26%; used the leaderboard figure as the source of record."
+    },
+    {
+      "benchmarkSlug": "minif2f-valid",
+      "score": 29.92,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2407.03203",
+      "evaluatedAt": "2024-07-03",
+      "notes": "From TheoremLlama paper's Table 1 comparison of whole-proof generation baselines on miniF2F-valid (Lean 4): Gemini-1.5-pro scores 29.92% valid / 27.87% test."
+    },
+    {
+      "benchmarkSlug": "rakuda",
+      "score": 9.2,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/shisa-ai/shisa-v1-llama3-70b",
+      "notes": "Reported as gemini-1.5-pro (no specific dated snapshot given), scored via Shaberi eval framework's Rakuda test (GPT-4-judged, 0-10 absolute scale)."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 9.29,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-07-08",
+      "notes": "LogicKor official leaderboard, model_id google/gemini-1.5-pro-001, default prompt strategy [score corrected during adversarial verify: proposed 9.3 -> 9.29, per verifier: Fetched https://lk.instruct.kr/ directly. Confirmed row exists for model_id google/gemini-1.5-pro-001, default prompt strategy (rank 5) \u2014 the notes' description matches exactly, and this is the correct variant (not conflated with cot-1-shot=8.83 or 1-shot=8.57). The claimed score of 9.3 is a rounding of the actual displayed value of 9.29. Recommend correcting score to 9.29 in corpus/models/google/gemini-1-5-pro.json.]"
     }
   ],
   "verificationNotes": "Confirmed real, announced 2024-02-15 per Google blog. Both benchmark rows corroborated: search results directly quoting the Gemini 1.5 technical report confirm 'Gemini 1.5 Pro scores 46.2% [GPQA] ... and 85.9% on MMLU' for the updated (May 2024) checkpoint. Sept 24 2025 shutdown date corroborated by ai.google.dev deprecations page and independent tracker (avalai docs), confirming all 1.5 models return errors as of that date."

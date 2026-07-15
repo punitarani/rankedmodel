@@ -115,6 +115,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
       "notes": "Video-MME w/ subtitles (w/o-subs value is 71.2)."
+    },
+    {
+      "benchmarkSlug": "refcoco-plus",
+      "score": 90.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.12191",
+      "notes": "RefCOCO+ val split, Table 6 ('Performance Comparison on Referring Expression Comprehension Task') of the Qwen2-VL technical report (arXiv:2409.12191). Same paper also reports testA 93.8 and testB 85.6 for this model."
     }
   ],
   "verificationNotes": "Real model, confirmed via live fetch of the Qwen2-VL-72B-Instruct HF README benchmark table: MMMU val 64.5, DocVQA test 96.5, MathVista testmini 70.5 all match exactly. Corrected the DocVQA row's notes from 'DocVQA val' to 'DocVQA test' since the actual table reports the test split, not val (score itself was already correct). ViT vision encoder corrected from '~600M' to '675M' (confirmed exact figure via search). paramsB 73.4B confirmed via llm-stats.com. ctxK 32 (32,768) confirmed via live config.json fetch. Release date 2024-09-19 confirmed (arXiv paper submitted 2024-09-18, HF instruct checkpoint + quantized versions available 2024-09-19; broader Qwen2-VL 2B/7B series announced 2024-08-29). License tongyi-qianwen confirmed on HF and llm-stats.com."

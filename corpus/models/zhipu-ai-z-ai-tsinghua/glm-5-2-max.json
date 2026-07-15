@@ -97,6 +97,13 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
       "notes": "Artificial Analysis's own GDPval-AA v2 re-evaluation of GLM-5.2 (max) (Elo-like 0-2000 scale), from AA's dedicated launch-analysis article. Independent of Zhipu's self-reported numbers."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 40.6,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), Claude Code harness, Max reasoning effort: Pass rate 20.4% / Score 40.6% (rank 25). The leaderboard's 'Max' effort label matches this catalog entry's own effortLabel field ('Max', isBestConfig=true) confirming the correct variant match. Score component used per corpus convention."
     }
   ],
   "verificationNotes": "See GLM-5.2 (High) entry for shared model-level verification (existence, dates, params, license). This entry carries the publicly reported self-reported benchmark scores, on the assumption (not fully confirmed by Z.ai) that the published numbers reflect the top/Max reasoning-effort configuration -- Z.ai did not publish an explicit per-tier breakdown at launch per MarkTechPost's coverage. Scores cross-checked between huggingface.co/blog/zai-org/glm-52-blog (HLE, AIME, GPQA, and an extended coding-benchmark table) and official docs.z.ai/guides/llm/glm-5.2 (Terminal-Bench 2.1 81.0 vs Claude Opus 4.8's 85.0, SWE-bench Pro 62.1, FrontierSWE within 1% of Opus 4.8) -- both agree on SWE-bench Pro 62.1 and Terminal-Bench 2.1 ~81.0, giving good confidence in those two figures. Omitted CritPt (16.7), HMMT Nov 2025 (94.4), HMMT Feb 2026 (92.5), IMOAnswerBench (91.0), NL2Repo (48.9), DeepSWE (46.2), ProgramBench (63.7), FrontierSWE (74.4), PostTrainBench (34.3), SWE-Marathon (13.0), MCP-Atlas (76.8), and Tool-Decathlon (48.2) for lack of a matching corpus benchmark slug."

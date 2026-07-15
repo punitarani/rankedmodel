@@ -135,6 +135,13 @@
       "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
       "evaluatedAt": "2026-02-17",
       "notes": "Humanity's Last Exam, with-tools configuration (Figure 2.20.2.A). Without tools, Sonnet 4.5 scored 17.7%."
+    },
+    {
+      "benchmarkSlug": "gaia",
+      "score": 74.55,
+      "source": "independent",
+      "sourceUrl": "https://hal.cs.princeton.edu/gaia",
+      "notes": "Princeton HAL (Holistic Agent Leaderboard), 'HAL Generalist Agent' scaffold, standard (non-extended-thinking) config, Claude Sonnet 4.5 (Sept 2025 snapshot). GAIA validation set. Top-ranked entry on this leaderboard."
     }
   ],
   "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-sonnet-4-5 (release 2025-09-29, $3/$15 pricing, 200K context, 30+ hour focus claim). GPQA/MMLU rows confirmed verbatim via direct fetch of leanware.co. IMPORTANT CORRECTION: input record marked status='deprecated', but Anthropic's official model-deprecations page (fetched 2026-07-12) lists claude-sonnet-4-5-20250929 as 'Active' with tentative retirement 'not sooner than 2026-09-29' \u2014 this model is currently live, not deprecated. Status corrected to 'released' (closest enum to 'Active'); apiAvailable=true confirmed correct."

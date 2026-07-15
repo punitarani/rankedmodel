@@ -4,7 +4,7 @@
   "category": "human-preference",
   "unit": "Elo",
   "description": "Early human/LLM-judged Elo ranking on 80 diverse questions.",
-  "normMin": 800,
-  "normMax": 1040,
+  "normMin": 880,
+  "normMax": 1200,
   "higherIsBetter": true
 }

@@ -1,2 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
 deepseek-prover-v2-671b,91,self-reported,https://arxiv.org/pdf/2504.21801,2025-04-30,MiniF2F-valid pass ratio
+gemini-1-5-pro,29.92,independent,https://arxiv.org/abs/2407.03203,2024-07-03,From TheoremLlama paper's Table 1 comparison of whole-proof generation baselines on miniF2F-valid (Lean 4): Gemini-1.5-pro scores 29.92% valid / 27.87% test.
+gpt-4-turbo,25.4,independent,https://arxiv.org/abs/2405.14333,2024-05-23,"Reported as 'GPT-4-turbo 0409' (matches catalog's default snapshot gpt-4-turbo-2024-04-09) in the DeepSeek-Prover paper's Table 1, whole-proof generation on miniF2F-valid (Lean 4). Cross-confirmed at 25.41% by the independent TheoremLlama paper (arXiv:2407.03203)."
+llama-3-8b,25.41,independent,https://arxiv.org/abs/2407.03203,2024-07-03,"From TheoremLlama paper's Table 1, listed as 'Llama3-Instruct 8B' (matches catalog entry, which links to meta-llama/Meta-Llama-3-8B-Instruct) evaluated un-finetuned on miniF2F-valid (Lean 4): 25.41% valid / 20.08% test."

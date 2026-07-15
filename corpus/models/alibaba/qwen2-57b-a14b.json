@@ -185,6 +185,14 @@
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2/",
       "evaluatedAt": "2024-06-07",
       "notes": "Instruct variant, MGSM 0-shot CoT, from the blog's multilingual-capability table"
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 6.6,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-25",
+      "notes": "LogicKor official leaderboard, model_id Qwen/Qwen2-57B-A14B-Instruct (exact hf-link match), default prompt strategy [score corrected during adversarial verify: proposed 6.61 -> 6.6, per verifier: Verified via two independent fetches of https://lk.instruct.kr/ (LogicKor leaderboard). The model \"Qwen/Qwen2-57B-A14B-Instruct\" does appear with prompt strategy \"default\" (matching the claim's notes), confirming the model/benchmark/variant match is correct. However, the actual overall score (\ucd1d\uc810) shown for that row is 6.60, not the claimed 6.61. Category breakdown (\ucd94\ub860 6.78, \uc218\ud559 6.07, \uae00\uc4f0\uae30 5.42, \ucf54\ub529 7.21, \uc774\ud574 9.07, \ubb38\ubc95 5.07) averages to 6.6033, which rounds to 6.60, corroborating the leaderboard's displayed value. Note the leaderboard also lists two other rows for the same model under different prompt strategies (1-shot: 7.11, cot-1-shot: 6.34) \u2014 the claim correctly picked the \"default\" strategy row, avoiding a variant mixup, but transcribed the score with a 0.01 error (6.61 vs actual 6.60). This is a minor discrepancy possibly due to a rounding/transcription slip rather than a wrong-model or wrong-variant issue. File checked: corpus/models/alibaba/qwen2-57b-a14b.json.]"
     }
   ],
   "verificationNotes": "Fetched qwenlm.github.io/blog/qwen2/ directly: confirms release 2024-06-07, 57.41B total/14B active MoE, 64K context, Apache 2.0, ~30 languages (27 additional beyond English/Chinese, commonly rounded to 30 across Qwen materials). 8 of the original 9 result rows are confirmed verbatim on the cited blog (MMLU 76.5, MMLU-Pro 43, GPQA 34.3, HumanEval 53, MBPP 71.9, GSM8K 80.7, MATH 43, BBH 67). DROPPED the HellaSwag=85.2 row: I confirmed 85.2 is a real number for this model but it appears only in the Qwen2 arxiv technical report (2407.10671), not on the cited sourceUrl (qwenlm.github.io/blog/qwen2/) \u2014 that page's benchmark table for Qwen2-57B-A14B has no HellaSwag row at all, so per the verification rule the row must be dropped rather than kept against a source that doesn't show it."

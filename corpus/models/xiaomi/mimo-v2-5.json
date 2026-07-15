@@ -163,6 +163,13 @@
       "sourceUrl": "https://arena.ai/leaderboard/text",
       "evaluatedAt": "2026-07-10",
       "notes": "Text Arena (Overall) Elo on arena.ai (formerly LMSYS Chatbot Arena), read directly off the live leaderboard for the 'mimo-v2.5' row specifically (MIT license, $0.10/$0.28, 1M context -- matching this model; explicitly distinct on the same leaderboard from mimo-v2.5-pro at 1466, mimo-v2-pro at 1448, and mimo-v2-omni at 1430). Rank #76 of 374 models, \u00b15 CI, 39,076 votes, per the Jul 10, 2026 snapshot."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 23.6,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), OpenClaw harness, High reasoning effort: Pass rate 8.6% / Score 23.6% (rank 47, listed as 'mimo-v2-5' -- the non-Pro variant). Score component used per corpus convention."
     }
   ],
   "verificationNotes": "Params/architecture/context/modalities/license confirmed directly against the raw HuggingFace README (XiaomiMiMo/MiMo-V2.5), which also gives an internal 'component table' cross-checked against the Pro repo's identical table (both agree: 310B/15B, 48-layer, 5:1 SWA:GA, 3x MTP). Release date corroborated by Wikipedia's Xiaomi MiMo lineage entry, MarkTechPost (published 2026-04-22), and Xiaomi's own blog (one secondary source, GSMArena, says 2026-04-28, and the Pro-specific Xiaomi page separately says 2026-04-27; treated as the same announcement week, with 2026-04-22 taken as authoritative per Wikipedia + the MarkTechPost publish date + this task's brief). IMPORTANT CAVEAT: the benchmark table embedded in the HuggingFace READMEs (GSM8K 83.3, MMLU 86.3, etc.) is explicitly labeled 'Base Model Evaluation' and reports the pretrained -Base checkpoint, not the released chat/agentic model \u2014 so those numbers were NOT used for 'results' below. Instead, results were pulled from the live JS-driven benchmark charts embedded in Xiaomi's own product page (https://mimo.xiaomi.com/mimo-v2-5/), fetched and parsed directly from raw HTML/JS (not summarized), which report the actual shipped model against Claude Opus 4.6, Gemini 3.1 Pro, GPT-5.4, Kimi K2.6, DeepSeek-V4-Flash."

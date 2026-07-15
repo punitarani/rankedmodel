@@ -63,6 +63,13 @@
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.14196",
       "notes": "Instruct-33B, from paper Table 3"
+    },
+    {
+      "benchmarkSlug": "repobench",
+      "score": 41.92,
+      "source": "curated",
+      "sourceUrl": "https://arxiv.org/abs/2402.19173",
+      "notes": "RepoBench v1.1 exact match (EM), averaged across the Python and Java splits reported in Table 17 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024), which benchmarks DeepSeekCoder-33B alongside StarCoder2 and CodeLlama: Python EM 39.25, Java EM 44.59. DeepSeekCoder-33B is the top scorer of all base models in this table."
     }
   ],
   "verificationNotes": "Confirmed via huggingface.co/deepseek-ai/deepseek-coder-33b-instruct (33B dense, 16K context, 2T tokens 87% code/13% NL in English+Chinese, MIT repo license + commercial-use model license) and via ar5iv/2401.14196 Table 3, which literally shows HumanEval 79.3 and MBPP 70.0 for DeepSeek-Coder-Instruct 33B. Nov 2023 release corroborated by web search (Internet Archive snapshot of the GitHub repo dated 2023-11-09, consistent with an early-Nov launch)."

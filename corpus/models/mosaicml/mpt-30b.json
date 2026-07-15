@@ -88,6 +88,14 @@
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b",
       "evaluatedAt": "2023-12-04",
       "notes": "TruthfulQA MC2 (harness|truthfulqa:mc|0, mc2 = 0.3842), confirmed via direct curl+grep"
+    },
+    {
+      "benchmarkSlug": "fin-bench",
+      "score": 53.22,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2404.01856",
+      "evaluatedAt": "2024-04-01",
+      "notes": "FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating MPT-30B as a reference model alongside Poro 34B."
     }
   ],
   "verificationNotes": "Confirmed via Databricks MPT-30B blog (published 2023-06-22): 30B params, 1T tokens total (1T at 2k context + 50B extension tokens for 8k context), 8k context window, Apache-2.0, trained on H100s, sized for single 80GB GPU deployment. No result rows to verify. All fields left unchanged."

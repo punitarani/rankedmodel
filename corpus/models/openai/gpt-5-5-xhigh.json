@@ -60,7 +60,14 @@
       "source": "self-reported",
       "sourceUrl": "https://benchlm.ai/models/gpt-5-5",
       "notes": "Explicitly attributed to 'xhigh effort' by benchlm.ai. Numerically identical to the frontiermath-tier4 result already recorded on the base 'GPT-5.5' corpus entry -- see verificationNotes."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 47.9,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), Codex harness, XHigh reasoning effort: Pass rate 26.6% / Score 47.9% (rank 10). Matches this catalog entry's own effortLabel ('xHigh'). Score component used per corpus convention."
     }
   ],
-  "verificationNotes": "Confirmed as a distinct, independently-benchmarked configuration on Artificial Analysis (model page 'GPT-5.5 (xhigh)', explicitly labeled 'Reasoning Effort Label: xhigh' on direct fetch; Intelligence Index score 55, rank #7/188, strictly ahead of the 'high' sibling's 53/#12). benchlm.ai's benchmark table for GPT-5.5 explicitly attributes its FrontierMath v2 figures to 'xhigh effort' (Tier 1-3: 51.7%, Tier 4: 35.4%) — these are numerically identical to the FrontierMath scores already stored on the pre-existing base 'GPT-5.5' corpus entry, strongly suggesting that entry's headline benchmark numbers are actually xhigh-tier results mislabeled as the plain/default config. Flagging for the ingesting pipeline to consider migrating those two FrontierMath results (and possibly GDPval/BrowseComp/SWE-Bench Pro/Terminal-Bench, which are likely also xhigh headline figures) from the base entry onto this xHigh entry, and to set the base entry's isBestConfig to false since this sibling is now the true best-of-cohort."
+  "verificationNotes": "Confirmed as a distinct, independently-benchmarked configuration on Artificial Analysis (model page 'GPT-5.5 (xhigh)', explicitly labeled 'Reasoning Effort Label: xhigh' on direct fetch; Intelligence Index score 55, rank #7/188, strictly ahead of the 'high' sibling's 53/#12). benchlm.ai's benchmark table for GPT-5.5 explicitly attributes its FrontierMath v2 figures to 'xhigh effort' (Tier 1-3: 51.7%, Tier 4: 35.4%) \u2014 these are numerically identical to the FrontierMath scores already stored on the pre-existing base 'GPT-5.5' corpus entry, strongly suggesting that entry's headline benchmark numbers are actually xhigh-tier results mislabeled as the plain/default config. Flagging for the ingesting pipeline to consider migrating those two FrontierMath results (and possibly GDPval/BrowseComp/SWE-Bench Pro/Terminal-Bench, which are likely also xhigh headline figures) from the base entry onto this xHigh entry, and to set the base entry's isBestConfig to false since this sibling is now the true best-of-cohort."
 }

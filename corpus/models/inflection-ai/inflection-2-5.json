@@ -41,6 +41,31 @@
     "releaseDate": "https://inflection.ai/inflection-2-5",
     "openness": "https://inflection.ai/inflection-2-5"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 85.5,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "Read from the bar chart in Inflection AI's official Inflection-2.5 launch post ('Technical results' section, Inflection-1 vs Inflection-2.5 vs GPT-4). No exact numeral is printed in the post's body text; value was pixel-calibrated against the chart's own y-axis gridlines (30-100, 8 evenly spaced ticks at ~178px/10pts in the full-res chart image). Cross-check: the same method reads the chart's 'Average, GPT-4 Normalized' bar at 94.4, matching the post's stated '>94% the average performance of GPT-4' almost exactly, which validates the extraction. GPT-4's own bar reads ~87.4 on this chart (their reference point, not GPT-4's official MMLU number)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 38.4,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "Same chart/source as the MMLU entry. Labeled 'GPQA Diamond' on the chart's x-axis; mapped to the 'gpqa' taxonomy slug since Diamond is the standard GPQA subset most catalogs report under plain 'gpqa'. Pixel-derived value; no exact numeral printed in body text. [score corrected during adversarial verify: proposed 38.3 -> 38.4, per verifier: Verified by directly loading https://inflection.ai/inflection-2-5 in a browser and screenshotting the benchmark table/chart section (the figure is an SVG rendered as an image with vector-outlined text, so it doesn't extract via curl/grep or WebFetch's HTML-to-markdown conversion \u2014 that's why the source appeared \"chart-only\" to text tools). The rendered chart clearly shows a labeled table: MMLU: Inflection-2.5 = 85.5 (CoT@32), Inflection-1 = 72.7 (5-shot), GPT-4 = 87.3 (CoT@32) GPQA Diamond: Inflection-2.5 = 38.4 (Few-shot), Inflection-1 = 29.8 (Few-shot), GPT-4 = 39.3 (Few-shot) So the benchmark variant is confirmed as \"GPQA Diamond\" (few-shot), matching the taxonomy mapping decision already documented in the notes (mapping GPQA Diamond -> 'gpqa' is a deliberate, disclosed choice, not an error). The model is correctly identified (Inflection-2.5, not GPT-4 or Inflection-1) and there's no unit mismatch (both are 0-100 percentage-point scales). However, the claimed score of 38.3 is off by 0.1 from the actual displayed value of 38.4. This was likely a pixel-measurement rounding error from reading an image rendering rather than the actual (legible, once properly rendered) text. Corrected score: 38.4.]"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 82.2,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "Same chart/source as above. Labeled 'Big-Bench-Hard' on the chart; text separately states 'over a 10% improvement on Inflection-1' for this category, consistent with the ~70->82 pixel-read jump for Inflection-1->Inflection-2.5. Pixel-derived value; no exact numeral printed in body text."
+    }
+  ],
   "verificationNotes": "Confirmed real via direct fetch of inflection.ai/inflection-2-5: page literally states 'Inflection-2.5, now powering Pi, achieves more than 94% the average performance of GPT-4 despite using only 40% the training FLOPs,' matching the record exactly, and confirms March 7 2024 publish date. No changes made."
 }

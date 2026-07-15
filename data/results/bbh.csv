@@ -7,6 +7,7 @@ amazon-nova-micro,79.5,self-reported,https://deepranking.ai/llm-models/nova-micr
 amazon-nova-pro,86.9,self-reported,https://deepranking.ai/llm-models/nova-pro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 baichuan2-13b,48.78,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,3-shot
 baichuan2-7b,41.56,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,"3-shot, Baichuan2-7B-Base; present in the official README's General Domain table but missing from the corpus (the 13B sibling model already has its BBH score recorded)."
+bloom-7b1,30.86,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/bigscience/bloom-7b1/results_2025-02-13T18-27-04.338360.json,2025-02-13,"acc_norm on BBH (Big-Bench-Hard), from the HF Open LLM Leaderboard v2 automated eval results for bigscience/bloom-7b1."
 chatglm-6b,18.73,self-reported,https://github.com/zai-org/ChatGLM2-6B/blob/main/README_EN.md,,"Few-shot CoT, from the official ChatGLM2-6B repo comparison table. Below the taxonomy's typical floor (30) but verbatim as published."
 chatglm2-6b,30,self-reported,https://github.com/zai-org/ChatGLM2-6B,,Chat-aligned checkpoint
 chatglm3-6b,66.1,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
@@ -53,6 +54,7 @@ hunyuan-a13b,89.1,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Inst
 hunyuan-large-a52b,86.3,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
 hunyuan-turbos,90.8,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"3-shot, Table 4"
 inflection-1,69.9,self-reported,https://inflection.ai/assets/Inflection-1.pdf,2023-06-23,BIG-Bench Hard with chain-of-thought prompting (Table 6 of the technical memo).
+inflection-2-5,82.2,self-reported,https://inflection.ai/inflection-2-5,2024-03-07,"Same chart/source as above. Labeled 'Big-Bench-Hard' on the chart; text separately states 'over a 10% improvement on Inflection-1' for this category, consistent with the ~70->82 pixel-read jump for Inflection-1->Inflection-2.5. Pixel-derived value; no exact numeral printed in body text."
 internlm2-20b,68.3,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,
 internlm2-5-7b,71.6,self-reported,https://huggingface.co/internlm/internlm2_5-7b-chat,,
 lg-exaone-3-5-32b-instruct,75.3,self-reported,https://arxiv.org/abs/2412.04862,2024-12-01,BBH (CoT)
@@ -99,6 +101,7 @@ qwen2-5-7b,70.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09
 qwen2-57b-a14b,67,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-72b,82.4,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-7b,62.6,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+sarashina2-70b,63.86,independent,https://swallow-llm.github.io/evaluation/index.en.html,,"3-shot chain-of-thought exact-match accuracy, Swallow LLM Leaderboard. [unit-corrected during round4 verify-merge: source table reports as a 0-1 fraction (0.6386), normalized to percentage]"
 starling-7b-alpha,44.4,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-06-12,"Big-Bench-Hard, 3-shot per subtask, acc_norm averaged over 23 subtasks (raw, un-normalized leaderboard column, not the leaderboard's baseline-subtracted display score). Open LLM Leaderboard v2, same submission as IFEval above."
 t-lu-3-405b,88.6,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B,,"DeepSeek V3 89.5, GPT-4o 83.3"
 t-lu-3-70b,82,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B,,BigBenchHard 3-shot CoT

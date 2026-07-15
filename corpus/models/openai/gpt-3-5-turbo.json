@@ -118,6 +118,61 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2306.05685",
       "notes": "GPT-4-judged MT-Bench score for gpt-3.5-turbo, Table 8 of the original MT-Bench / Chatbot Arena paper (Zheng et al., 2023)"
+    },
+    {
+      "benchmarkSlug": "torchhub-apibench",
+      "score": 48.38,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "notes": "Gorilla paper (Patil et al. 2023), Table 1: gpt-3.5-turbo-0301, zero-shot, no retriever, overall AST accuracy on TorchHub subset of APIBench."
+    },
+    {
+      "benchmarkSlug": "huggingface-apibench",
+      "score": 16.81,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "evaluatedAt": "2023-05-24",
+      "notes": "Gorilla paper (Patil et al., arXiv 2305.15334), Table 1 \u2014 zero-shot, no-retriever accuracy on APIBench (HuggingFace subset). Model evaluated as gpt-3.5-turbo-0301 checkpoint."
+    },
+    {
+      "benchmarkSlug": "tensorhub-apibench",
+      "score": 41.75,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "evaluatedAt": "2023-05-24",
+      "notes": "Gorilla paper (Patil et al. 2023), Table 1: zero-shot (no retriever) overall accuracy on the TensorFlow Hub (TensorHub) split of APIBench, using the gpt-3.5-turbo-0301 checkpoint (hallu 78.65%, err 3.13%)."
+    },
+    {
+      "benchmarkSlug": "vicuna-bench",
+      "score": 916,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.14314",
+      "evaluatedAt": "2023-05-23",
+      "notes": "Vicuna benchmark Elo rating (human-judged), rank 7 of 8, from Table 1/7 of the QLoRA paper (Dettmers et al., arXiv:2305.14314), listed there as 'ChatGPT-3.5 Turbo'. GPT-4-judged Elo for the same model was 966 in the paper's companion table."
+    },
+    {
+      "benchmarkSlug": "openassistant-bench",
+      "score": 1015,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2305.14314",
+      "evaluatedAt": "2023-05-23",
+      "notes": "Reported as 'ChatGPT-3.5 Turbo', GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 2, from the QLoRA paper (Dettmers et al., Table 7)."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 7.76,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-26",
+      "notes": "LogicKor official leaderboard, model_id openai/gpt-3.5-turbo-0125, default prompt strategy"
+    },
+    {
+      "benchmarkSlug": "jaster",
+      "score": 56.7,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/html/2410.07563",
+      "evaluatedAt": "2024-10-10",
+      "notes": "JASTER (jaster) 0-shot average, Table 2 of Preferred Networks' 'PLaMo-100B: A Ground-Up Language Model Designed for Japanese Proficiency' (arXiv:2410.07563). GPT-3.5 Turbo scored 0.567 as a comparison baseline in the paper's jaster results table (alongside GPT-4-0125-Preview 0.722, PLaMo-100B-Instruct 0.738); evaluation run via the same jaster/llm-jp-eval harness used for PLaMo-100B's own already-tracked jaster rows in this catalog. Not self-reported by OpenAI, hence classified independent."
     }
   ],
   "verificationNotes": "Release confirmed March 1, 2023 via OpenAI's 'Introducing ChatGPT and Whisper APIs' post. Current 16,385-token context and $0.50/$1.50 per-million pricing confirmed on OpenAI's live model docs page. All 7 benchmark rows (MMLU 70.0, HellaSwag 85.5, ARC 85.2, Winogrande 81.6, HumanEval 48.1, DROP 64.1 F1, GSM8K 57.1) verified to literally appear in arXiv 2303.08774's GPT-3.5 comparison column. No changes made."

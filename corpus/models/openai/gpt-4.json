@@ -99,6 +99,53 @@
       "sourceUrl": "https://arxiv.org/abs/2303.08774",
       "evaluatedAt": "2023-03-15",
       "notes": "Codeforces Rating from Table 1 ('GPT performance on academic and professional exams') of the GPT-4 Technical Report, for the RLHF/launch GPT-4 model, described as 'below 5th percentile' among competitive programmers. Estimated by having the model attempt problems from 10 recent Codeforces contests (10 attempts/problem) and running repeated Elo-adjustment simulations to convergence (100 simulations x 10 contests), per Appendix A. GPT-3.5 scored 260 on the same table for comparison. This is a distinct evaluation protocol from Table 2's few-shot academic benchmarks (base, pre-RLHF model) already in the corpus, but is the same kind of Codeforces-Elo-rating metric used for other models' 'codeforces' entries in this corpus."
+    },
+    {
+      "benchmarkSlug": "torchhub-apibench",
+      "score": 38.7,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "notes": "Gorilla paper (Patil et al. 2023), Table 1: gpt-4-0314, zero-shot, no retriever, overall AST accuracy on TorchHub subset of APIBench."
+    },
+    {
+      "benchmarkSlug": "huggingface-apibench",
+      "score": 19.8,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "evaluatedAt": "2023-05-24",
+      "notes": "Gorilla paper (Patil et al., arXiv 2305.15334), Table 1 \u2014 zero-shot, no-retriever accuracy on APIBench (HuggingFace subset). Model evaluated as gpt-4-0314 checkpoint. Cross-checked: the paper's Gorilla-7B HuggingFace score (71.68) in this same table exactly matches our already-verified gorilla-7b.json entry, confirming table fidelity."
+    },
+    {
+      "benchmarkSlug": "tensorhub-apibench",
+      "score": 18.2,
+      "source": "independent",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
+      "evaluatedAt": "2023-05-24",
+      "notes": "Gorilla paper (Patil et al. 2023), Table 1: zero-shot (no retriever) overall accuracy on the TensorFlow Hub (TensorHub) split of APIBench, using the gpt-4-0314 checkpoint (hallu 78.65%, err 3.13%)."
+    },
+    {
+      "benchmarkSlug": "vicuna-bench",
+      "score": 1176,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.14314",
+      "evaluatedAt": "2023-05-23",
+      "notes": "Vicuna benchmark Elo rating (human-judged), rank 1 of 8, from Table 1/7 of the QLoRA paper (Dettmers et al., arXiv:2305.14314). GPT-4-judged Elo for the same model was 1348 in the paper's companion table. Cross-verified against the guanaco-65b and guanaco-33b Hugging Face model cards, which reproduce the same table and whose existing vicuna-bench entries in this catalog (1023 and 1009 respectively) match it exactly."
+    },
+    {
+      "benchmarkSlug": "openassistant-bench",
+      "score": 1294,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2305.14314",
+      "evaluatedAt": "2023-05-23",
+      "notes": "GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 1, from the QLoRA paper (Dettmers et al., Table 7) - same table that supplies the existing Guanaco-33B (1002) and Guanaco-65B (1008) entries for this benchmark."
+    },
+    {
+      "benchmarkSlug": "logickor",
+      "score": 8.67,
+      "source": "independent",
+      "sourceUrl": "https://lk.instruct.kr/",
+      "evaluatedAt": "2024-06-26",
+      "notes": "LogicKor official leaderboard, model_id openai/gpt-4-0613 (the GPT-4 API snapshot), default prompt strategy [score corrected during adversarial verify: proposed 8.68 -> 8.67, per verifier: Verified against https://lk.instruct.kr/ (LogicKor official leaderboard) directly via three independent fetches, all consistent. The model openai/gpt-4-0613 with \"default\" prompt strategy is real and present (rank ~32), but its total score is 8.67, not the claimed 8.68. Sub-category scores for that row: Reasoning 9.42, Mathematics 7.07, Writing 9.35, Coding 9.50, Comprehension 8.35, Grammar 8.35 \u2014 the unweighted mean of these six is 52.04/6 = 8.673, which rounds to 8.67, confirming 8.67 is the correct displayed total (not 8.68). No unit mismatch, no wrong-model mixup, and no benchmark-variant confusion: gpt-4-0613 is indeed distinct from the GPT-4 Turbo variants (Nov 2023 / Apr 2024 / Jan 2025) also on the leaderboard, whose default-prompt scores are 9.17, 8.66, and 9.13 respectively \u2014 none of which is being conflated here. Model/benchmark identity and prompt-strategy match the claim; only the score digit is off by 0.01, likely a transcription slip. Recommend correcting corpus/models/openai/gpt-4.json's logickor entry score from 8.68 to 8.67.]"
     }
   ],
   "verificationNotes": "Release March 14, 2023 confirmed (TechCrunch/Wikipedia); 8K default / 32K variant context and $30/$60 per-million pricing confirmed via multiple independent sources. All 7 benchmark rows (MMLU 86.4, HellaSwag 95.3, ARC 96.3, Winogrande 87.5, HumanEval 67.0, DROP 80.9 F1, GSM8K 92.0) verified literally in arXiv 2303.08774 Table 2 (fetched directly). No changes made."

@@ -151,6 +151,13 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v3-0324",
       "notes": "Independent re-measurement of GPQA Diamond by Artificial Analysis (Intelligence Index v4.1 methodology), row explicitly labeled 'DeepSeek V3 0324' (distinct from their separately-tracked 'DeepSeek V3 (Dec)' row, which scored 56%). This 65% is lower than DeepSeek's own self-reported 68.4 already on file \u2014 a genuine self-reported vs. independently-verified discrepancy worth surfacing, not a duplicate. Exact evaluation date not published by Artificial Analysis; page reflects their current, periodically-rerun index."
+    },
+    {
+      "benchmarkSlug": "gaia",
+      "score": 29.39,
+      "source": "independent",
+      "sourceUrl": "https://hal.cs.princeton.edu/gaia",
+      "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, DeepSeek V3 (March 2025 snapshot = the V3-0324 update, distinct from original Dec-2024 V3). GAIA validation set."
     }
   ],
   "verificationNotes": "Existence and release confirmed via DeepSeek's own news post (api-docs.deepseek.com/news/news250325, published 2025-03-25 referencing a 3/24 model card date) and the live HF card, both stating MIT license. Note: HF safetensors index sums to ~685B raw tensor weight but DeepSeek's own papers/cards and consistent third-party reporting describe the architecture as 671B total/37B active (685B includes the multi-token-prediction head), so 671B is kept as the standard-cited figure. All 4 result rows (AIME 59.4, GPQA 68.4, MMLU-Pro 81.2, LiveCodeBench 49.2) confirmed literally on the HF card as the 'after' values of the delta callouts. Caveat (not changed in record): DeepSeek's own 'deepseek-chat' API alias now silently routes to a newer V4-Flash model (since ~Apr 2026) and deprecates 2026-07-24, so the $0.27/$1.10 figure is the original 2025 DeepSeek-hosted launch price, not what DeepSeek's API bills today; the open weights remain genuinely available via self-host or third-party providers."

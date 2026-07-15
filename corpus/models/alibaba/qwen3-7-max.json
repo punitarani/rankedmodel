@@ -142,6 +142,13 @@
       "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-max",
       "evaluatedAt": "2026-07-14",
       "notes": "GDPval-AA v2 ('agentic real-world work tasks', normalized as (Elo-500)/2000), independently measured by Artificial Analysis on their live Qwen3.7-Max model page -- not vendor self-reported. Qwen3.7-Max scored 39%, behind Claude Opus 4.8 (max) at 55% and DeepSeek V4 Pro (max) at 40%, but ahead of Kimi K2.6 (35%) and Nemotron 3 Ultra (33%). This is one of the 9 components of AA's own Intelligence Index (v4.1) for this model."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 31.1,
+      "source": "independent",
+      "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
+      "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), OpenClaw harness, High reasoning effort: Pass rate 11.8% / Score 31.1% (rank 41, listed as 'qwen3-7-max'). Score component used per corpus convention."
     }
   ],
   "verificationNotes": "Confirmed real via multiple independent secondary sources (MarkTechPost, VentureBeat-cited coverage, Yotta Labs, digitalapplied, Alibaba Cloud's own community blog 'Qwen3.7: The Agent Frontier') plus a working OpenRouter listing (qwen/qwen3.7-max) and official Alibaba Cloud Model Studio pricing-page entry -- this is a real, currently-available model, not a rumor. Announcement date has minor variance across sources (May 19-21, 2026); used May 20 (Alibaba Cloud Summit date, matching the majority of sources) as releaseDate. Context length also varies by source: most (OpenRouter, Yotta Labs, digitalapplied) state 1M tokens; one direct fetch of the Alibaba Cloud blog surfaced a '256K' figure that appears to be a benchmark-footnote qualifier rather than the max context -- flagged as uncertain. Pricing is the list-price tier ($2.50/$7.50 per M, Intl) confirmed via Alibaba's own pricing page; a time-limited 50% launch promo ($1.25/$3.75) is also in effect per OpenRouter/Yotta Labs but list price was used per convention. Architecture (param count, MoE expert split) is undisclosed across all sources -- flagged null per corpus convention for undisclosed flagship models (matches existing Qwen3-Max entry's treatment). Benchmark scores (GPQA 92.4, SWE-bench Pro 60.6, Terminal-Bench 2.0-Terminus 69.7) were corroborated by two independent direct fetches (Alibaba Cloud's own blog + Yotta Labs); other cited figures (SWE-bench Verified 80.4, HMMT, IMOAnswerBench, Apex, MRCR-v2, MCP-Mark) could not be independently confirmed via a direct-render fetch of a primary source and were omitted rather than guessed."
