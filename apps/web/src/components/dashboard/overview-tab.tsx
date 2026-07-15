@@ -16,10 +16,10 @@ import {
 
 export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
   const navigate = useNavigate()
-  const ranked = rankedByRank(catalog)
+  const ranked = useMemo(() => rankedByRank(catalog), [catalog])
   // Rail bars map the full ranked field's Elo range onto 0–100% (D21) so the frontier
   // renders near-full bars, mirroring the old absolute-index look.
-  const eloWindow = ratingWindow(ranked.map((m) => m.index))
+  const eloWindow = useMemo(() => ratingWindow(ranked.map((m) => m.index)), [ranked])
   const defaultOpen = ranked.find((m) => m.open)
   const [qcA, setQcA] = useState(ranked[0]?.slug ?? '')
   const [qcB, setQcB] = useState(defaultOpen?.slug ?? ranked[1]?.slug ?? '')

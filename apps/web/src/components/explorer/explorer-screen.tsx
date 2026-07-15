@@ -143,8 +143,9 @@ export function ExplorerScreen({
   )
 
   // Elo bars are relative to the rendered field (D21): the rating has no fixed 0–100 domain.
-  const eloWindow = ratingWindow(
-    rows.filter((m) => Object.keys(m.bench).length > 0).map((m) => m.index),
+  const eloWindow = useMemo(
+    () => ratingWindow(rows.filter((m) => Object.keys(m.bench).length > 0).map((m) => m.index)),
+    [rows],
   )
 
   const renderCard = (m: SnapshotModel) => (
