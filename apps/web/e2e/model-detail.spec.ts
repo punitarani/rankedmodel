@@ -27,11 +27,11 @@ test.describe('model detail', () => {
     await expect(page.getByTestId('capability-agentic').locator('svg.lucide-x')).toHaveCount(1)
   })
 
-  test('closed model shows the API-only pricing card + index rank', async ({ page }) => {
-    // Gemini 3.1 Pro: a real, broadly-covered closed model (not #1 post-audit — GPT-5.6 leads).
+  test('closed model shows the API-only pricing card + Elo rank', async ({ page }) => {
+    // Gemini 3.1 Pro: a real, broadly-covered closed model (not #1 — GPT-5.6 leads on Elo).
     await gotoHydrated(page, '/models/gemini-3-1-pro')
-    await expect(page.getByTestId('model-index')).toHaveText('81.4')
-    await expect(page.getByText('Index · rank #30')).toBeVisible()
+    await expect(page.getByTestId('model-index')).toHaveText('2658.0')
+    await expect(page.getByText('Elo · rank #11')).toBeVisible()
     await expect(page.getByTestId('price-in')).toHaveText('$2')
     await expect(page.getByTestId('price-out')).toHaveText('$12')
     // benchmark row: GPQA 94.3; the field best is now Claude Sonnet 5 (96.2)
@@ -45,12 +45,12 @@ test.describe('model detail', () => {
     await gotoHydrated(page, '/models/gemini-3-1-pro')
     await page.getByTestId('compare-this').click()
     // compareB picks the top rank-eligible model on the OTHER side of the open/closed line —
-    // Qwen3.6-27B, the top open model — which isn't the static compare default
+    // GLM-5.2 (Max), the top open model on Elo — which isn't the static compare default
     // pair, so the URL carries an explicit ?m=
-    await expect(page).toHaveURL(/m=gemini-3-1-pro(%2C|,)qwen3-6-27b/)
+    await expect(page).toHaveURL(/m=gemini-3-1-pro(%2C|,)glm-5-2-max/)
     const legend = page.getByTestId('compare-legend')
     await expect(legend).toContainText('Gemini 3.1 Pro')
-    await expect(legend).toContainText('Qwen3.6-27B')
+    await expect(legend).toContainText('GLM-5.2 (Max)')
   })
 
   test('unknown model slug 404s with the designed copy', async ({ page }) => {

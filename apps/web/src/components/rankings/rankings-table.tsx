@@ -12,7 +12,7 @@ import { createColumnHelper, getCoreRowModel, useReactTable } from '@tanstack/re
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
 import { useEffect, useRef, useState } from 'react'
 import { InlineBar } from '#/components/charts/inline-bar'
-import { normPct } from '#/components/charts/scales'
+import { normPct, ratingWindow } from '#/components/charts/scales'
 import { ModelTag } from '#/components/model-tag'
 
 /**
@@ -43,13 +43,17 @@ export function RankingsTable({
 }) {
   const navigate = useNavigate()
   const boundsBySlug = new Map(benchmarks.map((b) => [b.slug, b]))
+  // Elo bars are relative to the rendered field (D21): the rating has no fixed 0–100 domain.
+  const eloWindow = ratingWindow(
+    rows.filter((m) => Object.values(m.bench).some((v) => v != null)).map((m) => m.index),
+  )
   const { key: sortKey, desc } = parseSort(sort)
   const arrow = (key: string) => (sortKey === key ? (desc ? '↓' : '↑') : '')
 
   const benchCols = columns
 
   // Column tracks: rank, model (wide so long names aren't clipped), the open/closed access chip,
-  // params, ctx, index (100px fits the index header at 9.5px mono), then the benchmark columns.
+  // params, ctx, Elo (100px fits the header at 9.5px mono), then the benchmark columns.
   const MODEL_MIN = 240
   const ACCESS_COL = 72
   const FIXED_COLS = 6 // #, model, access, params, ctx, index
@@ -135,7 +139,7 @@ export function RankingsTable({
           {!m.ranked && (
             <span
               className="flex-none rounded border border-border px-1 py-px font-mono text-[8.5px] uppercase text-dim"
-              title="Too few benchmark results to rank — index shown for reference only"
+              title="Too few benchmark results to rank — rating shown for reference only"
             >
               unrated
             </span>
@@ -155,7 +159,10 @@ export function RankingsTable({
           >
             {hasAnyBench ? m.index.toFixed(1) : '—'}
           </span>
-          <InlineBar pct={hasAnyBench ? Math.round(m.index) : 0} className="mt-[3px]" />
+          <InlineBar
+            pct={hasAnyBench ? normPct(m.index, eloWindow.min, eloWindow.max) : 0}
+            className="mt-[3px]"
+          />
         </span>
         {benchCols.map((c) => {
           const bounds = boundsBySlug.get(c.slug)
@@ -193,7 +200,7 @@ export function RankingsTable({
           <HeadBtn id="open" label="Access" />
           <HeadBtn id="params" label="Params" className="text-right" />
           <HeadBtn id="ctx" label="Ctx" className="text-right" />
-          <HeadBtn id="index" label="Index" className="text-right" />
+          <HeadBtn id="index" label="Elo" className="text-right" />
           {benchCols.map((c) => (
             <HeadBtn key={c.slug} id={c.slug} label={c.label} className="text-right" />
           ))}

@@ -9,10 +9,11 @@ test.describe('dashboard overview', () => {
     await expect(cards).toHaveCount(4)
     await expect(cards.nth(0)).toContainText(String(models))
     await expect(cards.nth(0)).toContainText(`${organizations} organizations`)
-    // Open–closed gap is computed on the universal index (arena covers only a sliver), so it's
-    // always a real number, and the leader is the top-ranked open model.
-    await expect(cards.nth(3)).toContainText('idx')
-    await expect(cards.nth(3)).toContainText('Qwen3.6-27B leads open')
+    // Open–closed gap is computed on the universal Elo rating (arena covers only a sliver), so
+    // it's always a real number, and the leader is the top-ranked open model (GLM-5.2 Max under
+    // pairwise Elo — it wins more head-to-heads than the old index's breadth-average favorite).
+    await expect(cards.nth(3)).toContainText('Elo')
+    await expect(cards.nth(3)).toContainText('GLM-5.2 (Max) leads open')
   })
 
   test('scatter plots every priced+ranked model; movers show real lineage gains', async ({
@@ -25,21 +26,19 @@ test.describe('dashboard overview', () => {
     await expect(points.first()).toBeVisible()
     expect(await points.count()).toBeGreaterThan(50)
     const movers = page.getByTestId('movers')
-    // real top mover is a rank-eligible family edge; the old 0-index-config phantoms are gone
-    await expect(movers).toContainText('Gemini 1.0 Pro')
-    await expect(movers).toContainText('+45.9')
+    // real top mover is a rank-eligible family edge; deltas are Elo points (D21), so a large
+    // cross-tier lineage jump (105B succeeding a 2B) posts a four-digit gain
+    await expect(movers).toContainText('Sarvam-105B')
+    await expect(movers).toContainText('+1658.1')
   })
 
-  test('y-axis auto-zooms to the data instead of the fixed 0–100 axis', async ({ page }) => {
+  test('y-axis auto-zooms to the data instead of a fixed axis', async ({ page }) => {
     await gotoHydrated(page, '/')
-    // The old axis was a fixed 0–100 with ticks {20,40,60,80}. Fitted to the priced+ranked index
-    // range, the dead low band is gone: the axis lifts off the floor (min tick ≥ 20 — Claude 1's
-    // low-but-now-ranked 22.7 sets the real floor) while still reaching the frontier (max tick ≥
-    // 80), with round, evenly-spaced interior ticks that frame it.
+    // Fitted to the priced+ranked Elo range (D21): round ticks that reach the ~3000-rated
+    // frontier instead of the retired 0–100 index band.
     const ticks = (await page.getByTestId('y-tick').allTextContents()).map(Number)
     expect(ticks.length).toBeGreaterThanOrEqual(3)
-    expect(Math.min(...ticks)).toBeGreaterThanOrEqual(20)
-    expect(Math.max(...ticks)).toBeGreaterThanOrEqual(80)
+    expect(Math.max(...ticks)).toBeGreaterThanOrEqual(2000)
     for (const t of ticks) expect(t % 5).toBe(0)
   })
 
@@ -70,7 +69,7 @@ test.describe('dashboard overview', () => {
     const tip = page.getByTestId('chart-tip')
     await expect(tip).toBeVisible()
     await expect(tip).toContainText('Gemini 3.1 Pro')
-    await expect(tip).toContainText('index')
+    await expect(tip).toContainText('Elo')
     await page.mouse.move(0, 0)
     await expect(tip).toHaveCount(0)
     // keyboard parity: the same details on focus (dataviz interaction rule)
@@ -78,12 +77,12 @@ test.describe('dashboard overview', () => {
     await expect(page.getByTestId('chart-tip')).toContainText('Gemini 3.1 Pro')
   })
 
-  test('top-ranked rail is ordered by index and quick compare navigates', async ({ page }) => {
+  test('top-ranked rail is ordered by Elo and quick compare navigates', async ({ page }) => {
     await gotoHydrated(page, '/')
     const rail = page.getByTestId('arena-rail')
-    // rail now leads with the #1 overall model by index
+    // rail now leads with the #1 overall model by Elo rating
     await expect(rail).toContainText('GPT-5.6')
-    await expect(rail).toContainText('90.5')
+    await expect(rail).toContainText('3130.4')
     await pickOption(page, 'qc-b', 'Llama 3.1 405B — Meta')
     await page.getByTestId('qc-go').click()
     // quick-compare slot A defaults to the #1 rank-eligible model (GPT-5.6)
@@ -97,8 +96,8 @@ test.describe('dashboard releases + bench tabs', () => {
     await page.getByRole('button', { name: 'Releases' }).click()
     await expect(page).toHaveURL(/\?tab=releases/)
     await expect(page.getByTestId('release-feed')).toBeVisible()
-    // dot color + note + INDEX column present
-    await expect(page.getByTestId('release-feed')).toContainText('INDEX')
+    // dot color + note + ELO column present
+    await expect(page.getByTestId('release-feed')).toContainText('ELO')
     await page.getByRole('button', { name: 'Benchmarks' }).click()
     await expect(page).toHaveURL(/\?tab=bench/)
     // bench-tab is gated to benchmarks with a real field (≥5 models), so it shows a curated
@@ -108,12 +107,12 @@ test.describe('dashboard releases + bench tabs', () => {
     expect(await cards.count()).toBeGreaterThan(20)
   })
 
-  test('open-vs-closed frontier renders index-based bars for both camps', async ({ page }) => {
+  test('open-vs-closed frontier renders Elo-based bars for both camps', async ({ page }) => {
     await gotoHydrated(page, '/?tab=releases')
     const frontier = page.getByTestId('frontier')
-    // regrounded on the universal index, so both camps' leaders always plot
+    // regrounded on the universal Elo rating, so both camps' leaders always plot
     await expect(frontier).toContainText('GPT-5.6')
-    await expect(frontier).toContainText('Qwen3.6-27B')
+    await expect(frontier).toContainText('GLM-5.2 (Max)')
     await expect(page.getByTestId('gap-note')).not.toHaveText('')
   })
 

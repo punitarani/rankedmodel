@@ -3,6 +3,7 @@ import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { BackLink } from '#/components/back-link'
 import { InlineBar } from '#/components/charts/inline-bar'
+import { normPct, ratingWindow } from '#/components/charts/scales'
 import { Sparkline } from '#/components/charts/sparkline'
 import { ModelTag } from '#/components/model-tag'
 import { catalogQueryOptions } from '#/lib/catalog'
@@ -32,6 +33,10 @@ function FamilyRoute() {
   const first = members[0]
   if (!first) throw notFound()
   const bySlug = new Map(members.map((m) => [m.slug, m]))
+  // Elo bars map the FULL catalog's range (D21), so widths stay comparable across families.
+  const eloWindow = ratingWindow(
+    data.models.filter((m) => Object.keys(m.bench).length > 0).map((m) => m.index),
+  )
 
   return (
     <div className="max-w-[820px] animate-fadeup px-6 py-5 pb-12">
@@ -42,11 +47,11 @@ function FamilyRoute() {
       />
       <h1 className="mt-2.5 text-2xl font-semibold tracking-[-0.02em]">{first.family} family</h1>
       <div className="mt-1 text-[13px] text-mut">
-        {members.length} releases · index progression and succession lineage (D9)
+        {members.length} releases · Elo progression and succession lineage (D9)
       </div>
 
       <div className="mt-4 rounded-[10px] border border-border bg-card px-4 py-3.5">
-        <div className="text-[13px] font-semibold">Index progression</div>
+        <div className="text-[13px] font-semibold">Elo progression</div>
         <div data-testid="family-sparkline">
           <Sparkline
             dots={members.map((m, i) => ({
@@ -104,7 +109,10 @@ function FamilyRoute() {
                 <span className="font-mono text-[11.5px] font-semibold">
                   {hasBench ? m.index.toFixed(1) : '—'}
                 </span>
-                <InlineBar pct={hasBench ? Math.round(m.index) : 0} className="mt-[3px] w-[90px]" />
+                <InlineBar
+                  pct={hasBench ? normPct(m.index, eloWindow.min, eloWindow.max) : 0}
+                  className="mt-[3px] w-[90px]"
+                />
               </span>
             </Link>
           )

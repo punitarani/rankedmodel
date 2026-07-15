@@ -53,7 +53,7 @@ function DashboardRoute() {
     },
     {
       label: 'Open–closed gap',
-      value: stats.gapIndex != null ? `${stats.gapIndex} idx` : '—',
+      value: stats.gapIndex != null ? `${stats.gapIndex} Elo` : '—',
       sub: stats.openBest ? `${stats.openBest.name} leads open` : '',
       subColor: 'var(--mut)',
     },

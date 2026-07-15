@@ -178,7 +178,7 @@ Since data is manually curated, the repo *is* the CMS. Every data change is a re
 **Publish flow (`pnpm publish-data`, also run by CI on merge to `main`):**
 
 1. **Validate** — Zod schemas check every file: referential integrity (slugs resolve), enum membership, score ranges vs. benchmark scale, date sanity, duplicate detection. CI fails on any violation → bad data can't ship.
-2. **Derive** — compute `score_normalized` (min–max within benchmark, direction-corrected), category indexes (mean of normalized scores per category, coverage-weighted), `overall_index`, ranks, and 30-day rank deltas (vs. previous published snapshot kept in R2/git tag).
+2. **Derive** — compute the **Frontier Elo** (D21: Bradley-Terry ratings fitted over pairwise benchmark battles — every benchmark two models both report is a head-to-head; the fit must converge or derive fails), category indexes (mean of min-max-normalized scores per category — capability profile only), the D20 rank-eligibility gate, ranks, and lineage movers.
 3. **Seed D1** — generate idempotent upsert SQL, apply via `wrangler d1 execute` (staging first, prod on approval). Schema changes go through `drizzle-kit generate` → `wrangler d1 migrations apply`, always before seeding.
 4. **Snapshot** — build the catalog JSON (models × headline fields × headline scores × facet dictionaries), gzip, write to KV as `catalog:v{N}`, then flip `meta.data_version = N`. Old versions retained for rollback.
 5. **Invalidate** — nothing to purge: all caches are keyed by data version (see §9). New version → new keys → instant global consistency.

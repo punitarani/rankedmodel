@@ -4,7 +4,6 @@ import {
   categoryFractions,
   computeMovers,
   normalizeScore,
-  overallIndex,
   RADAR_AXES,
   radarVector,
   rankByIndex,
@@ -36,17 +35,10 @@ describe('normalizeScore', () => {
   })
 })
 
-describe('overallIndex', () => {
-  it('averages available benchmarks only (missing excluded, not penalized)', () => {
-    // mmlu 70 → 0.5, hle 25 → 0.25; arena/gpqa missing → mean 0.375 → 37.5
-    expect(overallIndex({ mmlu: 70, hle: 25 }, ALL)).toBe(37.5)
-  })
+describe('toIndexScale', () => {
   it('rounds to 0.1 exactly like the design (round(f×1000)/10)', () => {
     expect(toIndexScale(0.87654)).toBe(87.7)
     expect(toIndexScale(0.87644)).toBe(87.6)
-  })
-  it('returns 0 for a model with no scores', () => {
-    expect(overallIndex({}, ALL)).toBe(0)
   })
 })
 

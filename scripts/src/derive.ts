@@ -3,26 +3,30 @@ import { join } from 'node:path'
 import {
   type BenchmarkBounds,
   type BenchmarkCategory,
+  type BenchScores,
+  buildBattles,
   categoryFractions,
   computeMovers,
+  fitBradleyTerry,
   isRankEligible,
   type Mover,
-  overallIndex,
   pickHeadlineScore,
   type ResultSource,
   rankByIndex,
+  roundRating,
   toIndexScale,
 } from '@rankedmodel/shared'
 import { loadDataset } from './lib/load'
 
 /**
- * Publish-time derivation (C1): validate must have passed first. Emits
+ * Publish-time derivation (C1/D21): validate must have passed first. Emits
  * data/derived/scores.json — committed, deterministic (no wall-clock timestamps;
  * `computedFor` is the dataset's as-of date), reviewable as a diff.
  */
 
 export interface DerivedModelScore {
   slug: string
+  /** Frontier Elo rating (D21): Bradley-Terry over pairwise benchmark battles, 1 decimal. */
   overallIndex: number
   /** Overall rank among rank-eligible models (D20); null when the model is unrated. */
   rankOverall: number | null
@@ -75,12 +79,25 @@ export async function deriveScores(root: string): Promise<DerivedScores> {
     headline.set(modelSlug, scores)
   }
 
+  // Frontier Elo (D21): pairwise battles on shared benchmarks → Bradley-Terry fit.
+  const headlineByModel = new Map<string, BenchScores>(
+    ds.models.map((m) => [m.slug, headline.get(m.slug) ?? {}]),
+  )
+  const battles = buildBattles(
+    headlineByModel,
+    ds.benchmarks.map((b) => b.slug),
+  )
+  const fit = fitBradleyTerry([...headlineByModel.keys()], battles)
+  if (!fit.converged) {
+    throw new Error(`Bradley-Terry fit did not converge within ${fit.iterations} iterations`)
+  }
+
   const indexed = ds.models.map((m) => {
     const scores = headline.get(m.slug) ?? {}
     return {
       model: m,
       scores,
-      index: overallIndex(scores, bounds),
+      index: roundRating(fit.ratings.get(m.slug) ?? 0),
       ranked: isRankEligible(scores, bounds),
     }
   })

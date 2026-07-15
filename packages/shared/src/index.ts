@@ -1,3 +1,4 @@
+export * from './bradley-terry'
 export * from './enums'
 export * from './format'
 export * from './hardware-fit'

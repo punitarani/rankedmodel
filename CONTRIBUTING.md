@@ -29,11 +29,13 @@ pull requests — provenance rules below.
    ```sh
    bun run validate-data        # referential integrity, bounds, provenance, placement
    bun run derive               # refresh data/derived/scores.json (commit the diff!)
-   bun run test                 # golden tests catch unintended index shifts
+   bun run test                 # golden tests catch unintended rating shifts
    ```
 
 The derived-scores diff in your PR shows exactly how rankings move — that diff **is**
-the review.
+the review. Note the Frontier Elo is **jointly fitted** (D21): adding results nudges
+every model's rating slightly, so a broad-but-tiny `scores.json` diff is expected;
+review the rank changes and the sign/size of the shifts, not the sheer line count.
 
 ## Add a benchmark
 

@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test'
 import { datasetCounts, gotoHydrated, pickOption } from './helpers'
 
 test.describe('model explorer', () => {
-  test('default grid shows every real model, sorted by index', async ({ page }) => {
+  test('default grid shows every real model, sorted by Elo', async ({ page }) => {
     const { models } = datasetCounts()
     await gotoHydrated(page, '/models')
     await expect(page.getByTestId('explorer-count')).toHaveText(`${models} models`)
@@ -34,8 +34,8 @@ test.describe('model explorer', () => {
     // real corpus: 19 open, <15B-param models with the reasoning capability
     await expect(page.getByTestId('explorer-count')).toHaveText('19 models')
     await expect(page.getByTestId('cap-reason')).toHaveAttribute('aria-pressed', 'true')
-    // default sort is by index (rank-eligible first) — Qwen3-14B (Thinking) leads this facet combo
-    await expect(page.getByTestId('explorer-card').first()).toContainText('Qwen3-14B (Thinking)')
+    // default sort is by Elo (rank-eligible first) — Falcon-H1R 7B leads this facet combo
+    await expect(page.getByTestId('explorer-card').first()).toContainText('Falcon-H1R 7B')
   })
 
   test('cheapest-API sort puts Ministral 3B first ($0.04/M out)', async ({ page }) => {

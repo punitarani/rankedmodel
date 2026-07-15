@@ -5,8 +5,7 @@
 
 /** Quality-vs-price scatter (viewBox 720×320): x = log₁₀(output $/Mtok) over [0.06, 200].
  *  `top` carries a margin (not the prototype's 12) so the frontier cluster and its direct
- *  labels clear the card edge — the index caps at 100, so headroom must come from the plot
- *  band, not a taller window (D22). Bottom stays anchored, so only the labelled top gains air. */
+ *  labels clear the card edge (D22). Bottom stays anchored, so only the labelled top gains air. */
 export const SCATTER = {
   viewBox: '0 0 720 320',
   xMin: 0.06,
@@ -24,9 +23,13 @@ export interface ScatterYWindow {
   yTicks: number[]
 }
 
-/** The quality-vs-price scatter's y-axis is the overall Index (0–100, universal), not Arena
- *  Elo — arena covers only a sliver of the field, whereas every ranked model has an index. */
-export const INDEX_Y_WINDOW: ScatterYWindow = { yMin: 0, yMax: 100, yTicks: [20, 40, 60, 80] }
+/** Fallback window when nothing is plotted (D21: the y-axis is the Frontier Elo rating,
+ *  not Arena Elo — arena covers only a sliver of the field; every ranked model has a rating). */
+export const INDEX_Y_WINDOW: ScatterYWindow = {
+  yMin: 0,
+  yMax: 3200,
+  yTicks: [800, 1600, 2400],
+}
 
 export function scatterX(outputPrice: number): number {
   const { xMin, xMax, left, right } = SCATTER
@@ -53,15 +56,15 @@ function niceStep(span: number, count: number): number {
 }
 
 /**
- * Auto-fit the index y-window to the data it must show (D22): pad the observed [min,max]
- * slightly, clamp to the index's [0,100] domain, and lay down ~6 round interior ticks. Zooming
- * to the live range fills the plot instead of stranding every point in the upper band of a fixed
- * 0–100 axis — and because it is derived from whatever points are passed, it re-fits when the
- * open/closed legend filters the set. A ~6-interval target keeps a gridline near the frontier
- * (e.g. a 90 line for a wide range) so the top cluster stays framed rather than floating above the
- * highest tick. Falls back to the full 0–100 window when nothing is plotted.
+ * Auto-fit the rating y-window to the data it must show (D22/D21): pad the observed
+ * [min,max] slightly and lay down ~6 round interior ticks. The Frontier Elo rating has no
+ * fixed domain (frontier ≈ 3100, legacy models negative), so the window is purely
+ * data-driven — and because it is derived from whatever points are passed, it re-fits when
+ * the open/closed legend filters the set. A ~6-interval target keeps a gridline near the
+ * frontier so the top cluster stays framed rather than floating above the highest tick.
+ * Falls back to INDEX_Y_WINDOW when nothing is plotted.
  */
-export function fitYWindow(values: number[], domainMin = 0, domainMax = 100): ScatterYWindow {
+export function fitYWindow(values: number[]): ScatterYWindow {
   if (values.length === 0) return INDEX_Y_WINDOW
   let min = Math.min(...values)
   let max = Math.max(...values)
@@ -70,8 +73,8 @@ export function fitYWindow(values: number[], domainMin = 0, domainMax = 100): Sc
     max += 1
   }
   const pad = Math.max((max - min) * 0.06, 1)
-  const lo = Math.max(domainMin, Math.floor(min - pad))
-  const hi = Math.min(domainMax, Math.ceil(max + pad))
+  const lo = Math.floor(min - pad)
+  const hi = Math.ceil(max + pad)
   if (hi <= lo) return { yMin: lo, yMax: lo + 1, yTicks: [] }
   const step = niceStep(hi - lo, 6)
   const ticks: number[] = []
@@ -214,6 +217,22 @@ export function cadenceHeight(count: number, maxCount: number): number {
 export function normPct(value: number | null | undefined, min: number, max: number): number {
   if (value == null) return 0
   return Math.round(Math.max(0, Math.min(1, (value - min) / (max - min))) * 100)
+}
+
+/**
+ * Relative bar window over the ratings actually rendered (D21): the Frontier Elo rating
+ * has no fixed 0–100 domain, so index bars map the visible field's [min,max] onto 0–100%
+ * via normPct. Degenerate/empty inputs get a padded window so widths never divide by zero.
+ */
+export function ratingWindow(values: number[]): { min: number; max: number } {
+  if (values.length === 0) return { min: 0, max: 1 }
+  let min = Math.min(...values)
+  let max = Math.max(...values)
+  if (min === max) {
+    min -= 1
+    max += 1
+  }
+  return { min, max }
 }
 
 /** Histogram bins over the curated bounds (benchmark detail distribution). */

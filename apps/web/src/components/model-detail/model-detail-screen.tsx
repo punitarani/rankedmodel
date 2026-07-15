@@ -186,9 +186,7 @@ export function ModelDetailScreen({
               {Object.keys(model.bench).length > 0 ? model.index.toFixed(1) : '—'}
             </div>
             <MicroLabel>
-              {model.ranked && model.rank != null
-                ? `Index · rank #${model.rank}`
-                : 'Index · unrated'}
+              {model.ranked && model.rank != null ? `Elo · rank #${model.rank}` : 'Elo · unrated'}
             </MicroLabel>
           </div>
           <button
@@ -330,7 +328,7 @@ export function ModelDetailScreen({
           {/* family */}
           <Card className="px-4 py-3.5">
             <div className="text-[13px] font-semibold">{model.family} family</div>
-            <div className="mt-px text-[11px] text-mut">Index progression across releases</div>
+            <div className="mt-px text-[11px] text-mut">Elo progression across releases</div>
             <Sparkline
               dots={siblings.map((s) => ({
                 value: s.index,

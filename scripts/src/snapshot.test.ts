@@ -17,15 +17,15 @@ describe('catalog snapshot (C3 golden shape)', () => {
     expect(snap.gpus).toHaveLength(12)
   })
 
-  it('carries precomputed index/rank and design-parity fields for a real, broadly-covered model', async () => {
+  it('carries precomputed rating/rank and design-parity fields for a real, broadly-covered model', async () => {
     const snap = await buildSnapshot(DATA, 1)
     const llama = snap.models.find((m) => m.slug === 'llama-3-1-405b')
     expect(llama).toMatchObject({
       org: 'Meta',
       family: 'Llama 3.1',
       open: true,
-      index: 82.2,
-      rank: 26,
+      index: 1302.2, // Frontier Elo rating (D21)
+      rank: 166,
       ranked: true,
       ctxK: 128,
     })

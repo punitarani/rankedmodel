@@ -1,7 +1,9 @@
 import type { BenchmarkCategory } from './enums'
 
 /**
- * Scoring engine (contract C1) — reproduces the design prototype's math exactly.
+ * Scoring support engine (contract C1): min-max normalization powers the category
+ * radar, per-benchmark bars, and the D20 coverage gate. The HEADLINE index is no
+ * longer computed here — it is the Frontier Elo rating from ./bradley-terry.ts (D21).
  * Golden-tested against the curated dataset in scripts/src/derive.test.ts.
  */
 
@@ -28,19 +30,6 @@ export function toIndexScale(fraction: number | null): number | null {
 
 function mean(values: number[]): number | null {
   return values.length === 0 ? null : values.reduce((a, b) => a + b, 0) / values.length
-}
-
-/**
- * Overall index: mean of normalized scores over the benchmarks the model has, × 100.
- * Missing scores are excluded, not penalized; a model with no scores gets 0 (design).
- */
-export function overallIndex(scores: BenchScores, benchmarks: BenchmarkBounds[]): number {
-  const norms: number[] = []
-  for (const b of benchmarks) {
-    const n = normalizeScore(b, scores[b.slug])
-    if (n != null) norms.push(n)
-  }
-  return toIndexScale(mean(norms)) ?? 0
 }
 
 /**
@@ -132,7 +121,7 @@ export interface Mover {
   name: string
   prevSlug: string
   prevName: string
-  /** Index-scale gain, rounded to 0.1 (display shows `+Δ`). */
+  /** Rating gain in Elo points, rounded to 0.1 (display shows `+Δ`). */
   delta: number
 }
 

@@ -20,7 +20,7 @@ import { RankingsTable } from './rankings-table'
 
 /** Fixed (non-benchmark) sort keys; any other key is looked up in the live benchmark catalog. */
 const FIXED_SORT_LABELS: Record<string, string> = {
-  index: 'Index',
+  index: 'Elo',
   name: 'name',
   open: 'access',
   params: 'parameters',
@@ -155,9 +155,10 @@ export function RankingsScreen({
         </div>
       )}
       <div className="mt-2.5 text-[11px] text-dim">
-        Index = normalized mean across a model's available benchmarks (0–100). Missing scores are
-        excluded, not penalized; models with too few results to compare fairly are shown{' '}
-        <span className="font-mono">unrated</span> and sorted last.
+        Elo = Bradley-Terry rating over pairwise benchmark battles: every benchmark two models both
+        report is a head-to-head, and 400 points ≈ 10:1 expected win odds. Models with too few
+        results to compare fairly are shown <span className="font-mono">unrated</span> and sorted
+        last.
       </div>
     </div>
   )

@@ -9,7 +9,7 @@ export const Route = createFileRoute('/methodology')({
       {
         name: 'description',
         content:
-          'How the RankedModel Index is computed, where every number comes from, and how hardware-fit verdicts are graded.',
+          'How the RankedModel Elo rating is computed, where every number comes from, and how hardware-fit verdicts are graded.',
       },
     ],
   }),
@@ -37,37 +37,41 @@ function MethodologyRoute() {
         Credibility comes from showing the math. Everything below is exactly what the code does.
       </div>
 
-      <H2>The Index</H2>
+      <H2>The Elo rating</H2>
       <P>
-        Every benchmark carries curated normalization bounds — a floor (≈ a weak/random baseline)
-        and a ceiling (≈ current near-SOTA) chosen per evaluation, so that being measured on a hard
-        benchmark isn't a penalty: a frontier score on HLE (real ceiling ≈ 48%) normalizes near the
-        top, not near zero. A score is min-max normalized against those bounds and clamped to [0,
-        1]. A model's Index is the plain mean of its normalized scores × 100, rounded to 0.1.
-        Missing benchmarks are excluded, not penalized — a model is judged only on what it has been
-        measured on.
+        Models are ranked by direct comparison, not by averaging incomparable score scales. For
+        every benchmark, each pair of models that <em>both</em> report a headline score becomes one
+        head-to-head battle: the higher raw score wins, an exactly equal score is a draw. Because
+        both scores come from the same benchmark, no cross-benchmark normalization is needed — the
+        comparison is apples to apples by construction. A Bradley-Terry model (the same statistical
+        machinery behind LMArena's leaderboard) is then fitted over all battles, propagating
+        strength through shared opponents, so two models are comparable even when they were never
+        measured on the same benchmark.
       </P>
-      <Formula>{`norm(b, v) = clamp((v − b.min) / (b.max − b.min), 0, 1)
-index(m)   = round(mean(norm over available benchmarks) × 1000) / 10
+      <Formula>{`P(A beats B) = s(A) / (s(A) + s(B))     — Bradley-Terry win model
+rating       = 400·log10(s) + 1000       — Elo scale: +400 ⇒ 10:1 odds
 
-worked example — a model with MMLU 70 and HLE 34, nothing else:
-  MMLU: (70 − 40) / (97 − 40) = 0.53
-  HLE:  (34 − 0) / (48 − 0)   = 0.71
-  index = mean(0.53, 0.71) × 100 = 61.8`}</Formula>
+battles: every benchmark two models both report = 1 head-to-head
+fit:     maximum likelihood (MM algorithm), ties count as half-wins
+anchor:  every model gets one pseudo-draw vs a fixed 1000-rated anchor,
+         so undefeated models stay finite and the scale stays pinned`}</Formula>
       <P>
-        Curated bounds — rather than the observed min/max — keep the Index stable: adding a weak
-        model to the catalog doesn't reshuffle everyone else's number. Category indexes use the same
-        mean restricted to one category; the compare radar's six axes are those category values
-        (vision is tracked but not an axis).
+        The rating is jointly fitted, so adding results moves every number slightly — ratings are
+        published to 0.1 and each release is a reviewable diff. A 400-point gap means 10:1 expected
+        win odds on a shared benchmark; frontier models rate near 3000 while early-generation models
+        can rate below zero. The one Elo-unit benchmark in the catalog (Arena) participates like any
+        other: only the <em>ordering</em> of two models' scores on it matters. Category indexes and
+        the compare radar still use per-category normalized means against curated bounds — they are
+        a capability profile, not a ranking.
       </P>
 
       <H2>Ranking eligibility</H2>
       <P>
-        The Index is computed for every model, but a model earns an overall <em>rank</em> only once
+        A rating is computed for every model, but a model earns an overall <em>rank</em> only once
         it has been evaluated on enough of the field to compare fairly — at least three benchmarks
         spanning at least two categories. Otherwise a model with a single cherry-picked high score
         would outrank a broadly-benchmarked frontier model. Below that floor a model is shown{' '}
-        <span className="font-mono text-[11px]">unrated</span> (its Index still displayed for
+        <span className="font-mono text-[11px]">unrated</span> (its rating still displayed for
         reference) and sorted after every ranked model, never erased.
       </P>
 
@@ -88,7 +92,7 @@ worked example — a model with MMLU 70 and HLE 34, nothing else:
       <P>
         Version lineage links each model to its nearest strictly-older family member; same-day
         releases are size variants, not successions, and have no predecessor. “Biggest movers” are
-        the largest positive Index gains across those lineage edges.
+        the largest positive Elo gains across those lineage edges.
       </P>
 
       <H2>Hardware fit</H2>

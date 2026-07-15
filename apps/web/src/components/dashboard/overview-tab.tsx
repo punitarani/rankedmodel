@@ -1,7 +1,7 @@
 import { type CatalogSnapshot, fmtDate } from '@rankedmodel/shared'
 import { Link, useNavigate } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
-import { fitYWindow } from '#/components/charts/scales'
+import { fitYWindow, normPct, ratingWindow } from '#/components/charts/scales'
 import { QualityPriceScatter } from '#/components/charts/scatter'
 import { ModelTag } from '#/components/model-tag'
 import { SearchSelect } from '#/components/search-select'
@@ -17,6 +17,9 @@ import {
 export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
   const navigate = useNavigate()
   const ranked = rankedByRank(catalog)
+  // Rail bars map the full ranked field's Elo range onto 0–100% (D21) so the frontier
+  // renders near-full bars, mirroring the old absolute-index look.
+  const eloWindow = ratingWindow(ranked.map((m) => m.index))
   const defaultOpen = ranked.find((m) => m.open)
   const [qcA, setQcA] = useState(ranked[0]?.slug ?? '')
   const [qcB, setQcB] = useState(defaultOpen?.slug ?? ranked[1]?.slug ?? '')
@@ -58,9 +61,7 @@ export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
         <div className="rounded-[10px] border border-border bg-card p-4">
           <div className="flex flex-wrap items-baseline gap-2.5">
             <div className="text-[13px] font-semibold">Quality vs. price</div>
-            <div className="text-[11px] text-mut">
-              Overall index against output price, log scale
-            </div>
+            <div className="text-[11px] text-mut">Frontier Elo against output price, log scale</div>
             <div className="ml-auto flex gap-1.5 text-[11px]">
               <LegendToggle
                 label="Open weights"
@@ -143,7 +144,7 @@ export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
                   <div
                     className="h-full rounded-sm"
                     style={{
-                      width: `${Math.round(m.index)}%`,
+                      width: `${normPct(m.index, eloWindow.min, eloWindow.max)}%`,
                       background: m.open ? 'var(--open)' : 'var(--closed)',
                     }}
                   />
@@ -155,7 +156,7 @@ export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
 
         <div className="rounded-[10px] border border-border bg-card px-4 py-3.5">
           <div className="text-[13px] font-semibold">Biggest movers</div>
-          <div className="mt-px text-[11px] text-mut">Index gain over previous family release</div>
+          <div className="mt-px text-[11px] text-mut">Elo gain over previous family release</div>
           <div className="mt-[11px] flex flex-col gap-[9px]" data-testid="movers">
             {dashboardMovers(catalog).map((mv) => (
               <Link

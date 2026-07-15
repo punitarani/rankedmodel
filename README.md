@@ -31,8 +31,9 @@ functions. D1 (Drizzle) is the source of truth; each publish writes an **immutab
 versioned catalog snapshot** to KV that ships to the client once and powers all
 list/filter/rank interactions through pure shared selectors. Scores are computed at
 publish time (`validate → derive → seed → snapshot → version bump`); the version bump
-*is* cache invalidation. The index formula, hardware-fit thresholds and snapshot schema
-are golden-tested contracts (`packages/shared`).
+*is* cache invalidation. The rating formula (Frontier Elo — Bradley-Terry over pairwise
+benchmark battles, D21), hardware-fit thresholds and snapshot schema are golden-tested
+contracts (`packages/shared`).
 
 ## Development
 

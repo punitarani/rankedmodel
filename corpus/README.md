@@ -13,7 +13,9 @@ corpus/
   models/<anyGrouping>/<name>.json   one file per model (grouping is free; the generator
                                      derives orgSlug and writes to data/models/{orgSlug}/)
   benchmarks.json                    the benchmark catalog: slug, name, category (one of the
-                                     7), unit, description, normMin/normMax (curated bounds)
+                                     7), unit, description, normMin/normMax (curated bounds —
+                                     power the category radar/bars only; the headline ranking
+                                     is the pairwise Frontier Elo, D21)
   organizations.json                 org metadata: name, type, country?, url?, description?
   hardware.json                      GPU/accelerator profiles (carried over; stable)
   meta.json                          { asOf }  — asOfIso is derived at generation

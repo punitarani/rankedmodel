@@ -4,6 +4,7 @@ import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { BackLink } from '#/components/back-link'
 import { CadenceBars } from '#/components/charts/cadence-bars'
 import { InlineBar } from '#/components/charts/inline-bar'
+import { normPct, ratingWindow } from '#/components/charts/scales'
 import { ModelTag } from '#/components/model-tag'
 import { catalogQueryOptions } from '#/lib/catalog'
 
@@ -32,6 +33,10 @@ function OrgRoute() {
   const first = models[0]
   if (!first) throw notFound()
   const families = [...new Set(models.map((m) => m.family))]
+  // Elo bars map the FULL catalog's range (D21), so widths stay comparable across org pages.
+  const eloWindow = ratingWindow(
+    data.models.filter((m) => Object.keys(m.bench).length > 0).map((m) => m.index),
+  )
 
   const counts = new Map<string, number>()
   for (const m of models) {
@@ -71,7 +76,7 @@ function OrgRoute() {
             <span>Model</span>
             <span className="text-right">Params</span>
             <span className="text-right">Ctx</span>
-            <span className="text-right">Index</span>
+            <span className="text-right">Elo</span>
           </div>
           {models.map((m) => (
             <Link
@@ -97,7 +102,11 @@ function OrgRoute() {
                   {Object.keys(m.bench).length > 0 ? m.index.toFixed(1) : '—'}
                 </span>
                 <InlineBar
-                  pct={Object.keys(m.bench).length > 0 ? Math.round(m.index) : 0}
+                  pct={
+                    Object.keys(m.bench).length > 0
+                      ? normPct(m.index, eloWindow.min, eloWindow.max)
+                      : 0
+                  }
                   className="mt-[3px]"
                 />
               </span>

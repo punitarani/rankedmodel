@@ -10,6 +10,7 @@ import {
   radarAxisMeta,
   radarPolygonPoints,
   radarRings,
+  ratingWindow,
   SCATTER,
   scatterX,
   scatterY,
@@ -68,11 +69,15 @@ describe('fitYWindow — auto-zoom the index axis (D22)', () => {
       expect(y).toBeLessThanOrEqual(296) // SCATTER.bottom
     }
   })
-  it('clamps to the 0–100 index domain near the ceiling', () => {
-    const w = fitYWindow([88, 99.5])
-    expect(w.yMax).toBeLessThanOrEqual(100)
-    expect(w.yMin).toBeGreaterThanOrEqual(0)
-    expect(w.yMax).toBeGreaterThanOrEqual(99.5)
+  it('spans Elo-scale ratings — no clamp to the retired 0–100 index domain (D21)', () => {
+    const w = fitYWindow([905.2, 2661.8, 3103.6])
+    expect(w.yMin).toBeLessThanOrEqual(905.2)
+    expect(w.yMax).toBeGreaterThanOrEqual(3103.6)
+    expect(w.yTicks.length).toBeGreaterThan(3)
+    for (const t of w.yTicks) {
+      expect(t).toBeGreaterThan(w.yMin)
+      expect(t).toBeLessThan(w.yMax)
+    }
   })
   it('handles a single point without collapsing the axis', () => {
     const w = fitYWindow([70])
@@ -191,6 +196,23 @@ describe('bars', () => {
     expect(normPct(70, 40, 100)).toBe(50)
     expect(normPct(10, 40, 100)).toBe(0)
     expect(normPct(null, 40, 100)).toBe(0)
+  })
+
+  it('ratingWindow spans the rendered Elo ratings for relative bars (D21)', () => {
+    expect(ratingWindow([-148.2, 1000, 3103.6])).toEqual({ min: -148.2, max: 3103.6 })
+  })
+  it('ratingWindow pads a degenerate single-value set and survives empty input', () => {
+    const single = ratingWindow([1000])
+    expect(single.min).toBeLessThan(1000)
+    expect(single.max).toBeGreaterThan(1000)
+    const empty = ratingWindow([])
+    expect(empty.max).toBeGreaterThan(empty.min)
+  })
+  it('ratingWindow + normPct: window ends map to 0/100, outliers clamp', () => {
+    const w = ratingWindow([500, 3000])
+    expect(normPct(3000, w.min, w.max)).toBe(100)
+    expect(normPct(500, w.min, w.max)).toBe(0)
+    expect(normPct(-2000, w.min, w.max)).toBe(0)
   })
 })
 

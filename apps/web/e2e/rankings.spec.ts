@@ -2,24 +2,24 @@ import { expect, test } from '@playwright/test'
 import { datasetCounts, gotoHydrated, pickOption } from './helpers'
 
 test.describe('rankings', () => {
-  test('default view: rank-eligible rows sorted by index, GPT-5.6 first', async ({ page }) => {
+  test('default view: rank-eligible rows sorted by Elo, GPT-5.6 first', async ({ page }) => {
     const { models } = datasetCounts()
     await gotoHydrated(page, '/rankings')
     await expect(page.getByTestId('rankings-meta')).toContainText(
-      `${models} models · sorted by Index`,
+      `${models} models · sorted by Elo`,
     )
     // the coverage gate (D20) keeps single-benchmark curiosities (Doubao) out of the top; the
-    // #1 row is the broadly-benchmarked frontier leader
+    // #1 row is the broadly-benchmarked frontier leader (Frontier Elo, D21)
     const first = page.getByTestId('ranking-row').first()
     await expect(first).toContainText('GPT-5.6')
-    await expect(first).toContainText('90.5')
+    await expect(first).toContainText('3130.4')
   })
 
   test('column sort click mutates URL and reorders rows', async ({ page }) => {
     await gotoHydrated(page, '/rankings')
     await page.getByTestId('sort-gpqa').click()
     await expect(page).toHaveURL(/sort=-gpqa/)
-    // GPQA Diamond leader is Claude Sonnet 5 (96.2), displacing the index leader
+    // GPQA Diamond leader is Claude Sonnet 5 (96.2), displacing the Elo leader
     await expect(page.getByTestId('ranking-row').first()).toContainText('Claude Sonnet 5')
     // second click flips to ascending
     await page.getByTestId('sort-gpqa').click()

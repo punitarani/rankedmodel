@@ -67,7 +67,8 @@ export const snapshotModelSchema = z.object({
   isBestConfig: z.boolean(),
   links: modelLinksSchema,
   note: z.string(),
-  // publish-time derived (C1)
+  // publish-time derived (C1/D21)
+  /** Frontier Elo rating (D21): Bradley-Terry over pairwise benchmark battles; can be negative. */
   index: z.number(),
   /** Overall rank among rank-eligible models (D20); null when the model is unrated. */
   rank: z.number().int().positive().nullable(),

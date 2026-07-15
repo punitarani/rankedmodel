@@ -1,11 +1,14 @@
 import { type CatalogSnapshot, fmtDate } from '@rankedmodel/shared'
 import { Link } from '@tanstack/react-router'
 import { CadenceBars } from '#/components/charts/cadence-bars'
-import { dashboardStats } from './dashboard-data'
+import { normPct, ratingWindow } from '#/components/charts/scales'
+import { dashboardStats, rankedByRank } from './dashboard-data'
 
 /** Design's Releases variant: month-grouped feed + cadence + open-vs-closed frontier. */
 export function ReleasesTab({ catalog }: { catalog: CatalogSnapshot }) {
   const stats = dashboardStats(catalog)
+  // Frontier bars map the ranked field's Elo range onto 0–100% (D21).
+  const eloWindow = ratingWindow(rankedByRank(catalog).map((m) => m.index))
 
   // month-grouped feed: 22 most recent (design)
   const feed: { month: string; items: typeof catalog.models }[] = []
@@ -50,8 +53,8 @@ export function ReleasesTab({ catalog }: { catalog: CatalogSnapshot }) {
   const gapNote =
     stats.gapIndex != null
       ? stats.gapIndex <= 0
-        ? `The open frontier (${stats.openBest?.name}) now leads the closed frontier on the overall index.`
-        : `The open frontier trails by ${stats.gapIndex} index points — the gap between the best open and best closed model has narrowed to a few points.`
+        ? `The open frontier (${stats.openBest?.name}) now leads the closed frontier on the overall rating.`
+        : `The open frontier trails by ${stats.gapIndex} Elo points — the gap between the best open and best closed model.`
       : ''
 
   return (
@@ -87,7 +90,7 @@ export function ReleasesTab({ catalog }: { catalog: CatalogSnapshot }) {
                 </span>
                 <span className="ml-auto flex-none text-right">
                   <span className="block font-mono text-[11.5px]">{m.index.toFixed(1)}</span>
-                  <span className="block font-mono text-[9.5px] text-dim">INDEX</span>
+                  <span className="block font-mono text-[9.5px] text-dim">ELO</span>
                 </span>
               </Link>
             ))}
@@ -104,7 +107,7 @@ export function ReleasesTab({ catalog }: { catalog: CatalogSnapshot }) {
         </div>
         <div className="rounded-[10px] border border-border bg-card px-4 py-3.5">
           <div className="text-[13px] font-semibold">Open vs closed frontier</div>
-          <div className="mt-px text-[11px] text-mut">Best overall index by camp</div>
+          <div className="mt-px text-[11px] text-mut">Best overall Elo by camp</div>
           <div className="mt-3 flex flex-col gap-2.5" data-testid="frontier">
             {frontier.map((f) => (
               <div key={f.label}>
@@ -117,7 +120,10 @@ export function ReleasesTab({ catalog }: { catalog: CatalogSnapshot }) {
                 <div className="mt-[5px] h-[5px] overflow-hidden rounded-[3px] bg-bar">
                   <div
                     className="h-full"
-                    style={{ width: `${Math.round(f.m?.index ?? 0)}%`, background: f.color }}
+                    style={{
+                      width: `${normPct(f.m?.index, eloWindow.min, eloWindow.max)}%`,
+                      background: f.color,
+                    }}
                   />
                 </div>
               </div>

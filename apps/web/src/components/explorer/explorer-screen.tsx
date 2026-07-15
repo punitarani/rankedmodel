@@ -16,6 +16,7 @@ import { Link } from '@tanstack/react-router'
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { InlineBar } from '#/components/charts/inline-bar'
+import { normPct, ratingWindow } from '#/components/charts/scales'
 import { FilterSelect } from '#/components/filter-select'
 import { ModelTag } from '#/components/model-tag'
 import { SearchSelect } from '#/components/search-select'
@@ -141,6 +142,11 @@ export function ExplorerScreen({
     </div>
   )
 
+  // Elo bars are relative to the rendered field (D21): the rating has no fixed 0–100 domain.
+  const eloWindow = ratingWindow(
+    rows.filter((m) => Object.keys(m.bench).length > 0).map((m) => m.index),
+  )
+
   const renderCard = (m: SnapshotModel) => (
     <Link
       key={m.slug}
@@ -165,7 +171,7 @@ export function ExplorerScreen({
       </div>
       <div className="mt-0.5 flex items-center gap-2">
         <InlineBar
-          pct={Object.keys(m.bench).length > 0 ? Math.round(m.index) : 0}
+          pct={Object.keys(m.bench).length > 0 ? normPct(m.index, eloWindow.min, eloWindow.max) : 0}
           height={4}
           className="flex-1"
         />
@@ -319,7 +325,7 @@ export function ExplorerScreen({
               value={search.sort}
               onValueChange={(sort) => navigateSearch({ sort: sort as ExplorerSort })}
               options={[
-                { value: 'index', label: 'Index score' },
+                { value: 'index', label: 'Elo rating' },
                 { value: 'date', label: 'Newest first' },
                 { value: 'params', label: 'Largest first' },
                 { value: 'cheap', label: 'Cheapest API' },

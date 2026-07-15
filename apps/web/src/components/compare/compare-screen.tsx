@@ -58,7 +58,7 @@ const SPEC_DEFS: SpecDef[] = [
     kind: 'min',
   },
   {
-    label: 'Index score',
+    label: 'Elo rating',
     get: (m) => m.index.toFixed(1),
     num: (m) => m.index,
     kind: 'max',

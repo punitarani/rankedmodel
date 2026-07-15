@@ -7,7 +7,7 @@ export interface ScatterPoint {
   slug: string
   name: string
   outputPrice: number
-  /** Overall Index (0–100) — the universal quality signal on the y-axis. */
+  /** Frontier Elo rating (D21) — the universal quality signal on the y-axis. */
   index: number
   open: boolean
   labeled?: boolean
@@ -45,7 +45,7 @@ export function QualityPriceScatter({
           className="mr-1.5 inline-block size-[7px] rounded-full"
           style={{ background: p.open ? 'var(--open)' : 'var(--closed)' }}
         />
-        index {p.index.toFixed(1)} · ${p.outputPrice}/M out
+        Elo {p.index.toFixed(1)} · ${p.outputPrice}/M out
       </div>
     </>
   )
@@ -146,7 +146,7 @@ export function QualityPriceScatter({
         ))}
         {positions.map(({ p, x, y }) => {
           const active = hovered === p.slug
-          const label = `${p.name} — index ${p.index.toFixed(1)} · $${p.outputPrice}/M out`
+          const label = `${p.name} — Elo ${p.index.toFixed(1)} · $${p.outputPrice}/M out`
           const dotProps = {
             cx: x.toFixed(1),
             cy: y.toFixed(1),
