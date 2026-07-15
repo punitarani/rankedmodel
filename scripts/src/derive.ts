@@ -8,6 +8,7 @@ import {
   isRankEligible,
   type Mover,
   overallIndex,
+  pickHeadlineScore,
   type ResultSource,
   rankByIndex,
   toIndexScale,
@@ -19,15 +20,6 @@ import { loadDataset } from './lib/load'
  * data/derived/scores.json — committed, deterministic (no wall-clock timestamps;
  * `computedFor` is the dataset's as-of date), reviewable as a diff.
  */
-
-/** When a model×benchmark has rows from several sources, this order picks the headline. */
-const HEADLINE_SOURCE_PRECEDENCE: ResultSource[] = [
-  'independent',
-  'arena',
-  'admin-run',
-  'curated',
-  'self-reported',
-]
 
 export interface DerivedModelScore {
   slug: string
@@ -59,21 +51,28 @@ export async function deriveScores(root: string): Promise<DerivedScores> {
     normMax: b.normMax,
   }))
 
-  // headline score per (model, benchmark) with source precedence
-  const headline = new Map<string, Record<string, number>>()
+  // headline score per (model, benchmark) with source precedence (shared pickHeadlineScore)
+  const rowsByModel = new Map<string, Map<string, { score: number; source: ResultSource }[]>>()
   for (const [benchSlug, rows] of ds.results) {
     for (const r of rows) {
-      const scores = headline.get(r.modelSlug) ?? {}
-      const existing = scores[benchSlug]
-      if (existing == null) {
-        scores[benchSlug] = r.score
-      } else {
-        const prevRow = rows.find((x) => x.modelSlug === r.modelSlug && x.score === existing)
-        const prevRank = HEADLINE_SOURCE_PRECEDENCE.indexOf(prevRow?.source ?? 'self-reported')
-        if (HEADLINE_SOURCE_PRECEDENCE.indexOf(r.source) < prevRank) scores[benchSlug] = r.score
+      let byBench = rowsByModel.get(r.modelSlug)
+      if (!byBench) {
+        byBench = new Map()
+        rowsByModel.set(r.modelSlug, byBench)
       }
-      headline.set(r.modelSlug, scores)
+      const list = byBench.get(benchSlug)
+      if (list) list.push(r)
+      else byBench.set(benchSlug, [r])
     }
+  }
+  const headline = new Map<string, Record<string, number>>()
+  for (const [modelSlug, byBench] of rowsByModel) {
+    const scores: Record<string, number> = {}
+    for (const [benchSlug, rows] of byBench) {
+      const score = pickHeadlineScore(rows)
+      if (score != null) scores[benchSlug] = score
+    }
+    headline.set(modelSlug, scores)
   }
 
   const indexed = ds.models.map((m) => {
