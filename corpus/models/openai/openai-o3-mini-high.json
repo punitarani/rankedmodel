@@ -121,11 +121,11 @@
     },
     {
       "benchmarkSlug": "gdpval-aa",
-      "score": 468,
+      "score": 0,
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/o3-mini-high",
       "evaluatedAt": "2026-07-15",
-      "notes": "GDPval-AA v2, independently measured by Artificial Analysis on the 'o3-mini (high)' model page. Genuine floor result (0%, last place of 28 models on this eval) -- an older reasoning model with no dedicated real-world-agentic-work tuning. Not previously tracked here. [score corrected during round-6 completeness verify: proposed 0 -> 468]"
+      "notes": "GDPval-AA v2, independently measured by Artificial Analysis on the 'o3-mini (high)' model page. Genuine floor result (0%, last place of 28 models on this eval) -- an older reasoning model with no dedicated real-world-agentic-work tuning. Not previously tracked here. [score corrected during round-6 completeness verify: proposed 0 -> 468] [score corrected during round-12 accuracy re-verify: 468 -> 0, per verifier: Loaded artificialanalysis.ai/models/o3-mini-high in a real browser (WebFetch's text extraction misses the JS-rendered benchmark bars). The GDPval-AA v2 bar chart on that exact page lists 'o3-mini (high)' in last place among 29 models with a score of ]"
     },
     {
       "benchmarkSlug": "terminal-bench-2",

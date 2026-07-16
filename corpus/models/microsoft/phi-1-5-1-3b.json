@@ -139,35 +139,35 @@
     },
     {
       "benchmarkSlug": "bbh",
-      "score": 33.31,
+      "score": 7.47,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/microsoft__phi-1_5-details",
       "evaluatedAt": "2024-06-09",
-      "notes": "Hugging Face Open LLM Leaderboard v2 official auto-eval run for microsoft/phi-1_5 (3-shot, normalized score). Near-floor result consistent with a 1.3B base model under the harder v2 methodology, but genuinely new/untracked for this model. [score corrected during round-6 completeness verify: proposed 7.5 -> 33.31]"
+      "notes": "Hugging Face Open LLM Leaderboard v2 official auto-eval run for microsoft/phi-1_5 (3-shot, normalized score). Near-floor result consistent with a 1.3B base model under the harder v2 methodology, but genuinely new/untracked for this model. [score corrected during round-6 completeness verify: proposed 7.5 -> 33.31] [score corrected during round-12 accuracy re-verify: 33.31 -> 7.47, per verifier: Same row: 'BBH Raw'=33.598 (raw accuracy %), 'BBH'=7.469 (official random-baseline-normalized score used on the leaderboard). I verified which column is authoritative by reproducing the row's 'Average' field (7.170967) as the mean of the six normaliz]"
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 25.76,
+      "score": 2.35,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/microsoft__phi-1_5-details",
       "evaluatedAt": "2024-06-09",
-      "notes": "Hugging Face Open LLM Leaderboard v2 official auto-eval run for microsoft/phi-1_5 (0-shot, random-baseline-normalized score, so near-zero reflects near-chance raw accuracy). Not previously tracked. [score corrected during round-6 completeness verify: proposed 2.3 -> 25.76]"
+      "notes": "Hugging Face Open LLM Leaderboard v2 official auto-eval run for microsoft/phi-1_5 (0-shot, random-baseline-normalized score, so near-zero reflects near-chance raw accuracy). Not previously tracked. [score corrected during round-6 completeness verify: proposed 2.3 -> 25.76] [score corrected during round-12 accuracy re-verify: 25.76 -> 2.35, per verifier: Same row: 'GPQA Raw'=26.762 (raw acc_norm %), 'GPQA'=2.349 (official baseline-normalized score, confirmed authoritative via the Average cross-check described in the BBH finding). The corpus note explicitly claims this is a 'random-baseline-normalized]"
     },
     {
       "benchmarkSlug": "mmlu-pro",
-      "score": 16.91,
+      "score": 7.68,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/microsoft__phi-1_5-details",
       "evaluatedAt": "2024-06-09",
-      "notes": "Hugging Face Open LLM Leaderboard v2 official auto-eval run for microsoft/phi-1_5 (5-shot). Not previously tracked (the file only has the original 2-shot MMLU number from the technical report). [score corrected during round-6 completeness verify: proposed 7.7 -> 16.91]"
+      "notes": "Hugging Face Open LLM Leaderboard v2 official auto-eval run for microsoft/phi-1_5 (5-shot). Not previously tracked (the file only has the original 2-shot MMLU number from the technical report). [score corrected during round-6 completeness verify: proposed 7.7 -> 16.91] [score corrected during round-12 accuracy re-verify: 16.91 -> 7.68, per verifier: Same row: 'MMLU-PRO Raw'=16.913 (raw accuracy %) — this exactly matches the corpus's claimed 16.91 — but the official leaderboard score (confirmed authoritative via the Average cross-check) is the normalized 'MMLU-PRO' column = 7.681. The corpus valu]"
     },
     {
       "benchmarkSlug": "math",
-      "score": 1.13,
+      "score": 1.81,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/microsoft__phi-1_5-details",
       "evaluatedAt": "2024-06-09",
-      "notes": "Hugging Face Open LLM Leaderboard v2 'MATH Lvl 5' slice (hardest tier only, 4-shot) of the Hendrycks MATH test set. Not previously tracked for this model at all (no MATH benchmark currently on file). [score corrected during round-6 completeness verify: proposed 1.8 -> 1.13]"
+      "notes": "Hugging Face Open LLM Leaderboard v2 'MATH Lvl 5' slice (hardest tier only, 4-shot) of the Hendrycks MATH test set. Not previously tracked for this model at all (no MATH benchmark currently on file). [score corrected during round-6 completeness verify: proposed 1.8 -> 1.13] [score corrected during round-12 accuracy re-verify: 1.13 -> 1.81, per verifier: Same row: 'MATH Lvl 5 Raw'=1.813 and 'MATH Lvl 5' (normalized)=1.813 — for this free-response exact-match task, raw and normalized coincide (confirmed via the Average cross-check, which requires the 1.813 value to reproduce the reported row average).]"
     }
   ],
   "verificationNotes": "Existence, 1.3B params, MIT license, 2048 ctx and Sept 2023 release all confirmed on Microsoft's HF card and technical report. Fetched the actual arXiv 2309.05463 HTML and confirmed all four benchmark rows verbatim: winogrande 0.734 (73.4), arc-challenge 0.444 (44.4), humaneval 34.1, mbpp 37.7. No discrepancies found."

@@ -89,11 +89,11 @@
     },
     {
       "benchmarkSlug": "arc-challenge",
-      "score": 62.5,
+      "score": 62.46,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_timdettmers__guanaco-33b-merged",
       "evaluatedAt": "2023-07-20",
-      "notes": "ARC-Challenge 25-shot acc_norm (0.625) from the HF Open LLM Leaderboard (old) details dataset for timdettmers/guanaco-33b-merged — the official full-weights merge of the same LoRA adapter by the original authors."
+      "notes": "ARC-Challenge 25-shot acc_norm (0.625) from the HF Open LLM Leaderboard (old) details dataset for timdettmers/guanaco-33b-merged — the official full-weights merge of the same LoRA adapter by the original authors. [score corrected during round-12 accuracy re-verify: 62.5 -> 62.46, per verifier: Fetched the actual (only) results file in the cited HF dataset, results_2023-07-20T14:01:44.026263.json, for timdettmers/guanaco-33b-merged. Key harness|arc:challenge|25.acc_norm = 0.6245733788395904, which is 62.46 (2 decimals) -- not 62.5. The exis]"
     },
     {
       "benchmarkSlug": "hellaswag",

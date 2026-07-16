@@ -83,11 +83,11 @@
     },
     {
       "benchmarkSlug": "ifeval",
-      "score": 40.35,
+      "score": 33.8,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/Qwen__QwQ-32B-Preview-details",
       "evaluatedAt": "2024-11-29",
-      "notes": "HuggingFace Open LLM Leaderboard v2 run for Qwen/QwQ-32B-Preview (independent, run by HF, not vendor self-reported), IFEval prompt-level-strict-acc = 0.338 -> 33.8. Confirmed via two separate direct fetches of the dataset page returning identical numbers. Not a duplicate: this benchmark slug wasn't previously tracked for this model. [score corrected during round-6 completeness verify: proposed 33.8 -> 40.35]"
+      "notes": "HuggingFace Open LLM Leaderboard v2 run for Qwen/QwQ-32B-Preview (independent, run by HF, not vendor self-reported), IFEval prompt-level-strict-acc = 0.338 -> 33.8. Confirmed via two separate direct fetches of the dataset page returning identical numbers. Not a duplicate: this benchmark slug wasn't previously tracked for this model. [score corrected during round-6 completeness verify: proposed 33.8 -> 40.35] [score corrected during round-12 accuracy re-verify: 40.35 -> 33.8, per verifier: Fetched the raw aggregated-results JSON embedded in the HF dataset card for open-llm-leaderboard/Qwen__QwQ-32B-Preview-details (run timestamp 2024-11-29T18-47-19). leaderboard_ifeval.prompt_level_strict_acc,none = 0.33826247689463956 -> 33.8, not 40.]"
     },
     {
       "benchmarkSlug": "bbh",

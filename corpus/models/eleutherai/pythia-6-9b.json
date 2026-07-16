@@ -100,11 +100,11 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 26.77,
+      "score": 25.17,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
       "evaluatedAt": "2024-06-12",
-      "notes": "0-shot GPQA normalized accuracy (4-choice), HF Open LLM Leaderboard v2. [score corrected during round-6 completeness verify: proposed 25.17 -> 26.77]"
+      "notes": "0-shot GPQA normalized accuracy (4-choice), HF Open LLM Leaderboard v2. [score corrected during round-6 completeness verify: proposed 25.17 -> 26.77] [score corrected during round-12 accuracy re-verify: 26.77 -> 25.17, per verifier: Verified against the exact cited HF dataset open-llm-leaderboard/contents via the datasets-server search API. The official aggregated GPQA score (acc_norm, matching HF's documented 'Normalized Accuracy, 0-shot' methodology for the unified GPQA task) ]"
     },
     {
       "benchmarkSlug": "mmlu-pro",

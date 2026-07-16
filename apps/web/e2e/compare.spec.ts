@@ -7,9 +7,9 @@ test.describe('compare', () => {
     await gotoHydrated(page, '/compare?m=gpt-5-2,deepseek-v3-1-thinking')
     const legend = page.getByTestId('compare-legend')
     await expect(legend).toContainText('GPT-5.2')
-    await expect(legend).toContainText('2515.3')
+    await expect(legend).toContainText('2520.3')
     await expect(legend).toContainText('DeepSeek-V3.1 (Thinking)')
-    await expect(legend).toContainText('1919.7')
+    await expect(legend).toContainText('1921.6')
     // 4 rings + 2 series polygons
     await expect(page.getByTestId('compare-radar').locator('polygon')).toHaveCount(6)
     // the benchmarks card only shows rows a compared model actually scored — no wall of dashes
@@ -19,7 +19,7 @@ test.describe('compare', () => {
   test('best-value highlighting favors the right cells', async ({ page }) => {
     await gotoHydrated(page, '/compare?m=gpt-5-2,deepseek-v3-1-thinking')
     const idxRow = page.getByTestId('spec-elo-rating')
-    await expect(idxRow.locator('span').nth(1)).toHaveCSS('font-weight', '600') // GPT-5.2 Elo 2515.3
+    await expect(idxRow.locator('span').nth(1)).toHaveCSS('font-weight', '600') // GPT-5.2 Elo 2520.3
     const priceRow = page.getByTestId('spec-price-out-m')
     await expect(priceRow.locator('span').nth(2)).toHaveCSS('font-weight', '600') // DeepSeek $1.68
   })

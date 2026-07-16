@@ -111,7 +111,6 @@ openai-o3-pro,93,self-reported,https://binaryverseai.com/chatgpt-o3-pro-review-b
 openai-o4-mini,93.4,self-reported,https://openai.com/index/introducing-o3-and-o4-mini/,2025-04-16,AIME 2024
 openpangu-2-0-flash-non-thinking,86.5,self-reported,https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md,,"AIME 2026, Avg@16, Non-Thinking mode"
 openpangu-2-0-flash-thinking,93.3,self-reported,https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md,,"AIME 2026, Avg@16, Thinking mode"
-phi-4-mini-3-8b,6.7,independent,https://artificialanalysis.ai/models/phi-4-mini,2026-07-15,"AIME 2025 (field 'aime25'), Artificial Analysis independent evaluation of phi-4-mini (raw score 0.0666666666667). Not previously tracked."
 phi-4-reasoning,75.3,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,"AIME 2024, pass@1"
 phi-4-reasoning-14b,75.3,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,,AIME 2024
 qwen2-math-72b,20,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, AIME 2024, 6/30 greedy CoT"

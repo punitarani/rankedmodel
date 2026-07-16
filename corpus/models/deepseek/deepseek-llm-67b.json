@@ -184,11 +184,11 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 31.6,
+      "score": 29.8,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/deepseek-ai/deepseek-llm-67b-chat/results_2024-06-26T06-16-32.984312.json",
       "evaluatedAt": "2024-06-26",
-      "notes": "Open LLM Leaderboard v2 (HF lm-eval-harness 'leaderboard_gpqa' composite acc_norm, aggregating main/extended/diamond subsets) run on deepseek-llm-67b-chat, dated 2024-06-26. Independent third-party eval, not previously tracked (existing corpus entries for this model are all self-reported paper figures on different benchmarks). Fetched and confirmed directly from the unrestricted open-llm-leaderboard/results dataset JSON (the model-specific -details dataset is gated, but the raw results file mirrored into open-llm-leaderboard/results is public)."
+      "notes": "Open LLM Leaderboard v2 (HF lm-eval-harness 'leaderboard_gpqa' composite acc_norm, aggregating main/extended/diamond subsets) run on deepseek-llm-67b-chat, dated 2024-06-26. Independent third-party eval, not previously tracked (existing corpus entries for this model are all self-reported paper figures on different benchmarks). Fetched and confirmed directly from the unrestricted open-llm-leaderboard/results dataset JSON (the model-specific -details dataset is gated, but the raw results file mirrored into open-llm-leaderboard/results is public). [score corrected during round-12 accuracy re-verify: 31.6 -> 29.8, per verifier: Fetched raw results_2024-06-26T06-16-32.984312.json for deepseek-ai/deepseek-llm-67b-chat. The corpus's own 'gpqa' benchmark is explicitly defined in corpus/benchmarks.json as 'GPQA Diamond' -- and the sibling DBRX gpqa entry in this same corpus corr]"
     },
     {
       "benchmarkSlug": "ifeval",

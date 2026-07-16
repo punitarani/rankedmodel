@@ -115,11 +115,11 @@
     },
     {
       "benchmarkSlug": "mmlu",
-      "score": 26.61,
+      "score": 25.37,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-j-6b",
       "evaluatedAt": "2023-08-28",
-      "notes": "5-shot MMLU average across 57 subjects ('original|mmlu:*' task set), HF Open LLM Leaderboard v1 results_2023-08-28 run. Not previously tracked (only individual arc/hellaswag/openbookqa/triviaqa were on file). [score corrected during round-6 completeness verify: proposed 25.37 -> 26.61]"
+      "notes": "5-shot MMLU average across 57 subjects ('original|mmlu:*' task set), HF Open LLM Leaderboard v1 results_2023-08-28 run. Not previously tracked (only individual arc/hellaswag/openbookqa/triviaqa were on file). [score corrected during round-6 completeness verify: proposed 25.37 -> 26.61] [score corrected during round-12 accuracy re-verify: 26.61 -> 25.37, per verifier: Downloaded the raw results_2023-08-28T20:18:18.137533.json from https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-j-6b (config_general.model_name confirmed as EleutherAI/gpt-j-6b). This run contains exactly the 57 'original]"
     },
     {
       "benchmarkSlug": "truthfulqa",

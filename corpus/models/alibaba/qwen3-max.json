@@ -118,14 +118,6 @@
       "sourceUrl": "https://web.archive.org/web/20251113220020/https://lmarena.ai/leaderboard/text",
       "evaluatedAt": "2025-11-13",
       "notes": "LMArena (Chatbot Arena) Text leaderboard Elo rating for model id 'qwen3-max-preview' (linked to Alibaba Cloud Model Studio docs), rank #5 at this Nov 13 2025 archive.org snapshot, ~25,932 votes, +/-5. Score fluctuated narrowly (1432-1438) across multiple archived snapshots from Nov 2025 through Jan 2026; this is the earliest well-populated post-launch snapshot."
-    },
-    {
-      "benchmarkSlug": "superclue",
-      "score": 60.61,
-      "source": "independent",
-      "sourceUrl": "https://www.sohu.com/a/983920477_468661",
-      "evaluatedAt": "2026-02-05",
-      "notes": "SuperCLUE 中文大模型基准测评 2025 年年度报告 (2025 annual report, published 2026-02-05): best domestic closed-source model."
     }
   ],
   "verificationNotes": "Confirmed real: preview announced Sept 5, 2025 (X/Alibaba_Qwen, MarkTechPost, Cybernews, Interesting Engineering all corroborate), over 1T total params (undisclosed exact figure) trained on 36T tokens, MoE architecture, closed/API-only via Alibaba Cloud/DashScope -- all confirmed. SWE-bench Verified 69.6 and Tau2-Bench 74.8 confirmed verbatim via direct fetch of the cited alibabacloud.com blog. SuperGPQA 81.4 confirmed verbatim via direct fetch of the cited dev.to article. Pricing ($1.2/$6 per M, 0-32K tier) confirmed exactly via Alibaba Cloud Model Studio official pricing page. No changes made."

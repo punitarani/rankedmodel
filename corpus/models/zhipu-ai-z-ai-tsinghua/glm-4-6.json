@@ -112,22 +112,6 @@
       "sourceUrl": "https://artificialanalysis.ai/models/glm-4-6",
       "evaluatedAt": "2026-07-15",
       "notes": "Artificial Analysis's own IFBench measurement for GLM-4.6 (36.7%), verbatim-confirmed in the JSON payload embedded in BenchLM.ai's model page (AA-data mirror, display-only row, sourceUrl points to AA's own model page). Not reported by Zhipu/Z.ai itself; not currently tracked for this model."
-    },
-    {
-      "benchmarkSlug": "frontiermath-tier1-3",
-      "score": 3.819,
-      "source": "independent",
-      "sourceUrl": "https://benchlm.ai/models/glm-4-6",
-      "evaluatedAt": "2026-07-15",
-      "notes": "Epoch AI's FrontierMath v2 (Tiers 1-3) leaderboard score for zai-org/GLM-4.6 (3.819%), per the explicit provenance string in BenchLM.ai's embedded page data: 'Epoch AI reports FrontierMath v2 Tiers 1-3 at 3.819% for zai-org/GLM-4.6. BenchLM selects the highest published thinking effort for the model.' Epoch AI's own JS-rendered leaderboard (epoch.ai/benchmarks/frontiermath-tiers-1-3-v2) could not be directly scraped, so citing the BenchLM mirror that quotes Epoch AI as primary source. Not currently tracked for this model."
-    },
-    {
-      "benchmarkSlug": "frontiermath-tier4",
-      "score": 2.128,
-      "source": "independent",
-      "sourceUrl": "https://benchlm.ai/models/glm-4-6",
-      "evaluatedAt": "2026-07-15",
-      "notes": "Epoch AI's FrontierMath v2 (Tier 4) leaderboard score for zai-org/GLM-4.6 (2.128%), per the explicit provenance string in BenchLM.ai's embedded page data: 'Epoch AI reports FrontierMath v2 Tier 4 at 2.128% for zai-org/GLM-4.6.' Same sourcing caveat as the Tiers 1-3 entry (Epoch AI's own leaderboard is JS-rendered and not directly scrapable). Not currently tracked for this model."
     }
   ],
   "verificationNotes": "Confirmed real, released model (not a rumor) via Z.ai's own blog (z.ai/blog/glm-4.6, referenced but JS-rendered so not directly fetchable), Hugging Face model card (zai-org/GLM-4.6, MIT license, 357B/32B active, BF16/F32), and official docs.z.ai/guides/llm/glm-4.6 (200K context, 128K max output). Release date 2025-09-30 corroborated by CometAPI, docs.z.ai release-notes page, and multiple independent outlets (IntuitionLabs, CodeGPT). Params: HF card and llm-stats.com both say 357B total/32B active; some secondary blogs round to '355B' -- treated as the same figure, minor rounding noise. License: HF card and llm-stats.com say MIT; two lower-quality secondary blogs (codegpt.co, intuitionlabs.ai) incorrectly say Apache 2.0 -- MIT from the primary HF card is authoritative. Benchmark numbers (AIME-25 93.9, GPQA 81.0, LiveCodeBench v6 82.8, BrowseComp 45.1, SWE-bench Verified 68.0, Terminal-Bench 40.5, tau2-Bench 75.9) come from a table on cirra.ai attributed to a Communeify.com relay of Z.ai's own launch announcement; the AIME-25 93.9 and LiveCodeBench-v6 82.8 figures were independently corroborated by a separate WebSearch synthesis and by CometAPI's 82.8 LiveCodeBench figure, giving reasonable confidence these are the vendor's real self-reported numbers even though I could not load the z.ai blog page directly (client-rendered SPA returned empty content to WebFetch). Treated as self-reported since ultimately vendor-originated. Did not include CC-Bench win-rate (48.6% vs Claude Sonnet 4), HumanEval 84.2, or MBPP 80.7 -- CC-Bench is a proprietary Zhipu win-rate metric with no standard slug, and the source article itself flags HumanEval/MBPP as 'from a Chinese technical blog without independent validation.' Terminal-Bench version (2.0 vs unversioned) is ambiguous in the source; mapped to base 'terminal-bench' slug rather than 'terminal-bench-2' to avoid over-claiming the harness version."

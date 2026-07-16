@@ -21,7 +21,7 @@ test.describe('organization + family hubs', () => {
     // "succeeds Claude Opus 4.6" (its own nearest-by-date predecessor within the shared family).
     const opus46 = page.getByTestId('family-member').filter({ hasText: /Claude Opus 4\.6CLOSED/ })
     await expect(opus46).toContainText('succeeds Claude Opus 4.5')
-    await expect(opus46).toContainText('+197.9')
+    await expect(opus46).toContainText('+199.7')
   })
 
   test('model → family: the back affordance returns to the model, not the parent', async ({

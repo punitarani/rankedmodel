@@ -105,11 +105,11 @@
     },
     {
       "benchmarkSlug": "gdpval-aa",
-      "score": 1100,
+      "score": 30,
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-4-nano",
       "evaluatedAt": "2026-07-15",
-      "notes": "GDPval-AA v2, independently measured by Artificial Analysis on the 'GPT-5.4 nano (xhigh)' model page (AA's page confirms xhigh effort, matching this catalog entry's existing xhigh-attributed self-reported results). Not previously tracked here. [score corrected during round-6 completeness verify: proposed 30 -> 1100]"
+      "notes": "GDPval-AA v2, independently measured by Artificial Analysis on the 'GPT-5.4 nano (xhigh)' model page (AA's page confirms xhigh effort, matching this catalog entry's existing xhigh-attributed self-reported results). Not previously tracked here. [score corrected during round-6 completeness verify: proposed 30 -> 1100] [score corrected during round-12 accuracy re-verify: 1100 -> 30, per verifier: Loaded artificialanalysis.ai/models/gpt-5-4-nano live in browser (WebFetch's markdown conversion drops the chart values, so a raw page-text read was required to get real numbers). The GDPval-AA v2 ranked bar chart lists 29 models 0-100%; counting pos]"
     },
     {
       "benchmarkSlug": "ifbench",

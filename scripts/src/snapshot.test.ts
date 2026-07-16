@@ -48,7 +48,7 @@ describe('catalog snapshot (C3 golden shape)', () => {
       org: 'Meta',
       family: 'Llama 3.1',
       open: true,
-      index: 1240.4, // Frontier Elo rating (D21)
+      index: 1240.5, // Frontier Elo rating (D21)
       rank: 173,
       ranked: true,
       ctxK: 128,

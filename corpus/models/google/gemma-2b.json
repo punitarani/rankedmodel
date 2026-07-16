@@ -153,11 +153,11 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 25.5,
+      "score": 22.7,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__gemma-2b-details",
       "evaluatedAt": "2024-06-16",
-      "notes": "HuggingFace Open LLM Leaderboard v2 independent re-evaluation of google/gemma-2b, GPQA acc_norm = 0.255. Not previously tracked (the 15 existing results all come from the HF model card's own eval table)."
+      "notes": "HuggingFace Open LLM Leaderboard v2 independent re-evaluation of google/gemma-2b, GPQA acc_norm = 0.255. Not previously tracked (the 15 existing results all come from the HF model card's own eval table). [score corrected during round-12 accuracy re-verify: 25.5 -> 22.7, per verifier: The raw number 25.5 (leaderboard_gpqa acc_norm=0.2550335570469799) is real and present in the HF eval JSON, but it is HF's pooled aggregate across GPQA-Main + GPQA-Extended + GPQA-Diamond subtasks combined (confirmed as 'GPQA Raw' in the official ope]"
     },
     {
       "benchmarkSlug": "mmlu-pro",
@@ -169,11 +169,11 @@
     },
     {
       "benchmarkSlug": "ifeval",
-      "score": 25.8,
+      "score": 20.4,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__gemma-2b-details",
       "evaluatedAt": "2024-06-16",
-      "notes": "HuggingFace Open LLM Leaderboard v2 independent re-evaluation of google/gemma-2b, IFEval inst_level_strict_acc = 0.258."
+      "notes": "HuggingFace Open LLM Leaderboard v2 independent re-evaluation of google/gemma-2b, IFEval inst_level_strict_acc = 0.258. [score corrected during round-12 accuracy re-verify: 25.8 -> 20.4, per verifier: 25.8 is real (inst_level_strict_acc,none=0.2577937649880096) but it is only one of two sub-metrics IFEval reports. The Open LLM Leaderboard v2's actual displayed/official IFEval score averages prompt_level_strict_acc (0.14972) and inst_level_strict_a]"
     }
   ],
   "verificationNotes": "Confirmed real: released 2024-02-21 per Hugging Face blog and Google blog (multiple independent sources agree). Directly fetched huggingface.co/google/gemma-2b model card: all five benchmark rows (MMLU 42.3, HellaSwag 71.4, ARC-c 42.1, HumanEval 22.0, GSM8K 17.7) appear verbatim in its evaluation table -- all confirmed exactly as claimed. Params corrected/confirmed at the source level: fetched arXiv 2403.08295v4 Table 2 directly, which gives an exact parameter count of 2,506,434,560 (524.5M embedding + 1.98B non-embedding) = 2.5B, matching paramsB despite the '2B' marketing name -- this is a genuine, well-documented quirk (Gemma 2B/7B names refer to rounded marketing tiers, not exact counts)."

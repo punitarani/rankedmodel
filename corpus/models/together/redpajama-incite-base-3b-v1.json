@@ -77,11 +77,11 @@
     },
     {
       "benchmarkSlug": "mmlu",
-      "score": 27,
+      "score": 27.03,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-Base-3B-v1/results_2023-07-19T15-11-56.441864.json",
       "evaluatedAt": "2023-07-19",
-      "notes": "Not self-reported by Together AI (the together.ai launch blog and the RedPajama technical paper's Table 7 only report Lambada/HellaSwag/Winogrande/PIQA for this specific 3B model). Independently measured by the Hugging Face Open LLM Leaderboard v1 team (5-shot, EleutherAI lm-eval-harness, hendrycksTest/MMLU 57-subject average, acc_norm). Verified via direct fetch of the raw per-model results JSON; average across all 57 hendrycksTest keys computed as ~0.277 (acc_norm), consistent with the aggregate 'all' acc of 0.2753 in the same file and with third-party mirrors (llm-explorer.com reports 27.03). [score corrected during round-6 completeness verify: proposed 27.7 -> 27]"
+      "notes": "Not self-reported by Together AI (the together.ai launch blog and the RedPajama technical paper's Table 7 only report Lambada/HellaSwag/Winogrande/PIQA for this specific 3B model). Independently measured by the Hugging Face Open LLM Leaderboard v1 team (5-shot, EleutherAI lm-eval-harness, hendrycksTest/MMLU 57-subject average, acc_norm). Verified via direct fetch of the raw per-model results JSON; average across all 57 hendrycksTest keys computed as ~0.277 (acc_norm), consistent with the aggregate 'all' acc of 0.2753 in the same file and with third-party mirrors (llm-explorer.com reports 27.03). [score corrected during round-6 completeness verify: proposed 27.7 -> 27] [score corrected during round-12 accuracy re-verify: 27 -> 27.03, per verifier: Downloaded the raw cited JSON (results_2023-07-19T15-11-56.441864.json) and independently computed the unweighted average acc (=acc_norm, identical per-subject) across all 57 harness|hendrycksTest-* keys myself: 0.2702787422464126 = 27.03%. This matc]"
     },
     {
       "benchmarkSlug": "arc-challenge",

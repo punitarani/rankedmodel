@@ -156,11 +156,11 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 29.3,
+      "score": 26.6,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/LGAI-EXAONE__EXAONE-3.0-7.8B-Instruct-details",
       "evaluatedAt": "2024-08-18",
-      "notes": "GPQA raw accuracy from the HF Open LLM Leaderboard 2 independent evaluation run. The model's own technical report reports GPQA as 10.1, which is the leaderboard-normalized (0-baseline-subtracted) score, not raw accuracy — kept separate/new since raw accuracy for this benchmark was not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 26.6 -> 29.3]"
+      "notes": "GPQA raw accuracy from the HF Open LLM Leaderboard 2 independent evaluation run. The model's own technical report reports GPQA as 10.1, which is the leaderboard-normalized (0-baseline-subtracted) score, not raw accuracy — kept separate/new since raw accuracy for this benchmark was not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 26.6 -> 29.3] [score corrected during round-12 accuracy re-verify: 29.3 -> 26.6, per verifier: Fetched the HF dataset card (open-llm-leaderboard/LGAI-EXAONE__EXAONE-3.0-7.8B-Instruct-details) directly via the HF API and pulled the embedded 'Latest results' JSON from run 2024-08-19. The composite task the leaderboard actually calls 'leaderboard]"
     }
   ],
   "verificationNotes": "Existence, release date (2024-08-07), params (7.8B), NC license, and bilingual EN/KO scope confirmed directly on the HF model card and GitHub README (both fetched). Architecture (32 layers) and 4096-token context confirmed via independent search results citing the arXiv technical report (2408.03541) and GGUF metadata. All 6 benchmark rows (MT-Bench 9.01, Arena-Hard 46.8, WildBench 48.2, AlpacaEval 45.0, KoMT-Bench 8.92, LogicKor 8.62) literally appear on the cited HF/GitHub pages, verbatim match — no changes."

@@ -172,11 +172,11 @@
     },
     {
       "benchmarkSlug": "bbh",
-      "score": 55.54,
+      "score": 55.9,
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2409.11055",
       "evaluatedAt": "2024-09-17",
-      "notes": "Llama-3.1-70B-it, FP16 baseline row, BBH 3-shot (OpenLLM Leaderboard-v2 protocol), Table 2 of 'Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant' (Lee et al., v6). Third-party lm-eval-harness reproduction, not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 55.9 -> 55.54]"
+      "notes": "Llama-3.1-70B-it, FP16 baseline row, BBH 3-shot (OpenLLM Leaderboard-v2 protocol), Table 2 of 'Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant' (Lee et al., v6). Third-party lm-eval-harness reproduction, not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 55.9 -> 55.54] [score corrected during round-12 accuracy re-verify: 55.54 -> 55.9, per verifier: Downloaded and text-extracted arXiv:2409.11055 (Lee et al., quantization trade-offs paper) PDF directly, Table 2 (OpenLLM Leaderboard-v2). The Llama-3.1-70B-it row block reads: FP16 16/16 140GB -> BBH 55.90 | GPQA 16.48 | IFEval 75.48 | Math-Lvl-5 28]"
     },
     {
       "benchmarkSlug": "hellaswag",

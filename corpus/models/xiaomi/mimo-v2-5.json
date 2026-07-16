@@ -173,10 +173,10 @@
     },
     {
       "benchmarkSlug": "tau3-banking",
-      "score": 7,
+      "score": 6.6,
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5",
-      "notes": "Artificial Analysis's newer, harder τ³-Banking evaluation for MiMo-V2.5, distinct from the tracked τ²-Bench Telecom row. [taxonomy-gap backfill: this score was already verified in an earlier research round but had no matching benchmark slug at the time; added once the slug was introduced.]"
+      "notes": "Artificial Analysis's newer, harder τ³-Banking evaluation for MiMo-V2.5, distinct from the tracked τ²-Bench Telecom row. [taxonomy-gap backfill: this score was already verified in an earlier research round but had no matching benchmark slug at the time; added once the slug was introduced.] [score corrected during round-12 accuracy re-verify: 7 -> 6.6, per verifier: The cited URL https://artificialanalysis.ai/models/mimo-v2-5 returns HTTP 404 -- it does not exist. The correct AA slug for this model (per the sibling MiMo-V2.5-Pro file's own verification notes, which reference 'artificialanalysis.ai/models/mimo-v2]"
     }
   ],
   "verificationNotes": "Params/architecture/context/modalities/license confirmed directly against the raw HuggingFace README (XiaomiMiMo/MiMo-V2.5), which also gives an internal 'component table' cross-checked against the Pro repo's identical table (both agree: 310B/15B, 48-layer, 5:1 SWA:GA, 3x MTP). Release date corroborated by Wikipedia's Xiaomi MiMo lineage entry, MarkTechPost (published 2026-04-22), and Xiaomi's own blog (one secondary source, GSMArena, says 2026-04-28, and the Pro-specific Xiaomi page separately says 2026-04-27; treated as the same announcement week, with 2026-04-22 taken as authoritative per Wikipedia + the MarkTechPost publish date + this task's brief). IMPORTANT CAVEAT: the benchmark table embedded in the HuggingFace READMEs (GSM8K 83.3, MMLU 86.3, etc.) is explicitly labeled 'Base Model Evaluation' and reports the pretrained -Base checkpoint, not the released chat/agentic model — so those numbers were NOT used for 'results' below. Instead, results were pulled from the live JS-driven benchmark charts embedded in Xiaomi's own product page (https://mimo.xiaomi.com/mimo-v2-5/), fetched and parsed directly from raw HTML/JS (not summarized), which report the actual shipped model against Claude Opus 4.6, Gemini 3.1 Pro, GPT-5.4, Kimi K2.6, DeepSeek-V4-Flash."

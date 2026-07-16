@@ -5,4 +5,3 @@ ernie-4-0,79.02,independent,https://news.qq.com/rain/a/20231228A072Q700,2023-12-
 iflytek-spark-v3-0-xinghuo,59.33,independent,https://github.com/CLUEbenchmark/SuperCLUE,2023-12-27,"SuperCLUE December 2023 Leaderboard, rank 15/17, sub-scores OPEN=51.74 / OPT=77.03. Source: CLUEbenchmark/SuperCLUE GitHub README table (row '讯飞星火V3.0 | 科大讯飞 | 59.33 | 51.74 | 77.03 | API')."
 kimi-chat,71.92,independent,https://github.com/CLUEbenchmark/SuperCLUE,2023-12-27,"SuperCLUE December 2023 Leaderboard, rank 5/17. Source: CLUEbenchmark/SuperCLUE GitHub README table."
 kimi-k2-5,61.5,independent,https://www.sohu.com/a/983920477_468661,2026-02-05,"SuperCLUE 中文大模型基准测评 2025 年年度报告 (2025 annual report, published 2026-02-05): best domestic open-source model, rank 4 globally."
-qwen3-max,60.61,independent,https://www.sohu.com/a/983920477_468661,2026-02-05,"SuperCLUE 中文大模型基准测评 2025 年年度报告 (2025 annual report, published 2026-02-05): best domestic closed-source model."

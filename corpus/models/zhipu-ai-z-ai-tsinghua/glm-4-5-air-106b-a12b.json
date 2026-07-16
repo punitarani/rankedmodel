@@ -148,14 +148,6 @@
       "notes": "IFEval (Prompt Strict), Table 6."
     },
     {
-      "benchmarkSlug": "tau2-bench-telecom",
-      "score": 46.5,
-      "source": "independent",
-      "sourceUrl": "https://artificialanalysis.ai/models/glm-4-5-air",
-      "evaluatedAt": "2026-07-15",
-      "notes": "Artificial Analysis's own Tau2-Bench Telecom measurement for GLM-4.5-Air (46.5%), verbatim-confirmed in the JSON payload embedded in BenchLM.ai's model page (which mirrors AA's live model data as a display-only row). Not reported by Zhipu/Z.ai itself; not currently tracked for this model."
-    },
-    {
       "benchmarkSlug": "ifbench",
       "score": 37.6,
       "source": "independent",

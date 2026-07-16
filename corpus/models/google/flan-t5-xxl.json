@@ -73,11 +73,11 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 25.8,
+      "score": 27.01,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__flan-t5-xxl-details",
       "evaluatedAt": "2024-08-27",
-      "notes": "GPQA Diamond subset (acc_norm 0.2576), from the Hugging Face Open LLM Leaderboard v2 automated evaluation run of google/flan-t5-xxl (results_2024-08-27T14-49-35 JSON, confirmed via the HF datasets API card metadata). Score is near random-chance (4-choice), consistent with an 11B encoder-decoder model from 2022 evaluated zero-shot/generative on a benchmark it was never tuned for -- not an error."
+      "notes": "GPQA Diamond subset (acc_norm 0.2576), from the Hugging Face Open LLM Leaderboard v2 automated evaluation run of google/flan-t5-xxl (results_2024-08-27T14-49-35 JSON, confirmed via the HF datasets API card metadata). Score is near random-chance (4-choice), consistent with an 11B encoder-decoder model from 2022 evaluated zero-shot/generative on a benchmark it was never tuned for -- not an error. [score corrected during round-12 accuracy re-verify: 25.8 -> 27.01, per verifier: Same error pattern as the Pythia-6.9B GPQA finding. The official aggregated GPQA (acc_norm) score from open-llm-leaderboard/contents for google_flan-t5-xxl_float16 is GPQA Raw = 0.2701342281879195 = 27.01%. The claimed 25.8 corresponds only to the GP]"
     },
     {
       "benchmarkSlug": "mmlu-pro",
@@ -89,11 +89,11 @@
     },
     {
       "benchmarkSlug": "ifeval",
-      "score": 15.7,
+      "score": 22,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__flan-t5-xxl-details",
       "evaluatedAt": "2024-08-27",
-      "notes": "leaderboard_ifeval prompt-level strict accuracy 0.1571, Hugging Face Open LLM Leaderboard v2 automated run of google/flan-t5-xxl, confirmed via the HF datasets API card metadata."
+      "notes": "leaderboard_ifeval prompt-level strict accuracy 0.1571, Hugging Face Open LLM Leaderboard v2 automated run of google/flan-t5-xxl, confirmed via the HF datasets API card metadata. [score corrected during round-12 accuracy re-verify: 15.7 -> 22, per verifier: HF's own documented Open LLM Leaderboard v2 methodology (huggingface.co/docs/leaderboards/open_llm_leaderboard/about) states IFEval is measured via BOTH inst_level_strict_acc and prompt_level_strict_acc. The leaderboard's actual published IFEval scor]"
     }
   ],
   "verificationNotes": "Confirmed real via Hugging Face google/flan-t5-xxl model card: 11B params, Apache 2.0 license, matches record. Fetched full paper text (ar5iv rendering of arxiv 2210.11416) Table 5 and confirmed Flan-T5-XXL (11B) scores literally: MMLU 5-shot direct = 55.1, BBH 3-shot direct = 45.3 -- both kept as exact matches. Context length is genuinely ambiguous across sources (tokenizer default 512, but Flan instruction-tuning used ~1024-token input sequences per the paper, and some summaries cite up to 2K); left ctxK=1 (1024) as a reasonable middle estimate rather than fabricating false precision. No changes to core fields."

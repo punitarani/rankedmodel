@@ -176,11 +176,11 @@
     },
     {
       "benchmarkSlug": "truthfulqa",
-      "score": 64.7,
+      "score": 65,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2404.14219",
       "evaluatedAt": "2024-04-23",
-      "notes": "TruthfulQA MC2, 10-shot, Table 3 of the Phi-3 Technical Report (same 'June 2024 update' table already used for this model's other rows). [score corrected during round-6 completeness verify: proposed 65 -> 64.7]"
+      "notes": "TruthfulQA MC2, 10-shot, Table 3 of the Phi-3 Technical Report (same 'June 2024 update' table already used for this model's other rows). [score corrected during round-6 completeness verify: proposed 65 -> 64.7] [score corrected during round-12 accuracy re-verify: 64.7 -> 65, per verifier: Directly read the Phi-3 Technical Report PDF (arXiv 2404.14219), p.6 benchmark table -- the cited sourceUrl. The 'TruthfulQA (10-Shot; MC2)' row for the Phi-3-mini (3.8b) column reads 65.0, not 64.7 (Phi-3-small=70.2, Phi-3-medium=75.1). The 64.7 fig]"
     },
     {
       "benchmarkSlug": "ifeval",

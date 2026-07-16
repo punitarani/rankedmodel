@@ -129,11 +129,11 @@
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 26.85,
+      "score": 2.46,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
       "evaluatedAt": "2024-09-16",
-      "notes": "HF Open LLM Leaderboard V2 run on ai21labs/Jamba-v0.1 (normalized score; raw acc 0.268). Not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 2.46 -> 26.85]"
+      "notes": "HF Open LLM Leaderboard V2 run on ai21labs/Jamba-v0.1 (normalized score; raw acc 0.268). Not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 2.46 -> 26.85] [score corrected during round-12 accuracy re-verify: 26.85 -> 2.46, per verifier: Fetched the same open-llm-leaderboard/contents row for ai21labs/Jamba-v0.1 directly (datasets-server API). It has TWO GPQA fields: 'GPQA Raw' = 0.2684563758389262 (i.e. 26.85%) and 'GPQA' (normalized) = 2.460850111856823 (i.e. 2.46). Every other trac]"
     },
     {
       "benchmarkSlug": "mmlu-pro",

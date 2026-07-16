@@ -142,19 +142,19 @@
     },
     {
       "benchmarkSlug": "bbh",
-      "score": 44.23,
+      "score": 22.02,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-7B-v0.1-details",
       "evaluatedAt": "2024-06-12",
-      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-7B-v0.1; BBH normalized score. [score corrected during round-6 completeness verify: proposed 22.02 -> 44.23]"
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-7B-v0.1; BBH normalized score. [score corrected during round-6 completeness verify: proposed 22.02 -> 44.23] [score corrected during round-12 accuracy re-verify: 44.23 -> 22.02, per verifier: 44.23 is the raw/unnormalized BBH accuracy (leaderboard_bbh acc_norm ~0.4419-0.4423 depending on run), not the leaderboard's normalized display score. contents.parquet row mistralai/Mistral-7B-v0.1 (bfloat16) shows 'BBH Raw' = 0.441940 but the true d]"
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 5.16,
+      "score": 5.59,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-7B-v0.1-details",
       "evaluatedAt": "2024-06-12",
-      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-7B-v0.1; GPQA (chance-corrected) normalized score. Matches the ~5.16-5.59 range shown in the HF model-card auto-eval widget. [score corrected during round-6 completeness verify: proposed 5.59 -> 5.16]"
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-7B-v0.1; GPQA (chance-corrected) normalized score. Matches the ~5.16-5.59 range shown in the HF model-card auto-eval widget. [score corrected during round-6 completeness verify: proposed 5.59 -> 5.16] [score corrected during round-12 accuracy re-verify: 5.16 -> 5.59, per verifier: Checked contents.parquet (open-llm-leaderboard/contents), the authoritative public leaderboard display table: row mistralai/Mistral-7B-v0.1 (bfloat16) shows 'GPQA Raw' = 0.291946 and the true normalized/displayed 'GPQA' column = 5.592841, i.e. 5.59, ]"
     },
     {
       "benchmarkSlug": "mmlu-pro",

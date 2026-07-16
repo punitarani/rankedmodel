@@ -148,11 +148,11 @@
     },
     {
       "benchmarkSlug": "ocrbench",
-      "score": 866,
+      "score": 86.6,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2604.24954",
       "evaluatedAt": "2026-04-27",
-      "notes": "OCRBench (Test), reasoning-on mode (matches the corpus's tracked config), from Table 7 of the official NVIDIA technical report, confirmed via a raw pdftotext -layout extraction of the report PDF (mirrored at research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Omni-report.pdf) to avoid image-OCR misreads: 'OCRBench 88.3 86.6' (reasoning-off / reasoning-on). Distinct from the already-tracked 'OCRBenchV2 (EN/ZH)' row, which is a different, harder benchmark version not in the taxonomy. [score corrected during round-6 completeness verify: proposed 86.6 -> 866]"
+      "notes": "OCRBench (Test), reasoning-on mode (matches the corpus's tracked config), from Table 7 of the official NVIDIA technical report, confirmed via a raw pdftotext -layout extraction of the report PDF (mirrored at research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Omni-report.pdf) to avoid image-OCR misreads: 'OCRBench 88.3 86.6' (reasoning-off / reasoning-on). Distinct from the already-tracked 'OCRBenchV2 (EN/ZH)' row, which is a different, harder benchmark version not in the taxonomy. [score corrected during round-6 completeness verify: proposed 86.6 -> 866] [score corrected during round-12 accuracy re-verify: 866 -> 86.6, per verifier: Downloaded and pdftotext'd the actual arXiv PDF (2604.24954v2, verified genuine via arXiv export API). Table 7 reads exactly 'OCRBench 88.3 86.6' (reasoning-off / reasoning-on). Source reports 86.6 for reasoning-on, not 866. The corpus note itself ad]"
     },
     {
       "benchmarkSlug": "textvqa",

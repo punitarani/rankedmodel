@@ -130,14 +130,6 @@
       "notes": "GDPval-AA, Elo-style rating for economically valuable knowledge work."
     },
     {
-      "benchmarkSlug": "tau2-bench-telecom",
-      "score": 95.3,
-      "source": "independent",
-      "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash",
-      "evaluatedAt": "2026-07-15",
-      "notes": "τ²-Bench Telecom agentic tool-use eval, Artificial Analysis independent evaluation (raw score 0.9532163742690, model page's default/'(high)' reasoning-effort listing for the gemini-3-5-flash slug -- same page/source pattern already used for this model's existing GPQA and MMMU-Pro entries). Corroborated qualitatively (score not given) by multiple launch-week roundups citing AA's Tau2-Bench Telecom coverage of this model. Not previously tracked."
-    },
-    {
       "benchmarkSlug": "ifbench",
       "score": 76.3,
       "source": "independent",

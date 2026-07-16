@@ -90,27 +90,27 @@
     },
     {
       "benchmarkSlug": "bbh",
-      "score": 50.88,
+      "score": 30.74,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Codestral-22B-v0.1-details",
       "evaluatedAt": "2024-09-28",
-      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; BBH normalized score. [score corrected during round-6 completeness verify: proposed 30.74 -> 50.88]"
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; BBH normalized score. [score corrected during round-6 completeness verify: proposed 30.74 -> 50.88] [score corrected during round-12 accuracy re-verify: 50.88 -> 30.74, per verifier: 50.88 is the raw/unnormalized leaderboard_bbh acc_norm (0.5087658...) taken straight from the details JSON, but that is NOT what the public Open LLM Leaderboard v2 contents table displays as 'BBH' for this model. Pulled the actual contents.parquet (o]"
     },
     {
       "benchmarkSlug": "gpqa",
-      "score": 25.76,
+      "score": 6.49,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Codestral-22B-v0.1-details",
       "evaluatedAt": "2024-09-28",
-      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; GPQA (chance-corrected) normalized score. [score corrected during round-6 completeness verify: proposed 6.49 -> 25.76]"
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; GPQA (chance-corrected) normalized score. [score corrected during round-6 completeness verify: proposed 6.49 -> 25.76] [score corrected during round-12 accuracy re-verify: 25.76 -> 6.49, per verifier: 25.76 is not the official leaderboard GPQA score at all -- it is the raw acc_norm of the GPQA-DIAMOND-only sub-split (leaderboard_gpqa_diamond acc_norm,none = 0.25757575757575757 = 25.76%), a different/easier-scoped sibling eval than the combined GPQ]"
     },
     {
       "benchmarkSlug": "mmlu-pro",
-      "score": 31.56,
+      "score": 23.95,
       "source": "independent",
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Codestral-22B-v0.1-details",
       "evaluatedAt": "2024-09-28",
-      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; MMLU-PRO normalized score. [score corrected during round-6 completeness verify: proposed 23.95 -> 31.56]"
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; MMLU-PRO normalized score. [score corrected during round-6 completeness verify: proposed 23.95 -> 31.56] [score corrected during round-12 accuracy re-verify: 31.56 -> 23.95, per verifier: 31.56 is the raw/unnormalized leaderboard_mmlu_pro acc (0.3155751...) from the details JSON, not the official displayed leaderboard score. contents.parquet shows 'MMLU-PRO Raw' = 0.315575 (matches the claim) but the actual normalized 'MMLU-PRO' displ]"
     }
   ],
   "verificationNotes": "Confirmed via HF model page and config.json: 22.2B params, MNPL-0.1 license, 32K context (max_position_embeddings). Fetched analyticsvidhya.com directly: literally confirms '81.1% pass rate on HumanEval' and '78.2% success rate in MBPP'. No changes made."
