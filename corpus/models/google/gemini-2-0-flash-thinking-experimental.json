@@ -72,6 +72,14 @@
       "sourceUrl": "https://arxiv.org/abs/2503.19786",
       "evaluatedAt": "2025-03-08",
       "notes": "LMSYS Chatbot Arena Elo for gemini-2.0-flash-thinking-exp-01-21, per Table 5 of Google DeepMind's Gemma 3 Technical Report (same table/source pattern already used for the sibling gemini-2.0-pro-experimental entry)."
+    },
+    {
+      "benchmarkSlug": "putnam-bench",
+      "score": 0.15,
+      "source": "independent",
+      "sourceUrl": "https://trishullab.github.io/PutnamBench/leaderboard.html",
+      "evaluatedAt": "2025-03-30",
+      "notes": "Official PutnamBench leaderboard entry 'gemini-2.0-flash-thinking-121': solved 1 of 672 Lean 4 problems (1977 A3) pass@1, evaluated via FTPEvals (commit 0da3032; model config gemini-2-flash-thinking.yaml -> API model 'gemini-2.0-flash-thinking-exp-01-21', matching this corpus entry's 01-21 release date). Score updated 0->1 in leaderboard commit 52212458 (2025-03-30)."
     }
   ],
   "verificationNotes": "Confirmed real. Google DeepMind first shipped Gemini 2.0 Flash Thinking Experimental on 2024-12-19 (32K context, model id gemini-2.0-flash-thinking-exp-1219; blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/, 9to5google, SiliconANGLE, Simon Willison all corroborate). This entry targets the materially upgraded 2025-01-21 snapshot (gemini-2.0-flash-thinking-exp-01-21) specifically named in the task, which is the version Google DeepMind CEO Demis Hassabis announced with AIME 73.3%, GPQA Diamond 74.2%, MMMU 75.4% (his own X/Twitter post, corroborated verbatim by MarkTechPost and TestingCatalog); that same update expanded context from 32K to 1M tokens and added native code execution. Confirmed via independent sources (LMSpecs, Postman API docs, forum.cursor.com) that this snapshot explicitly does NOT support function calling or JSON-schema constrained output -- capabilities set accordingly (functionCalling=false). Vision/multimodal input confirmed via the MMMU score; audio/video input/output not confirmed for this specific thinking snapshot (unlike base Gemini 2.0 Flash) so left out of modalities. Pricing: free during the experimental phase, no stable public price -- left null. Status set to deprecated, matching how the corpus already treats the base Gemini 2.0 Flash (same family, long since superseded by 2.5/3.x reasoning models and past Google's typical experimental-model lifecycle as of July 2026)."

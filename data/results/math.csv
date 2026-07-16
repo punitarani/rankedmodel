@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+abab6-5,51.3,self-reported,https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97,2024-04-17,Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above).
 ai21-jamba,1.59,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-09-16,"MATH Lvl 5, HF Open LLM Leaderboard V2 run on ai21labs/Jamba-v0.1. Follows the same MATH-Lvl-5-to-'math' slug mapping already used elsewhere in the corpus."
 amazon-nova-lite,73.3,self-reported,https://deepranking.ai/llm-models/nova-lite,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 amazon-nova-micro,69.3,self-reported,https://deepranking.ai/llm-models/nova-micro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"

@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+abab6-5,78,self-reported,https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97,2024-04-17,Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above).
 ai21-jamba,29.3,self-reported,https://arxiv.org/html/2403.19887v1,,"HumanEval pass@1 score from Table 2 of the original Jamba technical report -- not present on the HF model card, which omits code-generation results."
 ai21-jamba-1-5-large,71.3,self-reported,https://arxiv.org/html/2408.12570v1,,
 ai21-jamba-1-5-mini,62.8,self-reported,https://arxiv.org/html/2408.12570v1,,

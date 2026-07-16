@@ -92,7 +92,7 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324",
       "evaluatedAt": "2025-03-24",
-      "notes": "MATH-500 pass@1 score (94.0, up from 90.2 for DeepSeek-V3), read directly from the bar chart image (figures/0324_comparison.png) embedded in the official HF model card \u2014 this fifth benchmark isn't in the card's text callouts (only MMLU-Pro/GPQA/AIME/LiveCodeBench are called out in prose) but is clearly labeled in the chart itself, which also matches the 4 already-recorded scores exactly (MMLU-Pro 81.2, GPQA Diamond 68.4, AIME 2024 59.4, LiveCodeBench 49.2)."
+      "notes": "MATH-500 pass@1 score (94.0, up from 90.2 for DeepSeek-V3), read directly from the bar chart image (figures/0324_comparison.png) embedded in the official HF model card — this fifth benchmark isn't in the card's text callouts (only MMLU-Pro/GPQA/AIME/LiveCodeBench are called out in prose) but is clearly labeled in the chart itself, which also matches the 4 already-recorded scores exactly (MMLU-Pro 81.2, GPQA Diamond 68.4, AIME 2024 59.4, LiveCodeBench 49.2)."
     },
     {
       "benchmarkSlug": "aider-polyglot",
@@ -115,14 +115,14 @@
       "score": 1396,
       "source": "arena",
       "sourceUrl": "https://arena.ai/leaderboard/text",
-      "notes": "Live LMArena (Chatbot Arena) text Elo, read from the current (mid-2026) leaderboard snapshot: 1396\u00b14, rank ~130 of tracked models, 45,480 votes. Elo is dynamic and decays in relative rank as newer frontier models are added \u2014 this is the model's current standing, not a fixed launch-week score. (DeepSeek's own announcement threads separately claimed a #5 rank / #1-open-model position on the arena shortly after the March 2025 launch, and a #4 WebDev Arena ranking, but did not publish a specific Elo number, so those claims aren't independently reproducible as a score here.)"
+      "notes": "Live LMArena (Chatbot Arena) text Elo, read from the current (mid-2026) leaderboard snapshot: 1396±4, rank ~130 of tracked models, 45,480 votes. Elo is dynamic and decays in relative rank as newer frontier models are added — this is the model's current standing, not a fixed launch-week score. (DeepSeek's own announcement threads separately claimed a #5 rank / #1-open-model position on the arena shortly after the March 2025 launch, and a #4 WebDev Arena ranking, but did not publish a specific Elo number, so those claims aren't independently reproducible as a score here.)"
     },
     {
       "benchmarkSlug": "hle",
       "score": 5,
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v3-0324",
-      "notes": "Humanity's Last Exam, Artificial Analysis Intelligence Index v4.1, row labeled 'DeepSeek V3 0324' (5%, vs. 4% for the separately-tracked Dec-2024 'DeepSeek V3'). A hard, unfavorable result included for honest coverage \u2014 near the bottom of the tracked comparison set."
+      "notes": "Humanity's Last Exam, Artificial Analysis Intelligence Index v4.1, row labeled 'DeepSeek V3 0324' (5%, vs. 4% for the separately-tracked Dec-2024 'DeepSeek V3'). A hard, unfavorable result included for honest coverage — near the bottom of the tracked comparison set."
     },
     {
       "benchmarkSlug": "ifbench",
@@ -136,7 +136,7 @@
       "score": 14,
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v3-0324",
-      "notes": "Terminal-Bench v2.1 (agentic coding/terminal-use eval), Artificial Analysis Intelligence Index v4.1, row labeled 'DeepSeek V3 0324' at 14% \u2014 mapped to the 'terminal-bench-2' taxonomy slug for the v2 benchmark family. A hard agentic eval where this non-agentic-era model scores near the bottom of the comparison set (vs. 17% for the Dec-2024 DeepSeek-V3, both far behind current frontier models at 78-88%), included for honest, non-cherry-picked coverage."
+      "notes": "Terminal-Bench v2.1 (agentic coding/terminal-use eval), Artificial Analysis Intelligence Index v4.1, row labeled 'DeepSeek V3 0324' at 14% — mapped to the 'terminal-bench-2' taxonomy slug for the v2 benchmark family. A hard agentic eval where this non-agentic-era model scores near the bottom of the comparison set (vs. 17% for the Dec-2024 DeepSeek-V3, both far behind current frontier models at 78-88%), included for honest, non-cherry-picked coverage."
     },
     {
       "benchmarkSlug": "gdpval-aa",
@@ -150,7 +150,7 @@
       "score": 65,
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v3-0324",
-      "notes": "Independent re-measurement of GPQA Diamond by Artificial Analysis (Intelligence Index v4.1 methodology), row explicitly labeled 'DeepSeek V3 0324' (distinct from their separately-tracked 'DeepSeek V3 (Dec)' row, which scored 56%). This 65% is lower than DeepSeek's own self-reported 68.4 already on file \u2014 a genuine self-reported vs. independently-verified discrepancy worth surfacing, not a duplicate. Exact evaluation date not published by Artificial Analysis; page reflects their current, periodically-rerun index."
+      "notes": "Independent re-measurement of GPQA Diamond by Artificial Analysis (Intelligence Index v4.1 methodology), row explicitly labeled 'DeepSeek V3 0324' (distinct from their separately-tracked 'DeepSeek V3 (Dec)' row, which scored 56%). This 65% is lower than DeepSeek's own self-reported 68.4 already on file — a genuine self-reported vs. independently-verified discrepancy worth surfacing, not a duplicate. Exact evaluation date not published by Artificial Analysis; page reflects their current, periodically-rerun index."
     },
     {
       "benchmarkSlug": "gaia",
@@ -158,6 +158,14 @@
       "source": "independent",
       "sourceUrl": "https://hal.cs.princeton.edu/gaia",
       "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, DeepSeek V3 (March 2025 snapshot = the V3-0324 update, distinct from original Dec-2024 V3). GAIA validation set."
+    },
+    {
+      "benchmarkSlug": "putnam-bench",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://trishullab.github.io/PutnamBench/leaderboard.html",
+      "evaluatedAt": "2025-03-31",
+      "notes": "Official PutnamBench leaderboard entry 'DeepSeek-V3-0324': solved 0 of 672 Lean 4 problems pass@1, evaluated via FTPEvals (commit 0da3032, cost ~$2; model config deepseek-v3.yaml -> API model 'deepseek-chat', which at eval time pointed to the V3-0324 checkpoint, matching this corpus entry). Added in leaderboard commit 41fdd55f (2025-03-31)."
     }
   ],
   "verificationNotes": "Existence and release confirmed via DeepSeek's own news post (api-docs.deepseek.com/news/news250325, published 2025-03-25 referencing a 3/24 model card date) and the live HF card, both stating MIT license. Note: HF safetensors index sums to ~685B raw tensor weight but DeepSeek's own papers/cards and consistent third-party reporting describe the architecture as 671B total/37B active (685B includes the multi-token-prediction head), so 671B is kept as the standard-cited figure. All 4 result rows (AIME 59.4, GPQA 68.4, MMLU-Pro 81.2, LiveCodeBench 49.2) confirmed literally on the HF card as the 'after' values of the delta callouts. Caveat (not changed in record): DeepSeek's own 'deepseek-chat' API alias now silently routes to a newer V4-Flash model (since ~Apr 2026) and deprecates 2026-07-24, so the $0.27/$1.10 figure is the original 2025 DeepSeek-hosted launch price, not what DeepSeek's API bills today; the open weights remain genuinely available via self-host or third-party providers."

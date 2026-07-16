@@ -121,6 +121,14 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/openai/simple-evals",
       "notes": "From the 'o3-mini' (medium/default) row of OpenAI's simple-evals README table. Verified via raw GitHub fetch."
+    },
+    {
+      "benchmarkSlug": "putnam-bench",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://trishullab.github.io/PutnamBench/leaderboard.html",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Official PutnamBench leaderboard entry 'o3-mini': solved 0 of 672 Lean 4 problems pass@1, evaluated via FTPEvals (commit 0da3032, cost ~$20; model config o3-mini.yaml confirms reasoning_effort: medium, disambiguating which of the corpus's three o3-mini effort variants this maps to). Added in leaderboard commit c120a690 (2025-03-12), unchanged since."
     }
   ],
   "verificationNotes": "Same model as o3-mini (Low) verification, different effort tier. AIME 76.9, GPQA 76.8, Codeforces 2036, SWE-bench 42.9 (medium effort) all confirmed by direct fetch of the lesswrong.com article, matching exactly. Release date, context window, and pricing confirmed identically to the Low-effort record. No changes made."

@@ -1,7 +1,9 @@
 model_slug,score,source,source_url,evaluated_at,notes
+abab6-5,91.7,self-reported,https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97,2024-04-17,Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above).
 ai21-jamba,59.9,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,CoT
 ai21-jamba-1-5-large,87,self-reported,https://arxiv.org/html/2408.12570v1,,
 ai21-jamba-1-5-mini,75.8,self-reported,https://arxiv.org/html/2408.12570v1,,
+ai21-jurassic-2-ultra,22.5,independent,https://crfm.stanford.edu/helm/classic/latest/#/leaderboard/gsm,,"Stanford HELM Classic leaderboard, 5-shot EM=0.225, listed as 'Jurassic-2 Jumbo (178B)' (pre-rename name for Ultra). Exact run date not shown on page."
 airoboros-70b-l2,24.72,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_jondurbin__airoboros-l2-70b-gpt4-2.0/blob/main/results_2023-10-23T03-12-02.680525.json,2023-10-23,"5-shot GSM8K (harness|gsm8k|5, acc 0.247157) from the HF Open LLM Leaderboard details dataset for the exact model checkpoint tracked here, jondurbin/airoboros-l2-70b-gpt4-2.0 (model_sha f16526d9... confirmed in the raw JSON, so not conflated with the later 2.2.1/3.1.2 Airoboros checkpoints that also show up in search results with different, higher GSM8K scores)."
 amazon-nova-lite,94.5,self-reported,https://deepranking.ai/llm-models/nova-lite,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 amazon-nova-micro,92.3,self-reported,https://deepranking.ai/llm-models/nova-micro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"

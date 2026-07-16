@@ -197,6 +197,14 @@
       "sourceUrl": "https://github.com/SuperGPQA/SuperGPQA",
       "evaluatedAt": "2025-02-20",
       "notes": "SuperGPQA overall (sample) accuracy for DeepSeek-R1, from the official SuperGPQA leaderboard/README (ByteDance Doubao Seed team, arXiv:2502.14739), in the 'Reasoning Models' table. Highest-scoring DeepSeek entry on that leaderboard (DeepSeek-R1-Zero scored 60.24, DeepSeek-V3-Base scored 32.14 for comparison). Not currently tracked for this model."
+    },
+    {
+      "benchmarkSlug": "putnam-bench",
+      "score": 0.15,
+      "source": "independent",
+      "sourceUrl": "https://trishullab.github.io/PutnamBench/leaderboard.html",
+      "evaluatedAt": "2025-03-30",
+      "notes": "Official PutnamBench leaderboard (trishullab/PutnamBench, docs/results.json entry 'Deepseek R1'): solved 1 of 672 Lean 4 problems (1977 A3) pass@1. Evaluated via the FTPEvals harness (github.com/GeorgeTsoukalas/FTPEvals, commit 0da3032; model config deepseek-r1.yaml -> API model 'deepseek-reasoner', matching this corpus entry). Score updated from 0->1 in leaderboard commit 52212458 (2025-03-30); verified via GitHub commit history (`git log -p docs/results.json`)."
     }
   ],
   "verificationNotes": "Existence, MIT license, 671B/37B params, 128K ctx, and Jan 20 2025 release date all confirmed by fetching the live HF model card and GitHub repo. All 7 result rows verified literally present on the HF card. Caveat (not changed in record): as of the current date DeepSeek's own hosted 'deepseek-reasoner' API alias has been quietly routing to a newer V4-Flash model since ~Apr 2026 and deprecates entirely 2026-07-24, so the listed $0.55/$2.19 DeepSeek-hosted pricing reflects the original 2025 launch price rather than what DeepSeek's API currently bills; the open weights remain genuinely available (self-host or third-party inference providers)."

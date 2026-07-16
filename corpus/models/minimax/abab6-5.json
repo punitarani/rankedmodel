@@ -42,6 +42,63 @@
     "ctxK": "https://www.minimax.io/news/abab65-series",
     "openness": "https://www.minimax.io/news/abab65-series"
   },
-  "results": [],
-  "verificationNotes": "Confirmed real via MiniMax's own news post (minimax.io/news/abab65-series, dated 2024-04-17): 'Abab6.5 features a trillion parameters and supports a context length of 200k tokens; abab6.5s uses the same training techniques and data as abab6.5 but is more efficient.' Confirms MoE architecture, trillion-scale params (undisclosed exact count), 200K context, and the abab6.5/abab6.5s two-variant structure. Function calling/tool use confirmed generally supported by the MiniMax API (parallel function calling, tool selection) per MiniMax API docs. No results rows were present to verify. No changes made."
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 78.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97",
+      "evaluatedAt": "2024-04-17",
+      "notes": "Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (embedded image on the Chinese-language minimaxi.com news post; the English minimax.io mirror omits this chart). Table compares abab-6.5/abab-6.5s against GPT-4, GPT-3.5, Gemini 1.5 Pro, and Claude 3 across MT-Bench, AlignBench, MMLU, GSM8K, MATH, BBH, HumanEval, IFEval. Not starred, so per the table footnote this score is drawn from MiniMax's own technical report rather than MiniMax's independent API testing."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 91.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97",
+      "evaluatedAt": "2024-04-17",
+      "notes": "Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 51.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97",
+      "evaluatedAt": "2024-04-17",
+      "notes": "Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above)."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 83.1,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97",
+      "evaluatedAt": "2024-04-17",
+      "notes": "Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 78.0,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97",
+      "evaluatedAt": "2024-04-17",
+      "notes": "Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 78.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97",
+      "evaluatedAt": "2024-04-17",
+      "notes": "Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above)."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.77,
+      "source": "self-reported",
+      "sourceUrl": "https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97",
+      "evaluatedAt": "2024-04-17",
+      "notes": "Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above). Score is on MT-Bench's 0-10 scale, not a 0-100 percentage."
+    }
+  ],
+  "verificationNotes": "Confirmed real via MiniMax's own news post (minimax.io/news/abab65-series, dated 2024-04-17): 'Abab6.5 features a trillion parameters and supports a context length of 200k tokens; abab6.5s uses the same training techniques and data as abab6.5 but is more efficient.' Confirms MoE architecture, trillion-scale params (undisclosed exact count), 200K context, and the abab6.5/abab6.5s two-variant structure. Function calling/tool use confirmed generally supported by the MiniMax API (parallel function calling, tool selection) per MiniMax API docs. FINAL WIDENED-SEARCH ROUND (2026-07-15): prior rounds found zero results because they searched only the English minimax.io mirror of the launch page, which omits the benchmark chart entirely. The Chinese-language mirror (minimaxi.com/news/通用大模型abab65系列) embeds the chart as an image (filecdn.minimax.chat/public/648c8df6-c541-4c95-8564-a60e6726e0e1.webp); fetched and read it directly to extract 7 benchmark scores for the 'abab-6.5-20240415' row (MMLU 78.7, GSM8K 91.7, MATH 51.3, BBH 83.1, HumanEval 78.0, IFEval 78.9, MT-Bench 8.77), added below. An 8th column, AlignBench (7.42), has no taxonomy slug and was not added. Also checked and came up empty: SuperCLUE (2024 H1 report confirms abab6.5 scored >70 overall and sits in China's first tier, per zengqueling.com/aigcrank.cn summaries of the SuperCLUE report, but no taxonomy slug exists for SuperCLUE itself, and no sub-benchmark breakdown was published) - not added, per instructions not to force a taxonomy fit. OpenCompass/Compass Arena (司南) lists Abab6.5-Chat as a participating model but the live arena leaderboard could not be fetched for a citable score. Artificial Analysis has no abab6.5 entry (only current MiniMax M-series models). LMArena/Chatbot Arena, LMSYS archives, and OpenRouter have no abab6.5 listing (model predates or was never submitted to these trackers). Wayback Machine unreachable via available tools."
 }

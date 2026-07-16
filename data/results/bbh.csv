@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+abab6-5,83.1,self-reported,https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97,2024-04-17,Row 'abab-6.5-20240415' in MiniMax's own launch-announcement benchmark table (same source/table as the MMLU entry above).
 ai21-jamba,45.4,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
 ai21-jamba-1-5-large,65.5,self-reported,https://arxiv.org/html/2408.12570v1,,
 ai21-jamba-1-5-mini,53.4,self-reported,https://arxiv.org/html/2408.12570v1,,

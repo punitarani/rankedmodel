@@ -42,6 +42,15 @@
     "openness": "https://www.scmp.com/tech/big-tech/article/3307493/no-need-nvidia-iflytek-touts-reasoning-model-trained-entirely-huaweis-ai-chips",
     "paramsB": "https://www.huaweicentral.com/huawei-ai-chips-powered-new-iflytek-llms-can-rival-openai-deepseek/"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "gaokao-math",
+      "score": 94,
+      "source": "self-reported",
+      "sourceUrl": "https://edu.iflytek.com/about-us/news/media-report/2225",
+      "evaluatedAt": "2025-06-07",
+      "notes": "Score is 141/150 (converted to 94.0%) on the actual 2025 national Gaokao (college entrance exam) math paper, achieved by the April-2025-upgraded Spark X1 model. Reproduced on iFlytek's own official education media-report page; test was conducted and graded on the afternoon of June 7, 2025 (immediately after the real exam) by an independent veteran high-school math teacher (10 years' experience), using OCR-transcribed answer input and per-question manual grading against the official rubric. CAVEAT: unlike other gaokao-math entries in this corpus (e.g. Qwen2-72B, evaluated via zero-shot CoT over an aggregated multi-year Chinese GaoKao dataset per the Qwen2.5-Math technical report), this is a single real exam paper graded once by one human grader, not an automated multi-question-set benchmark run — methodologically thinner than a standard leaderboard entry, include/weight accordingly."
+    }
+  ],
   "verificationNotes": "Existence, Jan 15, 2025 release, and Huawei Ascend 910B domestic-compute training confirmed independently via CGTN, SCMP, and Huawei Central (910B efficiency raised from ~20% to ~80% of Nvidia). 128K context confirmed via a separate aibase.com report on the Spark Deep Reasoning X1. However, neither CGTN, SCMP, nor Huawei Central discloses architecture type or parameter count; one secondary source (TMTPost) claims '70 billion parameters' but this could not be corroborated by any primary source and conflicts with other undisclosed-params reporting, so paramsB is kept null and the MoE archClass claim should be treated as lower-confidence/unconfirmed rather than a hard fact."
 }

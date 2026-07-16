@@ -46,6 +46,28 @@
     "priceInput/priceOutput": "https://docs.x.ai/developers/models/grok-build-0.1",
     "releaseDate": "https://devops.com/xai-opens-grok-build-0-1-to-developers-via-api/"
   },
-  "results": [],
-  "verificationNotes": "Existence confirmed via SpaceXAI's own docs page (docs.x.ai/developers/models/grok-build-0.1) and multiple independent write-ups (DevOps.com, Kilo Code blog, OpenRouter, Vercel AI Gateway, Kingy.ai) all describing the same model with matching specs: 256K context, $1/$2 per Mtok pricing, text+image input. Release-date sources disagree in the details — different write-ups cite May 14, May 20, May 27, and May 29, 2026 for various milestones (underlying model live vs. subscriber CLI rollout vs. public API beta); I used May 20, 2026 as the best-supported date for the model itself going live, per Kilo Code's blog and a cross-source search, but flagged this as approximate. IMPORTANT: I could NOT find a credible, corroborated benchmark score for this model. One set of aggregator sites (Pickurai, Superconductor, BenchLM) mentioned a ~70.8% SWE-Bench Verified figure, but two independent direct-fetch sources (DevOps.com and Kingy.ai) explicitly state the model 'enters without published benchmarks' and its profile 'does not include independent SWE benchmark results or repository-level testing.' Given this direct contradiction, I omitted all benchmark results for this model rather than report an unconfirmed number."
+  "results": [
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 52,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/grok-build-0-1-06-16",
+      "notes": "Terminal-Bench v2.1 (agentic coding & terminal use), from Artificial Analysis's Intelligence Evaluations breakdown for the 'Grok Build 0.1 0616' checkpoint. Directly fetched/rendered the live AA model page and read off the model's position in the Terminal-Bench v2.1 ranked list (52%, 28th of 29 models shown)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 89,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/grok-build-0-1-06-16",
+      "notes": "GPQA Diamond, from Artificial Analysis's Intelligence Evaluations breakdown for 'Grok Build 0.1 0616' (89%, 23rd of 29 models shown)."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 36,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/grok-build-0-1-06-16",
+      "notes": "Humanity's Last Exam, from Artificial Analysis's Intelligence Evaluations breakdown for 'Grok Build 0.1 0616' (36%, 23rd of 29 models shown)."
+    }
+  ],
+  "verificationNotes": "Existence confirmed via SpaceXAI's own docs page (docs.x.ai/developers/models/grok-build-0.1) and multiple independent write-ups (DevOps.com, Kilo Code blog, OpenRouter, Vercel AI Gateway, Kingy.ai) all describing the same model with matching specs: 256K context, $1/$2 per Mtok pricing, text+image input. Release-date sources disagree in the details — different write-ups cite May 14, May 20, May 27, and May 29, 2026 for various milestones (underlying model live vs. subscriber CLI rollout vs. public API beta); I used May 20, 2026 as the best-supported date for the model itself going live, per Kilo Code's blog and a cross-source search, but flagged this as approximate. VENDOR-REPORTED SWE-BENCH: I could NOT find a credible, corroborated vendor benchmark score. One set of aggregator sites (Pickurai, Superconductor, BenchLM) mentioned a ~70.8% SWE-Bench Verified figure, but two independent direct-fetch sources (DevOps.com and Kingy.ai) explicitly state the model 'enters without published benchmarks.' Given this contradiction, still omitted. WIDER SEARCH (this round, not repeating the above dead end): not a Chinese or Japanese vendor (xAI/SpaceXAI), so no CN/JP-language sources apply. Directly browser-rendered the live Artificial Analysis model page (artificialanalysis.ai/models/grok-build-0-1-06-16 — the '0616' AA checkpoint matches this model's specs exactly: 256K ctx, $1/$2 per Mtok) and read off its per-benchmark rank position in AA's Intelligence Evaluations breakdown, yielding 3 taxonomy-eligible results: Terminal-Bench v2.1 (52%), GPQA Diamond (89%), and Humanity's Last Exam (36%). AA's page also lists GDPval-AA v2 (36% normalized index) and 𝜏³-Banking (11%) for this model, but deliberately did NOT map these: GDPval-AA v2 is displayed as an '(Elo-500)/2000' normalized percentage while this corpus's existing gdpval-aa entries store the raw Elo, so mapping the percentage would conflate two different score scales; 𝜏³-Banking has no matching taxonomy slug (tau-bench is domain-generic upstream τ-bench, tau2-bench-telecom is telecom-specific — Banking domain doesn't cleanly fit either without guessing). Also found real, citable evidence of a separate LMArena/Arena.ai 'Agent Arena' leaderboard placement — official @arena account (x.com/arena/status/2064084859103166518) states 'Grok Build 0.1 ranks #15... in the new Agent Arena leaderboard' (added 2026-06-08 per arena.ai/blog/leaderboard-changelog) — but did not report it: this is a rank on a distinct agentic-behavior leaderboard (Elo-free, based on task-completion/steerability signals), not the Elo-scored LMArena Text leaderboard this corpus's 'arena' slug represents elsewhere (e.g. ernie-5-0-preview.json's arena entry is an Elo score), so force-mapping a bare rank number into that slug's Elo-scored field would misrepresent it. Checked OpenRouter model page directly (no benchmark scores shown, pricing/routing info only) and searched LMArena Text/Code leaderboards, Wayback Machine (no dedicated launch-page snapshot found beyond the still-live docs.x.ai page), and general web search — no other independently-verifiable, taxonomy-mappable benchmark numbers found."
 }

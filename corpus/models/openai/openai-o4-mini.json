@@ -174,6 +174,14 @@
       "sourceUrl": "https://github.com/openai/simple-evals",
       "evaluatedAt": "2025-04-16",
       "notes": "o4-mini (default/medium reasoning), short-form factuality benchmark, OpenAI simple-evals, no tools enabled."
+    },
+    {
+      "benchmarkSlug": "putnam-bench",
+      "score": 0.3,
+      "source": "independent",
+      "sourceUrl": "https://trishullab.github.io/PutnamBench/leaderboard.html",
+      "evaluatedAt": "2025-04-16",
+      "notes": "Official PutnamBench leaderboard entry 'o4-mini-high': solved 2 of 672 Lean 4 problems (2001 A1, 2012 A2) pass@1, evaluated via FTPEvals (commit 0da3032; model config o4-mini.yaml confirms reasoning_effort: high). This corpus tracks a single o4-mini entry (no separate high/medium split), consistent with the file's existing convention of attaching high-reasoning-effort results here (see e.g. its aider-polyglot/mathvista notes). Added in leaderboard commit a5731c67 (2025-04-16)."
     }
   ],
   "verificationNotes": "Confirmed real. developers.openai.com/api/docs/models/o4-mini fetched directly: verified 200K context, 100K max output, $1.10/$4.40 per 1M input/output pricing, text+image-in modalities — all match exactly. Independent secondary sources (DataCamp, Scale AI HLE leaderboard) corroborate all six benchmark figures (AIME 93.4, GPQA 81.4, SWE-bench 68.1, MMMU 81.6, HLE 17.7, Codeforces 2719) as OpenAI's self-reported launch-day numbers from the o3/o4-mini announcement. No changes made."

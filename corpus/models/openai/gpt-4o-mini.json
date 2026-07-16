@@ -187,6 +187,14 @@
       "sourceUrl": "https://arxiv.org/abs/2409.12183",
       "evaluatedAt": "2024-09-18",
       "notes": "Same paper/table as the BBH row above (Sprague et al. 2025, Appendix Table 7): GPT-4o Mini scores 94.1% zero-shot CoT accuracy on GSM8K (31.8% without CoT)."
+    },
+    {
+      "benchmarkSlug": "putnam-bench",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://trishullab.github.io/PutnamBench/leaderboard.html",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Official PutnamBench leaderboard entry 'GPT-4o-mini': solved 0 of 672 Lean 4 problems pass@1 (T=0.7), evaluated via FTPEvals (commit 0da3032; model config gpt4o-mini.yaml -> API model 'gpt-4o-mini'). Added in leaderboard commit c120a690 (2025-03-12), unchanged since."
     }
   ],
   "verificationNotes": "Confirmed via web search of OpenAI's official announcement (direct fetch blocked by 403, but search excerpts quote the page verbatim): MMLU 82%, MGSM 87%, HumanEval 87.2%, MMMU 59.4% all match exactly. Release date 2024-07-18, 128K context, and closed/proprietary licensing confirmed by independent sources (OpenAI blog via search, Azure blog, DataCamp). Coverage-completeness pass (2026-07-14): pulled OpenAI's own openai/simple-evals GitHub table directly (its MMLU/MATH/HumanEval/MGSM columns reproduce this file's existing values exactly, validating it as the source behind the launch-blog chart), adding GPQA, DROP, and SimpleQA. Added MMLU-Pro from TIGER-Lab's independently-run leaderboard (raw results.csv fetched and parsed), ARC-AGI-1 from the ARC Prize Foundation's official baseline announcement, BigCodeBench from the official bigcode-project leaderboard results dataset (parquet fetched and parsed directly), and BBH/ARC-Challenge/ARC-Easy/PIQA/WinoGrande/SiQA/GSM8K from Sprague et al. (ICLR 2025, arXiv:2409.12183), an independent academic zero-shot-CoT evaluation whose full per-dataset appendix table was fetched and parsed directly from the PDF. Benchmarks OpenAI's launch blog is known to have charted but for which no exact numeric transcription could be sourced (MathVista) were left out rather than guessed. OpenAI has not published gpt-4o-mini results on agentic/tool-use suites (BFCL, tau-bench, GAIA, SWE-bench) or on frontier-2025-era evals (LiveCodeBench, Terminal-Bench, ARC-AGI-2) that postdate or were never run against this July-2024 budget model; searches for those came up empty on both OpenAI's own material and third-party leaderboards, so they are honestly omitted rather than fabricated."

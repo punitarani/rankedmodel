@@ -128,6 +128,14 @@
       "sourceUrl": "https://arxiv.org/abs/2507.06261",
       "evaluatedAt": "2025-07-07",
       "notes": "VideoMME, audio+visual (no subtitles) setting, Table 6 of the Gemini 2.5 technical report. The same table also reports an audio+visual+subtitles VideoMME variant of 86.9%, which was left out to avoid conflating it with the standard no-subtitles VideoMME slug. Verified via direct PDF text extraction."
+    },
+    {
+      "benchmarkSlug": "putnam-bench",
+      "score": 0.45,
+      "source": "independent",
+      "sourceUrl": "https://trishullab.github.io/PutnamBench/leaderboard.html",
+      "evaluatedAt": "2025-03-30",
+      "notes": "Official PutnamBench leaderboard entry 'gemini-2.5-pro-exp-0325': solved 3 of 672 Lean 4 problems (2001 A1, 2012 A2, 1977 A3) pass@1, evaluated via FTPEvals (commit 0da3032; model config gemini-2.5-pro-exp-03-25.yaml, matching this corpus entry's 2025-03-25 release date exactly). Added in leaderboard commit 52212458 (2025-03-30)."
     }
   ],
   "verificationNotes": "Fetched the primary blog.google launch post directly: confirmed publish date March 25, 2025 (updated Mar 26), and the exact HLE 18.8%, SWE-bench 63.8%, and '#1 on LMArena by a significant margin' quotes verbatim. Independently confirmed the deprecation claim via ai.google.dev/gemini-api/docs/deprecations live table: gemini-2.5-pro shutdown date is Oct 16, 2026, recommended replacement is gemini-3.1-pro-preview (a real, released model, confirmed via ai.google.dev model docs and Google Cloud blog) — matches the record's note exactly. Pricing $1.25/$10 confirmed on ai.google.dev/gemini-api/docs/pricing. Architecture 'sparse MoE transformer' confirmed via the official Gemini 2.5 Flash/3 Pro model cards' Architecture section (applies to the whole 2.5/3 family). No corrections needed."

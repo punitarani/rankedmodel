@@ -47,6 +47,15 @@
     "releaseDate": "https://note.com/elyza/n/n360b6084fdbd?hl=en",
     "openness": "https://note.com/elyza/n/n360b6084fdbd?hl=en"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 7.78,
+      "source": "self-reported",
+      "sourceUrl": "https://note.com/elyza/n/n360b6084fdbd?hl=en",
+      "evaluatedAt": "2024-06-26",
+      "notes": "Japanese MT-Bench (localized/translated MT-Bench, GPT-4-judged, 8 categories x 10 questions, averaged), Llama-3-ELYZA-JP-8B score from ELYZA's official June 26, 2024 Japanese launch blog post (same URL already used in this record's specSources for releaseDate/openness). The number appears only in an embedded comparison-chart image on that page (not machine-text-extractable via automated fetch), so it was cross-verified via two independent third-party transcriptions of the identical chart that both agree: chowagiken.co.jp (https://www.chowagiken.co.jp/future-studio/llama3elyza_jp8b/, explicitly stated as excerpted from ELYZA's note) and ascii.jp (https://ascii.jp/elem/000/004/208/4208543/2/) -- both list Llama-3-ELYZA-JP-8B at 3.655 (ELYZA Tasks 100) / 7.78 (Japanese MT-Bench), versus GPT-3.5 Turbo 3.475/8.54, Gemini 1.0 Pro 3.515/8.49, Meta-Llama-3-8B-Instruct base 3.000/7.49, and Llama-3-ELYZA-JP-70B 4.070/9.08 in the same chart. Mapped to the 'mt-bench' taxonomy slug (Japanese-localized variant, clearly labeled here) following existing corpus precedent at corpus/models/preferred-networks/plamo-100b.json, which records Japanese MT-Bench under the same slug since no separate Japanese-MT-Bench slug exists in the taxonomy. The companion ELYZA Tasks 100 score (3.655) is NOT recorded because no matching taxonomy slug exists for it (same precedent: plamo-100b.json deliberately omits its analogous 'JHumanEval' score for lack of a slug)."
+    }
+  ],
   "verificationNotes": "CONFIRMED. ELYZA's official note.com announcement confirms publication date June 26, 2024, states the 8B model is based on Meta-Llama-3-8B-Instruct with additional Japanese pretraining/instruction-tuning, is licensed under the Llama 3 Community License (commercial use permitted per Acceptable Use Policy), and performs comparably to GPT-3.5 Turbo/Claude 3 Haiku/Gemini 1.0 Pro (only the 70B sibling is claimed to exceed GPT-4 — record's note correctly distinguishes this). HF model card and llm-explorer confirm 8B params, 8K context (8,192 max tokens), 16.1GB fp16 VRAM — all match record exactly. No benchmark rows were present in the source record and none could be independently sourced with hard numbers on the model card, so the empty results array is correct as-is. No corrections required."
 }

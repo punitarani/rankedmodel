@@ -47,6 +47,42 @@
     "releaseDate": "https://www.ai21.com/blog/introducing-j2/",
     "openness": "https://www.ai21.com/blog/introducing-j2/"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 48,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/classic/latest/#/leaderboard/mmlu",
+      "notes": "Stanford HELM Classic leaderboard, 5-shot EM=0.48, listed under the model's pre-rename name 'Jurassic-2 Jumbo (178B parameters)' (AI21 later renamed Jumbo->Ultra per AWS Bedrock docs, already noted in verificationNotes). Exact evaluation run date not shown on the leaderboard UI; model launched 2023-03-09 and HELM continuously re-runs scenarios, so evaluatedAt is left unset rather than guessed."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 22.5,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/classic/latest/#/leaderboard/gsm",
+      "notes": "Stanford HELM Classic leaderboard, 5-shot EM=0.225, listed as 'Jurassic-2 Jumbo (178B)' (pre-rename name for Ultra). Exact run date not shown on page."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 78.8,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/classic/latest/#/leaderboard/hellaswag",
+      "notes": "Stanford HELM Classic leaderboard, 0-shot EM=0.788, listed as 'Jurassic-2 Jumbo (178B)' (pre-rename name for Ultra). Exact run date not shown on page."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 55.8,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/classic/latest/#/leaderboard/openbookqa",
+      "notes": "Stanford HELM Classic leaderboard, 0-shot EM=0.558, listed as 'Jurassic-2 Jumbo (178B)' (pre-rename name for Ultra). Exact run date not shown on page."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 43.7,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/classic/latest/#/leaderboard/truthful_qa",
+      "notes": "Stanford HELM Classic leaderboard, 5-shot EM=0.437, listed as 'Jurassic-2 Jumbo (178B)' (pre-rename name for Ultra). Exact run date not shown on page."
+    }
+  ],
   "verificationNotes": "Confirmed via ai21.com/blog/introducing-j2/ (published 2023-03-09): announces J2 Large/Grande/Jumbo family, 6 non-English languages (Spanish, French, German, Portuguese, Italian, Dutch) plus English = 7 total, and literally states 'J2 Jumbo ... an 86.8% win-rate on HELM by our internal evaluations' confirming the result row. Jumbo->Ultra renaming and AWS Bedrock's 8,192-token limit and 'Legacy' lifecycle status confirmed via AWS Bedrock docs and secondary sources. Current $18.8/M input+output pricing corroborated by independent pricing trackers. All fields left unchanged."
 }

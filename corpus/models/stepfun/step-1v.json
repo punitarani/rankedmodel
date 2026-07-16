@@ -43,6 +43,15 @@
     "openness": "https://platform.stepfun.com/docs/api-reference/models/list",
     "ctxK": "https://platform.stepfun.com/docs/api-reference/models/list"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 886,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2504.11101",
+      "evaluatedAt": "2025-04-15",
+      "notes": "From arXiv:2504.11101 'Consensus Entropy: Harnessing Multi-VLM Agreement for Self-Verifying and Self-Improving OCR' (Table 3, 'Representative CE Ensemble Examples On OCRBench'). The row lists four individual model scores feeding into an ensemble: 'Ovis2-1B, Qwen2.5VL-7B, Step1V, Step1o (890, 874, 886, 926)' -- Step1V's own OCRBench score is 886 (raw scale, consistent with other corpus OCRBench entries e.g. ERNIE-4.5-VL 872, InternVL2.5-78B 854). Verified consistently across three independent WebFetch reads of the paper's HTML version (arxiv.org/html/2504.11101v4, dated 06 May 2026 for v4; original submission April 2025). Unusual citation context (score appears inside an ensemble-methods table rather than a dedicated model leaderboard/report), so flagging for reviewer double-check, but the paper is a real, independently-authored academic source with Step1V's individual score explicitly stated."
+    }
+  ],
   "verificationNotes": "Confirmed real: nextomoro and other search results independently confirm Step-1V launched September 2024 as StepFun's first public multimodal model, with Step-Audio/Step-Video following in Oct/Nov 2024. Confirmed a step-1v-32k variant genuinely exists in StepFun's official model-list docs, supporting the ctxK=32 value. No result rows were provided to verify. Params left null (undisclosed) as given."
 }
