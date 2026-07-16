@@ -43,6 +43,15 @@
     "ctxK": "https://getfreeai.net/en/services/api/baidu/",
     "openness": "https://technode.com/2023/10/18/baidu-claims-latest-version-of-ernie-ai-model-is-on-a-par-with-gpt-4/"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "superclue",
+      "score": 79.02,
+      "source": "independent",
+      "sourceUrl": "https://news.qq.com/rain/a/20231228A072Q700",
+      "evaluatedAt": "2023-12-28",
+      "notes": "SuperCLUE 2023 Annual Report, 百度文心一言4.0 (API), ranked #1 among domestic Chinese models (vs GPT-4-Turbo 90.63, GPT-4-Web 83.92). Independently corroborated by sohu.com/a/748415134_121124334. Found during round-7 widened search but not merged at the time since the superclue taxonomy slug did not yet exist; backfilled once it was introduced."
+    }
+  ],
   "verificationNotes": "Existence and Oct 17, 2023 release date (Baidu World 2023 keynote) confirmed via Voicebot.ai, PRNewswire, and CNBC coverage, all dated Oct 17-18 2023 reporting the same-day/previous-day launch — exact match to the given releaseDate. paramsB correctly left null; undisclosed in every source found. No specific benchmark result rows were present in the original record, so none were added (avoiding unverified numbers)."
 }
