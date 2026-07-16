@@ -66,6 +66,54 @@
       "sourceUrl": "https://arxiv.org/html/2308.12950v3",
       "evaluatedAt": "2023-08-01",
       "notes": "pass@1, Code Llama - Python 34B"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 50.43,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_codellama__CodeLlama-34b-Python-hf",
+      "evaluatedAt": "2024-02-19",
+      "notes": "25-shot acc_norm (harness|arc:challenge|25: acc_norm=0.50427), HF Open LLM Leaderboard v1 (old) independent eval run of codellama/CodeLlama-34b-Python-hf -- fetched the raw results JSON directly. Not previously tracked (file only had HumanEval/MBPP from Meta's own paper)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 76.36,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_codellama__CodeLlama-34b-Python-hf",
+      "evaluatedAt": "2024-02-19",
+      "notes": "10-shot acc_norm (harness|hellaswag|10: acc_norm=0.76359), HF Open LLM Leaderboard v1 (old) independent eval run, raw results JSON."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 49.11,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_codellama__CodeLlama-34b-Python-hf",
+      "evaluatedAt": "2024-02-19",
+      "notes": "5-shot acc averaged across all 57 MMLU subject subtasks (hendrycksTest-*, computed directly from the raw results JSON: mean acc = 0.49108), HF Open LLM Leaderboard v1 (old) independent eval run."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 41.37,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_codellama__CodeLlama-34b-Python-hf",
+      "evaluatedAt": "2024-02-19",
+      "notes": "MC2 score (harness|truthfulqa:mc|0: mc2=0.41373), HF Open LLM Leaderboard v1 (old) independent eval run, matching this corpus's established convention of using MC2 for Open-LLM-Leaderboard-sourced TruthfulQA rows."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 71.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_codellama__CodeLlama-34b-Python-hf",
+      "evaluatedAt": "2024-02-19",
+      "notes": "5-shot acc (harness|winogrande|5: acc=0.71902), HF Open LLM Leaderboard v1 (old) independent eval run, raw results JSON."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 32.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_codellama__CodeLlama-34b-Python-hf",
+      "evaluatedAt": "2024-02-19",
+      "notes": "5-shot acc (harness|gsm8k|5: acc=0.32297), HF Open LLM Leaderboard v1 (old) independent eval run, raw results JSON."
     }
   ],
   "verificationNotes": "Confirmed release 2023-08-24 and license. Directly fetched arxiv.org/html/2308.12950v3 Table 2: HumanEval 53.7 / MBPP 56.2 for Code Llama - Python 34B confirmed exactly; also consistent with the paper's original (pre-70B) abstract headline of 'up to 53% and 55%' on HumanEval/MBPP, which referred to this exact model before the 70B variant was added in a later paper revision."

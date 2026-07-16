@@ -111,7 +111,21 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.00949",
       "evaluatedAt": "2025-05-01",
-      "notes": "Arena-Hard, Reasoning On. From Table 4 of the technical report: for the final LN-Super checkpoint the row reads 'on=88.3 | off=\u2014' (no off-mode figure reported). CAVEAT: the HF model card/NIM docs publish this identical number (88.3) but label it 'Reasoning Off' instead, and that exact value/label pairing is already recorded in the sibling 'Reasoning Off' corpus entry for this model. This is a direct labeling conflict between NVIDIA's two official sources for the identical figure -- flagging for reviewer judgment rather than fabricating a resolution. Section 6.2 of the paper's body text corroborates an Arena-Hard score in the high-80s for the RLHF'd LN-Super (RPO raised it from 69.1 to 88.1), which is more consistent with this being the model's general/default (would suggest either mode) chat-preference score than a mode-specific figure."
+      "notes": "Arena-Hard, Reasoning On. From Table 4 of the technical report: for the final LN-Super checkpoint the row reads 'on=88.3 | off=—' (no off-mode figure reported). CAVEAT: the HF model card/NIM docs publish this identical number (88.3) but label it 'Reasoning Off' instead, and that exact value/label pairing is already recorded in the sibling 'Reasoning Off' corpus entry for this model. This is a direct labeling conflict between NVIDIA's two official sources for the identical figure -- flagging for reviewer judgment rather than fabricating a resolution. Section 6.2 of the paper's body text corroborates an Arena-Hard score in the high-80s for the RLHF'd LN-Super (RPO raised it from 69.1 to 88.1), which is more consistent with this being the model's general/default (would suggest either mode) chat-preference score than a mode-specific figure."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 7,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/llama-3-3-nemotron-super-49b-reasoning",
+      "notes": "Humanity's Last Exam, independently measured by Artificial Analysis on the 'Reasoning' (Reasoning On) variant of this model. HLE was not previously tracked for this model under either mode. Verified by manually aligning the model-name list against the score list on the AA model page (position 21 of 26, value 7%)."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 38,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/llama-3-3-nemotron-super-49b-reasoning",
+      "notes": "IFBench, independently measured by Artificial Analysis on the 'Reasoning' (Reasoning On) variant — distinct benchmark from the already-tracked IFEval. Verified by manually aligning the model-name list against the score list on the AA model page (position 22 of 24, value 38%)."
     }
   ],
   "verificationNotes": "Confirmed via HF model card (fetched): same model card as Reasoning-Off variant; all four Reasoning-On benchmark scores match exactly (MATH500 96.6, AIME25 58.4, GPQA 66.67, MBPP 91.3)."

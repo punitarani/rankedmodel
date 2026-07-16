@@ -1,6 +1,7 @@
 model_slug,score,source,source_url,evaluated_at,notes
 aya-23-35b,53.7,self-reported,https://arxiv.org/abs/2405.15032,2024-05-23,"5-shot, native chain-of-thought with strict-match scoring, averaged across 7 languages (Table 6, Multilingual Grade School Math benchmark) for Aya-23-35B."
 aya-expanse-32b,73.4,self-reported,https://arxiv.org/abs/2412.04261,2024-10-24,"5-shot, native chain-of-thought with strict-match scoring, averaged across 7 languages (Table 3, 32B model class) from the Aya Expanse technical report."
+aya-vision-32b,79.46,self-reported,https://arxiv.org/abs/2505.08751,2025-05-13,"Table 5 of the official Aya Vision technical report (arXiv:2505.08751), MGSM math reasoning averaged across 6 languages, part of the multilingual text-only academic benchmark suite. Not previously tracked for this model."
 claude-3-5-haiku,85.6,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"0-shot CoT, Table 8."
 claude-3-5-sonnet,91.6,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,2024-06-20,"0-shot CoT, Model Card Addendum Table 1 (Claude 3.5 Sonnet column); also independently confirmed as 91.6% in the later October addendum's comparison baseline column (Table 7)."
 claude-3-5-sonnet-new,92.5,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"0-shot CoT, Table 7."
@@ -13,6 +14,8 @@ gemini-1-0-ultra,79,self-reported,https://storage.googleapis.com/deepmind-media/
 gemini-1-5-flash,82.6,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"8-shot, Table 11 of the Gemini 1.5 technical report (multilingual math reasoning). Note: a later revision of the same report (Table 22, added when Flash-8B was introduced ~Oct 2024) lists Flash's MGSM as 82.4%, a 0.2pt difference likely from a re-run/re-evaluation pass -- 82.6% from the primary Table 11 comparison is used here."
 gemini-1-5-flash-8b,70.5,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"Table 22, 8-shot, multilingual math reasoning."
 gemini-1-5-pro,87.5,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"8-shot, Table 11 of the Gemini 1.5 technical report."
+glm-4-9b-chat,65.3,self-reported,https://huggingface.co/zai-org/glm-4-9b-chat,2024-06-05,"MGSM (Multilingual Grade School Math) score from the official model card's 'Multi Language' benchmark table (11 languages: zh, en, bn, de, es, fr, ja, ru, sw, te, th), also confirmed verbatim in the GitHub README_20240605.md. Not previously tracked -- corpus only had the English-only GSM8K score for this model."
+gpt-4-1-mini,88.2,self-reported,https://github.com/openai/simple-evals,2025-04-14,"gpt-4.1-mini-2025-04-14, Multilingual Grade School Math, OpenAI simple-evals."
 gpt-4-turbo,89.6,self-reported,https://github.com/openai/simple-evals,2024-05-13,"gpt-4-turbo-2024-04-09, OpenAI simple-evals (Multilingual Grade School Math)."
 gpt-4o,90.5,self-reported,https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947,,"Multilingual Grade School Math; OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
 gpt-4o-mini,87,self-reported,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,2024-07-18,
@@ -35,6 +38,9 @@ openai-o1,89.3,self-reported,https://github.com/openai/simple-evals,,
 openai-o1-mini,89.9,self-reported,https://github.com/openai/simple-evals,,
 openai-o1-preview,90.8,self-reported,https://github.com/openai/simple-evals,,
 openai-o3-mini-high,92,self-reported,https://github.com/openai/simple-evals,,
+openai-o3-mini-low,89.4,self-reported,https://github.com/openai/simple-evals,2025-01-31,From the 'o3-mini-low' row of OpenAI's own simple-evals README table (raw file directly fetched and confirmed). Not currently tracked for this model.
+openai-o3-mini-medium,90.8,self-reported,https://github.com/openai/simple-evals,,From the 'o3-mini' (medium/default) row of OpenAI's simple-evals README table. Verified via raw GitHub fetch.
+openai-o4-mini,93.7,self-reported,https://github.com/openai/simple-evals,2025-04-16,"o4-mini (default/medium reasoning), OpenAI simple-evals Multilingual Grade School Math, no tools enabled."
 palm-2,72.2,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"Flan-PaLM 2 (instruction-tuned), 8-shot chain-of-thought (no self-consistency) on MGSM, from Table 7; independently cross-confirmed by the identical 75.9 figure for 'Flan-PaLM 2 (L)' in the Table 16 appendix ablation."
 phi-3-5-mini-3-8b,47.9,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,0-shot CoT; HF model card.
 phi-3-5-moe-16x3-8b-6-6b-active,58.7,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,MGSM CoT

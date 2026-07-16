@@ -1,8 +1,10 @@
 model_slug,score,source,source_url,evaluated_at,notes
+code-llama-13b,52.6,independent,https://evalplus.github.io/leaderboard.html,2024-01-01,"pass@1 on the EvalPlus-rigorized MBPP+ test set (base, non-instruct CodeLlama-13B, greedy decoding), from the official EvalPlus leaderboard results data (evalplus/evalplus.github.io repo, entry 'CodeLlama-13B')."
 codeqwen1-5-7b,60.2,self-reported,https://qwenlm.github.io/blog/codeqwen1.5/,2024-04-16,"Base model, 0-shot."
 command-a,86.2,self-reported,https://arxiv.org/abs/2504.00698,,MBPP+
 command-r7b,72,self-reported,https://arxiv.org/abs/2504.00698,,MBPP+
 deepseek-coder-v2-236b,76.2,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,,MBPP+ (EvalPlus)
+doubao-1-5-pro,78,self-reported,https://seed.bytedance.com/doubao_1_5_pro,,"Labeled 'MBPP+' (the MBPP-Plus variant, not plain MBPP) in the Code section of the official launch-page table; mapped to the mbpp-plus taxonomy slug specifically because of the '+' naming."
 ernie-4-5-300b-a47b,81,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"MBPP+, Table 5."
 falcon-h1-34b,71.43,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,MBPP+
 gpt-4o,87.8,independent,https://arxiv.org/abs/2407.21783,2024-07-23,"MBPP EvalPlus (i.e. MBPP+), 0-shot. From the same Meta Llama-3 paper comparison table (Table 2), verified directly against the PDF."
@@ -28,4 +30,9 @@ qwen2-5-72b,69.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-0
 qwen2-5-7b,62.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
 qwen2-5-coder-32b,68.2,self-reported,https://arxiv.org/abs/2409.12186,2024-11-12,"Base model, Table 5; this is the value that was previously mislabeled under the bigcodebench slug (see corrections)"
 skywork-o1-open-llama-3-1-8b,65.2,self-reported,https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B,2024-11-26,"MBPP+ column, official HF model card table (row 'Skywork-o1-Open-8B')."
+starcoder-15-5b,46.1,independent,https://evalplus.github.io/leaderboard.html,,"EvalPlus leaderboard row 'StarCoder-15B' (linked to huggingface.co/bigcode/starcoder, confirming same model), MBPP+ pass@1 greedy decoding, non-prompted/completion mode. Cross-checked against the underlying results.json backing the public leaderboard. Not previously tracked (only base MBPP was)."
+starcoder2-15b,53.1,curated,https://arxiv.org/abs/2402.19173,2024-02-28,"MBPP+ pass@1, from Table 9 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024), EvalPlus methodology, greedy decoding."
+starcoder2-3b,47.4,curated,https://arxiv.org/abs/2402.19173,2024-02-28,"MBPP+ pass@1, from Table 9 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024), EvalPlus methodology, greedy decoding."
 wizardcoder-python-34b-v1-0,59.9,self-reported,https://huggingface.co/WizardLMTeam/WizardCoder-Python-34B-V1.0/blob/main/README.md,,"MBPP+ pass@1, from the same official HF README comparison table."
+yi-1-5-34b,55.4,self-reported,https://huggingface.co/01-ai/Yi-1.5-34B,2024-05-12,"01.AI official base-model comparison chart, MBPP+ parenthetical score in the 'MBPP (+)' column."
+yi-1-5-9b,53.6,self-reported,https://huggingface.co/01-ai/Yi-1.5-9B,2024-05-12,"01.AI official base-model comparison chart, MBPP+ parenthetical score in the 'MBPP (+)' column."

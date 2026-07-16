@@ -10,11 +10,14 @@ deepseek-r1-671b,91.8,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-
 deepseek-v2-236b,78,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat,2024-05-07,"C-Eval score for DeepSeek-V2 Chat (RL), from the official HF model card's Chat Model benchmark table (same table/column already used for the corpus's existing MMLU/BBH/HumanEval/MBPP/GSM8K/Math rows)."
 deepseek-v3-671b,86.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,"C-Eval (EM), Chat model"
 deepseekmoe-16b,40.6,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, CEval accuracy 5-shot, DeepSeekMoE 16B column."
+doubao-1-5-pro,91.8,self-reported,https://seed.bytedance.com/doubao_1_5_pro,,C-Eval row of the official launch-page table (Chinese section); Doubao-1.5-pro's best score in that row.
 ernie-4-5-300b-a47b,90.6,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 5, post-trained ERNIE-4.5-300B-A47B, non-thinking mode."
+ernie-bot-ernie-3-5,71.93,self-reported,https://news.sciencenet.cn/htmlnews/2023/6/503251.shtm,2023-06-20,"C-Eval score of 71.93 for ERNIE (Wenxin) 3.5, vs. ChatGPT 51.70 and GPT-4 68.57, from Baidu's June 2023 announcement accompanying the ERNIE 3.5 upgrade. Same Science Net source as the AGIEval entry; also corroborated by SCMP/CNBC coverage of Baidu's claim that Ernie 3.5 'surpassed ChatGPT 3.5... and outperformed... ChatGPT 4 in several Chinese-language capabilities.' Labeled self-reported (Baidu's own claimed figure, press-relayed)."
 glm-4-9b-chat,75.6,self-reported,https://huggingface.co/THUDM/glm-4-9b-chat,,Chinese academic-exam benchmark
 hunyuan-large-a52b,91.9,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
 hunyuan-t1,91.8,self-reported,https://winbuzzer.com/2025/03/23/tencents-releases-its-hunyuan-t1-reasoning-model-beating-deepseek-r1-gpt-4-5-o1-across-benchmarks-xcxwbn/,,Independently corroborated verbatim by SCMP's coverage of the same official table.
 hunyuan-turbos,88.1,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"5-shot, Table 4"
+internlm2-20b,63,self-reported,https://arxiv.org/abs/2403.17297,,"InternLM2-Chat-20B, 5-shot, from Table 6 of the InternLM2 Technical Report."
 kimi-k1-5,88.3,self-reported,https://arxiv.org/abs/2501.12599,,"C-Eval (EM) = 88.3, Kimi k1.5 short-CoT model, Table 3."
 minicpm-2b,51.13,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table; Chinese exam benchmark
 minicpm3-4b,73.6,self-reported,https://huggingface.co/openbmb/MiniCPM3-4B,2024-09-01,Reported as 'CEVAL' on the model card.
@@ -24,6 +27,7 @@ qwen-14b,72.1,self-reported,https://huggingface.co/Qwen/Qwen-14B,2023-09-25,5-sh
 qwen-72b,83.3,self-reported,https://huggingface.co/Qwen/Qwen-72B,2023-11-30,
 qwen-7b,63.5,self-reported,https://huggingface.co/Qwen/Qwen-7B,2023-09-28,"5-shot, val"
 qwen1-5-72b,84.1,self-reported,https://qwenlm.github.io/blog/qwen1.5/,2024-02-04,base model
+qwen2-5-max,92.2,self-reported,https://www.datacamp.com/blog/qwen-2-5-max,2025-01-28,"Base-model comparison chart from the official Qwen2.5-Max launch blog, corroborated verbatim by gocodeo.com's independent transcription of the same chart."
 qwen2-57b-a14b,87.7,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 5-shot"
 qwen2-7b,83.2,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,"Base model, 5-shot"
 qwen3-14b-non-thinking,81,self-reported,https://arxiv.org/pdf/2505.09388,,"C-Eval, Table 16, Qwen3-14B (Non-thinking) column"

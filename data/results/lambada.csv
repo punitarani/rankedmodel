@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+apple-dclm-baseline-7b,82.2,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,2024-07-01,"'LAMBADA' row (0.8220) on the model's official HF eval table. Distinct from the existing 'Winograd' (0.8828, not in corpus, different from WinoGrande) and 'ARC Easy' (0.8220, coincidentally same numeric value) rows already present."
 cerebras-gpt-13b,69.6,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,0-shot
 chinchilla,77.4,self-reported,https://arxiv.org/abs/2203.15556,,Zero-shot LAMBADA accuracy
 falcon-7b,74.9,self-reported,https://arxiv.org/abs/2311.16867,,From Table 20 of the Falcon tech report.
@@ -14,10 +15,13 @@ megatron-turing-nlg-530b,76.6,self-reported,https://developer.nvidia.com/blog/us
 nemotron-3-8b,70.6,self-reported,https://huggingface.co/nvidia/nemotron-3-8b-base-4k,,0-shot
 opt-175b,75.59,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline (zero-shot), reported in GPTQ paper Table results"
 opt-66b,74.93,independent,https://ar5iv.labs.arxiv.org/html/2210.17323,2022-10-01,"FP16 baseline (zero-shot), GPTQ paper"
+orca-2-13b,63.67,self-reported,https://ar5iv.labs.arxiv.org/html/2311.11045,,"Zero-shot, Figure 5 (Text Completion) of the Orca 2 technical report, Orca-2-13B row (default/empty system message; cautious-system-message variant scores 61.96). Confirmed via pdftotext -layout extraction. [score corrected during round-6 completeness verify: proposed 63.69 -> 63.67]"
 palm-540b,77.9,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"PaLM 540B, 0-shot LAMBADA (EM), from Table 4."
 pythia-1-4b,61.6,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json,2023-04-03,"Zero-shot, LM Eval Harness, official final-checkpoint (step143000, i.e. fully-trained v1.1) raw eval JSON from the Pythia GitHub repo — lambada_openai acc=0.6161."
 pythia-12b,70.5,self-reported,https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-12b/zero-shot/12b_step143000.json,2023-04-03,"zero-shot accuracy, LM Eval Harness, lambada_openai task, final checkpoint (step143000) — raw eval JSON acc=0.7046"
 pythia-6-9b,67.3,self-reported,https://arxiv.org/abs/2304.01373,,"Zero-shot LAMBADA (OpenAI) accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7 (Appendix G.1) of the Pythia paper: 0.673±0.007."
+qwen-14b,71.1,self-reported,https://arxiv.org/abs/2309.16609,2023-09-25,"Qwen Technical Report, Table 16 (""knowledge and understanding""), LAMBADA column, zero-shot. Confirmed via direct read of the PDF (page 39)."
+qwen1-5-moe-a2-7b,71.28,independent,https://arxiv.org/abs/2602.11184,2026-02-24,Reported as 'LAMBADA-openai' in Table 10 (the more commonly cited LAMBADA variant). A second 'LAMBADA-standard' split scored 64.62 in the same table but is not separately mapped since the taxonomy has a single 'lambada' slug.
 redpajama-incite-7b-base,71.43,self-reported,https://arxiv.org/abs/2411.12372,,"LAMBADA-OpenAI acc, Table 9 of the RedPajama technical paper."
 redpajama-incite-7b-instruct,68.95,self-reported,https://arxiv.org/abs/2411.12372,,"LAMBADA-OpenAI acc, Table 9."
 redpajama-incite-base-3b-v1,65.41,self-reported,https://www.together.ai/blog/redpajama-models-v1,,"LAMBADA-OpenAI accuracy, zero-shot lm-evaluation-harness subset reported in the official launch blog (matches Table 7 of the later RedPajama technical paper, arXiv 2411.12372, exactly: 0.6541)."

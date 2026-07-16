@@ -87,6 +87,94 @@
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-34B-32K-details",
       "evaluatedAt": "2024-06-17",
       "notes": "Yi-1.5-34B-32K variant, Open LLM Leaderboard v2. IFEval 'Inst-and-Prompt Level Strict Acc' (average of prompt-level strict 25.32% and inst-level strict 37.05%), the standard v2 leaderboard convention."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 77.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'Yi-1.5-34B Base Model - as of May 12, 2024' table."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 84.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'Yi-1.5-34B Base Model - as of May 12, 2024' table."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 71.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'Yi-1.5-34B Base Model - as of May 12, 2024' table."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 46.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'HumanEval (+)' column, base score (plus-variant reported separately)."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 40.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, HumanEval+ parenthetical score in the 'HumanEval (+)' column."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 65.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'MBPP (+)' column, base score."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 55.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, MBPP+ parenthetical score in the 'MBPP (+)' column."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 82.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'Yi-1.5-34B Base Model - as of May 12, 2024' table."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official chat-model comparison chart, 'Yi-1.5-34B Chat Model - as of May 12, 2024' table."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 42.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official chat-model comparison chart, ArenaHard column, Yi-1.5-34B-Chat row."
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 36.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official chat-model comparison chart, 'AlpacaEval2.0' column (LC win rate), Yi-1.5-34B-Chat row."
     }
   ],
   "verificationNotes": "Confirmed via GitHub repo and web search: Yi-1.5 series (34B/9B/6B) open-sourced May 13, 2024, Apache 2.0, continually pretrained on 500B extra tokens with 4K/16K/32K context variants. Confirmed all 5 Open LLM Leaderboard v2 scores (mmlu-pro 47.1, bbh 59.8, arc-challenge 66.3, gpqa 36.3, math-hard 13.4) verbatim on the linked HF dataset page (evaluated 2024-06-17, for Yi-1.5-34B-32K variant as noted). paramsB 34.4 approximated from HF (34B nominal); exact figure not independently pinned down beyond 'B' rounding but consistent across sources. No score changes made."

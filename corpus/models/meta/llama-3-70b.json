@@ -120,7 +120,23 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
       "notes": "DROP, 3-shot, F1, pretrained/base checkpoint."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1206,
+      "source": "independent",
+      "sourceUrl": "https://telnyx.com/llm-library/llama-3-70b",
+      "evaluatedAt": "2024-05-01",
+      "notes": "Chatbot Arena Elo (historical, launch-era snapshot) for Meta-Llama-3-70B-Instruct, reported as 1206 on Telnyx's LLM library performance page; corroborated by contemporaneous press coverage (Hacker News discussion of the LMSYS leaderboard) citing ~1207 when the model debuted in the arena between GPT-4-0613 and GPT-4 Turbo."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 41.1,
+      "source": "independent",
+      "sourceUrl": "https://www.lmsys.org/blog/2024-04-19-arena-hard/",
+      "evaluatedAt": "2024-04-19",
+      "notes": "Arena-Hard-Auto v0.1 score (GPT-4-Turbo judge) for llama-3-70b-instruct, from the LMSYS 'Arena-Hard Pipeline' launch blog post's leaderboard table (95% CI -2.5/+2.4, avg 583 tokens)."
     }
   ],
-  "verificationNotes": "Confirmed real. Fetched huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct: benchmark table literally lists pretrained MMLU 79.5, and Instruct HumanEval 81.7, GSM8K 93.0, MATH 50.4, GPQA 39.5 \u2014 every result row matches exactly. 8K context and 'Meta Llama 3 Community License' also confirmed on the same page. Release date 2024-04-18 confirmed via ai.meta.com/blog/meta-llama-3. No changes."
+  "verificationNotes": "Confirmed real. Fetched huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct: benchmark table literally lists pretrained MMLU 79.5, and Instruct HumanEval 81.7, GSM8K 93.0, MATH 50.4, GPQA 39.5 — every result row matches exactly. 8K context and 'Meta Llama 3 Community License' also confirmed on the same page. Release date 2024-04-18 confirmed via ai.meta.com/blog/meta-llama-3. No changes."
 }

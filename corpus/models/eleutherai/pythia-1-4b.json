@@ -53,7 +53,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "Zero-shot, LM Eval Harness, official final-checkpoint (step143000, i.e. fully-trained v1.1) raw eval JSON from the Pythia GitHub repo \u2014 lambada_openai acc=0.6161."
+      "notes": "Zero-shot, LM Eval Harness, official final-checkpoint (step143000, i.e. fully-trained v1.1) raw eval JSON from the Pythia GitHub repo — lambada_openai acc=0.6161."
     },
     {
       "benchmarkSlug": "piqa",
@@ -61,7 +61,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "Zero-shot, final checkpoint (step143000) \u2014 piqa acc=0.7089."
+      "notes": "Zero-shot, final checkpoint (step143000) — piqa acc=0.7089."
     },
     {
       "benchmarkSlug": "arc-easy",
@@ -69,7 +69,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "Zero-shot, final checkpoint (step143000) \u2014 arc_easy acc=0.6065."
+      "notes": "Zero-shot, final checkpoint (step143000) — arc_easy acc=0.6065."
     },
     {
       "benchmarkSlug": "arc-challenge",
@@ -77,7 +77,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "Zero-shot, final checkpoint (step143000) \u2014 arc_challenge acc=0.2602."
+      "notes": "Zero-shot, final checkpoint (step143000) — arc_challenge acc=0.2602."
     },
     {
       "benchmarkSlug": "winogrande",
@@ -85,7 +85,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "Zero-shot, final checkpoint (step143000) \u2014 winogrande acc=0.5730."
+      "notes": "Zero-shot, final checkpoint (step143000) — winogrande acc=0.5730."
     },
     {
       "benchmarkSlug": "mmlu-anatomy",
@@ -93,7 +93,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "Zero-shot, final checkpoint (step143000) \u2014 hendrycksTest-anatomy acc=0.2815 (near chance for this small base model)."
+      "notes": "Zero-shot, final checkpoint (step143000) — hendrycksTest-anatomy acc=0.2815 (near chance for this small base model)."
     },
     {
       "benchmarkSlug": "mmlu-clinical-knowledge",
@@ -101,7 +101,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "Zero-shot, final checkpoint (step143000) \u2014 hendrycksTest-clinical_knowledge acc=0.2679 (near chance for this small base model)."
+      "notes": "Zero-shot, final checkpoint (step143000) — hendrycksTest-clinical_knowledge acc=0.2679 (near chance for this small base model)."
     },
     {
       "benchmarkSlug": "mmlu-medical-genetics",
@@ -109,7 +109,71 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/EleutherAI/pythia/blob/main/evals/pythia-v1/pythia-1.4b/zero-shot/1.4b_step143000.json",
       "evaluatedAt": "2023-04-03",
-      "notes": "Zero-shot, final checkpoint (step143000) \u2014 hendrycksTest-medical_genetics acc=0.36."
+      "notes": "Zero-shot, final checkpoint (step143000) — hendrycksTest-medical_genetics acc=0.36."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 52.86,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__pythia-1.4b",
+      "evaluatedAt": "2024-04-30",
+      "notes": "10-shot acc_norm, HF Open LLM Leaderboard v1 results_2024-04-30 run. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 38.85,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__pythia-1.4b",
+      "evaluatedAt": "2024-04-30",
+      "notes": "0-shot TruthfulQA MC2 accuracy, HF Open LLM Leaderboard v1."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 1.52,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__pythia-1.4b",
+      "evaluatedAt": "2024-04-30",
+      "notes": "5-shot GSM8K accuracy (acc=0.01516), HF Open LLM Leaderboard v1."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 25.8,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__pythia-1.4b",
+      "evaluatedAt": "2024-04-30",
+      "notes": "5-shot MMLU average, hand-computed as the mean of all 57 harness|hendrycksTest-* acc values in the raw results JSON. Distinct from the 3 individual MMLU-subject scores (anatomy/clinical-knowledge/medical-genetics) already on file, which came from the Pythia repo's own zero-shot eval JSON, not this 5-shot leaderboard run. [score corrected during round-6 completeness verify: proposed 25.96 -> 25.8]"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 23.71,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2025-01-28",
+      "notes": "0-shot IFEval strict-accuracy Raw score, HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 31.5,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2025-01-28",
+      "notes": "3-shot BBH normalized accuracy averaged across 23 subtasks, HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 26.17,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2025-01-28",
+      "notes": "0-shot GPQA normalized accuracy (4-choice), HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 11.23,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2025-01-28",
+      "notes": "5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
     }
   ],
   "verificationNotes": "Confirmed real: fetched huggingface.co/EleutherAI/pythia-1.4b - exact param count 1,414,647,808 (=1.41B, rounds to 1.4 matching record), 24 layers, Apache-2.0 license confirmed. Training used 2048 sequence length (ctxK=2 confirmed via arxiv paper details). Paper submission date 2023-04-03 confirmed on arxiv. No results rows to verify (none were provided)."

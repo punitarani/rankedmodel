@@ -89,7 +89,7 @@
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
       "evaluatedAt": "2023-07-18",
-      "notes": "pass@1 (3-shot), Table 21. Cross-checked: (HumanEval 18.3 + MBPP 30.6)/2 = 24.45 \u2248 Table 3's composite 'Code' column value of 24.5 for this row, corroborating both figures."
+      "notes": "pass@1 (3-shot), Table 21. Cross-checked: (HumanEval 18.3 + MBPP 30.6)/2 = 24.45 ≈ Table 3's composite 'Code' column value of 24.5 for this row, corroborating both figures."
     },
     {
       "benchmarkSlug": "trivia-qa",
@@ -122,6 +122,62 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
       "evaluatedAt": "2023-07-18",
       "notes": "Table 11 'Evaluation of pretrained LLMs on automatic safety benchmarks' (percent truthful+informative); a separate ToxiGen=26.10 is also reported there but has no taxonomy slug."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 80.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 'Performance on standard benchmarks' of the official Llama 2 paper. None of the seven common-sense-reasoning rows in this table (PIQA, SIQA, HellaSwag, WinoGrande, ARC-e, ARC-c, OBQA) were previously tracked for the 13B model even though they are tracked for the 70B and LLaMA-33B siblings."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 50.3,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 'Performance on standard benchmarks' (SIQA column) of the official Llama 2 paper."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 80.7,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 'Performance on standard benchmarks' (HellaSwag column) of the official Llama 2 paper."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 72.8,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 'Performance on standard benchmarks' (WinoGrande column) of the official Llama 2 paper."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 77.3,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 'Performance on standard benchmarks' (ARC-e column) of the official Llama 2 paper."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 49.4,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 'Performance on standard benchmarks' (ARC-c column) of the official Llama 2 paper."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 57,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 'Performance on standard benchmarks' (OBQA column) of the official Llama 2 paper."
     }
   ],
   "verificationNotes": "Confirmed via Hugging Face meta-llama/Llama-2-13b page (13B params, 4096 ctx, Llama 2 Community License) and release date 2023-07-18 corroborated by Ollama/HF sources. Fetched MODEL_CARD.md and confirmed MMLU 54.8 appears for the Llama-2-13B pretrained row. No changes made."

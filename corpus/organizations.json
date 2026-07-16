@@ -415,5 +415,11 @@
     "type": "company",
     "country": "US",
     "url": "https://www.primeintellect.ai"
+  },
+  {
+    "name": "Thinking Machines Lab",
+    "type": "lab",
+    "country": "US",
+    "url": "https://thinkingmachines.ai"
   }
 ]

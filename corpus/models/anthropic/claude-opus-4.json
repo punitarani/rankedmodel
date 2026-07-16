@@ -118,7 +118,21 @@
       "source": "independent",
       "sourceUrl": "https://hal.cs.princeton.edu/gaia",
       "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, standard config, Claude Opus 4 (May 2025 snapshot). GAIA validation set. Note: same leaderboard's alternate 'HF Open Deep Research' scaffold scored this model 57.58% and a High-thinking config scored 64.85%, illustrating strong scaffold-dependence of GAIA scores."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 62.6,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-opus-4-20250514",
+      "notes": "Vals AI independent eval (only variant listed for this model, i.e. standard/non-extended-thinking). LiveCodeBench 62.629%, from the model page's embedded score bars (raw HTML fetch). Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 86.2,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-opus-4-20250514",
+      "notes": "Vals AI independent eval. MMLU-Pro 86.166%, from the model page's embedded score data. Distinct from the corpus's existing plain 'mmlu' row (88.8, Anthropic self-reported)."
     }
   ],
-  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-4 and Google Cloud Vertex AI blog (release 2025-05-22, $15/$75 pricing, 200K context). All 7 result rows confirmed verbatim via direct fetch of datacamp.com/blog/claude-4. Per Anthropic's official model-deprecations page (fetched 2026-07-12), claude-opus-4-20250514 was deprecated 2026-04-14 and RETIRED 2026-06-15 \u2014 already past as of today (2026-07-12), so apiAvailable corrected to false (status kept as 'deprecated', closest available enum value; true current state is 'retired')."
+  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-4 and Google Cloud Vertex AI blog (release 2025-05-22, $15/$75 pricing, 200K context). All 7 result rows confirmed verbatim via direct fetch of datacamp.com/blog/claude-4. Per Anthropic's official model-deprecations page (fetched 2026-07-12), claude-opus-4-20250514 was deprecated 2026-04-14 and RETIRED 2026-06-15 — already past as of today (2026-07-12), so apiAvailable corrected to false (status kept as 'deprecated', closest available enum value; true current state is 'retired')."
 }

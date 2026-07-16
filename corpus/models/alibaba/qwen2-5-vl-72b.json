@@ -137,6 +137,94 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2504.10479",
       "notes": "RefCOCO+ val split, from Table 6 of the InternVL3 technical report (arXiv:2504.10479), which compiles a multi-model RefCOCO/RefCOCO+/RefCOCOg comparison table including Qwen2.5-VL-72B as a baseline. Same table also lists testA 92.2 and testB 83.7 for this model."
+    },
+    {
+      "benchmarkSlug": "mmbench-cn",
+      "score": 87.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "MMBench-CN_test, Table 3 (\"Performance of Qwen2.5-VL and State-of-the-art\") of the official Qwen2.5-VL Technical Report (arXiv:2502.13923). Verified via direct PDF read (re-checked twice for transcription accuracy). Not previously tracked; only the English MMBench variant (mmbench-en) was in the corpus. [score corrected during round-6 completeness verify: proposed 88.4 -> 87.9]"
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 83.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "TextVQA_val, Table 5 (\"Performance of Qwen2.5-VL and other models on OCR, chart, and document understanding benchmarks\") of the Qwen2.5-VL Technical Report. Verified via direct PDF read."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 49.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "CharXiv Reasoning Question (RQ) score from Table 5 of the Qwen2.5-VL Technical Report; the paper also reports a separate Descriptive Question (DQ) score of 87.4 for the same model (CharXiv_RQ/DQ = 49.7/87.4). Reporting the RQ figure as the primary score since that is the harder/canonical reasoning metric; noting DQ here rather than fabricating a combined number."
+    },
+    {
+      "benchmarkSlug": "refcoco",
+      "score": 92.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "RefCOCO val split, Table 6 (\"Performance of Qwen2.5-VL and other models on grounding\") of the Qwen2.5-VL Technical Report. Same table also reports testA 94.6 and testB 89.7 for this model. Distinct benchmark/slug from the already-tracked RefCOCO+ result (which came from a third-party InternVL3 comparison table)."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 71.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "Table 4 (\"Performance on pure text tasks of the 70B+ Instruct models and Qwen2.5-VL\") of the Qwen2.5-VL Technical Report -- evaluates the underlying LLM decoder's text-only capability, alongside Llama-3.1-70B/405B and Qwen2/2.5-72B. None of this table's 8 benchmarks were previously tracked for this VL model."
+    },
+    {
+      "benchmarkSlug": "mmlu-redux",
+      "score": 85.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "Table 4 of the Qwen2.5-VL Technical Report, pure-text task evaluation."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 49,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "Table 4 of the Qwen2.5-VL Technical Report, pure-text task evaluation (Mathematics & Science Tasks section)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 83,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "Table 4 of the Qwen2.5-VL Technical Report, pure-text task evaluation (Mathematics & Science Tasks section)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 95.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "Table 4 of the Qwen2.5-VL Technical Report, pure-text task evaluation (Mathematics & Science Tasks section)."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 87.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "Table 4 of the Qwen2.5-VL Technical Report, pure-text task evaluation (Coding Tasks section)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 86.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2502.13923",
+      "evaluatedAt": "2025-02-19",
+      "notes": "Table 4 of the Qwen2.5-VL Technical Report, pure-text task evaluation (Alignment Tasks section)."
     }
   ],
   "verificationNotes": "Fetched HF model card directly: literally confirmed 73B total params, 'Qwen' (Tongyi Qianwen) license, 32,768-token native context, and all 5 benchmark rows (MMMU 70.2, MathVista 74.8, DocVQA 96.4, ChartQA 89.5, VideoMME-w/subs 79.1) appear verbatim on the page. Release date: qwenlm.github.io blog post itself is dated Jan 26 2025, while GitHub/weights repos show a 2025.01.28 release entry for the size family (both are legitimate; kept 2025-01-28 as in source record, minor 2-day spread between announcement and artifact release, not an error)."

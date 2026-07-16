@@ -1,8 +1,12 @@
 model_slug,score,source,source_url,evaluated_at,notes
 btlm-3b-8k,27.1,self-reported,https://arxiv.org/abs/2309.11568,,"5-shot, Table 5. Sits slightly below the taxonomy's stated 30-83 range floor for this slug -- reflects BTLM being one of the smallest models in the corpus, not a data error"
+deepseekmath-7b,64.8,independent,https://arxiv.org/html/2409.12122v1,2024-09-18,"Same Table 3 row of the Qwen2.5-Math Technical Report (arXiv:2409.12122) as the olympiadbench addition above — MMLU STEM column for DeepSeekMath-7B-RL, CoT mode, third-party evaluation by the Qwen team."
 falcon-h1-34b,83.57,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
 llama-13b,35.8,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"5-shot, Table 9 MMLU breakdown (Humanities 45.0 / STEM 35.8 / Social Sciences 53.8 / Other 53.3 / Average 46.9 — average matches the existing corpus entry exactly)"
+nemotron-h-56b,80.6,self-reported,https://arxiv.org/abs/2504.03624,,"MMLU STEM (5-shot), Table 4 of the Nemotron-H arXiv technical report, 56B-Base column — distinct benchmark slug from the already-tracked full MMLU (84.21). Not on the HF card; confirmed by direct inspection of the paper's HTML table rows."
+qwen-14b,59.4,self-reported,https://arxiv.org/abs/2309.16609,2023-09-25,"Qwen Technical Report (Bai et al., 2023), Table 13 MMLU subcategory breakdown, STEM column, 5-shot. Confirmed via direct read of the PDF (page 37). Not previously tracked; only the overall MMLU average was in the corpus."
 qwen2-5-14b,76.4,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model.
 qwen2-5-32b,80.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model.
+qwen2-5-7b,72.3,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"MMLU-STEM row of the official Qwen2.5-LLM launch blog's base-model comparison table ('Mathematics & Science Tasks' section), confirmed via direct fetch quoting the exact row: 'MMLU-stem | 50.1 | 55.3 | 65.1 | 64.2 | 72.3' for Mistral-7B / Llama3-8B / Gemma2-9B / Qwen2-7B / Qwen2.5-7B respectively -- 72.3 is unambiguously the Qwen2.5-7B (base) column. Distinct from the already-tracked general MMLU score (74.2) already in the corpus for this model; primary official source, high confidence."
 qwen2-5-math-72b,82.8,self-reported,https://arxiv.org/abs/2409.12122,2024-09-18,"Base model, few-shot CoT, Table 2 of the Qwen2.5-Math Technical Report"
 qwen2-math-72b,79.9,self-reported,https://arxiv.org/html/2409.12122v1,2024-08-08,"Instruct, 5-shot"

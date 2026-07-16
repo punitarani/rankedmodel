@@ -46,6 +46,14 @@
     "ctxK": "https://www.anthropic.com/news/claude-2-1",
     "openness": "https://www.anthropic.com/news/claude-2-1"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 63.4,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+      "notes": "Multilingual MMLU, 5-shot, = 63.4% for Claude 2.1, from Table 5 of Anthropic's official Claude 3 Model Card (published as a baseline-comparison column alongside Claude 3 Opus/Sonnet/Haiku, Claude 2.0, and Claude Instant 1.2; verbatim quote: 'Claude 3 Opus outperforms its predecessor, Claude 2.1, by 15.7%'). Verified by downloading and reading the PDF directly (pdftotext). This is the first tracked benchmark result for this model, which previously had zero results in the corpus."
+    }
+  ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-2-1 (release date, 200K context, tool-use beta, system prompts, ~2x hallucination reduction all verified verbatim). Pricing $8/$24 per MTok confirmed against Anthropic's official pricing PDF. Needle-in-haystack 94.5% independently verified by reading the actual Model_Card_Claude_3_Addendum.pdf Table 5 (Claude 2.1 column, 'All context lengths' row = 94.5%). apiAvailable=false confirmed: claude-2.1 was retired from the Claude API on July 21, 2025 per platform.claude.com/docs/en/about-claude/model-deprecations. No changes made."
 }

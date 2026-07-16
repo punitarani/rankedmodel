@@ -172,7 +172,15 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
       "notes": "'Popular aggregated benchmark' section of the HF model card's benchmark table."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 57.7,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/microsoft__Phi-3.5-mini-instruct-details",
+      "evaluatedAt": "2024-08-21",
+      "notes": "Hugging Face Open LLM Leaderboard v2 official auto-eval run 'microsoft_Phi-3.5-mini-instruct_bfloat16' (0-shot, strict prompt-level accuracy), Official Providers: true. Not previously tracked; the model's official HF card does not publish an IFEval number itself."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3.5-mini-instruct, fetched): 3.8B dense, 128K context, MIT license, released Aug 2024. All six benchmark rows literally match the card. Language count is ambiguous at the source itself: the card's prose says '22 languages' but the actual enumerated list contains 23 names (Arabic through Ukrainian) \u2014 this is Microsoft's own card's internal inconsistency, not a fabrication in this record, so kept langCount=22 to match the card's stated figure."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3.5-mini-instruct, fetched): 3.8B dense, 128K context, MIT license, released Aug 2024. All six benchmark rows literally match the card. Language count is ambiguous at the source itself: the card's prose says '22 languages' but the actual enumerated list contains 23 names (Arabic through Ukrainian) — this is Microsoft's own card's internal inconsistency, not a fabrication in this record, so kept langCount=22 to match the card's stated figure."
 }

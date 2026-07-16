@@ -79,6 +79,48 @@
       "sourceUrl": "https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days",
       "evaluatedAt": "2025-01-01",
       "notes": "SWE-bench Verified, medium effort"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 85.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "From OpenAI's own simple-evals README results table, the bolded 'o3-mini' row (default reasoning level, explicitly footnoted as 'medium') -- confirmed by direct fetch of the raw README: MMLU 85.9, GPQA 74.9, MATH 97.3, HumanEval 96.3, MGSM 90.8, DROP 79.2, SimpleQA 13.4. Only the GPQA figure collides with an already-tracked slug (different source, so skipped per instructions); the other 6 columns are new. Same provenance pattern already used for the sibling o3-mini-high.json entry."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 97.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "MATH-500, from the 'o3-mini' (medium/default) row of OpenAI's simple-evals README table. Verified via raw GitHub fetch."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 96.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "From the 'o3-mini' (medium/default) row of OpenAI's simple-evals README table. Verified via raw GitHub fetch."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 90.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "From the 'o3-mini' (medium/default) row of OpenAI's simple-evals README table. Verified via raw GitHub fetch."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 79.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "DROP F1, 3-shot. From the 'o3-mini' (medium/default) row of OpenAI's simple-evals README table. Verified via raw GitHub fetch."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 13.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "notes": "From the 'o3-mini' (medium/default) row of OpenAI's simple-evals README table. Verified via raw GitHub fetch."
     }
   ],
   "verificationNotes": "Same model as o3-mini (Low) verification, different effort tier. AIME 76.9, GPQA 76.8, Codeforces 2036, SWE-bench 42.9 (medium effort) all confirmed by direct fetch of the lesswrong.com article, matching exactly. Release date, context window, and pricing confirmed identically to the Low-effort record. No changes made."

@@ -80,6 +80,22 @@
       "score": 70.97,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/QwQ-32B-Preview"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 40.35,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/Qwen__QwQ-32B-Preview-details",
+      "evaluatedAt": "2024-11-29",
+      "notes": "HuggingFace Open LLM Leaderboard v2 run for Qwen/QwQ-32B-Preview (independent, run by HF, not vendor self-reported), IFEval prompt-level-strict-acc = 0.338 -> 33.8. Confirmed via two separate direct fetches of the dataset page returning identical numbers. Not a duplicate: this benchmark slug wasn't previously tracked for this model. [score corrected during round-6 completeness verify: proposed 33.8 -> 40.35]"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 66.6,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/Qwen__QwQ-32B-Preview-details",
+      "evaluatedAt": "2024-11-29",
+      "notes": "HuggingFace Open LLM Leaderboard v2 run for Qwen/QwQ-32B-Preview, BBH acc_norm = 0.666 -> 66.6. Confirmed via two separate direct fetches returning identical numbers. Note this HF Open LLM Leaderboard run also reported GPQA (28.2, normalized/0-shot) and MMLU-Pro (56.8) for this model, but those slugs are already tracked under self-reported sources for this model, so per instructions they were skipped rather than added as a second entry under the same slug."
     }
   ],
   "verificationNotes": "Confirmed real; blog qwenlm.github.io/blog/qwq-32b-preview/ gives Nov 28 2024 release. HF card confirms 32.5B total/31.0B non-embedding params, 64 layers, apache-2.0 license, 32,768 (32K) ctx, and MMLU-Pro 70.97; card also confirms no tool-use/function-calling support and documents the language-mixing/circular-reasoning limitations matching the record. Blog confirms GPQA 65.2, AIME 50.0, MATH-500 90.6, LiveCodeBench 50.0 verbatim. Confirmed QwQ-32B (non-preview) released ~Mar 5-6 2025 (qwenlm.github.io/blog/qwq-32b/), i.e. ~3.3 months after this preview, supporting the note's 'three months later' claim. No changes made."

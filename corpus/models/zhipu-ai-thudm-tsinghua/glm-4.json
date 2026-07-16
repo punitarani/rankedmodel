@@ -98,7 +98,15 @@
       "sourceUrl": "https://arxiv.org/html/2406.12793v1",
       "evaluatedAt": "2024-05-20",
       "notes": "IFEval English Loose-Prompt (L-P) accuracy for GLM-4 (0520), Table 3. Same table also reports English Loose-Instruction 88.7, English Strict-Prompt 79.1, Chinese Loose-Prompt 79.7 for the identical checkpoint."
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 81.76,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2406.12793v1",
+      "evaluatedAt": "2024-05-20",
+      "notes": "Berkeley Function Call Leaderboard, Overall score for the GLM-4 (0520) checkpoint, Table 7 of the GLM family technical report (~2k question-function-answer pairs). Same table: GPT-4 Turbo (2024-04-09)=81.24, GPT-4o (2024-05-13)=82.94. No explicit v1/v2/v3 tag in the paper, but the June 2024 publication timing aligns with the original BFCL (v1) era, so mapped to the 'bfcl' slug rather than 'bfcl-v3'. Genuinely new benchmark not previously tracked for this model."
     }
   ],
-  "verificationNotes": "Confirmed real: Zhipu AI's first-ever DevDay (Jan 2024) launch of GLM-4, 128K context + All Tools agent, positioned near GPT-4 (MarkTechPost, Maginative). All 5 result rows re-fetched and confirmed verbatim in Table 2 of arxiv.org/html/2406.12793v1 (GLM-4 0520 checkpoint vs GPT-4-0314). paramsB/archClass correctly left undisclosed/null \u2014 no primary source discloses size. No changes made."
+  "verificationNotes": "Confirmed real: Zhipu AI's first-ever DevDay (Jan 2024) launch of GLM-4, 128K context + All Tools agent, positioned near GPT-4 (MarkTechPost, Maginative). All 5 result rows re-fetched and confirmed verbatim in Table 2 of arxiv.org/html/2406.12793v1 (GLM-4 0520 checkpoint vs GPT-4-0314). paramsB/archClass correctly left undisclosed/null — no primary source discloses size. No changes made."
 }

@@ -1,7 +1,7 @@
 {
-  "name": "T\u00fclu 3 70B",
+  "name": "Tülu 3 70B",
   "org": "Allen Institute for AI (Ai2)",
-  "family": "T\u00fclu 3",
+  "family": "Tülu 3",
   "releaseDate": "2024-11-21",
   "status": "released",
   "openness": "open-weights",
@@ -37,7 +37,7 @@
   "vramQ4Gb": 42.5,
   "vramFp16Gb": 140,
   "tps4090": null,
-  "tpsNote": "70B model needs ~42.5GB even at Q4_K_M \u2014 exceeds a single RTX 4090's 24GB VRAM",
+  "tpsNote": "70B model needs ~42.5GB even at Q4_K_M — exceeds a single RTX 4090's 24GB VRAM",
   "effortLabel": null,
   "isDefaultConfig": true,
   "isBestConfig": true,
@@ -95,28 +95,52 @@
       "score": 74.3,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B",
-      "notes": "DROP (3-shot) F1 for the final T\u00fclu 3 70B (RLVR) model, from the same official 'Performance' table that sources the other 6 existing rows (verified via raw README.md)."
+      "notes": "DROP (3-shot) F1 for the final Tülu 3 70B (RLVR) model, from the same official 'Performance' table that sources the other 6 existing rows (verified via raw README.md)."
     },
     {
       "benchmarkSlug": "alpaca-eval",
       "score": 49.8,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B",
-      "notes": "AlpacaEval 2 (LC % win) for the final T\u00fclu 3 70B model, same table."
+      "notes": "AlpacaEval 2 (LC % win) for the final Tülu 3 70B model, same table."
     },
     {
       "benchmarkSlug": "humaneval-plus",
       "score": 88,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B",
-      "notes": "HumanEval+ (pass@10) for the final T\u00fclu 3 70B model, same table."
+      "notes": "HumanEval+ (pass@10) for the final Tülu 3 70B model, same table."
     },
     {
       "benchmarkSlug": "truthfulqa",
       "score": 67.6,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B",
-      "notes": "TruthfulQA (6-shot) for the final T\u00fclu 3 70B model, same table."
+      "notes": "TruthfulQA (6-shot) for the final Tülu 3 70B model, same table."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 48,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.15124",
+      "evaluatedAt": "2026-07-15",
+      "notes": "GPQA (0-shot CoT) for the final Tülu 3 70B model, from Table 33 ('Evaluation of a selection of open-weight and Tülu 3 models on our unseen evaluation suite') in the Tülu 3 technical report. Not on the HF model card, which only shows the dev-suite benchmarks; verified directly against the arXiv PDF text."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 65.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.15124",
+      "evaluatedAt": "2026-07-15",
+      "notes": "MMLU-Pro (0-shot CoT) for the final Tülu 3 70B model, from Table 33 (unseen evaluation suite) in the Tülu 3 technical report; same table as the new GPQA row. Verified directly against the arXiv PDF text."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 75,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.15124",
+      "evaluatedAt": "2026-07-15",
+      "notes": "AGIEval English (0-shot CoT) for the final Tülu 3 70B model, from Table 33 (unseen evaluation suite) in the Tülu 3 technical report; same table as the new GPQA/MMLU-Pro rows. Verified directly against the arXiv PDF text."
     }
   ],
   "verificationNotes": "Release (Nov 21 2024) confirmed via Ai2 blog and MarkTechPost coverage. All six benchmark rows (MMLU 83.1, BBH 82.0, GSM8K 93.5, MATH 63.0, HumanEval 92.4, IFEval 83.2) literally confirmed by fetching the live HF model card table. License and 70B/128K-context spec confirmed as Llama-3.1-based. No changes needed."

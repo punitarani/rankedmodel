@@ -112,6 +112,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2401.16818",
       "notes": "5-shot GSM8K for h2o-danube-1.8b-chat, Open LLM Leaderboard-style eval, from the technical report Table 5."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 5.52,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2401.16818v2",
+      "evaluatedAt": "2024-01-30",
+      "notes": "H2O-Danube-1.8B-Chat MT-Bench (all categories except coding, GPT-4 judged), from Table 3 of the official H2O-Danube-1.8B technical report (arXiv:2401.16818): Turn 1 average 6.41, Turn 2 average 4.63; combined average = 5.52 (computed from the two officially reported turn averages, same methodology already used for this corpus's existing H2O-Danube3-4B mt-bench entry). This model had zero mt-bench coverage previously. Not to be confused with the later H2O-Danube2-1.8B, which the same report separately states scores 5.79 average MT-Bench -- that is a different model and was not used here."
     }
   ],
   "verificationNotes": "Existence and Jan 30, 2024 release confirmed via arxiv.org/abs/2401.16818 and VentureBeat coverage. 1.8B params, 16,384 context length, and Mistral-style sliding-window attention (4096) confirmed by fetching the HF model card directly. Apache 2.0 license confirmed. All four benchmark scores (ARC-Challenge 39.25, HellaSwag 67.6, Winogrande 65.35, TriviaQA 36.29) confirmed to literally appear on huggingface.co/h2oai/h2o-danube-1.8b-chat - exact match, no changes needed."

@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba,1.59,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-09-16,"MATH Lvl 5, HF Open LLM Leaderboard V2 run on ai21labs/Jamba-v0.1. Follows the same MATH-Lvl-5-to-'math' slug mapping already used elsewhere in the corpus."
 amazon-nova-lite,73.3,self-reported,https://deepranking.ai/llm-models/nova-lite,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 amazon-nova-micro,69.3,self-reported,https://deepranking.ai/llm-models/nova-micro,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 amazon-nova-premier,82,self-reported,https://assets.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf,2025-04-30,"MATH-500 (the 500-problem competition-math test set), 0-shot CoT, exact-match accuracy (Table 1)."
@@ -6,6 +7,7 @@ amazon-nova-pro,76.6,self-reported,https://deepranking.ai/llm-models/nova-pro,,"
 aya-vision-32b,69.3,self-reported,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 baichuan2-13b,10.08,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,"4-shot, Baichuan2-13B-Base. Score is low relative to the taxonomy's typical 20-100 range for 'math' but is the genuine reported number for this pre-CoT-era 13B dense base model on the full Hendrycks MATH set; included as-is rather than omitted or altered."
 baichuan2-7b,5.58,self-reported,https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md,,"4-shot, Baichuan2-7B-Base. Below the taxonomy's typical 20-100 'math' range but is the genuine reported number for this pre-CoT-era 7B dense base model on the full Hendrycks MATH set; included as-is."
+bloom-7b1,0.53,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/bigscience/bloom-7b1/results_2025-02-13T18-27-04.338360.json,2025-02-13,"MATH (Level-5/hard subset), exact_match on the leaderboard_math_hard task, from the same HF Open LLM Leaderboard v2 automated-eval results file already used in the corpus for this model's bbh/gpqa/ifeval/mmlu-pro rows (results_2025-02-13T18-27-04.338360.json, key leaderboard_math_hard: exact_match,none=0.005287). Not previously tracked for this model. Verified against the raw JSON directly (fetched via curl)."
 chatglm-6b,3.1,self-reported,https://arxiv.org/html/2406.12793v1,,"From Table 1 of the official 2024 GLM family technical report, which re-evaluated ChatGLM-6B/2/3 under one consistent harness for a family comparison."
 chatglm2-6b,6.9,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's 2024 family-wide technical report re-evaluation table (Table 1).
 chatglm3-6b,25.7,self-reported,https://github.com/zai-org/ChatGLM3/blob/main/README_en.md,,ChatGLM3-6B-Base checkpoint
@@ -16,7 +18,9 @@ claude-3-7-sonnet,82.2,self-reported,https://www.anthropic.com/news/claude-3-7-s
 claude-3-haiku,38.9,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,0-shot CoT
 claude-3-opus,60.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,0-shot CoT
 claude-3-sonnet,43.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,0-shot CoT
+claude-instant-1-2,49.9,independent,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard,,"Stanford HELM Lite leaderboard, 'Claude Instant 1.2' row: MATH (Equivalent, CoT) = 0.499."
 codegemma-7b,19.9,self-reported,https://arxiv.org/abs/2406.11409,,"CodeGemma PT (7B) MATH dataset accuracy, Table 5 of the CodeGemma technical report."
+command,23.6,independent,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard,,"Stanford HELM Lite, model id 'cohere_command'. MATH (Equivalent, CoT) = 0.236."
 command-a,80,self-reported,https://arxiv.org/abs/2504.00698,,
 command-r7b,59.1,self-reported,https://arxiv.org/abs/2504.00698,,
 deepseek-coder-v2-236b,75.7,self-reported,https://github.com/deepseek-ai/DeepSeek-Coder-V2,,
@@ -30,6 +34,7 @@ deepseek-v3-0324,94,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3
 deepseek-v3-671b,90.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3,,MATH-500
 deepseekmath-7b,51.7,self-reported,https://arxiv.org/abs/2402.03300,2024-02-01,"DeepSeekMath-RL 7B, chain-of-thought, no external tools"
 deepseekmoe-16b,4.3,self-reported,https://ar5iv.labs.arxiv.org/html/2401.06066,2024-01-11,"Table 3, MATH EM 4-shot, DeepSeekMoE 16B column. Note: 4.3 is below the taxonomy's stated math range (20-100) but is the genuine, directly-confirmed paper figure — expected for a small 2024-era base model with no dedicated math training."
+doubao-1-5-pro,88.6,self-reported,https://seed.bytedance.com/doubao_1_5_pro,,"Math row of the official launch-page table (MATH section, standard MATH benchmark, distinct from the 'OlympiadBench' row in the same section)."
 ernie-4-5-300b-a47b,96.4,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"MATH-500, Table 5."
 falcon-h1-34b,83.8,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,MATH-500
 falcon-h1r-7b,97.4,self-reported,https://huggingface.co/tiiuae/Falcon-H1R-7B,,MATH-500
@@ -57,6 +62,7 @@ glm-4-5-355b-a32b,98.2,self-reported,https://arxiv.org/abs/2508.06471,,"MATH 500
 glm-4-5-air-106b-a12b,98.1,self-reported,https://arxiv.org/abs/2508.06471,,"MATH 500, Table 4 'Results on Reasoning Benchmarks'."
 glm-4-9b-chat,50.6,self-reported,https://huggingface.co/THUDM/glm-4-9b-chat,,
 glm-4-plus,74.2,self-reported,https://docs.bigmodel.cn/cn/guide/models/text/glm-4,,From official Zhipu/Z.ai docs evaluation table; GLM-4-Plus vs GPT-4o 76.6 (97%).
+gpt-4-1-mini,81.4,self-reported,https://github.com/openai/simple-evals,2025-04-14,"gpt-4.1-mini-2025-04-14 row, OpenAI's own simple-evals results table ('assistant' prompt). The same table's MMLU (87.5) and GPQA (65.0) columns exactly match the figures already tracked in this file (via docsbot.ai relay), confirming those as genuine OpenAI self-reports and surfacing these 5 additional untracked columns from the same row."
 gpt-4-turbo,73.4,self-reported,https://github.com/openai/simple-evals,2024-05-13,"gpt-4-turbo-2024-04-09, 0-shot CoT. Classic MATH test set (OpenAI's simple-evals only swaps to the newer MATH-500 split for o1-and-later models, so this is the original benchmark, not a variant)."
 gpt-4o,76.6,self-reported,https://community.openai.com/t/education-level-interpretation-of-gpt-4os-benchmarks/763947,,"OpenAI-reported figure, mirrored on this community thread since the original openai.com post blocks automated fetching [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement]"
 gpt-4o-mini,70.2,self-reported,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,2024-07-18,"OpenAI's official GPT-4o mini launch page reports MATH at 70.2%, part of the same benchmark table as the already-recorded MMLU/MGSM/HumanEval/MMMU rows. Direct automated fetch of openai.com returns 403 (same as the existing 4 rows in this file), but the figure is corroborated verbatim and consistently across multiple independent secondary sources/search results quoting the official launch table."
@@ -69,10 +75,13 @@ grok-1-5,50.6,self-reported,https://x.ai/news/grok-1.5,2024-03-29,
 grok-2,76.1,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
 grok-2-mini,73,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
 grok-3-mini,99.2,independent,https://designforonline.com/ai-models/xai-grok-3-mini/,,MATH-500
+hermes-3-405b,30.85,self-reported,https://arxiv.org/pdf/2408.11857,,"MATH Level 5, 4-shot (Open LLM Leaderboard v2 style hardest-tier subset), Table 5 of the Hermes 3 Technical Report. Mapped to the 'math' taxonomy slug consistent with existing corpus precedent (e.g. falcon3-10b.json and wizardlm-2-8x22b.json both map the same 'MATH Level 5, 4-shot' metric to 'math' with a clarifying note)."
 hunyuan-a13b,94.3,self-reported,https://huggingface.co/tencent/Hunyuan-A13B-Instruct,,
 hunyuan-large-a52b,69.8,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,
 hunyuan-t1,96.2,self-reported,https://tencent.github.io/llm.hunyuan.T1/README_EN.html,,"MATH-500, closely trailing DeepSeek R1"
 hunyuan-turbos,90,self-reported,https://arxiv.org/abs/2505.15431,2025-04-16,"5-shot, Table 4 of the same technical report"
+inflection-1,16.7,self-reported,https://inflection.ai/inflection-2-5,2024-03-07,"MATH benchmark, 4-shot, Inflection-1 column of a comparison table on Inflection AI's official Inflection-2.5 launch page (GSM8k/MATH table: GSM8k 8-shot Inflection-2.5=86.3/Inflection-1=62.9[matches this corpus's existing tracked value, confirming reliability]/GPT-4=92.0; MATH 0-shot/4-shot Inflection-2.5=43.1/Inflection-1=16.7/GPT-4=52.9). Rendered as a vector-outlined SVG image (framerusercontent.com/images/CqI16dv6DCLT8JgA3o6V2ZTJVQc.svg) with no text layer extractable via standard fetch tools; confirmed by directly rendering the SVG asset in a browser."
+inflection-2-5,43.1,self-reported,https://inflection.ai/inflection-2-5,2024-03-07,"MATH benchmark, 0-shot, Inflection-2.5 column of the same GSM8k/MATH comparison table (framerusercontent.com/images/CqI16dv6DCLT8JgA3o6V2ZTJVQc.svg) on Inflection AI's official Inflection-2.5 launch page (full row: Inflection-2.5=43.1, Inflection-1=16.7[4-shot], GPT-4=52.9[4-shot]); confirmed by direct browser rendering of the SVG asset."
 intellect-3,98.1,self-reported,https://huggingface.co/PrimeIntellect/INTELLECT-3,,"MATH-500. Reported in the official Prime Intellect HF model card evaluation table alongside AIME24/AIME25/LCB/GPQA/HLE/MMLU-Pro (same 6 metrics as the technical report's Table 2, plus this one extra column). Not present in the arXiv technical report itself. INTELLECT-3 scores 98.1 vs. GLM-4.5-Air's 97.8 and GLM-4.5's 97.0 on the same vendor table."
 internlm2-20b,31.9,self-reported,https://huggingface.co/internlm/internlm2-chat-20b,,
 internlm2-5-7b,60.1,self-reported,https://huggingface.co/internlm/internlm2_5-7b-chat,,
@@ -101,6 +110,7 @@ llama-3-70b,50.4,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-70
 llama-3-8b,30,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3-8B,2024-04-01,"Instruct, 4-shot"
 llama-4-maverick,61.2,self-reported,https://huggingface.co/blog/llama4-release,,Instruction-tuned
 llama-4-scout,50.3,self-reported,https://huggingface.co/blog/llama4-release,,"Pre-trained/base model comparison table (em_maj1@1), not instruction-tuned — corrected during round-5 full-corpus accuracy re-verify (was mislabeled 'Instruction-tuned'; no MATH row exists in the instruction-tuned table)."
+llama-65b,10.6,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"MATH, 0-shot single-sample pass rate, Table 7 of the LLaMA paper (the paper's separate maj1@k=256 majority-voting variant scores higher at 20.5 and is a distinct setting, matching the corpus's existing convention for this model's GSM8K row). Not previously tracked -- the file only had GSM8K from the same table."
 magistral-medium,94.3,self-reported,https://arxiv.org/abs/2506.10910,2025-06-10,MATH-500; Magistral technical report Table 2
 magistral-small,95.9,self-reported,https://arxiv.org/abs/2506.10910,2025-06-10,"MATH-500, SFT+RL configuration; Magistral technical report Table 3 (not shown on the HF model card)"
 minicpm-2b,10.24,self-reported,https://github.com/OpenBMB/MiniCPM/blob/main/README-en.md,2024-02-01,MiniCPM GitHub README benchmark table
@@ -124,18 +134,26 @@ nemotron-h-56b,59.42,self-reported,https://huggingface.co/nvidia/Nemotron-H-56B-
 nemotron-nano-2-nemotron-nano-9b-v2,97.8,self-reported,https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2,,"MATH500, Reasoning On"
 olmo-2-13b,39.2,self-reported,https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct,,Instruct variant
 olmo-2-32b,49.7,self-reported,https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct,,"GPT-3.5 Turbo 41.2, GPT-4o mini 67.9"
+olmo-2-7b,32.5,self-reported,https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct,2024-11-26,"MATH; OLMo-2-7B-1124-Instruct variant, live HF Instruct model-card table."
 olmo-3-7b,87.3,self-reported,https://huggingface.co/allenai/Olmo-3-7B-Instruct,,Olmo 3 Instruct 7B final (RLVR)
 olmo-3-think-32b,96.1,self-reported,https://huggingface.co/allenai/Olmo-3-32B-Think,,"Qwen 3 32B 95.4, Qwen 3 VL 32B Thinking 96.7"
 openai-o1,96.4,self-reported,https://github.com/openai/simple-evals,,"MATH-500 (repo evaluates o-series models on MATH-500, not legacy MATH test set)."
 openai-o1-mini,90,self-reported,https://github.com/openai/simple-evals,,MATH-500 (repo footnote: 'for newer models (anything on or after o1) we evaluate on MATH-500').
 openai-o1-preview,85.5,independent,https://www.walturn.com/insights/comparing-openai-o1-to-other-top-models,2024-09-01,MATH 0-shot CoT
 openai-o3-mini-high,97.9,self-reported,https://github.com/openai/simple-evals,,MATH-500.
+openai-o3-mini-low,95.8,self-reported,https://github.com/openai/simple-evals,2025-01-31,"MATH-500, from the 'o3-mini-low' row of OpenAI's own simple-evals README table (raw file directly fetched and confirmed). Not currently tracked for this model."
+openai-o3-mini-medium,97.3,self-reported,https://github.com/openai/simple-evals,,"MATH-500, from the 'o3-mini' (medium/default) row of OpenAI's simple-evals README table. Verified via raw GitHub fetch."
+openai-o4-mini,97.5,self-reported,https://github.com/openai/simple-evals,2025-04-16,"o4-mini (default/medium reasoning), OpenAI simple-evals, no tools enabled."
 palm-2,34.3,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"Flan-PaLM 2 (instruction-tuned), 4-shot chain-of-thought (no self-consistency) on MATH, from Table 7. (With self-consistency the paper reports 45.2%.)"
 palmyra-x5,71.57,self-reported,https://dev.writer.com/home/models,,MATH-Hard subset
+phi-1-5-1-3b,1.13,independent,https://huggingface.co/datasets/open-llm-leaderboard/microsoft__phi-1_5-details,2024-06-09,"Hugging Face Open LLM Leaderboard v2 'MATH Lvl 5' slice (hardest tier only, 4-shot) of the Hendrycks MATH test set. Not previously tracked for this model at all (no MATH benchmark currently on file). [score corrected during round-6 completeness verify: proposed 1.8 -> 1.13]"
 phi-3-5-mini-3-8b,48.5,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,0-shot CoT
 phi-3-5-moe-16x3-8b-6-6b-active,59.5,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
+phi-3-mini-3-8b,14.2,independent,https://huggingface.co/datasets/open-llm-leaderboard/microsoft__Phi-3-mini-4k-instruct-details,2024-06-12,"Hugging Face Open LLM Leaderboard v2 'MATH Lvl 5' slice (hardest tier only, 4-shot) of the Hendrycks MATH test set, not the full test set; official auto-eval run. Flagged as a partial-difficulty measurement of the same underlying benchmark since no separate tiered MATH slug exists in the taxonomy. [score corrected during round-6 completeness verify: proposed 11.6 -> 14.2]"
+phi-3-small-7b,34.6,self-reported,https://arxiv.org/pdf/2404.14219,,"0-shot CoT; Phi-3 Technical Report comparison table, Phi-3-small column (column verified against MMLU=75.7 which matches the model's existing tracked value)."
 phi-4-14b,80.4,self-reported,https://huggingface.co/microsoft/phi-4,,
 phi-4-mini-3-8b,64,self-reported,https://huggingface.co/microsoft/Phi-4-mini-instruct,,0-shot CoT
+phi-4-mini-instruct,64,self-reported,https://arxiv.org/abs/2503.01743,,"MATH, 0-shot CoT, Table 7 of the Phi-4-Mini Technical Report. Not previously tracked (the file only had GSM8K and MGSM for math)."
 pixtral-12b,48.1,self-reported,https://huggingface.co/mistralai/Pixtral-12B-2409,2024-09-11,Math (Pass@1) row of the Text Benchmarks table.
 qwen-1-8b,2.3,self-reported,https://github.com/QwenLM/Qwen/blob/main/README.md,2023-11-30,"4-shot. Below the taxonomy's typical 20-100 display range for MATH, but is the number directly published in the official Qwen GitHub README's performance table for the 1.8B model, consistent with this being the smallest Gen-1 Qwen model."
 qwen-14b,24.8,self-reported,https://huggingface.co/Qwen/Qwen-14B,2023-09-25,4-shot; from Qwen base-model comparison table on HF/GitHub README
@@ -148,6 +166,8 @@ qwen2-5-32b,57.7,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
 qwen2-5-72b,62.1,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
 qwen2-5-7b,49.8,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
 qwen2-5-math-72b,66.8,self-reported,https://arxiv.org/abs/2409.12122,,"Base model, few-shot CoT; Instruct+TIR variant reaches 87.8"
+qwen2-5-max,68.5,self-reported,https://www.datacamp.com/blog/qwen-2-5-max,2025-01-28,"Base-model comparison chart from the official Qwen2.5-Max launch blog, corroborated verbatim by gocodeo.com's independent transcription of the same chart."
+qwen2-5-vl-72b,83,self-reported,https://arxiv.org/pdf/2502.13923,2025-02-19,"Table 4 of the Qwen2.5-VL Technical Report, pure-text task evaluation (Mathematics & Science Tasks section)."
 qwen2-57b-a14b,43,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-72b,51.1,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-7b,44.2,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
@@ -172,6 +192,8 @@ skywork-moe-base,31.9,self-reported,https://arxiv.org/html/2406.06563v1,,
 skywork-o1-open-llama-3-1-8b,78.1,self-reported,https://huggingface.co/Skywork/Skywork-o1-Open-Llama-3.1-8B,2024-11-26,"From official HF model card table (row 'Skywork-o1-Open-8B', base model without QStar test-time scaling)."
 skywork-r1v-38b,94,self-reported,https://arxiv.org/abs/2504.05599,,
 sonar,81.7,independent,https://designforonline.com/ai-models/perplexity-sonar/,,"MATH-500; attributed to Artificial Analysis, corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats."
+stable-lm-2-1-6b,0.76,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-06-12,"MATH Lvl 5, HF Open LLM Leaderboard V2, base stabilityai/stablelm-2-1_6b checkpoint. Follows the same MATH-Lvl-5-to-'math' slug mapping already used elsewhere in the corpus."
+stablelm-3b-4e1t,1.06,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-08-10,"MATH Lvl 5, HF Open LLM Leaderboard V2 (hardest subset, 4-shot exact-match). Follows the same MATH-Lvl-5-to-'math' slug mapping already used elsewhere in the corpus (e.g. IBM Granite 3.1 8B Instruct entry)."
 t-lu-3-405b,67.3,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-405B,,"4-shot Flex; DeepSeek V3 72.5, GPT-4o 68.8"
 t-lu-3-70b,63,self-reported,https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B,,"4-shot CoT, Flex"
 wizardlm-2-8x22b,22.28,independent,https://huggingface.co/alpindale/WizardLM-2-8x22B,,"Open LLM Leaderboard v2, MATH Level 5"

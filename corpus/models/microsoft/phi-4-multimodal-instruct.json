@@ -117,7 +117,15 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2503.01743",
       "notes": "Table 1, VideoMME-16Frame."
+    },
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 84.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "evaluatedAt": "2025-03-03",
+      "notes": "Same Table 1 vision-language benchmark row as the sibling phi-4-multimodal-5-6b.json record (identical underlying model/report) — OCRBench 84.4 was never carried over to this file either."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-4-multimodal-instruct): 5.6B params, 128K context, MIT license, text+image+audio modalities, 23 languages (text) \u2014 matches record exactly, no correction needed. MMMU 55.1 independently confirmed in Table 1 of arXiv:2503.01743 (fetched via ar5iv HTML rendering)."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-4-multimodal-instruct): 5.6B params, 128K context, MIT license, text+image+audio modalities, 23 languages (text) — matches record exactly, no correction needed. MMMU 55.1 independently confirmed in Table 1 of arXiv:2503.01743 (fetched via ar5iv HTML rendering)."
 }

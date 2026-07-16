@@ -76,6 +76,14 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/ernie-5-0-thinking-preview",
       "notes": "MMMU-Pro, from the same AA breakdown."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1451,
+      "source": "arena",
+      "sourceUrl": "https://x.com/arena/status/2003151045946376482",
+      "evaluatedAt": "2025-12-23",
+      "notes": "LMArena Text leaderboard Elo score for the ERNIE-5.0-Preview-1203 checkpoint (posted by the official @arena/LMArena account), a +23pt update over the earlier -1103 checkpoint; ranked #1 among Chinese models and #2 globally on the Text leaderboard at the time. Corroborated by Baidu's own ERNIE blog post (https://ernie.baidu.com/blog/posts/ernie-5.0-preview-1203-release-on-lmarena/). Not previously tracked -- existing results for this model (gpqa, hle, ifbench, mmmu-pro) are all from artificialanalysis.ai's Intelligence Evaluations breakdown; this is a genuinely new benchmark/slug (LMArena Elo) from a genuinely new, independent source."
     }
   ],
   "verificationNotes": "Confirmed real: unveiled Nov 13 2025 at Baidu World per PRNewswire/winbuzzer/SCMP, 2.4T params with <3% experts active per inference matches winbuzzer. GPQA Diamond=78 and HLE=13 both literally confirmed on the artificialanalysis.ai page (ERNIE 5.0 Thinking Preview row in the evaluation breakdown charts). Free ($0/$0) preview pricing also confirmed on that page."

@@ -127,7 +127,7 @@
       "source": "self-reported",
       "sourceUrl": "https://deepmind.google/models/gemini/pro/",
       "evaluatedAt": "2026-02-19",
-      "notes": "tau2-bench Telecom domain (labeled '\u03c42-bench Telecom' on the page). Page also shows a separate '\u03c42-bench Retail' score of 90.8%, which has no matching taxonomy slug and was left out."
+      "notes": "tau2-bench Telecom domain (labeled 'τ2-bench Telecom' on the page). Page also shows a separate 'τ2-bench Retail' score of 90.8%, which has no matching taxonomy slug and was left out."
     },
     {
       "benchmarkSlug": "browsecomp",
@@ -143,7 +143,15 @@
       "source": "independent",
       "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
       "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), Gemini CLI harness, High reasoning effort: Pass rate 15.8% / Score 32.0% (rank 34). Score component used per corpus convention."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 92.6,
+      "source": "self-reported",
+      "sourceUrl": "https://deepmind.google/models/gemini/pro/",
+      "evaluatedAt": "2026-02-19",
+      "notes": "MMMLU (Multilingual MMLU), single attempt. Confirmed via direct fetch of the official model page; sits in the same performance table as the 12 benchmarks already tracked but was not yet captured."
     }
   ],
-  "verificationNotes": "Confirmed real via blog.google (2026-02-19 launch) and deepmind.google/models/gemini/pro/ (fetched directly). All 5 benchmark numbers (GPQA 94.3, ARC-AGI-2 77.1, SWE-bench 80.6, MMMU-Pro 80.5, LiveCodeBench Pro 2887 Elo) literally confirmed on the cited pages. 1M context and $2/$12 pricing confirmed via independent sources. Still in preview as of July 2026 (not yet GA) per multiple July-2026 press coverage \u2014 status left as preview, correctly. No changes to record."
+  "verificationNotes": "Confirmed real via blog.google (2026-02-19 launch) and deepmind.google/models/gemini/pro/ (fetched directly). All 5 benchmark numbers (GPQA 94.3, ARC-AGI-2 77.1, SWE-bench 80.6, MMMU-Pro 80.5, LiveCodeBench Pro 2887 Elo) literally confirmed on the cited pages. 1M context and $2/$12 pricing confirmed via independent sources. Still in preview as of July 2026 (not yet GA) per multiple July-2026 press coverage — status left as preview, correctly. No changes to record."
 }

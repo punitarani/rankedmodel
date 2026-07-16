@@ -133,6 +133,30 @@
       "source": "independent",
       "sourceUrl": "https://hal.cs.princeton.edu/gaia",
       "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, o3 at 'Medium' reasoning effort (April 2025 snapshot) -- only effort level tested for o3 on this leaderboard, so no variant ambiguity. GAIA validation set."
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 53,
+      "source": "independent",
+      "sourceUrl": "https://arcprize.org/blog/analyzing-o3-with-arc-agi",
+      "evaluatedAt": "2025-04-22",
+      "notes": "ARC-AGI-1 Semi-Private Eval V1, o3-medium, $2.52/task — official production/released o3 (April 2025), tested by ARC Prize after confirming this differs from the December 2024 o3-preview. o3-low scored 41%; o3-high was excluded from the leaderboard due to insufficient task coverage (only 37/100 tasks returned)."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 2.9,
+      "source": "independent",
+      "sourceUrl": "https://arcprize.org/blog/analyzing-o3-with-arc-agi",
+      "evaluatedAt": "2025-04-22",
+      "notes": "ARC-AGI-2 Semi-Private Eval, o3-medium (released April 2025 model, not the Dec-2024 preview). ARC Prize's official leaderboard currently rounds this to 3.0%. Neither o3-low nor o3-medium exceeded 3% on ARC-AGI-2, versus a 60% average-human baseline."
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier1-3",
+      "score": 10,
+      "source": "independent",
+      "sourceUrl": "https://x.com/EpochAIResearch/status/1913379478778134941",
+      "evaluatedAt": "2025-04-17",
+      "notes": "FrontierMath, o3 with high reasoning effort, independently measured by Epoch AI at 10% (±2%) — notably lower than OpenAI's original ~25% claim from the December 2024 pre-release demo, attributed to using the actual released model, an updated/expanded problem set (290 problems vs. the original 180), and no special internal scaffold/compute. Reported alongside o4-mini (17%) in the same evaluation."
     }
   ],
   "verificationNotes": "Confirmed release 2025-04-16 via OpenAI/TechCrunch. Pricing $2/$8 verified as OpenAI's current price after an 80% cut on 2025-06-10 from the original $10/$40 launch price (confirmed via OpenAI Devs official X post and VentureBeat) — note added to clarify this isn't the launch price. Direct fetch of openai.com/index/introducing-o3-and-o4-mini/ returned 403, but all 6 benchmark rows (AIME 91.6, GPQA 83.3, SWE-bench 69.1, MMMU 82.9, HLE 24.9-with-tools, Codeforces 2706) were independently corroborated verbatim by multiple secondary sources quoting OpenAI's official launch figures — distinct from the earlier Dec-2024 o3 preview-announcement numbers (e.g. 96.7% AIME), confirming these are the correct April-2025 released-model figures."

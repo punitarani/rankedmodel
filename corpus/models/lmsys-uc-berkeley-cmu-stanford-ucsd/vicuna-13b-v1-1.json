@@ -63,6 +63,62 @@
       "sourceUrl": "https://arxiv.org/abs/2305.14314",
       "evaluatedAt": "2023-05-23",
       "notes": "GPT-4-judged Elo rating on the OpenAssistant benchmark (953 prompts), rank 5, from the QLoRA paper (Dettmers et al., Table 7). Matched to the v1.1 release since the paper predates Vicuna v1.5 (released Aug 2023)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 52.73,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_lmsys__vicuna-13b-v1.1",
+      "evaluatedAt": "2023-07-24",
+      "notes": "25-shot ARC-Challenge acc_norm, Open LLM Leaderboard details run (harness|arc:challenge|25, acc_norm 0.52730). Not previously tracked for this v1.1 model (only vicuna-bench/openassistant-bench Elo were tracked)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 80.14,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_lmsys__vicuna-13b-v1.1",
+      "evaluatedAt": "2023-07-24",
+      "notes": "10-shot HellaSwag acc_norm, Open LLM Leaderboard details run (harness|hellaswag|10, acc_norm 0.80143)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 51.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_lmsys__vicuna-13b-v1.1",
+      "evaluatedAt": "2023-07-24",
+      "notes": "5-shot MMLU, averaged from the 57 hendrycksTest subtask acc scores in the Open LLM Leaderboard details run."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 52.08,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_lmsys__vicuna-13b-v1.1",
+      "evaluatedAt": "2023-07-24",
+      "notes": "TruthfulQA MC2 (0-shot), Open LLM Leaderboard details run (harness|truthfulqa:mc|0, mc2 0.52084)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 74.19,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_lmsys__vicuna-13b-v1.1",
+      "evaluatedAt": "2023-10-16",
+      "notes": "5-shot Winogrande accuracy, Open LLM Leaderboard details run (harness|winogrande|5, acc 0.74191)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 8.64,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_lmsys__vicuna-13b-v1.1",
+      "evaluatedAt": "2023-10-16",
+      "notes": "5-shot GSM8K accuracy, Open LLM Leaderboard details run (harness|gsm8k|5, acc 0.08643)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 9.31,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_lmsys__vicuna-13b-v1.1",
+      "evaluatedAt": "2023-10-16",
+      "notes": "3-shot DROP F1, Open LLM Leaderboard details run (harness|drop|3, f1 0.09311)."
     }
   ],
   "verificationNotes": "Confirmed existence and details by fetching lmsys.org/blog/2023-03-30-vicuna/ (published by 'The Vicuna Team', March 30, 2023): Table 2 literally states Vicuna-13B scores 92% of ChatGPT's score under the GPT-4-judge eval, and the blog states a 2048-token context window (matches ctxK:2). FastChat's vicuna_weights_version.md confirms v1.1 weights released 2023-04-12, fine-tuned from LLaMA-1 (matches releaseDate/archDisplay). Confirmed huggingface.co/lmsys/vicuna-13b-v1.1 exists with matching description ('fine-tuning LLaMA on user-shared conversations... ShareGPT') and non-commercial license. No changes made; all fields confirmed accurate."

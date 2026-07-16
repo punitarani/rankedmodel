@@ -206,6 +206,30 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2503.01743",
       "notes": "Table 8, 'LCB (05-09-2024)' = LiveCodeBench dated release window, a contamination-controlled rolling problem set matching the livecodebench slug."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 4.2,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/phi-4-mini",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Humanity's Last Exam, Artificial Analysis independent evaluation of the phi-4-mini slug (3.84B params, MIT license, 128K context -- confirmed same model as microsoft/Phi-4-mini-instruct; raw score 0.0417287630402). Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 8.2,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/phi-4-mini",
+      "evaluatedAt": "2026-07-15",
+      "notes": "τ²-Bench Telecom agentic tool-use eval, Artificial Analysis independent evaluation of phi-4-mini (raw score 0.0818713450292). Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 6.7,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/phi-4-mini",
+      "evaluatedAt": "2026-07-15",
+      "notes": "AIME 2025 (field 'aime25'), Artificial Analysis independent evaluation of phi-4-mini (raw score 0.0666666666667). Not previously tracked."
     }
   ],
   "verificationNotes": "Re-fetched HF model card: 3.8B params, MIT license, 128K context, 22 languages, function-calling all confirmed verbatim. All 5 benchmark rows (MMLU 67.3, GSM8K 88.6, MATH 64.0, BBH 70.4, Arena Hard 32.8) confirmed literally on the card. Azure AI Foundry pricing $0.075/$0.30 per 1M tokens confirmed exact via independent pricing page (cloudprice.net). No changes made."

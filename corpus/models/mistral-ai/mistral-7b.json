@@ -9,7 +9,7 @@
   "paramsB": 7.3,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Dense transformer \u2014 32 layers, grouped-query attention + sliding-window attention",
+  "archDisplay": "Dense transformer — 32 layers, grouped-query attention + sliding-window attention",
   "ctxK": 8,
   "modalities": [
     "text"
@@ -131,7 +131,39 @@
       "sourceUrl": "https://arxiv.org/abs/2410.08928",
       "evaluatedAt": "2024-10-17",
       "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Mistral-7B-v0.1', base checkpoint). Matches this catalog entry's linked mistralai/Mistral-7B-v0.1 exactly."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 23.86,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-7B-v0.1-details",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-7B-v0.1 (bfloat16, the exact HF repo this catalog record links to); IFEval normalized score. Distinct from the paper-reported Table-2 figures already tracked."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 44.23,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-7B-v0.1-details",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-7B-v0.1; BBH normalized score. [score corrected during round-6 completeness verify: proposed 22.02 -> 44.23]"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 5.16,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-7B-v0.1-details",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-7B-v0.1; GPQA (chance-corrected) normalized score. Matches the ~5.16-5.59 range shown in the HF model-card auto-eval widget. [score corrected during round-6 completeness verify: proposed 5.59 -> 5.16]"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 22.36,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-7B-v0.1-details",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-7B-v0.1; MMLU-PRO normalized score. Distinct benchmark from the plain 'mmlu' slug already tracked (paper-reported 60.1)."
     }
   ],
-  "verificationNotes": "Existence and identity confirmed: mistral.ai/news/announcing-mistral-7b/ and HF mistralai/Mistral-7B-v0.1 card (magnet-link release 2023-09-27, Apache-2.0, 7B params ~7.3B per architecture config, GQA+SWA, 32 layers). All 8 benchmark rows confirmed literally in arxiv 2310.06825 Table 2 (fetched via ar5iv HTML mirror): MMLU 60.1, HellaSwag 81.3, WinoGrande 75.3, ARC-C 55.5, GSM8K 52.2, MATH 13.1, HumanEval 30.5, MBPP 47.5 \u2014 no changes. 8K context confirmed specific to v0.1 (docs page for v0.3 shows 32K, a later variant, so ctxK=8 for this v0.1 record is correct, not an error). Pricing $0.25/$0.25 and retirement date 2025-03-30 for open-mistral-7b corroborated by Microsoft Foundry retirement-schedule listing and Helicone pricing page."
+  "verificationNotes": "Existence and identity confirmed: mistral.ai/news/announcing-mistral-7b/ and HF mistralai/Mistral-7B-v0.1 card (magnet-link release 2023-09-27, Apache-2.0, 7B params ~7.3B per architecture config, GQA+SWA, 32 layers). All 8 benchmark rows confirmed literally in arxiv 2310.06825 Table 2 (fetched via ar5iv HTML mirror): MMLU 60.1, HellaSwag 81.3, WinoGrande 75.3, ARC-C 55.5, GSM8K 52.2, MATH 13.1, HumanEval 30.5, MBPP 47.5 — no changes. 8K context confirmed specific to v0.1 (docs page for v0.3 shows 32K, a later variant, so ctxK=8 for this v0.1 record is correct, not an error). Pricing $0.25/$0.25 and retirement date 2025-03-30 for open-mistral-7b corroborated by Microsoft Foundry retirement-schedule listing and Helicone pricing page."
 }

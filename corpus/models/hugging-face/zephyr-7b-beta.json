@@ -104,6 +104,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/HuggingFaceH4/zephyr-7b-beta",
       "notes": "5-shot"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 9.66,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/HuggingFaceH4/zephyr-7b-beta",
+      "notes": "DROP (3-Shot), F1 score, from the official Open LLM Leaderboard results table embedded in the HF model card (model-index metadata + README table). Not previously tracked; the other 7 Open LLM Leaderboard v1 metrics from this same table (ARC, HellaSwag, MMLU, TruthfulQA, Winogrande, GSM8K) are already in the corpus, DROP was the one missing row. Verified verbatim on two independent fetches of the model card / raw README."
     }
   ],
   "verificationNotes": "Confirmed real Oct 25 2023 Hugging Face H4 release, MIT license, Mistral-7B-v0.1 base (7.24B params is the well-established exact count for that base model). All 8 benchmark rows (MT-Bench 7.34, AlpacaEval 90.6, MMLU 61.07, HellaSwag 84.36, ARC-Challenge 62.03, GSM8K 12.74, TruthfulQA 57.45, Winogrande 77.74) verified verbatim on the official model card — no changes needed."

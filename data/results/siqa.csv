@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+apple-dclm-baseline-7b,82.91,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,2024-07-01,'SIQA' (Social IQa) row (0.8291) on the model's official HF eval table.
 btlm-3b-8k,46.5,self-reported,https://arxiv.org/abs/2309.11568,,"0-shot, Table 3"
 chinchilla,51.3,self-reported,https://arxiv.org/abs/2203.15556,,"Zero-shot SIQA (Social IQA) accuracy, Table 8 of the Chinchilla paper."
 comma-v0-1-2t,52.3,self-reported,https://huggingface.co/common-pile/comma-v0.1-2t,,
@@ -12,6 +13,7 @@ granite-3-0-2b-instruct,66.36,self-reported,https://huggingface.co/ibm-granite/g
 granite-3-0-8b-instruct,71.21,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,"SIQA, 0-shot pass@1. Confirmed in HF model-index YAML and technical report Table 10. Note: this exceeds the taxonomy's documented siqa range (40-68) by ~3 points; the number is nonetheless exactly what IBM's own model card and paper state."
 jais-70b,52.9,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,English SIQA (Social IQA) score for jais-adapted-70b-chat.
 llama-13b,50.4,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+llama-2-13b,50.3,self-reported,https://ar5iv.labs.arxiv.org/html/2307.09288,2023-07-18,"0-shot, Table 20 'Performance on standard benchmarks' (SIQA column) of the official Llama 2 paper."
 llama-2-70b,50.7,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (SIQA column)."
 llama-2-7b,48.3,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (SIQA column)."
 llama-33b,50.4,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3 (Common Sense Reasoning)."
@@ -27,3 +29,4 @@ phi-3-mini-3-8b,77.6,self-reported,https://huggingface.co/microsoft/Phi-3-mini-4
 phi-3-small-7b,79.2,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-instruct,,"Social IQA, 5-shot"
 phi-4-mini-3-8b,72.5,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, SociQA (5-shot). Slightly exceeds the taxonomy's stated 40-68 typical range but is unambiguously the same Social IQA benchmark."
 phi-4-mini-instruct,72.5,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, SociQA (5-shot); slightly exceeds taxonomy's stated 40-68 range but same benchmark."
+qwen-14b,77.9,self-reported,https://arxiv.org/abs/2309.16609,2023-09-25,"Qwen Technical Report, Table 17, SIQA (Social IQA) column, zero-shot. Confirmed via direct read of the PDF (page 39)."

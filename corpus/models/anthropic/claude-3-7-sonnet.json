@@ -118,7 +118,36 @@
       "source": "independent",
       "sourceUrl": "https://hal.cs.princeton.edu/gaia",
       "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, standard (non-High) config, Claude 3.7 Sonnet (Feb 2025 snapshot). GAIA validation set."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 60.4,
+      "source": "independent",
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluatedAt": "2025-02-24",
+      "notes": "Aider Polyglot leaderboard (Exercism, diff edit format), standard/no-thinking configuration = 60.4%, matching this file's established convention of filing standard-mode (no-extended-thinking) figures. The same leaderboard shows 64.9% with 32k thinking tokens enabled, not used here for consistency."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 56.66,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-3-7-sonnet-20250219",
+      "notes": "Vals AI independent evaluation, 'Claude 3.7 Sonnet (Nonthinking)' model page (confirmed via rendered browser screenshot, since the static HTML placeholder shows 0.0% until client JS animates the real value in). Chose the Nonthinking variant to match this file's standard-mode convention; the Thinking variant scored 60.44% on the same benchmark."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 80.66,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-3-7-sonnet-20250219",
+      "notes": "Vals AI independent evaluation, 'Claude 3.7 Sonnet (Nonthinking)' model page. Thinking variant scored 82.73% on the same benchmark (not used, for standard-mode consistency)."
+    },
+    {
+      "benchmarkSlug": "arena-hard-v2",
+      "score": 59.8,
+      "source": "independent",
+      "sourceUrl": "https://github.com/lmarena/arena-hard-auto",
+      "notes": "Official Arena-Hard-Auto (lmarena) repo, Arena-Hard-v2.0-Preview 'Hard Prompt' leaderboard, Gemini-2.5 judge (the primary/official judge column) = 59.8% (-2.0/+1.8). Model row is 'claude-3-7-sonnet-20250219-thinking-16k' -- this is the only publicly listed Arena-Hard-v2 configuration for Claude 3.7 Sonnet (no non-thinking row exists on this leaderboard), so unlike the other additions in this batch it is the thinking variant."
     }
   ],
-  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-3-7-sonnet (release 2025-02-24, 200K context, $3/$15 pricing, launched alongside Claude Code). Per Anthropic's official model-deprecations page (fetched 2026-07-12), claude-3-7-sonnet-20250219 was deprecated 2025-10-28 and RETIRED 2026-02-19 \u2014 since today is 2026-07-12 this model is now fully retired, not merely deprecated; apiAvailable corrected to false (schema has no 'retired' status enum, so status kept as 'deprecated', the closest option). SWE-bench 63.7% confirmed on the primary announcement. GPQA/AIME standard-mode figures (68%/23.3%) were NOT literally present in the given deeplearning.ai sourceUrl's extracted text (it only showed extended-thinking scores); confirmed the exact same numbers on DataCamp's writeup instead and swapped sourceUrl accordingly rather than dropping real, verifiable data."
+  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-3-7-sonnet (release 2025-02-24, 200K context, $3/$15 pricing, launched alongside Claude Code). Per Anthropic's official model-deprecations page (fetched 2026-07-12), claude-3-7-sonnet-20250219 was deprecated 2025-10-28 and RETIRED 2026-02-19 — since today is 2026-07-12 this model is now fully retired, not merely deprecated; apiAvailable corrected to false (schema has no 'retired' status enum, so status kept as 'deprecated', the closest option). SWE-bench 63.7% confirmed on the primary announcement. GPQA/AIME standard-mode figures (68%/23.3%) were NOT literally present in the given deeplearning.ai sourceUrl's extracted text (it only showed extended-thinking scores); confirmed the exact same numbers on DataCamp's writeup instead and swapped sourceUrl accordingly rather than dropping real, verifiable data."
 }

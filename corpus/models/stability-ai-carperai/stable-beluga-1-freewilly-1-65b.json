@@ -5,7 +5,7 @@
   "releaseDate": "2023-07-21",
   "status": "released",
   "openness": "open-weights",
-  "license": "CC BY-NC-4.0 (Non-Commercial Creative Commons License) \u2014 released as delta weights over Meta's LLaMA 65B",
+  "license": "CC BY-NC-4.0 (Non-Commercial Creative Commons License) — released as delta weights over Meta's LLaMA 65B",
   "paramsB": 65,
   "activeParamsB": null,
   "archClass": "dense",
@@ -75,7 +75,31 @@
       "sourceUrl": "https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv",
       "evaluatedAt": "2023-09-04",
       "notes": "HF Open LLM Leaderboard snapshot (2023-09-04), TruthfulQA MC 0-shot: 55.8."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 49.8,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__StableBeluga1-Delta/raw/main/results_2023-09-24T20-45-33.224865.json",
+      "evaluatedAt": "2023-09-24",
+      "notes": "HF 'open-llm-leaderboard-old' details dataset for stabilityai/StableBeluga1-Delta, harness|winogrande|5 accuracy: 0.4980268350434096 (raw JSON verified directly). Not previously tracked for this model (only mmlu/arc-challenge/hellaswag/truthfulqa were). Near-random performance (~50%) is consistent with this being an early, unaligned delta-weight LLaMA-1 65B model with the same eval-harness lineage already used to source Stable Beluga 2's winogrande/gsm8k/drop results."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__StableBeluga1-Delta/raw/main/results_2023-09-24T20-45-33.224865.json",
+      "evaluatedAt": "2023-09-24",
+      "notes": "HF 'open-llm-leaderboard-old' details dataset for stabilityai/StableBeluga1-Delta, harness|gsm8k|5 accuracy: 0.0, confirmed identically in both the 2023-09-24 and a later 2023-12-03 re-run (results_2023-12-03T02-37-55.294823.json), so this is a stable, reproduced result rather than a one-off fluke. Not previously tracked for this model. A score of 0 on 5-shot GSM8K is plausible for a non-math-tuned LLaMA-1 65B Orca SFT model with strict answer-format parsing in the eval harness."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_stabilityai__StableBeluga1-Delta/raw/main/results_2023-09-24T20-45-33.224865.json",
+      "evaluatedAt": "2023-09-24",
+      "notes": "HF 'open-llm-leaderboard-old' details dataset for stabilityai/StableBeluga1-Delta, harness|drop|3: em 0.0, f1 0.0 (raw JSON verified directly). Not previously tracked for this model. Mirrors the corpus's existing Stable Beluga 2 DROP entry, which likewise reports the F1 score from the same eval-harness family/source."
     }
   ],
-  "verificationNotes": "CONFIRMED real via HF model card raw README (stabilityai/StableBeluga1-Delta) and Stability AI's blog post (published Jul 21 2023, updated Jul 28): LLaMA-65B base, Orca-style SFT, delta-weight release, ranked #4 on HF Open LLM Leaderboard as of Jul 27 2023 \u2014 matches the note. CORRECTED license: the HF README literally states 'Fine-tuned checkpoints (StableBeluga1) is licensed under the Non-Commercial Creative Commons license (CC BY-NC-4.0)' \u2014 this is NOT the 'Stable Beluga Non-Commercial Community License' (that named license applies only to Beluga 2). Context length (2048) is the standard LLaMA-1 architecture value; the HF card itself states no explicit max-sequence-length. DROPPED the sole result row (MMLU 64.83, sourceUrl llm.extractum.io): that URL fails TLS certificate validation (hostname mismatch \u2014 the domain now resolves to an unrelated site, ag3ntum.com) and no alternate source could be found confirming this exact figure, so it was removed per the no-unconfirmed-numbers rule."
+  "verificationNotes": "CONFIRMED real via HF model card raw README (stabilityai/StableBeluga1-Delta) and Stability AI's blog post (published Jul 21 2023, updated Jul 28): LLaMA-65B base, Orca-style SFT, delta-weight release, ranked #4 on HF Open LLM Leaderboard as of Jul 27 2023 — matches the note. CORRECTED license: the HF README literally states 'Fine-tuned checkpoints (StableBeluga1) is licensed under the Non-Commercial Creative Commons license (CC BY-NC-4.0)' — this is NOT the 'Stable Beluga Non-Commercial Community License' (that named license applies only to Beluga 2). Context length (2048) is the standard LLaMA-1 architecture value; the HF card itself states no explicit max-sequence-length. DROPPED the sole result row (MMLU 64.83, sourceUrl llm.extractum.io): that URL fails TLS certificate validation (hostname mismatch — the domain now resolves to an unrelated site, ag3ntum.com) and no alternate source could be found confirming this exact figure, so it was removed per the no-unconfirmed-numbers rule."
 }

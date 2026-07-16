@@ -120,7 +120,71 @@
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-06-26",
       "notes": "LogicKor official leaderboard, model_id qwen/qwen-14b-chat, default prompt strategy"
+    },
+    {
+      "benchmarkSlug": "mmlu-stem",
+      "score": 59.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.16609",
+      "evaluatedAt": "2023-09-25",
+      "notes": "Qwen Technical Report (Bai et al., 2023), Table 13 MMLU subcategory breakdown, STEM column, 5-shot. Confirmed via direct read of the PDF (page 37). Not previously tracked; only the overall MMLU average was in the corpus."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 52.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.16609",
+      "evaluatedAt": "2023-09-25",
+      "notes": "Qwen Technical Report, Table 15 (\"Results on the other datasets of examination\"), AGIEval column, zero-shot. Confirmed via direct read of the PDF (page 38)."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 90.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.16609",
+      "evaluatedAt": "2023-09-25",
+      "notes": "Qwen Technical Report, Table 15, ARC-e column, zero-shot. Confirmed via direct read of the PDF (page 38)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 84.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.16609",
+      "evaluatedAt": "2023-09-25",
+      "notes": "Qwen Technical Report, Table 15, ARC-c column, zero-shot. Confirmed via direct read of the PDF (page 38). Distinct from the model's existing gpqa/mmlu entries -- this is a new benchmark slug for this model."
+    },
+    {
+      "benchmarkSlug": "lambada",
+      "score": 71.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.16609",
+      "evaluatedAt": "2023-09-25",
+      "notes": "Qwen Technical Report, Table 16 (\"knowledge and understanding\"), LAMBADA column, zero-shot. Confirmed via direct read of the PDF (page 39)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 80.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.16609",
+      "evaluatedAt": "2023-09-25",
+      "notes": "Qwen Technical Report, Table 17 (\"natural language reasoning\"), HellaSwag column, zero-shot. Confirmed via direct read of the PDF (page 39)."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 79.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.16609",
+      "evaluatedAt": "2023-09-25",
+      "notes": "Qwen Technical Report, Table 17, PIQA column, zero-shot. Confirmed via direct read of the PDF (page 39)."
+    },
+    {
+      "benchmarkSlug": "siqa",
+      "score": 77.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2309.16609",
+      "evaluatedAt": "2023-09-25",
+      "notes": "Qwen Technical Report, Table 17, SIQA (Social IQA) column, zero-shot. Confirmed via direct read of the PDF (page 39)."
     }
   ],
-  "verificationNotes": "Confirmed real, released 2023-09-25 per GitHub README. 14B params confirmed. Context length double-checked against raw config.json (max_position_embeddings=8192, seq_length=2048) and GitHub README ('extend from 2K to over 8K'/Max Length table shows 8K) \u2014 confirms native 2K/max 8K (ctxK=8) is correct; an intermediate automated page-summary incorrectly suggested 32K for this model and was rejected in favor of the primary config.json + README evidence. All 4 benchmark scores (mmlu 66.3, c-eval 72.1, gsm8k 61.3, humaneval 32.3) confirmed verbatim on HF/GitHub."
+  "verificationNotes": "Confirmed real, released 2023-09-25 per GitHub README. 14B params confirmed. Context length double-checked against raw config.json (max_position_embeddings=8192, seq_length=2048) and GitHub README ('extend from 2K to over 8K'/Max Length table shows 8K) — confirms native 2K/max 8K (ctxK=8) is correct; an intermediate automated page-summary incorrectly suggested 32K for this model and was rejected in favor of the primary config.json + README evidence. All 4 benchmark scores (mmlu 66.3, c-eval 72.1, gsm8k 61.3, humaneval 32.3) confirmed verbatim on HF/GitHub."
 }

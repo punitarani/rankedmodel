@@ -71,6 +71,14 @@
       "source": "self-reported",
       "sourceUrl": "https://dev.writer.com/home/models",
       "notes": "MATH-Hard subset"
+    },
+    {
+      "benchmarkSlug": "bigcodebench",
+      "score": 48.7,
+      "source": "independent",
+      "sourceUrl": "https://developer.puter.com/ai/writer/palmyra-x5/",
+      "evaluatedAt": "2025-04-28",
+      "notes": "BigCodeBench (Full, Instruct); confirmed via direct fetch of developer.puter.com's Palmyra X5 model page, which quotes the figure verbatim ('Palmyra X5 scores 48.7 on BigCodeBench (Full, Instruct)...') alongside the matching LongBench v2 53% and MRCR 19.1% figures already in this corpus's verificationNotes -- consistent, independently-mirrored reporting traceable back to VentureBeat's original coverage of the April 2025 Writer launch (VentureBeat's own page returned HTTP 403 to direct fetch, but WebSearch snippets of it echo the identical 'eighth in coding on BigCodeBench... 48.7' framing). Not present in dev.writer.com/home/models' own 4-benchmark table, so this is best treated as a secondary/press-sourced figure rather than a primary vendor disclosure."
     }
   ],
   "verificationNotes": "Confirmed real release, April 28, 2025, via SiliconAngle (fetched): ~$1M GPU training cost, reads a 1M-token prompt in ~22s, ~300ms per function-calling turn, pricing $0.60/$6 per M tokens — all confirmed exactly. dev.writer.com/home/models (fetched) confirms exactly: 1M context, GPQA 47.2, MMLU-Pro 65.02, BBH 70.99, MATH-Hard 71.57. The LongBench-v2 53% figure could not be directly re-fetched from venturebeat.com or writer.com (both returned HTTP 403 to the fetcher), but is independently corroborated by search-engine snippets quoting Writer's own reporting of 'an impressive 53% average score' on LongBench v2 for Palmyra X5 — kept given this corroboration, though not a direct page fetch."

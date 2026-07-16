@@ -111,7 +111,15 @@
       "sourceUrl": "https://reka.ai/news/reka-flash-efficient-and-capable-multimodal-language-models",
       "evaluatedAt": "2024-02-12",
       "notes": "Reka Flash's MT-Bench score of 8.2 ('matching models such as Claude 1 and Claude 2'), from Reka's official Feb 12, 2024 launch blog post"
+    },
+    {
+      "benchmarkSlug": "xwinograd",
+      "score": 84,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2404.12387v1",
+      "evaluatedAt": "2024-02-12",
+      "notes": "XWinograd (0-shot, acc), from Table 11 of the Reka Core/Flash/Edge tech report ('Comparisons of our models on multilingual tasks against GPT-3.5 and GPT-4') -- 'Reka Flash v1.5' column, score 84.0 (Reka Core v0.5: 86.8, Llama-2 70B: 65.3, GPT-3.5: 72.2, GPT-4: 91.5). Confirmed by direct HTML fetch of arxiv 2404.12387v1 Table 11 (row S3.T11.20.20). Not previously tracked -- the corpus's existing rows for this model only cover MMLU/GSM8K/HumanEval/MATH/MMMU/VQAv2/PubMedQA/GPQA/MT-Bench from Tables 5, 13 and 15; Table 11's multilingual suite (XStoryCloze, XCOPA, XQuAD, TydiQA, Belebele) was not yet represented and XWinograd is the only one of those with a matching taxonomy slug. Table 11 does not include a Reka Edge column, so no equivalent result exists for Reka Edge."
     }
   ],
-  "verificationNotes": "CORRECTED releaseDate. Reka's official blog post 'Reka Flash: Efficient and Capable Multimodal Language Models' has an in-body date of Feb 12, 2024 (confirmed via direct fetch of the article body, not just page metadata), and MarkTechPost/other outlets covered the launch Feb 28, 2024 \u2014 both well before the source record's stated 2024-04-18. That April date corresponds instead to the arxiv tech report submission (which covers Flash retroactively alongside the later Reka Core launch), not Flash's original release. Changed releaseDate to 2024-02-12. All three benchmark rows confirmed exactly via arxiv fetch: MMLU 75.9 (5-shot), GSM8K 85.8 (maj@8), HumanEval 72.0 (0-shot). Confirmed a distinct, still-served 'Reka Flash (Sep '24)' build exists on Reka's API/artificialanalysis today, supporting the record's claim that the original Feb 2024 build is no longer separately served (superseded first by the Sep '24 update, then Flash 3)."
+  "verificationNotes": "CORRECTED releaseDate. Reka's official blog post 'Reka Flash: Efficient and Capable Multimodal Language Models' has an in-body date of Feb 12, 2024 (confirmed via direct fetch of the article body, not just page metadata), and MarkTechPost/other outlets covered the launch Feb 28, 2024 — both well before the source record's stated 2024-04-18. That April date corresponds instead to the arxiv tech report submission (which covers Flash retroactively alongside the later Reka Core launch), not Flash's original release. Changed releaseDate to 2024-02-12. All three benchmark rows confirmed exactly via arxiv fetch: MMLU 75.9 (5-shot), GSM8K 85.8 (maj@8), HumanEval 72.0 (0-shot). Confirmed a distinct, still-served 'Reka Flash (Sep '24)' build exists on Reka's API/artificialanalysis today, supporting the record's claim that the original Feb 2024 build is no longer separately served (superseded first by the Sep '24 update, then Flash 3)."
 }

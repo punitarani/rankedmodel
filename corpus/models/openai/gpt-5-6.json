@@ -119,6 +119,22 @@
       "sourceUrl": "https://benchlm.ai/benchmarks/cyberGym",
       "evaluatedAt": "2026-07-11",
       "notes": "CyberGym score for GPT-5.6 Sol, from BenchLM's CyberGym leaderboard ('GPT-5.6 Sol leads the public snapshot at 84.5%', rank #1). This is a third-party independent leaderboard run, not an OpenAI self-reported figure (OpenAI's own launch materials report a different internal 'capture-the-flag suite' score of 96.7% and cite an external firm called Irregular for cyber capability evals, neither of which is the CyberGym benchmark itself). One other secondary mention of 83.6% for the same pairing surfaced in a noisy web-search synopsis but without a clean citation, so treating 84.5% (the leaderboard's own stated number) as authoritative."
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 96.5,
+      "source": "independent",
+      "sourceUrl": "https://arcprize.org/results/openai-gpt-5-6-sol",
+      "evaluatedAt": "2026-07-09",
+      "notes": "ARC-AGI-1, Public Eval, max reasoning effort, GPT-5.6 Sol. From ARC Prize's official verified-results page for GPT-5.6 Sol (cross-checked against the /results/openai-gpt-5-6 mirror page, identical figure). Not currently tracked under any arc-agi-* slug for this model."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 92.5,
+      "source": "independent",
+      "sourceUrl": "https://arcprize.org/results/openai-gpt-5-6-sol",
+      "evaluatedAt": "2026-07-09",
+      "notes": "ARC-AGI-2, Public Eval, max reasoning effort, GPT-5.6 Sol. Same ARC Prize results page as the ARC-AGI-1 row; also independently corroborated by a July 2026 X post from Greg Kamradt citing the identical 92.5% SOTA figure for Sol on ARC-AGI-2."
     }
   ],
   "verificationNotes": "Existence, July 9 2026 GA (June 26 limited govt preview), 1.05M context, and $5/$30 Sol pricing all confirmed directly via developers.openai.com/api/docs/models/gpt-5.6-sol and multiple outlets (Simon Willison, VentureBeat, MarkTechPost). All six benchmark scores independently corroborated via MarkTechPost's direct report of the OpenAI launch page."

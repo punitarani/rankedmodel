@@ -86,7 +86,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
       "evaluatedAt": "2026-02-17",
-      "notes": "\u03c4\u00b2-bench Telecom domain, Sonnet 4.5 comparison figure, Table 2.1.A. (Sonnet 4.5 also scored 86.2% on the Retail sub-domain, which has no matching taxonomy slug distinct from tau-bench.)"
+      "notes": "τ²-bench Telecom domain, Sonnet 4.5 comparison figure, Table 2.1.A. (Sonnet 4.5 also scored 86.2% on the Retail sub-domain, which has no matching taxonomy slug distinct from tau-bench.)"
     },
     {
       "benchmarkSlug": "osworld-verified",
@@ -142,7 +142,15 @@
       "source": "independent",
       "sourceUrl": "https://hal.cs.princeton.edu/gaia",
       "notes": "Princeton HAL (Holistic Agent Leaderboard), 'HAL Generalist Agent' scaffold, standard (non-extended-thinking) config, Claude Sonnet 4.5 (Sept 2025 snapshot). GAIA validation set. Top-ranked entry on this leaderboard."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 43.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75/Claude%20Sonnet%204.6%20System%20Card.pdf",
+      "evaluatedAt": "2026-02-17",
+      "notes": "BrowseComp (1,266 web-navigation questions), single-agent configuration with web search/fetch tools, thinking DISABLED (Anthropic found Sonnet 4.6-family models perform better on this eval without adaptive thinking). Sonnet 4.5 comparison bar in the Claude Sonnet 4.6 System Card, Section 2.20.1.1, Figure 2.20.1.1.A -- read directly from the primary-source PDF (43.9%). Not currently tracked in this corpus for this model; this same document is already the corpus's established source for several of this model's other rows (terminal-bench-2, tau2-bench-telecom, osworld-verified, arc-agi-2, gdpval-aa, mmmu-pro, hle)."
     }
   ],
-  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-sonnet-4-5 (release 2025-09-29, $3/$15 pricing, 200K context, 30+ hour focus claim). GPQA/MMLU rows confirmed verbatim via direct fetch of leanware.co. IMPORTANT CORRECTION: input record marked status='deprecated', but Anthropic's official model-deprecations page (fetched 2026-07-12) lists claude-sonnet-4-5-20250929 as 'Active' with tentative retirement 'not sooner than 2026-09-29' \u2014 this model is currently live, not deprecated. Status corrected to 'released' (closest enum to 'Active'); apiAvailable=true confirmed correct."
+  "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-sonnet-4-5 (release 2025-09-29, $3/$15 pricing, 200K context, 30+ hour focus claim). GPQA/MMLU rows confirmed verbatim via direct fetch of leanware.co. IMPORTANT CORRECTION: input record marked status='deprecated', but Anthropic's official model-deprecations page (fetched 2026-07-12) lists claude-sonnet-4-5-20250929 as 'Active' with tentative retirement 'not sooner than 2026-09-29' — this model is currently live, not deprecated. Status corrected to 'released' (closest enum to 'Active'); apiAvailable=true confirmed correct."
 }

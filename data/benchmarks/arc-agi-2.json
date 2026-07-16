@@ -5,6 +5,6 @@
   "unit": "%",
   "description": "Harder abstraction-and-reasoning puzzle grid tasks, v2.",
   "normMin": 0,
-  "normMax": 82,
+  "normMax": 95,
   "higherIsBetter": true
 }

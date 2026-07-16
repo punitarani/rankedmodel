@@ -156,6 +156,38 @@
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
       "evaluatedAt": "2024-09-19",
       "notes": "Base model"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 81.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.15115",
+      "evaluatedAt": "2025-01-06",
+      "notes": "Qwen2.5-72B-Instruct (not the base model this entry otherwise tracks), Qwen2.5 Technical Report Table 6 ('Performance of the 70B+ Instruct models and Qwen2.5-Plus'), Alignment Tasks row 'Arena-Hard'. Instruct variant, added per this corpus's established pattern of tracking both base- and instruct-labeled results on one entry with notes."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 9.35,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.15115",
+      "evaluatedAt": "2025-01-06",
+      "notes": "Qwen2.5-72B-Instruct, Table 6, row 'MTbench' (1-10 scale)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 55.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.15115",
+      "evaluatedAt": "2025-01-06",
+      "notes": "Qwen2.5-72B-Instruct, Table 6, Coding Tasks row 'LiveCodeBench'."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 84.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.15115",
+      "evaluatedAt": "2025-01-06",
+      "notes": "Qwen2.5-72B-Instruct, Table 6, Alignment Tasks row 'IFEval'."
     }
   ],
   "verificationNotes": "Existence, org, and Sept 19 2024 date confirmed via qwenlm.github.io/blog/qwen2.5/ byline. HF model card (huggingface.co/Qwen/Qwen2.5-72B) confirms 72.7B total / 70.0B non-embedding params, 80 layers, GQA 64Q/8KV, 131,072 ctx, 'qwen' (non-Apache) license. Blog confirms 29+ language support and Apache-2.0-except-3B/72B licensing. All 7 result rows (MMLU 86.1, MMLU-Pro 58.1, BBH 86.3, MATH 62.1, GSM8K 91.5, HumanEval 59.1, MBPP 84.7) verified verbatim on qwenlm.github.io/blog/qwen2.5-llm/. No changes made."

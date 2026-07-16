@@ -137,6 +137,14 @@
       "sourceUrl": "https://www.datacamp.com/blog/o3-openai",
       "evaluatedAt": "2025-04-16",
       "notes": "Relayed from the same o3-launch comparison table; CharXiv-Reasoning scientific-figure benchmark."
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 32,
+      "source": "independent",
+      "sourceUrl": "https://x.com/arcprize/status/1869551373848908029",
+      "evaluatedAt": "2024-12-19",
+      "notes": "ARC-AGI-1 Semi-Private Eval (100 tasks), full o1 model (post-Dec-5 launch, not o1-preview/o1-mini), 'High' compute setting: 32% ($3.8/task). ARC Prize also verified Low: 25% and Medium: 31% for the same full o1 model at lower compute; using the High figure since the corpus entry represents the model's best/default configuration (isBestConfig=true) and does not split by reasoning-effort tier. Independently run and verified by ARC Prize (not an OpenAI self-report), corroborated by François Chollet's tweet citing the same '25-32%' range for o1 (distinct from the separately-reported o1-preview scores of 21.2%/18% already superseded). Not currently tracked in the corpus entry (which has no arc-agi-1 result at all)."
     }
   ],
   "verificationNotes": "Full o1 launch on 2024-12-05 (alongside o1-pro/ChatGPT Pro) confirmed via multiple independent sources (Wikipedia, InfoQ, OpenAI o1 system card PDF dated 2024-12-05). AIME 74.3, GPQA 78, SWE-bench 48.9, Codeforces 1891, MMMU 77.6 all confirmed by direct fetch of datacamp.com/blog/o3-openai, matching exactly. Scheduled shutdown 2026-10-23 confirmed via OpenAI deprecation coverage (TheRouter.ai, OpenAI community deprecation notice) - the model is still real/active as of today (2026-07-12). No changes made."

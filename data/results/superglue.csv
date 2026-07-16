@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
 bloomz-176b,82.14,self-reported,https://huggingface.co/bigscience/bloomz,,"SuperGLUE CB (CommitmentBank) subtask, validation, zero-shot accuracy."
 gpt-3-175b,71.8,self-reported,https://arxiv.org/abs/2005.14165,,"Few-shot average (K=32 in-context examples), test set (Table 3.8)"
+palm-540b,90.4,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"Table 9 of the PaLM paper: PaLM 540B finetuned, SuperGLUE test set (official leaderboard) average = 90.4. (A separate dev-set finetuned average of 92.6 is also reported in Table 7; test/leaderboard score chosen as the canonical figure.)"
 ul2-20b,90.7,self-reported,https://arxiv.org/abs/2205.05131,,"SuperGLUE dev set average, finetuned"

@@ -94,6 +94,14 @@
       "sourceUrl": "https://arxiv.org/abs/2410.08928",
       "evaluatedAt": "2024-10-17",
       "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Pharia-1-LLM-7B-control'). Matches this catalog entry's linked Aleph-Alpha/Pharia-1-LLM-7B-control exactly."
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 33.22,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control",
+      "evaluatedAt": "2024-08-26",
+      "notes": "AlpacaEval 2.0, English test set, length-controlled win rate, from the official HF model card's AlpacaEval 2.0 table (not currently tracked for this model). Baseline is llama-3.1-8b-instruct (29.18% raw win rate). The same table also reports vs. Mistral-7B-Instruct-v0.3: 28.38% LC / 26.92% WR, plus German/French/Spanish translated variants scoring higher (~50-55% LC). Non-standard baselines (not the canonical gpt4-turbo AlpacaEval baseline), but genuine AlpacaEval 2.0 methodology as run and published by Aleph Alpha themselves."
     }
   ],
   "verificationNotes": "Existence and Aug 26, 2024 release confirmed via aleph-alpha.com blog post and corroborating coverage (VentureBeat, Maginative, dataphoenix, and Aleph Alpha's own X/Twitter announcement). 7.04B params (7,041,544,704 exact) and Open Aleph License (non-commercial research/educational use) confirmed by fetching the HF model card directly. All three benchmark scores (MMLU 48.4, HellaSwag 64.6, GSM8K 1.4) confirmed to literally appear on huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control - exact match, no changes needed."

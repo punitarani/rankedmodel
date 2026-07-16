@@ -93,6 +93,22 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking",
       "notes": "Tau2-Telecom split"
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 560,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/trinity-large-thinking",
+      "evaluatedAt": "2026-07-14",
+      "notes": "GDPval-AA v2 (Artificial Analysis's own real-world agentic-work-tasks eval, distinct taxonomy slug from plain 'gdpval') from AA's Intelligence Index v4.1 breakdown, position-verified as the last (lowest-scoring) entry in the 28-model GDPval-AA v2 ranking list ('Trinity Large Thinking' = 3%). Not previously tracked; the file's own note already flags that BFCLv4 and Tau2-Airline were deliberately omitted for lacking a taxonomy slug, so this fills a genuine gap rather than duplicating that omission. [score corrected during round-6 completeness verify: proposed 3 -> 560]"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 15,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/trinity-large-thinking",
+      "evaluatedAt": "2026-07-14",
+      "notes": "Humanity's Last Exam score from Artificial Analysis's independent Intelligence Index v4.1 evaluation, position-verified against the full 28-model HLE ranking list ('Trinity Large Thinking' = 15%, second-to-last). AA's independent GPQA-Diamond re-run (75%) and IFBench re-run (56%) were checked but skipped since both slugs are already covered by the model's self-reported HF-card scores (76.3 and 52.3 respectively)."
     }
   ],
   "verificationNotes": "Architecture/training details from the Arcee Trinity Large technical report (arXiv:2602.17004); benchmark table and license from the official Hugging Face model card; pricing from Arcee's own docs site."

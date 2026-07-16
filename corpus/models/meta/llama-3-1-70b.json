@@ -160,7 +160,7 @@
       "source": "independent",
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-07-31",
-      "notes": "LogicKor official leaderboard, model_id meta-llama/Meta-Llama-3.1-70B-Instruct-FP8, default prompt strategy [score corrected during adversarial verify: proposed 7.79 -> 7.78, per verifier: Fetched https://lk.instruct.kr/ twice independently. The row for meta-llama/Meta-Llama-3.1-70B-Instruct-FP8, default prompt strategy, shows a total score of 7.78, not 7.79 as claimed. Model ID and prompt-strategy variant match the claim correctly (no wrong-model or wrong-benchmark-variant mixup \u2014 the 1-shot score is 7.71 and cot-1-shot is 7.66, clearly distinct rows). This appears to be a minor transcription error (7.79 vs 7.78). Corrected score: 7.78.]"
+      "notes": "LogicKor official leaderboard, model_id meta-llama/Meta-Llama-3.1-70B-Instruct-FP8, default prompt strategy [score corrected during adversarial verify: proposed 7.79 -> 7.78, per verifier: Fetched https://lk.instruct.kr/ twice independently. The row for meta-llama/Meta-Llama-3.1-70B-Instruct-FP8, default prompt strategy, shows a total score of 7.78, not 7.79 as claimed. Model ID and prompt-strategy variant match the claim correctly (no wrong-model or wrong-benchmark-variant mixup — the 1-shot score is 7.71 and cot-1-shot is 7.66, clearly distinct rows). This appears to be a minor transcription error (7.79 vs 7.78). Corrected score: 7.78.]"
     },
     {
       "benchmarkSlug": "gaokao-math",
@@ -169,7 +169,39 @@
       "sourceUrl": "https://arxiv.org/html/2409.12122v1",
       "evaluatedAt": "2024-08-08",
       "notes": "Llama-3.1-70B-Instruct, Chinese GaoKao aggregate, zero-shot CoT greedy decoding, from Table 4 of the Qwen2.5-Math technical report where it is used as a general-model baseline (third-party evaluation by the Qwen team)."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 55.54,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2409.11055",
+      "evaluatedAt": "2024-09-17",
+      "notes": "Llama-3.1-70B-it, FP16 baseline row, BBH 3-shot (OpenLLM Leaderboard-v2 protocol), Table 2 of 'Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant' (Lee et al., v6). Third-party lm-eval-harness reproduction, not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 55.9 -> 55.54]"
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 86.74,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2409.11055",
+      "evaluatedAt": "2024-09-17",
+      "notes": "Llama-3.1-70B-it, FP16 baseline row, HellaSwag 10-shot acc_norm (OpenLLM Leaderboard-v1 protocol), Table 1 of the same quantization-tradeoffs paper (Lee et al., v6)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 59.85,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2409.11055",
+      "evaluatedAt": "2024-09-17",
+      "notes": "Llama-3.1-70B-it, FP16 baseline row, TruthfulQA 0-shot mc2, Table 1 of the same quantization-tradeoffs paper (Lee et al., v6)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 85.4,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2409.11055",
+      "evaluatedAt": "2024-09-17",
+      "notes": "Llama-3.1-70B-it, FP16 baseline row, Winogrande 5-shot acc, Table 1 of the same quantization-tradeoffs paper (Lee et al., v6)."
     }
   ],
-  "verificationNotes": "Confirmed real. Exact parameter count 70.6B corroborated independently (apxml.com and others). HF comparison table (meta-llama/Meta-Llama-3.1-8B page, which covers all three sizes) literally lists all seven Instruct scores for 70B: MMLU 83.6, MMLU-Pro 66.4, GPQA 46.7, IFEval 87.5, HumanEval 80.5, GSM8K 95.1, MATH 68.0 \u2014 matches exactly. Corrected the GPQA row's notes the same way as the 405B entry (Instruct, not base). Live-fetched lmmarketcap.com/benchmarks/arena_elo and confirmed it currently shows exactly 1198 Elo for Llama 3.1 70B. Release date, 128K context, and Llama 3.1 Community License confirmed via Meta's blog/GitHub model card."
+  "verificationNotes": "Confirmed real. Exact parameter count 70.6B corroborated independently (apxml.com and others). HF comparison table (meta-llama/Meta-Llama-3.1-8B page, which covers all three sizes) literally lists all seven Instruct scores for 70B: MMLU 83.6, MMLU-Pro 66.4, GPQA 46.7, IFEval 87.5, HumanEval 80.5, GSM8K 95.1, MATH 68.0 — matches exactly. Corrected the GPQA row's notes the same way as the 405B entry (Instruct, not base). Live-fetched lmmarketcap.com/benchmarks/arena_elo and confirmed it currently shows exactly 1198 Elo for Llama 3.1 70B. Release date, 128K context, and Llama 3.1 Community License confirmed via Meta's blog/GitHub model card."
 }

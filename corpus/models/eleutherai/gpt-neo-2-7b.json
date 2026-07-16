@@ -87,6 +87,78 @@
       "sourceUrl": "https://huggingface.co/EleutherAI/gpt-neo-2.7B",
       "evaluatedAt": "2021-03-21",
       "notes": "From the 'Physical and Scientific reasoning' evaluation table on the official HF model card (PubMedQA acc=57.54%), run with the LM Eval Harness alongside the 4 benchmarks already in the corpus. Not previously captured."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 33.36,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-neo-2.7B",
+      "evaluatedAt": "2023-07-19",
+      "notes": "25-shot acc_norm from HF Open LLM Leaderboard v1 (results_2023-07-19T17:18:37 run, EleutherAI LM Eval Harness). Independent re-run distinct from the self-reported HF model-card table; arc-challenge was not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 26.45,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-neo-2.7B",
+      "evaluatedAt": "2023-07-19",
+      "notes": "5-shot MMLU average, computed by hand-averaging all 57 harness|hendrycksTest-* acc values in the raw results JSON (results_2023-07-19T17:18:37). Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 39.78,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-neo-2.7B",
+      "evaluatedAt": "2023-07-19",
+      "notes": "0-shot TruthfulQA MC2 accuracy (harness|truthfulqa:mc|0), HF Open LLM Leaderboard v1."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 4.77,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-neo-2.7B",
+      "evaluatedAt": "2023-09-16",
+      "notes": "3-shot DROP F1 = 4.77% (EM = 0.14%), HF Open LLM Leaderboard v1 results_2023-09-16 run. Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 1.29,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-neo-2.7B",
+      "evaluatedAt": "2023-09-16",
+      "notes": "5-shot GSM8K accuracy, HF Open LLM Leaderboard v1 results_2023-09-16 run."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 25.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "0-shot IFEval strict-accuracy Raw score, HF Open LLM Leaderboard v2 (open-llm-leaderboard/contents dataset, row fullname=EleutherAI/gpt-neo-2.7B)."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 31.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "3-shot BBH normalized accuracy averaged across 23 subtasks, HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 26.59,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "0-shot GPQA normalized accuracy (4-choice), HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 11.63,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
     }
   ],
   "verificationNotes": "Confirmed real: fetched huggingface.co/EleutherAI/gpt-neo-2.7B model card table verbatim-matches all 4 scores (LAMBADA 62.22, Winogrande 56.50, HellaSwag 42.73, PIQA 72.14). MIT license and 2021-03-21 release date (eleuther.ai/artifacts/gpt-neo shows '21 Mar') confirmed. No changes needed."

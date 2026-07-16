@@ -116,6 +116,54 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
       "evaluatedAt": "2023-12-06",
       "notes": "Stated directly in the report body (Section 1/5.1) as Gemini Ultra's new state-of-the-art MMMU score, corroborated by the paper's abstract; uses the uncertainty-routed CoT approach."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 82.3,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7 (Image understanding), TextVQA (val), pixel-only (no external OCR), greedy 0-shot. Verified via direct PDF page extraction."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 90.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7 (Image understanding), DocVQA (test), pixel-only, greedy 0-shot."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 80.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7 (Image understanding), ChartQA (test), pixel-only, greedy 0-shot."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 53,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7 (Image understanding), MathVista (testmini), pixel-only, greedy 0-shot."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 79.5,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7 (Image understanding), AI2D (test), pixel-only, greedy 0-shot."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 77.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7 (Image understanding), VQAv2 (test-dev), pixel-only, greedy 0-shot."
     }
   ],
   "verificationNotes": "Confirmed real: Gemini Advanced ($19.99/mo Google One AI Premium, giving access to Ultra 1.0) launched 2024-02-08, corroborated by 9to5google and TechCrunch. Fetched blog.google/technology/ai/google-gemini-ai/ directly: it literally states 'With a score of 90.0%, Gemini Ultra is the first model to outperform human experts on MMLU' -- exact quote confirms the 90 score and the note verbatim."

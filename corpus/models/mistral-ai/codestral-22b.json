@@ -79,6 +79,38 @@
       "source": "self-reported",
       "sourceUrl": "https://mistral.ai/news/codestral/",
       "notes": "HumanEvalFIM average across Python/JavaScript/Java, read directly from the official launch blog's benchmark chart image; independently corroborated by the same figure on the Codestral-Mamba HF model card's comparison table."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 57.72,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Codestral-22B-v0.1-details",
+      "evaluatedAt": "2024-09-28",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1 (bfloat16); IFEval normalized score as displayed on the public leaderboard contents table. Not present under any source in the current file."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 50.88,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Codestral-22B-v0.1-details",
+      "evaluatedAt": "2024-09-28",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; BBH normalized score. [score corrected during round-6 completeness verify: proposed 30.74 -> 50.88]"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 25.76,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Codestral-22B-v0.1-details",
+      "evaluatedAt": "2024-09-28",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; GPQA (chance-corrected) normalized score. [score corrected during round-6 completeness verify: proposed 6.49 -> 25.76]"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 31.56,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Codestral-22B-v0.1-details",
+      "evaluatedAt": "2024-09-28",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; MMLU-PRO normalized score. [score corrected during round-6 completeness verify: proposed 23.95 -> 31.56]"
     }
   ],
   "verificationNotes": "Confirmed via HF model page and config.json: 22.2B params, MNPL-0.1 license, 32K context (max_position_embeddings). Fetched analyticsvidhya.com directly: literally confirms '81.1% pass rate on HumanEval' and '78.2% success rate in MBPP'. No changes made."

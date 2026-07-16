@@ -223,6 +223,38 @@
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-06-27",
       "notes": "LogicKor official leaderboard, model_id anthropic/claude-3-haiku-20240307, default prompt strategy"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 0.8,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-10-22",
+      "notes": "AIME 2024, 0-shot CoT single-sample (pass@1), Table 8 of the October 2024 Model Card Addendum, reported retroactively for the original Claude 3 Haiku as a comparison baseline for the new Claude 3.5 Haiku. Column alignment cross-validated against 6 other Claude-3-Haiku values in the same row-set (GPQA 33.3, MMLU 75.2, MATH 38.9, HumanEval 75.9, MGSM 75.1, DROP 78.4, BBH 73.7) which all exactly match values already in this file. Maj@64 variant (0.4%) omitted as a different metric."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 77.2,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-10-22",
+      "notes": "IFEval, Table 8 of the October 2024 Model Card Addendum, reported retroactively for the original Claude 3 Haiku."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 49,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-10-22",
+      "notes": "MMLU-Pro, 0-shot CoT, Table 8 of the October 2024 Model Card Addendum, reported retroactively for the original Claude 3 Haiku."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 8.2,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2411.04368",
+      "evaluatedAt": "2024-11-07",
+      "notes": "SimpleQA F-score for claude-3-haiku-20240307, Table 3 of OpenAI's 'Measuring short-form factuality in large language models' paper (independent third-party evaluation). Correct=5.1%, Not-attempted=75.3%, Incorrect=19.6%."
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-haiku (release date 2024-03-13). Pricing $0.25/$1.25 confirmed via independent pricing trackers citing Anthropic's official rate. Downloaded and read the actual Model_Card_Claude_3.pdf Table 1/Table 3: all 12 self-reported benchmark numbers for Claude 3 Haiku (MMLU 75.2, MATH 38.9, GSM8K 88.9, HumanEval 75.9, GPQA 33.3, BBH 73.7, ARC-Challenge 89.2, HellaSwag 85.9, WinoGrande 74.2, DROP 78.4, MBPP 80.4, MMMU 50.2) match the PDF verbatim. apiAvailable=false confirmed: claude-3-haiku-20240307 retired from API April 20, 2026 (most recently retired of this batch). No changes made."

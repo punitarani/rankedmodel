@@ -150,6 +150,22 @@
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
       "evaluatedAt": "2024-09-19",
       "notes": "Base model, 0-shot (EvalPlus-augmented MBPP)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 81,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.15115",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Qwen2.5 Technical Report, Table 3 (\"Performance of the 14B-30B+ base models\"), Qwen2.5-14B column, Winogrande row (5-shot per report's Section 5.1 methodology). Confirmed via direct read of the PDF. This is the BASE model table (not the Instruct table 7), matching the corpus entry's variant (hf: Qwen/Qwen2.5-14B, base repo). A prior WebFetch of the qwenlm.github.io blog had missed this figure entirely."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 84.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.15115",
+      "evaluatedAt": "2024-09-19",
+      "notes": "Qwen2.5 Technical Report, Table 3, Qwen2.5-14B column, HellaSwag row (10-shot per report's Section 5.1 methodology). Confirmed via direct read of the PDF, same base-model table as the winogrande addition above. [score corrected during round-6 completeness verify: proposed 83 -> 84.3]"
     }
   ],
   "verificationNotes": "Fully confirmed via live fetch of qwenlm.github.io/blog/qwen2.5-llm/ base-model table: MMLU 79.7, MMLU-Pro 51.2, MATH 55.6, GSM8K 90.2, HumanEval 56.7, MBPP 76.7 all match exactly. License Apache 2.0 explicitly confirmed on the page for both 14B and 32B. No changes needed."

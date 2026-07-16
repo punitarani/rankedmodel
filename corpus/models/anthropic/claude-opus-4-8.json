@@ -132,6 +132,14 @@
       "source": "independent",
       "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
       "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), Claude Code harness, Max reasoning effort: Pass rate 27.0% / Score 45.2% (rank 9 overall). Using the Score component per this corpus's established convention for this benchmark (see bytedance/seed-2-1-pro.json, openai/gpt-5-6.json). Mirrored from the official leaderboard at agents-last-exam.org/leaderboard (Berkeley RDI); catalog model has no effort-variant split, so the best-scoring configuration (Max) is used as the headline figure."
+    },
+    {
+      "benchmarkSlug": "usamo",
+      "score": 96.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www.datacamp.com/blog/claude-opus-4-8",
+      "evaluatedAt": "2026-05-28",
+      "notes": "USAMO 2026, confirmed via direct fetch of datacamp.com/blog/claude-opus-4-8. Independently corroborated (same 96.7% figure) via direct fetches of llm-stats.com/blog/research/claude-opus-4-8-launch and digitalapplied.com/blog/claude-opus-4-8-release-dynamic-workflows-2026, both explicitly citing the Anthropic Claude Opus 4.8 System Card. Represents a 27.4pp jump over Opus 4.7's 69.3%, described across sources as the largest single-cycle math gain in the Opus line. Not currently tracked in this corpus for this model."
     }
   ],
   "verificationNotes": "Release date, model id, and pricing confirmed directly from Anthropic's own announcement and platform docs (fetched). Benchmark table numbers below are relayed via a third-party writeup that explicitly cites 'Claude Opus 4.8 System Card, Table 8.1.A'."

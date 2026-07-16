@@ -145,6 +145,46 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2604.24954",
       "notes": "Table 7, VideoMME (w/o subtitles), reasoning-on mode; independently corroborated by NVIDIA's HF launch blog stating the identical figure."
+    },
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 866,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "evaluatedAt": "2026-04-27",
+      "notes": "OCRBench (Test), reasoning-on mode (matches the corpus's tracked config), from Table 7 of the official NVIDIA technical report, confirmed via a raw pdftotext -layout extraction of the report PDF (mirrored at research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Omni-report.pdf) to avoid image-OCR misreads: 'OCRBench 88.3 86.6' (reasoning-off / reasoning-on). Distinct from the already-tracked 'OCRBenchV2 (EN/ZH)' row, which is a different, harder benchmark version not in the taxonomy. [score corrected during round-6 completeness verify: proposed 86.6 -> 866]"
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 81,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "evaluatedAt": "2026-04-27",
+      "notes": "TextVQA (Val), reasoning-on mode, from Table 7 of the NVIDIA technical report, confirmed via pdftotext -layout extraction: 'TextVQA (Val) 85.1 81.0' (reasoning-off / reasoning-on)."
+    },
+    {
+      "benchmarkSlug": "osworld",
+      "score": 47.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2604.24954",
+      "evaluatedAt": "2026-04-27",
+      "notes": "OSWorld (agentic computer-use benchmark), reasoning-on mode, from Table 7 of the NVIDIA technical report, confirmed via pdftotext -layout extraction: 'OSWorld - 47.4' (reasoning-off not reported / reasoning-on = 47.4). Only the reasoning-on figure exists for this model."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 5,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/nemotron-3-nano-omni-30b-a3b",
+      "evaluatedAt": "2026-07-14",
+      "notes": "Humanity's Last Exam score from Artificial Analysis's independent Intelligence Index v4.1 evaluation, position-verified against the full 28-model HLE ranking list on the model's AA page ('Nemotron 3 Nano Omni 30B A3B Reasoning' = 5%). The existing corpus 'gpqa' entry (72.2, self-reported) already covers GPQA so AA's independent GPQA re-run (47%) was deliberately skipped as a duplicate slug per instructions; HLE was not previously tracked at all."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 53,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/nemotron-3-nano-omni-30b-a3b",
+      "evaluatedAt": "2026-07-14",
+      "notes": "MMMU-Pro (harder variant of MMMU, distinct taxonomy slug from the corpus's existing 'mmmu' result of 70.8) from Artificial Analysis's independent evaluation, position-verified against the 17-model MMMU-Pro ranking list ('Nemotron 3 Nano Omni 30B A3B Reasoning' = 53%, second-lowest of the models AA has scored on this eval)."
     }
   ],
   "verificationNotes": "Artificial Analysis Intelligence Index score of 15 (#29/130 in class) is an independent re-run; no independently-verified scores found for the individual named benchmarks (MMlongbench-Doc, OCRBenchV2, WorldSense, DailyOmni, VoiceBench) that NVIDIA's own materials claim leadership on, so only the composite index is reported."

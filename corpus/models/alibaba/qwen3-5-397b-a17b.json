@@ -201,6 +201,22 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
       "notes": "Vision-Language table, Visual Agent section."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 23,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-397b-a17b",
+      "evaluatedAt": "2026-07-15",
+      "notes": "GDPval-AA v2 ('agentic real-world work tasks', normalized as (Elo-500)/2000), independently measured by Artificial Analysis on the model's live AA page as part of Intelligence Index v4.1 -- not currently tracked in the file (file only has self-reported osworld-verified for the agentic/visual-agent category). Qwen3.5 397B A17B scored 23%, well behind Claude Fable 5 (63%) and GPT-5.6 Sol (62%) but ahead of Ring-2.6-1T (21%) and DeepSeek V3.1 Terminus (19%)."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1442,
+      "source": "independent",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-13",
+      "notes": "LMArena (Chatbot Arena, now rebranded arena.ai) Text Arena Overall leaderboard: qwen3.5-397b-a17b listed under Alibaba/Apache 2.0, Elo score 1442 (+/-4), rank 65 of 374 models, 55,130 votes, snapshot dated Jul 13, 2026. Not previously tracked -- the file has no blind-human-preference arena result at all, only self-reported benchmark-suite scores."
     }
   ],
   "verificationNotes": "Confirmed real and independently corroborated. Primary sources fetched directly: HF model card (huggingface.co/Qwen/Qwen3.5-397B-A17B, full spec + benchmark table), the QwenLM GitHub org (github.com/QwenLM/Qwen3.5 redirects to github.com/QwenLM/Qwen3.6, whose README changelog gives the official release date 2026-02-16 and confirms Apache-2.0 licensing for all open-weight models in the family), and the qwen.ai/blog?id=qwen3.5 launch post. Press corroboration: CNBC (the exact lead URL, cnbc.com/2026/02/17/...) confirms the Feb 2026 launch and notes CNBC could not independently verify Alibaba's self-reported benchmark comparisons -- flagged accordingly (all results here are self-reported). GPQA Diamond score (88.4) is corroborated twice within the same source (blog table + HF's own embedded community leaderboard widget for that exact dataset). Architecture is hybrid (Gated DeltaNet linear-attention blocks interleaved with regular Gated Attention blocks, MoE FFN) -- this is the Qwen3-Next architectural lineage, not a plain MoE like Qwen3-235B-A22B, so archClass is set to 'hybrid' rather than 'moe'. Native context is 262,144 tokens (=256K), extensible to 1,010,000 via documented YaRN scaling -- ctxK set to the native figure per corpus convention (matches how Qwen3-Coder-480B-A35B records native rather than YaRN-extended context). No official Alibaba Cloud Model Studio API price found for the raw open-weight model id in this pass (only the hosted 'Plus' product has listed pricing); apiAvailable is true based on third-party inference listings (OpenRouter etc.) referenced across secondary sources."

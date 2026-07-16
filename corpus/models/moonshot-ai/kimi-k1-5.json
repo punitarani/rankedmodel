@@ -107,7 +107,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2501.12599",
       "notes": "MathVision-Full (Pass@1) = 38.6, Kimi k1.5 long-CoT model, Table 2 (short-CoT model scores 31.0 per Table 3)."
+    },
+    {
+      "benchmarkSlug": "codeforces",
+      "score": 94,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2501.12599",
+      "notes": "Codeforces percentile = 94 (long-CoT flagship model), Table 2 of the Kimi k1.5 technical report (arXiv:2501.12599), directly adjacent to the already-tracked AIME/MATH-500/MathVista/MMMU/MathVision long-CoT rows from the same table. Confirmed via the paper's HTML table markup. Not previously tracked for this model (no codeforces slug currently present)."
     }
   ],
-  "verificationNotes": "Confirmed genuine via arXiv:2501.12599 ('Kimi k1.5: Scaling Reinforcement Learning with LLMs', submitted 2025-01-20, matches releaseDate) and MoonshotAI/Kimi-k1.5 GitHub repo. All four benchmark rows (AIME 77.5, MATH-500 96.2, LiveCodeBench 47.3, MathVista 74.9) independently re-fetched from the exact sourceUrl and confirmed to literally match. apiAvailable:false confirmed correct \u2014 k1.5 was a research release; Moonshot's current public API model list (platform.kimi.ai) does not list a kimi-k1.5 model ID. No changes needed."
+  "verificationNotes": "Confirmed genuine via arXiv:2501.12599 ('Kimi k1.5: Scaling Reinforcement Learning with LLMs', submitted 2025-01-20, matches releaseDate) and MoonshotAI/Kimi-k1.5 GitHub repo. All four benchmark rows (AIME 77.5, MATH-500 96.2, LiveCodeBench 47.3, MathVista 74.9) independently re-fetched from the exact sourceUrl and confirmed to literally match. apiAvailable:false confirmed correct — k1.5 was a research release; Moonshot's current public API model list (platform.kimi.ai) does not list a kimi-k1.5 model ID. No changes needed."
 }

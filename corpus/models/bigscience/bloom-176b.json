@@ -52,6 +52,38 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/bigscience/bloom",
       "notes": "pass@1, Python"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 50.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloom",
+      "evaluatedAt": "2023-08-29",
+      "notes": "25-shot acc_norm (harness|arc:challenge|25 = 0.50427), HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloom (confirmed config_general.model_name = 'bigscience/bloom', the 176B model), confirmed via direct fetch of the raw results JSON."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 76.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloom",
+      "evaluatedAt": "2023-08-29",
+      "notes": "10-shot acc_norm (harness|hellaswag|10 = 0.76409), HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloom, confirmed via direct fetch of the raw results JSON."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 30.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloom",
+      "evaluatedAt": "2023-08-29",
+      "notes": "5-shot, average accuracy across all 57 harness|hendrycksTest-*|5 subtasks (avg acc = 0.30854), HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloom, computed directly from the raw results JSON using the leaderboard's standard MMLU aggregation method."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 39.8,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloom",
+      "evaluatedAt": "2023-08-29",
+      "notes": "TruthfulQA MC2 (harness|truthfulqa:mc|0, mc2 = 0.39760), 0-shot, HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloom, confirmed via direct fetch of the raw results JSON."
     }
   ],
   "verificationNotes": "Confirmed on HF model card: 176,247,271,424 params (176.25B), RAIL v1.0 license, 2048-token context, 46 natural + 13 programming languages (59 total), HumanEval pass@1 15.5% all literally present on the page. July 11, 2022 release date matches the well-documented coordinated BLOOM family release. No changes made."

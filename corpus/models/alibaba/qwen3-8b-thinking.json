@@ -131,6 +131,22 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "notes": "MMMLU across 14 languages, thinking mode, Table 17"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 4,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8b-instruct-reasoning",
+      "evaluatedAt": "2026-07-14",
+      "notes": "Humanity's Last Exam, independently evaluated by Artificial Analysis on their 'Qwen3 8B (Reasoning)' page (explicitly labeled 'Released April 2025', matching this file's original April 2025 thinking-mode checkpoint, not a later -2507/3.5/3.6 variant). Read directly via live browser render of the AA site (JS-rendered chart, not accessible via plain WebFetch). No hle slug was previously present in this file. [score corrected during round-6 completeness verify: proposed 3 -> 4]"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 33,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8b-instruct-reasoning",
+      "evaluatedAt": "2026-07-14",
+      "notes": "IFBench, independently evaluated by Artificial Analysis on the 'Qwen3 8B (Reasoning)' page (April 2025 release, matches this file's checkpoint). Distinct from the self-reported IFEval score (85) already tracked. No ifbench slug was previously present."
     }
   ],
   "verificationNotes": "Fully confirmed. HF model card confirms 8.2B total params, dense, 128K context (32K native + YaRN), Apache 2.0. Table 17 of fetched Qwen3 Technical Report PDF confirms all 5 rows exactly (AIME'24 76.0, GPQA-Diamond 62.0, LiveCodeBench v5 57.5, Arena-Hard 85.8, BFCL v3 68.1), beating the larger 14B DeepSeek-R1-Distill-Qwen-14B baseline shown in the same table, supporting the 'outsized for its size' claim. DashScope pricing confirms $0.072/$0.287 (China region) exactly."

@@ -126,7 +126,55 @@
       "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
       "evaluatedAt": "2025-04-16",
       "notes": "Aider Polyglot code editing, diff format, o4-mini-high (whole-format score is 68.9%). Diff-format figure used to match this corpus's existing aider-polyglot convention (e.g. gpt-5.json)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 90,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-16",
+      "notes": "o4-mini (default/medium reasoning) row in OpenAI's own simple-evals results table, no tools enabled. Fetched raw README.md directly; row also lists o4-mini-high and o4-mini-low variants for cross-check."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 97.5,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-16",
+      "notes": "o4-mini (default/medium reasoning), OpenAI simple-evals, no tools enabled."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 97.3,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-16",
+      "notes": "o4-mini (default/medium reasoning), OpenAI simple-evals, no tools enabled."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 93.7,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-16",
+      "notes": "o4-mini (default/medium reasoning), OpenAI simple-evals Multilingual Grade School Math, no tools enabled."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 77.7,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-16",
+      "notes": "o4-mini (default/medium reasoning), F1 score, 3-shot, OpenAI simple-evals, no tools enabled."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 20.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-16",
+      "notes": "o4-mini (default/medium reasoning), short-form factuality benchmark, OpenAI simple-evals, no tools enabled."
     }
   ],
-  "verificationNotes": "Confirmed real. developers.openai.com/api/docs/models/o4-mini fetched directly: verified 200K context, 100K max output, $1.10/$4.40 per 1M input/output pricing, text+image-in modalities \u2014 all match exactly. Independent secondary sources (DataCamp, Scale AI HLE leaderboard) corroborate all six benchmark figures (AIME 93.4, GPQA 81.4, SWE-bench 68.1, MMMU 81.6, HLE 17.7, Codeforces 2719) as OpenAI's self-reported launch-day numbers from the o3/o4-mini announcement. No changes made."
+  "verificationNotes": "Confirmed real. developers.openai.com/api/docs/models/o4-mini fetched directly: verified 200K context, 100K max output, $1.10/$4.40 per 1M input/output pricing, text+image-in modalities — all match exactly. Independent secondary sources (DataCamp, Scale AI HLE leaderboard) corroborate all six benchmark figures (AIME 93.4, GPQA 81.4, SWE-bench 68.1, MMMU 81.6, HLE 17.7, Codeforces 2719) as OpenAI's self-reported launch-day numbers from the o3/o4-mini announcement. No changes made."
 }

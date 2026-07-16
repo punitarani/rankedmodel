@@ -112,7 +112,15 @@
       "sourceUrl": "https://arxiv.org/abs/2404.01856",
       "evaluatedAt": "2024-04-01",
       "notes": "FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating Falcon-40B as a reference model alongside Poro 34B."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 6.41,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-40b",
+      "evaluatedAt": "2023-09-08",
+      "notes": "3-shot DROP F1 (harness|drop|3, f1=0.064057) from the archived Open LLM Leaderboard v1 evaluation-run results JSON (results_2023-09-08T21-43-04.856041.json) for tiiuae/falcon-40b. Not previously tracked for this model; verified by directly fetching the run's results JSON."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (tiiuae/falcon-40b) and TII/ATRC press coverage: 40B params, Apache 2.0, 2048-token (2K) context, released May 25 2023 alongside Falcon-7B/1.3B. Language list (4 primary + 7 limited-capability = 11) matches langCount exactly. Both result rows confirmed: open-llm-leaderboard-avg 60.4 appears verbatim on huggingface.co/blog/falcon; gsm8k 21.5 confirmed on the leaderboard-details dataset (raw acc 0.21456 \u2248 21.5)."
+  "verificationNotes": "Confirmed real via HF model card (tiiuae/falcon-40b) and TII/ATRC press coverage: 40B params, Apache 2.0, 2048-token (2K) context, released May 25 2023 alongside Falcon-7B/1.3B. Language list (4 primary + 7 limited-capability = 11) matches langCount exactly. Both result rows confirmed: open-llm-leaderboard-avg 60.4 appears verbatim on huggingface.co/blog/falcon; gsm8k 21.5 confirmed on the leaderboard-details dataset (raw acc 0.21456 ≈ 21.5)."
 }

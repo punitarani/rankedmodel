@@ -119,6 +119,94 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
       "evaluatedAt": "2025-03-12",
       "notes": "Global MMLU-Lite variant"
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 73,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Gemma 3 12B IT column, Table 18 ('Performance of instruction fine-tuned (IT) models of different sizes on more internal and external benchmarks'), Gemma 3 Technical Report. Independently corroborated by third-party benchmark aggregators."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 85.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Gemma 3 12B IT column, Table 18 of the Gemma 3 Technical Report. Independently corroborated by third-party benchmark aggregators."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 94.4,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Gemma 3 12B IT column, Table 18 of the Gemma 3 Technical Report."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 85.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "BIG-Bench Hard, Gemma 3 12B IT column, Table 18 of the Gemma 3 Technical Report."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 88.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Gemma 3 12B IT column, Table 18 of the Gemma 3 Technical Report. Independently corroborated by third-party benchmark aggregators."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 87.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Gemma 3 12B IT column, Table 16 ('Performance of instruction fine-tuned (IT) models on multimodal benchmarks', P&S applied), Gemma 3 Technical Report."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 67.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Gemma 3 12B IT column, Table 16 of the Gemma 3 Technical Report."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 84.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Gemma 3 12B IT column, Table 16 of the Gemma 3 Technical Report."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 75.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "Gemma 3 12B IT column, Table 16 of the Gemma 3 Technical Report."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 71.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "VQAv2 (val), Gemma 3 12B IT column, Table 16 of the Gemma 3 Technical Report."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 62.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "evaluatedAt": "2025-03-12",
+      "notes": "MathVista (testmini), Gemma 3 12B IT column, Table 16 of the Gemma 3 Technical Report."
     }
   ],
   "verificationNotes": "Fetched the official Gemma 3 Technical Report PDF. Table 1 confirms 12B total params = vision 417M + embedding 1,012M + non-embedding 10,759M = 12,188M ≈ 12.2B, matching paramsB exactly. Table 6 confirms every one of the 9 benchmark rows verbatim for the 12B IT column: MMLU-Pro 60.6, GPQA Diamond 40.9, MATH 83.8, MMMU val 59.6, LiveCodeBench 24.6, Bird-SQL dev 47.9, FACTS Grounding 75.8, SimpleQA 6.3, Global MMLU-Lite 69.5. Release date and 128K context confirmed in the same source. No changes made."

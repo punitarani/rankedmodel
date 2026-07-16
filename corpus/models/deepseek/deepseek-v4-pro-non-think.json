@@ -98,7 +98,15 @@
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
       "evaluatedAt": "2026-04-24",
       "notes": "SWE Pro (Resolved), Non-Think mode. Cross-verified identical value in DeepSeek-V4 tech report Table 7 (arXiv:2606.19348)."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 46,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro-non-reasoning",
+      "evaluatedAt": "2026-07-14",
+      "notes": "Artificial Analysis Intelligence Index v4.1 breakdown, IFBench (instruction following) row for the plain 'DeepSeek V4 Pro' (non-reasoning) model page — distinct from the higher 76% scored by the separate 'DeepSeek V4 Pro (max)' reasoning-tier page. Verified live via the site's Intelligence Breakdown table (DeepSeek V4 Pro = 46%). Cross-check: the same page's GPQA Diamond (72%) and HLE (8%) rows for this tier are consistent with the corpus's existing self-reported 72.9/7.7 values, so those were NOT re-added."
     }
   ],
-  "verificationNotes": "Confirmed real via DeepSeek's own official API-docs news post (api-docs.deepseek.com/news/news260424/, dated 2026-04-24) announcing the V4-Pro/V4-Flash preview, and via the deepseek-ai/DeepSeek-V4-Pro Hugging Face model card, which gives 1.6T total/49B active params, MIT license, 1M-token context, and a benchmark table covering three reasoning tiers (Non-Think/Think High/Think Max). Numerous SEO/content-farm sites (codersera, sitepoint, morphllm, etc.) published speculative-sounding 'release timeline' articles with suspiciously precise but unverifiable claims (e.g. percentile rankings, an 'Intelligence Index' score) \u2014 those were NOT used; all numbers here come from the official HF model card table."
+  "verificationNotes": "Confirmed real via DeepSeek's own official API-docs news post (api-docs.deepseek.com/news/news260424/, dated 2026-04-24) announcing the V4-Pro/V4-Flash preview, and via the deepseek-ai/DeepSeek-V4-Pro Hugging Face model card, which gives 1.6T total/49B active params, MIT license, 1M-token context, and a benchmark table covering three reasoning tiers (Non-Think/Think High/Think Max). Numerous SEO/content-farm sites (codersera, sitepoint, morphllm, etc.) published speculative-sounding 'release timeline' articles with suspiciously precise but unverifiable claims (e.g. percentile rankings, an 'Intelligence Index' score) — those were NOT used; all numbers here come from the official HF model card table."
 }

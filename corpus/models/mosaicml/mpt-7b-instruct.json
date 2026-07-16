@@ -72,7 +72,39 @@
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct",
       "evaluatedAt": "2023-09-23",
       "notes": "5-shot accuracy (harness|winogrande|5 = 0.7048), confirmed via direct curl+grep"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 50.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct",
+      "evaluatedAt": "2023-07-20",
+      "notes": "25-shot acc_norm (harness|arc:challenge|25 = 0.50341), HF Open LLM Leaderboard v1 evaluation-run JSON for mosaicml/mpt-7b-instruct, confirmed via direct fetch of the raw results JSON (results_2023-07-20T10:01:10.556120.json)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 77.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct",
+      "evaluatedAt": "2023-07-20",
+      "notes": "10-shot acc_norm (harness|hellaswag|10 = 0.77913), HF Open LLM Leaderboard v1 evaluation-run JSON for mosaicml/mpt-7b-instruct, confirmed via direct fetch of the raw results JSON."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 32.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct",
+      "evaluatedAt": "2023-07-20",
+      "notes": "5-shot, average accuracy across all 57 harness|hendrycksTest-*|5 subtasks (avg acc = 0.32349), HF Open LLM Leaderboard v1 evaluation-run JSON for mosaicml/mpt-7b-instruct, computed directly from the raw results JSON using the leaderboard's standard MMLU aggregation method."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 35.1,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct",
+      "evaluatedAt": "2023-07-20",
+      "notes": "TruthfulQA MC2 (harness|truthfulqa:mc|0, mc2 = 0.35084), 0-shot, HF Open LLM Leaderboard v1 evaluation-run JSON for mosaicml/mpt-7b-instruct, confirmed via direct fetch of the raw results JSON."
     }
   ],
-  "verificationNotes": "Existence and release date (2023-05-05, same announcement as base MPT-7B), fine-tuning datasets (Dolly-15k + Anthropic HH-RLHF / dolly_hhrlhf), and 6.7B params all corroborated via HF and MosaicML sources. CORRECTED the license: the input record claimed 'Apache 2.0' (with a note claiming this reversed an early CC-BY-SA-3.0 designation) \u2014 this is backwards. The official Databricks/MosaicML announcement blog explicitly states MPT-7B-Instruct is licensed CC-By-SA-3.0 (distinct from the Apache-2.0 base model and the non-commercial CC-By-NC-SA-4.0 Chat variant), and this is corroborated by the model's actual HF README frontmatter and multiple independent trackers (e.g. eugeneyan/open-llms). No results rows were present to verify (array was empty)."
+  "verificationNotes": "Existence and release date (2023-05-05, same announcement as base MPT-7B), fine-tuning datasets (Dolly-15k + Anthropic HH-RLHF / dolly_hhrlhf), and 6.7B params all corroborated via HF and MosaicML sources. CORRECTED the license: the input record claimed 'Apache 2.0' (with a note claiming this reversed an early CC-BY-SA-3.0 designation) — this is backwards. The official Databricks/MosaicML announcement blog explicitly states MPT-7B-Instruct is licensed CC-By-SA-3.0 (distinct from the Apache-2.0 base model and the non-commercial CC-By-NC-SA-4.0 Chat variant), and this is corroborated by the model's actual HF README frontmatter and multiple independent trackers (e.g. eugeneyan/open-llms). No results rows were present to verify (array was empty)."
 }

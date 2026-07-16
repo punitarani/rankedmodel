@@ -64,6 +64,14 @@
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-180B",
       "evaluatedAt": "2023-10-24",
       "notes": "5-shot (harness|gsm8k|5), archived Open LLM Leaderboard v1 evaluation run"
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 6.57,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-180B",
+      "evaluatedAt": "2023-10-24",
+      "notes": "3-shot DROP F1 (harness|drop|3, f1=0.065733), from the SAME archived Open LLM Leaderboard v1 run (results_2023-10-24T10-17-51.759984.json) already used in the corpus for this model's winogrande (86.9) and gsm8k (45.94) rows -- this run also scored DROP but that task was not yet in the corpus. Verified by directly fetching the run's results JSON."
     }
   ],
   "verificationNotes": "Confirmed via HF blog (huggingface.co/blog/falcon-180b, fetched): release date Sept 6 2023, 180B params, 3.5T training tokens, multiquery attention, license excludes hosting use, and the 67.85 Open LLM Leaderboard average (with 68.74 pre-Nov-2023 note) appear verbatim. Model card (tiiuae/falcon-180B, fetched) confirms 2048 context length, license name 'Falcon-180B TII License', and language list (English/German/Spanish/French plus 7 limited-capability languages = 11 total). No changes made; all fields and the single result row confirmed."

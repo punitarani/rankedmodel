@@ -56,7 +56,7 @@
       "score": 45.8,
       "source": "independent",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2312.06281",
-      "notes": "5-shot, reported for Llama-2-7b-chat-hf [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement] [Corrected during full-corpus audit: The existing entry was labeled 'self-reported' and sourced to a telnyx.com aggregator page, but Meta's own official model card/paper (confirmed by direct fetch) never publishes an MMLU score for the RLHF fine-tuned Llama-2-7b-chat model \u2014 only for the base pretrained 7B, whose MMLU is exactly 45.3. That figure was mislabeled: it's the base model's number, not an independent measurement of the chat]"
+      "notes": "5-shot, reported for Llama-2-7b-chat-hf [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement] [Corrected during full-corpus audit: The existing entry was labeled 'self-reported' and sourced to a telnyx.com aggregator page, but Meta's own official model card/paper (confirmed by direct fetch) never publishes an MMLU score for the RLHF fine-tuned Llama-2-7b-chat model — only for the base pretrained 7B, whose MMLU is exactly 45.3. That figure was mislabeled: it's the base model's number, not an independent measurement of the chat]"
     },
     {
       "benchmarkSlug": "arena",
@@ -87,6 +87,62 @@
       "source": "independent",
       "sourceUrl": "https://github.com/shisa-ai/shaberi",
       "notes": "Reported as meta-llama/Llama-2-7b-chat-hf, exact hf match. Shaberi eval framework Rakuda test, GPT-4-judged 0-10 scale."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 52.9,
+      "source": "independent",
+      "sourceUrl": "https://github.com/dsdanielpark/Open-LLM-Leaderboard-Report/blob/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "ARC-Challenge, 25-shot, meta-llama/Llama-2-7b-chat-hf. HuggingFace Open LLM Leaderboard v1 (2023-09-04 run). Cross-corroborated at llm-explorer.com/model/meta-llama%2FLlama-2-7b-chat-hf (ARC 52.9)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 78.6,
+      "source": "independent",
+      "sourceUrl": "https://github.com/dsdanielpark/Open-LLM-Leaderboard-Report/blob/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "HellaSwag, 10-shot, meta-llama/Llama-2-7b-chat-hf. HuggingFace Open LLM Leaderboard v1 (2023-09-04 run). Cross-corroborated at llm-explorer.com (HellaSwag 78.6)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 45.6,
+      "source": "independent",
+      "sourceUrl": "https://github.com/dsdanielpark/Open-LLM-Leaderboard-Report/blob/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "TruthfulQA MC2, 0-shot, meta-llama/Llama-2-7b-chat-hf, from a mirrored snapshot of the HuggingFace Open LLM Leaderboard v1 (2023-09-04 run). This benchmark slug was not previously tracked for this model (Meta's own model card never publishes TruthfulQA for the chat fine-tune)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 7.35,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-7b-chat-hf/resolve/main/results_2023-10-15T02-34-15.484281.json",
+      "evaluatedAt": "2023-10-15",
+      "notes": "GSM8K, 5-shot (harness|gsm8k|5), acc 0.0735, from the official archived HuggingFace Open LLM Leaderboard v1 per-model results JSON for meta-llama/Llama-2-7b-chat-hf. Cross-corroborated (7.4) at llm-explorer.com."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 71.74,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-7b-chat-hf/resolve/main/results_2023-10-15T02-34-15.484281.json",
+      "evaluatedAt": "2023-10-15",
+      "notes": "Winogrande, 5-shot (harness|winogrande|5), acc 0.7174, from the official archived HuggingFace Open LLM Leaderboard v1 per-model results JSON for meta-llama/Llama-2-7b-chat-hf."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 13.09,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-7b-chat-hf/resolve/main/results_2023-10-15T02-34-15.484281.json",
+      "evaluatedAt": "2023-10-15",
+      "notes": "DROP, 3-shot (harness|drop|3), F1 13.09 (EM 6.76), from the official archived HuggingFace Open LLM Leaderboard v1 per-model results JSON for meta-llama/Llama-2-7b-chat-hf."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 4.6,
+      "source": "independent",
+      "sourceUrl": "https://www.lmsys.org/blog/2024-04-19-arena-hard/",
+      "evaluatedAt": "2024-04-19",
+      "notes": "Arena-Hard-Auto v0.1 score (GPT-4-Turbo judge) for llama-2-7b-chat-hf, from the LMSYS 'Arena-Hard Pipeline' launch blog post's leaderboard table (95% CI -0.8/+0.8)."
     }
   ],
   "verificationNotes": "Confirmed existence and 2023-07-18 release via Meta/HF. Directly fetched telnyx.com/llm-library/llama-2-7b-chat-hf: both cited numbers (MMLU 45.3, Arena Elo 1037) literally appear on the page as text ('scores 45.3% on MMLU (5-shot)' and Arena Elo 1037), so both rows kept. Note: the same page also shows a separate spec-table MMLU figure of 45.8 elsewhere, an internal inconsistency on telnyx's own page, but the 45.3 figure is literally present and matches Meta's own reported base-model number, so it was not dropped."

@@ -122,6 +122,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "notes": "Qwen3 Technical Report, Table 13, Codeforces row (rating/percentile format '1982 / 97.7%'), QwQ-32B column; using the Elo rating per this taxonomy's unit convention. Percentile (97.7%) omitted since the slug's unit is Elo."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 29.5,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/Qwen__QwQ-32B-details",
+      "evaluatedAt": "2025-03-07",
+      "notes": "BBH (Big Bench Hard) normalized accuracy = 0.29491 from the HuggingFace Open LLM Leaderboard's lm-evaluation-harness run (dated 2025-03-07), the first fully independent (non-Alibaba) benchmark run found for this model -- all 10 existing results in the corpus entry are self-reported. Flagging explicitly: this is far below typical self-reported BBH figures (usually 80-90+ for models this capable) because the Open LLM Leaderboard v2 harness uses a strict 0-shot generative/regex-extraction methodology that penalizes reasoning models whose chain-of-thought output doesn't match the expected answer format -- not a sign of weak BBH capability. Not a forced fit: BBH is not already tracked anywhere in this entry (GPQA, MMLU-Pro, IFEval, and MATH also appear in the same leaderboard run but were skipped since those slugs are already present from self-reported sources)."
     }
   ],
   "verificationNotes": "Confirmed via HF model card (32.5B total/31.0B non-embedding params, apache-2.0 license, 131,072-token/128K context) and qwenlm.github.io/blog/qwq-32b (release date literally states March 6, 2025). datacamp.com/blog/qwq-32b page confirmed AIME24=79.5, LiveCodeBench=63.4, LiveBench=73.1, IFEval=83.9, BFCL=66.4 verbatim; HF page confirmed MMLU-Pro=69.07 verbatim. No changes needed."

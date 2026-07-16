@@ -142,7 +142,15 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think",
       "notes": "AlpacaEval 2 LC; Qwen 3 32B 75.6"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 88.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think",
+      "evaluatedAt": "2025-11-20",
+      "notes": "AGI Eval English subset; not previously tracked for this model. Same column-verified HF README table as the AIME 2025 addition."
     }
   ],
-  "verificationNotes": "Existence confirmed via allenai.org/blog/olmo3 and press coverage (Nov 20, 2025). paramsB re-derived from model.safetensors.index.json total \u224832.2B (matches 32.23 within rounding). config.json confirms max_position_embeddings=65536 (~64K) and hybrid sliding/full attention across 64 layers, and no tool-use/function-calling exposed on this model card (matches capability flags). All 6 result rows independently confirmed on the HF model card table, including every cited Qwen 3 32B comparison number (MATH 95.4, AIME 80.8, BBH 90.6, HumanEvalPlus 91.2, IFEval 86.5, LiveCodeBench 90.2) except the 'Qwen 3 VL 32B Thinking 96.7' aside which I could not independently re-confirm in my fetch (left in notes as unverified color, does not affect the primary score)."
+  "verificationNotes": "Existence confirmed via allenai.org/blog/olmo3 and press coverage (Nov 20, 2025). paramsB re-derived from model.safetensors.index.json total ≈32.2B (matches 32.23 within rounding). config.json confirms max_position_embeddings=65536 (~64K) and hybrid sliding/full attention across 64 layers, and no tool-use/function-calling exposed on this model card (matches capability flags). All 6 result rows independently confirmed on the HF model card table, including every cited Qwen 3 32B comparison number (MATH 95.4, AIME 80.8, BBH 90.6, HumanEvalPlus 91.2, IFEval 86.5, LiveCodeBench 90.2) except the 'Qwen 3 VL 32B Thinking 96.7' aside which I could not independently re-confirm in my fetch (left in notes as unverified color, does not affect the primary score)."
 }

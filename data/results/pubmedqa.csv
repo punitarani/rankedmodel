@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+apple-dclm-baseline-7b,70.6,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,2024-07-01,"'PubMedQA' row (0.7060) on the model's official HF eval table, same table the existing mmlu/hellaswag/arc/winogrande/gsm8k/piqa/openbookqa/trivia-qa rows were sourced from."
 claude-3-haiku,76,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,"PubMedQA, 5-shot, from Table 1 of the Claude 3 Model Card (0-shot alternate is 78.5%)."
 claude-3-opus,75.8,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"PubMedQA, 5-shot, from Table 1 of the Claude 3 Model Card (0-shot alternate is 74.9%)."
 claude-3-sonnet,78.3,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"PubMedQA, 5-shot, from Table 1 of the Claude 3 Model Card (0-shot alternate is 79.7%)."

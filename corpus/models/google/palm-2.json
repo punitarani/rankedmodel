@@ -105,6 +105,46 @@
       "sourceUrl": "https://arxiv.org/abs/2305.10403",
       "evaluatedAt": "2023-05-17",
       "notes": "Instruction-tuned PaLM 2 (L), 3-shot DROP (F1), from Table 5."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 86.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "PaLM 2-L (base, not instruction-tuned), 1-shot, TriviaQA (EM), Table 2 'English QA and classification tasks' of the PaLM 2 Technical Report. Confirmed verbatim via full-text fetch of the arXiv PDF."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 86.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "PaLM 2-L (base, not instruction-tuned), 1-shot HellaSwag, Table 2 of the PaLM 2 Technical Report. Confirmed verbatim via full-text fetch of the arXiv PDF."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 62.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "PaLM 2-L (base, not instruction-tuned), 1-shot RACE-H reading comprehension, Table 2 of the PaLM 2 Technical Report."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "PaLM 2-L (base, not instruction-tuned), 1-shot PIQA, Table 2 of the PaLM 2 Technical Report."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 58.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2305.10403",
+      "evaluatedAt": "2023-05-17",
+      "notes": "PaLM 2-L (base, not instruction-tuned), 1-shot OpenBookQA, Table 2 of the PaLM 2 Technical Report."
     }
   ],
   "verificationNotes": "Confirmed real: announced by Sundar Pichai at Google I/O on 2023-05-10 (blog.google, TechCrunch, Axios all corroborate). Technical report (arXiv 2305.10403) submitted 2023-05-17, matching evaluatedAt. Fetched full-text (ar5iv) Table 6: PaLM 2-L scores exactly 78.1 on BBH 3-shot CoT vs PaLM's 65.2 -- score confirmed verbatim. PaLM API decommission date of Aug 15 2024 corroborated independently. Params were never disclosed by Google (kept null, correctly)."

@@ -56,6 +56,30 @@
       "sourceUrl": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2411",
       "evaluatedAt": "2024-11-18",
       "notes": "From the HF 'Evaluation results' auto-generated widget, backed by the community EvalEval automated eval-results datastore - an automated third-party eval run, not a Mistral self-report."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 84.01,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-Large-Instruct-2411-details",
+      "evaluatedAt": "2024-11-19",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-Large-Instruct-2411 (float16); IFEval normalized score."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 67,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-Large-Instruct-2411-details",
+      "evaluatedAt": "2024-11-19",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-Large-Instruct-2411; BBH normalized score. [score corrected during round-6 completeness verify: proposed 52.74 -> 67]"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 38.89,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-Large-Instruct-2411-details",
+      "evaluatedAt": "2024-11-19",
+      "notes": "HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-Large-Instruct-2411; GPQA (chance-corrected) normalized score (raw accuracy was 43.7%, before the leaderboard's random-baseline correction). [score corrected during round-6 completeness verify: proposed 24.94 -> 38.89]"
     }
   ],
   "verificationNotes": "Real release confirmed via HF model card (fetched): 123B params, 'mrl' (Mistral Research License) confirmed, 128k context confirmed. Release date 2024-11-18 corroborated by independent search results (one secondary source says Nov 19, but primary/majority sources and same-day Pixtral Large launch support Nov 18). No results rows were present in the input to verify (empty array retained). No corrections needed."

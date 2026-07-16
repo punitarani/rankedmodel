@@ -154,7 +154,15 @@
       "sourceUrl": "https://arxiv.org/abs/2404.01856",
       "evaluatedAt": "2024-04-01",
       "notes": "FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating LLaMA 33B as a reference model alongside Poro 34B."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 58.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "0-shot, Table 3 'Zero-shot performance on Common Sense Reasoning tasks' (OBQA column) of the original LLaMA paper. Value cross-checked against the identical figure reproduced for the 'LLaMA 33B' comparison row in Table 20 of the later Llama 2 paper (arXiv:2307.09288). All seven other columns of this table (BoolQ, PIQA, SIQA, HellaSwag, WinoGrande, ARC-e, ARC-c) were already tracked; only OBQA was missing."
     }
   ],
-  "verificationNotes": "Confirmed exact param count of 32.5B (Table 2, matches record precisely \u2014 this is genuinely the '33B' checkpoint, not a mislabeled sibling), 2023-02-24 release date, and gated non-commercial license via Meta's blog and arxiv 2302.13971 (both fetched directly). All 8 result rows (HellaSwag 82.8, ARC-Challenge 57.8, WinoGrande 76, MMLU 57.8, GSM8k 35.6, HumanEval 21.7, MBPP 30.2, TriviaQA 65.1) confirmed as literal figures in the same tables."
+  "verificationNotes": "Confirmed exact param count of 32.5B (Table 2, matches record precisely — this is genuinely the '33B' checkpoint, not a mislabeled sibling), 2023-02-24 release date, and gated non-commercial license via Meta's blog and arxiv 2302.13971 (both fetched directly). All 8 result rows (HellaSwag 82.8, ARC-Challenge 57.8, WinoGrande 76, MMLU 57.8, GSM8k 35.6, HumanEval 21.7, MBPP 30.2, TriviaQA 65.1) confirmed as literal figures in the same tables."
 }

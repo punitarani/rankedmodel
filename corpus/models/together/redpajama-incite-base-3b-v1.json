@@ -74,6 +74,30 @@
       "source": "self-reported",
       "sourceUrl": "https://www.together.ai/blog/redpajama-models-v1",
       "notes": "PIQA accuracy, zero-shot lm-evaluation-harness subset (also confirmed in arXiv 2411.12372 Table 7: 0.7470)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 27,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-Base-3B-v1/results_2023-07-19T15-11-56.441864.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "Not self-reported by Together AI (the together.ai launch blog and the RedPajama technical paper's Table 7 only report Lambada/HellaSwag/Winogrande/PIQA for this specific 3B model). Independently measured by the Hugging Face Open LLM Leaderboard v1 team (5-shot, EleutherAI lm-eval-harness, hendrycksTest/MMLU 57-subject average, acc_norm). Verified via direct fetch of the raw per-model results JSON; average across all 57 hendrycksTest keys computed as ~0.277 (acc_norm), consistent with the aggregate 'all' acc of 0.2753 in the same file and with third-party mirrors (llm-explorer.com reports 27.03). [score corrected during round-6 completeness verify: proposed 27.7 -> 27]"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 40.19,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-Base-3B-v1/results_2023-07-19T15-11-56.441864.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "ARC-Challenge 25-shot acc_norm from the Hugging Face Open LLM Leaderboard v1 archive (harness|arc:challenge|25 key), independently run by the HF team rather than Together AI. Not previously tracked for this specific 3B model (only the 7B sibling has an arc-challenge result, sourced from the RedPajama paper). Cross-checked against llm-explorer.com's mirrored value of 40.19. [score corrected during round-6 completeness verify: proposed 40.2 -> 40.19]"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 33.2,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-Base-3B-v1/results_2023-07-19T15-11-56.441864.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "TruthfulQA MC2 (0-shot) from the Hugging Face Open LLM Leaderboard v1 archive, independently run by the HF team. Distinct from the sibling 7B model's truthfulqa result, which is a HELM EM score self-reported in the RedPajama technical paper -- this is a different metric/methodology and a different model, so it is a genuinely new, non-duplicate data point for the 3B model specifically."
     }
   ],
   "verificationNotes": "Confirmed via together.ai/blog/redpajama-models-v1 (published May 5, 2023): HELM table shows RedPajama-INCITE-Base-3B-v1 = 0.406 vs LLaMA-7B 0.465, matching exactly. HF model card confirms '2.8B parameter pretrained language model', GPT-NeoX architecture, Apache 2.0 license, 800B training tokens. Context length 2048 (2K) corroborated by independent sources on the RedPajama-INCITE family."

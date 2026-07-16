@@ -70,6 +70,30 @@
       "sourceUrl": "https://arxiv.org/abs/2210.11416",
       "evaluatedAt": "2022-10-20",
       "notes": "Table 5 ('Scaling Instruction-Finetuned Language Models'), Flan-T5-XXL (11B) row, MGSM held-out benchmark, CoT prompting, 10-language average. Score is genuinely very low compared to the PaLM-family rows in the same table -- T5's pretraining/tokenizer is not optimized for multilingual math reasoning, so this is real, not an error."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 25.8,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__flan-t5-xxl-details",
+      "evaluatedAt": "2024-08-27",
+      "notes": "GPQA Diamond subset (acc_norm 0.2576), from the Hugging Face Open LLM Leaderboard v2 automated evaluation run of google/flan-t5-xxl (results_2024-08-27T14-49-35 JSON, confirmed via the HF datasets API card metadata). Score is near random-chance (4-choice), consistent with an 11B encoder-decoder model from 2022 evaluated zero-shot/generative on a benchmark it was never tuned for -- not an error."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 23.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__flan-t5-xxl-details",
+      "evaluatedAt": "2024-08-27",
+      "notes": "leaderboard_mmlu_pro acc 0.2343, Hugging Face Open LLM Leaderboard v2 automated run of google/flan-t5-xxl, confirmed via the HF datasets API card metadata for this results file."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 15.7,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__flan-t5-xxl-details",
+      "evaluatedAt": "2024-08-27",
+      "notes": "leaderboard_ifeval prompt-level strict accuracy 0.1571, Hugging Face Open LLM Leaderboard v2 automated run of google/flan-t5-xxl, confirmed via the HF datasets API card metadata."
     }
   ],
   "verificationNotes": "Confirmed real via Hugging Face google/flan-t5-xxl model card: 11B params, Apache 2.0 license, matches record. Fetched full paper text (ar5iv rendering of arxiv 2210.11416) Table 5 and confirmed Flan-T5-XXL (11B) scores literally: MMLU 5-shot direct = 55.1, BBH 3-shot direct = 45.3 -- both kept as exact matches. Context length is genuinely ambiguous across sources (tokenizer default 512, but Flan instruction-tuning used ~1024-token input sequences per the paper, and some summaries cite up to 2K); left ctxK=1 (1024) as a reasonable middle estimate rather than fabricating false precision. No changes to core fields."

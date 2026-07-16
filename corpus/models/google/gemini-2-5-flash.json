@@ -129,7 +129,14 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Flash-Model-Card.pdf",
       "evaluatedAt": "2025-05-01",
       "notes": "Aider Polyglot, whole score (61.9% whole / 56.7% diff), Gemini 2.5 Flash GA / Thinking column, (06-17)."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 47.2,
+      "source": "independent",
+      "sourceUrl": "https://hal.cs.princeton.edu/reliability/agent/gemini-2-5-flash/benchmark/taubench_airline_original/",
+      "notes": "tau-bench airline domain, 'original' (unmodified) task setting, from Princeton's Holistic Agent Leaderboard (HAL) Reliability Dashboard -- an independent academic evaluation (not vendor-reported). Note HAL also reports a 'clean' variant of the same task at 59.0%; this addition uses the standard/original setting to avoid conflating it with the modified variant."
     }
   ],
-  "verificationNotes": "Directly downloaded and read the official Gemini 2.5 Flash Model Card PDF (deepmind-media). All 7 claimed scores (GPQA 82.8, AIME 72.0, LiveCodeBench v5 63.9, SWE-Bench 60.4, MMMU 79.7, HLE 11.0, Global MMLU Lite 88.4) match the 'Gemini 2.5 Flash GA / Thinking' column exactly, digit-for-digit. Confirmed via ai.google.dev changelog that gemini-2.5-flash-preview-05-20 was released May 20, 2025 (the original specSources link was actually for the earlier 04-17 preview, so I replaced it with the correct 05-20 announcement URL). Pricing $0.30/$2.50 confirmed live on ai.google.dev/gemini-api/docs/pricing. Model card explicitly states 'Gemini 2.5 models are sparse mixture-of-experts (MoE) transformer-based models... with native multimodal support' \u2014 confirms archClass/archDisplay directly rather than by inference."
+  "verificationNotes": "Directly downloaded and read the official Gemini 2.5 Flash Model Card PDF (deepmind-media). All 7 claimed scores (GPQA 82.8, AIME 72.0, LiveCodeBench v5 63.9, SWE-Bench 60.4, MMMU 79.7, HLE 11.0, Global MMLU Lite 88.4) match the 'Gemini 2.5 Flash GA / Thinking' column exactly, digit-for-digit. Confirmed via ai.google.dev changelog that gemini-2.5-flash-preview-05-20 was released May 20, 2025 (the original specSources link was actually for the earlier 04-17 preview, so I replaced it with the correct 05-20 announcement URL). Pricing $0.30/$2.50 confirmed live on ai.google.dev/gemini-api/docs/pricing. Model card explicitly states 'Gemini 2.5 models are sparse mixture-of-experts (MoE) transformer-based models... with native multimodal support' — confirms archClass/archDisplay directly rather than by inference."
 }

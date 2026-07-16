@@ -76,6 +76,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
       "notes": "LiveCodeBench v4, no extended thinking"
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 92.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "notes": "BFCL (function/tool calling), 'No Extended Thinking' evaluation table row, exact quote: 'Tool Calling | BFCL | 92.3 | ...'. No version number (v1/v2/v3) is specified on the model card, so mapped to the unversioned 'bfcl' slug rather than forcing 'bfcl-v3'. Not previously tracked for this variant."
     }
   ],
   "verificationNotes": "Same verification basis as the Thinking variant (official HF blog + model card, 2025-07-08 release, 3.08B params, Apache 2.0, 128K ctx). All four No-Thinking benchmark rows (AIME 2025 9.3, GPQA Diamond 35.7, IFEval 76.7, LiveCodeBench v4 15.2) confirmed verbatim on the official model card's benchmark comparison table."

@@ -121,6 +121,30 @@
       "sourceUrl": "https://arxiv.org/abs/2508.10925",
       "evaluatedAt": "2025-08-05",
       "notes": "Codeforces Elo, no terminal tool, low reasoning effort (1653 Elo with tool access, per the same table -- chose the no-tools figure for consistency with the model's other no-tools rows). Read directly from Table 3 of the official model card."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 397,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-120b-low",
+      "evaluatedAt": "2026-07-15",
+      "notes": "GDPval-AA v2, independently measured by Artificial Analysis on the dedicated 'gpt-oss-120b (low)' model page. Score is a genuine floor result (0%, tied with several other small open-weight models on this real-world-work-tasks eval) -- confirmed by exact rank-position match against AA's ranked chart, not a placeholder. Not previously tracked on this catalog entry. [score corrected during round-6 completeness verify: proposed 0 -> 397]"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 14,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-120b-low",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Terminal-Bench v2.1, independently measured by Artificial Analysis on the 'gpt-oss-120b (low)' model page. Not previously tracked here (only gpt-oss-120b-high-equivalent aider-polyglot exists on the low entry, no terminal-bench result)."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 58,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-120b-low",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench (instruction following), independently measured by Artificial Analysis on the 'gpt-oss-120b (low)' model page. Not previously tracked on this catalog entry. (Note: AA's independent GPQA/HLE re-measurements for this model, 67% and 5% respectively, were checked but match the existing self-reported arxiv figures (67.1, 5.2) almost exactly and were skipped as non-novel.)"
     }
   ],
   "verificationNotes": "Confirmed real. HF model card (fetched) confirms 117B total / 5.1B active params and Apache 2.0 license verbatim. Independent architecture writeups corroborate 36 layers, 128 experts/layer, top-4 routing, 131,072-token (128K) native context via YaRN. Fetched arxiv.org/html/2508.10925v1 model-card table directly and confirmed all four low-effort scores appear verbatim: AIME 56.3, GPQA 67.1, MMLU 85.9, SWE-bench Verified 47.9. No changes made."

@@ -56,7 +56,7 @@
       "source": "self-reported",
       "sourceUrl": "https://inflection.ai/inflection-2-5",
       "evaluatedAt": "2024-03-07",
-      "notes": "Same chart/source as the MMLU entry. Labeled 'GPQA Diamond' on the chart's x-axis; mapped to the 'gpqa' taxonomy slug since Diamond is the standard GPQA subset most catalogs report under plain 'gpqa'. Pixel-derived value; no exact numeral printed in body text. [score corrected during adversarial verify: proposed 38.3 -> 38.4, per verifier: Verified by directly loading https://inflection.ai/inflection-2-5 in a browser and screenshotting the benchmark table/chart section (the figure is an SVG rendered as an image with vector-outlined text, so it doesn't extract via curl/grep or WebFetch's HTML-to-markdown conversion \u2014 that's why the source appeared \"chart-only\" to text tools). The rendered chart clearly shows a labeled table: MMLU: Inflection-2.5 = 85.5 (CoT@32), Inflection-1 = 72.7 (5-shot), GPT-4 = 87.3 (CoT@32) GPQA Diamond: Inflection-2.5 = 38.4 (Few-shot), Inflection-1 = 29.8 (Few-shot), GPT-4 = 39.3 (Few-shot) So the benchmark variant is confirmed as \"GPQA Diamond\" (few-shot), matching the taxonomy mapping decision already documented in the notes (mapping GPQA Diamond -> 'gpqa' is a deliberate, disclosed choice, not an error). The model is correctly identified (Inflection-2.5, not GPT-4 or Inflection-1) and there's no unit mismatch (both are 0-100 percentage-point scales). However, the claimed score of 38.3 is off by 0.1 from the actual displayed value of 38.4. This was likely a pixel-measurement rounding error from reading an image rendering rather than the actual (legible, once properly rendered) text. Corrected score: 38.4.]"
+      "notes": "Same chart/source as the MMLU entry. Labeled 'GPQA Diamond' on the chart's x-axis; mapped to the 'gpqa' taxonomy slug since Diamond is the standard GPQA subset most catalogs report under plain 'gpqa'. Pixel-derived value; no exact numeral printed in body text. [score corrected during adversarial verify: proposed 38.3 -> 38.4, per verifier: Verified by directly loading https://inflection.ai/inflection-2-5 in a browser and screenshotting the benchmark table/chart section (the figure is an SVG rendered as an image with vector-outlined text, so it doesn't extract via curl/grep or WebFetch's HTML-to-markdown conversion — that's why the source appeared \"chart-only\" to text tools). The rendered chart clearly shows a labeled table: MMLU: Inflection-2.5 = 85.5 (CoT@32), Inflection-1 = 72.7 (5-shot), GPT-4 = 87.3 (CoT@32) GPQA Diamond: Inflection-2.5 = 38.4 (Few-shot), Inflection-1 = 29.8 (Few-shot), GPT-4 = 39.3 (Few-shot) So the benchmark variant is confirmed as \"GPQA Diamond\" (few-shot), matching the taxonomy mapping decision already documented in the notes (mapping GPQA Diamond -> 'gpqa' is a deliberate, disclosed choice, not an error). The model is correctly identified (Inflection-2.5, not GPT-4 or Inflection-1) and there's no unit mismatch (both are 0-100 percentage-point scales). However, the claimed score of 38.3 is off by 0.1 from the actual displayed value of 38.4. This was likely a pixel-measurement rounding error from reading an image rendering rather than the actual (legible, once properly rendered) text. Corrected score: 38.4.]"
     },
     {
       "benchmarkSlug": "bbh",
@@ -65,6 +65,62 @@
       "sourceUrl": "https://inflection.ai/inflection-2-5",
       "evaluatedAt": "2024-03-07",
       "notes": "Same chart/source as above. Labeled 'Big-Bench-Hard' on the chart; text separately states 'over a 10% improvement on Inflection-1' for this category, consistent with the ~70->82 pixel-read jump for Inflection-1->Inflection-2.5. Pixel-derived value; no exact numeral printed in body text."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 86.3,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "GSM8k, 8-shot, Inflection-2.5 column of a comparison table on Inflection AI's official Inflection-2.5 launch page. Rendered as a vector-outlined SVG image (framerusercontent.com/images/CqI16dv6DCLT8JgA3o6V2ZTJVQc.svg); confirmed by directly rendering the asset in a browser (full row: Inflection-2.5=86.3, Inflection-1=62.9[matches existing tracked Inflection-1 value], GPT-4=92.0)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 43.1,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "MATH benchmark, 0-shot, Inflection-2.5 column of the same GSM8k/MATH comparison table (framerusercontent.com/images/CqI16dv6DCLT8JgA3o6V2ZTJVQc.svg) on Inflection AI's official Inflection-2.5 launch page (full row: Inflection-2.5=43.1, Inflection-1=16.7[4-shot], GPT-4=52.9[4-shot]); confirmed by direct browser rendering of the SVG asset."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 73.9,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "MBPP pass@1, 0-shot, Inflection-2.5 column of a comparison table on Inflection AI's official Inflection-2.5 launch page. Rendered as a vector-outlined SVG image (framerusercontent.com/images/ewiG0bzNIIRCScSZbfneF05Wk.svg); confirmed by direct browser rendering (full row: Inflection-2.5=73.9, Inflection-1=43.8[matches this corpus's existing tracked Inflection-1 MBPP value exactly, confirming this is the plain/non-'+' MBPP benchmark despite the page's body text elsewhere loosely referring to these results as 'MBPP+'], GPT-4=80.0). Mapped to the plain 'mbpp' taxonomy slug rather than 'mbpp-plus' because the chart's own column header reads 'MBPP@1' with no '+', and its Inflection-1 figure is identical to the already-verified plain-MBPP score sourced from Inflection-1's technical memo."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 73.8,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "HumanEval pass@1, 0-shot, Inflection-2.5 column of the same coding-benchmark table (framerusercontent.com/images/ewiG0bzNIIRCScSZbfneF05Wk.svg) on Inflection AI's official Inflection-2.5 launch page (full row: Inflection-2.5=73.8, Inflection-1=35.4[matches this corpus's existing tracked Inflection-1 HumanEval value exactly], GPT-4=79.3); confirmed by direct browser rendering. Mapped to plain 'humaneval' rather than 'humaneval-plus' for the same reason given in the mbpp entry -- the chart header has no '+' and Inflection-1's figure matches its known plain-HumanEval score."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 90.2,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "HellaSwag, 10-shot, Inflection-2.5 column of a comparison table on Inflection AI's official Inflection-2.5 launch page. Rendered as a vector-outlined SVG image (framerusercontent.com/images/7EntAgSnt8VPh6RRcGzH7kbVRk.svg); confirmed by direct browser rendering (full row: Inflection-2.5=90.2, Inflection-1=85.8[matches the alternate 10-shot HellaSwag figure already noted in this corpus's existing Inflection-1 entry], GPT-4=95.3)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 94.6,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "ARC-Challenge, 25-shot, Inflection-2.5 column of the same HellaSwag/ARC-C table (framerusercontent.com/images/7EntAgSnt8VPh6RRcGzH7kbVRk.svg) on Inflection AI's official Inflection-2.5 launch page (full row: Inflection-2.5=94.6, Inflection-1=94.2, GPT-4=96.3[matches GPT-4's well-known ARC-Challenge-25-shot figure, corroborating reliability]); confirmed by direct browser rendering of the SVG asset."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.41,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "MT-Bench (raw/original scoring), Inflection-2.5 column of a comparison table on Inflection AI's official Inflection-2.5 launch page. Rendered as a vector-outlined SVG image (framerusercontent.com/images/37manVrAmMD8r6wIe4kFckmtq0.svg); confirmed by direct browser rendering (full table -- MT-Bench / MT-Bench Corrected: Inflection-2.5=8.41/8.64, GPT-3.5=7.99/7.9, GPT-4=9.02/8.79). Inflection AI's page text explains they found ~25% of MT-Bench's reasoning/math/coding examples had flawed reference solutions and released a corrected variant (8.64 for Inflection-2.5); the raw/original 8.41 figure is used here as the standard-methodology score comparable to other MT-Bench entries in this corpus (e.g. GPT-3.5 Turbo's existing mt-bench=7.94 from the original Zheng et al. paper), with the self-reported 'corrected' 8.64 variant noted here rather than tracked as a separate entry since no distinct taxonomy slug exists for it."
     }
   ],
   "verificationNotes": "Confirmed real via direct fetch of inflection.ai/inflection-2-5: page literally states 'Inflection-2.5, now powering Pi, achieves more than 94% the average performance of GPT-4 despite using only 40% the training FLOPs,' matching the record exactly, and confirms March 7 2024 publish date. No changes made."

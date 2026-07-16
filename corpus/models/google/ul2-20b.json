@@ -67,6 +67,38 @@
       "sourceUrl": "https://arxiv.org/abs/2205.05131",
       "evaluatedAt": "2022-05-10",
       "notes": "UL2 20B (base, non-Flan), 8-shot chain-of-thought + external calculator (no self-consistency) on GSM8K, from Table 12. This was notable as the first publicly-available pretrained checkpoint (no fine-tuning) shown to successfully leverage CoT prompting. With self-consistency added the paper reports 10.2%; with plain CoT (no calculator) only 4.4%; I chose the CoT+calculator (no SC) figure since it's the closest match to the calculator-augmented, non-self-consistency methodology already used for PaLM 540B's existing GSM8K entry in this corpus."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 94.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2205.05131",
+      "evaluatedAt": "2022-05-10",
+      "notes": "UL2 20B, finetuned/leaderboard-submission result (denoted '(l)' in the paper) from Table 8 ('Summary of UL20B results compared to state-of-the-art'), row 'Hellaswag Accuracy Test ... 93.9 [prior SOTA] 94.1 [UL2 20B]'. Verbatim-confirmed via ar5iv full-text render of arxiv 2205.05131."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 90.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2205.05131",
+      "evaluatedAt": "2022-05-10",
+      "notes": "UL2 20B, finetuned/leaderboard-submission result from Table 8, row 'PIQA Accuracy Test ... 90.1 [prior SOTA] 90.7 [UL2 20B]'. Verbatim-confirmed via ar5iv render."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 90.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2205.05131",
+      "evaluatedAt": "2022-05-10",
+      "notes": "UL2 20B, finetuned/leaderboard-submission result from Table 8, row 'Winogrande XL Accuracy Test ... 91.3 [prior SOTA] 90.1 [UL2 20B]'. Verbatim-confirmed via ar5iv render."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 87.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2205.05131",
+      "evaluatedAt": "2022-05-10",
+      "notes": "UL2 20B, finetuned/leaderboard-submission result from Table 8, row 'OBQA Accuracy Test ... 87.2 [prior SOTA] 87.2 [UL2 20B]' (tied). Verbatim-confirmed via ar5iv render. A separate zero-shot SuperGLUE result (63.0-65.2 avg, Table 10) also exists in the same paper but was NOT added since 'superglue' is already a tracked slug for this model (currently the Table 9 finetuned 90.7 figure) and the task instructions say to skip a slug that's already present regardless of setting."
     }
   ],
   "verificationNotes": "Confirmed real and re-derived from primary sources: Google Research blog post (blog.research.google/2022/10/ul2-20b...) dated 2022-10-14 matches releaseDate exactly. Fetched the full paper text (ar5iv rendering of arxiv 2205.05131) and confirmed Table 9 shows SuperGLUE dev average finetuned = 90.7 and Table 14 shows zero-shot MMLU for base UL2 20B = 39.2 -- both literal matches, kept. Apache 2.0 license confirmed via Hugging Face google/ul2 model card. No changes to core fields."

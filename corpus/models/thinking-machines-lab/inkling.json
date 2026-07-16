@@ -1,0 +1,154 @@
+{
+  "name": "Inkling",
+  "org": "Thinking Machines Lab",
+  "family": "Inkling",
+  "releaseDate": "2026-07-15",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 975,
+  "activeParamsB": 41,
+  "archClass": "moe",
+  "archDisplay": "Sparse MoE, 66 layers (975B total / 41B active, 6-of-256 routed experts + 2 shared experts/token), hybrid sliding-window/global attention (5:1), relative positional features (no RoPE)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.87,
+    "output": 4.68,
+    "provider": "Tinker"
+  },
+  "links": {
+    "hf": "thinkingmachines/Inkling",
+    "docs": "https://thinkingmachines.ai/model-card/inkling/"
+  },
+  "note": "Thinking Machines Lab's (Mira Murati's startup) first public model release — a 975B/41B-active MoE with adjustable inference-time \"thinking effort\", calibrated uncertainty, and text/vision/audio input.",
+  "quants": [
+    "NVFP4",
+    "GGUF"
+  ],
+  "vramQ4Gb": 600,
+  "vramFp16Gb": 1900,
+  "tps4090": null,
+  "tpsNote": "Official NVFP4 checkpoint needs Blackwell-class GPUs (~600GB VRAM); community Unsloth GGUF quants range 1-bit (~270GB) to 8-bit (~870GB) — far beyond a single RTX 4090 at any quant level.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "paramsB": "https://thinkingmachines.ai/news/introducing-inkling/",
+    "ctxK": "https://tinker-docs.thinkingmachines.ai/tinker/models/",
+    "releaseDate": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+    "openness": "https://huggingface.co/thinkingmachines/Inkling"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "hle",
+      "score": 29.7,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Humanity's Last Exam, text only (no tools) — the corpus convention for this slug. With-tools variant scores 46.0%."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 97.1,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "AIME 2026."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 87.2,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "GPQA Diamond."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 77.6,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "SWE-bench Verified."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 54.3,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "SWE-bench Pro (Public set)."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 63.8,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Terminal-Bench 2.1."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1238,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "GDPval-AA v2 Elo-style score; independently corroborated by Artificial Analysis (https://artificialanalysis.ai/articles/thinking-machines-has-released-inkling-the-new-leading-u-s-open-weights-model), which lists the same 1238 figure against Kimi K2.6 (1190) and DeepSeek V4 Flash Max (1189)."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 77.1,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "BrowseComp with context/browsing tools enabled (the benchmark's standard agentic configuration)."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 43.9,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Reported as 'SimpleQA Verified' on the official model card."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 79.8,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15"
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 73.5,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "MMMU Pro, Standard (10 options) split. The independently-hosted HF blog post reports 73.3%, a minor rounding/transcription discrepancy from the official model card's 73.5% used here."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 78.1,
+      "source": "self-reported",
+      "sourceUrl": "https://thinkingmachines.ai/model-card/inkling/",
+      "evaluatedAt": "2026-07-15",
+      "notes": "CharXiv reasoning-question (RQ) subset, no Python tool — matches this corpus's established charxiv convention. With-Python variant scores 82.0%."
+    }
+  ],
+  "verificationNotes": "Confirmed real via the official announcement (thinkingmachines.ai/news/introducing-inkling/) and model card (thinkingmachines.ai/model-card/inkling/), fetched directly, plus independent press corroboration (TechCrunch, Bloomberg, Axios, SiliconANGLE, MarkTechPost) and third-party benchmark corroboration from Artificial Analysis (which independently placed it at Intelligence Index 41, the highest of any US open-weights model at release, ahead of Nemotron 3 Ultra at 38). This is Thinking Machines Lab's first public model release (their only prior product, Tinker, launched Oct 2025, is a training/fine-tuning API, not a model). Companion model Inkling-Small (276B total/12B active) also announced but not yet added — no dedicated benchmark table found for it separately from Inkling proper. Benchmarks not mapped to an existing taxonomy slug (MCP Atlas, tau3-Banking, AA-Omniscience, Global-MMLU-Lite, Audio MC, MMAU, VoiceBench, FORTRESS, StrongREJECT, ForecastBench, Design Arena) were intentionally left uncaptured rather than force-fit to a non-equivalent existing slug. Pricing reflects Tinker's 64K-context tier post-intro-discount as of 2026-07-17 (tinker-docs.thinkingmachines.ai/tinker/models/); a 256K tier is also offered at roughly 2x the price. VRAM figures per Unsloth's dynamic-quant documentation (unsloth.ai/docs/models/inkling)."
+}

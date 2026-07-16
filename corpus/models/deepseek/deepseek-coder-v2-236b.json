@@ -9,7 +9,7 @@
   "paramsB": 236,
   "activeParamsB": 21,
   "archClass": "moe",
-  "archDisplay": "MoE transformer, 236B total / 21B active \u2014 DeepSeekMoE + MLA, further pretrained from a DeepSeek-V2 checkpoint on 6T additional code/math tokens",
+  "archDisplay": "MoE transformer, 236B total / 21B active — DeepSeekMoE + MLA, further pretrained from a DeepSeek-V2 checkpoint on 6T additional code/math tokens",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -94,7 +94,7 @@
       "source": "self-reported",
       "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
       "evaluatedAt": "2024-06-17",
-      "notes": "\"General Natural Language\" table, DeepSeek-Coder-V2-Instruct (236B/21B) \u2014 distinct from the mmlu-pro 63.63 already recorded from the HF card"
+      "notes": "\"General Natural Language\" table, DeepSeek-Coder-V2-Instruct (236B/21B) — distinct from the mmlu-pro 63.63 already recorded from the HF card"
     },
     {
       "benchmarkSlug": "bbh",
@@ -153,6 +153,13 @@
       "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
       "evaluatedAt": "2024-06-17",
       "notes": "AIME 2024, reported as 4/30 in the 'Mathematical Reasoning' table"
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 12.7,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "notes": "SWE-Bench (resolved %) for DeepSeek-Coder-V2-Instruct 236B/21B, from the 'code fixing' results table (Section 3.3) in the official GitHub README and confirmed in the arXiv technical report (2406.11931, Table 7). Released June 2024, predating 'SWE-bench Verified' (Aug 2024), so this is the original/full SWE-bench split, not Verified -- distinct from the Verified-labeled swe-bench rows already tracked on DeepSeek-V3/R1. Not currently tracked for this model. (Also found on the same table: Defects4J 21.0 and 'Aider' 73.7 -- both skipped: Defects4J has no taxonomy slug, and this 'Aider' score is the original 133-task Aider code-editing eval, not the same benchmark as the taxonomy's aider-polyglot.)"
     }
   ],
   "verificationNotes": "Confirmed real via GitHub README and HF model card: 236B total/21B active MoE, 128K context (extended from 16K), DeepSeek Model License. Fetched GitHub README directly and confirmed GSM8K 94.9, MATH 75.7, HumanEval 90.2, MBPP+ 76.2, LiveCodeBench 43.4 all literally present. MMLU-Pro 63.63 confirmed on HF Instruct page. No changes needed."

@@ -94,7 +94,23 @@
       "source": "independent",
       "sourceUrl": "https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b",
       "notes": "Text-only-mode SimpleQA score listed alongside the corpus's existing datalearner-sourced rows (which I re-verified and all still match exactly: MMLU 72.14, MMLU-Pro 47.16, GPQA 34.38, MATH 69.3, HumanEval 62.2, MBPP 70.43). No primary Cohere source (blog, HF model card, docs.cohere.com/docs/aya-vision, or the arXiv paper 2505.08751) publishes classic academic-benchmark numbers at all -- Cohere's own materials report only win-rate style metrics (AyaVisionBench, mWildVision). Marked independent per instructions since datalearner is a third-party aggregator whose original-measurement vs. vendor-relay status could not be confirmed."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 78.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.08751",
+      "evaluatedAt": "2025-05-13",
+      "notes": "Table 5 of the official Aya Vision technical report ('Aya Vision: Advancing the Frontier of Multilingual Multimodality', arXiv:2505.08751), multilingual text-only academic benchmark suite. The paper notes IFEval is English-only despite being included in the multilingual suite. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 79.46,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2505.08751",
+      "evaluatedAt": "2025-05-13",
+      "notes": "Table 5 of the official Aya Vision technical report (arXiv:2505.08751), MGSM math reasoning averaged across 6 languages, part of the multilingual text-only academic benchmark suite. Not previously tracked for this model."
     }
   ],
-  "verificationNotes": "Confirmed genuine via Cohere's official blog, TechCrunch (2025-03-04), and Cohere Labs' X announcement \u2014 release date corrected/confirmed to 2025-03-04 (a WebFetch misattribution briefly suggested Dec 2024 by confusing it with the separate Aya Expanse paper arXiv:2412.04261; independently verified this was wrong and 2025-03-04 is correct). HF model card confirms 32B decoder + SigLIP2 vision encoder, CC-BY-NC. All six benchmark rows (MMLU 72.14, MMLU-Pro 47.16, GPQA 34.38, MATH 69.3, HumanEval 62.2, MBPP 70.43) independently re-fetched from datalearner.com and confirmed to literally match. No changes needed."
+  "verificationNotes": "Confirmed genuine via Cohere's official blog, TechCrunch (2025-03-04), and Cohere Labs' X announcement — release date corrected/confirmed to 2025-03-04 (a WebFetch misattribution briefly suggested Dec 2024 by confusing it with the separate Aya Expanse paper arXiv:2412.04261; independently verified this was wrong and 2025-03-04 is correct). HF model card confirms 32B decoder + SigLIP2 vision encoder, CC-BY-NC. All six benchmark rows (MMLU 72.14, MMLU-Pro 47.16, GPQA 34.38, MATH 69.3, HumanEval 62.2, MBPP 70.43) independently re-fetched from datalearner.com and confirmed to literally match. No changes needed."
 }

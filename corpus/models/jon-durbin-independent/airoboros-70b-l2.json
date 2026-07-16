@@ -81,6 +81,30 @@
       "sourceUrl": "https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv",
       "evaluatedAt": "2023-09-04",
       "notes": "HF Open LLM Leaderboard snapshot, 0-shot"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 24.72,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_jondurbin__airoboros-l2-70b-gpt4-2.0/blob/main/results_2023-10-23T03-12-02.680525.json",
+      "evaluatedAt": "2023-10-23",
+      "notes": "5-shot GSM8K (harness|gsm8k|5, acc 0.247157) from the HF Open LLM Leaderboard details dataset for the exact model checkpoint tracked here, jondurbin/airoboros-l2-70b-gpt4-2.0 (model_sha f16526d9... confirmed in the raw JSON, so not conflated with the later 2.2.1/3.1.2 Airoboros checkpoints that also show up in search results with different, higher GSM8K scores)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 83.5,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_jondurbin__airoboros-l2-70b-gpt4-2.0/blob/main/results_2023-10-23T03-12-02.680525.json",
+      "evaluatedAt": "2023-10-23",
+      "notes": "5-shot WinoGrande (harness|winogrande|5, acc 0.835043) from the same exact-model HF Open LLM Leaderboard details JSON (model_sha-verified as airoboros-l2-70b-gpt4-2.0, not a later Airoboros checkpoint)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 40.63,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_jondurbin__airoboros-l2-70b-gpt4-2.0/blob/main/results_2023-10-23T03-12-02.680525.json",
+      "evaluatedAt": "2023-10-23",
+      "notes": "3-shot DROP F1 (harness|drop|3, f1 0.406267; EM was 0.343121) from the same exact-model HF Open LLM Leaderboard details JSON, reporting F1 per this corpus's established DROP convention (see e.g. openhermes-2-5-mistral-7b.json)."
     }
   ],
   "verificationNotes": "Confirmed real model via HF model card fetch (jondurbin/airoboros-l2-70b-gpt4-2.0): 70B Llama-2 finetune, custom Llama-2 license, explicit coding + function-calling dataset content confirmed. All four Open-LLM-Leaderboard CSV scores (MMLU 70.4, ARC 68.5, HellaSwag 87.9, TruthfulQA 49.8) fetched and literally confirmed on the cited CSV. releaseDate 2023-08-05 could not be pinned to the exact day (search shows the sibling TheBloke quantized repos were created late July/early August 2023, i.e. within days of the claimed date) — kept as-is since no contradicting date was found, but exact-day precision is unconfirmed."

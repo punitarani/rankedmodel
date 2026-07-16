@@ -81,6 +81,22 @@
       "source": "independent",
       "sourceUrl": "https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF/discussions/8",
       "notes": "Aider Polyglot pass rate for the original bf16 Qwen3-Coder-480B-A35B-Instruct, run independently by a community member (Fernanda24) via aider against the model, July 25 2025; cited as the baseline against which a Q4 quantization (60.9%) was compared."
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 68.7,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen3-coder/",
+      "evaluatedAt": "2025-07-22",
+      "notes": "Official launch blog's 'Agentic Tool Use' benchmark table (image-embedded chart, verified by live browser screenshot; page now redirects to qwen.ai/blog?id=qwen3-coder), row 'BFCL-v3'. Independently corroborated in kind (different scaffolding, not identical number) by a Jan 2026 third-party EvalScope run reporting 71.99 overall (huggingface.co/blog/kelseye/eval-qwen3-coder)."
+    },
+    {
+      "benchmarkSlug": "tau-bench",
+      "score": 60,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen3-coder/",
+      "evaluatedAt": "2025-07-22",
+      "notes": "TAU-Bench Airline domain, same chart. Reported separately from the Retail-domain score since the blog breaks TAU-Bench into two domain sub-scores rather than a single aggregate."
     }
   ],
   "verificationNotes": "Fully confirmed: 480B total/35B active params, 160 experts/8 active, Apache 2.0, 256K native/1M extrapolated context, all directly confirmed via HF model card fetch. SWE-bench Pro 38.7 and Terminal-Bench 2.0 23.9 confirmed verbatim on the HF evaluation-results table. SWE-bench Verified 66.5 could not be read as literal text on the cited qwenlm.github.io blog (the number is rendered inside an image chart, not extractable text), but is independently corroborated verbatim by multiple unaffiliated sources (Qwen's own X/Twitter post title, NVIDIA build catalog, several LLM pricing/benchmark aggregators) all citing 66.5% Pass@1 for this exact model/benchmark combination -- kept with this caveat noted rather than dropped, since the figure is not a hallucination risk given the volume of independent agreement. Pricing ($1.5/$7.5 per M, 0-32K tier) confirmed exactly via Alibaba Cloud Model Studio official pricing page. Release date July 22, 2025 confirmed via multiple sources."

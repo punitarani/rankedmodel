@@ -85,6 +85,30 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/OLMoE-1B-7B-0924",
       "notes": "PIQA score from the same 'Evaluation Snapshot' table on the official HF model card (verified by fetching README.md directly)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 21.85,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Hugging Face Open LLM Leaderboard v2 (archived dataset open-llm-leaderboard/contents), 0-shot IFEval strict prompt-level accuracy for allenai/OLMoE-1B-7B-0924 (base model, not the -Instruct variant). Not reported by Ai2's own paper/card for the base model; independent eval-harness measurement."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 33.93,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Hugging Face Open LLM Leaderboard v2, 3-shot raw accuracy on BBH for allenai/OLMoE-1B-7B-0924 (using the 'BBH Raw' field, i.e. actual accuracy, not the leaderboard's baseline-normalized display score of 8.31, to keep it comparable to raw-accuracy BBH entries elsewhere in the corpus). Not present in the OLMoE paper or HF card for this model."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 17.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Hugging Face Open LLM Leaderboard v2, 5-shot raw accuracy on MMLU-Pro for allenai/OLMoE-1B-7B-0924 (using the 'MMLU-PRO Raw' field, i.e. actual accuracy, not the leaderboard's normalized display score of 8.22). Not present in the OLMoE paper or HF card for this model."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card and arXiv paper (2409.02060, submitted 2024-09-03). Apache-2.0 license confirmed. Architecture (64 experts, 8 active/token, 16 layers, 4096 ctx) confirmed directly from raw config.json. 6.9B total / 1.3B active params confirmed via independent secondary source quoting the paper. All 4 benchmark rows confirmed verbatim on the HF model card. Competitiveness-with-Llama2-13B claim in the note confirmed via paper summaries."

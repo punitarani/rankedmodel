@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+deepseek-vl2,17.3,independent,https://arxiv.org/html/2504.07491v1,2025-04-10,"Kimi-VL Technical Report (arXiv:2504.07491, Moonshot AI/Kimi Team), Table 3, uses DeepSeek-VL2 as a baseline with matching architecture detail (# Act. Params LLM+VT = 4.1B+0.4B ≈ this catalog entry's 4.5B active/27B total Base variant). MathVision score of 17.3 confirmed verbatim in the raw table row; not present in DeepSeek's own VL2 tech report (arXiv:2412.10302), which the corpus already sources for MMMU/MathVista/DocVQA/etc."
 exaone-4-5,75.2,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,MATH-Vision
 gemma-4,85.6,self-reported,https://ai.google.dev/gemma/docs/core/model_card_4,2026-04-02,"MATH-Vision, 31B."
 gemma-4-26b-a4b,82.4,self-reported,https://huggingface.co/google/gemma-4-26B-A4B-it,2026-04-02,"MATH-Vision, 26B A4B."

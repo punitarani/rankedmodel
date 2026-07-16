@@ -93,6 +93,48 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/internlm/internlm2-chat-20b",
       "notes": "InternLM2-Chat-20B AGIEval score, from the official HF model-card OpenCompass evaluation table (fetched directly, raw README); base InternLM2-20B scores 53.0 on the same table."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 65.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.17297",
+      "notes": "InternLM2-Chat-20B, 5-shot, from Table 6 (Comparison of Chat Models on Comprehensive Examination) of the InternLM2 Technical Report."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 63,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.17297",
+      "notes": "InternLM2-Chat-20B, 5-shot, from Table 6 of the InternLM2 Technical Report."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 53.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.17297",
+      "notes": "InternLM2-Chat-20B, 4-shot, open-domain QA subset, from Table 8 (Comparison of Chat Models on Language & Knowledge) of the InternLM2 Technical Report."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 87.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.17297",
+      "notes": "InternLM2-Chat-20B, 0-shot, RACE-High subset, from Table 8 of the InternLM2 Technical Report."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 74.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.17297",
+      "notes": "InternLM2-Chat-20B, 0-shot, from Table 9 (Comparison of Reasoning Tasks, Chat Model Results) of the InternLM2 Technical Report."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 85.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2403.17297",
+      "notes": "InternLM2-Chat-20B, 0-shot, from Table 9 (Chat Model Results) of the InternLM2 Technical Report; the existing bbh=68.3 entry is drawn from the same table row, confirming source consistency."
     }
   ],
   "verificationNotes": "Confirmed real and existing as described. Release ~2024-01-17 corroborated by web search; arXiv 2403.17297 (InternLM2 Technical Report, March 2024) is the accompanying paper. Apache-2.0 code license + free commercial weight license confirmed on HF page. All six benchmark rows re-confirmed verbatim on the internlm2-chat-20b HF model card (rows are explicitly for the Chat-20B variant, as already disclosed in original notes). No changes needed."

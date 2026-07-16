@@ -112,6 +112,62 @@
       "sourceUrl": "https://arxiv.org/abs/2204.06745",
       "evaluatedAt": "2022-04-14",
       "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.288)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 26.61,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-j-6b",
+      "evaluatedAt": "2023-08-28",
+      "notes": "5-shot MMLU average across 57 subjects ('original|mmlu:*' task set), HF Open LLM Leaderboard v1 results_2023-08-28 run. Not previously tracked (only individual arc/hellaswag/openbookqa/triviaqa were on file). [score corrected during round-6 completeness verify: proposed 25.37 -> 26.61]"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 35.96,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-j-6b",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot TruthfulQA MC2 accuracy, HF Open LLM Leaderboard v1 results_2023-07-18 run."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 2.96,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-j-6b",
+      "evaluatedAt": "2023-12-03",
+      "notes": "5-shot GSM8K accuracy (acc=0.0296), HF Open LLM Leaderboard v1 results_2023-12-03 run, verified from raw results JSON."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 25.22,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-08-19",
+      "notes": "0-shot IFEval strict-accuracy Raw score, HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 31.91,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-08-19",
+      "notes": "3-shot BBH normalized accuracy averaged across 23 subtasks, HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 24.58,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-08-19",
+      "notes": "0-shot GPQA normalized accuracy (4-choice), HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 12.41,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-08-19",
+      "notes": "5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
     }
   ],
   "verificationNotes": "Confirmed real: fetched huggingface.co/EleutherAI/gpt-j-6b model card, exact param count 6,053,381,344 = 6.05B matches record; Apache-2.0 license and 2048 context confirmed; evaluation table verbatim-matches all 4 scores. Wikipedia confirms release date June 9, 2021. No changes needed."

@@ -76,7 +76,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
       "notes": "Extended-thinking mode."
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 88.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "notes": "BFCL (function/tool calling), 'Extended Thinking' evaluation table row (88.8 for SmolLM3-3B, tied with Qwen3-1.7B). No BFCL version is specified on the card, so mapped to unversioned 'bfcl' rather than 'bfcl-v3'. Not previously tracked for this variant."
     }
   ],
-  "verificationNotes": "Confirmed real 2025-07-08 Hugging Face release, Apache-2.0, 3.08B params, GQA+NoPE decoder trained on 11.2T tokens with 64K native / 128K YaRN-extended context \u2014 all verified against the official HF blog. Both benchmark rows (AIME 2025 reasoning-mode 36.7%, LiveCodeBench reasoning-mode 30.0%) confirmed verbatim on that same blog \u2014 no changes needed."
+  "verificationNotes": "Confirmed real 2025-07-08 Hugging Face release, Apache-2.0, 3.08B params, GQA+NoPE decoder trained on 11.2T tokens with 64K native / 128K YaRN-extended context — all verified against the official HF blog. Both benchmark rows (AIME 2025 reasoning-mode 36.7%, LiveCodeBench reasoning-mode 30.0%) confirmed verbatim on that same blog — no changes needed."
 }

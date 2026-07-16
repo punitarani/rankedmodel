@@ -139,6 +139,27 @@
       "source": "independent",
       "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
       "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), Cursor CLI harness, High reasoning effort: Pass rate 20.4% / Score 41.8% -- the best of several claude-opus-4-7 rows across harnesses (ALE-Claw 40.5, Claude Code 35.1, OpenClaw 34.6, Droid 31.0). Score component used per corpus convention."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 85.07,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-opus-4-7",
+      "notes": "Vals AI independent evaluation (confirmed via rendered browser screenshot; static HTML fetch shows placeholder 0.0% values)."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 89.87,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-opus-4-7",
+      "notes": "Vals AI independent evaluation."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 85.55,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-opus-4-7",
+      "notes": "Vals AI independent evaluation. Distinct from the already-tracked 'mmmu-pro' slug on this model."
     }
   ],
   "verificationNotes": "Release date and pricing confirmed directly from Anthropic's own announcement (fetched). Architecture (paramsB, archClass) is never disclosed by Anthropic for any Claude model; 'dense' is a placeholder consistent with how prior Anthropic entries in this corpus are recorded, not a confirmed fact."

@@ -90,6 +90,38 @@
       "sourceUrl": "https://arxiv.org/abs/2504.10479",
       "evaluatedAt": "2025-04-14",
       "notes": "Independent third-party reproduction via VLMEvalKit, reported in the InternVL3 Technical Report (Table 2, row 'QvQ-72B-Preview'). MathVision 34.9, vs. Qwen's own self-reported 35.9(full) -- minor eval-harness variance."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 83.2,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2505.19076",
+      "evaluatedAt": "2025-05-25",
+      "notes": "ChartQA-H (human split). From 'ChartSketcher: Reasoning with Multimodal Feedback and Reflection for Chart Understanding' (arXiv:2505.19076), Table 1, row 'QvQ-Preview-72B', used as an open-source vision baseline. Judged via majority vote (3 runs) with DeepSeek-Distill-Qwen-32B as the answer-alignment scorer."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 92.68,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2505.19076",
+      "evaluatedAt": "2025-05-25",
+      "notes": "DocVQA, from the general-dataset comparison table (Table 1, second half) in the ChartSketcher paper, row 'QvQ-Preview-72B'."
+    },
+    {
+      "benchmarkSlug": "gqa",
+      "score": 63.91,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2505.19076",
+      "evaluatedAt": "2025-05-25",
+      "notes": "GQA, same ChartSketcher paper Table 1, row 'QvQ-Preview-72B'."
+    },
+    {
+      "benchmarkSlug": "flickr30k",
+      "score": 72.96,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2505.19076",
+      "evaluatedAt": "2025-05-25",
+      "notes": "Flickr30k, same ChartSketcher paper Table 1, row 'QvQ-Preview-72B'."
     }
   ],
   "verificationNotes": "Confirmed real; blog qwenlm.github.io/blog/qvq-72b-preview/ gives Dec 25 2024 release, built on Qwen2-VL-72B. HF README (huggingface.co/Qwen/QVQ-72B-Preview) confirms 73B params, 'Qwen' license, 32,768 (32K) ctx (per third-party docs/config), and states verbatim it 'only supports single-round dialogues and image outputs... does not support video inputs' -- matches the note exactly. All 4 result rows (MMMU 70.3, MathVista 71.4, MathVision 35.9, OlympiadBench 20.4) verified verbatim on the HF model card. No changes made."

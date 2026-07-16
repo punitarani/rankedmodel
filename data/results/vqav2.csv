@@ -1,7 +1,11 @@
 model_slug,score,source,source_url,evaluated_at,notes
 cogvlm-17b,82.3,self-reported,https://arxiv.org/pdf/2311.03079,,"Ranked 2nd overall, surpassing/matching PaLI-X 55B [Corrected during full-corpus audit: Directly extracted the full paper PDF text (via pdftotext) rather than relying on a web summary. The paper's actual data tables (Table 2, VQA benchmarks, test-dev split, and Table 3, generalist section, 'single task' row) both report CogVLM's VQAv2 score as 84.7. The figure 84.38 does not appear in either data table; it appears to have been misread from the numeric labels scattered around Figure 1] [score corrected during round-5 full-corpus accuracy re-verify: 84.38 -> 82.3]"
+gemini-1-0-nano,67.5,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7, Gemini Nano-2 (3.25B) column, VQAv2 (test-dev), pixel-only, 0-shot."
+gemini-1-0-pro,71.2,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7: Gemini Pro (pixel-only), VQAv2 (test-dev)."
+gemini-1-0-ultra,77.8,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7 (Image understanding), VQAv2 (test-dev), pixel-only, greedy 0-shot."
 gemini-1-5-flash,80.1,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"VQAv2 test-dev split, 0-shot, Table 18 of the Gemini 1.5 technical report."
 gemini-1-5-pro,80.2,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"VQAv2 test-dev split, 0-shot, Table 18."
+gemma-3-12b,71.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"VQAv2 (val), Gemma 3 12B IT column, Table 16 of the Gemma 3 Technical Report."
 gemma-3-4b,62.4,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Table 16, IT 4B, VQAv2 (val)."
 idefics-80b,60,self-reported,https://huggingface.co/HuggingFaceM4/idefics-80b,,0-shot
 idefics2-8b,81.2,self-reported,https://huggingface.co/blog/idefics2,,

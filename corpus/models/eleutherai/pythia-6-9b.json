@@ -52,35 +52,67 @@
       "score": 67.3,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2304.01373",
-      "notes": "Zero-shot LAMBADA (OpenAI) accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7 (Appendix G.1) of the Pythia paper: 0.673\u00b10.007."
+      "notes": "Zero-shot LAMBADA (OpenAI) accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7 (Appendix G.1) of the Pythia paper: 0.673±0.007."
     },
     {
       "benchmarkSlug": "piqa",
       "score": 75.2,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2304.01373",
-      "notes": "Zero-shot PIQA accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.752\u00b10.010."
+      "notes": "Zero-shot PIQA accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.752±0.010."
     },
     {
       "benchmarkSlug": "winogrande",
       "score": 60.9,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2304.01373",
-      "notes": "Zero-shot WinoGrande accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.609\u00b10.014."
+      "notes": "Zero-shot WinoGrande accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.609±0.014."
     },
     {
       "benchmarkSlug": "arc-easy",
       "score": 67.3,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2304.01373",
-      "notes": "Zero-shot ARC-Easy accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.673\u00b10.010."
+      "notes": "Zero-shot ARC-Easy accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.673±0.010."
     },
     {
       "benchmarkSlug": "arc-challenge",
       "score": 31.3,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2304.01373",
-      "notes": "Zero-shot ARC-Challenge accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.313\u00b10.014."
+      "notes": "Zero-shot ARC-Challenge accuracy for the fully-trained, non-deduplicated pythia-6.9b, Table 7: 0.313±0.014."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 22.81,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "0-shot IFEval strict-accuracy Raw score, HF Open LLM Leaderboard v2 (open-llm-leaderboard/contents dataset, row fullname=EleutherAI/pythia-6.9b)."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 32.32,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "3-shot BBH normalized accuracy averaged across 23 subtasks, HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 26.77,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "0-shot GPQA normalized accuracy (4-choice), HF Open LLM Leaderboard v2. [score corrected during round-6 completeness verify: proposed 25.17 -> 26.77]"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 11.47,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
     }
   ],
   "verificationNotes": "Confirmed real: fetched huggingface.co/EleutherAI/pythia-6.9b - exact param count 6,857,302,016 (=6.857B, rounds to 6.9 matching record), 32 layers, Apache-2.0 license confirmed. 2048 sequence length confirmed. Paper date 2023-04-03 confirmed on arxiv. No results rows to verify (none were provided)."

@@ -55,6 +55,22 @@
       "source": "self-reported",
       "sourceUrl": "https://finance.sina.com.cn/tech/discovery/2025-06-11/doc-inezskch4850147.shtml",
       "notes": "144/150 on China's Gaokao (national college entrance exam) math paper, reported #1 among models at launch"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 81.5,
+      "source": "self-reported",
+      "sourceUrl": "https://ainativefoundation.org/china-ai-native-industry-insights-20250613-monica-bytedance-more/",
+      "evaluatedAt": "2025-06-11",
+      "notes": "GPQA Diamond score disclosed for the Doubao-Seed-1.6-thinking variant at the same June 11 2025 Volcano Engine FORCE launch event as the already-tracked Gaokao-math result; corroborated by multiple independent Chinese tech-press recaps (ai.zol.com.cn confirms the June 11 2025 launch date; therouter.ai and other model-pricing pages repeat the identical 81.5 figure)."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 86.3,
+      "source": "self-reported",
+      "sourceUrl": "https://ainativefoundation.org/china-ai-native-industry-insights-20250613-monica-bytedance-more/",
+      "evaluatedAt": "2025-06-11",
+      "notes": "AIME25 score disclosed for the Doubao-Seed-1.6-thinking variant at the June 11 2025 launch (stated as a 12.3-point gain over the prior Doubao-1.5-thinking model); corroborated across multiple independent Chinese tech-press recaps of the same announcement."
     }
   ],
   "verificationNotes": "Confirmed real: fetched the Sina Finance article (published June 11, 2025, matching releaseDate) directly — it states Doubao's large model scored 144 points and ranked first nationally ('全国第一') on the national Gaokao math paper; the '/150' total is standard knowledge for the Gaokao math paper (not explicitly restated as '150' in the article itself, but a 150-point scale is the well-established format). Fetched ByteDance's own official Seed1.6 techniques blog and confirmed 230B total/23B active MoE params, 256K context window, and the AdaCoT (Adaptive Chain-of-Thought) technique verbatim. Pricing cross-checked: Sina article cites ~0.8 CNY/M input and 2 CNY/M output, which converts to ~$0.11/$0.28 USD — matches the record's price field closely. No changes made to core facts; note field retained as-is since substance is corroborated."

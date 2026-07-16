@@ -3,7 +3,9 @@ ai21-jamba,87.1,self-reported,https://huggingface.co/ai21labs/Jamba-v0.1,,
 airoboros-70b-l2,87.9,independent,https://raw.githubusercontent.com/dsdanielpark/Open-LLM-Leaderboard-Report/main/assets/20230904/20230904.csv,2023-09-04,"HF Open LLM Leaderboard snapshot, 10-shot"
 apple-dclm-baseline-7b,80.43,self-reported,https://huggingface.co/apple/DCLM-Baseline-7B,,'HellaSwag' row (distinct from the separate 'HellaSwag (zero-shot)' row of 79.87)
 apple-openelm-270m-3b,72.44,self-reported,https://huggingface.co/apple/OpenELM,2024-04-01,"OpenELM-3B (pretrained), zero-shot"
+bloom-176b,76.4,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloom,2023-08-29,"10-shot acc_norm (harness|hellaswag|10 = 0.76409), HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloom, confirmed via direct fetch of the raw results JSON."
 bloom-7b1,62,independent,https://huggingface.co/datasets/open-llm-leaderboard/details_bigscience__bloom-7b1,2023-08-01,"acc_norm on HellaSwag (10-shot), same primary results file, key harness|hellaswag|10."
+bloomz-176b,75.2,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloomz,2023-08-29,"10-shot acc_norm (harness|hellaswag|10 = 0.75234), HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloomz, confirmed via direct fetch of the raw results JSON."
 btlm-3b-8k,69.8,self-reported,https://arxiv.org/abs/2309.11568,,0-shot
 cerebras-gpt-13b,51.3,self-reported,https://huggingface.co/cerebras/Cerebras-GPT-13B,,0-shot
 chatglm-6b,30.4,self-reported,https://arxiv.org/html/2406.12793v1,,GLM team's family-wide technical report re-evaluation table (Table 1).
@@ -13,6 +15,7 @@ chinchilla,80.8,self-reported,https://arxiv.org/abs/2203.15556,,"Zero-shot Hella
 claude-3-haiku,85.9,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,10-shot
 claude-3-opus,95.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,10-shot
 claude-3-sonnet,89,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,10-shot
+code-llama-34b-python,76.36,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_codellama__CodeLlama-34b-Python-hf,2024-02-19,"10-shot acc_norm (harness|hellaswag|10: acc_norm=0.76359), HF Open LLM Leaderboard v1 (old) independent eval run, raw results JSON."
 comma-v0-1-2t,64.4,self-reported,https://huggingface.co/common-pile/comma-v0.1-2t,,
 command-r,87,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_CohereForAI__c4ai-command-r-v01/resolve/main/results_2024-03-22T04-17-37.786335.json,,"Open LLM Leaderboard v1, harness|hellaswag|10 (10-shot), acc_norm."
 dbrx,89,self-reported,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm,,
@@ -44,19 +47,29 @@ gpt-neox-20b,53.5,self-reported,https://blog.eleuther.ai/announcing-20b/,2022-02
 granite-3-0-2b-instruct,76.79,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,
 granite-3-0-8b-instruct,82.61,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,
 granite-3-1-8b-instruct,84.48,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HF Open LLM Leaderboard V1
+guanaco-33b,84.5,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_timdettmers__guanaco-33b-merged,2023-07-20,HellaSwag 10-shot acc_norm (0.845) from the same HF Open LLM Leaderboard (old) details dataset for timdettmers/guanaco-33b-merged.
+guanaco-65b,86.47,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_TheBloke__guanaco-65B-HF,2023-07-25,HellaSwag 10-shot acc_norm from the same HF Open LLM Leaderboard (old) details dataset / raw JSON run (hellaswag acc_norm 0.8647) for the merged full-weights repackaging of guanaco-65b.
 h2o-danube-1-8b,67.6,self-reported,https://huggingface.co/h2oai/h2o-danube-1.8b-chat,,
 h2o-danube3-4b,80.36,independent,https://huggingface.co/h2oai/h2o-danube3-4b-chat,,Open LLM Leaderboard v1
 hermes-3-405b,90.19,self-reported,https://arxiv.org/pdf/2408.11857,,10-shot
 hunyuan-large-a52b,86.8,self-reported,https://huggingface.co/tencent/Tencent-Hunyuan-Large,,Pretrain/base model table.
 inflection-1,84.3,self-reported,https://inflection.ai/assets/Inflection-1.pdf,2023-06-23,0-shot (Table 4 of the technical memo); a 10-shot figure of 85.8 is also reported (Table 5) but 0-shot is used here as the memo's primary comparison setting.
 inflection-2,89,self-reported,https://inflection.ai/inflection-2,,10-shot HellaSwag. Literally confirmed: page text states 'Inflection-2 reaches 89.0 on HellaSwag 10-shot compared to GPT-4's 95.3.'
+inflection-2-5,90.2,self-reported,https://inflection.ai/inflection-2-5,2024-03-07,"HellaSwag, 10-shot, Inflection-2.5 column of a comparison table on Inflection AI's official Inflection-2.5 launch page. Rendered as a vector-outlined SVG image (framerusercontent.com/images/7EntAgSnt8VPh6RRcGzH7kbVRk.svg); confirmed by direct browser rendering (full row: Inflection-2.5=90.2, Inflection-1=85.8[matches the alternate 10-shot HellaSwag figure already noted in this corpus's existing Inflection-1 entry], GPT-4=95.3)."
+internlm2-20b,85.8,self-reported,https://arxiv.org/abs/2403.17297,,"InternLM2-Chat-20B, 0-shot, from Table 9 (Chat Model Results) of the InternLM2 Technical Report; the existing bbh=68.3 entry is drawn from the same table row, confirming source consistency."
 internlm3-8b-instruct,91.2,self-reported,https://internlm.readthedocs.io/en/latest/model_card/InternLM3.html,,"10-shot, from official model card table."
 jais-13b,57.7,self-reported,https://huggingface.co/inceptionai/jais-13b,,Arabic Hellaswag
 jais-70b,82.7,self-reported,https://huggingface.co/inceptionai/jais-adapted-70b,,"English eval, jais-adapted-70b-chat"
+koala-13b,77.59,independent,https://huggingface.co/datasets/open-llm-leaderboard/details_TheBloke__koala-13B-HF/resolve/main/results_2023-07-19T18%3A49%3A04.838102.json,2023-07-19,"HuggingFace Open LLM Leaderboard v1 archive, TheBloke/koala-13B-HF. HellaSwag 10-shot acc_norm = 0.7759410476000796."
 krutrim-2-12b,83,self-reported,https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct,,0-shot
 llama-13b,79.2,self-reported,https://ar5iv.labs.arxiv.org/html/2302.13971,2023-02-01,"0-shot, Table 3"
+llama-2-13b,80.7,self-reported,https://ar5iv.labs.arxiv.org/html/2307.09288,2023-07-18,"0-shot, Table 20 'Performance on standard benchmarks' (HellaSwag column) of the official Llama 2 paper."
 llama-2-70b,85.3,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (Appendix A.2.2, 'Standard Benchmarks')."
+llama-2-70b-chat,85.9,independent,https://github.com/dsdanielpark/Open-LLM-Leaderboard-Report/blob/main/assets/20230904/20230904.csv,2023-09-04,"HellaSwag, 10-shot, meta-llama/Llama-2-70b-chat-hf. HuggingFace Open LLM Leaderboard v1 (2023-09-04 run). Cross-corroborated at llm-explorer.com (HellaSwag 85.88, rounds to 85.9)."
 llama-2-7b,77.2,self-reported,https://arxiv.org/abs/2307.09288,2023-07-18,"0-shot, Table 20 (Appendix A.2.2, 'Standard Benchmarks')."
+llama-2-7b-chat,78.6,independent,https://github.com/dsdanielpark/Open-LLM-Leaderboard-Report/blob/main/assets/20230904/20230904.csv,2023-09-04,"HellaSwag, 10-shot, meta-llama/Llama-2-7b-chat-hf. HuggingFace Open LLM Leaderboard v1 (2023-09-04 run). Cross-corroborated at llm-explorer.com (HellaSwag 78.6)."
+llama-3-1-70b,86.74,independent,https://arxiv.org/abs/2409.11055,2024-09-17,"Llama-3.1-70B-it, FP16 baseline row, HellaSwag 10-shot acc_norm (OpenLLM Leaderboard-v1 protocol), Table 1 of the same quantization-tradeoffs paper (Lee et al., v6)."
+llama-3-1-8b,80.21,independent,https://arxiv.org/abs/2409.11055,2024-09-17,"Llama-3.1-8B-it, FP16 baseline row, HellaSwag 10-shot acc_norm (OpenLLM Leaderboard-v1 protocol), Table 1 of the same quantization-tradeoffs paper (Lee et al., v6)."
 llama-3-1-minitron-4b,76.1,self-reported,https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/,2024-08-14,10-shot
 llama-3-2-1b,41.2,self-reported,https://huggingface.co/meta-llama/Llama-3.2-1B,2024-09-01,"Instruct, BF16"
 llama-3-2-3b,69.8,self-reported,https://huggingface.co/meta-llama/Llama-3.2-3B,2024-09-01,"Instruct, BF16"
@@ -71,7 +84,9 @@ mistral-large,89.2,self-reported,https://mistral.ai/news/mistral-large/,2024-02-
 mistral-nemo-12b,83.5,self-reported,https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407,,
 mixtral-8x7b,84.4,self-reported,https://ar5iv.labs.arxiv.org/html/2401.04088,2024-01-01,
 mpt-30b,82.4,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b,2023-12-04,"10-shot acc_norm (harness|hellaswag|10 = 0.8242), confirmed via direct curl+grep of the raw results JSON"
+mpt-30b-instruct,84.3,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct,2023-07-20,"acc_norm, 10-shot (harness|hellaswag|10) from the same HF Open LLM Leaderboard v1 run (2023-07-20T13:11:24.937399) for mosaicml/mpt-30b-instruct, recomputed from the raw results JSON."
 mpt-7b,75,independent,https://arxiv.org/abs/2405.13386,2024-05-22,confirmed Table 2 (75.0)
+mpt-7b-instruct,77.9,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-instruct,2023-07-20,"10-shot acc_norm (harness|hellaswag|10 = 0.77913), HF Open LLM Leaderboard v1 evaluation-run JSON for mosaicml/mpt-7b-instruct, confirmed via direct fetch of the raw results JSON."
 mpt-7b-storywriter-65k,74.14,independent,"https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",,"Open LLM Leaderboard-style HellaSwag (10-shot convention) score for the StoryWriter checkpoint, via LLM Explorer aggregator; distinct from base MPT-7B's 75 on the same site."
 naver-hyperclova-x,86.05,self-reported,https://arxiv.org/abs/2404.01954,,"HCX-L, 5-shot, Table 5 (commonsense reasoning)."
 naver-hyperclova-x-seed-think-32b,57.2,self-reported,https://arxiv.org/abs/2601.03286,2026-01-03,"Table 5, English text-to-text benchmarks."
@@ -86,6 +101,8 @@ olmo-7b,76.4,self-reported,https://huggingface.co/allenai/OLMo-7B,,
 olmoe-1b-7b-0924,80,self-reported,https://huggingface.co/allenai/OLMoE-1B-7B-0924,,
 openhermes-2-5-mistral-7b,81.73,self-reported,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B,2023-11-03,"acc_norm, part of GPT4All suite on the official HF model card."
 openllama-7b,72,self-reported,https://github.com/openlm-research/open_llama,,"hellaswag/acc_norm via lm-evaluation-harness, OpenLLaMA 7B (v1)"
+orca-2-13b,77.75,self-reported,https://ar5iv.labs.arxiv.org/html/2311.11045,,"Zero-shot, Figure 5 (Text Completion) of the Orca 2 technical report, Orca-2-13B row (default/empty system message; the cautious-system-message variant scores 77.75). Confirmed via pdftotext -layout extraction of the chart's bar order and values. [score corrected during round-6 completeness verify: proposed 81.19 -> 77.75]"
+palm-2,86.8,self-reported,https://arxiv.org/abs/2305.10403,2023-05-17,"PaLM 2-L (base, not instruction-tuned), 1-shot HellaSwag, Table 2 of the PaLM 2 Technical Report. Confirmed verbatim via full-text fetch of the arXiv PDF."
 palm-540b,83.4,self-reported,https://arxiv.org/abs/2204.02311,2022-04-05,"PaLM 540B, 0-shot HellaSwag, from Table 4."
 pharia-1-llm-7b-control,64.6,self-reported,https://huggingface.co/Aleph-Alpha/Pharia-1-LLM-7B-control,,
 phi-1-5-1-3b,47.6,self-reported,https://ar5iv.labs.arxiv.org/html/2309.05463,2023-09-11,Table 3.
@@ -98,7 +115,11 @@ phi-3-small-7b,77,self-reported,https://huggingface.co/microsoft/Phi-3-small-8k-
 phi-4-mini-3-8b,69.1,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, HellaSwag (5-shot)."
 phi-4-mini-instruct,69.1,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, HellaSwag (5-shot)."
 poro-34b,77.77,self-reported,https://arxiv.org/abs/2404.01856,,English
+pythia-1-4b,52.86,independent,https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__pythia-1.4b,2024-04-30,"10-shot acc_norm, HF Open LLM Leaderboard v1 results_2024-04-30 run. Not previously tracked for this model."
+qwen-14b,80.2,self-reported,https://arxiv.org/abs/2309.16609,2023-09-25,"Qwen Technical Report, Table 17 (""natural language reasoning""), HellaSwag column, zero-shot. Confirmed via direct read of the PDF (page 39)."
 qwen1-5-110b,87.5,self-reported,https://qwenlm.github.io/blog/qwen1.5-110b/,2024-04-25,Base model
+qwen1-5-moe-a2-7b,77.26,independent,https://arxiv.org/abs/2602.11184,2026-02-24,"Labeled 'HE' in the paper's Table 10 (confirmed via section 5 text listing 'Arc-Challenge, Arc-Easy, HellaSwag, LAMBADA-openai, LAMBADA-standard, PIQA, WinoGrande' as the 7 zero-shot tasks -- not to be confused with HumanEval, which this table does not include). FP16 baseline row."
+qwen2-5-14b,84.3,self-reported,https://arxiv.org/abs/2412.15115,2024-09-19,"Qwen2.5 Technical Report, Table 3, Qwen2.5-14B column, HellaSwag row (10-shot per report's Section 5.1 methodology). Confirmed via direct read of the PDF, same base-model table as the winogrande addition above. [score corrected during round-6 completeness verify: proposed 83 -> 84.3]"
 qwen2-5-32b,85.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 10-shot."
 qwen2-5-72b,87.6,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
 qwen2-5-7b,80.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
@@ -121,8 +142,12 @@ stablelm-alpha-7b,51.78,independent,https://huggingface.co/datasets/open-llm-lea
 stablelm-zephyr-3b,74.16,self-reported,https://huggingface.co/stabilityai/stablelm-zephyr-3b,,10-shot
 starling-7b-alpha,84.9,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-04T15-57-32.180703.json,2023-12-04,"HellaSwag, 10-shot, acc_norm. Same v1 Open LLM Leaderboard automated run, verified against raw results JSON."
 teuken-7b-instruct,62,self-reported,https://huggingface.co/openGPT-X/Teuken-7B-instruct-commercial-v0.4,,"EU21-HellaSwag, averaged across 21 EU languages [score corrected during round-5 full-corpus accuracy re-verify: 0.62 -> 62]"
+ul2-20b,94.1,self-reported,https://arxiv.org/abs/2205.05131,2022-05-10,"UL2 20B, finetuned/leaderboard-submission result (denoted '(l)' in the paper) from Table 8 ('Summary of UL20B results compared to state-of-the-art'), row 'Hellaswag Accuracy Test ... 93.9 [prior SOTA] 94.1 [UL2 20B]'. Verbatim-confirmed via ar5iv full-text render of arxiv 2205.05131."
 upstage-solar-10-7b,84.6,self-reported,https://arxiv.org/abs/2312.15166,,"Table 2 of the SOLAR 10.7B paper (base model row), 10-shot HellaSwag."
 upstage-solar-pro,86.36,self-reported,https://huggingface.co/upstage/solar-pro-preview-instruct,,"HF model card benchmark table, HellaSwag column, 10-shot acc_norm per the card's own eval-protocol notes."
+vicuna-13b-v1-1,80.14,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_lmsys__vicuna-13b-v1.1,2023-07-24,"10-shot HellaSwag acc_norm, Open LLM Leaderboard details run (harness|hellaswag|10, acc_norm 0.80143)."
+vicuna-13b-v1-5,81.09,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_lmsys__vicuna-13b-v1.5,2023-08-09,"10-shot HellaSwag acc_norm, Open LLM Leaderboard details run (harness|hellaswag|10, acc_norm 0.81089)."
 xgen-7b-8k,74.2,self-reported,https://ar5iv.labs.arxiv.org/html/2309.03450,,
+yi-34b,85.69,independent,https://huggingface.co/datasets/open-llm-leaderboard-old/details_01-ai__Yi-34B,2023-11-02,"10-shot acc_norm from HF Open LLM Leaderboard v1 (harness|hellaswag|10, acc_norm 0.856901)."
 yi-6b,74.4,self-reported,https://arxiv.org/abs/2403.04652,2024-03-01,"10-shot. Yi technical report Table 8 (depth-upscaling section, Yi-6B baseline row)."
 zephyr-7b-beta,84.36,self-reported,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta,,10-shot

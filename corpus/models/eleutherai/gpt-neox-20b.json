@@ -111,6 +111,54 @@
       "sourceUrl": "https://arxiv.org/abs/2204.06745",
       "evaluatedAt": "2022-04-14",
       "notes": "Zero-shot, Table 2 of the GPT-NeoX-20B paper (acc=0.290)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 31.61,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-neox-20b",
+      "evaluatedAt": "2023-07-20",
+      "notes": "0-shot TruthfulQA MC2 accuracy, HF Open LLM Leaderboard v1 results_2023-07-20 run. mmlu was already tracked (28.98 self-reported) so it is skipped; this is a distinct new benchmark."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 5.46,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_EleutherAI__gpt-neox-20b",
+      "evaluatedAt": "2023-12-03",
+      "notes": "5-shot GSM8K accuracy (acc=0.0546), HF Open LLM Leaderboard v1 results_2023-12-03 run."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 25.87,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-09",
+      "notes": "0-shot IFEval strict-accuracy Raw score, HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 31.65,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-09",
+      "notes": "3-shot BBH normalized accuracy averaged across 23 subtasks, HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 24.33,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-09",
+      "notes": "0-shot GPQA normalized accuracy (4-choice), HF Open LLM Leaderboard v2."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 11.55,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-09",
+      "notes": "5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
     }
   ],
   "verificationNotes": "Confirmed real: fetched blog.eleuther.ai/announcing-20b/ - all 4 scores (LAMBADA 72.00, Winogrande 66.10, HellaSwag 53.50, MMLU avg 28.98) verbatim-match. HF model card gives exact param count 20,554,567,680 which rounds to 20.6B, matching record. Apache-2.0 and 2022-02-09 release date confirmed. No changes needed."

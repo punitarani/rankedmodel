@@ -80,6 +80,38 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/bigscience/bloomz",
       "notes": "SuperGLUE CB (CommitmentBank) subtask, validation, zero-shot accuracy."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 55.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloomz",
+      "evaluatedAt": "2023-08-29",
+      "notes": "25-shot acc_norm (harness|arc:challenge|25 = 0.55375), HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloomz (confirmed config_general.model_name = 'bigscience/bloomz', the 176B model), confirmed via direct fetch of the raw results JSON."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 75.2,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloomz",
+      "evaluatedAt": "2023-08-29",
+      "notes": "10-shot acc_norm (harness|hellaswag|10 = 0.75234), HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloomz, confirmed via direct fetch of the raw results JSON."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 47.7,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloomz",
+      "evaluatedAt": "2023-08-29",
+      "notes": "5-shot, average accuracy across all 57 harness|hendrycksTest-*|5 subtasks (avg acc = 0.47740), HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloomz, computed directly from the raw results JSON using the leaderboard's standard MMLU aggregation method."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 43.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloomz",
+      "evaluatedAt": "2023-08-29",
+      "notes": "TruthfulQA MC2 (harness|truthfulqa:mc|0, mc2 = 0.43939), 0-shot, HF Open LLM Leaderboard v1 evaluation-run JSON for bigscience/bloomz, confirmed via direct fetch of the raw results JSON."
     }
   ],
   "verificationNotes": "Confirmed on HF model card: 176B params, RAIL v1.0 license, Winogrande XL 59.27, XWinograd-English 69.08, ANLI-r1 48.6 all literally present. arXiv 2211.01786 (Crosslingual Generalization through Multitask Finetuning) was submitted November 3, 2022, exactly matching the record's release date. No changes made."

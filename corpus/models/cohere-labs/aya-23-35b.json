@@ -78,6 +78,46 @@
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-06-25",
       "notes": "LogicKor official leaderboard, model_id CohereForAI/aya-23-35B, default prompt strategy"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 53.6,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/aya-23-35B/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "Open LLM Leaderboard v2, leaderboard_bbh, 3-shot, acc_norm. Not previously tracked (existing entries were mmlu, xwinograd, mgsm, logickor)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 28.79,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/aya-23-35B/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "Open LLM Leaderboard v2, leaderboard_gpqa_diamond (0-shot), acc_norm. New for this model."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 33.56,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/aya-23-35B/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "Open LLM Leaderboard v2, leaderboard_mmlu_pro, 5-shot, acc. New for this model (existing mmlu entry is the multilingual variant from the Aya 23 paper, a distinct methodology)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 59.33,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/aya-23-35B/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "Open LLM Leaderboard v2, leaderboard_ifeval, prompt_level_strict_acc. New for this model."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 61.69,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/aya-23-35B/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "Open LLM Leaderboard v2, leaderboard_arc_challenge, acc_norm. New for this model."
     }
   ],
   "verificationNotes": "Confirmed genuine via arXiv:2405.15032 (Aya 23: Open Weight Releases to Further Multilingual Progress, submitted 2024-05-23) and HF CohereLabs/aya-23-35B model card (CC-BY-NC license, 8192-token/8K context, GQA+256k BPE tokenizer). MMLU 58.2 score for the 35B variant specifically confirmed via search of the paper's content ('Aya-23-35B achieves an average score of 58.2 on multilingual MMLU'). No changes needed."

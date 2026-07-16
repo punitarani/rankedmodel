@@ -104,7 +104,23 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2311.16867",
       "notes": "From Table 20 of the Falcon tech report."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 4.62,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-7b",
+      "evaluatedAt": "2023-12-03",
+      "notes": "5-shot GSM8K acc (0.046247) from the archived HF Open LLM Leaderboard details dataset for tiiuae/falcon-7b, latest run 2023-12-03T17:58:16 (harness|gsm8k|5). GSM8K was not previously tracked at all for this model."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 34.26,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-7b",
+      "evaluatedAt": "2023-07-19",
+      "notes": "0-shot TruthfulQA mc2 (0.342638) from the archived HF Open LLM Leaderboard details dataset for tiiuae/falcon-7b, run 2023-07-19T10:51:47 (harness|truthfulqa:mc|0). TruthfulQA was not previously tracked at all for this model."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (tiiuae/falcon-7b) and TII/ATRC press coverage: 7B params, Apache 2.0, 2048-token (2K) context, released May 25 2023 together with Falcon-40B/1.3B. open-llm-leaderboard-avg 48.8 confirmed verbatim on huggingface.co/blog/falcon. Corrected langCount 9\u219211: the card's language list (English, German, Spanish, French primary + Italian, Portuguese, Polish, Dutch, Romanian, Czech, Swedish limited) is identical to Falcon-40B's and totals 11, not 9."
+  "verificationNotes": "Confirmed real via HF model card (tiiuae/falcon-7b) and TII/ATRC press coverage: 7B params, Apache 2.0, 2048-token (2K) context, released May 25 2023 together with Falcon-40B/1.3B. open-llm-leaderboard-avg 48.8 confirmed verbatim on huggingface.co/blog/falcon. Corrected langCount 9→11: the card's language list (English, German, Spanish, French primary + Italian, Portuguese, Polish, Dutch, Romanian, Czech, Swedish limited) is identical to Falcon-40B's and totals 11, not 9."
 }

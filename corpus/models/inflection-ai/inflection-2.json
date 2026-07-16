@@ -71,7 +71,47 @@
       "sourceUrl": "https://www.searchenginejournal.com/new-ai-model-outperforms-googles-powerful-palm-2/502191/",
       "evaluatedAt": "2023-11-27",
       "notes": "Confirmed via direct raw-HTML fetch of the SEJ article: literal text 'These are the scores: LLaMA-2 70B: 29.9 | PaLM-2S: 37.6 | Inflection-2: 44.5 | GPT-4: 67.0' appears verbatim in the page body under the HumanEval section, relaying Inflection AI's own published chart. Labeled self-reported per the corpus's existing convention for this source."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 81.4,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2",
+      "evaluatedAt": "2023-11-22",
+      "notes": "GSM8k, 8-shot (with chain-of-thought, per the page's stated methodology), from Table 4 (math/coding benchmarks) on Inflection AI's official Inflection-2 launch page. Rendered as a vector-outlined SVG image (framerusercontent.com/images/oZzGcrq1z1UxYXFVWgk83eN5sE.svg) with no extractable text layer; confirmed by directly rendering the asset in a browser (full table: LLaMA-2-70B=56.8, Grok-1=62.9, PaLM-2-L=80.7, GPT-4=92.0, Inflection-1=62.9[matches existing tracked value], Inflection-2=81.4). This supersedes an earlier research pass's attempted GSM8K figure of 89.3 for Inflection-2, which this corpus correctly dropped as unverifiable chart-only data (per this model's verificationNotes) -- 81.4 is the actual, now-confirmed value from the chart."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 87.2,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2",
+      "evaluatedAt": "2023-11-22",
+      "notes": "TriviaQA, Wikipedia split, 1-shot, from Table 3 (question-answering benchmarks) on Inflection AI's official Inflection-2 launch page. Rendered as a vector-outlined SVG image (framerusercontent.com/images/CoBFTzzwHyvV2PIacD2qAnuiE0.svg); confirmed by directly rendering the asset in a browser (full row: LLaMA-2=85.0, PaLM-2-Large=86.1, Inflection-1=85.0[consistent with the existing Inflection-1 entry's noted 'up to 85.0 on the Wikipedia split, 1-shot'], Inflection-2=87.2). This supersedes an earlier research pass's attempted TriviaQA figure of 86.3 for Inflection-2, which this corpus correctly dropped as unverifiable chart-only data -- 87.2 is the actual, now-confirmed value."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 84.2,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2",
+      "evaluatedAt": "2023-11-22",
+      "notes": "PIQA, 0-shot, Inflection-2 column of Table 2 on Inflection AI's official Inflection-2 launch page. Rendered as a vector-outlined SVG image (framerusercontent.com/images/WcZyvwpmgQWfv7sUpfkL0mY3N8.svg), confirmed by direct browser rendering: full row reads HellaSwag(0)=87.1, HellaSwag(1)=87.7, PIQA(0)=84.2, PIQA(1)=85.0, LAMBADA(1)=86.5, ARC-E(1)=91.3, ARC-C(1)=70.7 for Inflection-2."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 91.3,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2",
+      "evaluatedAt": "2023-11-22",
+      "notes": "ARC-Easy, 1-shot, Inflection-2 column of Table 2 on Inflection AI's official Inflection-2 launch page. Same SVG table as the piqa entry (framerusercontent.com/images/WcZyvwpmgQWfv7sUpfkL0mY3N8.svg), confirmed by direct browser rendering."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 70.7,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2",
+      "evaluatedAt": "2023-11-22",
+      "notes": "ARC-Challenge, 1-shot, Inflection-2 column of Table 2 on Inflection AI's official Inflection-2 launch page. Same SVG table as the piqa entry (framerusercontent.com/images/WcZyvwpmgQWfv7sUpfkL0mY3N8.svg), confirmed by direct browser rendering. Note this is a 1-shot setting (much lower than the 25-shot ARC-Challenge convention used for the Inflection-1/Inflection-2.5 entries elsewhere in this batch) -- no 25-shot ARC-Challenge figure for Inflection-2 itself was found on any Inflection AI page."
     }
   ],
-  "verificationNotes": "Confirmed model is real; training-completion/announcement dated Nov 22-28 2023 across sources (Forbes article dated Nov 22, 2023), consistent with record. DROPPED three result rows that could not be confirmed as literal text on the cited inflection.ai/inflection-2 page: self-reported MMLU 86.8, GSM8K 89.3, and TriviaQA 86.3. Direct full-text fetch of that page (twice) found these benchmark tables are presented only as chart IMAGES \u2014 the numeric strings '86.8', '89.3', and '86.3' do not appear anywhere in the page's actual text/markdown, and no alternate source could locate a text-form citation of these exact figures. Kept HellaSwag 89 (literally stated as '89.0' in body text) and independent MMLU 79.6 (literally confirmed on searchenginejournal.com's comparison table)."
+  "verificationNotes": "Confirmed model is real; training-completion/announcement dated Nov 22-28 2023 across sources (Forbes article dated Nov 22, 2023), consistent with record. DROPPED three result rows that could not be confirmed as literal text on the cited inflection.ai/inflection-2 page: self-reported MMLU 86.8, GSM8K 89.3, and TriviaQA 86.3. Direct full-text fetch of that page (twice) found these benchmark tables are presented only as chart IMAGES — the numeric strings '86.8', '89.3', and '86.3' do not appear anywhere in the page's actual text/markdown, and no alternate source could locate a text-form citation of these exact figures. Kept HellaSwag 89 (literally stated as '89.0' in body text) and independent MMLU 79.6 (literally confirmed on searchenginejournal.com's comparison table)."
 }

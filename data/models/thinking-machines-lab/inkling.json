@@ -1,0 +1,51 @@
+{
+  "slug": "inkling",
+  "name": "Inkling",
+  "orgSlug": "thinking-machines-lab",
+  "familySlug": "inkling",
+  "releaseDate": "2026-07-15",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "Apache 2.0",
+  "paramsB": 975,
+  "activeParamsB": 41,
+  "archClass": "moe",
+  "archDisplay": "Sparse MoE, 66 layers (975B total / 41B active, 6-of-256 routed experts + 2 shared experts/token), hybrid sliding-window/global attention (5:1), relative positional features (no RoPE)",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.87,
+    "output": 4.68
+  },
+  "links": {
+    "hf": "thinkingmachines/Inkling",
+    "docs": "https://thinkingmachines.ai/model-card/inkling/"
+  },
+  "note": "Thinking Machines Lab's (Mira Murati's startup) first public model release — a 975B/41B-active MoE with adjustable inference-time \"thinking effort\", calibrated uncertainty, and text/vision/audio input.",
+  "quants": [
+    "NVFP4",
+    "GGUF"
+  ],
+  "vramQ4Gb": 600,
+  "vramFp16Gb": 1900,
+  "tps4090": null,
+  "tpsNote": "Official NVFP4 checkpoint needs Blackwell-class GPUs (~600GB VRAM); community Unsloth GGUF quants range 1-bit (~270GB) to 8-bit (~870GB) — far beyond a single RTX 4090 at any quant level.",
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

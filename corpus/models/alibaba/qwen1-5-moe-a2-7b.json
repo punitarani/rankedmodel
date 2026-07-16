@@ -68,6 +68,62 @@
       "sourceUrl": "https://qwenlm.github.io/blog/qwen-moe/",
       "evaluatedAt": "2024-03-28",
       "notes": "base model"
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 69.53,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2602.11184",
+      "evaluatedAt": "2026-02-24",
+      "notes": "FP16 baseline row, Table 10 (Appendix A.7) of KBVQ-MoE (ICLR 2026, Xu/Zhao/Hu/Chen/Yang, Houmo AI + NTU) -- a third-party MoE-quantization paper using the LM-Evaluation-Harness toolkit on the base model. Verified via direct PDF read of arXiv:2602.11184. Independent of Alibaba's own launch-blog figures already cited for mmlu/gsm8k/humaneval."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 44.03,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2602.11184",
+      "evaluatedAt": "2026-02-24",
+      "notes": "FP16 baseline row, Table 10 (Appendix A.7) of KBVQ-MoE (ICLR 2026). Same eval run as the other arc-easy/hellaswag/lambada/piqa/winogrande entries added alongside this one."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 77.26,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2602.11184",
+      "evaluatedAt": "2026-02-24",
+      "notes": "Labeled 'HE' in the paper's Table 10 (confirmed via section 5 text listing 'Arc-Challenge, Arc-Easy, HellaSwag, LAMBADA-openai, LAMBADA-standard, PIQA, WinoGrande' as the 7 zero-shot tasks -- not to be confused with HumanEval, which this table does not include). FP16 baseline row."
+    },
+    {
+      "benchmarkSlug": "lambada",
+      "score": 71.28,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2602.11184",
+      "evaluatedAt": "2026-02-24",
+      "notes": "Reported as 'LAMBADA-openai' in Table 10 (the more commonly cited LAMBADA variant). A second 'LAMBADA-standard' split scored 64.62 in the same table but is not separately mapped since the taxonomy has a single 'lambada' slug."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 80.47,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2602.11184",
+      "evaluatedAt": "2026-02-24",
+      "notes": "FP16 baseline row, Table 10 (Appendix A.7) of KBVQ-MoE (ICLR 2026)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 69.3,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2602.11184",
+      "evaluatedAt": "2026-02-24",
+      "notes": "Labeled 'WI' in the paper's Table 10. FP16 baseline row of KBVQ-MoE (ICLR 2026)."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 7.17,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen-moe/",
+      "evaluatedAt": "2024-03-28",
+      "notes": "MT-Bench score for the Qwen1.5-MoE-A2.7B-Chat (instruction-tuned) variant, from the same official launch blog already used as this model's primary spec source (specSources.releaseDate). The page's benchmark table was previously only mined for the 3 base-model results (mmlu/gsm8k/humaneval); this chat-model MT-Bench figure sits on the same page but had not been captured."
     }
   ],
   "verificationNotes": "Fetched qwenlm.github.io/blog/qwen-moe/ directly: confirms release 2024-03-28, 14.3B total/2.7B activated params, 64 fine-grained experts (4 shared always-on + 60 routed, 4 activated/token), upcycled from Qwen-1.8B, ~25% training cost and 1.74x throughput vs Qwen1.5-7B. All 3 cited result rows (MMLU 62.5, GSM8K 61.5, HumanEval 34.2) appear verbatim on the page. 32K context corroborated by qwenlm.github.io/blog/qwen1.5/ (all Qwen1.5 models support 32768 tokens). No changes made."

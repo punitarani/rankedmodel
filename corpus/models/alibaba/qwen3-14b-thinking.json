@@ -125,7 +125,39 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/pdf/2505.09388",
       "notes": "Codeforces rating (95.3rd percentile), Table 15, Qwen3-14B (Thinking) column"
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-14b-instruct-reasoning",
+      "evaluatedAt": "2026-07-15",
+      "notes": "GDPval-AA v2, independently measured by Artificial Analysis on the model's live 'Qwen3 14B (Reasoning)' page (part of Intelligence Index v4.1 breakdown). Qwen3-14B scored 0% on this real-world agentic-work eval -- tied at the bottom of the size class with Qwen3-30B-A3B-2507, NVIDIA Nemotron 3 Nano, Qwen3-32B and Magistral Small 1.2, versus Kimi K2.6 at 35% and Nemotron 3 Ultra at 33%. Genuinely new: this benchmark is not present in the file at all."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 4,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-14b-instruct-reasoning",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Humanity's Last Exam, independently measured by Artificial Analysis (Intelligence Index v4.1 breakdown) on the 'Qwen3 14B (Reasoning)' page. Score 4%, versus 27% for Nemotron 3 Ultra and 53% for Claude Fable 5. Not currently tracked in the file (no hle row present at all)."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 41,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-14b-instruct-reasoning",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench (instruction following), independently measured by Artificial Analysis on the 'Qwen3 14B (Reasoning)' page. Score 41%. Distinct from the already-tracked self-reported IFEval score (85.4) -- IFBench is a separate taxonomy slug and was not previously present in the file."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 5,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-14b-instruct-reasoning",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Terminal-Bench v2.1 (agentic coding & terminal use), independently measured by Artificial Analysis. Score 5%. Not currently tracked in the file at all (no terminal-bench-2 row present)."
     }
   ],
-  "verificationNotes": "Confirmed via HF model card (14.8B total/13.2B non-embedding, Apache 2.0, native 32,768 tokens extendable to 131,072/128K via YaRN, 100+ languages) and qwenlm.github.io/blog/qwen3 (release date literally 2025-04-29; 119 languages confirmed). Downloaded arxiv.org/pdf/2505.09388 (Qwen3 Technical Report, PDF metadata dated 2025-05-14) and read Table 15 directly: Qwen3-14B (Thinking) row shows AIME'24=79.3, LiveCodeBench v5=63.5, GPQA-Diamond=64.0, BFCL v3=70.4 \u2014 every value matches exactly. Note ctxK=128 reflects YaRN-extended max; native window is 32K (consistent with sibling records' convention, not an error)."
+  "verificationNotes": "Confirmed via HF model card (14.8B total/13.2B non-embedding, Apache 2.0, native 32,768 tokens extendable to 131,072/128K via YaRN, 100+ languages) and qwenlm.github.io/blog/qwen3 (release date literally 2025-04-29; 119 languages confirmed). Downloaded arxiv.org/pdf/2505.09388 (Qwen3 Technical Report, PDF metadata dated 2025-05-14) and read Table 15 directly: Qwen3-14B (Thinking) row shows AIME'24=79.3, LiveCodeBench v5=63.5, GPQA-Diamond=64.0, BFCL v3=70.4 — every value matches exactly. Note ctxK=128 reflects YaRN-extended max; native window is 32K (consistent with sibling records' convention, not an error)."
 }

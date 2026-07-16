@@ -73,6 +73,45 @@
       "score": 38.7,
       "source": "self-reported",
       "sourceUrl": "https://www.datacamp.com/blog/qwen-2-5-max"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 87.9,
+      "source": "self-reported",
+      "sourceUrl": "https://www.datacamp.com/blog/qwen-2-5-max",
+      "evaluatedAt": "2025-01-28",
+      "notes": "From the 'Base Models Benchmarks' section of the article, distinct from the already-tracked Instruct-model benchmarks (Arena-Hard/MMLU-Pro/GPQA/LiveCodeBench). Transcribes the official qwenlm.github.io/blog/qwen2.5-max/ base-model comparison chart (vs DeepSeek-V3-Base, Llama-3.1-405B, Qwen2.5-72B); the official blog's chart is image-only so cannot be text-verified directly, but the figure is independently corroborated verbatim by a second transcription on gocodeo.com/post/all-you-need-to-know-about-qwen2-5-max."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 92.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www.datacamp.com/blog/qwen-2-5-max",
+      "evaluatedAt": "2025-01-28",
+      "notes": "Base-model comparison chart from the official Qwen2.5-Max launch blog, corroborated verbatim by gocodeo.com's independent transcription of the same chart."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 94.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www.datacamp.com/blog/qwen-2-5-max",
+      "evaluatedAt": "2025-01-28",
+      "notes": "Base-model comparison chart from the official Qwen2.5-Max launch blog, corroborated verbatim by gocodeo.com's independent transcription of the same chart."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 68.5,
+      "source": "self-reported",
+      "sourceUrl": "https://www.datacamp.com/blog/qwen-2-5-max",
+      "evaluatedAt": "2025-01-28",
+      "notes": "Base-model comparison chart from the official Qwen2.5-Max launch blog, corroborated verbatim by gocodeo.com's independent transcription of the same chart."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1374,
+      "source": "independent",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "notes": "LMArena (Chatbot Arena/Arena.ai) Text leaderboard Elo rating for model id 'qwen2.5-max', rank #156 as of this July 2026 live fetch, +/-4 CI, listed as proprietary/Alibaba. This is the model's now-dated standing after ~18 months of newer frontier models were added to the arena; not comparable in magnitude to the much higher score tracked under the same slug for the newer Qwen3-Max."
     }
   ],
   "verificationNotes": "Confirmed real; blog qwenlm.github.io/blog/qwen2.5-max/ byline gives Jan 28 2025 (matches record; a secondary source said Jan 29, byline is authoritative), confirms closed/proprietary large-scale MoE pretrained on 20T+ tokens, API id qwen-max-2025-01-25, and that it beats DeepSeek V3 on Arena-Hard/LiveBench/LiveCodeBench/GPQA-Diamond. artificialanalysis.ai confirms 32K context and closed weights. DashScope pricing confirmed at $1.60/$6.40 per 1M input/output tokens. All 5 result rows verified verbatim on datacamp.com/blog/qwen-2-5-max. 'deprecated' status could not be confirmed via an explicit official deprecation notice -- it is a reasonable inference given Alibaba has since shipped Qwen3-Max/3.5/3.6/3.7-Max, but some third-party docs still list qwen-max-2025-01-25 as accessible; flagging this as lower-confidence than the other fields."

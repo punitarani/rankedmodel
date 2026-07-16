@@ -146,7 +146,15 @@
       "source": "self-reported",
       "sourceUrl": "https://cdn.amazon.science/96/7d/0d3e59514abf8fdcfafcdc574300/nova-tech-report-20250317-0810.pdf",
       "notes": "Berkeley Function-Calling Leaderboard v3 overall accuracy (as of the Nov 17, 2024 BFCL update) from Table 4 of the official Nova technical report, matching the bfcl-v3 taxonomy slug specifically since the report explicitly names it 'BFCL v3'."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8,
+      "source": "self-reported",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/benchmarking-amazon-nova-a-comprehensive-analysis-through-mt-bench-and-arena-hard-auto/",
+      "evaluatedAt": "2025-07-24",
+      "notes": "Median MT-Bench score of 8.0 (0-10 scale, single-answer grading across 8 domains: Writing, Roleplay, Reasoning, Math, Coding, Data Extraction, STEM, Humanities), judged by Claude 3.7 Sonnet. From AWS's official ML Blog post 'Benchmarking Amazon Nova: A comprehensive analysis through MT-Bench and Arena-Hard-Auto' (published July 24, 2025), directly fetched and confirmed: 'Both Amazon Nova Lite and Nova Micro achieved respectable median scores of 8.0.' This is a genuinely new benchmark (mt-bench) not previously tracked for this model. Note: the same post also reports an Arena-Hard-Auto pairwise Bradley-Terry score for Nova Lite of 6.51-6.98 (25th-75th percentile, CI -0.22/+0.25), but that is reported as a range rather than a single point score, so it was not added as a discrete result."
     }
   ],
-  "verificationNotes": "Confirmed real: Dec 3, 2024 re:Invent launch (Amazon Press Center, TechCrunch, Businesswire all corroborate). Confirmed 300K context, multimodal text/image/video (AWS Nova docs), 200-language support (AWS re:Post + Nova language docs), $0.06/$0.24 per M pricing (matches $0.00006/$0.00024 per 1K on AWS Nova pricing page). All 8 benchmark rows (MMLU 80.5, GPQA 42, MATH 73.3, HumanEval 85.4, GSM8K 94.5, BBH 82.4, IFEval 89.7, DROP 80.2) confirmed to literally appear on deepranking.ai/llm-models/nova-lite. Minor note: deepranking.ai's own page lists a Nov 19, 2024 date for Nova Lite, but all official Amazon sources confirm Dec 3, 2024 \u2014 kept the Amazon-sourced date."
+  "verificationNotes": "Confirmed real: Dec 3, 2024 re:Invent launch (Amazon Press Center, TechCrunch, Businesswire all corroborate). Confirmed 300K context, multimodal text/image/video (AWS Nova docs), 200-language support (AWS re:Post + Nova language docs), $0.06/$0.24 per M pricing (matches $0.00006/$0.00024 per 1K on AWS Nova pricing page). All 8 benchmark rows (MMLU 80.5, GPQA 42, MATH 73.3, HumanEval 85.4, GSM8K 94.5, BBH 82.4, IFEval 89.7, DROP 80.2) confirmed to literally appear on deepranking.ai/llm-models/nova-lite. Minor note: deepranking.ai's own page lists a Nov 19, 2024 date for Nova Lite, but all official Amazon sources confirm Dec 3, 2024 — kept the Amazon-sourced date."
 }

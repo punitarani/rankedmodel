@@ -147,6 +147,30 @@
       "source": "independent",
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "notes": "Third-party Scale AI SWE-Bench Pro public leaderboard result, surfaced via the HF model card's community 'Eval Results' widget (unverified badge, PR-submitted by a HF community member, not by Qwen). This is an independent/aggregator result, not a Qwen self-report."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 12,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-235b-a22b-instruct-reasoning",
+      "evaluatedAt": "2026-07-14",
+      "notes": "Humanity's Last Exam, independently evaluated by Artificial Analysis on their 'Qwen3 235B A22B (Reasoning)' page, explicitly labeled 'Released April 2025' -- this is the original checkpoint this file tracks, distinct from the separately-cataloged Qwen3-235B-A22B-Thinking-2507 update (which has its own corpus entry at qwen3-235b-a22b-thinking-2507.json). Read via live browser render since the page is JS-rendered. No hle slug was previously present in this file. [score corrected during round-6 completeness verify: proposed 8 -> 12]"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 39,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-235b-a22b-instruct-reasoning",
+      "evaluatedAt": "2026-07-14",
+      "notes": "IFBench, independently evaluated by Artificial Analysis on the original (April 2025, non-2507) 'Qwen3 235B A22B (Reasoning)' page. Distinct from the self-reported IFEval (83.4) already tracked. No ifbench slug was previously present."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 49.8,
+      "source": "independent",
+      "sourceUrl": "https://aider.chat/2025/05/08/qwen3.html",
+      "evaluatedAt": "2025-05-08",
+      "notes": "Aider Polyglot coding benchmark, independent third-party eval by the Aider project (not a Qwen self-report). Row labeled 'Qwen3 235B A22B diff on OpenRouter, all providers, default settings (thinking)' -- confirmed via raw HTML fetch (curl) that this is the only thinking/reasoning-mode-enabled row for this model in the post; all other configurations tested explicitly disabled thinking (/no_think). Matches this file's original April 2025 thinking-mode checkpoint. No aider-polyglot slug was previously present in this file."
     }
   ],
   "verificationNotes": "Confirmed via HF model card (235B total/22B active, 128 experts/8 active per token, Apache 2.0, native 32,768 tokens extendable to 131,072/128K via YaRN) and qwenlm.github.io/blog/qwen3 (release date 2025-04-29). Read Table 11 of arxiv.org/pdf/2505.09388 directly: AIME'24=85.7, LiveCodeBench v5=70.7, GPQA-Diamond=71.1, BFCL v3=70.8 all match exactly; HF page confirmed MMLU-Pro=68.18 verbatim. No changes."

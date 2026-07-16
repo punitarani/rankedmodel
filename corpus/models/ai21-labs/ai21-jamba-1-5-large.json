@@ -126,6 +126,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2408.12570v1",
       "notes": "0-shot TruthfulQA score from Table 2 (Academic Benchmarks) of the Jamba-1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 73.94,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2408.12570v1",
+      "evaluatedAt": "2024-08-22",
+      "notes": "Multilingual MMLU (Table 6 of the Jamba-1.5 technical report), evaluated via the LM Evaluation Harness across Spanish, Portuguese, French, German, Arabic, Italian, and Dutch (per-language: 75.5/75.5/75.8/73.9/67.1/75.2/74.6); average reported as 73.94. Not currently tracked in the corpus (only the English mmlu score is present). Not force-fit to gaokao-math or other slugs -- this is a distinct multilingual-MMLU evaluation genuinely matching the taxonomy's mmmlu slug."
     }
   ],
   "verificationNotes": "Confirmed via HF model card ai21labs/AI21-Jamba-Large-1.5 (94B active/398B total, Jamba Open Model License permitting commercial use, 256K context, 9 languages: English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, Hebrew) and ai21.com/blog/announcing-jamba-model-family/ (published 2024-08-22, 256K effective context, Arena-Hard 65.4 for Large matching the arena result row). All 9 arxiv-sourced benchmark rows (MMLU 80, MMLU-Pro 48.3, GPQA 36.9, ARC-Challenge 93, BBH 65.5, HumanEval 71.3, GSM8K 87, IFEval 81.5, BFCL 85.5) plus RULER 95.7 were fetched directly from arxiv.org/html/2408.12570v1 Tables 2/4 and match exactly. $2/$8 per-million-token pricing corroborated by independent pricing aggregators. All fields left unchanged."

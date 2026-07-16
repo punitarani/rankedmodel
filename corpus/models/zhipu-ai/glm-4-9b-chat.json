@@ -107,7 +107,31 @@
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-06-25",
       "notes": "LogicKor official leaderboard, model_id THUDM/glm-4-9b-chat, default prompt strategy"
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 65.3,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/glm-4-9b-chat",
+      "evaluatedAt": "2024-06-05",
+      "notes": "MGSM (Multilingual Grade School Math) score from the official model card's 'Multi Language' benchmark table (11 languages: zh, en, bn, de, es, fr, ja, ru, sw, te, th), also confirmed verbatim in the GitHub README_20240605.md. Not previously tracked -- corpus only had the English-only GSM8K score for this model."
+    },
+    {
+      "benchmarkSlug": "xwinograd",
+      "score": 73.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/glm-4-9b-chat",
+      "evaluatedAt": "2024-06-05",
+      "notes": "XWinograd score from the official model card's 'Multi Language' benchmark table (6 languages: zh, en, fr, jp, ru, pt), confirmed verbatim in GitHub README_20240605.md. Genuinely new benchmark slug for this model -- not a duplicate of any existing entry."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 56.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/zai-org/glm-4-9b-chat",
+      "evaluatedAt": "2024-06-05",
+      "notes": "M-MMLU (multilingual MMLU, 'all languages') score from the official model card's 'Multi Language' benchmark table, confirmed verbatim in GitHub README_20240605.md. Mapped to the 'mmmlu' taxonomy slug consistent with how other corpus entries (e.g. Phi-4-mini) use that slug for multilingual-MMLU results rather than exclusively OpenAI's MMMLU set."
     }
   ],
-  "verificationNotes": "Confirmed real. Release date 2024-06-05 verified via GitHub zai-org/GLM-4 file literally named README_20240605.md. HF safetensors metadata shows 9,399,951,392 params (9.4B, rounds to 9 \u2014 matches). config.json seq_length=131072 confirms 128K context. License tag is 'license:other' (custom GLM-4 license) \u2014 matches. All 6 result rows (MMLU 72.4, GSM8K 79.6, MATH 50.6, HumanEval 71.8, IFEval 69.0, C-Eval 75.6) re-confirmed verbatim on the HF README. No changes made."
+  "verificationNotes": "Confirmed real. Release date 2024-06-05 verified via GitHub zai-org/GLM-4 file literally named README_20240605.md. HF safetensors metadata shows 9,399,951,392 params (9.4B, rounds to 9 — matches). config.json seq_length=131072 confirms 128K context. License tag is 'license:other' (custom GLM-4 license) — matches. All 6 result rows (MMLU 72.4, GSM8K 79.6, MATH 50.6, HumanEval 71.8, IFEval 69.0, C-Eval 75.6) re-confirmed verbatim on the HF README. No changes made."
 }

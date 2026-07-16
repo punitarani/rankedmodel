@@ -177,11 +177,11 @@ describe('derived scores match the D21 contract (goldens)', () => {
       .filter((m) => m.rankOverall != null && m.rankOverall <= 5)
       .sort((a, b) => (a.rankOverall ?? 0) - (b.rankOverall ?? 0))
     expect(top5.map((m) => [m.slug, m.overallIndex])).toEqual([
-      ['gpt-5-6', 3239.1],
-      ['claude-fable-5', 3157.5],
-      ['gpt-5-5-xhigh', 3045.2],
-      ['claude-opus-4-8', 2998.2],
-      ['gpt-5-4-pro', 2956.9],
+      ['gpt-5-6', 3145.8],
+      ['claude-fable-5', 3012.3],
+      ['claude-opus-4-8', 2889],
+      ['gpt-5-4-pro', 2850],
+      ['claude-sonnet-5', 2833.3],
     ])
   })
 
@@ -195,12 +195,15 @@ describe('derived scores match the D21 contract (goldens)', () => {
 
   it('gates a single-benchmark model out of the ranking (D20 coverage floor)', async () => {
     const { models } = await derived()
-    // Doubao-Seed-1.6 has exactly one tracked result — its rating exists (battles on one
+    // OpenAI Codex has exactly one tracked result — its rating exists (battles on one
     // benchmark still inform it) but it is UNRATED: no rank, never tops the leaderboard.
-    const doubao = models.find((m) => m.slug === 'doubao-seed-1-6')
-    expect(doubao?.ranked).toBe(false)
-    expect(doubao?.rankOverall).toBeNull()
-    expect(doubao?.overallIndex).toBe(1551.7)
+    // (Doubao-Seed-1.6, the prior fixture, gained enough coverage in a later research round
+    // to cross the D20 floor itself — a real, welcome outcome, but it stopped being a valid
+    // single-benchmark example.)
+    const codex = models.find((m) => m.slug === 'openai-codex')
+    expect(codex?.ranked).toBe(false)
+    expect(codex?.rankOverall).toBeNull()
+    expect(codex?.overallIndex).toBe(29.2)
     const top = models.find((m) => m.rankOverall === 1)
     expect(top?.slug).toBe('gpt-5-6')
   })
@@ -235,8 +238,8 @@ describe('derived scores match the D21 contract (goldens)', () => {
     const { models } = await derived()
     const llama = models.find((m) => m.slug === 'llama-3-1-405b')
     expect(llama?.ranked).toBe(true)
-    expect(llama?.overallIndex).toBe(1303)
-    expect(llama?.rankOverall).toBe(167)
+    expect(llama?.overallIndex).toBe(1271.2)
+    expect(llama?.rankOverall).toBe(164)
     // categoryIdx stays min-max (D21 keeps the radar on D2 bounds) — unchanged literals
     expect(llama?.categoryIdx).toEqual({
       'human-preference': 69.4,
@@ -262,11 +265,11 @@ describe('derived scores match the D21 contract (goldens)', () => {
   it('pins the real top-5 movers and their rating self-consistency', async () => {
     const { models, movers } = await derived()
     expect(movers.map((m) => [m.slug, m.prevSlug, m.delta])).toEqual([
-      ['sarvam-105b', 'sarvam-1-2b', 1684.5],
-      ['hy3', 'hunyuan-a13b', 1058.1],
-      ['smollm3-3b-think', 'smollm2-1-7b', 1044.2],
-      ['phi-4-reasoning', 'phi-4-mini-3-8b', 856],
-      ['phi-4-reasoning-14b', 'phi-4-mini-3-8b', 856],
+      ['sarvam-105b', 'sarvam-1-2b', 1551.9],
+      ['hy3', 'hunyuan-a13b', 1014.4],
+      ['smollm3-3b-think', 'smollm2-1-7b', 982.7],
+      ['smollm3-3b-no-thinking', 'smollm2-1-7b', 800.4],
+      ['phi-4-reasoning', 'phi-4-mini-3-8b', 766],
     ])
     // structural: every mover delta is the rounded rating gap between two RANKED models
     const bySlug = new Map(models.map((m) => [m.slug, m]))

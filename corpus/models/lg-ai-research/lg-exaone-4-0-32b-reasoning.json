@@ -110,7 +110,28 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2507.11407",
       "notes": "MMMLU (Multilingual MMLU) Spanish-language split, reasoning mode."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 10.5,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/exaone-4-0-32b-reasoning",
+      "notes": "Humanity's Last Exam score from Artificial Analysis' independent test run (embedded model data: hle:0.10519...). Not previously tracked for this model under any source."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 36.3,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/exaone-4-0-32b-reasoning",
+      "notes": "IFBench score from Artificial Analysis' independent test run (embedded model data: ifbench:0.36327...). Distinct benchmark from the already-tracked 'ifeval' slug (83.7, self-reported); ifbench itself was not tracked."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 17.3,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/exaone-4-0-32b-reasoning",
+      "notes": "τ²-Bench Telecom-domain score from Artificial Analysis' independent test run (embedded model data field 'tau2', confirmed via AA's own evaluations page to specifically denote the Telecom domain of tau2-bench). Distinct from the already-tracked 'tau-bench' slug (62.8 self-reported, Tau-Bench Retail domain, a different benchmark/domain); tau2-bench-telecom itself was not tracked for this model."
     }
   ],
-  "verificationNotes": "Same underlying checkpoint as the non-reasoning entry, verified identically (HF card, PR Newswire, release date, license, context, capabilities). LG's own PR Newswire release independently cites the reasoning-mode headline numbers (MMLU-Redux/Pro 92.3/81.8, GPQA-Diamond 75.4, AIME2025 85.3), corroborating them outside the paper. Fetched arxiv.org/html/2507.11407 and confirmed all 6 reasoning-mode rows (Table 3) match exactly: MMLU-Redux 92.3, MMLU-Pro 81.8, GPQA-Diamond 75.4, AIME2025 85.3, LiveCodeBench v5 72.6, IFEval 83.7 \u2014 no changes."
+  "verificationNotes": "Same underlying checkpoint as the non-reasoning entry, verified identically (HF card, PR Newswire, release date, license, context, capabilities). LG's own PR Newswire release independently cites the reasoning-mode headline numbers (MMLU-Redux/Pro 92.3/81.8, GPQA-Diamond 75.4, AIME2025 85.3), corroborating them outside the paper. Fetched arxiv.org/html/2507.11407 and confirmed all 6 reasoning-mode rows (Table 3) match exactly: MMLU-Redux 92.3, MMLU-Pro 81.8, GPQA-Diamond 75.4, AIME2025 85.3, LiveCodeBench v5 72.6, IFEval 83.7 — no changes."
 }

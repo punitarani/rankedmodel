@@ -112,6 +112,14 @@
       "sourceUrl": "https://www.datacamp.com/blog/gpt-5-2",
       "evaluatedAt": "2025-12-11",
       "notes": "SWE-Bench Pro score of 55.6% for GPT-5.2 (a new SOTA at launch), part of OpenAI's own launch benchmarks. Directly fetched datacamp.com's article which reports this figure; corroborated by multiple independent sources (Vellum's GPT-5.2 benchmarks write-up, a SWE-bench Pro leaderboard aggregator, and third-party commentary) all citing the identical 55.6% number."
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier1-3",
+      "score": 40.3,
+      "source": "self-reported",
+      "sourceUrl": "https://www.marktechpost.com/2025/12/11/openai-introduces-gpt-5-2-a-long-context-workhorse-for-agents-coding-and-knowledge-work/",
+      "evaluatedAt": "2025-12-11",
+      "notes": "FrontierMath Tier 1-3 (expert-level math), GPT-5.2 Thinking, maximum reasoning effort. OpenAI's own launch page (openai.com/index/gpt-5-2-for-science-and-math/) returns 403 to automated fetch, so sourced to MarkTechPost's direct report of the launch benchmarks; cross-corroborated by RD World Online and Vertu.com (vertu.com/ai-tools/gpt-5-2-benchmark-analysis-performance-comparison-vs-gpt-5-1-gemini-3-pro/), both independently citing the identical 40.3% figure. Represents a new SOTA at launch, ~10-point jump over GPT-5.1."
     }
   ],
   "verificationNotes": "Existence, Dec 11 2025 release, 400K context, and $1.75/$14 pricing confirmed directly via developers.openai.com/api/docs/models/gpt-5.2 and simonwillison.net/openai launch coverage. Six of seven benchmark rows (GPQA 92.4, SWE-bench 80, AIME 100, HLE 34.5, tau-bench 98.7, ARC-AGI-1 86.2, ARC-AGI-2 52.9) independently corroborated via marktechpost.com's direct report of the OpenAI launch page. Dropped the MMMLU row (89.6): could not find this figure for GPT-5.2 anywhere; found a different, unrelated 92.5% MMLU score and a 92.1% MGSM score instead, so 89.6 could not be confirmed and was removed."

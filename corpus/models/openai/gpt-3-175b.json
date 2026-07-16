@@ -127,6 +127,27 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2005.14165",
       "notes": "Few-shot accuracy, RACE-h split (Table 3.7)"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 43.9,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2009.03300",
+      "notes": "GPT-3 175B ('X-Large'), few-shot, from Table 1 of the original MMLU paper (Hendrycks et al., ICLR 2021) -- the paper that introduced the benchmark and directly evaluated GPT-3 via the OpenAI API. This is the paper's own evaluation of GPT-3, not an OpenAI self-report. Confirmed by directly reading the PDF (Table 1: 'GPT-3 X-Large (few-shot)' row, Average column = 43.9)."
+    },
+    {
+      "benchmarkSlug": "anli",
+      "score": 36.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2005.14165",
+      "notes": "ANLI Round 1, few-shot (K=50), from Table H.1 ('Results on All Tasks for All Model Sizes') of the GPT-3 paper itself. In the same table/setting, R2=34.0 and R3=40.2 for the 175B model; R1 is recorded here since the corpus taxonomy has a single 'anli' slug -- matching the exact convention already used for PaLM 540B's anli entry in this corpus (which also picked R1 and noted R2/R3 in the note)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 58,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2109.07958",
+      "notes": "GPT-3-175B with the 'helpful' prompt, % True (human-evaluated) on the generation task -- explicitly the paper's own headline 'best model' figure (TruthfulQA: Lin, Hilton & Evans, 2021/2022; GPT-3 was the original/primary model this benchmark was built around). True+informative was 21% for the same run; the default QA prompt scored much lower (~20.4% true). Confirmed by directly reading the PDF text (Section 4.1: 'the best model (GPT-3-175B with helpful prompt) produced 58% true answers and 21% true and informative answers')."
     }
   ],
   "verificationNotes": "Confirmed via arXiv 2005.14165: 175B params, nctx=2048 (2K) context. LAMBADA 86.4 / HellaSwag 79.3 / TriviaQA 71.2 few-shot figures independently re-derived and match the paper. API private beta launch June 11, 2020 confirmed via TechCrunch. Base-model API retirement on 2024-01-04 confirmed (OpenAI's largest deprecation event). No changes made."

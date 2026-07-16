@@ -82,6 +82,54 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2312.06281",
       "evaluatedAt": "2023-12-01",
       "notes": "Independent re-measurement of the RLHF fine-tuned chat model itself. Verified directly against Meta's own official model card (github.com/meta-llama/llama-models MODEL_CARD.md): Meta's academic-benchmarks table (MMLU, BBH, AGI Eval, etc.) is reported ONLY for the base pretrained sizes (70B base = 68.9), never for the Llama-2-Chat fine-tunes, which get only a safety table (TruthfulQA/Toxigen). The EQ-Bench paper's Table 3 separately evaluated meta-llama/Llama-2-70b-chat-hf and got MMLU 63, which is what's added here rather than any Meta 'self-reported' figure (none exists for the chat model)."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 64.6,
+      "source": "independent",
+      "sourceUrl": "https://github.com/dsdanielpark/Open-LLM-Leaderboard-Report/blob/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "ARC-Challenge, 25-shot, meta-llama/Llama-2-70b-chat-hf. From a snapshot mirror of the HuggingFace Open LLM Leaderboard v1 (2023-09-04 run). Cross-corroborated independently at llm-explorer.com/model/meta-llama%2FLlama-2-70b-chat-hf (ARC 64.59, rounds to 64.6)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 85.9,
+      "source": "independent",
+      "sourceUrl": "https://github.com/dsdanielpark/Open-LLM-Leaderboard-Report/blob/main/assets/20230904/20230904.csv",
+      "evaluatedAt": "2023-09-04",
+      "notes": "HellaSwag, 10-shot, meta-llama/Llama-2-70b-chat-hf. HuggingFace Open LLM Leaderboard v1 (2023-09-04 run). Cross-corroborated at llm-explorer.com (HellaSwag 85.88, rounds to 85.9)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 26.69,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-70b-chat-hf/resolve/main/results_2023-10-17T05-07-42.486452.json",
+      "evaluatedAt": "2023-10-17",
+      "notes": "GSM8K, 5-shot (harness|gsm8k|5), acc 0.26687, from the official archived HuggingFace Open LLM Leaderboard v1 per-model results JSON for meta-llama/Llama-2-70b-chat-hf. Far below Meta's own paper-reported chat-model math figures because the leaderboard v1 harness used strict exact-match answer extraction; this is a genuinely distinct, independently-run measurement not currently tracked for this model."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 80.51,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-70b-chat-hf/resolve/main/results_2023-10-17T05-07-42.486452.json",
+      "evaluatedAt": "2023-10-17",
+      "notes": "Winogrande, 5-shot (harness|winogrande|5), acc 0.80505, from the official archived HuggingFace Open LLM Leaderboard v1 per-model results JSON for meta-llama/Llama-2-70b-chat-hf."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 10.5,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-70b-chat-hf/resolve/main/results_2023-10-17T05-07-42.486452.json",
+      "evaluatedAt": "2023-10-17",
+      "notes": "DROP, 3-shot (harness|drop|3), F1 10.50 (EM 4.04), from the official archived HuggingFace Open LLM Leaderboard v1 per-model results JSON for meta-llama/Llama-2-70b-chat-hf. Very low relative to the base-model DROP figure, consistent with known chat-format/prompt mismatches in the leaderboard v1 DROP harness, but it is a real, distinct reported measurement not currently tracked."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 11.6,
+      "source": "independent",
+      "sourceUrl": "https://www.lmsys.org/blog/2024-04-19-arena-hard/",
+      "evaluatedAt": "2024-04-19",
+      "notes": "Arena-Hard-Auto v0.1 score (GPT-4-Turbo judge) for llama-2-70b-chat-hf, from the LMSYS 'Arena-Hard Pipeline' launch blog post's leaderboard table (95% CI -1.6/+1.4)."
     }
   ],
   "verificationNotes": "Confirmed real model and specs (matches Llama-2-70B base specs). Fetched MODEL_CARD.md safety table for Llama-2-Chat and confirmed 70B row shows TruthfulQA 64.14 / Toxigen 0.01, matching exactly. No changes made."

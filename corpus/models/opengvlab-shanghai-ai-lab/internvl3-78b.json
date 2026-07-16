@@ -134,7 +134,15 @@
       "source": "self-reported",
       "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
       "notes": "Video-MME without subtitles (75.7 with subtitles also reported)"
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 46,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/",
+      "evaluatedAt": "2025-04-11",
+      "notes": "CharXiv reasoning-question (RQ) subset, matching the corpus convention of using the reasoning subset for the charxiv slug (cross-confirmed against arXiv:2504.10479 Table 3, which lists the same 46.0/85.1 RQ/DQ pair). Descriptive-question (DQ) subset was 85.1, not used. Not previously tracked for this model."
     }
   ],
-  "verificationNotes": "Confirmed real model. Corrected releaseDate source to the official OpenGVLab blog post (internvl.github.io, dated 2025-04-11), which matches the record's date \u2014 the arXiv paper (v1) was actually first submitted 2025-04-14, so that URL was a weaker/slightly inconsistent source for the release-date claim even though the date value itself was right. Confirmed via arXiv HTML (2504.10479v1) full text: MMMU 72.2, MathVista 79.0, OCRBench 906 all literally appear in the benchmark tables. Confirmed 32K context ('sequences of up to 32K tokens') in the same paper. Confirmed via HF model card: 78B total params, InternViT-6B-448px-V2_5 vision encoder, Qwen2.5-72B LLM backbone. Confirmed InternViT-6B is MIT-licensed (HF) and Qwen2.5-72B uses the non-Apache 'Qwen Research License Agreement' (HF LICENSE file / Qwen blog), matching the split-license description. Confirmed OpenGVLab/InternVL3-78B-AWQ exists on HF and is ~53GB, matching vramQ4Gb. No changes to numeric values were needed."
+  "verificationNotes": "Confirmed real model. Corrected releaseDate source to the official OpenGVLab blog post (internvl.github.io, dated 2025-04-11), which matches the record's date — the arXiv paper (v1) was actually first submitted 2025-04-14, so that URL was a weaker/slightly inconsistent source for the release-date claim even though the date value itself was right. Confirmed via arXiv HTML (2504.10479v1) full text: MMMU 72.2, MathVista 79.0, OCRBench 906 all literally appear in the benchmark tables. Confirmed 32K context ('sequences of up to 32K tokens') in the same paper. Confirmed via HF model card: 78B total params, InternViT-6B-448px-V2_5 vision encoder, Qwen2.5-72B LLM backbone. Confirmed InternViT-6B is MIT-licensed (HF) and Qwen2.5-72B uses the non-Apache 'Qwen Research License Agreement' (HF LICENSE file / Qwen blog), matching the split-license description. Confirmed OpenGVLab/InternVL3-78B-AWQ exists on HF and is ~53GB, matching vramQ4Gb. No changes to numeric values were needed."
 }

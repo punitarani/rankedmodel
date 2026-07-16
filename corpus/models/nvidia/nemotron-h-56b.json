@@ -118,6 +118,27 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/nvidia/Nemotron-H-56B-Base-8K",
       "notes": "HumanEval+, 0-shot"
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 85,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2504.03624",
+      "notes": "PIQA (0-shot, acc), Table 4 of the Nemotron-H arXiv technical report, 56B-Base column. Not present on the HF model card (which stops at HellaSwag/WinoGrande/MBPP+/HumanEval+); confirmed by direct inspection of the paper's HTML table rows."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 48.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2504.03624",
+      "notes": "OpenBookQA (0-shot, acc_norm), Table 4 of the Nemotron-H arXiv technical report, 56B-Base column. Not on the HF card; confirmed by direct inspection of the paper's HTML table rows."
+    },
+    {
+      "benchmarkSlug": "mmlu-stem",
+      "score": 80.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2504.03624",
+      "notes": "MMLU STEM (5-shot), Table 4 of the Nemotron-H arXiv technical report, 56B-Base column — distinct benchmark slug from the already-tracked full MMLU (84.21). Not on the HF card; confirmed by direct inspection of the paper's HTML table rows."
     }
   ],
   "verificationNotes": "Confirmed via HF model card (fetched): release date 2025-04-14, 56B params, 8K (8000-token) context, NVIDIA Internal Scientific R&D License, and all seven benchmark scores match exactly (MMLU 84.21, MMLU-Pro 60.51, GSM8K 93.71, MATH 59.42, HumanEval 60.37, ARC-C 94.97, HellaSwag 89.0)."

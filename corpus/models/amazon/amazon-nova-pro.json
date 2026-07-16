@@ -143,6 +143,14 @@
       "sourceUrl": "https://arxiv.org/pdf/2506.12103",
       "evaluatedAt": "2024-11-17",
       "notes": "Berkeley Function-Calling Leaderboard v3, overall accuracy, Nov 17 2024 leaderboard snapshot (Table 4)."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.5,
+      "source": "self-reported",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/benchmarking-amazon-nova-a-comprehensive-analysis-through-mt-bench-and-arena-hard-auto/",
+      "evaluatedAt": "2025-07-24",
+      "notes": "AWS Generative AI Innovation Center blog post (published 2025-07-24), single-answer grading with Anthropic's Claude 3.7 Sonnet as judge (0-10 scale). Nova Pro scored second-highest of the four Nova models with a wider 2.7-point min-max spread (6.44-9.13). Not previously tracked for this model. Same scale-mismatch caveat on Arena-Hard-Auto as noted for Nova Premier applies here too (custom 0-10 Bradley-Terry, not comparable to this corpus's 0-100 'arena-hard' scale) -- deliberately excluded."
     }
   ],
   "verificationNotes": "Confirmed real: Dec 3, 2024 re:Invent launch corroborated by multiple press sources. Confirmed 300K multimodal context, 200-language support, $0.80/$3.20 per M pricing (AWS Nova pricing/docs). All 9 benchmark rows (MMLU 85.9, GPQA 46.9, MATH 76.6, HumanEval 89.0, GSM8K 94.8, BBH 86.9, IFEval 92.1, DROP 85.4, ARC-Challenge 94.8) confirmed to literally appear on deepranking.ai/llm-models/nova-pro. No changes made."

@@ -34,7 +34,7 @@
     "hf": "moonshotai/Kimi-K2.6",
     "docs": "https://www.kimi.com/blog/kimi-k2-6"
   },
-  "note": "Successor to K2.5; Moonshot's flagship open-weight agentic/coding model, extends context to 256K, adds native image/video input, and scales its 'Agent Swarm' orchestration to 300 sub-agents / ~4,000 coordinated steps. Vendor claims top-of-open-weights on SWE-bench Verified and near-parity with GPT-5.5/Claude Opus 4.6-class closed models on several coding/agentic suites; independent Artificial Analysis Intelligence Index score was 44 (v4.1 methodology), and LMArena text arena placed it around #7 overall (Elo ~1522) as the top open-weight entrant at the time \u2014 both corroborate strong but not universally frontier-topping performance versus the more selective vendor benchmark set.",
+  "note": "Successor to K2.5; Moonshot's flagship open-weight agentic/coding model, extends context to 256K, adds native image/video input, and scales its 'Agent Swarm' orchestration to 300 sub-agents / ~4,000 coordinated steps. Vendor claims top-of-open-weights on SWE-bench Verified and near-parity with GPT-5.5/Claude Opus 4.6-class closed models on several coding/agentic suites; independent Artificial Analysis Intelligence Index score was 44 (v4.1 methodology), and LMArena text arena placed it around #7 overall (Elo ~1522) as the top open-weight entrant at the time — both corroborate strong but not universally frontier-topping performance versus the more selective vendor benchmark set.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
@@ -139,6 +139,22 @@
       "source": "independent",
       "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
       "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), OpenClaw harness, High reasoning effort: Pass rate 9.2% / Score 21.7% (rank 45). Score component used per corpus convention."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1190.4,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluatedAt": "2026-07-15",
+      "notes": "GDPval-AA v2 Elo = 1190.39 for Kimi K2.6, confirmed directly from the leaderboard page's embedded structured dataset (schema.org Dataset JSON-LD), independently measured by Artificial Analysis ('measurementTechnique: Independent test run by Artificial Analysis'). Note: Artificial Analysis's own launch-week article ('Kimi K2.6: The new leading open weights model') separately cites a higher Elo of 1520 for K2.6 at launch; the live number has since drifted down to 1190 as many more/stronger models (Claude Fable 5, GPT-5.6 Sol, etc.) were added to the comparison pool -- normal behavior for a continuously-updating relative Elo leaderboard anchored to a fixed human baseline. Used the current live figure since it's the one directly verifiable in the page's own dataset. GDPval-AA was previously only referenced narratively (as an Intelligence-Index component) in this model's notes/verificationNotes text, never as a discrete results-array entry."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1462,
+      "source": "independent",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-13",
+      "notes": "Arena.ai Text Arena Overall Elo for 'kimi-k2.6' -- rank 37/374, 36,683 votes, $0.95/$4 pricing and 262.1K context shown alongside it, all matching this model's price/ctx fields. Confirmed via the leaderboard's own embedded data table (Jul 13, 2026 snapshot). Previously only referenced narratively in this model's note text (~1522 launch-week Elo); this adds it as a discrete, currently-verified result."
     }
   ],
   "verificationNotes": "Confirmed real, released model (not a rumor). Cross-verified architecture/param counts (1T total/32B active/384 experts/61 layers/MLA/MoonViT) across the official Hugging Face model card and the official Kimi blog post (kimi.com/blog/kimi-k2-6). Release date April 20, 2026 corroborated by SiliconANGLE, MarkTechPost, Yicai Global, and the kimi-k2.org mirror; HF repo's own lastModified timestamp (2026-05-19) reflects a later card update, not the release date. Pricing $0.95/M input (cache miss) and $4.00/M output confirmed directly on Moonshot's own hosted platform (both platform.kimi.ai and artificialanalysis.ai's tracked listing agree). Independent corroboration beyond vendor self-reports: Artificial Analysis Intelligence Index = 44/100 (composite of GDPval-AA v2, tau3-Banking, Terminal-Bench v2.1, SciCode, HLE, GPQA-Diamond, CritPt, AA-Omniscience, AA-LCR) and an LMArena text-arena placement around #7 overall / Elo ~1522, both independently measured and both broadly consistent with (though less flattering than) Moonshot's own benchmark table."

@@ -1,4 +1,6 @@
 model_slug,score,source,source_url,evaluated_at,notes
+deepseekmath-7b,19,independent,https://arxiv.org/html/2409.12122v1,2024-09-18,"Qwen2.5-Math Technical Report (arXiv:2409.12122), Table 3, English math benchmark suite where DeepSeekMath-7B-RL is used as a specific-model baseline (same paper the corpus already cites for this model's independent gaokao-math result). Raw row verified: 'GSM8K 88.2 | MATH 52.4 | Minerva Math 20.6 | GaoKao 2023 En 43.6 | Olympiad Bench 19.0 | College Math 37.5 | MMLU STEM 64.8 | Avg. 46.6' (CoT mode). GSM8K/MATH already tracked under other sources so not re-added; Minerva Math and College Math have no taxonomy slug."
+doubao-1-5-pro,59.8,self-reported,https://seed.bytedance.com/doubao_1_5_pro,,OlympiadBench row of the official launch-page table (MATH section).
 internvl2-5-78b,11.6,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,
 minimax-vl-01,24.2,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,Listed as 'OlympiadBench (full)' in the card's Mathematics & Sciences section; slightly above the taxonomy's stated 0-22 range but is the same bilingual multimodal OlympiadBench evaluation.
 qvq-72b-preview,20.4,self-reported,https://huggingface.co/Qwen/QVQ-72B-Preview,,

@@ -102,6 +102,34 @@
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
       "evaluatedAt": "2026-03-17",
       "notes": "MMMU-Pro (standard, no Python tool; the 'w/ Python' variant scores 78.0%), xhigh reasoning effort."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 18.9,
+      "source": "independent",
+      "sourceUrl": "https://themodelbeat.com/models/gpt-5-4-mini",
+      "notes": "ARC-AGI-2 from Epoch AI's independent evaluation of GPT-5.4 mini, relayed via themodelbeat.com."
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier1-3",
+      "score": 28.3,
+      "source": "independent",
+      "sourceUrl": "https://themodelbeat.com/models/gpt-5-4-mini",
+      "notes": "FrontierMath (Tiers 1-3) from Epoch AI's independent evaluation of GPT-5.4 mini, relayed via themodelbeat.com."
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier4",
+      "score": 2.1,
+      "source": "independent",
+      "sourceUrl": "https://themodelbeat.com/models/gpt-5-4-mini",
+      "notes": "FrontierMath Tier 4 (hardest tier) from Epoch AI's independent evaluation of GPT-5.4 mini, relayed via themodelbeat.com."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 87.2,
+      "source": "independent",
+      "sourceUrl": "https://themodelbeat.com/models/gpt-5-4-mini",
+      "notes": "AIME 2024/2025 (combined) from Epoch AI's independent evaluation of GPT-5.4 mini, relayed via themodelbeat.com. Note: a separate low-quality source (layerlens.ai) reported an implausible AIME figure of 6.67% for this model (lower than its own HLE score, and wildly inconsistent with peer models) -- that figure was checked and rejected as unreliable rather than used here."
     }
   ],
   "verificationNotes": "Existence and distinctness from GPT-5 mini confirmed by directly fetching OpenAI's own official launch post (openai.com/index/introducing-gpt-5-4-mini-and-nano/, dated Mar 17 2026), which explicitly benchmarks GPT-5.4 mini against GPT-5 mini side by side and states it 'significantly improves over GPT-5 mini across coding, reasoning, multimodal understanding, and tool use.' Pricing ($0.75/$4.50 per M), 400K context, and 128K max output independently confirmed via OpenAI's live developers.openai.com/api/docs/models/gpt-5.4-mini model card (own snapshot dated gpt-5.4-mini-2026-03-17, matching the announcement date). Independent secondary source datacamp.com/blog/gpt-5-4-mini-nano (fetched directly) corroborates the same benchmark table verbatim and its FAQ states plainly: 'Is GPT-5.4 mini just a faster GPT-5 mini? No, it's both faster and significantly stronger on benchmarks... while keeping a 400k context window.' All 7 result rows taken from OpenAI's own multi-table benchmark breakdown (Coding/Tool-calling/Intelligence/MM-Vision-CUA sections); Toolathlon and MCP Atlas scores were also published but omitted here since no corpus benchmark slug matches them."

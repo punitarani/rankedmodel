@@ -47,6 +47,14 @@
     "releaseDate": "https://tech.eu/2024/05/15/silo-ai-s-new-release-viking-7b-bridges-the-gap-for-low-resource-languages/",
     "openness": "https://huggingface.co/LumiOpen/Viking-7B"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "fin-bench",
+      "score": 48.07,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/Finnish-NLP/Ahma-7B",
+      "notes": "TurkuNLP FIN-bench overall average, 3-shot, from Finnish-NLP's Ahma-7B model-card comparison table (an independent third-party evaluation of LumiOpen/Viking-7B, not self-reported by Silo AI/LumiOpen). The same table also reports a 0-shot overall average of 36.50 for Viking-7B; 3-shot chosen as the more commonly-cited headline figure."
+    }
+  ],
   "verificationNotes": "Confirmed via HF model card (7.55B params, 32 layers, d_model 4096, RoPE+FlashAttention, Apache-2.0, 4096 seq length, Finnish/English/Swedish/Danish/Norwegian/Icelandic+code, 2T training tokens) and tech.eu article (release date 2024-05-15). CORRECTED: the original record's architecture claim of \"grouped-query attention\" is false — fetched the model's config.json directly and found num_attention_heads == num_key_value_heads == 32, i.e. standard multi-head attention, not GQA. archDisplay updated accordingly; no other changes."
 }

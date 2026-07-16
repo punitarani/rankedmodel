@@ -88,6 +88,46 @@
       "sourceUrl": "https://github.com/tatsu-lab/alpaca_eval/blob/main/docs/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
       "evaluatedAt": "2023-06-01",
       "notes": "AlpacaEval (GPT-4 annotator) win rate vs. text-davinci-003 reference = 71.80% (avg response length 1249 tokens), status 'verified' in the official tatsu-lab/alpaca_eval leaderboard CSV; row links directly to https://huggingface.co/timdettmers/guanaco-65b and to the model's raw outputs at results/guanaco-65b/model_outputs.json in the same repo. The newer length-controlled win rate for this entry is 54.69%, but that metric postdates this model and the classic win_rate is the metric the leaderboard originally reported it under."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 65.44,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_TheBloke__guanaco-65B-HF",
+      "evaluatedAt": "2023-07-25",
+      "notes": "ARC-Challenge 25-shot acc_norm from the HF Open LLM Leaderboard (old) details dataset for TheBloke/guanaco-65B-HF, a full-weights merge of the same timdettmers/guanaco-65b QLoRA adapter (identical model weights, different packaging format). Verified via raw results_2023-07-25T19:41:45.375855.json (arc_challenge acc_norm 0.6544)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 86.47,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_TheBloke__guanaco-65B-HF",
+      "evaluatedAt": "2023-07-25",
+      "notes": "HellaSwag 10-shot acc_norm from the same HF Open LLM Leaderboard (old) details dataset / raw JSON run (hellaswag acc_norm 0.8647) for the merged full-weights repackaging of guanaco-65b."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 52.81,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_TheBloke__guanaco-65B-HF",
+      "evaluatedAt": "2023-07-25",
+      "notes": "TruthfulQA MC2 0-shot from the same HF Open LLM Leaderboard (old) details dataset raw JSON (truthfulqa_mc mc2 0.5281). Distinct from the corpus's existing MMLU entry; no TruthfulQA had been tracked for the 65B model before."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 82.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_TheBloke__guanaco-65B-HF",
+      "evaluatedAt": "2023-10-23",
+      "notes": "Winogrande 5-shot accuracy from the HF Open LLM Leaderboard (old) details dataset, later run (results_2023-10-23T03-09-40.214751.json, harness|winogrande|5 acc 0.823994)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 26,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_TheBloke__guanaco-65B-HF",
+      "evaluatedAt": "2023-10-23",
+      "notes": "GSM8K 5-shot accuracy from the same HF Open LLM Leaderboard (old) details dataset run (harness|gsm8k|5 acc 0.260045)."
     }
   ],
   "verificationNotes": "Confirmed real model via HF model card (fetched): 65B params, Apache-2.0 adapter license, Vicuna Elo human=1023/GPT-4=1022 literally match the page. releaseDate 2023-05-23 confirmed via arXiv (2305.14314). The paper's full text confirms 99.3% and '24 hours on a single [48GB] professional GPU' specifically describe the 65B (largest/best) model, so this note is correct as-is (no change needed, unlike the 33B record)."

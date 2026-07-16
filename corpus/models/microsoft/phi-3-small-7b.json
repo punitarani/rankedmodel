@@ -162,6 +162,34 @@
       "sourceUrl": "https://github.com/LG-AI-EXAONE/KoMT-Bench",
       "evaluatedAt": "2024-08-01",
       "notes": "Reported as 'Phi 3 7B Inst.' in the official KoMT-Bench GitHub repo results table (LG AI Research), reproduced from the EXAONE 3.0 7.8B technical report (arXiv:2408.03541). Score is on the 1-10 GPT-4-judged scale with the benchmark's language-detector penalty applied. Model-size match to Phi-3-small (7B) is reasonably confident but the repo table does not disambiguate a specific Phi-3 checkpoint name."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 34.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "0-shot CoT; Phi-3 Technical Report comparison table, Phi-3-small column (column verified against MMLU=75.7 which matches the model's existing tracked value)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 34.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "2-shot CoT; Phi-3 Technical Report comparison table, Phi-3-small column."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 70.2,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "10-shot, MC2 variant; Phi-3 Technical Report comparison table, Phi-3-small column."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "2-round average; also stated directly in the paper's abstract ('phi-3-small... 8.7... on MT-bench'). Table row shows 8.70 precisely."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3-small-8k-instruct, fetched): 7B dense decoder-only with alternating dense/blocksparse attention, 8K context, MIT license. All four benchmark rows (MMLU 75.7, HellaSwag 77, GSM8K 89.6 CoT, HumanEval 61) literally match the card. GitHub repo microsoft/PhiCookBook confirmed to exist (Phi-3CookBook was renamed/merged into PhiCookBook)."

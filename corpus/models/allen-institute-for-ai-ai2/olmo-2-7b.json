@@ -97,6 +97,38 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B",
       "notes": "TriviaQA column in the OLMo-2-1124-7B comparison table"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 50.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B",
+      "evaluatedAt": "2024-11-26",
+      "notes": "AGIEval column on the live base-model HF card comparison table; also matches the OLMo 2 Technical Report (arXiv:2501.00656) prose ('AGIEval: 44.6 -> 50.4 for 7B'). Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 29.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct",
+      "evaluatedAt": "2024-11-26",
+      "notes": "AlpacaEval (2.0); OLMo-2-7B-1124-Instruct variant, confirmed on the live HF Instruct model-card table. Instruct-variant results were not previously tracked for this model file at all (only base-model rows existed)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 32.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct",
+      "evaluatedAt": "2024-11-26",
+      "notes": "MATH; OLMo-2-7B-1124-Instruct variant, live HF Instruct model-card table."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 56.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct",
+      "evaluatedAt": "2024-11-26",
+      "notes": "TruthfulQA ('TruthQA'); OLMo-2-7B-1124-Instruct variant, live HF Instruct model-card table."
     }
   ],
   "verificationNotes": "Release date (Nov 26 2024, same Ai2 blog as the 13B) confirmed. All six benchmark rows literally confirmed on the live HF base-model card. paramsB=7.3 confirmed precisely: safetensors index total 29,194,469,376 bytes / 4 bytes (fp32) = ~7.30B, exact match. Corrected release-date reasoning source: HF repo commit metadata suggested a Dec/Jan date tied to the later arXiv paper (2501.00656), but the model was publicly announced with the rest of the OLMo 2 family on the Nov 26 2024 Ai2 blog post, so the original date is kept. No other changes needed."

@@ -137,7 +137,15 @@
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "evaluatedAt": "2025-05-15",
       "notes": "Reported as 'MMMLU 14 languages' in Table 13, Multilingual Tasks section, Qwen3-32B (Thinking) column."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1347,
+      "source": "arena",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-15",
+      "notes": "LMArena (arena.ai) live text-arena Elo, listed as 'qwen3-32b', rank 186, score 1347±9 as of this July 2026 snapshot. Qwen3-32B has thinking mode enabled by default per Qwen's own docs/HF card, so this default-inference arena listing plausibly reflects the same Thinking config already tracked in this corpus entry (flagging that caveat since LMArena does not label inference mode explicitly). New slug: file previously had arena-hard (self-reported, 93.8) but not plain 'arena' (crowdsourced Elo)."
     }
   ],
-  "verificationNotes": "Fully confirmed. HF model card confirms 32.8B total params, dense (GQA+SwiGLU+QK-Norm per report Sec.2), 128K context (native 32K + YaRN), Apache 2.0. Table 13 of fetched Qwen3 Technical Report PDF confirms all 5 benchmark rows exactly (AIME'24 81.4, GPQA-Diamond 68.4, LiveCodeBench v5 65.7, Arena-Hard 93.8, BFCL v3 70.3) and report text explicitly states Qwen3-32B (Thinking) 'competes with the closed-source OpenAI-o3-mini (medium)'. DashScope pricing page: China-region non-thinking rate is exactly $0.287 input / $1.147 output (confirmed after checking region+mode breakdown; international/Singapore tier differs at $0.16/$0.64, and China thinking-output tier is $2.868 \u2014 record uses the China non-thinking tier, consistent with sibling records)."
+  "verificationNotes": "Fully confirmed. HF model card confirms 32.8B total params, dense (GQA+SwiGLU+QK-Norm per report Sec.2), 128K context (native 32K + YaRN), Apache 2.0. Table 13 of fetched Qwen3 Technical Report PDF confirms all 5 benchmark rows exactly (AIME'24 81.4, GPQA-Diamond 68.4, LiveCodeBench v5 65.7, Arena-Hard 93.8, BFCL v3 70.3) and report text explicitly states Qwen3-32B (Thinking) 'competes with the closed-source OpenAI-o3-mini (medium)'. DashScope pricing page: China-region non-thinking rate is exactly $0.287 input / $1.147 output (confirmed after checking region+mode breakdown; international/Singapore tier differs at $0.16/$0.64, and China thinking-output tier is $2.868 — record uses the China non-thinking tier, consistent with sibling records)."
 }

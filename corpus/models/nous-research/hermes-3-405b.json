@@ -142,6 +142,20 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/pdf/2408.11857",
       "notes": "0-shot, Table 5."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.93,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2408.11857",
+      "notes": "MT-Bench average score for Hermes 3 405B, Table 5 'Final downstream task evaluations' in the Hermes 3 Technical Report (verified via direct PDF text extraction of the paper, not previously tracked in the corpus which only carried the other 13 rows of this same table)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 30.85,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2408.11857",
+      "notes": "MATH Level 5, 4-shot (Open LLM Leaderboard v2 style hardest-tier subset), Table 5 of the Hermes 3 Technical Report. Mapped to the 'math' taxonomy slug consistent with existing corpus precedent (e.g. falcon3-10b.json and wizardlm-2-8x22b.json both map the same 'MATH Level 5, 4-shot' metric to 'math' with a clarifying note)."
     }
   ],
   "verificationNotes": "Fetched and read the full arXiv 2408.11857 PDF (Hermes 3 Technical Report, arXiv watermark dated 15 Aug 2024, exactly matching record's release date). Table 5 'Final downstream task evaluations' literally shows all seven claimed Hermes-3-405B scores verbatim: MMLU 85.02 (5-shot), MMLU-PRO 54.14 (5-shot), GPQA 44.84 (0-shot), ARC-C 69.45 (0-shot), BBH 75.37 (3-shot), HellaSwag 90.19 (10-shot), TruthfulQA MC2 65.57 (0-shot). Paper confirms Llama 3.1 base sizes (8B/70B/405B) and 131,072 (128K) native context window. HF model card lists 406B raw param count vs. the record's standard '405B' naming; kept 405 as this is the universally used name for this Llama 3.1 size class. No changes made."

@@ -162,6 +162,14 @@
       "sourceUrl": "https://arxiv.org/abs/2410.08928",
       "evaluatedAt": "2024-10-17",
       "notes": "EU21-MMLU, Thellmann et al. 2024, Table 13 ('Meta-Llama-2-7B', base checkpoint). Matches this catalog entry's linked meta-llama/Llama-2-7b."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 29.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "Llama 2 paper (arXiv:2307.09288), Table 3 (aggregated overview table comparing Llama 1 vs Llama 2 base models by category: Code/Commonsense Reasoning/World Knowledge/Reading Comprehension/Math/MMLU/BBH/AGI Eval), 'AGI Eval' column for the Llama 2 7B base (non-chat) model row = 29.3 (English tasks, 3-5 shot aggregate). Not previously tracked for this model — the corpus's existing agieval entry under llama-13b.json is a different row (LLaMA-1 13B, from the same table used as a cross-generation baseline), not this one."
     }
   ],
   "verificationNotes": "Directly fetched Meta's official Llama 2 model card (github.com/meta-llama/llama-models MODEL_CARD.md): confirms MMLU 45.3, TruthfulQA 33.29%, ToxiGen 21.25%, 4K context window, 7B nominal params (actual param count ~6.7B, consistent with independently cross-checked calculations of 6.6-6.74B). Release date 2023-07-18 and Llama 2 Community License Agreement confirmed via Meta/GitHub. No changes made; all three benchmark rows confirmed literally present on the cited source."

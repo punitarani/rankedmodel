@@ -113,28 +113,28 @@
       "score": 85.91,
       "source": "independent",
       "sourceUrl": "https://www.vals.ai/models/meta_muse-spark-1.1",
-      "notes": "LiveCodeBench, measured independently by Vals AI (\u00b10.99 CI, ranked 18/127 models on their leaderboard). Not reported anywhere in Meta's own materials for Muse Spark 1.1."
+      "notes": "LiveCodeBench, measured independently by Vals AI (±0.99 CI, ranked 18/127 models on their leaderboard). Not reported anywhere in Meta's own materials for Muse Spark 1.1."
     },
     {
       "benchmarkSlug": "mmlu-pro",
       "score": 88.73,
       "source": "independent",
       "sourceUrl": "https://www.vals.ai/models/meta_muse-spark-1.1",
-      "notes": "MMLU-Pro, measured independently by Vals AI (\u00b10.32 CI, ranked 11/120 models on their leaderboard). Meta has not published an MMLU or MMLU-Pro score for Muse Spark 1.1 in either the launch blog or the Evaluation Report."
+      "notes": "MMLU-Pro, measured independently by Vals AI (±0.32 CI, ranked 11/120 models on their leaderboard). Meta has not published an MMLU or MMLU-Pro score for Muse Spark 1.1 in either the launch blog or the Evaluation Report."
     },
     {
       "benchmarkSlug": "mmmu",
       "score": 86.59,
       "source": "independent",
       "sourceUrl": "https://www.vals.ai/models/meta_muse-spark-1.1",
-      "notes": "MMMU, measured independently by Vals AI (\u00b10.82 CI, ranked 11/82 models on their leaderboard)."
+      "notes": "MMMU, measured independently by Vals AI (±0.82 CI, ranked 11/82 models on their leaderboard)."
     },
     {
       "benchmarkSlug": "swe-bench",
       "score": 82,
       "source": "independent",
       "sourceUrl": "https://www.vals.ai/models/meta_muse-spark-1.1",
-      "notes": "SWE-bench (base/Verified-style variant, per this corpus's existing convention for the 'swe-bench' slug), measured independently by Vals AI (\u00b11.72 CI, ranked 8/69 models). Distinct from the 'swe-bench-pro' slug already recorded for this model, which is Scale AI's separate, harder SWE-Bench Pro benchmark self-reported by Meta at 61.5."
+      "notes": "SWE-bench (base/Verified-style variant, per this corpus's existing convention for the 'swe-bench' slug), measured independently by Vals AI (±1.72 CI, ranked 8/69 models). Distinct from the 'swe-bench-pro' slug already recorded for this model, which is Scale AI's separate, harder SWE-Bench Pro benchmark self-reported by Meta at 61.5."
     },
     {
       "benchmarkSlug": "hle",
@@ -150,6 +150,13 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-1",
       "notes": "Terminal-Bench v2.1, measured independently by Artificial Analysis as one of the 9 evaluations in their Intelligence Index v4.1 breakdown. Notably lower than Meta's own self-reported 80.0 (already recorded for this model) and Vals AI's independently-measured 69.29 (also recorded here), illustrating the self-report/independent-eval gap on this benchmark."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1376,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/articles/muse-spark-1-1-everything-you-need-to-know",
+      "notes": "GDPval-AA v2 Elo, Artificial Analysis's own independently-run measurement (article states '+232 Elo (1144 to 1376)' vs. the original April-2026 Muse Spark). Distinct from the 1381 already recorded for this model, which is Meta's self-reported figure relayed from a separate Scale AI leaderboard number -- two different measurements of the same benchmark from two different evaluators."
     }
   ],
   "verificationNotes": "Base Muse Spark's own April 2026 release announcement (via Meta AI blog, relayed by buildfastwithai.com) reports Intelligence Index v4.0 52, HealthBench Hard 42.8, HLE 50.2%, Terminal-Bench 2.0 59.0, ARC-AGI-2 42.5 -- these are self-reported. Artificial Analysis independently measured Muse Spark 1.1 (xhigh) at Intelligence Index 51, a +8pt gain over the original that AA attributes mostly to Coding (+12) and HLE (+5, to 45%)."

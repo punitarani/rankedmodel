@@ -137,6 +137,22 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
       "evaluatedAt": "2025-11-01",
       "notes": "FACTS Benchmark Suite (held-out internal grounding, parametric, MM and search retrieval benchmarks)."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1501,
+      "source": "arena",
+      "sourceUrl": "https://blog.google/products/gemini/gemini-3/",
+      "evaluatedAt": "2025-11-18",
+      "notes": "LMArena (Chatbot Arena) text-leaderboard Elo at launch: 'It tops the LMArena Leaderboard with a breakthrough score of 1501 Elo.' First model to cross 1500 Elo, per Google's official Nov 18 2025 launch post; corroborated independently by contemporaneous press coverage (VentureBeat, apiyi.com news summary)."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 98,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf",
+      "evaluatedAt": "2025-11-01",
+      "notes": "Domain breakdown of the model card's aggregated 't2-bench' (tau2-bench) tool-use score (85.4%, itself the average of Retail/Airline/Telecom). Google's evals-methodology doc discloses the per-domain split: 'Gemini 3.0 Pro scores 85.3%, 73.0% and 98.0% on these categories respectively' for Retail, Airline, Telecom. The Telecom figure (98.0%) maps cleanly to the existing tau2-bench-telecom taxonomy slug; the aggregate 85.4% average across all three domains was NOT added since no general/average tau2-bench slug exists in the taxonomy."
     }
   ],
   "verificationNotes": "Directly downloaded and read the official Gemini 3 Pro Model Card PDF ('Model Release: November 2025'). Its evaluation table matches every claimed score digit-for-digit: GPQA 91.9, AIME 95.0 (100% with code execution), HLE 37.5 (45.8% with search+code exec), SWE-Bench 76.2, MMMU-Pro 81.0, MMMLU 91.8, LiveCodeBench Pro Elo 2,439. Release date Nov 18, 2025 corroborated by blog.google, CNBC, and InfoQ coverage. Pricing $2/$12 (base tier) and $4/$18 (>200k tokens) confirmed on ai.google.dev/gemini-api/docs/pricing (via the now-succeeding Gemini 3.1 Pro Preview page, which carries forward identical base-tier pricing). Model card explicitly names it a 'sparse mixture-of-experts (MoE) transformer-based model... with native multimodal support,' confirming archClass/archDisplay directly."

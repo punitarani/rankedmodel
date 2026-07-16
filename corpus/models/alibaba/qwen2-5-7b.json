@@ -158,6 +158,14 @@
       "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
       "evaluatedAt": "2024-09-19",
       "notes": "Base model"
+    },
+    {
+      "benchmarkSlug": "mmlu-stem",
+      "score": 72.3,
+      "source": "self-reported",
+      "sourceUrl": "https://qwenlm.github.io/blog/qwen2.5-llm/",
+      "evaluatedAt": "2024-09-19",
+      "notes": "MMLU-STEM row of the official Qwen2.5-LLM launch blog's base-model comparison table ('Mathematics & Science Tasks' section), confirmed via direct fetch quoting the exact row: 'MMLU-stem | 50.1 | 55.3 | 65.1 | 64.2 | 72.3' for Mistral-7B / Llama3-8B / Gemma2-9B / Qwen2-7B / Qwen2.5-7B respectively -- 72.3 is unambiguously the Qwen2.5-7B (base) column. Distinct from the already-tracked general MMLU score (74.2) already in the corpus for this model; primary official source, high confidence."
     }
   ],
   "verificationNotes": "Confirmed real, same Sept 19 2024 Qwen2.5 launch. HF model card (huggingface.co/Qwen/Qwen2.5-7B) confirms 7.61B total / 6.53B non-embedding params (28 layers), 131,072 ctx, apache-2.0 license. All 6 result rows (MMLU 74.2, MMLU-Pro 45.0, MATH 49.8, GSM8K 85.4, HumanEval 57.9, MBPP 74.9) verified verbatim on qwenlm.github.io/blog/qwen2.5-llm/. No changes made."

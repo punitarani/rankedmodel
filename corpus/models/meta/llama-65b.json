@@ -170,7 +170,23 @@
       "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama2/MODEL_CARD.md",
       "evaluatedAt": "2023-07-18",
       "notes": "Reported by Meta in the Llama 2 model card's Llama-1-vs-2 comparison table"
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 10.6,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "MATH, 0-shot single-sample pass rate, Table 7 of the LLaMA paper (the paper's separate maj1@k=256 majority-voting variant scores higher at 20.5 and is a distinct setting, matching the corpus's existing convention for this model's GSM8K row). Not previously tracked -- the file only had GSM8K from the same table."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 60.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2302.13971",
+      "evaluatedAt": "2023-02-01",
+      "notes": "OpenBookQA (OBQA), 0-shot, Table 3 Common Sense Reasoning table -- same table already cited for this model's PIQA/SIQA/Winogrande/ARC/HellaSwag rows, but OBQA itself was not yet tracked."
     }
   ],
-  "verificationNotes": "Confirmed real release: Meta announced LLaMA (7B/13B/33B/65B) 2023-02-24; Wikipedia confirms 65B=65.2B params, 2048 ctx, gated non-commercial license \u2014 matches record exactly. Fetched meta-llama/llama-models MODEL_CARD.md and confirmed all three benchmark rows (MMLU 63.4, TruthfulQA 48.71, Toxigen 21.77) literally appear in the Llama-1-vs-2 comparison table for the 65B row. No changes made."
+  "verificationNotes": "Confirmed real release: Meta announced LLaMA (7B/13B/33B/65B) 2023-02-24; Wikipedia confirms 65B=65.2B params, 2048 ctx, gated non-commercial license — matches record exactly. Fetched meta-llama/llama-models MODEL_CARD.md and confirmed all three benchmark rows (MMLU 63.4, TruthfulQA 48.71, Toxigen 21.77) literally appear in the Llama-1-vs-2 comparison table for the 65B row. No changes made."
 }

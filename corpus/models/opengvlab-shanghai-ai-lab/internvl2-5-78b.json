@@ -150,7 +150,15 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2504.10479",
       "notes": "RefCOCO+ val split, from Table 6 of the InternVL3 technical report (arXiv:2504.10479), which lists InternVL2.5-78B as a comparison baseline (same organization, OpenGVLab, prior model generation). Same table also lists testA 94.7 and testB 86.9 for this model."
+    },
+    {
+      "benchmarkSlug": "charxiv",
+      "score": 42.4,
+      "source": "self-reported",
+      "sourceUrl": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "evaluatedAt": "2024-12-05",
+      "notes": "CharXiv reasoning-question (RQ) subset, matching the corpus convention (see e.g. amazon-nova-premier.json, cohere/command-a-plus.json) of using the reasoning subset for the charxiv slug. Descriptive-question (DQ) subset was 82.3, not used. Not previously tracked for this model."
     }
   ],
-  "verificationNotes": "Confirmed real: release date Dec 5, 2024 confirmed via internvl.github.io blog post. Fetched HF model card directly \u2014 confirms 78B total, architecture is InternViT-6B + Qwen2.5-72B-Instruct + MLP projector, and license is MIT for the project/InternViT component with Qwen2.5-72B-Instruct governed by the separate Qwen License (matches record). Fetched the InternVL 2.5 blog page directly and confirmed all four benchmark numbers verbatim: MMMU 70.1, MathVista 72.3, DocVQA 95.1, OCRBench 854. CAVEAT: ctxK=32 (32K) is inferred from the Qwen2.5-72B-Instruct backbone's native context length, not an explicit, directly-stated context spec for the multimodal InternVL2.5-78B checkpoint itself \u2014 the cited GitHub issue is an unanswered question, not a confirmation, and other InternVL documentation suggests InternVL2.5 models were officially evaluated at 16K rather than 32K. Kept the value since it is a defensible LLM-backbone-derived estimate, but confidence is moderate rather than high."
+  "verificationNotes": "Confirmed real: release date Dec 5, 2024 confirmed via internvl.github.io blog post. Fetched HF model card directly — confirms 78B total, architecture is InternViT-6B + Qwen2.5-72B-Instruct + MLP projector, and license is MIT for the project/InternViT component with Qwen2.5-72B-Instruct governed by the separate Qwen License (matches record). Fetched the InternVL 2.5 blog page directly and confirmed all four benchmark numbers verbatim: MMMU 70.1, MathVista 72.3, DocVQA 95.1, OCRBench 854. CAVEAT: ctxK=32 (32K) is inferred from the Qwen2.5-72B-Instruct backbone's native context length, not an explicit, directly-stated context spec for the multimodal InternVL2.5-78B checkpoint itself — the cited GitHub issue is an unanswered question, not a confirmation, and other InternVL documentation suggests InternVL2.5 models were officially evaluated at 16K rather than 32K. Kept the value since it is a defensible LLM-backbone-derived estimate, but confidence is moderate rather than high."
 }

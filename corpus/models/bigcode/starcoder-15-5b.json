@@ -82,6 +82,20 @@
       "sourceUrl": "https://arxiv.org/abs/2404.01856",
       "evaluatedAt": "2024-04-01",
       "notes": "FIN-bench (Finnish) average, 3-shot, as reported by TurkuNLP/Silo AI in Table 6 of the Poro 34B paper (arXiv:2404.01856), evaluating StarCoder as a reference model alongside Poro 34B despite it being a code-focused model."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 29.3,
+      "source": "independent",
+      "sourceUrl": "https://evalplus.github.io/leaderboard.html",
+      "notes": "EvalPlus leaderboard row 'StarCoder-15B' (linked to huggingface.co/bigcode/starcoder, confirming same model), HumanEval+ pass@1 greedy decoding, non-prompted/completion mode. Cross-checked against the underlying results.json backing the public leaderboard. Not previously tracked (only base HumanEval was)."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 46.1,
+      "source": "independent",
+      "sourceUrl": "https://evalplus.github.io/leaderboard.html",
+      "notes": "EvalPlus leaderboard row 'StarCoder-15B' (linked to huggingface.co/bigcode/starcoder, confirming same model), MBPP+ pass@1 greedy decoding, non-prompted/completion mode. Cross-checked against the underlying results.json backing the public leaderboard. Not previously tracked (only base MBPP was)."
     }
   ],
   "verificationNotes": "Fetched HF blog (dated 2023-05-04) and model card: confirmed ~15B params, 80+ languages, BigCode OpenRAIL-M, HumanEval 33.6/MBPP 52.7 verbatim. No changes."

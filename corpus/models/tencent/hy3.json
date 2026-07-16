@@ -86,6 +86,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/tencent/Hy3",
       "notes": "HLE, no-tools/text-only variant, listed under the appendix's 'Reasoning' task category (a separate 'HLE with tools' row under 'STEM Agent' scores 53.2, but that is a distinct tool-augmented setup, not standard HLE)"
+    },
+    {
+      "benchmarkSlug": "usamo",
+      "score": 72,
+      "source": "self-reported",
+      "sourceUrl": "https://www.marktechpost.com/2026/07/06/tencent-releases-hy3-open-295b-moe-model/",
+      "evaluatedAt": "2026-07-06",
+      "notes": "USAMO 2026, from Tencent's official Hy3 model-card benchmark table (STEM/Reasoning section). Not previously tracked for this model. Independently corroborated verbatim (72.0) by a second outlet, valueaddvc.com ('Tencent's Hy3 Beats GLM-5.2 at Half the Size'), both citing the same official figure."
     }
   ],
   "verificationNotes": "Benchmark numbers (MMLU 87.42, MMLU-Pro 65.76, GPQA Diamond 87.2, LiveCodeBench-v6 34.86) come from the preview build's GitHub model card (Tencent-Hunyuan/Hy3-preview), which Tencent itself published -- treated as self-reported since it is the vendor's own repo, and may differ slightly from the July full-release numbers which were not separately published with a benchmark table in sources checked."

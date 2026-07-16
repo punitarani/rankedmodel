@@ -71,7 +71,7 @@
       "source": "self-reported",
       "sourceUrl": "https://futureagi.com/blog/gpt-4-1-benchmarks-2025/",
       "evaluatedAt": "2025-04-01",
-      "notes": "SWE-bench Verified [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement] [Corrected during full-corpus audit: OpenAI's own GPT-4.1 launch benchmark table reports 54.6% on SWE-bench Verified, not the rounded 55% currently recorded. Confirmed the precise 54.6% figure independently across multiple secondary write-ups that quote OpenAI's official table verbatim (futureagi.com, infoq.com, docsbot.ai's GPT-4.1-vs-mini/nano comparison pages, helicone.ai's developer guide) \u2014 all state 54.6%, never 54.6 rounded to]"
+      "notes": "SWE-bench Verified [relabeled self-reported: aggregator/mirror relay of a vendor figure, not an independent re-measurement] [Corrected during full-corpus audit: OpenAI's own GPT-4.1 launch benchmark table reports 54.6% on SWE-bench Verified, not the rounded 55% currently recorded. Confirmed the precise 54.6% figure independently across multiple secondary write-ups that quote OpenAI's official table verbatim (futureagi.com, infoq.com, docsbot.ai's GPT-4.1-vs-mini/nano comparison pages, helicone.ai's developer guide) — all state 54.6%, never 54.6 rounded to]"
     },
     {
       "benchmarkSlug": "aime",
@@ -119,6 +119,22 @@
       "source": "independent",
       "sourceUrl": "https://hal.cs.princeton.edu/gaia",
       "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, GPT-4.1 (April 2025 snapshot). GAIA validation set."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 52.4,
+      "source": "independent",
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluatedAt": "2025-04-14",
+      "notes": "GPT-4.1 (flagship) scores 52.4% on the official Aider polyglot coding leaderboard (118/225 correct), confirmed via direct fetch of aider.chat's own leaderboard page — an independent third-party benchmark run, not an OpenAI self-report. Not currently tracked in this corpus entry."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 87.4,
+      "source": "self-reported",
+      "sourceUrl": "https://futureagi.com/blog/gpt-4-1-benchmarks-2025/",
+      "evaluatedAt": "2025-04-14",
+      "notes": "IFEval instruction-following score for GPT-4.1 flagship (vs. GPT-4o's 81.0%), relayed from OpenAI's official GPT-4.1 launch benchmark table; confirmed via direct fetch of futureagi.com (already used as a source for this same model's SWE-bench figure in the corpus) and independently corroborated by infoq.com and docsbot.ai's GPT-4.1 comparison pages citing the identical 87.4%. Not currently tracked in this corpus entry."
     }
   ],
   "verificationNotes": "Confirmed release 2025-04-14 and $2/$8 per 1M token pricing, 1M context window via OpenAI docs and independent coverage. All 3 benchmark rows (MMLU 90.2, GPQA 66.3, SWE-bench 55) confirmed verbatim on the cited rdworldonline.com article. No changes made."

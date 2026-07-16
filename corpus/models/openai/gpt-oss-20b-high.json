@@ -121,7 +121,15 @@
       "sourceUrl": "https://arxiv.org/abs/2508.10925",
       "evaluatedAt": "2025-08-05",
       "notes": "Aider Polyglot (diff), high reasoning effort"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 73.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/datasets/TIGER-Lab/mmlu_pro_leaderboard_submission/resolve/main/results.csv",
+      "evaluatedAt": "2026-03-11",
+      "notes": "TIGER-Lab's official MMLU-Pro leaderboard submissions dataset (raw results.csv fetched directly) has a row 'GPT-oss-20B(high)' with Overall=0.736 (73.6%), Data Source tagged 'Self-Reported' (i.e. OpenAI/a submitter provided the number rather than TIGER-Lab running it themselves -- contrast with the adjacent 'GPT-oss-20B(medium)' row at 0.7314, tagged 'TIGER-Lab' meaning independently run with full per-subject breakdown, which would apply to the separate gpt-oss-20b-medium.json file, not this High-effort file). MMLU-Pro is NOT one of the benchmarks in the original arXiv model card (2508.10925) table, so this is a genuinely separate evaluation from the already-tracked plain 'mmlu' score (85.3, high effort). No corresponding row exists for 'GPT-oss-20B(low)' on this leaderboard, so nothing new found there. evaluatedAt is the most recent commit timestamp on the results.csv file (2026-03-11), not necessarily the exact eval run date, since the CSV has no per-row date column."
     }
   ],
-  "verificationNotes": "Same primary source as Medium config (arXiv 2508.10925 Table 3): gpt-oss-20b high = AIME2024(no tools) 92.1, GPQA Diamond(no tools) 71.5, MMLU 85.3, SWE-bench Verified 60.7 \u2014 all four match exactly. Params/arch/license/date verified identically. No changes made."
+  "verificationNotes": "Same primary source as Medium config (arXiv 2508.10925 Table 3): gpt-oss-20b high = AIME2024(no tools) 92.1, GPQA Diamond(no tools) 71.5, MMLU 85.3, SWE-bench Verified 60.7 — all four match exactly. Params/arch/license/date verified identically. No changes made."
 }

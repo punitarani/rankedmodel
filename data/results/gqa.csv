@@ -1,2 +1,3 @@
 model_slug,score,source,source_url,evaluated_at,notes
+qvq-72b-preview,63.91,independent,https://arxiv.org/abs/2505.19076,2025-05-25,"GQA, same ChartSketcher paper Table 1, row 'QvQ-Preview-72B'."
 qwen-vl,59.3,self-reported,https://huggingface.co/Qwen/Qwen-VL,,GQA visual-reasoning benchmark (unrelated to Grouped Query Attention)

@@ -108,7 +108,7 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1",
       "evaluatedAt": "2025-03-18",
-      "notes": "BFCL V2 Live, Reasoning Off. Confirmed via raw README.md \u2014 the card publishes only this Reasoning-Off value for BFCL (no Reasoning-On value is published for this model)."
+      "notes": "BFCL V2 Live, Reasoning Off. Confirmed via raw README.md — the card publishes only this Reasoning-Off value for BFCL (no Reasoning-On value is published for this model)."
     },
     {
       "benchmarkSlug": "livecodebench",
@@ -117,6 +117,20 @@
       "sourceUrl": "https://arxiv.org/abs/2505.00949",
       "evaluatedAt": "2025-05-01",
       "notes": "LiveCodeBench (2408-2502 window), Reasoning Off, Final checkpoint. From Table 4 of the technical report; this benchmark is absent from the HF model card entirely for this model."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 4,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/llama-3-3-nemotron-super-49b",
+      "notes": "Humanity's Last Exam, independently measured by Artificial Analysis on the 'Non-reasoning' (Reasoning Off) variant of this model. HLE was not previously tracked for this model under either mode. Verified by manually aligning the model-name list against the score list on the AA model page (position 18 of 18, value 4%)."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 39,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/llama-3-3-nemotron-super-49b",
+      "notes": "IFBench, independently measured by Artificial Analysis on the 'Non-reasoning' (Reasoning Off) variant — distinct benchmark from the already-tracked IFEval. Verified by manually aligning the model-name list against the score list on the AA model page (position 14 of 16, value 39%)."
     }
   ],
   "verificationNotes": "Confirmed via HF model card (fetched): release date 3/18/2025, ~50B params (49.9B precise figure independently corroborated by llm-stats.com and other trackers), 128K context, NVIDIA+Llama 3.3 license, and all seven Reasoning-Off benchmark scores match exactly (Arena-Hard 88.3, MATH500 74.0, AIME25 13.33, GPQA 50, IFEval 89.21, MBPP 84.9, MT-Bench 9.17)."

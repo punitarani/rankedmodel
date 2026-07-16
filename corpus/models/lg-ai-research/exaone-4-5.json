@@ -150,6 +150,13 @@
       "sourceUrl": "https://arxiv.org/abs/2604.08644",
       "evaluatedAt": "2026-04-09",
       "notes": "MMMLU average over ko/de/es/ja subset only (paper does not report the full 14-language average), so treat as approximate/partial match to the taxonomy definition"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 11.6,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/exaone-4-5-33b",
+      "notes": "Humanity's Last Exam score from Artificial Analysis' independent test run (their model detail page for exaone-4-5-33b embeds hle:0.11631...). Not previously tracked for this model under any source."
     }
   ],
   "verificationNotes": "Context window (256K, precisely 262,144 tokens) sourced from the EXAONE 4.5 Technical Report, not the press release."

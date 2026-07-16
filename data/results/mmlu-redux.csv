@@ -12,6 +12,7 @@ qwen2-5-14b,76.6,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-0
 qwen2-5-32b,82,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,"Base model, 5-shot."
 qwen2-5-72b,83.9,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
 qwen2-5-7b,71.1,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,2024-09-19,Base model
+qwen2-5-vl-72b,85.9,self-reported,https://arxiv.org/pdf/2502.13923,2025-02-19,"Table 4 of the Qwen2.5-VL Technical Report, pure-text task evaluation."
 qwen3-14b-non-thinking,82,self-reported,https://arxiv.org/pdf/2505.09388,,"MMLU-Redux, Qwen3 Technical Report Table 16, Qwen3-14B (Non-thinking) column"
 qwen3-14b-thinking,88.6,self-reported,https://arxiv.org/pdf/2505.09388,,"MMLU-Redux, Qwen3 Technical Report Table 15, Qwen3-14B (Thinking) column"
 qwen3-235b-a22b-instruct-2507,93.1,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,"MMLU-Redux, official HF model card Performance table"

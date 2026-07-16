@@ -129,5 +129,5 @@
       "notes": "Codeforces rating (75.7th percentile), Table 12, Qwen3-235B-A22B (Non-thinking) column"
     }
   ],
-  "verificationNotes": "Same model/spec sourcing as Thinking variant (verified). Read Table 12 of arxiv.org/pdf/2505.09388 directly: Qwen3-235B-A22B (Non-thinking) row shows AIME'24=40.1, LiveCodeBench v5=35.3, GPQA-Diamond=62.9, BFCL v3=68.0 \u2014 every value matches exactly. No changes."
+  "verificationNotes": "Same model/spec sourcing as Thinking variant (verified). Read Table 12 of arxiv.org/pdf/2505.09388 directly: Qwen3-235B-A22B (Non-thinking) row shows AIME'24=40.1, LiveCodeBench v5=35.3, GPQA-Diamond=62.9, BFCL v3=68.0 — every value matches exactly. No changes."
 }

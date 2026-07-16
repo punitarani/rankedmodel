@@ -95,7 +95,15 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2412.01253",
       "notes": "Judge: GPT-4o-0513. Yi-Lightning technical report Table 2."
+    },
+    {
+      "benchmarkSlug": "wildbench",
+      "score": 65.1,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2412.01253",
+      "evaluatedAt": "2024-10-16",
+      "notes": "WildBench score, judge GPT-4o-0513, from Yi-Lightning technical report comparison tables (outperforming Qwen2.5-72B-Instruct 59.9, DeepSeek-V2.5 57.9, Mistral-Large-Instruct-2407 57.4 in the same table)."
     }
   ],
-  "verificationNotes": "Confirmed real via arXiv:2412.01253 (fetched html version) plus independent coverage (Kai-Fu Lee's own launch tweet, Pandaily, lmarena.ai's X post). Release date 2024-10-16, org 01.AI, and Arena score 1287 / rank #6 (matching GPT-4o-0513's #7/1285) all confirmed. All four benchmark rows (MATH 76.4, HumanEval 83.5, GPQA 50.9, IFEval 81.9) confirmed verbatim on the technical report. Confirmed the deployed API context is capped at 16K tokens (per crafiq.ai, serenitiesai.com, and an HN discussion) even though training data included longer sequences up to 64K \u2014 ctxK:16 is correct. Confirmed parameter count is genuinely undisclosed by 01.AI, so paramsB/activeParamsB null is correct. Pricing $0.14/M input+output confirmed via web search of platform docs."
+  "verificationNotes": "Confirmed real via arXiv:2412.01253 (fetched html version) plus independent coverage (Kai-Fu Lee's own launch tweet, Pandaily, lmarena.ai's X post). Release date 2024-10-16, org 01.AI, and Arena score 1287 / rank #6 (matching GPT-4o-0513's #7/1285) all confirmed. All four benchmark rows (MATH 76.4, HumanEval 83.5, GPQA 50.9, IFEval 81.9) confirmed verbatim on the technical report. Confirmed the deployed API context is capped at 16K tokens (per crafiq.ai, serenitiesai.com, and an HN discussion) even though training data included longer sequences up to 64K — ctxK:16 is correct. Confirmed parameter count is genuinely undisclosed by 01.AI, so paramsB/activeParamsB null is correct. Pricing $0.14/M input+output confirmed via web search of platform docs."
 }

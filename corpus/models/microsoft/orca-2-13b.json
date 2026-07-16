@@ -100,6 +100,27 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.11045",
       "evaluatedAt": "2023-11-18",
       "notes": "Table 3: MT-Bench average across Turn 1 (6.69) and Turn 2 (5.60), GPT-4-judged 1-10 scale, Orca-2-13B row (default system message)."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 49.93,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.11045",
+      "notes": "Zero-shot, Table 1 of the Orca 2 technical report (arXiv 2311.11045), Orca-2-13B row (default/empty system message). Confirmed via direct fetch of ar5iv HTML and cross-checked with pdftotext extraction of the PDF table (columns: AGI/BBH/DROP/CRASS/RACE/GSM8K)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 77.75,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.11045",
+      "notes": "Zero-shot, Figure 5 (Text Completion) of the Orca 2 technical report, Orca-2-13B row (default/empty system message; the cautious-system-message variant scores 77.75). Confirmed via pdftotext -layout extraction of the chart's bar order and values. [score corrected during round-6 completeness verify: proposed 81.19 -> 77.75]"
+    },
+    {
+      "benchmarkSlug": "lambada",
+      "score": 63.67,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2311.11045",
+      "notes": "Zero-shot, Figure 5 (Text Completion) of the Orca 2 technical report, Orca-2-13B row (default/empty system message; cautious-system-message variant scores 61.96). Confirmed via pdftotext -layout extraction. [score corrected during round-6 completeness verify: proposed 63.69 -> 63.67]"
     }
   ],
   "verificationNotes": "Existence, Llama-2-13B backbone, Microsoft Research (non-commercial) License, and Nov 18 2023 HF card date all confirmed. Fetched arXiv 2311.11045 HTML directly and confirmed BBH 50.18, GSM8K 59.14, MMLU 57.73 verbatim (zero-shot). No discrepancies found."

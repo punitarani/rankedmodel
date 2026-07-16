@@ -93,6 +93,38 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/cerebras/Cerebras-GPT-13B",
       "notes": "0-shot, from the same HF model card results table. Note: this falls below the taxonomy's typical openbookqa range (40-50), but it is the genuine value stated on the official model card for this 2023-era 13B dense base model."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 25.92,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_cerebras__Cerebras-GPT-13B",
+      "evaluatedAt": "2023-07-19",
+      "notes": "5-shot MMLU, averaged from the 57 hendrycksTest subtask acc scores in the Open LLM Leaderboard details run (results_2023-07-19T19:05:05.976819.json). Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 39.19,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_cerebras__Cerebras-GPT-13B",
+      "evaluatedAt": "2023-07-19",
+      "notes": "TruthfulQA MC2 (0-shot), Open LLM Leaderboard details run (harness|truthfulqa:mc|0, mc2 0.39185)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 1.29,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_cerebras__Cerebras-GPT-13B",
+      "evaluatedAt": "2023-10-17",
+      "notes": "5-shot GSM8K accuracy, Open LLM Leaderboard details run (harness|gsm8k|5, acc 0.01289)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 4.39,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_cerebras__Cerebras-GPT-13B",
+      "evaluatedAt": "2023-10-17",
+      "notes": "3-shot DROP F1, Open LLM Leaderboard details run (harness|drop|3, f1 0.04389)."
     }
   ],
   "verificationNotes": "Fully confirmed: March 28, 2023 release date corroborated by Forbes, MarkTechPost, and Cerebras' own press release/X announcement (7-model family, 111M-13B, Chinchilla-optimal, trained on CS-2). Apache-2.0 and 13B params confirmed on HF model card. All 4 result rows (hellaswag 51.3, arc-challenge 36.7, winogrande 64.6, lambada 69.6) verified as literally present, matching exactly, in the HF model card's 0-shot results table (which also lists PIQA 76.6, not included in the input record)."

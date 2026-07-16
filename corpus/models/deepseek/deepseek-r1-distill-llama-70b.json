@@ -88,6 +88,14 @@
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
       "evaluatedAt": "2025-01-20",
       "notes": "Codeforces rating"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 6,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/deepseek-r1-distill-llama-70b",
+      "evaluatedAt": "2026-07-14",
+      "notes": "Artificial Analysis Intelligence Index v4.1 breakdown, Humanity's Last Exam row, verified live: DeepSeek R1 Distill Llama 70B = 6%. Not previously tracked for this model (corpus's 5 existing results are all from the HF model card: AIME/MATH/GPQA/LiveCodeBench/Codeforces). Note the AA GPQA Diamond figure for this model (40%) diverges substantially from the HF self-reported 65.2 already in the corpus — that duplicate benchmarkSlug was intentionally NOT re-added per instructions, but is worth flagging as a discrepancy for a future accuracy pass."
     }
   ],
   "verificationNotes": "Confirmed via HF model card. License verified against the DeepSeek-R1 GitHub License section, which states this distill 'is derived from Llama3.3-70B-Instruct and is originally licensed under Llama3.3 license' (not MIT, despite the base repo being MIT) - matches the record. All 5 result rows confirmed literally on the HF card."

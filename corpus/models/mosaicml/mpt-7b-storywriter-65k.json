@@ -83,6 +83,22 @@
       "source": "independent",
       "sourceUrl": "https://llm-explorer.com/model/mosaicml%2Fmpt-7b-storywriter,3K1W2oPDYiKvsDChVgLTo3",
       "notes": "Open LLM Leaderboard-style Winogrande (5-shot) score for StoryWriter via LLM Explorer aggregator; notably near-random, plausibly reflecting the model's fiction-only fine-tuning."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 0.32,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-storywriter",
+      "evaluatedAt": "2023-10-16",
+      "notes": "F1 score (harness|drop|3, 3-shot) from the HF Open LLM Leaderboard v1's own 'latest' evaluation run (2023-10-16T08:53:05.263222) for mosaicml/mpt-7b-storywriter, per that dataset's README which explicitly designates this run as canonical/latest. Near-zero score plausibly reflects the fiction-only fine-tune degrading general QA ability, consistent with the model's already-tracked near-random Winogrande score from the same official run family (51.14, matching the existing llm-explorer-sourced value exactly). [score corrected during round-6 completeness verify: proposed 0.3 -> 0.32]"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b-storywriter",
+      "evaluatedAt": "2023-10-16",
+      "notes": "5-shot accuracy (harness|gsm8k|5) from the same HF Open LLM Leaderboard v1 'latest' run (2023-10-16T08:53:05.263222) for mosaicml/mpt-7b-storywriter. 0% accuracy is a genuine (if unremarkable) recorded score, not a placeholder -- verified directly from the raw results_2023-10-16T08-53-05.263222.json."
     }
   ],
   "verificationNotes": "Confirmed via Databricks MPT-7B blog (published 2023-05-05, confirms 65k-token fiction fine-tune and demonstrated generations to 84k tokens matching the note) and HF model card mosaicml/mpt-7b-storywriter (Apache-2.0 license, 65k training context, requires trust_remote_code). No result rows were present to verify. All fields left unchanged."

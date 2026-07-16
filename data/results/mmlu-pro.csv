@@ -1,19 +1,35 @@
 model_slug,score,source,source_url,evaluated_at,notes
+ai21-jamba,16.57,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-09-16,HF Open LLM Leaderboard V2 run on ai21labs/Jamba-v0.1. Not previously tracked for this model.
 ai21-jamba-1-5-large,48.3,self-reported,https://arxiv.org/html/2408.12570v1,,
 ai21-jamba-1-5-mini,39.8,self-reported,https://arxiv.org/html/2408.12570v1,,
 amazon-nova-premier,73.3,independent,https://artificialanalysis.ai/models/nova-premier,,
+aya-23-35b,33.56,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/aya-23-35B/results_2025-02-13T18-27-04.338360.json,2025-02-13,"Open LLM Leaderboard v2, leaderboard_mmlu_pro, 5-shot, acc. New for this model (existing mmlu entry is the multilingual variant from the Aya 23 paper, a distinct methodology)."
 aya-expanse-32b,45.41,self-reported,https://huggingface.co/CohereLabs/aya-expanse-32b,2024-10-24,English MMLU-Pro
 aya-vision-32b,47.16,self-reported,https://www.datalearner.com/en/ai-models/pretrained-models/aya-vision-32b,,"[relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 bloom-7b1,11.05,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/bigscience/bloom-7b1/results_2025-02-13T18-27-04.338360.json,2025-02-13,"acc on MMLU-Pro, same HF Open LLM Leaderboard v2 results file. Distinct benchmark from plain MMLU, mapped to its own mmlu-pro slug."
 claude-3-5-haiku,65,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-11-04,"0-shot CoT, Model Card Addendum Table 8 (Claude 3.5 Haiku column)."
 claude-3-5-sonnet,75.1,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"0-shot CoT; MMLU-Pro was introduced in the later October addendum's comparison Table 7, which retroactively reports this score for the original (June 2024) Claude 3.5 Sonnet checkpoint."
 claude-3-5-sonnet-new,78,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"0-shot CoT, Table 7."
+claude-3-7-sonnet,80.66,independent,https://www.vals.ai/models/anthropic_claude-3-7-sonnet-20250219,,"Vals AI independent evaluation, 'Claude 3.7 Sonnet (Nonthinking)' model page. Thinking variant scored 82.73% on the same benchmark (not used, for standard-mode consistency)."
+claude-3-haiku,49,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"MMLU-Pro, 0-shot CoT, Table 8 of the October 2024 Model Card Addendum, reported retroactively for the original Claude 3 Haiku."
+claude-3-sonnet,54.9,self-reported,https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf,2024-10-22,"MMLU-Pro, 0-shot CoT, Table 7 of the October 2024 Model Card Addendum (a benchmark introduced after Claude 3 Sonnet's original March 2024 model card, reported here as a retroactive comparison baseline)."
+claude-fable-5,91.5,independent,https://www.vals.ai/models/anthropic_claude-fable-5,,"Vals AI independent eval. MMLU-Pro 91.502% (ranked 1st of 120 models per the page), from the model page's embedded score bars (raw HTML fetch, cross-checked against the WebFetch-summarized ranking text). Not previously tracked for this model."
 claude-haiku-4-5,80,independent,https://artificialanalysis.ai/models/claude-4-5-haiku,2025-10-01,independent evaluation; same caveat as GPQA row — 80.0% figure cross-confirmed via secondary aggregators citing Artificial Analysis
+claude-opus-4,86.2,independent,https://www.vals.ai/models/anthropic_claude-opus-4-20250514,,"Vals AI independent eval. MMLU-Pro 86.166%, from the model page's embedded score data. Distinct from the corpus's existing plain 'mmlu' row (88.8, Anthropic self-reported)."
+claude-opus-4-5-high,87.3,independent,https://www.vals.ai/models/anthropic_claude-opus-4-5-20251101-thinking,,"Vals AI independent eval, Thinking/high-effort variant. MMLU-Pro 87.26%, from the model page's embedded score data (raw HTML fetch). The corpus already tracks plain 'mmlu' (90.8) and 'mmmlu' (90.8) for this model but not the distinct, harder 'mmlu-pro' slug."
+claude-opus-4-7,89.87,independent,https://www.vals.ai/models/anthropic_claude-opus-4-7,,Vals AI independent evaluation.
+claude-sonnet-4-6,87.34,independent,https://www.vals.ai/models/anthropic_claude-sonnet-4-6,,Vals AI independent evaluation.
+codestral-22b,31.56,independent,https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Codestral-22B-v0.1-details,2024-09-28,HF Open LLM Leaderboard v2 automated eval run of mistralai/Codestral-22B-v0.1; MMLU-PRO normalized score. [score corrected during round-6 completeness verify: proposed 23.95 -> 31.56]
+command-a,69.17,independent,https://www.vals.ai/models/cohere_command-a-03-2025,,"Vals AI independent evaluation, MMLU Pro accuracy 69.17%. Distinct benchmark from the already-tracked self-reported plain MMLU (85.5) in the Command A technical report."
+command-a-218b,78.15,independent,https://www.vals.ai/models/cohere_command-a-plus-05-2026,,"Vals AI independent evaluation, MMLU Pro accuracy 78.15%. Not previously tracked (existing entries cover mmmu/mmmu-pro/mathvista/charxiv/aime/gpqa/hle/ifbench/tau2-bench-telecom, but not mmlu-pro)."
 command-r,33.69,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r-v01/results_2025-02-13T18-27-04.338360.json,,"Open LLM Leaderboard v2, leaderboard_mmlu_pro, 5-shot, acc."
 command-r7b,35.72,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/c4ai-command-r7b-12-2024/results_2025-02-13T18-27-04.338360.json,,"Open LLM Leaderboard v2, leaderboard_mmlu_pro, 5-shot, acc."
+dbrx,36.83,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/databricks/dbrx-instruct/results_2024-06-27T16-19-21.521489.json,2024-06-27,"MMLU-Pro (leaderboard_mmlu_pro, acc 0.368268) from HF Open LLM Leaderboard v2's independent run on databricks/dbrx-instruct. Distinct from the already-tracked plain MMLU self-reported score (73.7)."
 deepseek-coder-v2-236b,63.63,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct,,
+deepseek-llm-67b,39.4,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/deepseek-ai/deepseek-llm-67b-chat/results_2024-06-26T06-16-32.984312.json,2024-06-26,"Open LLM Leaderboard v2, MMLU-Pro 5-shot acc = 0.3944 -> 39.4. Not previously tracked for this model (only plain MMLU was tracked, from the paper)."
 deepseek-r1-0528,85,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528,2025-05-28,MMLU-Pro
 deepseek-r1-671b,84,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-R1,2025-01-20,MMLU-Pro (EM)
+deepseek-r1-distill-qwen-32b,46.9,independent,https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/results_2025-02-13T18-27-04.338360.json,2025-02-13,"Open LLM Leaderboard v2, MMLU-Pro acc = 0.4687 -> 46.9. Not previously tracked for this model."
 deepseek-v2-5,65.83,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V2.5,,
 deepseek-v3-0324,81.2,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3-0324,2025-03-24,MMLU-Pro
 deepseek-v3-1-non-thinking,83.7,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,,MMLU-Pro (EM)
@@ -26,6 +42,7 @@ deepseek-v4-flash-think-max,86.2,self-reported,https://macaron.im/blog/deepseek-
 deepseek-v4-pro-non-think,82.9,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,,Non-Think mode
 deepseek-v4-pro-think-high,87.1,self-reported,https://arxiv.org/abs/2606.19348,,"Think-High mode, per macaron.im's transcription of DeepSeek's technical report"
 deepseek-v4-pro-think-max,87.5,self-reported,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,,Pro-Max mode
+doubao-1-5-pro,80.1,self-reported,https://seed.bytedance.com/doubao_1_5_pro,,MMLU_PRO row of the same official launch-page benchmark table (Knowledge section); Doubao-1.5-pro's best score in that row (next best Gemini-exp-1205 76.4).
 ernie-4-5-300b-a47b,78.4,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,,"[Corrected during full-corpus audit: The existing 78.4 is HF's auto-linked 'Evaluation Results' widget value, which is itself sourced to the TIGER-Lab/MMLU-Pro community leaderboard (an independent third-party eval), not a Baidu self-report, despite being labeled 'self-reported' in the corpus. Directly read Table 5 (p.38) of Baidu's own ERNIE 4.5 Technical Report PDF (June 29, 2025), which reports MMLU-Pro = 78.9 for the post-trained]"
 exaone-4-5,83.3,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,
 falcon-h1-34b,58.73,self-reported,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,,
@@ -33,9 +50,11 @@ falcon-h1r-7b,72.1,self-reported,https://falcon-lm.github.io/blog/falcon-h1r-7b/
 falcon-mamba-7b,14.47,independent,https://huggingface.co/blog/falconmamba,2024-08-12,
 falcon3-10b,38.1,self-reported,https://huggingface.co/tiiuae/Falcon3-10B-Instruct,,"From the card's official Open LLM Leaderboard comparison table (5-shot), matching the same table the existing ifeval/bbh/math/gpqa entries are sourced from. The card's separate 'internal pipeline' table reports a different MMLU-PRO value (44), not used here for consistency with how the other overlapping benchmarks were already sourced."
 falcon3-7b,40.7,self-reported,https://huggingface.co/tiiuae/Falcon3-7B-Instruct,,"MMLU-PRO 5-shot, from the model card's 'Internal Pipeline Benchmarks' table (distinct from the separate HF Open LLM Leaderboard MMLU-PRO figure of 34.30 on the same card, which uses a different eval harness setting)."
+flan-t5-xxl,23.4,independent,https://huggingface.co/datasets/open-llm-leaderboard/google__flan-t5-xxl-details,2024-08-27,"leaderboard_mmlu_pro acc 0.2343, Hugging Face Open LLM Leaderboard v2 automated run of google/flan-t5-xxl, confirmed via the HF datasets API card metadata for this results file."
 gemini-2-0-flash,77.6,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Model-Card.pdf,2025-02-01,GA version
 gemini-2-0-flash-lite,71.6,self-reported,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf,2025-02-01,Public Preview
 gemini-2-0-pro-experimental,79.1,self-reported,https://arxiv.org/abs/2503.19786,2025-03-25,"MMLU-Pro, zero-shot; Gemini 2.0 Pro baseline column in Gemma 3 Technical Report Table 6."
+gemma-2b,13.7,independent,https://huggingface.co/datasets/open-llm-leaderboard/google__gemma-2b-details,2024-06-16,"HuggingFace Open LLM Leaderboard v2 independent re-evaluation of google/gemma-2b, MMLU-Pro acc = 0.137."
 gemma-3-12b,60.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-27b,67.5,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
 gemma-3-4b,43.6,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,
@@ -46,6 +65,10 @@ glm-4-5-air-106b-a12b,81.4,independent,https://llm-stats.com/models/compare/glm-
 gpt-4o,72.55,independent,https://github.com/TIGER-AI-Lab/MMLU-Pro,,"5-shot CoT, from TIGER-Lab's own MMLU-Pro leaderboard/paper (the benchmark's creators), published June 2024 -- contemporaneous with GPT-4o's initial release. Note: Meta's 'Llama 3 Herd of Models' paper (arXiv 2407.21783) independently re-measured GPT-4o at 74.0 on nominally the same 5-shot-CoT config; used the benchmark authors' own figure here as the more canonical measurement to avoid a conflicting duplicate row."
 gpt-4o-mini,63.1,independent,https://huggingface.co/spaces/TIGER-Lab/MMLU-Pro,2024-07-20,"TIGER-Lab's independently-run MMLU-Pro leaderboard (results.csv in TIGER-Lab/mmlu_pro_leaderboard_submission, data source listed as ""TIGER-Lab"", i.e. run by the benchmark authors rather than self-reported) records GPT-4o-mini's overall accuracy as 0.6309 (63.09%). The MMLU-Pro README confirms GPT-4o-mini was added to the leaderboard on 2024-07-20."
 gpt-5-nano,78,independent,https://themodelbeat.com/models/gpt-5-nano,,"MMLU-Pro score from Epoch AI's independent evaluation of GPT-5 nano, relayed via themodelbeat.com."
+gpt-j-6b,12.41,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-08-19,"5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
+gpt-neo-2-7b,11.63,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-06-12,"5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
+gpt-neox-20b,11.55,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-06-09,"5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
+gpt-oss-20b-high,73.6,self-reported,https://huggingface.co/datasets/TIGER-Lab/mmlu_pro_leaderboard_submission/resolve/main/results.csv,2026-03-11,"TIGER-Lab's official MMLU-Pro leaderboard submissions dataset (raw results.csv fetched directly) has a row 'GPT-oss-20B(high)' with Overall=0.736 (73.6%), Data Source tagged 'Self-Reported' (i.e. OpenAI/a submitter provided the number rather than TIGER-Lab running it themselves -- contrast with the adjacent 'GPT-oss-20B(medium)' row at 0.7314, tagged 'TIGER-Lab' meaning independently run with full per-subject breakdown, which would apply to the separate gpt-oss-20b-medium.json file, not this High-effort file). MMLU-Pro is NOT one of the benchmarks in the original arXiv model card (2508.10925) table, so this is a genuinely separate evaluation from the already-tracked plain 'mmlu' score (85.3, high effort). No corresponding row exists for 'GPT-oss-20B(low)' on this leaderboard, so nothing new found there. evaluatedAt is the most recent commit timestamp on the results.csv file (2026-03-11), not necessarily the exact eval run date, since the CSV has no per-row date column."
 granite-3-0-2b-instruct,27.92,self-reported,https://huggingface.co/ibm-granite/granite-3.0-2b-instruct,,
 granite-3-0-8b-instruct,34.45,self-reported,https://huggingface.co/ibm-granite/granite-3.0-8b-instruct,,
 granite-3-1-8b-instruct,28.19,independent,https://huggingface.co/ibm-granite/granite-3.1-8b-instruct,,HF Open LLM Leaderboard V2
@@ -69,6 +92,7 @@ kimi-k2,81.1,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,G
 kimi-k2-5,87.1,self-reported,https://www.kimi.com/blog/kimi-k2-5,,
 kimi-k2-thinking,84.6,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Thinking,,"General Tasks table, MMLU-Pro score on official model card"
 lg-exaone-3-0-7-8b-instruct,27.4,self-reported,https://arxiv.org/abs/2408.03541,2024-08-01,
+lg-exaone-3-5-32b-instruct,46.4,independent,https://huggingface.co/datasets/open-llm-leaderboard/LGAI-EXAONE__EXAONE-3.5-32B-Instruct-details,2025-01-13,"MMLU-Pro raw accuracy from the HF Open LLM Leaderboard 2 independent evaluation run. This model's corpus entry currently only has the plain 'mmlu' slug (78.3, self-reported); mmlu-pro was not tracked at all."
 lg-exaone-4-0-32b-non-reasoning,77.6,self-reported,https://arxiv.org/abs/2507.11407,,Non-reasoning mode
 lg-exaone-4-0-32b-reasoning,81.8,self-reported,https://arxiv.org/abs/2507.11407,,Reasoning mode
 lg-exaone-deep-32b,74,self-reported,https://arxiv.org/abs/2503.12524,2025-03-01,"MMLU-Pro accuracy for the 32B model, confirmed via two independent fetches of the arXiv paper (html v1 and v2, Table 3)."
@@ -77,6 +101,7 @@ llama-3-1-405b,73.3,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3
 llama-3-1-70b,66.4,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, CoT"
 llama-3-1-8b,48.3,self-reported,https://huggingface.co/meta-llama/Meta-Llama-3.1-8B,2024-07-01,"Instruct, CoT"
 llama-3-1-nemotron-70b-instruct,62.78,independent,https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF,,"Shown on the HF model card via an automated third-party evaluation-results widget (linking to TIGER-Lab/MMLU-Pro leaderboard and the community 'evaleval' results datastore), not stated in NVIDIA's own prose/table -- treated as independent/aggregator rather than self-reported."
+llama-3-2-1b,16.8,independent,https://huggingface.co/datasets/open-llm-leaderboard/meta-llama__Llama-3.2-1B-Instruct-details,2024-09-23,"leaderboard_mmlu_pro acc = 0.168, from the HuggingFace Open LLM Leaderboard v2 per-model details run (2024-09-23) for meta-llama/Llama-3.2-1B-Instruct. Meta's own card only reports regular MMLU (49.3), not MMLU-Pro, for this checkpoint."
 llama-3-3-70b,68.9,self-reported,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,,"MMLU Pro CoT, 5-shot"
 llama-4-maverick,80.5,self-reported,https://huggingface.co/blog/llama4-release,,Instruction-tuned
 llama-4-scout,74.3,self-reported,https://huggingface.co/blog/llama4-release,,Instruction-tuned
@@ -86,6 +111,7 @@ minimax-m1,80.6,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-M1-80k,,M
 minimax-m2,82,self-reported,https://github.com/MiniMax-AI/MiniMax-M2,,
 minimax-m2-7,81.8,self-reported,https://arxiv.org/pdf/2605.26494,2026-05-26,"Official MiniMax-M2 technical report (arXiv:2605.26494), Table 4, row 'MMLU-Pro' — M2.7 scores 81.8 (M2.5: 85.2 [sic, M2.5 scores higher here per the published table]; Opus 4.6: 89.1; Sonnet 4.6: 87.3; GPT-5.4: 87.5; Gemini 3.1 Pro: 91.2)."
 minimax-text-01,75.7,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-Text-01,,
+mistral-7b,22.36,independent,https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mistral-7B-v0.1-details,2024-06-12,HF Open LLM Leaderboard v2 automated eval run of mistralai/Mistral-7B-v0.1; MMLU-PRO normalized score. Distinct benchmark from the plain 'mmlu' slug already tracked (paper-reported 60.1).
 mistral-large-2-24-07,65.91,independent,https://huggingface.co/mistralai/Mistral-Large-Instruct-2407,2024-07-24,"From the HF 'Evaluation results' auto-generated widget, backed by the community EvalEval automated eval-results datastore - not a number Mistral wrote into their own benchmark tables, hence independent rather than self-reported."
 mistral-large-24-11,67.94,independent,https://huggingface.co/mistralai/Mistral-Large-Instruct-2411,2024-11-18,"From the HF 'Evaluation results' auto-generated widget, backed by the community EvalEval automated eval-results datastore - an automated third-party eval run, not a Mistral self-report."
 mistral-large-3,73.11,independent,https://artificialanalysis.ai/models/mistral-large-3,,"LayerLens/Atlas independent evaluation, as reported by Artificial Analysis"
@@ -94,6 +120,7 @@ mistral-nemo-12b,44.81,self-reported,https://huggingface.co/mistralai/Mistral-Ne
 mistral-small-3-1-24b,66.76,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,"MMLU Pro 5-shot CoT, instruct model, from the official HF model card."
 mistral-small-3-2-24b,69.06,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,"MMLU Pro 5-shot CoT, from the official HF model card's Small 3.2 24B Instruct column."
 mistral-small-3-24b,66.3,self-reported,https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501,,
+mixtral-8x22b,44.83,independent,https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mixtral-8x22B-Instruct-v0.1-details,2024-06-12,HuggingFace Open LLM Leaderboard v2 official evaluation of mistralai/Mixtral-8x22B-Instruct-v0.1 ('MMLU-PRO Raw' = 0.448305; used raw accuracy rather than the displayed baseline-normalized 38.70 for scale-consistency with how this corpus records other models' mmlu-pro results). Verified via the HF datasets-server JSON API. Genuinely new: no mmlu-pro entry currently exists for this model.
 muse-spark-1-1-xhigh,88.73,independent,https://www.vals.ai/models/meta_muse-spark-1.1,,"MMLU-Pro, measured independently by Vals AI (±0.32 CI, ranked 11/120 models on their leaderboard). Meta has not published an MMLU or MMLU-Pro score for Muse Spark 1.1 in either the launch blog or the Evaluation Report."
 nemotron-3-nano-omni,77.3,self-reported,https://arxiv.org/abs/2604.24954,,Table 10 of the arXiv technical report.
 nemotron-3-super,83.73,self-reported,https://arxiv.org/abs/2604.12374,,Table 5 of the arXiv technical report.
@@ -103,22 +130,30 @@ olmo-2-13b,35.1,self-reported,https://arxiv.org/abs/2501.00656,2025-01-02,"MMLU-
 olmo-2-7b,31,self-reported,https://huggingface.co/allenai/OLMo-2-1124-7B,,
 olmo-3-7b,52.2,independent,https://designforonline.com/ai-models/allenai-olmo-3-7b-instruct/,,"Artificial Analysis measurement, republished on the fetched page; Ai2 only reports MMLU-Pro for OLMo 3 base models (OlmoBaseEval), not the Instruct 7B post-trained model"
 olmo-3-think-32b,75.9,independent,https://designforonline.com/ai-models/allenai-olmo-3-32b-think/,,"MMLU-Pro; Artificial Analysis measurement (Intelligence Index v4.0), republished on the fetched page; Ai2 reports MMLU-Pro only for OLMo 3 base models (OlmoBaseEval held-out), not the Think 32B post-trained model"
+olmoe-1b-7b-0924,17.4,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2026-07-15,"Hugging Face Open LLM Leaderboard v2, 5-shot raw accuracy on MMLU-Pro for allenai/OLMoE-1B-7B-0924 (using the 'MMLU-PRO Raw' field, i.e. actual accuracy, not the leaderboard's normalized display score of 8.22). Not present in the OLMoE paper or HF card for this model."
 palmyra-x5,65.02,self-reported,https://dev.writer.com/home/models,,
+phi-1-5-1-3b,16.91,independent,https://huggingface.co/datasets/open-llm-leaderboard/microsoft__phi-1_5-details,2024-06-09,Hugging Face Open LLM Leaderboard v2 official auto-eval run for microsoft/phi-1_5 (5-shot). Not previously tracked (the file only has the original 2-shot MMLU number from the technical report). [score corrected during round-6 completeness verify: proposed 7.7 -> 16.91]
 phi-3-5-mini-3-8b,47.4,self-reported,https://huggingface.co/microsoft/Phi-3.5-mini-instruct,,0-shot CoT
 phi-3-5-moe-16x3-8b-6-6b-active,54.3,self-reported,https://huggingface.co/microsoft/Phi-3.5-MoE-instruct,,
+phi-3-mini-3-8b,40.2,independent,https://huggingface.co/datasets/open-llm-leaderboard/microsoft__Phi-3-mini-4k-instruct-details,2024-06-12,Hugging Face Open LLM Leaderboard v2 official auto-eval run for microsoft/Phi-3-mini-4k-instruct (5-shot). Distinct from Microsoft's own self-reported MMLU number already on file. [score corrected during round-6 completeness verify: proposed 31.8 -> 40.2]
 phi-4-14b,70.4,self-reported,https://arxiv.org/abs/2412.08905,,"From Table 1 of the Phi-4 Technical Report (simple-evals framework); confirmed via three independent fetches (arxiv html, ar5iv, and direct PDF page image read)."
 phi-4-mini-3-8b,52.8,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7 of the Phi-4-Mini Technical Report, 0-shot CoT."
 phi-4-mini-instruct,52.8,self-reported,https://arxiv.org/abs/2503.01743,,"Table 7, MMLU-Pro (0-shot, CoT)."
 phi-4-reasoning,74.3,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,
 phi-4-reasoning-14b,74.3,self-reported,https://huggingface.co/microsoft/Phi-4-reasoning,2025-04-30,"MMLU-Pro; already present in the sibling corpus record 'Phi-4-reasoning' but missing from this one, though both cite the same HF model card."
+pythia-1-4b,11.23,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2025-01-28,"5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
+pythia-6-9b,11.47,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-06-12,"5-shot MMLU-Pro accuracy (10-choice), HF Open LLM Leaderboard v2."
+qwen1-5-110b,48.5,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-06-13,"Open LLM Leaderboard v2, Qwen/Qwen1.5-110B base weights (eval_name Qwen_Qwen1.5-110B_bfloat16). MMLU-PRO normalized score 48.452. Independent evaluation; MMLU-Pro was not previously tracked for this model (only plain MMLU 80.4 self-reported was present)."
 qwen2-5-14b,51.2,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
 qwen2-5-32b,55.1,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
 qwen2-5-72b,58.1,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
 qwen2-5-7b,45,self-reported,https://qwenlm.github.io/blog/qwen2.5-llm/,,
 qwen2-5-max,76.1,self-reported,https://www.datacamp.com/blog/qwen-2-5-max,,
+qwen2-5-vl-72b,71.2,self-reported,https://arxiv.org/pdf/2502.13923,2025-02-19,"Table 4 (""Performance on pure text tasks of the 70B+ Instruct models and Qwen2.5-VL"") of the Qwen2.5-VL Technical Report -- evaluates the underlying LLM decoder's text-only capability, alongside Llama-3.1-70B/405B and Qwen2/2.5-72B. None of this table's 8 benchmarks were previously tracked for this VL model."
 qwen2-57b-a14b,43,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-72b,55.6,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
 qwen2-7b,40,self-reported,https://qwenlm.github.io/blog/qwen2/,2024-06-07,Base model
+qwen2-vl-72b,57.17,independent,https://huggingface.co/datasets/open-llm-leaderboard/Qwen__Qwen2-VL-72B-Instruct-details,2024-10-22,"Open LLM Leaderboard v2, standard accuracy metric (not acc_norm). Same eval run as the IFEval/BBH/GPQA entries added alongside this one."
 qwen3-235b-a22b-instruct-2507,83,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,,MMLU-Pro
 qwen3-235b-a22b-thinking,68.18,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B,,
 qwen3-235b-a22b-thinking-2507,84.4,self-reported,https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507,,MMLU-Pro
@@ -140,7 +175,10 @@ seed-oss-36b,82.7,self-reported,https://huggingface.co/ByteDance-Seed/Seed-OSS-3
 seed1-5-thinking,87,self-reported,https://github.com/ByteDance-Seed/Seed-Thinking-v1.5,,
 smollm2-1-7b,19.4,self-reported,https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B,,"base model, MCF"
 sonar,68.9,independent,https://designforonline.com/ai-models/perplexity-sonar/,,Attributed to Artificial Analysis; corroborated identically by mindstudio.ai/models/sonar. See gpqa addition notes for sourcing caveats.
+stable-lm-2-1-6b,5.15,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-06-12,HF Open LLM Leaderboard V2 run on the base stabilityai/stablelm-2-1_6b checkpoint. Not previously tracked.
+stablelm-3b-4e1t,7.43,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-08-10,HF Open LLM Leaderboard V2 run on stabilityai/stablelm-3b-4e1t. Not previously tracked for this model.
 starling-7b-alpha,31.72,independent,https://huggingface.co/datasets/open-llm-leaderboard/contents,2024-06-12,"MMLU-Pro, 5-shot, acc (raw, un-normalized leaderboard column). Open LLM Leaderboard v2, same submission as above."
+t-lu-3-70b,65.8,self-reported,https://arxiv.org/abs/2411.15124,2026-07-15,"MMLU-Pro (0-shot CoT) for the final Tülu 3 70B model, from Table 33 (unseen evaluation suite) in the Tülu 3 technical report; same table as the new GPQA row. Verified directly against the arXiv PDF text."
 trinity-large-thinking,83.4,self-reported,https://huggingface.co/arcee-ai/Trinity-Large-Thinking,,
 upstage-solar-pro,52.11,self-reported,https://huggingface.co/upstage/solar-pro-preview-instruct,,
 wizardlm-2-8x22b,39.96,independent,https://huggingface.co/alpindale/WizardLM-2-8x22B,,"Open LLM Leaderboard v2, 5-shot"

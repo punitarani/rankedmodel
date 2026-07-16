@@ -95,6 +95,46 @@
       "source": "independent",
       "sourceUrl": "https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b",
       "notes": "Open LLM Leaderboard (mc2, 0-shot), instruct/Zephyr variant. Confirmed via HF model-card OpenLLM Leaderboard table and README.md raw fetch (row: stabilityai/stablelm-2-zephyr-1_6b, TruthfulQA 45.21%)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 11.57,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HF Open LLM Leaderboard V2 run on the BASE model stabilityai/stablelm-2-1_6b (model_sha 8879812cccd176fbbe9ceb747b815bcc7d6499f8, 1.645B params confirmed matching corpus paramsB 1.64, uploaded 2024-01-18) -- i.e. the same checkpoint this corpus file's own links.hf points to, unlike the file's existing 6 results which are all sourced from the separate stablelm-2-zephyr-1_6b instruct variant. Verified via the HF datasets-server filter API."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 8.63,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HF Open LLM Leaderboard V2 run on the base stabilityai/stablelm-2-1_6b checkpoint (same model_sha/params verified as the IFEval entry). Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 0.76,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "MATH Lvl 5, HF Open LLM Leaderboard V2, base stabilityai/stablelm-2-1_6b checkpoint. Follows the same MATH-Lvl-5-to-'math' slug mapping already used elsewhere in the corpus."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HF Open LLM Leaderboard V2's normalized GPQA score for the base stabilityai/stablelm-2-1_6b checkpoint; raw accuracy 0.248 is at the leaderboard's random-guess baseline, which its normalization formula floors to 0. Actual published value, not a placeholder."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 5.15,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HF Open LLM Leaderboard V2 run on the base stabilityai/stablelm-2-1_6b checkpoint. Not previously tracked."
     }
   ],
   "verificationNotes": "Confirmed real via direct fetch of huggingface.co/stabilityai/stablelm-2-1_6b (1,644,417,024 params = 1.64B, 4096 context, 2T tokens / 2 epochs) and Stability AI's own announcement blog (stability.ai/news-updates/introducing-stable-lm-2), which is dated Jan 19, 2024 and names the 7 languages (English, Spanish, German, Italian, French, Portuguese, Dutch) verbatim, plus Community License terms verbatim. Note: the base-model HF card's own metadata field shows Feb 27, 2024 in one rendering, but the primary announcement and all contemporaneous press (InfoQ, VentureBeat, Maginative, Thurrott) date the release to Jan 19, 2024, so the input's date was kept. All 6 benchmark rows verified literally on the linked instruct/Zephyr variant's HF page (MT-Bench 5.42, MMLU 41.85, HellaSwag 69.34, GSM8K 35.18, ARC-Challenge 43.69, WinoGrande 64.09). No changes made to input values."

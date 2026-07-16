@@ -157,7 +157,15 @@
       "sourceUrl": "https://arxiv.org/abs/2412.04862",
       "evaluatedAt": "2024-12-01",
       "notes": "BBH (CoT)"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 46.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/LGAI-EXAONE__EXAONE-3.5-32B-Instruct-details",
+      "evaluatedAt": "2025-01-13",
+      "notes": "MMLU-Pro raw accuracy from the HF Open LLM Leaderboard 2 independent evaluation run. This model's corpus entry currently only has the plain 'mmlu' slug (78.3, self-reported); mmlu-pro was not tracked at all."
     }
   ],
-  "verificationNotes": "Existence and release date confirmed via GitHub README (states Dec 9, 2024; HF collection metadata shows Dec 6 as an alternate weight-upload date \u2014 kept 2024-12-09 per the cited primary GitHub source). Params (30.95B, rounded 32B), 32K context, NC license, and architecture (64 layers, GQA 40Q/8KV) confirmed on HF model card. All 6 benchmark rows (MT-Bench 8.51, Arena-Hard 78.6, AlpacaEval 60.6, IFEval 81.7, KoMT-Bench 8.05, LogicKor 9.06) verbatim-confirmed on the cited GitHub README \u2014 no changes."
+  "verificationNotes": "Existence and release date confirmed via GitHub README (states Dec 9, 2024; HF collection metadata shows Dec 6 as an alternate weight-upload date — kept 2024-12-09 per the cited primary GitHub source). Params (30.95B, rounded 32B), 32K context, NC license, and architecture (64 layers, GQA 40Q/8KV) confirmed on HF model card. All 6 benchmark rows (MT-Bench 8.51, Arena-Hard 78.6, AlpacaEval 60.6, IFEval 81.7, KoMT-Bench 8.05, LogicKor 9.06) verbatim-confirmed on the cited GitHub README — no changes."
 }

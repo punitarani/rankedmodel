@@ -73,6 +73,38 @@
       "source": "curated",
       "sourceUrl": "https://arxiv.org/abs/2402.19173",
       "notes": "RepoBench v1.1 exact match (EM), averaged across the Python and Java splits reported in Table 17 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024): Python EM 35.50, Java EM 41.27."
+    },
+    {
+      "benchmarkSlug": "humaneval-fim",
+      "score": 75.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2308.12950v3",
+      "evaluatedAt": "2023-08-01",
+      "notes": "HumanEval single-line infilling pass@1, PSM format, long-context-fine-tuned (LCFT) 13B checkpoint — i.e. the actually-released model (matches the file's 16K ctxK). Table 14 (Appendix E) of the Code Llama paper. The paper also reports 80.7 for the pre-LCFT checkpoint and lower multi-line (51.0) and random-span (63.6) infilling scores, which don't map to any taxonomy slug."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 38.4,
+      "source": "independent",
+      "sourceUrl": "https://evalplus.github.io/leaderboard.html",
+      "evaluatedAt": "2024-01-01",
+      "notes": "pass@1 on the EvalPlus-rigorized HumanEval+ test set (base, non-instruct CodeLlama-13B, greedy decoding), from the official EvalPlus leaderboard results data (evalplus/evalplus.github.io repo, entry 'CodeLlama-13B'). Independent re-evaluation harness, distinct from Meta's self-reported base HumanEval score already tracked."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 52.6,
+      "source": "independent",
+      "sourceUrl": "https://evalplus.github.io/leaderboard.html",
+      "evaluatedAt": "2024-01-01",
+      "notes": "pass@1 on the EvalPlus-rigorized MBPP+ test set (base, non-instruct CodeLlama-13B, greedy decoding), from the official EvalPlus leaderboard results data (evalplus/evalplus.github.io repo, entry 'CodeLlama-13B')."
+    },
+    {
+      "benchmarkSlug": "ds-1000",
+      "score": 25.1,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/html/2402.19173",
+      "evaluatedAt": "2024-02-29",
+      "notes": "Overall pass@1 on DS-1000 (mean over 40 samples, temp 0.2/top-p 0.95), Table 11 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024), which independently benchmarks base CodeLlama-13B alongside other open-access code models. Same paper already used in this file for the RepoBench result."
     }
   ],
   "verificationNotes": "Confirmed release 2023-08-24 and license. Directly fetched arxiv.org/html/2308.12950v3 Table 2: HumanEval 36.0 / MBPP 47.0 for base Code Llama 13B confirmed exactly. FIM infilling support confirmed for 13B."

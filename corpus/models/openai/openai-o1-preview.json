@@ -112,6 +112,14 @@
       "score": 42.4,
       "source": "self-reported",
       "sourceUrl": "https://github.com/openai/simple-evals"
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 81.7,
+      "source": "independent",
+      "sourceUrl": "https://github.com/lmarena/arena-hard-auto/blob/main/misc/past_leaderboards.md",
+      "evaluatedAt": "2024-11-14",
+      "notes": "Arena-Hard-v0.1 (Style Control), model id o1-preview-2024-09-12, score 81.7, 95% CI (-2.2, 2.1), average #tokens 1193. From lmarena's official arena-hard-auto GitHub repo's archived leaderboard snapshot (updated 11/14). A second, unlabeled console block in the same file shows a higher 90.4 figure for the same model id under what appears to be a different (non-style-controlled or differently-judged) config with no legible header -- omitted that ambiguous number to avoid a variant-conflation error, and reported only the clearly-headed Style-Control figure."
     }
   ],
   "verificationNotes": "Release date (2024-09-12) and retirement (2025-07-28) confirmed via independent sources. AIME 44.6 and Codeforces 1258 confirmed by direct fetch of analyticsvidhya.com. MATH 85.5, GPQA 73.3, MMLU 90.8, HumanEval 92.4 all confirmed by direct fetch of walturn.com article, matching exactly. Pricing $15/$60 confirmed via prompthub.us model card fetch. No changes made."

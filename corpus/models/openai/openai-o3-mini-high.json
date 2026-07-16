@@ -118,6 +118,38 @@
       "score": 13.8,
       "source": "self-reported",
       "sourceUrl": "https://github.com/openai/simple-evals"
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 468,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/o3-mini-high",
+      "evaluatedAt": "2026-07-15",
+      "notes": "GDPval-AA v2, independently measured by Artificial Analysis on the 'o3-mini (high)' model page. Genuine floor result (0%, last place of 28 models on this eval) -- an older reasoning model with no dedicated real-world-agentic-work tuning. Not previously tracked here. [score corrected during round-6 completeness verify: proposed 0 -> 468]"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 4,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/o3-mini-high",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Terminal-Bench v2.1, independently measured by Artificial Analysis on the 'o3-mini (high)' model page. Not previously tracked here."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 12,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/o3-mini-high",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Humanity's Last Exam, independently measured by Artificial Analysis on the 'o3-mini (high)' model page. Not previously tracked on this catalog entry (existing results are all from LessWrong/simple-evals, neither of which covers HLE for this model)."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 67,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/o3-mini-high",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench (instruction following), independently measured by Artificial Analysis on the 'o3-mini (high)' model page. Not previously tracked here."
     }
   ],
   "verificationNotes": "Existence, release date (2025-01-31), 200K context and $1.10/$4.40 pricing all confirmed via independent sources (VentureBeat, OpenAI docs mirrors). All 4 benchmark rows (AIME 87.3, GPQA 79.7, Codeforces 2130, SWE-bench 49.3) confirmed verbatim on the cited LessWrong post. No changes made."

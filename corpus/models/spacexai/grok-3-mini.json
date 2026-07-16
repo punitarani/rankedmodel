@@ -94,7 +94,15 @@
       "source": "independent",
       "sourceUrl": "https://designforonline.com/ai-models/xai-grok-3-mini/",
       "notes": "Instruction-following score, via Artificial Analysis per the aggregator page."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 21.7,
+      "source": "self-reported",
+      "sourceUrl": "https://medium.com/@bernardloki/grok-3-review-a-critical-look-at-xais-smartest-ai-claim-aea15ca38b66",
+      "evaluatedAt": "2025-02-17",
+      "notes": "SimpleQA 21.7% for 'Grok 3 mini Beta', from xAI's own Feb 17, 2025 launch-blog benchmark table (same table already used as the self-reported source for the sibling Grok-3 Standard file's SimpleQA=43.6% row). Confirmed via direct fetch of medium.com/@bernardloki, which literally states 'Grok 3 mini Beta: 21.7%' for SimpleQA alongside the matching 43.6% figure for the full Grok 3 Beta. Not previously tracked for this model (simpleqa slug absent from grok-3-mini.json)."
     }
   ],
-  "verificationNotes": "Confirmed real, launched same Feb 17, 2025 event as Grok 3. All 4 result rows literally confirmed on designforonline.com via direct fetch ('GPQA Diamond 79.1%', 'MATH 500 99.2%', 'AIME 2025 84.7%', 'LiveCodeBench 69.6%'). Pricing $0.30/$0.50 per 1M tokens confirmed independently. Noted that xAI's own launch-day announcement separately advertised a higher AIME-2024/cons@64 figure (95.8%) not present in this record \u2014 left as-is since only the cited row's number needed literal confirmation, which it has."
+  "verificationNotes": "Confirmed real, launched same Feb 17, 2025 event as Grok 3. All 4 result rows literally confirmed on designforonline.com via direct fetch ('GPQA Diamond 79.1%', 'MATH 500 99.2%', 'AIME 2025 84.7%', 'LiveCodeBench 69.6%'). Pricing $0.30/$0.50 per 1M tokens confirmed independently. Noted that xAI's own launch-day announcement separately advertised a higher AIME-2024/cons@64 figure (95.8%) not present in this record — left as-is since only the cited row's number needed literal confirmation, which it has."
 }

@@ -8,8 +8,12 @@ claude-3-opus,80.8,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cba
 claude-3-sonnet,81.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"ChartQA test set, relaxed accuracy, 4-shot CoT, from Table 3 of the Claude 3 Model Card."
 deepseek-vl2,86,self-reported,https://arxiv.org/html/2412.10302v1,,Base variant
 ernie-4-5-vl-424b-a47b,86.8,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 8, thinking mode."
+gemini-1-0-nano,51.9,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7, Gemini Nano-2 (3.25B) column, ChartQA (test), pixel-only, 0-shot."
+gemini-1-0-pro,74.1,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7: Gemini Pro (pixel-only), ChartQA (test)."
+gemini-1-0-ultra,80.8,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7 (Image understanding), ChartQA (test), pixel-only, greedy 0-shot."
 gemini-1-5-flash,85.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"ChartQA test split, 0-shot with chain-of-thought rationale, Table 18 of the Gemini 1.5 technical report."
 gemini-1-5-pro,87.2,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"ChartQA test split, 0-shot with chain-of-thought rationale, Table 18."
+gemma-3-12b,75.7,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Gemma 3 12B IT column, Table 16 of the Gemma 3 Technical Report."
 gemma-3-4b,68.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Table 16, IT 4B."
 gpt-4o,85.7,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,,"ChartQA (test, relaxed accuracy), 0-shot CoT. Same provenance as the MMMU row above."
 internvl2-5-78b,88.3,self-reported,https://internvl.github.io/blog/2024-12-05-InternVL-2.5/,,ChartQA test average
@@ -17,10 +21,12 @@ internvl3-78b,89.7,self-reported,https://internvl.github.io/blog/2025-04-11-Inte
 llama-3-2-11b-vision,83.4,self-reported,https://huggingface.co/meta-llama/Llama-3.2-11B-Vision,2024-09-01,"Instruct, test"
 llama-3-2-90b-vision,85.5,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,"ChartQA test, CoT, relaxed accuracy"
 llama-4-maverick,85.3,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Pre-trained/base model comparison table, relaxed_accuracy metric"
+llama-4-scout,88.8,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Instruction-tuned table, relaxed_accuracy metric. Not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 90 -> 88.8]"
 minicpm-o-2-6,86.9,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-13,
 minicpm-v-2-6,79.4,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2024-08-06,"Not in MiniCPM-V 2.6's own results table; taken from the fuller cross-model comparison table on the MiniCPM-o 2.6 model card, which includes a MiniCPM-V 2.6 reference row with additional columns (ChartQA, MathVision) beyond the model's own doc."
 minimax-vl-01,91.7,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,relaxed accuracy
 mistral-small-3-1-24b,86.24,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
+mistral-small-3-2-24b,87.4,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,Vision benchmark table on the HF model card.
 molmo-2-8b,86,self-reported,https://arxiv.org/abs/2601.10611,,"Molmo2 Technical Report Table 6, Molmo2-8B row."
 molmo-72b,87.3,self-reported,https://arxiv.org/abs/2409.17146,2024-09-25,"Molmo Technical Report Table 1, Molmo-72B row."
 nemotron-3-nano-omni,90.3,self-reported,https://arxiv.org/abs/2604.24954,,"Table 7, ChartQA Test split, reasoning-on mode."
@@ -29,6 +35,7 @@ phi-4-multimodal-5-6b,81.4,self-reported,https://arxiv.org/abs/2503.01743,,"Tabl
 phi-4-multimodal-instruct,81.4,self-reported,https://arxiv.org/abs/2503.01743,,"Table 1, ChartQA."
 pixtral-12b,81.8,self-reported,https://mistral.ai/news/pixtral-12b/,,CoT prompting
 pixtral-large-124b,88.1,self-reported,https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411,2024-11-18,ChartQA (CoT) row of the same table.
+qvq-72b-preview,83.2,independent,https://arxiv.org/abs/2505.19076,2025-05-25,"ChartQA-H (human split). From 'ChartSketcher: Reasoning with Multimodal Feedback and Reflection for Chart Understanding' (arXiv:2505.19076), Table 1, row 'QvQ-Preview-72B', used as an open-source vision baseline. Judged via majority vote (3 runs) with DeepSeek-Distill-Qwen-32B as the answer-alignment scorer."
 qwen-vl,65.7,self-reported,https://huggingface.co/Qwen/Qwen-VL,,ChartQA
 qwen2-5-vl-72b,89.5,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,,
 qwen2-vl-72b,88.3,self-reported,https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct,,"ChartQA test split, from the official HF model card benchmark table."

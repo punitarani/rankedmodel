@@ -67,6 +67,22 @@
       "sourceUrl": "https://arxiv.org/abs/2201.11903",
       "evaluatedAt": "2022-01-28",
       "notes": "LaMDA 137B, 8-shot chain-of-thought prompting on GSM8K (vs. 6.5% with standard/non-CoT prompting), reported in Google's Chain-of-Thought Prompting paper (Wei et al. 2022), Table 2 / Appendix B."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 76.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.02311",
+      "evaluatedAt": "2022-04-05",
+      "notes": "LaMDA 137B, 0-shot, ARC-Easy. Appears in the PaLM technical report's Table 4 as the 'prior SOTA' baseline (footnote 'e' = LaMDA, originally reported via Wei et al. 2022a's Emergent Abilities survey). Verbatim-confirmed via ar5iv full-text render of arxiv 2204.02311: 'ARC-e 76.4 e 76.6 ...'. A 10-shot LaMDA figure (80.9) also appears in the same row but was not added to avoid a duplicate under the same slug."
+    },
+    {
+      "benchmarkSlug": "anli",
+      "score": 39.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.02311",
+      "evaluatedAt": "2022-04-05",
+      "notes": "LaMDA 137B, 0-shot, ANLI Round 2 (R2). Same PaLM Table 4 baseline mechanism as the arc-easy entry (footnote 'e' = LaMDA). Verbatim-confirmed via ar5iv render: 'ANLI R2 39.9 e 44.2 ...'. LaMDA also appears as the 0-shot RTE baseline (73.3) in the same table, but RTE has no taxonomy slug so it was omitted. GSM8K-Python pass@1 (7.6%, same paper Table 12) was deliberately NOT mapped to the 'gsm8k' slug -- it's a code-generation variant of GSM8K (write-and-execute Python), a materially different eval protocol from the already-tracked 8-shot CoT gsm8k score, and forcing it into the same slug would conflate variants."
     }
   ],
   "verificationNotes": "Confirmed real via arxiv.org/abs/2201.08239 (submitted 2022-01-20, the research writeup) which literally states LaMDA models have 'up to 137B parameters' -- matches paramsB. Confirmed public unveiling date 2021-05-18 at Google I/O via blog.google/technology/ai/lamda/ and corroborating press (9to5google, VentureBeat) all dated May 18, 2021. Closed/proprietary status and 'weights never released' are well-established and uncontested. Could not independently confirm the exact 2K context-length figure from a primary source in this pass (left as-is, low confidence); no results rows were present to check. No changes made to core fields."

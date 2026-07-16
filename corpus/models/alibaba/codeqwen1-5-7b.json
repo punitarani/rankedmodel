@@ -80,6 +80,22 @@
       "sourceUrl": "https://qwenlm.github.io/blog/codeqwen1.5/",
       "evaluatedAt": "2024-04-16",
       "notes": "Base model, 0-shot."
+    },
+    {
+      "benchmarkSlug": "bigcodebench",
+      "score": 45.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.12186",
+      "evaluatedAt": "2024-09-18",
+      "notes": "BigCodeBench-Complete Full split, base model (CodeQwen1.5-7B), from Qwen2.5-Coder Technical Report Table 5, where CodeQwen1.5-7B is used as a baseline comparison row (columns: HumanEval 51.8, HE+ 45.7, MBPP 72.2, MBPP+ 60.2, MBPP-3shot 61.8 -- all matching values already tracked in this file from the primary blog -- then BigCodeBench-Full 45.6, BigCodeBench-Hard 15.5). Verified by three independent fetches of the arxiv HTML that all agreed on 45.6. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 7.9,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2409.12186",
+      "evaluatedAt": "2024-09-18",
+      "notes": "LiveCodeBench Pass@1, CodeQwen1.5-7B-Chat variant, from Qwen2.5-Coder Technical Report Table 16 ('performance of different instruct models on code generation by HumanEval, MBPP, bigcodebench and livecodebench'). Flagging that this is the Chat variant while the file's existing HumanEval/MBPP rows are labeled 'Base model' even though the row's hf link points to Qwen/CodeQwen1.5-7B-Chat -- worth reconciling variant labeling across the row during merge. Not previously tracked."
     }
   ],
   "verificationNotes": "Fetched qwenlm.github.io/blog/codeqwen1.5/ directly: confirms release 2024-04-16, 7B params, 64K context, ~3T code tokens, 92 programming languages, HumanEval-Chat 83.5. Both cited result rows (HumanEval 51.8, MBPP 72.2, base 0-shot) appear verbatim on the page. No changes made."

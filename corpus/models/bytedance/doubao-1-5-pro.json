@@ -54,7 +54,84 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2502.14739",
       "notes": "SuperGPQA 'Overall (sample)' score for Doubao-1.5-pro-32k-250115 (chat-model category, zero-shot, temperature=0), from the independent SuperGPQA benchmark paper (M-A-P / Doubao Seed team et al., Table in Section 4.2, arXiv:2502.14739)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 88.6,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "From the official ByteDance Seed launch page's 'Doubao-1.5-pro 在多个基准上的测评结果' benchmark table (Knowledge section), dated 2025.01.22 matching the model's release date. Page renders the table as live text (verified via browser screenshot, not an inaccessible image as some fetch tools reported). Table also shows comparison models Llama3.1-405B 88.6, GPT4o-0806 88.7, Gemini-exp-1205 86.8, Claude-3.5-Sonnet-latest 88.5, Qwen2.5 85.6, DeepSeekV3 88.5."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 80.1,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "MMLU_PRO row of the same official launch-page benchmark table (Knowledge section); Doubao-1.5-pro's best score in that row (next best Gemini-exp-1205 76.4)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 65,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "GPQA row of the official launch-page table (Knowledge section); tied for best with Claude-3.5-Sonnet-latest (65.0)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 88.6,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "Math row of the official launch-page table (MATH section, standard MATH benchmark, distinct from the 'OlympiadBench' row in the same section)."
+    },
+    {
+      "benchmarkSlug": "olympiadbench",
+      "score": 59.8,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "OlympiadBench row of the official launch-page table (MATH section)."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "Labeled 'MBPP+' (the MBPP-Plus variant, not plain MBPP) in the Code section of the official launch-page table; mapped to the mbpp-plus taxonomy slug specifically because of the '+' naming."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 91.6,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "BBH row of the official launch-page table (Reasoning section)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 93,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "DROP row of the official launch-page table (Reasoning section); Doubao-1.5-pro's best score in that row."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 89.5,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "IFEval row of the official launch-page table (Instruction Following section)."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 90.9,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "CMMLU row of the official launch-page table (Chinese section); Doubao-1.5-pro's best score in that row."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 91.8,
+      "source": "self-reported",
+      "sourceUrl": "https://seed.bytedance.com/doubao_1_5_pro",
+      "notes": "C-Eval row of the official launch-page table (Chinese section); Doubao-1.5-pro's best score in that row."
     }
   ],
-  "verificationNotes": "Confirmed real: released Jan 22 2025 (Gigazine and others), pricing $0.11/$0.275 per 1M tokens and 32K-256K context both literally confirmed on the MarkTechPost article. Active params 20B (~140B-dense-equivalent, 7 experts/token) also confirmed there. The 200B TOTAL-parameter figure is not stated in the MarkTechPost launch article itself \u2014 it traces to ByteDance Seed's own arXiv paper (2504.13914, Seed1.5-Thinking / 'Seed-Thinking-v1.5'), which discloses 20B activated / 200B total for the MoE reasoning model underlying Doubao's Deep Thinking mode, and is corroborated by multiple secondary write-ups (aibase.com, rosywheel.com) explicitly attributing 200B/20B to 'Doubao 1.5 Deep Thinking'. Updated specSources.paramsB to point to the primary arXiv disclosure rather than the launch article."
+  "verificationNotes": "Confirmed real: released Jan 22 2025 (Gigazine and others), pricing $0.11/$0.275 per 1M tokens and 32K-256K context both literally confirmed on the MarkTechPost article. Active params 20B (~140B-dense-equivalent, 7 experts/token) also confirmed there. The 200B TOTAL-parameter figure is not stated in the MarkTechPost launch article itself — it traces to ByteDance Seed's own arXiv paper (2504.13914, Seed1.5-Thinking / 'Seed-Thinking-v1.5'), which discloses 20B activated / 200B total for the MoE reasoning model underlying Doubao's Deep Thinking mode, and is corroborated by multiple secondary write-ups (aibase.com, rosywheel.com) explicitly attributing 200B/20B to 'Doubao 1.5 Deep Thinking'. Updated specSources.paramsB to point to the primary arXiv disclosure rather than the launch article."
 }

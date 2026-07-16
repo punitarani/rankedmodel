@@ -8,18 +8,23 @@ claude-3-7-sonnet,71.8,self-reported,https://www.anthropic.com/news/claude-3-7-s
 claude-3-haiku,50.2,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-13,"Validation set, overall"
 claude-3-opus,59.4,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"Validation set, overall"
 claude-3-sonnet,53.1,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"Validation set, overall"
+claude-fable-5,89.3,independent,https://www.vals.ai/models/anthropic_claude-fable-5,,"Vals AI independent eval. MMMU 89.306% (ranked 1st of 82 models per the page), from the model page's embedded score bars (raw HTML fetch). Not previously tracked for this model — Anthropic's own launch materials for Fable 5 did not appear to publish an MMMU figure."
 claude-haiku-4-5,73.2,self-reported,https://www.anthropic.com/news/claude-haiku-4-5,2025-10-15,"MMMU (validation split), visual reasoning."
 claude-opus-4,76.5,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,multimodal understanding; confirmed via direct fetch
 claude-opus-4-1,77.1,self-reported,https://www.anthropic.com/news/claude-opus-4-1,2025-08-05,"MMMU (validation split), visual reasoning, from the same official launch-page table."
 claude-opus-4-5,80.7,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,,
 claude-opus-4-5-high,80.7,self-reported,https://www.vellum.ai/blog/claude-opus-4-5-benchmarks,2025-11-24,
+claude-opus-4-7,85.55,independent,https://www.vals.ai/models/anthropic_claude-opus-4-7,,Vals AI independent evaluation. Distinct from the already-tracked 'mmmu-pro' slug on this model.
 claude-sonnet-4,74.4,self-reported,https://www.datacamp.com/blog/claude-4,2025-05-22,multimodal understanding; confirmed via direct fetch
+claude-sonnet-4-6,83.58,independent,https://www.vals.ai/models/anthropic_claude-sonnet-4-6,,"Vals AI independent evaluation. Distinct from the already-tracked 'mmmu-pro' slug on this model, which is a harder/different benchmark."
 cogvlm-17b,41.1,self-reported,https://ar5iv.labs.arxiv.org/html/2311.03079,,"From a later-revised comparison table in the same paper (arXiv:2311.03079, updated version) for the 'CogVLM-Chat / Vicuna-7B' checkpoint, i.e. the same cogvlm-chat-hf model cataloged here. MMMU/MathVista postdate the Nov-2023 original release, confirming this table reflects a later official update to the paper."
 command-a-218b,75.1,self-reported,https://cohere.com/blog/command-a-plus,,
 deepseek-vl-7b,36.6,self-reported,https://arxiv.org/html/2403.05525v2,,7B-chat variant
 deepseek-vl2,51.1,self-reported,https://arxiv.org/html/2412.10302v1,,Base (4.5B active) variant
 ernie-4-5-vl-424b-a47b,70,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 8, thinking mode -- this is the near-o1 result referenced in this model's existing 'note' field."
 exaone-4-5,78.7,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,"MMMU (val), reasoning mode; also confirmed on the HF model card"
+gemini-1-0-nano,32.6,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7, Gemini Nano-2 (3.25B) column, MMMU (val) pass@1, pixel-only, 0-shot."
+gemini-1-0-pro,47.9,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7 of the official Gemini 1.0 technical report: Gemini Pro (pixel-only, post-trained), MMMU (val), pass@1. Not previously tracked -- the corpus only had text benchmarks (MMLU, GSM8K, MATH, BBH, HumanEval, DROP, HellaSwag, MGSM) for this model."
 gemini-1-0-ultra,62.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Stated directly in the report body (Section 1/5.1) as Gemini Ultra's new state-of-the-art MMMU score, corroborated by the paper's abstract; uses the uncertainty-routed CoT approach."
 gemini-1-5-flash,56.1,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"val split, 0-shot, Table 22"
 gemini-1-5-flash-8b,50.3,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"val, 4-shot, Table 22"
@@ -56,6 +61,7 @@ kimi-k1-5,70,self-reported,https://arxiv.org/abs/2501.12599,,"MMMU-Val (Pass@1) 
 llama-3-2-11b-vision,50.7,self-reported,https://huggingface.co/meta-llama/Llama-3.2-11B-Vision,2024-09-01,"Instruct, val 0-shot/CoT"
 llama-3-2-90b-vision,60.3,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,"MMMU val, CoT, instruct model"
 llama-4-maverick,73.4,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,Instruction-tuned
+llama-4-scout,69.4,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Instruction-tuned table, accuracy. Not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 73.4 -> 69.4]"
 mimo-v2-5,80,independent,https://www.vals.ai/models/xiaomi_mimo-v2.5,,"MMMU (base version, distinct from the already-tracked MMMU-Pro), independently benchmarked by Vals AI for MiMo V2.5 (±0.96 CI)."
 minicpm-llama3-v-2-5,45.8,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md,2024-05-20,MMMU val split.
 minicpm-o-2-6,50.4,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-13,MMMU val split; evaluated with chain-of-thought prompting per the model card's footnote.

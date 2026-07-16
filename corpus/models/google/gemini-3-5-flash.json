@@ -128,6 +128,22 @@
       "sourceUrl": "https://deepmind.google/models/gemini/flash/",
       "evaluatedAt": "2026-05-19",
       "notes": "GDPval-AA, Elo-style rating for economically valuable knowledge work."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 95.3,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash",
+      "evaluatedAt": "2026-07-15",
+      "notes": "τ²-Bench Telecom agentic tool-use eval, Artificial Analysis independent evaluation (raw score 0.9532163742690, model page's default/'(high)' reasoning-effort listing for the gemini-3-5-flash slug -- same page/source pattern already used for this model's existing GPQA and MMMU-Pro entries). Corroborated qualitatively (score not given) by multiple launch-week roundups citing AA's Tau2-Bench Telecom coverage of this model. Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 76.3,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench instruction-following eval, Artificial Analysis independent evaluation (raw score 0.7632653061224, same model-page listing as the tau2-bench-telecom entry above). Not previously tracked."
     }
   ],
   "verificationNotes": "Confirmed real: launched at Google I/O 2026-05-19 with immediate GA (no waitlist), confirmed via blog.google and deepmind.google/models/gemini/flash/ (both fetched directly). All 4 benchmark numbers (SWE-bench Pro 55.1, MMMU-Pro 83.6, Terminal-Bench 2.1 76.2, CharXiv 84.2) literally confirmed on the cited pages. 1M/64k context, text/image/video/audio input modalities, and $1.50/$9 pricing all confirmed independently. No changes to record."

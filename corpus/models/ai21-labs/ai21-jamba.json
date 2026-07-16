@@ -110,6 +110,38 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2403.19887v1",
       "notes": "HumanEval pass@1 score from Table 2 of the original Jamba technical report -- not present on the HF model card, which omits code-generation results."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 20.26,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-09-16",
+      "notes": "HF Open LLM Leaderboard V2 run on ai21labs/Jamba-v0.1 (model_sha ce13f3fe99555a2606d1892665bb67649032ff2d, 51.57B params, Apache-2.0, upload date 2024-03-28 -- all matching the corpus entry's own spec fields, confirming correct model identity). Not previously tracked; only AI21's own self-reported academic-benchmark table (MMLU/HellaSwag/etc.) was in the file."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 1.59,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-09-16",
+      "notes": "MATH Lvl 5, HF Open LLM Leaderboard V2 run on ai21labs/Jamba-v0.1. Follows the same MATH-Lvl-5-to-'math' slug mapping already used elsewhere in the corpus."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 26.85,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-09-16",
+      "notes": "HF Open LLM Leaderboard V2 run on ai21labs/Jamba-v0.1 (normalized score; raw acc 0.268). Not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 2.46 -> 26.85]"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 16.57,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-09-16",
+      "notes": "HF Open LLM Leaderboard V2 run on ai21labs/Jamba-v0.1. Not previously tracked for this model."
     }
   ],
   "verificationNotes": "Confirmed via ai21.com/blog/announcing-jamba/ (published 2024-03-28: Apache-2.0 open weights, 256K context window, 140K tokens on a single 80GB GPU) and HF model card ai21labs/Jamba-v0.1 (12B active/52B total MoE, hybrid Mamba-Transformer-MoE). All 8 benchmark rows (MMLU 67.4, HellaSwag 87.1, ARC-Challenge 64.4, GSM8K/CoT 59.9, WinoGrande 82.5, BBH 45.4, PIQA 83.2, TruthfulQA 46.4) were fetched directly from the HF model card's academic benchmarks table and match exactly. All fields left unchanged."

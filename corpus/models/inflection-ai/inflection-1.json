@@ -113,6 +113,38 @@
       "sourceUrl": "https://inflection.ai/assets/Inflection-1.pdf",
       "evaluatedAt": "2023-06-23",
       "notes": "0-shot, unfiltered-web dev split ('Split A', Table 3); this is the figure behind the public blog's claim of a 2.1-point edge over LLaMA-65B (68.2). Three other TriviaQA/split-and-shot variants are also reported (up to 85.0 on the Wikipedia split, 1-shot) but this one was chosen as the standard 0-shot comparison point."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 94.2,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "ARC-Challenge, 25-shot, Inflection-1 column of a comparison table (Inflection-2.5 vs Inflection-1 vs GPT-4) on Inflection AI's official Inflection-2.5 launch page. The table is rendered as a vector-outlined SVG image (framerusercontent.com/images/7EntAgSnt8VPh6RRcGzH7kbVRk.svg) with no extractable text layer, so it does not surface via curl/grep or HTML-to-text fetch tools -- confirmed here by directly rendering the SVG asset in a browser and reading the table (HellaSwag 10-shot: Inflection-2.5=90.2/Inflection-1=85.8/GPT-4=95.3; ARC-C 25-shot: Inflection-2.5=94.6/Inflection-1=94.2/GPT-4=96.3, which matches GPT-4's well-known 96.3 ARC-Challenge-25-shot figure from OpenAI's own technical report, corroborating the chart's reliability). A separate, much lower ARC-Challenge(1-shot)=67.0 figure for Inflection-1 also appears on Inflection-2's own launch page (Table 2); the 25-shot figure is used here as it matches the shot-count convention already used for this corpus's other legacy-era ARC-Challenge entries (e.g. GPT-3.5 Turbo, sourced from the GPT-4 technical report's standard 25-shot column)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 16.7,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2-5",
+      "evaluatedAt": "2024-03-07",
+      "notes": "MATH benchmark, 4-shot, Inflection-1 column of a comparison table on Inflection AI's official Inflection-2.5 launch page (GSM8k/MATH table: GSM8k 8-shot Inflection-2.5=86.3/Inflection-1=62.9[matches this corpus's existing tracked value, confirming reliability]/GPT-4=92.0; MATH 0-shot/4-shot Inflection-2.5=43.1/Inflection-1=16.7/GPT-4=52.9). Rendered as a vector-outlined SVG image (framerusercontent.com/images/CqI16dv6DCLT8JgA3o6V2ZTJVQc.svg) with no text layer extractable via standard fetch tools; confirmed by directly rendering the SVG asset in a browser."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 84.2,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2",
+      "evaluatedAt": "2023-11-22",
+      "notes": "PIQA, 0-shot, Inflection-1 column of Table 2 (common-sense/science benchmarks) on Inflection AI's official Inflection-2 launch page. Rendered as a vector-outlined SVG image (framerusercontent.com/images/WcZyvwpmgQWfv7sUpfkL0mY3N8.svg), confirmed by directly rendering the asset in a browser: full row reads HellaSwag(0)=84.3, HellaSwag(1)=84.4, PIQA(0)=84.2, PIQA(1)=84.4, LAMBADA(1)=83.3, ARC-E(1)=89.6, ARC-C(1)=67.0 for Inflection-1."
+    },
+    {
+      "benchmarkSlug": "arc-easy",
+      "score": 89.6,
+      "source": "self-reported",
+      "sourceUrl": "https://inflection.ai/inflection-2",
+      "evaluatedAt": "2023-11-22",
+      "notes": "ARC-Easy, 1-shot, Inflection-1 column of Table 2 on Inflection AI's official Inflection-2 launch page. Same SVG table as the piqa entry (framerusercontent.com/images/WcZyvwpmgQWfv7sUpfkL0mY3N8.svg), confirmed by direct browser rendering."
     }
   ],
   "verificationNotes": "Confirmed real via direct fetch of inflection.ai/inflection-1: page literally states '72.7% on average across all 57 tasks' on MMLU, matching the score exactly. Fetch also confirmed the June 22 2023 announcement date. No changes made."

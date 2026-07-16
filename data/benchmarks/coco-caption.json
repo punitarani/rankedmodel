@@ -5,6 +5,6 @@
   "unit": "CIDEr",
   "description": "Zero-shot COCO image-captioning quality (CIDEr).",
   "normMin": 0,
-  "normMax": 97,
+  "normMax": 155,
   "higherIsBetter": true
 }

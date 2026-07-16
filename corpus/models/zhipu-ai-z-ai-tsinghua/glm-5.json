@@ -104,6 +104,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/zai-org/GLM-5",
       "notes": "tau2-Bench, labeled 'T2-Bench' on HF model card"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 72,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/glm-5",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench (instruction-following), independently measured by Artificial Analysis, one of the Intelligence Evaluations shown on GLM-5 (Reasoning)'s live AA model page (72%, ranked 13th of 23 models shown). Not reported by Z.ai in its own launch materials (which cover HLE/AIME/GPQA/SWE-bench/Terminal-Bench/CyberGym/BrowseComp/tau2-bench, all already tracked) and not previously present in the corpus for GLM-5."
     }
   ],
   "verificationNotes": "This is a genuine, released model, not a rumor -- confirmed via zai-org/GLM-5 GitHub repo, Hugging Face model card, official docs.z.ai/guides/llm/glm-5, arXiv technical report 2602.15763 ('GLM-5: from Vibe Coding to Agentic Engineering'), and extensive independent tech press (Let's Data Science, Pandaily-style outlets, Wikipedia's GLM(AI) article) all covering the Feb 2026 launch and its 'trained entirely on Huawei Ascend chips, zero Nvidia' angle, tied to Zhipu's Jan 8 2026 HKEX IPO. Release date: most sources say Feb 11, 2026; docs.z.ai's own release-notes timeline says Feb 12 -- one-day discrepancy, used the more commonly-cited Feb 11. Params: GitHub repo table and multiple press pieces agree on 744B total / 40B active; a couple of secondary blogs round to '745B/44B' -- treated as noise around the same figure, GitHub repo (self-published) used as primary. Benchmark scores for SWE-bench Verified (77.8) and Terminal-Bench 2.0 (56.2) confirmed directly on the official docs.z.ai/guides/llm/glm-5 page. HLE, AIME, GPQA-Diamond, CyberGym, BrowseComp, and tau2-Bench scores confirmed directly on the official Hugging Face model card (zai-org/GLM-5), which lists a full self-reported benchmark table. Omitted SWE-bench Multilingual (73.3), BrowseComp-Zh (72.7), MCP-Atlas (67.8), Tool-Decathlon (38.0), and Vending Bench 2 ($4,432 balance) because they either lack a matching corpus slug or would require misfiling a distinct benchmark variant under an existing base slug."

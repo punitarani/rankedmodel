@@ -135,7 +135,15 @@
       "sourceUrl": "https://arxiv.org/abs/2403.04652",
       "evaluatedAt": "2024-03-01",
       "notes": "5-shot. Yi technical report Table 8 (depth-upscaling section, Yi-6B baseline row)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 41.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/contents",
+      "evaluatedAt": "2023-11-08",
+      "notes": "TruthfulQA (mc2, 0-shot) score of 41.863767 from the archived Hugging Face Open LLM Leaderboard v1 results dataset, row for '01-ai/Yi-6B' (bfloat16 base model, distinct from Yi-6B-Chat and the later Yi-1.5 series), eval timestamp 2023-11-08T10:34:08Z -- an independent third-party evaluation, not from 01.AI's own technical report. Note: the same leaderboard row also gives ARC/HellaSwag/MMLU/Winogrande/GSM8K figures that differ somewhat from this corpus's existing self-reported values for those slugs, but those slugs are already tracked so are not re-added per the dedup rule; only the previously-untracked TruthfulQA metric is added here."
     }
   ],
-  "verificationNotes": "CORRECTED: input record's mbpp score of 23.2 does not appear in the source. Fetched the Yi technical report full text (ar5iv render of arXiv 2403.04652, Table 3: 'GSM8k, MATH, Human-Eval, and MBPP') and confirmed Yi-6B's actual MBPP pass@1 is 26.3, not 23.2 \u2014 corrected accordingly. All other benchmark numbers (mmlu 63.2, bbh 42.8, gsm8k 32.5, math 4.6, humaneval 15.9) and specs (release Nov 2, 2023; 6B; Apache 2.0; 4K ctx; bilingual) confirmed exactly against HF model card and the paper."
+  "verificationNotes": "CORRECTED: input record's mbpp score of 23.2 does not appear in the source. Fetched the Yi technical report full text (ar5iv render of arXiv 2403.04652, Table 3: 'GSM8k, MATH, Human-Eval, and MBPP') and confirmed Yi-6B's actual MBPP pass@1 is 26.3, not 23.2 — corrected accordingly. All other benchmark numbers (mmlu 63.2, bbh 42.8, gsm8k 32.5, math 4.6, humaneval 15.9) and specs (release Nov 2, 2023; 6B; Apache 2.0; 4K ctx; bilingual) confirmed exactly against HF model card and the paper."
 }

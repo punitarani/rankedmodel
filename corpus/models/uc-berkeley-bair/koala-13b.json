@@ -69,6 +69,54 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/html/2312.06281v2",
       "notes": "MT-Bench score cited in the EQ-Bench paper's model comparison table"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 52.99,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_TheBloke__koala-13B-HF/resolve/main/results_2023-07-19T18%3A49%3A04.838102.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "HuggingFace Open LLM Leaderboard v1 archive, TheBloke/koala-13B-HF (a merged/mergeable HF conversion of the same BAIR Koala 13B diff weights tracked in this corpus entry). ARC-Challenge 25-shot acc_norm = 0.5298634812286689. Verified via the raw results JSON, not a scraped summary."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 77.59,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_TheBloke__koala-13B-HF/resolve/main/results_2023-07-19T18%3A49%3A04.838102.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "HuggingFace Open LLM Leaderboard v1 archive, TheBloke/koala-13B-HF. HellaSwag 10-shot acc_norm = 0.7759410476000796."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 50.23,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_TheBloke__koala-13B-HF/resolve/main/results_2023-07-19T18%3A49%3A04.838102.json",
+      "evaluatedAt": "2023-07-19",
+      "notes": "HuggingFace Open LLM Leaderboard v1 archive, TheBloke/koala-13B-HF. TruthfulQA-MC 0-shot mc2 = 0.5022661446867869 (standard Open LLM Leaderboard TruthfulQA metric)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 74.03,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_TheBloke__koala-13B-HF/resolve/main/results_2023-10-22T08-43-38.346498.json",
+      "evaluatedAt": "2023-10-22",
+      "notes": "HuggingFace Open LLM Leaderboard v1 archive, TheBloke/koala-13B-HF, later re-run. Winogrande 5-shot acc = 0.7403314917127072."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 6.82,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_TheBloke__koala-13B-HF/resolve/main/results_2023-10-22T08-43-38.346498.json",
+      "evaluatedAt": "2023-10-22",
+      "notes": "HuggingFace Open LLM Leaderboard v1 archive, TheBloke/koala-13B-HF. GSM8K 5-shot acc = 0.06823351023502654 -- expectedly very low for a 2023 LLaMA-13B chat fine-tune with no math-specific tuning."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 9.11,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/details_TheBloke__koala-13B-HF/resolve/main/results_2023-10-22T08-43-38.346498.json",
+      "evaluatedAt": "2023-10-22",
+      "notes": "HuggingFace Open LLM Leaderboard v1 archive, TheBloke/koala-13B-HF. DROP 3-shot F1 = 0.09106753355704705 (standard Open LLM Leaderboard DROP metric is F1, not exact-match)."
     }
   ],
   "verificationNotes": "Confirmed real model via BAIR blog (fetched): LLaMA-13B base, release date 2023-04-03, license description (Apache-2.0 code / non-commercial weights) all literally match. lmsys.org leaderboard blog (fetched) literally confirms Elo=1022, rank 5. EQ-Bench paper (arxiv 2312.06281v2, fetched with a targeted full-text search for every 'Koala' occurrence) confirms Appendix B lists Koala 13B with MMLU=44.7 and MT-bench=5.35 (an initial shallower fetch had incorrectly suggested these cells were blank; a second, more thorough fetch located and confirmed the actual figures). No changes needed."

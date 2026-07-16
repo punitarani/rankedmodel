@@ -181,7 +181,31 @@
       "source": "self-reported",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2401.02954",
       "notes": "DeepSeek LLM 67B Chat average score, paper Table 8 (MT-Bench)"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 31.6,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/deepseek-ai/deepseek-llm-67b-chat/results_2024-06-26T06-16-32.984312.json",
+      "evaluatedAt": "2024-06-26",
+      "notes": "Open LLM Leaderboard v2 (HF lm-eval-harness 'leaderboard_gpqa' composite acc_norm, aggregating main/extended/diamond subsets) run on deepseek-llm-67b-chat, dated 2024-06-26. Independent third-party eval, not previously tracked (existing corpus entries for this model are all self-reported paper figures on different benchmarks). Fetched and confirmed directly from the unrestricted open-llm-leaderboard/results dataset JSON (the model-specific -details dataset is gated, but the raw results file mirrored into open-llm-leaderboard/results is public)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 50.8,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/deepseek-ai/deepseek-llm-67b-chat/results_2024-06-26T06-16-32.984312.json",
+      "evaluatedAt": "2024-06-26",
+      "notes": "Open LLM Leaderboard v2, IFEval prompt-level strict accuracy = 0.5083 -> 50.8. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 39.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/deepseek-ai/deepseek-llm-67b-chat/results_2024-06-26T06-16-32.984312.json",
+      "evaluatedAt": "2024-06-26",
+      "notes": "Open LLM Leaderboard v2, MMLU-Pro 5-shot acc = 0.3944 -> 39.4. Not previously tracked for this model (only plain MMLU was tracked, from the paper)."
     }
   ],
-  "verificationNotes": "Confirmed release date 2023-11-29 via web search (multiple independent sources incl. MarkTechPost coverage dated 2023-12-04 referencing the late-Nov release). Confirmed via ar5iv/2401.02954: 67B dense model uses GQA (paper states 67B uses Grouped-Query Attention instead of MHA), 4096-token training context, and Table 6 literally shows Chat-67B scores HumanEval 73.8, GSM8K 84.1, MATH 32.6, MMLU 71.1, BBH 71.7 \u2014 all match exactly."
+  "verificationNotes": "Confirmed release date 2023-11-29 via web search (multiple independent sources incl. MarkTechPost coverage dated 2023-12-04 referencing the late-Nov release). Confirmed via ar5iv/2401.02954: 67B dense model uses GQA (paper states 67B uses Grouped-Query Attention instead of MHA), 4096-token training context, and Table 6 literally shows Chat-67B scores HumanEval 73.8, GSM8K 84.1, MATH 32.6, MMLU 71.1, BBH 71.7 — all match exactly."
 }

@@ -150,6 +150,22 @@
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
       "evaluatedAt": "2025-05-28",
       "notes": "SimpleQA correct rate"
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 21.2,
+      "source": "independent",
+      "sourceUrl": "https://x.com/arcprize/status/1929619234696642617",
+      "evaluatedAt": "2025-06-04",
+      "notes": "ARC-AGI-1 Semi Private Eval, independently run by ARC Prize (not on DeepSeek's own model card). Cost $0.046/task; ARC Prize noted this puts R1-0528 on par with OpenAI o4-mini (low)."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 1.1,
+      "source": "independent",
+      "sourceUrl": "https://x.com/arcprize/status/1929619234696642617",
+      "evaluatedAt": "2025-06-04",
+      "notes": "ARC-AGI-2 Semi Private Eval, independently run by ARC Prize (not on DeepSeek's own model card). Cost $0.052/task."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card + DeepSeek API docs news post. 671B total / 37B active cross-verified via OpenRouter/independent sources (an AI-summarized fetch briefly mis-stated 685B; rejected as summarizer error, primary 671B/37B figure holds). MIT license, 2025-05-28 date, and all 6 benchmark rows (AIME 91.4, GPQA 81.0, LiveCodeBench 73.3, SWE-bench 57.6, HLE 17.7, MMLU-Pro 85.0) confirmed verbatim on the HF model card. Note's '79.8 to 91.4' AIME progression confirmed against original R1 (Jan 2025) score of 79.8. Price $0.55/$2.19 confirmed as DeepSeek's official standard rate for R1-0528."

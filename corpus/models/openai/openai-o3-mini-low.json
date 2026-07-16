@@ -79,6 +79,54 @@
       "sourceUrl": "https://www.lesswrong.com/posts/srdxEAcdmetdAiGcz/o3-mini-early-days",
       "evaluatedAt": "2025-01-01",
       "notes": "SWE-bench Verified, low effort"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 84.9,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-01-31",
+      "notes": "From the 'o3-mini-low' row of OpenAI's own simple-evals README results table (confirmed via direct raw-file fetch: MMLU 84.9, GPQA 67.6, MATH 95.8, HumanEval 94.5, MGSM 89.4, DROP 77.6, SimpleQA 13.0). Same source/convention already used for the sibling 'OpenAI o1' corpus entry. Not currently tracked for this model (GPQA is already tracked from a different source at 70.6, so that one is intentionally skipped per de-dup rule)."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 95.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-01-31",
+      "notes": "MATH-500, from the 'o3-mini-low' row of OpenAI's own simple-evals README table (raw file directly fetched and confirmed). Not currently tracked for this model."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 94.5,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-01-31",
+      "notes": "From the 'o3-mini-low' row of OpenAI's own simple-evals README table (raw file directly fetched and confirmed). Not currently tracked for this model."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 89.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-01-31",
+      "notes": "From the 'o3-mini-low' row of OpenAI's own simple-evals README table (raw file directly fetched and confirmed). Not currently tracked for this model."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 77.6,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-01-31",
+      "notes": "DROP F1, 3-shot, from the 'o3-mini-low' row of OpenAI's own simple-evals README table (raw file directly fetched and confirmed). Not currently tracked for this model."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 13,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-01-31",
+      "notes": "From the 'o3-mini-low' row of OpenAI's own simple-evals README table (raw file directly fetched and confirmed). Not currently tracked for this model."
     }
   ],
   "verificationNotes": "Release date 2025-01-31 and 200K context confirmed via prompthub.us and independent search corroboration. AIME 60, GPQA 70.6, Codeforces 1831, SWE-bench 40.8 (low effort) all confirmed by direct fetch of the lesswrong.com article, matching exactly. Pricing $1.10/$4.40 confirmed via direct fetch of developers.openai.com/api/docs/models/o3-mini and prompthub.us (two independent confirmations). No changes made."

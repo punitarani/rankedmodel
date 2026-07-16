@@ -140,6 +140,21 @@
       "source": "independent",
       "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
       "notes": "Humanity's Last Exam, independently measured by Artificial Analysis without tool access (raw 'hle': 0.337812789620019 in the model's embedded JSON payload) -- distinct from the tool-augmented 48.0% already in this file's results. Closely matches Xiaomi's own self-reported 'w.o. tools' figure of 34.0% shown in the same chart data that produced the existing 48.0 entry, but that no-tools variant was never itself recorded as a separate result until now. A harder (no-tools) data point, included for thoroughness."
+    },
+    {
+      "benchmarkSlug": "pinchbench",
+      "score": 87.5,
+      "source": "independent",
+      "sourceUrl": "https://pinchbench.com/model/xiaomi/xiaomi/mimo-v2.5-pro",
+      "notes": "Official PinchBench (OpenClaw agent benchmark) leaderboard average score for MiMo-V2.5-Pro specifically (best score 89.5%), confirmed directly on PinchBench's own site via live fetch. Genuinely new: only the sibling MiMo-V2.5 (non-Pro) model currently has a pinchbench entry in this corpus (89.7); this is the first pinchbench entry for the Pro variant, and the two scores are close but distinct, consistent with them being separately-run evaluations of different models."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1466,
+      "source": "arena",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-14",
+      "notes": "Text Arena (Overall) Elo on arena.ai, confirmed directly via live fetch of the 'mimo-v2.5-pro' row: rank 32, Elo 1466, +/-5 CI, 39,035 votes, MIT license, $0.43/$0.87 pricing, 1M context -- all matching this exact model. This figure was already referenced inside the sibling MiMo-V2.5 (non-Pro) file's own verificationNotes ('explicitly distinct on the same leaderboard from mimo-v2.5-pro at 1466') but was never itself recorded as a result row in the Pro model's own file until now -- genuinely missing entry, not a new discovery of the number itself."
     }
   ],
   "verificationNotes": "Params/architecture/context/license confirmed directly against the raw HuggingFace README (XiaomiMiMo/MiMo-V2.5-Pro). SWE-bench Verified score (78.9) independently cross-confirmed identical across three sources: Xiaomi's own product-page benchmark chart, a WebSearch snippet from automatio.ai, and a separate search-result summary — high confidence. IMPORTANT CAVEAT: the numeric benchmark table inside the HuggingFace README (GSM8K 99.6, GPQA-Diamond 66.7, MMLU 89.4, etc.) is explicitly labeled 'Base Model Evaluation' — i.e. it scores the pretrained MiMo-V2.5-Pro-Base checkpoint, not the released/post-trained chat model this entry represents — so those numbers were deliberately NOT used in 'results' below to avoid misrepresenting the shipped model. Instead, results are taken from the live JS-driven comparison charts embedded in Xiaomi's own MiMo-V2.5-Pro product page, fetched and parsed directly from raw HTML/JS (bypassing any summarization risk), which score the actual released model against Claude Opus 4.6, Gemini 3.1 Pro, GPT-5.4, Kimi K2.6, GLM 5.1, DeepSeek V4 Pro. A third-party aggregator (automatio.ai) also lists a much wider benchmark table (GPQA 54%, MMLU 86.7%, LiveCodeBench 80.6%, and even MMMU scores despite Pro being text-only) that conflicts substantially with both the vendor's own base-model table and the vendor's chat-model chart data, and separately implies multimodality Xiaomi itself denies for this model — treated as unreliable/likely-fabricated and excluded entirely."

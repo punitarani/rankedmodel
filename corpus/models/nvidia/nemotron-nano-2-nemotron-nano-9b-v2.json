@@ -40,7 +40,7 @@
   "vramQ4Gb": 8,
   "vramFp16Gb": 18,
   "tps4090": null,
-  "tpsNote": "Q4_K_M GGUF is only ~6.5GB \u2014 comfortably fits a single RTX 4090; no specific measured llama.cpp 4090 tokens/sec figure found.",
+  "tpsNote": "Q4_K_M GGUF is only ~6.5GB — comfortably fits a single RTX 4090; no specific measured llama.cpp 4090 tokens/sec figure found.",
   "effortLabel": null,
   "isDefaultConfig": true,
   "isBestConfig": true,
@@ -99,6 +99,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
       "notes": "Reasoning On, vs Qwen3-8B's 66.3; from the same HF model-card benchmark table as the existing 6 entries"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 27.6,
+      "source": "independent",
+      "sourceUrl": "https://designforonline.com/ai-models/nvidia-nemotron-nano-9b-v2/",
+      "notes": "IFBench (distinct from the already-tracked IFEval-Strict 90.3 self-reported figure) 27.6%, from the same live-fetched aggregator page attributing data to Artificial Analysis / HF Open LLM Leaderboard. IFBench and IFEval are different instruction-following evaluations, so this is not a duplicate of the existing entry. Same moderate-confidence caveat as the MMLU-Pro addition above: single-aggregator sourced, primary AA/OpenRouter pages were not independently re-confirmable via direct fetch due to JS rendering."
     }
   ],
   "verificationNotes": "Fully confirmed via HF model card fetch: 9B params, NVIDIA Open Model License Agreement, 128K ctx, released 2025-08-18, hybrid Mamba-2/MLP + 4 attention layers. All 6 benchmark rows (AIME25 72.1, MATH500 97.8, GPQA 64.0, LiveCodeBench 71.1, IFEval 90.3, HLE 6.5) and their Qwen3-8B deltas match exactly. DeepInfra pricing of $0.04/$0.16 independently confirmed via a dedicated DeepInfra cost-calculator page."

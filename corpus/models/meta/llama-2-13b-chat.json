@@ -113,7 +113,31 @@
       "source": "independent",
       "sourceUrl": "https://github.com/shisa-ai/shaberi",
       "notes": "Reported as meta-llama/Llama-2-13b-chat-hf, exact hf match. Shaberi eval framework Rakuda test, GPT-4-judged 0-10 scale."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 23.87,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-13b-chat-hf",
+      "evaluatedAt": "2023-10-14",
+      "notes": "3-shot DROP F1 (harness|drop|3: f1=0.23872), from the HF Open LLM Leaderboard v1 (old) independent evaluation run of meta-llama/Llama-2-13b-chat-hf -- fetched the raw results JSON directly. Not previously tracked for this model (only the newer Leaderboard v2 run for arc-challenge/bbh/gpqa/ifeval/mmlu-pro was tracked)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 15.24,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-13b-chat-hf",
+      "evaluatedAt": "2023-10-14",
+      "notes": "5-shot GSM8K acc (harness|gsm8k|5: acc=0.15239), HF Open LLM Leaderboard v1 (old) independent eval run, raw results JSON. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 74.51,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-13b-chat-hf",
+      "evaluatedAt": "2023-10-14",
+      "notes": "5-shot Winogrande acc (harness|winogrande|5: acc=0.74507), HF Open LLM Leaderboard v1 (old) independent eval run, raw results JSON. Not previously tracked for this model."
     }
   ],
-  "verificationNotes": "Confirmed real model and specs via Hugging Face model card. Confirmed MODEL_CARD.md Llama-2-Chat safety table shows 13B row TruthfulQA 62.18 / Toxigen 0.00, matching exactly. Also independently verified the RTX 4090 benchmark figure (70.90 tok/s, 92% GPU util, 41% VRAM) on databasemart.com's Ollama GPU benchmark article for llama2:13b \u2014 number confirmed as literally reported. No changes made."
+  "verificationNotes": "Confirmed real model and specs via Hugging Face model card. Confirmed MODEL_CARD.md Llama-2-Chat safety table shows 13B row TruthfulQA 62.18 / Toxigen 0.00, matching exactly. Also independently verified the RTX 4090 benchmark figure (70.90 tok/s, 92% GPU util, 41% VRAM) on databasemart.com's Ollama GPU benchmark article for llama2:13b — number confirmed as literally reported. No changes made."
 }

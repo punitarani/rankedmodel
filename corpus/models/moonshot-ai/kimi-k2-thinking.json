@@ -113,6 +113,22 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
       "notes": "Terminal-Bench score evaluated with the model's simulated-JSON tool-calling harness (per model card's own footnote), from Coding Tasks table"
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 93,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/articles/kimi-k2-thinking-everything-you-need-to-know",
+      "evaluatedAt": "2025-11-07",
+      "notes": "tau2-Bench Telecom (agentic tool-use, customer-service-agent eval), independently measured by Artificial Analysis at launch: 'K2 Thinking achieving 93% in τ²-Bench Telecom ... the highest score we have independently measured,' driving its #2 position (behind only GPT-5) in AA's Agentic Index. Distinct from and not previously tracked alongside the corpus's existing 9 self-reported HF-model-card results (which cover HLE, SWE-bench, AIME25, GPQA, BrowseComp, MMLU-Pro, MMLU-Redux, LiveCodeBench, Terminal-Bench but no tau-bench variant)."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 68,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-thinking",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench (instruction-following), independently measured by Artificial Analysis; read directly from AA's live ranked bar chart for Kimi K2 Thinking (68%, ranked 15th of 23 models shown). Cross-confirmed by a third-party AA-data mirror (graysoft.dev) showing 68.1%. Not self-reported by Moonshot AI and not previously present in the corpus for this model."
     }
   ],
   "verificationNotes": "Confirmed real model by directly fetching huggingface.co/moonshotai/Kimi-K2-Thinking: verbatim matched 1T total/32B active/384 experts (8 active)/256K context/Modified MIT License and all 5 benchmark scores (HLE-with-tools 44.9, SWE-bench 71.3, AIME25 99.1, GPQA 84.5, BrowseComp 60.2). Release date Nov 6, 2025 corroborated by CNBC and NIST CAISI evaluation coverage. Pricing $0.60/$2.50 per M tokens confirmed via OpenRouter listing."

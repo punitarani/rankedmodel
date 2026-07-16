@@ -73,7 +73,7 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B",
       "evaluatedAt": "2024-07-01",
-      "notes": "Instruct, exact match (em) \u2014 corrected from mislabeled 'base pretrained model'"
+      "notes": "Instruct, exact match (em) — corrected from mislabeled 'base pretrained model'"
     },
     {
       "benchmarkSlug": "ifeval",
@@ -169,6 +169,38 @@
       "sourceUrl": "https://arxiv.org/html/2409.12122v1",
       "evaluatedAt": "2024-08-08",
       "notes": "Llama-3.1-8B-Instruct, Chinese GaoKao aggregate, zero-shot CoT greedy decoding, from Table 4 of the Qwen2.5-Math technical report where it is used as a general-model baseline (third-party evaluation by the Qwen team)."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 30.11,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2409.11055",
+      "evaluatedAt": "2024-09-17",
+      "notes": "Llama-3.1-8B-it, FP16 baseline row, BBH 3-shot (OpenLLM Leaderboard-v2 protocol), Table 2 of 'Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant' (Lee et al., v6)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 80.21,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2409.11055",
+      "evaluatedAt": "2024-09-17",
+      "notes": "Llama-3.1-8B-it, FP16 baseline row, HellaSwag 10-shot acc_norm (OpenLLM Leaderboard-v1 protocol), Table 1 of the same quantization-tradeoffs paper (Lee et al., v6)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 54.03,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2409.11055",
+      "evaluatedAt": "2024-09-17",
+      "notes": "Llama-3.1-8B-it, FP16 baseline row, TruthfulQA 0-shot mc2, Table 1 of the same quantization-tradeoffs paper (Lee et al., v6)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 76.16,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2409.11055",
+      "evaluatedAt": "2024-09-17",
+      "notes": "Llama-3.1-8B-it, FP16 baseline row, Winogrande 5-shot acc, Table 1 of the same quantization-tradeoffs paper (Lee et al., v6)."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card fetch: params 8.03B, release 2024-07-23 (matches ai.meta.com blog), license Llama 3.1 Community License Agreement. All 7 benchmark rows (MMLU 69.4, MMLU-Pro 48.3, GPQA 30.4, IFEval 80.4, HumanEval 72.6, GSM8K 84.5, MATH 51.9) literally confirmed on the cited HF page. Corrected the GPQA row's notes field: it was mislabeled 'Base pretrained model' but 30.4 is actually the Instruct model's em score per the card."

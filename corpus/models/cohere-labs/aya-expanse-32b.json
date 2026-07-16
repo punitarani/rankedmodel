@@ -67,6 +67,30 @@
       "sourceUrl": "https://arxiv.org/abs/2412.04261",
       "evaluatedAt": "2024-10-24",
       "notes": "5-shot, native chain-of-thought with strict-match scoring, averaged across 7 languages (Table 3, 32B model class) from the Aya Expanse technical report."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 56.29,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/aya-expanse-32b/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "Open LLM Leaderboard v2, leaderboard_bbh, 3-shot, acc_norm. Not previously tracked for this model (only mmlu-pro and mgsm were present)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 33.84,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/aya-expanse-32b/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "Open LLM Leaderboard v2, leaderboard_gpqa_diamond (0-shot), acc_norm -- matches taxonomy's gpqa=GPQA Diamond definition. New for this model."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 68.58,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/CohereForAI/aya-expanse-32b/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "Open LLM Leaderboard v2, leaderboard_ifeval, prompt_level_strict_acc. New for this model."
     }
   ],
   "verificationNotes": "Confirmed genuine via official Cohere blog (cohere.com/blog/aya-expanse-connecting-our-world, dated 2024-10-24, matches releaseDate) and SiliconANGLE coverage same date. Context length independently verified at 128K on the HF model card (not 8K as one community discussion questioned). MMLU-Pro 45.41 score directly fetched and confirmed present on the exact sourceUrl (huggingface.co/CohereLabs/aya-expanse-32b). API pricing $0.50/$1.50 confirmed via Cohere pricing docs. No changes needed."

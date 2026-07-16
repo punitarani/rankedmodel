@@ -175,7 +175,14 @@
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-06-25",
       "notes": "LogicKor official leaderboard, model_id microsoft/Phi-3-medium-4k-instruct (exact hf-link match to catalog), default prompt strategy"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 75.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct",
+      "notes": "TruthfulQA (MC2), 10-shot. Confirmed via raw README.md table row 'TruthfulQA (MC2)<br>10-shot|75.1|...'. Not previously tracked (file has mmlu, humaneval, gsm8k, bbh, agieval, anli, hellaswag, arc-challenge, arc-easy, winogrande, trivia-qa, mbpp, openbookqa, piqa, siqa, mmlu-eu21, logickor but no truthfulqa)."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3-medium-4k-instruct, fetched): 14B params, MIT license, weights released 2024-05-21, and all four benchmark rows (MMLU 78 5-shot, HumanEval 62.2 0-shot, GSM8K 91 8-shot CoT, BBH 81.4 3-shot) literally match the card. Note: the cited 4k-instruct page itself shows a 4K context window, not 128K \u2014 corrected specSources.ctxK to point at the sibling microsoft/Phi-3-medium-128k-instruct card (independently fetched, confirms 14B/128K/MIT) which is the actual source for the 128K figure and the '4K/128K variants' framing in the note. GitHub repo microsoft/Phi-3CookBook confirmed to exist."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3-medium-4k-instruct, fetched): 14B params, MIT license, weights released 2024-05-21, and all four benchmark rows (MMLU 78 5-shot, HumanEval 62.2 0-shot, GSM8K 91 8-shot CoT, BBH 81.4 3-shot) literally match the card. Note: the cited 4k-instruct page itself shows a 4K context window, not 128K — corrected specSources.ctxK to point at the sibling microsoft/Phi-3-medium-128k-instruct card (independently fetched, confirms 14B/128K/MIT) which is the actual source for the 128K figure and the '4K/128K variants' framing in the note. GitHub repo microsoft/Phi-3CookBook confirmed to exist."
 }

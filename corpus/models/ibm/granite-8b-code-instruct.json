@@ -61,6 +61,14 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/html/2405.04324v1",
       "notes": "HumanEvalSynthesize, avg across 6 languages (paper Table 3)"
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 60.8,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/html/2405.04324v1",
+      "evaluatedAt": "2024-05-07",
+      "notes": "Berkeley Function-Calling Leaderboard (BFCL) Overall Accuracy for Granite-8B-Code-Instruct, reported in paper Figure 5 (bar chart, section 6.6 'Calling Functions and Tools'), which compares Granite-8B-Code (Base/Instruct) against CodeLlama-7B (Base/Instruct). Exact bars read from the figure: AST Summary 66.3, Execution Summary 52.3, Overall Accuracy 60.8 for Granite-8B-Code-Instruct. This is the same arxiv paper already cited in the file as the source for the model's second HumanEval row (49.6, avg across 6 languages), but the BFCL result was not previously tracked. Not to be confused with Figure 4 in the same paper, which only reports BFCL for BASE models (Granite-3B/8B/20B/34B-Code-Base) and does not include instruct-variant scores beyond the 8B one shown in Figure 5."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card (fetched): 8B params, 4K context, Apache 2.0, released 2024-05-06, marked 'NOT RECOMMENDED FOR USE IN NEW PROJECTS' confirming deprecated status. 116-programming-language training corpus confirmed on HF card. Both result rows confirmed present on their sourceUrls: 57.9 (self-reported HF card) and 49.6 (arXiv paper v1, Table 3, avg across 6 languages). No changes made."

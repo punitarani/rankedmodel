@@ -1,4 +1,5 @@
 model_slug,score,source,source_url,evaluated_at,notes
+deepseek-r1-671b,61.82,independent,https://github.com/SuperGPQA/SuperGPQA,2025-02-20,"SuperGPQA overall (sample) accuracy for DeepSeek-R1, from the official SuperGPQA leaderboard/README (ByteDance Doubao Seed team, arXiv:2502.14739), in the 'Reasoning Models' table. Highest-scoring DeepSeek entry on that leaderboard (DeepSeek-R1-Zero scored 60.24, DeepSeek-V3-Base scored 32.14 for comparison). Not currently tracked for this model."
 doubao-1-5-pro,55.09,independent,https://arxiv.org/abs/2502.14739,,"SuperGPQA 'Overall (sample)' score for Doubao-1.5-pro-32k-250115 (chat-model category, zero-shot, temperature=0), from the independent SuperGPQA benchmark paper (M-A-P / Doubao Seed team et al., Table in Section 4.2, arXiv:2502.14739)."
 glm-z1-32b-0414,52.6,self-reported,https://github.com/zai-org/GLM-4/blob/main/README.md,,Labeled 'SuperGPQA' in the official GitHub README benchmark chart.
 kimi-k2,57.2,self-reported,https://huggingface.co/moonshotai/Kimi-K2-Instruct,,"SuperGPQA accuracy, from Math & STEM Tasks table (GitHub README mirror)"

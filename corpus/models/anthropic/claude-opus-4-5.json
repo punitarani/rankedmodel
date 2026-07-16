@@ -103,7 +103,7 @@
       "source": "independent",
       "sourceUrl": "https://arcprize.org/blog/arc-prize-2025-results-analysis",
       "evaluatedAt": "2025-11-24",
-      "notes": "ARC Prize's own verified run: 'the top verified commercial model, Opus 4.5 (Thinking, 64k), scores 37.6% for $2.20/task' \u2014 confirmed via direct fetch."
+      "notes": "ARC Prize's own verified run: 'the top verified commercial model, Opus 4.5 (Thinking, 64k), scores 37.6% for $2.20/task' — confirmed via direct fetch."
     },
     {
       "benchmarkSlug": "osworld-verified",
@@ -152,6 +152,30 @@
       "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
       "evaluatedAt": "2025-11-24",
       "notes": "No-tools configuration; with-tools scored 73.9% per the same source."
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 80,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf",
+      "evaluatedAt": "2025-11-24",
+      "notes": "ARC-AGI-1, private/semi-private validation set, 64k thinking budget, per Section 2.10 of the official Claude Opus 4.5 System Card ('The ARC Prize Foundation reports that Claude Opus 4.5 achieved 80.0% on ARC-AGI-1... on their private dataset. This is SOTA for both benchmarks'). Companion to the already-tracked ARC-AGI-2 score (37.6%) from the same evaluation. Independently corroborated via arcprize.org coverage."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 52,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf",
+      "evaluatedAt": "2025-11-24",
+      "notes": "SWE-bench Pro (Scale AI's harder 1,865-problem variant), no-thinking configuration, Table 2.4.A of the official System Card. With a 64k thinking budget the score is 51.60% instead. Distinct from the already-tracked plain SWE-bench (Verified) score of 80.9%."
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 50.63,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf",
+      "evaluatedAt": "2025-11-24",
+      "notes": "CyberGym, pass@1 aggregate over the 1,505-task suite (averaged across 5 independent replicas), Section 2.14 of the official System Card. No-thinking configuration, 200k context."
     }
   ],
   "verificationNotes": "Confirmed real, released model via anthropic.com/news/claude-opus-4-5: release date 2025-11-24, pricing $5/$25 per million input/output tokens (67% cut vs Opus 4.1), 200K context, SWE-bench Verified 80.9% all literally appear on the official page. Cross-checked all vellum.ai-sourced rows by re-fetching that page directly: GPQA Diamond 87.0%, MMLU 90.8%, MMMU 80.7%, HLE (with search) ~43.2% all literally present. Confirmed AIME 93% (without code tools) and the AIME decontamination caveat by fetching the LessWrong post directly ('93% without code and 100% with Python'; Anthropic disclosed 'rephrased versions of at least some AIME questions... persisted in the training corpus'). Confirmed Artificial Analysis Intelligence Index score of 70 and #2 rank (behind Gemini 3 Pro at 73, tied GPT-5.1) by fetching artificialanalysis.ai directly. No changes to values were needed; architecture/params remain correctly marked null/undisclosed since Anthropic does not publish these."

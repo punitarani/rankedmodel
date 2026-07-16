@@ -8,9 +8,13 @@ claude-3-opus,89.3,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cba
 claude-3-sonnet,89.5,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,2024-03-04,"DocVQA test set, ANLS score, 0-shot, from Table 3 of the Claude 3 Model Card."
 deepseek-vl2,93.3,self-reported,https://arxiv.org/html/2412.10302v1,,Base variant
 ernie-4-5-vl-424b-a47b,93.1,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 8, thinking mode."
+gemini-1-0-nano,74.3,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7, Gemini Nano-2 (3.25B) column, DocVQA (test), pixel-only, 0-shot."
+gemini-1-0-pro,88.1,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7: Gemini Pro (pixel-only), DocVQA (test)."
+gemini-1-0-ultra,90.9,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7 (Image understanding), DocVQA (test), pixel-only, greedy 0-shot."
 gemini-1-5-flash,89.9,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"DocVQA test split, 0-shot, with Google Cloud OCR annotations provided (per Table 18 methodology). A separate later table in the same report (Table 22, Flash-8B comparison) lists 88.8% for a run without OCR annotations."
 gemini-1-5-flash-8b,73.6,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-10-01,"Table 22, 0-shot, visual QA on documents."
 gemini-1-5-pro,93.1,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"DocVQA test split, 0-shot, with Google Cloud OCR annotations provided, Table 18."
+gemma-3-12b,87.1,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Gemma 3 12B IT column, Table 16 ('Performance of instruction fine-tuned (IT) models on multimodal benchmarks', P&S applied), Gemma 3 Technical Report."
 gemma-3-4b,75.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Table 16 'Performance of instruction fine-tuned (IT) models on multimodal benchmarks', 4B, with P&S applied."
 gpt-4o,92.8,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,,"DocVQA (test, ANLS score), 0-shot. Same provenance as the MMMU row above."
 grok-2,93.6,self-reported,https://klu.ai/glossary/xai-grok-2,2024-08-13,
@@ -21,11 +25,13 @@ internvl3-78b,95.4,self-reported,https://internvl.github.io/blog/2025-04-11-Inte
 llama-3-2-11b-vision,88.4,self-reported,https://huggingface.co/meta-llama/Llama-3.2-11B-Vision,2024-09-01,"Instruct, val/test"
 llama-3-2-90b-vision,90.1,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,"DocVQA test, ANLS"
 llama-4-maverick,91.6,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Pre-trained/base model comparison table, ANLS metric"
+llama-4-scout,94.4,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Instruction-tuned table, test split, ANLS metric. Not previously tracked for this model."
 minicpm-llama3-v-2-5,84.8,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md,2024-05-20,DocVQA test split.
 minicpm-o-2-6,93.5,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-13,DocVQA test split.
 minicpm-v-2-6,90.8,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md,2024-08-06,DocVQA test split.
 minimax-vl-01,96.4,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,
 mistral-small-3-1-24b,94.08,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
+mistral-small-3-2-24b,94.86,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,Vision benchmark table on the HF model card.
 molmo-2-8b,93.2,self-reported,https://arxiv.org/abs/2601.10611,,"Molmo2 Technical Report Table 6, Molmo2-8B row; consistent with the paper's text noting Molmo2 is 'a bit behind the best open-weight model' on DocVQA (Qwen3-VL-8B=96.1, PLM-8B=94.6 both higher)."
 molmo-72b,93.5,self-reported,https://arxiv.org/abs/2409.17146,2024-09-25,"Molmo Technical Report Table 1, Molmo-72B row."
 naver-hyperclova-x-seed-think-32b,95.5,self-reported,https://arxiv.org/abs/2601.03286,2026-01-03,"Table 5, English vision-to-text benchmarks."
@@ -34,6 +40,7 @@ phi-4-multimodal-5-6b,93.2,self-reported,https://huggingface.co/microsoft/Phi-4-
 phi-4-multimodal-instruct,93.2,self-reported,https://arxiv.org/abs/2503.01743,,"Table 1, DocVQA; already present in the sibling phi-4-multimodal-5-6b.json record but missing here."
 pixtral-12b,90.7,self-reported,https://mistral.ai/news/pixtral-12b/,,ANLS metric
 pixtral-large-124b,93.3,self-reported,https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411,2024-11-18,DocVQA (ANLS) row of the same table.
+qvq-72b-preview,92.68,independent,https://arxiv.org/abs/2505.19076,2025-05-25,"DocVQA, from the general-dataset comparison table (Table 1, second half) in the ChartSketcher paper, row 'QvQ-Preview-72B'."
 qwen-vl,65.1,self-reported,https://huggingface.co/Qwen/Qwen-VL,,DocVQA text-reading VQA
 qwen2-5-vl-72b,96.4,self-reported,https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct,,
 qwen2-vl-72b,96.5,self-reported,https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct,,"Instruct checkpoint, DocVQA test"

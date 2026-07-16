@@ -152,7 +152,21 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
       "notes": "Social IQA"
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 69.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+      "notes": "Multilingual MMLU (5-shot), from the HF model card's Multilingual results table. Confirmed via raw README.md: 'Multilingual MMLU (5-shot) | 69.9 | ...'. Not previously tracked (file only had base 'mmlu' and 'mmlu-pro')."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 77.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+      "notes": "TruthfulQA (MC2), 10-shot. Confirmed via raw README.md benchmark table row 'TruthfulQA (MC2) (10-shot) | 77.5 | ...'. Not previously tracked."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3.5-MoE-instruct, fetched): 16 experts x 3.8B, 6.6B active (2 experts/token), 128K context, MIT license, released Aug 2024. All eight benchmark rows literally match the card. Cross-checked total param figure independently (41.9B vs. commonly-quoted 42B rounding) via secondary sources (Skywork, llm-stats) \u2014 41.9B confirmed as the precise figure."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3.5-MoE-instruct, fetched): 16 experts x 3.8B, 6.6B active (2 experts/token), 128K context, MIT license, released Aug 2024. All eight benchmark rows literally match the card. Cross-checked total param figure independently (41.9B vs. commonly-quoted 42B rounding) via secondary sources (Skywork, llm-stats) — 41.9B confirmed as the precise figure."
 }

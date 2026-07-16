@@ -82,6 +82,22 @@
       "source": "curated",
       "sourceUrl": "https://arxiv.org/abs/2402.19173",
       "notes": "RepoBench v1.1 exact match (EM), averaged across the Python and Java splits reported in Table 17 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024): Python EM 36.99, Java EM 42.57."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 66.2,
+      "source": "curated",
+      "sourceUrl": "https://arxiv.org/abs/2402.19173",
+      "evaluatedAt": "2024-02-28",
+      "notes": "MBPP pass@1 (EvalPlus greedy-decoding setup), from Table 9 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024) -- same table already used in the corpus for the model's HumanEval+ score, but the MBPP column had not been captured."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 53.1,
+      "source": "curated",
+      "sourceUrl": "https://arxiv.org/abs/2402.19173",
+      "evaluatedAt": "2024-02-28",
+      "notes": "MBPP+ pass@1, from Table 9 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024), EvalPlus methodology, greedy decoding."
     }
   ],
   "verificationNotes": "Fetched HF blog (2024-02-28) and model card: confirmed 15B params, 16K ctx/4K sliding window, NVIDIA-trained (NeMo+Eos), BigCode OpenRAIL-M, HumanEval 46.3/GSM8K(PAL) 65.1/DS-1000 33.8 verbatim. No changes."

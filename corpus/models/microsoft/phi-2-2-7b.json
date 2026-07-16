@@ -142,6 +142,13 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/pdf/2404.14219",
       "notes": "3-shot; same comparison table."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 73.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2404.14219",
+      "notes": "10-shot; Phi-3 Technical Report's standardized baseline-comparison table (same table already used for Phi-2's other rows), Phi-2 column. Confirmed via pdftotext extraction of the full comparison table (MMLU/HellaSwag/ANLI/GSM8K/MedQA/AGIEval/TriviaQA/Arc-C/Arc-E/PIQA/SociQA/BBH/WinoGrande/OpenBookQA/BoolQ/CommonSenseQA/TruthfulQA/HumanEval/MBPP/GPQA/MT-Bench rows), which was not previously pulled for this benchmark."
     }
   ],
   "verificationNotes": "Existence, 2.7B params, MIT license, and Dec 2023 Microsoft Research blog release all confirmed. Fetched the Phi-3 Technical Report (arXiv 2404.14219) comparison table and confirmed Phi-2 row verbatim: MMLU 56.3, HumanEval 59.0, GSM8K 61.1, BBH 59.4, ARC-Challenge 75.9. No discrepancies found."

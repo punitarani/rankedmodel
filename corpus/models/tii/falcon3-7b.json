@@ -121,7 +121,31 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct",
       "notes": "BFCL AST average, 'Tool Use' row of the model card's internal pipeline benchmarks table. Note: this is 0.5pt above the taxonomy's documented bfcl ceiling (89) but is unambiguously the same Berkeley Function-Calling Leaderboard metric."
+    },
+    {
+      "benchmarkSlug": "piqa",
+      "score": 78.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct",
+      "evaluatedAt": "2024-12-17",
+      "notes": "PIQA (0-shot), from the model card's 'internal pipeline benchmarks' table, 'CommonSense Understanding' section. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 45.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct",
+      "evaluatedAt": "2024-12-17",
+      "notes": "OpenbookQA (0-shot), from the model card's 'internal pipeline benchmarks' table, 'CommonSense Understanding' section. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 26.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct",
+      "evaluatedAt": "2024-12-17",
+      "notes": "Alpaca (WC / length-controlled win rate), from the model card's 'internal pipeline benchmarks' table, 'Instructions following' row. Not previously tracked for this model."
     }
   ],
-  "verificationNotes": "Confirmed real model, 2024-12-17 release, 7B params, 28 layers with GQA 12 query/4 KV heads (confirmed verbatim on model card), 32K context, license 'TII Falcon-LLM License 2.0' confirmed verbatim. All 7 result rows confirmed by directly querying the model card's 'internal pipeline benchmarks' table, which lists the exact sequence '70.5, 40.7, 76.5, 81.4, ..., 29.4, 62.6, 31.9, ..., 52.4, ...' mapping to MMLU 70.5, IFEval 76.5, GSM8K 81.4, MATH 29.4, Arc-Challenge 62.6, GPQA 31.9, BBH 52.4 \u2014 matches record exactly (these differ from the separate 'official HF leaderboard' table on the same page, which uses different eval settings, but the record's self-reported values are verifiably present). No changes made."
+  "verificationNotes": "Confirmed real model, 2024-12-17 release, 7B params, 28 layers with GQA 12 query/4 KV heads (confirmed verbatim on model card), 32K context, license 'TII Falcon-LLM License 2.0' confirmed verbatim. All 7 result rows confirmed by directly querying the model card's 'internal pipeline benchmarks' table, which lists the exact sequence '70.5, 40.7, 76.5, 81.4, ..., 29.4, 62.6, 31.9, ..., 52.4, ...' mapping to MMLU 70.5, IFEval 76.5, GSM8K 81.4, MATH 29.4, Arc-Challenge 62.6, GPQA 31.9, BBH 52.4 — matches record exactly (these differ from the separate 'official HF leaderboard' table on the same page, which uses different eval settings, but the record's self-reported values are verifiably present). No changes made."
 }

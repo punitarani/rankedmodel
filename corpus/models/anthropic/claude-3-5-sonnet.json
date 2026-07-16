@@ -199,6 +199,22 @@
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-06-27",
       "notes": "LogicKor official leaderboard, model_id anthropic/claude-3-5-sonnet-20240620, default prompt strategy"
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 35,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2411.04368",
+      "evaluatedAt": "2024-11-07",
+      "notes": "SimpleQA F-score for claude-3.5-sonnet-20240620 (the original June 2024 checkpoint), Table 3 of OpenAI's 'Measuring short-form factuality in large language models' paper. Correct=28.9%, Not-attempted=35.0%, Incorrect=36.1%."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1342,
+      "source": "independent",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-15",
+      "notes": "LMArena (formerly LMSYS Chatbot Arena) text-arena Elo for model id claude-3-5-sonnet-20240620, live leaderboard snapshot: rank 193, score 1342±3, 82,419 votes. Distinct from claude-3-5-sonnet-20241022 (the October 'new' checkpoint, tracked separately as its own model record), which is rank 158 at 1373±3 on the same live snapshot -- confirmed both rows exist distinctly and are not being conflated."
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-5-sonnet (release date 2024-06-20 per multiple independent sources incl. Simon Willison's dated post; $3/$15 pricing; 200K ctx; Artifacts feature). Downloaded and fully read Model_Card_Claude_3_Addendum.pdf Table 1/Table 5: all 8 self-reported benchmark numbers (MMLU 88.7, MATH 71.1, GSM8K 96.4, HumanEval 92.0, GPQA 59.4, BBH 93.1, DROP 87.1, MMMU 68.3) and the needle-in-haystack cross-reference match the PDF verbatim. SWE-bench 33% confirmed on anthropic.com/research/swe-bench-sonnet (labeled 'Claude 3.5 Sonnet (old)'). apiAvailable=false confirmed: claude-3-5-sonnet-20240620 retired from API October 28, 2025. No changes made."

@@ -72,6 +72,38 @@
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct",
       "evaluatedAt": "2023-10-14",
       "notes": "5-shot accuracy (harness|winogrande|5), HF Open LLM Leaderboard v1 run"
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 58.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct",
+      "evaluatedAt": "2023-07-20",
+      "notes": "acc_norm, 25-shot (harness|arc:challenge|25) from the HF Open LLM Leaderboard v1's own evaluation-run results JSON (run 2023-07-20T13:11:24.937399), independently fetched and recomputed from the raw results_2023-07-20T13-11-24.937399.json file for mosaicml/mpt-30b-instruct. Same convention (acc_norm) as the sibling base-model entry mpt-30b.json uses for its own arc-challenge=56 result, verified against that model's raw JSON too."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 84.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct",
+      "evaluatedAt": "2023-07-20",
+      "notes": "acc_norm, 10-shot (harness|hellaswag|10) from the same HF Open LLM Leaderboard v1 run (2023-07-20T13:11:24.937399) for mosaicml/mpt-30b-instruct, recomputed from the raw results JSON."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 49.2,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct",
+      "evaluatedAt": "2023-07-20",
+      "notes": "5-shot accuracy averaged across all 57 hendrycksTest subtasks (HF Open LLM Leaderboard v1 MMLU convention), computed directly from the raw results_2023-07-20T13-11-24.937399.json file for mosaicml/mpt-30b-instruct (run has all 57 harness|hendrycksTest-*|5 subtask scores)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 38,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-30b-instruct",
+      "evaluatedAt": "2023-07-20",
+      "notes": "MC2, 0-shot (harness|truthfulqa:mc|0) from the same HF Open LLM Leaderboard v1 run (2023-07-20T13:11:24.937399) for mosaicml/mpt-30b-instruct, recomputed from the raw results JSON. Matches the sibling base-model entry mpt-30b.json's own truthfulqa=38.4 (mc2) sourcing convention."
     }
   ],
   "verificationNotes": "Confirmed released alongside MPT-30B base on 2023-06-22 (same Databricks announcement); HF model card and secondary sources confirm CC-BY-SA-3.0 license and Dolly/HH-RLHF-derived instruction tuning data. No result rows to verify. All fields left unchanged."

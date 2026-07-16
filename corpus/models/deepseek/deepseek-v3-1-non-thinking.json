@@ -9,7 +9,7 @@
   "paramsB": 671,
   "activeParamsB": 37,
   "archClass": "moe",
-  "archDisplay": "Mixture-of-Experts (671B total / 37B active) \u2014 DeepSeekMoE + Multi-head Latent Attention, hybrid think/non-think chat template",
+  "archDisplay": "Mixture-of-Experts (671B total / 37B active) — DeepSeekMoE + Multi-head Latent Attention, hybrid think/non-think chat template",
   "ctxK": 128,
   "modalities": [
     "text"
@@ -108,6 +108,28 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
       "notes": "Terminal-bench (Terminus 1 framework), Non-Thinking mode, from official HF model card benchmark table"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 6,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v3-1",
+      "notes": "Humanity's Last Exam, from Artificial Analysis's Intelligence Index v4.1 evaluation breakdown for 'DeepSeek V3.1' (non-reasoning row, distinct from the separately-tracked 'DeepSeek V3.1 (Thinking)' variant which is not this file's config). AA independently measured 6% — not present on the DeepSeek HF model card, which only reports HLE for the Thinking-mode column (15.9), so this is a genuinely new benchmark result for the Non-Thinking config, not a duplicate. Chart value rounded to nearest integer percent as displayed."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 38,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v3-1",
+      "notes": "IFBench (instruction-following), Artificial Analysis Intelligence Index v4.1 breakdown, row labeled 'DeepSeek V3.1' (non-reasoning) at 38%. Not present anywhere in the DeepSeek HF model card's own eval table, so a genuinely new independent result for this config."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1418,
+      "source": "arena",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-13",
+      "notes": "Live LMArena (Chatbot Arena) text Elo, current mid-July 2026 leaderboard snapshot, row explicitly labeled 'deepseek-v3.1' (rank #100 of 374, 1418±6, 14,945 votes) — kept distinct from the separately-listed 'deepseek-v3.1-terminus-thinking' row (rank #99, 1418±10) which is a different reasoning-mode/version entry. No arena/chat-Elo result currently exists in this model's file, so this is a genuinely new benchmark type for this config, not a duplicate of the V3-0324 arena entry already tracked on the sibling model file."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card + DeepSeek API docs release post (2025-08-21). 671B/37B, MIT license, 128K context confirmed. All 6 non-thinking benchmark rows confirmed verbatim on the HF model card. Deprecated status confirmed: deepseek-chat/deepseek-reasoner legacy aliases are being retired 2026-07-24 in favor of V4, and multiple provider changelogs (Baseten, Lightning AI) show V3.1 API deprecation in 2026. Price $0.56/$1.68 confirmed as the post-2025-09-05 official DeepSeek cache-miss rate for deepseek-chat."

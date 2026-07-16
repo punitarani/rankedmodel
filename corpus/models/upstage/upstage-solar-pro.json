@@ -97,6 +97,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/upstage/solar-pro-preview-instruct",
       "notes": "HF model card benchmark table, 'BigBench Hard' column, 3-shot."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 36.38,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/upstage/solar-pro-preview-instruct",
+      "evaluatedAt": "2024-09-11",
+      "notes": "Same HF model-card evaluation table already used as the source for this entry's other 8 results (MMLU, MMLU-Pro, IFEval, GSM8K, MBPP, ARC-C, HellaSwag, BBH) also contains a GPQA row (0-shot, acc_norm, lm-eval-harness) reading 36.38 for solar-pro-preview — this row exists in the card's evaluation table but was not yet captured in the corpus entry. Verified by fetching the raw README.md directly (huggingface.co/upstage/solar-pro-preview-instruct/raw/main/README.md) and confirming the full table row-by-row. Two other columns in the same table (EQBench, MUSR) were also new but have no corresponding slug in the approved taxonomy, so they were not added."
     }
   ],
   "verificationNotes": "Confirmed real: Upstage announced Solar Pro Preview on 2024-09-11 (PRNewswire, Upstage's own blog corroborate). Fetched the Hugging Face model card and confirmed 22B params scaled from Phi-3-medium (14B) via DUS, MIT license, 4K context, and all five benchmark numbers (MMLU 79.14, MMLU-Pro 52.11, IFEval 84.37, GSM8K 89.69, MBPP 61.59) literally appear there."

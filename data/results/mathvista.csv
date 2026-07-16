@@ -10,8 +10,12 @@ deepseek-vl-7b,36.1,self-reported,https://arxiv.org/html/2403.05525v2,2024-03-08
 deepseek-vl2,62.8,self-reported,https://arxiv.org/html/2412.10302v1,,Base variant
 ernie-4-5-vl-424b-a47b,78.9,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 8, thinking mode -- the near-o1 MathVista result referenced in this model's existing 'note' field."
 exaone-4-5,85,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,MathVista (mini)
+gemini-1-0-nano,30.6,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7, Gemini Nano-2 (3.25B) column, MathVista (testmini), pixel-only, 0-shot."
+gemini-1-0-pro,45.2,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7: Gemini Pro (pixel-only), MathVista (testmini)."
+gemini-1-0-ultra,53,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7 (Image understanding), MathVista (testmini), pixel-only, greedy 0-shot."
 gemini-1-5-flash,58.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"MathVista testmini split, 0-shot, Table 18 (image understanding benchmarks) of the Gemini 1.5 technical report."
 gemini-1-5-pro,63.9,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"MathVista testmini split, 0-shot, Table 18; new SOTA result at publication."
+gemma-3-12b,62.9,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"MathVista (testmini), Gemma 3 12B IT column, Table 16 of the Gemma 3 Technical Report."
 gemma-3-4b,50,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Table 16, IT 4B, MathVista (testmini)."
 gpt-4-1,72.2,self-reported,https://docsbot.ai/models/compare/gpt-4-1/gpt-4-1-mini,2025-04-14,MathVista image reasoning; relayed from OpenAI's official launch table.
 gpt-4-1-mini,73.1,self-reported,https://docsbot.ai/models/gpt-4-1-mini,2025-04-14,"MathVista (image reasoning); relayed from OpenAI's official GPT-4.1-family launch benchmark table (also cross-checked against docsbot.ai's GPT-4.1-vs-mini comparison page, which shows the identical figure)."
@@ -26,11 +30,13 @@ kimi-k1-5,74.9,self-reported,https://arxiv.org/abs/2501.12599,,"Long-CoT variant
 kimi-k2-5,90.1,self-reported,https://www.kimi.com/blog/kimi-k2-5,,"MathVista (mini/testmini), Kimi K2.5 Thinking, avg@3."
 llama-3-2-11b-vision,51.5,self-reported,https://huggingface.co/meta-llama/Llama-3.2-11B-Vision,2024-09-01,"Instruct, testmini"
 llama-3-2-90b-vision,57.3,self-reported,https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct,,MathVista testmini
+llama-4-scout,70.7,self-reported,https://huggingface.co/blog/llama4-release,2025-04-05,"Instruction-tuned table, accuracy. Not previously tracked for this model. Searched separately for IFEval and BFCL scores (Meta's official release materials and independent trackers) but neither is published for Llama 4 Scout, so they are not included. [score corrected during round-6 completeness verify: proposed 73.7 -> 70.7]"
 minicpm-llama3-v-2-5,54.3,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_llama3_v2dot5.md,2024-05-20,Reported as 'Math-Vista' in the official results table.
 minicpm-o-2-6,71.9,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,2025-01-13,MathVista mini; evaluated with chain-of-thought prompting per the model card's footnote.
 minicpm-v-2-6,60.6,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md,2024-08-06,MathVista mini.
 minimax-vl-01,68.6,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,
 mistral-small-3-1-24b,68.91,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
+mistral-small-3-2-24b,67.09,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,Vision benchmark table on the HF model card. Model is vision-capable (modalities include vision) but no vision benchmarks besides MMMU were previously tracked.
 molmo-2-8b,58.9,self-reported,https://arxiv.org/abs/2601.10611,,"MathVista testmini; Molmo2 Technical Report Table 6, Molmo2-8B row."
 molmo-72b,58.6,self-reported,https://arxiv.org/abs/2409.17146,2024-09-25,"MathVista testmini; Molmo Technical Report Table 1, Molmo-72B row."
 nemotron-3-nano-omni,82.8,self-reported,https://arxiv.org/abs/2604.24954,,"Table 7, MathVista-Mini split, reasoning-on mode; corroborated by Table 11's reasoning-budget ablation (82.8 with budget vs 80.3 without)."

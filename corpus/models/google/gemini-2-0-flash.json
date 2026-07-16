@@ -128,6 +128,30 @@
       "source": "independent",
       "sourceUrl": "https://hal.cs.princeton.edu/gaia",
       "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, Gemini 2.0 Flash (Feb 2025 snapshot). GAIA validation set."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 29.5,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gemini-2-0-flash",
+      "evaluatedAt": "2026-07-15",
+      "notes": "τ²-Bench Telecom agentic tool-use eval, Artificial Analysis independent evaluation of the GA 'Gemini 2.0 Flash (Feb '25)' snapshot (raw score 0.2953216374269 extracted directly from the model page's evaluation data). Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 40.2,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gemini-2-0-flash",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench instruction-following eval, Artificial Analysis independent evaluation of the GA Feb '25 snapshot (raw score 0.4020408163265). Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 5.3,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gemini-2-0-flash",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Humanity's Last Exam, Artificial Analysis independent evaluation of the GA Feb '25 snapshot (raw score 0.0532786885246, no tools). Not previously tracked; corpus currently has no HLE entry for this model."
     }
   ],
   "verificationNotes": "Existence and Dec 11 2024 initial (experimental) announcement confirmed via blog.google; GA followed Feb 5 2025 (also confirmed). Fetched the actual Gemini-2.0-Flash-Model-Card.pdf (published Apr 15 2025) and confirmed all 5 benchmark rows match the GA column verbatim: MMLU-Pro 77.6%, GPQA diamond 60.1%, MATH 90.9%, MMMU 71.7%, LiveCodeBench v5 34.5%. Pricing $0.10/$0.40 per 1M tokens confirmed via ai.google.dev pricing coverage. Architecture description (sparse MoE, refined over 1.5) matches model card text verbatim. No changes made."

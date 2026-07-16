@@ -89,7 +89,47 @@
       "source": "independent",
       "sourceUrl": "https://huggingface.co/stabilityai/stablelm-3b-4e1t",
       "notes": "Open LLM Leaderboard (mc2, 0-shot). Confirmed via direct fetch of the model-index metadata embedded in the HF README.md (TruthfulQA value: 37.2)."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 22.03,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-08-10",
+      "notes": "HF Open LLM Leaderboard V2 run on stabilityai/stablelm-3b-4e1t (model_sha fa4a6a92fca83c3b4223a3c9bf792887090ebfba, submission date 2024-08-10, confirmed 2.795B params matching the corpus entry). Not previously tracked -- corpus only had the old (v1) leaderboard's 6 tasks for this model. Verified via the HF datasets-server filter API against the open-llm-leaderboard/contents dataset."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 9.01,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-08-10",
+      "notes": "HF Open LLM Leaderboard V2 run on stabilityai/stablelm-3b-4e1t (normalized score; raw acc 0.350). Confirmed real via the datasets-server filter API; model_sha and param count match the corpus entry. BBH was not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 1.06,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-08-10",
+      "notes": "MATH Lvl 5, HF Open LLM Leaderboard V2 (hardest subset, 4-shot exact-match). Follows the same MATH-Lvl-5-to-'math' slug mapping already used elsewhere in the corpus (e.g. IBM Granite 3.1 8B Instruct entry)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-08-10",
+      "notes": "HF Open LLM Leaderboard V2's normalized GPQA score; raw accuracy was 0.237 (below the leaderboard's random-guess baseline for 4-choice questions), which the leaderboard's normalization formula floors to 0. This is the leaderboard's actual published value, not a missing/placeholder score."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 7.43,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+      "evaluatedAt": "2024-08-10",
+      "notes": "HF Open LLM Leaderboard V2 run on stabilityai/stablelm-3b-4e1t. Not previously tracked for this model."
     }
   ],
-  "verificationNotes": "Confirmed real via direct fetch of huggingface.co/stabilityai/stablelm-3b-4e1t: 2.8B params (2,795,443,200), 4096 context, CC BY-SA-4.0 license, 1T tokens over 4 epochs, all verbatim. Release date corrected source-check: Stability AI's own announcement blog post is dated Oct 2 (byline dated before press coverage on Oct 3), matching the input's 2023-10-02 \u2014 kept as-is. All 5 Open LLM Leaderboard benchmark rows (MMLU 45.23, HellaSwag 75.94, ARC-Challenge 46.59, WinoGrande 71.19, GSM8K 3.34) verified literally on the HF page. No changes made to input values."
+  "verificationNotes": "Confirmed real via direct fetch of huggingface.co/stabilityai/stablelm-3b-4e1t: 2.8B params (2,795,443,200), 4096 context, CC BY-SA-4.0 license, 1T tokens over 4 epochs, all verbatim. Release date corrected source-check: Stability AI's own announcement blog post is dated Oct 2 (byline dated before press coverage on Oct 3), matching the input's 2023-10-02 — kept as-is. All 5 Open LLM Leaderboard benchmark rows (MMLU 45.23, HellaSwag 75.94, ARC-Challenge 46.59, WinoGrande 71.19, GSM8K 3.34) verified literally on the HF page. No changes made to input values."
 }

@@ -86,6 +86,30 @@
       "sourceUrl": "https://www.lmsys.org/blog/2023-06-22-leaderboard/",
       "evaluatedAt": "2023-06-22",
       "notes": "GPT-4-judged MT-Bench score for Guanaco-33B from the same LMSYS Leaderboard Week 8 update table."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 62.5,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_timdettmers__guanaco-33b-merged",
+      "evaluatedAt": "2023-07-20",
+      "notes": "ARC-Challenge 25-shot acc_norm (0.625) from the HF Open LLM Leaderboard (old) details dataset for timdettmers/guanaco-33b-merged — the official full-weights merge of the same LoRA adapter by the original authors."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 84.5,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_timdettmers__guanaco-33b-merged",
+      "evaluatedAt": "2023-07-20",
+      "notes": "HellaSwag 10-shot acc_norm (0.845) from the same HF Open LLM Leaderboard (old) details dataset for timdettmers/guanaco-33b-merged."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 51.2,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_timdettmers__guanaco-33b-merged",
+      "evaluatedAt": "2023-07-20",
+      "notes": "TruthfulQA MC2 0-shot (0.512) from the same HF Open LLM Leaderboard (old) details dataset for timdettmers/guanaco-33b-merged. No TruthfulQA had been tracked for the 33B model before."
     }
   ],
   "verificationNotes": "Confirmed real model via HF model card (fetched). paramsB=33, license, ctxK=2 (LLaMA-1 base), MMLU=57, Vicuna Elo=1009 (human, rank4), OpenAssistant Elo=1002 (GPT-4 judge, rank4) all literally match the HF page. releaseDate 2023-05-23 confirmed via arXiv abstract page (2305.14314) which also literally states 'reaching 99.3% of the performance level of ChatGPT' but CORRECTED the note field: fetched full paper text (ar5iv) shows the 99.3% figure belongs to the 65B model; Guanaco 33B is explicitly called 'the second best model reaching 97.8% of the performance level of ChatGPT' and Table 6 lists 'Guanaco 33B ... 97.8%'. The 'trained on 24GB consumer GPU in <12 hours' claim for 33B is verbatim-confirmed in the paper. Original record incorrectly attributed 99.3% to the 33B model; fixed to 97.8%."

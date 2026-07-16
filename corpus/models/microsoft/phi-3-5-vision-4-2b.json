@@ -94,6 +94,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct",
       "notes": "AI2D test split"
+    },
+    {
+      "benchmarkSlug": "videomme",
+      "score": 50.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct",
+      "notes": "Video-MME overall score from the official HF model card's multi-frame/video benchmark table (short/medium/long clip breakdown: 60.8/47.7/43.8). Not previously tracked; the record only had single-image benchmarks."
     }
   ],
   "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-3.5-vision-instruct, fetched): 4.2B params, 128K context, MIT license, released Aug 2024. All four benchmark rows (MMMU 43, MMBench-dev-en 81.9, TextVQA 72, ChartQA 81.8) literally match the card."

@@ -146,6 +146,22 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2508.06471",
       "notes": "IFEval (Prompt Strict), Table 6."
+    },
+    {
+      "benchmarkSlug": "tau2-bench-telecom",
+      "score": 46.5,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/glm-4-5-air",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Artificial Analysis's own Tau2-Bench Telecom measurement for GLM-4.5-Air (46.5%), verbatim-confirmed in the JSON payload embedded in BenchLM.ai's model page (which mirrors AA's live model data as a display-only row). Not reported by Zhipu/Z.ai itself; not currently tracked for this model."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 37.6,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/glm-4-5-air",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Artificial Analysis's own IFBench measurement for GLM-4.5-Air (37.6%), verbatim-confirmed in the JSON payload embedded in BenchLM.ai's model page (AA-data mirror, display-only row). Distinct from the already-tracked self-reported IFEval score (86.3); not currently tracked for this model."
     }
   ],
   "verificationNotes": "Existence and identity confirmed via official Z.ai blog and Hugging Face model card (zai-org/GLM-4.5-Air). paramsB=106, activeParamsB=12 confirmed verbatim on HF card ('106 billion total parameters', '12 billion active parameters'). License MIT confirmed on HF card. Release date 2025-07-28 confirmed (released simultaneously with GLM-4.5 per cometapi article). All six independent benchmark rows (AIME 89.4, MMLU-Pro 81.4, GPQA 75.0, SWE-bench 57.6, LiveCodeBench 70.7, HLE 10.6) verbatim-confirmed on llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air. Pricing ($0.2/$1.1 per 1M tokens) confirmed on docs.z.ai/guides/overview/pricing. No changes made to the original record; all fields checked out."

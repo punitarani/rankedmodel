@@ -113,6 +113,46 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-0-Flash-Lite-Model-Card.pdf",
       "evaluatedAt": "2025-02-01",
       "notes": "Bird-SQL (Dev) text-to-SQL benchmark, Public Preview column of the official model card evaluation table."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 10.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.06261",
+      "evaluatedAt": "2025-07-01",
+      "notes": "Gemini 2.0 Flash-Lite column, Table 3 of the Gemini 2.5 Technical Report ('Gemini 2.5: Pushing the Frontier...'), pass-rate average of 3 trials per Aider leaderboard methodology. This is a later/GA-era measurement than the Feb 2025 Public Preview snapshot already tracked for this model's other benchmarks -- flagged here to avoid conflating the two snapshots."
+    },
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 12.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.06261",
+      "evaluatedAt": "2025-07-01",
+      "notes": "SWE-Bench Verified, single attempt, Gemini 2.0 Flash-Lite column, Table 3 of the Gemini 2.5 Technical Report (23.1% with multiple attempts). Same later/GA-era snapshot caveat as the Aider Polyglot addition for this model."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 4.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.06261",
+      "evaluatedAt": "2025-07-01",
+      "notes": "Humanity's Last Exam, no tools, Gemini 2.0 Flash-Lite column, Table 3 of the Gemini 2.5 Technical Report. The report explicitly flags this figure (marked with dagger) as measured on an earlier HLE dataset revision than the 2.5-generation scores."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 78,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.06261",
+      "evaluatedAt": "2025-07-01",
+      "notes": "Global MMLU (Lite), Gemini 2.0 Flash-Lite column, Table 3 of the Gemini 2.5 Technical Report. Same later/GA-era snapshot caveat as the Aider Polyglot addition for this model."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 23.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2507.06261",
+      "evaluatedAt": "2025-07-01",
+      "notes": "AIME 2025, Gemini 2.0 Flash-Lite column, Table 3 of the Gemini 2.5 Technical Report. Same later/GA-era snapshot caveat as the Aider Polyglot addition for this model."
     }
   ],
   "verificationNotes": "Release as public preview on Feb 5 2025 confirmed via blog.google Feb 2025 model updates post. Fetched Gemini-2.0-Flash-Lite-Model-Card.pdf (published Apr 10 2025) and confirmed all 5 benchmark rows match the Public Preview column verbatim: MMLU-Pro 71.6%, GPQA diamond 51.5%, MATH 86.8%, MMMU 68.0%, LiveCodeBench v5 28.9%. Pricing $0.075/$0.30 per 1M tokens confirmed via search of ai.google.dev pricing coverage. No changes made."

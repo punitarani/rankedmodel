@@ -126,6 +126,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2408.12570v1",
       "notes": "0-shot TruthfulQA score from Table 2 (Academic Benchmarks) of the Jamba-1.5 technical report."
+    },
+    {
+      "benchmarkSlug": "mmmlu",
+      "score": 64.3,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/html/2408.12570v1",
+      "evaluatedAt": "2024-08-22",
+      "notes": "Multilingual MMLU (Table 6 of the Jamba-1.5 technical report), evaluated via the LM Evaluation Harness across Spanish, Portuguese, French, German, Arabic, Italian, and Dutch (per-language: 66.3/66.7/65.9/63.8/57.3/65.1/65.0); average reported as 64.30. Not currently tracked in the corpus (only the English mmlu score is present)."
     }
   ],
   "verificationNotes": "Fully confirmed. AI21 blog (announcing-jamba-model-family) confirms release date 2024-08-22, 256K context, Arena-Hard 46.1. arXiv 2408.12570v1 (Jamba-1.5 tech report) confirms 52B total/12B active params, 9 pretraining languages, and every benchmark row incl. RULER 92.6 average (verified against the full per-length table). No changes needed."

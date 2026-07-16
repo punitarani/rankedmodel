@@ -154,6 +154,22 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
       "notes": "TerminalBench score under the standard 'Terminus' harness (25.0); the model card also separately reports 30.0 under an in-house framework variant of the same benchmark -- Terminus figure used as the more standard/citable evaluation harness."
+    },
+    {
+      "benchmarkSlug": "bfcl-v3",
+      "score": 25.3,
+      "source": "independent",
+      "sourceUrl": "https://pricepertoken.com/leaderboards/benchmark/bfcl-v3",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Berkeley Function Calling Leaderboard v3, listed as 'Kimi K2 0711' ($0.55/$2.20 pricing, matching this model's price fields exactly). Data attributed to Artificial Analysis, independently measured. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1417,
+      "source": "independent",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-13",
+      "notes": "Arena.ai Text Arena Overall Elo for 'kimi-k2-0711-preview' -- rank 101/374, 27,610 votes, $0.60/$2.50 pricing and 131.1K context shown alongside it (release-date slug '0711' matches this model's exact July 11, 2025 release). Confirmed via the leaderboard's own embedded data table."
     }
   ],
   "verificationNotes": "Confirmed real model. GitHub README (moonshotai/Kimi-K2, mirrors HF card) verified 1T total/32B active/384 experts/128K ctx/Modified MIT License and all 5 benchmark scores (LiveCodeBench 53.7, AIME24 69.6, MMLU 89.5, SWE-bench 65.8, MATH-500 97.4) verbatim. Exact release date July 11, 2025 confirmed via multiple sources (model's own '0711' version tag, Global Times, Wikipedia). Pricing $0.57/$2.30 per M tokens confirmed via OpenRouter/pricepertoken listings for 'Kimi K2 0711'. HF page itself was rate-limited (429) during this session but GitHub README mirror gave identical figures."

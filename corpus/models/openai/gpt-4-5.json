@@ -33,7 +33,7 @@
   "links": {
     "docs": "developers.openai.com/api/docs/models/gpt-4.5-preview"
   },
-  "note": "'Orion' \u2014 OpenAI's largest non-reasoning model; shipped as a costly research preview, removed from API 2025-07-14 and fully sunset from ChatGPT 2026-06-27.",
+  "note": "'Orion' — OpenAI's largest non-reasoning model; shipped as a costly research preview, removed from API 2025-07-14 and fully sunset from ChatGPT 2026-06-27.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
@@ -102,7 +102,7 @@
       "source": "self-reported",
       "sourceUrl": "https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf",
       "evaluatedAt": "2025-02-27",
-      "notes": "MMLU, English (not translated), 0-shot \u2014 Table 16 of OpenAI's official GPT-4.5 System Card (Section 5, Multilingual Performance). GPT-4.5 scored 0.896 vs GPT-4o's 0.887 and o1's 0.923 on the same table."
+      "notes": "MMLU, English (not translated), 0-shot — Table 16 of OpenAI's official GPT-4.5 System Card (Section 5, Multilingual Performance). GPT-4.5 scored 0.896 vs GPT-4o's 0.887 and o1's 0.923 on the same table."
     },
     {
       "benchmarkSlug": "arena",
@@ -110,7 +110,7 @@
       "source": "arena",
       "sourceUrl": "https://arxiv.org/abs/2503.19786",
       "evaluatedAt": "2025-03-08",
-      "notes": "LMSYS Chatbot Arena Elo for gpt-4.5-preview (ranked #1, tied with Grok-3-Preview-02-24 at 1412; 95% CI +11/-11), per Table 5 of Google DeepMind's Gemma 3 Technical Report \u2014 same source/format already used elsewhere in this corpus for Arena Elo rows (e.g. gemini-2-0-pro-experimental)."
+      "notes": "LMSYS Chatbot Arena Elo for gpt-4.5-preview (ranked #1, tied with Grok-3-Preview-02-24 at 1412; 95% CI +11/-11), per Table 5 of Google DeepMind's Gemma 3 Technical Report — same source/format already used elsewhere in this corpus for Arena Elo rows (e.g. gemini-2-0-pro-experimental)."
     },
     {
       "benchmarkSlug": "arena-hard-v2",
@@ -119,6 +119,14 @@
       "sourceUrl": "https://github.com/lmarena/arena-hard-auto/blob/main/README.md",
       "evaluatedAt": "2025-04-23",
       "notes": "Arena-Hard-v2.0-Preview, Hard Prompt with Style Control, Gemini-2.5 as judge (the repo's official configuration). gpt-4.5-preview scored 50.0 (95% CI -1.9/+2.0), tied with o3-mini-2025-01-31 and gpt-4.1. Date is the v2.0 benchmark's public release date (exact eval-run date not published); score pulled directly from the maintained leaderboard table in the official LMArena arena-hard-auto repo."
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 44.9,
+      "source": "independent",
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluatedAt": "2025-02-27",
+      "notes": "Aider Polyglot benchmark, gpt-4.5-preview, diff edit format, 97.3% well-formed responses, aider v0.75.2.dev, cost $183.18. From the official aider.chat leaderboard (independent third-party coding benchmark), not previously tracked for this model."
     }
   ],
   "verificationNotes": "Confirmed release as research preview on 2025-02-27; API deprecation 2025-07-14 and ChatGPT retirement 2026-06-27 both confirmed via OpenAI Help Center / news coverage. Launch pricing $75/$150 per 1M tokens confirmed independently. All 6 benchmark rows confirmed verbatim on the cited Helicone blog post. No changes made."

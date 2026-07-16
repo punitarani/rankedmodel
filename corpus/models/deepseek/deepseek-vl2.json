@@ -9,7 +9,7 @@
   "paramsB": 27,
   "activeParamsB": 4.5,
   "archClass": "moe",
-  "archDisplay": "MoE vision-language transformer (Base variant), 27B total / 4.5B active \u2014 DeepSeekMoE+MLA language backbone + SigLIP-SO400M vision encoder with dynamic tiling (family also ships Tiny: 3B/1.0B-active, Small: 16B/2.8B-active)",
+  "archDisplay": "MoE vision-language transformer (Base variant), 27B total / 4.5B active — DeepSeekMoE+MLA language backbone + SigLIP-SO400M vision encoder with dynamic tiling (family also ships Tiny: 3B/1.0B-active, Small: 16B/2.8B-active)",
   "ctxK": 4,
   "modalities": [
     "text",
@@ -86,7 +86,7 @@
       "score": 79.2,
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2412.10302v1",
-      "notes": "Base variant, MMBench-V1.1 (testmini) column specifically \u2014 plain MMBench EN/CN test columns show 83.1/79.6"
+      "notes": "Base variant, MMBench-V1.1 (testmini) column specifically — plain MMBench EN/CN test columns show 83.1/79.6"
     },
     {
       "benchmarkSlug": "ai2d",
@@ -94,7 +94,7 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2412.10302v1",
       "evaluatedAt": "2024-12-13",
-      "notes": "Table 4 general-QA/math row, verified via raw HTML grep: 'DeepSeek-VL2 4.5B \u2020 61.3 81.4 51.1 2,253 83.1 79.6 79.2 63.6 68.4 62.8' = MMStar/AI2D/MMMU/MME/MMBench(en)/MMBench(cn)/MMBench-V1.1(testmini)/MMT-Bench/RealWorldQA/MathVista for the Base (4.5B activated) variant."
+      "notes": "Table 4 general-QA/math row, verified via raw HTML grep: 'DeepSeek-VL2 4.5B † 61.3 81.4 51.1 2,253 83.1 79.6 79.2 63.6 68.4 62.8' = MMStar/AI2D/MMMU/MME/MMBench(en)/MMBench(cn)/MMBench-V1.1(testmini)/MMT-Bench/RealWorldQA/MathVista for the Base (4.5B activated) variant."
     },
     {
       "benchmarkSlug": "mmbench-en",
@@ -118,7 +118,7 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/html/2412.10302v1",
       "evaluatedAt": "2024-12-13",
-      "notes": "Table 3 OCR-related row, verified via raw HTML grep: 'DeepSeek-VL2 4.1B \u2020 0.4B 4.5B \u2020 93.3 86.0 78.1 84.2 811' = DocVQA/ChartQA/InfoVQA/TextVQA/OCRBench for the Base variant. Note: 84.2 exceeds the taxonomy's stated textvqa range (40-75) but is the genuine, directly-confirmed paper figure \u2014 DeepSeek-VL2's OCR-focused design scores unusually high on this benchmark."
+      "notes": "Table 3 OCR-related row, verified via raw HTML grep: 'DeepSeek-VL2 4.1B † 0.4B 4.5B † 93.3 86.0 78.1 84.2 811' = DocVQA/ChartQA/InfoVQA/TextVQA/OCRBench for the Base variant. Note: 84.2 exceeds the taxonomy's stated textvqa range (40-75) but is the genuine, directly-confirmed paper figure — DeepSeek-VL2's OCR-focused design scores unusually high on this benchmark."
     },
     {
       "benchmarkSlug": "refcoco-plus",
@@ -126,7 +126,15 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2412.10302",
       "notes": "RefCOCO+ val split, Table 5 of the DeepSeek-VL2 technical report (arXiv:2412.10302). Same table also reports testA 94.9 and testB 87.4 for this model."
+    },
+    {
+      "benchmarkSlug": "mathvision",
+      "score": 17.3,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/html/2504.07491v1",
+      "evaluatedAt": "2025-04-10",
+      "notes": "Kimi-VL Technical Report (arXiv:2504.07491, Moonshot AI/Kimi Team), Table 3, uses DeepSeek-VL2 as a baseline with matching architecture detail (# Act. Params LLM+VT = 4.1B+0.4B ≈ this catalog entry's 4.5B active/27B total Base variant). MathVision score of 17.3 confirmed verbatim in the raw table row; not present in DeepSeek's own VL2 tech report (arXiv:2412.10302), which the corpus already sources for MMMU/MathVista/DocVQA/etc."
     }
   ],
-  "verificationNotes": "Confirmed real via arxiv 2412.10302 (submitted 2024-12-13). CORRECTED apiAvailable from true to false: independent research confirms DeepSeek never exposed a vision/multimodal endpoint on its official API platform (platform.deepseek.com) \u2014 VL2 is only available via HF weights or third-party hosts (Replicate, SiliconFlow), never DeepSeek's own API. Params (27B/4.5B Base; Tiny 3B/1.0B, Small 16B/2.8B) and MMMU/MathVista/DocVQA/ChartQA/OCRBench all confirmed in Tables 3-4 of the paper. Context length 4096 (4K) confirmed directly in HF config.json's language_config. CLARIFIED the mmbench row: the paper's plain MMBench EN/CN test columns for the Base variant are 83.1/79.6, not 79.2 \u2014 the 79.2 figure the input record cited is real but belongs to the separate 'MMBench-V1.1 (testmini)' column; added a note rather than dropping since the number is genuinely on the page. Softened the 'leads open VLMs' superlative in note (unverifiable as literally true) to 'scores strongly among... of its era'."
+  "verificationNotes": "Confirmed real via arxiv 2412.10302 (submitted 2024-12-13). CORRECTED apiAvailable from true to false: independent research confirms DeepSeek never exposed a vision/multimodal endpoint on its official API platform (platform.deepseek.com) — VL2 is only available via HF weights or third-party hosts (Replicate, SiliconFlow), never DeepSeek's own API. Params (27B/4.5B Base; Tiny 3B/1.0B, Small 16B/2.8B) and MMMU/MathVista/DocVQA/ChartQA/OCRBench all confirmed in Tables 3-4 of the paper. Context length 4096 (4K) confirmed directly in HF config.json's language_config. CLARIFIED the mmbench row: the paper's plain MMBench EN/CN test columns for the Base variant are 83.1/79.6, not 79.2 — the 79.2 figure the input record cited is real but belongs to the separate 'MMBench-V1.1 (testmini)' column; added a note rather than dropping since the number is genuinely on the page. Softened the 'leads open VLMs' superlative in note (unverifiable as literally true) to 'scores strongly among... of its era'."
 }

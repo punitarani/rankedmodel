@@ -120,6 +120,27 @@
       "source": "independent",
       "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
       "notes": "Agents' Last Exam (ALE-CLI, Overall leaderboard), Claude Code harness, XHigh reasoning effort: Pass rate 25.7% / Score 48.7% (rank 12 overall). Score component used per corpus convention. Mirrored from agents-last-exam.org/leaderboard. [score corrected during adversarial verify: proposed 48.7 -> 48.5, per verifier: Verified by fetching the raw source HTML (curl, not the summarizing WebFetch tool, which gave inconsistent numbers across repeated calls on the same table). The source page (snorkel.ai/leaderboard/agents-last-exam) embeds several DISTINCT leaderboard splits in its JSON payload: \"overall\" (label \"Overall\", 50 entries) and \"ale_cli\" (label \"ALE-CLI\", description \"linux task only\", 55 entries) are separate tables, not the same thing. For harness=Claude Code, model=claude-fable-5, effort=XHigh, there are two different rows, one per split: - \"Overall\" split: rank 12, pass_rate 25.7%, score 48.7% - \"ALE-CLI\" split: rank 13, pass_rate 23.8%, score 48.5% The claim's notes explicitly say \"Agents' Last Exam (ALE-CLI, Overall leaderboard)\" and give pass rate 25.7% / score 48.7% / rank 12 — but those three numbers are actually the \"Overall\" split's row, not the \"ALE-CLI\" split's row. This is exactly the wrong-benchmark-variant pattern flagged in the task instructions (and matches this project's known variant-conflation failure mode from the prior dataset audit): the notes cite \"ALE-CLI\" by name, but the number pulled belongs to the sibling \"Overall\" split. The true ALE-CLI-split number for this exact model/harness/effort combination is pass rate 23.8%, score 48.5%, rank 13. Model, harness, and effort level are otherwise correctly identified (Claude Code harness, XHigh effort, claude-fable-5 is real and distinct from claude-opus-4-8 which has a similar 25.7% pass rate on the Overall split — likely the actual source of the mixup, since Opus 4-8's Overall pass rate of 25.7% appears to have been attached to Fable 5's ALE-CLI-labeled entry). Recommend correcting the score to 48.5 (and pass rate/rank to 23.8%/13 if those fields are tracked) if the corpus intends the ALE-CLI-specific split, or alternatively relabeling the notes to say \"Overall leaderboard\" (dropping the ALE-CLI qualifier) if 48.7 is the number actually wanted — but as currently worded, the notes and the number don't match the same split.]"
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 91.5,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-fable-5",
+      "notes": "Vals AI independent eval. MMLU-Pro 91.502% (ranked 1st of 120 models per the page), from the model page's embedded score bars (raw HTML fetch, cross-checked against the WebFetch-summarized ranking text). Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 89.8,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-fable-5",
+      "notes": "Vals AI independent eval. LiveCodeBench 89.778% (ranked 1st of 127 models per the page), from the model page's embedded score data. Corroborated by a separate morphllm.com roundup citing the identical 89.78% figure and #1 rank. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 89.3,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-fable-5",
+      "notes": "Vals AI independent eval. MMMU 89.306% (ranked 1st of 82 models per the page), from the model page's embedded score bars (raw HTML fetch). Not previously tracked for this model — Anthropic's own launch materials for Fable 5 did not appear to publish an MMMU figure."
     }
   ],
   "verificationNotes": "Model id, pricing, context window, and Fable-vs-Mythos relationship confirmed directly from Anthropic's own Claude Platform docs (fetched in full). The July 2026 access-restoration event was corroborated by an independent news report (TheHackerNews) as well as Anthropic's own 'Redeploying Claude Fable 5' post referenced in the docs page."

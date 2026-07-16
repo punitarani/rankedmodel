@@ -150,6 +150,30 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/google/gemma-2b",
       "notes": "Labeled 'BIG-Bench' on the live HF card (with a link to the original BIG-bench paper), but this is the exact same row the official arXiv technical report (2403.08295, Table 6) labels 'BBH' -- mapped to bbh for consistency with how the identical benchmark is already mapped for Gemma 2 9B/27B in this corpus."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 25.5,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__gemma-2b-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "HuggingFace Open LLM Leaderboard v2 independent re-evaluation of google/gemma-2b, GPQA acc_norm = 0.255. Not previously tracked (the 15 existing results all come from the HF model card's own eval table)."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 13.7,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__gemma-2b-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "HuggingFace Open LLM Leaderboard v2 independent re-evaluation of google/gemma-2b, MMLU-Pro acc = 0.137."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 25.8,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/google__gemma-2b-details",
+      "evaluatedAt": "2024-06-16",
+      "notes": "HuggingFace Open LLM Leaderboard v2 independent re-evaluation of google/gemma-2b, IFEval inst_level_strict_acc = 0.258."
     }
   ],
   "verificationNotes": "Confirmed real: released 2024-02-21 per Hugging Face blog and Google blog (multiple independent sources agree). Directly fetched huggingface.co/google/gemma-2b model card: all five benchmark rows (MMLU 42.3, HellaSwag 71.4, ARC-c 42.1, HumanEval 22.0, GSM8K 17.7) appear verbatim in its evaluation table -- all confirmed exactly as claimed. Params corrected/confirmed at the source level: fetched arXiv 2403.08295v4 Table 2 directly, which gives an exact parameter count of 2,506,434,560 (524.5M embedding + 1.98B non-embedding) = 2.5B, matching paramsB despite the '2B' marketing name -- this is a genuine, well-documented quirk (Gemma 2B/7B names refer to rounded marketing tiers, not exact counts)."

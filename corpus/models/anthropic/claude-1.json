@@ -69,7 +69,7 @@
       "source": "independent",
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
       "evaluatedAt": "2023-05-24",
-      "notes": "Gorilla paper (Patil et al., arXiv 2305.15334), Table 1 \u2014 zero-shot, no-retriever accuracy on APIBench (HuggingFace subset). Model evaluated as the claude-v1 checkpoint."
+      "notes": "Gorilla paper (Patil et al., arXiv 2305.15334), Table 1 — zero-shot, no-retriever accuracy on APIBench (HuggingFace subset). Model evaluated as the claude-v1 checkpoint."
     },
     {
       "benchmarkSlug": "tensorhub-apibench",
@@ -78,6 +78,48 @@
       "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2305.15334",
       "evaluatedAt": "2023-05-24",
       "notes": "Gorilla paper (Patil et al. 2023), Table 1: zero-shot (no retriever) overall accuracy on the TensorFlow Hub (TensorHub) split of APIBench, using the claude-v1 checkpoint (hallu 88.46%, err 2.33%)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 77,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/files/4zrzovbb/website/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf",
+      "notes": "Anthropic's July 2023 'Model Card and Evaluations for Claude Models' (published alongside Claude 2), Section 4.3 standard-benchmarks table: 'Claude 1.3' row, MMLU 5-shot CoT = 77.0%. Confirmed via direct PDF fetch/read. Caveat: this table explicitly tests the 'Claude 1.3' checkpoint (mid-2023), a later dot-release than the March 14 2023 launch date on this corpus entry. Filed here per the file's existing convention of housing other v1.x-checkpoint results under the generic 'Claude 1' node (e.g. the file's existing Gorilla-paper 'claude-v1' APIBench/Arena entries are also dated May 2023, i.e. likely the same 1.3-era checkpoint)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 85.2,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/files/4zrzovbb/website/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf",
+      "notes": "Same source/table as the MMLU addition: 'Claude 1.3' row, GSM8K 0-shot CoT = 85.2%. Same Claude-1.3-checkpoint caveat applies."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 90,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/files/4zrzovbb/website/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf",
+      "notes": "Same source/table: 'Claude 1.3' row, ARC-Challenge 5-shot = 90.0%. Same Claude-1.3-checkpoint caveat applies."
+    },
+    {
+      "benchmarkSlug": "race-h",
+      "score": 88.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/files/4zrzovbb/website/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf",
+      "notes": "Same source/table: 'Claude 1.3' row, RACE-H 5-shot = 88.8%. Same Claude-1.3-checkpoint caveat applies."
+    },
+    {
+      "benchmarkSlug": "trivia-qa",
+      "score": 86.7,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/files/4zrzovbb/website/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf",
+      "notes": "Same source/table: 'Claude 1.3' row, TriviaQA 5-shot = 86.7%. Same Claude-1.3-checkpoint caveat applies."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 90.8,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/lite/latest/#/leaderboard",
+      "notes": "Stanford HELM Lite leaderboard (fetched live via browser, since static HTML fetch does not render the JS table), 'Claude v1.3' row: OpenbookQA EM = 0.908. Corroborates the 1.3-checkpoint identity of Anthropic's own July 2023 model-card table (same checkpoint name). Same version caveat as other Claude-1 additions in this pass."
     }
   ],
   "verificationNotes": "Confirmed real: announced March 14, 2023 alongside Claude Instant (per Anthropic's own announcement and multiple retrospectives). Context window of 9,000 tokens and pricing of $11.02/$32.68 per M tokens confirmed verbatim by directly reading the official Anthropic pricing PDF (apr-pricing-tokens_2023-05-10 -- table explicitly lists 'Claude-v1: 9,000 tokens, Prompt $11.02/M, Completion $32.68/M'). Arena Elo 1195 (2nd place) confirmed verbatim via direct fetch of the cited lmsys.org blog post. Retirement Nov 2024 confirmed via multiple independent sources (Anthropic deprecation notices, Sept 4 2024 notice, retired Nov 6 2024). No changes made."

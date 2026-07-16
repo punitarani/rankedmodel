@@ -162,6 +162,14 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
       "evaluatedAt": "2024-02-21",
       "notes": "Table 6, OBQA, 0-shot. Slightly above the taxonomy's typical 40-50 range ceiling but this is the literal number printed in the official technical report's academic-benchmark table (verified via direct PDF text extraction)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 31.81,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/google/gemma-7b",
+      "evaluatedAt": "2024-02-21",
+      "notes": "Official HF model card ethics/safety benchmark table, '7B Params' column (MC2-style TruthfulQA score, no shot count given). Confirmed by fetching the raw README.md: table header reads '2B Params | 7B Params' with TruthfulQA row '44.84 | 31.81'. Not present anywhere in the currently-tracked 15 results."
     }
   ],
   "verificationNotes": "Existence, release date (Feb 21 2024, blog.google), params (~8.54B: 786.8M embedding + 7.75B non-embedding, Table 2), 8K context, and license all confirmed via fetched arXiv HTML (2403.08295v4) and ai.google.dev. All 6 benchmark rows (MMLU 64.3, HellaSwag 81.2, HumanEval 32.3, GSM8K 46.4, ARC-c 53.2, Winogrande 72.3) verbatim-confirmed on the fetched arXiv page. No changes made."

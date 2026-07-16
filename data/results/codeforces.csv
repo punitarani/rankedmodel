@@ -19,6 +19,7 @@ gpt-oss-120b-medium,2205,self-reported,https://arxiv.org/abs/2508.10925,2025-08-
 gpt-oss-20b-high,2230,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Codeforces Elo, no tools, high reasoning effort"
 gpt-oss-20b-low,1366,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Codeforces Elo, no tools, low reasoning effort"
 gpt-oss-20b-medium,1998,self-reported,https://arxiv.org/abs/2508.10925,2025-08-05,"Codeforces Elo, no tools, medium reasoning effort"
+kimi-k1-5,94,self-reported,https://arxiv.org/abs/2501.12599,,"Codeforces percentile = 94 (long-CoT flagship model), Table 2 of the Kimi k1.5 technical report (arXiv:2501.12599), directly adjacent to the already-tracked AIME/MATH-500/MathVista/MMMU/MathVision long-CoT rows from the same table. Confirmed via the paper's HTML table markup. Not previously tracked for this model (no codeforces slug currently present)."
 openai-o1,1891,self-reported,https://www.datacamp.com/blog/o3-openai,2024-12-01,"Codeforces Elo [relabeled self-reported: aggregator/press relay of a vendor figure, not an independent re-measurement]"
 openai-o1-mini,1650,independent,https://www.analyticsvidhya.com/blog/2024/09/o1-preview-vs-o1-mini/,2024-09-01,"Codeforces Elo, ~86th percentile"
 openai-o1-preview,1258,independent,https://www.analyticsvidhya.com/blog/2024/09/o1-preview-vs-o1-mini/,2024-09-01,

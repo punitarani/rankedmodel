@@ -141,6 +141,14 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
       "notes": "TAU2-Telecom"
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1423,
+      "source": "independent",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-15",
+      "notes": "LMArena (now arena.ai) Text Arena Elo, independently confirmed by direct fetch of the live leaderboard: rank 91, Elo 1423±3, 97,147 votes, listed under Alibaba/Apache 2.0. Entered the Text Arena around August 2025 (per lmarena_ai's own announcement of the model 'taking the crown' among new open models that month) and the score has been live/stable since. Not previously tracked for this model -- the file currently has no arena-category result at all, only self-reported academic/agentic benchmarks from the HF model card."
     }
   ],
   "verificationNotes": "Fully confirmed via direct fetch of the HF model card: 235B total/22B active params, 128 experts/8 active, Apache 2.0, native 262,144-token (256K) context, all six benchmark scores match verbatim. Independently confirmed 119-language support via Qwen3 Technical Report (arXiv 2505.09388) and Alibaba_Qwen official tweet. Pricing ($0.23/$0.92 per M tokens) confirmed exactly via Alibaba Cloud Model Studio official international pricing page. No changes made."

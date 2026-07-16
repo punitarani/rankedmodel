@@ -30,7 +30,7 @@
     "gh": "allenai/OLMo-core",
     "docs": "allenai.org/blog/olmo2-32B"
   },
-  "note": "First fully open model to outperform GPT-3.5 Turbo and GPT-4o mini; trained to 6T tokens and post-trained with T\u00fclu 3.1.",
+  "note": "First fully open model to outperform GPT-3.5 Turbo and GPT-4o mini; trained to 6T tokens and post-trained with Tülu 3.1.",
   "quants": [
     "GGUF Q4"
   ],
@@ -96,6 +96,13 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct",
       "notes": "AlpacaEval 2 LC (length-controlled win rate); GPT-3.5 Turbo 38.7, GPT-4o mini 49.7"
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 73.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct",
+      "notes": "Labeled 'TruthQA' in the official HF Instruct model card's evaluation table (same table already used for MMLU/GSM8K/BBH/DROP/IFEval/MATH/AlpacaEval, which are already tracked). Row also lists GPT-3.5 Turbo 0125 = 62.9, GPT-4o mini = 64.8, Qwen2.5-32B = 70.6 for comparison. The table also contains 'PopQA' (37.5) and a composite 'Safety' score (85.9), but neither maps to a taxonomy slug so they were not added."
     }
   ],
   "verificationNotes": "Release (March 13 2025) confirmed via Ai2 blog title/URL and MarkTechPost coverage. All six benchmark rows literally confirmed on the live HF Instruct model card, including the comparator scores. paramsB=32.23 confirmed precisely: safetensors index total 128,937,119,744 bytes / 4 bytes (fp32) = ~32.23B, exact match. No changes needed."

@@ -143,7 +143,50 @@
       "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
       "evaluatedAt": "2024-11-04",
       "notes": "TAU-bench retail domain, pass^1, Table 3. Airline-domain score (22.8%) omitted to avoid a duplicate-key collision under this slug (per corpus convention)."
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier1-3",
+      "score": 0.34,
+      "source": "independent",
+      "sourceUrl": "https://ourworldindata.org/grapher/ai-frontiermath-over-time",
+      "notes": "Epoch AI FrontierMath Tiers 1-3 (v2, 300-problem set), 'Claude 3.5 Haiku (Oct 2024)' entry = 0.3448276% (i.e. ~1/300 problems solved). Sourced via Our World in Data's grapher, which cites Epoch AI's Benchmarking Hub (epoch.ai/benchmarks); OWID's own data description confirms this chart is specifically Tiers 1-3 (Tier 4's 50 hardest problems excluded). Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 3,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/claude-3-5-haiku",
+      "notes": "Humanity's Last Exam score of 3%, from Artificial Analysis's live per-model Intelligence Breakdown chart (position confirmed by matching rank-ordered name list against rank-ordered value list). Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 46,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/claude-3-5-haiku",
+      "notes": "MMMU-Pro (visual reasoning) score of 46%, from Artificial Analysis's live per-model Intelligence Breakdown chart. Despite the Oct-2024 launch model card stating the model 'will initially launch as a text-only model,' Anthropic subsequently enabled image input for claude-3-5-haiku-20241022 via the API, consistent with this corpus record's own capabilities.vision=true / modalities including 'vision'. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 43,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/claude-3-5-haiku",
+      "notes": "IFBench (instruction following, distinct benchmark from IFEval which is already tracked) score of 43%, from Artificial Analysis's live per-model Intelligence Breakdown chart. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 0,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/claude-3-5-haiku",
+      "notes": "GDPval-AA v2 (Artificial Analysis's own reproduction of OpenAI's GDPval, agentic real-world work tasks) score of 3%, from Artificial Analysis's live per-model Intelligence Breakdown chart. Mapped to the 'gdpval-aa' taxonomy slug (distinct from plain 'gdpval') since AA's benchmark is explicitly named 'GDPval-AA'. Not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 3 -> 0]"
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1324,
+      "source": "arena",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-13",
+      "notes": "Live Text Arena (formerly LMSYS Chatbot Arena / LMArena) leaderboard, model row 'claude-3-5-haiku-20241022', Elo 1324 (rank 214/374, 69,932 votes) as of the Jul 13, 2026 snapshot fetched directly from arena.ai. Not previously tracked for this model."
     }
   ],
-  "verificationNotes": "CORRECTED: apiAvailable changed from true to false \u2014 claude-3-5-haiku-20241022 was deprecated Dec 19, 2025 and retired from the Claude API on February 19, 2026 (confirmed on platform.claude.com/docs/en/about-claude/model-deprecations), so it is not currently API-available; this also matches the record's own note text ('retired Feb 2026'), which contradicted the old apiAvailable=true. DROPPED 2 rows: independent AA scores 'gpqa 40.8' and 'mmlu-pro 63.4' sourced to artificialanalysis.ai/models/claude-3-5-haiku \u2014 fetched the live page directly and it no longer surfaces individual GPQA Diamond or MMLU-Pro breakouts for this (now-retired) model under its current v4.1 Intelligence Index methodology, so the claimed numbers could not be confirmed on that page and were removed per instructions. KEPT and verified: SWE-bench 40.6% confirmed verbatim on the cited Anthropic blog post. GPQA 41.6, MMLU 80.3, MATH 69.2, HumanEval 88.1 all independently confirmed by downloading and reading (via pdftotext -layout) the actual Claude-3-Model-Card-October-Addendum.pdf, Table 8 (Claude 3.5 Haiku column) \u2014 all four numbers match verbatim. Pricing $0.80/$4 confirmed (Dec 2024 price cut). Release date 2024-10-22 corresponds to the official model ID (claude-3-5-haiku-20241022) and is what independent trackers list as the release date; note that broad public/API rollout was actually delayed about two weeks to November 4, 2024 for capacity reasons (confirmed via Simon Willison's Nov 4, 2024 post) \u2014 kept 2024-10-22 as it's the canonical/model-ID date, but flagging the nuance."
+  "verificationNotes": "CORRECTED: apiAvailable changed from true to false — claude-3-5-haiku-20241022 was deprecated Dec 19, 2025 and retired from the Claude API on February 19, 2026 (confirmed on platform.claude.com/docs/en/about-claude/model-deprecations), so it is not currently API-available; this also matches the record's own note text ('retired Feb 2026'), which contradicted the old apiAvailable=true. DROPPED 2 rows: independent AA scores 'gpqa 40.8' and 'mmlu-pro 63.4' sourced to artificialanalysis.ai/models/claude-3-5-haiku — fetched the live page directly and it no longer surfaces individual GPQA Diamond or MMLU-Pro breakouts for this (now-retired) model under its current v4.1 Intelligence Index methodology, so the claimed numbers could not be confirmed on that page and were removed per instructions. KEPT and verified: SWE-bench 40.6% confirmed verbatim on the cited Anthropic blog post. GPQA 41.6, MMLU 80.3, MATH 69.2, HumanEval 88.1 all independently confirmed by downloading and reading (via pdftotext -layout) the actual Claude-3-Model-Card-October-Addendum.pdf, Table 8 (Claude 3.5 Haiku column) — all four numbers match verbatim. Pricing $0.80/$4 confirmed (Dec 2024 price cut). Release date 2024-10-22 corresponds to the official model ID (claude-3-5-haiku-20241022) and is what independent trackers list as the release date; note that broad public/API rollout was actually delayed about two weeks to November 4, 2024 for capacity reasons (confirmed via Simon Willison's Nov 4, 2024 post) — kept 2024-10-22 as it's the canonical/model-ID date, but flagging the nuance."
 }

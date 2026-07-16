@@ -32,7 +32,7 @@
   "links": {
     "docs": "https://platform.claude.com/docs/en/about-claude/models/overview"
   },
-  "note": "CONFIRMED REAL \u2014 this is not a mix-up. Model id claude-sonnet-4-6. Direct predecessor to Claude Sonnet 5, sitting between Sonnet 4.5 and Sonnet 5 in the lineage; the corpus is missing it even though it already has both Opus 4.6 (2026-02-05) and Sonnet 5 (2026-06-30). Introduced 1M-token context (beta) and adaptive thinking for the Sonnet line.",
+  "note": "CONFIRMED REAL — this is not a mix-up. Model id claude-sonnet-4-6. Direct predecessor to Claude Sonnet 5, sitting between Sonnet 4.5 and Sonnet 5 in the lineage; the corpus is missing it even though it already has both Opus 4.6 (2026-02-05) and Sonnet 5 (2026-06-30). Introduced 1M-token context (beta) and adaptive thinking for the Sonnet line.",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,
@@ -118,7 +118,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www.anthropic.com/claude-sonnet-4-6-system-card",
       "evaluatedAt": "2026-02-17",
-      "notes": "\u03c4\u00b2-bench Telecom domain (Section 2.5). Sonnet 4.6 also scored 91.7% on the Retail sub-domain, which has no matching taxonomy slug."
+      "notes": "τ²-bench Telecom domain (Section 2.5). Sonnet 4.6 also scored 91.7% on the Retail sub-domain, which has no matching taxonomy slug."
     },
     {
       "benchmarkSlug": "browsecomp",
@@ -150,7 +150,28 @@
       "source": "independent",
       "sourceUrl": "https://snorkel.ai/leaderboard/agents-last-exam/",
       "notes": "Agents' Last Exam (Linux-Task-Only leaderboard view), Hermes harness, Medium effort: Pass rate 13.2% / Score 32.0% -- the best of several claude-sonnet-4-6 rows (Forgecode Medium 28.5, Terminus 2 'Off' 30.9, OpenClaw High 31.0, Openhands 19.8). Not present in the top-50 of the main ALE-CLI Overall table, so sourced from the Linux-only leaderboard split of the same site. Score component used per corpus convention."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 82.09,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-sonnet-4-6",
+      "notes": "Vals AI independent evaluation (confirmed via rendered browser screenshot; static HTML fetch shows placeholder 0.0% values)."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 87.34,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-sonnet-4-6",
+      "notes": "Vals AI independent evaluation."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 83.58,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-sonnet-4-6",
+      "notes": "Vals AI independent evaluation. Distinct from the already-tracked 'mmmu-pro' slug on this model, which is a harder/different benchmark."
     }
   ],
-  "verificationNotes": "Release date confirmed via Anthropic's own announcement (fetched directly; page states February 17, 2026, though one press recap gave February 15 \u2014 treated the primary source as authoritative). SWE-bench/OSWorld figures below are from direct launch-day press coverage citing Anthropic's numbers; GPQA figure is from a third-party recap with lower confidence."
+  "verificationNotes": "Release date confirmed via Anthropic's own announcement (fetched directly; page states February 17, 2026, though one press recap gave February 15 — treated the primary source as authoritative). SWE-bench/OSWorld figures below are from direct launch-day press coverage citing Anthropic's numbers; GPQA figure is from a third-party recap with lower confidence."
 }

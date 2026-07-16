@@ -73,7 +73,7 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2307.09288",
       "evaluatedAt": "2023-07-18",
-      "notes": "3-shot chain-of-thought, Table 3 of the official Llama 2 paper (aggregate score across BBH's 23 hard BIG-Bench tasks \u2014 this IS the benchmark itself, not a synthetic composite)."
+      "notes": "3-shot chain-of-thought, Table 3 of the official Llama 2 paper (aggregate score across BBH's 23 hard BIG-Bench tasks — this IS the benchmark itself, not a synthetic composite)."
     },
     {
       "benchmarkSlug": "gsm8k",
@@ -154,6 +154,22 @@
       "sourceUrl": "https://arxiv.org/abs/2307.09288",
       "evaluatedAt": "2023-07-18",
       "notes": "5-shot exact match on the TriviaQA-Wiki validation subset, Table 22 (Appendix A.2.2). Meta also reports 0/1/64-shot variants (82.4/85.0/87.5); 5-shot was chosen as the most commonly-cited setting."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 60.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "0-shot, Table 20 'Performance on standard benchmarks' (OBQA column) of the official Llama 2 paper. Not previously tracked for this model despite the sibling common-sense-reasoning benchmarks (PIQA, SIQA, HellaSwag, WinoGrande, ARC-e/c) from the same table already being present."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 54.2,
+      "source": "self-reported",
+      "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2307.09288",
+      "evaluatedAt": "2023-07-18",
+      "notes": "3-5 shot, English tasks average, Table 3 'Overall performance on grouped academic benchmarks' of the official Llama 2 paper (per-task breakdown in Table 24). Sibling Llama 2 13B already has this slug tracked but the 70B row was missing it."
     }
   ],
   "verificationNotes": "Confirmed via Hugging Face meta-llama/Llama-2-70b page (70B nominal/~69B actual params, 4096 ctx, Llama 2 Community License, trained Jan-Jul 2023). Fetched MODEL_CARD.md and confirmed MMLU 68.9, TruthfulQA 50.18, Toxigen 24.60 all appear for the Llama-2-70B pretrained row. No changes made."

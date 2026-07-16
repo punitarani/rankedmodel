@@ -119,6 +119,14 @@
       "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
       "evaluatedAt": "2026-04-24",
       "notes": "GDPval-AA Elo, Think Max / Pro-Max mode. Only reported for the Max reasoning tier. Cross-verified identical value in DeepSeek-V4 tech report Table 6/7 (arXiv:2606.19348)."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 46,
+      "source": "independent",
+      "sourceUrl": "https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro",
+      "evaluatedAt": "2026-05-01",
+      "notes": "ARC-AGI-2 semi-private benchmark, 46%, from NIST's Center for AI Standards and Innovation (CAISI) independent evaluation of DeepSeek V4 Pro (published 2026-05-01, updated 2026-05-02). CAISI's methodology used 'developer-recommended settings ... preserving internal reasoning ... and maximum thinking' -- i.e. the Think Max / Pro-Max tier, matching this catalog entry. CAISI reproduced DeepSeek's self-reported GPQA-Diamond score (~90%, matching the value already in the corpus) to validate its test harness before running additional held-out benchmarks including this ARC-AGI-2 semi-private set, which does not appear in DeepSeek's own model card or tech report. Cross-checked against a secondary summary (theweatherreport.ai) reporting the same 46% figure. Note: CAISI's report also gives an independent SWE-bench Verified figure (74%) and GPQA-Diamond (~90%), but both benchmark slugs are already tracked for this model from DeepSeek's self-reported numbers, so per instructions those were not added as new entries."
     }
   ],
   "verificationNotes": "Confirmed real via DeepSeek's own official API-docs news post (api-docs.deepseek.com/news/news260424/, dated 2026-04-24) announcing the V4-Pro/V4-Flash preview, and via the deepseek-ai/DeepSeek-V4-Pro Hugging Face model card, which gives 1.6T total/49B active params, MIT license, 1M-token context, and a benchmark table covering three reasoning tiers (Non-Think/Think High/Think Max). Numerous SEO/content-farm sites (codersera, sitepoint, morphllm, etc.) published speculative-sounding 'release timeline' articles with suspiciously precise but unverifiable claims (e.g. percentile rankings, an 'Intelligence Index' score) — those were NOT used; all numbers here come from the official HF model card table."

@@ -145,7 +145,23 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2408.03541",
       "evaluatedAt": "2024-08-01"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 41.4,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/LGAI-EXAONE__EXAONE-3.0-7.8B-Instruct-details",
+      "evaluatedAt": "2024-08-18",
+      "notes": "BBH raw accuracy from the HF Open LLM Leaderboard 2 independent evaluation run (not the vendor's own report; the technical report's own BBH figure of 26.1 is a leaderboard-normalized score, not raw accuracy, and is a different number style). Not previously tracked for this model under any source. [score corrected during round-6 completeness verify: proposed 41.7 -> 41.4]"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 29.3,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/LGAI-EXAONE__EXAONE-3.0-7.8B-Instruct-details",
+      "evaluatedAt": "2024-08-18",
+      "notes": "GPQA raw accuracy from the HF Open LLM Leaderboard 2 independent evaluation run. The model's own technical report reports GPQA as 10.1, which is the leaderboard-normalized (0-baseline-subtracted) score, not raw accuracy — kept separate/new since raw accuracy for this benchmark was not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 26.6 -> 29.3]"
     }
   ],
-  "verificationNotes": "Existence, release date (2024-08-07), params (7.8B), NC license, and bilingual EN/KO scope confirmed directly on the HF model card and GitHub README (both fetched). Architecture (32 layers) and 4096-token context confirmed via independent search results citing the arXiv technical report (2408.03541) and GGUF metadata. All 6 benchmark rows (MT-Bench 9.01, Arena-Hard 46.8, WildBench 48.2, AlpacaEval 45.0, KoMT-Bench 8.92, LogicKor 8.62) literally appear on the cited HF/GitHub pages, verbatim match \u2014 no changes."
+  "verificationNotes": "Existence, release date (2024-08-07), params (7.8B), NC license, and bilingual EN/KO scope confirmed directly on the HF model card and GitHub README (both fetched). Architecture (32 layers) and 4096-token context confirmed via independent search results citing the arXiv technical report (2408.03541) and GGUF metadata. All 6 benchmark rows (MT-Bench 9.01, Arena-Hard 46.8, WildBench 48.2, AlpacaEval 45.0, KoMT-Bench 8.92, LogicKor 8.62) literally appear on the cited HF/GitHub pages, verbatim match — no changes."
 }

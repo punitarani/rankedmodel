@@ -136,6 +136,30 @@
       "sourceUrl": "https://arxiv.org/abs/2204.02311",
       "evaluatedAt": "2022-04-05",
       "notes": "PaLM 540B, 0-shot ANLI-R1 (Round 1), from Table 4. (R2=44.2, R3=45.7 in the same 0-shot setting, not separately recorded here since the taxonomy has a single 'anli' slug.)"
+    },
+    {
+      "benchmarkSlug": "storycloze",
+      "score": 84.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.02311",
+      "evaluatedAt": "2022-04-05",
+      "notes": "Table 5 of the PaLM paper: PaLM 540B, 0-shot StoryCloze. Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 53.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.02311",
+      "evaluatedAt": "2022-04-05",
+      "notes": "Table 5 of the PaLM paper: PaLM 540B, 0-shot OpenBookQA."
+    },
+    {
+      "benchmarkSlug": "superglue",
+      "score": 90.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2204.02311",
+      "evaluatedAt": "2022-04-05",
+      "notes": "Table 9 of the PaLM paper: PaLM 540B finetuned, SuperGLUE test set (official leaderboard) average = 90.4. (A separate dev-set finetuned average of 92.6 is also reported in Table 7; test/leaderboard score chosen as the canonical figure.)"
     }
   ],
   "verificationNotes": "Confirmed real via research.google/blog and arxiv.org/abs/2204.02311, both dated/consistent with 2022-04-04 release -- 540.35B dense Pathways-trained decoder-only Transformer, matches paramsB/archDisplay. Fetched full paper text (ar5iv rendering) and confirmed literal scores: MMLU 5-shot 69.3, GSM8K 8-shot CoT+calculator 58, TriviaQA 1-shot 81.4 -- all three rows matched exactly, kept unchanged. Context length 2048 tokens confirmed via full-text fetch. langCount=124 corroborated by an independent citation of the PaLM paper's tokenizer/training corpus (paper itself says 'over 100 languages'; 124 is the more precise figure cited elsewhere) -- kept as a reasonable value. Closed/proprietary confirmed (no public weights; later restricted API access via PaLM API)."

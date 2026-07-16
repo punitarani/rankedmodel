@@ -112,6 +112,46 @@
       "sourceUrl": "https://docsbot.ai/models/gpt-4-1-mini",
       "evaluatedAt": "2025-04-14",
       "notes": "Listed as \"Global MMLU\" (multilingual MMLU) in OpenAI's launch table; relayed via docsbot.ai."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 81.4,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-14",
+      "notes": "gpt-4.1-mini-2025-04-14 row, OpenAI's own simple-evals results table ('assistant' prompt). The same table's MMLU (87.5) and GPQA (65.0) columns exactly match the figures already tracked in this file (via docsbot.ai relay), confirming those as genuine OpenAI self-reports and surfacing these 5 additional untracked columns from the same row."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 93.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-14",
+      "notes": "gpt-4.1-mini-2025-04-14, OpenAI simple-evals, 'assistant' prompt."
+    },
+    {
+      "benchmarkSlug": "mgsm",
+      "score": 88.2,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-14",
+      "notes": "gpt-4.1-mini-2025-04-14, Multilingual Grade School Math, OpenAI simple-evals."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 81,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-14",
+      "notes": "gpt-4.1-mini-2025-04-14, F1 score, 3-shot, OpenAI simple-evals."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 16.8,
+      "source": "self-reported",
+      "sourceUrl": "https://github.com/openai/simple-evals",
+      "evaluatedAt": "2025-04-14",
+      "notes": "gpt-4.1-mini-2025-04-14, short-form factuality benchmark, OpenAI simple-evals."
     }
   ],
   "verificationNotes": "Confirmed release 2025-04-14 and $0.40/$1.60 per 1M token pricing via OpenAI docs and independent coverage. All 5 benchmark rows (MMLU 87.5, GPQA 65, SWE-bench 23.6, AIME 49.6, IFEval 84.1) confirmed verbatim on the cited docsbot.ai page. No changes made."

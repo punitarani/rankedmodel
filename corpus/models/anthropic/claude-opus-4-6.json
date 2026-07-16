@@ -54,7 +54,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
       "evaluatedAt": "2026-02-05",
-      "notes": "Standard-scaffold figure (Anthropic's Feb 2026 system card reports 80.84%, averaged over 25 trials, max effort/adaptive thinking); Anthropic's own launch post cites a separate 81.42% obtained 'with a prompt modification' \u2014 a different methodology, not this headline number."
+      "notes": "Standard-scaffold figure (Anthropic's Feb 2026 system card reports 80.84%, averaged over 25 trials, max effort/adaptive thinking); Anthropic's own launch post cites a separate 81.42% obtained 'with a prompt modification' — a different methodology, not this headline number."
     },
     {
       "benchmarkSlug": "gpqa",
@@ -69,7 +69,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
       "evaluatedAt": "2026-02-05",
-      "notes": "Terminal-Bench 2.0; per Anthropic's Feb 2026 system card this figure was measured at max effort with adaptive thinking, not the model's 'default high' setting \u2014 corrected from the original 'default (high) effort' label."
+      "notes": "Terminal-Bench 2.0; per Anthropic's Feb 2026 system card this figure was measured at max effort with adaptive thinking, not the model's 'default high' setting — corrected from the original 'default (high) effort' label."
     },
     {
       "benchmarkSlug": "hle",
@@ -85,7 +85,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
       "evaluatedAt": "2026-02-05",
-      "notes": "Standard single-agent figure per the dedicated Opus 4.6 benchmarks article (direct fetch). Anthropic's own launch page (anthropic.com/news/claude-opus-4-6) separately states 86.8% 'with a multi-agent harness' \u2014 a different configuration, not this headline number. A later retrospective Vellum article (claude-opus-4-7-benchmarks-explained) lists Opus 4.6 at 83.7% for the same benchmark; kept the dedicated article's 84.0% as the primary figure."
+      "notes": "Standard single-agent figure per the dedicated Opus 4.6 benchmarks article (direct fetch). Anthropic's own launch page (anthropic.com/news/claude-opus-4-6) separately states 86.8% 'with a multi-agent harness' — a different configuration, not this headline number. A later retrospective Vellum article (claude-opus-4-7-benchmarks-explained) lists Opus 4.6 at 83.7% for the same benchmark; kept the dedicated article's 84.0% as the primary figure."
     },
     {
       "benchmarkSlug": "arc-agi-2",
@@ -101,7 +101,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
       "evaluatedAt": "2026-02-05",
-      "notes": "Labeled 'OSWorld' in the vendor-relayed comparison table but is OSWorld-Verified \u2014 score range and other search corroboration ('Claude Opus 4.6 achieved 72.7% on OSWorld-Verified') confirm this."
+      "notes": "Labeled 'OSWorld' in the vendor-relayed comparison table but is OSWorld-Verified — score range and other search corroboration ('Claude Opus 4.6 achieved 72.7% on OSWorld-Verified') confirm this."
     },
     {
       "benchmarkSlug": "tau2-bench-telecom",
@@ -117,7 +117,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
       "evaluatedAt": "2026-02-05",
-      "notes": "Also stated directly by Artificial Analysis on X: 'it reached an Elo of 1606 with adaptive thinking' \u2014 AA ran this benchmark in partnership with Anthropic ahead of launch."
+      "notes": "Also stated directly by Artificial Analysis on X: 'it reached an Elo of 1606 with adaptive thinking' — AA ran this benchmark in partnership with Anthropic ahead of launch."
     },
     {
       "benchmarkSlug": "mmmu-pro",
@@ -142,7 +142,31 @@
       "sourceUrl": "https://www.vellum.ai/blog/claude-opus-4-6-benchmarks",
       "evaluatedAt": "2026-02-05",
       "notes": "Multilingual MMLU, consistent with how this corpus already files Opus 4.7's 91.5% under the same slug."
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 99.8,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf",
+      "evaluatedAt": "2026-02-05",
+      "notes": "AIME 2025, Section 2.12 of Anthropic's official Claude Opus 4.6 System Card (Feb 2026): 'Claude Opus 4.6 achieved a score of 99.79% without tools,' averaged over 5 trials with adaptive thinking/max effort. The system card itself flags contamination concerns may have inflated this score (per Section 2.2 of the Opus 4.5 System Card). Not previously tracked for this model; the 99.8% figure is also independently relayed by benchlm.ai. [score corrected during round-6 completeness verify: proposed 99.79 -> 99.8]"
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 66.6,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf",
+      "evaluatedAt": "2026-02-05",
+      "notes": "Section 2.17 of the official Claude Opus 4.6 System Card: pass@1 targeted-vulnerability-reproduction score aggregated over the 1,507-task CyberGym suite, 'Claude Opus 4.6 achieved a score of 66.6%, improving on Claude Opus 4.5's score of 51.0% and Sonnet 4.5's score of 29.8%.' No-thinking/default-effort setting with an interleaved 'think' tool. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 94,
+      "source": "self-reported",
+      "sourceUrl": "https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf",
+      "evaluatedAt": "2026-02-05",
+      "notes": "Section 2.9 of the official Claude Opus 4.6 System Card: 'The ARC Prize Foundation reports that Claude Opus 4.6 achieved 94.00% on ARC-AGI-1 ... with 120k thinking tokens and High effort on their private dataset. This is state-of-the-art.' Distinct from the already-tracked arc-agi-2 result (68.8, sourced from vellum.ai; the system card's own arc-agi-2 figure is 69.17%, essentially the same score via a different rounding/source -- not re-added as a duplicate). Independently corroborated by ARC Prize Foundation's own reporting (relayed via llm-stats.com on X)."
     }
   ],
-  "verificationNotes": "Confirmed real and current (today is 2026-07-12): anthropic.com/news/claude-opus-4-6 and Anthropic's Feb 2026 system card verify the 2026-02-05 release date. Corrected the note's claim of '1M-token context at GA' to 'in beta' \u2014 Anthropic's own page states the 1M window is 'in beta on the Claude Developer Platform only,' not GA. GPQA (91.3), HLE-without-tools (40.0), and MRCR-v2 1M (76%) were confirmed as literal text on their cited pages. Swapped the sourceUrl for the swe-bench and terminal-bench-2 rows away from anthropic.com (whose blog shows 81.42% for SWE-bench and no literal terminal-bench percentage) to vellum.ai's benchmark breakdown, which literally states both 80.8% and 65.4%. Also corrected the terminal-bench-2 row's effort-level description: per the system card the 65.4% figure was measured at max effort with adaptive thinking, not 'default (high) effort' as originally labeled."
+  "verificationNotes": "Confirmed real and current (today is 2026-07-12): anthropic.com/news/claude-opus-4-6 and Anthropic's Feb 2026 system card verify the 2026-02-05 release date. Corrected the note's claim of '1M-token context at GA' to 'in beta' — Anthropic's own page states the 1M window is 'in beta on the Claude Developer Platform only,' not GA. GPQA (91.3), HLE-without-tools (40.0), and MRCR-v2 1M (76%) were confirmed as literal text on their cited pages. Swapped the sourceUrl for the swe-bench and terminal-bench-2 rows away from anthropic.com (whose blog shows 81.42% for SWE-bench and no literal terminal-bench percentage) to vellum.ai's benchmark breakdown, which literally states both 80.8% and 65.4%. Also corrected the terminal-bench-2 row's effort-level description: per the system card the 65.4% figure was measured at max effort with adaptive thinking, not 'default (high) effort' as originally labeled."
 }

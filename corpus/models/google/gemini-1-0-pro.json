@@ -107,6 +107,62 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
       "evaluatedAt": "2023-12-06",
       "notes": "Table 5, 8-shot, multilingual average."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 47.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7 of the official Gemini 1.0 technical report: Gemini Pro (pixel-only, post-trained), MMMU (val), pass@1. Not previously tracked -- the corpus only had text benchmarks (MMLU, GSM8K, MATH, BBH, HumanEval, DROP, HellaSwag, MGSM) for this model."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 74.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7: Gemini Pro (pixel-only), TextVQA (val)."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 88.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7: Gemini Pro (pixel-only), DocVQA (test)."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 74.1,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7: Gemini Pro (pixel-only), ChartQA (test)."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 45.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7: Gemini Pro (pixel-only), MathVista (testmini)."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 73.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7: Gemini Pro (pixel-only), AI2D (test)."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 71.2,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7: Gemini Pro (pixel-only), VQAv2 (test-dev)."
     }
   ],
   "verificationNotes": "Confirmed real: Gemini Pro API access for developers opened 2023-12-13 (confirmed via TechCrunch, SiliconANGLE, Google Developers Blog -- distinct from the 2023-12-06 announcement date used for the Ultra/Nano records), with a 32K context window at that time, matching ctxK. Re-fetched llm-stats.com comparison page via search: it literally lists Gemini 1.0 Pro MMLU as 71.8%, matching the record exactly."

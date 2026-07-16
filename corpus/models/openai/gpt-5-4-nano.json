@@ -102,6 +102,22 @@
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
       "evaluatedAt": "2026-03-17",
       "notes": "MMMU-Pro (standard, no Python tool; the 'w/ Python' variant scores 69.5%), xhigh reasoning effort."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1100,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-4-nano",
+      "evaluatedAt": "2026-07-15",
+      "notes": "GDPval-AA v2, independently measured by Artificial Analysis on the 'GPT-5.4 nano (xhigh)' model page (AA's page confirms xhigh effort, matching this catalog entry's existing xhigh-attributed self-reported results). Not previously tracked here. [score corrected during round-6 completeness verify: proposed 30 -> 1100]"
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 76,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-4-nano",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench (instruction following), independently measured by Artificial Analysis on the 'GPT-5.4 nano (xhigh)' model page. Not previously tracked here. (AA's independently re-measured Terminal-Bench v2.1 (61%), GPQA Diamond (82%), HLE (26%), and MMMU-Pro (65%) for this model were checked but all duplicate benchmark slugs already tracked on this entry from OpenAI's own launch post -- skipped as non-novel per instructions, despite some numeric divergence from the self-reported figures.)"
     }
   ],
   "verificationNotes": "Existence and distinctness from GPT-5 nano confirmed by directly fetching OpenAI's own official launch post (openai.com/index/introducing-gpt-5-4-mini-and-nano/, dated Mar 17 2026), which states GPT-5.4 nano 'is also a significant upgrade over GPT-5 nano' and gives it its own pricing tier below GPT-5.4 mini in OpenAI's own quick-comparison table (GPT-5.4 mini $0.75 vs GPT-5.4 nano $0.20 vs GPT-5 nano $0.05, all per-M-input). Pricing ($0.20/$1.25 per M), 400K context, and 128K max output independently confirmed via OpenAI's live developers.openai.com/api/docs/models/gpt-5.4-nano model card (own snapshot dated gpt-5.4-nano-2026-03-17, matching the announcement date), which also documents that Computer Use and Tool Search are 'Not supported' for this tier specifically (unlike mini/flagship). Independent secondary source datacamp.com/blog/gpt-5-4-mini-nano (fetched directly) corroborates the same benchmark table verbatim and separately compares nano to Claude Haiku 4.5 on GPQA Diamond and tau2-bench-telecom, both consistent with the scores here. All 7 result rows taken from OpenAI's own multi-table benchmark breakdown; Toolathlon and MCP Atlas scores were also published but omitted since no corpus benchmark slug matches them."

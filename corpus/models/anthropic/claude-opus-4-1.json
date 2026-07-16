@@ -126,6 +126,14 @@
       "source": "independent",
       "sourceUrl": "https://hal.cs.princeton.edu/gaia",
       "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, standard (non-High-thinking) config, Claude Opus 4.1 (Aug 2025 snapshot). GAIA validation set."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1447,
+      "source": "arena",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-13",
+      "notes": "Live Text Arena leaderboard, model row 'claude-opus-4-1-20250805' (non-thinking-tagged variant, matching this corpus record's single isDefaultConfig/isBestConfig entry), Elo 1447 (rank 56/374, 77,265 votes) as of the Jul 13, 2026 snapshot fetched directly from arena.ai. A separate 'claude-opus-4-1-20250805-thinking-16k' row (Elo 1449) also exists but was not used since this corpus record does not track a distinct extended-thinking config. Not previously tracked for this model."
     }
   ],
   "verificationNotes": "Real model, confirmed via anthropic.com/news/claude-opus-4-1 and Anthropic's X announcement (release 2025-08-05, same $15/$75 pricing as Opus 4, 200K context). SWE-bench 74.5% confirmed on InfoQ; the other 3 rows (Terminal-bench 43.3%, AIME 78%, GPQA 80.9%) were not literally present in the InfoQ text extraction, so sourceUrl was swapped to Winbuzzer's article, which explicitly lists all four figures. Per Anthropic's official model-deprecations page (fetched 2026-07-12): claude-opus-4-1-20250805 is currently 'Deprecated' (as of 2026-06-05) with tentative retirement 2026-08-05, which has NOT yet passed as of today (2026-07-12) — status='deprecated' and apiAvailable=true both confirmed correct as given."

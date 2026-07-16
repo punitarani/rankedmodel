@@ -63,6 +63,30 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/allenai/tulu-2-dpo-70b",
       "notes": "MT-Bench score (0-10)"
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 67.8,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2311.10702",
+      "evaluatedAt": "2023-11-17",
+      "notes": "0-shot EM; 'Camels in a Changing Climate' (Tülu 2 paper) Table 1, Tülu 2+DPO 70B row. Confirmed via direct pdftotext extraction of the arXiv PDF. Not previously tracked (only AlpacaEval and MT-Bench were in the file)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 71.5,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2311.10702",
+      "evaluatedAt": "2023-11-17",
+      "notes": "8-shot CoT EM; Tülu 2 paper Table 1, Tülu 2+DPO 70B row."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 66,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2311.10702",
+      "evaluatedAt": "2023-11-17",
+      "notes": "3-shot CoT EM; Tülu 2 paper Table 1, Tülu 2+DPO 70B row. (Note: the paper also reports TydiQA 35.8 F1, CodexEval 68.9 Pass@10, and ToxiGen 0.2% toxic for this model, but none of TydiQA/CodexEval/ToxiGen map cleanly to an existing taxonomy slug -- CodexEval in particular uses a distinct Pass@10 protocol from standard HumanEval, so it was deliberately left unmapped rather than forced onto the humaneval slug.)"
     }
   ],
   "verificationNotes": "Confirmed real via arXiv paper (2311.10702, submitted 2023-11-17) and HF model card. AI2 ImpACT Low-risk license confirmed via search. Context length 8192 (ctxK=8) confirmed directly from the model's raw config.json (max_position_embeddings=8192). AlpacaEval 95.1% win rate and MT-Bench 7.89 both confirmed via independent secondary sources quoting the HF card."

@@ -16,7 +16,7 @@
     "unit": "%",
     "description": "Human standardized exams (SAT/LSAT/Gaokao) repurposed as an LLM benchmark.",
     "normMin": 20,
-    "normMax": 80,
+    "normMax": 92,
     "higherIsBetter": true
   },
   {
@@ -96,7 +96,7 @@
     "unit": "%",
     "description": "Harder abstraction-and-reasoning puzzle grid tasks, v2.",
     "normMin": 0,
-    "normMax": 82,
+    "normMax": 95,
     "higherIsBetter": true
   },
   {
@@ -266,7 +266,7 @@
     "unit": "CIDEr",
     "description": "Zero-shot COCO image-captioning quality (CIDEr).",
     "normMin": 0,
-    "normMax": 97,
+    "normMax": 155,
     "higherIsBetter": true
   },
   {
@@ -364,7 +364,7 @@
     "name": "FrontierMath (Tier 4)",
     "category": "math",
     "unit": "%",
-    "description": "FrontierMath hardest tier \u2014 IMO/research-adjacent difficulty.",
+    "description": "FrontierMath hardest tier — IMO/research-adjacent difficulty.",
     "normMin": 0,
     "normMax": 88,
     "higherIsBetter": true
@@ -806,7 +806,7 @@
     "unit": "%",
     "description": "Olympiad-level bilingual multimodal science/math problems.",
     "normMin": 0,
-    "normMax": 50,
+    "normMax": 65,
     "higherIsBetter": true
   },
   {
@@ -1096,7 +1096,7 @@
     "unit": "%",
     "description": "Questions designed to elicit common human misconceptions.",
     "normMin": 20,
-    "normMax": 68,
+    "normMax": 80,
     "higherIsBetter": true
   },
   {
@@ -1146,7 +1146,7 @@
     "unit": "%",
     "description": "LLM-judged win rate on real, in-the-wild user queries.",
     "normMin": 0,
-    "normMax": 51,
+    "normMax": 70,
     "higherIsBetter": true
   },
   {
@@ -1171,10 +1171,10 @@
   },
   {
     "slug": "tau2-bench-telecom",
-    "name": "\u03c4\u00b2-Bench Telecom",
+    "name": "τ²-Bench Telecom",
     "category": "agents",
     "unit": "%",
-    "description": "\u03c4\u00b2-Bench telecom domain \u2014 dual-control tool-agent-user tasks in a simulated telecom support setting; a harder successor to tau-bench, distinct scale.",
+    "description": "τ²-Bench telecom domain — dual-control tool-agent-user tasks in a simulated telecom support setting; a harder successor to tau-bench, distinct scale.",
     "normMin": 30,
     "normMax": 99,
     "higherIsBetter": true
@@ -1204,7 +1204,7 @@
     "name": "OSWorld-Verified",
     "category": "agents",
     "unit": "%",
-    "description": "Verified/cleaned subset of OSWorld \u2014 real desktop-GUI computer-use tasks scored pass@1.",
+    "description": "Verified/cleaned subset of OSWorld — real desktop-GUI computer-use tasks scored pass@1.",
     "normMin": 0,
     "normMax": 90,
     "higherIsBetter": true
@@ -1214,7 +1214,7 @@
     "name": "OSWorld",
     "category": "agents",
     "unit": "%",
-    "description": "Original OSWorld computer-use benchmark (screenshot-only agent configuration) \u2014 distinct from the later OSWorld-Verified subset.",
+    "description": "Original OSWorld computer-use benchmark (screenshot-only agent configuration) — distinct from the later OSWorld-Verified subset.",
     "normMin": 0,
     "normMax": 88,
     "higherIsBetter": true
@@ -1224,7 +1224,7 @@
     "name": "GDPval-AA",
     "category": "agents",
     "unit": "pts",
-    "description": "Updated/harder economically-valuable-work evaluation (0-2000 scale) \u2014 distinct from the original GDPval benchmark.",
+    "description": "Updated/harder economically-valuable-work evaluation (0-2000 scale) — distinct from the original GDPval benchmark.",
     "normMin": 0,
     "normMax": 2000,
     "higherIsBetter": true

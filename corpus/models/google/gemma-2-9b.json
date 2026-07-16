@@ -178,6 +178,14 @@
       "sourceUrl": "https://github.com/LG-AI-EXAONE/KoMT-Bench",
       "evaluatedAt": "2024-08-01",
       "notes": "Reported as 'Gemma 2 9B Inst.' in the official KoMT-Bench GitHub repo results table (LG AI Research), reproduced from the EXAONE 3.0 7.8B technical report (arXiv:2408.03541). Score is on the 1-10 GPT-4-judged scale with the benchmark's language-detector penalty applied."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1187,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf",
+      "evaluatedAt": "2024-07-31",
+      "notes": "gemma-2-9b-it LMSYS Chatbot Arena Elo rating (95% CI +3/-5), from Table 14 of the official Gemma 2 technical report ('Evaluation of Gemma 2 Instruction Tuned models on the Chatbot Arena'). Text confirms: 'Gemma 9B (Elo 1187) similar as GPT-4-0314 (Elo 1186)'. Verbatim-confirmed via ar5iv full-text render of the arxiv mirror (2408.00118, submitted 2024-07-31). Live/current lmarena.ai leaderboard entries were not used since the score there drifts over time and the specific historical launch-week figure is the citable, stable data point."
     }
   ],
   "verificationNotes": "Existence, release date (June 27 2024), 9B params (8T training tokens), 8192-token context, and all 7 benchmark rows verbatim-confirmed via fetched ai.google.dev model card. No changes made."

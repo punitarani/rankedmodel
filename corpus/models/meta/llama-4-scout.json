@@ -102,6 +102,46 @@
       "sourceUrl": "https://huggingface.co/blog/llama4-release",
       "evaluatedAt": "2025-04-05",
       "notes": "Instruction-tuned, average/exact-match"
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 88.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Instruction-tuned table, relaxed_accuracy metric. Not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 90 -> 88.8]"
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 94.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Instruction-tuned table, test split, ANLS metric. Not previously tracked for this model."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 69.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Instruction-tuned table, accuracy. Not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 73.4 -> 69.4]"
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 52.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "MMMU Pro, instruction-tuned table, accuracy. Not previously tracked for this model. [score corrected during round-6 completeness verify: proposed 59.6 -> 52.2]"
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 70.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/blog/llama4-release",
+      "evaluatedAt": "2025-04-05",
+      "notes": "Instruction-tuned table, accuracy. Not previously tracked for this model. Searched separately for IFEval and BFCL scores (Meta's official release materials and independent trackers) but neither is published for Llama 4 Scout, so they are not included. [score corrected during round-6 completeness verify: proposed 73.7 -> 70.7]"
     }
   ],
   "verificationNotes": "Re-confirmed via huggingface.co/blog/llama4-release and ai.meta.com/blog/llama-4-multimodal-intelligence/: release date 2025-04-05, 109B total/17B active MoE with 16 experts, 10M-token instruct context, 12-language fine-tuning support, MMLU-Pro 74.3 / GPQA Diamond 57.2 / MATH 50.3 (instruction-tuned) all match verbatim. Corrected the MBPP row's notes field: the 67.8 score is from the pre-trained/base-model comparison table, not the instruction-tuned table as originally labeled (score itself confirmed correct)."

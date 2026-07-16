@@ -7,8 +7,12 @@ claude-3-sonnet,88.7,self-reported,https://www-cdn.anthropic.com/de8ba9b01c9ab7c
 deepseek-vl2,81.4,self-reported,https://arxiv.org/html/2412.10302v1,2024-12-13,"Table 4 general-QA/math row, verified via raw HTML grep: 'DeepSeek-VL2 4.5B † 61.3 81.4 51.1 2,253 83.1 79.6 79.2 63.6 68.4 62.8' = MMStar/AI2D/MMMU/MME/MMBench(en)/MMBench(cn)/MMBench-V1.1(testmini)/MMT-Bench/RealWorldQA/MathVista for the Base (4.5B activated) variant."
 ernie-4-5-vl-424b-a47b,95.3,self-reported,https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf,2025-06-29,"Table 8, thinking mode."
 exaone-4-5,89,self-reported,https://arxiv.org/abs/2604.08644,2026-04-09,
+gemini-1-0-nano,51,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7, Gemini Nano-2 (3.25B) column, AI2D (test), pixel-only, 0-shot."
+gemini-1-0-pro,73.9,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7: Gemini Pro (pixel-only), AI2D (test)."
+gemini-1-0-ultra,79.5,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf,2023-12-06,"Table 7 (Image understanding), AI2D (test), pixel-only, greedy 0-shot."
 gemini-1-5-flash,91.7,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"AI2D test split, 0-shot, evaluated with transparent bounding box protocol, Table 18 of the Gemini 1.5 technical report."
 gemini-1-5-pro,94.4,self-reported,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,2024-05-01,"AI2D test split, 0-shot, transparent bounding box protocol, Table 18."
+gemma-3-12b,84.2,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Gemma 3 12B IT column, Table 16 of the Gemma 3 Technical Report."
 gemma-3-4b,74.8,self-reported,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,2025-03-12,"Table 16, IT 4B."
 glm-4v-9b,81.1,self-reported,https://huggingface.co/THUDM/glm-4v-9b,,
 gpt-4o,94.2,self-reported,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,,"AI2D (test), 0-shot. Same provenance as the MMMU row above."
@@ -20,6 +24,7 @@ minicpm-o-2-6,85.8,self-reported,https://huggingface.co/openbmb/MiniCPM-o-2_6,20
 minicpm-v-2-6,82.1,self-reported,https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v2dot6_en.md,2024-08-06,
 minimax-vl-01,83.3,self-reported,https://huggingface.co/MiniMaxAI/MiniMax-VL-01,,
 mistral-small-3-1-24b,93.72,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503,,
+mistral-small-3-2-24b,92.91,self-reported,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,,Vision benchmark table on the HF model card.
 molmo-2-8b,95.8,self-reported,https://arxiv.org/abs/2601.10611,,"Molmo2 Technical Report Table 6 (11-benchmark image suite), Molmo2-8B row. Column order verified via direct PDF text extraction (pdftotext -raw) and cross-checked against the paper's own claims (e.g. Molmo2-8B stated as SOTA among open models on VQAv2/RealWorldQA, which the reconstructed columns confirm)."
 molmo-72b,96.3,self-reported,https://arxiv.org/abs/2409.17146,2024-09-25,"Molmo Technical Report ('Molmo and PixMo') Table 1, Molmo-72B row. Column order verified via direct PDF text extraction (pdftotext -raw, which preserved correct left-to-right header order unlike layout mode) and cross-checked against the paper's explicit claims (highest academic average 81.2, second-highest Elo 1077 just behind GPT-4o's 1079 - both match exactly)."
 nemotron-3-nano-omni,88.5,self-reported,https://arxiv.org/abs/2604.24954,,"Table 7, AI2D Test split; identical score in both reasoning-on and reasoning-off modes."

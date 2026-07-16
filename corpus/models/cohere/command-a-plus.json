@@ -106,6 +106,27 @@
       "source": "independent",
       "sourceUrl": "https://benchlm.ai/models/command-a-plus",
       "notes": "Artificial Analysis's independent IFBench score for Command A+ ('AA-IFBench'). Not published by Cohere itself."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 78.15,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/cohere_command-a-plus-05-2026",
+      "notes": "Vals AI independent evaluation, MMLU Pro accuracy 78.15%. Not previously tracked (existing entries cover mmmu/mmmu-pro/mathvista/charxiv/aime/gpqa/hle/ifbench/tau2-bench-telecom, but not mmlu-pro)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 79.38,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/cohere_command-a-plus-05-2026",
+      "notes": "Vals AI independent evaluation, LiveCodeBench accuracy 79.38%. Genuinely new coding-benchmark data point; not currently tracked for Command A+."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 17.6,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/cohere_command-a-plus-05-2026",
+      "notes": "Vals AI independent evaluation, listed as 'Terminal-Bench 2.1' (verified refresh of Terminal-Bench 2.0 with patched Dockerfiles/instruction fixes) accuracy 17.60%. Mapped to taxonomy's terminal-bench-2 slug since there is no distinct 2.1 slug. Note this is separate from 'Terminal-Bench Hard' (25%, cited in Cohere's own launch blog) which is a genuinely different, harder benchmark variant not in the taxonomy list -- deliberately not force-mapped to avoid variant conflation."
     }
   ],
   "verificationNotes": "Confirmed via Cohere's own blog post (cohere.com/blog/command-a-plus), independent coverage on MarkTechPost (2026-05-21), and the CohereLabs Hugging Face org (bf16/fp8/w4a4 repos for 'command-a-plus-05-2026'), which confirms Apache 2.0 license, 218B/25B MoE, 128K input / 64K output context, and 48 languages. This is a genuine gap: the existing corpus's Cohere folder stops at 'Command A' (2025-03-13, CC-BY-NC); Command A+ is a distinct, newer, more permissively licensed release."

@@ -114,6 +114,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2503.01743",
       "notes": "Table 1, 'VideoMME-16Frame'."
+    },
+    {
+      "benchmarkSlug": "ocrbench",
+      "score": 84.4,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2503.01743",
+      "evaluatedAt": "2025-03-03",
+      "notes": "Table 1 (vision-language benchmarks) of the Phi-4-Mini/Multimodal Technical Report, 'OCRBench' row (84.4). Same table already sourced the file's existing MMMU/MathVista/DocVQA/AI2D/ChartQA/TextVQA/MMBench-en/MMMU-Pro/VideoMME rows, all of which cross-checked exactly against a fresh fetch of the paper; OCRBench was the one row from that table never added."
     }
   ],
   "verificationNotes": "Re-fetched HF model card: 5.6B params, MIT license, 128K context, 23 text languages, vision (English-only) + 8-language audio confirmed. MMMU 55.1, MathVista 62.4, DocVQA 93.2 confirmed literally on card; card also literally states '#1 on Huggingface OpenASR leaderboard with word error rate 6.14%' (an alternate 6.02 figure also appears on the page but 6.14 is the explicitly cited leaderboard number, kept as-is). Azure pricing $0.08/$0.32 confirmed exact via independent pricing sources. No changes made."

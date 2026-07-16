@@ -95,7 +95,7 @@
       "source": "self-reported",
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
       "evaluatedAt": "2025-08-07",
-      "notes": "\u03c4\u00b2-bench telecom, high reasoning effort"
+      "notes": "τ²-bench telecom, high reasoning effort"
     },
     {
       "benchmarkSlug": "aider-polyglot",
@@ -127,7 +127,39 @@
       "source": "independent",
       "sourceUrl": "https://hal.cs.princeton.edu/gaia",
       "notes": "Princeton HAL 'HAL Generalist Agent' scaffold, GPT-5 at 'Medium' reasoning effort (Aug 2025 snapshot). GAIA validation set."
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 65.7,
+      "source": "independent",
+      "sourceUrl": "https://x.com/arcprize/status/1953508813182767321",
+      "evaluatedAt": "2025-08-07",
+      "notes": "ARC-AGI-1 semi-private evaluation set, run and verified directly by ARC Prize (not self-reported by OpenAI). Posted by ARC Prize's official account on launch day: 'GPT-5 on ARC-AGI Semi Private Eval: GPT-5 * ARC-AGI-1: 65.7%, $0.51/task'. Cross-confirmed via a second independent search summary citing the same figures. Not previously tracked for base GPT-5 (an arc-agi-1/2 pair already exists for GPT-5 Pro but not for this model)."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 9.9,
+      "source": "independent",
+      "sourceUrl": "https://x.com/arcprize/status/1953508813182767321",
+      "evaluatedAt": "2025-08-07",
+      "notes": "ARC-AGI-2 semi-private evaluation set, run and verified by ARC Prize. Same official post as the ARC-AGI-1 entry: 'ARC-AGI-2: 9.9%, $0.73/task' for GPT-5 (distinct from GPT-5 Mini's 4.4% and GPT-5 Nano's 2.5% listed in the same post, and distinct from GPT-5 Pro's already-tracked 18.3% Epoch AI figure)."
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier1-3",
+      "score": 24.8,
+      "source": "independent",
+      "sourceUrl": "https://x.com/EpochAIResearch/status/1953615906535313664",
+      "evaluatedAt": "2025-08-07",
+      "notes": "FrontierMath Tiers 1-3, Epoch AI's own scaffold, GPT-5 with high reasoning effort. Epoch's own launch-day post: 'GPT-5 sets a new record on FrontierMath! On our scaffold, GPT-5 with high reasoning effort scores 24.8% (±2.5%) ... in tiers 1-3'. This is a coincidental numeric match with GPT-5's already-tracked HLE score (also 24.8) but is a distinct benchmark/eval; verified via the primary Epoch AI research account post. Not previously tracked for base GPT-5 (only tracked for GPT-5 Pro)."
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier4",
+      "score": 8.3,
+      "source": "independent",
+      "sourceUrl": "https://x.com/EpochAIResearch/status/1953615906535313664",
+      "evaluatedAt": "2025-08-07",
+      "notes": "FrontierMath Tier 4, same Epoch AI post as the tier1-3 entry: 'and 8.3% (±4.0%) in tiers 1-3 and 4, respectively' for GPT-5 with high reasoning effort. Distinct from GPT-5 Pro's already-tracked 19.5% tier-4 figure."
     }
   ],
-  "verificationNotes": "Existence, release date (Aug 7 2025, confirmed via TechCrunch) and pricing/context ($1.25/$10 per 1M, 400K context) confirmed by live-fetching developers.openai.com/api/docs/models/gpt-5. The primary blog (openai.com/index/introducing-gpt-5-for-developers/) itself returned HTTP 403 to direct fetch, so each of the 7 result rows was independently cross-checked via secondary sources (Vellum, digitalapplied.com, Runbear, and search-engine excerpts) that quote the OpenAI figures verbatim: SWE-bench 74.9, AIME 2025 94.6, GPQA(no tools) 85.7 (distinct from GPT-5 Pro's 88.4/89.4-with-tools figures, so no conflict), HLE 24.8 ('jumping from 6.3% to 24.8%' with thinking), MMMU 84.2, \u03c42-bench telecom 96.7, Aider polyglot 88 \u2014 all confirmed exactly, no changes."
+  "verificationNotes": "Existence, release date (Aug 7 2025, confirmed via TechCrunch) and pricing/context ($1.25/$10 per 1M, 400K context) confirmed by live-fetching developers.openai.com/api/docs/models/gpt-5. The primary blog (openai.com/index/introducing-gpt-5-for-developers/) itself returned HTTP 403 to direct fetch, so each of the 7 result rows was independently cross-checked via secondary sources (Vellum, digitalapplied.com, Runbear, and search-engine excerpts) that quote the OpenAI figures verbatim: SWE-bench 74.9, AIME 2025 94.6, GPQA(no tools) 85.7 (distinct from GPT-5 Pro's 88.4/89.4-with-tools figures, so no conflict), HLE 24.8 ('jumping from 6.3% to 24.8%' with thinking), MMMU 84.2, τ2-bench telecom 96.7, Aider polyglot 88 — all confirmed exactly, no changes."
 }

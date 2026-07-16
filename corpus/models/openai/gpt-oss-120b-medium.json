@@ -121,6 +121,14 @@
       "sourceUrl": "https://arxiv.org/abs/2508.10925",
       "evaluatedAt": "2025-08-05",
       "notes": "Aider Polyglot (diff), medium reasoning effort"
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 16.2,
+      "source": "independent",
+      "sourceUrl": "https://labs.scale.com/leaderboard/swe_bench_pro_public",
+      "evaluatedAt": "2026-02-28",
+      "notes": "Scale AI's official SWE-bench Pro PUBLIC-dataset leaderboard lists 'gpt-oss-120b' at 16.20% (±2.67), rank ~19-30 depending on leaderboard refresh (fetched live and cross-checked twice). This is a genuinely different, much harder benchmark than the SWE-bench Verified score (52.6, medium effort) already tracked under the 'swe-bench' slug for this model -- confirmed distinct via Scale's own methodology docs and via HuggingFace's community-submitted Evaluation Results feature on openai/gpt-oss-120b (PR #177 by HF staffer nielsr, created 2026-02-28, citing the same Scale URL and value verbatim). Caveat: neither Scale's leaderboard UI nor the HF PR states which reasoning-effort tier (low/medium/high) was used for the run, and no separate gpt-oss-120b-high or -low entry appears on the same leaderboard (only one 'gpt-oss-120b' row exists). Attributed here to Medium because OpenAI's own documentation states medium is the API default reasoning effort for gpt-oss models and this is the model's isDefaultConfig:true variant -- but this is an inference, not an explicit confirmation, so flag for reviewer judgment before merging."
     }
   ],
   "verificationNotes": "Confirmed real. Same HF/architecture verification as the Low-effort variant (117B/5.1B active, Apache 2.0, 36 layers/128 experts/top-4, 128K context). Fetched arxiv.org/html/2508.10925v1 table directly and confirmed all four medium-effort scores appear verbatim: AIME 80.4, GPQA 73.1, MMLU 88.0, SWE-bench Verified 52.6. No changes made."

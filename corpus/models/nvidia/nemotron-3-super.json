@@ -133,6 +133,13 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2604.12374",
       "notes": "Table 5, 'BIRD Bench' - BIRD dev set, 1,534 samples, SQLite, execution accuracy."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 10,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-super-120b-a12b",
+      "notes": "GDPval-AA v2, independently measured by Artificial Analysis as part of their Intelligence Index v4.1 — distinct from OpenAI's own GDPval and not previously tracked. Verified by manually aligning the model-name list against the score list on the AA model page (position 17 of 25, value 10%)."
     }
   ],
   "verificationNotes": "NVIDIA's own blog gives qualitative throughput/accuracy claims (5x throughput, 2x accuracy vs prior Nemotron Super, #1 on DeepResearch Bench via AI-Q agent) rather than a specific standard-benchmark table; could not locate an independently-verified numeric score from Artificial Analysis or similar for this specific model, so no results entry is included to avoid guessing."

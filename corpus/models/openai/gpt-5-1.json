@@ -64,6 +64,30 @@
       "sourceUrl": "https://claude5.com/news/gpt-5-1-performance-review-benchmarks-november-2025",
       "evaluatedAt": "2025-11-19",
       "notes": "AIME 2025, Thinking mode; literally confirmed on cited page"
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 72.8,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+      "evaluatedAt": "2025-12-11",
+      "notes": "From OpenAI's own GPT-5.2 launch-blog comparison table showing GPT-5.1 Thinking's baseline scores before the GPT-5.2 jump ('ARC-AGI-1 (72.8% → 86.2%)'). Direct fetch of openai.com 403s (same pattern already noted elsewhere in this corpus), so verified via two independent secondary write-ups (MarkTechPost's GPT-5.2 launch coverage, and a second summary citing Vellum/rdworldonline) that both quote the identical 72.8% figure for GPT-5.1 from the same OpenAI table."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 17.6,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+      "evaluatedAt": "2025-12-11",
+      "notes": "Same OpenAI GPT-5.2 launch-blog comparison table: 'ARC-AGI-2 (17.6% → 52.9%)' for GPT-5.1 Thinking. This number cross-validates strongly against this corpus's already-verified GPT-5.1 SWE-bench Verified figure (76.3%), which appears in the identical table row-set per MarkTechPost's transcription (SWE-bench Verified 76.3% → 80.0%) -- exact match gives high confidence the whole row is being quoted faithfully rather than conflated with another GPT-5.x variant."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 88.1,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+      "evaluatedAt": "2025-12-11",
+      "notes": "Same OpenAI GPT-5.2 launch-blog table, GPQA Diamond row for GPT-5.1 Thinking: 88.1% (GPT-5.2 Thinking is reported elsewhere as 'up 4.3% from GPT-5.1' to 92.4%, i.e. 92.4-4.3=88.1, an internal-consistency check that confirms the figure). This resolves/supersedes the ambiguity noted in this file's existing verificationNotes, which had dropped a conflicting 86.6% GPQA figure sourced only to a since-stale artificialanalysis.ai leaderboard snapshot; 88.1% instead traces to OpenAI's own self-reported comparison table and is corroborated by two independent secondary sources (MarkTechPost, and a second summary citing Vellum/rdworldonline)."
     }
   ],
   "verificationNotes": "Existence, Nov 12 2025 release, 400K context, and $1.25/$10 pricing all confirmed directly via developers.openai.com/api/docs/models/gpt-5.1 and openai.com/index/gpt-5-1/. SWE-bench (76.3) and AIME (94) confirmed literally on the cited claude5.com page. Dropped the GPQA-Diamond row (86.6, sourced to artificialanalysis.ai/evaluations/gpqa-diamond): that live leaderboard page no longer lists GPT-5.1 (superseded), and a different tracker (aireleasetracker.com) reports 88.1 for the same metric — could not confirm 86.6 on the cited page and found a conflicting number elsewhere, so removed per instructions."

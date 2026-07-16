@@ -111,7 +111,47 @@
       "sourceUrl": "https://arxiv.org/abs/2403.04652",
       "evaluatedAt": "2024-03-01",
       "notes": "Yi-34B base model, Yi technical report Table 2."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 64.59,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_01-ai__Yi-34B",
+      "evaluatedAt": "2023-11-02",
+      "notes": "25-shot acc_norm from HF Open LLM Leaderboard v1 (harness|arc:challenge|25, acc_norm 0.645904)."
+    },
+    {
+      "benchmarkSlug": "hellaswag",
+      "score": 85.69,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_01-ai__Yi-34B",
+      "evaluatedAt": "2023-11-02",
+      "notes": "10-shot acc_norm from HF Open LLM Leaderboard v1 (harness|hellaswag|10, acc_norm 0.856901)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 56.23,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_01-ai__Yi-34B",
+      "evaluatedAt": "2023-11-02",
+      "notes": "0-shot mc2 from HF Open LLM Leaderboard v1 (harness|truthfulqa:mc|0, mc2 0.562308)."
+    },
+    {
+      "benchmarkSlug": "winogrande",
+      "score": 83.03,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_01-ai__Yi-34B",
+      "evaluatedAt": "2023-11-08",
+      "notes": "5-shot acc from HF Open LLM Leaderboard v1 (harness|winogrande|5, acc 0.830308)."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 64.2,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_01-ai__Yi-34B",
+      "evaluatedAt": "2023-11-08",
+      "notes": "3-shot DROP F1 from HF Open LLM Leaderboard v1 (harness|drop|3, f1 0.641988)."
     }
   ],
-  "verificationNotes": "Confirmed HF model card (release Nov 2, 2023; 34B; Apache 2.0; 4K default ctx, 32K inference-extendable, 200K variant separate; bilingual EN/ZH). Cross-checked all 6 benchmark numbers against the actual Yi technical report tables (fetched via ar5iv full-text render of arXiv 2403.04652, Tables 2 and 3): mmlu 76.3, bbh 54.3, gsm8k 67.2, math 14.4, humaneval 23.2, mbpp 41.0 \u2014 all match exactly. No changes made."
+  "verificationNotes": "Confirmed HF model card (release Nov 2, 2023; 34B; Apache 2.0; 4K default ctx, 32K inference-extendable, 200K variant separate; bilingual EN/ZH). Cross-checked all 6 benchmark numbers against the actual Yi technical report tables (fetched via ar5iv full-text render of arXiv 2403.04652, Tables 2 and 3): mmlu 76.3, bbh 54.3, gsm8k 67.2, math 14.4, humaneval 23.2, mbpp 41.0 — all match exactly. No changes made."
 }

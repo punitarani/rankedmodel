@@ -223,6 +223,38 @@
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-06-27",
       "notes": "LogicKor official leaderboard, model_id anthropic/claude-3-sonnet-20240229, default prompt strategy"
+    },
+    {
+      "benchmarkSlug": "aime",
+      "score": 1.8,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-10-22",
+      "notes": "AIME 2024, 0-shot CoT single-sample (pass@1), reported retroactively as a comparison baseline in Table 7 of the October 2024 Model Card Addendum (introducing Claude 3.5 Sonnet New and Claude 3.5 Haiku). Column alignment cross-validated against 6 other Claude-3-Sonnet values in the same row-set (GPQA 40.4, MMLU-5shot 78.3/0-shot-CoT 77.1, MATH 43.1, HumanEval 73.0, MGSM 83.5, DROP 78.9, BBH 82.9) which all exactly match values already in this file. Maj@64 variant (0.6%) omitted as a different metric, matching this file's existing AIME-handling convention."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 81.1,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-10-22",
+      "notes": "IFEval, reported retroactively for the original Claude 3 Sonnet checkpoint in Table 7 of the October 2024 Model Card Addendum, alongside the already-tracked MMLU-Pro and AIME retroactive baselines for the 3.5-Sonnet variant."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 54.9,
+      "source": "self-reported",
+      "sourceUrl": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+      "evaluatedAt": "2024-10-22",
+      "notes": "MMLU-Pro, 0-shot CoT, Table 7 of the October 2024 Model Card Addendum (a benchmark introduced after Claude 3 Sonnet's original March 2024 model card, reported here as a retroactive comparison baseline)."
+    },
+    {
+      "benchmarkSlug": "simpleqa",
+      "score": 9.2,
+      "source": "independent",
+      "sourceUrl": "https://arxiv.org/abs/2411.04368",
+      "evaluatedAt": "2024-11-07",
+      "notes": "SimpleQA F-score for claude-3-sonnet-20240229, Table 3 of OpenAI's 'Measuring short-form factuality in large language models' paper (independent third-party evaluation of Anthropic's model). Correct=5.7%, Not-attempted=75.0%, Incorrect=19.3%."
     }
   ],
   "verificationNotes": "Confirmed real via anthropic.com/news/claude-3-family (release date, $3/$15 pricing, 200K ctx). Downloaded and read the actual Model_Card_Claude_3.pdf Table 1/Table 3: all 12 self-reported benchmark numbers for Claude 3 Sonnet (MMLU 79.0, MATH 43.1, GSM8K 92.3, HumanEval 73.0, GPQA 40.4, BBH 82.9, ARC-Challenge 93.2, HellaSwag 89.0, WinoGrande 75.1, DROP 78.9, MBPP 79.4, MMMU 53.1) match the PDF verbatim (note: a later June-2024 addendum re-reports Sonnet's MMLU 5-shot as 78.3 in a different table, but the ORIGINAL model card cited here shows 79.0, so no change made). apiAvailable=false confirmed: claude-3-sonnet-20240229 retired from API July 21, 2025."

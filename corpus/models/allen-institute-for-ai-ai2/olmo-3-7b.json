@@ -141,6 +141,14 @@
       "source": "independent",
       "sourceUrl": "https://designforonline.com/ai-models/allenai-olmo-3-7b-instruct/",
       "notes": "Artificial Analysis measurement, republished on the fetched page; Ai2 only reports MMLU-Pro for OLMo 3 base models (OlmoBaseEval), not the Instruct 7B post-trained model"
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 64.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
+      "evaluatedAt": "2026-07-15",
+      "notes": "AGI Eval English score for the final Olmo3 Instruct 7B model, from the same official 'Evaluation' table on the HF model card that already sources the model's other 11 rows (verified via raw README.md, 'Reasoning' skill row). Not previously tracked under the agieval slug for this model."
     }
   ],
   "verificationNotes": "Existence confirmed: official Ai2 blog (allenai.org/blog/olmo3) and multiple press (MarkTechPost, GeekWire, InfoQ) confirm Nov 20, 2025 release. paramsB re-derived from allenai/Olmo-3-1025-7B model.safetensors.index.json: 7,298,011,136 params = 7.30B (exact match). config.json confirms max_position_embeddings=65536 (~64K, matches ctxK) and hybrid sliding-window/full-attention architecture (32 layers). License Apache 2.0 and function-calling system-message confirmed on the allenai/Olmo-3-7B-Instruct model card. All 7 benchmark rows (MATH 87.3, AIME2024 44.3, BBH 71.2, HumanEvalPlus 77.2, IFEval 85.6, MMLU 69.1, LiveCodeBench v3 29.5) were literally confirmed present on the cited HF model card."

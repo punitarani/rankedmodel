@@ -108,7 +108,15 @@
       "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M1-80k",
       "evaluatedAt": "2025-06-16",
       "notes": "MATH-500, M1-80K checkpoint (M1-40K: 96.0). Maps to the taxonomy's 'math' slug, which is itself defined as '500 competition math problems'."
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 8.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M1-80k",
+      "evaluatedAt": "2025-06-16",
+      "notes": "HLE (Humanity's Last Exam), text-only subset, no tools, M1-80K checkpoint (the corpus's tracked flagship checkpoint) — M1-40K scores 7.2 on the same eval. Confirmed identically on both the official HF model card benchmark table and the MiniMax-AI/MiniMax-M1 GitHub README benchmark table. Not previously tracked in this corpus entry (only AIME 2024, LiveCodeBench, SWE-bench, GPQA, MMLU-Pro, TAU-bench, SimpleQA, and MATH were tracked)."
     }
   ],
-  "verificationNotes": "Confirmed real via VentureBeat, Computerworld, arXiv 2506.13585, and HF model card MiniMaxAI/MiniMax-M1-80k. 456B/45.9B hybrid MoE, Apache-2.0, 1M context confirmed by multiple independent sources. All 5 result rows confirmed literally on the HF card, including the M1-80K vs M1-40K split (AIME 86.0, LCB 65.0, SWE-bench 56.0 for 80K; GPQA 69.2, MMLU-Pro 80.6 for 40K) \u2014 exact match, no changes. Pricing $0.4/$2.2 for 0-200K tier independently confirmed."
+  "verificationNotes": "Confirmed real via VentureBeat, Computerworld, arXiv 2506.13585, and HF model card MiniMaxAI/MiniMax-M1-80k. 456B/45.9B hybrid MoE, Apache-2.0, 1M context confirmed by multiple independent sources. All 5 result rows confirmed literally on the HF card, including the M1-80K vs M1-40K split (AIME 86.0, LCB 65.0, SWE-bench 56.0 for 80K; GPQA 69.2, MMLU-Pro 80.6 for 40K) — exact match, no changes. Pricing $0.4/$2.2 for 0-200K tier independently confirmed."
 }

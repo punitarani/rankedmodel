@@ -121,7 +121,15 @@
       "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
       "evaluatedAt": "2026-04-02",
       "notes": "MATH-Vision, 31B."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1452,
+      "source": "arena",
+      "sourceUrl": "https://letsdatascience.com/blog/google-gemma-4-open-source-apache-community-found-catches",
+      "evaluatedAt": "2026-04-03",
+      "notes": "Launch-time LMArena (Arena AI) text-leaderboard Elo for the 31B dense Gemma 4 model: 1452, ranked #3 overall at launch, above much larger open models such as GPT-OSS-120B. This exact figure is already cited in the record's own verificationNotes prose but was never added as a formal results-array entry. Note the live leaderboard score drifts over time as new models are added (independently observed at ~1486 on arena.ai as of mid-July 2026), so this is the well-documented launch snapshot rather than a live figure."
     }
   ],
-  "verificationNotes": "Confirmed real: released 2026-04-02 (blog.google + deepmind.google, corroborated by independent press). Model card (ai.google.dev/gemma/docs/core/model_card_4, fetched directly) confirms the 31B variant is DENSE with hybrid local/global sliding-window attention (not MoE \u2014 a separate 26B A4B MoE variant exists in the family, which is what some press coverage of 'Gemma 4 MoE' refers to), 30.7B total params, 256K context, Apache-2.0 license, and all 3 benchmark numbers (MMLU-Pro 85.2, AIME 2026 89.2, GPQA Diamond 84.3) literally confirmed on that page. hf link google/gemma-4-31B-it confirmed to exist. Arena #3 ranking (1452 Elo) independently corroborated by arena.ai. No changes to record."
+  "verificationNotes": "Confirmed real: released 2026-04-02 (blog.google + deepmind.google, corroborated by independent press). Model card (ai.google.dev/gemma/docs/core/model_card_4, fetched directly) confirms the 31B variant is DENSE with hybrid local/global sliding-window attention (not MoE — a separate 26B A4B MoE variant exists in the family, which is what some press coverage of 'Gemma 4 MoE' refers to), 30.7B total params, 256K context, Apache-2.0 license, and all 3 benchmark numbers (MMLU-Pro 85.2, AIME 2026 89.2, GPQA Diamond 84.3) literally confirmed on that page. hf link google/gemma-4-31B-it confirmed to exist. Arena #3 ranking (1452 Elo) independently corroborated by arena.ai. No changes to record."
 }

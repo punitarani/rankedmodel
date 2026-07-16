@@ -93,6 +93,94 @@
       "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/01-ai__Yi-1.5-9B-details",
       "evaluatedAt": "2024-06-16",
       "notes": "Yi-1.5-9B base model, Open LLM Leaderboard v2. IFEval 'Inst-and-Prompt Level Strict Acc' (average of prompt-level strict 23.11% and inst-level strict 35.61%)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 69.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI's official 'Global open-source LLM English/Chinese benchmarks' comparison chart embedded in the HF model card, 'Yi-1.5-9B & 6B Base Model - as of May 12, 2024' table (Yi-1.5-9B row). Same value also shown for the -Chat variant's own comparison table."
+    },
+    {
+      "benchmarkSlug": "cmmlu",
+      "score": 74.8,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'Yi-1.5-9B & 6B Base Model - as of May 12, 2024'."
+    },
+    {
+      "benchmarkSlug": "agieval",
+      "score": 62.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'Yi-1.5-9B & 6B Base Model - as of May 12, 2024'."
+    },
+    {
+      "benchmarkSlug": "humaneval",
+      "score": 41.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'HumanEval (+)' column, base score (plus-variant reported separately)."
+    },
+    {
+      "benchmarkSlug": "humaneval-plus",
+      "score": 34.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, HumanEval+ parenthetical score in the 'HumanEval (+)' column."
+    },
+    {
+      "benchmarkSlug": "mbpp",
+      "score": 61.1,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'MBPP (+)' column, base score."
+    },
+    {
+      "benchmarkSlug": "mbpp-plus",
+      "score": 53.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, MBPP+ parenthetical score in the 'MBPP (+)' column."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 73.7,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official base-model comparison chart, 'Yi-1.5-9B & 6B Base Model - as of May 12, 2024'."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.2,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official chat-model comparison chart, 'Yi-1.5-9B & 6B Chat Model - as of May 12, 2024' (Yi-1.5-9B-chat row)."
+    },
+    {
+      "benchmarkSlug": "arena-hard",
+      "score": 34.4,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official chat-model comparison chart, ArenaHard column, Yi-1.5-9B-chat row."
+    },
+    {
+      "benchmarkSlug": "alpaca-eval",
+      "score": 22.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/01-ai/Yi-1.5-9B",
+      "evaluatedAt": "2024-05-12",
+      "notes": "01.AI official chat-model comparison chart, 'AlpacaEval2.0' column (LC win rate), Yi-1.5-9B-chat row."
     }
   ],
   "verificationNotes": "Existence and release date (2024-05-13) confirmed on GitHub README ('Yi-1.5 series models are open-sourced'). Apache 2.0 license, 9B params, base-variant 4K context (vs the separate -16K/-32K suffixed checkpoints), and 3.6T-token continual pretraining confirmed on HF model card. The single result row is explicitly for the -Chat variant per its own notes field; fetched the cited HF page (01-ai/Yi-1.5-9B-Chat) and confirmed the MMLU-Pro 45.95 score literally appears there — no changes."

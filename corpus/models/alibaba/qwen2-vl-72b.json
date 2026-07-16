@@ -86,7 +86,7 @@
       "score": 85.5,
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
-      "notes": "TextVQA val split. Note this exceeds the taxonomy's documented normMax of 75 for textvqa \u2014 genuine same-benchmark match, just a high score for a strong 72B VLM."
+      "notes": "TextVQA val split. Note this exceeds the taxonomy's documented normMax of 75 for textvqa — genuine same-benchmark match, just a high score for a strong 72B VLM."
     },
     {
       "benchmarkSlug": "ocrbench",
@@ -122,6 +122,38 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2409.12191",
       "notes": "RefCOCO+ val split, Table 6 ('Performance Comparison on Referring Expression Comprehension Task') of the Qwen2-VL technical report (arXiv:2409.12191). Same paper also reports testA 93.8 and testB 85.6 for this model."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 54.9,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/Qwen__Qwen2-VL-72B-Instruct-details",
+      "evaluatedAt": "2024-10-22",
+      "notes": "Open LLM Leaderboard v2 (HuggingFace) independent third-party eval of the Instruct checkpoint's underlying Qwen2-72B language backbone. Prompt-level strict accuracy 54.90% (loose-accuracy variant scored 58.2%, not used here). Run timestamped 2024-10-22T04:20:31Z per the dataset's evaluation-details metadata. Independent of Alibaba's own HF model-card benchmark table already cited elsewhere in this file."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 69.15,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/Qwen__Qwen2-VL-72B-Instruct-details",
+      "evaluatedAt": "2024-10-22",
+      "notes": "Open LLM Leaderboard v2, acc_norm (length-normalized accuracy) aggregated across 23 BBH subtasks. Same eval run as the IFEval/GPQA/MMLU-Pro entries added alongside this one."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 38.76,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/Qwen__Qwen2-VL-72B-Instruct-details",
+      "evaluatedAt": "2024-10-22",
+      "notes": "Open LLM Leaderboard v2's GPQA task combines Main+Extended+Diamond splits with acc_norm scoring -- a materially different protocol than the GPQA-Diamond-only raw accuracy convention used for most other GPQA entries in this corpus. Flagging for maintainer comparability judgment rather than silently omitting or force-normalizing."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 57.17,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/Qwen__Qwen2-VL-72B-Instruct-details",
+      "evaluatedAt": "2024-10-22",
+      "notes": "Open LLM Leaderboard v2, standard accuracy metric (not acc_norm). Same eval run as the IFEval/BBH/GPQA entries added alongside this one."
     }
   ],
   "verificationNotes": "Real model, confirmed via live fetch of the Qwen2-VL-72B-Instruct HF README benchmark table: MMMU val 64.5, DocVQA test 96.5, MathVista testmini 70.5 all match exactly. Corrected the DocVQA row's notes from 'DocVQA val' to 'DocVQA test' since the actual table reports the test split, not val (score itself was already correct). ViT vision encoder corrected from '~600M' to '675M' (confirmed exact figure via search). paramsB 73.4B confirmed via llm-stats.com. ctxK 32 (32,768) confirmed via live config.json fetch. Release date 2024-09-19 confirmed (arXiv paper submitted 2024-09-18, HF instruct checkpoint + quantized versions available 2024-09-19; broader Qwen2-VL 2B/7B series announced 2024-08-29). License tongyi-qianwen confirmed on HF and llm-stats.com."

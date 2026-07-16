@@ -78,6 +78,14 @@
       "source": "self-reported",
       "sourceUrl": "https://mistral.ai/news/codestral-2501/",
       "notes": "HumanEval fill-in-the-middle average"
+    },
+    {
+      "benchmarkSlug": "aider-polyglot",
+      "score": 11.1,
+      "source": "independent",
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluatedAt": "2025-01-13",
+      "notes": "Aider Polyglot coding benchmark, pass_rate_2 = 11.1% (whole-file edit format), run via 'aider --model mistral/codestral-latest'. Confirmed against the raw leaderboard data file at github.com/Aider-AI/aider/blob/main/aider/website/_data/polyglot_leaderboard.yml and independently corroborated by Aider creator Paul Gauthier's contemporaneous announcement. Not previously tracked for this model."
     }
   ],
   "verificationNotes": "Confirmed via mistral.ai/news/codestral-2501/ (fetched directly, dated 2025-01-13, 256K context, 2x speed claim, #1 LMSYS Copilot Arena). All 5 benchmark rows found literally in the page's tables: HumanEval 86.6 (this is the Python-specific score; the page also separately reports a 71.4% cross-language average — flagging so the number isn't misread, but 86.6 is a genuine number on the page), MBPP 80.2, LiveCodeBench 37.9, RepoBench 38.0, HumanEvalFIM average 85.9 (page shows 85.89% rounding to 85.9). Pricing $0.30/$0.90 and retirement 2025-11-30 corroborated by docs.mistral.ai/models/overview legacy table (deprecation 11/6/2025, retirement 11/30/2025)."

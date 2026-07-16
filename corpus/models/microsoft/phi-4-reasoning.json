@@ -119,5 +119,5 @@
       "notes": "Codeforces Elo rating (Table 1 of the Phi-4-reasoning Technical Report), 143 problems from Codeforces contest IDs 1505-1536, 10 attempts/problem. Not on the HF card, only in the arXiv paper."
     }
   ],
-  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-4-reasoning): 14B dense params, 32K context, MIT license, released April 30 2025 \u2014 all match exactly. All 6 benchmark rows (AIME 75.3, GPQA-Diamond 65.8, MMLU-Pro 74.3, HumanEvalPlus 92.9, LiveCodeBench 53.8, OmniMath 76.6) literally confirmed on the same HF card; no corrections needed."
+  "verificationNotes": "Confirmed real via HF model card (microsoft/Phi-4-reasoning): 14B dense params, 32K context, MIT license, released April 30 2025 — all match exactly. All 6 benchmark rows (AIME 75.3, GPQA-Diamond 65.8, MMLU-Pro 74.3, HumanEvalPlus 92.9, LiveCodeBench 53.8, OmniMath 76.6) literally confirmed on the same HF card; no corrections needed."
 }

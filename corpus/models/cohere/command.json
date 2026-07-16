@@ -46,6 +46,35 @@
     "openness": "https://docs.cohere.com/docs/models",
     "ctxK": "https://aimodelwatch.dev/models/command"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 52.5,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/lite/latest/#/leaderboard",
+      "notes": "Stanford HELM Lite core-scenarios leaderboard, model id 'cohere_command' (confirmed via the model's underlying result-links, distinct from cohere_command-r/-light/-a). MMLU-EM = 0.525. This model previously had zero tracked results."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 23.6,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/lite/latest/#/leaderboard",
+      "notes": "Stanford HELM Lite, model id 'cohere_command'. MATH (Equivalent, CoT) = 0.236."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 45.2,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/lite/latest/#/leaderboard",
+      "notes": "Stanford HELM Lite, model id 'cohere_command'. GSM8K-EM = 0.452."
+    },
+    {
+      "benchmarkSlug": "openbookqa",
+      "score": 77.4,
+      "source": "independent",
+      "sourceUrl": "https://crfm.stanford.edu/helm/lite/latest/#/leaderboard",
+      "notes": "Stanford HELM Lite, model id 'cohere_command'. OpenbookQA-EM = 0.774. Fills a real gap: this model had 0 tracked results in the corpus before this pass."
+    }
+  ],
   "verificationNotes": "Confirmed via docs.cohere.com/changelog/2025-09-15-major-command-deprecations (shutdown 2025-09-15, migrate to Command R 08-2024) and aimodelwatch.dev/models/command (4,096-token context window, legacy pricing $1.00/$2.00 per 1M tokens — matches exactly). No changes."
 }

@@ -163,6 +163,35 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
       "notes": "8-shot"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 4,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/granite-4-1-8b",
+      "notes": "Humanity's Last Exam, Artificial Analysis Intelligence Index v4.1 breakdown, row labeled 'Granite 4.1 8B' at 4%. No HLE row exists in this file today; IBM's own HF card/research blog do not publish an HLE number for this model."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 39,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/granite-4-1-8b",
+      "notes": "IFBench (instruction-following), Artificial Analysis Intelligence Index v4.1 breakdown, row labeled 'Granite 4.1 8B' at 39%. Distinct from the IFEval Avg score (87.06) already tracked — IFBench is AA's separate, harder instruction-following eval, not a duplicate metric."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 3,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/granite-4-1-8b",
+      "notes": "Terminal-Bench v2.1 (agentic coding/terminal-use eval), Artificial Analysis Intelligence Index v4.1 breakdown, row labeled 'Granite 4.1 8B' at 3% — mapped to the 'terminal-bench-2' taxonomy slug consistent with how the sibling DeepSeek-V3-0324 file already uses this slug for the same AA benchmark. A hard agentic eval where this small dense enterprise model scores near the floor; included for honest, non-cherry-picked coverage, not currently tracked in this file at all."
+    },
+    {
+      "benchmarkSlug": "arena",
+      "score": 1307,
+      "source": "arena",
+      "sourceUrl": "https://arena.ai/leaderboard/text",
+      "evaluatedAt": "2026-07-13",
+      "notes": "Live LMArena (Chatbot Arena) text Elo, current mid-July 2026 snapshot, row explicitly labeled 'granite-4.1-8b' (rank #237 of 374, 1307±10, 4,062 votes, $0.05/$0.10 pricing matching this file's recorded watsonx.ai rate). No arena/chat-Elo result currently exists in this model's file, so this is a genuinely new benchmark type."
     }
   ],
   "verificationNotes": "IBM's own materials describe the 8B as matching/beating Granite 4.0-H-Small qualitatively and 'competitive' on instruction-following/tool-calling vs Gemma/Qwen, without a specific numeric benchmark table in the sources checked; no results entry included to avoid guessing a number."

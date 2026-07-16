@@ -194,7 +194,15 @@
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-07-08",
       "notes": "LogicKor official leaderboard, model_id google/gemini-1.5-flash-001, default prompt strategy"
+    },
+    {
+      "benchmarkSlug": "bfcl",
+      "score": 81.8,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "evaluatedAt": "2024-05-01",
+      "notes": "Weighted-average accuracy on the Berkeley Function Calling Leaderboard (Yan et al., 2024), a subset of splits excluding Java/JavaScript, from Table 12 of the Gemini 1.5 technical report ('Function calling performance on Berkeley Function Calling Leaderboard splits'). Confirmed via local pdftotext extraction of the primary-source PDF: 'Weighted Average ... 1.0 Pro 67.8% / 1.5 Flash 81.8% / 1.5 Pro 88.4%'. Also checked the same document for a Chatbot Arena Elo score and a SimpleQA score for Gemini 1.5 Flash (a web search suggested one might exist) -- neither term appears anywhere in the full extracted text, so no Arena/SimpleQA addition was made for this model; the SimpleQA claim from search appears to be a hallucination (SimpleQA did not exist at this model's May 2024 report date)."
     }
   ],
-  "verificationNotes": "CORRECTED: archClass changed from 'moe' to 'dense' and archDisplay rewritten \u2014 the official Gemini 1.5 technical report (Section 3.2 and Appendix 12.1 Model Card, Table 45) explicitly states 'Gemini 1.5 Flash is a dense Transformer based model that is online distilled ... from Gemini 1.5 Pro,' in direct contrast to 1.5 Pro which IS described as sparse MoE. Downloaded and text-extracted the full 154-page PDF report directly (prior fetch attempts were rate-limited/binary-blocked) and verbatim-confirmed all 9 result rows against Table 11 and Table 22. Release date (I/O, May 14 2024), 1M context, and '100+ languages' (developers.googleblog.com) also confirmed. Pricing ($0.075/$0.30 per 1M tokens, <=128K) confirmed as the Aug 2024 price-cut rate, matching the record."
+  "verificationNotes": "CORRECTED: archClass changed from 'moe' to 'dense' and archDisplay rewritten — the official Gemini 1.5 technical report (Section 3.2 and Appendix 12.1 Model Card, Table 45) explicitly states 'Gemini 1.5 Flash is a dense Transformer based model that is online distilled ... from Gemini 1.5 Pro,' in direct contrast to 1.5 Pro which IS described as sparse MoE. Downloaded and text-extracted the full 154-page PDF report directly (prior fetch attempts were rate-limited/binary-blocked) and verbatim-confirmed all 9 result rows against Table 11 and Table 22. Release date (I/O, May 14 2024), 1M context, and '100+ languages' (developers.googleblog.com) also confirmed. Pricing ($0.075/$0.30 per 1M tokens, <=128K) confirmed as the Aug 2024 price-cut rate, matching the record."
 }

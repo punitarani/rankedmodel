@@ -117,7 +117,15 @@
       "sourceUrl": "https://arxiv.org/pdf/2506.12103",
       "evaluatedAt": "2024-11-17",
       "notes": "Berkeley Function-Calling Leaderboard v3, overall accuracy, Nov 17 2024 leaderboard snapshot (Table 4 of the Amazon Nova technical report)."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8,
+      "source": "self-reported",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/benchmarking-amazon-nova-a-comprehensive-analysis-through-mt-bench-and-arena-hard-auto/",
+      "evaluatedAt": "2025-07-24",
+      "notes": "AWS Generative AI Innovation Center blog post (published 2025-07-24), single-answer grading with Anthropic's Claude 3.7 Sonnet as judge (0-10 scale). Nova Micro tied Nova Lite for the lowest median score among the four Nova models. Not previously tracked for this model. Same scale-mismatch caveat on Arena-Hard-Auto as noted for Nova Premier applies (custom 0-10 Bradley-Terry, not this corpus's 0-100 'arena-hard' scale) -- deliberately excluded."
     }
   ],
-  "verificationNotes": "Confirmed real: Dec 3, 2024 re:Invent launch corroborated by multiple press sources. Confirmed 128K text-only context (AWS Nova docs \u2014 Micro is text-to-text only, unlike Lite/Pro/Premier). 200-language support and $0.035/$0.14 per M pricing confirmed against AWS Nova pricing/docs. All 9 benchmark rows (MMLU 77.6, GPQA 40, MATH 69.3, HumanEval 81.1, GSM8K 92.3, BBH 79.5, IFEval 87.2, DROP 79.3, ARC-Challenge 90.2) confirmed to literally appear on deepranking.ai/llm-models/nova-micro. No changes made."
+  "verificationNotes": "Confirmed real: Dec 3, 2024 re:Invent launch corroborated by multiple press sources. Confirmed 128K text-only context (AWS Nova docs — Micro is text-to-text only, unlike Lite/Pro/Premier). 200-language support and $0.035/$0.14 per M pricing confirmed against AWS Nova pricing/docs. All 9 benchmark rows (MMLU 77.6, GPQA 40, MATH 69.3, HumanEval 81.1, GSM8K 92.3, BBH 79.5, IFEval 87.2, DROP 79.3, ARC-Challenge 90.2) confirmed to literally appear on deepranking.ai/llm-models/nova-micro. No changes made."
 }

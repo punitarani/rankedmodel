@@ -99,7 +99,39 @@
       "score": 8.39,
       "source": "self-reported",
       "sourceUrl": "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm",
-      "notes": "\"MT Bench (Inflection Corrected)\", DBRX Instruct, reported alongside GPT-3.5/GPT-4/Claude comparison, score 8.39 \u00b1 0.08"
+      "notes": "\"MT Bench (Inflection Corrected)\", DBRX Instruct, reported alongside GPT-3.5/GPT-4/Claude comparison, score 8.39 ± 0.08"
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 54.12,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/databricks/dbrx-instruct/results_2024-06-27T16-19-21.521489.json",
+      "evaluatedAt": "2024-06-27",
+      "notes": "Big Bench Hard (leaderboard_bbh, acc_norm 0.541225) from HF Open LLM Leaderboard v2's independent lm-eval-harness run on databricks/dbrx-instruct, fetched directly from the raw results JSON. Not in the file's current 8 tracked results (which are all from the Databricks launch blog)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 34.85,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/databricks/dbrx-instruct/results_2024-06-27T16-19-21.521489.json",
+      "evaluatedAt": "2024-06-27",
+      "notes": "GPQA Diamond subtask (leaderboard_gpqa_diamond, acc_norm 0.348485) from HF Open LLM Leaderboard v2's independent run on databricks/dbrx-instruct. The leaderboard also reports a combined main+extended+diamond average (34.14%) but Diamond alone is used here to match this corpus's usual GPQA convention."
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 48.24,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/databricks/dbrx-instruct/results_2024-06-27T16-19-21.521489.json",
+      "evaluatedAt": "2024-06-27",
+      "notes": "IFEval (leaderboard_ifeval, prompt_level_strict_acc 0.482440) from HF Open LLM Leaderboard v2's independent run on databricks/dbrx-instruct. Not previously tracked."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 36.83,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/databricks/dbrx-instruct/results_2024-06-27T16-19-21.521489.json",
+      "evaluatedAt": "2024-06-27",
+      "notes": "MMLU-Pro (leaderboard_mmlu_pro, acc 0.368268) from HF Open LLM Leaderboard v2's independent run on databricks/dbrx-instruct. Distinct from the already-tracked plain MMLU self-reported score (73.7)."
     }
   ],
   "verificationNotes": "Fully confirmed via fetch of the official Databricks blog post: release date March 27, 2024; 132B total/36B active fine-grained MoE with 16 experts (4 active per token); 32K max context; 12T pretraining tokens. License name 'Databricks Open Model License' confirmed verbatim via databricks.com/legal/open-model-license. All four benchmark rows (MMLU 73.7, HumanEval 70.1, GSM8K 66.9 5-shot, HellaSwag 89.0) literally appear on the cited blog page. No changes made; nothing dropped."

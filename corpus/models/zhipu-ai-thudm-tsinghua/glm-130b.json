@@ -61,6 +61,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/pdf/2210.02414",
       "notes": "5-shot, after viewing 400B bilingual tokens"
+    },
+    {
+      "benchmarkSlug": "big-bench",
+      "score": 13.31,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/pdf/2210.02414",
+      "evaluatedAt": "2022-10-05",
+      "notes": "BIG-bench-lite (24 tasks), zero-shot accuracy, Table 4 of the GLM-130B paper (arXiv:2210.02414). Paper states GLM-130B outperforms GPT-3 175B (4.35 zero-shot) and even PaLM 540B in this zero-shot setting; also reports 1-shot=14.91 and 3-shot=15.12 for GLM-130B, but few-shot gains are smaller than GPT-3's. This is a genuinely new benchmark not previously tracked for this model (previously only LAMBADA and MMLU were tracked)."
     }
   ],
   "verificationNotes": "Fully confirmed via arXiv:2210.02414 (ar5iv HTML). LAMBADA zero-shot 80.2 and MMLU 5-shot 44.8 both appear verbatim in the paper. MODEL_LICENSE on GitHub confirms non-commercial-research-only restriction plus China-specific clauses; code is Apache-2.0. Paper confirms 130B bilingual EN/ZH dense GLM-objective model, ICLR 2023 acceptance, training completed July 2022 with public release/report August 2022. No changes made."

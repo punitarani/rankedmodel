@@ -153,6 +153,20 @@
       "source": "self-reported",
       "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.0-h-small",
       "notes": "8-shot"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 4,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/granite-4-0-h-small",
+      "notes": "Humanity's Last Exam, Artificial Analysis Intelligence Index v4.1 evaluation breakdown, row labeled 'Granite 4.0 H Small' at 4%. Not present on the HF model card's own eval table (which has no HLE row at all), so a genuinely new benchmark for this model's file."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 31,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/granite-4-0-h-small",
+      "notes": "IFBench (instruction-following), Artificial Analysis Intelligence Index v4.1 breakdown, row labeled 'Granite 4.0 H Small' at 31%. Distinct benchmark from the IFEval score (87.55, average of instruct+prompt strict) already tracked in this file — IFBench is a separate, harder AA-run instruction-following eval, not a duplicate."
     }
   ],
   "verificationNotes": "Fetched HF model card directly: release date (Oct 2, 2025), 32B total/9B active hybrid Mamba-2/Transformer MoE, Apache 2.0, 128K context, 12 languages, and all 9 benchmark scores confirmed verbatim. Also independently confirmed watsonx.ai pricing ($0.06 in / $0.25 out per 1M tokens) via web search (getmaxim.ai and cloudprice.net cost calculators both show this rate). No changes made."

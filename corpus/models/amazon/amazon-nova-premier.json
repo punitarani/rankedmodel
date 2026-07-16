@@ -133,6 +133,14 @@
       "sourceUrl": "https://assets.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf",
       "evaluatedAt": "2025-04-30",
       "notes": "CharXiv reasoning subset (descriptive subset was 84.6, not used, to match the corpus convention of reporting the reasoning subset for this slug); GPT-4o-judged correctness (Table 1)."
+    },
+    {
+      "benchmarkSlug": "mt-bench",
+      "score": 8.6,
+      "source": "self-reported",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/benchmarking-amazon-nova-a-comprehensive-analysis-through-mt-bench-and-arena-hard-auto/",
+      "evaluatedAt": "2025-07-24",
+      "notes": "AWS Generative AI Innovation Center blog post (published 2025-07-24), single-answer grading with Anthropic's Claude 3.7 Sonnet as judge (0-10 scale). Nova Premier had the highest median score of the four Nova models (8.0-8.6 range), with a 1.5-point min-max spread (7.94-9.47). Not previously tracked for this model. Note: the same post's Arena-Hard-Auto figures use a custom 0-10 normalized Bradley-Terry scale (reference model pinned at 5.0), not the standard 0-100 win-rate scale used elsewhere in this corpus's 'arena-hard' slug, so those were deliberately NOT added here to avoid a scale mismatch."
     }
   ],
   "verificationNotes": "Confirmed real: April 30, 2025 launch corroborated by TechCrunch, Computerworld, AWS blog, Amazon Science technical report. Confirmed 1M-token multimodal context, $2.50/$12.50 per M pricing, explicitly described as 'not a reasoning model' and positioned as a distillation teacher (TechCrunch, AWS blog). MMLU-Pro 73.3 and GPQA Diamond 56.9 could not be directly rendered from artificialanalysis.ai/models/nova-premier via automated fetch (client-side rendered page), but both figures were independently corroborated verbatim (73.3% MMLU-Pro, 56.9% GPQA Diamond) on a mirror site (designforonline.com) that sources Artificial Analysis benchmark data. Kept both rows given this independent corroboration."

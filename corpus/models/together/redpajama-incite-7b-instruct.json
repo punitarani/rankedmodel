@@ -102,6 +102,29 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2411.12372",
       "notes": "HELM TruthfulQA EM score, Table 8."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 36.6,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2411.12372",
+      "notes": "HELM-classic EM metric, Table 8 of the official RedPajama technical paper (Together AI et al., NeurIPS 2024 D&B track) — the same table already used in the file for this model's openbookqa (48.8) and truthfulqa (22.6) entries, just a different row (MMLU) that wasn't yet pulled in. Cross-checked against an independent hand-averaged 5-shot MMLU score of ~37.6% computed from the 57 hendrycksTest subject-level scores in the HF Open LLM Leaderboard v1 run for this exact model (results_2023-07-19T16-41-06.835084.json) — the two values agree closely, corroborating the figure. No mmlu result currently exists in the file for this model (only the Chat sibling has one)."
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 1.59,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Instruct/results_2023-10-19T05-42-36.863532.json",
+      "evaluatedAt": "2023-10-19",
+      "notes": "HF Open LLM Leaderboard (v1) supplemental run (added winogrande/gsm8k/drop) for the exact togethercomputer/RedPajama-INCITE-7B-Instruct checkpoint: harness|gsm8k|5 acc = 0.01592 (1.59%). No gsm8k result currently exists for this model in the file."
+    },
+    {
+      "benchmarkSlug": "drop",
+      "score": 4.21,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/results/blob/main/togethercomputer/RedPajama-INCITE-7B-Instruct/results_2023-10-19T05-42-36.863532.json",
+      "evaluatedAt": "2023-10-19",
+      "notes": "Same HF Open LLM Leaderboard v1 supplemental run: harness|drop|3 F1 = 0.04209 (4.21%); EM = 0.12% is the alternate metric in the same record. F1 is the metric the leaderboard displayed publicly for DROP. Note: HF later found and disclosed an implementation bug in this leaderboard's DROP task that produced artificially depressed scores for many models circa this era — still the genuine, verifiable recorded value for this exact checkpoint. No drop result currently exists for this model."
     }
   ],
   "verificationNotes": "Confirmed via together.ai/blog/redpajama-7b (June 6, 2023): text states Instruct model 'outperforms LLaMA-7B and state-of-the-art open models such as Falcon-7B (Base and Instruct) and MPT-7B (Base and Instruct) on HELM by 2-9 points' and 'appears to be the best open instruct model at this scale.' Fetched arxiv.org/html/2411.12372 Table 8 directly and confirmed exact score 0.492 for RedPajama-INCITE-7B-Instruct verbatim."

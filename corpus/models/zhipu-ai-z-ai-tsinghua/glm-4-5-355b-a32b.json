@@ -151,6 +151,14 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2508.06471",
       "notes": "IFEval (Prompt Strict), Table 6."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 44,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/glm-4.5",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench (instruction-following), independently measured by Artificial Analysis as one component of their live Intelligence Evaluations breakdown for GLM-4.5 (Reasoning); read directly from AA's ranked bar chart (44%, last of 23 models shown on that chart). Not self-reported by Z.ai and not previously tracked for this model -- the corpus's 14 existing results are all either self-reported (arXiv 2508.06471) or independent scores from llm-stats.com (mmlu-pro, gpqa, livecodebench, hle), none of which cover IFBench."
     }
   ],
   "verificationNotes": "Existence and identity confirmed via official Z.ai blog (z.ai/blog/glm-4.5), Hugging Face model card (zai-org/GLM-4.5), and arXiv paper 2508.06471. paramsB=355, activeParamsB=32 confirmed on HF card ('355 billion total parameters with 32 billion active'). License MIT confirmed on HF card. Release date 2025-07-28 confirmed via cometapi article citing the WAIC-adjacent launch event. ctxK=128 confirmed via llm-stats comparison page. Self-reported rows (TAU-Bench 70.1, AIME 91.0, SWE-bench 64.2) verbatim-confirmed by fetching arXiv abs page which explicitly states these three numbers. Independent rows (MMLU-Pro 84.6, GPQA 79.1, LiveCodeBench 72.9, HLE 14.4) verbatim-confirmed on llm-stats.com/models/compare/glm-4.5-vs-glm-4.5-air. Pricing ($0.6/$2.2 per 1M tokens) confirmed on docs.z.ai/guides/overview/pricing. No changes made to the original record; all fields checked out."

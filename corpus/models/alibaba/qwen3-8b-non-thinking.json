@@ -131,6 +131,22 @@
       "source": "self-reported",
       "sourceUrl": "https://arxiv.org/abs/2505.09388",
       "notes": "MMMLU across 14 languages, non-thinking mode, Table 18"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 3,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8b-instruct",
+      "evaluatedAt": "2026-07-15",
+      "notes": "Humanity's Last Exam, independently measured by Artificial Analysis on the 'Qwen3 8B (Non-reasoning)' page (Intelligence Index v4.1 breakdown). Score 3%. Not currently tracked in the file (no hle row present at all)."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 29,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8b-instruct",
+      "evaluatedAt": "2026-07-15",
+      "notes": "IFBench, independently measured by Artificial Analysis on the 'Qwen3 8B (Non-reasoning)' page. Score 29%. Distinct from the already-tracked self-reported IFEval score (83) -- IFBench is a separate taxonomy slug and was not previously present in the file."
     }
   ],
   "verificationNotes": "Fully confirmed. Table 18 of fetched Qwen3 Technical Report PDF confirms all 5 rows exactly (AIME'24 29.1, GPQA-Diamond 39.3, LiveCodeBench v5 22.8, Arena-Hard 79.6, BFCL v3 60.2). Same model identity/specs verification as thinking-mode sibling."

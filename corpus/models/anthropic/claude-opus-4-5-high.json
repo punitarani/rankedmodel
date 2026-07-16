@@ -98,7 +98,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
       "evaluatedAt": "2025-11-24",
-      "notes": "The Opus 4.5 system card (Section 2.19) explicitly identifies this figure as MMMLU ('a score of 90.77% on MMMLU... average of 10 trials over the 14 languages'), not plain MMLU. The existing corpus row already carries this exact number (90.8) but under the slug 'mmlu' (inherited from vellum.ai, which mislabeled it) \u2014 since the score itself is not wrong, no 'correction' was filed per the audit rule against reporting corrections when old/new numbers agree, but this addition records its true benchmark identity. A maintainer may want to re-slug or remove the existing 'mmlu' row to avoid duplication."
+      "notes": "The Opus 4.5 system card (Section 2.19) explicitly identifies this figure as MMMLU ('a score of 90.77% on MMMLU... average of 10 trials over the 14 languages'), not plain MMLU. The existing corpus row already carries this exact number (90.8) but under the slug 'mmlu' (inherited from vellum.ai, which mislabeled it) — since the score itself is not wrong, no 'correction' was filed per the audit rule against reporting corrections when old/new numbers agree, but this addition records its true benchmark identity. A maintainer may want to re-slug or remove the existing 'mmlu' row to avoid duplication."
     },
     {
       "benchmarkSlug": "terminal-bench-2",
@@ -106,7 +106,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
       "evaluatedAt": "2025-11-24",
-      "notes": "Anthropic's own launch page explicitly labels this row 'Agentic terminal coding / Terminal-bench 2.0' (128K thinking budget; 57.8% at 64K thinking per the system card footnote) \u2014 a distinct, harder benchmark suite from the classic Terminal-Bench used for Opus 4.1/Haiku 4.5. The existing corpus row carries this same number (59.3) under the generic 'terminal-bench' slug; per the same reasoning as the MMMLU item above, no correction was filed (numbers agree) but this addition records the correct identity."
+      "notes": "Anthropic's own launch page explicitly labels this row 'Agentic terminal coding / Terminal-bench 2.0' (128K thinking budget; 57.8% at 64K thinking per the system card footnote) — a distinct, harder benchmark suite from the classic Terminal-Bench used for Opus 4.1/Haiku 4.5. The existing corpus row carries this same number (59.3) under the generic 'terminal-bench' slug; per the same reasoning as the MMMLU item above, no correction was filed (numbers agree) but this addition records the correct identity."
     },
     {
       "benchmarkSlug": "arc-agi-1",
@@ -146,7 +146,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
       "evaluatedAt": "2025-11-24",
-      "notes": "SWE-bench Pro (Scale AI's harder, 1,865-problem variant), no-thinking configuration (52.0%; 51.60% with 64k thinking) \u2014 system card Table 2.4.A."
+      "notes": "SWE-bench Pro (Scale AI's harder, 1,865-problem variant), no-thinking configuration (52.0%; 51.60% with 64k thinking) — system card Table 2.4.A."
     },
     {
       "benchmarkSlug": "tau2-bench-telecom",
@@ -154,7 +154,7 @@
       "source": "self-reported",
       "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
       "evaluatedAt": "2025-11-24",
-      "notes": "\u03c42-bench Telecom domain, from the official launch-page table and system card Table 2.3.A. (\u03c42-bench Retail 88.9% was also reported but has no matching taxonomy slug \u2014 mapping it to the generic 'tau-bench' slug would conflate it with the original, easier TAU-bench used for Opus 4/Sonnet 4/Opus 4.1, so it was left out.)"
+      "notes": "τ2-bench Telecom domain, from the official launch-page table and system card Table 2.3.A. (τ2-bench Retail 88.9% was also reported but has no matching taxonomy slug — mapping it to the generic 'tau-bench' slug would conflate it with the original, easier TAU-bench used for Opus 4/Sonnet 4/Opus 4.1, so it was left out.)"
     },
     {
       "benchmarkSlug": "osworld-verified",
@@ -163,6 +163,20 @@
       "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
       "evaluatedAt": "2025-11-24",
       "notes": "Computer use / OSWorld, 1080p resolution, 100 steps, P@1 avg@5 = 66.26% per system card Section 2.9 (chart rounds to 66.3%). Score range confirms this is the 'Verified' variant (taxonomy's plain 'osworld' caps at 40%, far below this figure)."
+    },
+    {
+      "benchmarkSlug": "livecodebench",
+      "score": 83.7,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-opus-4-5-20251101-thinking",
+      "notes": "Vals AI independent eval of Claude Opus 4.5 (Thinking variant, matching the corpus's 'High'/default-effort config). LiveCodeBench pass rate 83.67%, extracted directly from the model page's embedded score bars (raw HTML fetch, not the JS-summarized view). Not previously tracked for this model (only 'terminal-bench'/'terminal-bench-2' and generic 'mmlu'/'mmmlu' coding/knowledge scores were present)."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 87.3,
+      "source": "independent",
+      "sourceUrl": "https://www.vals.ai/models/anthropic_claude-opus-4-5-20251101-thinking",
+      "notes": "Vals AI independent eval, Thinking/high-effort variant. MMLU-Pro 87.26%, from the model page's embedded score data (raw HTML fetch). The corpus already tracks plain 'mmlu' (90.8) and 'mmmlu' (90.8) for this model but not the distinct, harder 'mmlu-pro' slug."
     }
   ],
   "verificationNotes": "Confirmed real; anthropic.com/news/claude-opus-4-5 verifies release date, 200K context, $5/$25 pricing. The 80.9% SWE-bench figure is a genuine, widely-reported Anthropic claim, but it appears on anthropic.com's own page only as a chart label, not literal text, so the sourceUrl was swapped to theunwindai.com, whose headline literally states 'Claude Opus 4.5 Scores 80.9% on SWE-bench.' The other four rows (GPQA 87.0, MMLU 90.8, MMMU 80.7, HLE-with-search 43.2, Terminal-Bench 59.3) were all confirmed as literal quotes on vellum.ai/blog/claude-opus-4-5-benchmarks."

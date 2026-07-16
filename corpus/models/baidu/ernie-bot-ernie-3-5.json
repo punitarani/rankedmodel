@@ -42,6 +42,31 @@
     "ctxK": "https://getfreeai.net/en/services/api/baidu/",
     "openness": "https://getfreeai.net/en/services/api/baidu/"
   },
-  "results": [],
+  "results": [
+    {
+      "benchmarkSlug": "agieval",
+      "score": 64.37,
+      "source": "self-reported",
+      "sourceUrl": "https://news.sciencenet.cn/htmlnews/2023/6/503251.shtm",
+      "evaluatedAt": "2023-06-20",
+      "notes": "AGIEval (Chinese-subject portion) score of 64.37 for ERNIE (Wenxin) 3.5, vs. ChatGPT 40.27 and GPT-4 56.96, as announced by Baidu around its June 2023 ERNIE 3.5 upgrade. Sourced from Science Net (中国科学报, hosted by the Chinese Academy of Sciences), which reports the exact figures; corroborated by contemporaneous CNBC and Coinspeaker coverage of the same Baidu claim ('Ernie 3.5 achieved higher scores than other large models, including ChatGPT, and surpassed GPT-4' on AGIEval/C-Eval). Labeled self-reported since it is Baidu's own claimed test result relayed by press, not an independent third-party re-run. Model had 0 tracked results before this."
+    },
+    {
+      "benchmarkSlug": "c-eval",
+      "score": 71.93,
+      "source": "self-reported",
+      "sourceUrl": "https://news.sciencenet.cn/htmlnews/2023/6/503251.shtm",
+      "evaluatedAt": "2023-06-20",
+      "notes": "C-Eval score of 71.93 for ERNIE (Wenxin) 3.5, vs. ChatGPT 51.70 and GPT-4 68.57, from Baidu's June 2023 announcement accompanying the ERNIE 3.5 upgrade. Same Science Net source as the AGIEval entry; also corroborated by SCMP/CNBC coverage of Baidu's claim that Ernie 3.5 'surpassed ChatGPT 3.5... and outperformed... ChatGPT 4 in several Chinese-language capabilities.' Labeled self-reported (Baidu's own claimed figure, press-relayed)."
+    },
+    {
+      "benchmarkSlug": "mmlu",
+      "score": 65.1,
+      "source": "self-reported",
+      "sourceUrl": "https://news.sciencenet.cn/htmlnews/2023/6/503251.shtm",
+      "evaluatedAt": "2023-06-20",
+      "notes": "MMLU score of 65.10 for ERNIE (Wenxin) 3.5, behind GPT-4's 82.47 and ChatGPT's 68.85, from the same June 2023 Baidu-sourced benchmark comparison (Science Net / 中国科学报). This is the one benchmark in that comparison where ERNIE 3.5 trails both ChatGPT and GPT-4, included for completeness alongside the AGIEval and C-Eval results where it led. Labeled self-reported (Baidu-claimed figure)."
+    }
+  ],
   "verificationNotes": "CORRECTED releaseDate: the input record paired the name 'ERNIE Bot (ERNIE 3.5)' with releaseDate 2023-03-16, but that date is when ERNIE Bot first launched running on ERNIE 3.0, NOT ERNIE 3.5. Multiple sources (Wikipedia Ernie Bot timeline, contemporary coverage of the WIC Nishan Dialogue) confirm Baidu's CEO announced the model's iteration to ERNIE 3.5 on June 26, 2023, with technical details given by CTO Wang Haifeng on June 27, 2023; Wikipedia states ERNIE 3.5 'released in June 2023.' Updated releaseDate to 2023-06-26 and updated note/specSources accordingly. Free ERNIE-3.5-8K Qianfan tier confirmed via getfreeai.net. paramsB left null (undisclosed, consistent with all public sources)."
 }

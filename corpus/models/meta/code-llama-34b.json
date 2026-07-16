@@ -73,6 +73,14 @@
       "source": "curated",
       "sourceUrl": "https://arxiv.org/abs/2402.19173",
       "notes": "RepoBench v1.1 exact match (EM), averaged across the Python and Java splits reported in Table 17 of the StarCoder2 & The Stack v2 paper (Lozhkov et al., 2024): Python EM 37.22, Java EM 42.35. (Distinct from the Python-specialized 'Code Llama 34B Python' variant, which is not included here.)"
+    },
+    {
+      "benchmarkSlug": "gsm8k",
+      "score": 32.7,
+      "source": "self-reported",
+      "sourceUrl": "https://arxiv.org/abs/2308.12950",
+      "evaluatedAt": "2023-08-24",
+      "notes": "Base Code Llama 34B (not Python-specialized variant), GSM8K solve rate, Table 12 ('GSM8k results') / Appendix D 'Math reasoning results' of the official Code Llama paper. Directly confirmed via full-text PDF extraction: row 'Code Llama 34B' = 32.7%. Not previously tracked for this model (existing entries only cover HumanEval, MBPP, RepoBench)."
     }
   ],
   "verificationNotes": "Confirmed release 2023-08-24 and license. Directly fetched arxiv.org/html/2308.12950v3 Table 2: HumanEval 48.8 / MBPP 55.0 for base Code Llama 34B confirmed exactly. Confirmed 34B does not support FIM infilling (only 7B/13B do), consistent with archDisplay."

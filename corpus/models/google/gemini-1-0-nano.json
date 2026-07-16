@@ -75,6 +75,62 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
       "evaluatedAt": "2023-12-06",
       "notes": "Gemini Nano-2 (3.25B), Table 3, 4-shot."
+    },
+    {
+      "benchmarkSlug": "mmmu",
+      "score": 32.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7, Gemini Nano-2 (3.25B) column, MMMU (val) pass@1, pixel-only, 0-shot."
+    },
+    {
+      "benchmarkSlug": "textvqa",
+      "score": 65.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7, Gemini Nano-2 (3.25B) column, TextVQA (val), pixel-only, 0-shot."
+    },
+    {
+      "benchmarkSlug": "docvqa",
+      "score": 74.3,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7, Gemini Nano-2 (3.25B) column, DocVQA (test), pixel-only, 0-shot."
+    },
+    {
+      "benchmarkSlug": "chartqa",
+      "score": 51.9,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7, Gemini Nano-2 (3.25B) column, ChartQA (test), pixel-only, 0-shot."
+    },
+    {
+      "benchmarkSlug": "mathvista",
+      "score": 30.6,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7, Gemini Nano-2 (3.25B) column, MathVista (testmini), pixel-only, 0-shot."
+    },
+    {
+      "benchmarkSlug": "ai2d",
+      "score": 51,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7, Gemini Nano-2 (3.25B) column, AI2D (test), pixel-only, 0-shot."
+    },
+    {
+      "benchmarkSlug": "vqav2",
+      "score": 67.5,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+      "evaluatedAt": "2023-12-06",
+      "notes": "Table 7, Gemini Nano-2 (3.25B) column, VQAv2 (test-dev), pixel-only, 0-shot."
     }
   ],
   "verificationNotes": "Confirmed real: Gemini Nano-2 is genuinely a 3.25B-parameter distilled on-device model per the Gemini 1.0 technical report (arXiv 2312.11805), corroborated independently by Microsoft's Phi-2 blog post which quotes the same report's comparison table listing 'Gemini Nano 2, 3.2B params, MMLU 55.8' -- exact score match confirmed via two independent citations of the same primary source. Pixel 8 Pro on-device launch in Dec 2023 confirmed."

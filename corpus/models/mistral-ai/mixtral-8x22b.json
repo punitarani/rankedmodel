@@ -80,7 +80,39 @@
       "source": "independent",
       "sourceUrl": "https://lk.instruct.kr/",
       "evaluatedAt": "2024-06-26",
-      "notes": "LogicKor official leaderboard, model_id mistralai/mixtral-8x22b, default prompt strategy [score corrected during adversarial verify: proposed 3.93 -> 6.79, per verifier: Verified directly against https://lk.instruct.kr/ (LogicKor official leaderboard). The site does list mistralai/mixtral-8x22b, but the claimed score (3.93) and claimed prompt strategy (\"default\") are both wrong. Actual leaderboard entry (row 100): model_id `mistralai/mixtral-8x22b`, 141B params, apache-2.0, prompt strategy **\"1-shot\"** (there is no \"default\"-strategy row for this model at all \u2014 I searched all rows containing \"mixtral\" and found only three: mixtral-8x22b/1-shot, mixtral-8x7b-instruct/cot-1-shot, mixtral-8x7b-instruct/1-shot). Category scores: Reasoning 6.00, Math 6.07, Writing 5.92, Coding 8.78, Comprehension 6.78, Grammar 7.21, Singleton 6.95, Multiturn 6.64. **Total/overall score: 6.79** (on LogicKor's 0\u201310 scale). 3.93 does not match the total (6.79) nor any individual category score, so this isn't a unit conversion or category-vs-total mixup I can explain \u2014 the number appears simply fabricated or transcribed from a different model/benchmark. The model result is real and the correct total score to record is 6.79, sourced from mistralai/mixtral-8x22b with prompt strategy \"1-shot\" (not \"default\"). Side note: corpus/models/mistral-ai/mixtral-8x22b.json currently has no \"logickor\" entry in its results array at all (only mmlu, gsm8k, math), so this appears to be a proposed new addition \u2014 if added, use score 6.79 and correct the prompt-strategy note to \"1-shot\". Also note: LogicKor's leaderboard was archived as of 2024-10-17 per the GitHub repo, so evaluatedAt should reflect a pre-archival date if not already specified.]"
+      "notes": "LogicKor official leaderboard, model_id mistralai/mixtral-8x22b, default prompt strategy [score corrected during adversarial verify: proposed 3.93 -> 6.79, per verifier: Verified directly against https://lk.instruct.kr/ (LogicKor official leaderboard). The site does list mistralai/mixtral-8x22b, but the claimed score (3.93) and claimed prompt strategy (\"default\") are both wrong. Actual leaderboard entry (row 100): model_id `mistralai/mixtral-8x22b`, 141B params, apache-2.0, prompt strategy **\"1-shot\"** (there is no \"default\"-strategy row for this model at all — I searched all rows containing \"mixtral\" and found only three: mixtral-8x22b/1-shot, mixtral-8x7b-instruct/cot-1-shot, mixtral-8x7b-instruct/1-shot). Category scores: Reasoning 6.00, Math 6.07, Writing 5.92, Coding 8.78, Comprehension 6.78, Grammar 7.21, Singleton 6.95, Multiturn 6.64. **Total/overall score: 6.79** (on LogicKor's 0–10 scale). 3.93 does not match the total (6.79) nor any individual category score, so this isn't a unit conversion or category-vs-total mixup I can explain — the number appears simply fabricated or transcribed from a different model/benchmark. The model result is real and the correct total score to record is 6.79, sourced from mistralai/mixtral-8x22b with prompt strategy \"1-shot\" (not \"default\"). Side note: corpus/models/mistral-ai/mixtral-8x22b.json currently has no \"logickor\" entry in its results array at all (only mmlu, gsm8k, math), so this appears to be a proposed new addition — if added, use score 6.79 and correct the prompt-strategy note to \"1-shot\". Also note: LogicKor's leaderboard was archived as of 2024-10-17 per the GitHub repo, so evaluatedAt should reflect a pre-archival date if not already specified.]"
+    },
+    {
+      "benchmarkSlug": "ifeval",
+      "score": 71.84,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mixtral-8x22B-Instruct-v0.1-details",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HuggingFace Open LLM Leaderboard v2 official evaluation of mistralai/Mixtral-8x22B-Instruct-v0.1 (IFEval Raw = 0.71836, submission date 2024-06-12). Verified directly via the HF datasets-server API against the archived 'open-llm-leaderboard/contents' dataset (machine-readable JSON row, not a rendered page), so this is a real, independently-run eval, not a self-reported figure. Genuinely new: the corpus file currently has no ifeval entry."
+    },
+    {
+      "benchmarkSlug": "bbh",
+      "score": 61.25,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mixtral-8x22B-Instruct-v0.1-details",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HuggingFace Open LLM Leaderboard v2 official evaluation of mistralai/Mixtral-8x22B-Instruct-v0.1 ('BBH Raw' = 0.612492, i.e. the literal accuracy before the leaderboard's baseline-normalization transform, which is why 61.25 is used here rather than the displayed normalized 44.11). Verified via the HF datasets-server JSON API. Genuinely new: no bbh entry currently exists for this model."
+    },
+    {
+      "benchmarkSlug": "mmlu-pro",
+      "score": 44.83,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mixtral-8x22B-Instruct-v0.1-details",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HuggingFace Open LLM Leaderboard v2 official evaluation of mistralai/Mixtral-8x22B-Instruct-v0.1 ('MMLU-PRO Raw' = 0.448305; used raw accuracy rather than the displayed baseline-normalized 38.70 for scale-consistency with how this corpus records other models' mmlu-pro results). Verified via the HF datasets-server JSON API. Genuinely new: no mmlu-pro entry currently exists for this model."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 37.33,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/mistralai__Mixtral-8x22B-Instruct-v0.1-details",
+      "evaluatedAt": "2024-06-12",
+      "notes": "HuggingFace Open LLM Leaderboard v2 official evaluation of mistralai/Mixtral-8x22B-Instruct-v0.1 ('GPQA Raw' = 0.373322; raw accuracy used rather than the displayed normalized 16.44). Verified via the HF datasets-server JSON API. Genuinely new: the file currently has no gpqa entry at all."
     }
   ],
   "verificationNotes": "Fetched mistral.ai/news/mixtral-8x22b/ directly: confirms 2024-04-17 release, 141B/39B params, 64K context, Apache 2.0 ('most permissive open-source licence'), native function calling, 5 languages (English/French/Italian/German/Spanish), GSM8K 90.8 maj@8 and MATH 44.6 maj@4. Fetched HF discussion directly: shows 'acc: 0.7735' i.e. 77.35% -- record's 77.3 is a reasonable truncation of this literal figure, not fabricated. No changes made."

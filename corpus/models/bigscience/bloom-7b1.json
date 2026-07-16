@@ -142,6 +142,14 @@
       "sourceUrl": "https://arxiv.org/abs/2410.08928",
       "evaluatedAt": "2024-10-17",
       "notes": "EU21-MMLU (DeepL-translated MMLU across 21 EU languages), Thellmann et al. 2024 'Towards Multilingual LLM Evaluation for European Languages', Table 13. HF checkpoint bigscience/bloom-7b1, exact name/size match."
+    },
+    {
+      "benchmarkSlug": "math",
+      "score": 0.53,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard/results/blob/main/bigscience/bloom-7b1/results_2025-02-13T18-27-04.338360.json",
+      "evaluatedAt": "2025-02-13",
+      "notes": "MATH (Level-5/hard subset), exact_match on the leaderboard_math_hard task, from the same HF Open LLM Leaderboard v2 automated-eval results file already used in the corpus for this model's bbh/gpqa/ifeval/mmlu-pro rows (results_2025-02-13T18-27-04.338360.json, key leaderboard_math_hard: exact_match,none=0.005287). Not previously tracked for this model. Verified against the raw JSON directly (fetched via curl)."
     }
   ],
   "verificationNotes": "Confirmed on HF model card: 7,069,016,064 params (7.069B) exact match; RAIL v1.0 license; 2048-token context; 45 natural + 12 programming = 57 languages matches langCount exactly. Page states training ended ~July 5, 2022, consistent with the July 11, 2022 public release date shared across the BLOOM checkpoint family. No changes made."

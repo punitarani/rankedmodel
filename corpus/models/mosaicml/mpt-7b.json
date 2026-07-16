@@ -55,7 +55,7 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2405.13386",
       "evaluatedAt": "2024-05-22",
-      "notes": "5-shot via OpenCompass, 360Zhinao Technical Report Table 2 \u2014 confirmed by direct read of table"
+      "notes": "5-shot via OpenCompass, 360Zhinao Technical Report Table 2 — confirmed by direct read of table"
     },
     {
       "benchmarkSlug": "hellaswag",
@@ -87,7 +87,7 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2405.13386",
       "evaluatedAt": "2024-05-22",
-      "notes": "CORRECTED from 10 to 9.1 \u2014 the actual Table 2 value for MPT-7B GSM8K is 9.1, not 10; confirmed by direct read of the table"
+      "notes": "CORRECTED from 10 to 9.1 — the actual Table 2 value for MPT-7B GSM8K is 9.1, not 10; confirmed by direct read of the table"
     },
     {
       "benchmarkSlug": "math",
@@ -103,7 +103,7 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2405.13386",
       "evaluatedAt": "2024-05-22",
-      "notes": "5-shot via OpenCompass, 360Zhinao Technical Report Table 2 \u2014 confirmed by direct PDF read of the table."
+      "notes": "5-shot via OpenCompass, 360Zhinao Technical Report Table 2 — confirmed by direct PDF read of the table."
     },
     {
       "benchmarkSlug": "agieval",
@@ -111,7 +111,7 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2405.13386",
       "evaluatedAt": "2024-05-22",
-      "notes": "0-shot per paper's stated methodology, 360Zhinao Technical Report Table 2 \u2014 confirmed by direct PDF read."
+      "notes": "0-shot per paper's stated methodology, 360Zhinao Technical Report Table 2 — confirmed by direct PDF read."
     },
     {
       "benchmarkSlug": "cmmlu",
@@ -119,8 +119,24 @@
       "source": "independent",
       "sourceUrl": "https://arxiv.org/abs/2405.13386",
       "evaluatedAt": "2024-05-22",
-      "notes": "5-shot via OpenCompass, 360Zhinao Technical Report Table 2 \u2014 confirmed by direct PDF read."
+      "notes": "5-shot via OpenCompass, 360Zhinao Technical Report Table 2 — confirmed by direct PDF read."
+    },
+    {
+      "benchmarkSlug": "arc-challenge",
+      "score": 47.7,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b",
+      "evaluatedAt": "2023-10-03",
+      "notes": "25-shot acc_norm (harness|arc:challenge|25 = 0.47696), HF Open LLM Leaderboard v1 evaluation-run JSON for mosaicml/mpt-7b, confirmed via direct fetch of the raw results JSON (results_2023-10-03T22-10-31.153532.json)."
+    },
+    {
+      "benchmarkSlug": "truthfulqa",
+      "score": 33.5,
+      "source": "independent",
+      "sourceUrl": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b",
+      "evaluatedAt": "2023-10-03",
+      "notes": "TruthfulQA MC2 (harness|truthfulqa:mc|0, mc2 = 0.33545), 0-shot, HF Open LLM Leaderboard v1 evaluation-run JSON for mosaicml/mpt-7b, confirmed via direct fetch of the raw results JSON."
     }
   ],
-  "verificationNotes": "Existence, org, release date (2023-05-05), 6.7B params, 32L/32H/d4096 architecture, Apache-2.0 license, 2048 native context (ALiBi-extendable), and 1T training tokens all corroborated via HF model card searches and the official Databricks/MosaicML announcement blog. Fetched arXiv 2405.13386 (360Zhinao Technical Report) full HTML/table directly: 5 of 6 benchmark rows matched exactly, but the input record's GSM8K score of 10 was WRONG \u2014 the paper's actual Table 2 value is 9.1. Corrected."
+  "verificationNotes": "Existence, org, release date (2023-05-05), 6.7B params, 32L/32H/d4096 architecture, Apache-2.0 license, 2048 native context (ALiBi-extendable), and 1T training tokens all corroborated via HF model card searches and the official Databricks/MosaicML announcement blog. Fetched arXiv 2405.13386 (360Zhinao Technical Report) full HTML/table directly: 5 of 6 benchmark rows matched exactly, but the input record's GSM8K score of 10 was WRONG — the paper's actual Table 2 value is 9.1. Corrected."
 }
