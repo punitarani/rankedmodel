@@ -61,6 +61,21 @@ export function RankingsScreen({
     return c
   }, [data.models])
 
+  // Coverage among just the top of the table drives COLUMN ORDER (not the floor above): the
+  // era-split catalog means a benchmark can clear the overall floor (MMLU: 287 models) while
+  // still being blank for nearly every row a visitor actually looks at (16 of the top 100) —
+  // ordering by raw catalog coverage would keep it left regardless. Sorting by top-100 coverage
+  // instead puts the columns that are actually populated up top left where rows are dense, and
+  // pushes era-mismatched columns right where the occasional em-dash is expected.
+  const topCoverage = useMemo(() => {
+    const c: Record<string, number> = {}
+    for (const m of data.models) {
+      if (!m.ranked || m.rank == null || m.rank > 100) continue
+      for (const [slug, v] of Object.entries(m.bench)) if (v != null) c[slug] = (c[slug] ?? 0) + 1
+    }
+    return c
+  }, [data.models])
+
   const columns = useMemo(() => {
     const label = (slug: string) =>
       CORE_RANKINGS_LABELS[slug] ?? data.benchmarks.find((b) => b.slug === slug)?.name ?? slug
@@ -78,8 +93,13 @@ export function RankingsScreen({
     }
     return CORE_RANKINGS_CANDIDATES.filter(
       (slug) => (coverage[slug] ?? 0) >= RANKINGS_COLUMN_MIN_COVERAGE,
-    ).map((slug) => ({ slug, label: label(slug) }))
-  }, [category, data.benchmarks, coverage])
+    )
+      .sort(
+        (a, b) =>
+          (topCoverage[b] ?? 0) - (topCoverage[a] ?? 0) || (coverage[b] ?? 0) - (coverage[a] ?? 0),
+      )
+      .map((slug) => ({ slug, label: label(slug) }))
+  }, [category, data.benchmarks, coverage, topCoverage])
 
   // If the user sorts by a benchmark that isn't a default column, surface it as an extra
   // column so the sort arrow + "sorted by X" line always name a column you can see (D20).

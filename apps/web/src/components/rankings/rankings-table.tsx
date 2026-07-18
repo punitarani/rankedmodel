@@ -178,7 +178,7 @@ export function RankingsTable({
               </span>
               <InlineBar
                 pct={pct}
-                color={pct > 92 ? 'var(--acc)' : 'var(--border2)'}
+                color={pct > 92 ? 'var(--acc)' : 'var(--accdim)'}
                 className="mt-[3px]"
               />
             </span>
