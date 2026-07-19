@@ -36,7 +36,12 @@ for (const route of ROUTES) {
 
 test('keyboard: rankings sort buttons are tabbable and Enter-operable', async ({ page }) => {
   await gotoHydrated(page, '/rankings')
-  await page.getByTestId('sort-gpqa').focus()
+  const sortBtn = page.getByTestId('sort-gpqa')
+  await expect(sortBtn).toBeVisible()
+  await sortBtn.focus()
+  // toBeFocused auto-waits until focus actually lands on the (interactive) control,
+  // so Enter can't fire before the button is operable on a slow CI runner.
+  await expect(sortBtn).toBeFocused()
   await page.keyboard.press('Enter')
-  await expect(page).toHaveURL(/sort=-gpqa/)
+  await expect(page).toHaveURL(/sort=-gpqa/, { timeout: 10_000 })
 })

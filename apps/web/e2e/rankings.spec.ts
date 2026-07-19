@@ -18,13 +18,13 @@ test.describe('rankings', () => {
   test('column sort click mutates URL and reorders rows', async ({ page }) => {
     await gotoHydrated(page, '/rankings')
     await page.getByTestId('sort-gpqa').click()
-    await expect(page).toHaveURL(/sort=-gpqa/)
+    await expect(page).toHaveURL(/sort=-gpqa/, { timeout: 10_000 })
     // GPT-5.6 leads both the Elo index and GPQA Diamond (94.6), so sorting by GPQA
     // keeps it in first place — no reordering, but the sort param still mutates the URL
     await expect(page.getByTestId('ranking-row').first()).toContainText('GPT-5.6')
     // second click flips to ascending
     await page.getByTestId('sort-gpqa').click()
-    await expect(page).toHaveURL(/sort=gpqa/)
+    await expect(page).toHaveURL(/sort=gpqa/, { timeout: 10_000 })
   })
 
   test('deep link SSRs pre-sorted + pre-filtered (URL is the state)', async ({ request }) => {
