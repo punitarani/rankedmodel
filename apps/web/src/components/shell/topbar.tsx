@@ -27,7 +27,10 @@ export function Topbar() {
   return (
     <div className="sticky top-0 z-40 flex items-center gap-3.5 border-b border-border bg-bg px-6 py-2.5">
       {/* Mobile-only: opens the off-canvas nav drawer. Hidden on desktop where the sidebar is persistent. */}
-      <SidebarTrigger className="-ml-2 shrink-0 text-mut md:hidden" aria-label="Open navigation" />
+      <SidebarTrigger
+        className="-ml-2 -mr-0.5 shrink-0 text-mut md:hidden"
+        aria-label="Open navigation"
+      />
       <div
         className="whitespace-nowrap text-[13px] font-semibold tracking-[-0.01em]"
         data-testid="page-title"
