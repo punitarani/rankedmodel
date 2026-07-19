@@ -16,13 +16,29 @@
 
 ## One-time setup
 
-1. **API token** — create a Cloudflare **Custom Token** with a single permission:
-   **Account · Workers Scripts · Edit** (D1/KV are gone, so nothing else is needed). Note
-   your **Account ID**.
+1. **API token** — create a Cloudflare **Custom Token** with:
+   - **Account · Workers Scripts · Edit** — deploy the Worker.
+   - **Zone · Workers Routes · Edit**, **Zone · DNS · Edit**, **Zone · Zone · Read**
+     (scoped to the `modelbeats.com` zone) — create/manage the Custom Domain
+     (`wrangler.jsonc` `routes`), which Cloudflare wires with auto DNS + TLS on deploy.
+
+   Note your **Account ID**. (If you serve only on `*.workers.dev` and drop the `routes`,
+   the single Workers Scripts · Edit permission is enough.)
 
 2. **GitHub secrets** (repo → Settings → Secrets and variables → Actions):
    `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. Once these exist, every push to
    `main` deploys automatically (the `deploy` job is otherwise a no-op with a notice).
+
+## Custom domain (modelbeats.com)
+
+`wrangler.jsonc` declares `modelbeats.com` and `www.modelbeats.com` as **Custom Domains**
+(`custom_domain: true`). On the first deploy with the broadened token, Cloudflare creates
+the proxied DNS records and issues the edge cert automatically — no manual DNS. Requires
+the `modelbeats.com` zone to be active in the account and the apex to have no conflicting
+CNAME. The apex is the canonical (`SITE_ORIGIN`); `www` also serves and is de-duped by the
+canonical tag. Alternatively, attach the domain once via the dashboard (Worker → Settings →
+Domains & Routes → Add → Custom Domain) and remove the `routes` block to keep the token
+minimal.
 
 That's the whole setup. There is no `wrangler d1 create`, no `kv namespace create`, no ids
 to paste.

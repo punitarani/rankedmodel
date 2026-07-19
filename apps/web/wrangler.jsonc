@@ -2,7 +2,13 @@
  * Worker config: static assets + TanStack Start SSR + server functions in one Worker.
  * The catalog snapshot and per-model detail are built from data/** and bundled into the
  * Worker at `vite build` — there is no D1, no KV, nothing to provision. A deploy is just
- * `wrangler deploy`; the edge cache serves the rest. Deploys to modelbeats.<sub>.workers.dev.
+ * `wrangler deploy`; the edge cache serves the rest.
+ *
+ * Serves at modelbeats.com (+ www) via the Custom Domain routes below — Cloudflare
+ * auto-manages the DNS records and TLS cert on deploy — and at modelbeats.<sub>.workers.dev.
+ * The CD API token must carry Zone · Workers Routes · Edit + Zone · DNS · Edit + Zone ·
+ * Zone · Read for the modelbeats.com zone (docs/DEPLOY.md), else deploy fails on domain
+ * creation.
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
@@ -11,6 +17,10 @@
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry",
   "workers_dev": true,
+  "routes": [
+    { "pattern": "modelbeats.com", "custom_domain": true },
+    { "pattern": "www.modelbeats.com", "custom_domain": true }
+  ],
   "observability": { "enabled": true },
   "upload_source_maps": true
 }
