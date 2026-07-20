@@ -92,6 +92,7 @@ const query = (over: Partial<FinetuneQuery>): FinetuneQuery => ({
   arch: 'any',
   org: 'all',
   modalities: [],
+  show: 'fits',
   sort: 'best',
   ...over,
 })
@@ -393,15 +394,80 @@ describe('recipes flow through feasibility and cost', () => {
     expect(rl).toHaveLength(0) // + max(2, 3.3) rollout → 26.09 GB won't fit
   })
 
-  it('DPO doubles the cost estimate', () => {
+  it('DPO scales the cost estimate by 2.5×', () => {
     const sft = selectFinetune([small7], query({}), GPUS, BENCHMARKS)
     const dpo = selectFinetune([small7], query({ recipe: 'dpo' }), GPUS, BENCHMARKS)
-    expect(dpo[0]?.estCostUsd).toBeCloseTo((sft[0]?.estCostUsd ?? 0) * 2, 6)
+    expect(dpo[0]?.estCostUsd).toBeCloseTo((sft[0]?.estCostUsd ?? 0) * 2.5, 6)
+  })
+})
+
+describe('show mode + big-model visibility', () => {
+  const GPUS_FULL = [
+    { slug: 'rtx4090', name: 'RTX 4090 24GB', vramGb: 24, kind: 'consumer' },
+    { slug: 'b200', name: 'B200 192GB', vramGb: 192, kind: 'datacenter' },
+  ]
+  const huge = model({ slug: 'huge-2800b', name: 'Huge 2800B', params: 2800, vramQ4: 1400 })
+  const mid = model({ slug: 'mid-33b', name: 'Mid 33B', params: 33, vramQ4: 19 })
+
+  it("'fits' mode (default) hides models too big for the hardware", () => {
+    const rows = selectFinetune([mid, huge], query({}), GPUS_FULL, BENCHMARKS)
+    expect(rows.map((r) => r.m.slug)).toEqual(['mid-33b'])
+  })
+
+  it("'all' mode keeps non-fitting models with fits=false + a needed-config hint", () => {
+    // 8×B200 = 1536 GB; huge 2800B QLoRA ≈ 1904 GB → exceeds even the largest config
+    const rows = selectFinetune(
+      [mid, huge],
+      query({ show: 'all', trainGpu: 'b200', trainCount: 8 }),
+      GPUS_FULL,
+      BENCHMARKS,
+    )
+    expect(rows.map((r) => r.m.slug)).toEqual(['mid-33b', 'huge-2800b']) // fitting first
+    const h = rows.find((r) => r.m.slug === 'huge-2800b')
+    expect(h?.fits).toBe(false)
+    expect(h?.best).toBeNull()
+    expect(h?.neededConfig).toBeNull() // exceeds 8× B200
+    expect(h?.estCostUsd).toBeNull() // no fitting config → no cost
+  })
+
+  it("'all' mode shows a needed config when a bigger rentable one exists", () => {
+    // 70B QLoRA ≈ 47.6 GB — won't fit 1×rtx4090, needs 1× B200
+    const big70 = model({ slug: 'big-70b', params: 70, vramQ4: 42 })
+    const rows = selectFinetune([big70], query({ show: 'all' }), GPUS_FULL, BENCHMARKS)
+    expect(rows[0]?.fits).toBe(false)
+    expect(rows[0]?.neededConfig).toMatchObject({ count: 1, slug: 'b200' })
+    expect(rows[0]?.estCostUsd).not.toBeNull() // priced on the needed config
+  })
+})
+
+describe('MoE cost basis', () => {
+  it('MoE with undisclosed active params → cost null (no 87× overestimate)', () => {
+    const moeNullActive = model({
+      slug: 'moe-null',
+      params: 235,
+      active: null,
+      archClass: 'moe',
+      vramQ4: 133,
+    })
+    const rows = selectFinetune(
+      [moeNullActive],
+      query({ trainGpu: 'h100', trainCount: 2 }),
+      GPUS,
+      BENCHMARKS,
+    )
+    expect(rows).toHaveLength(1)
+    expect(rows[0]?.estCostUsd).toBeNull()
+  })
+
+  it('dense model cost uses total params (active is null for dense)', () => {
+    const dense = model({ slug: 'dense-7b', params: 7, active: null, archClass: 'dense' })
+    const rows = selectFinetune([dense], query({}), GPUS, BENCHMARKS)
+    expect(rows[0]?.estCostUsd).not.toBeNull()
   })
 })
 
 describe('MoE models', () => {
-  const moe = model({ slug: 'moe-235b', params: 235, active: 22, vramQ4: 133 })
+  const moe = model({ slug: 'moe-235b', params: 235, active: 22, archClass: 'moe', vramQ4: 133 })
 
   it('memory uses total params, cost uses active params', () => {
     const rows = selectFinetune(

@@ -2,12 +2,14 @@ import {
   FINETUNE_AXES,
   FINETUNE_AXIS_LABELS,
   FINETUNE_METHOD_LABELS,
+  FINETUNE_METHOD_SHORT,
   FIT_VERDICT_LABELS,
   type FinetuneAxis,
   type FinetuneRow as FinetuneRowData,
   type FitVerdict,
   fmtParams,
   LICENSE_CLASS_LABELS,
+  LICENSE_CLASS_SHORT,
   type LicenseClass,
   type MethodAssessment,
   RECIPE_COST_MULTIPLIER,
@@ -20,7 +22,13 @@ import {
 import { Link } from '@tanstack/react-router'
 import { ChevronDown } from 'lucide-react'
 import { InlineBar } from '#/components/charts/inline-bar'
-import { ModelTag } from '#/components/model-tag'
+
+/** One grid template shared by the header row and every data row so tracks stay aligned.
+ *  Model name is the dominant flex track; every metadata field is its own bounded cell,
+ *  so names are no longer squeezed by inline badges and the VRAM/Quality tracks don't
+ *  over-stretch into whitespace on wide screens. */
+export const FINETUNE_GRID =
+  'grid grid-cols-[22px_minmax(180px,1.9fr)_58px_92px_66px_74px_minmax(116px,0.85fr)_66px_minmax(120px,0.9fr)_18px] items-center gap-2'
 
 /** Train verdict → token color (C8 grades in the design language). */
 const TRAIN_VERDICT_COLOR: Record<TrainVerdict, string> = {
@@ -77,13 +85,47 @@ function TrainVerdictChip({ method, verdict }: { method: string; verdict: TrainV
   )
 }
 
-function LicenseChip({ license }: { license: LicenseClass }) {
+/** Concise license badge for the table cell — full class name in the tooltip. */
+function LicenseBadge({ license }: { license: LicenseClass }) {
   return (
     <span
-      className="whitespace-nowrap rounded-[4px] border border-border px-[7px] py-0.5 font-mono text-[10px]"
+      className="inline-block max-w-full overflow-hidden text-ellipsis whitespace-nowrap rounded-[4px] border border-border px-[6px] py-0.5 font-mono text-[10px]"
       style={{ color: LICENSE_COLOR[license] }}
+      title={`License: ${LICENSE_CLASS_LABELS[license]}`}
     >
-      {LICENSE_CLASS_LABELS[license]}
+      {LICENSE_CLASS_SHORT[license]}
+    </span>
+  )
+}
+
+/** Openness badge — open-weights ("Open") vs open-source ("Source"), its own column. */
+function WeightsBadge({ openness }: { openness: string }) {
+  const source = openness === 'open-source'
+  return (
+    <span
+      className="whitespace-nowrap rounded-[4px] border border-border px-[6px] py-0.5 font-mono text-[10px] text-open"
+      title={source ? 'Open source (weights + training recipe)' : 'Open weights (downloadable)'}
+    >
+      {source ? 'Source' : 'Open'}
+    </span>
+  )
+}
+
+/** Method badge in the summary row — colored by the fit verdict. */
+function MethodBadge({
+  method,
+  verdict,
+}: {
+  method: MethodAssessment['method']
+  verdict: TrainVerdict
+}) {
+  return (
+    <span
+      className="whitespace-nowrap rounded-[4px] border px-[6px] py-0.5 font-mono text-[10px]"
+      style={{ color: TRAIN_VERDICT_COLOR[verdict], borderColor: 'var(--border)' }}
+      title={`${FINETUNE_METHOD_LABELS[method]} — ${TRAIN_VERDICT_LABELS[verdict]}`}
+    >
+      {FINETUNE_METHOD_SHORT[method]}
     </span>
   )
 }
@@ -125,10 +167,28 @@ export function FinetuneRow({
   expanded: boolean
   onToggle: () => void
 }) {
-  const { m, best, methods, cost, license, axes, inferFit, score, coverage } = row
+  const {
+    m,
+    best,
+    lightest,
+    fits,
+    neededConfig,
+    methods,
+    cost,
+    license,
+    axes,
+    inferFit,
+    score,
+    coverage,
+  } = row
   const regionId = `finetune-why-${m.slug}`
-  const ratio = best ? best.requiredGb / capacityGb : 0
+  // Non-fitting rows (only present in "All" mode) display the lightest method's need.
+  const shown = best ?? lightest
+  const ratio = shown.requiredGb / capacityGb
   const detailAxes = selectedAxes.length > 0 ? selectedAxes : FINETUNE_AXES
+  const neededLabel = neededConfig
+    ? `needs ${neededConfig.count}× ${neededConfig.name}`
+    : 'exceeds 8× B200'
 
   return (
     <div className="border-b border-border">
@@ -137,35 +197,40 @@ export function FinetuneRow({
         onClick={onToggle}
         aria-expanded={expanded}
         aria-controls={regionId}
-        className="grid w-full cursor-pointer grid-cols-[28px_minmax(200px,1.6fr)_70px_80px_minmax(150px,1fr)_80px_minmax(140px,1fr)_24px] items-center gap-2 px-3.5 py-[7px] text-left text-[12.5px] hover:bg-hover"
+        className={`${FINETUNE_GRID} w-full cursor-pointer px-3.5 py-[7px] text-left text-[12.5px] hover:bg-hover ${fits ? '' : 'opacity-70'}`}
         data-testid="finetune-row"
       >
         <span className="font-mono text-[10.5px] text-dim">{rank}</span>
-        <span className="flex min-w-0 items-baseline gap-[7px]">
-          <span className="overflow-hidden text-ellipsis whitespace-nowrap font-semibold text-text">
-            {m.name}
-          </span>
-          <ModelTag open={m.open} />
-          <LicenseChip license={license} />
+        <span
+          className="overflow-hidden text-ellipsis whitespace-nowrap font-semibold text-text"
+          title={m.name}
+        >
+          {m.name}
+        </span>
+        <span className="min-w-0">
+          <WeightsBadge openness={m.openness} />
+        </span>
+        <span className="min-w-0">
+          <LicenseBadge license={license} />
         </span>
         <span className="text-right font-mono text-[11px] text-mut">
           {fmtParams(m.params, m.active)}
         </span>
-        <span
-          className="font-mono text-[10.5px]"
-          style={{ color: best ? TRAIN_VERDICT_COLOR[best.verdict] : 'var(--dim)' }}
-        >
-          {best ? FINETUNE_METHOD_LABELS[best.method] : '—'}
+        <span className="min-w-0">
+          <MethodBadge method={shown.method} verdict={fits ? shown.verdict : 'wont-fit'} />
         </span>
-        <span className="flex items-center gap-2" title={`ratio ${(ratio * 100).toFixed(0)}%`}>
+        <span
+          className="flex items-center gap-2"
+          title={fits ? `ratio ${(ratio * 100).toFixed(0)}%` : neededLabel}
+        >
           <InlineBar
             pct={Math.min(100, Math.round(ratio * 100))}
-            color={best ? TRAIN_VERDICT_COLOR[best.verdict] : undefined}
+            color={fits ? TRAIN_VERDICT_COLOR[shown.verdict] : 'var(--dim)'}
             height={5}
             className="flex-1"
           />
           <span className="whitespace-nowrap font-mono text-[10.5px] text-mut">
-            {best ? `${fmtGb(best.requiredGb)} / ${capacityGb} GB` : '—'}
+            {fits ? `${fmtGb(shown.requiredGb)} / ${capacityGb} GB` : neededLabel}
           </span>
         </span>
         <span className="text-right font-mono text-[11px]">
@@ -223,6 +288,17 @@ export function FinetuneRow({
             <div className="mb-2 font-mono text-[9.5px] uppercase tracking-[0.07em] text-dim">
               Training fit · {TRAIN_RECIPE_LABELS[recipe]} on {capacityGb} GB
             </div>
+            {!fits && (
+              <div
+                className="mb-2 text-[11px] leading-[1.45] text-mut"
+                data-testid="finetune-neededconfig"
+              >
+                Too large for the chosen hardware —{' '}
+                {neededConfig
+                  ? `the lightest method (QLoRA) needs ${neededConfig.count}× ${neededConfig.name}.`
+                  : 'exceeds even 8× B200, the largest curated config.'}
+              </div>
+            )}
             <div className="flex flex-col gap-1.5">
               {methods.map((a) => (
                 <div key={a.method} className="flex flex-wrap items-center gap-2">
@@ -309,7 +385,7 @@ export function FinetuneRow({
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            <LicenseChip license={license} />
+            <LicenseBadge license={license} />
             <span className="min-w-0 flex-1 truncate text-[10.5px] text-dim" title={m.license}>
               {m.license}
             </span>

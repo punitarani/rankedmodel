@@ -80,3 +80,25 @@ e2e in `apps/web/e2e/finetune.spec.ts`; methodology section documents C8 for rea
 6. **Model-detail "Fine-tune it" card** — per-method VRAM, smallest fitting curated GPU
    config, QLoRA cost estimate, license class, deep link to /finetune.
 7. Copy: the best-fitting method chip reads "max fidelity", not "recommended".
+
+## QA round (2026-07-19 — 16-finding adversarial audit)
+
+A 10-agent audit (5 dimension finders → adversarial verification) surfaced 16 confirmed
+issues; all fixed:
+
+1. **Big-model visibility (high)** — the feasibility gate hid 39% of trainable models at
+   default hardware (everything above ~34B) with no discovery path. Added a **`show: fits|all`**
+   toggle (mirrors `/hardware`): "all" keeps non-fitting models with a won't-fit verdict and a
+   "needs N× GPU / exceeds 8× B200" hint. The inference-fit exclusion also relaxes to a soft
+   verdict in "all" mode so big models don't re-vanish. Kimi K3 (2800B) is now findable.
+2. **MoE cost basis** — FLOPs key on `archClass==='moe' ? active : total`; a MoE with
+   undisclosed active (Kimi K3) shows cost "—" rather than an ~87×-inflated total-param figure.
+3. **`smallestTrainConfig` over non-Mac GPUs** (moved to shared) — one fix for three findings:
+   the "no rental estimate" fallback, single-Mac recommendations over datacenter GPUs, and the
+   Mac usable-VRAM label ambiguity. A config suggestion is now always rentable and comparable.
+4. **Recipe multipliers** DPO ×2→×2.5 (reference forward), RL ×4→×8 (representative G≈8).
+5. **Table redesign** — model name gets its own dominant flex track (no inline-badge
+   truncation, `title` for overflow); openness + concise license are separate badge columns;
+   method is a badge; shared `FINETUNE_GRID` keeps header/rows aligned; bounded VRAM/Quality
+   tracks remove wide-screen whitespace.
+6. **`trainRequiredGb` helper** removes the model-detail card's bogus `capacityGb=1` verdict trap.

@@ -43,6 +43,13 @@ export const FINETUNE_METHOD_LABELS: Record<TrainMethod, string> = {
   full: 'Full fine-tune',
 }
 
+/** One-word method labels for dense table badges. */
+export const FINETUNE_METHOD_SHORT: Record<TrainMethod, string> = {
+  qlora: 'QLoRA',
+  lora: 'LoRA',
+  full: 'Full',
+}
+
 /** Fidelity order for picking the best feasible method — distinct from display order. */
 export const TRAIN_METHOD_FIDELITY = ['full', 'lora', 'qlora'] as const
 
@@ -86,10 +93,13 @@ export const TOKENS_PER_SAMPLE = 1024
 /** Standard instruction-tuning epoch count. */
 export const TRAIN_EPOCHS = 3
 /**
- * Recipe compute multipliers (rough, documented): DPO forwards chosen+rejected pairs
- * (~2× tokens); GRPO-style RL is rollout-generation-dominated (~4× the SFT compute).
+ * Recipe compute multipliers over SFT (rough, documented). DPO forwards the chosen +
+ * rejected pair through both the policy (train) and the frozen reference (forward-only),
+ * ≈2.5× SFT. GRPO-style RL is rollout-generation-dominated: with a representative G≈8
+ * sampled completions per prompt (generation ≈2 FLOPs/param/token + training ≈6), total
+ * ≈8× SFT. These are order-of-magnitude estimates surfaced as such in the UI.
  */
-export const RECIPE_COST_MULTIPLIER: Record<TrainRecipe, number> = { sft: 1, dpo: 2, rl: 4 }
+export const RECIPE_COST_MULTIPLIER: Record<TrainRecipe, number> = { sft: 1, dpo: 2.5, rl: 8 }
 
 export interface TrainMemoryParts {
   weightsGb: number
@@ -191,6 +201,46 @@ export function assessTrainMethods(
   recipe: TrainRecipe = 'sft',
 ): MethodAssessment[] {
   return TRAIN_METHODS.map((method) => assessTrainMethod(method, paramsB, capacityGb, recipe))
+}
+
+/** Required VRAM for a method × recipe without a capacity/verdict — the honest way to
+ *  ask "how much does this need?" (avoids passing a placeholder capacity just to read GB). */
+export function trainRequiredGb(
+  method: TrainMethod,
+  paramsB: number,
+  recipe: TrainRecipe = 'sft',
+): number {
+  return sumParts(trainMemoryParts(method, paramsB, recipe))
+}
+
+export interface TrainConfig {
+  count: number
+  slug: string
+  name: string
+  vramGb: number
+}
+
+/**
+ * Smallest curated **rentable** GPU config (count × profile) whose aggregate capacity
+ * covers `requiredGb`: fewest GPUs first, then smallest card. Apple/Mac profiles are
+ * excluded — a datacenter/consumer config is universally rentable, comparable, and the
+ * realistic target for a training suggestion (Mac unified-memory training is a niche the
+ * user selects explicitly as their own hardware, not something to recommend). Null =
+ * beyond 8× the largest curated card.
+ */
+export function smallestTrainConfig(
+  requiredGb: number,
+  gpus: readonly { slug: string; name?: string; vramGb: number; kind?: string }[],
+): TrainConfig | null {
+  const byVram = gpus.filter((g) => g.kind !== 'mac').sort((a, b) => a.vramGb - b.vramGb)
+  for (const count of [1, 2, 4, 8]) {
+    for (const g of byVram) {
+      if (requiredGb <= count * g.vramGb) {
+        return { count, slug: g.slug, name: g.name ?? g.slug, vramGb: g.vramGb }
+      }
+    }
+  }
+  return null
 }
 
 export interface GpuTrainEcon {

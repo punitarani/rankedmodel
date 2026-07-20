@@ -6,7 +6,7 @@ test.describe('fine-tune selector', () => {
     await gotoHydrated(page, '/finetune')
     await expect(page).toHaveURL(/\/finetune$/)
     await expect(page.getByTestId('finetune-count')).toHaveText(
-      /^\d+ trainable · of \d+ open models$/,
+      /^\d+ fit your hardware · of \d+ trainable$/,
     )
     // rank-eligible models lead (D20 order); the default RTX 4090 keeps QLoRA-able mid-sizers
     await expect(page.getByTestId('finetune-row').first()).toContainText('Qwen3.6-27B')
@@ -33,7 +33,7 @@ test.describe('fine-tune selector', () => {
   test('bigger training hardware unlocks bigger models', async ({ page }) => {
     // 70B QLoRA needs 47.6 GB — over a single 4090's 24 GB, so the model is absent…
     await gotoHydrated(page, '/finetune?q=llama 3.3')
-    await expect(page.getByTestId('finetune-count')).toHaveText(/^0 trainable/)
+    await expect(page.getByTestId('finetune-count')).toHaveText(/^0 fit your hardware/)
     // …but 4×H100 (320 GB) admits it, with LoRA (149.1 GB) as the best feasible method
     await pickOption(page, 'finetune-tgpu', 'H100 80GB')
     await page.getByRole('button', { name: '4×' }).click()
@@ -48,8 +48,9 @@ test.describe('fine-tune selector', () => {
   test('method constraint: full fine-tune on 24 GB leaves only tiny models', async ({ page }) => {
     await gotoHydrated(page, '/finetune?method=full')
     // 16 bytes/param + activations: only ~1.3B models fit a single 24 GB card
-    await expect(page.getByTestId('finetune-count')).toHaveText(/^4 trainable/)
-    await expect(page.getByTestId('finetune-row').first()).toContainText('Full fine-tune')
+    await expect(page.getByTestId('finetune-count')).toHaveText(/^4 fit your hardware/)
+    // method is a badge showing the short label ("Full"); the full name is in the breakdown
+    await expect(page.getByTestId('finetune-row').first()).toContainText('Full')
     await expect(page.getByTestId('finetune-row').filter({ hasText: 'Qwen3.6-27B' })).toHaveCount(0)
   })
 
@@ -112,24 +113,43 @@ test.describe('fine-tune selector', () => {
   test('effort/mode variants collapse to one row per checkpoint', async ({ page }) => {
     // gpt-oss-120b ships High/Medium/Low effort tiers of the same weights — one row here
     await gotoHydrated(page, '/finetune?tgpu=h100&tn=4&q=gpt-oss-120b')
-    await expect(page.getByTestId('finetune-count')).toHaveText(/^1 trainable/)
+    await expect(page.getByTestId('finetune-count')).toHaveText(/^1 fit your hardware/)
   })
 
   test('RL recipe adds rollout memory and offers the SFT relax hint', async ({ page }) => {
     // EXAONE 4.5 (33B): QLoRA SFT is tight on 24 GB; RL's +3.3 GB rollouts push it off
     await gotoHydrated(page, '/finetune?recipe=rl&q=exaone 4.5')
-    await expect(page.getByTestId('finetune-count')).toHaveText(/^0 trainable/)
+    await expect(page.getByTestId('finetune-count')).toHaveText(/^0 fit your hardware/)
     const hint = page.getByTestId('finetune-relax').filter({ hasText: 'Use plain SFT instead' })
     await hint.click()
     await expect(page).not.toHaveURL(/recipe=/)
-    await expect(page.getByTestId('finetune-count')).toHaveText(/^1 trainable/)
+    await expect(page.getByTestId('finetune-count')).toHaveText(/^1 fit your hardware/)
   })
 
   test('context-window floor filters on ctxK', async ({ page }) => {
     await gotoHydrated(page, '/finetune')
     await pickOption(page, 'finetune-ctx', '≥ 1M tokens')
     await expect(page).toHaveURL(/ctx=1000/)
-    await expect(page.getByTestId('finetune-count')).toHaveText(/^2 trainable/)
+    await expect(page.getByTestId('finetune-count')).toHaveText(/^2 fit your hardware/)
+  })
+
+  test('All mode surfaces non-fitting big models with a won’t-fit verdict', async ({ page }) => {
+    // Kimi K3 (2800B) can't train on any curated config — hidden by default (Fits mode)…
+    await gotoHydrated(page, '/finetune?q=Kimi K3')
+    await expect(page.getByTestId('finetune-count')).toHaveText(/^0 fit your hardware/)
+    // …flip to All and it becomes discoverable as a non-fitting row
+    await page.getByRole('button', { name: 'All', exact: true }).click()
+    await expect(page).toHaveURL(/show=all/)
+    const row = page.getByTestId('finetune-row').filter({ hasText: 'Kimi K3' })
+    await expect(row).toHaveCount(1)
+    await expect(row).toContainText('exceeds 8× B200')
+  })
+
+  test('results table has separate Weights and concise License columns', async ({ page }) => {
+    await gotoHydrated(page, '/finetune?lic=research')
+    const row = page.getByTestId('finetune-row').filter({ hasText: 'EXAONE 4.5' }).first()
+    await expect(row).toContainText('Open') // weights badge, its own column
+    await expect(row).toContainText('Research') // concise license badge (not "Research only")
   })
 
   test('model detail shows the fine-tune card for open weights only', async ({ page }) => {

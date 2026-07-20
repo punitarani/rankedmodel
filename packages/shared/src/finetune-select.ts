@@ -5,7 +5,9 @@ import {
   type DatasetPresetId,
   estimateTrainCost,
   type MethodAssessment,
+  smallestTrainConfig,
   TRAIN_METHOD_FIDELITY,
+  type TrainConfig,
   type TrainCost,
   type TrainMethod,
   type TrainRecipe,
@@ -13,7 +15,6 @@ import {
 import { assessFit, type FitVerdict, type SizeClass, sizeClass } from './hardware-fit'
 import { LICENSE_CLASS_ORDER, type LicenseClass, licenseClass } from './license-class'
 import { type BenchmarkBounds, type BenchScores, normalizeScore, toIndexScale } from './scoring'
-import type { GpuBudget } from './selectors'
 import type { SnapshotModel } from './snapshot'
 
 /**
@@ -128,14 +129,32 @@ export interface FinetuneQuery {
   /** Organization slug, or 'all'. */
   org: string
   modalities: ('vision' | 'audio' | 'video')[]
+  /** 'fits' hides models too big for the chosen hardware; 'all' keeps them as won't-fit. */
+  show: 'fits' | 'all'
   sort: FinetuneSort
+}
+
+/** GPU profile the selector needs — a superset of GpuBudget carrying name+kind for
+ *  the "smallest config that would fit" hint. SnapshotGpu is structurally assignable. */
+export interface GpuProfile {
+  slug: string
+  vramGb: number
+  name?: string
+  kind?: string
 }
 
 export interface FinetuneRow {
   m: SnapshotModel
   license: LicenseClass
-  /** The method the ranking recommends — highest-fidelity fitting one under 'any'. */
+  /** The highest-fidelity method that FITS the chosen hardware; null when none fit. */
   best: MethodAssessment | null
+  /** The lightest method (QLoRA) at the chosen capacity — the fallback to display and
+   *  size the "needs a bigger config" hint on non-fitting rows. */
+  lightest: MethodAssessment
+  /** Whether any method fits the chosen hardware (drives won't-fit styling). */
+  fits: boolean
+  /** Smallest rentable config that WOULD fit (non-fitting rows only); null = exceeds 8×. */
+  neededConfig: TrainConfig | null
   /** Always all three methods in display order, for the breakdown. */
   methods: MethodAssessment[]
   estCostUsd: number | null
@@ -147,6 +166,12 @@ export interface FinetuneRow {
   axes: Record<FinetuneAxis, number | null>
   /** Q4 inference verdict on the chosen inference GPU; null when the check is off. */
   inferFit: FitVerdict | null
+}
+
+/** FLOPs basis for cost: MoE bills only routed (active) experts; dense bills total.
+ *  Null = MoE with an undisclosed active count → cost is not estimable (show "—"). */
+function flopsParams(m: SnapshotModel): number | null {
+  return m.archClass === 'moe' ? m.active : m.params
 }
 
 function bestMethod(
@@ -189,7 +214,7 @@ function byNullableDesc(a: number | null, b: number | null): number {
 export function selectFinetune(
   models: SnapshotModel[],
   query: FinetuneQuery,
-  gpus: GpuBudget[],
+  gpus: GpuProfile[],
   benchmarks: BenchmarkBounds[],
 ): FinetuneRow[] {
   const trainGpu = gpus.find((g) => g.slug === query.trainGpu)
@@ -223,8 +248,18 @@ export function selectFinetune(
     if (!query.modalities.every((mod) => m.modalities.includes(mod))) continue
 
     const methods = assessTrainMethods(m.params, capacityGb, query.recipe)
+    const lightest = methods.find((a) => a.method === 'qlora') as MethodAssessment
     const best = bestMethod(methods, query.method)
-    if (!best || best.verdict === 'wont-fit') continue
+    const fits = best != null && best.verdict !== 'wont-fit'
+    // 'fits' mode hides models too big for the chosen hardware; 'all' keeps them
+    // visible with a won't-fit verdict + a "needs a bigger config" hint (discovery).
+    if (!fits && query.show !== 'all') continue
+    // Sizing the hint to the method the user would use: their forced method, else QLoRA.
+    const reference =
+      query.method === 'any'
+        ? lightest
+        : (methods.find((a) => a.method === query.method) ?? lightest)
+    const neededConfig = fits ? null : smallestTrainConfig(reference.requiredGb, gpus)
 
     let inferFit: FitVerdict | null = null
     if (inferGpu) {
@@ -233,33 +268,64 @@ export function selectFinetune(
         inferGpu.vramGb,
       )
       // Open + params known ⇒ assessFit never returns null here. Offload is degraded,
-      // not impossible (hardware-page semantics) — only a hard won't-run excludes.
-      if (fit == null || fit.verdict === 'wont-run') continue
-      inferFit = fit.verdict
+      // not impossible (hardware-page semantics). In 'fits' mode a hard won't-run excludes;
+      // in 'all' mode (discovery) we keep the row and just record the verdict, so big models
+      // that fit training but not single-GPU inference stay visible.
+      if (fit == null) {
+        if (query.show !== 'all') continue
+      } else {
+        inferFit = fit.verdict
+        if (fit.verdict === 'wont-run' && query.show !== 'all') continue
+      }
     }
 
-    const cost = estimateTrainCost(
-      m.active ?? m.params,
-      preset.tokens,
-      query.trainGpu,
-      query.recipe,
-    )
+    // Cost bills MoE active experts (dense: total); a MoE with undisclosed active → "—".
+    // Non-fitting rows price on the smallest config that WOULD fit (the chosen GPU can't
+    // hold the model, so its cost would be meaningless); fitting rows price on the choice.
+    const fp = flopsParams(m)
+    const costGpu = fits ? query.trainGpu : neededConfig?.slug
+    const cost =
+      fp != null && costGpu != null
+        ? estimateTrainCost(fp, preset.tokens, costGpu, query.recipe)
+        : null
     const estCostUsd = cost?.usd ?? null
-    // Unknown cost (Mac training) is not "over budget" — the row shows "—" instead.
-    if (query.budgetUsd != null && estCostUsd != null && estCostUsd > query.budgetUsd) continue
+    // Budget applies to fitting rows only; a won't-fit row is excluded by memory, not price.
+    // Unknown cost (Mac / undisclosed active) is not "over budget" — the row shows "—".
+    if (fits && query.budgetUsd != null && estCostUsd != null && estCostUsd > query.budgetUsd) {
+      continue
+    }
 
     const axes = finetuneAxes(m, benchmarks)
     const { score, coverage } = axisScore(axes, query.axes)
-    rows.push({ m, license, best, methods, estCostUsd, cost, score, coverage, axes, inferFit })
+    rows.push({
+      m,
+      license,
+      best,
+      lightest,
+      fits,
+      neededConfig,
+      methods,
+      estCostUsd,
+      cost,
+      score,
+      coverage,
+      axes,
+      inferFit,
+    })
   }
 
   return rows.sort((a, b) => {
     const tie = () => a.m.slug.localeCompare(b.m.slug)
+    // Fitting models always rank above non-fitting ones (only relevant in 'all' mode).
+    if (a.fits !== b.fits) return a.fits ? -1 : 1
     switch (query.sort) {
       case 'cost':
         return byNullableAsc(a.estCostUsd, b.estCostUsd) || tie()
       case 'vram':
-        return byNullableAsc(a.best?.requiredGb ?? null, b.best?.requiredGb ?? null) || tie()
+        return (
+          byNullableAsc((a.best ?? a.lightest).requiredGb, (b.best ?? b.lightest).requiredGb) ||
+          tie()
+        )
       case 'params':
         return (b.m.params ?? 0) - (a.m.params ?? 0) || tie()
       case 'date':

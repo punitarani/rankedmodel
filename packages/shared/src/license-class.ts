@@ -25,6 +25,14 @@ export const LICENSE_CLASS_LABELS: Record<LicenseClass, string> = {
   proprietary: 'Proprietary',
 }
 
+/** One-word labels for dense table cells / badges. */
+export const LICENSE_CLASS_SHORT: Record<LicenseClass, string> = {
+  permissive: 'Permissive',
+  conditional: 'Conditional',
+  'research-only': 'Research',
+  proprietary: 'Proprietary',
+}
+
 /** Freedom order for the "at most this restrictive" filter (proprietary is never offered). */
 export const LICENSE_CLASS_ORDER = ['permissive', 'conditional', 'research-only'] as const
 

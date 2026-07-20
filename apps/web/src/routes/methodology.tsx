@@ -141,9 +141,11 @@ anchors: QLoRA 33B → 22.8 GB (24 GB card) · 65B → 44.2 GB (48 GB) · full 7
         estimate: there is no comparable rental market for unified-memory training.
       </P>
       <Formula>{`tokens    = samples × 1024 tok/sample × 3 epochs
-compute   = 6e9 × params(B) × tokens × recipe multiplier (SFT ×1 · DPO ×2 · RL ×4)
+compute   = 6e9 × params(B) × tokens × recipe multiplier (SFT ×1 · DPO ×2.5 · RL ×8)
+            DPO adds the reference forward pass; RL ×8 assumes ~8 GRPO rollouts per prompt
 GPU-hours = compute / (peak bf16 TFLOPS × 0.35 MFU × 3600)
-cost      = GPU-hours × typical $/hr   (H100 $2.50 · A100 $1.50 · RTX 4090 $0.40 …)`}</Formula>
+cost      = GPU-hours × typical $/hr   (H100 $2.50 · A100 $1.50 · RTX 4090 $0.40 …)
+            MoE bills only active (routed) experts; an undisclosed active count shows "—"`}</Formula>
       <P>
         Licenses are classified from the curated license string into three classes — permissive
         (Apache/MIT/BSD-family), conditional / custom (community licenses and anything with its own
@@ -161,6 +163,16 @@ cost      = GPU-hours × typical $/hr   (H100 $2.50 · A100 $1.50 · RTX 4090 $0
         single score is (the same anti-cherry-picking principle as ranking eligibility). And
         reasoning-effort/mode variants of the same weights (thinking / non-thinking) are collapsed
         to one row per checkpoint: you fine-tune a weight artifact, not an inference setting.
+      </P>
+      <P>
+        Discovery: by default the list shows only models that fit your chosen training hardware. The{' '}
+        <strong>Show: All</strong> toggle additionally surfaces models too large for it, marked
+        “won’t fit” with the smallest rentable config that would work (e.g. a 405B model needs 2×
+        B200) — so a huge model like Kimi K3 is findable and its requirement legible rather than
+        silently missing. The “smallest config” suggestions are datacenter/consumer multi-GPU
+        setups, since those are universally rentable and comparable; Apple-silicon unified-memory
+        training is supported when you pick it as your own hardware but is never recommended as a
+        config.
       </P>
 
       <H2>Versioned snapshots</H2>

@@ -11,7 +11,8 @@ import { Link } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
 import { FilterSelect } from '#/components/filter-select'
 import { FinetuneRail } from '#/components/finetune/finetune-rail'
-import { FinetuneRow } from '#/components/finetune/finetune-row'
+import { FINETUNE_GRID, FinetuneRow } from '#/components/finetune/finetune-row'
+import { Segmented } from '#/components/segmented'
 import { catalogQueryOptions } from '#/lib/catalog'
 import { type FinetuneSearch, TASK_CODES, type TaskCode } from '#/lib/search'
 
@@ -39,6 +40,7 @@ function buildFinetuneQuery(search: FinetuneSearch): FinetuneQuery {
     modalities: search.mod
       .split(',')
       .filter((m): m is 'vision' | 'audio' | 'video' => ['vision', 'audio', 'video'].includes(m)),
+    show: search.show,
     sort: search.sort,
   }
 }
@@ -111,6 +113,7 @@ export function FinetuneScreen({
       .filter((c) => c.count > 0)
   }, [rows.length, search, data.models, data.gpus, data.benchmarks])
 
+  const fitCount = useMemo(() => rows.filter((r) => r.fits).length, [rows])
   const trainGpu = data.gpus.find((g) => g.slug === search.tgpu)
   const trainCount = search.tn
   const capacityGb = (trainGpu?.vramGb ?? 0) * trainCount
@@ -142,38 +145,63 @@ export function FinetuneScreen({
           </div>
         </div>
 
-        <div className="mt-3.5 mb-[13px] flex items-baseline gap-2.5">
+        <div className="mt-3.5 mb-[13px] flex flex-wrap items-baseline gap-2.5">
           <div className="text-sm font-semibold" data-testid="finetune-count">
-            {rows.length} trainable · of {openCount} open models
+            {search.show === 'all' ? (
+              <>
+                {fitCount} fit · {rows.length} shown · of {openCount} trainable
+              </>
+            ) : (
+              <>
+                {rows.length} fit your hardware · of {openCount} trainable
+              </>
+            )}
           </div>
-          <div className="ml-auto flex items-center gap-[7px] text-[11.5px] text-mut">
-            Sort
-            <FilterSelect
-              value={search.sort}
-              onValueChange={(sort) => navigateSearch({ sort: sort as FinetuneSearch['sort'] })}
-              options={[
-                { value: 'best', label: 'Best match' },
-                { value: 'cost', label: 'Cheapest training' },
-                { value: 'vram', label: 'Least VRAM' },
-                { value: 'params', label: 'Largest first' },
-                { value: 'date', label: 'Newest first' },
-              ]}
-              aria-label="Sort models"
-              testid="finetune-sort"
-            />
+          <div className="ml-auto flex items-center gap-3.5 text-[11.5px] text-mut">
+            <span className="flex items-center gap-[7px]">
+              Show
+              <Segmented
+                value={search.show}
+                options={[
+                  { value: 'fits', label: 'Fits' },
+                  { value: 'all', label: 'All' },
+                ]}
+                onChange={(show) => navigateSearch({ show })}
+              />
+            </span>
+            <span className="flex items-center gap-[7px]">
+              Sort
+              <FilterSelect
+                value={search.sort}
+                onValueChange={(sort) => navigateSearch({ sort: sort as FinetuneSearch['sort'] })}
+                options={[
+                  { value: 'best', label: 'Best match' },
+                  { value: 'cost', label: 'Cheapest training' },
+                  { value: 'vram', label: 'Least VRAM' },
+                  { value: 'params', label: 'Largest first' },
+                  { value: 'date', label: 'Newest first' },
+                ]}
+                aria-label="Sort models"
+                testid="finetune-sort"
+              />
+            </span>
           </div>
         </div>
 
         {rows.length > 0 ? (
           <div className="overflow-x-auto rounded-[10px] border border-border bg-card">
-            <div style={{ minWidth: 920 }}>
-              <div className="grid grid-cols-[28px_minmax(200px,1.6fr)_70px_80px_minmax(150px,1fr)_80px_minmax(140px,1fr)_24px] items-center gap-2 border-b border-border2 px-3.5 py-[9px] font-mono text-[9.5px] uppercase tracking-[0.05em] text-dim">
+            <div style={{ minWidth: 960 }}>
+              <div
+                className={`${FINETUNE_GRID} border-b border-border2 px-3.5 py-[9px] font-mono text-[9.5px] uppercase tracking-[0.05em] text-dim`}
+              >
                 <span>#</span>
                 <span>Model</span>
+                <span>Weights</span>
+                <span>License</span>
                 <span className="text-right">Params</span>
                 <span>Method</span>
                 <span>Train VRAM</span>
-                <span className="text-right">Est. cost</span>
+                <span className="text-right">Cost</span>
                 <span>Quality</span>
                 <span />
               </div>

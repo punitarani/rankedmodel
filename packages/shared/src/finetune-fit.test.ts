@@ -5,10 +5,12 @@ import {
   DATASET_PRESETS,
   estimateTrainCost,
   GPU_TRAIN_ECON,
+  smallestTrainConfig,
   TOKENS_PER_SAMPLE,
   TRAIN_EPOCHS,
   TRAIN_METHODS,
   trainMemoryParts,
+  trainRequiredGb,
   trainVerdict,
 } from './finetune-fit'
 
@@ -118,6 +120,32 @@ describe('recipes (DPO/RL memory terms)', () => {
   })
 })
 
+describe('smallestTrainConfig + trainRequiredGb helpers', () => {
+  const GPUS = [
+    { slug: 'rtx4090', name: 'RTX 4090 24GB', vramGb: 24, kind: 'consumer' },
+    { slug: 'a100', name: 'A100 80GB', vramGb: 80, kind: 'datacenter' },
+    { slug: 'b200', name: 'B200 192GB', vramGb: 192, kind: 'datacenter' },
+    { slug: 'm3ultra', name: 'M3 Ultra 512GB', vramGb: 384, kind: 'mac' },
+  ]
+
+  it('trainRequiredGb matches assessTrainMethod without a capacity', () => {
+    expect(trainRequiredGb('qlora', 33)).toBeCloseTo(22.79, 10)
+    expect(trainRequiredGb('full', 7)).toBeCloseTo(114, 10)
+    expect(trainRequiredGb('full', 7, 'dpo')).toBeCloseTo(128, 10)
+  })
+
+  it('picks the smallest non-Mac config; never recommends a Mac', () => {
+    expect(smallestTrainConfig(34, GPUS)).toMatchObject({ count: 1, slug: 'a100' })
+    expect(smallestTrainConfig(6, GPUS)).toMatchObject({ count: 1, slug: 'rtx4090' })
+    // 275 GB (405B QLoRA): single b200 192 too small → 2× B200, NOT the 384 GB Mac
+    expect(smallestTrainConfig(275, GPUS)).toMatchObject({ count: 2, slug: 'b200' })
+  })
+
+  it('returns null beyond 8× the largest non-Mac card', () => {
+    expect(smallestTrainConfig(8 * 192 + 1, GPUS)).toBeNull() // 1537 GB > 8×B200
+  })
+})
+
 describe('estimateTrainCost (C8 cost model)', () => {
   it('7B on the 10k preset with one RTX 4090 ≈ 6.2 GPU-h, ≈ $2.48', () => {
     const preset = DATASET_PRESETS.find((p) => p.id === '10k')
@@ -142,12 +170,12 @@ describe('estimateTrainCost (C8 cost model)', () => {
     expect(DATASET_PRESETS.find((p) => p.id === '10k')?.tokens).toBe(30_720_000)
   })
 
-  it('recipe multipliers scale compute: DPO ×2, RL ×4', () => {
+  it('recipe multipliers scale compute: DPO ×2.5, RL ×8', () => {
     const sft = estimateTrainCost(7, 30_720_000, 'rtx4090', 'sft')
     const dpo = estimateTrainCost(7, 30_720_000, 'rtx4090', 'dpo')
     const rl = estimateTrainCost(7, 30_720_000, 'rtx4090', 'rl')
-    expect(dpo?.gpuHours).toBeCloseTo((sft?.gpuHours ?? 0) * 2, 6)
-    expect(rl?.usd).toBeCloseTo((sft?.usd ?? 0) * 4, 6)
+    expect(dpo?.gpuHours).toBeCloseTo((sft?.gpuHours ?? 0) * 2.5, 6)
+    expect(rl?.usd).toBeCloseTo((sft?.usd ?? 0) * 8, 6)
   })
 
   it('econ table covers exactly the 12 curated hardware profiles', () => {

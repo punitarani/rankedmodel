@@ -169,6 +169,8 @@ export const finetuneSearchSchema = z.object({
     .regex(/^(vision|audio|video)(,(vision|audio|video))*$/)
     .default('')
     .catch(''),
+  /** 'fits' hides models too big for the chosen hardware; 'all' shows them as won't-fit. */
+  show: z.enum(['fits', 'all']).default('fits').catch('fits'),
   sort: z.enum(['best', 'cost', 'vram', 'params', 'date']).default('best').catch('best'),
 })
 
@@ -188,6 +190,7 @@ export const FINETUNE_SEARCH_DEFAULTS = {
   arch: 'any',
   org: 'all',
   mod: '',
+  show: 'fits',
   sort: 'best',
 } as const
 
