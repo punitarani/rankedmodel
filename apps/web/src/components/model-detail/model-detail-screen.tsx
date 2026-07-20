@@ -1,13 +1,21 @@
 import {
+  assessTrainMethod,
   CAPABILITY_LABELS,
   CATEGORY_LABELS,
   type CapabilityKey,
   type CatalogSnapshot,
+  DATASET_PRESETS,
+  estimateTrainCost,
+  FINETUNE_METHOD_LABELS,
   fmtCtx,
   fmtDate,
   fmtPrice,
   fmtScore,
+  LICENSE_CLASS_LABELS,
+  licenseClass,
+  type SnapshotGpu,
   type SnapshotModel,
+  TRAIN_METHODS,
 } from '@modelbeats/shared'
 import { Link, useNavigate } from '@tanstack/react-router'
 import { Check, X } from 'lucide-react'
@@ -38,6 +46,25 @@ const Card = ({
 const MicroLabel = ({ children }: { children: React.ReactNode }) => (
   <div className="font-mono text-[9.5px] uppercase tracking-[0.06em] text-dim">{children}</div>
 )
+
+/**
+ * Smallest curated GPU config (count × profile) whose capacity covers the requirement —
+ * minimal count first, then smallest card; Macs are single-device only (no multi-GPU
+ * unified memory). Null = beyond 8× of the largest curated profile.
+ */
+function minTrainConfig(
+  requiredGb: number,
+  gpus: SnapshotGpu[],
+): { count: number; gpu: SnapshotGpu } | null {
+  const byVram = [...gpus].sort((a, b) => a.vramGb - b.vramGb)
+  for (const count of [1, 2, 4, 8]) {
+    for (const g of byVram) {
+      if (count > 1 && g.kind === 'mac') continue
+      if (requiredGb <= count * g.vramGb) return { count, gpu: g }
+    }
+  }
+  return null
+}
 
 export function ModelDetailScreen({
   model,
@@ -326,6 +353,72 @@ export function ModelDetailScreen({
               </>
             )}
           </Card>
+
+          {/* fine-tune it (open weights with known size only) */}
+          {model.open && model.params != null && (
+            <Card className="px-4 py-3.5" data-testid="finetune-card">
+              <div className="flex items-baseline gap-2">
+                <div className="text-[13px] font-semibold">Fine-tune it</div>
+                <span className="rounded-[4px] border border-border px-[7px] py-0.5 font-mono text-[10px] text-mut">
+                  {LICENSE_CLASS_LABELS[licenseClass(model.license, model.openness)]}
+                </span>
+              </div>
+              <div className="mt-2 flex flex-col gap-1.5">
+                {TRAIN_METHODS.map((method) => {
+                  const a = assessTrainMethod(method, model.params as number, 1)
+                  const config = minTrainConfig(a.requiredGb, catalog.gpus)
+                  return (
+                    <div
+                      key={method}
+                      className="flex items-baseline gap-2"
+                      data-testid={`ft-method-${method}`}
+                    >
+                      <span className="w-[92px] text-[11.5px] font-semibold">
+                        {FINETUNE_METHOD_LABELS[method]}
+                      </span>
+                      <span className="font-mono text-[11px] text-mut">
+                        {a.requiredGb.toFixed(1)} GB
+                      </span>
+                      <span className="ml-auto text-right font-mono text-[10.5px] text-dim">
+                        {config ? `${config.count}× ${config.gpu.name}` : 'beyond 8× B200'}
+                      </span>
+                    </div>
+                  )
+                })}
+              </div>
+              {(() => {
+                const preset = DATASET_PRESETS[1]
+                const qlora = assessTrainMethod('qlora', model.params as number, 1)
+                const config = minTrainConfig(qlora.requiredGb, catalog.gpus)
+                const cost = config
+                  ? estimateTrainCost(
+                      model.active ?? (model.params as number),
+                      preset.tokens,
+                      config.gpu.slug,
+                    )
+                  : null
+                return (
+                  <div className="mt-2.5 text-[11px] leading-normal text-mut">
+                    {cost
+                      ? `QLoRA SFT on ${preset.label} ≈ $${cost.usd >= 100 ? Math.round(cost.usd) : cost.usd.toFixed(2)} (${config ? `${config.count}× ${config.gpu.name}` : ''})`
+                      : 'No rental cost estimate for the smallest fitting config.'}
+                  </div>
+                )
+              })()}
+              <div className="mt-2">
+                {/* Strip a trailing effort/mode parenthetical ("… (Low)") so the deep link
+                    still matches the deduped default-config row in the selector. */}
+                <Link
+                  to="/finetune"
+                  search={{ q: model.name.replace(/\s*\([^)]*\)\s*$/, '') || model.name }}
+                  className="text-[11.5px]"
+                  data-testid="plan-finetune"
+                >
+                  Plan a fine-tune →
+                </Link>
+              </div>
+            </Card>
+          )}
 
           {/* family */}
           <Card className="px-4 py-3.5">

@@ -31,6 +31,7 @@ test.describe('app shell', () => {
       'Model Explorer': 'lucide-brain-circuit',
       Compare: 'lucide-git-compare-arrows',
       Hardware: 'lucide-memory-stick',
+      'Fine-tune': 'lucide-sliders-horizontal',
       Benchmarks: 'lucide-flask-conical',
       Methodology: 'lucide-book-open-text',
     }

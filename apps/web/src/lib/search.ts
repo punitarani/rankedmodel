@@ -115,6 +115,84 @@ export const EXPLORER_SEARCH_DEFAULTS = {
 
 export type ExplorerSearch = z.infer<typeof explorerSearchSchema>
 
+/** Compact task-axis codes in URLs (C4 `?task=code,docs`) → shared FinetuneAxis. */
+export const TASK_CODES = {
+  agents: 'agents',
+  reason: 'reasoning',
+  code: 'coding',
+  math: 'math',
+  if: 'if', // derived instruction-following axis (IFEval, C8)
+  know: 'knowledge',
+  docs: 'docs', // derived document-understanding axis (C8)
+  vision: 'vision',
+  chat: 'human-preference', // chat quality (arena/preference scores)
+} as const
+export type TaskCode = keyof typeof TASK_CODES
+
+const TASK_CODE_RE =
+  /^(agents|reason|code|math|if|know|docs|vision|chat)(,(agents|reason|code|math|if|know|docs|vision|chat))*$/
+
+export const finetuneSearchSchema = z.object({
+  q: textQueryParam,
+  task: z.string().regex(TASK_CODE_RE).default('').catch(''),
+  tgpu: z.string().max(40).default('rtx4090').catch('rtx4090'),
+  /** GPU count. A NUMBER, not a numeric-string enum: the router's search parser turns
+   *  numeric-looking params into JS numbers on read and JSON-quotes strings that look
+   *  numeric on write (`tn=%224%22`) — numbers round-trip clean (`tn=4`, like `vram=24`). */
+  tn: z
+    .union([z.literal(1), z.literal(2), z.literal(4), z.literal(8)])
+    .default(1)
+    .catch(1),
+  /** 'same' (= training GPU) | 'none' (API/cloud, skip check) | a gpu slug. */
+  igpu: z.string().max(40).default('same').catch('same'),
+  method: z.enum(['any', 'qlora', 'lora', 'full']).default('any').catch('any'),
+  /** Post-training recipe: SFT, DPO (preference), or GRPO-style RL. */
+  recipe: z.enum(['sft', 'dpo', 'rl']).default('sft').catch('sft'),
+  data: z.enum(['1k', '10k', '100k', '1m']).default('10k').catch('10k'),
+  /** Budget cap in USD — numeric for the same round-trip reason as `tn`. */
+  budget: z
+    .union([z.literal('any'), z.literal(50), z.literal(200), z.literal(1000), z.literal(5000)])
+    .default('any')
+    .catch('any'),
+  lic: z.enum(['any', 'permissive', 'conditional', 'research']).default('any').catch('any'),
+  size: sizeParam,
+  /** Minimum context window in K tokens (numeric for clean round-trips, like tn). */
+  ctx: z
+    .union([z.literal('any'), z.literal(32), z.literal(128), z.literal(1000)])
+    .default('any')
+    .catch('any'),
+  /** 'dense' = anything non-MoE (dense/SSM/hybrid); 'moe' = MoE only. */
+  arch: z.enum(['any', 'dense', 'moe']).default('any').catch('any'),
+  org: orgParam,
+  mod: z
+    .string()
+    .regex(/^(vision|audio|video)(,(vision|audio|video))*$/)
+    .default('')
+    .catch(''),
+  sort: z.enum(['best', 'cost', 'vram', 'params', 'date']).default('best').catch('best'),
+})
+
+export const FINETUNE_SEARCH_DEFAULTS = {
+  q: '',
+  task: '',
+  tgpu: 'rtx4090',
+  tn: 1,
+  igpu: 'same',
+  method: 'any',
+  recipe: 'sft',
+  data: '10k',
+  budget: 'any',
+  lic: 'any',
+  size: 'any',
+  ctx: 'any',
+  arch: 'any',
+  org: 'all',
+  mod: '',
+  sort: 'best',
+} as const
+
+export type FinetuneSearch = z.infer<typeof finetuneSearchSchema>
+
 export const hardwareSearchSchema = z.object({
   mode: z.enum(['gpu', 'model']).default('gpu').catch('gpu'),
   gpu: z.string().max(40).default('rtx4090').catch('rtx4090'),

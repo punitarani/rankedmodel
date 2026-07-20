@@ -9,6 +9,7 @@ const TITLES: [prefix: string, title: string][] = [
   ['/models', 'Model Explorer'],
   ['/compare', 'Compare'],
   ['/hardware', 'Hardware'],
+  ['/finetune', 'Fine-tune'],
   ['/benchmarks', 'Benchmarks'],
   ['/methodology', 'Methodology'],
   ['/organizations', 'Organization'],

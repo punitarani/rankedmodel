@@ -31,7 +31,9 @@
 | **D19** | **Real dataset (2026-07-12)**: the synthetic 55-model design-parity seed (`convert-design-data.ts`, all `source=curated`) was fully replaced by a real, provenance-honest corpus — every major LLM release from GPT-3 (2020-06) through mid-2026 (**463 models · 78 orgs · 255 families · 122 benchmarks · 1785 results · 12 GPUs**), researched and adversarially verified, committed as an auditable `corpus/` tree and compiled to `/data` by a deterministic generator (`scripts/src/generate-dataset.ts`, successor to `convert-design-data.ts`). Consequences: (a) **D8 is superseded** — the real `source` values are `self-reported \| independent \| arena` (no `curated`/`admin-run` rows exist yet), each shown via a per-row provenance badge, never collapsed; (b) the 7-category enum and C1 scoring formula are **unchanged** — this was a data change, not an engine change; (c) rankings columns became a curated **CORE** subset (`arena` + one flagship per category) on the default view, with category subpages (`/rankings/$category`) showing every benchmark actually in that category (`apps/web/src/lib/search.ts` `CORE_RANKINGS_SLUGS`) — see the updated C1/C6 notes below; (d) `/rankings` and `/models` gained **TanStack Virtual** (mounted-gate SSR pattern: first paint renders the full list/grid unvirtualized so there's no hydration size mismatch, then the client swaps to a windowed render) since the real catalog no longer fits comfortably unvirtualized; (e) default/comparison slugs (`compare.tsx`, `overview-tab.tsx`, `model-detail-screen.tsx`, `hardware-screen.tsx`) are now catalog-derived (top-by-index, top-open) with a corpus-guaranteed literal only as the static schema fallback — no fictional slugs remain anywhere in app code; (f) a real, sparse-coverage model can legitimately rank #1 overall or leave a dashboard widget (e.g. the open/closed Arena frontier) empty — C1's "missing scores excluded, not penalized" is unchanged, real data just makes the edge case visible. |
 | **D22** | **No runtime database — build-time snapshot bundled into the Worker (2026-07-18).** Removes Cloudflare D1 (+ Drizzle, drizzle-kit, migrations, `packages/db`, the seed pipeline) and Workers KV. Rationale: the dataset is read-only and fully computed at publish time, so a runtime DB earned nothing — the KV snapshot (the real serving artifact) was already built from the `data/**` files, not from D1, and D1's only runtime roles were a version pointer and a rebuild fallback. Now `bun run build-catalog` builds two artifacts straight from `data/**` — the headline `catalog.json` (contract C3) and a per-model `model-details.json` (contract **C3b**: the deep multi-source results / quantizations / throughput / pricing / lineage that were the old `getModel` D1 path) — into `apps/web/src/generated/` (gitignored), bundled into the Worker at `vite build` and read in-memory (zero I/O per request; the model-detail chunk is lazy so non-detail routes don't load it). The snapshot `version` is a **content hash** (positive int): it changes iff the data changes, and keys the immutable `/api/catalog/v{N}.json` URL + `x-data-version`. **Supersedes:** D14 (`packages/db` deleted), D15 (no D1 → no absolute-token conversion; K-tokens flow straight through), D17 (both server fns read bundled JSON; no KV, no D1 fallback), the C3 *storage* clause (built + bundled, not written to KV) and the C7 *invalidation* clause (a deploy ships a new content version — no KV key, nothing to purge). The publish pipeline collapses to `validate → derive → build-catalog`; deploy is `build-catalog → vite build → wrangler deploy` with **nothing to provision**. Unit tests move from the workers-pool/miniflare harness to plain node; the built-Worker path stays covered by Playwright e2e. **What survives unchanged:** the C3 snapshot schema and every `packages/shared` selector / scoring / hardware-fit contract; the derive step and `data/derived/scores.json`; the whole `data/**`-is-the-CMS curation model. |
 
-## Part 2 — Contracts (C1–C7)
+| **D25** | **Fine-tune selector = formula-derived training VRAM & cost (2026-07-19).** New `/finetune` page ranks open-weight models (params known; closed and undisclosed-size excluded) by fit-to-train on a chosen GPU config — training memory and cost are computed from params via contract **C8**, no new curated corpus data (mirrors C2's estimate philosophy; anchored to the QLoRA paper: 33B→24 GB, 65B→48 GB, and full-FT 7B ≈ 114 GB). Task axes = the 7 `categoryIdx` axes + a derived `docs` axis (mean normalized DocVQA/OCRBench/ChartQA/CharXiv from the snapshot's existing `bench` + bounds — client-side, no snapshot change; sparse coverage shows null, never zero). Licenses classified into permissive / conditional / research-only by an ordered keyword table (`license-class.ts`; first match wins, conservative rules first): unknown/custom → conditional ("read the license"), mixed code-vs-weights strings route to the *weights'* class; the license filter is a restriction *threshold* (accepting conditional implies accepting permissive). Score = equal-weight mean over the user's selected axes, missing axes excluded not penalized (C1 precedent); zero-coverage rows keep `score = null` and sort last (D20 philosophy). When no method is forced, the recommended method is the highest-fidelity one that fits (full > LoRA > QLoRA). Mac training: fit computed (MLX-viable), cost = null (no comparable rental market — "unknown cost" passes a budget cap, it is not "over budget"). Cost is method-independent in v1 (6·P·T FLOPs for all methods; MoE uses active params for FLOPs, total for memory). Gotcha captured in `lib/search.ts`: the router's search parser turns numeric-looking params into JS numbers on read AND JSON-quotes numeric-looking strings on write (`tn=%224%22`), so params with numeric values (`tn`, `budget`, `ctx`) are modeled as zod number literals (like `/hardware`'s `vram`) and converted to strings only at the Segmented/Select edges — a numeric-string enum either `.catch()`-resets silently or uglifies the URL. **Revision (same day):** (a) ranking is now **coverage-tiered** — models scored on more of the selected axes always outrank models scored on fewer (the mean-over-available scheme let a single-axis model cherry-pick #1, the exact D20 failure mode); (b) reasoning-effort/mode variants of one checkpoint are **collapsed** to the default config (`isTrainableCheckpoint` — 38 open rows were duplicate thinking/non-thinking modes; you fine-tune weights, not inference settings); (c) a second derived axis **`if` (IFEval instruction following, 128 open models covered)** joins `docs`, and axes are displayed in decision-relevance order (agents → reasoning → coding → math → if → knowledge → docs → vision → chat quality; "Chat / creative" renamed **"Chat quality"** — no creative-writing data exists); (d) **post-training recipes SFT / DPO / RL (GRPO)** extend C8: DPO adds a frozen bf16 reference (+2P, full FT only — LoRA/QLoRA reuse the adapter-off base), RL adds rollout buffers (+max(2, 0.1·P)) and compute multipliers apply (SFT ×1 / DPO ×2 / RL ×4); (e) new filters: min context window, MoE/non-MoE architecture, organization, and vision as a required modality; (f) `/models/$slug` gains a **"Fine-tune it" card** (per-method VRAM, smallest fitting curated GPU config, QLoRA cost estimate, license class, deep link to /finetune); (g) the "recommended" chip is renamed **"max fidelity"** (full FT is the highest-fidelity *fit*, not a universal recommendation). |
+
+## Part 2 — Contracts (C1–C8)
 
 Single source of truth: `packages/shared`. Every consumer (pipeline, server functions, UI) imports these.
 
@@ -133,3 +135,61 @@ Geist (400–700) body · Geist Mono (400–600) for numerals/labels/uppercase m
 - SSR HTML → `public, s-maxage=3600, stale-while-revalidate=86400` + `x-data-version` header.
 - TanStack Query: catalog `staleTime: Infinity` (version-keyed), `getModel` 1 h.
 - Invalidation = data-version bump (new KV key, new query keys); nothing is ever purged.
+
+### C8 — Fine-tune fit & cost (`packages/shared/src/finetune-fit.ts` + `finetune-select.ts` + `license-class.ts`)
+
+Formula-derived training memory and cost for the `/finetune` selector (D25). Pure functions of
+`params` (total, B) and `active` (MoE, B) — no curated training data.
+
+```
+memory (GB; P = total params B, A = 0.005·P adapter params, act = max(2, 0.05·P)):
+  full  = 2P (bf16 weights) + 2P (grads) + 12P (AdamW fp32 master + moments) + act
+  lora  = 2P (frozen bf16)  + 2A (adapter) + 2A (grads) + 12A (optimizer) + act
+  qlora = 0.55P (NF4 + quant constants) + 2A + 2A + 12A + act
+  requiredGb = EXACT sum of the parts (the UI renders the addition line) — no C2-style
+  ×1.08 factor; headroom lives in the verdict: ratio = required / capacity,
+  ≤ 0.8 fits · ≤ 1.0 fits (tight) · else won't fit
+  capacity = count × vramGb (FSDP/ZeRO-3 sharding; per-GPU activation replication
+  accepted as noise). MoE memory uses TOTAL params (C2 precedent).
+  anchors: QLoRA 33B → 22.79 GB (tight on 24 GB) · QLoRA 65B → 44.2 GB (tight on 48 GB)
+           · LoRA 7B → 16.56 GB · full 7B → 114 GB (all unit-tested)
+
+cost:
+  tokens    = samples × 1024 tok/sample × 3 epochs   (presets: 1k / 10k / 100k / 1M samples)
+  flops     = 6e9 × effParams(B) × tokens            (effParams = active ?? total — MoE)
+  GPU-hours = flops / (peak bf16 TFLOPS × 1e12 × 0.35 MFU × 3600)   — count-independent;
+              wall-clock = GPU-hours / count (UI-side)
+  usd       = GPU-hours × $/hr (GPU_TRAIN_ECON: editorial "typical marketplace" rates —
+              rtx3060 25T/$0.10 · rtx4070 80T/$0.20 · rtx3090 71T/$0.25 · rtx4090 165T/$0.40
+              · rtx5090 210T/$0.70 · a100 312T/$1.50 · h100 990T/$2.50 · h200 990T/$3.50
+              · b200 2250T/$5.50 · Mac profiles = null → no estimate, passes budget caps)
+  method-independent in v1 (LoRA's skipped base-weight grads ≈ QLoRA's dequant overhead)
+
+license classes (ordered keyword rules, first match wins; unknown → conditional):
+  closed → proprietary
+  /non-?commercial|research(only|use|license|purposes)|academic|non-?production|\bnc\b/
+        → research-only                     (restriction beats any permissive term)
+  /code|component|with condition/ → conditional   ("Apache-2.0 (code); X license for weights")
+  /apache|\bmit\b|\bbsd\b|cc[- ]by\b|openmdw/ → permissive
+  filter semantics: restriction THRESHOLD via LICENSE_CLASS_ORDER, not exact match
+
+recipes (post-training):
+  sft   = memory model above; compute ×1
+  dpo   = + 2P frozen bf16 reference under FULL FT only (LoRA/QLoRA reuse the frozen
+          base with adapters disabled as the reference — zero extra copy); compute ×2
+  rl    = dpo memory + max(2, 0.1·P) rollout/KV buffers (GRPO-style); compute ×4
+  anchors: QLoRA-GRPO 7B ≈ 8.41 GB (fits a 12 GB card) · full-GRPO 7B ≈ 130 GB (2×H100)
+
+derived axes (finetune-select.ts):
+  docs = toIndexScale(mean(normalizeScore over docvqa/ocrbench/chartqa/charxiv held))
+  if   = same over ifeval (instruction following — 128 open models covered)
+  — C1's normalizeScore against snapshot bounds; null when a model holds no basket slug
+checkpoint dedupe:
+  isTrainableCheckpoint = open ∧ params known ∧ (no effortLabel ∨ isDefaultConfig)
+  — reasoning-effort/mode variants collapse to one row per weight artifact
+ranking ('best' sort):
+  1) COVERAGE TIER: count of selected axes with data, desc (anti-cherry-pick, D20 spirit)
+  2) equal-weight mean of covered selected axes, desc (missing excluded, not penalized)
+  3) ranked-first, Frontier index desc, slug asc
+  empty axis selection → every row tier 0 → pure Frontier index order
+```

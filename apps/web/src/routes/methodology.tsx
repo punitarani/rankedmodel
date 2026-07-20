@@ -110,6 +110,59 @@ otherwise     won't run
 tok/s is shown only where a measured throughput row exists — never interpolated.
 MoE models need total-parameter memory; speed tracks active parameters.`}</Formula>
 
+      <H2>Fine-tuning fit & cost</H2>
+      <P>
+        The <Link to="/finetune">fine-tune selector</Link> covers open-weight models with a known
+        parameter count — closed API models can't have their weights tuned. Training memory is
+        formula-derived from parameters, never curated: the shown requirement is the exact sum of
+        its parts, and headroom lives in the verdict thresholds (the same 0.8 / 1.0 ratio grades as
+        hardware fit). When no method is forced, the recommendation is the highest-fidelity method
+        that fits: full fine-tune over LoRA over QLoRA. Capacity is GPU count × VRAM, assuming
+        FSDP/ZeRO-style sharding across GPUs; MoE models need total-parameter memory.
+      </P>
+      <Formula>{`P = total params (B) · A = 0.005·P adapter params · act = max(2, 0.05·P) GB
+full  = 2P weights + 2P grads + 12P optimizer (AdamW fp32) + act
+lora  = 2P frozen weights + 2A adapter + 2A grads + 12A optimizer + act
+qlora = 0.55P NF4 weights + 2A adapter + 2A grads + 12A optimizer + act
+
+recipes: SFT = the above · DPO adds a frozen bf16 reference (+2P, full FT only —
+LoRA/QLoRA reuse the frozen base with adapters off) · RL (GRPO-style) additionally
+adds rollout/KV buffers (+max(2, 0.1·P))
+
+ratio = required / (count × VRAM):  ≤ 0.8 fits · ≤ 1.0 fits (tight) · else won't fit
+anchors: QLoRA 33B → 22.8 GB (24 GB card) · 65B → 44.2 GB (48 GB) · full 7B → 114 GB
+         · QLoRA-GRPO 7B → 8.4 GB · full-GRPO 7B → 130 GB (2×H100)`}</Formula>
+      <P>
+        Cost estimates are rough by design and labeled as such: dataset presets assume 1,024 tokens
+        per sample and 3 epochs; compute is the standard 6 × params × tokens training-FLOPs rule
+        (active parameters for MoE) against each GPU's peak bf16 throughput at 35% utilization,
+        priced at typical marketplace rental rates. GPU-hours are count-independent — more GPUs
+        shorten wall-clock, not total compute. Apple-silicon profiles get fit verdicts but no cost
+        estimate: there is no comparable rental market for unified-memory training.
+      </P>
+      <Formula>{`tokens    = samples × 1024 tok/sample × 3 epochs
+compute   = 6e9 × params(B) × tokens × recipe multiplier (SFT ×1 · DPO ×2 · RL ×4)
+GPU-hours = compute / (peak bf16 TFLOPS × 0.35 MFU × 3600)
+cost      = GPU-hours × typical $/hr   (H100 $2.50 · A100 $1.50 · RTX 4090 $0.40 …)`}</Formula>
+      <P>
+        Licenses are classified from the curated license string into three classes — permissive
+        (Apache/MIT/BSD-family), conditional / custom (community licenses and anything with its own
+        terms; also the honest default for unknown strings), and research-only (non-commercial
+        clauses). Mixed strings classify by the <em>weights'</em> terms, since those are what you'd
+        be fine-tuning, and the raw license string is always shown alongside the class. Two quality
+        axes are derived from benchmark baskets: “Documents” (DocVQA, OCRBench, ChartQA, CharXiv)
+        and “Instruction following” (IFEval) — sparse coverage shows as “—”, never as a zero. “Chat
+        quality” is the human-preference index under an honest name: there is no dedicated
+        creative-writing benchmark category yet.
+      </P>
+      <P>
+        Ranking honesty rules: models are ranked in <em>coverage tiers</em> first — a model scored
+        on two of your two selected axes always outranks one scored on only one, however high that
+        single score is (the same anti-cherry-picking principle as ranking eligibility). And
+        reasoning-effort/mode variants of the same weights (thinking / non-thinking) are collapsed
+        to one row per checkpoint: you fine-tune a weight artifact, not an inference setting.
+      </P>
+
       <H2>Versioned snapshots</H2>
       <P>
         Data is curated in git, validated, and built into an immutable snapshot bundled with each

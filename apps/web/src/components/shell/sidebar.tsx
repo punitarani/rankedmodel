@@ -8,6 +8,7 @@ import {
   ListOrdered,
   type LucideIcon,
   MemoryStick,
+  SlidersHorizontal,
 } from 'lucide-react'
 import { useEffect } from 'react'
 import {
@@ -32,6 +33,7 @@ const NAV: { label: string; to: string; icon: LucideIcon; exact?: boolean }[] = 
   { label: 'Model Explorer', to: '/models', icon: BrainCircuit },
   { label: 'Compare', to: '/compare', icon: GitCompareArrows },
   { label: 'Hardware', to: '/hardware', icon: MemoryStick },
+  { label: 'Fine-tune', to: '/finetune', icon: SlidersHorizontal },
   { label: 'Benchmarks', to: '/benchmarks', icon: FlaskConical },
   { label: 'Methodology', to: '/methodology', icon: BookOpenText },
 ]

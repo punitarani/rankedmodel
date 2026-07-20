@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CompareRouteImport } from './routes/compare'
+import { Route as FinetuneRouteImport } from './routes/finetune'
 import { Route as HardwareRouteImport } from './routes/hardware'
 import { Route as MethodologyRouteImport } from './routes/methodology'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
@@ -38,6 +39,11 @@ const IndexRoute = IndexRouteImport.update({
 const CompareRoute = CompareRouteImport.update({
   id: '/compare',
   path: '/compare',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FinetuneRoute = FinetuneRouteImport.update({
+  id: '/finetune',
+  path: '/finetune',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HardwareRoute = HardwareRouteImport.update({
@@ -135,6 +141,7 @@ const ApiCatalogVChar123versionChar125DotjsonRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/compare': typeof CompareRoute
+  '/finetune': typeof FinetuneRoute
   '/hardware': typeof HardwareRoute
   '/methodology': typeof MethodologyRoute
   '/robots.txt': typeof RobotsDottxtRoute
@@ -157,6 +164,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/compare': typeof CompareRoute
+  '/finetune': typeof FinetuneRoute
   '/hardware': typeof HardwareRoute
   '/methodology': typeof MethodologyRoute
   '/robots.txt': typeof RobotsDottxtRoute
@@ -180,6 +188,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/compare': typeof CompareRoute
+  '/finetune': typeof FinetuneRoute
   '/hardware': typeof HardwareRoute
   '/methodology': typeof MethodologyRoute
   '/robots.txt': typeof RobotsDottxtRoute
@@ -204,6 +213,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/compare'
+    | '/finetune'
     | '/hardware'
     | '/methodology'
     | '/robots.txt'
@@ -226,6 +236,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/compare'
+    | '/finetune'
     | '/hardware'
     | '/methodology'
     | '/robots.txt'
@@ -248,6 +259,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/compare'
+    | '/finetune'
     | '/hardware'
     | '/methodology'
     | '/robots.txt'
@@ -271,6 +283,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CompareRoute: typeof CompareRoute
+  FinetuneRoute: typeof FinetuneRoute
   HardwareRoute: typeof HardwareRoute
   MethodologyRoute: typeof MethodologyRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
@@ -305,6 +318,13 @@ declare module '@tanstack/react-router' {
       path: '/compare'
       fullPath: '/compare'
       preLoaderRoute: typeof CompareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/finetune': {
+      id: '/finetune'
+      path: '/finetune'
+      fullPath: '/finetune'
+      preLoaderRoute: typeof FinetuneRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/hardware': {
@@ -439,6 +459,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CompareRoute: CompareRoute,
+  FinetuneRoute: FinetuneRoute,
   HardwareRoute: HardwareRoute,
   MethodologyRoute: MethodologyRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,

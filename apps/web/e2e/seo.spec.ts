@@ -9,8 +9,8 @@ test.describe('seo surface', () => {
     expect(res.headers()['content-type']).toContain('application/xml')
     const body = await res.text()
     const locs = body.match(/<loc>/g)?.length ?? 0
-    // 9 static + 7 categories + every model + every org + every family + every benchmark
-    expect(locs).toBe(9 + 7 + models + organizations + families + benchmarks)
+    // 10 static + 7 categories + every model + every org + every family + every benchmark
+    expect(locs).toBe(10 + 7 + models + organizations + families + benchmarks)
     expect(body).toContain('https://modelbeats.com/models/gpt-5-6')
   })
 

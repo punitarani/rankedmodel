@@ -12,6 +12,7 @@ const ROUTES = [
   '/models/gpt-oss-20b-medium',
   '/compare?m=gpt-5-2,deepseek-v3-1-thinking',
   '/hardware',
+  '/finetune',
   '/benchmarks',
   '/benchmarks/swe-bench',
   '/organizations/anthropic',
