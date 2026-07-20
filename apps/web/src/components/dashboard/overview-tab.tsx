@@ -104,16 +104,20 @@ export function OverviewTab({ catalog }: { catalog: CatalogSnapshot }) {
               key={m.slug}
               to="/models/$slug"
               params={{ slug: m.slug }}
-              className="grid cursor-pointer grid-cols-[92px_minmax(0,1.5fr)_1fr_90px_70px] items-center gap-2.5 border-t border-border px-4 py-2 text-[12.5px] text-text no-underline hover:bg-hover hover:no-underline"
+              className="grid cursor-pointer grid-cols-[minmax(max-content,1fr)_minmax(0,210px)_minmax(0,150px)_minmax(max-content,1fr)_auto] items-center gap-2.5 border-t border-border px-4 py-2 text-[12.5px] text-text no-underline hover:bg-hover hover:no-underline"
               data-testid="latest-row"
             >
               <span className="font-mono text-[11px] text-dim">{fmtDate(m.date)}</span>
               <span className="overflow-hidden text-ellipsis whitespace-nowrap font-semibold">
                 {m.name}
               </span>
-              <span className="text-xs text-mut">{m.org}</span>
-              <ModelTag open={m.open} />
+              <span className="overflow-hidden text-ellipsis whitespace-nowrap text-xs text-mut">
+                {m.org}
+              </span>
               <span className="text-right font-mono text-[11.5px]">{m.index.toFixed(1)}</span>
+              <span className="flex items-center">
+                <ModelTag open={m.open} />
+              </span>
             </Link>
           ))}
         </div>
