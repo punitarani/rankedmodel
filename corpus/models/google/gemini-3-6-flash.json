@@ -1,0 +1,87 @@
+{
+  "name": "Gemini 3.6 Flash",
+  "org": "Google",
+  "family": "Gemini 3.6",
+  "releaseDate": "2026-07-21",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (configuration undisclosed); natively multimodal reasoning model in the Gemini 3 series",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.5,
+    "output": 7.5,
+    "provider": "Google AI Studio / Vertex AI (Gemini API)"
+  },
+  "links": {
+    "docs": "https://deepmind.google/models/gemini/flash/"
+  },
+  "note": "Google DeepMind's new workhorse Flash model, released 2026-07-21 alongside Gemini 3.5 Flash-Lite and the gated Gemini 3.5 Flash Cyber (there was NO Pro release in this wave -- the flagship stayed on Gemini 3.1 Pro; Gemini 3.5 Pro remained 'coming soon'/in partner testing). Built on Gemini 3.5 Flash, it is pitched as a straight quality-and-efficiency upgrade: better coding, knowledge work and multimodal performance while using ~17% fewer output tokens for the same work, and it CUTS the output price from $9.00 to $7.50/M (input unchanged at $1.50/M; cache-hit input ~$0.15/M). 1M-token input / 64K output context, natively multimodal (text/image/audio/video in, text out), knowledge cutoff March 2026. Model ID gemini-3.6-flash, generally available on the Gemini API, AI Studio, Vertex, the Gemini apps and Antigravity. All benchmark figures here are Google self-reported from the official model card -- no independent per-benchmark scores exist yet (Artificial Analysis publishes only its composite Intelligence Index of 50 for this model, no per-benchmark numerals). Re-check trackers after independent evals land.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "releaseDate/pricing/context/cutoff": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+    "modelCard/benchmarks": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-6-Flash-Model-Card.pdf",
+    "nonReleaseOfPro": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 58.7,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-6-Flash-Model-Card.pdf",
+      "evaluatedAt": "2026-07-21",
+      "notes": "SWE-Bench Pro (Public Dataset), single-attempt agentic coding, official Gemini 3.6 Flash model card (58.7% vs 55.1% for Gemini 3.5 Flash). Independently corroborated by OfficeChai's compilation of Google's evals-methodology page."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 78.0,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-6-Flash-Model-Card.pdf",
+      "evaluatedAt": "2026-07-21",
+      "notes": "Terminal-Bench 2.1 (Terminus-2 harness), official model card (78.0% vs 76.2% for Gemini 3.5 Flash). Corroborated by OfficeChai. A close Artificial-Analysis-measured independent figure of 77.5% (aaTerminalBench21) circulates on BenchLM.ai but could NOT be confirmed on Artificial Analysis's own model page (which shows only its composite index, no per-benchmark numerals), so the self-reported 78.0 is recorded rather than the unverifiable independent 77.5."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1421,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-6-Flash-Model-Card.pdf",
+      "evaluatedAt": "2026-07-21",
+      "notes": "GDPval-AA v2 (Elo, 0-2000 scale), knowledge work, official model card (1421 vs 1349 for Gemini 3.5 Flash on the same v2 protocol). Confirmed by two independent secondary reproductions (BenchLM.ai, 9to5Google). NOTE: the existing gemini-3-5-flash gdpval-aa row (1656) is an earlier/first-version GDPval-AA measurement, not directly comparable to this v2 figure -- a pre-existing cross-version nuance, not corrected here."
+    },
+    {
+      "benchmarkSlug": "osworld-verified",
+      "score": 83.0,
+      "source": "self-reported",
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-6-Flash-Model-Card.pdf",
+      "evaluatedAt": "2026-07-21",
+      "notes": "OSWorld-Verified, computer use, official model card (83.0% vs 78.4% for Gemini 3.5 Flash). Confirmed by BenchLM.ai and 9to5Google."
+    }
+  ],
+  "verificationNotes": "ROUND (2026-07-22): New model, added following Google DeepMind's July-21-2026 Flash wave. Two-pass research + adversarial re-verification against primary sources (official launch blog, model card PDF) and independent trackers (Artificial Analysis, BenchLM.ai, 9to5Google, OfficeChai, TechCrunch).\n\nSCOPE DECISIONS in this wave: (1) Gemini 3.5 PRO was NOT released -- deepmind.google/models/gemini/pro/ shows 'coming soon' and TechCrunch (2026-07-21, 'Google releases three new Gemini models -- but no 3.5 Pro') confirms it slipped into partner testing after missing internal performance goals. Excluded as unreleased/vaporware with zero citable data. (2) Gemini 3.5 Flash CYBER was excluded as out-of-scope: it is a cybersecurity-specialized fine-tune of 3.5 Flash that runs only inside Google's CodeMender agent framework, gated to governments and trusted partners, with no public API and no standard benchmark table (only a qualitative CyberGym 'competitive at the frontier' claim and a domain-specific V8 vuln-count of 55 unique issues) -- matches this corpus's convention of ruling out non-benchmarkable/gated specialized artifacts. Gemini 3.6 Flash and Gemini 3.5 Flash-Lite (both general multimodal LLMs) were ingested.\n\nDISCARDED UNVERIFIABLE DATA: BenchLM.ai's gemini-3-6-flash page displays what look like Artificial Analysis per-benchmark component scores (aaTerminalBench21 77.5, AA-GPQA Diamond 92.8, AA-HLE 38.3, AA-MMMU-Pro 83.2). Direct fetch of artificialanalysis.ai/models/gemini-3-6-flash confirms AA displays ONLY its composite Intelligence Index (50, rank #21/186) and per-benchmark RANKINGS, NOT per-benchmark numeric scores -- so these figures are not confirmable at their claimed source and were NOT recorded, per this corpus's documented AA-per-benchmark-hallucination caution (see Kimi K3 verificationNotes).\n\nOMITTED (single-source, unconfirmable): CharXiv Reasoning (reported as 85.2% no-tools / 89.4% with-tools on the model card) was found in only one reading of the model-card PDF and could not be independently confirmed (BenchLM.ai lists CharXiv as 'not shown'); given the documented risk of cross-contaminating Gemini 3.5 Flash's charxiv value (84.2) with 3.6 Flash's, it was omitted rather than recorded on a single unverifiable source. Also omitted as NO-SLUG: DeepSWE v1.1 (49%), MLE-Bench (63.9%), GDM-MRCR v2 long-context (91.8%/54.0%), and AA's composite indices (Intelligence 50, Coding 69.2, Chatbot Arena Elo 1485) -- no matching taxonomy slug.\n\nRESULT: 4 self-reported benchmarks across 2 categories (coding: SWE-Bench Pro, Terminal-Bench 2.1; agents: GDPval-AA v2, OSWorld-Verified) -- meets the D20 coverage gate, so this model is ranked. All 4 are Google self-reported with no independent counterweight yet available (released one day before ingestion). Recommend re-checking Artificial Analysis, llm-stats and Vals.ai for independent per-benchmark scores in a later round, exactly as gemini-3-5-flash's independent GPQA/AIME/SWE-bench rows were backfilled after its own launch."
+}

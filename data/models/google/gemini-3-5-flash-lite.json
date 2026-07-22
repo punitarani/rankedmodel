@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-3-5-flash-lite",
+  "name": "Gemini 3.5 Flash-Lite",
+  "orgSlug": "google",
+  "familySlug": "gemini-3-5",
+  "releaseDate": "2026-07-21",
+  "status": "released",
+  "predecessor": "gemini-3-5-flash",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (configuration undisclosed); reasoning-capable multimodal Lite model in the Gemini 3.5 series",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.3,
+    "output": 2.5
+  },
+  "links": {
+    "docs": "https://deepmind.google/models/gemini/flash-lite/"
+  },
+  "note": "Google DeepMind's fastest and least-expensive model in the Gemini 3.5 family, released 2026-07-21 alongside Gemini 3.6 Flash. A low-latency, high-throughput reasoning model (thinking supported despite the Lite tier) built as a 'subagent' for high-volume automation -- agentic search, document processing, classification and routing. 1M-token context, natively multimodal (text/image/audio/video in, text out), ~350 output tokens/sec (official). Model ID gemini-3.5-flash-lite, generally available on the Gemini API/AI Studio/Vertex; $0.30/M input, $2.50/M output (cache-hit input ~$0.03/M). Benchmarks are Google self-reported from the joint launch blog, which shows large jumps over the prior Gemini 3.1 Flash-Lite (e.g. GDPval-AA v2 1140 vs 642, Terminal-Bench 2.1 54% vs 31%). No independent per-benchmark scores exist yet (Artificial Analysis publishes only a composite Intelligence Index of 36).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Laguna S 2.1",
+  "org": "Poolside",
+  "family": "Laguna S",
+  "releaseDate": "2026-07-21",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "OpenMDW-1.1",
+  "paramsB": 118,
+  "activeParamsB": 8,
+  "archClass": "moe",
+  "archDisplay": "118B-parameter sparse Mixture-of-Experts (8B active/token), 256 routed experts (top-10) + 1 shared, 48 layers (12 global + 36 sliding-window attention, 1:3), grouped-query attention, 1M-token context, native interleaved reasoning (max-thinking on by default)",
+  "ctxK": 1000,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.1,
+    "output": 0.2,
+    "provider": "Poolside (platform.poolside.ai / OpenRouter)"
+  },
+  "links": {
+    "hf": "https://huggingface.co/poolside/Laguna-S-2.1",
+    "docs": "https://poolside.ai/blog/introducing-laguna-s-2-1"
+  },
+  "note": "Poolside's flagship open-weight coding model, released 2026-07-21 and pitched as 'the West's most capable open-weight model' -- a 118B-parameter (8B active) sparse MoE built for agentic software engineering. A scale-up of the Laguna XS family trained on the same pre-training data as Laguna XS 2.1, sitting between XS 2.1 (33B-A3B) and the proprietary Laguna M.1 (225B-A23B). 1M-token context, text-only, native interleaved 'thinking' (max-thinking on by default, toggleable per request). Open weights under OpenMDW-1.1 (Linux Foundation permissive model license); ships BF16/FP8/INT4/NVFP4 checkpoints plus official GGUF and MLX conversions and DFlash speculative-decoding draft models. Small enough to run on a single NVIDIA DGX Spark (BF16 checkpoint ~236 GB). Served first-party via platform.poolside.ai/chat.poolside.ai and on OpenRouter/Baseten/Vercel AI Gateway/NVIDIA NIM at $0.10/M input, $0.20/M output ($0.01/M cache-read); free endpoint caps context at 256K, paid dedicated gives the full 1M. Founded by Jason Warner (ex-GitHub CTO) and Eiso Kant. All benchmarks are Poolside self-reported (coding-only suite); no independent re-evaluation exists yet.",
+  "quants": [
+    "BF16",
+    "FP8",
+    "INT4",
+    "NVFP4",
+    "GGUF",
+    "MLX"
+  ],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "params/arch/context/license/pricing/reasoning": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+    "modelCard": "https://huggingface.co/poolside/Laguna-S-2.1",
+    "pressRelease": "https://www.globenewswire.com/news-release/2026/07/21/3330818/0/en/Poolside-releases-Laguna-S-2-1-the-West-s-most-capable-open-weight-model.html"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 59.4,
+      "source": "self-reported",
+      "sourceUrl": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "evaluatedAt": "2026-07-21",
+      "notes": "SWE-Bench Pro (Public Dataset), pass@1 over 4 attempts, official Poolside launch blog (directly re-verified). Poolside also reports SWE-bench Multilingual 78.5% for Laguna S 2.1, but did NOT publish a standard SWE-bench Verified figure -- so no swe-bench (Verified) row is recorded here, matching this corpus's convention of never filing a Multilingual score under the Verified slug (cf. the MiniMax M2.7 SWE-bench note)."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 70.2,
+      "source": "self-reported",
+      "sourceUrl": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "evaluatedAt": "2026-07-21",
+      "notes": "Terminal-Bench 2.1, thinking mode (default), official launch blog (directly re-verified: 70.2% thinking / 60.4% no-thinking). Headline thinking-mode figure recorded to match the model's default configuration."
+    }
+  ],
+  "verificationNotes": "ROUND (2026-07-22): New model + new organization (Poolside), added following the 2026-07-21 launch of 'the West's most capable open-weight model.' Specs and both recorded benchmarks were re-verified by direct fetch of the official Poolside blog (poolside.ai/blog/introducing-laguna-s-2-1): 118B total / 8B active MoE, 1M context, OpenMDW-1.1, thinking-on-by-default, $0.10/$0.20 pricing, and Terminal-Bench 2.1 70.2% (thinking) / 60.4% (no-thinking), SWE-bench Multilingual 78.5%, SWE-Bench Pro 59.4% -- all confirmed verbatim.\n\nSLUG MAPPING: only 2 of the launch benchmarks map to this corpus's taxonomy (swe-bench-pro, terminal-bench-2). SWE-bench Multilingual (78.5%) is NOT filed under the swe-bench slug because that slug is SWE-bench Verified and Poolside published no Verified figure for S 2.1 (only XS 2.1 published Verified) -- conflating the two would corrupt the Verified leaderboard. DeepSWE v1.1 (40.4%), SWE Atlas / Codebase QnA (46.2%, distinct from mcp-atlas), and Toolathlon Verified (49.7%) are Poolside/community-specific suites with no matching taxonomy slug and are omitted.\n\nRANKING: with 2 tracked benchmarks both in the coding category, Laguna S 2.1 falls below the D20 coverage gate (needs >=3 benchmarks across >=2 categories), so it is UNRANKED -- correct and honest for a coding-specialized model that publishes only coding benchmarks (same outcome as other single-category models in this corpus). It still carries a Frontier-Elo rating from its pairwise coding battles, appears on the SWE-Bench Pro and Terminal-Bench 2 leaderboards, and is fully represented in the explorer/hardware views as an open-weight model.\n\nSELF-REPORTED CAVEAT: no independent (non-Poolside) numeric benchmark exists for either Laguna model as of ingestion; VentureBeat/MarkTechPost/GlobeNewswire all echo Poolside's own figures. Discarded a secondary 'Complete Guide' (aimadetools.com) that misstated active params as ~11B and license as 'MIT-like' -- both contradicted by the primary blog/HF card (8B active, OpenMDW-1.1). Recommend re-checking Artificial Analysis / llm-stats for independent SWE-bench/Terminal-Bench runs once the open weights have circulated.\n\nLINEAGE: modeled as its own 'Laguna S' family (predecessor null) rather than folding it into 'Laguna XS'; S 2.1 is the debut of the S size tier (a scale-up sibling of XS 2.1, not a version-successor to it), so a null predecessor is more honest than a mechanical 'S 2.1 succeeds XS 2.1' link."
+}

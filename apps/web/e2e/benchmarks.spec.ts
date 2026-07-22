@@ -20,8 +20,8 @@ test.describe('benchmarks', () => {
     await expect(first).toContainText('Claude Fable 5')
     await expect(first).toContainText('95.0%')
     await expect(first.getByTestId('provenance-badge')).toHaveText('independent')
-    // real field: 118 of the 537 models carry a SWE-bench Verified score
-    await expect(page.getByTestId('leaderboard-row')).toHaveCount(118)
+    // real field: 119 of the 541 models carry a SWE-bench Verified score
+    await expect(page.getByTestId('leaderboard-row')).toHaveCount(119)
   })
 
   test('distribution histogram + open-only params scatter render', async ({ page }) => {

@@ -12,7 +12,7 @@ test.describe('rankings', () => {
     // #1 row is the broadly-benchmarked frontier leader (Frontier Elo, D21)
     const first = page.getByTestId('ranking-row').first()
     await expect(first).toContainText('GPT-5.6')
-    await expect(first).toContainText('3073.2')
+    await expect(first).toContainText('3072.6')
   })
 
   test('column sort click mutates URL and reorders rows', async ({ page }) => {

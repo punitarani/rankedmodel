@@ -1,0 +1,51 @@
+{
+  "slug": "laguna-xs-2-1",
+  "name": "Laguna XS 2.1",
+  "orgSlug": "poolside",
+  "familySlug": "laguna-xs",
+  "releaseDate": "2026-07-02",
+  "status": "released",
+  "predecessor": null,
+  "openness": "open-weights",
+  "license": "OpenMDW-1.1",
+  "paramsB": 33,
+  "activeParamsB": 3,
+  "archClass": "moe",
+  "archDisplay": "33B-parameter sparse Mixture-of-Experts (3B active/token), 256 experts + 1 shared (top-8), 40 layers (10 global + 30 sliding-window attention, 3:1), grouped-query attention with FP8 KV cache, 256K-token context, native interleaved reasoning (toggleable per request)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.1,
+    "output": 0.2
+  },
+  "links": {
+    "hf": "https://huggingface.co/poolside/Laguna-XS-2.1",
+    "docs": "https://poolside.ai/blog/introducing-laguna-xs-2-1"
+  },
+  "note": "Poolside's compact open-weight coding model, released 2026-07-02 -- a 33B-parameter (3B active) sparse MoE for agentic software engineering, and the smaller sibling that Laguna S 2.1 scales up from (same pre-training data). An upgrade of Laguna XS.2 with a +5.4-point jump on SWE-bench Multilingual (63.1% vs 57.7%) and a license move from Apache-2.0 to OpenMDW-1.1. 256K-token context, text-only, native interleaved reasoning (toggleable per request). Ships BF16/FP8/INT4/NVFP4 checkpoints plus a DFlash 0.5B speculator; compact enough to run on a Mac with ~36 GB unified memory (BF16 download ~67 GB). Served first-party via platform.poolside.ai and on OpenRouter/Ollama/NVIDIA NIM at $0.10/M input, $0.20/M output ($0.05/M cache-read), 256K context. All benchmarks are Poolside self-reported (coding-only suite); no independent re-evaluation exists yet.",
+  "quants": [
+    "BF16",
+    "FP8",
+    "INT4",
+    "NVFP4"
+  ],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

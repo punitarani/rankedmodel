@@ -1,0 +1,82 @@
+{
+  "name": "Laguna XS 2.1",
+  "org": "Poolside",
+  "family": "Laguna XS",
+  "releaseDate": "2026-07-02",
+  "status": "released",
+  "openness": "open-weights",
+  "license": "OpenMDW-1.1",
+  "paramsB": 33,
+  "activeParamsB": 3,
+  "archClass": "moe",
+  "archDisplay": "33B-parameter sparse Mixture-of-Experts (3B active/token), 256 experts + 1 shared (top-8), 40 layers (10 global + 30 sliding-window attention, 3:1), grouped-query attention with FP8 KV cache, 256K-token context, native interleaved reasoning (toggleable per request)",
+  "ctxK": 256,
+  "modalities": [
+    "text"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": false,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 0.1,
+    "output": 0.2,
+    "provider": "Poolside (platform.poolside.ai / OpenRouter)"
+  },
+  "links": {
+    "hf": "https://huggingface.co/poolside/Laguna-XS-2.1",
+    "docs": "https://poolside.ai/blog/introducing-laguna-xs-2-1"
+  },
+  "note": "Poolside's compact open-weight coding model, released 2026-07-02 -- a 33B-parameter (3B active) sparse MoE for agentic software engineering, and the smaller sibling that Laguna S 2.1 scales up from (same pre-training data). An upgrade of Laguna XS.2 with a +5.4-point jump on SWE-bench Multilingual (63.1% vs 57.7%) and a license move from Apache-2.0 to OpenMDW-1.1. 256K-token context, text-only, native interleaved reasoning (toggleable per request). Ships BF16/FP8/INT4/NVFP4 checkpoints plus a DFlash 0.5B speculator; compact enough to run on a Mac with ~36 GB unified memory (BF16 download ~67 GB). Served first-party via platform.poolside.ai and on OpenRouter/Ollama/NVIDIA NIM at $0.10/M input, $0.20/M output ($0.05/M cache-read), 256K context. All benchmarks are Poolside self-reported (coding-only suite); no independent re-evaluation exists yet.",
+  "quants": [
+    "BF16",
+    "FP8",
+    "INT4",
+    "NVFP4"
+  ],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "params/arch/context/license/pricing": "https://poolside.ai/blog/introducing-laguna-xs-2-1",
+    "modelCard/benchmarks": "https://huggingface.co/poolside/Laguna-XS-2.1",
+    "nimSpec": "https://docs.api.nvidia.com/nim/reference/poolside-laguna-xs-2-1"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench",
+      "score": 70.9,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/poolside/Laguna-XS-2.1",
+      "evaluatedAt": "2026-07-02",
+      "notes": "SWE-bench Verified, official Poolside HF model card (directly re-verified: 70.9% for XS 2.1 vs 69.9% for the predecessor XS.2). Poolside separately reports SWE-bench Multilingual 63.1% (+5.4pt vs XS.2's 57.7%), recorded only in prose here since the swe-bench slug tracks the Verified variant."
+    },
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 47.6,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/poolside/Laguna-XS-2.1",
+      "evaluatedAt": "2026-07-02",
+      "notes": "SWE-Bench Pro (Public Dataset), official HF model card (directly re-verified: 47.6% vs 46.3% for XS.2)."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 37.5,
+      "source": "self-reported",
+      "sourceUrl": "https://huggingface.co/poolside/Laguna-XS-2.1",
+      "evaluatedAt": "2026-07-02",
+      "notes": "Terminal-Bench 2.0, official HF model card (directly re-verified: 37.5% vs 35.7% for XS.2). Filed under terminal-bench-2 with the version noted, matching this corpus's precedent of recording both TB 2.0 and TB 2.1 scores under this slug (cf. Claude Opus 4.1/4.5 TB 2.0 rows). The later Laguna S 2.1 uses the newer TB 2.1 harness."
+    }
+  ],
+  "verificationNotes": "ROUND (2026-07-22): Added alongside the Poolside org and Laguna S 2.1. Laguna XS 2.1 predates Kimi K3 (released 2026-07-02) but was never ingested (Poolside was entirely absent from the corpus); included to give Poolside complete coverage and because S 2.1 is explicitly a scale-up of it. All three recorded benchmarks were re-verified by direct fetch of the official HF model card (huggingface.co/poolside/Laguna-XS-2.1): SWE-bench Verified 70.9%, SWE-bench Multilingual 63.1%, SWE-Bench Pro 47.6%, Terminal-Bench 2.0 37.5% -- confirmed verbatim, with the predecessor XS.2's values (69.9/57.7/46.3/35.7) also shown. The launch blog's benchmark charts render as '0.0' in fetched HTML (JS-hydrated), so the HF card is the citation of record; the blog independently confirms the Multilingual 63.1% figure, params (33B/3B), 256K context, OpenMDW-1.1 license, 2026-07-02 date, and $0.10/$0.20/$0.05 pricing in plain text.\n\nRANKING: 3 tracked benchmarks all in the coding category -> below the D20 gate (needs >=2 categories), so UNRANKED, same as Laguna S 2.1 and correct for a coding-only model. Discarded a secondary source (aimadetools.com) claiming 'Terminal-Bench 2.1 = 33.4%' -- a different benchmark version that cannot be reconciled with the primary HF card's TB 2.0 37.5%; primary source used. Predecessor is null because Laguna XS.2 is not in the corpus. Self-reported-only caveat as for Laguna S 2.1."
+}

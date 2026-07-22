@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-3-6-flash",
+  "name": "Gemini 3.6 Flash",
+  "orgSlug": "google",
+  "familySlug": "gemini-3-6",
+  "releaseDate": "2026-07-21",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "moe",
+  "archDisplay": "Sparse Mixture-of-Experts Transformer (configuration undisclosed); natively multimodal reasoning model in the Gemini 3 series",
+  "ctxK": 1000,
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1.5,
+    "output": 7.5
+  },
+  "links": {
+    "docs": "https://deepmind.google/models/gemini/flash/"
+  },
+  "note": "Google DeepMind's new workhorse Flash model, released 2026-07-21 alongside Gemini 3.5 Flash-Lite and the gated Gemini 3.5 Flash Cyber (there was NO Pro release in this wave -- the flagship stayed on Gemini 3.1 Pro; Gemini 3.5 Pro remained 'coming soon'/in partner testing). Built on Gemini 3.5 Flash, it is pitched as a straight quality-and-efficiency upgrade: better coding, knowledge work and multimodal performance while using ~17% fewer output tokens for the same work, and it CUTS the output price from $9.00 to $7.50/M (input unchanged at $1.50/M; cache-hit input ~$0.15/M). 1M-token input / 64K output context, natively multimodal (text/image/audio/video in, text out), knowledge cutoff March 2026. Model ID gemini-3.6-flash, generally available on the Gemini API, AI Studio, Vertex, the Gemini apps and Antigravity. All benchmark figures here are Google self-reported from the official model card -- no independent per-benchmark scores exist yet (Artificial Analysis publishes only its composite Intelligence Index of 50 for this model, no per-benchmark numerals). Re-check trackers after independent evals land.",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

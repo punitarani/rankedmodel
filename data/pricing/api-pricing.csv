@@ -71,6 +71,8 @@ gemini-2-5-pro,Google AI Studio / Gemini API,1.25,10,2025-03-25
 gemini-3-1-flash-lite,Google AI Studio / Vertex AI (Gemini API),0.25,1.5,2026-03-03
 gemini-3-1-pro,Google AI Studio / Vertex AI (Gemini API),2,12,2026-02-19
 gemini-3-5-flash,Google AI Studio / Vertex AI (Gemini API),1.5,9,2026-05-19
+gemini-3-5-flash-lite,Google AI Studio / Vertex AI (Gemini API),0.3,2.5,2026-07-21
+gemini-3-6-flash,Google AI Studio / Vertex AI (Gemini API),1.5,7.5,2026-07-21
 gemini-3-flash,Google (Gemini API),0.5,3,2025-12-17
 gemini-3-pro,Google (Gemini API / Vertex AI),2,12,2025-11-18
 glm-4-5-355b-a32b,Z.ai,0.6,2.2,2025-07-28
@@ -130,6 +132,8 @@ kimi-k2-6,moonshot-ai,0.95,4,2026-04-20
 kimi-k2-7-code,moonshot-ai,0.95,4,2026-06-12
 kimi-k2-thinking,Moonshot AI,0.6,2.5,2025-11-06
 kimi-k3,moonshot-ai,3,15,2026-07-16
+laguna-s-2-1,Poolside (platform.poolside.ai / OpenRouter),0.1,0.2,2026-07-21
+laguna-xs-2-1,Poolside (platform.poolside.ai / OpenRouter),0.1,0.2,2026-07-02
 llama-3-1-nemotron-70b-instruct,DeepInfra,1.2,1.2,2024-10-15
 llama-3-1-nemotron-ultra-253b-v1-reasoning-off,NVIDIA API,2,6,2025-04-07
 llama-3-1-nemotron-ultra-253b-v1-reasoning-on,NVIDIA API,2,6,2025-04-07
