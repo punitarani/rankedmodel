@@ -1,0 +1,11 @@
+{
+  "slug": "sealedbench",
+  "name": "SealedBench",
+  "category": "reasoning",
+  "unit": "index",
+  "description": "Sealed, continuously rotated composite of frontier model capability — combines capability, token efficiency, speed and cost into a single index. Tests, scoring weights and answer keys are kept private to resist benchmark-specific training; evaluated at each model's highest available thinking setting.",
+  "normMin": 20,
+  "normMax": 75,
+  "higherIsBetter": true,
+  "methodologyUrl": "https://sealedbench.com"
+}
