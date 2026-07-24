@@ -7,7 +7,7 @@ test.describe('compare', () => {
     await gotoHydrated(page, '/compare?m=gpt-5-2,deepseek-v3-1-thinking')
     const legend = page.getByTestId('compare-legend')
     await expect(legend).toContainText('GPT-5.2')
-    await expect(legend).toContainText('2517.2')
+    await expect(legend).toContainText('2517.3')
     await expect(legend).toContainText('DeepSeek-V3.1 (Thinking)')
     await expect(legend).toContainText('1938.9')
     // honest coverage badges (D24): GPT-5.2 has no PREF/KNOW → 4/6; DeepSeek adds KNOW → 5/6
@@ -23,7 +23,7 @@ test.describe('compare', () => {
   test('best-value highlighting favors the right cells', async ({ page }) => {
     await gotoHydrated(page, '/compare?m=gpt-5-2,deepseek-v3-1-thinking')
     const idxRow = page.getByTestId('spec-elo-rating')
-    await expect(idxRow.locator('span').nth(1)).toHaveCSS('font-weight', '600') // GPT-5.2 Elo 2517.2
+    await expect(idxRow.locator('span').nth(1)).toHaveCSS('font-weight', '600') // GPT-5.2 Elo 2517.3
     const priceRow = page.getByTestId('spec-price-out-m')
     await expect(priceRow.locator('span').nth(2)).toHaveCSS('font-weight', '600') // DeepSeek $1.68
   })

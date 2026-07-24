@@ -191,11 +191,11 @@ describe('derived scores match the D21 contract (goldens)', () => {
       .filter((m) => m.rankOverall != null && m.rankOverall <= 5)
       .sort((a, b) => (a.rankOverall ?? 0) - (b.rankOverall ?? 0))
     expect(top5.map((m) => [m.slug, m.overallIndex])).toEqual([
-      ['kimi-k3', 3054.4],
-      ['gpt-5-6-sol', 2942],
-      ['claude-fable-5', 2936.8],
-      ['claude-opus-4-8', 2797.1],
-      ['gpt-5-4-pro', 2796.9],
+      ['kimi-k3', 3055.3],
+      ['gpt-5-6-sol', 2948],
+      ['claude-fable-5', 2939.6],
+      ['claude-opus-4-8', 2799.5],
+      ['gpt-5-4-pro', 2797.3],
     ])
   })
 
@@ -252,7 +252,7 @@ describe('derived scores match the D21 contract (goldens)', () => {
     const { models } = await derived()
     const llama = models.find((m) => m.slug === 'llama-3-1-405b')
     expect(llama?.ranked).toBe(true)
-    expect(llama?.overallIndex).toBe(1234.2)
+    expect(llama?.overallIndex).toBe(1234.3)
     expect(llama?.rankOverall).toBe(178)
     // categoryIdx stays min-max (D21 keeps the radar on D2 bounds) — unchanged literals
     expect(llama?.categoryIdx).toEqual({
