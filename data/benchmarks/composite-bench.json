@@ -1,0 +1,10 @@
+{
+  "slug": "composite-bench",
+  "name": "Composite-Bench",
+  "category": "agents",
+  "unit": "%",
+  "description": "Composite Research's long-horizon browser-based computer-use benchmark, grounded in real professional trajectories from its enterprise products: macro success rate (pass@1 exact match to certified-optimal solutions) over 100 hidden enterprise-work tasks across five slices — 7-day pipeline stewardship, rulebook extraction, entity deduplication, orienteering, adaptive information-gathering — under a pinned maximum-reasoning-effort compute contract (announced 300k-output-token episode budget, 110-step cap, anytime scoring, zero exclusions).",
+  "normMin": 0,
+  "normMax": 85,
+  "higherIsBetter": true
+}
