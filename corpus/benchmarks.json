@@ -350,6 +350,17 @@
     "higherIsBetter": true
   },
   {
+    "slug": "frontierbench",
+    "name": "FrontierBench",
+    "category": "agents",
+    "unit": "%",
+    "description": "Frontier agent-work benchmark from the Terminal-Bench/Harbor team (formerly Terminal-Bench 3.0): 74 tasks across 7 domains in v0.1, spanning artifacts from databases and ML checkpoints to CAD files and formal proofs; resolution rate per agent-harness x model pair, with per-trial token and cost accounting.",
+    "normMin": 0,
+    "normMax": 50,
+    "higherIsBetter": true,
+    "methodologyUrl": "https://www.frontierbench.ai/announcement"
+  },
+  {
     "slug": "frontiermath-tier1-3",
     "name": "FrontierMath (Tiers 1-3)",
     "category": "math",
