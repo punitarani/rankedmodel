@@ -1,0 +1,23 @@
+model_slug,score,source,source_url,evaluated_at,notes
+claude-fable-5,1349.5,independent,https://eqbench.com/,2026-07-20,
+claude-haiku-4-5,1073.9,independent,https://eqbench.com/,2026-07-20,
+claude-opus-4-6,1233.4,independent,https://eqbench.com/,2026-07-20,
+claude-opus-4-7,1321.1,independent,https://eqbench.com/,2026-07-20,
+claude-opus-4-8,1291.5,independent,https://eqbench.com/,2026-07-20,
+claude-sonnet-4-6,1217.9,independent,https://eqbench.com/,2026-07-20,
+claude-sonnet-5,1245.9,independent,https://eqbench.com/,2026-07-20,
+deepseek-v4-pro-non-think,1176.9,independent,https://eqbench.com/,2026-07-20,"Leaderboard row 'deepseek/deepseek-v4-pro'. EQ-Bench labels thinking variants explicitly and this row has no such label, so it is attributed to the default non-thinking chat mode."
+gemini-3-1-pro,1152.1,independent,https://eqbench.com/,2026-07-20,Leaderboard row 'google/gemini-3.1-pro-preview'.
+gemini-3-5-flash,1097.5,independent,https://eqbench.com/,2026-07-20,
+gemma-4,1130,independent,https://eqbench.com/,2026-07-20,Leaderboard row 'google/gemma-4-31b-it' -- matches this corpus's Gemma 4 (30.7B) entry.
+glm-5-2-high,1229.3,independent,https://eqbench.com/,2026-07-20,"Leaderboard row 'z-ai/glm-5.2' (reasoning tier not stated). Mapped to GLM-5.2 (High), the standard tier; GLM-5.2 (Max) is tracked separately in this corpus."
+gpt-5-4,1283.4,independent,https://eqbench.com/,2026-07-20,
+gpt-5-5,1325.8,independent,https://eqbench.com/,2026-07-20,Leaderboard row 'openai/gpt-5.5' (API default reasoning effort); the high/xhigh effort variants are tracked as separate models in this corpus.
+gpt-5-6,1262.6,independent,https://eqbench.com/,2026-07-20,"Leaderboard row 'openai/gpt-5.6-sol'. This corpus's GPT-5.6 entry is the Sol flagship tier (same $5/$30 per-MTok pricing); the Terra and Luna tiers are distinct models not in the dataset, so their rows were not imported."
+grok-4-3,1084.1,independent,https://eqbench.com/,2026-07-20,Leaderboard row 'x-ai/grok-4.3' (standard reasoning; Grok 4.3 High is tracked separately in this corpus).
+inkling,1234.5,independent,https://eqbench.com/,2026-07-20,
+kimi-k2-6,1212.6,independent,https://eqbench.com/,2026-07-20,
+kimi-k3,1349.2,independent,https://eqbench.com/,2026-07-20,
+minimax-m3,1160.9,independent,https://eqbench.com/,2026-07-20,
+qwen3-6-27b,1035.2,independent,https://eqbench.com/,2026-07-20,
+qwen3-7-max,1120.1,independent,https://eqbench.com/,2026-07-20,

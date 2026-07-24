@@ -1,0 +1,11 @@
+{
+  "slug": "creative-writing-v3",
+  "name": "Creative Writing v3",
+  "category": "human-preference",
+  "unit": "Elo",
+  "description": "LLM-judged creative writing (eqbench.com): 32 prompts x 3 iterations, rubric-scored, then pairwise matchups vs neighboring models solved into a Glicko Elo.",
+  "normMin": 200,
+  "normMax": 2600,
+  "higherIsBetter": true,
+  "methodologyUrl": "https://eqbench.com/creative_writing.html"
+}

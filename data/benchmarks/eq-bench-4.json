@@ -1,0 +1,11 @@
+{
+  "slug": "eq-bench-4",
+  "name": "EQ-Bench 4",
+  "category": "human-preference",
+  "unit": "Elo",
+  "description": "Emotional intelligence in adversarial multi-turn roleplays with simulated personas; pairwise transcripts judged by a three-judge panel into an anchored Elo (eqbench.com).",
+  "normMin": 900,
+  "normMax": 1450,
+  "higherIsBetter": true,
+  "methodologyUrl": "https://eqbench.com/"
+}

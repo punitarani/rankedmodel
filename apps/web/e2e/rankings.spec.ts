@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test'
 import { datasetCounts, gotoHydrated, pickOption } from './helpers'
 
 test.describe('rankings', () => {
-  test('default view: rank-eligible rows sorted by Elo, GPT-5.6 first', async ({ page }) => {
+  test('default view: rank-eligible rows sorted by Elo, Kimi K3 first', async ({ page }) => {
     const { models } = datasetCounts()
     await gotoHydrated(page, '/rankings')
     await expect(page.getByTestId('rankings-meta')).toContainText(
@@ -11,16 +11,16 @@ test.describe('rankings', () => {
     // the coverage gate (D20) keeps single-benchmark curiosities (Doubao) out of the top; the
     // #1 row is the broadly-benchmarked frontier leader (Frontier Elo, D21)
     const first = page.getByTestId('ranking-row').first()
-    await expect(first).toContainText('GPT-5.6')
-    await expect(first).toContainText('3072.6')
+    await expect(first).toContainText('Kimi K3')
+    await expect(first).toContainText('3042.0')
   })
 
   test('column sort click mutates URL and reorders rows', async ({ page }) => {
     await gotoHydrated(page, '/rankings')
     await page.getByTestId('sort-gpqa').click()
     await expect(page).toHaveURL(/sort=-gpqa/, { timeout: 10_000 })
-    // GPT-5.6 leads both the Elo index and GPQA Diamond (94.6), so sorting by GPQA
-    // keeps it in first place — no reordering, but the sort param still mutates the URL
+    // GPT-5.6 leads GPQA Diamond (94.6) while Kimi K3 leads the Elo index, so sorting
+    // by GPQA reorders the table and puts GPT-5.6 first
     await expect(page.getByTestId('ranking-row').first()).toContainText('GPT-5.6')
     // second click flips to ascending
     await page.getByTestId('sort-gpqa').click()

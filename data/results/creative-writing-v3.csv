@@ -1,0 +1,85 @@
+model_slug,score,source,source_url,evaluated_at,notes
+claude-3-5-haiku,1174.2,independent,https://eqbench.com/creative_writing.html,,
+claude-3-5-sonnet-new,1432.2,independent,https://eqbench.com/creative_writing.html,,
+claude-3-7-sonnet,1418.1,independent,https://eqbench.com/creative_writing.html,,
+claude-3-haiku,868.4,independent,https://eqbench.com/creative_writing.html,,
+claude-fable-5,2090.8,independent,https://eqbench.com/creative_writing.html,,
+claude-opus-4,1578.2,independent,https://eqbench.com/creative_writing.html,,
+claude-opus-4-5,1731.9,independent,https://eqbench.com/creative_writing.html,,Leaderboard row 'claude-opus-4-5-20251101' (default effort; the high/medium effort variants are tracked separately in this corpus).
+claude-opus-4-6,1889.5,independent,https://eqbench.com/creative_writing.html,,
+claude-opus-4-7,2047,independent,https://eqbench.com/creative_writing.html,,
+claude-opus-4-8,1910.5,independent,https://eqbench.com/creative_writing.html,,
+claude-sonnet-4,1491.4,independent,https://eqbench.com/creative_writing.html,,
+claude-sonnet-4-5,1738.3,independent,https://eqbench.com/creative_writing.html,,
+claude-sonnet-4-6,1877.9,independent,https://eqbench.com/creative_writing.html,,
+claude-sonnet-5,1817.3,independent,https://eqbench.com/creative_writing.html,,
+command-a,1190,independent,https://eqbench.com/creative_writing.html,,
+deepseek-r1-0528,1398.4,independent,https://eqbench.com/creative_writing.html,,
+deepseek-r1-671b,1500,independent,https://eqbench.com/creative_writing.html,,Fixed Elo anchor on this leaderboard (pinned at 1500).
+deepseek-v3-0324,1484.5,independent,https://eqbench.com/creative_writing.html,,
+deepseek-v3-1-non-thinking,1443.3,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'deepseek-ai/DeepSeek-V3.1' (no thinking label, so attributed to the non-thinking mode)."
+deepseek-v4-flash-non-think,1569.2,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'deepseek-ai/DeepSeek-V4-Flash'. EQ-Bench labels thinking variants explicitly and this row has no such label, so it is attributed to the default non-thinking chat mode."
+deepseek-v4-pro-non-think,1567.3,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'deepseek-ai/DeepSeek-V4-Pro'. EQ-Bench labels thinking variants explicitly and this row has no such label, so it is attributed to the default non-thinking chat mode."
+gemini-2-0-flash,1246.9,independent,https://eqbench.com/creative_writing.html,,
+gemini-2-5-flash,1213.6,independent,https://eqbench.com/creative_writing.html,,Leaderboard row 'gemini-2.5-flash-preview' (2025 preview checkpoint of Gemini 2.5 Flash).
+gemini-2-5-pro,1384.8,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'gemini-2.5-pro-preview-06-05', the checkpoint promoted to GA. The board also lists the earlier 'gemini-2.5-pro-exp-03-25' checkpoint at 1395.3; only one row per model is kept here."
+gemini-3-1-pro,1456.3,independent,https://eqbench.com/creative_writing.html,,
+gemini-3-pro,1480.2,independent,https://eqbench.com/creative_writing.html,,
+gemma-2-9b,947,independent,https://eqbench.com/creative_writing.html,,
+gemma-3-12b,1170.8,independent,https://eqbench.com/creative_writing.html,,
+gemma-3-27b,1256,independent,https://eqbench.com/creative_writing.html,,
+gemma-3-4b,1116.8,independent,https://eqbench.com/creative_writing.html,,
+gemma-4,1413.2,independent,https://eqbench.com/creative_writing.html,,Leaderboard row 'google/gemma-4-31B-it' -- matches this corpus's Gemma 4 (30.7B) entry.
+gemma-4-26b-a4b,1295.1,independent,https://eqbench.com/creative_writing.html,,
+glm-4-32b-0414,1158.5,independent,https://eqbench.com/creative_writing.html,,
+glm-4-5-355b-a32b,1357.7,independent,https://eqbench.com/creative_writing.html,,
+glm-4-6,1389.5,independent,https://eqbench.com/creative_writing.html,,
+glm-5,1617,independent,https://eqbench.com/creative_writing.html,,
+glm-5-1,1595.2,independent,https://eqbench.com/creative_writing.html,,
+glm-5-2-high,1741.5,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'zai-org/GLM-5.2' (reasoning tier not stated). Mapped to GLM-5.2 (High), the standard tier; GLM-5.2 (Max) is tracked separately in this corpus."
+gpt-3-5-turbo,490.4,independent,https://eqbench.com/creative_writing.html,,
+gpt-4,875,independent,https://eqbench.com/creative_writing.html,,Leaderboard row 'openai/gpt-4-0314' (the original GPT-4 checkpoint).
+gpt-4-1,1396.4,independent,https://eqbench.com/creative_writing.html,,
+gpt-4-1-mini,1221.1,independent,https://eqbench.com/creative_writing.html,,
+gpt-4-1-nano,1044,independent,https://eqbench.com/creative_writing.html,,
+gpt-4-5,1226.6,independent,https://eqbench.com/creative_writing.html,,
+gpt-4o-mini,946.9,independent,https://eqbench.com/creative_writing.html,,
+gpt-5,1650.2,independent,https://eqbench.com/creative_writing.html,,
+gpt-5-2,1731.5,independent,https://eqbench.com/creative_writing.html,,
+gpt-5-4,1913.1,independent,https://eqbench.com/creative_writing.html,,
+gpt-5-4-mini,1678.6,independent,https://eqbench.com/creative_writing.html,,
+gpt-5-5,1931.7,independent,https://eqbench.com/creative_writing.html,,API default reasoning effort; the high/xhigh effort variants are tracked as separate models in this corpus.
+gpt-5-6,2143.3,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'gpt-5.6-sol'. This corpus's GPT-5.6 entry is the Sol flagship tier; the Terra and Luna tiers are distinct models not in the dataset, so their rows were not imported."
+gpt-5-mini,1315.2,independent,https://eqbench.com/creative_writing.html,,
+gpt-5-nano,856.4,independent,https://eqbench.com/creative_writing.html,,
+gpt-oss-120b-medium,1073.2,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'openai/gpt-oss-120b' (reasoning effort not stated); attributed to medium, OpenAI's documented default effort."
+gpt-oss-20b-medium,831.5,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'openai/gpt-oss-20b' (reasoning effort not stated); attributed to medium, OpenAI's documented default effort."
+grok-3-standard,1185.5,independent,https://eqbench.com/creative_writing.html,,Leaderboard row 'grok-3-beta' -- xAI's API name for the standard (non-reasoning) Grok 3.
+grok-4-20,1626.5,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'grok-4.20-beta' (xAI's release naming); single-agent Grok 4.20, not the multi-agent variant."
+grok-4-5,1573.5,independent,https://eqbench.com/creative_writing.html,,
+inkling,1625.7,independent,https://eqbench.com/creative_writing.html,,
+kimi-k2,1672,independent,https://eqbench.com/creative_writing.html,,Leaderboard row 'moonshotai/Kimi-K2-Instruct' (the original 2025-07 Kimi K2 instruct release).
+kimi-k2-5,1570.4,independent,https://eqbench.com/creative_writing.html,,
+kimi-k2-6,1721.7,independent,https://eqbench.com/creative_writing.html,,
+kimi-k2-thinking,1662.9,independent,https://eqbench.com/creative_writing.html,,
+kimi-k3,2377,independent,https://eqbench.com/creative_writing.html,,
+llama-3-1-405b,981,independent,https://eqbench.com/creative_writing.html,,
+llama-3-1-70b,835.7,independent,https://eqbench.com/creative_writing.html,,
+llama-3-1-8b,804.5,independent,https://eqbench.com/creative_writing.html,,
+llama-3-2-1b,200,independent,https://eqbench.com/creative_writing.html,,Fixed Elo anchor on this leaderboard (pinned at 200).
+llama-3-2-3b,700.7,independent,https://eqbench.com/creative_writing.html,,
+llama-4-maverick,945.5,independent,https://eqbench.com/creative_writing.html,,
+llama-4-scout,909,independent,https://eqbench.com/creative_writing.html,,
+mistral-large-24-11,1086.8,independent,https://eqbench.com/creative_writing.html,,
+mistral-large-3,1409.5,independent,https://eqbench.com/creative_writing.html,,
+mistral-nemo-12b,965.6,independent,https://eqbench.com/creative_writing.html,,
+mistral-small-3-1-24b,859.7,independent,https://eqbench.com/creative_writing.html,,
+mistral-small-3-2-24b,1236.1,independent,https://eqbench.com/creative_writing.html,,
+mistral-small-3-24b,840,independent,https://eqbench.com/creative_writing.html,,
+muse-spark-1-1-xhigh,2006.8,independent,https://eqbench.com/creative_writing.html,,"Leaderboard row 'muse-spark-1.1' (reasoning effort not stated); mapped to this corpus's only Muse Spark 1.1 entry, the xhigh variant."
+openai-o3,1730.7,independent,https://eqbench.com/creative_writing.html,,
+pixtral-large-124b,1066.4,independent,https://eqbench.com/creative_writing.html,,
+qwen3-235b-a22b-thinking,1406.9,independent,https://eqbench.com/creative_writing.html,,
+qwen3-5-397b-a17b,1477.8,independent,https://eqbench.com/creative_writing.html,,
+qwq-32b,1226.4,independent,https://eqbench.com/creative_writing.html,,
+reka-flash-3,1249.1,independent,https://eqbench.com/creative_writing.html,,
