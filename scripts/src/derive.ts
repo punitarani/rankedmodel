@@ -80,13 +80,13 @@ export async function deriveScores(root: string): Promise<DerivedScores> {
     headline.set(modelSlug, scores)
   }
 
-  // Frontier Elo (D21): pairwise battles on shared benchmarks → Bradley-Terry fit.
+  // Frontier Elo (D21, D26 category-attenuated battles): pairwise battles → Bradley-Terry fit.
   const headlineByModel = new Map<string, BenchScores>(
     ds.models.map((m) => [m.slug, headline.get(m.slug) ?? {}]),
   )
   const battles = buildBattles(
     headlineByModel,
-    ds.benchmarks.map((b) => b.slug),
+    ds.benchmarks.map((b) => ({ slug: b.slug, category: b.category })),
   )
   const fit = fitBradleyTerry([...headlineByModel.keys()], battles)
   if (!fit.converged) {

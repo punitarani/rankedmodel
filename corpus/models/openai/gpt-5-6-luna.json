@@ -1,0 +1,141 @@
+{
+  "name": "GPT-5.6 Luna",
+  "org": "OpenAI",
+  "family": "GPT-5.6",
+  "releaseDate": "2026-07-09",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture (presumed dense transformer); fastest/cheapest 'durable capability tier' of the GPT-5.6 Sol/Terra/Luna family, built for cost-sensitive high-volume workloads",
+  "ctxK": 1050,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1,
+    "output": 6,
+    "provider": "OpenAI"
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-5.6-luna"
+  },
+  "note": "Cheapest/fastest tier of the three-tier GPT-5.6 family (GA July 9, 2026 alongside Sol and Terra); OpenAI positions the tiers as 'durable capability tiers that can advance on their own cadence' — Luna targets cost-sensitive, high-volume workloads. Same 1.05M context, 128K max output and Feb 2026 knowledge cutoff as Sol, at a fifth of Sol's price ($1/$6 vs $5/$30 per MTok). Distinct model tier, not a reasoning-effort configuration of Sol (each tier separately exposes its own effort settings).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "ctxK": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+    "price": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+    "releaseDate": "https://openai.com/index/gpt-5-6/"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 62.7,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluatedAt": "2026-07-24",
+      "notes": "SWE-Bench Pro, GPT-5.6 Luna, OpenAI launch comparison table (Sol 64.6 / Terra 63.4 / Luna 62.7); per kingy.ai's launch-table digest (kingy.ai/blog/gpt-5-6-sol-terra-luna-benchmarks-specs), corroborated by BenchLM's Luna tracker (62.7%)."
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 84.7,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluatedAt": "2026-07-24",
+      "notes": "Terminal-Bench 2.1, GPT-5.6 Luna standard configuration, OpenAI launch table; per kingy.ai's launch-table digest (kingy.ai/blog/gpt-5-6-sol-terra-luna-benchmarks-specs), corroborated by BenchLM (84.7%). BenchLM separately lists an independent 'TerminalBench 2.1' run of 80.9% for Luna."
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 83.3,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluatedAt": "2026-07-24",
+      "notes": "BrowseComp, GPT-5.6 Luna, OpenAI launch table; per kingy.ai's launch-table digest (kingy.ai/blog/gpt-5-6-sol-terra-luna-benchmarks-specs), corroborated by BenchLM (83.3%)."
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 50.3,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluatedAt": "2026-07-24",
+      "notes": "Agents' Last Exam, GPT-5.6 Luna, OpenAI launch table (Sol 52.7 / Terra 50.4 / Luna 50.3); per kingy.ai's launch-table digest (kingy.ai/blog/gpt-5-6-sol-terra-luna-benchmarks-specs)."
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier1-3",
+      "score": 78.6,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluatedAt": "2026-07-24",
+      "notes": "FrontierMath Tier 1-3 v2, GPT-5.6 Luna, OpenAI launch table; per kingy.ai's launch-table digest (kingy.ai/blog/gpt-5-6-sol-terra-luna-benchmarks-specs), corroborated by BenchLM (78.6%)."
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier4",
+      "score": 58.5,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluatedAt": "2026-07-24",
+      "notes": "FrontierMath Tier 4 v2, GPT-5.6 Luna, OpenAI launch table; per kingy.ai's launch-table digest (kingy.ai/blog/gpt-5-6-sol-terra-luna-benchmarks-specs), corroborated by BenchLM (58.5%)."
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 92.3,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/gpt-5-6-luna",
+      "evaluatedAt": "2026-07-24",
+      "notes": "GPQA Diamond, GPT-5.6 Luna, BenchLM tracker snapshot. Same BenchLM provenance as the Sol tier's 94.6% row."
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1591.8,
+      "source": "independent",
+      "sourceUrl": "https://www.marktechpost.com/2026/07/09/openai-releases-gpt-5-6-a-three-tier-model-family-with-programmatic-tool-calling/",
+      "evaluatedAt": "2026-07-24",
+      "notes": "GDPval-AA v2 (Elo) for GPT-5.6 Luna = 1591.8, from MarkTechPost's direct report of the GPT-5.6 launch comparison table — the same source and table as the Sol tier's 1747.8 row, which explicitly lists Terra 1593 and Luna 1591.8. BenchLM's later live snapshot reads 1584 (leaderboard refits); the launch-table figure is kept for cross-tier consistency. GDPval-AA is Artificial Analysis's own independent methodology, hence 'independent'."
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 77.9,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/gpt-5-6-luna",
+      "evaluatedAt": "2026-07-24",
+      "notes": "CyberGym, GPT-5.6 Luna = 77.9%, BenchLM tracker snapshot — same third-party leaderboard provenance as the Sol tier's 84.5% row."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 78.4,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/gpt-5-6-luna",
+      "evaluatedAt": "2026-07-24",
+      "notes": "MMMU-Pro, GPT-5.6 Luna, BenchLM tracker snapshot (79.5% with Python tool)."
+    },
+    {
+      "benchmarkSlug": "tau3-banking",
+      "score": 27.2,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/gpt-5-6-luna",
+      "evaluatedAt": "2026-07-24",
+      "notes": "τ³-Banking (Artificial Analysis methodology), GPT-5.6 Luna = 27.2%, BenchLM tracker snapshot."
+    }
+  ],
+  "verificationNotes": "Existence, tier positioning, $1/$6 pricing, 1.05M context, 128K max output, Feb 16 2026 knowledge cutoff, and text+vision(input) modalities all confirmed directly from OpenAI's official model docs page (developers.openai.com/api/docs/models/gpt-5.6-luna, fetched 2026-07-24); pricing independently corroborated by finout.io, eesel.ai and aipricing.guru tier-pricing explainers. Added to the corpus as part of the GPT-5.6 tier split; the sibling flagship Sol tier was already tracked (formerly under the bare gpt-5-6 slug).\n\n2026-07-24 TIER SPLIT / FULL INGESTION: promoted to a full sibling model of Sol and Terra (config flags true/true — three distinct capability-tier models like Claude Opus/Sonnet/Haiku, not an effort cohort). Ingested 11 further benchmark rows: six self-reported from OpenAI's launch comparison table (via kingy.ai's digest, cross-corroborated by BenchLM's independent tracker where available — every overlapping value matched exactly) and five independent (BenchLM tracker snapshots plus the MarkTechPost-reported GDPval-AA launch table). Unlike Sol and Terra, BenchLM's Luna tracker publishes NO Humanity's Last Exam or IFBench figure — both omitted rather than estimated. Deliberately not mapped for lack of a taxonomy slug: OSWorld 2.0 (45.6%), ARC-AGI-3 (0.2%), DeepSWE (67.2%), Toolathlon (53.4%), Terminal-Bench Hard, FrontierCode/CursorBench/SciCode/CritPt/HealthBench/Omniscience/ExploitBench/ExploitGym, BenchCAD, MRCR/GraphWalks (Luna's 41.3% MRCR figures), and all AA composite indices."
+}

@@ -16,6 +16,8 @@ import type { BenchScores } from './scoring'
 
 describe('buildBattles', () => {
   const scores = (s: BenchScores) => s
+  /** All-distinct categories — every n_c is 1, so weights are 1 (the pre-D26 behavior). */
+  const distinct = (...slugs: string[]) => slugs.map((slug, i) => ({ slug, category: `c${i}` }))
 
   it('produces one battle per shared benchmark, aggregated into canonical pair records', () => {
     const byModel = new Map<string, BenchScores>([
@@ -24,20 +26,70 @@ describe('buildBattles', () => {
       ['bravo', scores({ x: 20, y: 5 })],
       ['charlie', scores({ y: 1 })],
     ])
-    expect(buildBattles(byModel, ['x', 'y', 'z'])).toEqual<PairRecord[]>([
+    expect(buildBattles(byModel, distinct('x', 'y', 'z'))).toEqual<PairRecord[]>([
       { a: 'alpha', b: 'bravo', winsA: 0.5, winsB: 1.5 },
       { a: 'alpha', b: 'charlie', winsA: 1, winsB: 0 },
       { a: 'bravo', b: 'charlie', winsA: 1, winsB: 0 },
     ])
   })
 
-  it('ignores null/undefined scores and benchmarks outside the provided list', () => {
+  it('attenuates same-category battles by 1/√n_c per pair (D26)', () => {
+    const byModel = new Map<string, BenchScores>([
+      // alpha and bravo share four coding benchmarks (alpha wins three, one is a TIE)
+      // + one math benchmark (bravo wins). Attenuated, coding's four battles carry
+      // 1/√4 = 0.5 each (total 2 = √4) and the tie splits its 0.5 as 0.25 each, while
+      // math's lone battle keeps weight 1 — so the record is 1.75 : 1.25, and a tie is
+      // worth weight/2 per side, never a fixed 0.5.
+      ['alpha', scores({ c1: 9, c2: 9, c3: 9, c4: 7, m1: 1 })],
+      ['bravo', scores({ c1: 5, c2: 5, c3: 5, c4: 7, m1: 2 })],
+    ])
+    const benches = [
+      { slug: 'c1', category: 'coding' },
+      { slug: 'c2', category: 'coding' },
+      { slug: 'c3', category: 'coding' },
+      { slug: 'c4', category: 'coding' },
+      { slug: 'm1', category: 'math' },
+    ]
+    const [rec] = buildBattles(byModel, benches)
+    expect(rec?.a).toBe('alpha')
+    expect(rec?.winsA).toBeCloseTo(1.75, 12)
+    expect(rec?.winsB).toBeCloseTo(1.25, 12)
+  })
+
+  it('counts n_c per PAIR, not globally — a pair sharing one benchmark of a dense category keeps weight 1', () => {
+    const byModel = new Map<string, BenchScores>([
+      ['alpha', scores({ k1: 9, k2: 9 })],
+      ['bravo', scores({ k1: 5, k2: 5 })],
+      ['charlie', scores({ k1: 7 })], // shares only k1 with each of alpha/bravo
+    ])
+    const benches = [
+      { slug: 'k1', category: 'knowledge' },
+      { slug: 'k2', category: 'knowledge' },
+    ]
+    const recs = buildBattles(byModel, benches)
+    const ab = recs.find((r) => r.a === 'alpha' && r.b === 'bravo')
+    const ac = recs.find((r) => r.a === 'alpha' && r.b === 'charlie')
+    // alpha↔bravo share two knowledge benchmarks → each battle 1/√2; alpha↔charlie share
+    // one → full weight 1 even though the category is "dense" elsewhere in the corpus.
+    expect(ab?.winsA).toBeCloseTo(Math.SQRT2, 12)
+    expect(ab?.winsB).toBeCloseTo(0, 12)
+    expect(ac?.winsA).toBeCloseTo(1, 12)
+    expect(ac?.winsB).toBeCloseTo(0, 12)
+  })
+
+  it('ignores null/undefined scores and benchmarks outside the provided list — including for n_c', () => {
     const byModel = new Map<string, BenchScores>([
       ['alpha', scores({ x: 10, y: null, w: 1 })],
       ['bravo', scores({ x: 3, y: 9, w: 2 })],
     ])
-    // y: alpha has null → no battle; w: not in the benchmark list → no battle
-    expect(buildBattles(byModel, ['x', 'y'])).toEqual<PairRecord[]>([
+    // y: alpha has null → no battle; w: not in the benchmark list → no battle. x and y
+    // share a category on purpose: y's null must not count toward n_c either, so x keeps
+    // full weight 1 (an implementation that counts null-scored benchmarks yields 1/√2).
+    const sameCat = [
+      { slug: 'x', category: 'coding' },
+      { slug: 'y', category: 'coding' },
+    ]
+    expect(buildBattles(byModel, sameCat)).toEqual<PairRecord[]>([
       { a: 'alpha', b: 'bravo', winsA: 1, winsB: 0 },
     ])
   })
@@ -49,7 +101,11 @@ describe('buildBattles', () => {
       ['charlie', scores({ x: 3 })],
     ])
     const backward = new Map([...forward].reverse())
-    expect(buildBattles(backward, ['y', 'x'])).toEqual(buildBattles(forward, ['x', 'y']))
+    const benches = [
+      { slug: 'x', category: 'coding' },
+      { slug: 'y', category: 'coding' },
+    ]
+    expect(buildBattles(backward, [...benches].reverse())).toEqual(buildBattles(forward, benches))
   })
 })
 

@@ -11,7 +11,7 @@ test.describe('seo surface', () => {
     const locs = body.match(/<loc>/g)?.length ?? 0
     // 10 static + 7 categories + every model + every org + every family + every benchmark
     expect(locs).toBe(10 + 7 + models + organizations + families + benchmarks)
-    expect(body).toContain('https://modelbeats.com/models/gpt-5-6')
+    expect(body).toContain('https://modelbeats.com/models/gpt-5-6-sol')
   })
 
   test('robots allows crawling, hides /debug, points at the sitemap', async ({ request }) => {
@@ -21,15 +21,15 @@ test.describe('seo surface', () => {
   })
 
   test('model pages ship parseable JSON-LD + canonical', async ({ request }) => {
-    const html = await (await request.get('/models/gpt-5-6')).text()
+    const html = await (await request.get('/models/gpt-5-6-sol')).text()
     const m = html.match(/<script[^>]*application\/ld\+json[^>]*>(.*?)<\/script>/s)
     expect(m).not.toBeNull()
     const ld = JSON.parse((m as RegExpMatchArray)[1] as string)
     expect(ld['@type']).toBe('SoftwareApplication')
-    expect(ld.name).toBe('GPT-5.6')
+    expect(ld.name).toBe('GPT-5.6 Sol')
     expect(ld.creator.name).toBe('OpenAI')
     expect(html).toContain('rel="canonical"')
-    expect(html).toContain('https://modelbeats.com/models/gpt-5-6')
+    expect(html).toContain('https://modelbeats.com/models/gpt-5-6-sol')
   })
 })
 

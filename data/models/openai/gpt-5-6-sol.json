@@ -1,6 +1,6 @@
 {
-  "slug": "gpt-5-6",
-  "name": "GPT-5.6",
+  "slug": "gpt-5-6-sol",
+  "name": "GPT-5.6 Sol",
   "orgSlug": "openai",
   "familySlug": "gpt-5-6",
   "releaseDate": "2026-07-09",
@@ -11,7 +11,7 @@
   "paramsB": null,
   "activeParamsB": null,
   "archClass": "dense",
-  "archDisplay": "Undisclosed architecture (presumed dense transformer); three durable capability tiers Sol/Terra/Luna (this entry reflects flagship Sol)",
+  "archDisplay": "Undisclosed architecture (presumed dense transformer); flagship tier of the three durable capability tiers Sol/Terra/Luna, each tracked as its own corpus model (like Claude Opus/Sonnet/Haiku)",
   "ctxK": 1050,
   "modalities": [
     "text",
@@ -34,7 +34,7 @@
   "links": {
     "docs": "developers.openai.com/api/docs/models/gpt-5.6-sol"
   },
-  "note": "Sol tier billed as OpenAI's best coding model yet (Terminal-Bench 2.1 SOTA); limited-preview June 26 under US govt review, GA July 9, 2026.",
+  "note": "Flagship (Sol) tier of the three-tier GPT-5.6 family, billed as OpenAI's best coding model yet (Terminal-Bench 2.1 SOTA); limited-preview June 26 under US govt review, GA July 9, 2026. Sibling tiers GPT-5.6 Terra and GPT-5.6 Luna are tracked as their own corpus models in the same family (OpenAI: 'durable capability tiers that can advance on their own cadence').",
   "quants": [],
   "vramQ4Gb": null,
   "vramFp16Gb": null,

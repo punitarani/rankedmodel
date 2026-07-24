@@ -1,0 +1,46 @@
+{
+  "slug": "gpt-5-6-luna",
+  "name": "GPT-5.6 Luna",
+  "orgSlug": "openai",
+  "familySlug": "gpt-5-6",
+  "releaseDate": "2026-07-09",
+  "status": "released",
+  "predecessor": null,
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture (presumed dense transformer); fastest/cheapest 'durable capability tier' of the GPT-5.6 Sol/Terra/Luna family, built for cost-sensitive high-volume workloads",
+  "ctxK": 1050,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 1,
+    "output": 6
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-5.6-luna"
+  },
+  "note": "Cheapest/fastest tier of the three-tier GPT-5.6 family (GA July 9, 2026 alongside Sol and Terra); OpenAI positions the tiers as 'durable capability tiers that can advance on their own cadence' — Luna targets cost-sensitive, high-volume workloads. Same 1.05M context, 128K max output and Feb 2026 knowledge cutoff as Sol, at a fifth of Sol's price ($1/$6 vs $5/$30 per MTok). Distinct model tier, not a reasoning-effort configuration of Sol (each tier separately exposes its own effort settings).",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true
+}

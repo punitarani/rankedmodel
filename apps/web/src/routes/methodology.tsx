@@ -43,15 +43,21 @@ function MethodologyRoute() {
         every benchmark, each pair of models that <em>both</em> report a headline score becomes one
         head-to-head battle: the higher raw score wins, an exactly equal score is a draw. Because
         both scores come from the same benchmark, no cross-benchmark normalization is needed — the
-        comparison is apples to apples by construction. A Bradley-Terry model (the same statistical
-        machinery behind LMArena's leaderboard) is then fitted over all battles, propagating
-        strength through shared opponents, so two models are comparable even when they were never
-        measured on the same benchmark.
+        comparison is apples to apples by construction. Battles are weighted so that no single
+        domain decides a pairing linearly by benchmark count: within each pair, a battle in a
+        category the pair shares n benchmarks of carries weight 1/√n — a domain with more shared
+        benchmarks still contributes more evidence (√n total), but sub-linearly, so a rating
+        reflects breadth across domains rather than depth in one. A Bradley-Terry model (the same
+        statistical machinery behind LMArena's leaderboard) is then fitted over all weighted
+        battles, propagating strength through shared opponents, so two models are comparable even
+        when they were never measured on the same benchmark.
       </P>
       <Formula>{`P(A beats B) = s(A) / (s(A) + s(B))     — Bradley-Terry win model
 rating       = 400·log10(s) + 1000       — Elo scale: +400 ⇒ 10:1 odds
 
-battles: every benchmark two models both report = 1 head-to-head
+battles: every benchmark two models both report = 1 head-to-head,
+         weighted 1/√n where n = benchmarks of that battle's category
+         the pair shares (a shared domain votes with √n total weight)
 fit:     maximum likelihood (MM algorithm), ties count as half-wins
 anchor:  every model gets one pseudo-draw vs a fixed 1000-rated anchor,
          so undefeated models stay finite and the scale stays pinned`}</Formula>

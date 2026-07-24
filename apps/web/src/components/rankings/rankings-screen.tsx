@@ -193,9 +193,10 @@ export function RankingsScreen({
       )}
       <div className="mt-2.5 text-[11px] text-dim">
         Elo = Bradley-Terry rating over pairwise benchmark battles: every benchmark two models both
-        report is a head-to-head, and 400 points ≈ 10:1 expected win odds. Models with too few
-        results to compare fairly are shown <span className="font-mono">unrated</span> and sorted
-        last.
+        report is a head-to-head, weighted so no domain decides a pairing linearly by benchmark
+        count (a shared domain votes with √n total weight), and 400 points ≈ 10:1 expected win odds.
+        Models with too few results to compare fairly are shown{' '}
+        <span className="font-mono">unrated</span> and sorted last.
       </div>
     </div>
   )

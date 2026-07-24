@@ -1,0 +1,165 @@
+{
+  "name": "GPT-5.6 Sol",
+  "org": "OpenAI",
+  "family": "GPT-5.6",
+  "releaseDate": "2026-07-09",
+  "status": "released",
+  "openness": "closed",
+  "license": "Proprietary",
+  "paramsB": null,
+  "activeParamsB": null,
+  "archClass": "dense",
+  "archDisplay": "Undisclosed architecture (presumed dense transformer); flagship tier of the three durable capability tiers Sol/Terra/Luna, each tracked as its own corpus model (like Claude Opus/Sonnet/Haiku)",
+  "ctxK": 1050,
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "langCount": null,
+  "capabilities": {
+    "reasoning": true,
+    "coding": true,
+    "vision": true,
+    "functionCalling": true,
+    "toolUse": true,
+    "agentic": true
+  },
+  "apiAvailable": true,
+  "price": {
+    "input": 5,
+    "output": 30,
+    "provider": "OpenAI"
+  },
+  "links": {
+    "docs": "developers.openai.com/api/docs/models/gpt-5.6-sol"
+  },
+  "note": "Flagship (Sol) tier of the three-tier GPT-5.6 family, billed as OpenAI's best coding model yet (Terminal-Bench 2.1 SOTA); limited-preview June 26 under US govt review, GA July 9, 2026. Sibling tiers GPT-5.6 Terra and GPT-5.6 Luna are tracked as their own corpus models in the same family (OpenAI: 'durable capability tiers that can advance on their own cadence').",
+  "quants": [],
+  "vramQ4Gb": null,
+  "vramFp16Gb": null,
+  "tps4090": null,
+  "tpsNote": null,
+  "effortLabel": null,
+  "isDefaultConfig": true,
+  "isBestConfig": true,
+  "specSources": {
+    "ctxK": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+    "releaseDate": "https://openai.com/index/gpt-5-6/",
+    "openness": "https://openai.com/index/gpt-5-6/"
+  },
+  "results": [
+    {
+      "benchmarkSlug": "swe-bench-pro",
+      "score": 64.6,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "notes": "SWE-Bench Pro, GPT-5.6 Sol; confirmed via marktechpost.com direct report of launch page"
+    },
+    {
+      "benchmarkSlug": "terminal-bench-2",
+      "score": 88.8,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "notes": "Terminal-Bench 2.1, GPT-5.6 Sol standard (91.9 with Ultra), new SOTA; confirmed"
+    },
+    {
+      "benchmarkSlug": "browsecomp",
+      "score": 90.4,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "notes": "BrowseComp, GPT-5.6 Sol standard (92.2 with Ultra); confirmed"
+    },
+    {
+      "benchmarkSlug": "agents-last-exam",
+      "score": 52.7,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "notes": "Agents' Last Exam, GPT-5.6 Sol; confirmed"
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier1-3",
+      "score": 89,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "notes": "FrontierMath Tier 1-3 v2, GPT-5.6 Sol; confirmed"
+    },
+    {
+      "benchmarkSlug": "frontiermath-tier4",
+      "score": 83,
+      "source": "self-reported",
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "notes": "FrontierMath Tier 4 v2, GPT-5.6 Sol; confirmed"
+    },
+    {
+      "benchmarkSlug": "gpqa",
+      "score": 94.6,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/benchmarks/gpqaDiamond",
+      "notes": "GPQA Diamond, GPT-5.6 Sol; BenchLM published-score snapshot (verified July 11, 2026); not included in OpenAI's own launch eval tables"
+    },
+    {
+      "benchmarkSlug": "hle",
+      "score": 47.2,
+      "source": "independent",
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "notes": "Humanity's Last Exam, GPT-5.6 Sol (max reasoning); Artificial Analysis independent evaluation; tool setting not stated on page"
+    },
+    {
+      "benchmarkSlug": "gdpval-aa",
+      "score": 1747.8,
+      "source": "independent",
+      "sourceUrl": "https://www.marktechpost.com/2026/07/09/openai-releases-gpt-5-6-a-three-tier-model-family-with-programmatic-tool-calling/",
+      "evaluatedAt": "2026-07-09",
+      "notes": "GDPval-AA v2 (Elo) for GPT-5.6 Sol = 1747.8, from MarkTechPost's direct report of OpenAI's GPT-5.6 launch comparison table (which also lists Terra 1593, Luna 1591.8, GPT-5.5 1493.7, Claude Fable 5 1759.6, Claude Opus 4.8 1600.1, Gemini 3.1 Pro Preview 962.3). Confirmed 'GDPval-AA' is Artificial Analysis's own independent evaluation methodology (per artificialanalysis.ai/articles/gpt-5-6-has-landed, which lists GDPval-AA v2 as part of their own Intelligence Index v4.1 suite), hence classified as 'independent' rather than self-reported. Identical 1747.8 figure independently corroborated by kingy.ai's GPT-5.6 benchmarks/specs blog post."
+    },
+    {
+      "benchmarkSlug": "cybergym",
+      "score": 84.5,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/benchmarks/cyberGym",
+      "evaluatedAt": "2026-07-11",
+      "notes": "CyberGym score for GPT-5.6 Sol, from BenchLM's CyberGym leaderboard ('GPT-5.6 Sol leads the public snapshot at 84.5%', rank #1). This is a third-party independent leaderboard run, not an OpenAI self-reported figure (OpenAI's own launch materials report a different internal 'capture-the-flag suite' score of 96.7% and cite an external firm called Irregular for cyber capability evals, neither of which is the CyberGym benchmark itself). One other secondary mention of 83.6% for the same pairing surfaced in a noisy web-search synopsis but without a clean citation, so treating 84.5% (the leaderboard's own stated number) as authoritative."
+    },
+    {
+      "benchmarkSlug": "arc-agi-1",
+      "score": 96.5,
+      "source": "independent",
+      "sourceUrl": "https://arcprize.org/results/openai-gpt-5-6-sol",
+      "evaluatedAt": "2026-07-09",
+      "notes": "ARC-AGI-1, Public Eval, max reasoning effort, GPT-5.6 Sol. From ARC Prize's official verified-results page for GPT-5.6 Sol (cross-checked against the /results/openai-gpt-5-6 mirror page, identical figure). Not currently tracked under any arc-agi-* slug for this model."
+    },
+    {
+      "benchmarkSlug": "arc-agi-2",
+      "score": 92.5,
+      "source": "independent",
+      "sourceUrl": "https://arcprize.org/results/openai-gpt-5-6-sol",
+      "evaluatedAt": "2026-07-09",
+      "notes": "ARC-AGI-2, Public Eval, max reasoning effort, GPT-5.6 Sol. Same ARC Prize results page as the ARC-AGI-1 row; also independently corroborated by a July 2026 X post from Greg Kamradt citing the identical 92.5% SOTA figure for Sol on ARC-AGI-2."
+    },
+    {
+      "benchmarkSlug": "mmmu-pro",
+      "score": 83.0,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/gpt-5-6-sol",
+      "evaluatedAt": "2026-07-24",
+      "notes": "MMMU-Pro, GPT-5.6 Sol, BenchLM tracker snapshot (84.6% with Python tool; AA's own AA-MMMU-Pro run 83.4%). Fills a gap flagged in the round-1 verification notes, where BenchLM's 83.0% MMMU-Pro was observed but never ingested as a row."
+    },
+    {
+      "benchmarkSlug": "tau3-banking",
+      "score": 33.0,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/gpt-5-6-sol",
+      "evaluatedAt": "2026-07-24",
+      "notes": "τ³-Banking (Artificial Analysis methodology), GPT-5.6 Sol = 33.0%, BenchLM tracker snapshot of the AA figure. Within the tau3-banking taxonomy bounds [0,45]."
+    },
+    {
+      "benchmarkSlug": "ifbench",
+      "score": 72.7,
+      "source": "independent",
+      "sourceUrl": "https://benchlm.ai/models/gpt-5-6-sol",
+      "evaluatedAt": "2026-07-24",
+      "notes": "IFBench (Artificial Analysis run), GPT-5.6 Sol = 72.7%, BenchLM tracker snapshot of the AA figure."
+    }
+  ],
+  "verificationNotes": "Existence, July 9 2026 GA (June 26 limited govt preview), 1.05M context, and $5/$30 Sol pricing all confirmed directly via developers.openai.com/api/docs/models/gpt-5.6-sol and multiple outlets (Simon Willison, VentureBeat, MarkTechPost). All six benchmark scores independently corroborated via MarkTechPost's direct report of the OpenAI launch page.\n\n2026-07-16: Checked all seven flagged core-benchmark gaps (mmlu, math, aime, humaneval, livecodebench, swe-bench, mmmu) for GPT-5.6 across all tiers (Sol/Terra/Luna/Ultra) against (1) OpenAI's own launch page (openai.com/index/gpt-5-6/) and the full GPT-5.6 system card PDF (deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf, text-extracted and grepped -- the only MMLU/MMLU-Pro/HumanEval/AIME/SWE-Bench-Verified mentions found are citations to those benchmarks as components of unrelated internal eval suites like CoT-Control and PostTrainBench, not GPT-5.6 capability scores), (2) BenchLM.ai's exhaustive 45-benchmark tracker for GPT-5.6 Sol (benchlm.ai/models/gpt-5-6-sol, full list pulled -- none of the seven appear; only MMMU-Pro 83.0% and SWE-Bench Pro 64.6% are present, both distinct successor benchmarks already tracked under their own slugs), (3) llm-stats.com's GPT-5.6 Sol model page (lists MMLU/MATH/AIME 2025/HumanEval/LiveCodeBench/SWE-Bench Verified/MMMU as nav categories but shows 'Score pending' for all), and (4) dedicated independent leaderboards -- Artificial Analysis's own AIME-2025 leaderboard, BenchLM's dedicated (non-Pro) MMMU leaderboard, and Vals.ai's SWE-bench Verified leaderboard -- none list any GPT-5.6 tier. Vellum's GPT-5.6 benchmarks explainer (vellum.ai/blog/gpt-5-6-benchmarks-explained) independently states OpenAI explicitly did not publish SWE-bench Verified, GPQA Diamond, AIME, MMLU, ARC-AGI-2, or FrontierMath in the base launch table (this corpus's GPQA/ARC-AGI-2/FrontierMath entries are sourced from independent trackers, not OpenAI self-report, so that's consistent) and separately confirms HumanEval, LiveCodeBench, MATH, and MMMU are also absent. This mirrors sibling GPT-5.5 (already in this corpus missing all seven of the same benchmarks) and reflects OpenAI's deliberate GPT-5.5/5.6-era shift toward agentic and successor evaluations (SWE-Bench Pro over SWE-bench, MMMU-Pro over MMMU, FrontierMath over MATH/AIME) rather than a research gap -- treating all seven as a genuine, expected absence.\n\n2026-07-17 ROUND-2 DEEP DIVE (mmlu/math/aime/humaneval), new source types only per instructions -- no repeat of official launch page / system card / Epoch AI / Vals.ai / LMArena / BenchLM:\n\n1. Stanford HELM -- directly rendered (via browser, not raw fetch, since the SPA needs JS) both crfm.stanford.edu/helm/classic (MMLU sub-leaderboard, \"Massive Multitask Language Understanding (MMLU)\" scenario) and crfm.stanford.edu/helm/capabilities (Core Scenarios: MMLU-Pro/GPQA/IFEval/WildBench/Omni-MATH). Full model rosters pulled: HELM Classic's MMLU table tops out at GPT-4o/DeepSeek-v3/Claude-3.5-era models (no GPT-5-series at all); HELM Capabilities' newest OpenAI entry is \"GPT-5.1 (2025-11-13)\" -- no GPT-5.5 or GPT-5.6 present on either leaderboard, and HELM Capabilities tracks MMLU-Pro/Omni-MATH, not literally MMLU/MATH-500/AIME/HumanEval anyway. HELM has evidently not run any GPT-5.6 tier yet. CONFIRMED ABSENT.\n\n2. arXiv / Semantic Scholar -- multiple targeted searches (\"GPT-5.6 MMLU site:arxiv.org\", \"GPT-5.6 MATH benchmark arxiv baseline\", \"GPT-5.6 AIME 2025 score\", \"GPT-5.6 HumanEval score\", \"semanticscholar.org GPT-5.6 benchmark comparison table\"). No arXiv paper using GPT-5.6 (Sol/Terra/Luna) as a reported baseline was found for any of the four benchmarks -- the model is 8 days old (GA July 9, 2026) as of this check, too recent for academic baseline tables to have propagated. CONFIRMED ABSENT.\n\n3. GitHub eval-harness run logs -- searched for lm-evaluation-harness results.json / benchmark-repo results directories referencing \"gpt-5.6\" or \"gpt-5.6-sol\". Found only github.com/J3m5/gpt-5.6-benchmarks, which visualizes OpenAI's own self-reported GeneBench v1/ExploitGym/TerminalBench-2.1 numbers from the launch page (explicitly not an independent eval, and doesn't cover MMLU/MATH/AIME/HumanEval regardless). No genuine third-party harness run against GPT-5.6 via API was found for these four benchmarks. CONFIRMED ABSENT.\n\n4. Other leaderboards/aggregators:\n   - LiveBench.ai: DOES independently evaluate GPT-5.6 Sol Max Effort / Sol xHigh / Terra Max / Terra xHigh / Luna Max / Luna xHigh directly (confirmed via live browser render of livebench.ai's full sortable table, release 2026-06-25). However LiveBench's categories are its own composite \"Reasoning/Coding/Agentic Coding/Mathematics/Data Analysis/Language/Instruction Following\" scores, not literally MMLU, MATH-500, AIME, or HumanEval -- this corpus has an explicit prior precedent (StepFun Step-2, round 7 note) establishing that LiveBench sub-scores are \"methodologically distinct\" from the named benchmarks and \"mapping it there would misrepresent the source\" (confirmed no \"livebench\" slug exists in corpus/benchmarks.json, only unrelated livecodebench/livecodebench-pro). So despite being real, independent, and citable, LiveBench's Mathematics (96.2 Sol) / Coding (83.9 Sol) figures are NOT valid substitutes for the math/humaneval slugs and were excluded on that basis.\n   - MathArena.ai: has a live model page for \"GPT-5.6-Sol (max)\" (matharena.ai/models/openai_gpt_56_sol, ranked #1 overall, 83.0%+-2.2% aggregate) but its only per-competition breakdowns for this model are two brand-new June 2026 competitions (06/2026 BrokenArXiv 67.28%, 06/2026 ArXivMath 86.73%) -- MathArena has rotated away from AIME 2025/2026 as those are now \"used up\"/potentially contaminated, so no AIME or MATH-500-equivalent score exists there for GPT-5.6 Sol.\n   - OpenRouter: checked all GPT-5.6 tier pages (Sol, Sol Pro, Terra, Terra Pro, Luna, Luna Pro) -- these show pricing/latency/throughput/uptime telemetry only, no raw MMLU/MATH/AIME/HumanEval academic-benchmark numbers.\n   - Scale AI SEAL, PapersWithCode: searched, no GPT-5.6 entries surfaced for any of the four benchmarks.\n   CONFIRMED ABSENT / NON-MATCHING (LiveBench data exists but is a different benchmark methodology per established corpus precedent; MathArena data exists but not for AIME/MATH-500 specifically).\n\n5. Non-English sources: checked Korean (gpters.org GPT-5.6 benchmark article -- only Agentic Index/TerminalBench/Agents'-Last-Exam/GeneBench/SecureBio/ExploitBench, no MMLU/MATH/AIME/HumanEval; elancer.co.kr GPT-5.6 launch-recap blog -- same, no MMLU/MATH/AIME/HumanEval) and Japanese (web search only returned generic aggregator pages with no GPT-5.6-specific numbers for these four benchmarks). One Korean-adjacent hit, lmmarketcap.com's GPT-5.6 Luna vs Luna Pro comparison page, DOES list MMLU 93%, MMLU-Pro 84.5%, GPQA Diamond 85%, MATH-500 92.5%, HumanEval 96.5%, SWE-bench Verified 75%, IFEval 92%, BBH 90.5%, Arena Elo 1465, LiveBench 76%, HLE 35% -- but flagged and rejected as non-credible: the page shows byte-for-byte IDENTICAL scores across all 11 benchmarks for both GPT-5.6 Luna and GPT-5.6 Luna Pro (two distinct reasoning-effort configurations that should not score identically on things like Arena Elo/HLE/LiveBench), the page provides no data-source attribution or methodology beyond a vague \"driven by benchmark performance (90%) from Arena Elo ratings, MMLU, GPQA, HumanEval, SWE-bench...\" blurb, and the GPQA figure (85%) directly conflicts with this corpus's already-verified BenchLM figure of 94.6% for Sol (a higher tier, so Luna-at-85%-vs-Sol-at-94.6% isn't impossible on its face, but combined with the identical-across-tiers pattern this reads as templated/auto-generated placeholder data rather than a genuine independent eval run). Excluded per the \"never invent or estimate a score\" rule -- this looks like exactly that failure mode from an aggregator site, not a citable primary evaluation.\n\n6. Sibling models: GPT-5.5 (this corpus's gpt-5-5.json / gpt-5-5-high.json / gpt-5-5-xhigh.json) predates GPT-5.6's July 9 2026 GA and cannot contain a forward-looking comparison table for it. Checked all other GPT-5.6-family tier pages (via OpenRouter, artificialanalysis.ai/articles/gpt-5-6-has-landed, and Wikipedia's GPT-5.6 article) for a comparison table carrying Sol's MMLU/MATH/AIME/HumanEval as a reference point -- none exists; every source that discusses GPT-5.6 tiers together uses OpenAI's own launch metrics (SWE-Bench Pro, Terminal-Bench 2.1, Agentic Index, GDPval-AA, Coding Agent Index) which are already captured in this corpus, never MMLU/MATH/AIME/HumanEval.\n\nNet result: genuinely checked 6 of 6 new source types across this round. No credible, citable, non-misrepresenting number surfaced for mmlu, math, aime, or humaneval for GPT-5.6 (any tier). Recommending \"omitted_no_evidence\" for all four, consistent with sibling GPT-5.5's same-benchmark gaps and OpenAI's now twice-confirmed (round 1 + round 2) deliberate shift away from these legacy benchmarks for the GPT-5.5/5.6 launch generation.\n\n2026-07-18 ROUND-3 FINAL PASS (mmlu/math/aime/humaneval), new source types per instructions only -- no repeat of any round-1/round-2 source (official launch page, system card, Epoch AI, Vals.ai, LMArena, BenchLM, HELM, arXiv/Semantic Scholar, GitHub eval-harness logs, MathArena, LiveBench, OpenRouter, Scale SEAL, non-English sources, sibling-model tables, Vellum):\n\n1. WAYBACK MACHINE -- confirmed via the archive.org availability API (http://archive.org/wayback/available?url=openai.com/index/gpt-5-6/&timestamp=20260709) that a snapshot of the launch page exists at http://web.archive.org/web/20260709234907/https://openai.com/index/gpt-5-6/ (captured July 9, 2026 23:49:07 UTC, same-day as GA). However, this tool environment hard-blocks direct WebFetch of any web.archive.org URL (\"Claude Code is unable to fetch from web.archive.org\"), and two alternate access routes both failed for technical reasons: archive.org/web/<ts>/<url> (without the \"web.\" subdomain) returned HTTP 404, and the Memento aggregator timetravel.mementoweb.org could not be resolved (DNS failure) from this environment. Could not directly diff archived-vs-live launch-page content. Partially mitigated by cross-checking independent day-of-launch reporting that closely mirrors the launch page's own table (MarkTechPost's direct report, already in this corpus's notes, and Simon Willison's July 9 post -- see #5 below) -- neither shows MMLU/MATH/AIME/HumanEval, consistent with nothing having been quietly trimmed after the fact. Also attempted to find archived snapshots of llm-stats.com's and artificialanalysis.ai's GPT-5.6 pages from just after release via web search (site:web.archive.org query) -- zero results returned. INCONCLUSIVE ON DIFFING (tool-blocked) but no affirmative evidence surfaced.\n\n2. CONFERENCE TALKS / KEYNOTES / PODCASTS -- OpenAI DevDay 2026 keynote is scheduled for September 29, 2026 (per openai.com/index/devday-2026/), i.e. it has not yet occurred as of this July 18, 2026 check and postdates GPT-5.6's July 9 GA by nearly three months -- GPT-5.6 was launched via blog post, not at a developer conference, so no DevDay keynote transcript for it exists yet. Checked four podcast/newsletter appearances instead: IBM's \"Mixture of Experts\" episode 114 (GPT-5.6 Sol, FIFA AI & Wall Street's AI nerves) -- panel discusses OpenAI's own narrow small-molecule-binding scientific-reasoning benchmark claim, no MMLU/MATH/AIME/HumanEval mentioned; \"Limitless: An AI Podcast\" GPT-5.6 episode transcript (podscripts.co) -- only cites Terminal-Bench 2.1 (91.9%) and ExploitBench, no MMLU/MATH/AIME/HumanEval; Lenny's Newsletter \"GPT-5.6 Sol vs. Claude Fable\" piece -- uses author's own \"Claire Weighted Index,\" not these benchmarks; The Startup Ideas Podcast episode on using GPT-5.6 in Codex -- anecdotal, no benchmark scores at all. CONFIRMED ABSENT across all located talks/transcripts.\n\n3. INVESTOR / PRESS MATERIALS -- OpenAI is not publicly traded, so no OpenAI-originated investor disclosures exist. Checked Microsoft (closest publicly-traded affiliate): Microsoft's most recent earnings call (FY2026 Q3, April 29, 2026) predates GPT-5.6's existence entirely. Microsoft's FY2026 Q4 earnings call is confirmed scheduled for July 29, 2026 (per news.microsoft.com/source/2026/07/08 and microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4) -- it has NOT happened yet as of this July 18, 2026 check, so no transcript exists to search. This source type is therefore currently unavailable/premature rather than checked-and-negative; flagging for a potential future round after July 29, 2026 if this gap persists.\n\n4. GITHUB ISSUES / SDK REPO DISCUSSIONS -- searched openai/openai-python (issues + discussions tabs), openai/codex (issues), and openai/openai-cookbook for \"GPT-5.6\" + MMLU/benchmark queries. Found only access/availability bugs (e.g. issue #31869 Linux Codex CLI can't use GPT-5.6 models on macOS-only setups; issue #31873 /model picker not listing GPT-5.6; issue #31905 unable to use gpt-5.6-sol with ChatGPT Plus) and SDK changelog entries adding gpt-5.6-sol as a model identifier -- no issue or discussion thread asking about or answering MMLU/MATH/AIME/HumanEval scores, and no maintainer reply citing any such number. CONFIRMED ABSENT.\n\n5. THIRD-PARTY REVIEW/ANALYSIS SITES not previously checked -- Simon Willison's July 9, 2026 post (simonwillison.net/2026/Jul/9/gpt-5-6/, fetched directly) names only Agents' Last Exam (53.6) and SWE-Bench Pro (64.6% vs Fable's 80%) -- no MMLU/MATH/AIME/HumanEval. Additionally checked CodeRabbit's GPT-5.6 Sol/Terra benchmark blog (vendor-reported figures only, no academic benchmarks), Coursiv's GPT-5.6 Sol review (lists Agents' Last Exam/AA Intelligence Index/AA Coding Agent Index/SWE-Bench Pro/DeepSWE/Terminal-Bench/OSWorld/BrowseComp verbatim from the launch table, explicitly labeled \"vendor-published results, not our independent lab test\" -- no MMLU/MATH/AIME/HumanEval), and eesel.ai's GPT-5.6 review, which states explicitly and directly on-point: \\\"For a flagship launch, OpenAI published almost no standard capability benchmarks. There is no headline SWE-bench Verified score, no GPQA Diamond, no AIME, no MMLU, no ARC-AGI-2, no FrontierMath\\\" -- independently corroborating this corpus's prior two rounds' conclusion from a source neither round 1 nor round 2 had checked. o-mega.ai's July 2026 GPT-5.6 benchmark/pricing article makes the identical explicit statement. ThePCEnthusiast's and Lushbinary's GPT-5.6 benchmark deep-dive articles both returned HTTP 403 (inaccessible to automated fetch) so could not be directly checked, but no other source found any of the four numbers attributed to them. Searched specifically for ChinaTalk and SemiAnalysis/interconnects.ai coverage of GPT-5.6 -- ChinaTalk's relevant recent piece (\\\"China's Mythos Moment\\\") covers Anthropic's Mythos model, not GPT-5.6 benchmarks; no GPT-5.6-specific SemiAnalysis or interconnects.ai content was found via search. CONFIRMED ABSENT across all sites actually retrievable.\n\nAlso re-verified: two independent aggregator sites that do claim to track \\\"MMLU, HumanEval, MATH Scores\\\" broadly (gpt0x.com/research/ai-model-benchmark-tracker.html and tokencalculator.com/llm-benchmarks) were checked directly and found to be stale, topping out at GPT-4o-class and GPT-5.4-class models respectively -- neither has been updated to include GPT-5.6 at all, let alone with these four scores. The previously-rejected lmmarketcap.com templated-data page (identical scores across Luna/Luna Pro tiers, flagged non-credible in round 2) resurfaced again in this round's MMLU-specific search claiming Luna=93% MMLU; re-affirming the round-2 rejection rationale (byte-identical cross-tier scores with no methodology disclosure) and excluding it again on the same grounds.\n\nNet result: genuinely attempted all 5 of the 5 new source types. 4 of 5 (conference talks, investor materials -- premature rather than negative, GitHub issues, third-party sites) came back cleanly negative or not-yet-available; the 5th (Wayback Machine) was tool-blocked from direct content verification but yielded no affirmative lead either, and was partially cross-checked via contemporaneous independent day-of-launch reporting (Simon Willison, MarkTechPost) showing the same absence. This is the third independent research pass (following round 1's official/tracker sweep and round 2's academic/leaderboard/regional sweep) to come back empty for mmlu, math, aime, and humaneval on GPT-5.6 (any tier). Recommending \\\"omitted_no_evidence\\\" for all four, now with two additional independent third-party sources (eesel.ai, o-mega.ai) explicitly and directly corroborating OpenAI's deliberate non-publication of exactly these four benchmarks at the GPT-5.6 launch. Only remaining open thread: Microsoft's FY2026 Q4 earnings call (July 29, 2026) has not yet happened and could theoretically be checked in a future round if OpenAI-related benchmark commentary surfaces there, though this is a low-probability lead for granular academic-benchmark figures in an investor call.\n\n2026-07-18 ROUND-4 (livecodebench, swe-bench, mmmu specifically -- these three were NOT the focus of rounds 2-3, which targeted mmlu/math/aime/humaneval): fresh independent research pass using source types/pages not previously fetched in round 1 for these exact slugs.\n\n1. OFFICIAL BENCHMARK LEADERBOARDS, live-rendered via browser (not static WebFetch, to rule out stale/cached HTML):\n   - livecodebench.github.io/leaderboard.html: rendered the live sortable table directly. Default/only populated time window is 8/1/2024-5/1/2025; top entries are O4-Mini/O3/Gemini-2.5-Pro/DeepSeek-R1-class models. No GPT-5-series model of any kind appears on this leaderboard, let alone GPT-5.6. The official LiveCodeBench leaderboard has evidently not been updated with any 2026 frontier model. CONFIRMED ABSENT (leaderboard itself is stale, not GPT-5.6-specific gap).\n   - swebench.com (official SWE-bench Verified leaderboard, live-rendered): newest entries dated 2026-02-17/2026-02-19, topping out at Claude 4.5 Opus (76.80%), GPT-5-2 Codex/GPT-5-2 (72.80%). No GPT-5.5 or GPT-5.6 entry exists on the official leaderboard as of this check. CONFIRMED ABSENT.\n\n2. INDEPENDENT TRACKERS not deep-checked in round 1 (round 1 only checked Vals.ai's SWE-bench Verified leaderboard and BenchLM's MMMU leaderboard by name, without visiting model-specific pages):\n   - llm-stats.com/benchmarks/swe-bench-verified: full leaderboard fetched; 104 models tracked, top 10 all Claude/DeepSeek/Gemini/MiniMax; no GPT-5.6 entry (GPT-5, 5.1, 5.2 present, nothing newer).\n   - epoch.ai/benchmarks/swe-bench-verified: methodology page only cites GPT-5 Mini as an illustrative example; no leaderboard table with GPT-5.6 rendered.\n   - vals.ai/benchmarks/swebench (SWE-bench Verified leaderboard): highest-ranked OpenAI model is GPT 5.5 at 82.60%; no GPT-5.6 entry. Attempted to also load vals.ai/models/openai_gpt-5.6-sol directly (both via WebFetch and live browser render) -- WebFetch returned a benchmark table with literal \"0.0%\" scores across every row (LiveCodeBench, MMMU, SWE-bench, GPQA Diamond, MMLU Pro, etc.) despite populated confidence intervals and rankings, which is inconsistent with known real GPQA Diamond (94.6%) and reads as an unrendered client-side-JS placeholder rather than genuine data; live browser navigation to this specific model URL repeatedly redirected to unrelated pages (Kimi K2.6 / swebench.com / openai.com) due to apparent SPA routing/tab-pooling instability in this environment, so this page could NOT be reliably read and its numbers are NOT being treated as evidence either way -- flagging as a potential future recheck if browser tooling is more stable.\n   - llm-stats.com/leaderboards/best-ai-for-coding: page names \"GPT-5.6 Sol\" as #1 ranked coding model but only via its own composite \"coding index\" (49.6), not a LiveCodeBench sub-score.\n   - artificialanalysis.ai/models/gpt-5-6-sol (direct model page, not the general launch article already cited in this corpus): full eval list fetched -- GDPval-AA, Tau3-Banking, Terminal-Bench v2.1, SciCode, HLE, GPQA Diamond, CritPt, AA-Omniscience, AA-LCR, AA-Briefcase, AutomationBench-AA, Harvey LAB-AA, EnterpriseOps-Gym-AA, IFBench, APEX-Agents-AA, ITBench-AA, MMMU-Pro. No LiveCodeBench, no SWE-bench Verified, no standard MMMU.\n   - benchlm.ai/models/gpt-5-6-sol (full 46-benchmark tracker, re-fetched fresh this round): confirms round-1 finding -- only SWE-bench Pro (64.6%) and MMMU-Pro (83%/84.6% w/ Python) present; no livecodebench, swe-bench (Verified), or mmmu entries anywhere in the complete list.\n\n3. THIRD-PARTY ANALYSIS SITES (new, not checked in prior rounds for these three benchmarks specifically):\n   - the-agent-report.com's dedicated \"GPT-5.6 Sol, Terra, Luna: Full Benchmark Analysis\" piece states explicitly and directly: \"The article explicitly states OpenAI did not report: SWE-Bench Verified, GPQA Diamond, AIME, MMLU, ARC-AGI-2, FrontierMath, or LiveCodeBench scores\" -- direct independent corroboration of both the livecodebench and swe-bench (Verified) gaps from a source neither round 1 nor round 2/3 had checked.\n   - kingy.ai/blog/gpt-5-6-sol-terra-luna-benchmarks-specs (already cited in this corpus for the GDPval-AA figure, but re-checked fresh for full benchmark list this round): comprehensive list of ~35 named benchmarks for GPT-5.6 Sol/Terra/Luna; no LiveCodeBench, SWE-bench Verified, or MMMU (standard) anywhere.\n\n4. ACADEMIC / GITHUB: targeted arXiv search for \"GPT-5.6 Sol\" + SWE-bench/LiveCodeBench/MMMU baseline citations, and GitHub search for lm-evaluation-harness or results.json runs referencing \"gpt-5.6\" against livecodebench -- no hits found for GPT-5.6 specifically in either case (model remains too recent, July 9 2026 GA, for academic baseline propagation).\n\n5. MODALITY CHECK for MMMU: corpus file confirms `modalities: [\"text\",\"vision\"]` and `capabilities.vision: true` -- GPT-5.6 Sol is NOT text-only, so MMMU is architecturally applicable; the gap is a genuine unpublished-score gap, not inapplicability. OpenAI published the distinct successor benchmark MMMU-Pro (83.0%/84.6%, already tracked under the separate `mmmu-pro` slug) instead of standard MMMU.\n\nNet result: this round independently re-confirms, via 10+ fresh source checks (2 official leaderboards live-rendered, 5 independent trackers, 2 third-party analysis sites, academic/GitHub search) not exhausted in round 1, that livecodebench, swe-bench (Verified), and mmmu (standard) genuinely have no credible published or independently-measured score for GPT-5.6 (any tier) as of 2026-07-18. This is consistent with and extends round 1's original finding for these same three slugs. Recommending \"omitted_no_evidence\" for all three.\n\n2026-07-24 TIER SPLIT: renamed from 'GPT-5.6' (slug gpt-5-6) to 'GPT-5.6 Sol' (slug gpt-5-6-sol) so the three durable capability tiers are symmetric sibling models in the gpt-5-6 family, mirroring the Claude Opus/Sonnet/Haiku structure; all previously verified results carry over unchanged. Added three previously-observed-but-uningested independent rows from BenchLM's 46-benchmark Sol tracker (MMMU-Pro 83.0, τ³-Banking 33.0, IFBench 72.7). Deliberately NOT mapped (no taxonomy slug / variant-conflation guard): OSWorld 2.0, ARC-AGI-3, DeepSWE, Toolathlon, ExploitBench/ExploitGym, τ²-Bench (variant unspecified), Terminal-Bench Hard, FrontierCode, CursorBench, SciCode, CritPt, HealthBench, AA-Omniscience, GraphWalks, MRCR v2, BenchCAD, CTF suite, SEC-Bench Pro, GeneBench Pro, LifeSciBench, MedChemBench, Big Finance Bench, Management Consulting Tasks, and AA composite indices. BenchLM's Terminal-Bench 2.0 (91.9%) and BrowseComp (92.2%) headline figures are the 'with Ultra' configuration — the corpus keeps the standard-configuration launch figures (88.8 / 90.4) for cross-tier comparability. BenchLM's GDPval-AA Elo snapshot (1736) drifted from the launch-table 1747.8 kept on file (live leaderboard refits)."
+}

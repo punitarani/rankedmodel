@@ -21,7 +21,9 @@ glm-5-1,68,self-reported,https://huggingface.co/zai-org/GLM-5.1,,BrowseComp
 gpt-5-4,82.7,self-reported,https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/,,BrowseComp (Pro variant scores 89.3)
 gpt-5-4-pro,89.3,self-reported,https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/,2026-03-05,BrowseComp. Cross-confirmed by DataLearnerAI (89.30) and aireleasetracker.com (89.3%).
 gpt-5-5,84.4,self-reported,https://openai.com/index/introducing-gpt-5-5,,"BrowseComp, base model (Pro scores 90.1); confirmed"
-gpt-5-6,90.4,self-reported,https://openai.com/index/gpt-5-6/,,"BrowseComp, GPT-5.6 Sol standard (92.2 with Ultra); confirmed"
+gpt-5-6-luna,83.3,self-reported,https://openai.com/index/gpt-5-6/,2026-07-24,"BrowseComp, GPT-5.6 Luna, OpenAI launch table; per kingy.ai's launch-table digest (kingy.ai/blog/gpt-5-6-sol-terra-luna-benchmarks-specs), corroborated by BenchLM (83.3%)."
+gpt-5-6-sol,90.4,self-reported,https://openai.com/index/gpt-5-6/,,"BrowseComp, GPT-5.6 Sol standard (92.2 with Ultra); confirmed"
+gpt-5-6-terra,87.5,self-reported,https://openai.com/index/gpt-5-6/,2026-07-24,"BrowseComp, GPT-5.6 Terra, OpenAI launch table; per kingy.ai's launch-table digest (kingy.ai/blog/gpt-5-6-sol-terra-luna-benchmarks-specs), corroborated by BenchLM (87.5%)."
 hy3,84.2,self-reported,https://huggingface.co/tencent/Hy3,,"BrowseComp, from the benchmark-appendix image (Agentic Search section)"
 inkling,77.1,self-reported,https://thinkingmachines.ai/model-card/inkling/,2026-07-15,BrowseComp with context/browsing tools enabled (the benchmark's standard agentic configuration).
 kimi-k2-5,74.9,self-reported,https://www.kimi.com/blog/kimi-k2-5,,BrowseComp with context management; vendor also reports 60.6 single-agent (no ctx mgmt) and 78.4 in the 'Agent Swarm' multi-agent research-preview mode. 74.9 used here for rough comparability with the sibling K2.6 entry's single-agent-style figure
