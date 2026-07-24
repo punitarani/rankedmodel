@@ -280,6 +280,26 @@
     "higherIsBetter": true
   },
   {
+    "slug": "composite-bench",
+    "name": "Composite-Bench",
+    "category": "agents",
+    "unit": "%",
+    "description": "Composite Research's long-horizon browser-based computer-use benchmark, grounded in real professional trajectories from its enterprise products: macro success rate (pass@1 exact match to certified-optimal solutions) over 100 hidden enterprise-work tasks across five slices — 7-day pipeline stewardship, rulebook extraction, entity deduplication, orienteering, adaptive information-gathering — under a pinned maximum-reasoning-effort compute contract (announced 300k-output-token episode budget, 110-step cap, anytime scoring, zero exclusions).",
+    "normMin": 0,
+    "normMax": 85,
+    "higherIsBetter": true
+  },
+  {
+    "slug": "composite-bench-npp",
+    "name": "Composite-Bench NPP ladder",
+    "category": "agents",
+    "unit": "/1",
+    "description": "Composite-Bench's sixth slice, scored separately by preregistration: number partitioning generated at the phase transition, certified unsolvable within the compute budget (exact success 0/160 across all eight models, matching the preregistered prediction). The ladder score grades the best answer a model holds onto, on a log scale from 0 (no better than an arbitrary split) to 1 (perfect partition, never achieved), with standard algorithms of increasing quality at known rungs — a measure of anytime search discipline when the problem cannot be finished.",
+    "normMin": 0,
+    "normMax": 0.6,
+    "higherIsBetter": true
+  },
+  {
     "slug": "cybergym",
     "name": "CyberGym",
     "category": "coding",

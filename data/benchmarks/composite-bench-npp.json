@@ -1,0 +1,10 @@
+{
+  "slug": "composite-bench-npp",
+  "name": "Composite-Bench NPP ladder",
+  "category": "agents",
+  "unit": "/1",
+  "description": "Composite-Bench's sixth slice, scored separately by preregistration: number partitioning generated at the phase transition, certified unsolvable within the compute budget (exact success 0/160 across all eight models, matching the preregistered prediction). The ladder score grades the best answer a model holds onto, on a log scale from 0 (no better than an arbitrary split) to 1 (perfect partition, never achieved), with standard algorithms of increasing quality at known rungs — a measure of anytime search discipline when the problem cannot be finished.",
+  "normMin": 0,
+  "normMax": 0.6,
+  "higherIsBetter": true
+}

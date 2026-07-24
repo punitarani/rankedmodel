@@ -1,0 +1,9 @@
+model_slug,score,source,source_url,evaluated_at,notes
+claude-fable-5,0.471,independent,https://research.composite.com/composite-bench,2026-07-24,"Best NPP anytime-ladder score of all eight models. Exact success 0/20, as preregistered for every model (slice certified unsolvable within the 300k-token budget)."
+claude-opus-4-8,0.367,independent,https://research.composite.com/composite-bench,2026-07-24,"Third on the NPP ladder, at parity with GPT-5.6 Sol (0.366) and Grok-4.5 (0.352). Exact success 0/20, as preregistered for every model."
+gemini-3-5-flash,0.085,independent,https://research.composite.com/composite-bench,2026-07-24,"Seventh on the NPP anytime ladder. Exact success 0/20, as preregistered for every model."
+glm-5-2-max,0.196,independent,https://research.composite.com/composite-bench,2026-07-24,"Sixth on the NPP ladder — the anytime-search ordering differs substantially from the macro, where GLM-5.2 is third. Exact success 0/20, as preregistered for every model."
+gpt-5-6,0.366,independent,https://research.composite.com/composite-bench,2026-07-24,"Fourth on the NPP ladder, at parity with Claude Opus 4.8 (0.367) and Grok-4.5 (0.352) — well above its macro-board position. Exact success 0/20, as preregistered for every model."
+grok-4-5,0.352,independent,https://research.composite.com/composite-bench,2026-07-24,"Fifth on the NPP ladder, at parity with Claude Opus 4.8 (0.367) and GPT-5.6 Sol (0.366). Exact success 0/20, as preregistered for every model."
+kimi-k3,0.412,independent,https://research.composite.com/composite-bench,2026-07-24,"Second of all eight models on the NPP anytime ladder, behind only Claude Fable 5 (0.471). Exact success 0/20, as preregistered for every model."
+minimax-m3,0.062,independent,https://research.composite.com/composite-bench,2026-07-24,"Last on the NPP anytime ladder. Exact success 0/20, as preregistered for every model."
